@@ -1,0 +1,870 @@
+﻿l_polish:
+ INTERNATIONAL_ORGANIZATIONS: "Medzinárodné organizácie" # todo: NEW TRANSLATION
+ LEADER_DEFAULT: "Líder" # todo: NEW TRANSLATION
+ LEADERSHIP_CRITERIA: "Aby krajina mohla byť kandidátom, musí spĺňať tieto kritériá:\n[INTERNATIONAL_ORGANIZATION.GetLeadershipCriteria]" # todo: NEW TRANSLATION
+ LEADERSHIP_CRITERIA_T: "#T Kritériá pre vedenie#!" # todo: NEW TRANSLATION
+ TARGET: "Cieľ" # todo: NEW TRANSLATION
+ OVERVIEW: "Prehľad" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_MEMBER: "Nasleduje zoznam všetkých členov patriacich tejto medzinárodnej organizácii" # todo: NEW TRANSLATION
+ MEMBERS: "Členovia" # todo: NEW TRANSLATION
+ MEMBERS_DESC: "Toto sú všetky [countries|e], ktoré sú súčasťou [international_organization|e]." # todo: NEW TRANSLATION
+ IMPERIAL_VOTE_TITLE: "[Country.GetAdjectiveWithNoTooltip] cisárske hlasovanie" # todo: NEW TRANSLATION
+ OTHER_INTERNATIONAL_ORGANIZATIONS: "Ostatné" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CREATION_DATE: "Dátum založenia: [InternationalOrganization.GetCreationDate]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_INFO: "Členovia:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_LAWS_INFO: "Nasledujúce [policies|e] sú v platnosti:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_PAYMENTS_INFO: "Nasledujúce [payments|e] sa vykonávajú každý mesiac:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_MODIFIER_INFO: "Byť [member|e] poskytne:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_INTERNATIONAL_ORGANIZATION_MODIFIER_INFO: "[international_organization|e] dostáva:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_LEADER_MODIFIER_INFO: "[international_organization_leader_short|e] dostáva:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_NON_LEADER_MODIFIER_INFO: "Ostatní [members|e] dostávajú:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CURRENCY_ENABLED_EFFECT: "Povoľuje akumuláciu $CURRENCY$ v [international_organization|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CURRENCY_DISABLED_EFFECT: "Zakazuje akumuláciu $CURRENCY$ v [international_organization|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CURRENCY_EFFECT: "$CURRENCY$ povolené: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_HAS_PARLIAMENT: "Má parlament: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_GIVES_FOOD_ACCESS: "Umožňuje prístup k [food|e] ostatným členom: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_HAS_DYNASTIC_POWER: "Relevantné pre [dynastic_power|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CAN_INVITE_COUNTRIES: "Môže pozývať nových [members|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CAN_ANNEX_MEMBERS: "Môže diplomaticky [annex|e] iných [members|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CAN_RECRUIT_IN_MEMBERS: "Môže verbovať [regiments|e] v [members|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CAN_BUILD_SHIPS_IN_MEMBERS: "Môže stavať [ships|e] v [members|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CAN_BUILD_ROADS_IN_MEMBERS: "Môže stavať [roads|e] v [members|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CAN_BUILD_BUILDINGS_IN_MEMBERS: "Môže stavať [buildings|e] v [members|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_CAN_BUILD_RGOS_IN_MEMBERS: "Môže rozširovať [rgo|e] v [members|e]: $VAL$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_BONUS_OPINION: "Bonus k [opinion|e] medzi členmi: $AMOUNT$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_BONUS_TRUST: "Bonus k [trust|e] medzi členmi: $AMOUNT$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_ANNEXATION_SPEED: "Rýchlosť anektovania: $AMOUNT|Y$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_MIN_OPINION: "Ak [opinion|e] akýchkoľvek dvoch členských krajín klesne pod $AMOUNT$, [international_organization|e] sa rozpadne" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_MIN_TRUST: "Ak [trust|e] medzi akýmikoľvek dvoma členskými krajinami klesne pod $AMOUNT$, [international_organization|e] sa rozpadne" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_LEADER_ANTAGONISATION_MODIFIER: "Akékoľvek [antagonism|e] spôsobené [international_organization_leader_short|e] organizácie budú škálované o $AMOUNT|-=0%$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_ANTAGONISATION_MODIFIER_LAND: "[antagonism|e] spôsobené akciami na území [international_organization|e] budú škálované o $AMOUNT|-=0%$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_TT_NO_CB_PENALTY: "$war_no_cb$ náklady s ostatnými členmi budú škálované o $AMOUNT|-=0%$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_3: "Trojnásobný $INTERNATIONAL_ORGANIZATION_TYPE$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_4: "Štvornásobný $INTERNATIONAL_ORGANIZATION_TYPE$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_5: "Päťnásobný $INTERNATIONAL_ORGANIZATION_TYPE$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_WHOSE: "[COUNTRY.GetAdjectiveWithNoTooltip] $INTERNATIONAL_ORGANIZATION_TYPE$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_GENERIC: "$INTERNATIONAL_ORGANIZATION_TYPE$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_AGAINST_TARGET: "$INTERNATIONAL_ORGANIZATION_TYPE$ proti $TARGET_COUNTRY$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_AGAINST_TARGET_VARS: "[INTERNATIONAL_ORGANIZATION_TYPE.GetName] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_WITH_X_MEMBER: "$TYPE$ s $VAL$ členmi:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_WITH_TWO_MEMBERS: "$TYPE$ s $OTHERCOUNTRY$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_MONTHLY_EFFECT: "Každý mesiac:\n$EFFECT$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_NO_LEADER_TITLE: "Vakuum moci!" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_NO_LEADER_1: "[InternationalOrganizationsView.GetInternationalOrganization.GetName] je bez vodcu." # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_NO_LEADER_2: "V dohľadnej dobe sa nič nedá dosiahnuť, kým sa táto situácia nevyrieši." # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_POWER_STRUGGLE_TITLE: "Boj o moc!" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_POWER_STRUGGLE_1: "Bez rozhodujúceho hlasovania je [InternationalOrganizationsView.GetInternationalOrganization.GetName] bez vodcu." # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_POWER_STRUGGLE_2: "Táto situácia potrvá, kým nebudú splnené nasledovné kritériá:\n[InternationalOrganizationsView.GetVoteFinalizationCriteria]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_LEADER_TYPE_INFO: "Mení [leader_change_method|e] na $TYPE|Y$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_LEADER_CHANGE_METHOD_INFO: "Mení [leader_change_method|e] na $TYPE|Y$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_LEADER_CHANGE_TRIGGER_TYPE_INFO: "Mení [leader_change_trigger|e] na $TYPE|Y$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_MONTHS_BETWEEN_LEADER_CHANGE_INFO: "Mení obdobie medzi [elections|e] na $VALUE|0Y$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PAYMENTS_IMPLEMENTED_INFO: "Nasledujúce [payments|e] sú aktívne:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PAYMENTS_REPEALED_INFO: "Nasledujúce [payments|e] už nie sú aktívne:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_SPECIAL_STATUSES_IMPLEMENTED_INFO: "Nasledujúce [special_statuses|e] sú povolené:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_SPECIAL_STATUSES_REPEALED_INFO: "Nasledujúce [special_statuses|e] už nie sú povolené:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_IMPLEMENTED_INFO: "Povoľuje [parliament|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_REPEALED_INFO: "Zakazuje [parliament|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_SHARED_FOOD_IMPLEMENTED_INFO: "Umožňuje zdieľanie [food|e] medzi všetkými [members|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_SHARED_FOOD_REPEALED_INFO: "Zakazuje zdieľanie [food|e] medzi všetkými [members|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_DYNASTIC_POWER_IMPLEMENTED_INFO: "Povoľuje [dynastic_power|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_DYNASTIC_POWER_REPEALED_INFO: "Zakazuje [dynastic_power|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_CAN_INVITE_COUNTRIES_IMPLEMENTED_INFO: "Umožňuje pozývanie nových [members|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_CAN_INVITE_COUNTRIES_REPEALED_INFO: "Zakazuje pozývanie nových [members|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_LEADER_COUNTRY_IMPLEMENTED_INFO: "Umožňuje vedenie prostredníctvom jednej [country|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_LEADER_COUNTRY_REPEALED_INFO: "Zakazuje vedenie prostredníctvom jednej [country|e]" # todo: NEW TRANSLATION
+ WE_WANT_THE_ORGANIZATION_TO_GROW: "Chceme, aby sa [international_organization|e] rozrástla" # todo: NEW TRANSLATION
+ NOT_VOTED_TT: "[GetDataModelSize(ResolutionGlue.GetNotVoted)] krajín ešte nehlasovalo" # todo: NEW TRANSLATION
+ VOTED_TT: "'[VoteGlue.GetVoteObject.GetName]' Hlasov: [VoteGlue.GetTotalNumVotes|0L]" # todo: NEW TRANSLATION
+ MIGHT_VOTE_FOR_TT: "Potenciálne '[VoteGlue.GetVoteObject.GetName]' Hlasov: [VoteGlue.GetTotalNumVotes|0L]" # todo: NEW TRANSLATION
+ VOTE_NUM_WITH_BREAKDOWN_TT: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|0L$#!" # todo: NEW TRANSLATION
+ VOTE_NUM_BREAKDOWN_TITLE: "Hlasovanie o rezolúcii\n$VOTE$ má $VOTE_NUM|0V$ hlasov od:" # todo: NEW TRANSLATION
+ VOTE_NUM_BREAKDOWN_ENTRY: "$VOTER$: #TOOLTIP:$BREAKDOWN_TAG$ $VOTE_NUM|0L$#!" # todo: NEW TRANSLATION
+ RESOLUTION_PREDICTED_VOTE_OUTCOME: "Momentálne sa predpokladá, že víťazné hlasovanie bude [ResolutionGlue.GetHighestVote.GetVoteObject.GetName], s celkovým počtom [ResolutionGlue.GetVoteNumWithBreakdown(ResolutionGlue.GetHighestVote)] hlasov." # todo: NEW TRANSLATION
+ LOCATION_HAS_CARDINAL: "[THIS.GetLocation.GetName] je sídlom [cardinal|e]." # todo: NEW TRANSLATION
+ CANNOT_REMOVE_LOCATION_NOT_OWNED: "[LOCATION.GetName] nie je súčasťou [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ CANNOT_ADD_LOCATION_ALREADY_OWNED: "[LOCATION.GetName] je už súčasťou [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ LOANS_SCROLL_LIST_EMPTY: "Žiadne [loans|e] dostupné pre tieto kritériá vyhľadávania" # todo: NEW TRANSLATION
+ CANNOT_HAVE_STATUS_MAX_REACHED: "[international_organization|e] už má maximálny počet členských štátov so statusom '$STATUS$' ($NUMBER$)." # todo: NEW TRANSLATION
+ IO_CURRENT_FAVOURITE_LOCKED: "[COUNTRY.GetName] momentálne hlasujú za [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
+ IO_CURRENT_FAVOURITE: "[COUNTRY.GetName] momentálne hlasujú za [TARGET_COUNTRY.GetName] s $AMOUNT|G$:" # todo: NEW TRANSLATION
+ IO_PREFER_THEM_TO_US: "Uprednostňujú [TARGET_COUNTRY.GetName] pred nami, pretože náš skóre je len $AMOUNT|+=$:" # todo: NEW TRANSLATION
+ IO_PREFER_US_TO_THEM: "Uprednostňujú nás pred [TARGET_COUNTRY.GetName], pretože ich skóre je len $AMOUNT|+=G$:" # todo: NEW TRANSLATION
+ IO_WE_ARE_ONLY_CANDIDATE: "Môžu hlasovať len za nás." # todo: NEW TRANSLATION
+ IO_NO_CANDIDATE: "Neexistuje žiadny kandidát, za ktorého by mohli hlasovať." # todo: NEW TRANSLATION
+ IO_CANT_BE_ELECTED: "Nie sme oprávnení byť zvolení za [INTERNATIONAL_ORGANIZATION.GetLeaderTitle] [INTERNATIONAL_ORGANIZATION.GetType.GetName]." # todo: NEW TRANSLATION
+ OPINION_OF_LEADER_TO_US: "Názor [international_organization_leader_short|e] na nás" # todo: NEW TRANSLATION
+ DYNASTIC_POWER_IN_IO: "[dynastic_power|e] v [international_organization|e]" # todo: NEW TRANSLATION
+ SEAT_OF_DYNASTY_IN_IO: "Má [ShowModifier('dynasty_seat')] v [international_organization|e]" # todo: NEW TRANSLATION
+ PRIMARY_OR_RULER_CULTURE_EQUAL_TO_LEADER_CULTURE: "[primary_culture|e] alebo [culture|e] [ruler|e] sa zhoduje s kultúrou [international_organization_leader_short|e]" # todo: NEW TRANSLATION
+ THREATENED_BY_LEADER_RIVALS_OR_ENEMIES: "Je ohrozený [rivals|e] alebo [enemies|e] [international_organization_leader_short|e]" # todo: NEW TRANSLATION
+ CANNOT_VOTE_NOT_AN_ELECTOR: "[COUNTRY.GetName] nie je voliteľ" # todo: NEW TRANSLATION
+ CANNOT_VOTE_NOT_A_MEMBER: "[COUNTRY.GetName] nie je členom [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ CANNOT_VOTE_NO_VOTES: "[COUNTRY.GetName] nemá v tejto [resolution|e] žiadne hlasy" # todo: NEW TRANSLATION
+ RESOLUTION_EFFECTS_WHEN_PASSES: "Nasledujúce sa stane, ak [resolution|e] prejde:" # todo: NEW TRANSLATION
+ VOTING_BIAS: "Zo [favor|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_IS_NOT_ELIGIBLE_TO_LEAD: "Nie je oprávnený byť [international_organization_leader_short|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_VOTE_FOR_SELF: "Uprednostňuje vlastného kandidáta" # todo: NEW TRANSLATION
+ LEADERSHIP_VOTE_FOR_SELF_OTHER_VOTERS: "Ostatní za nich hlasujú" # todo: NEW TRANSLATION
+ LEADERSHIP_VOTE_NEGATIVE_OPINION: "Negatívny [opinion|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_FEMALE_RULER: "Má #Y Ženu#! [ruler|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_MALE_RULER: "Má #Y Muža#! [ruler|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_FEMALE_HEIR: "Má #Y Ženu#! [heir|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_MALE_HEIR: "Má #Y Muža#! [heir|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_HAS_NO_RULER_OR_HEIR: "Nemá [ruler|e] ani [heir|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_HAS_NO_RULER: "[international_organization_leader_short|e] nemá [ruler|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_HAS_NO_HEIR: "[international_organization_leader_short|e] nemá [heir|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_VOTE_SAME_AREA: "[capital|e] v [COUNTRY.GetCapital.GetArea.GetName] [area|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_RIVAL_OF_RIVAL: "[rival|e] [rival|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_RIVAL_OF_ENEMY: "[rival|e] [enemy|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_ENEMY_OF_RIVAL: "[enemy|e] [rival|e]" # todo: NEW TRANSLATION
+ LEADERSHIP_ENEMY_OF_ENEMY: "[enemy|e] [enemy|e]" # todo: NEW TRANSLATION
+ FROM_DEDICATED_CABINET_ACTION: "Z [cabinet_action|E]" # todo: NEW TRANSLATION
+ MODIFIER_MEMBER_OF_IO: "Člen $IO$" # todo: NEW TRANSLATION
+ MODIFIER_SPECIAL_STATUS_COUNTRY_OF_IO: "$STATUS$ v $IO$" # todo: NEW TRANSLATION
+ MODIFIER_SPECIAL_STATUS_LEADER_OF_IO: "$STATUS$ [countries|e] v $IO$" # todo: NEW TRANSLATION
+ MODIFIER_SPECIAL_STATUS_LEADER_OF_IO_1: "$STATUS$ [country|e] v $IO$" # todo: NEW TRANSLATION
+ MODIFIER_LEADER_OF_IO: "$LEADER_TITLE$ $IO$" # todo: NEW TRANSLATION
+ MODIFIER_NON_LEADER_IN_IO: "Ne-$LEADER_TITLE$ v $IO$" # todo: NEW TRANSLATION
+ LEADER_OF_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.GetName] je [INTERNATIONAL_ORGANIZATION.GetLeaderTitle] [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ TARGET_OF_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.GetName] je cieľom [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ SPECIAL_STATUS_IN_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.GetName] má status '$STATUS$' v [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ MEMBER_OF_INTERNATIONAL_ORGANIZATION_THIRD: "[COUNTRY.GetName] je členom [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ LAND_OWNED_BY_INTERNATIONAL_ORGANIZATION: "[LOCATION.GetName] vlastní [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
+ INERTIA: "Môžem to urobiť neskôr?" # todo: NEW TRANSLATION
+ WE_ALREADY_HAVE_A_BETTER_POLICY: "Už máme lepšiu politiku" # todo: NEW TRANSLATION
+ NO_INTERNATIONAL_ORGANIZATIONS_OF_TYPE: "V súčasnosti neexistuje žiadna iná [InternationalOrganizationTypeView.GetInternationalOrganizationType.GetName]." # todo: NEW TRANSLATION
+ LEADER_CHANGE_METHOD_NONE: "Nedefinované" # todo: NEW TRANSLATION
+ LEADER_CHANGE_METHOD_ROTATION: "Rotácia" # todo: NEW TRANSLATION
+ LEADER_CHANGE_METHOD_VOTE: "Hlasovanie" # todo: NEW TRANSLATION
+ LEADER_CHANGE_METHOD_LOTTERY: "Loteria" # todo: NEW TRANSLATION
+ LEADER_CHANGE_METHOD_SCORE: "Skóre" # todo: NEW TRANSLATION
+ LEADER_CHANGE_TRIGGER_TYPE_NONE: "Neurčité" # todo: NEW TRANSLATION
+ LEADER_CHANGE_TRIGGER_TYPE_RULER_CHANGE: "Pri zmene vládcu" # todo: NEW TRANSLATION
+ LEADER_CHANGE_TRIGGER_TYPE_TIMED: "Na základe času" # todo: NEW TRANSLATION
+ LEADER_TYPE_CHARACTER: "Postava" # todo: NEW TRANSLATION
+ LEADER_TYPE_COUNTRY: "Krajina" # todo: NEW TRANSLATION
+ LEADER_TYPE_NONE: "Bez vodcu" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_ISSUE_WILL_FAIL: "#T Návrh zlyhá#!\n@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebate.GetName] #R NEPREJDE#! cez [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName]." # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Návrh prejde#!\n[InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebate.GetName] prejde cez [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName]." # todo: NEW TRANSLATION
+ CALL_IO_PARLIAMENT: "Zvolať [InternationalOrganization.GetParliament.GetName]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_IN_SESSION: "[InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] v rokovaní" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_ACTIVE_PARLIAMENT_SUPPORT_POWER: "Základ je $VAL|2G$ moci [special_status|e] upravenej nasledovne:" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_DURATION_TXT: "Zostáva $[InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration] dní v [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_BASE_SUPPORT_FROM_SPECIAL_STATUS: "Toto je množstvo podpory v [parliament|e] [international_organization|e] udelené vedúcou skupinou [special_status|e]. V závislosti od [parliament_issue|e] bude táto hodnota nahradená kombinovanou [special_status_power|e] skupiny, ktorá navrhuje návrh." # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_LEADER_SPECIAL_STATUS_POWER_TOOLTIP: "[special_status_power|e] krajiny [international_organization_leader_short|e]: [InternationalOrganization.GetLeaderSpecialStatusPowerFraction|+=%2]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_ISSUE_SPECIAL_STATUS_POWER_TOOLTIP: "[special_status_power|e] krajín [InternationalOrganization.GetParliament.GetCurrentDebate.GetSpecialStatus.GetName]: [InternationalOrganization.GetSpecialStatusPowerFraction(InternationalOrganization.GetParliament.GetCurrentDebate.GetSpecialStatus.Self)|+=%2]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_BASE_SUPPORT_TT_TITLE: "Podpora špeciálneho statusu v [InternationalOrganization.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ SPECIAL_STATUS_POWER_FRACTION_TT: "#T Sila špeciálneho statusu#!" # todo: NEW TRANSLATION
+ SPECIAL_STATUS_POWER_UNIQUE_FRACTION_TT: "#T Sila špeciálneho statusu#!" # todo: NEW TRANSLATION
+ SPECIAL_STATUS_POWER_FRACTION_TOOLTIP: "[special_status_power|e] $SPECIAL_STATUs$ je $VAL|+=%2$ ($ABSOLUTE_VAL|Y2$ / $TOTAL_VAL|Y2$)" # todo: NEW TRANSLATION
+ SPECIAL_STATUS_POWER_UNIQUE_FRACTION_TOOLTIP: "[special_status_power|e] $SPECIAL_STATUs$ je $VAL|+=%2$ ($ABSOLUTE_VAL|Y2$ / $TOTAL_VAL|Y2$)" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_PARLIAMENT_AGENDA_VOTE_TT: "Toto ovplyvní podporu všetkých [members|e] s $NAME$ [special_status|e]" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_ACTIVE_PARLIAMENT_VOTES_INFLUENCED: "[resolution|e] získa $POTENTIAL_VOTES|G0$ z $TOTAL_VOTES|Y0$ hlasov" # todo: NEW TRANSLATION
+ SUBTAB_IO_OVERVIEW: "$OVERVIEW$" # todo: NEW TRANSLATION
+ SUBTAB_IO_OVERVIEW_TT_TEXT: "Zobrazuje členov so [special_status|e] v [international_organization|e] a [actions|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_OVERVIEW_TT_FLAVOR_TEXT: "'V jednote je sila.'" # todo: NEW TRANSLATION
+ SUBTAB_IO_ALL_MEMBERS: "$game_concept_members$" # todo: NEW TRANSLATION
+ SUBTAB_IO_ALL_MEMBERS_TT_TEXT: "Zobrazuje všetkých [members|e] v [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_ALL_MEMBERS_TT_FLAVOR_TEXT: "$SUBTAB_IO_OVERVIEW_TT_FLAVOR_TEXT$" # todo: NEW TRANSLATION
+ SUBTAB_IO_CANDIDATES: "$game_concept_candidates$" # todo: NEW TRANSLATION
+ SUBTAB_IO_CANDIDATES_TT_TEXT: "Zobrazuje [candidates|e] na vedenie [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_CANDIDATES_TT_FLAVOR_TEXT: "Zvolili sme ignoranta!" # todo: NEW TRANSLATION
+ SUBTAB_IO_LAWS: "$game_concept_laws$" # todo: NEW TRANSLATION
+ SUBTAB_IO_LAWS_TT_TEXT: "Toto okno vám umožňuje preskúmať a iniciovať [laws|e] a [policies|e] [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_LAWS_TT_FLAVOR_TEXT: "$SUBTAB_GOVERNMENT_POLITICS_TT_FLAVOR_TEXT$" # todo: NEW TRANSLATION
+ SUBTAB_IO_RESOLUTIONS: "$game_concept_resolutions$" # todo: NEW TRANSLATION
+ SUBTAB_IO_RESOLUTIONS_TT_TEXT: "Toto okno vám umožňuje preskúmať a iniciovať [resolutions|e] [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_RESOLUTIONS_TT_FLAVOR_TEXT: "'Exsurge, Domine, et judica causam tuam...'" # todo: NEW TRANSLATION
+ SUBTAB_IO_CARDINALS: "$game_concept_cardinals$" # todo: NEW TRANSLATION
+ SUBTAB_IO_CARDINALS_TT_TEXT: "Zobrazuje [cardinals|e] [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_CARDINALS_TT_FLAVOR_TEXT: "'Viac sa bojím svojho vlastného srdca než pápeža a všetkých jeho kardinálov.'" # todo: NEW TRANSLATION
+ SUBTAB_IO_FACTIONS: "$FACTIONS$" # todo: NEW TRANSLATION
+ SUBTAB_IO_FACTIONS_TT_TEXT: "Zobrazuje [religious_factions|e] [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_FACTIONS_TT_FLAVOR_TEXT: "'Múdry líder sa obklopuje múdrymi poradcami.'" # todo: NEW TRANSLATION
+ SUBTAB_IO_SAINTS: "$game_concept_saints$" # todo: NEW TRANSLATION
+ SUBTAB_IO_SAINTS_TT_TEXT: "Zobrazuje [saints|e] [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_SAINTS_TT_FLAVOR_TEXT: "'Konaj a Boh bude konať; pracuj a On bude pracovať.'" # todo: NEW TRANSLATION
+ SUBTAB_IO_HOLY_SITES: "$game_concept_holy_sites$" # todo: NEW TRANSLATION
+ SUBTAB_IO_HOLY_SITES_TT_TEXT: "Zobrazuje [holy_sites|e] [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_HOLY_SITES_TT_FLAVOR_TEXT: "'V chráme a na nádvorí Šalamúna muži jazdili v krvi po kolená a uzda bola krvavá.'" # todo: NEW TRANSLATION
+ SUBTAB_IO_PARLIAMENT: "$game_concept_parliament$" # todo: NEW TRANSLATION
+ SUBTAB_IO_PARLIAMENT_TT_TEXT: "Toto okno vám umožňuje preskúmať a zvolať [members|e] so [special_status|e] do [parliament|e] [international_organization|e]." # todo: NEW TRANSLATION
+ SUBTAB_IO_PARLIAMENT_TT_FLAVOR_TEXT: "$SUBTAB_GOVERNMENT_PARLIAMENT_TT_FLAVOR_TEXT$" # todo: NEW TRANSLATION
+ SUBTAB_IO_RESOLUTIONS_CATHOLIC_CHURCH_TT_TEXT: "Toto okno vám umožňuje preskúmať a iniciovať [papal_bulls|e] [GetUniqueInternationalOrganization('catholic_church').GetName]." # todo: NEW TRANSLATION
+ SUBTAB_IO_RESOLUTIONS_CATHOLIC_CHURCH_BLOCKED_TT_TEXT: "@trigger_no! Môžete hlasovať o [papal_bulls|V] len ak máte aspoň #V 1#! [cardinal|e]" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_TT: "#T $TITLE$ #!\n$DESC$" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_VOTE_TITLE: "$leader_change_selection$ Hlasovanie" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_ROTATION_TITLE: "$leader_change_selection$ Rotácia" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_LOTTERY_TITLE: "$leader_change_selection$ Loteria" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_SCORE_TITLE: "$leader_change_selection$ Skóre" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_VOTE_DESC: "Vodca medzinárodnej organizácie je vyberaný hlasovacím systémom." # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_ROTATION_DESC: "Vodca medzinárodnej organizácie je vyberaný systémom rotácie." # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_LOTTERY_DESC: "Vodca medzinárodnej organizácie je vyberaný lotériou." # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_SCORE_DESC: "Vodca medzinárodnej organizácie je vyberaný podľa člena s najvyšším [great_power_score|e]." # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_VOTE_DESC_DATE: "$IO_LEADER_CHANGE_METHOD_VOTE_DESC$ \nNasledujúca zmena vodcu bude #Y $DATE$#!" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_ROTATION_DESC_DATE: "$IO_LEADER_CHANGE_METHOD_ROTATION_DESC$ \nNasledujúca zmena vodcu bude #Y $DATE$#!" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_LOTTERY_DESC_DATE: "$IO_LEADER_CHANGE_METHOD_LOTTERY_DESC$ \nNasledujúca zmena vodcu bude #Y $DATE$#!" # todo: NEW TRANSLATION
+ IO_LEADER_CHANGE_METHOD_SCORE_DESC_DATE: "$IO_LEADER_CHANGE_METHOD_SCORE_DESC$ \nNasledujúca zmena vodcu bude #Y $DATE$#!" # todo: NEW TRANSLATION
+ leader_change_selection: "Výber vodcu podľa" # todo: NEW TRANSLATION
+ coalition: "Koalícia" # todo: NEW TRANSLATION
+ coalition_desc: "Koalícia je skupina [countries|e], ktoré sa združia kvôli svojmu [antagonism|e] voči inému [country|e], s cieľom obmedziť potenciálnu agresiu. Členovia koalície sa vzájomne bránia, ak cieľ zaútočí na jedného z nich, a môžu vyhlásiť [war|e] proti cieľu." # todo: NEW TRANSLATION
+ coalition_leader: "Vodca koalície" # todo: NEW TRANSLATION
+ coalition_hint_1: "Koalícia nemôže existovať bez svojho vodcu. Ak vedúca krajina zvolí odchod, koalícia sa okamžite rozpadne." # todo: NEW TRANSLATION
+ defensive_league: "Obranná liga" # todo: NEW TRANSLATION
+ defensive_league_desc: "Obranná liga je skupina [countries|e], ktoré sa vzájomne dohodli brániť, ak sa na niektorú z nich vyhlási [war|e]." # todo: NEW TRANSLATION
+ defensive_league_hint_1: "Opustenie Obrannej ligy ju nerozpúšťa, pokiaľ nezostanú menej než 2 členovia." # todo: NEW TRANSLATION
+ DEFENSIVE_LEAGUE_ARMY_SIZE: "Veľkosť armády ligy" # todo: NEW TRANSLATION
+ DEFENSIVE_LEAGUE_NAVY_SIZE: "Veľkosť námorníctva ligy" # todo: NEW TRANSLATION
+ ORGANIZATION_SIZE: "Veľkosť organizácie" # todo: NEW TRANSLATION
+ AVERAGE_GREAT_POWER_SCORE: "Priemerné skóre veľmoci" # todo: NEW TRANSLATION
+ GREAT_POWER_RATIO: "Pomer skóre veľmoci" # todo: NEW TRANSLATION
+ hre: "Sväto rímska ríša" # todo: NEW TRANSLATION
+ hre_desc: "Sláva starovekej Rímskej ríše žije v pamäti všetkých v [ShowContinentName('europe')]. [GetCharacter('fra_charlemagne').GetName] bol korunovaný za Rímskeho cisára, ale až korunovácia [GetCharacter('ogk_otto_liudolfinger').GetName] priviedla k zrodeniu súčasného $hre$, s ambíciou vytvoriť obnovenú a zjednotenú Európsku ríšu." # todo: NEW TRANSLATION
+ hre_land_ownership: "Cisárska pôda" # todo: NEW TRANSLATION
+ hre_land_ownership_desc: "Pôda vlastnená Sväto rímskou ríšou." # todo: NEW TRANSLATION
+ hre_leadership: "Sväto rímska ríša" # todo: NEW TRANSLATION
+ hre_leadership_desc: "Vedenie Sväto rímskej ríše a správa volieb." # todo: NEW TRANSLATION
+ hre_defended_imperial_cities_tt: "Ak obranca je [ShowSpecialStatusName('free_city')] a Ríša prijala zákon na ich ochranu" # todo: NEW TRANSLATION
+ hre_leaving_tt: "Nie je možné pokojne opustiť Ríšu. Vyhrajte vojnu proti [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetLongName] a vynúťte si [ShowPeaceTreatyTypeName('peace_leave_the_hre')] proti nim!" # todo: NEW TRANSLATION
+ hre_has_eligible_ruler_tt: "Má oprávneného [ruler|e]" # todo: NEW TRANSLATION
+ hre_has_eligible_heir_tt: "Má oprávneného [heir|e]" # todo: NEW TRANSLATION
+ emperor: "Cisár" # todo: NEW TRANSLATION
+ emperor_plural: "Cisári" # todo: NEW TRANSLATION
+ emperor_desc: "$emperor$ je slávny a prestížny [international_organization_leader_short|e] [GetUniqueInternationalOrganization('hre').GetName]. Môže byť len jeden $emperor$ a jeho slovo určuje smer Ríše." # todo: NEW TRANSLATION
+ elector: "Kurfiřt" # todo: NEW TRANSLATION
+ elector_plural: "Kurfiřti" # todo: NEW TRANSLATION
+ elector_desc: "$elector$ je [special_status|e] [GetUniqueInternationalOrganization('hre').GetName]. Kurfiřti sú schopní voliť nasledujúceho [GetUniqueInternationalOrganization('hre').GetLeaderTitle]. Iba štát s [ShowGovernmentTypeName('monarchy')] [government_type|e] môže prevziať tento [special_status]." # todo: NEW TRANSLATION
+ tatar_overlord: "Tatarský vládca" # todo: NEW TRANSLATION
+ tatar_overlord_plural: "Tatarskí vládcovia" # todo: NEW TRANSLATION
+ tatar_overlord_desc: "$tatar_overlord$ je pán a pán nad hroznou [GetUniqueInternationalOrganization('tatar_yoke').GetName]. Všetky zahraničné politické záležitosti Jarmo rieši on." # todo: NEW TRANSLATION
+ tatar_tax_collector: "Veľký knieža Vladimir" # todo: NEW TRANSLATION
+ tatar_tax_collector_plural: "Veľkí kniežatá Vladimiru" # todo: NEW TRANSLATION
+ tatar_tax_collector_desc: "$tatar_tax_collector$ má šťastnú úlohu vyberať tribut pre $tatar_overlord$ od svojich rovesníkov. Hoci je členom $tatar_yoke$ rovnako ako ostatní, jeho pozícia mu dáva značnú moc obohatiť sa." # todo: NEW TRANSLATION
+ archbishop_elector: "Arcibiskup-kurfiřt" # todo: NEW TRANSLATION
+ archbishop_elector_plural: "Arcibiskupi-kurfiřti" # todo: NEW TRANSLATION
+ archbishop_elector_desc: "$archbishop_elector$ je [special_status|e] [GetUniqueInternationalOrganization('hre').GetName]. Sú schopní voliť nasledujúceho [GetUniqueInternationalOrganization('hre').GetLeaderTitle]. Iba štát s [ShowGovernmentTypeName('theocracy')] [government_type|e] môže prevziať tento [special_status]." # todo: NEW TRANSLATION
+ hre_max_elector: "Maximálny počet kurfiřtov" # todo: NEW TRANSLATION
+ hre_max_archbishop_elector: "Maximálny počet arcibiskup-kurfiřtov" # todo: NEW TRANSLATION
+ ELECTORS: "Kurfiřti" # todo: NEW TRANSLATION
+ hre_rank_upgrade_duchy: "Zmeniť hodnosť cez $elevate_county$ [diplomatic_action|e]" # todo: NEW TRANSLATION
+ LAWS: "Zákony" # todo: NEW TRANSLATION
+ UNION_POLICIES: "Zásady únie" # todo: NEW TRANSLATION
+ UNION_LAWS_TITLE: "Centralizácia vs. Federalizácia" # todo: NEW TRANSLATION
+ UNION_LAWS_DESC: "Niektoré [laws|e] [InternationalOrganizationsView.GetInternationalOrganization.GetNameWithNoTooltip] majú [policies|e], ktoré majú cieľ zcentralizovať jeho mnohé územia do jedného politického útvaru, zatiaľ čo iné podporujú ochranu suverenity jednotlivých členov Únie. Len najsilnejší a diplomaticky najobratnejší člen Únie môže prevziať úlohu [ShowSpecialStatusName('senior_partner')] a zcentralizovať Úniu, zatiaľ čo #italic každý#! člen môže navrhovať federálne politiky na udržanie status quo." # todo: NEW TRANSLATION
+ MILITARY_POLICY: "Vojenská politika" # todo: NEW TRANSLATION
+ TEACHINGS: "Učenia" # todo: NEW TRANSLATION
+ AGENDA: "Program" # todo: NEW TRANSLATION
+ TENETS: "Zásady" # todo: NEW TRANSLATION
+ DOCTRINES: "Doktríny" # todo: NEW TRANSLATION
+ RESOLUTIONS: "Uznesenia" # todo: NEW TRANSLATION
+ CURRENT_LAWS: "Aktuálne zákony" # todo: NEW TRANSLATION
+ CANDIDATES: "Kandidáti" # todo: NEW TRANSLATION
+ IMPERIAL_DIET: "Cisársky snem" # todo: NEW TRANSLATION
+ IMPERIAL_LAWS: "Cisárske zákony" # todo: NEW TRANSLATION
+ IMPERIAL_LAWS_TITLE: "Moc [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderTitle]" # todo: NEW TRANSLATION
+ IMPERIAL_LAWS_DESC: "Niektoré [policies|e] [InternationalOrganizationsView.GetInternationalOrganization.GetNameWithNoTooltip] zvyšujú politickú moc a vplyv [hre_emperor|e]. Dosiahnutie určitých úrovní týchto politík umožní [hre_emperor] začať centralizovať organizáciu do zjednotenej [ShowFormableCountryName('HRE_f')].\n\nAktuálny počet politík, ktoré prospievajú [hre_emperor]: [InternationalOrganizationsView.GetInternationalOrganization.GetModifierValue('hre_emperor_comfort_policies_counter')|Y0]" # todo: NEW TRANSLATION
+ IMPERIAL_LAWS_GOLDEN_BULL_DESC: "[InternationalOrganizationsView.GetInternationalOrganization.GetNameWithNoTooltip] je v stave administratívnej anarchie. [laws|s] a [policies|e] na úpravu a zmenu povahy Ríše nemožno navrhovať, kým nebude kódifikovaný [ShowLawName('golden_bull')]." # todo: NEW TRANSLATION
+ HRE_EMPROR_TITLE: "Práva a povinnosti $emperor$" # todo: NEW TRANSLATION
+ HRE_EMPROR_DESC: "[InternationalOrganizationsView.GetInternationalOrganization.GetNameWithNoTooltip] vedie [ShowSpecialStatusName('emperor')]. Je povinnosťou [ShowSpecialStatusNameWithNoTooltip('emperor')] chrániť členov Ríše pred vonkajšími hrozbami, udržiavať vnútorný pokoj a stabilitu a zabezpečiť náboženskú jednotu v Ríši.\n\nVýmenou získa [ShowSpecialStatusNameWithNoTooltip('emperor')] #Y $imperial_authority$#!, ktoré sa používajú na navrhovanie [laws|e] a [parliament_issues|e] ako aj ďalších bonusov na ich podporu." # todo: NEW TRANSLATION
+ HRE_EMPEROR_ACTIONS_TITLE: "[ShowSpecialStatusNameWithNoTooltip('emperor')] získa prístup k nasledujúcemu:" # todo: NEW TRANSLATION
+ HRE_EMPEROR_ACTIONS_LIST: "[ShowCountryInteractionName('enforce_landfriede')]\n [ShowCountryInteractionName('enforce_religious_unity')]\n [ShowCountryInteractionName('demand_unlawful_territory')]\n [ShowCountryInteractionName('ask_to_vote_for_me_as_emperor')]\n [ShowCountryInteractionName('bolster_imperial_army')]\n\n[ShowCasusBelliName('cb_imperial_ban')]" # todo: NEW TRANSLATION
+ HRE_EMPEROR_CONDITIONS_TITLE: "Len krajiny, ktoré spĺňajú nasledujúce podmienky, sa môžu stať [ShowSpecialStatusNameWithNoTooltip('emperor')]:" # todo: NEW TRANSLATION
+ HRE_ACTIONS: "Cisárske akcie" # todo: NEW TRANSLATION
+ CELESTIAL_LAWS: "Nebeské zákony" # todo: NEW TRANSLATION
+ HRE_ELECTORS_COUNT: "$game_concept_elector_desc$\n\n[GetUniqueInternationalOrganization('hre').GetName] má v súčasnosti #Y [GetDataModelSize(InternationalOrganizationsView.GetInternationalOrganization.GetCountriesWithSpecialStatusFromKey('elector'))]#! [ShowSpecialStatusName('elector')] a #Y [GetDataModelSize(InternationalOrganizationsView.GetInternationalOrganization.GetCountriesWithSpecialStatusFromKey('archbishop_elector'))]#! [ShowSpecialStatusName('archbishop_elector')]." # todo: NEW TRANSLATION
+ NON_HRE_ELECTORS_COUNT: "$game_concept_elector_desc$\n\n[international_organization|e] má v súčasnosti #Y [GetDataModelSize(InternationalOrganizationsView.GetInternationalOrganization.GetCountriesWithSpecialStatusFromKey('elector'))]#! [ShowSpecialStatusName('elector')]." # todo: NEW TRANSLATION
+ IMPERIAL_RELIGION_DESC: "[imperial_religion] [InternationalOrganizationsView.GetInternationalOrganization.GetName] je [InternationalOrganizationsView.GetInternationalOrganization.MakeScope.GetVariable('hre_imperial_religion').GetReligion.GetName]. $IMPERIAL_RELIGION_TT$" # todo: NEW TRANSLATION
+ IMPERIAL_RELIGION_GROUP_DESC: "[imperial_religion] [InternationalOrganizationsView.GetInternationalOrganization.GetName] je [InternationalOrganizationsView.GetInternationalOrganization.MakeScope.GetVariable('hre_imperial_religion_group').GetReligionGroup.GetName]. $IMPERIAL_RELIGION_TT$" # todo: NEW TRANSLATION
+ IMPERIAL_RELIGION_TT: "Len krajiny, ktoré nasledujú [imperial_religion], sú oprávnené kandidovať na [hre_emperor|e]." # todo: NEW TRANSLATION
+ free_city: "Slobodné ríšske mesto" # todo: NEW TRANSLATION
+ free_city_plural: "Slobodné ríšske mestá" # todo: NEW TRANSLATION
+ free_imperial_cities: "Slobodné ríšske mestá" # todo: NEW TRANSLATION
+ free_city_desc: "Ide o malé politické útvary založené okolo jedného, početného mesta. Chránené [GetUniqueInternationalOrganization('hre').GetLeaderTitle], tieto mestá slúžia ako administratívne centrá v rámci [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ imperial_peasant_republic: "Ríšska sedliacka republika" # todo: NEW TRANSLATION
+ imperial_peasant_republic_plural: "Ríšske sedliacke republiky" # todo: NEW TRANSLATION
+ imperial_peasant_republic_desc: "Členovia, ktorí majú [ShowGovernmentReformName('peasant_republic_reform')] alebo jeho variant, môžu nadobudnúť [special_status|e] $imperial_peasant_republic$." # todo: NEW TRANSLATION
+ imperial_prelate: "Ríšsky prelát" # todo: NEW TRANSLATION
+ imperial_prelate_plural: "Ríšski prelátovia" # todo: NEW TRANSLATION
+ imperial_prelate_desc: "$imperial_prelate$ je [special_status|e] vyhradený pre všetkých členov, ktorí sú [ShowGovernmentTypeName('theocracy')] bez toho, aby boli [ShowSpecialStatusName('archbishop_elector')]." # todo: NEW TRANSLATION
+ imperial_prince: "Ríšske knieža" # todo: NEW TRANSLATION
+ imperial_prince_plural: "Ríšski kniežatá" # todo: NEW TRANSLATION
+ imperial_prince_desc: "$imperial_prince_plural$ sú všetci [ShowGovernmentTypeName('monarchy')] [members|e] v rámci [GetUniqueInternationalOrganization('hre').GetName], ktorí nemajú žiadny iný [special_status|e]." # todo: NEW TRANSLATION
+ imperial_authority: "Ríšska autorita" # todo: NEW TRANSLATION
+ imperial_authority_desc: "Je to miera autority [GetUniqueInternationalOrganization('hre').GetLeaderTitle] v [GetUniqueInternationalOrganization('hre').GetName] a používa sa na uplatňovanie cisárskych zákonov." # todo: NEW TRANSLATION
+ imperial_ban_allowed: "Povolený ríšsky zákaz" # todo: NEW TRANSLATION
+ IMPERIAL_AUTHORITY_DISPLAY: "$VAL$" # todo: NEW TRANSLATION
+ HRE_ELECTION_NOT_A_MEMBER: "Nie je členom Ríše" # todo: NEW TRANSLATION
+ HRE_DOMINANT_NATION: "Dominantná krajina v Ríši ([total_population|e] above 1 Million)" # todo: NEW TRANSLATION
+ HRE_LARGE_NATION: "Veľká krajina v Ríši ([total_population|e] above 500 Thousand)" # todo: NEW TRANSLATION
+ HRE_SMALL_NATION: "Malá krajina v Ríši ([total_population|e] below 250 Thousand)" # todo: NEW TRANSLATION
+ HRE_TINY_NATION: "Drobná krajina v Ríši ([total_population|e] below 100 Thousand)" # todo: NEW TRANSLATION
+ IS_OUR_OVERLORD: "Je naším [overlord|e]" # todo: NEW TRANSLATION
+ IS_OUR_SUBJECT: "Je naším [subject|e]" # todo: NEW TRANSLATION
+ HRE_HAS_ANOTHER_ELECTOR_SUBJUGATED: "Podrobil iného [elector|e]" # todo: NEW TRANSLATION
+ HRE_NON_MONARCHY: "Nie je [ShowGovernmentTypeName('monarchy')]" # todo: NEW TRANSLATION
+ HRE_NON_REPUBLIC: "Nie je [ShowGovernmentTypeName('republic')]" # todo: NEW TRANSLATION
+ HRE_NON_THEOCRACY: "Nie je [ShowGovernmentTypeName('theocracy')]" # todo: NEW TRANSLATION
+ HRE_ELECTION_GERMAN_COURT_LANGUAGE: "Nemecký dvorový jazyk" # todo: NEW TRANSLATION
+ HRE_ELECTION_REASON_TO_ELECT: "[vote.GetAdjective] [ShowModifierTypeName('reasons_to_elect')]" # todo: NEW TRANSLATION
+ IO_HRE_VOTE_DESC: "[Policy.GetDesc]\n\n[Policy.GetEffectTextWithContext(InternationalOrganizationsView.GetInternationalOrganization)]" # todo: NEW TRANSLATION
+ HRE_VOTE_FOR_POLICY: "Hlasovať za [Policy.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ HUMAN_VOTE: "Kto vie, čo sa deje v mysli človeka?" # todo: NEW TRANSLATION
+ VOTE_COUNTRY: "Hlasovať za krajinu" # todo: NEW TRANSLATION
+ VOTE_COUNTRY_TOOLTIP: "Kliknite, aby ste rozhodli, za ktorú krajinu hlasovať" # todo: NEW TRANSLATION
+ FAVOR_VOTES: "Hlasy v prospech" # todo: NEW TRANSLATION
+ VOTE_OF_COUNTRY: "Hlas [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ VARIABLE_MONTHLY_CHANGE: "$VARIABLE|Y$ sa zmení o $AMOUNT$ každý mesiac:\n$DESC$" # todo: NEW TRANSLATION
+ IO_VARIABLE_VALUE: "$VARIABLE|Y$ je momentálne $AMOUNT$" # todo: NEW TRANSLATION
+ IO_VARIABLE_TITLE: "Hodnota $VARIABLE_NAME$ je $TEXT|V$." # todo: NEW TRANSLATION
+ IO_VARIABLE_VALUE_TYPE_TITLE: "Množstvo $VARIABLE_NAME$ je $TEXT|V$." # todo: NEW TRANSLATION
+ IO_VARIABLE_MONTHLY_CHANGE_TITLE: "Mesačná zmena [InternationalOrganizationTypeVariable.GetMonthlyChangeValue(InternationalOrganizationsView.GetInternationalOrganization)|+=2] z dôvodu:" # todo: NEW TRANSLATION
+ VARIABLE_CHANGE_FORMAT: "$KEY$: $VALUE|+=2$" # todo: NEW TRANSLATION
+ MULTIPLIER_CHANGE_FORMAT: "$KEY$ násobí všetko: $VALUE|+%2$" # todo: NEW TRANSLATION
+ PERCENTAGE_CHANGE_FORMAT: "$KEY$: $VALUE|+2%$" # todo: NEW TRANSLATION
+ INTERNAL_PEACE: "Pokoj medzi všetkými členmi" # todo: NEW TRANSLATION
+ NUMBER_OF_PRINCES: "Počet kniežat" # todo: NEW TRANSLATION
+ NUMBER_OF_FREE_CITIES: "Počet slobodných ríšskych miest" # todo: NEW TRANSLATION
+ LACK_OF_ELECTORS: "Nedostatok elektorov" # todo: NEW TRANSLATION
+ LACK_OF_ARCHBISHOP_ELECTORS: "Nedostatok arcibiskupských elektorov" # todo: NEW TRANSLATION
+ VASSALISED_ELECTORS: "Vazalizovaní elektorovia" # todo: NEW TRANSLATION
+ VASSALISED_ARCHBISHOP_ELECTORS: "Vazalizovaní arcibiskupskí elektorovia" # todo: NEW TRANSLATION
+ SUBJUGATED_HRE_MEMBER: "Členovia podrobení cudzími mocnosťami" # todo: NEW TRANSLATION
+ HERETIC_PRINCES: "Kacírski kniežatá" # todo: NEW TRANSLATION
+ FOREIGN_PROVINCES_GERMANY: "Územia vlastnené nečlenmi Ríše v Nemecku" # todo: NEW TRANSLATION
+ FOREIGN_PROVINCES_REST: "Územia vlastnené nečlenmi Ríše mimo Nemecka" # todo: NEW TRANSLATION
+ IMPERIAL_REGENCY: "Ríšske interregnum" # todo: NEW TRANSLATION
+ LONG_IMPERIAL_REGENCY: "Dlhé $IMPERIAL_REGENCY$" # todo: NEW TRANSLATION
+ IA_DYNASTIC_POWER: "[GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] [dynastic_power|e]" # todo: NEW TRANSLATION
+ EMPEROR_ABILITIES: "[GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] [ability|e]" # todo: NEW TRANSLATION
+ HRE_LEADER_MALE: "Sväto-rímsky cisár" # todo: NEW TRANSLATION
+ HRE_LEADER_FEMALE: "Sväto-rímska cisárovná" # todo: NEW TRANSLATION
+ MEMBERS_SCROLL_LIST_EMPTY: "Žiadni členovia nevyhovujú tomuto vyhľadávaciemu kritériu" # todo: NEW TRANSLATION
+ LATERALVIEW_IO_ENTRY_NAME: "$TYPE$" # todo: NEW TRANSLATION
+ FROM_MODIFIERS: "Z modifikátorov" # todo: NEW TRANSLATION
+ ADDITIONAL_MULTIPLIER: "Dodatočný násobiteľ" # todo: NEW TRANSLATION
+ MIDDLE_KINGDOM_MEMBERS_AT_WAR: "Členovia vo vnútornej vojne" # todo: NEW TRANSLATION
+ ACTIVE_DECREES: "Aktívne dekréty" # todo: NEW TRANSLATION
+ monthly_celestial_authority: "Mesačný $celestial_authority$" # todo: NEW TRANSLATION
+ IO_MONTHLY_CELESTIAL_AUTHORITY: "Základ [ShowModifierTypeNameWithBreakdown('monthly_celestial_authority', GetUniqueInternationalOrganization('middle_kingdom').GetLeaderCountry.Self)]" # todo: NEW TRANSLATION
+ OPINION_OF_CHINESE_EMPEROR: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] postoj k $CHI$" # todo: NEW TRANSLATION
+ middle_kingdom_tribute: "Systém tributov" # todo: NEW TRANSLATION
+ middle_kingdom_tribute_desc: "$middle_kingdom$ je už dlho považované za kultúrne centrum sveta. Ako také susedné krajiny posielajú delegácie, aby ponúkli tribut a podrobili sa autorite $chinese_emperor$. Výmenou dostávajú dary presahujúce hodnotu tributov, ako aj uznanie a legitimizáciu svojho postavenia ako vládcov." # todo: NEW TRANSLATION
+ middle_kingdom_tribute_price: "Tribút Stredného kráľovstva" # todo: NEW TRANSLATION
+ CURRENT_EXPEDITION: "Expedície" # todo: NEW TRANSLATION
+ SUBTAB_IO_MIDDLE_KINGDOM_EXPEDITION_TT_TEXT: "Ukazuje informácie o aktuálnej pokladovej expedícii." # todo: NEW TRANSLATION
+ SUBTAB_IO_MIDDLE_KINGDOM_EXPEDITION_TT_FLAVOR_TEXT: "\"Prešli sme viac než sto tisíc li nesmiernych vodných priestorov a v oceáne sme zazreli obrovské vlny ako hory dvíhajúce sa k oblohe.\"" # todo: NEW TRANSLATION
+ VOYAGE_CARGO: "Náklad plavby" # todo: NEW TRANSLATION
+ GIFTS_RECEIVED: "Dostané dary" # todo: NEW TRANSLATION
+ TREASURE_EXPLORATION_PROGRESS: "Momentálne v [GetUniqueInternationalOrganization('middle_kingdom').GetLeaderCountry.MakeScope.GetVariable('chinese_treasure_fleet_location').GetLocation.GetName]" # todo: NEW TRANSLATION
+ COUNTRIES_VISITED: "Navštívené krajiny" # todo: NEW TRANSLATION
+ NO_CURRENT_EXPEDITION: "Momentálne nie je žiadna expedícia aktívna" # todo: NEW TRANSLATION
+ EXPEDITION_HOW_TO: "Môže byť spustená cez [ShowGenericActionName('start_a_treasure_voyage')] [action|e] v paneli $OVERVIEW$." # todo: NEW TRANSLATION
+ EXPEDITIONS_INFO: "Expedície budú mať priradenú [character|e] a hodnotu v [gold|e] a budú cestovať do zvoleného cieľa [location|e], pričom na ceste komunikujú s krajinami.\nVýhody expedície sa udelia pri jej návrate.\nExpedícia tiež môže [discover|e] lokality pozdĺž svojej trasy." # todo: NEW TRANSLATION
+ POOR_RELATIONS: "Zlé vzťahy" # todo: NEW TRANSLATION
+ EMPEROR_DIP_REPUTATION: "Diplomatická reputácia $CHI$" # todo: NEW TRANSLATION
+ OUTSIDE_OF_DIP_RANGE: "Mimo [diplomatic_range|e]" # todo: NEW TRANSLATION
+ DISTANCE_FROM_CHINA: "Vzdialenosť od Číny" # todo: NEW TRANSLATION
+ ECONOMIC_SIZE: "Veľkosť ekonomiky" # todo: NEW TRANSLATION
+ NOT_SUBJECT_OF_EMPEROR: "Nie je poddaným $CHI$" # todo: NEW TRANSLATION
+ WE_EXPERIENCE_BANKRUPTCY: "$CHI$ je [bankrupt|e]" # todo: NEW TRANSLATION
+ CURRENT_CELESTIAL_AUTHORITY: "Aktuálny $celestial_authority$" # todo: NEW TRANSLATION
+ PAYMENT_TOOLTIP_GENERIC: "Platba je vykonaná subjektmi ([countries|e] a/alebo [estates|e]) iným subjektom každý mesiac." # todo: NEW TRANSLATION
+ PAYERS: "Platiaci" # todo: NEW TRANSLATION
+ PAYEES: "Príjemcovia" # todo: NEW TRANSLATION
+ PAYER: "Platiteľ" # todo: NEW TRANSLATION
+ PAYEE: "Príjemca" # todo: NEW TRANSLATION
+ PAYMENT: "Platba" # todo: NEW TRANSLATION
+ PROPORTION: "Pomer" # todo: NEW TRANSLATION
+ IO_PAYMENTS: "[InternationalOrganization.GetNameWithNoTooltip] platby" # todo: NEW TRANSLATION
+ IO_PAYMENTS_DESC: "V tejto organizácii sa vykonávajú nasledujúce platby:" # todo: NEW TRANSLATION
+ IO_PAYMENT_DESC: "Každý mesiac sa vykonajú nasledujúce transakcie:" # todo: NEW TRANSLATION
+ IO_PAYMENT_SPECIFIC: "$PAYMENT_NAME$ platby" # todo: NEW TRANSLATION
+ imperial_gold_contribution_desc: "Príspevky v [gold|e] od rôznych členov [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ imperial_contribution: "Ríšsky príspevok" # todo: NEW TRANSLATION
+ imperial_contribution_desc: "$imperial_gold_contribution_desc$ Zlato sa priamo prevedie súčasnému [hre_emperor|e], alebo predchádzajúcemu, ak je aktívne [regency|e]." # todo: NEW TRANSLATION
+ imperial_contribution_price: "$imperial_contribution$" # todo: NEW TRANSLATION
+ imperial_treasury_contribution: "Príspevok do ríšskej pokladnice" # todo: NEW TRANSLATION
+ imperial_treasury_contribution_desc: "$imperial_gold_contribution_desc$ Zlato sa ukladá v pokladnici [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip] na použitie pri cisárskych [country_interactions|e]." # todo: NEW TRANSLATION
+ imperial_treasury_contribution_price: "$imperial_treasury_contribution$" # todo: NEW TRANSLATION
+ imperial_army_contribution: "Príspevok do ríšskej armády" # todo: NEW TRANSLATION
+ imperial_army_contribution_desc: "Príspevok v [manpower|e] od rôznych členov [GetUniqueInternationalOrganization('hre').GetName]. [ShowLawName('military_contribution')] určuje, kto a koľko vojakov prispeje do armády [hre_emperor|e]." # todo: NEW TRANSLATION
+ imperial_army_contribution_price: "$imperial_army_contribution$" # todo: NEW TRANSLATION
+ union_contribution: "Príspevok Únie" # todo: NEW TRANSLATION
+ union_contribution_desc: "Každý člen [GetInternationalOrganizationType('union').GetName] je povinný prispievať do osobnej pokladnice [ShowSpecialStatusName('senior_partner')]." # todo: NEW TRANSLATION
+ union_contribution_price: "$union_contribution$" # todo: NEW TRANSLATION
+ tithe: "Desiatok" # todo: NEW TRANSLATION
+ tithe_desc: "Platba vykonaná [estates|e] vedúcemu [GetUniqueInternationalOrganization('catholic_church').GetName]." # todo: NEW TRANSLATION
+ tithe_price: "$tithe$" # todo: NEW TRANSLATION
+ papal_authority: "Pápežská autorita" # todo: NEW TRANSLATION
+ catholic_pope: "Pápež" # todo: NEW TRANSLATION
+ CATHOLIC_CHURCH_LEADER_MALE: "$catholic_pope$" # todo: NEW TRANSLATION
+ CATHOLIC_CHURCH_LEADER_FEMALE: "$catholic_pope$" # todo: NEW TRANSLATION
+ CATHOLIC_CHURCH_CURIA_AND_CARDINAL: "[MemberTypeItem.GetMembersAmount] #L [Localize('game_concept_curia')]#! and [GetDataModelSize(InternationalOrganizationsView.GetInternationalOrganization.GetReligion.GetCardinals)] #L [Localize('game_concept_cardinals')]#!" # todo: NEW TRANSLATION
+ CATHOLIC_CHURCH_CURIA_MEMBER: "[Country.GetName] je v [curia|e] a má [GetDataModelSize(Country.GetCardinals)] [cardinal_s|e]" # todo: NEW TRANSLATION
+ CURIA_BREAKDOWN_TOOLTIP: "#T [Localize('game_concept_curia')] v [InternationalOrganization.GetNameWithNoTooltip]#!\n[InternationalOrganization.GetName] má nasledujúcich [curia|e] členov:\n[member|e]: [cardinals|e]" # todo: NEW TRANSLATION
+ CURIA_BREAKDOWN_TOOLTIP_ENTRY: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y]: #TOOLTIP:$BREAKDOWN_TAG$ $NUMBER|L$#!" # todo: NEW TRANSLATION
+ CURIA_HEADER: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] kreslá [cardinals|e]:" # todo: NEW TRANSLATION
+ CURIA_ENTRY: "[LOCATION.GetName]" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_SUPPORT_TITLE: "[InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentIssueSupport|2%] podpora v [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName]" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_SUPPORT_TT: "Momentálne je [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentIssueSupport|2%G] podpora pre tento zámer v [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName]." # todo: NEW TRANSLATION
+ IO_PARLIAMENT_AGENDA_TT: "#T [ActiveParliamentAgenda.GetNameWithNoTooltip]#! [InternationalOrganizationsView.GetInternationalOrganization.GetPotentialVoteSupportOfSpecialStatusInfo(ActiveParliamentAgenda.GetSpecialStatus)]." # todo: NEW TRANSLATION
+ Parliament_IO_TT_AgendaSupport_TITLE: "[InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] program" # todo: NEW TRANSLATION
+ Parliament_IO_TT_AgendaSupport_TEXT: "Množstvo podpory získané prijatím programu: [ActiveParliamentAgenda.GetSupportInfo(InternationalOrganizationsView.GetInternationalOrganization)]" # todo: NEW TRANSLATION
+ international_organization_flavor_parliament: "Parlament" # todo: NEW TRANSLATION
+ no_organization_parliament: "Žiadny parlament organizácie" # todo: NEW TRANSLATION
+ no_organization_parliament_desc: "$no_parliament_desc$" # todo: NEW TRANSLATION
+ union_royal_assembly: "Kráľovské zhromaždenie" # todo: NEW TRANSLATION
+ union_royal_assembly_desc: "$union_royal_assembly$ je pomerne primitívna rada pre celú [GetInternationalOrganizationType('union').GetName]. [estates|e] členov sú do zhromaždenia povolané, aby diskutovali a rokovali o uplatnení centralizujúcich [laws|e]." # todo: NEW TRANSLATION
+ hre_court_assembly: "Dvorové zhromaždenie" # todo: NEW TRANSLATION
+ hre_court_assembly_desc: "Od starých čias [GetCharacter('ogk_otto_liudolfinger').GetName] je $hre_court_assembly$ starobylý a primitívny štýl zhromaždenia v rámci [GetUniqueInternationalOrganization('hre').GetName]. V dôsledku nedostatku kodifikovaných procesov je diskusia o uplatnení zákonov s [GetUniqueInternationalOrganization('hre').GetLeaderTitle] menej efektívna, než by mohla byť.\n\n$BULLET_WITH_TAB$ Veľmi zvyšuje hlasovaciu silu pre [ShowSpecialStatusName('emperor')], [ShowSpecialStatusNamePlural('elector')], a [ShowSpecialStatusNamePlural('archbishop_elector')]\n$BULLET_WITH_TAB$ Výrazne znižuje vplyv [ShowSpecialStatusNamePlural('free_city')], [ShowSpecialStatusNamePlural('imperial_prelate')], [ShowSpecialStatusNamePlural('primas_germaniae')], a [ShowSpecialStatusNamePlural('legatus_natus')]\n$BULLET_WITH_TAB$ [ShowSpecialStatusNamePlural('imperial_peasant_republic')] majú štandardnú silu" # todo: NEW TRANSLATION
+ hre_early_imperial_diet: "Skorý cisársky snem" # todo: NEW TRANSLATION
+ hre_early_imperial_diet_desc: "Najskoršia forma [ShowLawName('imperial_diet_law')] predstavuje tradičný poriadok [GetInternationalOrganizationType('hre').GetName]. Iba [ShowSpecialStatusNamePlural('elector')], [ShowSpecialStatusNamePlural('archbishop_elector')], a [ShowSpecialStatusNamePlural('imperial_prince')] sa môžu zúčastňovať, pričom [ShowSpecialStatusNamePlural('free_city')] a nižšie cirkevné subjekty sú vylúčené z legislatívneho procesu.\n\n$BULLET_WITH_TAB$ Silná hlasovacia sila pre [ShowSpecialStatusNamePlural('emperor')], [ShowSpecialStatusNamePlural('elector')], [ShowSpecialStatusNamePlural('archbishop_elector')], a [ShowSpecialStatusNamePlural('imperial_prince')]\n$BULLET_WITH_TAB$ [ShowSpecialStatusNamePlural('free_city')] a [ShowSpecialStatusNamePlural('imperial_peasant_republic')] nemajú žiadnu hlasovaciu silu\n$BULLET_WITH_TAB$ Menšie cirkevné úlohy ako [ShowSpecialStatusNamePlural('imperial_prelate')], [ShowSpecialStatusNamePlural('primas_germaniae')], a [ShowSpecialStatusNamePlural('legatus_natus')] majú obmedzenú moc" # todo: NEW TRANSLATION
+ hre_bi_camerial_imperial_diet: "Dvojkomorový cisársky snem" # todo: NEW TRANSLATION
+ hre_bi_camerial_imperial_diet_desc: "[ShowParliamentTypeName('hre_bi_camerial_imperial_diet')] rozširuje zastúpenie tým, že udeľuje právo hlasovať cirkevným hodnostárom aj kniežacím vládcov, vytvárajúc dve komory v rámci snemu.\n\n$BULLET_WITH_TAB$ Štandardná sila pre [ShowSpecialStatusNamePlural('emperor')], [ShowSpecialStatusNamePlural('elector')], [ShowSpecialStatusNamePlural('archbishop_elector')], a [ShowSpecialStatusNamePlural('imperial_prince')]\n$BULLET_WITH_TAB$ [ShowSpecialStatusNamePlural('imperial_prelate')] získavajú významný vplyv\n$BULLET_WITH_TAB$ [ShowSpecialStatusNamePlural('free_city')] a [ShowSpecialStatusNamePlural('imperial_peasant_republic')] stále nemajú zastúpenie" # todo: NEW TRANSLATION
+ hre_tri_camerial_imperial_diet: "Trojkomorový cisársky snem" # todo: NEW TRANSLATION
+ hre_tri_camerial_imperial_diet_desc: "S [ShowParliamentTypeName('hre_tri_camerial_imperial_diet')] [ShowSpecialStatusNamePlural('free_city')] konečne získavajú rozhodujúci hlas. Cisársky snem teraz pozostáva z troch komôr — cirkevnej, kniežacej a občianskej — čo odráža inkluzívnejšiu rovnováhu moci.\n\n$BULLET_WITH_TAB$ Vyvážená moc medzi [ShowSpecialStatusName('emperor')], [ShowSpecialStatusNamePlural('elector')], [ShowSpecialStatusNamePlural('archbishop_elector')], [ShowSpecialStatusNamePlural('imperial_prince')], [ShowSpecialStatusNamePlural('free_city')], a menšími teokratickými úlohami\n$BULLET_WITH_TAB$ [ShowSpecialStatusNamePlural('imperial_peasant_republic')] tu získavajú najväčší vplyv\n$BULLET_WITH_TAB$ Najinkluzívnejšia forma snemu" # todo: NEW TRANSLATION
+ call_organization_parliament: "Zvolať parlament" # todo: NEW TRANSLATION
+ call_organization_parliament_desc: "Týmto sa zvolá zasadnutie parlamentu [international_organization|e] v snahe získať podporu na vyriešenie [parliament_issue|e], zmenu [policies|e] v [laws|e], vytvorenie [casus_belli|e] a zvýšenie [taxes|e] alebo väčších [army_levies|e] a [navy_levies|e]." # todo: NEW TRANSLATION
+ union_call_organization_parliament: "Zvolať parlament Únie" # todo: NEW TRANSLATION
+ union_call_organization_parliament_desc: "Týmto sa zvolá kolektívny parlament [GetInternationalOrganizationType('union').GetName] v snahe získať podporu na vyriešenie nekonzistentnej [union_integration_level|e]." # todo: NEW TRANSLATION
+ union_call_organization_parliament_tt: "[THIS.GetInternationalOrganization.GetName] má aspoň #Y 1#! [union_integration_level|e]" # todo: NEW TRANSLATION
+ change_organization_parliament_type: "Zmeniť typ parlamentu organizácie" # todo: NEW TRANSLATION
+ change_organization_parliament_type_header: "Zmeniť typ parlamentu organizácie" # todo: NEW TRANSLATION
+ change_organization_parliament_type_desc: "Týmto si môžete vybrať iný [parliament_type|e] pre [international_organization|e]." # todo: NEW TRANSLATION
+ vote_in_organization_parliament: "Hlasovať v parlamente organizácie" # todo: NEW TRANSLATION
+ vote_in_organization_parliament_header: "$vote_in_organization_parliament$" # todo: NEW TRANSLATION
+ vote_in_organization_parliament_desc: "V [international_organization|e] sa práve vedie debata v jeho [parliament|e]. Členské štáty môžu odovzdať svoj hlas, aby ovplyvnili výsledok [parliament_issue|e]." # todo: NEW TRANSLATION
+ vote_in_organization_parliament_tt: "Budeme hlasovať za alebo proti navrhovanému [parliament_issue|e]" # todo: NEW TRANSLATION
+ vote_in_organization_parliament_no_international_organization: "@trigger_no! Žiadna [international_organization|e] momentálne nevedie debatu" # todo: NEW TRANSLATION
+ vote_in_organization_parliament_no_policy_vote_tt: "Žiadny [law|e] sa momentálne neprejednáva, keďže hlasy sa neudeľujú cez [parliament|e]" # todo: NEW TRANSLATION
+ vote_for_organization_issue: "Odovzdať hlas za návrh" # todo: NEW TRANSLATION
+ vote_for_organization_issue_desc: "Odovzdáme hlas v [parliament|e] [international_organization|e] na podporu prijatia navrhovaného [parliament_issue|e]. Počet našich hlasov v tejto debate závisí od nášho najrelevantnejšieho [special_status|e] a [special_status_power|e], ktoré máme v [international_organization|e]." # todo: NEW TRANSLATION
+ vote_against_organization_issue: "Odovzdať hlas proti návrhu" # todo: NEW TRANSLATION
+ vote_against_organization_issue_desc: "Odovzdáme hlas v [parliament|e] [international_organization|e] proti prijatiu navrhovaného [parliament_issue|e]. Počet našich hlasov v tejto debate závisí od nášho najrelevantnejšieho [special_status|e] a [special_status_power|e], ktoré máme v [international_organization|e]." # todo: NEW TRANSLATION
+ PARLIAMENT_AGENDA_HOW: "Na prijatie je potrebné nasledujúce:\n$HOW$" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_AGENDA_ACCEPT_EFFECT_ON_TARGET: "Účinok prijatia na [SelectInteractionTargetView.GetCurrentParams.GetTargetObjectFromFlag('target').GetCountry.GetName]" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_AGENDA_BRIBE_EFFECT_ON_ACTOR: "Účinok úplatku na [Player.GetName]" # todo: NEW TRANSLATION
+ can_use_agenda_bribe_tt: "Môžeme použiť akýkoľvek [parliament_agenda|e] [ESTATE_TYPE.GetName] z [TARGET_COUNTRY.GetName] ako úplatok" # todo: NEW TRANSLATION
+ union_bribe: "Úplatok stavu" # todo: NEW TRANSLATION
+ union_bribe_desc: "Úplatíme cieľový [estate|e] [ShowSpecialStatusName('junior_partner')], aby podporil [ShowParliamentIssueTypeName('union_enforce_law_implementation')] [GetInternationalOrganizationType('union').GetName]. Náklady sa budú zvyšovať v závislosti od deficitu [union_integration_level_member|e] a [special_status_power|e] cieľovej krajiny." # todo: NEW TRANSLATION
+ union_bribe_nobility: "Úplatok šľachte" # todo: NEW TRANSLATION
+ union_bribe_clergy: "Úplatok kléru" # todo: NEW TRANSLATION
+ union_bribe_burghers: "Úplatok mešťanom" # todo: NEW TRANSLATION
+ parliament_bribe_no_country: "@trigger_no! Žiadna dostupná [country|e] na úplatok" # todo: NEW TRANSLATION
+ parliament_bribe_no_parliament_agenda: "@trigger_no! Žiadny dostupný [parliament_agenda|e], ktorý by sa dal použiť ako úplatok." # todo: NEW TRANSLATION
+ bribe_estate_tooltip: "Uplatíme cieľový [SCOPE.sEstate('estate').GetName] z [SCOPE.sCountry('target').GetName] dokončením [parliament_agenda|e] tohto stavu za cenu úplatku" # todo: NEW TRANSLATION
+ vote_for_policy_vote: "Hlasovať za politiku" # todo: NEW TRANSLATION
+ vote_for_policy_vote_desc: "Odovzdáme hlas v [international_organization|e] za prijatie navrhovanej [policy|e]." # todo: NEW TRANSLATION
+ vote_against_policy_vote: "Hlasovať proti politike" # todo: NEW TRANSLATION
+ vote_against_policy_vote_desc: "Odovzdáme hlas v [international_organization|e] proti prijatiu navrhovanej [policy|e]." # todo: NEW TRANSLATION
+ middle_kingdom: "Stredné kráľovstvo" # todo: NEW TRANSLATION
+ middle_kingdom_desc: "Stredné kráľovstvo označuje Čínu, ktorá je považovaná od staroveku za kultúrne centrum Ďalekého východu, a teda za stred — alebo stred sveta." # todo: NEW TRANSLATION
+ EMPEROR_CHINA_MALE: "$chinese_emperor$" # todo: NEW TRANSLATION
+ EMPEROR_CHINA_FEMALE: "$chinese_emperor$" # todo: NEW TRANSLATION
+ chinese_emperor: "Huángdì" # todo: NEW TRANSLATION
+ middle_kingdom_tribute_price_modifier: "Na základe celkového príjmu z obchodu a daní všetkých členov" # todo: NEW TRANSLATION
+ celestial_governor: "Nebeský guvernér" # todo: NEW TRANSLATION
+ celestial_governor_plural: "Nebeskí guvernéri" # todo: NEW TRANSLATION
+ celestial_governor_desc: "$celestial_governor$ je rozšírením vôle [GetUniqueInternationalOrganization('middle_kingdom').GetLeaderTitle] a spravuje územia mimo jadrového územia $china$." # todo: NEW TRANSLATION
+ celestial_authority: "Nebeská autorita" # todo: NEW TRANSLATION
+ celestial_authority_desc: "Je to miera autority [GetInternationalOrganizationType('middle_kingdom').GetName]." # todo: NEW TRANSLATION
+ celestial_authority_DISPLAY: "$VAL|0$" # todo: NEW TRANSLATION
+ NUMBER_OF_TRIBUTARIES: "Počet priateľských tributárnych štátov" # todo: NEW TRANSLATION
+ num_of_celestial_governors: "Nebeskí guvernéri" # todo: NEW TRANSLATION
+ num_of_celestial_governors_desc: "Počet krajín, ktoré môžu byť v [GetInternationalOrganizationType('middle_kingdom').GetName] menované za [ShowSpecialStatusName('celestial_governor')]." # todo: NEW TRANSLATION
+ NUM_OF_CELESTIAL_GOVERNORS_DISPLAY: "$VAL$" # todo: NEW TRANSLATION
+ BASE_DECAY: "Základné znižovanie" # todo: NEW TRANSLATION
+ crusade: "Krížová výprava" # todo: NEW TRANSLATION
+ crusade_desc: "Keď sa skupina rovnako zmýšľajúcich krajín spojí, aby sa zbavili pohanov, poháňaná pápežom." # todo: NEW TRANSLATION
+ crusade_leader: "Vodca križiackej výpravy" # todo: NEW TRANSLATION
+ crusade_hint_1: "Členovia križiackej výpravy nemôžu žiadať o samostatný mier, kým neuplynie 12 mesiacov." # todo: NEW TRANSLATION
+ jihad: "Džihád" # todo: NEW TRANSLATION
+ jihad_desc: "Keď sa skupina rovnako zmýšľajúcich krajín spojí, aby sa zbavili neveriacich." # todo: NEW TRANSLATION
+ jihad_leader: "Vodca džihádu" # todo: NEW TRANSLATION
+ jihad_hint_1: "Členovia džihádu nemôžu žiadať o samostatný mier, kým neuplynie 12 mesiacov." # todo: NEW TRANSLATION
+ religious_zeal: "Náboženské zanietenie" # todo: NEW TRANSLATION
+ religious_zeal_desc: "Zobrazuje zápal tých, ktorí sa pridávajú k [religious_war|e]." # todo: NEW TRANSLATION
+ RELIGIOUS_ZEAL_DISPLAY: "$VAL|%$" # todo: NEW TRANSLATION
+ NUMBER_OF_MEMBERS: "Počet zapojených krajín" # todo: NEW TRANSLATION
+ WANE_OVER_TIME: "Postupný pokles v čase" # todo: NEW TRANSLATION
+ OPINION_OF_TARGET: "[opinion|e] of [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
+ OPINION_OF_SUBJECT: "[opinion|e] of [SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.GetName]" # todo: NEW TRANSLATION
+ DIPLOMATIC_REPUTATION_OF_TARGET: "[diplomatic_reputation|e] of [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
+ DIPLOMATIC_REPUTATION_OF_SUBJECT: "[diplomatic_reputation|e] of [SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.GetName]" # todo: NEW TRANSLATION
+ TRUST_OF_TARGET: "[trust|e] of [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
+ TRUST_OF_SUBJECT: "[trust|e] of [SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.GetName]" # todo: NEW TRANSLATION
+ SAME_UNION_AS_LEADER_COUNTRY: "V [union|e] s [SCOPE.sInternationalOrganization('recipient').GetLeaderCountry.GetName]" # todo: NEW TRANSLATION
+ INT_SENIOR_PARTNER_TITLE: "Prednosť" # todo: NEW TRANSLATION
+ CONQUER_DESIRE: "Túžba dobyť cieľ" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_FLAVOR: "#F $TEXT$#!" # todo: NEW TRANSLATION
+ ORGITEM_HEADER: "#T $NAME$#!" # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_OPINION_THRESHOLD: "[COUNTRY.GetName] majú zlý [opinion|e] o [TARGET_COUNTRY.GetName] ($VALUE|Y$: required $REQUIRED|Y$) a v dôsledku toho sa celá organizácia rozpadla!" # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_TRUST_THRESHOLD: "[COUNTRY.GetName] nemajú dostatočnú [trust|e] v [TARGET_COUNTRY.GetName] ($VALUE|Y$: required $REQUIRED|Y$), aby organizácia mohla pokračovať." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_ABSORBED_INTO_ANOTHER_UNION: "Bola začlenená do iného [union|e]." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_DIVORCED_UNION: "[royal_marriage|e] v [union|e] nemohla trvať večne." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_ABSORBED_NO_LEADER: "@trigger_no! Nenašiel sa žiadny vhodný vodca, takže sa organizácia rozpadla." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_OPINION_THRESHOLD_PENDING: "$BULLET_WITH_TAB$[COUNTRY.GetName] majú zlý [opinion|e] o [TARGET_COUNTRY.GetName] ($VALUE|Y$: required $REQUIRED|Y$), čo hrozí rozvrátiť celú organizáciu." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_TRUST_THRESHOLD_PENDING: "$BULLET_WITH_TAB$[COUNTRY.GetName] nemajú dostatočnú [trust|e] v [TARGET_COUNTRY.GetName] ($VALUE|Y$: required $REQUIRED|Y$), aby organizácia mohla pokračovať oveľa dlhšie..." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_ABSORBED_INTO_ANOTHER_UNION_PENDING: "$BULLET_WITH_TAB$Je začleňovaná do iného [union|e]." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_DIVORCED_UNION_PENDING: "$BULLET_WITH_TAB$Je rozdeľovaná kvôli rozvodu." # todo: NEW TRANSLATION
+ IO_DISBAND_REASON_ABSORBED_NO_LEADER_PENDING: "@trigger_no! $BULLET_WITH_TAB$Nenašiel sa žiadny vhodný vodca, takže organizácia nemôže pokračovať." # todo: NEW TRANSLATION
+ IO_GOTO_LAW: "Zobraziť [InternationalOrganizationLawAlert.GetLawName] [law|e]" # todo: NEW TRANSLATION
+ high_kingship: "Vysoké kráľovstvo" # todo: NEW TRANSLATION
+ high_kingship_desc: "Ako moc v priebehu tisícročí rastie a klesá, občas sa silný vodca zhromaždí dostatok moci a podpory na to, aby si prisvojil titul Vysokého kráľa, veľkého nadvládcu keltských národov." # todo: NEW TRANSLATION
+ high_kingship_LEADER_MALE: "Vysoký kráľ" # todo: NEW TRANSLATION
+ high_kingship_LEADER_FEMALE: "Vysoká kráľovná" # todo: NEW TRANSLATION
+ high_king: "Vysoký kráľ" # todo: NEW TRANSLATION
+ high_king_desc: "$high_king$ je [international_organization_leader_short|e] [GetInternationalOrganizationType('high_kingship').GetName]. Môže existovať iba jeden $high_king$." # todo: NEW TRANSLATION
+ high_kingship_region: "[region|e]" # todo: NEW TRANSLATION
+ high_kingship_region_desc: "Územie, kde [GetInternationalOrganizationType('high_kingship').GetName] uplatňuje svoju autoritu." # todo: NEW TRANSLATION
+ high_kingship_leader_title: "Práva a povinnosti $high_king$" # todo: NEW TRANSLATION
+ high_kingship_leader_desc: "Povinnosťou [ShowSpecialStatusName('high_king')] je udržiavať keltské kmene zjednotené proti cudzej nadvláde.\n\nMôže existovať iba jeden vodca $high_kingship$, a jeho vláda môže byť spochybnená. Držanie takého kľúčového postu prináša veľkú prestíž, ale aj neustále nebezpečenstvo." # todo: NEW TRANSLATION
+ high_kingship_hint_1: "Vysoké kráľovstvo je zviazané prísahou vernosti medzi Tiarnas a Rí, prísahou, ktorá na írskej pôde nemôže byť porušená." # todo: NEW TRANSLATION
+ high_kingship_land_ownership: "$high_kingship$ územie" # todo: NEW TRANSLATION
+ high_kingship_land_ownership_desc: "Toto je [region|e], prirodzene späté s [GetInternationalOrganizationType('high_kingship').GetName]." # todo: NEW TRANSLATION
+ high_kingship_leadership: "Vysoké kráľovstvo" # todo: NEW TRANSLATION
+ high_kingship_leadership_desc: "Vysoké kráľovstvo." # todo: NEW TRANSLATION
+ OVER_HALF_OF_VOTES: "Jeden [candidate|e] má aspoň 50% hlasov." # todo: NEW TRANSLATION
+ HIGH_KINGSHIP_REGION_FORMAT: "" # todo: NEW TRANSLATION
+ HIGH_KINGSHIP_NAME: "Vysoké kráľovstvo [ROOT.GetVariable('high_kingship_region').GetRegion.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ JOIN_OFFENSIVE_WARS_ALWAYS_IF: "Členovia sa pripoja k útočným vojnám, ak" # todo: NEW TRANSLATION
+ JOIN_OFFENSIVE_WARS_AUTOCALL_IF: "Členovia budú automaticky povolaní, aby sa pridali k útočným vojnám, ak" # todo: NEW TRANSLATION
+ JOIN_OFFENSIVE_WARS_CANCALL_IF: "Členovia môžu byť povolaní, aby sa pridali k útočným vojnám, ak" # todo: NEW TRANSLATION
+ JOIN_OFFENSIVE_WARS_NEVER_IF: "Členovia sa nikdy nepripoja k útočným vojnám, ak" # todo: NEW TRANSLATION
+ JOIN_DEFENSIVE_WARS_ALWAYS_IF: "Členovia sa pripoja k obranným vojnám, ak" # todo: NEW TRANSLATION
+ JOIN_DEFENSIVE_WARS_AUTOCALL_IF: "Členovia budú automaticky povolaní do obranných vojen, ak" # todo: NEW TRANSLATION
+ JOIN_DEFENSIVE_WARS_CANCALL_IF: "Členovia môžu byť povolaní do obranných vojen, ak" # todo: NEW TRANSLATION
+ JOIN_DEFENSIVE_WARS_NEVER_IF: "Členovia sa nikdy nepripoja k obranným vojnám, ak" # todo: NEW TRANSLATION
+ HAS_MILITARY_ACCESS_IF: "Členovia majú [military_access|e] na území jeden druhého, ak" # todo: NEW TRANSLATION
+ HAS_FLEET_BASING_RIGHTS_IF: "Členovia majú [fleet_basing_rights|e] na území jeden druhého, ak" # todo: NEW TRANSLATION
+ CAN_DIPLOMATICALLY_ANNEX_IF: "Členovia sa môžu diplomaticky [annex|e] navzájom, ak" # todo: NEW TRANSLATION
+ HAS_LIMITED_DIPLOMACY_IF: "Členovia sú [diplomatically_limited|e], ak" # todo: NEW TRANSLATION
+ CAN_VOTE_IN_PARLIAMENT_IF: "Členovia môžu hlasovať v [parliament|e], ak" # todo: NEW TRANSLATION
+ MIN_YEARS_BEFORE_ANNEXATION: "Minimálny počet rokov v [international_organization|e], predtým než je povolené [annexation|e]: $AMOUNT|0Y$" # todo: NEW TRANSLATION
+ lordship_of_ireland: "Lordstvo Írska" # todo: NEW TRANSLATION
+ lordship_of_ireland_desc: "Anglická nadvláda nad Írskom je vo vratkom stave. Od pôvodného dobytia okolo roku 1170 sa priama kontrola Koruny zúžila na zvyškovú správu okolo Dublinu. Spolieha sa na verného miestodržiteľa a v súčasnosti vykonáva len nominálnu kontrolu nad svojimi čoraz vzdialenejšími vazalmi. Potomkovia dobyvateľských dobrodruhov — hoci boli bohato odmenení grófstvami a baróniami — sa v jazyku a kultúre stále viac podobajú svojim gaelickým predchodcom, zatiaľ čo iní úplne unikli anglickej kontrole." # todo: NEW TRANSLATION
+ lordship_of_ireland_lord_title: "Práva a povinnosti $lord$" # todo: NEW TRANSLATION
+ lordship_of_ireland_lord_desc: "Povinnosťou [ShowSpecialStatusName('lord_of_ireland')] je uplatňovať panstvo Koruny nad [ShowRegionName('ireland_region')].\n\nMôže existovať len jeden [ShowSpecialStatusNameWithNoTooltip('lord_of_ireland')], a jeho vláda spočíva na krehkých základoch. Preto držanie takého postu prináša kráľovskú prestíž, ale aj neustále výzvy." # todo: NEW TRANSLATION
+ lordship_of_ireland_hint_1: "Lordstvo Írska je založené na prísahu vernosti [GetCountry('PLE').GetName]. Len ako [ShowSpecialStatusName('absentee')] možno túto prísahu porušiť." # todo: NEW TRANSLATION
+ lord_of_ireland_join_tt: "@trigger_no!Vyžaduje pozvanie od [ShowSpecialStatusName('lord_of_ireland')]" # todo: NEW TRANSLATION
+ bestow_lieutenant_tt: "@trigger_no! [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] nemôže mať viac [countries|e] so [ShowSpecialStatusName('lieutenant')] [special_status|e]" # todo: NEW TRANSLATION
+ rescind_lieutenant_tt: "@trigger_no! V [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] nie sú žiadne [countries|e], ktorým by sa dal odobrať [ShowSpecialStatusName('lieutenant')] [special_status|e]" # todo: NEW TRANSLATION
+ generic_not_allowed_tt: "Nespĺňame kritériá pre túto [action|e]" # todo: NEW TRANSLATION
+ lordship_of_ireland_target_of_IO_tt: "@trigger_no![SCOPE.sCountry('recipient').GetName] je cieľom [GetInternationalOrganizationType('coalition').GetName], ktorého členom je krajina v [GetInternationalOrganization('lordship_of_ireland').GetName]." # todo: NEW TRANSLATION
+ lordship_of_ireland_LEADER_MALE: "Lord" # todo: NEW TRANSLATION
+ lordship_of_ireland_LEADER_FEMALE: "Lady" # todo: NEW TRANSLATION
+ lordship_of_ireland_land_ownership: "Írsky ostrov" # todo: NEW TRANSLATION
+ lordship_of_ireland_land_ownership_desc: "Toto je [region|e], prirodzene späté s Lordstvom Írska." # todo: NEW TRANSLATION
+ lordship_of_ireland_leadership: "Lordstvo" # todo: NEW TRANSLATION
+ lordship_of_ireland_leadership_desc: "Vedenie Lordstva Írska a jeho správa nad členmi." # todo: NEW TRANSLATION
+ LORDSHIP_OF_IRELAND_NAME: "Lordstvo Írska" # todo: NEW TRANSLATION
+ lieutenant: "Miestodržiteľ" # todo: NEW TRANSLATION
+ lieutenant_plural: "Miestodržitelia" # todo: NEW TRANSLATION
+ lieutenant_desc: "$lieutenant$ je dočasný, ale mocný [special_status|e] v [GetUniqueInternationalOrganization('lordship_of_ireland').GetName], ktorý udeľuje [GetUniqueInternationalOrganization('lordship_of_ireland').GetLeaderTitle] hodným poddaným. Tento status sa automaticky stratí, ak $lieutenant$ upadne do [regency|e]." # todo: NEW TRANSLATION
+ loyalist: "Lojalista" # todo: NEW TRANSLATION
+ loyalist_plural: "Lojalisti" # todo: NEW TRANSLATION
+ loyalist_desc: "Členovia, ktorí sú [subjects|e] [international_organization_leader_short|e] alebo zdieľajú toho istého [ruler|e], získajú [special_status|e] $loyalist$." # todo: NEW TRANSLATION
+ lord_of_ireland: "Pán Írska" # todo: NEW TRANSLATION
+ lord_of_ireland_desc: "$lord_of_ireland$ je [international_organization_leader_short|e] [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]. Môže existovať iba jeden $lord_of_ireland$." # todo: NEW TRANSLATION
+ absentee: "Neprítomný" # todo: NEW TRANSLATION
+ absentee_plural: "Neprítomní" # todo: NEW TRANSLATION
+ absentee_desc: "Členovia, ktorí nie sú [subjects|e] [international_organization_leader_short|e], nadobúdajú [special_status|e] $absentee$. Môžu zmeniť lojalitu na [GetInternationalOrganizationType('high_kingship').GetName]." # todo: NEW TRANSLATION
+ HAS_LIEUTENANT: "Má $lieutenant$" # todo: NEW TRANSLATION
+ NUMBER_OF_LOYALISTS: "Počet $loyalist_plural$" # todo: NEW TRANSLATION
+ NUMBER_OF_ABSENTEES: "Počet $absentee_plural$" # todo: NEW TRANSLATION
+ COUNTRIES_OUTSIDE_LORDSHIP: "[countries|e] mimo Lordstva" # todo: NEW TRANSLATION
+ HERETIC_EARLDOMS: "Heretickí členovia" # todo: NEW TRANSLATION
+ LORDSHIP_OF_IRELAND_ASCENDANCY_DISPLAY: "$VAL$" # todo: NEW TRANSLATION
+ ascendancy: "Nadvláda" # todo: NEW TRANSLATION
+ ascendancy_desc: "Miera autority [GetInternationalOrganizationType('lordship_of_ireland').GetName]." # todo: NEW TRANSLATION
+ autocephalous_patriarchate: "Autokefálny patriarchát" # todo: NEW TRANSLATION
+ AUTOCEPHALOUS_PATRIARCHATE_SEAT_NAME: "Autokefálny patriarchát [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ autocephalous_patriarchate_desc: "Výraz #italic samostatný#! označuje, že $autocephalous_patriarchate$ je metropolitný patriarchát vo východných kresťanských vyznaniach, ktorý koná nezávisle a nepodriaďuje sa žiadnej inej hierarchicky nadradenej cirkevnej autorite. Rôzne patriarcháty majú vlastné synody biskupov, ktoré rozhodujú o záležitostiach ovplyvňujúcich ich náboženskú jurisdikciu." # todo: NEW TRANSLATION
+ CATHOLIC_PATRIARCHATE_NAME: "Katolícky patriarchát [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ ECUMENICAL_PATRIARCHATE_NAME: "Ekumenický patriarchát [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ AUTOCEPHALOUS_PATRIARCHY_NAME: "Autokefálny patriarchát [ROOT.GetVariable('seat').GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ seat: "Sídlo" # todo: NEW TRANSLATION
+ seat_desc: "$seat$ je miesto, kde má [GetInternationalOrganizationType('autocephalous_patriarchate').GetName] základ moci a autority." # todo: NEW TRANSLATION
+ AUTOCEPHALOUS_PATRIARCHY_SEAT_FORMAT: "" # todo: NEW TRANSLATION
+ religion: "Náboženstvo" # todo: NEW TRANSLATION
+ religion_desc: "[religion|e] náboženského [international_organization|e]." # todo: NEW TRANSLATION
+ RELIGION_FORMAT: "" # todo: NEW TRANSLATION
+ recently_left_patriarchate_tt: "Nedávno sme neopustili tento [GetInternationalOrganizationType('autocephalous_patriarchate').GetName]" # todo: NEW TRANSLATION
+ sect: "Sekta" # todo: NEW TRANSLATION
+ sect_desc: "$sect$ je jedna z mnohých odnoží [ShowReligionGroupName('buddhist')], pričom každá sa zameriava na odlišné učenia a spôsoby nasledovania cesty Buddhu k osvieteniu." # todo: NEW TRANSLATION
+ SECT_NAME: "Sekta" # todo: NEW TRANSLATION
+ SECT_RELIGION_FORMAT: "" # todo: NEW TRANSLATION
+ sect_favor: "Prízeň" # todo: NEW TRANSLATION
+ sect_favor_desc: "Je to mierka toho, do akej miery jednotlivé krajiny podporujú konkrétnu [GetInternationalOrganizationType('sect').GetName]." # todo: NEW TRANSLATION
+ SECT_FAVOR_DISPLAY: "$VAL|0$%" # todo: NEW TRANSLATION
+ NUMBER_OF_SECT_FOLLOWERS: "Počet nasledovníkov sekty" # todo: NEW TRANSLATION
+ SECT_ENEMIES: "Nepriatelia sekty" # todo: NEW TRANSLATION
+ SECT_SUPPORTERS: "Podporovatelia sekty" # todo: NEW TRANSLATION
+ NUM_LOCATIONS: "Počet lokalít" # todo: NEW TRANSLATION
+ SECT_CONFUCIANISM_NAME: "Konfucianizmus" # todo: NEW TRANSLATION
+ SECT_DAOISM_NAME: "Daoizmus" # todo: NEW TRANSLATION
+ SECT_PURE_LAND_SCHOOL_NAME: "Škola Čistej zeme $buddhist$" # todo: NEW TRANSLATION
+ SECT_TIANTAI_NAME: "Tiāntāi" # todo: NEW TRANSLATION
+ SECT_TENDAI_NAME: "Tendai" # todo: NEW TRANSLATION
+ SECT_JOUDO_SHINSHUU: "Jōdo Shinshū" # todo: NEW TRANSLATION
+ SECT_DHARMA_SCHOOL_NAME: "Dharma škola" # todo: NEW TRANSLATION
+ SECT_FLOWER_GARLAND_SCHOOL_NAME: "Škola Kvetinového venca" # todo: NEW TRANSLATION
+ SECT_MEDITATION_SCHOOL_NAME: "Škola meditácie" # todo: NEW TRANSLATION
+ SECT_MANTRA_SCHOOL_NAME: "Škola mantry" # todo: NEW TRANSLATION
+ SECT_SHUGENDO_NAME: "Shugendō" # todo: NEW TRANSLATION
+ SECT_NICHIREN_NAME: "Nichiren" # todo: NEW TRANSLATION
+ SECT_AZHALIISM_NAME: "Azhaliism" # todo: NEW TRANSLATION
+ SECT_MUSOK_NAME: "Musok" # todo: NEW TRANSLATION
+ SECT_NYIGMA_NAME: "Škola Nyingma" # todo: NEW TRANSLATION
+ SECT_KADAM_NAME: "Škola Kadam" # todo: NEW TRANSLATION
+ SECT_KAGYU_NAME: "Škola Kagyu" # todo: NEW TRANSLATION
+ SECT_SAKYA_NAME: "Škola Sakya" # todo: NEW TRANSLATION
+ SECT_JONANG_NAME: "Škola Jonang" # todo: NEW TRANSLATION
+ SECT_MULASARVASTIVADA_NAME: "Mūlasarvāstivāda" # todo: NEW TRANSLATION
+ SECT_MAHAVIHARA_NAME: "Mahāvihāra" # todo: NEW TRANSLATION
+ SECT_BURMESE_BUDDHISM_NAME: "Barmský $buddhist$" # todo: NEW TRANSLATION
+ SECT_LANKAVONG_NAME: "Lankavong" # todo: NEW TRANSLATION
+ SECT_KHMER_BUDDHISM_NAME: "Khmerský $buddhist$" # todo: NEW TRANSLATION
+ sect_land_ownership: "Územie vplyvu sekty" # todo: NEW TRANSLATION
+ join_sect_location_tt: "Sekta je prítomná na našom území" # todo: NEW TRANSLATION
+ hindu_branch: "Hindu odnož" # todo: NEW TRANSLATION
+ hindu_branch_desc: "Odnož je skupina tradícií a vier v rámci [ShowReligionName('hindu')], ktorá dáva prednosť jednému alebo viacerým špecifickým [gods|e]." # todo: NEW TRANSLATION
+ HINDU_BRANCH_NAME: "Odnož" # todo: NEW TRANSLATION
+ SIKHISM_LEADER_MALE: "$character_title_guru$" # todo: NEW TRANSLATION
+ SIKHISM_LEADER_FEMALE: "$character_title_guru_female$" # todo: NEW TRANSLATION
+ catholic_church: "Katolícka cirkev" # todo: NEW TRANSLATION
+ catholic_church_desc: "$catholic_church$ je veľká náboženská organizácia presahujúca národné hranice. Teokrati všetkých druhov a zo všetkých štátov sú vyslancami Svätého stolca v [ShowLocationName('rome')]. Biskup [ShowLocationNameWithNoTooltip('rome')], hlava $catholic_church$, je vládca [GetCountry('PAP').GetName]." # todo: NEW TRANSLATION
+ curia: "Kuria" # todo: NEW TRANSLATION
+ curia_plural: "Kurie" # todo: NEW TRANSLATION
+ curia_desc: "$curia$ je administratívne telo $catholic_church$. Tvorená Kolégiom kardinálov, spravuje veriacich a zabezpečuje riadne vedenie tých, ktorí sú súčasťou cirkvi." # todo: NEW TRANSLATION
+ bishopric: "Biskupstvo" # todo: NEW TRANSLATION
+ bishopric_plural: "Biskupstvá" # todo: NEW TRANSLATION
+ bishopric_desc: "$prince_bishopric_reform_desc$" # todo: NEW TRANSLATION
+ military_order: "Vojenský rád" # todo: NEW TRANSLATION
+ military_order_plural: "Vojenské rády" # todo: NEW TRANSLATION
+ military_order_desc: "$military_order_reform_desc$" # todo: NEW TRANSLATION
+ tribal_confederation: "Kmeňová konfederácia" # todo: NEW TRANSLATION
+ tribal_confederation_desc: "Skupina rôznych kmeňov, ktoré sa spojili na ochranu pred nepriateľmi a aby využili vzájomnú spoluprácu a rast." # todo: NEW TRANSLATION
+ haudenosaunee_tribal_confederation: "Haudenosaunee Konfederácia" # todo: NEW TRANSLATION
+ colonial_federation: "Koloniálna federácia" # todo: NEW TRANSLATION
+ colonial_federation_desc: "Skupina rôznych koloniálnych vlád, ktoré sa spojili na ochranu pred nepriateľmi a aby využili vzájomnú spoluprácu a rast." # todo: NEW TRANSLATION
+ colonial_federation_usa: "Spojené štáty americké" # todo: NEW TRANSLATION
+ COALITION_DECLARE_WAR: "Vyhlásiť vojnu proti [InternationalOrganizationsView.GetInternationalOrganization.GetTarget.GetName]" # todo: NEW TRANSLATION
+ COALITION_DECLARE_WAR_NO_MEMBER: "Nie sme členom tejto organizácie." # todo: NEW TRANSLATION
+ COALITION_ARMY_SIZE: "Veľkosť armády koalície" # todo: NEW TRANSLATION
+ TARGET_ARMY_SIZE: "Veľkosť armády cieľa" # todo: NEW TRANSLATION
+ COALITION_NAVY_SIZE: "Veľkosť námorníctva koalície" # todo: NEW TRANSLATION
+ TARGET_NAVY_SIZE: "Veľkosť námorníctva cieľa" # todo: NEW TRANSLATION
+ japanese_shogunate: "Japonský šógunát" # todo: NEW TRANSLATION
+ japanese_shogunate_desc: "Územia Japonska sú dlhodobo ponorené do zložitej politickej štruktúry. Napriek tomu, že cisár je titulárnym vodcom národa, skutočná vláda je po stáročia v rukách $JAPANESE_SHOGUNATE_LEADER_MALE$, a túto úlohu v niektorých obdobiach nahradil regent. Rôzne klany žijú v neustálom boji o nadvládu a moc nad Krajinou vychádzajúceho slnka." # todo: NEW TRANSLATION
+ japanese_land_ownership: "Japonské ostrovy" # todo: NEW TRANSLATION
+ japanese_land_ownership_desc: "Územie ostrovov Japonska." # todo: NEW TRANSLATION
+ JAPANESE_SHOGUNATE_LEADER_MALE: "Šógun" # todo: NEW TRANSLATION
+ JAPANESE_SHOGUNATE_LEADER_FEMALE: "$JAPANESE_SHOGUNATE_LEADER_MALE$" # todo: NEW TRANSLATION
+ japanese_emperor: "Tennō" # todo: NEW TRANSLATION
+ japanese_emperor_plural: "$japanese_emperor$" # todo: NEW TRANSLATION
+ japanese_emperor_desc: "$japanese_imperial_family_desc$" # todo: NEW TRANSLATION
+ shugo_daimyo: "Shugo $daimyo$" # todo: NEW TRANSLATION
+ shugo_daimyo_plural: "$shugo_daimyo$" # todo: NEW TRANSLATION
+ shugo_daimyo_desc: "Klan poverený správou provincie. Môže zhromaždiť dosť moci a vplyvu na to, aby sa postavil autorite $JAPANESE_SHOGUNATE_LEADER_MALE$." # todo: NEW TRANSLATION
+ hre_election: "Cisárska voľba" # todo: NEW TRANSLATION
+ hre_election_desc: " [hre_emperor|e] [GetUniqueInternationalOrganization('hre').GetName] sa volí na základe hlasov [electors|e]. [GetUniqueInternationalOrganization('hre').Custom('GetHREElectionDescription')]" # todo: NEW TRANSLATION
+ hre_election_specific: "$hre_election$" # todo: NEW TRANSLATION
+ hre_election_specific_desc: "$hre_election_desc$" # todo: NEW TRANSLATION
+ vote_in_hre_election: "Hlasovať v $hre_election$" # todo: NEW TRANSLATION
+ vote_in_hre_election_desc: "Rozhodnúť, kto sa stane novým [hre_emperor|e] [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ overrule_imperial_diet: "Prehlasovať cisársky snem" # todo: NEW TRANSLATION
+ overrule_imperial_diet_desc: "Cisársky snem môže mať veľkú politickú moc v [GetUniqueInternationalOrganization('hre').GetName], ale [GetUniqueInternationalOrganization('hre').GetLeaderTitle] má právo prehlasovať snem, aby zmenil zákon." # todo: NEW TRANSLATION
+ overrule_imperial_diet_specific: "$overrule_imperial_diet$" # todo: NEW TRANSLATION
+ overrule_imperial_diet_specific_desc: "$overrule_imperial_diet_desc$" # todo: NEW TRANSLATION
+ overrule_imperial_diet_ct: "Každý člen [SCOPE.sInternationalOrganization('recipient').GetName] stratí [ShowBiasValue('opinion_overruled_imperial_diet')|+=0] voči [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
+ vote_in_overrule_imperial_diet: "Hlasovať o prehlasovaní cisárskeho snemu" # todo: NEW TRANSLATION
+ vote_in_overrule_imperial_diet_desc: "Rozhodnúť, či chceme prehlasovať cisársky snem" # todo: NEW TRANSLATION
+ jurchen_confederation: "Jurchenská konfederácia" # todo: NEW TRANSLATION
+ jurchen_confederation_desc: "Zväz nomádnych a polonomádnych ľudí pod vlajkou jedného klanu, ktorý ponúka ochranu pred vonkajšími hrozbami, zatiaľ čo sa snaží potlačiť vnútorné spory a podporovať jednotu medzi svojimi členmi." # todo: NEW TRANSLATION
+ jianzhou_jurchen_confederation: "Konfederácia Jianzhou" # todo: NEW TRANSLATION
+ hulun_jurchen_confederation: "Konfederácia Hūlun" # todo: NEW TRANSLATION
+ changbaishan_jurchen_confederation: "Konfederácia Changbaishan" # todo: NEW TRANSLATION
+ 5_years_cd: "Tento zákon sme menili za posledných #G 5#! rokov." # todo: NEW TRANSLATION
+ local_administration: "Zákon o správe" # todo: NEW TRANSLATION
+ local_administration_desc: "Tento zákon určuje spôsob, akým bude náš ľud spravovaný." # todo: NEW TRANSLATION
+ tribal_administration_policy: "Kmeňová správa" # todo: NEW TRANSLATION
+ tribal_administration_policy_desc: "Správa bude vykonávaná na kmeňovej úrovni, pričom každý kmeňový vodca bude robiť rozhodnutia za svoju skupinu." # todo: NEW TRANSLATION
+ sinicized_administration_policy: "Sinicizovaná správa" # todo: NEW TRANSLATION
+ sinicized_administration_policy_desc: "Správa bude vykonávaná na úrovni konfederácie, s vodcom riadiacim náš ľud." # todo: NEW TRANSLATION
+ tax_obligations: "Zákon o klanových daniach" # todo: NEW TRANSLATION
+ tax_obligations_desc: "Tento zákon určuje úroveň zdaňovania, ktorá bude uplatnená na náš ľud." # todo: NEW TRANSLATION
+ no_tax_obligations_policy: "Žiadne daňové povinnosti" # todo: NEW TRANSLATION
+ no_tax_obligations_policy_desc: "Náš ľud nebude podliehať zdaneniu." # todo: NEW TRANSLATION
+ fair_tax_obligations_policy: "Spravodlivé daňové povinnosti" # todo: NEW TRANSLATION
+ fair_tax_obligations_policy_desc: "Náš ľud bude platiť základné dane." # todo: NEW TRANSLATION
+ extensive_tax_obligations_policy: "Rozsiahle daňové povinnosti" # todo: NEW TRANSLATION
+ extensive_tax_obligations_policy_desc: "Náš ľud bude platiť bežné dane a ďalšie dane spojené s luxusným tovarom." # todo: NEW TRANSLATION
+ court_etiquette: "Zákon o dvorskej etikete" # todo: NEW TRANSLATION
+ court_etiquette_desc: "Tento zákon stanovuje, ktoré pravidlá dvorskej etikety sa uplatnia." # todo: NEW TRANSLATION
+ no_court_etiquette_policy: "Žiadna dvorská etiketa" # todo: NEW TRANSLATION
+ no_court_etiquette_policy_desc: "Na dvore nebudú uplatňované žiadne špeciálne pravidlá." # todo: NEW TRANSLATION
+ basic_court_etiquette_policy: "Základná dvorská etiketa" # todo: NEW TRANSLATION
+ basic_court_etiquette_policy_desc: "Na dvore budú uplatňované základné pravidlá." # todo: NEW TRANSLATION
+ sinicized_court_etiquette_policy: "Sinicizovaná dvorská etiketa" # todo: NEW TRANSLATION
+ sinicized_court_etiquette_policy_desc: "Na našom dvore budú uplatňované pravidlá inšpirované čínskym dvorom." # todo: NEW TRANSLATION
+ formal_script: "Zákon o úradnom písme" # todo: NEW TRANSLATION
+ formal_script_desc: "Tento zákon určuje, ktorý písomný systém sa musí používať pre oficiálne dokumenty." # todo: NEW TRANSLATION
+ mongol_script_policy: "Mongolské písmo" # todo: NEW TRANSLATION
+ mongol_script_policy_desc: "Bude sa používať mongolské písmo." # todo: NEW TRANSLATION
+ sinicized_script_policy: "Sinicizované písmo" # todo: NEW TRANSLATION
+ sinicized_script_policy_desc: "Bude sa používať čínsky systém písania." # todo: NEW TRANSLATION
+ legal_framework: "Byrokratický zákon" # todo: NEW TRANSLATION
+ legal_framework_desc: "Tento zákon stanovuje právny rámec, ktorý používa naša byrokracia." # todo: NEW TRANSLATION
+ no_legal_framework_policy: "Žiadny právny rámec" # todo: NEW TRANSLATION
+ no_legal_framework_policy_desc: "Nebude zriadený žiadny právny rámec." # todo: NEW TRANSLATION
+ basic_legal_framework_policy: "Základný právny rámec" # todo: NEW TRANSLATION
+ basic_legal_framework_policy_desc: "Bude zriadený základný rámec." # todo: NEW TRANSLATION
+ sinicized_legal_framework_policy: "Sinicizovaný právny rámec" # todo: NEW TRANSLATION
+ sinicized_legal_framework_policy_desc: "Bude zriadený čínsky byrokratický systém." # todo: NEW TRANSLATION
+ economic_framework: "Hospodársky zákon" # todo: NEW TRANSLATION
+ economic_framework_desc: "Tento zákon definuje rozdelenie všetkých plodín pestovaných v našich sídlach." # todo: NEW TRANSLATION
+ shared_crops_policy: "Zdieľané plodiny" # todo: NEW TRANSLATION
+ shared_crops_policy_desc: "Osady sú povzbudzované k obchodovaniu s plodinami medzi sebou." # todo: NEW TRANSLATION
+ decentralized_farming_villages: "Decentralizované poľnohospodárske dediny" # todo: NEW TRANSLATION
+ decentralized_farming_villages_desc: "Osady sú určené na sebestačnosť." # todo: NEW TRANSLATION
+ financed_rgo_policy: "Úrady na ťažbu zdrojov" # todo: NEW TRANSLATION
+ financed_rgo_policy_desc: "Rozdeľovanie plodín medzi osadami bude uskutočňované na najvyššej úrovni." # todo: NEW TRANSLATION
+ trade_relations: "Zákon o obchodných vzťahoch" # todo: NEW TRANSLATION
+ trade_relations_desc: "Tento zákon stanovuje obmedzenia pre obchodné partnerstvá." # todo: NEW TRANSLATION
+ clan_trade_only_policy: "Obmedzený klanový obchod" # todo: NEW TRANSLATION
+ clan_trade_only_policy_desc: "Obchod bude obmedzený na výmeny medzi klanmi." # todo: NEW TRANSLATION
+ chinese_tribute_policy: "Čínsky tribut" # todo: NEW TRANSLATION
+ chinese_tribute_policy_desc: "Obchod s Čínou bude povolený." # todo: NEW TRANSLATION
+ allow_foreign_exchanges_policy: "Povoliť zahraničný obchod" # todo: NEW TRANSLATION
+ allow_foreign_exchanges_policy_desc: "Obchod bude pre náš ľud voľný." # todo: NEW TRANSLATION
+ clan_diplomacy: "Zákon o klanovej diplomacii" # todo: NEW TRANSLATION
+ clan_diplomacy_desc: "Tento zákon popisuje, ako bude naša diplomacia vykonávaná." # todo: NEW TRANSLATION
+ no_embassies_policy: "Žiadne veľvyslanectvá" # todo: NEW TRANSLATION
+ no_embassies_policy_desc: "Nikde nemožno zriadiť veľvyslanectvá." # todo: NEW TRANSLATION
+ clan_embassies_policy: "Klanové veľvyslanectvá" # todo: NEW TRANSLATION
+ clan_embassies_policy_desc: "Klanom bude dovolené vykonávať vlastné diplomatické akcie." # todo: NEW TRANSLATION
+ chinese_embassies_policy: "Povoliť čínske veľvyslanectvá" # todo: NEW TRANSLATION
+ chinese_embassies_policy_desc: "Diplomatické akcie budú vykonávané na najvyššej úrovni podľa čínskych pravidiel." # todo: NEW TRANSLATION
+ unification_law: "Zákon o zjednotení" # todo: NEW TRANSLATION
+ unification_law_desc: "Určuje, či kmene konfederácie môžu konať nezávisle, alebo či budú nútené podriadiť sa centrálnej autorite." # todo: NEW TRANSLATION
+ bid_for_unification: "Snaha o zjednotenie" # todo: NEW TRANSLATION
+ bid_for_unification_desc: "Nastal čas zjednotiť naše decentralizované kmene pod centrálnou autoritou! Prijmutím sofistikovanejšieho sociálneho rámca sa môžeme pokúsiť zjednotiť všetky kmene pod našou konfederáciou." # todo: NEW TRANSLATION
+ will_ask_members_to_submit_tt: "Všetci členovia našej #Y konfederácie#! budú nútení zvoliť si, či sa podrobia ako naši vazali, alebo budú násilne dobití." # todo: NEW TRANSLATION
+ delegated_authority: "Delegovaná autorita" # todo: NEW TRANSLATION
+ delegated_authority_desc: "Každý miestny kmeň konfederácie má vlastnú autoritu a môže nezávisle prijímať rozhodnutia a konať." # todo: NEW TRANSLATION
+ tatar_yoke: "Tatárske jarmo" # todo: NEW TRANSLATION
+ tatar_yoke_desc: "Tatárske jarmo označuje rôzne kniežatstvá v [ShowSubContinentName('eastern_europe')], ktoré po invázii v 13. storočí podliehajú tatárskej nadvláde. Najvýznamnejší vládca dostáva titul Veľkého kniežaťa a má na starosti vyberanie tribútov od ostatných tributárov v mene Zlatej horde $rank_kingdom_horde_ruler_suffix_male$." # todo: NEW TRANSLATION
+ TATAR_YOKE_LEADER_MALE: "Tatársky nadvládca" # todo: NEW TRANSLATION
+ TATAR_YOKE_LEADER_FEMALE: "Tatársky nadvládca" # todo: NEW TRANSLATION
+ tatar_yoke_contribution: "Tatársky tribut" # todo: NEW TRANSLATION
+ tatar_yoke_contribution_desc: "Tribút zlata a vojenských síl odovzdaný [ShowSpecialStatusName('tatar_tax_collector')]." # todo: NEW TRANSLATION
+ tatar_yoke_leader_payments: "Tatárska platba" # todo: NEW TRANSLATION
+ tatar_yoke_leader_payments_desc: "Platba zlata a ľudských zdrojov, doručená [GetInternationalOrganization('tatar_yoke').GetLeaderTitle] od [ShowSpecialStatusName('tatar_tax_collector')]." # todo: NEW TRANSLATION
+ TATAR_YOKE_TAX_COLLECTOR_TITLE: "Práva a povinnosti $tatar_tax_collector$" # todo: NEW TRANSLATION
+ TATAR_YOKE_TAX_COLLECTOR_DESC: "Je povinnosťou [ShowSpecialStatusName('tatar_tax_collector')] vyberať dane v mene [ShowSpecialStatusName('tatar_overlord')].\n\nNa oplátku územie [ShowSpecialStatusNameWithNoTooltip('tatar_tax_collector')] zažíva výrazný #Y $migration$#! od ostatných členov Jarma, ktorí hľadajú ochranu pred nájazdmi [ShowCultureGroupName('mongolian_group')|l]." # todo: NEW TRANSLATION
+ TATAR_YOKE_HINT_1: "Tatárske jarmo je pozostatkom stredoveku, ktoré upevňuje mongolskú nadvládu nad východoeurópskymi kniežatstvami.\n\nNie je možné sa k nemu pripojiť.\n\n#T Odporúčané opatrenia pre rôzne úlohy v Jarme#!\n@arrow_bonus_tier_3!The [ShowSpecialStatusName('tatar_overlord')] should keep the others in check, preventing them from becoming too powerful.\n@arrow_bonus_tier_3!The [ShowSpecialStatusName('tatar_tax_collector')] can leverage their position to accumulate wealth and power, leaving in a prime position to overthrow the [ShowSpecialStatusNameWithNoTooltip('tatar_overlord')].\n@arrow_bonus_tier_3!A normal member aspires to claim the role of [ShowSpecialStatusName('tatar_tax_collector')] or breaking the yoke on their own." # todo: NEW TRANSLATION
+ red_turban_rebels: "Povstalci Červených turbánov" # todo: NEW TRANSLATION
+ red_turban_rebels_desc: "#T Red Turban Rebels#!\nThe $red_turban_rebels$ are a group of disorganized and striving rebels who seek to overthrow the [GetCountry('CHI').GetCulture.GetName] overlords and claim the [GetInternationalOrganizationType('middle_kingdom').GetName] for themselves. Although they oppose [GetCountry('CHI').GetName], the loyalty of the $red_turban_rebels$ is only to their own ambitions." # todo: NEW TRANSLATION
+ guelphs_io: "Guelfovia" # todo: NEW TRANSLATION
+ guelphs_io_desc: "The $guelphs_io$ are a group of [ShowCultureGroupName('italian_group')] states who align themselves with the interests of the [GetCountry('PAP').GetLongName] in [ShowRegionName('italy_region')]." # todo: NEW TRANSLATION
+ ghibellines_io: "Ghibelíni" # todo: NEW TRANSLATION
+ ghibellines_io_desc: "The $ghibellines_io$ are a group of [ShowCultureGroupName('italian_group')] states who align themselves with the interests of the [GetInternationalOrganizationType('hre').GetName] in [ShowRegionName('italy_region')]." # todo: NEW TRANSLATION
+ senior_partner: "$game_concept_senior_partner$" # todo: NEW TRANSLATION
+ senior_partner_plural: "Starší partneri" # todo: NEW TRANSLATION
+ senior_partner_desc: "The $game_concept_senior_partner$ is the de facto leader of the [GetInternationalOrganizationType('union').GetName] and usually the seat of power of the ruling monarch. All centralization efforts revolve around the $game_concept_senior_partner$ and its relations with the other members of the $union$." # todo: NEW TRANSLATION
+ junior_partner: "$game_concept_junior_partner$" # todo: NEW TRANSLATION
+ junior_partner_plural: "$game_concept_junior_partners$" # todo: NEW TRANSLATION
+ junior_partner_desc: "The $game_concept_junior_partner$ is the default status for any member of the [GetInternationalOrganizationType('union').GetName] which is not the seat of the ruling monarch." # todo: NEW TRANSLATION
+ io_opinion_union: "V tej istej únii" # todo: NEW TRANSLATION
+ io_opinion_marriage_union: "Manželská únia" # todo: NEW TRANSLATION
+ union: "$game_concept_union$" # todo: NEW TRANSLATION
+ union_desc: "$game_concept_union_desc$" # todo: NEW TRANSLATION
+ UNION_IO_PARLIAMENT_TOOLTIP: "Parlament [parliament|e] [InternationalOrganizationsView.GetInternationalOrganization.GetName] slúži inému účelu než tie z iných [international_organizations|e]. Kým väčšina parlamentov sa zaoberá [parliament_issues|e], ten v [InternationalOrganizationsView.GetInternationalOrganization.GetType.GetName] je vyhradený pre [ShowSpecialStatusName('senior_partner')] na implementáciu [laws|e] Únie pre nových členov." # todo: NEW TRANSLATION
+ marriage_union: "Manželská únia" # todo: NEW TRANSLATION
+ marriage_union_desc: "A special [union|e] which is created via a [royal_marriage|e]. Unlike a [GetInternationalOrganizationType('union').GetName], the $marriage_union$ can not be centralized and is more akin to a [GetInternationalOrganizationType('defensive_league').GetName]." # todo: NEW TRANSLATION
+ union_recent_policy_change_cd: "Nedávna zmena politiky únie" # todo: NEW TRANSLATION
+ union_annexation_rule_tt: "Bol ustanovený [ShowSpecialStatusName('senior_partner')], ktorý nie je [subject|e], a príslušná [policy|e] v [ShowLawName('union_unification_of_crowns_law')] bola prijatá" # todo: NEW TRANSLATION
+ marriage_union_tooltip_title: "[GetInternationalOrganizationType('marriage_union').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ union_integration_level_tooltip: "[union_integration_level|e]: [InternationalOrganizationsView.GetInternationalOrganization.GetModifierValueString('union_integration_level')]" # todo: NEW TRANSLATION
+ marriage_union_mechanic_tooltip: "The [GetInternationalOrganizationType('marriage_union').GetName] is a decentralized [GetInternationalOrganizationType('union').GetName] very akin to a [GetInternationalOrganizationType('defensive_league').GetName], as every [member|e] will defend each other against foreign attackers. In order to create a union, at least two countries must have the same [heir|e] ascending the throne." # todo: NEW TRANSLATION
+ union_mechanic_tooltip: "Members leave the [union|e] when they no longer have the same [ruler|e]. In order to consolidate the union, every [member|e] must have the same [union_integration_level_short|e] as the [ShowSpecialStatusName('senior_partner')]. Members with a lower level must have their integration enforced via the [parliament|e].\n\nCurrent seat of the union is in [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetCapital.GetName] in [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetName]." # todo: NEW TRANSLATION
+ union_member_integration_level_tooltip: "[union_integration_level_short]: [Country.MakeScope.GetVariable('integrated_in_union').GetValue|YV0]" # todo: NEW TRANSLATION
+ INTEGRATED_UNION_TT: "Zjednotená [GetInternationalOrganizationType('union').GetName]" # todo: NEW TRANSLATION
+ HABSBURG_UNION_NAME: "Habsburská únia" # todo: NEW TRANSLATION
+ POLISH_LITHUANIAN_COMMONWEALTH_NAME: "Poľsko-litovská únia" # todo: NEW TRANSLATION
+ LITHUANIAN_POLISH_COMMONWEALTH_NAME: "Litovsko-poľská únia" # todo: NEW TRANSLATION
+ KALMAR_UNION_NAME: "Kalmarská únia" # todo: NEW TRANSLATION
+ UNION_OF_THE_CROWNS_NAME: "Únia korún" # todo: NEW TRANSLATION
+ IBERIAN_UNION_NAME: "Iberská únia" # todo: NEW TRANSLATION
+ PERSONALIZED_UNION_NAME: "[ROOT.GetInternationalOrganization.GetCountryWithHighestGreatPowerScoreWithSpecialStatus('senior_partner').GetAdjectiveWithNoTooltip] $union$" # todo: NEW TRANSLATION
+ DOUBLE_UNION_NAME: "[ROOT.GetInternationalOrganization.GetCountryOrderedByGreatPowerScore('(int32)0').GetAdjectiveWithNoTooltip]-[ROOT.GetInternationalOrganization.GetCountryOrderedByGreatPowerScore('(int32)1').GetAdjectiveWithNoTooltip] $union$" # todo: NEW TRANSLATION
+ UNION_MEMBERS_TO_ADJUST: "Mladší partneri na úpravu" # todo: NEW TRANSLATION
+ MARRIAGE_UNION_COUNTRIES: "[ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetCourtCountry.GetAdjectiveWithNoTooltip]-[ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)1').GetCharacter.GetCourtCountry.GetAdjectiveWithNoTooltip] $marriage_union$" # todo: NEW TRANSLATION
+ MARRIAGE_UNION_DYNASTIES: "[ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetDynasty.GetNameWithNoTooltip]-[ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)1').GetCharacter.GetDynasty.GetNameWithNoTooltip] $marriage_union$" # todo: NEW TRANSLATION
+ MARRIAGE_UNION_SAME_DYNASTY: "[ROOT.GetInternationalOrganization.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetDynasty.GetNameWithNoTooltip] $marriage_union$" # todo: NEW TRANSLATION
+ foreign_league_france: "Francúzska liga" # todo: NEW TRANSLATION
+ foreign_league_france_desc: "A league formed around the capital of [GetUniqueInternationalOrganization('foreign_league_france').GetLeaderCountry.GetName], this confederation symbolizes the aspiration of taming [ShowRegionName('italy_region')] and establishing a steady monopoly over her wealth." # todo: NEW TRANSLATION
+ foreign_league_iberia: "Iberská liga" # todo: NEW TRANSLATION
+ foreign_league_iberia_desc: "A league formed around the capital of [GetUniqueInternationalOrganization('foreign_league_iberia').GetLeaderCountry.GetName]. Hailing from the western reaches of [ShowContinentName('europe')], this league wishes to subjugate the peninsula and bring the [ShowCultureGroupName('italian_group')] folk under firm control." # todo: NEW TRANSLATION
+ foreign_league_hre: "Liga Svätej Rímskej ríše" # todo: NEW TRANSLATION
+ foreign_league_hre_desc: "A league formed around the capital of [GetUniqueInternationalOrganization('foreign_league_hre').GetLeaderCountry.GetName]. Despite the Emperor's best attempts, [ShowRegionName('italy_region')] has always been a contested battleground between outsiders and members of the [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ italian_league_1: "Prvá talianska liga" # todo: NEW TRANSLATION
+ italian_league_1_desc: "A league formed around the capital of [GetUniqueInternationalOrganization('italian_league_1').GetLeaderCountry.GetName].$italian_league_key_desc$" # todo: NEW TRANSLATION
+ italian_league_key_desc: "Venovaná ochrane suverénnych hraníc svojich členov, štáty tejto Ligy sú pripravené odolať vplyvu a potenciálnym inváziám zo strany zahraničných protivníkov." # todo: NEW TRANSLATION
+ italian_league_2: "Druhá talianska liga" # todo: NEW TRANSLATION
+ italian_league_2_desc: "A league formed around the capital of [GetUniqueInternationalOrganization('italian_league_2').GetLeaderCountry.GetName].$italian_league_key_desc$" # todo: NEW TRANSLATION
+ italian_league_3: "Tretia talianska liga" # todo: NEW TRANSLATION
+ italian_league_3_desc: "A league formed around the capital of [GetUniqueInternationalOrganization('italian_league_3').GetLeaderCountry.GetName].$italian_league_key_desc$" # todo: NEW TRANSLATION
+ STRENGTH_OF_FOREIGN_LEAGUE: "Sila zahraničnej ligy" # todo: NEW TRANSLATION
+ NOT_NEIGHBORS_AI_WEIGHT: "Nie sme susedia" # todo: NEW TRANSLATION
+ OPINION_OF_FRANCE_LEADER: "[opinion|e]" # todo: NEW TRANSLATION
+ RECENTLY_JOINED_ANOTHER_LEAGUE: "Nedávno sa pridali do inej Ligy" # todo: NEW TRANSLATION
+ CURRENT_APPETITE_FOR_EXPANSION: "Ochota expandovať" # todo: NEW TRANSLATION
+ ilkhanate: "Īlkhānān" # todo: NEW TRANSLATION
+ ilkhanate_desc: "The $ilkhanate$, or Ilkhanate, are the lands conquered by the Great $genghis_khan_name$, and later governed by his son [GetCharacter('hulegu_khan_borjigin').GetName] and his descendants. As such, it is also known as the $name_hulegu$ Ulus." # todo: NEW TRANSLATION
+ ILKHANATE_LEADER_MALE: "Īlkhān" # todo: NEW TRANSLATION
+ ILKHANATE_LEADER_FEMALE: "Īlkhātūn" # todo: NEW TRANSLATION
+ ilkhan_claimant: "Nárokovateľ na $ilkhanate$" # todo: NEW TRANSLATION
+ ilkhan_claimant_plural: "Nárokovatelia na $ilkhanate$" # todo: NEW TRANSLATION
+ ilkhan_claimant_desc: "The one attempting to unify and lead the [GetUniqueInternationalOrganization('ilkhanate').GetName] under their banner." # todo: NEW TRANSLATION
+ swiss_confederation: "Švajčiarska konfederácia" # todo: NEW TRANSLATION
+ swiss_confederation_desc: "The $swiss_confederation$ - also known as the #italic Eidgenossenschaft#! - is a league of political entities home to the Swiss Plateau and the Alps. The [ShowCultureGroupName('swiss_group')] people have formed this union in order to defend themselves from the growing influence of the [ShowDynastyName('habsburg_dynasty')]." # todo: NEW TRANSLATION
+ SWISS_CONFEDERATION_LEADER: "Suverén" # todo: NEW TRANSLATION
+ SWISS_CONFEDERATION_LEADER_MALE: "$SWISS_CONFEDERATION_LEADER$" # todo: NEW TRANSLATION
+ SWISS_CONFEDERATION_LEADER_FEMALE: "$SWISS_CONFEDERATION_LEADER$" # todo: NEW TRANSLATION
+ WE_ARE_SMALL: "Sme malí" # todo: NEW TRANSLATION
+ swiss_election: "Švajčiarske voľby" # todo: NEW TRANSLATION
+ swiss_election_desc: "The members of the [GetUniqueInternationalOrganization('swiss_confederation').GetName] shall participate in a direct vote to elect the [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle], who shall represent the Confederation on the public stage." # todo: NEW TRANSLATION
+ swiss_election_specific: "$swiss_election$" # todo: NEW TRANSLATION
+ swiss_election_specific_desc: "$swiss_election_desc$" # todo: NEW TRANSLATION
+ vote_in_swiss_election: "Hlasovať v $swiss_election$" # todo: NEW TRANSLATION
+ vote_in_swiss_election_desc: "Decide who we shall become the new [international_organization_leader_short|e] of the [GetUniqueInternationalOrganization('swiss_confederation').GetName]." # todo: NEW TRANSLATION
+ independence_movement: "Hnutie za nezávislosť" # todo: NEW TRANSLATION
+ independence_movement_desc: "Je čas zhodiť pútá našich [overlords|e] a bojovať za slobodu! Hnutia za nezávislosť sa môžu začať kedykoľvek, ale sú pravdepodobnejšie, ak je [subject|e] nespokojný so životom pod súčasným vládcov. Hnutie za nezávislosť môže rýchlo získať podporovateľov, ak sme nepopulárni." # todo: NEW TRANSLATION
+ independence_movement_hint_1: "Len krajina usilujúca o nezávislosť môže začať vojnu za nezávislosť. Ostatní členovia Hnutia sa pripoja ako bojujúce strany." # todo: NEW TRANSLATION
+ diplomatic_status_independence_movement_name: "Podpora nezávislosti [INTERNATIONAL_ORGANIZATION.GetLeaderCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ diplomatic_status_independence_movement_tooltip: "#T Supporting Independence of [INTERNATIONAL_ORGANIZATION.GetLeaderCountry.GetNameWithNoTooltip]#!\nThis country will back [INTERNATIONAL_ORGANIZATION.GetLeaderCountry.GetName] if they decide to declare independence." # todo: NEW TRANSLATION
+ independence_movement_list_who_tt: "#T $LIST$#!\n$WHO$ is supporting the independence of [INTERNATIONAL_ORGANIZATION.GetLeaderCountry.GetName] with $LIST$" # todo: NEW TRANSLATION
+ independence_movement_name: "[ROOT.GetInternationalOrganization.GetLeaderCountry.GetAdjectiveWithNoTooltip] Hnutie za nezávislosť" # todo: NEW TRANSLATION
+ independence_movement_join_war_always_tt: "Vojna je vyhlásená proti ich [overlord|e]" # todo: NEW TRANSLATION
+ PAPAL_HOLY_LEAGUE_NAME: "Svätá liga" # todo: NEW TRANSLATION
+ protestant_union: "Protestantská únia" # todo: NEW TRANSLATION
+ protestant_union_name: "[GetUniqueInternationalOrganization('protestant_union').GetName]" # todo: NEW TRANSLATION
+ protestant_union_name_with_no_tooltip: "[GetUniqueInternationalOrganization('protestant_union').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ protestant_union_desc: "The $protestant_union$ is a defensive alliance of countries of the [reformation|e] which want to protect themselves from the growing hostilities of the [ShowReligionAdjective('catholic')] states of the [GetUniqueInternationalOrganization('hre').GetName]. Although founded by states of the [ShowReligionAdjective('lutheran')] and [ShowReligionAdjective('calvinist')] faiths, every member of the Empire who feels threatened by the overzealous counter-reformers may join this [international_organization|e]." # todo: NEW TRANSLATION
+ WE_ARE_PROTESTANT: "Nasledujeme [religion|e] z [reformation|e]" # todo: NEW TRANSLATION
+ catholic_league: "Katolícka liga" # todo: NEW TRANSLATION
+ catholic_league_name: "[GetUniqueInternationalOrganization('catholic_league').GetName]" # todo: NEW TRANSLATION
+ catholic_league_name_with_no_tooltip: "[GetUniqueInternationalOrganization('catholic_league').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ catholic_league_desc: "The $catholic_league$ is a defensive alliance of [ShowReligionAdjective('catholic')] countries who wish to contain the growing influence and spread of the [reformation|e] within the [GetUniqueInternationalOrganization('hre').GetName]. Although inherently [ShowReligionAdjectiveWithNoTooltip('catholic')], [ShowReligionAdjective('lutheran')] and [ShowReligionAdjective('calvinist')] states can also join if they see a political advantage from working with the League." # todo: NEW TRANSLATION
+ WE_ARE_CATHOLIC: "Sme [ShowReligionAdjective('catholic')]" # todo: NEW TRANSLATION
+ religious_league_name: "#Y Náboženská liga#!" # todo: NEW TRANSLATION
+ religious_leagues_join_offensive_war.tt: "They are the leader of their religious league, OR the target is the leader of the opposing religious league." # todo: NEW TRANSLATION
+ OPINION_OF_RELIGIOUS_LEAGUE_LEADER: "[opinion|e]" # todo: NEW TRANSLATION
+ ESTIMATE_IO_SITUATION_FIRST: "Chce najskôr odhadnúť politickú situáciu" # todo: NEW TRANSLATION
+ VOTE_FOR: "Hlasovať za" # todo: NEW TRANSLATION
+ VOTE_AGAINST: "Hlasovať proti" # todo: NEW TRANSLATION
+ VOTE_FOR_ALREADY_SELECTED: "Hlasovať za (už vybrané)" # todo: NEW TRANSLATION
+ VOTE_AGAINST_ALREADY_SELECTED: "Hlasovať proti (už vybrané)" # todo: NEW TRANSLATION

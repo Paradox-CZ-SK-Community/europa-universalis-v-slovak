@@ -1,0 +1,927 @@
+﻿l_polish:
+ flavor_mos.1.title: "Kampane [ROOT.GetCountry.GetGovernment.GetRulerTitle] proti [GetCountry('NOV').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.1.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] z [ROOT.GetCountry.GetName] rozvíjal roky predstavu, že [GetCountry('NOV').GetLongName] musí byť ponížené, aby tak potvrdil autoritu svojej rodiny a udržal titul [GetCountry('NOV').GetGovernment.GetRulerTitle] [GetCountry('NOV').GetNameWithNoTooltip].\n\nTeraz nastal čas premeniť túto predstavu na realitu a dať nezávislým pánom [GetCountry('NOV').GetNameWithNoTooltip] lekciu, na ktorú nezabudnú." # todo: NEW TRANSLATION
+ flavor_mos.1.a: "Je čas ponížiť [GetCountry('NOV').GetNameWithNoTooltip]!" # todo: NEW TRANSLATION
+ flavor_mos.1.b: "Sú našimi bratmi." # todo: NEW TRANSLATION
+ flavor_mos.2.title: "Zmluva z Yazhelbitsy" # todo: NEW TRANSLATION
+ flavor_mos.2.desc: "Desiatky rokov rivality medzi kniežactvami [GetCountry('MOS').GetName] a [GetCountry('NOV').GetName] sa chýlia ku koncu, pretože konečne nad nimi získavame prevahu. Niektorí nás radia podpísať predbežné menšie zmluvy ako znamenie našej neodvratnej víťazstva. Iní na dvore chcú, aby sme nič také nerobili a namiesto toho pritlačili viac proti [GetCountry('NOV').GetName] pre slávu vlasti." # todo: NEW TRANSLATION
+ flavor_mos.2.a: "Podpíšme niekoľko zmlúv, aby sme zmiernili vyčerpanie." # todo: NEW TRANSLATION
+ flavor_mos.2.b: "Môžeme urobiť viac!" # todo: NEW TRANSLATION
+ flavor_mos.3.title: "Zlatá vernosť" # todo: NEW TRANSLATION
+ flavor_mos.3.desc: "Naši špióni sa vracajú so správami, že vnútorná stabilita [GetCountry('GLH').GetLongName] môže byť ohrozená. Naša vernosť a podriadenosť ich impériu sa datuje stáročia dozadu, no možno nastal vhodný čas prehodnotiť, komu máme byť verní. Mohlo by byť v našom najlepšom záujme namiesto toho sa spojiť s [GetCountry('LIT').GetLongName] a dúfať, že takto odradíme akékoľvek odplaty [ShowCultureGroupName('tatar_group')]." # todo: NEW TRANSLATION
+ flavor_mos.3.a: "Boli by sme pošetilí tomu uveriť." # todo: NEW TRANSLATION
+ flavor_mos.3.tt1: "Pokračujúca vernosť voči invázorom z [ShowCultureGroupNameWithNoTooltip('tatar_group')] preukazuje tradíciu" # todo: NEW TRANSLATION
+ flavor_mos.3.b: "Čas sa oslobodiť od týchto pút." # todo: NEW TRANSLATION
+ flavor_mos.3.tt2: "Statečnosť preukázaná [target_root_country.GetGovernment.GetRuler.GetName] je považovaná za znak sily a odvahy" # todo: NEW TRANSLATION
+ flavor_mos.3.c: "Postavme sa proti akémukoľvek cudziemu vplyvu." # todo: NEW TRANSLATION
+ flavor_mos.3.historical_info: "Moskovské kniežatstvo a ostatné ruské kniežatstvá naďalej platili Tatárom tribut počas 14. storočia. Keď Zlata horda zasiahla vnútorné spory, uvažovali, či by nebolo lepšie staviť na stranu narastajúcej moci Litvy; napriek tomu pokračovali v tradičnej zahraničnej politike až do polovice 15. storočia, keď sa ukázalo, že tatársky vplyv začína slabnúť." # todo: NEW TRANSLATION
+ flavor_mos.4.title: "Kreml" # todo: NEW TRANSLATION
+ flavor_mos.4.desc: "Ruské územia sú opakovane predmetom nájazdov a je nevyhnutné, aby sme dokázali chrániť náš ľud v časoch pohromy. Opevňovací systém okolo [target_location.GetName] nie je na túto úlohu pripravený a môže byť prebehnutý, čo by zbrzdilo náš postup k staniu sa regionálnou mocnosťou.\n\nMali by sme postaviť mohutné opevnenie s úsekmi múrov, ktoré by konkurovali čomukoľvek v okolí." # todo: NEW TRANSLATION
+ flavor_mos.4.a: "Doviezť najkvalitnejšie [ShowGoodsNameWithNoTooltip('lumber')]." # todo: NEW TRANSLATION
+ threatened_by_military_expansion: "Ohrození vojenskou expanziou" # todo: NEW TRANSLATION
+ safe_haven_during_raids: "Poskytuje útočisko počas nájazdov" # todo: NEW TRANSLATION
+ flavor_mos.4.tt1: "Súperiaci susedia vnímajú výstavbu mohutného [ShowBuildingTypeNameWithNoTooltip('kremlin')] ako nepriateľský akt" # todo: NEW TRANSLATION
+ flavor_mos.4.tt2: "Susední poddaní považujú výstavbu mohutného [ShowBuildingTypeNameWithNoTooltip('kremlin')] za útočisko počas nájazdov" # todo: NEW TRANSLATION
+ flavor_mos.4.a.custom1: "Každá susedná krajina stratí [ShowBiasValue('threatened_by_military_expansion')|+=0] [opinion|e] voči [target_root_country.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.4.a.custom2: "Každý susedný [subject|e] získa [ShowBiasValue('safe_haven_during_raids')|+=0] [opinion|e] voči [target_root_country.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.4.b: "Nechceme provokovať našich susedov." # todo: NEW TRANSLATION
+ flavor_mos.4.b.custom1: "Každá susedná krajina získa #G 3#! [trust|e] voči [target_root_country.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.4.b.custom2: "Každý susedný [subject|e] stratí [ShowBiasValue('lack_of_protection')|+=0] [opinion|e] voči [target_root_country.GetName]" # todo: NEW TRANSLATION
+ lack_of_protection: "Nedostatok ochrany" # todo: NEW TRANSLATION
+ mos_kremlin_construction: "Výstavba Kremľa" # todo: NEW TRANSLATION
+ flavor_mos.4.c: "Vypleniť poddaný [ShowBuildingTypeNameWithNoTooltip('castle')] kvôli materiálom." # todo: NEW TRANSLATION
+ flavor_mos.4.tt3: "Takmer všetok potrebný [ShowGoodsName('clay')] a [ShowGoodsName('lumber')] sa získa násilným zbúraním [ShowBuildingTypeNameWithNoTooltip('castle')] v [castle_location.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.4.historical_info: "Pôvodný Moskvičký kreml bol väčšinou postavený z dreva a zahŕňal nielen múry a veže, ale aj množstvo administratívnych budov. Jeho výstavba bola nákladným projektom, no považovala sa za nevyhnutnú vzhľadom na dokázanú neúčinnosť jednoduchých drevených palisád používaných dovtedy proti opakovaným tatárskym nájazdom a obliehaniam nepriateľa." # todo: NEW TRANSLATION
+ flavor_mos.5.title: "Sergius z Radonežu" # todo: NEW TRANSLATION
+ flavor_mos.5.desc: "Uzatvorený mních vytvoril malú mníšsku komunitu oddanú životu z vlastnej práce. Komunita sa rýchlo rozvíja do posadu, čiže osady, pričom každý deň prichádzajú noví nasledovníci. Učenie zaujalo patriarchu, ktorý dúfa, že udelí mníšsky štatút, aby [sergius_of_radonezh.GetShortName] mohol šíriť [sergius_of_radonezh.GetHisHer] učenie po celom [ShowRegionName('russian_region')]." # todo: NEW TRANSLATION
+ flavor_mos.5.a: "Zázračník celej [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mos.5.tt1: "[sergius_of_radonezh.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.5.b: "Negramotný reformný šarlatán." # todo: NEW TRANSLATION
+ flavor_mos.5.historical_info: "Sergius z Radonežu bol uctievaný mních považovaný za jednu z najvýznamnejších osobností ruskej pravoslávnej cirkvi. Počas svojho života založil Trojičnú lavru sv. Sergia a zohral kľúčovú úlohu pri reforme mníšskeho života v Rusku. Je uctievaný ako svätec a je zapamätaný ako duchovný vodca v neistých časoch." # todo: NEW TRANSLATION
+ flavor_mos.6.title: "Lavra Trojice sv. Sergia" # todo: NEW TRANSLATION
+ flavor_mos.6.desc: "Mníšska bunka založená [sergius_of_radonezh.GetName] naďalej priťahuje mníchov z kniežatstiev a v Sergijev Posade pri [ShowLocationName('pushkino')] sa začína formovať osada s doplnkovými budovami, ako pekáreň a kuchyňa. Môže byť rozumné finančne podporiť toto úsilie, aby sme pomohli vytvoriť duchovné centrum pre [ShowReligionAdjective('orthodox')] vieru ako prostriedok na zjednotenie našich bratov a šírenie pravej doktríny." # todo: NEW TRANSLATION
+ flavor_mos.6.a: "Hodný cieľ." # todo: NEW TRANSLATION
+ flavor_mos.6.a.custom: "Rýchly rast osady priťahuje [ShowPopTypeName('clergy')] z celého [ShowRegionName('russian_region')]" # todo: NEW TRANSLATION
+ flavor_mos.6.tt: "Zhromažďovanie veriacich blízko hlavného mesta uľahčuje dohľad nad náboženskými záležitosťami" # todo: NEW TRANSLATION
+ flavor_mos.6.b: "Viera sa dá praktizovať kdekoľvek." # todo: NEW TRANSLATION
+ mos_holy_trinity_st_sergius_lavra_construction: "Výstavba Lavry Trojice sv. Sergia" # todo: NEW TRANSLATION
+ flavor_mos.6.historical_info: "Trojičná lavra sv. Sergia bola založená v 14. storočí a architektonicky sa vyvíjala postupne, dnes sa v nej nachádza niekoľko chrámov a katedrál. Považuje sa za najdôležitejší kláštor v Rusku a slúži ako duchovné centrum ruskej pravoslávnej cirkvi. Je miestom pochovania metropolitov a patriarchov a vlastní rozsiahlu zbierku náboženského umenia." # todo: NEW TRANSLATION
+ flavor_mos.7.title: "Relikvie sv. Sergia" # todo: NEW TRANSLATION
+ flavor_mos.7.desc: "Úmrtie uctievaného mnícha a duchovného vodcu [sergius_of_radonezh.GetName] ponorilo krajinu do hlbokého smútku. Otázka zachovania jeho relikvií na uctievanie a pútnictvo je predmetom diskusie, pričom preferovanou možnosťou je ich vystavenie v [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')]. Hoci je to náročnejšie na obranu, silno to rezonuje medzi veriacimi a Cirkevou. Nakoniec sú relikvie duchovným a kultúrnym lepidlom, ktoré drží našu spoločnosť pohromade." # todo: NEW TRANSLATION
+ flavor_mos.7.a: "Nezáleží, kde muž spočíva." # todo: NEW TRANSLATION
+ flavor_mos.7.b: "Nech sú relikvie privezené do [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.7.c: "Majú malú hodnotu." # todo: NEW TRANSLATION
+ flavor_mos.7.historical_info: "Po smrti svätého Sergia bol najprv pochovaný v skromnom hrobe v kláštore, ktorý založil. O tri desaťročia neskôr boli relikvie znovu objavené neporušené, čo bolo vykladané ako zázračné znamenie jeho svätosti. Relikvie zohrali významnú úlohu pri tom, že Trojičná lavra sv. Sergia sa stala jedným z najdôležitejších pútnických miest v Rusku." # todo: NEW TRANSLATION
+ flavor_mos.8.title: "[alexander_peresvet.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.8.desc: "Oddaný a disciplinovaný bojovnícky mních [alexander_peresvet.GetName] je pripravený pridať sa k radom našej mocnej armády, keď opäť čelíme hrozbe pohanských nepriateľov. [alexander_peresvet.GetHisHer|U] prítomnosť na bojisku prináša nielen výnimočné vojenské schopnosti, ale aj rituálny a rytiermi inšpirovaný spôsob boja, ktorý slúži ako zdroj inšpirácie a povzbudzuje naše vojská k boju s odvahou a statočnosťou." # todo: NEW TRANSLATION
+ flavor_mos.8.a: "Zdroj inšpirácie a statočnosti." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_monomachia: "Monomachia" # todo: NEW TRANSLATION
+ flavor_mos.8.b: "Vedúcich máme dosť." # todo: NEW TRANSLATION
+ flavor_mos.8.c: "Usporiadať cvičenia na dvore." # todo: NEW TRANSLATION
+ flavor_mos.8.historical_info: "Alexandr Peresvet bol ruský pravoslávny mních, ktorý sa zúčastnil významných bitiek medzi Mongolskou Zlatou hordou a silami Veľkého kniežatstva moskovského. Je známy tým, že pred začiatkom bitky vyzýval protivníkov na súboje jeden na jedného, známe ako #italic monomachia#!, najmä na jednej príležitosti, keď sa statočne postavil a porazil tatárskeho šampióna Čeľubeja, čím povzbuzoval ruské sily k obrane svojej zeme proti mongolským votrelcom." # todo: NEW TRANSLATION
+ flavor_mos.9.title: "Kalita" # todo: NEW TRANSLATION
+ flavor_mos.9.desc: "Titul [ShowSpecialStatusName('tatar_tax_collector')] naďalej prináša veľké výhody, no je priestor pre prehĺbenie vzťahu s [GetCountry('GLH').GetName] zvýšením vyberaného tribútu od ostatných tributárov [GetUniqueInternationalOrganization('tatar_yoke').GetName]. Akékoľvek takéto opatrenie by určite zvýšilo naše šance udržať si tento titul a jeho privilégiá." # todo: NEW TRANSLATION
+ flavor_mos.9.a: "Nevyhnutné zlo na zabezpečenie našej prevahy." # todo: NEW TRANSLATION
+ flavor_mos.9.tt1: "[GetCountry('GLH').GetGovernment.GetRulerTitle] obdrží dodatočných #G 25.00%#! tribútu, vybraného [target_root_country.GetGovernment.GetRuler.GetName] v mene [GetCountry('GLH').GetGovernment.GetRuler.GetHisHer]" # todo: NEW TRANSLATION
+ flavor_mos.9.at: "Každý člen [GetUniqueInternationalOrganization('tatar_yoke').GetName] (okrem [GetCountry('GLH').GetName]) stratí [ShowBiasValue('bleeding_us_dry')|+=0] [opinion|e] voči [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ bleeding_us_dry: "Vysávajú nás" # todo: NEW TRANSLATION
+ flavor_mos.9.b: "Už znášajú dosť utrpenia." # todo: NEW TRANSLATION
+ flavor_mos.9.tt2: "Efektívna [spy_network|e] [GetCountry('GLH').GetNameWithNoTooltip] informuje [GetCountry('GLH').GetGovernment.GetRulerTitle], že zadržiavame informácie veľkého významu" # todo: NEW TRANSLATION
+ flavor_mos.9.tt3: "[GetCountry('GLH').GetGovernment.GetRulerTitle] zistí, že zadržiavame informácie veľkého významu" # todo: NEW TRANSLATION
+ flavor_mos.9.tt4: "[GetCountry('GLH').GetGovernment.GetRulerTitle] zostáva v nevedomosti" # todo: NEW TRANSLATION
+ flavor_mos.9.historical_info: "Slovo 'Kalita', znamenajúce peňaženku, bolo použité pre moskovského panovníka Ivana I., ktorý bol neslávne známy vo svojej efektívnosti pri vyberaní tribútov a daní v prospech mongolských zvrchovaných pánov. Zabezpečením priazne Zlatej horde $rank_kingdom_horde_ruler_suffix_male$ bol Moskovu ušetrený ničivých nájazdov, ktoré by často spomalili rozvoj susedných kniežatstiev, čo v dlhodobom meradle výrazne prispelo k postupnému vzostupu Moskvy ako regionálnej moci." # todo: NEW TRANSLATION
+ flavor_mos.10.title: "Denga a Rubeľ" # todo: NEW TRANSLATION
+ flavor_mos.10.desc: "Schopnosť regulovať vlastnú menu je nesmierne dôležitá, ak sa chceme etablovať ako veľké centrum obchodu a podnikania. Máme príležitosť vytvoriť novú sadu mincí, ktorá môže byť použitá výlučne pre domáce transakcie, alebo takú, ktorá môže byť používaná v obchode so susedmi. Existuje aj možnosť razby oboch typov mincí, no to by vytvorilo vysoký dopyt po [ShowGoodsName('silver')]." # todo: NEW TRANSLATION
+ flavor_mos.10.a: "Zaviesť obidve do obehu." # todo: NEW TRANSLATION
+ denga_ruble_key: "Denga a Rubeľ" # todo: NEW TRANSLATION
+ flavor_mos.10.b: "Nepotrebujeme obchod s inými." # todo: NEW TRANSLATION
+ flavor_mos.10.c: "Obchodovanie so susedmi nás posilňuje." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_denga: "Denga" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ruble: "Rubeľ" # todo: NEW TRANSLATION
+ mos_silver_coinage_introduced: "Zavedené strieborné mincovníctvo" # todo: NEW TRANSLATION
+ flavor_mos.10.historical_info: "Srebreniky boli prvé mince razené zo striebra v Kyjevskej Rusi v 10. a 11. storočí. Neskôr, v časoch tatárskeho jho, začal byť produkovaný nový typ mince nazývaný Denga, napodobňujúci strieborné mince Zlatej horde. Aj keď prevzaté zo zahraničného vplyvu, postupne nadobudli viac ruskú podobu, čo dalo vznik ďalším typom mincí ako grivna a rubeľ. Pôvodne zamýšľaný ako alternatíva alebo odvodenina Dengy a grivny sa rubeľ stal primárnou menou v 14. a 15. storočí." # todo: NEW TRANSLATION
+ flavor_mos.11.title: "[andrei_rublev.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.11.desc_common1: "Duchovný maliar [andrei_rublev.GetName] prejavil výnimočný talent pre náboženskú ikonografiu, keď [andrei_rublev.GetSheHe] už vytvára niekoľko diel, ktoré zdobia kostoly naprieč naším územím." # todo: NEW TRANSLATION
+ flavor_mos.11.desc_common2: "[andrei_rublev.GetHisHer|U] výnimočný talent bol formovaný byzantským učiteľom Theopanesom Grékom, pochádzajúcim z [ShowLocationNameWithNoTooltip('constantinople')], a predpokladá sa, že tento vplyv zohral významnú úlohu pri formovaní [andrei_rublev.GetHisHer] štýlu ikonografie\n\n[andrei_rublev.GetSheHe|U] prebýva v [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')], kde [andrei_rublev.GetSheHe] zachováva cnosti kláštora a naďalej obohacuje jeho chrámy a katedrály." # todo: NEW TRANSLATION
+ flavor_mos.11.desc_byzantine_master: "$flavor_mos.11.desc_common1$\n\n[andrei_rublev.GetHisHer|U] výnimočný talent bol formovaný byzantským učiteľom Theopanesom Grékom, pochádzajúcim z [ShowLocationNameWithNoTooltip('constantinople')], a predpokladá sa, že tento vplyv zohral významnú úlohu pri formovaní [andrei_rublev.GetHisHer] štýlu ikonografie." # todo: NEW TRANSLATION
+ flavor_mos.11.desc_st_sergius_monk: "$flavor_mos.11.desc_common1$\n\n[andrei_rublev.GetSheHe|U] prebýva v [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')], kde [andrei_rublev.GetSheHe] zachováva cnosti kláštora a naďalej obohacuje jeho chrámy a katedrály." # todo: NEW TRANSLATION
+ flavor_mos.11.desc_all_criteria_met: "$flavor_mos.11.desc_common1$\n\n$flavor_mos.11.desc_common2$" # todo: NEW TRANSLATION
+ flavor_mos.11.a: "Kláštorné prostredie [andrei_rublev.GetHimHer] vyhovuje." # todo: NEW TRANSLATION
+ flavor_mos.11.tt2: "[andrei_rublev.GetHisHer|U] talenty sú využité na obohatenie náboženského umenia [ShowWorkOfArtNameWithNoTooltip('holy_trinity_st_sergius_lavra')]" # todo: NEW TRANSLATION
+ flavor_mos.11.tt3: "Učenie byzantského majstra [andrei_rublev.GetHisHer] výrazne obohacuje [andrei_rublev.GetHisHer] zručnosti" # todo: NEW TRANSLATION
+ flavor_mos.11.b: "Nech [andrei_rublev.GetHimHer] zdobí naše katedrály." # todo: NEW TRANSLATION
+ flavor_mos.11.tt4: "Spolupráca po boku byzantského učiteľa [andrei_rublev.GetHisHer] výrazne ovplyvní rozvoj [target_root_country.GetAdjective] náboženského umenia." # todo: NEW TRANSLATION
+ flavor_mos.11.c: "Nie je potrebné ďalšie fresky." # todo: NEW TRANSLATION
+ flavor_mos.11.historical_info: "Andrej Rubľov je považovaný za jedného z najväčších stredovekých ruských maliarov a je najviac známy svojou ikonou Trojice, ktorá je považovaná za majstrovské dielo ruského umenia. Jeho diela sa vyznačujú obmedzenou farebnou paletou, harmonickými kompozíciami a použitím jemných farieb. Bol častým zdrojom inšpirácie pre umelcov a teológov a bol kanonizovaný v roku 1988." # todo: NEW TRANSLATION
+ flavor_mos.12.title: "Svätá Trojica" # todo: NEW TRANSLATION
+ flavor_mos.12.desc: "Známý maliar ikon [andrei_rublev.GetName] vytvoril majstrovské dielo zobrazujúce Svätú Trojicu, s tromi anjelskými postavami sediacimi pri stole, symbolizujúcimi Otca, Syna a Ducha Svätého. Je mimoriadne detailné a ukazuje charakteristické prvky [andrei_rublev.GetHisHer] ostatných diel, ako harmonické použitie farieb a skromnú paletu." # todo: NEW TRANSLATION
+ flavor_mos.12.a: "Magnet na turistov." # todo: NEW TRANSLATION
+ flavor_mos.12.b: "Sústrediť sa na existujúce náboženské miesta." # todo: NEW TRANSLATION
+ flavor_mos.12.tt1: "[andrei_rublev.GetNameWithNoTooltip] namiesto toho pracuje na ďalšom obohacovaní náboženského umenia v [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')]" # todo: NEW TRANSLATION
+ flavor_mos.12.tt2: "Oddanosť duchovným veciam je hlboko oceňovaná [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.12.c: "Koliduje to s kobercami." # todo: NEW TRANSLATION
+ flavor_mos.12.historical_info: "Svätá Trojica, vytvorená Andrejom Rubľovom okolo roku 1410, je považovaná za jedno z najvýznamnejších diel náboženského umenia. Inšpirovala umelcov a naďalej slúži ako symbol ruskej pravoslávnej spirituality. Dielo podporuje kontempláciu a modlitbu a rozjímanie nad jeho záhadami." # todo: NEW TRANSLATION
+ flavor_mos.13.title: "Písomný testament" # todo: NEW TRANSLATION
+ flavor_mos.13.desc: "Potrebnosť riadnej dokumentácie je kľúčová, aby sa predišlo sporom a zachovala kontinuita. Náš vážený vodca [ROOT.GetCountry.GetGovernment.GetRuler.GetName] sa rozhodol zostaviť dedičské nariadenie vyhotovené úplne z [ShowGoodsName('paper')], v ktorom sú uvedené [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] želania a pokyny pre správu [ROOT.GetCountry.GetName] po [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] smrti." # todo: NEW TRANSLATION
+ flavor_mos.13.a: "Papierový nápad." # todo: NEW TRANSLATION
+ flavor_mos.13.tt1: "Zavedenie [ShowGoodsNameWithNoTooltip('paper')] do vládnych záležitostí zachová moc a dedičstvo vládnucej dynastie a môže viesť k jeho širšiemu použitiu" # todo: NEW TRANSLATION
+ flavor_mos.13.b: "Vyhradiť jeho použitie na náboženské prepisovanie." # todo: NEW TRANSLATION
+ flavor_mos.13.c: "Drahé a zbytočné." # todo: NEW TRANSLATION
+ mos_paper_wills: "Písomné právne testamenty" # todo: NEW TRANSLATION
+ flavor_mos.13.historical_info: "Prvým vládcom Moskovského kniežatstva, ktorý zanechal testament alebo písomnú závet, bol Ivan I., bežne známy ako Ivan Kalita. Nazvaný jednoducho #italic Kalitovo dedičstvo#!, zaoberal sa rôznymi aspektmi vlády a správy, ako aj usmerneniami o nástupníctve a rozdelení moci medzi jeho synmi." # todo: NEW TRANSLATION
+ flavor_mos.14.title: "Metropolita Alexius" # todo: NEW TRANSLATION
+ flavor_mos.14.desc: "Novo zvolený metropolita [metropolitan_alexius.GetShortName] je ochotný prispieť k politickým ambíciám [ROOT.GetCountry.GetName], okrem svojej úlohy pri správe a rozvoji [ShowReligionAdjective('orthodox')] cirkvi. [metropolitan_alexius.GetHisHer|U] pozoruhodné skúsenosti môžu byť užitočné pre umenie vlády a diplomacie, ktoré sú nevyhnutné, ak chceme zaujať miesto právoplatných vládcov celej Rusi." # todo: NEW TRANSLATION
+ flavor_mos.14.a: "Pozvite [metropolitan_alexius.GetShortNameWithNoTooltip] na dvor." # todo: NEW TRANSLATION
+ flavor_mos.14.tt2: "[metropolitan_alexius.GetHisHer|U] vplyv inšpiruje [ROOT.GetCountry.GetGovernment.GetRuler.GetName] a povzbudzuje k zbožnejšiemu spôsobu života" # todo: NEW TRANSLATION
+ flavor_mos.14.b: "Nech [metropolitan_alexius.GetHimHer] pôsobí ako regent." # todo: NEW TRANSLATION
+ flavor_mos.14.c: "Deštruktívny vplyv." # todo: NEW TRANSLATION
+ flavor_mos.14.tt3: "Odmietanie duchovného vedenia vo vláde uráža [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_spiritual_administrator: "Duchovný správca" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_metropolitan: "Metropolita" # todo: NEW TRANSLATION
+ flavor_mos.14.historical_info: "Metropolita Alexius pôsobil ako regent a duchovný vychovávateľ počas nedospelého obdobia Dmitrija Donského a zohral dôležitú úlohu pri vzostupe Moskvy ako významného politického a náboženského centra. Ako metropolita sa podieľal na podpore náboženského vzdelávania a dohliadaní na výstavbu chrámov a kláštorov." # todo: NEW TRANSLATION
+ flavor_mos.15.title: "Hodinová veža" # todo: NEW TRANSLATION
+ flavor_mos.15.desc: "Mních a hodinár Lazar uteká pred vojnou a prenasledovaním zo svojho rodného [GetCountry('SER').GetName] a nedávno sa usadil v [ShowLocationName('moscow')]. Obrátil sa na [ROOT.GetCountry.GetGovernment.GetRuler.GetName] s plánmi nového zariadenia nazývaného 'mechanické hodiny', ktoré automaticky udávali hodiny. Takýto pokrok by určite posunul [ROOT.GetCountry.GetName] na mapu a podnietil vedeckú zvedavosť." # todo: NEW TRANSLATION
+ flavor_mos.15.a: "Začať výstavbu okamžite." # todo: NEW TRANSLATION
+ flavor_mos.15.tt1: "Hodiny vzbudzujú v obyvateľstve úžas a priťahujú investície a nových mysliteľov." # todo: NEW TRANSLATION
+ flavor_mos.15.b: "Zdieľajme jeho návrh s našimi najlepšími mysliteľmi." # todo: NEW TRANSLATION
+ flavor_mos.15.c: "Pripíšme si plné zásluhy za jeho vynález." # todo: NEW TRANSLATION
+ flavor_mos.15.tt2: "Chamtivá povaha [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] vedie k tomu, že [target_root_country.GetGovernment.GetRuler.GetHimHer] si prisvojí zásluhy za hodiny" # todo: NEW TRANSLATION
+ flavor_mos.15.historical_info: "Prvá mechanická hodinová veža bola postavená za vlády Ivana III. a nachádzala sa v moskovskom Kremli. Slúžila na oznamovanie dôležitých udalostí a času a tiež ako symbol významu a vplyvu Moskovského kniežatstva. Bola považovaná za technický zázrak svojej doby a patrila medzi prvých desať takýchto pokrokových hodín v Európe." # todo: NEW TRANSLATION
+ flavor_mos.16.title: "Sporné nástupníctvo" # todo: NEW TRANSLATION
+ flavor_mos.16.desc: "Po mongolskej invázii bol výber nástupcu silne ovplyvňovaný $rank_kingdom_horde_ruler_suffix_male$, ako prostriedok rozdeliť rôzne kniežatstvá a zachovať rovnováhu moci v regióne [ShowRegionName('russian_region')].\n\nNedávno sa objavili výzvy na zmenu, keď súčasný vládca získal moc prostredníctvom dedičstva, ako to stanovoval právny testament napísaný očom [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] otcom. Zrejme však existovala klauzula v zmluve, ktorá sľubovala vedenie blízkemu príbuznému [ROOT.GetCountry.GetGovernment.GetRuler.GetName], ak by [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] zdedil trón v veľmi mladom veku. Túto pravidlo otvorene spochybňuje [pretender.GetName], ktorý sa zdá mať už značnú podporu medzi obyvateľstvom." # todo: NEW TRANSLATION
+ flavor_mos.16.a: "Požiadať o podporu [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]." # todo: NEW TRANSLATION
+ flavor_mos.16.a.custom: "Významné množstvo [ShowPopTypeName('nobles')] stratí [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] a prejde na stranu [pretender.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mos.16.b: "Požiadať o podporu [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]." # todo: NEW TRANSLATION
+ flavor_mos.16.b.custom: "Významné množstvo [ShowPopTypeName('clergy')] a [ShowPopTypeName('peasants')] stratí [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] a prejde na stranu [pretender.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mos.16.tt1: "[pretender.GetNameWithNoTooltip] sa stiahne z [target_location.GetName] v očakávaní [pretender.GetHisHer] ďalšieho kroku." # todo: NEW TRANSLATION
+ flavor_mos.16.c: "Nech sa právny dokument rozšíri." # todo: NEW TRANSLATION
+ flavor_mos.16.tt2: "Legitímnosť [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] sa posilní vďaka pozoruhodne zachovanému testamentu, vyhotovenému výlučne z [ShowGoodsNameWithNoTooltip('paper')]" # todo: NEW TRANSLATION
+ flavor_mos.16.tt3: "[pretender.GetNameWithNoTooltip] sa stiahne z [target_location.GetName] a je nepravdepodobné, že získa veľa nasledovníkov." # todo: NEW TRANSLATION
+ flavor_mos.16.d: "Oslovte priamo [GetCountry('GLH').GetGovernment.GetRuler.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mos.16.tt4: "[GetCountry('GLH').GetName] je požiadané, aby [GetCountry('GLH').GetGovernment.GetRuler.GetHisHer] potvrdil podporu pre [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.16.tt5: " $rank_kingdom_horde_ruler_suffix_male$ môže rozhodnúť v prospech [pretender.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ war_of_succession_pretender: "Rurikovský pretendent" # todo: NEW TRANSLATION
+ flavor_mos.16.historical_info: "V 13. storočí boli ruské kniežatstvá relatívne malé a slabé, pričom každý vládca čelil schváleniu zo strany zlatej horde $rank_kingdom_horde_ruler_suffix_male$. V nasledujúcom storočí Moskva nabrala na sile a pokúsila sa spochybniť autoritu Mongolov tým, že trón prešiel na syna Vasilija I. Po jeho smrti bol tento krok spochybnený jeho bratom kvôli odlišným výkladom testamentu, a následná občianska vojna viedla k desaťročiam trvajúcemu mocenskému zápasu známeho ako moskovská vojna o nástupníctvo." # todo: NEW TRANSLATION
+ flavor_mos.21.title: "Prikazi" # todo: NEW TRANSLATION
+ flavor_mos.21.desc: "Absencia efektívnej administratívy je vnímaná ako prekážka, aby [ROOT.GetCountry.GetName] zaujalo svoje právoplatné miesto medzi veľmocami. Môžeme zlepšiť správu zriadením série úradov, ktoré by dohliadali na rôzne oblasti štátnej správy, čo by zasa urýchlilo vykonávanie rôznych nariadení [ROOT.GetCountry.GetGovernment.GetRuler.GetName] a pomohlo by to centralizovať moc." # todo: NEW TRANSLATION
+ flavor_mos.21.a: "Ako inak máme fungovať?" # todo: NEW TRANSLATION
+ flavor_mos.21.tt1: "Zriadených je niekoľko úradov, ktoré členom [cabinet|e] umožňujú dozerať na ne pomocou [cabinet_action|e]" # todo: NEW TRANSLATION
+ enable_prikazi_reform: "Umožní prístup k [ShowGovernmentReformName('prikazi_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ flavor_mos.21.b: "Voľné opraty sú cestou k úspechu." # todo: NEW TRANSLATION
+ flavor_mos.21.historical_info: "Prikazi označujú administratívne úrady, ktoré fungovali počas obdobia cárstva a raného Ruského impéria. Boli nevyhnutné pri vykonávaní politík a rozhodnutí cára, ale tiež sa zaoberali každodennými štátnymi záležitosťami. Niektoré z väčších úradov riešili záležitosti zahraničných vecí a boli kľúčové v čase, keď sa Rusko vnímalo ako obklopené nepriateľmi a stále zápasilo o získanie nezávislosti od Zlatej Hordy." # todo: NEW TRANSLATION
+ flavor_mos.22.title: "[ShowGovernmentReformNameWithNoTooltip('razriadnyi_reform')]" # todo: NEW TRANSLATION
+ flavor_mos.22.desc: "K dispozícii je len málo záznamov o obyvateľstve, majetku a daniach, čo sťažuje kontrolu výdavkov a financovanie rozšírenia našej administratívy. Mohli by sme vykonať pravidelné sčítanie obyvateľstva, ktoré by uskutočňoval novozriadený [ShowGovernmentReformName('razriadnyi_reform')], a ktoré by poskytlo podrobné záznamy jednotlivcov a domácností po celom [ROOT.GetCountry.GetName], aby sme mohli posúdiť zdroje a povinnosti našich poddaných." # todo: NEW TRANSLATION
+ flavor_mos.22.a: "Preskúmajme každý kút a zákutie." # todo: NEW TRANSLATION
+ enable_razriadnyi_reform: "Umožní prístup k [ShowGovernmentReformName('razriadnyi_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ flavor_mos.22.b: "Porušenie súkromia a integrity." # todo: NEW TRANSLATION
+ flavor_mos.22.historical_info: "Vojenská kancelária, #italic Razriadnyi Prikaz#!, zaviedla nové sčítanie ako prostriedok určenia daňovej povinnosti obyvateľstva na základe bohatstva, majetku a spoločenského postavenia. Bol to aj spôsob zabezpečenia, aby každý stav poskytol požadovaný počet vojakov a vojnového materiálu v súlade so svojimi povinnosťami. Záznamy sa stali kľúčovými pri správe rozsiahleho a rozmanitého územia." # todo: NEW TRANSLATION
+ flavor_mos.23.title: "Ugrská zmluva" # todo: NEW TRANSLATION
+ flavor_mos.23.desc: "Silné [GetCountry('LIT').GetName] je jasne stúpajúcou mocnosťou, a nachádza sa v rozpore s [GetCountry('TEU').GetName], pričom tiež presadzuje politiku nadvlády nad východoslovanskými územiami. Oblasť [ShowAreaName('smolensk_area')] je momentálne pod našou kontrolou, ale mohla by im byť postúpená, ak by nám dali určité diplomatické záruky. Tým by [GetCountry('LIT').GetNameWithNoTooltip] mohla presmerovať svoje úsilie na upokojenie križiackych rytierov bez prerušenia, a my by sme si zaistili, že nebudú mať snahu preniknúť na naše územie." # todo: NEW TRANSLATION
+ flavor_mos.23.a: "Navrhnúť podmienky." # todo: NEW TRANSLATION
+ enable_state_controlled_church_reform: "Umožní prístup k [ShowGovernmentReformName('state_controlled_church')] [government_reform|e]" # todo: NEW TRANSLATION
+ flavor_mos.23.tt1: "Ak bude zmluva prijatá, postúpime [ShowAreaNameWithNoTooltip('smolensk_area')] [GetCountry('LIT').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.23.tt2: "Navrhuje sa spojenectvo" # todo: NEW TRANSLATION
+ flavor_mos.23.b: "Prečo váhať, keď môžeme zaútočiť." # todo: NEW TRANSLATION
+ flavor_mos.23.c: "Naše pozície musia byť konsolidované inde." # todo: NEW TRANSLATION
+ flavor_mos.23.historical_info: "Ugrská zmluva bola podpísaná v roku 1408 medzi kniežatstvom moskovským a Veľkovojvodstvom litovským. Postúpila spornú oblasť Smolenska výmenou za posilnenie diplomatických vzťahov a krátkodobé spojenectvo, čo umožnilo Litve upevniť svoju pozíciu a vplyv v regióne, zároveň jej to uľahčilo boj proti Rádu nemeckých rytierov." # todo: NEW TRANSLATION
+ flavor_mos.24.title: "Vestiárium" # todo: NEW TRANSLATION
+ flavor_mos.24.desc: "Kráľovská pokladnica zostáva bez evidencie a postráda akýkoľvek inventár, čo sťažuje zistenie celkovej hodnoty nahromadeného majetku. Je nevyhnutné, aby sme vytvorili mechanizmus lepšieho hospodárenia s naším majetkom, pretože ho možno využiť na napredovanie diplomatických cieľov a na posilnenie správy [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
+ flavor_mos.24.a: "Efektívna správa je kľúčom k úspechu." # todo: NEW TRANSLATION
+ flavor_mos.24.b: "Musíme rozvinúť diplomatickú sieť." # todo: NEW TRANSLATION
+ flavor_mos.24.custom: "Umožní prístup k [ShowLawName('vestiarium')] [law|e]" # todo: NEW TRANSLATION
+ flavor_mos.24.historical_info: "The #italic Vestiarium#! Vasiľa I. bol inventárom cenných predmetov patriacich kráľovskej pokladnici. Bol zavedený na vedenie finančnej a inventárnej evidencie všetkého, od drahých kovov, šperkov a textílií až po odevy a predmety používané pri štátnych ceremóniách a ako diplomatické dary." # todo: NEW TRANSLATION
+ flavor_mos.25.title: "[sender.GetGovernment.GetRulerTitle] z [sender.GetNameWithNoTooltip] súhlasí s navrhovanými podmienkami" # todo: NEW TRANSLATION
+ flavor_mos.25.desc_treaty_of_ugra: "Naše snahy zabezpečiť výhodnú zmluvu s [sender.GetName] boli úspešné a obe strany podpísali Ugrskú zmluvu. Zastavenie nepriateľstiev môže viesť k prosperujúcejšiemu vzťahu medzi našimi krajinami a zabezpečiť náš prežitie ako nezávislého [ROOT.GetCountry.GetFlavorRank].\n\nNaše diplomatické úsilie sa zjavne vyplatilo." # todo: NEW TRANSLATION
+ flavor_mos.25.desc_generic_treaty: "Naše snahy zabezpečiť výhodnú zmluvu boli úspešné, keď [sender.GetGovernment.GetRulerTitle] z [sender.GetName] súhlasil s podpisom.\n\nZdá sa, že naše diplomatické úsilie stálo za to." # todo: NEW TRANSLATION
+ flavor_mos.25.a: "Sľubný začiatok." # todo: NEW TRANSLATION
+ flavor_mos.25.tt1: "Postúpili sme [ShowAreaNameWithNoTooltip('smolensk_area')] [GetCountry('LIT').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.25.tt2: "S [GetCountry('LIT').GetNameWithNoTooltip] sa podpísalo [alliance|e]" # todo: NEW TRANSLATION
+ flavor_mos.25.b: "Na zdravie!" # todo: NEW TRANSLATION
+ flavor_mos.26.title: "[sender.GetGovernment.GetRulerTitle] z [sender.GetNameWithNoTooltip] odmieta diplomatický návrh" # todo: NEW TRANSLATION
+ flavor_mos.26.desc_treaty_of_ugra_declined: "Výhodnú zmluvu navrhnutú [sender.GetGovernment.GetRulerTitle] z [sender.GetName] odmietli. Zrejme nevidia chybu vo svojich krokoch a musia naďalej čeliť hrozbám zo všetkých strán.\n\nNaše diplomatické úsilie sa zjavne ukázalo ako márne." # todo: NEW TRANSLATION
+ flavor_mos.26.desc_generic_treaty: "Naše snahy zabezpečiť výhodnú zmluvu boli márne, keďže [sender.GetGovernment.GetRulerTitle] z [sender.GetName] odmieta podpísať.\n\nNaše diplomatické úsilie sa zjavne ukázalo ako márne." # todo: NEW TRANSLATION
+ flavor_mos.26.a: "To bude ich pád." # todo: NEW TRANSLATION
+ flavor_mos.26.b: "Možno omyl v úsudku." # todo: NEW TRANSLATION
+ flavor_mos.26.tt: "Dôvera vložená do [sender.GetName] je stratená" # todo: NEW TRANSLATION
+ flavor_mos.27.title: "[maria_borovsk.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.27.desc: "Vhodná kandidátka na manželku pre [ROOT.GetCountry.GetGovernment.GetRuler.GetName] bola predložená na základe spoločného odporúčania [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] a [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. [maria_borovsk.GetName], pochádzajúca z prestížneho šľachtického rodu a známa kvôli svojej pobožnosti a charitatívnym skutkom, by bola vynikajúcim spojením tak v štátnych záležitostiach, ako aj v citových záležitostiach." # todo: NEW TRANSLATION
+ flavor_mos.27.a: "Požehnané manželstvo." # todo: NEW TRANSLATION
+ flavor_mos.27.tt1: "[maria_borovsk.GetNameWithNoTooltip] je pridaná ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.27.tt2: "[maria_borovsk.GetHimHer|U] skutky dobročinnosti a pobožnosti prispievajú k založeniu kláštora v [ShowLocationNameWithNoTooltip('borovsk')]" # todo: NEW TRANSLATION
+ flavor_mos.27.b: "Umiestniť [maria_borovsk.GetHimHer] do kláštora." # todo: NEW TRANSLATION
+ flavor_mos.27.tt3: "Početné deti [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] rušia potrebu ďalšieho sobáša" # todo: NEW TRANSLATION
+ flavor_mos.27.tt4: "Nedostatok potomkov [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] a odmietanie sobášu znepokojuje [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.27.historical_info: "Mária z Borovska bola rusko‑pravoslávna mníška, ktorá je známa pre svoje manželstvo s veľkokniežatkom Vasilijom II. Jej rod bol zbavený moci počas moskovskej vojny o nástupníctvo; spočiatku bola vyhnaná z Moskvy a neskôr zajatá počas prebiehajúceho mocenského boja. Neskoršie roky života zasvätila modlitbe, pôstu a službe chudobným." # todo: NEW TRANSLATION
+ flavor_mos.28.title: "$uspensky_sobor$" # todo: NEW TRANSLATION
+ flavor_mos.28.desc: "Nedávno postavený [ShowBuildingTypeName('kremlin')] chráni našich ľudí, ale nedostatok duchovného života v týchto múroch brzdí rozvoj našej viery. Veľká katedrála zasvätená Nanebovzatiu Panny Márie by sa mohla stať miestom korunovácií a pohrebiska kniežat, ktoré prídu, a tiež symbolom našich veľkých ambícií zjednotiť tieto krajiny." # todo: NEW TRANSLATION
+ flavor_mos.28.a: "Bude zohrávať ústrednú úlohu." # todo: NEW TRANSLATION
+ mos_uspensky_sobor_construction: "$uspensky_sobor$ Výstavba" # todo: NEW TRANSLATION
+ flavor_mos.28.tt1: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú veľmi potešení perspektívou veľkého náboženského [building|e]" # todo: NEW TRANSLATION
+ flavor_mos.28.b: "Namiesto toho objednať sériu náboženských diel." # todo: NEW TRANSLATION
+ flavor_mos.28.c: "Pravdepodobný cieľ tatárskych nájazdov." # todo: NEW TRANSLATION
+ flavor_mos.28.tt2: "Významné množstvo času je venované posilňovaniu existujúcich obrán" # todo: NEW TRANSLATION
+ flavor_mos.28.historical_info: "Pôvodná Uspenská katedrála v Moskve bola postavená za vlády Ivana I. a rýchlo sa stala miestom dôležitých náboženských obradov, vrátane korunovácií panovníkov. Neskôr upadla do zhoršeného stavu a v nasledujúcom storočí bola prestavaná s ešte väčšou nádherou a výrazným vplyvom byzantskej architektúry." # todo: NEW TRANSLATION
+ flavor_mos.29.title: "Permské písmo" # todo: NEW TRANSLATION
+ flavor_mos.29.desc: "Územia obklopujúce náš [ROOT.GetCountry.GetFlavorRank] ešte nepoznali svetlo Kristovo a neodvrhli svoje bludné spôsoby. Misionárska práca je kľúčová pre ich obrátenie, no zostáva náročná kvôli jazykovým bariéram.\n\nJeden oddaný misionár, [stephen_of_perm.GetName], pôvodne pochádzajúci z vzdialených západných krajín, ale teraz prebývajúci v [ShowLocationName('perm')], sa vydal na odvážnu misiu priniesť učenie kresťanstva týmto neobrazeným dušiam. Aby [stephen_of_perm.GetHimHer] v tom pomohol, začal [stephen_of_perm.GetSheHe] náročnú úlohu vytvorenia nového písma, založeného na východoslovanskej abecede a zahŕňajúceho cyrilické i necyrilické znaky. Ak bude dokončené, mohlo by sa použiť na preklad náboženských diel do jazyka prístupnejšieho pre tých, ktorí sa ešte neobrali k viere." # todo: NEW TRANSLATION
+ flavor_mos.29.a: "Píš, vikár!" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_cyrilic_scripter: "Cyrilický pisár" # todo: NEW TRANSLATION
+ flavor_mos.29.tt1: "[stephen_of_perm.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.29.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nadšení iniciatívou obrátiť zatúlané duše" # todo: NEW TRANSLATION
+ flavor_mos.29.b: "Zachovanie viery má prednosť." # todo: NEW TRANSLATION
+ flavor_mos.29.tt3: "[stephen_of_perm.GetNameWithNoTooltip] sa úplne venuje prepisovaniu náboženských diel." # todo: NEW TRANSLATION
+ flavor_mos.29.historical_info: "Permské písmo vyvinul Štefan z Permu poté, čo sa naučil jazyk a tradície Komi, pôvodného etnického ľudu obývajúceho odľahlé východné územia Moskvy. Vytvoril pre nich samostatný písomný systém na uľahčenie ich obrátenia na kresťanstvo a pri tom vytvoril jedno z najstarších písem pre uralský jazyk, čo mu zabezpečilo vymenovanie za prvého biskupa Permu." # todo: NEW TRANSLATION
+ flavor_mos.30.title: "[prokhor_of_gorodets.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.30.desc: "Askét [prokhor_of_gorodets.GetName] venuje [prokhor_of_gorodets.GetHisHer] čas tvorbe krásnej náboženskej ikonografie medzi duchovným rozjímaním. [prokhor_of_gorodets.GetHisHer|U] čas by sa mohol lepšie využiť pri zdobení nedávno posväteného [ShowWorkOfArtName('uspensky_sobor')], aby sa ďalej obohatil ikonostas medzi loďou a svätyňou." # todo: NEW TRANSLATION
+ flavor_mos.30.a: "Hotovo!" # todo: NEW TRANSLATION
+ flavor_mos.30.tt1: "[prokhor_of_gorodets.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.30.tt2: "[prokhor_of_gorodets.GetHisHer|U] dary sú použité pri vytvorení niekoľkých fresiek pre [ShowWorkOfArtNameWithNoTooltip('uspensky_sobor')]" # todo: NEW TRANSLATION
+ flavor_mos.30.b: "Netreba sa miešať." # todo: NEW TRANSLATION
+ flavor_mos.30.tt3: "[prokhor_of_gorodets.GetNameWithNoTooltip] je voľný ozdobiť, ako sa [prokhor_of_gorodets.GetSheHe] páči" # todo: NEW TRANSLATION
+ flavor_mos.30.tt4: "[prokhor_of_gorodets.GetSheHe|U] si vyhradzuje čas na vedenie [andrei_rublev.GetNameWithNoTooltip], a dvojica spoločne podporuje vznik niekoľkých náboženských fresiek" # todo: NEW TRANSLATION
+ flavor_mos.30.historical_info: "Prochor z Gorodeca bol ruský pravoslávny mních, známy svojim dielom na náboženskej výzdobe Moskovskej katedrály Zvestovania, najmä freskami zobrazujúcimi ukrižovanie, nanebovstúpenie a nanebovzatie. Život zasvätil službe Cirkvi a mentoroval talentovaného Andreja Rublëva, ktorý sa stal jedným z najslávnejších maliarov v ruskej histórii." # todo: NEW TRANSLATION
+ flavor_mos.31.title: "Juriev deň" # todo: NEW TRANSLATION
+ flavor_mos.31.desc: "Podľa Sudebníka sú [ShowPopTypeName('peasants')] oprávnení zmeniť svojho zamestnávateľa raz za kalendárny rok, obyčajne ku koncu žatvy, aby sa predišlo narušeniu zásob potravín. Obmedzenia sú hlboko nepopulárne medzi [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], ktorí žiadajú návrat k slobode pohybu po celom [ROOT.GetCountry.GetName] s cieľom zlepšiť svoje pracovné podmienky." # todo: NEW TRANSLATION
+ flavor_mos.31.a: "Z obmedzenia ich pohybu nie je žiadny zisk." # todo: NEW TRANSLATION
+ flavor_mos.31.b: "Ak to nie je pokazené, netreba to opravovať!" # todo: NEW TRANSLATION
+ flavor_mos.31.c: "Prehovorme ich lichôtkami." # todo: NEW TRANSLATION
+ flavor_mos.31.tt1: "Ukojenie požiadaviek [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] oslabuje schopnosť vlády udržať kontrolu" # todo: NEW TRANSLATION
+ flavor_mos.31.historical_info: "Sudebnik bol zákon prijatý v roku 1497, ktorý zahŕňal obmedzenia pohybu roľníkov, čo posilnilo moc vlastníkov pôdy a takmer zaviedlo nevoľníctvo v celej Moskve. Roľníkom bolo umožnené zmeniť vlastníka pôdy iba počas dvojtýždňového obdobia známeho ako Juriev deň, ktoré sa krylo s náboženským sviatkom svätého Juraja. Tieto obmedzenia boli dočasne uvoľnené počas vlády Ivana IV. spresnením platieb, ktoré sa mali vyplatiť vlastníkom pôdy. Koncom 16. storočia boli obmedzenia prísne vymáhané a akékoľvek výnimky zrušené, čo upevnilo nastolenie úplného nevoľníctva." # todo: NEW TRANSLATION
+ flavor_mos.32.title: "Pozhiloye" # todo: NEW TRANSLATION
+ flavor_mos.32.desc: "Sloboda pohybu [ShowPopTypeName('peasants')] umožňuje preklenutie nedostatku pracovnej sily a podporuje zdravú konkurenciu medzi vlastníkmi pôdy. Avšak prináša aj určitú neistotu v produkcii potravín a odrádza dlhodobosť medzi našimi pracovníkmi, a demotivuje akékoľvek snahy zvyšovať produktivitu pracovnej sily, pretože majiteľ pôdy si nemôže byť istý, že pracovníci zostanú viac než jednu sezónu. Môžeme zaviesť poplatok za odchod, ktorý by účtoval každému, kto si želá opustiť svojho súčasného vlastníka pôdy, slúžiaci ako odrádzanie od pravidelnej migrácie pracovnej sily." # todo: NEW TRANSLATION
+ flavor_mos.32.a: "Je to prístup 'mrkva a palica'." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_pozhiloye: "Pozhiloye" # todo: NEW TRANSLATION
+ flavor_mos.32.b: "To nie je potrebné." # todo: NEW TRANSLATION
+ flavor_mos.32.historical_info: "Pozhiloye bolo zavedené v roku 1550 ako súčasť rozsiahlej reformy Sudebnika. Bol to krok k posilneniu moci aristokracie na úkor roľníkov, no novelou sa tiež potvrdilo právo každého pracovníka opustiť svojho zamestnávateľa, pokiaľ bol schopný zaplatiť poplatok." # todo: NEW TRANSLATION
+ flavor_mos.33.title: "[sophia_palaiologina.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.33.desc: "Pád [ShowLocationName('constantinople')] nám priniesol možnosť zosobášiť sa s bývalou vládnucou vrstvou [GetCountry('BYZ').GetName]. Zosobáš [sophia_palaiologina.GetName] by priniesol byzantské kultúrne vplyvy na dvor, posilnil by naše nároky ako prirodzeného nástupcu Rímskej ríše a nositeľa [ShowReligionAdjective('orthodox')] viery, a akékoľvek potomstvo [ROOT.GetCountry.GetGovernment.GetRulerTitle] by mohlo preukázať svoj pôvod od cisárov padnutej ríše." # todo: NEW TRANSLATION
+ flavor_mos.33.a: "Predpovedané spojenie." # todo: NEW TRANSLATION
+ flavor_mos.33.tt1: "[sophia_palaiologina.GetNameWithNoTooltip] je pridaná ako [character|e]" # todo: NEW TRANSLATION
+ enable_byzantine_court_ceremonies_reform: "Umožní prístup k [ShowGovernmentReformName('byzantine_court_ceremonies_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ flavor_mos.33.tt2: "[sophia_palaiologina.GetHisHer|U] zášť prejavená voči niektorým diplomatám zhoršuje diplomatické vzťahy medzi [target_root_country.GetName] a jeho [heathen|e] susedmi" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_mongol_intolerance: "Mongolská neznášanlivosť" # todo: NEW TRANSLATION
+ flavor_mos.33.b: "Ponúka málo výhod." # todo: NEW TRANSLATION
+ flavor_mos.33.historical_info: "Manželstvo medzi Ivanom III. a Sofiou Paleologovou zaviedlo na moskovský dvor rozmanité ceremónie a etiketu, ktoré pomohli spevniť jeho nárok ako Tretieho Ríma. Sofia porodila jedenásť detí a stala sa matkou nechválneho Ivana Hrozného. Jej odpor voči mongolskej nadvláde spôsobil niekoľko diplomatických incidentov a urýchlil odlúčenie Moskvy od Zlatej Hordy v roku 1480." # todo: NEW TRANSLATION
+ flavor_mos.34.title: "[ridolfo_fioravanti.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.34.desc: "Renesančný architekt a majster inžinier [ridolfo_fioravanti.GetName] pricestoval do [ShowLocationName('moscow')] na pozvanie [ROOT.GetCountry.GetGovernment.GetRuler.GetName], ktorý si želá zvýšiť architektonickú nádheru [ShowBuildingTypeName('kremlin')]. Ak bude zapojený do práce, jeho západné vplyvy sa určite rozšíria po celom [ROOT.GetCountry.GetFlavorRank] a pozdvihnú náš status medzi európskymi mocnosťami." # todo: NEW TRANSLATION
+ flavor_mos.34.a: "Privolajme sem [ridolfo_fioravanti.GetHisHer] génius." # todo: NEW TRANSLATION
+ flavor_mos.34.tt1: "[ridolfo_fioravanti.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.34.tt2: "[ridolfo_fioravanti.GetHeShe|U] prináša najnovšie stavebné techniky a vplyvy renesancie" # todo: NEW TRANSLATION
+ flavor_mos.34.tt3: "[ridolfo_fioravanti.GetHeShe|U] sa ujíma prestavby [ShowWorkOfArtName('uspensky_sobor')], začleňujúc najnovšie štýly" # todo: NEW TRANSLATION
+ flavor_mos.34.tt4: "[ridolfo_fioravanti.GetHeShe|U] skúsenosti v hydraulickom inžinierstve zlepšujú infraštruktúru [ShowLocationNameWithNoTooltip('moscow')]" # todo: NEW TRANSLATION
+ flavor_mos.34.b: "Cudzie vplyvy nie sú vítané." # todo: NEW TRANSLATION
+ flavor_mos.34.historical_info: "Ridolfo 'Aristotele' Fioravanti bol renomovaný taliansky architekt a inžinier, ktorý pracoval na viacerých projektoch v Taliansku pred presťahovaním sa do Moskvy v roku 1475. Pozvánka od Ivana III. bola súčasťou snahy povýšiť postavenie Moskvy medzi ostatné európske mestá. Fioravanti je známy návrhom Uspenskej katedrály v rámci Kremľa." # todo: NEW TRANSLATION
+ flavor_mos.35.title: "[marco_ruffo.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.35.desc_kremlin: "Vojenský architekt [marco_ruffo.GetName] dorazil z [ShowLocationName('milano')] a navrhuje zmluvu o zamestnaní na zvýšenie obranných schopností [ShowBuildingTypeName('kremlin')] výstavbou série veží pozdĺž obvodových múrov. $flavor_mos.35.desc_common$" # todo: NEW TRANSLATION
+ flavor_mos.35.desc_defensiveness: "Vojenský architekt [marco_ruffo.GetName] dorazil z [ShowLocationName('milano')] a navrhuje zmluvu o zamestnaní na realizáciu série opatrení na zvýšenie obranných schopností [ROOT.GetCountry.GetFlavorRank]. $flavor_mos.35.desc_common$" # todo: NEW TRANSLATION
+ flavor_mos.35.desc_common: "Akákoľvek takáto iniciatíva určite prispeje k prenosu poznatkov zo západu na východ a posilní našu pozíciu v rámci [ShowRegionName('russian_region')]." # todo: NEW TRANSLATION
+ flavor_mos.35.a: "Kresliace dosky pripravené." # todo: NEW TRANSLATION
+ flavor_mos.35.tt1: "[marco_ruffo.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.35.tt2: "[marco_ruffo.GetHeShe|U] zlepšuje obranné schopnosti [ShowBuildingTypeName('kremlin')] začlenením série veží do častí múrov obklopujúcich [ShowLocationName('moscow')]" # todo: NEW TRANSLATION
+ flavor_mos.35.tt3: "[marco_ruffo.GetHeShe|U] zavádza najnovšie obranné stratégie a vplyvy renesancie" # todo: NEW TRANSLATION
+ flavor_mos.35.b: "Najlepšia ochrana je dobrá obrana." # todo: NEW TRANSLATION
+ flavor_mos.35.c: "Nech [marco_ruffo.GetHimHer] vyučuje našich najväčších mysliteľov." # todo: NEW TRANSLATION
+ flavor_mos.35.tt4: "[marco_ruffo.GetHerHis|U] odborné znalosti v umení obrany sa zdieľajú s miestnymi architektmi, čím sa podporuje šírenie poznania." # todo: NEW TRANSLATION
+ flavor_mos.35.d: "Nech [marco_ruffo.GetHimHer] navrhne namiesto toho banketový palác." # todo: NEW TRANSLATION
+ flavor_mos.35.tt5: "Detailne zdobený nový palác sa stáva hlavným miestom pre korunovácie, hostiny a oficiálne prijatia." # todo: NEW TRANSLATION
+ flavor_mos.35.historical_info: "Marco Ruffo bol pozvaný Ivanom III. ako súčasť iniciatívy na zlepšenie medzinárodného postavenia kniežatstva a pomôcť Moskve presadiť nezávislosť proti Zlatej Horde. Mesto už bolo niekoľkokrát vyplienené a knieža bol rozhodnutý posilniť jeho obranu. Ruffo je tiež známy svojím návrhom Paláca fasiet." # todo: NEW TRANSLATION
+ flavor_mos.36.title: "Matka Hrozného" # todo: NEW TRANSLATION
+ flavor_mos.36.desc: "Absencia dedičov je dôvodom na obavy, a existuje len málo náznakov, že [current_wife.GetName] bude schopná v blízkej dobe splodiť potomka. Hoci to Cirkev nie celkom schvaľuje, môže byť múdre zvážiť hľadanie plodnejšej manželky pre [ROOT.GetCountry.GetGovernment.GetRuler.GetName], aby sa zabezpečila kontinuita dynastie [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName]. [eleanor_glinskaya.GetName], známa svojou krásou a mladosťou, by mohla posilniť dynastiu [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip], avšak [eleanor_glinskaya.GetSheHe] vyznáva [ShowReligionAdjective('shamanism')] a takéto manželstvo pravdepodobne narazí na silný odpor [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]." # todo: NEW TRANSLATION
+ flavor_mos.36.a: "Dynastia je na prvom mieste." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_terrible: "Hrozný" # todo: NEW TRANSLATION
+ flavor_mos.36.tt1: "[eleanor_glinskaya.GetNameWithNoTooltip] je pridaná ako [character|e] a porodí [ivan_the_terrible.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.36.b: "Stará manželka možno ešte porodí dediča." # todo: NEW TRANSLATION
+ flavor_mos.36.historical_info: "Elena Glinskaja bola tatárskeho pôvodu a pochádzala zo šľachtického rodu Glinsky z Litvy. O jej výchove sa vie málo a je najpamätanejšia pre narodenie Ivana Hrozného, ktorý sa neskôr stal prvým cárom Ruska. Po smrti manžela vládla ako regentka, počas čoho uskutočnila niekoľko reforiem a vyjednala prímerie s konkurenčným Veľkovojvodstvom litovským." # todo: NEW TRANSLATION
+ flavor_mos.37.title: "Veľký požiar Moskvy" # todo: NEW TRANSLATION
+ flavor_mos.37.desc: "Požiar neznámeho pôvodu pohlcuje naše veľké mesto [ShowLocationName('moscow')]. Použitie vysoko horľavých stavebných materiálov v mnohých budovách, ako napríklad [ShowGoodsName('lumber')], podnecuje jeho rýchle šírenie, pričom len málo oblastí zostáva bezpečných útočísk. Nasledky tejto tragédie sa určite budú cítiť ešte roky." # todo: NEW TRANSLATION
+ flavor_mos.37.a: "Aké je to božie trestanie!" # todo: NEW TRANSLATION
+ flavor_mos.37.tt1: "Požiar zničí niekoľko historických pokladov a artefaktov" # todo: NEW TRANSLATION
+ flavor_mos.37.tt2: "Plamene preniknú do Kremlu a zapália prach uložený v obranných vežiach" # todo: NEW TRANSLATION
+ flavor_mos.37.tt3: "Požiar zničí niektoré historické poklady a artefakty" # todo: NEW TRANSLATION
+ flavor_mos.37.b: "Mohlo to byť horšie." # todo: NEW TRANSLATION
+ flavor_mos.37.historical_info: "Moskva bola zničená požiarom v roku 1547, keď oheň prepukol a zničil časti mesta postavené prevažne z dreva. Kreml nebol ušetrený, hoci väčšina náboženských budov požiar prežila. Z folklóru a historických účtov z tej doby vyplýva, že rýchlo padla vina na príbuzných zosnulej matky cára, Eleny Glinskaje, ktorých obvinili zo šamanistickej mágie pri podpálení." # todo: NEW TRANSLATION
+ flavor_mos.38.title: "Púť do Lavry" # todo: NEW TRANSLATION
+ flavor_mos.38.desc: "Kláštor [ShowWorkOfArtName('holy_trinity_st_sergius_lavra')] v Sergijev Posade, neďaleko [ShowLocationName('pushkino')], sa stal významným útočiskom pre [ShowPopTypeName('clergy')], pričom počet pútnikov priťahujúcich sa k tomuto uctievaniu miestu neustále rastie. Mali by sme zvážiť oficiálne jeho vyhlásenie za hlavné miesto [ShowReligionAdjective('orthodox')] viery, aby sme zdôraznili rastúci vplyv [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ flavor_mos.38.a: "Významná udalosť pre pravých veriacich." # todo: NEW TRANSLATION
+ flavor_mos.38.b: "Môže to spôsobiť trhlinu v Cirkvi." # todo: NEW TRANSLATION
+ flavor_mos.38.historical_info: "Trojičná lávra sv. Sergia sa stala hlavným pútnickým miestom približne sto rokov po svojom vzniku a považuje sa za duchovné a kultúrne centrum ruskej pravoslávnej cirkvi. Nie je to len náboženské miesto, ale uchováva aj niekoľko kultúrnych a umeleckých pokladov. Napriek svojej zraniteľnej polohe prešla obdobiami politických a spoločenských otrasov, vrátane Smuty a sovietskej éry." # todo: NEW TRANSLATION
+ flavor_mos.39.title: "Expedícia [target_country.GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.39.desc: "Stále otrokové nájazdy organizované [target_country.GetName] vysávajú naše rezervy mužstva a ničia vidiek. Musíme zničiť schopnosť Tatárov vykonávať tieto nájazdy, inak riskujeme, že nebudeme schopní adekvátne brániť naše hranice." # todo: NEW TRANSLATION
+ flavor_mos.39.a: "Preventívny útok." # todo: NEW TRANSLATION
+ flavor_mos.39.b: "Okupácia je zbytočná." # todo: NEW TRANSLATION
+ flavor_mos.39.c: "Lepšie ich vynaložiť na prípravu našich síl." # todo: NEW TRANSLATION
+ flavor_mos.39.tt1: "Prebieha séria vojenských cvičení" # todo: NEW TRANSLATION
+ flavor_mos.39.historical_info: "V pätnástom a šestnástom storočí sa Veľké kniežatstvo moskovské zapájalo do viacerých vojenských ťažení proti Krymským Tatarom. Moskvu často sužovali ničivé otroké nájazdy Tatárov a snažila sa ich zastaviť oslabením ich schopností na lúpežné nájazdy." # todo: NEW TRANSLATION
+ flavor_mos.40.title: "Zneužívaný potomok" # todo: NEW TRANSLATION
+ flavor_mos.40.desc: "Znepokojujúce správy dorazili z dvora [GetCountry('LIT').GetName], naznačujúce, že sa pokúšajú obrátiť [target_character.GetName], člena dynastie [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName], na vieru [ShowReligionAdjective('catholic')]. To si vyžaduje rozhodnú reakciu a môže poslúžiť ako zámienka na dosiahnutie širších strategických cieľov." # todo: NEW TRANSLATION
+ flavor_mos.40.a: "Takéto urážky treba pomstiť!" # todo: NEW TRANSLATION
+ flavor_mos.40.tt1: "Chabé diplomatické schopnosti [target_root_country.GetGovernment.GetRuler.GetName] vedú k prerušeniu všetkých diplomatických väzieb" # todo: NEW TRANSLATION
+ flavor_mos.40.b: "Požadovať ich bezpodmienečné podrobenie." # todo: NEW TRANSLATION
+ flavor_mos.40.tt2: "[GetCountry('LIT').GetNameWithNoTooltip] zvažuje predstavené štedré podmienky" # todo: NEW TRANSLATION
+ flavor_mos.40.c: "Zabezpečiť rozvod pre [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mos.40.tt3: "Diplomatické schopnosti [target_root_country.GetGovernment.GetRuler.GetName] zabezpečia rozvod a odvrátia vojnu" # todo: NEW TRANSLATION
+ flavor_mos.40.historical_info: "V roku 1500 Ivan III obdržal správy, že jeho dcéra Jelena, ktorá bola vydatá za veľkoknieža Aleksandras z Litvy, bola zneužívaná a tlačená, aby opustila svoju pravoslávnu vieru v rozpore s podmienkami manželstva. Využívajúc tieto informácie ako zámienku, Moskovské kniežatstvo vyhlásilo vojnu Litve. Hostilnosti skončili mierovou zmluvou, podľa ktorej bola postúpená významná časť litevského územia, vrátane kľúčových regiónov ako historické kyjevskoruské mesto Černihov." # todo: NEW TRANSLATION
+ flavor_mos.41.title: "Zjednotenie ruských zemí" # todo: NEW TRANSLATION
+ flavor_mos.41.desc: "Dynastia [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] má strategický vplyv na viaceré tróny v rámci [ShowRegionName('russian_region')], no vnútorné spory a konflikty bránia zjednoteniu našich predkovských zeme. Je nevyhnutné pretrhnúť tieto väzby a uplatniť nadvládu [ROOT.GetCountry.GetName], bez ohľadu na odpor." # todo: NEW TRANSLATION
+ flavor_mos.41.a: "Slabí zahynú." # todo: NEW TRANSLATION
+ flavor_mos.41.tt1: "Agresívna rétorika [target_root_country.GetGovernment.GetRuler.GetName] vyvoláva nesúhlas u susedných štátov" # todo: NEW TRANSLATION
+ flavor_mos.41.b: "Máme aj iné prostriedky." # todo: NEW TRANSLATION
+ flavor_mos.41.c: "Využiť právny zámienok na obsadenie územia." # todo: NEW TRANSLATION
+ flavor_mos.41.tt2: "Využívajúc nejasnosti v Sudebniku, [target_root_country.GetGovernment.GetRuler.GetName] nájde právny zámienok na uchopenie ďalších území a konsolidáciu moci." # todo: NEW TRANSLATION
+ flavor_mos.41.historical_info: "Počas vlády Ivana III zažila Moskva výrazné územné rozšírenie, keď kniežatstvo strategicky zabavovalo majetky zadlžených kniežat a príbuzných. Táto taktika, založená na ich finančných záväzkoch, posilnila moskovskú kontrolu nad ruskými zemami." # todo: NEW TRANSLATION
+ flavor_mos.42.title: "Jedovatá regencia" # todo: NEW TRANSLATION
+ flavor_mos.42.desc: "Regencia [target_character.GetName] sa nepáči [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], ktorí boli prichytení pri sprisahaní spolu s príbuznými zosnulého [last_ruler.GetName], aby zosadili a dokonca zavraždili [target_character.GetHimHer]. Musíme zasiahnuť skôr, než stihnú uskutočniť svoj plán, inak riskujeme, že [ROOT.GetCountry.GetName] upadne do politického chaosu." # todo: NEW TRANSLATION
+ flavor_mos.42.a: "Pre úsurpátorov tu nie je miesto." # todo: NEW TRANSLATION
+ flavor_mos.42.b: "Vyhostiť vinníkov." # todo: NEW TRANSLATION
+ flavor_mos.42.tt1: "[target_character.GetName] je otrávený na smrť" # todo: NEW TRANSLATION
+ flavor_mos.42.c: "Ponúknuť im zmierenie." # todo: NEW TRANSLATION
+ flavor_mos.42.tt2: "[target_character.GetName] prežije pokusy o [target_character.GetHimHer] život" # todo: NEW TRANSLATION
+ flavor_mos.42.historical_info: "Elena Glinskaja vládla ako regentka počas raných rokov vlády Ivana IV, od 1533 do 1538. Obdobie sa vyznačovalo politickými intrigami a mocenskými bojmi na dvore, a Elena čelila výzvam zo strany konkurenčných bojarov i bratov zosnulého Vasila III. Oboma bratmi mala jej zatknutých a úspešne zabavila ich majetok v mene svojho syna. Napriek tomu zomrela v roku 1538, najpravdepodobnejšie otrávená bojarom." # todo: NEW TRANSLATION
+ flavor_mos.43.title: "[ShowCultureGroupNameWithNoTooltip('tatar_group')] Sloboda" # todo: NEW TRANSLATION
+ flavor_mos.43.desc: "Hradné mesto [target_location.GetRank.GetName] [target_location.GetName] sa neustále rozrastá, no proces jeho premeny na regionálnu veľmoc by sa mohol urýchliť podporou migrácie zo susedných území. [ShowCultureGroupName('tatar_group')] by sme mohli prilákať poskytnutím vyhradeného priestoru mimo hradieb. Tento usporiadanie by im umožnilo zachovať si kultúru a náboženstvo a zároveň prispieť k ekonomickému rastu zvýšením populácie." # todo: NEW TRANSLATION
+ flavor_mos.43.a: "Podporiť prisťahovalectvo [ShowCultureGroupNameWithNoTooltip('tatar_group')]." # todo: NEW TRANSLATION
+ flavor_mos.43.b: "Nie je to čas ani miesto." # todo: NEW TRANSLATION
+ flavor_mos.43.a.custom: "[ShowCultureGroupNameWithNoTooltip('tatar_group')] [pops|e] z celej [ShowRegionName('steppes_region')] migrujú do nedávno založenej Tatar Slobody v [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.43.historical_info: "Výstavba Tatarskej Slobody v Moskve začala v čase, keď mesto rástlo na veľkosti a význame. Slobody slúžili ako obytné oblasti mimo mestských hradieb, ale tiež sa vyvinuli do centier hospodárskej a kultúrnej výmeny, čo prispelo k ekonomickému rozkvetu mesta." # todo: NEW TRANSLATION
+ flavor_mos.44.title: "Plody západného učenia" # todo: NEW TRANSLATION
+ flavor_mos.44.desc: "Dobytie [GetCountry('NOV').GetName] a celkové rozšírenie územia pod vládou [ROOT.GetCountry.GetName] položili základy silného štátu. Na druhej strane tento rast priniesol k našim hraniciam západné vplyvy, vrátane potenciálnych nebezpečenstiev, ktoré by sa mohli zapísať do štruktúry našej spoločnosti. Aby sme zaistili bezpečné riadenie týchto rozsiahlych krajín, musíme uplatniť autoritu, potlačiť nesúhlas a odolávať nepriaznivému vplyvu viery [ShowReligionAdjective('catholic')]." # todo: NEW TRANSLATION
+ flavor_mos.44.a: "Sloboda musí byť potlačená." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_territorial_aggrandizement: "Územné rozširovanie" # todo: NEW TRANSLATION
+ flavor_mos.44.b: "Prijať všetky vplyvy." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_curtailed_ambitions: "Obmedzené ambície" # todo: NEW TRANSLATION
+ flavor_mos.44.historical_info: "Ivan III výrazne rozšíril územie Moskvy, čo prispelo k ukončeniu nadvlády Zlatéj Hordy nad Rusmi a centralizácii moci nad miestnymi vládcami. Ivanov anti-katolícky postoj viedol však k potláčaniu slobody v ruských zemiach a vytvoril bariéru medzi Moskvou a Západom, čím sa spomalilo šírenie nových ideí a vedeckého pokroku, ktorý prebiehal v Európe." # todo: NEW TRANSLATION
+ flavor_mos.45.title: "[ivan_fyodorov.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.45.desc: "Majster atramentu a kúzelník papiera [ivan_fyodorov.GetName] sa snaží zriadiť najnovší prístroj dovezený z [GetInstitutionByKey('printing_press').GetOrigin.GetName]. To bude mať hlboký dopad na spoločnosť a zrevolucionalizuje spôsob, akým vyrábame literatúru aj úradné dokumenty." # todo: NEW TRANSLATION
+ flavor_mos.45.a: "Zriadiť dielňu okamžite." # todo: NEW TRANSLATION
+ flavor_mos.45.tt1: "Xenofóbne sklony [target_root_country.GetAdjective] bránia zavádzaniu cudzích vplyvov" # todo: NEW TRANSLATION
+ flavor_mos.45.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] nesúhlasí s konkurenciou, ktorú tlačiareň predstavuje pre svojich pisárov" # todo: NEW TRANSLATION
+ flavor_mos.45.b: "Staré spôsoby sú oveľa lepšie." # todo: NEW TRANSLATION
+ flavor_mos.45.historical_info: "Ivan Fyodorov bol ruský tlačiar a vydavateľ, ktorému sa často prisudzuje, že bol prvým, kto zaviedol tlač v Rusku. V roku 1564 založil prvú tlačiareň v Moskve s podporou cára Ivana IV a dohliadal na tlač prvej knihy v Rusku, konkrétne #italic Apoštol#!." # todo: NEW TRANSLATION
+ flavor_mos.46.title: "Apoštol" # todo: NEW TRANSLATION
+ flavor_mos.46.desc: "Tlačené materiály, najmä náboženské texty, výrazne prispievajú k rastúcej gramotnosti a vzdelaniu, takže ich štandardizácia nadobúda čoraz väčší význam. Vďaka nedávno postavenej [ShowBuildingTypeName('printing_press_shop')] v [target_location.GetName] je [target_artist.GetName] schopný vytlačiť prvú datovanú knihu a vydanie #italic Skutkov a listov apoštolských#!, ktoré ukazujú nové technologické pokroky." # todo: NEW TRANSLATION
+ flavor_mos.46.a: "Nech sa voľne šíri." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_the_apostle_wide_distribution: "Apoštol" # todo: NEW TRANSLATION
+ flavor_mos.46.b: "Iba pre oči elít." # todo: NEW TRANSLATION
+ flavor_mos.46.tt1: "Kniha krátko pokrýva založenie prvej štátnej tlačiarne, čo vyvolá záujem o [target_location.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_the_apostle: "Apoštol" # todo: NEW TRANSLATION
+ flavor_mos.46.c: "Pripravte korektúrne pero." # todo: NEW TRANSLATION
+ flavor_mos.46.tt2: "Kniha podlieha rozsiahlym revíziám, aby sa zlepšila jej účinnosť v súlade s [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_mos.46.historical_info: "Vydanie #italic Apoštola#! bolo významným faktorom v kultúrnom rozvoji Ruska. Umožnilo prechod od rukou písaných rukopisov k tlačeným knihám, čím sa náboženské texty sprístupnili širšiemu publiku. Prispelo to aj k náboženskému vzdelaniu ľudu a pomohlo posilniť kresťanské presvedčenia." # todo: NEW TRANSLATION
+ flavor_mos.47.title: "Učenie Nila Sorského" # todo: NEW TRANSLATION
+ flavor_mos.47.desc: "Duchovný reformátor Nil Sorský požaduje reformu v Cirkvi ako reakciu na bohatstvo a materializmus, ktoré prenikli do niektorých [ROOT.GetCountry.GetAdjective] kláštorov. Jeho hnutie, známe ako Non-Possessors, navrhuje návrat k princípom chudoby a pokory, zdôrazňujúc jednoduchý život oddaný Kristovým učeniam. Takéto snahy pravdepodobne narazia na odpor etablovanej Cirkvi, ktorá považuje za nevyhnutné zachovať určitý materiálny majetok na vykonávanie svojich funkcií." # todo: NEW TRANSLATION
+ flavor_mos.47.a: "Podporiť hnutie Non-Possessors." # todo: NEW TRANSLATION
+ flavor_mos.47.b: "Podporiť Possessors." # todo: NEW TRANSLATION
+ flavor_mos.47.custom1: "Umožní prístup k [ShowLawName('monastic_reformation_movement')] [law|e]" # todo: NEW TRANSLATION
+ flavor_mos.47.custom2: "Jedna [policy|e] v rámci [ShowLawName('monastic_reformation_movement')] [law|e] môže byť zmenená len raz za desať rokov" # todo: NEW TRANSLATION
+ flavor_mos.47.historical_info: "Nil Sorský bol ruský pravoslávny mních, ktorý spoluvytváral hnutie známe ako Non-Possessors. Skladalo sa z mníchov, ktorí požadovali prísne dodržiavanie mníšskej chudoby a kritizovali vlastníctvo pôdy a bohatstva kláštorom. Jeho učenie čelilo odporu v cirkevných kruhoch, no zanechalo trvalý odtlačok v ruskej spiritualite a Nil Sorský je dnes považovaný za svätca východnej ortodoxnej cirkvi." # todo: NEW TRANSLATION
+ flavor_mos.48.title: "Stroganovská škola" # todo: NEW TRANSLATION
+ flavor_mos.48.desc: "Bohatá obchodnícka rodina [ShowDynastyName('stroganov_dynasty')] silne podporuje umenie a zvažuje sponzorstvo miestnej školy na tvorbu náboženských ikon, ktoré zdobia ich mnohé paláce po celom [ROOT.GetCountry.GetFlavorRank]. Umelecké diela vytvorené školou by boli určené prevažne pre súkromné použitie a pravdepodobne by neprospeli krajine ako celku, no posilnili by podporu mocnej rodiny a prispeli k duchovnému blahobytu [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ flavor_mos.48.a: "Vzájomne si pomôžeme." # todo: NEW TRANSLATION
+ flavor_mos.48.b: "Namiesto toho podporiť ich podnikanie." # todo: NEW TRANSLATION
+ flavor_mos.48.c: "Nechať ich pôsobiť na dvore." # todo: NEW TRANSLATION
+ enable_stroganov_influences_cabinet_action: "Akcia [ShowCabinetActionName('stroganov_influences')] [cabinet_action|e] sa sprístupní členom dynastie [ShowDynastyNameWithNoTooltip('stroganov_dynasty')]" # todo: NEW TRANSLATION
+ flavor_mos.48.historical_info: "Stroganovská škola ikonopisu vznikla v období, keď sa v Rusku rozvíjalo stredoveké maliarstvo, a predchádzala nástupu západnejšej umeleckej estetiky, ktorá sa neskôr rozšírila do východnej Európy. Umenie odrážalo chute kráľovských a šľachtických patrónov, vrátane cára. Škola mala popularitu až do založenia svätého Petra, čo urýchlilo jej úpadok s nástupom západných vplyvov." # todo: NEW TRANSLATION
+ flavor_mos.49.title: "Povesť o kniežatách Vladimíra" # todo: NEW TRANSLATION
+ flavor_mos.49.desc: "Dynastia [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] sa považuje za odvodenú od rímskych cisárov, no toto spojenie zostáva folklórnym príbehom s malým dôrazom na realitu. Skomponovanie traktátu by mohlo poskytnúť ideologický rámec pre [ROOT.GetCountry.GetGovernment.GetRulerTitle] a podčiarknuť cisárske dedičstvo hodné cára." # todo: NEW TRANSLATION
+ flavor_mos.49.a: "Pôvod je nepopierateľný." # todo: NEW TRANSLATION
+ flavor_mos.49.tt1: "Prekladateľské schopnosti [dmitry_gerasimov.GetName] uľahčujú šírenie myšlienky [target_root_country.GetNameWithNoTooltip] ako Tretej Ríma" # todo: NEW TRANSLATION
+ flavor_mos.49.b: "Poverčivé nezmysly." # todo: NEW TRANSLATION
+ flavor_mos.49.c: "Nech sa povesť vyníma na stenách [ShowWorkOfArtName('uspensky_sobor')]." # todo: NEW TRANSLATION
+ flavor_mos.49.historical_info: " #italic Povesť o kniežatách Vladimíra#! bola napísaná buď Dmitry Gerasimovom alebo Pachomiusom Srbom na začiatku šestnásteho storočia a vznikla s cieľom poskytnúť základný príbeh používaný pri korunovačných obradoch cára. Jej primárnym zámerom bolo vytvoriť historické spojenie medzi kniežactvom Moskvy a rímskymi cisármi, najmä Augustusom, a zároveň slúžila k formulovaniu predstavy Moskvy ako Tretej Rímskej ríše, prirodzeného nástupcu Východorímskej ríše po páde Konštantínopolu." # todo: NEW TRANSLATION
+ flavor_mos.50.title: "[dmitry_gerasimov.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.50.desc: "Lingvistický velikán a zručný diplomat [dmitry_gerasimov.GetName] ovláda niekoľko jazykov, dedičstvo po jeho štúdiách v [GetCountry('LIV').GetLongName]. Tieto schopnosti by mohli byť veľmi užitočné, ak by bol vymenovaný za veľvyslanca na cudzích dvoroch, pozíciu, ktorá nepochybne zahŕňa stretnutia s inými renesančnými učencami a zlepšovanie diplomacie [ROOT.GetCountry.GetName]. Alternatívne by jeho jazykové zručnosti mohli byť lepšie využité pri preklade náboženských textov na podporu šírenia kresťanstva." # todo: NEW TRANSLATION
+ flavor_mos.50.a: "Medzinárodná sláva je nevyhnutná." # todo: NEW TRANSLATION
+ flavor_mos.50.tt2: "[dmitry_gerasimov.GetSheHe|U] trávi značný čas návštevami cudzích dvorov, kde podáva informácie o geografii [target_root_country.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.50.tt3: "[dmitry_gerasimov.GetSheHe|U] krátko navštívi [ShowLocationName('rome')], čo umožní [dmitry_gerasimov.GetHimHer] zdokumentovať rôzne vedecké prístroje" # todo: NEW TRANSLATION
+ flavor_mos.50.b: "Staré spôsoby sú oveľa lepšie." # todo: NEW TRANSLATION
+ flavor_mos.50.tt4: "[dmitry_gerasimov.GetSheHe|U] preloží značné množstvo náboženských textov, čím posilní vplyv [ShowReligionAdjective('orthodox')], ku spokojnosti [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.50.historical_info: "Dmitry Gerasimov bol slávny prekladateľ a diplomat, ktorému sa pripisuje autorstvo Povesťi o kniežatách Vladimíra. Slúžil aj ako tlmočník na moskovských posolstvách v strednej a severnej Európe a bol krátko vymenovaný za veľvyslanca pri návšteve Ríma v rámci úsilia pápeža získať podporu proti Osmanskej ríši." # todo: NEW TRANSLATION
+ flavor_mos.51.title: "Monomachova čiapka" # todo: NEW TRANSLATION
+ flavor_mos.51.desc: "Istá zdobená čiapka s rubínmi, smaragdam a zlatým povrchom bola súčasťou korunovácií už dlhší čas, hoci jej pôvod zostáva predmetom odborných sporov. Legenda hovorí, že čiapočka bola darom od byzantských cisárov, no tento tvrdenie vychádza z povesti a postráda spoľahlivý zdroj. S rastúcim vplyvom vládnucej elity a potrebou opakovane potvrdiť božský pôvod vlády sa naskytá príležitosť formovať naratív a vytvoriť jednotnú verziu pôvodu tejto koruny." # todo: NEW TRANSLATION
+ flavor_mos.51.a: "Pripísať jej pôvod Byzancii." # todo: NEW TRANSLATION
+ flavor_mos.51.b: "Presadzovať jej božský pôvod." # todo: NEW TRANSLATION
+ flavor_mos.51.c: "Je zrejme tatárskeho pôvodu." # todo: NEW TRANSLATION
+ flavor_mos.51.tt1: "Podrobný príbeh v [ShowWorkOfArtName('tale_of_the_princes_of_vladimir')] dodatočne objasní pôvod Monomachovej čiapky a zvýši jej historický význam" # todo: NEW TRANSLATION
+ flavor_mos.51.historical_info: "Monomachova čiapka sa považuje za vyrobenú začiatkom štrnásteho storočia, pričom jej prvé zaznamenané použitie sa objavuje v moskovskom dokumente z roku 1518. Čiapka symbolizuje autokratickú vládu a podporuje teóriu Moskvy ako Tretej Rímskej ríše, koncept posilnený traktátom 'Povesť o kniežatách Vladimíra.' Aj keď jej presný pôvod zostáva predmetom debát, dizajn naznačuje možný pôvod zo Zlatéj Hordy ako dar vládcom Moskvy; viacerí odborníci však prišli s alternatívnymi teóriami." # todo: NEW TRANSLATION
+ flavor_mos.52.title: "Kniha kráľovských pôvodov" # todo: NEW TRANSLATION
+ flavor_mos.52.desc: "Historiografické dielo, ktoré zhromažďuje veľké kroniky [ROOT.GetCountry.GetName], je momentálne v príprave a čerpá inšpiráciu z '#italic Povesť o kniežatách Vladimíra#!' a iných spoľahlivých zdrojov. Cieľom tohto veľkého podniku je vytvoriť písaný zdroj, ktorý potvrdí našu identitu ako Tretii Rím a upevní cisárske dedičstvo dynastie [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName]. Každý vládca bude prezentovaný ako svätec a jeho činy budú uznané za posvätné.\n\nSkompilovanie #italic Knihy kráľovských pôvodov#! je zásadné pre uchovanie a upevnenie nášho historického naratívu v prítomnosti." # todo: NEW TRANSLATION
+ flavor_mos.52.a: "Je to len jednoduché prepracovanie." # todo: NEW TRANSLATION
+ flavor_mos.52.tt1: "Strach vzbudený [ivan_the_terrible.GetName] zabezpečí, že pisári knihu dozdobia zo strachu z odplaty" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_imperial_descent: "Cisársky pôvod" # todo: NEW TRANSLATION
+ flavor_mos.52.b: "Pripísať väčšinu zásluh Cirkvi." # todo: NEW TRANSLATION
+ flavor_mos.52.c: "Na týchto činoch nie je nič sväté." # todo: NEW TRANSLATION
+ flavor_mos.52.historical_info: "Na príkaz moskovského metropolitu bola #italic Kniha kráľovských pôvodov#! zostavená ako historické dielo prispôsobujúce fakty preferenciám a ambíciám cára. Jej účelom bolo posilniť myšlienku Moskvy ako 'Tretej Ríše', zároveň zvýšiť moc Ivana IV a nasmerovať krajinu k autoritárnejšiemu režimu." # todo: NEW TRANSLATION
+ flavor_mos.53.title: "Soľné povstanie" # todo: NEW TRANSLATION
+ flavor_mos.53.desc: "Rastúce ceny [ShowGoodsName('salt')] vyvolávajú rozhorčenie medzi [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], ktorí sú závislí na jeho dostupnosti pri konzervovaní potravín. Hrozia namierením proti tým, ktorých považujú za vinníkov, predovšetkým [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], ktorých zneužívanie moci a nespravodlivé zdaňovanie považujú za hlavné príčiny. Aby sa situácia nevymkla spod kontroly, musíme naliehavo riešiť konkrétne sťažnosti ľudu a zmierniť daňové bremeno, aby sme povstanie potlačili skôr, než prerastie do väčšieho konfliktu." # todo: NEW TRANSLATION
+ flavor_mos.53.a: "Oslobodiť [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] od dane." # todo: NEW TRANSLATION
+ salt_riot: "Soľní povstalci" # todo: NEW TRANSLATION
+ flavor_mos.53.b: "Stáť nečinne." # todo: NEW TRANSLATION
+ flavor_mos.53.tt: "Povstalci sa zamerajú na majetok [ShowPopTypeName('nobles')] a [ShowPopTypeName('clergy')] v reakcii na zlyhanie [target_root_country.GetGovernment.GetRuler.GetName] riešiť krízu" # todo: NEW TRANSLATION
+ flavor_mos.53.historical_info: "Soľné povstanie z roku 1648 bolo veľké povstanie, ktoré prebiehalo v Moskve. Cena soli postupne rástla v dôsledku rôznych faktorov, čo spôsobilo značné ekonomické ťažkosti pre sedliacku populáciu. Soľ bola vtedy kľúčová na konzervovanie potravín a jej nedostupnosť privádzala mnohých na hranicu hladu. Povstalci sa zamerali na niekoľko bojarích a cirkevných majetkov a povstanie bolo potlačené až po tom, čo cár dal zatknúť niekoľko členov šľachty a súhlasil dočasne regulovať cenu soli." # todo: NEW TRANSLATION
+ flavor_mos.54.title: "Protiopatrenia [antonio_possevino.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.54.desc: "Bystrý rétor a horlivý jezuita [antonio_possevino.GetName] navštívi [ROOT.GetCountry.GetName] ako súčasť dlhšej cesty po Európe, s cieľom propagovať [ShowReligionName('catholic')] a protišiel šíreniu [ShowReligionName('lutheran')]. Jeho prítomnosť pravdepodobne pobúri Cirkvi, no výrazne prispeje k našim diplomatickým ambíciám; [antonio_possevino.GetNameWithNoTooltip] preukázal veľkú zručnosť v orientácii v zložitej politickej a náboženskej scéne." # todo: NEW TRANSLATION
+ flavor_mos.54.a: "Prijať názory [antonio_possevino.GetHisHer]." # todo: NEW TRANSLATION
+ flavor_mos.54.tt2: "[antonio_possevino.GetSheHe|U] trávi značný čas na [target_root_country.GetAdjective] dvore, kde pomáha sprostredkovať rôzne vnútorné a vonkajšie spory" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_controversial_nuncio: "Kontroverzný nuncius" # todo: NEW TRANSLATION
+ flavor_mos.54.b: "Podporiť kultúrne výmeny." # todo: NEW TRANSLATION
+ flavor_mos.54.tt3: "[antonio_possevino.GetSheHe|U] zostáva v [target_root_country.GetName] na istý čas a podieľa sa na šírení západných vedomostí, kníh a myšlienok" # todo: NEW TRANSLATION
+ flavor_mos.54.c: "Motívy [antonio_possevino.GetHisHer|U] sú podozrivé." # todo: NEW TRANSLATION
+ flavor_mos.54.tt4: "[antonio_possevino.GetSheHe|U] je odmietnutý prístup na dvor a obmedzená je [antonio_possevino.GetHisHer] misionárska činnosť" # todo: NEW TRANSLATION
+ flavor_mos.54.historical_info: "Antonio Possevino bol taliansky jezuita, ktorý sa podieľal na viacerých diplomatických misiách po Európe. V roku 1581 ho pápež Gregor XIII poslal do Moskvy s úlohou nadviazať dialóg s cárom. Hlavnými cieľmi jeho misie bolo zabezpečiť politické spojenectvo medzi katolíckymi a pravoslávnymi mocnosťami a protištátne zoskupiť sa proti rýchlo sa šíriacemu protestantizmu." # todo: NEW TRANSLATION
+ flavor_mos.55.title: "[joseph_volotsky.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.55.desc: "Pobožný zástanca [joseph_volotsky.GetName] sa snaží posilniť autoritu Cirkvi zavedením pravidiel na zníženie korupcie a zároveň umožniť [ShowBuildingTypeName('orthodox_monastery')] po celom [ROOT.GetCountry.GetFlavorRank] vlastniť pozemky podľa svojho uváženia. Okrem toho [joseph_volotsky.GetSheHe] silno odmieta nasledovníkov [ShowReligionName('strigolniki')] a môže byť užitočný pri obmedzovaní šírenia heretických myšlienok." # todo: NEW TRANSLATION
+ flavor_mos.55.a: "Kacírske učenie treba vykoreniť." # todo: NEW TRANSLATION
+ strigolniki_pops_tt: "Všetky [ShowReligionAdjective('strigolniki')] [pops|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%]" # todo: NEW TRANSLATION
+ flavor_mos.55.tt1: "[joseph_volotsky.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.55.tt2: "[joseph_volotsky.GetSheHe|U] presmeruje svoju pozornosť na obmedzenie šírenia viery [ShowReligionName('strigolniki')]" # todo: NEW TRANSLATION
+ flavor_mos.55.b: "Nepredstavujú veľké nebezpečenstvo." # todo: NEW TRANSLATION
+ flavor_mos.55.tt3: "[joseph_volotsky.GetSheHe|U] sústreďuje svoje úsilie na posilnenie autority [target_root_country.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
+ flavor_mos.55.c: "Pokus zrušiť iniciatívu na odňatie kláštorných majetkov." # todo: NEW TRANSLATION
+ flavor_mos.55.tt4: "[ShowLawName('monastic_reformation_movement')] [law|e] už nie je uzamknutý" # todo: NEW TRANSLATION
+ flavor_mos.55.historical_info: "Joseph Volotsky bol ortodoxný mních, ktorý sa postavil proti iniciatívam Non-Possessors, frakcie usilujúcej sa obmedziť monastické vlastníctvo pôdy a vrátiť sa k životu askézy, modlitby a pokory. V reakcii na to, čo považoval za skorumpovanosť v rámci mníchovských rádov, pomáhal vytvoriť súbor predpisov zameraných na posilnenie prísnej mníšskej disciplíny, ktoré mali trvalý dopad na ruské mníšstvo." # todo: NEW TRANSLATION
+ flavor_mos.56.title: "Žeravé následky" # todo: NEW TRANSLATION
+ flavor_mos.56.desc: "Po veľkom požiari [ShowLocationName('moscow')] sa rýchlo našiel vinník — obvinenia padli na materinských príbuzných [ROOT.GetCountry.GetGovernment.GetRulerTitle] [eleanor_glinskaya.GetName], pričom za príčinu požiaru bola označená šamanistická čarodejná moc. [ShowPopTypeName('peasants')] vyšli do ulíc a žiadajú okamžité vydanie členov dynastie [ShowDynastyName('glinskaya_dynasty')], aby pomstili mnohé životy pripisované tomuto hroznému ohňu." # todo: NEW TRANSLATION
+ flavor_mos.56.a: "Pozerajte sa iným smerom." # todo: NEW TRANSLATION
+ flavor_mos.56.tt1: "Členovia dynastie [ShowDynastyNameWithNoTooltip('glinskaya_dynasty')] sú prenasledovaní a zabíjaní rozohnaným davom" # todo: NEW TRANSLATION
+ flavor_mos.56.tt2: "Nátlak členov rodiny [eleanor_glinskaya.GetHisHer] spôsobuje veľký stres [eleanor_glinskaya.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.56.b: "Odovzdajte aj pani." # todo: NEW TRANSLATION
+ flavor_mos.56.tt3: "Každý člen dynastie [ShowDynastyNameWithNoTooltip('glinskaya_dynasty')] je zatknutý a zabitý rozohnaným davom" # todo: NEW TRANSLATION
+ flavor_mos.56.c: "Rozdrvte rabákov." # todo: NEW TRANSLATION
+ flavor_mos.56.d: "Každý človek má cenu." # todo: NEW TRANSLATION
+ flavor_mos.56.historical_info: "Moskviansky požiar z roku 1547 mal hlboký dopad na sedliacke obyvateľstvo, čo malo za následok tisíce mŕtvych alebo vysídlených a nútených do chudoby. Civilné obyvateľstvo hľadalo obetného baránka a obrátilo pozornosť na starej matku cára, ktorej šamanistický pôvod bol vnímaný ako zdroj uvoľnenej mágie vplývajúcej na kresťanské obyvateľstvo. Niekoľko príbuzných bolo ukameňovaných; cár však kategoricky odmietol vydanie svojej starej matky rozzuřenému davu." # todo: NEW TRANSLATION
+ flavor_mos.57.title: "Rozšírenie Kremľa" # todo: NEW TRANSLATION
+ flavor_mos.57.desc: "Majestátny [ShowBuildingTypeName('kremlin')] naďalej zohráva kľúčovú úlohu v obrane ruských vôd. Jeho pôvodná stavba, celá z [ShowGoodsName('lumber')], ho však vystavuje požiarom a robí ho zraniteľným voči novým vojenským inováciám, ktoré by mohli zničiť jeho konštrukciu. Aby sme tieto problémy vyriešili a zabezpečili dlhú životnosť tohto symbolu našej dedičiny, navrhujeme náročnú úlohu nahradiť stavebné prvky materiálmi ako [ShowGoodsName('stone')] a [ShowGoodsName('clay')]. Táto modernizácia nielen posilní Kremeľ proti vonkajším hrozbám, ale aj zachová jeho veľkoleposť pre ďalšie generácie a ochráni našu slávnu metropolu." # todo: NEW TRANSLATION
+ flavor_mos.57.a: "Sekery a dláta, na pozore." # todo: NEW TRANSLATION
+ mos_kremlin_upgrade: "Modernizácia Kremľa" # todo: NEW TRANSLATION
+ flavor_mos.57.b: "Príliš dlho sme váhali za týmito múrmi." # todo: NEW TRANSLATION
+ flavor_mos.57.c: "Materiály sú lepšie využité na opravu palácov a katedrál." # todo: NEW TRANSLATION
+ flavor_mos.57.historical_info: "Stavba kamenných múrov a opevnení Moskvianskeho Kremľa bola veľkým inžinierskym podnikem. Drevené opevnenia použité v tom čase sa ukázali ako neefektívne kvôli vojenským pokrokom, ako je delostrelectvo, ale rozhodnutie vylepšiť komplex prišlo aj v dôsledku nedávneho nárastu tatárskych nájazdov, ktorým Moskovia doteraz unikala vďaka svojmu výhodnému postaveniu u Zlatéj Hordy $rank_kingdom_horde_ruler_suffix_male$." # todo: NEW TRANSLATION
+ flavor_mos.58.title: "Veľká zvonica" # todo: NEW TRANSLATION
+ flavor_mos.58.desc: "Príchod [ShowCultureGroupName('italian_group')] architektov prináša výraznú premenu [ShowLocationName('moscow')], kde sa teraz po uliciach lesknú omietané kamenné budovy. Hoci Katedrálne námestie zostáva centrálnym bodom, väčšina jeho budov je skromne postavená a sotva viditeľná zvonku múrov [ShowBuildingTypeName('kremlin')]. Aby sme skrášlili panorámu mesta, upierame svoj zrak k oblohe a predstavujeme si monumentálnu zvonicu vedľa [ShowBuildingTypeNameWithNoTooltip('cathedral')]. Táto veža nebude len ústredným bodom, ale naplní mesto vesmírnym a povznášajúcim zvukom zvonov, ktorý si obyvateľstvo zaslúži." # todo: NEW TRANSLATION
+ flavor_mos.58.a: "Výborný pozorovací bod." # todo: NEW TRANSLATION
+ mos_great_bell_tower_construction: "Stavba Veľkej zvonice" # todo: NEW TRANSLATION
+ great_bell_tower_construction: "Stavba Veľkej zvonice" # todo: NEW TRANSLATION
+ flavor_mos.58.tt1: "Radostný a melodický zvuk dvadsiatich dvoch kostolných zvonov prináša radosť [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.58.b: "[ShowGoodsNameWithNoTooltip('stone')] je cenná komodita." # todo: NEW TRANSLATION
+ flavor_mos.58.historical_info: "Ivanova (Ivan 'Veľký') zvonica bola postavená v roku 1508 za vlády Ivana III a bola súčasťou prebiehajúcej renovácie a rozšírenia Moskvianskeho Kremľa. Veža obsahuje dvadsaťdva zvonov a je najvyššou budovou v komplexe. Vďaka svojej výške slúžila aj ako rozhľadňa na včasné zistenie požiarov a sledovanie príchodu potenciálnych nepriateľov." # todo: NEW TRANSLATION
+ flavor_mos.59.title: "Dekrét o [ShowLocationNameWithNoTooltip('arkhangelsk')]" # todo: NEW TRANSLATION
+ flavor_mos.59.desc: "Prírodný prístav [ShowLocationName('arkhangelsk')] poskytuje prístup k Arktickému moru a tým aj k významným európskym obchodným cestám. Podporme ďalšie osídľovanie rozšírením infraštruktúry, aby zvládla rastúci objem námorného obchodu, a využime prístav ako odrazový mostík pre následné zriadenie [ShowBuildingTypeName('trade_office')]'s pozdĺž západných pobreží, aby sme si zabezpečili kus z týchto ziskov." # todo: NEW TRANSLATION
+ flavor_mos.59.a: "Nemôžeme sa spoliehať len na domáce príležitosti." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_bustling_trade_hub: "Rušné obchodné centrum" # todo: NEW TRANSLATION
+ flavor_mos.59.tt1: "[ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] sú nadšení z národného úsilia za nové obchodné príležitosti" # todo: NEW TRANSLATION
+ flavor_mos.59.b: "Nákladné podujatie." # todo: NEW TRANSLATION
+ flavor_mos.59.historical_info: "Počas vlády Ivana IV sa pozornosť presunula k zakladaniu priamych námorných obchodných trás na západ. Motiváciou bolo obísť dominanciu Hanzovej ligy a nadviazať priame obchodné spojenia so Západnou Európou, čím by sa posilnilo hospodárske a politické postavenie Ruska." # todo: NEW TRANSLATION
+ flavor_mos.60.title: "Cenzúra [ShowGovernmentReformNameWithNoTooltip('oprichnina')]" # todo: NEW TRANSLATION
+ flavor_mos.60.desc: "Prebiehajúce prečisťovanie disidentských myslí pokračuje a nastal čas obrátiť sa proti tým, ktorí šíria idey v rozpore s ideológiou presadzovanou [ShowGovernmentReformName('oprichnina')]. Musíme nasadiť Oprichnikov, aby posilnili centrálnu autoritu obmedzením textov a traktátov, ktoré spochybňujú našu politickú agendu, a zabezpečiť, že vedenie Cirkvi bude v súlade s týmito politikami." # todo: NEW TRANSLATION
+ flavor_mos.60.a: "Slovný prejav je privilégiom, treba ho rozvážne využívať." # todo: NEW TRANSLATION
+ flavor_mos.60.b: "Istá tolerancia je dovolená." # todo: NEW TRANSLATION
+ flavor_mos.60.historical_info: "Politické potláčanie bolo počas Opričniny rozšírené a dosiahlo nové výšky s vytvorením Oprichnikov, politickej polície cára. Pravoslávna cirkev v Rusku, podobne ako iné inštitúcie, bola ovplyvnená politikou Opričniny, vrátane prísnej cenzúry náboženských textov a zákazu alebo zničenia určitých kníh a rukopisov." # todo: NEW TRANSLATION
+ flavor_mos.61.title: "Presídlenia [ShowGovernmentReformNameWithNoTooltip('oprichnina')]" # todo: NEW TRANSLATION
+ flavor_mos.61.desc: "Presun pôdy od nelojálnych [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] k mužom a ženám, ktorí nie sú považovaní za hrozbu, pokračuje neúprosne, no tieto konfiskácie majú negatívny dopad na potravinovú produkciu, keďže [ShowPopTypeName('peasants')] sú vysídlení a nemôžu obhospodarovať polia. Hrozba hladu pretrváva a môžeme potrebovať konať zhovievavejšie, ak chceme zohľadniť celkové blaho obyvateľstva." # todo: NEW TRANSLATION
+ flavor_mos.61.a: "Konfiskácia pôdy bude pokračovať." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_disruption_of_agricultural_activities: "Narušenie poľnohospodárskych činností" # todo: NEW TRANSLATION
+ flavor_mos.61.tt1: "[ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] naďalej čelia neistote a vysídleniu, čo vedie k poklesu poľnohospodárskej produktivity" # todo: NEW TRANSLATION
+ flavor_mos.61.b: "Neseberajme šľachtické statky na vidieku." # todo: NEW TRANSLATION
+ flavor_mos.61.c: "Pripútajte [ShowPopTypeNameWithNoTooltip('peasants')] k statku." # todo: NEW TRANSLATION
+ flavor_mos.61.tt2: "Brutálne potláčanie [ivan_the_terrible.GetName] minimalizuje akékoľvek narušenie produkcie potravín na úkor vidieckeho obyvateľstva" # todo: NEW TRANSLATION
+ flavor_mos.61.historical_info: "Opričnina mala rušivý dopad na poľnohospodárstvo a vidiecku ekonomiku v Rusku. Konfiskácia statkov a narušenie bežných poľnohospodárskych praktík prispeli k nedostatku potravín a hospodárskej nestabilite, čo viedlo k rozsiahlemu hladomoru a ďalším ťažkostiam pre roľníctvo." # todo: NEW TRANSLATION
+ flavor_mos.62.title: "Katedrála sv. Bazila" # todo: NEW TRANSLATION
+ flavor_mos.62.desc: "Úspešné dobytie [ShowAreaName('kazan_area')] je veľkým triumfom pre [ROOT.GetCountry.GetName] a zasluhuje si pripomienku. Mohlo by sa zvážiť postavenie veľkolepej katedrály zasvätenej tomuto vojenskému víťazstvu, využívajúcej aktuálne stavebné vplyvy na prezentáciu nádheru a inovatívnosti architektúry [ROOT.GetCountry.GetAdjectiveWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mos.62.a: "Skvelý nápad." # todo: NEW TRANSLATION
+ mos_st_basil_cathedral_construction: "Stavba Katedrály sv. Bazila" # todo: NEW TRANSLATION
+ flavor_mos.62.tt1: "Precízne remeslo [postnik_yakovlev.GetName] ďalej obohacuje katedrálu" # todo: NEW TRANSLATION
+ flavor_mos.62.b: "Zbytočné predvádzanie." # todo: NEW TRANSLATION
+ flavor_mos.62.c: "Je príliš skoro vyhlásiť víťazstvo." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_shoring_up_defenses: "Posilňovanie obrany" # todo: NEW TRANSLATION
+ flavor_mos.62.tt2: "Materiálne zdroje sú investované do spevnenia [ShowGoodsName('stone')] múrov [ShowBuildingTypeName('kremlin')]." # todo: NEW TRANSLATION
+ flavor_mos.62.historical_info: "Katedrála sv. Bazila bola postavená za vlády Ivana Hrozného na oslavu úspešnej vojenskej kampane proti Kazaňskému chanátu. Stavba bola považovaná za obetné poďakovanie Panne Márii za jej príhovor pri dobytí. Dnes zostáva ikonickým symbolom Ruska a znamením vytrvalosti a prežitia ruského štátu." # todo: NEW TRANSLATION
+ flavor_mos.63.title: "Novodevičijský kláštor" # todo: NEW TRANSLATION
+ flavor_mos.63.desc: "Po triumfálnom dobytí [ShowAreaName('smolensk_area')] sa naskytá príležitosť pripomenúť víťazstvo pevnením južného obranného pásma [ShowLocationName('moscow')] na bezpečnosť [ROOT.GetCountry.GetName]. Myšlienka vybudovať opevnený kláštor vychádza zo strategickej potreby, ale mohol by tiež slúžiť na ubytovanie mnohých [ShowPopTypeName('nobles')] žien, ktoré boli prinútené obliecť si rúcho, čím by sme si získali priazeň [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]." # todo: NEW TRANSLATION
+ flavor_mos.63.a: "Viac muziky za peniaze." # todo: NEW TRANSLATION
+ flavor_mos.63.b: "[ShowLocationNameWithNoTooltip('moscow')] je už dostatočne chránené." # todo: NEW TRANSLATION
+ flavor_mos.63.c: "Ponúknite dotáciu postihnutým ženám." # todo: NEW TRANSLATION
+ flavor_mos.63.historical_info: "Novodevičijský kláštor založil veľkoknieža Vasilij III na pamiatku úspešného dobytia oblasti Smolenska. Bol založený ako pevnosť a náboženská inštitúcia na ochranu západných prístupov k mestu. Kláštor tiež poskytoval bývanie ženám z ruských kráľovských rodín, ktoré boli povzbudzované k prijatiu mníšskeho života." # todo: NEW TRANSLATION
+ flavor_mos.64.title: "[ShowLocationNameWithNoTooltip('moscow')] dielňa delostrelectva" # todo: NEW TRANSLATION
+ flavor_mos.64.desc: "S pokrokom delostreleckej technológie na bojisku je stále dôležitejšie zabezpečiť armádu dostatočnou zásobou munície, aby podporila vojnové úsilie. Mali by sme poveriť našich inžinierov zriadením dedikovanej továrne zameranej na výrobu delostrelectva a premeniť [ShowLocationName('moscow')] na centrum technologických inovácií a spoľahlivého dodávateľa." # todo: NEW TRANSLATION
+ flavor_mos.64.a: "Dynamitový obchod." # todo: NEW TRANSLATION
+ flavor_mos.64.b: "Lepšie využiť čas na vojenské cvičenia." # todo: NEW TRANSLATION
+ flavor_mos.64.historical_info: "Moskvianska dielňa delostrelectva bola vybudovaná za vlády Ivana IV a zohrávala dôležitú úlohu pri zvyšovaní vojenských schopností Ruska. Výroba diel a delostrelectva bola rozhodujúca pre rastúci vojenský vplyv Ruska a prispela k jeho vojenským úspechom v niekoľkých konfliktoch." # todo: NEW TRANSLATION
+ flavor_mos.65.title: "Baltská hranica" # todo: NEW TRANSLATION
+ flavor_mos.65.desc: "Oblasť [ShowAreaName('baltic_area')] už dlho využíva priaznivú obchodnú polohu pri Baltskom mori, pulzujúcom centre obchodu Severnej Európy. Získať zisk z tohto obchodu však bolo náročné kvôli geografickej vzdialenosti. Musíme využiť našu príležitosť a získať kontrolu nad regiónom, ak chceme smerovať časť bohatstva späť do [target_location.GetName]." # todo: NEW TRANSLATION
+ flavor_mos.65.a: "Zaberať si kus koláča." # todo: NEW TRANSLATION
+ flavor_mos.65.a.custom: "[target_root_country.GetName] získa [ShowCasusBelliName('cb_conquer_province')] [casus_belli|e] na každú [province|e], a [ShowCasusBelliName('cb_subjugation')] [casus_belli|e] na akýkoľvek [subject|e] v oblasti [ShowAreaName('baltic_area')]" # todo: NEW TRANSLATION
+ flavor_mos.65.b: "Mier je dobrý pre obchod." # todo: NEW TRANSLATION
+ flavor_mos.65.historical_info: "Ruské pokusy dobyť baltský región vyústili do dlho trvajúcej a neúspešnej Livónskej vojny, ktorá zdecimovala ruskú ekonomiku a priniesla len málo územných ziskov. Vojna skončila Jam Zapolským mírom v roku 1582 a Plusským v roku 1583, ktoré potvrdili rozdelenie livónskych a estónskych krajín medzi Poľsko-litovskú úniu, Švédsko a Dánsko." # todo: NEW TRANSLATION
+ flavor_mos.66.title: "Tragická filícída" # todo: NEW TRANSLATION
+ flavor_mos.66.desc: "Rozhorčená výmena slov medzi [target_ruler.GetName] a [target_heir.GetName] sa nesie chodbami paláca. Keď sa sluhovia priblížili k súkromným komnatám [ROOT.GetCountry.GetGovernment.GetRulerTitle], hádka prerástla do bitky, počas ktorej [target_ruler.GetShortNameWithNoTooltip], teraz vyzbrojený ostrým palicou, sa pokúsil udrietať svojho dediča, čím konfrontácia získala nebezpečnú intenzitu." # todo: NEW TRANSLATION
+ flavor_mos.66.a: "Ostaň ticho. Je to rodinná vec." # todo: NEW TRANSLATION
+ flavor_mos.66.tt1: "[target_heir.GetNameWithNoTooltip] dostane smrteľný úder do hlavy a umiera v náručí plačúceho [target_ruler.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.66.b: "Nechajte gardy zviazať [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_temporarily_incarcerated: "Dočasne väznený" # todo: NEW TRANSLATION
+ flavor_mos.66.tt2: "[target_ruler.GetSheHe|U] je zavretý, kým [target_ruler.GetHisHer] hnev neprejde" # todo: NEW TRANSLATION
+ flavor_mos.66.c: "Zbavme sa tohto šialenca." # todo: NEW TRANSLATION
+ flavor_mos.66.historical_info: "V roku 1581, v okamihu intenzívneho hnevu, Ivan IV smrteľne udrie svojho syna a dediča Ivana Ivanoviča ostrou palicou. Tento akt filícídy sa odohral počas turbulentného obdobia na konci Ivanovej vlády, poznamenaného rastúcou paranojou a sériou brutálnych čistiek." # todo: NEW TRANSLATION
+ flavor_mos.67.title: "[postnik_yakovlev.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.67.desc: "Vizionársky tvorca [postnik_yakovlev.GetName] stále dokazuje výnimočný talent posúvať architektonické hranice a obdarúvať panorámu [ShowLocationName('moscow')] svojimi dielami. O jeho/jej pôvode alebo spoločenskom postavení sa vie len málo, no to nesmie stáť v ceste využitiu takých majestátnych zručností. Mali by sme mať [postnik_yakovlev.GetHimHer] pri sebe pre prípad väčších stavebných projektov poverených [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
+ flavor_mos.67.a: "Pozvite [postnik_yakovlev.GetHimHer] na dvor." # todo: NEW TRANSLATION
+ flavor_mos.67.b: "Dôležitý je prítomný okamih." # todo: NEW TRANSLATION
+ flavor_mos.67.historical_info: "Postnik Jakovlev bol architekt v Rusku, najviac spomínaný pre svoju účasť na stavbe Katedrály sv. Bazila v Moskve. Katedrálu si Ivan Hrozný objednal na počesť dobytia mesta Kazaň od Mongolov." # todo: NEW TRANSLATION
+ flavor_mos.68.title: "Rozptýlenia Šuiských" # todo: NEW TRANSLATION
+ flavor_mos.68.desc: "Mladý [target_character.GetName] sa zdá byť obeťou ničivých vplyvov vplyvnej rodiny Šuiských, ktorá ho/ju priťahuje k alkoholu a iným zneužívajúcim látkam ako prostriedku upevnenia svojej kontroly nad [ROOT.GetCountry.GetName]. Situácia sa zhoršila natoľko, že ovplyvňuje každodenné záležitosti na dvore, a každý pokus obmedziť toto správanie pravdepodobne vyvolá vnútorné konflikty." # todo: NEW TRANSLATION
+ flavor_mos.68.a: "Bojujme ohňom proti ohňu." # todo: NEW TRANSLATION
+ flavor_mos.68.tt1: "Silno odhodlaný [target_character.GetNameWithNoTooltip] zavádza [ShowGovernmentReformName('oprichnina')] [government_reform|e], aby obmedzil vplyv [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.68.b: "Nemôžeme riskovať štátny prevrat." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_drunkard: "Pijak" # todo: NEW TRANSLATION
+ flavor_mos.68.tt2: "[target_character.GetNameWithNoTooltip] podľahne alkoholizmu, posilňujúc dominanciu [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.68.historical_info: "Šuiskí boli mocnou bojarovou rodinou, ktorá vládla značnou mocou počas regentstva Ivana IV. Ako dieťa Ivan často pociťoval zanedbávanie a urážky zo strany Šuiských, čo v ňom postupne vyvolalo rastúcu frustráciu z ich arogantného a nezbedného správania a pripravilo pôdu pre jeho rozsiahle represie voči ruskej šľachte." # todo: NEW TRANSLATION
+ flavor_mos.69.title: "Moc namestníkov" # todo: NEW TRANSLATION
+ flavor_mos.69.desc: "Namestnikovia (viceroyovia) disponujú značnou mocou, aby mohli spravovať tie najodľahlejšie regióny v [ROOT.GetCountry.GetName]. Toto usporiadanie prináša viaceré problémy, ako napríklad odnímanie veľkej časti vyprodukovaných príjmov a ťažkosti pri udržaní ich poslušnosti. Mali by sme usilovať o nadobudnutie priamej kontroly nad regionálnou správou a centralizovať administráciu, aj za cenu oslabenia miestnych elít." # todo: NEW TRANSLATION
+ flavor_mos.69.a: "Obmedzme ich vplyv." # todo: NEW TRANSLATION
+ flavor_mos.69.b: "Nezasahujeme do dobre fungujúceho systému." # todo: NEW TRANSLATION
+ flavor_mos.69.c: "Je to už minulosť." # todo: NEW TRANSLATION
+ disable_namestnik_policy: "[ShowPolicyName('namestnik_policy')] [policy|e] sa stáva nedostupnou" # todo: NEW TRANSLATION
+ flavor_mos.69.historical_info: "Namestnikovia mali v Rusku významné administratívne a výkonné právomoci, konali ako zástupcovia panovníka v odľahlých územiach. Ich právomoci boli čiastočne obmedzené počas vlády Ivana IV, no pretrvali až do série reforiem, ktoré zaviedol Peter 'Veľký' ako súčasť celkových zmien v administratívnej štruktúre Ruska." # todo: NEW TRANSLATION
+ flavor_mos.70.title: "[ivan_viskovatiy.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.70.desc: "Diplomatický rétorik [ivan_viskovatiy.GetName] je dychtivý slúžiť a má niekoľko nápadov, ako zdokonaliť byrokraciu zavedenú vládnou reformou [ShowGovernmentReformName('prikazi_reform')]. Musíme využiť príležitosť a zapojiť schopnosti [ivan_viskovatiy.GetHisHer], aby nám pomohol orientovať sa v zložitej oblasti diplomacie." # todo: NEW TRANSLATION
+ flavor_mos.70.a: "Pozvite ho na dvor." # todo: NEW TRANSLATION
+ flavor_mos.70.tt2: "[ivan_viskovatiy.GetSheHe|U] môže zriadiť ďalšie úrady, ak bude priradený k [cabinet|e]" # todo: NEW TRANSLATION
+ flavor_mos.70.b: "Diplomaciu sa dá naučiť." # todo: NEW TRANSLATION
+ flavor_mos.70.tt3: "[ivan_viskovatiy.GetNameWithNoTooltip] učí [target_root_country.GetGovernment.GetRuler.GetName] v zručnostiach komunikácie a rokovania" # todo: NEW TRANSLATION
+ flavor_mos.70.c: "Bez talentu a šarlatán." # todo: NEW TRANSLATION
+ flavor_mos.70.historical_info: "Ivan Viskovatij zohral dôležitú úlohu pri diplomatických ambíciách Ivana IV a bol poverený zahraničnými záležitosťami Ruska, pozíciou, ktorú zastával až do svojej smrti. Predpokladá sa, že bol zodpovedný za zriadenie zahraničného úradu Prikazov, bežne známeho ako #italic Posolsky Prikaz#!. V neskorších rokoch mu cár spochybňoval lojálnosť a bol verejne popravený v rámci Ivanových čistiek." # todo: NEW TRANSLATION
+ flavor_mos.71.title: "Posolsky Prikaz" # todo: NEW TRANSLATION
+ flavor_mos.71.desc: "Usilovná práca [ivan_viskovatiy.GetName] sa vyplatila a viedla k efektívnejšiemu zaobchádzaniu so zahraničnými záležitosťami a zjednodušenej byrokracii. Teraz sa navrhuje zriadiť samostatný úrad na riešenie záležitostí diplomacie a podobne, aby platili rovnaké štandardy ako v iných oblastiach vlády." # todo: NEW TRANSLATION
+ flavor_mos.71.a: "Rozumná voľba." # todo: NEW TRANSLATION
+ enable_posolsky_cabinet_action: "Umožní prístup k [ShowCabinetActionName('posolsky')] [cabinet_action|e]" # todo: NEW TRANSLATION
+ flavor_mos.71.b: "Obchod pre medzinárodné šibalstvá." # todo: NEW TRANSLATION
+ flavor_mos.71.historical_info: "#italic Posolsky Prikaz#! slúžil ako vládny úrad dohliadajúci na zahraničné záležitosti a diplomatické otázky. Hral dôležitú úlohu pri správe diplomatických vzťahov, vysielaní veľvyslancov a riadení medzinárodných záležitostí." # todo: NEW TRANSLATION
+ flavor_mos.72.title: "Deti temnoty" # todo: NEW TRANSLATION
+ flavor_mos.72.desc: "Oprichnik, mocná politická polícia, si udržuje značný vplyv a predstavuje silu, s ktorou treba počítať. Oživenie ich vzhľadu jednotnými čiernymi plášťami a doplnkami v podobe odťatých zvieracích hláv pripevnených na sedlách by mohlo znásobiť zastrašujúcu a utláčajúcu atmosféru, ktorú chcú vyvolať, a vyvolať strach u našich nepriateľov." # todo: NEW TRANSLATION
+ flavor_mos.72.a: "Vzhľad je všetko." # todo: NEW TRANSLATION
+ mos_equipping_the_oprichnik: "Vybavenie Oprichnikov" # todo: NEW TRANSLATION
+ flavor_mos.72.b: "Nosia, čo stihnú ukradnúť." # todo: NEW TRANSLATION
+ flavor_mos.72.c: "Barbarské a znepokojujúce." # todo: NEW TRANSLATION
+ flavor_mos.72.historical_info: "Oprichnici nosili čierne plášte a na sedlách mali pripevnenú odseknutú psí alebo vlčiu hlavu. To malo symbolizovať ich odhodlanie odhaliť akúkoľvek zradu voči cár. Navyše nosili metlu ako metaforu pre prenasledovanie cárových nepriateľov a ich 'metenie' preč." # todo: NEW TRANSLATION
+ flavor_mos.73.title: "Nájazdy Oprichnikov" # todo: NEW TRANSLATION
+ flavor_mos.73.desc: "Oprichnici naďalej vykonávajú popravy osôb považovaných za nelojálne. Nedávno boli cieľom niekoľkých dedinských statkov [ShowPopTypeName('nobles')], čo viedlo k tomu, že [ShowPopTypeName('peasants')] priradení k pôde boli vysídlení, pretože im bolo zakázané opustiť domácnosť, ku ktorej patria. Ak sa tento stav okamžite nerieši, hrozí nám riziko chronického nedostatku potravín." # todo: NEW TRANSLATION
+ flavor_mos.73.a: "Nám to nerobí starosti." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_displaced_farmers: "Vysídlení roľníci" # todo: NEW TRANSLATION
+ flavor_mos.73.b: "Zastavme Oprichnikov." # todo: NEW TRANSLATION
+ disable_oprichnik_policy: "[ShowPolicyName('oprichnik_policy')] [policy|e] sa stáva nedostupnou" # todo: NEW TRANSLATION
+ flavor_mos.73.historical_info: "Oprichnici sa podieľali na konfiskácii majetku od tých, ktorí boli považovaní za nepriateľov štátu. Táto prax ďalej konsolidovala ekonomickú moc cára a jeho verných, ale mala nežiaduci účinok vysídlovania sedliakov, keď boli ich bývalí páni buď zabití, alebo zajatí. To malo devastujúci dopad na produkciu potravín, keďže polia zostali neobhospodarované." # todo: NEW TRANSLATION
+ flavor_mos.74.title: "Záležitosť následníctva" # todo: NEW TRANSLATION
+ flavor_mos.74.desc: "Náš milovaný [ROOT.GetCountry.GetGovernment.GetRuler.GetName] nemusí mať na tomto svete veľa času a zlyhanie zabezpečiť primeraného dediča ohrozuje [ROOT.GetCountry.GetName] politickým chaosom. Navrhuje sa, aby bol člen rady [ROOT.GetCountry.GetGovernment.GetRulerTitle] zvolený za vodcu po smrti súčasného panovníka.\n\nDve [ShowPopTypeName('nobles')] sa uchádzajú o túto náročnú funkciu, a to [boris_godunov.GetName] a [feodor_romanov.GetName]. Majú podobné kvality, no prvý z nich si už užíva silnú podporu národného zhromaždenia. Musíme rozhodnúť, inak riskujeme občiansky konflikt pri predávaní žezla." # todo: NEW TRANSLATION
+ flavor_mos.74.a: "[boris_godunov.GetNameWithNoTooltip] je lepšia voľba." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_by_grace_of_national_assembly: "Z milosti národného zhromaždenia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_blocked_from_being_ruler: "Blokovaný z možnosti byť panovníkom" # todo: NEW TRANSLATION
+ flavor_mos.74.b: "[feodor_romanov.GetNameWithNoTooltip] má náš súhlas." # todo: NEW TRANSLATION
+ flavor_mos.74.tt1: "[boris_godunov.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.74.tt2: "[feodor_romanov.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_national_assembly_opposed: "Národné zhromaždenie odporuje" # todo: NEW TRANSLATION
+ flavor_mos.74.c: "Ponechajme ich oboch ako vplyvných poradcov." # todo: NEW TRANSLATION
+ flavor_mos.74.tt3: "Silno odhodlaný a charizmatický [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] odoláva pokusom vynútiť rozhodnutie od [ROOT.GetCountry.GetGovernment.GetRuler.GetHimHer]" # todo: NEW TRANSLATION
+ flavor_mos.74.d: "Ani jeden nie je vhodný." # todo: NEW TRANSLATION
+ flavor_mos.74.tt4: "[boris_godunov.GetNameWithNoTooltip] and [feodor_romanov.GetNameWithNoTooltip] are executed to the great dismay of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.74.historical_info: "The death of Ivan IV led to Fyodor I becoming Tsar. He was not considered a strong leader, lacking the forcefulness of his father, and was described as weak and ineffectual. During Fyodor's rule, his brother-in-law, Boris Godunov, emerged as a powerful figure in the Russian court. Following Fyodor's death, with no heirs, Boris secured the throne with the endorsement of the Zemsky Sobor. A contender for the throne was Feodor Romanov, a boyar who was the first of the Romanov dynasty, but he did not enjoy the same support and was confined to a monastery once Boris assumed control." # todo: NEW TRANSLATION
+ feodor_romanov_becomes_a_monk_tt: "[feodor_romanov.GetShortNameWithNoTooltip] will become a monk and abstain from politics for the rest of [feodor_romanov.GetHerHis] days" # todo: NEW TRANSLATION
+ boris_godunov_becomes_a_monk_tt: "[boris_godunov.GetShortNameWithNoTooltip] will become a monk and abstain from politics for the rest of [boris_godunov.GetHerHis] days" # todo: NEW TRANSLATION
+ flavor_mos.75.title: "Zahraniční pedagógovia" # todo: NEW TRANSLATION
+ flavor_mos.75.desc: "Diplomatická sila [ROOT.GetCountry.GetGovernment.GetRuler.GetName] smeruje k zlepšeniu vzdelávacích potrieb našej mládeže, pričom niekoľkí adepti sú pripravovaní priniesť nové vplyvy a myšlienky, aby sme bojovali proti zaostalosti. Mali by sme zaviesť program na posielanie našich mladých do zahraničia, aby sa naučili tajomstvá úspechu. Zároveň musíme aktívne podporovať usadzovanie učiteľov, aby sa zvýšili štandardy nášho vzdelávacieho systému a oslobodil sa od vplyvu [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]." # todo: NEW TRANSLATION
+ flavor_mos.75.a: "Musíme dohnať intelektuálny pokrok." # todo: NEW TRANSLATION
+ flavor_mos.75.b: "Z toho nevyjde nič dobré." # todo: NEW TRANSLATION
+ flavor_mos.75.tt1: "Zástupcovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú potešení, že zostávajú silným vplyvom v záležitostiach vzdelávania" # todo: NEW TRANSLATION
+ flavor_mos.75.historical_info: "Tsar Boris Godunov quickly realized that Russia had fallen behind its European neighbors, and made it a priority to raise the educational standards being offered to children. Once such measure was to actively encourage foreign teachers to settle in Russia, but he also took initiates to send young Russians abroad to study." # todo: NEW TRANSLATION
+ flavor_mos.76.title: "[ivan_gramotin.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.76.desc: "Diplomat výnimočnej zručnosti a rozsiahlych znalostí ponúka svoje služby a prejavuje túžbu byť pridelený do zahraničného úradu. [ivan_gramotin.GetName] je známy svojou výrečnosťou a inteligenciou, a odporúča sa využiť [ivan_gramotin.GetHisHer] ponuku na navigovanie zložitým svetom medzinárodných vzťahov, pokiaľ nehľadáme konfrontačnejší prístup." # todo: NEW TRANSLATION
+ flavor_mos.76.a: "Pozvite ho na dvor." # todo: NEW TRANSLATION
+ flavor_mos.76.tt1: "[ivan_gramotin.GetNameWithNoTooltip] is added as a [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.76.tt2: "[ivan_gramotin.GetSheHe|U] may perform great deeds of diplomacy if assigned to the [ShowCabinetActionName('posolsky')] [cabinet_action|e]" # todo: NEW TRANSLATION
+ flavor_mos.76.b: "Ešte jeden beztalentný amatér." # todo: NEW TRANSLATION
+ flavor_mos.76.historical_info: "Ivan Gramotin was a successful diplomat during the reign of Ivan IV and beyond, who is mostly remembered for being the head of the foreign ministry. He became close friends with the future patriarch during a diplomatic visit to Poland, where he was being held captive. This friendship helped secure Ivan a future place at court and several influential positions, including the boyar duma. Towards the later stages of his life, he fell out of favor and was exiled, only to return following the death of the patriarch. He retired to a convent a few years later, where he died a monk." # todo: NEW TRANSLATION
+ flavor_mos.77.title: "Výrečný diplomat" # todo: NEW TRANSLATION
+ flavor_mos.77.desc: "Administratívny odborník [ivan_gramotin.GetName] vykonáva v #italic Posolsky Prikaz#! takmer zázraky, zefektívňuje byrokraciu a všetky procesy priamo súvisiace so zahraničnými a vnútornými vzťahmi. Môžeme sa rozhodnúť zberať ovocie z [ivan_gramotin.GetHisHer] práce alebo presmerovať [ivan_gramotin.GetHisHer] pozornosť na zlepšenie vnútornej stability [ROOT.GetCountry.GetName], pomáhajúc budovať mosty medzi súperiacimi frakciami a riešiť pretrvávajúce spory." # todo: NEW TRANSLATION
+ flavor_mos.77.a: "Žať, čo sme zasiali." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_fine_tuned_diplomacy: "Precízna diplomacia" # todo: NEW TRANSLATION
+ flavor_mos.77.tt1: "Neúnavné úsilie [ivan_gramotin.GetNameWithNoTooltip] je dobre využité pri akýchkoľvek zahraničných stykoch" # todo: NEW TRANSLATION
+ flavor_mos.77.b: "Domáce spory treba urovnať." # todo: NEW TRANSLATION
+ flavor_mos.77.historical_info: "Ivan Gramotin successfully conducted negotiations with the main rivals of Russia, namely Poland, Sweden, and the Ottoman Empire, and his contributions helped stabilize Russia during the Time of Troubles. He survived the turbulence despite shifting allegiances and intrigues, and would continue to lead important diplomatic missions for many years." # todo: NEW TRANSLATION
+ flavor_mos.78.title: "Aptekarsky Prikaz" # todo: NEW TRANSLATION
+ flavor_mos.78.desc: "Vládne úrady zriadené v súlade s refor mou [ShowGovernmentReformName('prikazi_reform')] plnia každá samostatnú úlohu v štátnej mašinérii, no nedávna morová pohroma zvýraznila potrebu obnovenej pozornosti k otázkam zdravia a blaha našich poddaných. Musíme zriadiť samostatný úrad, aby sme lepšie koordinovali potrebné reakcie pri ďalšej božej pohrome alebo smrteľnom epidémii, inak riskujeme nedostatok pracovnej sily na obrábanie polí a obranu nášho veľkého [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
+ flavor_mos.78.a: "Pijavice a upúšťanie krvi pre každého." # todo: NEW TRANSLATION
+ flavor_mos.78.tt1: "Dvor sa raduje z preferenčnej lekárskej starostlivosti, ktorú Aptekarasky Prikaz poskytuje vyšším vrstvám spoločnosti" # todo: NEW TRANSLATION
+ enable_aptekarsky_cabinet_action: "Grants access to the [ShowCabinetActionName('aptekarsky')] [cabinet_action|e]" # todo: NEW TRANSLATION
+ flavor_mos.78.b: "Stačí len modlitba." # todo: NEW TRANSLATION
+ flavor_mos.78.historical_info: "The Aptekarsky Prikaz was a governmental bureau with a wide range of responsibilities, including overseeing the production and distribution of medicines, regulating pharmacies, and addressing issues related to public health. It was also tasked with the well-being and health of the Tsar and his court. The Aptekarsky Prikaz remained an important part of the administration of Imperial Russia until it was disbanded following the 1917 revolution." # todo: NEW TRANSLATION
+ flavor_mos.79.title: "Podrobenie [ivan_bolotnikov.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.79.desc: "Revolucionársky kozácky otrok pridelený do služieb pri dvore ušiel, aby sa znovu pripojil k bratom v odporovaní sa domnelému životu v poddanstve. Avšak [ivan_bolotnikov.GetHisHer] život ako slobodného muža mimo dvora bol skrátený [ShowCultureGroupName('tatar_group')] nájazdom z [ShowAreaName('crimea_area')] a [ivan_bolotnikov.GetSheHe] je teraz držaný ako zajatec. Môžeme sa pokúsiť o záchranu skôr, než bude predaný do otroctva, alebo riskovať, že nespokojný služobník prezradí štátne tajomstvá." # todo: NEW TRANSLATION
+ flavor_mos.79.a: "Nákladné podnikanie s malým prínosom." # todo: NEW TRANSLATION
+ flavor_mos.79.tt1: "[ivan_bolotnikov.GetSheHe|U] je ponechaný [ivan_bolotnikov.GetHisHer] osudu a môže sa radikalizovať" # todo: NEW TRANSLATION
+ flavor_mos.79.b: "Kúpte [ivan_bolotnikov.GetHisHer] slobodu a bezpečný návrat." # todo: NEW TRANSLATION
+ flavor_mos.79.tt2: "[ivan_bolotnikov.GetNameWithNoTooltip] is added as a [character|e] and is returned to court" # todo: NEW TRANSLATION
+ flavor_mos.79.tt3: "[ivan_bolotnikov.GetHisHer|U] prítomnosť na dvore je aristokraciou spochybňovaná kvôli [ivan_bolotnikov.GetHisHer] rebélnej povahe" # todo: NEW TRANSLATION
+ flavor_mos.79.c: "Silný plameň, ktorý treba uhasiť." # todo: NEW TRANSLATION
+ flavor_mos.79.tt4: "[ivan_bolotnikov.GetNameWithNoTooltip] podľahne záhadnej chorobe." # todo: NEW TRANSLATION
+ flavor_mos.79.historical_info: "Ivan Bolotnikov was a Cossack ataman who led protests against the Tsar to reduce social injustices and economic difficulties imposed on the commoners but also certain segments of the nobility. Following a brief period of freedom, he was captured and sold into slavery by the Crimean Tatars. He was rescued by German mercenaries which allowed him to travel back to Moscow, where he helped organize the protests." # todo: NEW TRANSLATION
+ flavor_mos.80.title: "Bolotnikovovo povstanie" # todo: NEW TRANSLATION
+ flavor_mos.80.desc: "Bojársky revolucionár [ivan_bolotnikov.GetName] unikol z [ShowCultureGroupName('tatar_group')] zajatia a potajomky sa vrátil do [target_location.GetName], aby v tme zhromaždil obyvateľstvo proti nám. Šíria sa falošné klebety o týraní a zneužívaní moci vládou, pričom medzi povstalcami sú aj významní [ShowPopTypeName('nobles')] a [ShowPopTypeName('burghers')]." # todo: NEW TRANSLATION
+ flavor_mos.80.a: "Budú stretnutí šabľami a neústupnou surovou silou." # todo: NEW TRANSLATION
+ bolotnikov_uprising: "Bolotnikov Uprising" # todo: NEW TRANSLATION
+ flavor_mos.80.b: "Ponúknuť zhovievavosť a obmedzenú slobodu." # todo: NEW TRANSLATION
+ flavor_mos.80.c: "Zneškodniť ich presvedčivou rétorikou." # todo: NEW TRANSLATION
+ flavor_mos.80.tt1: "The negotiating tactics of [ROOT.GeGovernment.GetRuler.GetName] persuades the rebel leaders to lay down their arms." # todo: NEW TRANSLATION
+ flavor_mos.80.historical_info: "The Bolotnikov Rebellion took place from 1606 to 1607 during the Time of Troubles. They were instigated by Cossack Ivan Bolotnikov, who sought to combat social injustices, abuses of power, and economic difficulties. The rebellion received substantial backing from a range of estates, including peasants, Cossacks, and dissatisfied segments of the nobility. At one point, the rebellion controlled over seventy towns in southern Russia, and the Tsar was forced to brutally suppress it in order to regain control." # todo: NEW TRANSLATION
+ flavor_mos.81.title: "Vplyvný maršal" # todo: NEW TRANSLATION
+ flavor_mos.81.desc: "Guvernér [alexander_lvov.GetName] z [ShowLocationName('nizhny_novgorod')] sa nedávno vrátil na dvor, aby prevzal povinnosti okolničého, vysokej pozície, ktorá by mu umožnila prijať ďalšie administratívne povinnosti. Môžeme túto rolu rozšíriť tak, aby zahŕňala nový prikaz úrad dohliadajúci na záležitosti paláca a spravovanie kláštorov v súlade s reformou [ShowGovernmentReformName('prikazi_reform')]. Snahou by bolo lepšie riadenie dvorových výdavkov a zabezpečenie plnej implementácie politík [ShowPolicyName('non_possessors')]." # todo: NEW TRANSLATION
+ flavor_mos.81.a: "Prijateľné riešenie." # todo: NEW TRANSLATION
+ enable_bolshogo_dvortsa_cabinet_action: "Grants access to the [ShowCabinetActionName('bolshogo_dvortsa')] [cabinet_action|e]" # todo: NEW TRANSLATION
+ flavor_mos.81.b: "Nie je potrebné ďalšie dohliadanie." # todo: NEW TRANSLATION
+ flavor_mos.81.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are overjoyed by the trust placed in them" # todo: NEW TRANSLATION
+ flavor_mos.81.historical_info: "Alexander Lvov was a deputy governor who quickly rose the ranks of the Tsarist government, leading diplomatic delegations and serving as ambassador after being appointed majordomo of the Tsar's court. He served as head of the bureau of palace affairs, a role he would keep until his eventual retirement." # todo: NEW TRANSLATION
+ flavor_mos.82.title: "Spori mestnichestva" # todo: NEW TRANSLATION
+ flavor_mos.82.desc: "Reforma [ShowGovernmentReformName('the_mestnichestvo')] zaručuje, že každý bojár má nárok na vládny post podľa svojho pôvodu a predchádzajúcich pozícií, ako aj miesto pri stole [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Systém však povzbudzuje vnútorné spory medzi [ShowPopTypeName('nobles')] a dalo by sa tvrdiť, že odďaľuje iné talenty od dvora, čo znižuje administratívnu efektívnosť vlády.\n\nRodokmene najslávnejších rodín sú zaznamenané v takzvaných starobylých rodových knihách a bolo by rozumné ich zničiť, ak chceme reformovať systém a lepšie vládnuť štátu." # todo: NEW TRANSLATION
+ flavor_mos.82.a: "Spáľte rodové knihy." # todo: NEW TRANSLATION
+ flavor_mos.82.tt1: "Zástupcovia [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sú pobúrení pokusom obmedziť ich vplyv" # todo: NEW TRANSLATION
+ flavor_mos.82.b: "Zmena nikdy nie je dobrá." # todo: NEW TRANSLATION
+ flavor_mos.82.c: "Zrušiť feudálny hierarchický systém." # todo: NEW TRANSLATION
+ flavor_mos.82.historical_info: "The Mestnichestvo system determined the precedence of boyars in the Tsar's court and military based on their service records, social standing, and personal connections. It had a great impact on the social hierarchy of Russia and remained in place until it was dissolved by Feodor III, something that later Peter 'the Great' used in his favor, when enacting several reforms to the overall governance of Russia." # todo: NEW TRANSLATION
+ flavor_mos.83.title: "Veža Söyembikä" # todo: NEW TRANSLATION
+ flavor_mos.83.desc: "Rôznorodé obyvateľstvo [ShowLocationName('kazan')] praktizuje rozličné vierovyznania, čo si vyžaduje ďalšiu obrannú stavbu, ktorá zároveň poskytne lepší rozhľad. Postavme majestátnu vežu inšpirovanú jej historickým dedičstvom, ktorá bude slúžiť ako strážna veža a minaret na svolávanie veriacich k modlitbe." # todo: NEW TRANSLATION
+ flavor_mos.83.a: "Naklonený návrh." # todo: NEW TRANSLATION
+ mos_soyembika_tower_construction: "Söyembikä Construction" # todo: NEW TRANSLATION
+ flavor_mos.83.b: "Radšej pravidelne prehľadávať krajinu." # todo: NEW TRANSLATION
+ flavor_mos.83.historical_info: "The Söyembikä Tower was likely constructed during the reign of Ivan IV, but historical records are sparse and its origin remains uncertain. It is situated within the Kazan Kremlin and stands at 58 meters tall. It was previously known as one of the two leaning towers until efforts were made to stabilize it throughout the twentieth century." # todo: NEW TRANSLATION
+ flavor_mos.84.title: "Revízie Domostroja" # todo: NEW TRANSLATION
+ flavor_mos.84.desc: "Zástupcovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] požiadali o sériu aktualizácií Domostroja, aby zabezpečili, že správa domácností bude naďalej v súlade s hodnotami [ShowReligionAdjective('orthodox')]. Táto jedinečná príležitosť umožňuje určitú umeleckú slobodu a môžeme si vybrať, ktorý aspekt spoločnosti posilníme pri týchto revíziách." # todo: NEW TRANSLATION
+ flavor_mos.84.a: "Tradícia a morálka sú na prvom mieste." # todo: NEW TRANSLATION
+ flavor_mos.84.b: "Rodinné hodnoty musia byť zachované." # todo: NEW TRANSLATION
+ flavor_mos.84.c: "Poslušnosť a podriadenosť Bohu." # todo: NEW TRANSLATION
+ flavor_mos.84.d: "Pôst a modlitba sú nevyhnutnosťou." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_stringent_fasting_and_prayer: "Prísny pôst a modlitba" # todo: NEW TRANSLATION
+ flavor_mos.84.historical_info: "The Domostroy is a set of instructions and rules for running a Russian household, and its origin can be traced to the sixteenth century, most likely to the city of Novgorod. It provides a unique insight into the social and cultural norms of medieval Russia, and came to be revised as the values and morals of the time changed." # todo: NEW TRANSLATION
+ flavor_mos.85.title: "[simon_ushakov.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.85.desc: "Vizionár ikon [simon_ushakov.GetName] predstavil nový štýl náboženského maľovania so zameraním na sekulárne postavy a kombináciou tradičných ikonografických prvkov s niektorými západnými vplyvmi. Bohatá farebná paleta je v ostrom kontraste s existujúcimi dielami a pravdepodobne rozhne pár zástupcov [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Avšak prílev nových chutí a barokových vplyvov by prospeli umeleckej komunite a prispeli k šíreniu nových myšlienok." # todo: NEW TRANSLATION
+ flavor_mos.85.a: "Pozvite ho na dvor." # todo: NEW TRANSLATION
+ flavor_mos.85.tt2: "Zástupcovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] považujú nové vplyvy za dielo diabla a porušenie existujúcej cenzúry" # todo: NEW TRANSLATION
+ flavor_mos.85.b: "Vhodnejší na vyučovanie." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_restricted_to_teaching: "Obmedzené na vyučovanie" # todo: NEW TRANSLATION
+ flavor_mos.85.tt3: "[simon_ushakov.GetSheHe|U] je ponúknutý učiteľský post v [ShowBuildingTypeName('stroganov_school_of_iconic_art')]" # todo: NEW TRANSLATION
+ flavor_mos.85.c: "Preznačiť a predať." # todo: NEW TRANSLATION
+ flavor_mos.85.tt4: "[simon_ushakov.GetHisHer|U] dielo je tolerované, ale domáci predaj je zakázaný" # todo: NEW TRANSLATION
+ flavor_mos.85.d: "Dať [simon_ushakov.GetHimHer] do väzenia." # todo: NEW TRANSLATION
+ flavor_mos.85.historical_info: "Simon Ushakov was one of the leading artists of the Moscow school of iconography, who contributed to the development of the Baroque style in Russian art. He is remembered as one of the most skilled icon painters, which came to include illustrations and portraits of the Tsar. He briefly held the position of head of the Kremlin Armory, which strengthened his influence in cultural and artistic dealings." # todo: NEW TRANSLATION
+ flavor_mos.86.title: "Zbierka Kuzmu Minina" # todo: NEW TRANSLATION
+ flavor_mos.86.desc: "Prebiehajúca vojna spôsobila dočasnú stratu [target_location.GetName], no jeden z našich najbohatších [ShowPopTypeName('burghers')] prekvapivo dokázal vyzbierať značné prostriedky pre vojnové úsilie, pričom väčšia časť jeho majetku bola venovaná. Bola tiež zorganizovaná dobrovoľnícka armáda, ktorá bola pridaná k našim silám." # todo: NEW TRANSLATION
+ flavor_mos.86.a: "Prijať štedrú ponuku." # todo: NEW TRANSLATION
+ flavor_mos.86.b: "Odmietnuť ponuku." # todo: NEW TRANSLATION
+ flavor_mos.86.tt1: "The [ShowPopTypeName('burghers')] rejoice that they get to retain their hard-earned kopecks" # todo: NEW TRANSLATION
+ flavor_mos.86.historical_info: "Kuzma Minin was an influential merchant who is remembered for his contributions towards liberating Moscow from Polish occupation. Along with Prince Dmitry Pozharsky, he organized a volunteer army and donated a large amount of his personal profit to the cause. Today, he is celebrated as a symbol of patriotism and unity during the Time of Troubles." # todo: NEW TRANSLATION
+ flavor_mos.87.title: "Nájdenie Matky Božej z Kazaňa" # todo: NEW TRANSLATION
+ flavor_mos.87.desc: "Najposvätnejšia z ikon bola obnovená po dobytí [ShowLocationName('kazan')]. Pôvodne priniesena do [ROOT.GetCountry.GetName] z [ShowLocationName('constantinople')] v trinástom storočí, od začiatku nájazdov [ShowCultureGroupName('tatar_group')] bola považovaná za stratenú. Musíme zabezpečiť jej miesto a dbať na to, aby dostala pozornosť a postavenie, aké si zaslúži." # todo: NEW TRANSLATION
+ flavor_mos.87.a: "Okamžite ju vystaviť." # todo: NEW TRANSLATION
+ mos_lady_of_kazan_copies: "Our Lady Of Kazan Copies Being Made" # todo: NEW TRANSLATION
+ flavor_mos.87.b: "Musí byť uctievaná na viacerých miestach." # todo: NEW TRANSLATION
+ flavor_mos.87.tt1: "Kópie Matky Božej sa vyrábajú k veľkému potešeniu [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.87.c: "Zaprášená stará krabica si nezaslúži veľké uznanie." # todo: NEW TRANSLATION
+ flavor_mos.87.historical_info: "Our Lady of Kazan is an icon mostly associated with several miraculous events and holds great cultural and religious significance in Russia. According to tradition, the icon appeared miraculously during a fire in Kazan following its conquest from the Tatars. While the original icon is missing, reproductions and copies of Our Lady of Kazan are widespread throughout the Orthodox Church." # todo: NEW TRANSLATION
+ flavor_mos.88.title: "Prvý básnik" # todo: NEW TRANSLATION
+ flavor_mos.88.desc: "Pobožný učenec pochádzajúci z [ShowLocationName('polotsk')] predložil návrh založiť jazykovú akadémiu, zameranú hlavne na vzdelávanie vládnych úradníkov v jazyku diplomacie, konkrétne [latin.GetName]. [simon_sitnianowicz.GetName], ktorý nie je neznámy kontroverzným myšlienkam, tiež navrhol, aby mu bolo zverené učenie gramatiky, poetiky a rétoriky pre obyčajných ľudí. Takúto iniciatívu by sme mali podporiť pridelením prostriedkov na jej uskutočnenie." # todo: NEW TRANSLATION
+ flavor_mos.88.a: "Komunikácia je kľúčová." # todo: NEW TRANSLATION
+ flavor_mos.88.tt1: "[simon_sitnianowicz.GetNameWithNoTooltip] is added as a [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.88.b: "Čas lepšie venovať kázniam a kazateľstvu." # todo: NEW TRANSLATION
+ flavor_mos.88.tt2: "[simon_sitnianowicz.GetSheHe|U] dedicates [simon_sitnianowicz.GetHisHer] time to disseminating enlightened ideas and crafting poetry" # todo: NEW TRANSLATION
+ flavor_mos.88.c: "Zamestnať [simon_sitnianowicz.GetHimHer] ako súkromného učiteľa." # todo: NEW TRANSLATION
+ flavor_mos.88.d: "Ľudia musia zostať v nevedomosti." # todo: NEW TRANSLATION
+ flavor_mos.88.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are content to witness the exile of a man of unorthodox ideas." # todo: NEW TRANSLATION
+ flavor_mos.88.historical_info: "Symeon of Polotsk was a Belarusian Orthodox monk, poet, and translator who is remembered for his literary contributions, considered instrumental to the establishment of Orthodox Christian tradition. He introduced the teaching of Greek and Latin to Russia, and throughout his life, he also helped translate several works of Western theologians, facilitating the spread of knowledge to the Orthodox Church." # todo: NEW TRANSLATION
+ flavor_mos.89.title: "The Military Achievements of [patrick_gordon.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.89.desc: "Stratég a vojenský inžinier slúžiaci ako žoldnier v armáde [GetCountry('SWE').GetAdjective] ponúka zmenu strán za malú kompenzáciu. Odbornosť [patrick_gordon.GetName] by určite prispela k našim snahám o reformu a posilnenie armády podľa západoeurópskych štandardov." # todo: NEW TRANSLATION
+ flavor_mos.89.a: "Ponúknuť štedré odmeny." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_military_influencer: "Vojenský poradca" # todo: NEW TRANSLATION
+ flavor_mos.89.b: "Železná panna donúti [patrick_gordon.GetHimHer] vyzradiť svoje tajomstvá." # todo: NEW TRANSLATION
+ flavor_mos.89.tt2: "[patrick_gordon.GetSheHe|U] is captured and tortured for information" # todo: NEW TRANSLATION
+ flavor_mos.89.c: "Prevrátnik je riskantná investícia." # todo: NEW TRANSLATION
+ flavor_mos.89.historical_info: "Patrick Gordon was a Scottish military engineer and general who served in the Russian army. He began his military career in the Swedish army during the Second Northern War but later switched sides and joined the Russian army. He became a close associate of Peter 'the Great', which would eventually lead to tensions with the Russian nobility." # todo: NEW TRANSLATION
+ flavor_mos.90.title: "Inkognito cestovateľ" # todo: NEW TRANSLATION
+ flavor_mos.90.desc: "Hrozí, že zaostaneme za našimi protivníkmi vo vedeckých úspechoch a inováciách. Treba podniknúť kroky na zavedenie nového myslenia do [ROOT.GetCountry.GetName] uskutočnením diplomatickej cesty s hlavným cieľom spoznať západné technológie, kultúry a systémy vládnutia. Naši zástupcovia by mohli cestovať inkognito, pričom členovia vyššej spoločnosti by mohli sprevádzať delegáciu. Mohla by to byť cenná priama skúsenosť a uľahčiť ďalšie diplomatické rokovania." # todo: NEW TRANSLATION
+ flavor_mos.90.a: "Výhodné dobrodružstvo." # todo: NEW TRANSLATION
+ grand_embassy: "Veľká ambasáda" # todo: NEW TRANSLATION
+ flavor_mos.90.tt1: "Rok trvajúca cesta na západ odhalí [target_root_country.GetNameWithNoTooltip] nové vplyvy a objavy v pravý čas" # todo: NEW TRANSLATION
+ flavor_mos.90.tt2: "Cesta vedená [target_root_country.GetGovernment.GetRuler.GetName] sľubuje byť vynikajúcou skúsenosťou na učenie" # todo: NEW TRANSLATION
+ flavor_mos.90.b: "Radšej usporiadajme vedecký veľtrh." # todo: NEW TRANSLATION
+ flavor_mos.90.tt3: "Veľtrh priťahuje výskumníkov a popredných mysliteľov z celej Európy" # todo: NEW TRANSLATION
+ flavor_mos.90.tt4: "Significant redevelopment takes place to be able to host the fair, adding to the [development|e] of [target_location.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.90.c: "Nakoniec dohneme zameškané." # todo: NEW TRANSLATION
+ flavor_mos.90.historical_info: "The Grand Embassy was a journey undertaken by Peter 'the Great' in an effort to secure additional support for a coalition against the Ottoman Empire. Secondary objectives included hiring foreign military experts and acquiring new technology. During this period, Russia faced internal and external challenges, motivating Peter's determination to introduce reforms and transform the country into a more modern and powerful state. He traveled under a pseudonym to blend in with the local population; however, his height of 2.05 meters made him stand out nonetheless." # todo: NEW TRANSLATION
+ flavor_mos.91.title: "[francesco_rastrelli.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.91.desc: "Výborný architekt skromného pôvodu žijúci v [ShowLocationName('paris')] sa presťahoval do [ShowLocationName('neva')] za novými príležitosťami. [francesco_rastrelli.GetName] má bohaté skúsenosti s navrhovaním v štýle neskorého baroka, čo by bolo kľúčové, ak chceme premeniť [ShowLocationNameWithNoTooltip('neva')] na veľkolepé a honosné mesto." # todo: NEW TRANSLATION
+ flavor_mos.91.a: "Nový vplyv." # todo: NEW TRANSLATION
+ flavor_mos.91.tt2: "[francesco_rastrelli.GetHeShe|U] may go on to design magnificant buildings in [ShowLocationName('neva')], provided it is the capital of [target_root_country.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.91.b: "Konečne skutočný talent." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_chief_architect: "Hlavný architekt" # todo: NEW TRANSLATION
+ flavor_mos.91.tt3: "[francesco_rastrelli.GetHeShe|U] enjoys the tutorage of [target_root_country.GetGovernment.GetRuler.GetName], elevating [francesco_rastrelli.GetHimHer] to the position of Chief Architect" # todo: NEW TRANSLATION
+ flavor_mos.91.c: "Talent možno zohnať inde." # todo: NEW TRANSLATION
+ flavor_mos.91.historical_info: "Francesco Bartolomeo Rastrelli prišiel do Ruska so svojím otcom na pozvanie cisára Petra I. Jeho cieľom bolo skultivovať kultúrne a umelecké prostredie v Rusku a veril, že talenty rodiny Rastrelli budú neoceniteľné pri dosahovaní tohto zámeru. Jeho prvým veľkým projektom bola rekonštrukcia Zimného paláca, ktorý sa neskôr stal hlavným kráľovským sídlom." # todo: NEW TRANSLATION
+ flavor_mos.92.title: "Zimný palác" # todo: NEW TRANSLATION
+ flavor_mos.92.desc: "V novej metropole [ShowLocationName('neva')] postrádame akýkoľvek skutočne veľkolepý architektonický monument. Ako dôkaz veľkoleposti [ROOT.GetCountry.GetName] navrhuje [francesco_rastrelli.GetName] výstavbu Zimného paláca, ktorý bude sídlom správy a stane sa stĺpom moci a prepychu na stáročia. Pravé zrkadlo sily a sofistikovanosti nášho [ROOT.GetCountry.GetFlavorRank], ktoré vzbudí obdiv zo všetkých kútov sveta." # todo: NEW TRANSLATION
+ flavor_mos.92.a: "Živé svedectvo veľkoleposti." # todo: NEW TRANSLATION
+ mos_winter_palace_construction: "Výstavba Zimného paláca" # todo: NEW TRANSLATION
+ flavor_mos.92.tt1: "Štedrosť [grigory_orlov.GetName] zabezpečí pridanie prepracovanej záhrady ku palácu okrem bohatej škály fresiek a nástenných malieb" # todo: NEW TRANSLATION
+ flavor_mos.92.b: "Peniaze musia zodpovedať ambíciam." # todo: NEW TRANSLATION
+ mos_catherine_palace_construction: "Výstavba Katarínskeho paláca" # todo: NEW TRANSLATION
+ flavor_mos.92.tt2: "Postaví sa menej prepracovaný palác, vhodný na letné mesiace" # todo: NEW TRANSLATION
+ flavor_mos.92.c: "Zlepšime samotné mesto." # todo: NEW TRANSLATION
+ flavor_mos.92.historical_info: "Zimný palác slúžil ako oficiálne sídlo ruskej cisárskej rodiny až do zrušenia monarchie. Dokončený počas panovania Catherine 'the Great', je považovaný za jeden z najstarších príkladov barokovej architektúry v Rusku. Pôvodne ho dal objednať Peter 'the Great' a palác prešiel v priebehu rokov viacerými rozšíreniami a úpravami z dôvodu požiarov a rastúcej snahy o modernizáciu jeho štruktúry." # todo: NEW TRANSLATION
+ flavor_mos.93.title: "Vyhláška o kabátoch" # todo: NEW TRANSLATION
+ flavor_mos.93.desc: "Európska móda sa stále mení, no v [ROOT.GetCountry.GetName] ešte stále držíme archaických trendov diktovaných tradíciou namiesto #italic mode actuelle#!. Prijmime najnovšie štýly, ktoré sú obľúbené na podobných európskych dvoroch, a zanechajme zastaralosť a vnímanú zaostalosť tým, že zakážeme tradičné oblečenie a vynútime moderný odev u [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]." # todo: NEW TRANSLATION
+ flavor_mos.93.a: "Parochne a pančuchy pripravené." # todo: NEW TRANSLATION
+ mos_enforced_fashion: "Vynútená móda" # todo: NEW TRANSLATION
+ flavor_mos.93.tt1: "Na podporu prechodu na západné módne štýly sa doviezlo veľké množstvo látok" # todo: NEW TRANSLATION
+ flavor_mos.93.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] sú pobúrení otvoreným pohrdaním tradičnej hierarchie šľachty" # todo: NEW TRANSLATION
+ flavor_mos.93.b: "Kaftany sú nová čierna." # todo: NEW TRANSLATION
+ flavor_mos.93.tt3: "Tradičné odevy zostávajú zachované, čím sa ešte viac upevňuje odpor voči zmene" # todo: NEW TRANSLATION
+ flavor_mos.93.historical_info: "Počas vlády Petra 'the Great' došlo k zásadným zmenám v obliekaní šľachty ako súčasť jeho širších snáh o modernizáciu a zosvetštenie Ruska. Zaviedol prísne opatrenia proti tradičnému odevu, ako boli dlhé kaftany a brady, ktoré šľachta bežne nosila." # todo: NEW TRANSLATION
+ flavor_mos.94.title: "Synoda bláznov a šašov" # todo: NEW TRANSLATION
+ flavor_mos.94.desc: "Mladý panovník považuje náladu na dvore za dosť strohú a nekompromisnú. Túžiac priniesť trochu zábavy, [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] založil spoločenský klub, v ktorom členovia vykonávajú humorné a žartovné kúsky – obliekajú sa do prehnaných západných kostýmov, vtipkujú a predvádzajú komické vystúpenia. Hoci to [ShowReligionAdjective('orthodox')] cirkev neoceňuje vzhľadom na posmech jej tradícií, všeobecne sa to vníma ako veselá prestávka od formálnosti dvorského života a pomáha vnášať osviežujúcu dávku humoru do každodenného režimu." # todo: NEW TRANSLATION
+ flavor_mos.94.a: "Trocha neškodnej zábavy." # todo: NEW TRANSLATION
+ flavor_mos.94.tt1: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] nie sú pobavení opakovaným posmechom tradičných hodnôt" # todo: NEW TRANSLATION
+ flavor_mos.94.b: "Hanebné prejavenie najväčšieho hriechu." # todo: NEW TRANSLATION
+ flavor_mos.94.tt2: "Rozpustenie spoločenského klubu vyvolá napätie medzi [target_root_country.GetGovernment.GetRulerTitle] a [target_root_country.GetGovernment.GetRuler.GetHisHer] najbližšími priateľmi" # todo: NEW TRANSLATION
+ flavor_mos.94.c: "Označiť obetného baránka." # todo: NEW TRANSLATION
+ flavor_mos.94.tt3: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vylúčia každého zapleteného vinníka s podporou [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_mos.94.historical_info: "Synoda bláznov a šašov, známa ako All-Joking, All-Drunken Synod, bola vytvorená Petrom 'the Great' a jeho blízkymi priateľmi Patrickom Gordonom a Françoisom Le Fortom ako sociálny experiment na spochybnenie tradičných noriem. Členovia spoločenstva, vrátane šľachty a dvoranov, sa zapájali do aktivít zosmiešňujúcich tradičné ruské zvyky a prevzali západné správanie a odev. Pitie bolo podporované a zohrávalo významnú úlohu v rôznych predstaveniach a rituáloch, ktorých sa skupina zúčastňovala." # todo: NEW TRANSLATION
+ flavor_mos.95.title: "Záštita [bogdan_khitrovo.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.95.desc: "Mocný šľachtic a pohotový obchodník vyjadril záujem získať vládne miesto primerané [bogdan_khitrovo.GetHisHer] spoločenskému postaveniu. [bogdan_khitrovo.GetName] je hlboko oddaný umeleckým snahám a hľadá pozíciu, kde by [bogdan_khitrovo.GetSheHe] mohol(a) priamo prispieť výmenou za štedrú záštitu poskytovanú [bogdan_khitrovo.GetHisHer] rodinou." # todo: NEW TRANSLATION
+ flavor_mos.95.a: "Skutočný mecenáš umenia." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_artistic_encouragement: "Podpora umenia" # todo: NEW TRANSLATION
+ flavor_mos.95.tt2: "[bogdan_khitrovo.GetSheHe|U] sa stáva hlavným dozorníkom popredných umelcov, čo vedie k posunu smerom k prijatiu západných vplyvov v dielach, ako je naturalizmus" # todo: NEW TRANSLATION
+ flavor_mos.95.tt3: "[ShowBuildingTypeName('stroganov_school_of_iconic_art')] dostáva značný dar, čo katalyzuje vznik ďalších umeleckých diel" # todo: NEW TRANSLATION
+ flavor_mos.95.b: "Ponúknuť vládne miesto." # todo: NEW TRANSLATION
+ flavor_mos.95.tt4: "Úrady [ShowGovernmentReformName('prikazi_reform')] vynikajú pod vedením [bogdan_khitrovo.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_accomplished_overseeing: "Zručné vedenie" # todo: NEW TRANSLATION
+ flavor_mos.95.c: "Pozornosť sa nebude deliť." # todo: NEW TRANSLATION
+ flavor_mos.95.historical_info: "Bogdan Khitrovo bol ruský štátnik, ktorý vynikal v správe viacerých prikazských úradov počas panovaní dvoch po sebe idúcich cárov. Táto pozícia mu umožnila dohliadať na ikonopiscov slúžiacich na dvore a ovplyvňovať ich. Pohltený západnou kultúrou, Bogdan sa snažil využiť svoj vplyv na jej zavedenie do popredných umeleckých kruhov tej doby, čo viedlo k významnému prílivu rozšírených myšlienok, ako bol naturalizmus. To prinieslo novú éru pre ruské umenie a znamenalo odklon od tradičných techník maľby ikon používaných od stredoveku." # todo: NEW TRANSLATION
+ flavor_mos.96.title: "Nadpriemerný diak" # todo: NEW TRANSLATION
+ flavor_mos.96.desc: "Nastupujúca hviezda skromného pôvodu preukázala pozoruhodný talent v rokovaniach so zahraničnými mocnosťami a má záujem pokračovať v postupe po kariérnom rebríku. [afanasy_nashchokin.GetName] sa môže pochváliť vynikajúcim vzdelaním a môže sa ukázať ako silný prínos v každom zadanom úkone, pokiaľ dokážeme prehliadnuť [afanasy_nashchokin.GetHisHer] nevýznamné rodinné väzby." # todo: NEW TRANSLATION
+ flavor_mos.96.a: "Majster slova s bezkonkurenčnou zručnosťou." # todo: NEW TRANSLATION
+ flavor_mos.96.tt2: "[afanasy_nashchokin.GetHisHer|U] zručné formulácie spôsobia, že bude [afanasy_nashchokin.GetHimHer] pridelený na zastupovanie [target_root_country.GetName] v zahraničí, kde bude navigovať zradné terény diplomacie" # todo: NEW TRANSLATION
+ flavor_mos.96.b: "Tkalec byrokratických tapisérií." # todo: NEW TRANSLATION
+ flavor_mos.96.tt3: "[afanasy_nashchokin.GetSheHe|U] dohliada na [ShowCabinetActionName('posolsky')] Prikaz, výrazne zlepšujúc jeho zamýšľané fungovanie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_posolsky_prikaz_excelling: "Posolsky Prikaz vyniká" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_brilliant_diplomacy: "Brilantná diplomacia" # todo: NEW TRANSLATION
+ flavor_mos.96.c: "Reformátor hlavného mesta." # todo: NEW TRANSLATION
+ flavor_mos.96.tt4: "[afanasy_nashchokin.GetSheHe|U] zavádza modernity, ako sú gazety a smennice, do [target_root_country.GetAdjective] ekonomiky" # todo: NEW TRANSLATION
+ flavor_mos.96.d: "Odmietnuť uznať [afanasy_nashchokin.GetHisHer] prínosy." # todo: NEW TRANSLATION
+ flavor_mos.96.tt5: "Prepracovaný zamestnanec, sklamaný absenciou pozitívneho posilnenia, sa rozhodne hľadať zamestnanie inde" # todo: NEW TRANSLATION
+ flavor_mos.96.historical_info: "Afanasy Nashchokin bol štátnik a neskôr diplomat, ktorý vyjednal niekoľko zmlúv, ktoré Rusku priniesli veľké výhody. Bol poverený vedením #italic Posolsky Prikaz#!, v ktorom vynikal, a postupoval v rebríčku vďaka schopnostiam skôr než dedičstvu, ako bola bežná prax v Rusku. Stále bol predmetom závisti šľachty a musel opakovane odrážať jej nepriateľstvo." # todo: NEW TRANSLATION
+ flavor_mos.97.title: "Vedomosti" # todo: NEW TRANSLATION
+ flavor_mos.97.desc: "Nové medzinárodné klebety našli miesto v tlačených novinách pod vedením [ROOT.GetCountry.GetGovernment.GetRuler.GetName], obsahujúcich drby o diplomatických vzťahoch, správy z frontu a vojenské víťazstvá. Čoskoro sa očakáva uvedenie do obehu, začínajúc niekoľkými stovkami výtlačkov pre tých, ktorých považujú za dostatočne vážených na čítanie. Môžeme chcieť upraviť jeho obsah pred vydaním, ak sa naše ambície trochu líšia od ambícií jeho vydavateľa." # todo: NEW TRANSLATION
+ flavor_mos.97.a: "Extra! Extra! Prečítajte si to!" # todo: NEW TRANSLATION
+ flavor_mos.97.tt1: "Novinárske ambície [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] zabezpečia, že [target_root_country.GetName] je informované o svetových dramách" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_briefed_on_current_events: "Oboznámený s aktuálnymi udalosťami" # todo: NEW TRANSLATION
+ flavor_mos.97.b: "Obmedziť publikácie na vojenské úspechy." # todo: NEW TRANSLATION
+ flavor_mos.97.tt2: "Správy o epických víťazstvách [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] sa šikovne premenia na slávne príbehy" # todo: NEW TRANSLATION
+ flavor_mos.97.c: "Prepracovať ho na strategického sprievodcu." # todo: NEW TRANSLATION
+ flavor_mos.97.tt3: "Detailné správy o bitkách a starostlivo vytvorené vojenské stratégie sú počas konfliktov písomne predložené veliteľom armády" # todo: NEW TRANSLATION
+ flavor_mos.97.d: "Nepotrebujeme žiadny hlúpy papier." # todo: NEW TRANSLATION
+ flavor_mos.97.historical_info: "Vedomosti bola najstaršia novina v Rusku, založená cárom Petrom 'the Great' v prvých rokoch jeho panovania. Mala nepravidelnú distribúciu a poskytovala informácie o konfliktoch, do ktorých bolo Rusko zapojené, vystavujúc jeho úspechy na bojisku a zobrazujúc cára v priaznivom svetle pred verejnosťou. Správy tej doby boli často zastarané a neaktuálne, čo predstavovalo značné ťažkosti pri vyjednávaní zmlúv s protivníkmi a pri riadení správy impéria." # todo: NEW TRANSLATION
+ flavor_mos.98.title: "Kolégium" # todo: NEW TRANSLATION
+ flavor_mos.98.desc: "Nedávna reformácia vládnych orgánov si vyžiadala efektívnejšie ministerské riadenie, aby sa predišlo prekrývaniu zodpovedností agentúr. Zrušme existujúci systém [ShowGovernmentReformName('prikazi_reform')] a nahraďme ho sériou kolégií. Každé kolégium bude mať odlišné povinnosti a oddelenie právomocí, s pridanou zodpovednosťou poskytovať rady v nevyriešených prípadoch, keď o to bude požiadané." # todo: NEW TRANSLATION
+ flavor_mos.98.a: "Preč so starým, vítaj nové." # todo: NEW TRANSLATION
+ enable_collegium_reform: "Umožní prístup k [ShowGovernmentReformName('collegium_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ flavor_mos.98.tt1: "[ShowGovernmentReformNameWithNoTooltip('prikazi_reform')] [government_reform|e] a akékoľvek súvisiace [cabinet_action|e] sa stanú nedostupnými" # todo: NEW TRANSLATION
+ flavor_mos.98.b: "Vládnutie je krehké a nesmie sa s ním zahrávať." # todo: NEW TRANSLATION
+ flavor_mos.98.tt2: "Prijímajú sa kroky na zlepšenie správy [ShowLocationName('neva')] v súlade s [ShowPolicyName('dop_law_governing_senate')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_mos.98.historical_info: "Po zriadení Vládneho senátu Peter 'the Great' založil rôzne kolégiá ako administratívne orgány zodpovedné za rôzne aspekty vlády, ako napríklad Synod a Admiralitnú radu. Inšpiráciu čerpal z podobných reforiem, ktoré boli nedávno zavedené v susednom Švédsku. Naliehavosť reformy urýchlil rastúci počet území Ruského impéria." # todo: NEW TRANSLATION
+ flavor_mos.99.title: "Značka za bradu" # todo: NEW TRANSLATION
+ flavor_mos.99.desc: "Najnovšie módne trendy, ktoré sa šíria po [ShowSubContinentName('western_europe')], prikazujú, že muž by mal byť hladko oholený. Tento trend sa však neujal medzi [ROOT.GetCountry.GetAdjective] elitou, pretože tradícia nosenia dlhej brady je hlboko zakorenená v [ShowReligionAdjective('orthodox')] kultúre a náboženstve. Pokusy o vynútenie zákazu vyvolali široké pobúrenie a cirkev to nedávno označila za rúhanie. Zavedenie poplatku vo forme povinnej známky za bradu by mohlo niektorých presvedčiť k oholeniu, pričom by zároveň prinieslo do štátnej pokladnice značné príjmy od tých, ktorí sa rozhodnú brady zachovať." # todo: NEW TRANSLATION
+ flavor_mos.99.a: "Nech ostane len strnisko." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_beard_tax: "Daň z brady" # todo: NEW TRANSLATION
+ mos_beard_tax_tokens: "Známky za bradu" # todo: NEW TRANSLATION
+ flavor_mos.99.tt1: "Veľké množstvo známok na bradu sa vyrobí na náklady vlády" # todo: NEW TRANSLATION
+ flavor_mos.99.tt2: "Chlpatí muži v [target_root_country.GetName] sa držia svojich presvedčení tým, že jednoducho zaplatia daň" # todo: NEW TRANSLATION
+ flavor_mos.99.b: "Pokúsiť sa o ďalší zákaz." # todo: NEW TRANSLATION
+ flavor_mos.99.c: "Nech necháme všetky brady slobodne rásť." # todo: NEW TRANSLATION
+ flavor_mos.99.historical_info: "Daň z brady bola pokusom Petra 'the Great' zladiť Rusko s ostatnými veľmocami Európy pokiaľ ide o módu a kultúru. Boli razené známky, ktoré sa stali povinným nákupom pre tých, ktorí sa rozhodli zaplatiť poplatok namiesto toho, aby sa vzdať svojich brád. Tajná polícia cára sa pokúsila systém vynucovať; napriek tomu sa nepodarilo dosiahnuť zásadný posun smerom k západným štandardom, pretože väčšina mužov uprednostnila jednoducho zaplatiť daň." # todo: NEW TRANSLATION
+ flavor_mos.100.title: "Prvý admirál" # todo: NEW TRANSLATION
+ flavor_mos.100.desc: "Moreplavecký stratég [feodor_apraksin.GetName] už istý čas úspešne spravuje [target_location.GetRank.GetName] [ShowLocationName('arkhangelsk')], čo [feodor_apraksin.GetHimHer] umožnilo zároveň venovať sa iným činnostiam. Nedávno [feodor_apraksin.GetSheHe] prejavil nadanie pre vojenské inžinierstvo, oblasť, ktorú chce [feodor_apraksin.GetSheHe] ďalej skúmať. Musíme zvážiť ďalšie zaradenie [feodor_apraksin.GetHisHer], keďže súčasné obdobie sa chýli ku koncu, potenciálne presunutie do [ShowBuildingTypeName('admiralty')], aby sme posilnili naše námorné ambície a dosiahli sen o suverénnej nadvláde nad morami." # todo: NEW TRANSLATION
+ flavor_mos.100.a: "Admiralitná rada z toho výrazne profituje." # todo: NEW TRANSLATION
+ flavor_mos.100.tt2: "[feodor_apraksin.GetHisHer|U] technické odborné znalosti a zdroje [ShowBuildingTypeNameWithNoTooltip('admiralty')] k dispozícii umožňujú vývoj nových konštrukcií lodí pre novú radu lodí odolných voči búrkam" # todo: NEW TRANSLATION
+ enable_hurricane_hardy_advance: "Umožní prístup k [ShowAdvanceName('hurricane_hardy')] [advance|e]" # todo: NEW TRANSLATION
+ flavor_mos.100.b: "Predĺžiť gubernát." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_tempest_engineer: "Inžinier búrok" # todo: NEW TRANSLATION
+ flavor_mos.100.tt3: "[feodor_apraksin.GetNameWithNoTooltip] technické znalosti a správa prístavu [ShowLocationName('arkhangelsk')] umožňujú rýchlu výstavbu nových návrhov pre novú radu lodí odolných voči búrkam, vrátane sľubného prototypu" # todo: NEW TRANSLATION
+ flavor_mos.100.c: "Obrana vlasti má prednosť." # todo: NEW TRANSLATION
+ flavor_mos.100.tt4: "[feodor_apraksin.GetNameWithNoTooltip] technické znalosti a dohľad umožňujú posilnenie opevnení naprieč [ROOT.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.100.historical_info: "Feodor Apraksin sa zúčastnil viacerých vojenských kampaní, vďaka čomu získal guvernérstvo najdôležitejšieho ruského obchodného prístavu, Arkhangelsku. Bol zručný inžinier a nakoniec mu bola zverená úloha postaviť prvú ruskú flotilu spolu s viacerými opevneniami, kým bol cár zaneprázdnený inde. Apraksinove snahy zohrali rozhodujúcu úlohu v modernizácii námorníctva a zanechali trvalý vplyv na impériové ambície Ruska." # todo: NEW TRANSLATION
+ flavor_mos.101.title: "Poučná štátna návšteva" # todo: NEW TRANSLATION
+ flavor_mos.101.desc: "Prebiehajúci výlet po [ShowSubContinentName('western_europe')] sa vyvíja podľa plánu a s veľkým očakávaním. Teraz prišiel rad, aby [ROOT.GetCountry.GetGovernment.GetRuler.GetName] navštívil [target_country.GetName]. [ROOT.GetCountry.GetGovernment.GetRulerTitle] vykoná niekoľko významných zastávok, zahŕňajúc starostlivo naplánované bankety, elegantnú módu, nadýchané parochne a vynikajúce úhorové koláče ako prvky prepracovaného menu zážitkov. Istotne to sľubuje byť ohromujúca kráľovská udalosť." # todo: NEW TRANSLATION
+ flavor_mos.101.a: "Vychutnajme si predstavenie." # todo: NEW TRANSLATION
+ flavor_mos.101.tt1: "Observatórium v Greenwichi umožní [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] osobne si precvičiť obsluhu ďalekohľadu" # todo: NEW TRANSLATION
+ flavor_mos.101.tt2: "[target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] sa zúčastní prehliadky flotily Kráľovského námorníctva v Deptforde" # todo: NEW TRANSLATION
+ flavor_mos.101.tt3: "[target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] získa čestný doktorát na univerzite [ShowLocationName('oxford')]" # todo: NEW TRANSLATION
+ flavor_mos.101.tt4: "[target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] sa zúčastní informačnej prednášky usporiadanej [ShowBuildingTypeName('royal_society')]" # todo: NEW TRANSLATION
+ flavor_mos.101.tt5: "Osobný portrét [target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] je darovaný popredným portrétistom [godfrey_kneller.GetName]" # todo: NEW TRANSLATION
+ opinion_gifted_magnificent_painting: "Darovaný veľkolepý obraz" # todo: NEW TRANSLATION
+ flavor_mos.101.b: "Venovať čas súkromnému štúdiu a rozjímaniu." # todo: NEW TRANSLATION
+ flavor_mos.101.c: "Pozorná sova ticho sedí v tieni." # todo: NEW TRANSLATION
+ flavor_mos.101.tt6: "Prepracovaná [spy_network|e] v [target_country.GetNameWithNoTooltip] je použitá na zhromažďovanie informácií v spojení s oficiálnou návštevou" # todo: NEW TRANSLATION
+ flavor_mos.101.historical_info: "Veľká delegácia (Grand Embassy) Petra 'the Great' ho nakoniec priviedla k brehom Anglicka, ktoré v tom čase získavalo rastúci vplyv vo svetových záležitostiach a bolo považované za miesto stretávania intelektuálov hľadajúcich únik pred prenasledovaním autokratickej Európy. Peter navštívil niekoľko známych inštitúcií, ako Royal Mint, The Society a observatórium, zúčastnil sa pitných stretnutí s anglickým kráľom a študoval anglické techniky pri budovaní miest, ktoré boli neskôr použité pri výstavbe nového hlavného mesta Petrohradu. Hlavným cieľom návštevy bolo zabezpečiť cenné technologické zdroje." # todo: NEW TRANSLATION
+ flavor_mos.102.title: "Delegácia na Maltu" # todo: NEW TRANSLATION
+ flavor_mos.102.desc: "Templárski rytieri z [ShowLocationName('malta')] majú dlhú históriu boja proti invazívnej sile, ktorú predstavuje [GetCountry('TUR').GetLongName], s opakovanými potýčkami na súši i mori počas storočí. Templári sú veľmi zruční a mohli by byť neoceniteľní pre naše vojenské sily, ak by sme sa rozhodli vyzvať moc [GetCountry('TUR').GetAdjectiveWithNoTooltip] [GetCountry('TUR').GetFlavorRank]. Pošlime delegáciu z nášho základne pri [ShowAreaName('black_sea_area')] a naučme sa tajomstvá týchto fanatikov, aby sme získali prevahu." # todo: NEW TRANSLATION
+ flavor_mos.102.a: "Plachty pripravené." # todo: NEW TRANSLATION
+ flavor_mos.102.tt1: "Delegácia študuje bojovú históriu a bojové techniky bývalých križiakov" # todo: NEW TRANSLATION
+ flavor_mos.102.b: "Viac získame obchodom." # todo: NEW TRANSLATION
+ flavor_mos.102.c: "Muži potrebujú len vodku a slávnu smrť." # todo: NEW TRANSLATION
+ flavor_mos.102.historical_info: "Peter 'the Great' poslal diplomata a polného maršala Borisa Petrovicha Sheremeteva na Maltu, aby pozoroval výcvik a zručnosti Rytierov z Malty a ich námorných síl. Rusko nedávno založilo svoju prvú námornú základňu v Azovskom mori a konflikt s Osmanskou ríšou sa zdál nevyhnutný." # todo: NEW TRANSLATION
+ flavor_mos.103.title: "Sukharevova veža" # todo: NEW TRANSLATION
+ flavor_mos.103.desc: "Námorníctvo závisí na stálom prísune zdatných námorníkov a prenose vedomostí z jednej generácie na druhú. Aby sme podporili naše námorné ambície, mali by sme založiť školu poskytujúcu technické vzdelanie, ktoré položí základy pre ďalší rozvoj našich ozbrojených síl. Nedávno bol predložený návrh majestátnej veže, ktorá by mohla takéto zariadenie pojať a zároveň prispieť k skrášleniu panorámy mesta [ShowLocationName('moscow')]." # todo: NEW TRANSLATION
+ flavor_mos.103.a: "Hodná ambícia." # todo: NEW TRANSLATION
+ flavor_mos.103.tt1: "Poschodie navrchu je určené pre [james_bruce.GetName], ktorý zriadí astronomické observatórium s hviezdnym výhľadom" # todo: NEW TRANSLATION
+ flavor_mos.103.b: "Takéto extravagancie nie sú potrebné." # todo: NEW TRANSLATION
+ flavor_mos.103.c: "Musí spĺňať potreby [target_location.GetRank.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mos.103.tt2: "Na druhom poschodí je postavený moderný vodovodný systém v prospech [ShowLocationName('moscow')]" # todo: NEW TRANSLATION
+ flavor_mos.103.historical_info: "Sukharevova veža bola postavená na konci 17. storočia na pamiatku víťazstva Petra 'the Great' nad strelcami, ktorí sa proti nemu v predchádzajúcich rokoch vzbúrili. Veža slúžila v priebehu rokov rôznym účelom, ako kasárne, vzdelávacie zariadenia, infraštruktúra a sklad pre obchodníkov, až do jej konečného zničenia sovietskymi orgánmi v roku 1934." # todo: NEW TRANSLATION
+ flavor_mos.104.title: "[francois_le_fort.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.104.desc: "Bývalý stratég a žoldnier hľadá zamestnanie v [ROOT.GetCountry.GetAdjective] armáde v nádeji, že si vybuduje meno. Zásluhy [francois_le_fort.GetName] sú pôsobivé, ale postráda vodcovské skúsenosti; napriek tomu [francois_le_fort.GetSheHe] trvá na poľnom hodnostnom stupni kapitána, povýšení, ktoré by nebolo prijaté dobre domáci narodenými generálmi na podobnej kariérnej ceste." # todo: NEW TRANSLATION
+ flavor_mos.104.a: "Pravidlá sú na to, aby sa porušovali." # todo: NEW TRANSLATION
+ flavor_mos.104.tt2: "[francois_le_fort.GetSheHe|U] preukazuje prirodzený talent zabávať masy, šľachtu aj plebs, čo sa môže hodiť" # todo: NEW TRANSLATION
+ flavor_mos.104.b: "Absurdný nápad." # todo: NEW TRANSLATION
+ flavor_mos.104.historical_info: "François Le Fort slúžil Petrovi 'the Great' ako diplomat aj generál a zúčastnil sa niekoľkých kampaní na zabezpečenie ruského prístupu k Azovskému moru. Stal sa blízkym priateľom cára a zohral kľúčovú úlohu pri vytvorení Synody bláznov a šašov, ako aj pri organizovaní a účasti na sérii vojenských hier zorganizovaných pre Petra počas jeho regentstva, obyčajne nazývaných Hračkárska armáda." # todo: NEW TRANSLATION
+ flavor_mos.105.title: "Hračkárska armáda" # todo: NEW TRANSLATION
+ flavor_mos.105.desc_common1: "Mladý [target_character.GetName] sa nadchol pre vojnové hry a miniatúrnych vojakov, prejavujúc veľkú schopnosť v stratégii a nasadzovaní vojsk." # todo: NEW TRANSLATION
+ flavor_mos.105.desc_common2: "ponúkajúc zorganizovať sériu cvičných bitiek so skutočnými vojakmi namiesto hračiek, aby sa predviedli prepracované scény, ktoré umožnia mladému dedičovi naučiť sa umeniu vojny." # todo: NEW TRANSLATION
+ flavor_mos.105.desc_patrick_gordon: "$flavor_mos.105.desc_common1$ Záujem o vojenské záležitosti si všimol vojenský stratég [patrick_gordon.GetName], ktorý $flavor_mos.105.desc_common2$" # todo: NEW TRANSLATION
+ flavor_mos.105.desc_francois_le_fort: "$flavor_mos.105.desc_common1$ Záujem o vojenské záležitosti si všimol vojenský stratég a blízky dôverník [francois_le_fort.GetName], ktorý trvá na tom, že sa nielen zúčastní, ale aj $flavor_mos.105.desc_common2$" # todo: NEW TRANSLATION
+ flavor_mos.105.desc_both: "$flavor_mos.105.desc_common1$ Záujem o vojenské záležitosti si všimli vojenskí stratégovia a blízki dôverníci [patrick_gordon.GetName] a [francois_le_fort.GetName], ktorí sú $flavor_mos.105.desc_common2$" # todo: NEW TRANSLATION
+ flavor_mos.105.a: "Nech sa hry začnú." # todo: NEW TRANSLATION
+ training_with_gordon: "Získa #G 10#! [mil_short|e] [ability|e] z tréningu s [patrick_gordon.GetName]" # todo: NEW TRANSLATION
+ training_with_le_fort: "Získa #G 10#! [mil_short|e] [ability|e] z tréningu s [francois_le_fort.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.105.tt1: "Charizmatická povaha [target_character.GetNameWithNoTooltip] pomáha [target_character.GetHimHer] nadviazať blízke priateľstvá s organizátormi a účastníkmi nižšieho postavenia, čo rozhorčuje [ShowPopTypeName('nobles')]" # todo: NEW TRANSLATION
+ flavor_mos.105.tt2: "Špeciálne kasárne sa postavia na ubytovanie rozrastajúcej sa hračkárskej armády" # todo: NEW TRANSLATION
+ mos_toy_army_components: "Komponenty hračkárskej armády" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_friends_in_all_places: "Priatelia všade" # todo: NEW TRANSLATION
+ flavor_mos.105.b: "Súkromné doučovanie postačí." # todo: NEW TRANSLATION
+ flavor_mos.105.historical_info: "Peter 'the Great' mal zbierku vojenských hračiek, s ktorými sa hrával počas detstva. Predvádzali sa zložité hry, do ktorých boli zapojené aj skutoční vojaci, inštruktori a dobrovoľníci Streltcov. Toto skoré oboznámenie sa s hračkami s vojenskou tematikou ovplyvnilo jeho neskoršie rozhodnutie vstúpiť do armády, skúsenosť, ktorá sa ukázala byť kľúčovou pri jeho neskorších snahách ako cára modernizovať a posilniť ruskú armádu." # todo: NEW TRANSLATION
+ flavor_mos.106.title: "Cisárska garda" # todo: NEW TRANSLATION
+ flavor_mos.106.desc: "Komplexné a realistické vojnové hry organizované Hračkárskou armádou vyústili do formovania elitného pluku pripraveného do boja s neochvejnou lojalitou k [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Zostáva to však zmes náborov z rôzneho prostredia a spoločenských vrstiev, ktorú by bolo možné zjednotiť reorganizáciou do dvoch družstiev. Prvé družstvo by pozostávalo prevažne z [ShowPopTypeName('nobles')] a malo by za úlohu chrániť [ROOT.GetCountry.GetGovernment.GetRulerTitle], zatiaľ čo druhé by zohrávalo aktívnejšiu úlohu v vojenských kampaniach a vojnách." # todo: NEW TRANSLATION
+ flavor_mos.106.a: "Pripravení, pozor, krok." # todo: NEW TRANSLATION
+ enable_preobrazhensky_semyonovsky_imperial_guard_advance: "Grants access to the [ShowAdvanceName('preobrazhensky_semyonovsky_imperial_guard')] [advance|e]" # todo: NEW TRANSLATION
+ flavor_mos.106.b: "Nadbytočné pre zavedený poriadok." # todo: NEW TRANSLATION
+ flavor_mos.106.historical_info: "Preobrazhenský a Semjonovský pluk patrili k najprestížnejším a elitným jednotkám Ruského cisárskeho vojska, známe svojím historickým významom a tesnými väzbami na ruských panovníkov. Zriadil ich Peter 'the Great' ako súčasť rozsiahlych reforiem celého vojenského systému a pokračovali v ochrane monarchie až do ich rozpustenia počas Ruskej revolúcie." # todo: NEW TRANSLATION
+ flavor_mos.107.title: "Mimoriadne vysoký štátnik" # todo: NEW TRANSLATION
+ flavor_mos.107.desc: "[ShowPolicyName('dop_law_governing_senate')] starostlivo prehľadáva krajinu kvôli talentovaným jednotlivcom, ktorí by mohli dôstojne a statočne slúžiť. Prišiel rad na vplyvného šľachtica a gubernátora [tikhon_streshnev.GetName], aby sa pridal k ostatným zákonodarcom. [tikhon_streshnev.GetSheHe|U] nie je cudzí byrokracii a očakáva sa, že sa bez problémov zapadne, ak nerátame [tikhon_streshnev.GetHisHer] extrémnu výšku." # todo: NEW TRANSLATION
+ flavor_mos.107.a: "Pozvite ho do služby." # todo: NEW TRANSLATION
+ flavor_mos.107.tt2: "Merajúc trochu cez dva metre, [tikhon_streshnev.GetHisHer] nezvyčajná výška zvyšuje podobnosť s [target_character.GetName], čo posilňuje fámy, že [tikhon_streshnev.GetNameWithNoTooltip] je skutočným otcom [target_character.GetHisHer]" # todo: NEW TRANSLATION
+ flavor_mos.107.b: "Vežiaca sa osobnosť bude rozptyľovať zasadnutia." # todo: NEW TRANSLATION
+ flavor_mos.107.historical_info: "Tichon Strešnev bol jedným z prvých členov novozriadenej vládnej Senátu, krátko tiež zastával funkciu hlavy Razryadnyj prikaz a viedol armádu. Bol blízky kráľovskej rodine a pôsobil ako mentor mladému Petrovi I., čo mu prinieslo značný vplyv. Bol nezvyčajne vysoký na svoju dobu, vlastnosť, ktorú zdieľal s Petrom, a naznačovalo sa, že mohol byť biologickým otcom budúceho cára." # todo: NEW TRANSLATION
+ flavor_mos.108.title: "Dedičova defekcia" # todo: NEW TRANSLATION
+ flavor_mos.108.desc: "Hovoria sa o výraznom nezhode medzi [target_heir.GetName] a [target_ruler.GetName] ohľadom rozsiahlych reforiem v oblasti armády, vlády a spoločnosti, ktoré prebiehajú v [ROOT.GetCountry.GetName], pričom prvý z nich tieto zmeny odmieta a drží sa tradičných [ROOT.GetCountry.GetAdjectiveWithNoTooltip] hodnôt. Keď sa rozdiely nedarí vyriešiť a [target_heir.GetNameWithNoTooltip] cíti odcudzenosť, hľadal útočisko v [target_country.GetName] v snahe uniknúť vplyvu otcových reforiem." # todo: NEW TRANSLATION
+ flavor_mos.108.a: "Okamžite zadržte [target_heir.GetHimHer]." # todo: NEW TRANSLATION
+ flavor_mos.108.tt1: "[target_heir.GetNameWithNoTooltip] je podrobený zákulisnému dôkladnému vyšetrovanie a môže podozrivo zahynúť" # todo: NEW TRANSLATION
+ flavor_mos.108.b: "Ponúknite ústupky." # todo: NEW TRANSLATION
+ flavor_mos.108.tt2: "[target_heir.GetNameWithNoTooltip] sa ponúkne mierne zvrátenie politiky výmenou za návrat domov" # todo: NEW TRANSLATION
+ flavor_mos.108.c: "Prebudíme špióna, aby získal nášho aktíva." # todo: NEW TRANSLATION
+ flavor_mos.108.tt3: "[target_heir.GetNameWithNoTooltip] je vrátený domov skôr, než si niekto všimne [target_heir.GetHisHer] neprítomnosť" # todo: NEW TRANSLATION
+ flavor_mos.108.d: "Zbavme ho dedičstva, blázna." # todo: NEW TRANSLATION
+ flavor_mos.108.historical_info: "Alexej Petrovič, syn Petra 'the Great', mal napätý vzťah so svojím otcom kvôli odlišným názorom na západnú modernizáciu Ruska. Alexejovo tradičné vzdelanie, zamerané na náboženské a konzervatívne hodnoty, ostro kontrastovalo s otcovým modernejším prístupom. Tento rozkol viedol k pokusu o defekciu do Svätej ríše rímskej, no Alexej bol zadržaný a privlečený späť do Ruska, kde ho čakal verejný proces. Krátko po tom zomrel za záhadných okolností." # todo: NEW TRANSLATION
+ flavor_mos.109.title: "Kammermohr" # todo: NEW TRANSLATION
+ flavor_mos.109.desc: "Veľmi neobvyklý dar predložil veľvyslanec [GetCountry('TUR').GetLongName] v podobe chlapca pochádzajúceho z vzdialených krajín [ShowAreaName('northern_ethiopia_area')]. Pôvodne zajatý a držený ako otrok, [abram_petrovich.GetName] má byť oslobodený a vychovaný na kráľovskom dvore, aby sa naučil naše spôsoby a v budúcnosti slúžil [ROOT.GetCountry.GetName], potenciálne ako súčasť armády alebo ako komorník. Napriek vysokému intelektu [abram_petrovich.GetNameWithNoTooltip] postráda základné vzdelanie, a bolo by rozumné dopriať [abram_petrovich.GetHimHer] dar gramotnosti." # todo: NEW TRANSLATION
+ flavor_mos.109.a: "Chlapca treba vzdelávať." # todo: NEW TRANSLATION
+ flavor_mos.109.tt1: "[abram_petrovich.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_mos.109.tt2: "[abram_petrovich.GetSheHe|U] je zapísaný na najprestížnejších inštitúciách v [GetCountry('FRA').GetName]" # todo: NEW TRANSLATION
+ flavor_mos.109.tt3: "[abram_petrovich.GetSheHe|U] je zapísaný na vynikajúcej univerzite v [target_location.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.109.tt4: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sa búria proti preferenčnému zaobchádzaniu s bývalým otrokom" # todo: NEW TRANSLATION
+ flavor_mos.109.b: "Nákladné podnikanie s malým úžitkom." # todo: NEW TRANSLATION
+ flavor_mos.109.historical_info: "Termín 'Kammermohr' bol historicky používaný na označenie dvorana s tmavou farbou pokožky. Bolo zvykom, že európski panovníci mali sluhu afrického pôvodu, slúžiaceho ako exotický symbol prestíže dvora. Abram Petrovich bol darovaný Osmanskou ríšou Rusku a vychovaný ako krstný syn Petra 'the Great', čo mu umožnilo získať prestížne vzdelanie v zahraničí. Neskôr sa vrátil ako vysoce schopný vojenský inžinier a pôsobil v ruskej armáde." # todo: NEW TRANSLATION
+ flavor_mos.110.title: "Návrat zázračného génia" # todo: NEW TRANSLATION
+ flavor_mos.110.desc: "[abram_petrovich.GetName] dokončil svoje štúdiá a vracia sa do [ROOT.GetCountry.GetName] vybavený bohatstvom vedomostí v oblasti vojenského inžinierstva. Teraz musíme rozhodnúť, ako najlepšie využiť [abram_petrovich.GetHisHer] talenty — či ako mentora, alebo ako dôležitú súčasť vládneho aparátu." # todo: NEW TRANSLATION
+ flavor_mos.110.a: "Nech učí." # todo: NEW TRANSLATION
+ flavor_mos.110.tt1: "[abram_petrovich.GetNameWithNoTooltip] sa stáva učiteľom inžinierstva a matematiky pre ozbrojené sily" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_fortress_forger: "Tvorca pevností" # todo: NEW TRANSLATION
+ flavor_mos.110.b: "Skutočný vlastenec bojuje až do konca." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_gannibal: "Gannibal" # todo: NEW TRANSLATION
+ flavor_mos.110.c: "Do dobre namazaného aparátu vlády." # todo: NEW TRANSLATION
+ flavor_mos.110.d: "Už nemám záujem." # todo: NEW TRANSLATION
+ flavor_mos.110.tt2: "[abram_petrovich.GetNameWithNoTooltip] je vyhostený k radosti [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" # todo: NEW TRANSLATION
+ flavor_mos.110.historical_info: "Abram Petrovich sa vrátil do Ruska po dokončení štúdií vo Francúzsku. Jeho kmotor, Peter 'the Great', zomrel krátko potom a nový regent nebol na Abrama prívetivý, takže ho poslal do vyhnanstva na Sibír. Neskôr, vďaka svojim vynikajúcim inžinierskym schopnostiam, bol omilostený a poverený stavbou viacerých fortifikácií po Rusku. V nasledujúcich panovaniach sa jeho postavenie obnovilo a nakoniec bol vymenovaný za hlavného vojenského inžiniera ruskej armády." # todo: NEW TRANSLATION
+ flavor_mos.111.title: "Pevnosť Petra a Pavla" # todo: NEW TRANSLATION
+ flavor_mos.111.desc: "Ostrov Hare strategicky stráži ústie rieky Neva, súdny priechod medzi [ShowAreaName('eastern_baltic_sea')] a jazerom Ladoga. Rozšírme našu moc nad týmto územím výstavbou moderného citadelu na [ShowLocationName('neva')] a položme základy majestátneho veľkomesta." # todo: NEW TRANSLATION
+ flavor_mos.111.a: "Veľmi vhodné miesto." # todo: NEW TRANSLATION
+ mos_st_peter_and_paul_construction: "Výstavba katedrály svätých Petra a Pavla" # todo: NEW TRANSLATION
+ flavor_mos.111.tt1: "Inžinierske zázraky [abram_petrovich.GetName] zjednodušujú stavebný proces a znižujú celkové náklady mastodontného projektu" # todo: NEW TRANSLATION
+ flavor_mos.111.b: "Domov je tam, kde je srdce." # todo: NEW TRANSLATION
+ flavor_mos.111.historical_info: "Pevnosť Petra a Pavla je najstaršou stavbou v Petrohrade a založil ju Peter 'the Great' ako vojenskú pevnosť počas Severnej vojny proti Švédsku. Nachádza sa v nej tiež katedrála Petra a Pavla, miesto posledného odpočinku mnohých členov ruskej cisárskej rodiny. Mesto Petrohrad sa z pevnosti rozvinulo do rozľahlého hlavného mesta v priebehu menej než 20 rokov." # todo: NEW TRANSLATION
+ flavor_mos.112.title: "Hlavný architekt" # todo: NEW TRANSLATION
+ flavor_mos.112.desc: "Krajinný architekt a barokový staviteľ [jean_baptiste_le_blond.GetName] významne prispel do oblasti architektúry a nedávno dorazil na [ShowLocationName('neva')] na podnet miestnych úradov. Pochádzajúci z [ShowLocationName('paris')], [jean_baptiste_le_blond.GetHisHer] skúsenosti s veľkoleposťou a štýlom #italic Le Nôtre#! by z neho urobili skvelý príspevok k neprehlásenej ambícii premeniť [target_location.GetRank.GetName] na moderné mestské centrum a kultúrne stredisko." # todo: NEW TRANSLATION
+ flavor_mos.112.a: "Musí byť postavené v najväčšej tiesni." # todo: NEW TRANSLATION
+ flavor_mos.112.a.custom: "Rýchla výstavba osídlenia si vyžaduje povinné odvedenie [ShowPopTypeName('peasants')] z celého [ShowRegionName('russian_region')]" # todo: NEW TRANSLATION
+ flavor_mos.112.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sú nespokojní s obmedzeniami na ich pohyb" # todo: NEW TRANSLATION
+ flavor_mos.112.tt3: "Vypracuje sa plán rozloženia mesta a zahájené sú nevyhnutné predbežné stavebné práce pre budúce hlavné mesto" # todo: NEW TRANSLATION
+ flavor_mos.112.tt4: "Desiatky odvedených [ShowPopTypeName('peasants')] zomierajú v dôsledku ťažkých pracovných podmienok" # todo: NEW TRANSLATION
+ flavor_mos.112.b: "Ukončite toto šialenstvo." # todo: NEW TRANSLATION
+ flavor_mos.112.historical_info: "Jean-Baptiste Alexandre Le Blond bol francúzsky architekt, ktorý je známy navrhovaním viacerých pamiatok v novo založenom hlavnom meste Petrohrad. Hral kľúčovú úlohu pri zavádzaní francúzskej barokovej architektúry do Ruska, čo je zrejmé v pôdoryse a celkovom dizajne mesta, ktoré sú často pripisované Le Blondovým príspevkom." # todo: NEW TRANSLATION
+ flavor_mos.113.title: "Brána na Západ" # todo: NEW TRANSLATION
+ flavor_mos.113.desc: "[target_location.GetRank.GetName] [ShowLocationName('neva')] má niekoľko výhod; má prístup k hlavným obchodným trasám, močaristé delty rieky Neva poskytujú prirodzené obranné výhody a jej blízkosť k Európe uľahčuje kultúrne výmeny. Presun našej administratívnej centrály je nevyhnutný, aby sme využili tieto silné stránky. Nielenže podporí ďalšie investície, ale slúži aj ako strategický krok na upevnenie obrazu [ROOT.GetCountry.GetName] ako silnej európskej mocnosti schopnej presadzovať svoj vplyv na kontinente." # todo: NEW TRANSLATION
+ flavor_mos.113.a: "Nový začiatok." # todo: NEW TRANSLATION
+ st_petersburg: "Saint Petersburg" # todo: NEW TRANSLATION
+ flavor_mos.113.tt1: "Po označení [ShowLocationName('neva')] za hlavné mesto sa môžu spustiť viaceré udalosti" # todo: NEW TRANSLATION
+ flavor_mos.113.b: "Zavádzajúci a neuvážený plán." # todo: NEW TRANSLATION
+ flavor_mos.113.tt2: "Niektoré [pops|e] opustia [ShowLocationName('neva')] a odídu za zelenšími pastvinami do [capital.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.113.historical_info: "Založenie Petrohradu v roku 1703 počas vlády Petra 'the Great' bolo motivované jeho túžbou získať prístup k Baltskému moru a premiestniť hlavné mesto na miesto s celoročným prístavom, na rozdiel od vnútrozemského Moskvy. Toto rozhodnutie bolo súčasťou Petrovej širšej snahy o západnú modernizáciu. Výstavba mesta čelila významným výzvam vrátane močaristej pôdy a drsných poveternostných podmienok. Pri stavbe sa využívala nútená práca, zapájaní boli nevoľníci a vojnoví zajatci." # todo: NEW TRANSLATION
+ flavor_mos.114.title: "Ideálna manželka" # todo: NEW TRANSLATION
+ flavor_mos.114.desc: "Pokračovanie dynastie [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] je nesmierne dôležité, a šance na jeho zabezpečenie by sa výrazne zlepšili, keby sa [ROOT.GetCountry.GetGovernment.GetRuler.GetName] oženil. Nedávna prehliadka vhodných žien ukázala, že pozornosť [ROOT.GetCountry.GetGovernment.GetRulerTitle] upútala [natalya_naryshkina.GetName] z šľachtickej dynastie [ShowDynastyName('naryshkin_dynasty')]. [natalya_naryshkina.GetSheHe|U] je plodného veku a slobodná, pričom sa očakáva, že porodí synov veľkosti. Rodina však, v rozpore s tradíciou, požiadala, aby ich dcéra mala slobodnejší životný štýl, ktorý lepšie zodpovedá [natalya_naryshkina.GetHimHer] idealistickému vychovaniu." # todo: NEW TRANSLATION
+ flavor_mos.114.a: "Samozrejme!" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_great: "Veľký" # todo: NEW TRANSLATION
+ flavor_mos.114.tt1: "[natalya_naryshkina.GetNameWithNoTooltip] je pridaná ako [character|e] a porodí [peter_the_great.GetName]" # todo: NEW TRANSLATION
+ flavor_mos.114.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť s otvorenosťou [natalya_naryshkina.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.114.b: "Nech sa vysloví len málo názorov." # todo: NEW TRANSLATION
+ flavor_mos.114.c: "Nie je potrebné viazať sa manželstvom." # todo: NEW TRANSLATION
+ flavor_mos.114.historical_info: "Natalja Naryškinová bola matkou Petra 'the Great' a po smrti jeho prvej manželky sa vydala za cára. Rodina sa snažila zabrániť tomuto sobášu tým, že tvrdila, že Natalja použila na cára temnú mágiu, aby si získala jeho pozornosť, tvrdenia, ktoré boli po krátkom vyšetrovaní zamietnuté. Natalja bola vychovávaná v západno-liberálnom duchu a opakovane žiadala manžela, aby jej dal slobody nezvyčajné pre ženy tej doby, ako návštevy divadla či účasť v kostole bez závoja. Tiež sa pokúšala zaviesť do ruského dvora niektoré západné zvyky." # todo: NEW TRANSLATION
+ flavor_mos.115.title: "Pozorovania [james_bruce.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mos.115.desc: "Pochádzajúci z [ShowAreaName('scottish_lowlands_area')] s rodovou líniou v Rusku zdokumentovanou od roku 1647, [james_bruce.GetName] je muž meča i pera s impozantným vzdelaním a relevantnými skúsenosťami v teréne, najmä v oblasti delostrelectva. [james_bruce.GetHisHer|U] pôsobivé zásluhy a spisovné schopnosti sú k dispozícii na získanie a nepochybne prispejú v akejkoľvek oblasti, pre ktorú bude [james_bruce.GetHeShe] určený, či už to budú administratívne a vedecké aktivity, alebo vojenské úlohy." # todo: NEW TRANSLATION
+ flavor_mos.115.a: "Pozvite ho na dvor." # todo: NEW TRANSLATION
+ flavor_mos.115.tt2: "[james_bruce.GetHisHer|U] literárne diela môžu byť prospešné pri budúcom zakladaní inštitútov poznania" # todo: NEW TRANSLATION
+ flavor_mos.115.b: "Výlučne pre armádu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_artillery_maestro: "Majster delostrelectva" # todo: NEW TRANSLATION
+ flavor_mos.115.tt3: "[james_bruce.GetSheHe|U] je vyhradený pre vojenskú službu, zlepšujúc nasadzovanie a využitie delostrelectva" # todo: NEW TRANSLATION
+ flavor_mos.115.c: "Pochybný rodokmeň." # todo: NEW TRANSLATION
+ flavor_mos.115.historical_info: "James Bruce sa zúčastnil niekoľkých vojenských tažení proti Osmanskej ríši ako generálmajor delostrelectva. Považuje sa za jedného z najvzdelanejších ľudí v Rusku tej doby, prispel do oblastí astronómie a vedy písaním viacerých diel, ktoré neskôr venoval Akadémii vied. Je mu pripisované otvorenie prvej observatóriá v Rusku pri Sukharevovej veži, čo mu vynieslo reputáciu praktizovania alchýmie a mágie." # todo: NEW TRANSLATION

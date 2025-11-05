@@ -1,0 +1,646 @@
+﻿l_polish:
+ PARLIAMENT_MARKER_DURATION_TXT: "#T [Player.GetGovernment.GetParliament.GetName] v zasadnutí#!\nRokuje o [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName] ešte [Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] dní v @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]." # todo: NEW TRANSLATION
+ PARLIAMENT_DURATION_TXT: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] dní zostáva v @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]" # todo: NEW TRANSLATION
+ PARLIAMENT_DURATION_TXT_NO_LOCATION: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] dní zostáva" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_DURATION_TXT: "#T [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] v zasadnutí#!\nRokuje o [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebate.GetName] ešte [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration|W] dní v @location![InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]." # todo: NEW TRANSLATION
+ PARLIAMENT_ISSUE_WILL_FAIL: "#T Návrh nebude schválený#!\n@trigger_no! [Player.GetGovernment.GetParliament.GetName] #R NE#! schváli [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName]." # todo: NEW TRANSLATION
+ PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Návrh bude schválený#!\n[Player.GetGovernment.GetParliament.GetName] schváli [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName]." # todo: NEW TRANSLATION
+ HOSTILE_PARLIAMENT_MARKER: "#T Nepriateľské [ParliamentMarker.GetGovernment.GetParliament.GetName] v zasadnutí#!\nMôže byť prerušené [occupying|e] [location|e]." # todo: NEW TRANSLATION
+ PARLIAMENT_NEVER_CALLED: "The $NAME$ has not been called." # todo: NEW TRANSLATION
+ PARLIAMENT_CALLED_DATE: "The $NAME$ was called $WHEN|Y$ ago " # todo: NEW TRANSLATION
+ PARLIAMENT_MODIFIER_WHEN_DEBATED_TT: "Počas rokovania o návrhu" # todo: NEW TRANSLATION
+ PARLIAMENT_MODIFIER_WHEN_DEBATED: "Počas rokovania o návrhu:" # todo: NEW TRANSLATION
+ PARLIAMENT_ESTATE_EXTRA_POWER_WHEN_DEBATED: "Výber tohto návrhu pridá $VAL|2+=%$ k základnej podpore v parlamente" # todo: NEW TRANSLATION
+ PARLIAMENT_SPECIAL_STATUS_EXTRA_POWER_WHEN_DEBATED: "Výber tohto návrhu presvedčí o $VAL|2+=%$ viac krajín so statusom $SPECIAL_STATUS$, aby podporili parlament." # todo: NEW TRANSLATION
+ EXTRA_SUPPORT_INFO_FOR_ISSUE_NONE: "#T $crown_estate$ návrh#!\nTento návrh prospeje cieľom $crown_estate$, takže pri jeho predložení v [parliament|e] nepridá žiadnu dodatočnú podporu." # todo: NEW TRANSLATION
+ EXTRA_SUPPORT_INFO_FOR_ISSUE: "#T [PARLIAMENT_ISSUE.GetEstateType.GetNameWithNoTooltip] návrh#!\nVýber tohto návrhu pridá $VAL|2+=%$ k podpore v parlamente, pretože [PARLIAMENT_ISSUE.GetEstateType.GetName] tento návrh podporuje." # todo: NEW TRANSLATION
+ BASE_SPECIAL_STATUS_SUPPORT: "Podpora statusu" # todo: NEW TRANSLATION
+ EXTRA_SUPPORT_INFO_FOR_IO_ISSUE: "#T [PARLIAMENT_ISSUE.GetSpecialStatus.GetNameWithNoTooltip] návrh#!\nVýber tohto návrhu pridá $VAL|2+=%$ k podpore v parlamente, pretože členovia [PARLIAMENT_ISSUE.GetSpecialStatus.GetName] tento návrh podporujú." # todo: NEW TRANSLATION
+ PARLIAMENT_START: "Keď debata #Y začne#!:" # todo: NEW TRANSLATION
+ PARLIAMENT_IF_SUCCESS: "Ak debata #G bude schválená#!:" # todo: NEW TRANSLATION
+ PARLIAMENT_IF_SUCCESS_TT: "Ak debata #G bude schválená#!" # todo: NEW TRANSLATION
+ PARLIAMENT_IF_FAIL: "Ak debata #R zlyhá#!:" # todo: NEW TRANSLATION
+ PARLIAMENT_IF_FAIL_TT: "Ak debata #R zlyhá#!" # todo: NEW TRANSLATION
+ PARLIAMENT_CURRENT_SUPPORT: "Aktuálna podpora v parlamente: $SUPPORT$%" # todo: NEW TRANSLATION
+ NO_POSSIBLE_AGENDAS: "@trigger_no! Neostali žiadne možné [parliament_agendas|e]." # todo: NEW TRANSLATION
+ ACTIVE_PARLIAMENT_SUPPORT_POWER: "Základ je $VAL|2G$ [estate_power|e] upravený nasledovným:" # todo: NEW TRANSLATION
+ ACTIVE_PARLIAMENT_SUPPORT_IMPORTANCE: "Dôležitosť agendy: $VAL|2+=%$" # todo: NEW TRANSLATION
+ ACTIVE_PARLIAMENT_SUPPORT_SATISFACTION: "[estate_satisfaction|e]: $VAL|2+=%$" # todo: NEW TRANSLATION
+ PARLIAMENT_AGENDA_SUPPORT_TT: "#T Dopad podpory#!" # todo: NEW TRANSLATION
+ ACTIVE_PARLIAMENT_REPEAT: "Opakované agendy: $VAL|2+=%$" # todo: NEW TRANSLATION
+ ACCEPT_AGENDA: "Prijať agendu" # todo: NEW TRANSLATION
+ ACCEPT_AGENDA_TT: "Prijať $NAME$" # todo: NEW TRANSLATION
+ ACCEPT_AGENDA_EFFECT: "Získa $VAL|2+=%$ podpory v [parliament|e]." # todo: NEW TRANSLATION
+ IO_PARLIAMENT_TITLE: "Parlament [InternationalOrganizationsView.GetInternationalOrganization.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_TOOLTIP: "Niektoré politické rozhodnutia [InternationalOrganizationsView.GetInternationalOrganization.GetName] musia byť rozhodnuté v [parliament|e]. Takéto [parliament_issues|e] môže vybrať vedúci štát, ale nadobudnú účinnosť iba ak za ne zahlasuje väčšina [international_organization|e]." # todo: NEW TRANSLATION
+ IO_PARLIAMENT_NON_VOTERS: "Ešte nehlasovali" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_OPPOSERS: "Oponenti" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_VOTERS: "Podporovatelia" # todo: NEW TRANSLATION
+ call_parliament: "Zvolať parlament" # todo: NEW TRANSLATION
+ call_parliament_desc: "Týmto zvoláme parlament v snahe získať podporu na vyriešenie [parliament_issue|e], zmenu [policies|e] v našich [laws|e], vytvorenie [casus_belli|e], zvýšenie [taxes|e] alebo väčších [army_levies|e] a [navy_levies|e].\nPočas tejto schôdze získame nasledujúce účinky:\n[ShowModifierEffect('parliament_in_session')]\n\n$select_parliament_location_inform_choice_tt$" # todo: NEW TRANSLATION
+ request_more_taxes: "Požiadať o dodatočné dane" # todo: NEW TRANSLATION
+ request_more_taxes_desc: "Požiadať [Player.GetGovernment.GetParliament.GetName] , aby nám umožnil vyberať viac [tax|e] od [estates|e]." # todo: NEW TRANSLATION
+ ask_for_larger_levies: "Požiadať o väčšie odvody" # todo: NEW TRANSLATION
+ ask_for_larger_levies_desc: "Požiadať [estates|e] nášho [Player.GetGovernment.GetParliament.GetName] , aby poskytli väčšie [army_levies|e] a [navy_levies|e], keď budú povolaní." # todo: NEW TRANSLATION
+ ask_for_law_changes: "Požiadať o zmeny zákonov" # todo: NEW TRANSLATION
+ ask_for_law_changes_desc: "Požiadať [estates|e], aby schválili zmenu určitej [policy|e] v našich [laws|e]." # todo: NEW TRANSLATION
+ ask_for_law_changes_select_law_title: "Vyberte [law|e], ktorú náš [Player.GetGovernment.GetParliament.GetName] schváli zmeniť." # todo: NEW TRANSLATION
+ ask_for_law_changes_select_policies_title: "Vyberte [policy|e], ktorú náš [Player.GetGovernment.GetParliament.GetName] schváli zmeniť." # todo: NEW TRANSLATION
+ prepare_for_war_select_title: "Vyberte [country|e], proti ktorému získať [casus_belli|e]" # todo: NEW TRANSLATION
+ prepare_for_war_select_province_title: "Vyberte [province|e], ktorý bude stanovený ako [war_goal|e]" # todo: NEW TRANSLATION
+ select_a_country_to_get_casus_belli_on: "Vyberte [country|e], na ktorý nám náš [Player.GetGovernment.GetParliament.GetName] udelí [casus_belli|e]." # todo: NEW TRANSLATION
+ prepare_for_war: "Vytvoriť casus belli" # todo: NEW TRANSLATION
+ prepare_for_war_desc: "Požiadať [Player.GetGovernment.GetParliament.GetName], aby schválil [war|e] tým, že nám poskytne legitimný [casus_belli|e].\n• Vyberieme krajinu, na ktorú získame [ShowCasusBelliName('cb_fabricated_conquer_province')] [casus_belli|e]" # todo: NEW TRANSLATION
+ PARLIAMENT_IN_SESSION: "[Player.GetGovernment.GetParliament.GetName] v zasadnutí" # todo: NEW TRANSLATION
+ promote_castle_building: "Podporiť stavbu $castle$" # todo: NEW TRANSLATION
+ promote_castle_building_desc: "V celej krajine sú vynikajúce miesta pre možné opevnenia, pripravené zastaviť postup našich nepriateľov." # todo: NEW TRANSLATION
+ promote_bastion_building: "Podporiť stavbu $bastion$" # todo: NEW TRANSLATION
+ promote_bastion_building_desc: "$promote_castle_building_desc$" # todo: NEW TRANSLATION
+ promote_star_fort_building: "Podporiť stavbu $star_fort$" # todo: NEW TRANSLATION
+ promote_star_fort_building_desc: "$promote_castle_building_desc$" # todo: NEW TRANSLATION
+ promote_fortress_building: "Podporiť stavbu $fortress$" # todo: NEW TRANSLATION
+ promote_fortress_building_desc: "$promote_castle_building_desc$" # todo: NEW TRANSLATION
+ sponsor_a_university: "Sponzorovať $university$" # todo: NEW TRANSLATION
+ sponsor_a_university_desc: "Šírenie poznania v snahe o duševné osvietenie a pochopenie božského je ušľachtilým cieľom, ktorý musíme podporiť všetkou našou finančnou a politickou silou zriadením vplyvných liturgických inštitúcií." # todo: NEW TRANSLATION
+ pops_in_province_gain_20_satisfaction: "[pops|e] v [province|e] tejto [location|e] získajú [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
+ sponsor_a_confucian_academy: "Sponzorovať $confucian_academy$" # todo: NEW TRANSLATION
+ sponsor_a_confucian_academy_desc: "Aby sme podporili vyššie poznanie a poskytli našim učencom rozsiahlu infraštruktúru pre ich prácu, mali by sme investovať do našich akadémií." # todo: NEW TRANSLATION
+ sponsor_a_cathedral: "Sponzorovať $cathedral$" # todo: NEW TRANSLATION
+ sponsor_a_cathedral_desc: "Naše panovanie bude navždy vážené, ak postavíme katedrálu na oslavu našej viery v jednom z našich najvýznamnejších miest." # todo: NEW TRANSLATION
+ sponsor_a_opera_house: "Sponzorovať $opera_house$" # todo: NEW TRANSLATION
+ sponsor_a_opera_house_desc: "Naši ľudia požadujú rozšírenie kultúrnych inštitúcií. Poskytnutie novej [ShowBuildingTypeNameWithNoTooltip('opera_house')] uspokojí tento kultúrny záujem a zároveň venuje pozornosť našim mestským oblastiam." # todo: NEW TRANSLATION
+ gravel_road_development: "Rozšíriť sieť $gravel_road$" # todo: NEW TRANSLATION
+ gravel_road_development_desc: "Chrbticou našej krajiny sú cesty, ktoré spájajú naše provincie a osídlené centrá. Preto musíme spevniť nové cesty a financovať ich výstavbu a rozšírenie." # todo: NEW TRANSLATION
+ gravel_road_development_burghers: "$gravel_road_development$" # todo: NEW TRANSLATION
+ gravel_road_development_burghers_desc: "$gravel_road_development_desc$" # todo: NEW TRANSLATION
+ paved_road_development: "Rozšíriť sieť $paved_road$" # todo: NEW TRANSLATION
+ paved_road_development_desc: "$gravel_road_development_desc$" # todo: NEW TRANSLATION
+ paved_road_development_burghers: "$paved_road_development$" # todo: NEW TRANSLATION
+ paved_road_development_burghers_desc: "$gravel_road_development_desc$" # todo: NEW TRANSLATION
+ modern_road_development: "Rozšíriť sieť $modern_road$" # todo: NEW TRANSLATION
+ modern_road_development_desc: "$gravel_road_development_desc$" # todo: NEW TRANSLATION
+ railroad_development: "Rozšíriť sieť $railroad$" # todo: NEW TRANSLATION
+ railroad_development_desc: "$gravel_road_development_desc$" # todo: NEW TRANSLATION
+ expand_mining_operations: "Rozšíriť ťažobné prevádzky" # todo: NEW TRANSLATION
+ expand_mining_operations_desc: "Ťažba by mohla hrať kľúčovú úlohu v našej ekonomike, ale súčasné prevádzky nie sú na uspokojivej úrovni." # todo: NEW TRANSLATION
+ expand_farming_operations: "Financovať poľnohospodárske statky" # todo: NEW TRANSLATION
+ expand_farming_operations_desc: "Naše poľnohospodárske statky zabezpečujú produkciu mnohých základných potrieb. Majitelia pôdy však sľubujú väčšie výnosy, ak do nich investujeme viac času a zdrojov." # todo: NEW TRANSLATION
+ expand_hunting_operations: "Zriadiť nové loviská" # todo: NEW TRANSLATION
+ expand_hunting_operations_desc: "Naše loviská ešte nie sú využité naplno, a preto prichádzame o mnoho možných ziskov." # todo: NEW TRANSLATION
+ expand_gathering_operations: "Rozšíriť zberné prevádzky" # todo: NEW TRANSLATION
+ expand_gathering_operations_desc: "Mali by sme rozšíriť zberné prevádzky, aby sme uspokojili dopyt po týchto surovinách pri výstavbe a údržbe našej širšej ekonomiky." # todo: NEW TRANSLATION
+ expand_forestry_operations: "Rozšíriť lesné využívanie" # todo: NEW TRANSLATION
+ expand_forestry_operations_desc: "Lesy našej krajiny sľubujú väčšie výnosy. Mali by sme rozšíriť ťažobné prevádzky, aby sme dosiahli ich potenciál." # todo: NEW TRANSLATION
+ promote_integration: "Podporiť proces integrácie" # todo: NEW TRANSLATION
+ promote_integration_desc: "Mali by sme podporiť snahy o integráciu vzdialených provincií nášho panstva a viac ich konsolidovať do jadrového územia." # todo: NEW TRANSLATION
+ promote_urbanization: "Podporiť urbanizáciu" # todo: NEW TRANSLATION
+ promote_urbanization_desc: "Je zrejmé, že cesta vpred spočíva v podpore urbanizácie našich hlavných miest ako prostriedku na zvýšenie našej moci." # todo: NEW TRANSLATION
+ grant_city_rights: "Udeľovať mestské práva" # todo: NEW TRANSLATION
+ grant_city_rights_desc: "Aby naše územie prosperovalo, budeme musieť rozšíriť práva našich mestských oblastí a udeliť viac mestských práv." # todo: NEW TRANSLATION
+ expand_food_stockpiles: "Rozšíriť zásoby potravín" # todo: NEW TRANSLATION
+ expand_food_stockpiles_desc: "Náš ľud nás upozorňuje na naliehavý problém nedostatku potravín. Mali by sme sa pokúsiť rozšíriť sieť [ShowBuildingTypeName('granary')] , aby sa táto situácia v budúcnosti neopakovala." # todo: NEW TRANSLATION
+ back_the_war_effort: "Podporiť vojnové úsilie" # todo: NEW TRANSLATION
+ back_the_war_effort_desc: "Naše vojnové úsilie by veľmi profitovalo z podpory našej legislatívnej štruktúry." # todo: NEW TRANSLATION
+ finance_the_armory: "Rozšíriť náš $armory$" # todo: NEW TRANSLATION
+ finance_the_armory_desc: "Naša vojenská rezerva mala lepšie časy a naliehavo potrebuje novú infraštruktúru na nábor." # todo: NEW TRANSLATION
+ expand_barracks: "Rozšíriť infraštruktúru $barracks$" # todo: NEW TRANSLATION
+ expand_barracks_desc: "$finance_the_armory_desc$" # todo: NEW TRANSLATION
+ sponsor_training_fields: "Rozšíriť infraštruktúru $training_fields$" # todo: NEW TRANSLATION
+ sponsor_training_fields_desc: "$finance_the_armory_desc$" # todo: NEW TRANSLATION
+ sponsor_regimental_camp: "Rozšíriť infraštruktúru $regimental_camp$" # todo: NEW TRANSLATION
+ sponsor_regimental_camp_desc: "$finance_the_armory_desc$" # todo: NEW TRANSLATION
+ sponsor_conscription_center: "Rozšíriť infraštruktúru $conscription_center$" # todo: NEW TRANSLATION
+ sponsor_conscription_center_desc: "$finance_the_armory_desc$" # todo: NEW TRANSLATION
+ host_army_excercises: "Usporiadať vojenské cvičenia" # todo: NEW TRANSLATION
+ host_army_excercises_desc: "Ak chceme mať všestrannú armádu, musíme podporovať vojenské cvičenia ako prostriedok udržať vojakov v najlepšej kondícii a pripravených." # todo: NEW TRANSLATION
+ expand_officer_lists: "Rozšíriť zoznamy dôstojníkov" # todo: NEW TRANSLATION
+ expand_officer_lists_desc: "Povýšenie schopných mužov do vysokých hodností v našej armáde je istým spôsobom, ako zabezpečiť schopné vedenie." # todo: NEW TRANSLATION
+ promote_noble_officers: "Povýšiť šľachtických dôstojníkov" # todo: NEW TRANSLATION
+ promote_noble_officers_desc: "Mali by sme sa obrátiť na našu nižšiu šľachtu, aby sme povýšili nových dôstojníkov do vládnych funkcií." # todo: NEW TRANSLATION
+ promote_noble_officers_passed.tt: "Objaví sa schopný člen [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ support_noble_sponsored_armies: "Zriadiť žoldnierske zbory sponzorované šľachtou" # todo: NEW TRANSLATION
+ support_noble_sponsored_armies_desc: "Mali by sme jednému z našich najodvážnejších pánov udeliť povolenie zriadiť žoldnierskú družinu, aby v našom mene bránila našu vieru a krajanov." # todo: NEW TRANSLATION
+ increase_naval_spending: "Zvýšenie námornej infraštruktúry" # todo: NEW TRANSLATION
+ increase_naval_spending_desc: "Musíme zlepšiť infraštruktúru našich pobrežných miest a prístavov, aby sme podporili projekciu moci na mori." # todo: NEW TRANSLATION
+ expand_docks: "Rozšíriť naše lodenice" # todo: NEW TRANSLATION
+ expand_docks_desc: "Musíme rozšíriť kapacity stavby lodí, aby sme pre krajinu poskytli impozantnú flotilu." # todo: NEW TRANSLATION
+ expand_dry_docks: "Rozšíriť naše lodenice" # todo: NEW TRANSLATION
+ expand_dry_docks_desc: "Musíme rozšíriť kapacity stavby lodí, aby sme pre krajinu poskytli impozantnú flotilu." # todo: NEW TRANSLATION
+ expand_shipyards: "Rozšíriť naše lodenice" # todo: NEW TRANSLATION
+ expand_shipyards_desc: "Musíme rozšíriť kapacity stavby lodí, aby sme pre krajinu poskytli impozantnú flotilu." # todo: NEW TRANSLATION
+ expand_grand_shipyards: "Rozšíriť naše lodenice" # todo: NEW TRANSLATION
+ expand_grand_shipyards_desc: "Musíme rozšíriť kapacity stavby lodí, aby sme pre krajinu poskytli impozantnú flotilu." # todo: NEW TRANSLATION
+ expand_naval_bases: "Rozšíriť naše lodenice" # todo: NEW TRANSLATION
+ expand_naval_bases_desc: "Musíme rozšíriť kapacity stavby lodí, aby sme pre krajinu poskytli impozantnú flotilu." # todo: NEW TRANSLATION
+ support_cabinet_generic_desc: "Byrokracia v našom panstve by značne profitovala z legislatívnej reformy zameranej na jej efektivitu." # todo: NEW TRANSLATION
+ support_noble_cabinet: "Podporiť kabinet šľachty" # todo: NEW TRANSLATION
+ support_noble_cabinet_desc: "$support_cabinet_generic_desc$, a kto je lepším kandidátom na vedenie tejto reformy než naši najvážení príslušníci vyššej spoločnosti." # todo: NEW TRANSLATION
+ support_clergy_cabinet: "Podporiť kabinet duchovenstva" # todo: NEW TRANSLATION
+ support_clergy_cabinet_desc: "$support_cabinet_generic_desc$. Najlepšou voľbou sú naši oddaní duchovní." # todo: NEW TRANSLATION
+ support_burgher_cabinet: "Podporiť meštiansky kabinet" # todo: NEW TRANSLATION
+ support_burgher_cabinet_desc: "$support_cabinet_generic_desc$, financovaný najbohatšími členmi spoločnosti." # todo: NEW TRANSLATION
+ support_peasant_cabinet: "Podporiť ľudový kabinet" # todo: NEW TRANSLATION
+ support_peasant_cabinet_desc: "$support_cabinet_generic_desc$, podporovaný ľudovou podporou." # todo: NEW TRANSLATION
+ balance_the_budget: "Vyrovnať rozpočet" # todo: NEW TRANSLATION
+ balance_the_budget_desc: "Finančná kríza, ktorá visí nad naším ľudom, je vážna záležitosť, ktorú je potrebné okamžite riešiť." # todo: NEW TRANSLATION
+ bolster_the_monarchy: "Posilniť vládu" # todo: NEW TRANSLATION
+ bolster_the_monarchy_desc: "Centrálna autorita našej krajiny by mala stáť nad všetkými záujmovými skupinami a významnými členmi našej vyššej vrstvy." # todo: NEW TRANSLATION
+ bolster_the_republic: "$bolster_the_monarchy$" # todo: NEW TRANSLATION
+ bolster_the_republic_desc: "$bolster_the_monarchy_desc$" # todo: NEW TRANSLATION
+ bolster_the_divine_mandate: "$bolster_the_monarchy$" # todo: NEW TRANSLATION
+ bolster_the_divine_mandate_desc: "$bolster_the_monarchy_desc$" # todo: NEW TRANSLATION
+ bolster_the_tribal_leader: "$bolster_the_monarchy$" # todo: NEW TRANSLATION
+ bolster_the_tribal_leader_desc: "$bolster_the_monarchy_desc$" # todo: NEW TRANSLATION
+ bolster_the_khan: "$bolster_the_monarchy$" # todo: NEW TRANSLATION
+ bolster_the_khan_desc: "$bolster_the_monarchy_desc$" # todo: NEW TRANSLATION
+ conduct_a_census: "Vykonať sčítanie obyvateľstva" # todo: NEW TRANSLATION
+ conduct_a_census_desc: "Riadené zdokumentovanie našich ľudí pri starostlivosti o ich rozvoj a prosperitu je skvelý spôsob, ako podporiť stabilitu v kráľovstve." # todo: NEW TRANSLATION
+ support_ruler: "Podporiť štát" # todo: NEW TRANSLATION
+ support_ruler_desc: "Naša vláda nemôže fungovať bez náležitého uznania svojej moci. Náležitým vyhlásením parlamentu môžeme upevniť našu reputáciu a posilniť panovníka." # todo: NEW TRANSLATION
+ increase_our_control: "Zvýšiť našu kontrolu" # todo: NEW TRANSLATION
+ increase_our_control_desc: "Uplatňovanie kontroly nad naším územím je životné pre fungovanie štátu. Mali by sme zlepšiť inštitúcie, ktoré vykonávajú kontrolu nad našimi mestami." # todo: NEW TRANSLATION
+ promote_state_religion: "Podporiť štátnu cirkev" # todo: NEW TRANSLATION
+ promote_state_religion_desc: "Aby naši poddaní nasledovali náboženstvo štátu, je rozhodujúcim krokom k stabilite ríše. Mali by sme zvýšiť úsilie o obrátenie ľudu." # todo: NEW TRANSLATION
+ promote_burghers_member: "Povýšiť člena mešťanov" # todo: NEW TRANSLATION
+ promote_burghers_member_desc: "Mešťania sú pre náš štát zásadní, ako obchodníci aj ako členovia cechov. Mali by sme povýšiť schopných členov ich stavu do našej vlády." # todo: NEW TRANSLATION
+ promote_burghers_member_passed.tt: "Objaví sa schopný člen [ShowEstateTypeName('burghers_estate')]." # todo: NEW TRANSLATION
+ expand_diplomatic_corps_generic_desc: "Iba meč nás dovezie len tak ďaleko. Omnoho prospešnejšie by bolo, ak by pero podporilo meč, aby sme dosiahli veľké veci." # todo: NEW TRANSLATION
+ expand_diplomatic_corps_minors: "Posilniť väzby so susedmi" # todo: NEW TRANSLATION
+ expand_diplomatic_corps_minors_desc: "$expand_diplomatic_corps_generic_desc$ Našou hlavnou starosťou by mali byť menšie krajiny v okolí." # todo: NEW TRANSLATION
+ expand_diplomatic_corps_religion: "Rozšíriť náboženské väzby" # todo: NEW TRANSLATION
+ expand_diplomatic_corps_religion_desc: "$expand_diplomatic_corps_generic_desc$ Je pre nás životne dôležité zlepšiť kontakty s našimi náboženskými bratmi." # todo: NEW TRANSLATION
+ expand_diplomatic_corps_majors: "Vzťahy s veľmocami" # todo: NEW TRANSLATION
+ expand_diplomatic_corps_majors_desc: "$expand_diplomatic_corps_generic_desc$ Musíme zabezpečiť naše vzťahy s veľmocami sveta." # todo: NEW TRANSLATION
+ improve_subject_relations: "Posilniť väzby s podriadeným štátom" # todo: NEW TRANSLATION
+ improve_subject_relations_desc: "Zvýšením našich diplomatických a administratívnych väzieb na náš podriadený štát ich budeme môcť viac zviazať s naším štátom." # todo: NEW TRANSLATION
+ promote_clergy_member: "Povýšiť člena duchovenstva" # todo: NEW TRANSLATION
+ promote_clergy_member_desc: "Naša administrácia by mohla využiť podporu duchovenstva, aby fungovala efektívnejšie. Ponúknutím vyšších postov v našej vláde im môžeme zlepšiť situáciu štátu." # todo: NEW TRANSLATION
+ promote_clergy_member_passed.tt: "Objaví sa schopný člen [ShowEstateTypeName('clergy_estate')]." # todo: NEW TRANSLATION
+ expand_our_market: "Zákony na rozšírenie trhu" # todo: NEW TRANSLATION
+ expand_our_market_desc: "Náš trh by výrazne profitoval z uvoľnenia mercantilistických regulácií." # todo: NEW TRANSLATION
+ protect_our_market: "Regulácia trhu" # todo: NEW TRANSLATION
+ protect_our_market_desc: "Vzhľadom na konkurencieschopnosť našich trhov by bolo rozumné sprísniť mercantilistické regulácie, aby sme našim obchodníkom zabezpečili konkurenčnú výhodu." # todo: NEW TRANSLATION
+ sponsor_a_merchant_expedition: "Sponzorovať obchodnú expedíciu" # todo: NEW TRANSLATION
+ sponsor_a_merchant_expedition_desc: "Mali by sme investovať do špecializovanej obchodnej expedície za účelom nadviazania obchodných spojení s inými trhmi." # todo: NEW TRANSLATION
+ sponsor_urban_development: "Rozvíjať vnútrozemie" # todo: NEW TRANSLATION
+ sponsor_urban_development_desc: "Nemali by sme zanedbávať vnútrozemie a mali by sme ho primerane rozvíjať." # todo: NEW TRANSLATION
+ support_religious_art: "Sponzorovať náboženské umenie" # todo: NEW TRANSLATION
+ support_religious_art_desc: "Naša viera slúži ako veľká inšpirácia pre umelcov v celej krajine. Keďže náš dvor môže podporovať umelcov, mali by sme si najať jedného z tých, ktorí sú inšpirovaní božským." # todo: NEW TRANSLATION
+ support_nobles_art: "Sponzorovať šľachtické umenie" # todo: NEW TRANSLATION
+ support_nobles_art_desc: "Naša sofistikovaná elita túži predovšetkým po viac umenia na obdivovanie. Keby sme zamestnali viac umelcov, určite by sme ich potešili." # todo: NEW TRANSLATION
+ support_religious_education: "Podporiť náboženské vzdelávanie" # todo: NEW TRANSLATION
+ support_religious_education_desc: "Naša závislosť na služobníkoch viery môže byť veľkým prínosom vo vzdelávaní obyvateľstva. To by urýchlilo naše vedecké pokroky a zároveň zvýšilo lojalitu našich oddaných nasledovníkov." # todo: NEW TRANSLATION
+ support_religious_education_passed.tt: "Všetci [ShowPopTypeName('clergy')] a [ShowPopTypeName('peasants')] nasledujúci našu vieru získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
+ curb_central_authority: "Obmedziť centrálnu autoritu" # todo: NEW TRANSLATION
+ curb_central_authority_desc: "Autorita [Player.GetGovernment.GetParliament.GetName] nemôže ani nebude prekonaná žiadnou autoritou mimo jej siení. Aby sme sledovali naše ideály, musíme uplatniť toto právo napriek kráľovským dekrétom!" # todo: NEW TRANSLATION
+ revoke_privilege_of_the_nobles: "Odobrať privilégiá šľachte" # todo: NEW TRANSLATION
+ revoke_privilege_of_the_nobles_desc: "Tí, ktorí využívali prácu a pot obyčajných ľudí, sa teraz trasú pri predstave, že im budú odňaté ich chabé privilégiá." # todo: NEW TRANSLATION
+ reduce_peasant_taxation: "Znížiť dane roľníkom" # todo: NEW TRANSLATION
+ reduce_peasant_taxation_desc: "Bežný človek celý život platil dane pánovi. Aby sme presadili naše programy oslobodzovania ľudu, toto zdanenie musí prestať!" # todo: NEW TRANSLATION
+ establish_a_constitution: "Zaviesť ústavu" # todo: NEW TRANSLATION
+ establish_a_constitution_desc: "Vôľa ľudu musí byť zapísaná do písomného dokumentu, prijatého všetkými, aby sa upevnili naše práva a zároveň obmedzila centrálna autorita." # todo: NEW TRANSLATION
+ random_noble_privilege_revoked_tt: "Bude odňaté náhodné [estate_privilege|e] [ShowEstateTypeName('nobles_estate')]" # todo: NEW TRANSLATION
+ baronial_burghs_rights: "Rozšíriť práva barónskych burghov" # todo: NEW TRANSLATION
+ baronial_burghs_rights_desc: "Rozšírenie práv barónskych burghov podporí rozvoj našej krajiny." # todo: NEW TRANSLATION
+ ecclesiastical_burghs_rights: "Rozšíriť práva cirkevných burghov" # todo: NEW TRANSLATION
+ ecclesiastical_burghs_rights_desc: "Rozšírenie práv cirkevných burghov podporí rozvoj našej krajiny." # todo: NEW TRANSLATION
+ compulsory_education_nobles: "Zákon o vzdelávaní šľachty" # todo: NEW TRANSLATION
+ compulsory_education_nobles_desc: "Mali by sme výrazne investovať do vzdelávania šľachty, aby sme posunuli našu administráciu dopredu." # todo: NEW TRANSLATION
+ presbyterian_education: "Zákon o presbyteriánskom vzdelávaní" # todo: NEW TRANSLATION
+ presbyterian_education_desc: "Mali by sme zriadiť školu v každej farnosti našej krajiny na podporu vzdelávania nášho ľudu. Budú riadené členmi Cirkvi a financované daňou uloženou na majiteľov pôdy." # todo: NEW TRANSLATION
+ found_college_of_justice: "Zriadiť Katedru spravodlivosti" # todo: NEW TRANSLATION
+ found_college_of_justice_desc: "Právny kódex je aktuálne nedostatočný a nespĺňa naše štandardy. Mali by sme založiť novú inštitúciu, Katedru spravodlivosti, aby riešila tieto otázky a založila silný právny systém." # todo: NEW TRANSLATION
+ establish_the_signoria_of_venice: "Zriadiť Signoriu Benátok" # todo: NEW TRANSLATION
+ establish_the_signoria_of_venice_desc: "Starý Benátsky komún slúži svojmu účelu a má dlhú tradíciu v našom štáte. Avšak jeho administratívna efektivita stráca na kvalite. Možno by sme chceli prepracovať najvyšší vládny orgán a nahradiť ho novým systémom, ktorý lepšie rieši vnútorné problémy krajiny." # todo: NEW TRANSLATION
+ appease_english_population: "Uspokojiť anglické obyvateľstvo" # todo: NEW TRANSLATION
+ appease_english_population_desc: "Naši poddaní v Británii sa zdajú byť nespokojní napriek nášmu nároku. Ukázať im, že nie sme utláčateľmi, by im mohlo pomôcť upokojiť situáciu." # todo: NEW TRANSLATION
+ increase_control_in_britain: "Zvýšiť kontrolu v Británii" # todo: NEW TRANSLATION
+ increase_control_in_britain_desc: "Britské ostrovy sú odpojené od zvyšku európskeho kontinentu, čo nám sťažuje ich správu. Mali by sme vynaložiť úsilie, aby sme tento problém prekonali a zvýšili tam našu kontrolu." # todo: NEW TRANSLATION
+ tolerance_of_non_hindus: "Tolerancia pohanov" # todo: NEW TRANSLATION
+ tolerance_of_non_hindus_desc: "Keďže je naše kráľovstvo multiverové a náš panovník verí v toleranciu, mali by sme dovoliť tieto odlišné vierovyznania v našej krajine." # todo: NEW TRANSLATION
+ VIJ_ALL_NON_HINDU_POPS_GAIN_SATISFACTION: "Všetky naše [heretics|e] a [heathen|e] [pops|e] získajú [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
+ increase_non_hindu_control: "Kontrola nad pohanmi" # todo: NEW TRANSLATION
+ increase_non_hindu_control_desc: "Namiesto toho, aby sme dovolili, aby sa v našej krajine rozšírili rôzne vierovyznania, mali by sme sa ich snažiť viac ovládať, aby sa nepostavili proti nám." # todo: NEW TRANSLATION
+ VIJ_ALL_NON_HINDU_POPS_LOCATIONS_GAIN_CONTROL: "Všetky naše [locations|e] s aspoň #Y 5%#! [heretics|e] alebo [heathen|e] [pops|e] získajú [ShowNamedValue('control_mild_bonus')|+=2%] [control|e]." # todo: NEW TRANSLATION
+ dlh_famine_reductions: "Bojovať proti hladomoru" # todo: NEW TRANSLATION
+ dlh_famine_reductions_desc: "Namiesto toho, aby sme sedeli nečinne, zatiaľ čo obyvateľstvo hladovie, mali by sme poskytovať pomoc akýmkoľvek oblastiam, ktorým chýbajú zásoby potravín." # todo: NEW TRANSLATION
+ new_model_army_pi: "Nová modelová armáda" # todo: NEW TRANSLATION
+ new_model_army_pi_desc: "Útrapy prebiehajúcej občianskej vojny proti royalistom ukázali, že naša armáda potrebuje úplnú reformu." # todo: NEW TRANSLATION
+ edict_of_nantes_issue: "Nantský edikt" # todo: NEW TRANSLATION
+ edict_of_nantes_issue_desc: "Po rokoch náboženských bojov je čas podporiť jednotu prostredníctvom spolužitia a ukončiť zbytočné prelievanie krvi." # todo: NEW TRANSLATION
+ end_the_french_wars_of_religion_tt: "[ShowDisasterName('french_wars_of_religion')] [disaster|e] skončí" # todo: NEW TRANSLATION
+ mug_promote_rajput_officials: "Povýšiť $rajasthani_language$ úradníkov" # todo: NEW TRANSLATION
+ mug_promote_rajput_officials_desc: "Povýšením ľudí hovoriacich $rajasthani_language$ v krajine si môžeme zabezpečiť viacero militaristických úradníkov, na ktorých sa môžeme spoľahnúť." # todo: NEW TRANSLATION
+ promote_rajput_officials_passed_tt: "Objaví sa schopný člen [ShowLanguageName('rajasthani_language')] [language|e]." # todo: NEW TRANSLATION
+ hussite_army_reform: "$hussite_ADJ$ Vojenské reformy" # todo: NEW TRANSLATION
+ hussite_army_reform_desc: "Náš národ prešiel údoliami dejín napriek všetkým prekážkam. Prežil vojny, križiacke výpravy a prenasledovanie. Naše armády si zaslúžia používať tie najlepšie taktiky a prejsť do útoku proti všetkým, ktorí usilujú o náš zánik!" # todo: NEW TRANSLATION
+ lit_measures_against_romuva: "Opatrenia proti $romuva_ADJ$ oživeniu" # todo: NEW TRANSLATION
+ lit_measures_against_romuva_desc: "S oživením viery [ShowReligionAdjective('romuva')] sa mnohí obávajú, že by mohli vyvolať nepokoje. Musíme zvolať stavy, aby túto záležitosť vyriešili." # todo: NEW TRANSLATION
+ lit_5_percent_of_pops_convert_to_our_religion_tt: "#Y 5%#! z [ShowReligionAdjective('romuva')] [pops|e] prejde na [ROOT.GetCountry.GetReligion.GetName]" # todo: NEW TRANSLATION
+ hre_law_debate: "Diskusia o cisárskom práve" # todo: NEW TRANSLATION
+ hre_law_debate_desc: "[ShowSpecialStatusName('emperor')] [GetUniqueInternationalOrganization('hre').GetName] plánuje zaviesť nový zákon. Teraz je príležitosť pre cisárske stavy vyjednávať za alebo proti návrhu." # todo: NEW TRANSLATION
+ hre_request_additional_military_support: "Cisárska vojenská podpora" # todo: NEW TRANSLATION
+ hre_request_additional_military_support_desc: "[GetUniqueInternationalOrganization('hre').GetName] je ohrozená cudzou inváziou. [GetUniqueInternationalOrganization('hre').GetLeaderTitle] sa cíti nútený požiadať o vojenskú silu celého Impéria a všetkých jeho členov." # todo: NEW TRANSLATION
+ hre_roman_month: "Rímsky mesiac" # todo: NEW TRANSLATION
+ hre_roman_month_desc: "Pokladnica [GetUniqueInternationalOrganization('hre').GetName] sa v poslednom čase vyprázdňuje. [GetUniqueInternationalOrganization('hre').GetLeaderTitle] žiada finančnú podporu členov Impéria, aby zabezpečil jeho bezpečnosť." # todo: NEW TRANSLATION
+ hre_roman_month_modifier_effect: "[ShowModifierEffect('pi_hre_increased_imperial_tax_modifier')]" # todo: NEW TRANSLATION
+ hre_demand_internal_peace: "Požadovať vnútorný mier" # todo: NEW TRANSLATION
+ hre_demand_internal_peace_desc: "Autorita [GetUniqueInternationalOrganization('hre').GetLeaderTitle] je narušená vnútornými konfliktmi v [GetUniqueInternationalOrganization('hre').GetName]. V záujme Impéria je zabezpečiť vnútorný mier a stabilitu." # todo: NEW TRANSLATION
+ hre_demand_internal_peace_tt: "Každý [member|e] uzavrie [white_peace|e] v každej [war|e], ktorá zahŕňa iného [member] z [THIS.GetInternationalOrganization.GetName]" # todo: NEW TRANSLATION
+ hre_establish_perpetual_diet: "Zriadiť stály snem" # todo: NEW TRANSLATION
+ hre_establish_perpetual_diet_desc: "$perpetual_diet_law_desc$" # todo: NEW TRANSLATION
+ hre_establish_perpetual_diet_tt: "[parliament_seat|e] [GetUniqueInternationalOrganization('hre').GetName] sa stáva jediným platným [location|e], kde sa môže konať [parliament|e]." # todo: NEW TRANSLATION
+ hre_force_emperor_to_abdicate: "Prinútiť cisára abdikovať" # todo: NEW TRANSLATION
+ hre_force_emperor_to_abdicate_desc: "Vládnutie [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetLongName] bolo [ShowSpecialStatusNamePlural('elector')] vyhodnotené ako nedostatočné. Cisársky snem bol zvolaný, aby prerokoval budúcnosť vedenia [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ union_enforce_law_implementation: "Vynútiť vykonávanie zákonov" # todo: NEW TRANSLATION
+ union_enforce_law_implementation_desc: "Niektorí členovia [GetInternationalOrganizationType('union').GetName] sú buď nováčikovia, alebo sa im podarilo odraziť akýkoľvek pokus o centralizáciu $union$. Je potrebné vynútiť tieto zákony u každého člena, ak chceme bezproblémovú anexiu ostatných členov." # todo: NEW TRANSLATION
+ union_enforce_law_implementation_at: "Každý [member|e] nastaví svoju [union_integration_level_member|e] v [THIS.GetInternationalOrganization.GetName] na [THIS.GetInternationalOrganization.GetModifierValueString('union_integration_level')]" # todo: NEW TRANSLATION
+ pa_add_privilege: "Udeľovanie privilégií" # todo: NEW TRANSLATION
+ pa_add_privilege_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_add_privilege_desc: "Niekedy musíte poskytnúť trvalé výsady [estate|e], aby ste získali ich podporu v krátkodobom horizonte." # todo: NEW TRANSLATION
+ pa_change_policy: "Zmeniť politiku" # todo: NEW TRANSLATION
+ pa_change_policy_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_change_policy_desc: "Tento [estate|e] má výhrady k našej súčasnej [policy|e] a bol by viac naklonený, keby sme zmenili naše stanovisko na niečo výhodnejšie." # todo: NEW TRANSLATION
+ push_towards_desc: "Naša spoločnosť sa príliš vzdialila od našich koreňov. Musíme tlačiť smerom k návratu k našim ideálom a" # todo: NEW TRANSLATION
+ entrench_desc: "Naša spoločnosť potrebuje neustále pripomínanie, čo naše ideály predstavujú. Musíme upevňovať naše hodnoty a" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized: "Hnutie za autonómiu" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_simple: "Pomôcť autonómii" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_desc: "$push_towards_desc$ prijať šľachtu ako autonómnych vládcov našej krajiny." # todo: NEW TRANSLATION
+ pa_move_towards_decentralized: "Podpora autonómie" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_simple: "Podporiť autonómiu" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_desc: "$entrench_desc$ povýšiť šľachtu ako autonómnych vládcov našej krajiny" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_nobles: "$pa_push_towards_decentralized$" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_nobles_simple: "$pa_push_towards_decentralized_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_nobles_desc: "$pa_push_towards_decentralized_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_nobles: "$pa_move_towards_decentralized$" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_nobles_simple: "$pa_move_towards_decentralized_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_nobles_desc: "$pa_move_towards_decentralized_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_peasants: "$pa_push_towards_decentralized$" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_peasants_simple: "$pa_push_towards_decentralized_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_decentralized_peasants_desc: "$pa_push_towards_decentralized_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_peasants: "$pa_move_towards_decentralized$" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_peasants_simple: "$pa_move_towards_decentralized_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_decentralized_peasants_desc: "$pa_move_towards_decentralized_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_traditionalist: "Zachovanie tradičných ideí" # todo: NEW TRANSLATION
+ pa_push_towards_traditionalist_simple: "Zachovať tradičné idey" # todo: NEW TRANSLATION
+ pa_push_towards_traditionalist_desc: "$push_towards_desc$ prijať naše tradičné korene." # todo: NEW TRANSLATION
+ pa_move_towards_traditionalist: "Podpora tradičných ideí" # todo: NEW TRANSLATION
+ pa_move_towards_traditionalist_simple: "Podporiť tradičné idey" # todo: NEW TRANSLATION
+ pa_move_towards_traditionalist_desc: "$entrench_desc$ pestovať naše tradičné korene." # todo: NEW TRANSLATION
+ pa_push_towards_innovative: "Adaptácia na inovatívne idey" # todo: NEW TRANSLATION
+ pa_push_towards_innovative_simple: "Zachovať inovatívne idey" # todo: NEW TRANSLATION
+ pa_push_towards_innovative_desc: "$push_towards_desc$ prijať naše inovatívne korene." # todo: NEW TRANSLATION
+ pa_move_towards_innovative: "Podpora inovatívnych ideí" # todo: NEW TRANSLATION
+ pa_move_towards_innovative_simple: "Podporiť inovatívne idey" # todo: NEW TRANSLATION
+ pa_move_towards_innovative_desc: "$entrench_desc$ pestovať naše inovatívne korene." # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist: "Zachovanie spiritualistických ideí" # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_simple: "Zachovať spiritualistické idey" # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_desc: "$push_towards_desc$ prijať naše spiritualistické korene." # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist: "Podpora spiritualistických ideí" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_simple: "Podporiť spiritualistické idey" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_desc: "$entrench_desc$ pestovať naše spiritualistické korene." # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_clergy: "$pa_push_towards_spiritualist$" # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_clergy_simple: "$pa_push_towards_spiritualist_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_clergy_desc: "$pa_push_towards_spiritualist_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_clergy: "$pa_move_towards_spiritualist$" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_clergy_simple: "$pa_move_towards_spiritualist_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_clergy_desc: "$pa_move_towards_spiritualist_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_peasants: "$pa_push_towards_spiritualist$" # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_peasants_simple: "$pa_push_towards_spiritualist_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_spiritualist_peasants_desc: "$pa_push_towards_spiritualist_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_peasants: "$pa_move_towards_spiritualist$" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_peasants_simple: "$pa_move_towards_spiritualist_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_spiritualist_peasants_desc: "$pa_move_towards_spiritualist_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_humanist: "Adaptácia na humanistické idey" # todo: NEW TRANSLATION
+ pa_push_towards_humanist_simple: "Zachovať humanistické idey" # todo: NEW TRANSLATION
+ pa_push_towards_humanist_desc: "$push_towards_desc$ prijať náš humanistický postoj." # todo: NEW TRANSLATION
+ pa_move_towards_humanist: "Podpora humanistických ideí" # todo: NEW TRANSLATION
+ pa_move_towards_humanist_simple: "Podporiť humanistické idey" # todo: NEW TRANSLATION
+ pa_move_towards_humanist_desc: "$entrench_desc$ pestovať náš humanistický postoj." # todo: NEW TRANSLATION
+ pa_push_towards_aristocracy: "Aristokratické hnutie" # todo: NEW TRANSLATION
+ pa_push_towards_aristocracy_simple: "Pomôcť aristokracii" # todo: NEW TRANSLATION
+ pa_push_towards_aristocracy_desc: "$push_towards_desc$ prijať šľachtu ako najvyššiu spoločenskú vrstvu." # todo: NEW TRANSLATION
+ pa_move_towards_aristocracy: "Podpora aristokracie" # todo: NEW TRANSLATION
+ pa_move_towards_aristocracy_simple: "Podporiť aristokraciu" # todo: NEW TRANSLATION
+ pa_move_towards_aristocracy_desc: "$entrench_desc$ povýšiť šľachtu na najvyššiu spoločenskú vrstvu." # todo: NEW TRANSLATION
+ pa_push_towards_plutocracy: "Plutokratické hnutie" # todo: NEW TRANSLATION
+ pa_push_towards_plutocracy_simple: "Zachovať plutokraciu" # todo: NEW TRANSLATION
+ pa_push_towards_plutocracy_desc: "$push_towards_desc$ prijať našu plutokratickú povahu." # todo: NEW TRANSLATION
+ pa_move_towards_plutocracy: "Podpora plutokracie" # todo: NEW TRANSLATION
+ pa_move_towards_plutocracy_simple: "Podporiť plutokraciu" # todo: NEW TRANSLATION
+ pa_move_towards_plutocracy_desc: "$entrench_desc$ usilovať sa o plutokratické hodnoty." # todo: NEW TRANSLATION
+ pa_push_towards_serfdom: "Hnutie za nevoľníctvo" # todo: NEW TRANSLATION
+ pa_push_towards_serfdom_simple: "Pomôcť nevoľníctvu" # todo: NEW TRANSLATION
+ pa_push_towards_serfdom_desc: "$push_towards_desc$ prijať nevoľníctvo v maximálnej miere." # todo: NEW TRANSLATION
+ pa_move_towards_serfdom: "Podpora nevoľníctva" # todo: NEW TRANSLATION
+ pa_move_towards_serfdom_simple: "Podporiť nevoľníctvo" # todo: NEW TRANSLATION
+ pa_move_towards_serfdom_desc: "$entrench_desc$ zakotviť nevoľníctvo hlbšie v našej spoločnosti." # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects: "Volanie po slobode" # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_simple: "Udeľte slobodu poddaným" # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_desc: "$push_towards_desc$ usilovať sa o slobodu našich poddaných." # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects: "Podpora slobodných poddaných" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_simple: "Podporiť slobodných poddaných" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_desc: "$entrench_desc$ zakotviť slobodu našich poddaných." # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_burghers: "$pa_push_towards_free_subjects$" # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_burghers_simple: "$pa_push_towards_free_subjects_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_burghers_desc: "$pa_push_towards_free_subjects_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_burghers: "$pa_move_towards_free_subjects$" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_burghers_simple: "$pa_move_towards_free_subjects_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_burghers_desc: "$pa_move_towards_free_subjects_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_peasants: "$pa_push_towards_free_subjects$" # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_peasants_simple: "$pa_push_towards_free_subjects_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_free_subjects_peasants_desc: "$pa_push_towards_free_subjects_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_peasants: "$pa_move_towards_free_subjects$" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_peasants_simple: "$pa_move_towards_free_subjects_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_free_subjects_peasants_desc: "$pa_move_towards_free_subjects_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_mercantilism: "Hnutie za merkantilizmus" # todo: NEW TRANSLATION
+ pa_push_towards_mercantilism_simple: "Pomôcť merkantilizmu" # todo: NEW TRANSLATION
+ pa_push_towards_mercantilism_desc: "$push_towards_desc$ prijať merkantilizmus čo najviac." # todo: NEW TRANSLATION
+ pa_move_towards_mercantilism: "Podpora merkantilizmu" # todo: NEW TRANSLATION
+ pa_move_towards_mercantilism_simple: "Podporiť merkantilizmus" # todo: NEW TRANSLATION
+ pa_move_towards_mercantilism_desc: "$entrench_desc$ zakotviť merkantilizmus hlbšie v našej spoločnosti." # todo: NEW TRANSLATION
+ pa_push_towards_belligerent: "Hnutie za vojnovosť" # todo: NEW TRANSLATION
+ pa_push_towards_belligerent_simple: "Pomôcť vojnovému táboru" # todo: NEW TRANSLATION
+ pa_push_towards_belligerent_desc: "$push_towards_desc$ prejaviť viac agresívne správanie." # todo: NEW TRANSLATION
+ pa_move_towards_belligerent: "Podpora vojnového tábora" # todo: NEW TRANSLATION
+ pa_move_towards_belligerent_simple: "Podporiť vojnovú frakciu" # todo: NEW TRANSLATION
+ pa_move_towards_belligerent_desc: "$entrench_desc$ prezentovať náš agresívny postoj." # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory: "Zmierovacie hnutie" # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_simple: "Zachovať zmierlivosť" # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_desc: "$push_towards_desc$ prijať našu zmierovaciu povahu." # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory: "Podpora zmierovacieho prístupu" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_simple: "Podporiť zmierlivosť" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_desc: "$entrench_desc$ usilovať sa o zmierovacie hodnoty." # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_burghers: "$pa_push_towards_conciliatory$" # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_burghers_simple: "$pa_push_towards_conciliatory_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_burghers_desc: "$pa_push_towards_conciliatory_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_burghers: "$pa_move_towards_conciliatory$" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_burghers_simple: "$pa_move_towards_conciliatory_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_burghers_desc: "$pa_move_towards_conciliatory_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_peasants: "$pa_push_towards_conciliatory$" # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_peasants_simple: "$pa_push_towards_conciliatory_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_conciliatory_peasants_desc: "$pa_push_towards_conciliatory_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_peasants: "$pa_move_towards_conciliatory$" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_peasants_simple: "$pa_move_towards_conciliatory_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_conciliatory_peasants_desc: "$pa_move_towards_conciliatory_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_land: "Dôraz na pevninu" # todo: NEW TRANSLATION
+ pa_push_towards_land_simple: "Pomôcť pozemnej frakcii" # todo: NEW TRANSLATION
+ pa_push_towards_land_desc: "$push_towards_desc$ viac sa starať o naše pozemky." # todo: NEW TRANSLATION
+ pa_move_towards_land: "Podpora zamerania na pevninu" # todo: NEW TRANSLATION
+ pa_move_towards_land_simple: "Podporiť pozemnú frakciu" # todo: NEW TRANSLATION
+ pa_move_towards_land_desc: "$entrench_desc$ zamerať sa na našu prítomnosť na území." # todo: NEW TRANSLATION
+ pa_push_towards_naval: "Námorné hnutie" # todo: NEW TRANSLATION
+ pa_push_towards_naval_simple: "Zachovať námorné hodnoty" # todo: NEW TRANSLATION
+ pa_push_towards_naval_desc: "$push_towards_desc$ viac sa starať o našu prítomnosť na mori." # todo: NEW TRANSLATION
+ pa_move_towards_naval: "Podpora námorníctva" # todo: NEW TRANSLATION
+ pa_move_towards_naval_simple: "Podporiť námorné hodnoty" # todo: NEW TRANSLATION
+ pa_move_towards_naval_desc: "$entrench_desc$ zamerať sa na našu prítomnosť na mori." # todo: NEW TRANSLATION
+ pa_push_towards_capital_economy: "Kapitálová ekonomika" # todo: NEW TRANSLATION
+ pa_push_towards_capital_economy_simple: "Pomôcť kapitálovej ekonomike" # todo: NEW TRANSLATION
+ pa_push_towards_capital_economy_desc: "$push_towards_desc$ prispôsobiť sa kapitálovej ekonomike." # todo: NEW TRANSLATION
+ pa_move_towards_capital_economy: "Podpora kapitálovej ekonomiky" # todo: NEW TRANSLATION
+ pa_move_towards_capital_economy_simple: "Podporiť kapitálovú ekonomiku" # todo: NEW TRANSLATION
+ pa_move_towards_capital_economy_desc: "$entrench_desc$ zakotviť našu kapitálovú ekonomiku." # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy: "Tradičná ekonomika" # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_simple: "Pomôcť tradičnej ekonomike" # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_desc: "$push_towards_desc$ prispôsobiť sa tradičnej ekonomike." # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy: "Podpora tradičnej ekonomiky" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_simple: "Podporiť tradičnú ekonomiku" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_desc: "$entrench_desc$ zakotviť našu tradičnú ekonomiku." # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_nobles: "$pa_push_towards_traditional_economy$" # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_nobles_simple: "$pa_push_towards_traditional_economy_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_nobles_desc: "$pa_push_towards_traditional_economy_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_nobles: "$pa_move_towards_traditional_economy$" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_nobles_simple: "$pa_move_towards_traditional_economy_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_nobles_desc: "$pa_move_towards_traditional_economy_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_peasants: "$pa_push_towards_traditional_economy$" # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_peasants_simple: "$pa_push_towards_traditional_economy_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_traditional_economy_peasants_desc: "$pa_push_towards_traditional_economy_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_peasants: "$pa_move_towards_traditional_economy$" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_peasants_simple: "$pa_move_towards_traditional_economy_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_traditional_economy_peasants_desc: "$pa_move_towards_traditional_economy_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_individualism: "Zachovanie individualistických hodnôt" # todo: NEW TRANSLATION
+ pa_push_towards_individualism_simple: "Zachovať individualizmus" # todo: NEW TRANSLATION
+ pa_push_towards_individualism_desc: "$push_towards_desc$ prijať naše individualistické korene." # todo: NEW TRANSLATION
+ pa_move_towards_individualism: "Podpora individualistických hodnôt" # todo: NEW TRANSLATION
+ pa_move_towards_individualism_simple: "Podporiť individualizmus" # todo: NEW TRANSLATION
+ pa_move_towards_individualism_desc: "$entrench_desc$ pestovať naše individualistické korene." # todo: NEW TRANSLATION
+ pa_push_towards_communalism: "Zachovanie komunitárnych hodnôt" # todo: NEW TRANSLATION
+ pa_push_towards_communalism_simple: "Zachovať komunálne hodnoty" # todo: NEW TRANSLATION
+ pa_push_towards_communalism_desc: "$push_towards_desc$ prijať naše komunitárne korene." # todo: NEW TRANSLATION
+ pa_move_towards_communalism: "Podpora komunitárnych hodnôt" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_simple: "Podporiť komunálne hodnoty" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_desc: "$entrench_desc$ pestovať naše komunitárne korene." # todo: NEW TRANSLATION
+ pa_push_towards_communalism_clergy: "$pa_push_towards_communalism$" # todo: NEW TRANSLATION
+ pa_push_towards_communalism_clergy_simple: "$pa_push_towards_communalism_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_communalism_clergy_desc: "$pa_push_towards_communalism_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_clergy: "$pa_move_towards_communalism$" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_clergy_simple: "$pa_move_towards_communalism_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_clergy_desc: "$pa_move_towards_communalism_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_communalism_peasants: "$pa_push_towards_communalism$" # todo: NEW TRANSLATION
+ pa_push_towards_communalism_peasants_simple: "$pa_push_towards_communalism_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_communalism_peasants_desc: "$pa_push_towards_communalism_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_peasants: "$pa_move_towards_communalism$" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_peasants_simple: "$pa_move_towards_communalism_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_communalism_peasants_desc: "$pa_move_towards_communalism_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_outward: "Orientácia navonok" # todo: NEW TRANSLATION
+ pa_push_towards_outward_simple: "Pomôcť orientácii navonok" # todo: NEW TRANSLATION
+ pa_push_towards_outward_desc: "$push_towards_desc$ prispôsobiť sa orientácii navonok." # todo: NEW TRANSLATION
+ pa_move_towards_outward: "Podpora orientácie navonok" # todo: NEW TRANSLATION
+ pa_move_towards_outward_simple: "Podporiť orientáciu navonok" # todo: NEW TRANSLATION
+ pa_move_towards_outward_desc: "$entrench_desc$ zakotviť našu orientáciu navonok." # todo: NEW TRANSLATION
+ pa_push_towards_outward_nobles: "$pa_push_towards_outward$" # todo: NEW TRANSLATION
+ pa_push_towards_outward_nobles_simple: "$pa_push_towards_outward_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_outward_nobles_desc: "$pa_push_towards_outward_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_outward_nobles: "$pa_move_towards_outward$" # todo: NEW TRANSLATION
+ pa_move_towards_outward_nobles_simple: "$pa_move_towards_outward_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_outward_nobles_desc: "$pa_move_towards_outward_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_outward_burghers: "$pa_push_towards_outward$" # todo: NEW TRANSLATION
+ pa_push_towards_outward_burghers_simple: "$pa_push_towards_outward_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_outward_burghers_desc: "$pa_push_towards_outward_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_outward_burghers: "$pa_move_towards_outward$" # todo: NEW TRANSLATION
+ pa_move_towards_outward_burghers_simple: "$pa_move_towards_outward_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_outward_burghers_desc: "$pa_move_towards_outward_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_inward: "Orientácia dovnútra" # todo: NEW TRANSLATION
+ pa_push_towards_inward_simple: "Pomôcť orientácii dovnútra" # todo: NEW TRANSLATION
+ pa_push_towards_inward_desc: "$push_towards_desc$ prispôsobiť sa orientácii dovnútra." # todo: NEW TRANSLATION
+ pa_move_towards_inward: "Podpora orientácie dovnútra" # todo: NEW TRANSLATION
+ pa_move_towards_inward_simple: "Podporiť orientáciu dovnútra" # todo: NEW TRANSLATION
+ pa_move_towards_inward_desc: "$entrench_desc$ zakotviť našu orientáciu dovnútra." # todo: NEW TRANSLATION
+ pa_push_towards_inward_clergy: "$pa_push_towards_inward$" # todo: NEW TRANSLATION
+ pa_push_towards_inward_clergy_simple: "$pa_push_towards_inward_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_inward_clergy_desc: "$pa_push_towards_inward_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_inward_clergy: "$pa_move_towards_inward$" # todo: NEW TRANSLATION
+ pa_move_towards_inward_clergy_simple: "$pa_move_towards_inward_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_inward_clergy_desc: "$pa_move_towards_inward_desc$" # todo: NEW TRANSLATION
+ pa_push_towards_inward_peasants: "$pa_push_towards_inward$" # todo: NEW TRANSLATION
+ pa_push_towards_inward_peasants_simple: "$pa_push_towards_inward_simple$" # todo: NEW TRANSLATION
+ pa_push_towards_inward_peasants_desc: "$pa_push_towards_inward_desc$" # todo: NEW TRANSLATION
+ pa_move_towards_inward_peasants: "$pa_move_towards_inward$" # todo: NEW TRANSLATION
+ pa_move_towards_inward_peasants_simple: "$pa_move_towards_inward_simple$" # todo: NEW TRANSLATION
+ pa_move_towards_inward_peasants_desc: "$pa_move_towards_inward_desc$" # todo: NEW TRANSLATION
+ lessen_tax_burden: "Daňové oslobodenie" # todo: NEW TRANSLATION
+ lessen_tax_burden_simple: "$lessen_tax_burden$" # todo: NEW TRANSLATION
+ lessen_tax_burden_desc: "Sľubujeme znížiť [tax|e] vyberané na ich podporu." # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_nobles: "$lessen_tax_burden$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_nobles_simple: "$lessen_tax_burden_simple$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_nobles_desc: "$lessen_tax_burden_desc$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_clergy: "$lessen_tax_burden$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_clergy_simple: "$lessen_tax_burden_simple$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_clergy_desc: "$lessen_tax_burden_desc$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_burghers: "$lessen_tax_burden$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_burghers_simple: "$lessen_tax_burden_simple$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_burghers_desc: "$lessen_tax_burden_desc$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_peasants: "$lessen_tax_burden$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_peasants_simple: "$lessen_tax_burden_simple$" # todo: NEW TRANSLATION
+ pa_lessen_tax_burden_for_peasants_desc: "$lessen_tax_burden_desc$" # todo: NEW TRANSLATION
+ lessen_levy_obligations: "Znížiť odvodové povinnosti" # todo: NEW TRANSLATION
+ lessen_levy_obligations_simple: "$lessen_levy_obligations$" # todo: NEW TRANSLATION
+ lessen_levy_obligations_desc: "Sľubujeme znížiť [levy|e] povinnosti, ktoré musia plniť za svoju podporu." # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_nobles: "$lessen_levy_obligations$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_nobles_simple: "$lessen_levy_obligations_simple$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_nobles_desc: "$lessen_levy_obligations_desc$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_clergy: "$lessen_levy_obligations$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_clergy_simple: "$lessen_levy_obligations_simple$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_clergy_desc: "$lessen_levy_obligations_desc$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_burghers: "$lessen_levy_obligations$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_burghers_simple: "$lessen_levy_obligations_simple$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_burghers_desc: "$lessen_levy_obligations_desc$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_peasants: "$lessen_levy_obligations$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_peasants_simple: "$lessen_levy_obligations_simple$" # todo: NEW TRANSLATION
+ pa_lessen_levy_obligations_for_peasants_desc: "$lessen_levy_obligations_desc$" # todo: NEW TRANSLATION
+ pa_resist_institution_desc: "Tento [estate|e] chce, aby sme konali proti šíreniu" # todo: NEW TRANSLATION
+ pa_rest_institution_end_desc: "v našej krajine." # todo: NEW TRANSLATION
+ pa_resist_feudalism: "Zastaviť šírenie $feudalism$" # todo: NEW TRANSLATION
+ pa_resist_feudalism_desc: "$pa_resist_institution_desc$ $feudalism$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_legalism: "Zastaviť šírenie $legalism$" # todo: NEW TRANSLATION
+ pa_resist_legalism_desc: "$pa_resist_institution_desc$ $legalism$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_meritocracy: "Zastaviť šírenie $meritocracy$" # todo: NEW TRANSLATION
+ pa_resist_meritocracy_desc: "$pa_resist_institution_desc$ $meritocracy$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_renaissance: "Zastaviť šírenie $renaissance$" # todo: NEW TRANSLATION
+ pa_resist_renaissance_desc: "$pa_resist_institution_desc$ $renaissance$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_banking: "Zastaviť šírenie $banking$" # todo: NEW TRANSLATION
+ pa_resist_banking_desc: "$pa_resist_institution_desc$ $banking$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_professional_armies: "Zastaviť šírenie $professional_armies$" # todo: NEW TRANSLATION
+ pa_resist_professional_armies_desc: "$pa_resist_institution_desc$ $professional_armies$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_new_world: "Zastaviť šírenie $new_world$" # todo: NEW TRANSLATION
+ pa_resist_new_world_desc: "$pa_resist_institution_desc$ $new_world$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_printing_press: "Zastaviť šírenie $printing_press$" # todo: NEW TRANSLATION
+ pa_resist_printing_press_desc: "$pa_resist_institution_desc$ $printing_press$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_pike_and_shot: "Zastaviť šírenie $pike_and_shot$" # todo: NEW TRANSLATION
+ pa_resist_pike_and_shot_desc: "$pa_resist_institution_desc$ $pike_and_shot$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_confessionalism: "Zastaviť šírenie $confessionalism$" # todo: NEW TRANSLATION
+ pa_resist_confessionalism_desc: "$pa_resist_institution_desc$ $confessionalism$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_global_trade: "Zastaviť šírenie $global_trade$" # todo: NEW TRANSLATION
+ pa_resist_global_trade_desc: "$pa_resist_institution_desc$ $global_trade$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_artillery_institution: "Zastaviť šírenie $artillery_institution$" # todo: NEW TRANSLATION
+ pa_resist_artillery_institution_desc: "$pa_resist_institution_desc$ $artillery_institution$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_manufactories: "Zastaviť šírenie $manufactories$" # todo: NEW TRANSLATION
+ pa_resist_manufactories_desc: "$pa_resist_institution_desc$ $manufactories$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_scientific_revolution: "Zastaviť šírenie $scientific_revolution$" # todo: NEW TRANSLATION
+ pa_resist_scientific_revolution_desc: "$pa_resist_institution_desc$ $scientific_revolution$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_military_revolution: "Zastaviť šírenie $military_revolution$" # todo: NEW TRANSLATION
+ pa_resist_military_revolution_desc: "$pa_resist_institution_desc$ $military_revolution$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_enlightenment: "Zastaviť šírenie $enlightenment$" # todo: NEW TRANSLATION
+ pa_resist_enlightenment_desc: "$pa_resist_institution_desc$ $enlightenment$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_industrialization: "Zastaviť šírenie $industrialization$" # todo: NEW TRANSLATION
+ pa_resist_industrialization_desc: "$pa_resist_institution_desc$ $industrialization$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_resist_levee_en_masse: "Zastaviť šírenie $levee_en_masse$" # todo: NEW TRANSLATION
+ pa_resist_levee_en_masse_desc: "$pa_resist_institution_desc$ $levee_en_masse$ $pa_rest_institution_end_desc$" # todo: NEW TRANSLATION
+ pa_remove_building_middle_desc: "ktorý obdržal sťažnosti od" # todo: NEW TRANSLATION
+ pa_remove_parish_church: "Vyriešiť sťažnosti na $parish_church$" # todo: NEW TRANSLATION
+ pa_remove_parish_church_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('parish_church')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ pa_remove_spiritual_retreat: "Vyriešiť sťažnosti na $spiritual_retreat$" # todo: NEW TRANSLATION
+ pa_remove_spiritual_retreat_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('spiritual_retreat')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ pa_remove_warrior_monks_training_grounds: "Vyriešiť sťažnosti na $warrior_monks_training_grounds$" # todo: NEW TRANSLATION
+ pa_remove_warrior_monks_training_grounds_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('warrior_monks_training_grounds')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ pa_remove_local_markets: "Vyriešiť sťažnosti na $local_markets$" # todo: NEW TRANSLATION
+ pa_remove_local_markets_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('local_markets')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ pa_remove_burgher_mansion: "Vyriešiť sťažnosti na $burgher_mansion$" # todo: NEW TRANSLATION
+ pa_remove_burgher_mansion_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('burgher_mansion')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ pa_remove_peasants_training_grounds: "Vyriešiť sťažnosti na $peasants_training_grounds$" # todo: NEW TRANSLATION
+ pa_remove_peasants_training_grounds_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('peasants_training_grounds')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ pa_remove_peasants_hunting_grounds: "Vyriešiť sťažnosti na $peasants_hunting_grounds$" # todo: NEW TRANSLATION
+ pa_remove_peasants_hunting_grounds_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('peasants_hunting_grounds')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ pa_remove_local_assembly: "Vyriešiť sťažnosti na $local_assembly$" # todo: NEW TRANSLATION
+ pa_remove_local_assembly_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('local_assembly')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('clergy_estate')]." # todo: NEW TRANSLATION
+ pa_remove_nobility_fortifications: "Vyriešiť sťažnosti na $nobility_fortifications$" # todo: NEW TRANSLATION
+ pa_remove_nobility_fortifications_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('nobility_fortifications')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('clergy_estate')]." # todo: NEW TRANSLATION
+ pa_remove_merchants_guild: "Vyriešiť sťažnosti na $merchants_guild$" # todo: NEW TRANSLATION
+ pa_remove_merchants_guild_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('merchants_guild')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('clergy_estate')]." # todo: NEW TRANSLATION
+ pa_remove_artisan_guilds: "Vyriešiť sťažnosti na $artisan_guilds$" # todo: NEW TRANSLATION
+ pa_remove_artisan_guilds_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('artisan_guilds')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('clergy_estate')]." # todo: NEW TRANSLATION
+ pa_remove_festival_grounds: "Vyriešiť sťažnosti na $festival_grounds$" # todo: NEW TRANSLATION
+ pa_remove_festival_grounds_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('festival_grounds')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('clergy_estate')]." # todo: NEW TRANSLATION
+ pa_remove_local_schools: "Vyriešiť sťažnosti na $local_schools$" # todo: NEW TRANSLATION
+ pa_remove_local_schools_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('local_schools')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('clergy_estate')]." # todo: NEW TRANSLATION
+ pa_remove_toll_castle: "Vyriešiť sťažnosti na $toll_castle$" # todo: NEW TRANSLATION
+ pa_remove_toll_castle_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('toll_castle')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('burghers_estate')]." # todo: NEW TRANSLATION
+ pa_remove_rotten_borough: "Vyriešiť sťažnosti na $rotten_borough$" # todo: NEW TRANSLATION
+ pa_remove_rotten_borough_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('rotten_borough')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('burghers_estate')]." # todo: NEW TRANSLATION
+ pa_remove_local_noble_delegation: "Vyriešiť sťažnosti na $local_noble_delegation$" # todo: NEW TRANSLATION
+ pa_remove_local_noble_delegation_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('local_noble_delegation')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('burghers_estate')]." # todo: NEW TRANSLATION
+ pa_remove_clerical_archives: "Vyriešiť sťažnosti na $clerical_archives$" # todo: NEW TRANSLATION
+ pa_remove_clerical_archives_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('clerical_archives')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('burghers_estate')]." # todo: NEW TRANSLATION
+ pa_remove_pirate_haven: "Vyriešiť sťažnosti na $pirate_haven$" # todo: NEW TRANSLATION
+ pa_remove_pirate_haven_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('pirate_haven')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('burghers_estate')]." # todo: NEW TRANSLATION
+ pa_remove_local_newspaper: "Vyriešiť sťažnosti na $local_newspaper$" # todo: NEW TRANSLATION
+ pa_remove_local_newspaper_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('local_newspaper')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('burghers_estate')]." # todo: NEW TRANSLATION
+ pa_remove_guild_hall: "Vyriešiť sťažnosti na $guild_hall$" # todo: NEW TRANSLATION
+ pa_remove_guild_hall_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('guild_hall')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('peasants_estate')]." # todo: NEW TRANSLATION
+ pa_remove_bailiffs: "Vyriešiť sťažnosti na $bailiff$" # todo: NEW TRANSLATION
+ pa_remove_bailiffs_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('bailiff')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('peasants_estate')]." # todo: NEW TRANSLATION
+ pa_remove_noble_villa: "Vyriešiť sťažnosti na $noble_villa$" # todo: NEW TRANSLATION
+ pa_remove_noble_villa_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('noble_villa')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('peasants_estate')]." # todo: NEW TRANSLATION
+ pa_remove_nobles_recruitment_center: "Vyriešiť sťažnosti na $nobles_recruitment_center$" # todo: NEW TRANSLATION
+ pa_remove_nobles_recruitment_center_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('nobles_recruitment_center')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('peasants_estate')]." # todo: NEW TRANSLATION
+ pa_remove_local_shrine: "Vyriešiť sťažnosti na $local_shrine$" # todo: NEW TRANSLATION
+ pa_remove_local_shrine_desc: "Odstránime akékoľvek [ShowBuildingTypeNameWithNoTooltip('local_shrine')] $pa_remove_building_middle_desc$ [ShowEstateTypeName('peasants_estate')]." # todo: NEW TRANSLATION
+ pa_construct_monastery: "Požiadavka na nový kláštor" # todo: NEW TRANSLATION
+ pa_construct_monastery_simple: "Požiadavka na nový kláštor" # todo: NEW TRANSLATION
+ pa_construct_monastery_desc: "Významní duchovní nás žiadajú, aby sme postavili odľahlé kláštorné útočisko, kde by mohli pokojne praktizovať svoju vieru." # todo: NEW TRANSLATION
+ pa_construct_market_village: "Požiadavka na nové trhovisko" # todo: NEW TRANSLATION
+ pa_construct_market_village_simple: "Požiadavka na nové trhoviská" # todo: NEW TRANSLATION
+ pa_construct_market_village_desc: "The [estate|e] is petitioning us to construct a new $market_village$ for their mercantile activities." # todo: NEW TRANSLATION
+ pa_break_alliance: "Zrušiť alianciu" # todo: NEW TRANSLATION
+ pa_break_alliance_simple: "$pa_break_alliance$" # todo: NEW TRANSLATION
+ pa_break_alliance_desc: "Táto aliancia je v rozpore so záujmami tohto [estate|e] a oni si myslia, že by bolo prospešné, keby sa [alliance|e] rozpadla." # todo: NEW TRANSLATION
+ pa_reduce_opinion: "Znížiť náklonnosť" # todo: NEW TRANSLATION
+ pa_reduce_opinion_simple: "$pa_reduce_opinion$" # todo: NEW TRANSLATION
+ pa_reduce_opinion_desc: "Len myšlienka nadviazania vzťahov s touto krajinou rozčuľuje tento [estate|e] a požadujú okamžite dôrazne formulovaný list adresovaný ich vládcovi." # todo: NEW TRANSLATION
+ opinion_pa_reduce_opinion: "Urazené na žiadosť stavu" # todo: NEW TRANSLATION
+ pa_raise_opinion: "Zvýšiť náklonnosť" # todo: NEW TRANSLATION
+ pa_raise_opinion_simple: "$pa_raise_opinion$" # todo: NEW TRANSLATION
+ pa_raise_opinion_desc: "Tento [estate|e] by uprednostnil, aby sme s touto krajinou nadviazali vzťahy, nech už majú akýkoľvek zámer." # todo: NEW TRANSLATION
+ opinion_pa_raise_opinion: "Oslovené na žiadosť stavu" # todo: NEW TRANSLATION
+ opinion_anti_scaligeri_league: "$antagonism_anti_scaligeri_league$" # todo: NEW TRANSLATION
+ pa_rethink_army_academy: "Zreorganizovať vojenskú akadémiu" # todo: NEW TRANSLATION
+ pa_rethink_army_academy_simple: "$pa_rethink_army_academy$" # todo: NEW TRANSLATION
+ pa_rethink_army_academy_desc: "Tento [estate|e] nie je spokojný so súčasnými princípmi našej vojenskej akadémie a chce, aby sme prehodnotili jej výučbu." # todo: NEW TRANSLATION
+ pa_rethink_navy_academy: "Zreorganizovať námornú akadémiu" # todo: NEW TRANSLATION
+ pa_rethink_navy_academy_simple: "$pa_rethink_navy_academy$" # todo: NEW TRANSLATION
+ pa_rethink_navy_academy_desc: "$pa_rethink_army_academy_desc$" # todo: NEW TRANSLATION
+ pa_reduce_land_recruitment: "Znížiť nábor do armády" # todo: NEW TRANSLATION
+ pa_reduce_land_recruitment_simple: "$pa_reduce_land_recruitment$" # todo: NEW TRANSLATION
+ pa_reduce_land_recruitment_desc: "Členov tohto [estate|e] znepokojuje náš intenzívny vojenský nábor a chcú znížiť počet ľudí odvádzaných do služby." # todo: NEW TRANSLATION
+ pa_reduce_naval_recruitment: "Znížiť nábor do námorníctva" # todo: NEW TRANSLATION
+ pa_reduce_naval_recruitment_simple: "$pa_reduce_naval_recruitment$" # todo: NEW TRANSLATION
+ pa_reduce_naval_recruitment_desc: "Členov tohto [estate|e] znepokojuje náš intenzívny nábor do námorníctva a chcú znížiť počet ľudí povolaných do služby." # todo: NEW TRANSLATION
+ promote_mamluks: "Povýšiť $mamluk$" # todo: NEW TRANSLATION
+ promote_mamluks_desc: "Elitní vojaci schopní zaujať kľúčové pozície v našej správe, vojaci $mamluk$ a držitelia týchto úradov sú chrbticou našej stratokratickej správy a majú obrovský vplyv." # todo: NEW TRANSLATION
+ new_mamluk_appears_tt: "#Y Nový $mamluk$ bude povýšen#!" # todo: NEW TRANSLATION
+ promote_mamluks_tt: "Noví kandidáti $mamluk$ sa objavia prostredníctvom [event|e]" # todo: NEW TRANSLATION
+ pa_hre_lessen_tax_burden: "Znížiť daňové bremeno" # todo: NEW TRANSLATION
+ pa_hre_lessen_tax_burden_simple: "$pa_hre_lessen_tax_burden$" # todo: NEW TRANSLATION
+ pa_hre_lessen_tax_burden_desc: "Sľubujeme znížiť povinnosť platenia [ShowPaymentName('imperial_contribution')], ktorá im vyplýva za ich podporu." # todo: NEW TRANSLATION
+ pa_hre_elevate_prussia_to_kingdom: "Povýšiť [GetCountry('PRU').GetNameWithNoTooltip] na [ShowCountryRankNameWithNoTooltip('rank_kingdom')]" # todo: NEW TRANSLATION
+ pa_hre_elevate_prussia_to_kingdom_simple: "Povýšiť [GetCountry('PRU').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ pa_hre_elevate_prussia_to_kingdom_desc: "Monarchovia [GetCountry('PRU').GetName] boli vždy ambiciózni vo svojom ťažení za mocou a slávou. Formálne požiadali o titul kráľov, hoci napokon museli žiť ako 'králi v [GetCountry('PRU').GetNameWithNoTooltip]'. Povýšenie tejto krajiny na riadny [ShowCountryRankName('rank_kingdom')] nám však môže priniesť posledný kúsok priazne..." # todo: NEW TRANSLATION
+ pa_hre_elevate_prussia_to_kingdom_tt: "[GetCountry('PRU').GetName] obdrží [event|e] o našom rozhodnutí." # todo: NEW TRANSLATION
+ pa_hre_grant_imperial_titles: "Udeľovať cisárske tituly" # todo: NEW TRANSLATION
+ pa_hre_grant_imperial_titles_simple: "$pa_hre_grant_imperial_titles$" # todo: NEW TRANSLATION
+ pa_hre_grant_imperial_titles_desc: "$elector_plural$ by veľmi ocenili ďalšie tituly a prestíž od koruny." # todo: NEW TRANSLATION
+ pa_hre_affirmation_of_free_city_rights: "Potvrdenie práv $free_city$" # todo: NEW TRANSLATION
+ pa_hre_affirmation_of_free_city_rights_desc: "Obnovujeme práva a záruky $free_city_plural$, čím zabezpečujeme ich stabilitu a prosperitu v rámci Ríše." # todo: NEW TRANSLATION
+ opinion_hre_pa_supports_free_cities: "Podporuje [ShowSpecialStatusNamePluralWithNoTooltip('free_city')]" # todo: NEW TRANSLATION
+ pa_hre_affirmation_of_free_city_rights_tt: "Every independent [ShowSpecialStatusName('free_city')] gains [ShowNamedValue('stability_mild_bonus')|+=2] [stability|e] while every country currently leading a war against them loses [ShowBiasValue('opinion_hre_pa_supports_free_cities')|+] opinion with the [GetUniqueInternationalOrganization('hre').GetLeaderTitle] of the [GetUniqueInternationalOrganization('hre').GetName]."" # todo: NEW TRANSLATION
