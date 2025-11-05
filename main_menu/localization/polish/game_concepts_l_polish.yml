@@ -100,8 +100,8 @@
  game_concept_province_definition_desc: "A Province Definition is a predetermined group of [locations|e] that determines how [provinces|e] are created throughout the game.\n\n[areas_with_icon|e] are divided into Province Definitions, which in turn contain [locations_with_icon|e]. All [locations] in the same Province Definition that are [owned|e] by the same [country_with_icon|e] will belong to the same [province|e].\n\nIf multiple [countries] [own] [locations] in the same Province Definition, there will be as many different [provinces], each with its own [province_capital_with_icon|e] and [food_stockpile_with_icon|e]." # todo: NEW TRANSLATION
  game_concept_province_capital: "Hlavné mesto provincie" # todo: NEW TRANSLATION
  game_concept_province_capital_desc: "Hlavné mesto provincie je určené [location|e], ktoré je obrazným srdcom svojej [province|e]. Keď je táto lokácia počas [war|e] [occupied|e], zostávajúce lokácie provincie automaticky prejdú do rúk útočníka počas krátkeho obdobia.\n\nHlavné mesto provincie tiež určuje [market|e], z ktorého celá [province|e] nakupuje a predáva [food|e]." # todo: NEW TRANSLATION
- game_concept_location: "Lokácia" # todo: NEW TRANSLATION
- game_concept_locations: "Lokácie" # todo: NEW TRANSLATION
+ game_concept_location: "Lokalita"
+ game_concept_locations: "Lokality"
  game_concept_location_desc: "Najmenšia jednotka krajiny a súčasť [province|e]. Jej základné charakteristiky sú definované [topography|e], [vegetation|e] a [climate|e]. Môže tiež obsahovať [river|e].\n\nKaždá Lokácia má [raw_material|e], ktorý môžu zhromažďovať [pops|e] žijúci tam. V lokáciách je možné stavať [buildings|e], ktoré tiež [employ|e] Pops. Väčšina lokácií je [rural|e], ale môže im byť udelený aj status [town_or_city|e].\n\nKaždú Lokáciu môžu [owned|e] a [controlled|e] [countries|e], a [armies|e] sa môžu pohybovať medzi rôznymi lokáciami, aby ich dobyli počas [war|e]." # todo: NEW TRANSLATION
  game_concept_lake: "Jazero" # todo: NEW TRANSLATION
  game_concept_lakes: "Jazerá" # todo: NEW TRANSLATION
@@ -559,9 +559,9 @@
  game_concept_people_desc: "Jednotliví ľudia. Poloodnovený zdroj, zoskupovaný v [pops|e] alebo sa môže objaviť ako [characters|e]." # todo: NEW TRANSLATION
  game_concept_population_growth: "Rast populácie" # todo: NEW TRANSLATION
  game_concept_population_growth_desc: "Rast populácie [pops|e] v [location|e] súvisí s počtom narodení za mesiac v porovnaní s počtom úmrtí. Nedostatok [food|e], šírenie choroby, [siege|e] alebo iné pohromy môžu zvýšiť počet úmrtí." # todo: NEW TRANSLATION
- game_concept_pop: "Pop" # todo: NEW TRANSLATION
- game_concept_pops: "Pops" # todo: NEW TRANSLATION
- game_concept_pop_desc: "Pop je skupina [people|e] rovnakého [pop_type|e], [religion|e] a [culture|e]. Majú potreby rôznych [goods|e] a ich [pop_satisfaction|e] ovplyvňuje [location|e], v ktorom žijú." # todo: NEW TRANSLATION
+ game_concept_pop: "Populácia"
+ game_concept_pops: "Populácie"
+ game_concept_pop_desc: "Populácia je skupina [Concept('people','ľudí')|e] rovnakej [Concept('pop_type','sociálnej triedy')|e], [Concept('religion','náboženstva')|e] a [Concept('culture','kultúry')|e]. Majú potreby ktoré napĺňajú spotrebou [Concept('goods','tovarov')|e] a ich [Concept('pop_satisfaction','spokojnosť')|e] ovplyvňuje [Concept('location','lokalita')|e], v ktorej žijú."
  game_concept_upper_class: "Vyššia trieda" # todo: NEW TRANSLATION
  game_concept_upper_class_desc: "Skupina [pop_types|e], ktoré patria do jednej z [estates|e], ktoré zvyčajne majú najväčšiu moc v [country|e], a sú jedným z nasledujúcich [pop_types]:\n$BULLET_WITH_TAB$[ShowPopTypeName('nobles')]\n$BULLET_WITH_TAB$[ShowPopTypeName('clergy')]\n$BULLET_WITH_TAB$[ShowPopTypeName('burghers')]" # todo: NEW TRANSLATION
  game_concept_lower_class: "Nižšia trieda" # todo: NEW TRANSLATION
@@ -589,7 +589,7 @@
  game_concept_produced_goods: "Vyrábané tovary" # todo: NEW TRANSLATION
  game_concept_produced_good: "Vyrábaný tovar" # todo: NEW TRANSLATION
  game_concept_produced_goods_desc: "Toto je typ [goods|e], ktorý vyrábajú [pops|e] pracujúci v [building|e]. V mnohých prípadoch tieto budovy vyžadujú [raw_materials|e] alebo iné vyrábané tovary na funkčnosť." # todo: NEW TRANSLATION
- game_concept_rgo: "R.G.O." # todo: NEW TRANSLATION
+ game_concept_rgo: "R.G.O."
  game_concept_resource_gathering_operations: "Prevádzky získavania zdrojov" # todo: NEW TRANSLATION
  game_concept_rgo_desc: "Skratka $game_concept_resource_gathering_operations$. Každé [location|e] má [raw_material|e], ktorý vzniká z $rgo_mining$, $rgo_farming$, $rgo_gathering$, $rgo_forestry$ alebo $rgo_hunting$.\n\nKaždá úroveň $game_concept_rgo$ môže [employ|e] až #V 1,000#! [rgo_pops|e], zatiaľ čo maximálna úroveň závisí od [development|e], [advances|e] a ďalších faktorov." # todo: NEW TRANSLATION
  game_concept_prosperity: "Prosperita" # todo: NEW TRANSLATION
@@ -632,9 +632,9 @@
  game_concept_available_population: "Dostupné obyvateľstvo" # todo: NEW TRANSLATION
  game_concept_unemploy_desc: "[pops|e] môžu byť [employed|e] buď v [building|e] alebo v [rgo|e]. Tí, ktorí to nerobia, sú považovaní za $game_concept_available$." # todo: NEW TRANSLATION
  game_concept_foreign: "Zahraničný" # todo: NEW TRANSLATION
- game_concept_foreign_desc: "Toto je [location|e], ktoré nevlastní [country|e], ktorú práve hráte." # todo: NEW TRANSLATION
- game_concept_estate: "Stav" # todo: NEW TRANSLATION
- game_concept_estates: "Stavy" # todo: NEW TRANSLATION
+ game_concept_foreign_desc: "Toto je [Concept('location','lokalita')|e], ktorú nevlastní [country|e], ktorú práve hráte." # todo: NEW TRANSLATION
+ game_concept_estate: "Stav"
+ game_concept_estates: "Stavy"
  game_concept_estate_type: "Typ stavu" # todo: NEW TRANSLATION
  game_concept_estate_types: "Typy stavov" # todo: NEW TRANSLATION
  game_concept_estate_desc: "Špeciálne záujmové skupiny v rámci [country_with_icon|e]. Stavy majú [estate_power_with_icon|e], ktoré predstavujú ich politickú silu v rámci vlády, [estate_satisfaction_with_icon|e], ktoré ukazujú, do akej miery sú ich potreby napĺňané, a [estate_opinions|e] o iných krajinách.\n\nStavy tiež môžu mať [estate_privileges_with_icon|e], čo sú osobitné práva zvyšujúce ich moc, ktoré vláda môže udeľovať alebo odoberať. Na oplátku [estates] poskytujú [taxes_with_icon|e], [army_levies_with_icon|e] a [navy_levies_with_icon|e] svojej [country].\n\nStavy zbierajú [tax_base_with_icon|e] z [locations_with_icon|e], ako aj časť zisku z [trade|e], a tieto bohatstvo používajú na stavbu [buildings_with_icon|e] a platenie za [pop_needs_with_icon|e]. Ak je ich [estate_satisfaction] nízka, budú stavať iba stavovské budovy na podporu vlastného [estate_power].\n\nKaždý [character_with_icon|e] patrí k jednému zo Stavov a zvyšuje jeho moc, keď je menovaný do [cabinet_with_icon|e], alebo keď velí [armies|e] a [navies|e]. Niektoré [heir_selections|e] obmedzujú ich [heirs|e] na konkrétne stavy." # todo: NEW TRANSLATION
@@ -1271,7 +1271,7 @@
  game_concept_loyal_subjects_desc: "Keď má [subject] viac než [GetDefine('NDiplomacy','TOO_DISLOYAL_THRESHOLD')] [subject_loyalty|e] voči svojmu [overlord|e], stáva sa z neho Lojálny vazal.\n\nV takom stave sa pridá do [wars|e] svojho [overlord] a môže byť [annexed|e]." # todo: NEW TRANSLATION
  game_concept_pop_needs: "Potreby obyvateľstva" # todo: NEW TRANSLATION
  game_concept_pop_needs_desc: "[pop_with_icon|e] má zoznam [goods_with_icon|e], ktoré potrebuje pre svoj život, čo závisí od jeho [pop_type|e], [culture|e], [religion|e] a miesta, kde žije. Napríklad [ShowPopTypeName('nobles')] majú oveľa vyššie nároky než [lower_class|e]. Ak tieto potreby nemôžu byť splnené, trpí ich [pop_satisfaction_with_icon|e].\n\nMnožstvo [goods] požadovaných [pop] sa zvyšuje s [development_with_icon|e] [location|e], v ktorom žijú." # todo: NEW TRANSLATION
- game_concept_pop_satisfaction: "Spokojnosť obyvateľstva" # todo: NEW TRANSLATION
+ game_concept_pop_satisfaction: "Spokojnosť populácie"
  game_concept_pop_satisfaction_desc: "To je, ako spokojný je [pop|e] so svojou životnou situáciou. Ovlplyvňujú to nasledujúce faktory:\n$BULLET_WITH_TAB$[estate_satisfaction|e]\n$BULLET_WITH_TAB$[unrest|e] [location|e]\n$BULLET_WITH_TAB$Tolerancia [religion|e]\n$BULLET_WITH_TAB$Či je [accepted_culture|e] alebo nie\n$BULLET_WITH_TAB$Prístup k [pop_needs|e]\n$BULLET_WITH_TAB$[market_price|e] za [pop_needs|e]\n$BULLET_WITH_TAB$[cultural_opinion|e] jeho [culture|e] voči [culture] [country|e]" # todo: NEW TRANSLATION
  game_concept_average_satisfaction: "Priemerná spokojnosť" # todo: NEW TRANSLATION
  game_concept_average_satisfaction_desc: "Toto je priemerná [pop_satisfaction|e] v [location|e]. Má negatívny vplyv na [prosperity|e] a [control|e] lokality." # todo: NEW TRANSLATION
@@ -1676,7 +1676,7 @@
  game_concept_conquistador: "Konkvistador" # todo: NEW TRANSLATION
  game_concept_conquistadors: "Konkvistadori" # todo: NEW TRANSLATION
  game_concept_conquistador_desc: "$game_concept_conquistador$ je [character|e], ktorému bola zverená úloha dobyť cudzí kraj a vytvoriť nový [subject|e] nášho [country|e]." # todo: NEW TRANSLATION
- game_concept_budget: "Bilancia" # todo: NEW TRANSLATION
+ game_concept_budget: "Rozpočet"
  game_concept_balance: "Bilancia" # todo: NEW TRANSLATION
  game_concept_finances: "Financie" # todo: NEW TRANSLATION
  game_concept_budget_desc: "Mesačná bilancia je založená na celkovom množstve [incomes|e] a [expenses|e], ktoré má [country|e]. Výsledok ovplyvňuje [treasury|e] krajiny." # todo: NEW TRANSLATION
