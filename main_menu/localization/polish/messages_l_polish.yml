@@ -440,7 +440,7 @@
  OCCUPATIONOVER_LOST_BTN2: "OK" # todo: NEW TRANSLATION
  OCCUPATIONOVER_LOST_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  OCCUPATIONOVER_LOST_MAP: "Obsadené!" # todo: NEW TRANSLATION
- OCCUPATIONOVER_WON_SETUP: "Keď [liberate|e] neopevnenú [location|e]." # todo: NEW TRANSLATION
+ OCCUPATIONOVER_WON_SETUP: "Keď oslobodíme neopevnené [location|e]." # todo: CHANGED
  OCCUPATIONOVER_WON_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OCCUPATIONOVER_WON_TITLE: "Kampaň $NAME$ bola úspešná!" # todo: NEW TRANSLATION
  OCCUPATIONOVER_WON_DESC: "Kampaň $NAME$ skončila naším víťazstvom a teraz ovládame lokalitu. $OCCUPATION_INFO$" # todo: NEW TRANSLATION
@@ -1723,7 +1723,7 @@
  INTERNATIONAL_ORGANIZATION_DISBANDED_SETUP: "Keď je [international_organization|e] rozpustená." # todo: NEW TRANSLATION
  INTERNATIONAL_ORGANIZATION_DISBANDED_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  INTERNATIONAL_ORGANIZATION_DISBANDED_TITLE: "$IO_TYPE_NAME$ rozpustená!" # todo: NEW TRANSLATION
- INTERNATIONAL_ORGANIZATION_DISBANDED_DESC: "Formálne bol $IO_NAME$ rozpustený. Také administratívne bremená nám aj tak nič neponúkajú.\n$REASON$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_DISBANDED_DESC: "Organizácia $IO_NAME$ bola formálne rozpustená. Také administratívne bremená nepotrebujeme.\n$REASON$" # todo: CHANGED
  INTERNATIONAL_ORGANIZATION_DISBANDED_LOG: "$IO_NAME$ bol rozpustený" # todo: NEW TRANSLATION
  INTERNATIONAL_ORGANIZATION_DISBANDED_BTN1: "OK" # todo: NEW TRANSLATION
  INTERNATIONAL_ORGANIZATION_DISBANDED_BTN2: "OK" # todo: NEW TRANSLATION
@@ -10166,7 +10166,7 @@
  WE_CREATE_CASUS_BELLI_SETUP: "Keď dokončíme vytvorenie nového [casus_belli|e] na iného [country|e]." # todo: NEW TRANSLATION
  WE_CREATE_CASUS_BELLI_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_CREATE_CASUS_BELLI_TITLE: "Získaný casus belli!" # todo: NEW TRANSLATION
- WE_CREATE_CASUS_BELLI_EFFECTS: "Teraz máme $CASUS_BELLI$ [casus_belli|E] na $RECIPIENT$!" # todo: NEW TRANSLATION
+ WE_CREATE_CASUS_BELLI_EFFECTS: "Teraz máme $CASUS_BELLI$ [casus_belli|E] na $RECIPIENT$!" # todo: CHANGED
  WE_CREATE_CASUS_BELLI_FLAVOR: "'Zvoľte zmar a pustite psy [war|e]!'" # todo: NEW TRANSLATION
  WE_CREATE_CASUS_BELLI_LOG: "Teraz máme $CASUS_BELLI$ [casus_belli|E] na $RECIPIENT$" # todo: NEW TRANSLATION
  WE_CREATE_CASUS_BELLI_BTN1: "OK" # todo: NEW TRANSLATION
@@ -10418,9 +10418,9 @@
  PERFORM_excommunicate_resolution_ACTION_MAP: "" # todo: NEW TRANSLATION
  PERFORM_overrule_imperial_diet_ACTION_SETUP: "Keď cisár prehlasí Ríšsky snem." # todo: NEW TRANSLATION
  PERFORM_overrule_imperial_diet_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- PERFORM_overrule_imperial_diet_ACTION_TITLE: "[SCOPE.sInternationalOrganization('recipient').GetLeaderTitle] prehlasuje Ríšsky snem!" # todo: NEW TRANSLATION
- PERFORM_overrule_imperial_diet_ACTION_EFFECTS: "[SCOPE.sInternationalOrganization('recipient').GetLeaderTitle] sa odvážne rozhodol prehlásiť Ríšsky snem za neplatný." # todo: NEW TRANSLATION
- PERFORM_overrule_imperial_diet_ACTION_LOG: "[SCOPE.sInternationalOrganization('recipient').GetLeaderTitle] prehlasoval Ríšsky snem." # todo: NEW TRANSLATION
+ PERFORM_overrule_imperial_diet_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] prehlasuje Cisársky snem!" # todo: CHANGED
+ PERFORM_overrule_imperial_diet_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetName] sa odvážne rozhodol prehlasovať [SCOPE.sInternationalOrganization('recipient').GetParliament.GetName] [SCOPE.sInternationalOrganization('recipient').GetName]." # todo: CHANGED
+ PERFORM_overrule_imperial_diet_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] prehlasoval [SCOPE.sInternationalOrganization('recipient').GetParliament.GetName] [SCOPE.sInternationalOrganization('recipient').GetName]." # todo: CHANGED
  PERFORM_overrule_imperial_diet_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  PERFORM_overrule_imperial_diet_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_overrule_imperial_diet_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -10973,3 +10973,79 @@
  ACTION_intervene_in_subject_regular_war_PERFORMED_ON_US_BTN2: "OK" # todo: NEW TRANSLATION
  ACTION_intervene_in_subject_regular_war_PERFORMED_ON_US_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  ACTION_intervene_in_subject_regular_war_PERFORMED_ON_US_MAP: "" # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_SETUP: "Keď oslobodíme [country|e] od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_TITLE: "Oslobodenie od tribútu!" # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_DESC: "Rozhodli sme sa oslobodiť [SCOPE.sCountry('target').GetName] od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_LOG: "Rozhodli sme sa oslobodiť [SCOPE.sCountry('target').GetName] od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
+ WE_PERFORM_exempt_from_tribute_ACTION_MAP: "" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_SETUP: "Keď iný [country|e] oslobodí iného od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_TITLE: "Oslobodenie od tribútu!" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_DESC: "[SCOPE.sCountry('actor').GetName] sa rozhodol oslobodiť [SCOPE.sCountry('target').GetName] od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] sa rozhodol oslobodiť [SCOPE.sCountry('target').GetName] od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_exempt_from_tribute_ACTION_MAP: "" # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_SETUP: "Keď nás iný [country|e] oslobodí od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_TITLE: "Oslobodenie od tribútu!" # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_DESC: "[SCOPE.sCountry('actor').GetName] sa rozhodol oslobodiť [SCOPE.sCountry('target').GetName] od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_LOG: "[SCOPE.sCountry('actor').GetName] sa rozhodol oslobodiť [SCOPE.sCountry('target').GetName] od [ShowPaymentName('middle_kingdom_tribute')]." # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_BTN1: "OK" # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_BTN2: "OK" # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
+ ACTION_exempt_from_tribute_PERFORMED_ON_US_MAP: "" # todo: NEW TRANSLATION
+ LEFT_IO_DIVORCE: "Putá manželstva nevydržali navždy." # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_SETUP: "Keď [country|e] odmietne našu žiadosť o [subject|e]." # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_HEADER: "Posol od" # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_TITLE: "$RECIPIENT$" # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_DESC: "Napriek tomu, že by sme boli vynikajúcim kandidátom na vazala, $RECIPIENT$ odmietol našu žiadosť stať sa jeho $TYPE$." # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_FLAVOR: "Čože? Sme príliš dobrí na to, aby sme boli ich verní služobníci?!" # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_LOG: "$RECIPIENT$ odmietol našu skromnú žiadosť stať sa ich $TYPE$!" # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_BTN1: "OK" # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_BTN2: "OK" # todo: NEW TRANSLATION
+ REJECT_SUBJECT_REQUEST_MAP: "" # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_SETUP: "Keď odmietneme ich žiadosť o prijatie ako náš [subject|e]." # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_TITLE: "Povedali sme NIE!" # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_DESC: "Napriek ich patetickým prosbám a sľubom sme odmietli, aby sa $ACTOR$ stal naším $TYPE$." # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_FLAVOR: "Také spojenie s touto špinou by znečistilo našu svetovú povesť." # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_LOG: "Odmietli sme, aby sa $ACTOR$ stal naším $TYPE$." # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_BTN1: "OK" # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_BTN2: "OK" # todo: NEW TRANSLATION
+ WE_REJECT_SUBJECT_REQUEST_MAP: "" # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_SETUP: "Keď [country|e] odmietne ponuku stať sa [subject|e] iného [country|e]." # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_HEADER: "Posol od" # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_TITLE: "$ACTOR$" # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_DESC: "Žalostné prosby $ACTOR$ ostali bez odozvy, keď $RECIPIENT$ odmietol uznať ich ako svojho $TYPE$." # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_FLAVOR: "Aká ubohá ukážka bezvýznamnosti." # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_LOG: "$ACTOR$ bol odmietnutý ako $TYPE$ od $RECIPIENT$." # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_BTN1: "OK" # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_BTN2: "OK" # todo: NEW TRANSLATION
+ OTHER_REJECT_SUBJECT_REQUEST_MAP: "" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_SETUP: "$WE_PERFORM_stop_blame_the_minorities_ACTION_SETUP$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_HEADER: "$WE_PERFORM_stop_blame_the_minorities_ACTION_HEADER$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_TITLE: "$WE_PERFORM_stop_blame_the_minorities_ACTION_TITLE$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_EFFECTS: "$WE_PERFORM_stop_blame_the_minorities_ACTION_EFFECTS$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_LOG: "$WE_PERFORM_stop_blame_the_minorities_ACTION_LOG$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_BTN1: "$WE_PERFORM_stop_blame_the_minorities_ACTION_BTN1$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_BTN2: "$WE_PERFORM_stop_blame_the_minorities_ACTION_BTN2$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_BTN3: "$WE_PERFORM_stop_blame_the_minorities_ACTION_BTN3$" # todo: NEW TRANSLATION
+ WE_PERFORM_great_pestilence_stop_blame_the_minorities_ACTION_MAP: "$WE_PERFORM_stop_blame_the_minorities_ACTION_MAP$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_SETUP: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_SETUP$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_HEADER: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_HEADER$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_TITLE: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_TITLE$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_EFFECTS: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_EFFECTS$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_LOG: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_LOG$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_BTN1: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_BTN1$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_BTN2: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_BTN2$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_BTN3: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_BTN3$" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_great_pestilence_stop_blame_the_minorities_ACTION_MAP: "$OTHER_PERFORMS_stop_blame_the_minorities_ACTION_MAP$" # todo: NEW TRANSLATION

@@ -260,8 +260,8 @@
  LOYALTY_DUE_TO_OVERLORD: "Vernosť subjektu z aktuálnych faktorov v $NAME$:\n" # todo: NEW TRANSLATION
  IS_CURRENTLY_DISLOYAL: "@warning_icon! Pod $VAL|0$ vernosti, čím sa stáva [disloyal_subject|e]" # todo: NEW TRANSLATION
  IS_CURRENTLY_LOYAL: "@trigger_yes! Vernosť aspoň $VAL|0$, čo z neho robí [loyal_subject|e]" # todo: NEW TRANSLATION
- SubjectTypeDetail_DESC: "@[Country.GetFlag]! [Country.GetName] je [Country.GetDiplomacy.GetSubjectType.GetName].\nJe loajálny s lojalitou #G [Country.GetDiplomacy.GetSubjectLoyalty|2%/]#!" # todo: NEW TRANSLATION
- SubjectTypeDetail_DESC_NOT: "@[Country.GetFlag]! [Country.GetName] je [Country.GetDiplomacy.GetSubjectType.GetName].\nJe [disloyal_subject|e] s lojalitou #R [Country.GetDiplomacy.GetSubjectLoyalty|2%/]#!." # todo: NEW TRANSLATION
+ SubjectTypeDetail_DESC: "[subject_icon] Je to [Country.GetSubjectTypeLabel] @[Country.GetDiplomacy.GetOverlord.GetFlag]! [Country.GetDiplomacy.GetOverlord.GetLongName].\n[loyal_subject_icon] Je to [loyal_subject|e] s [subject_loyalty|e] #G [Country.GetDiplomacy.GetSubjectLoyalty|2%/]#!." # todo: CHANGED
+ SubjectTypeDetail_DESC_NOT: "[subject_icon] Je to [Country.GetSubjectTypeLabel] @[Country.GetDiplomacy.GetOverlord.GetFlag]! [Country.GetDiplomacy.GetOverlord.GetLongName].\n[disloyal_subject_icon] Je to [disloyal_subject|e] s [subject_loyalty|e] #R [Country.GetDiplomacy.GetSubjectLoyalty|2%/]#!." # todo: CHANGED
  AIREASON_MILITARYACCESS: "Chcú, aby im bol udelený vojenský prístup." # todo: NEW TRANSLATION
  AIREASON_WAR: "Chcú vyprovokovať [war|e]." # todo: NEW TRANSLATION
  nation_rank_0: "Migrantská horda" # todo: NEW TRANSLATION
@@ -1039,8 +1039,8 @@
  PEACE_TREATY_ANNEX_REVOLTER_short: "[COUNTRY.GetNameWithNoTooltip] anektuje povstaleckú [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
  PEACE_TREATY_REVOLTER_SURVIVES: "[COUNTRY.GetNameWithFlag] pokračuje v existencii po [revolt|e]" # todo: NEW TRANSLATION
  PEACE_TREATY_REVOLTER_SURVIVES_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] pokračuje v existencii po [Localize('game_concept_revolt')]" # todo: NEW TRANSLATION
- PEACE_TREATY_GRANT_INDEPENDENCE: "[COUNTRY.GetNameWithFlag] je udelená nezávislosť" # todo: NEW TRANSLATION
- PEACE_TREATY_GRANT_INDEPENDENCE_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] je udelená nezávislosť" # todo: NEW TRANSLATION
+ PEACE_TREATY_GRANT_INDEPENDENCE: "[COUNTRY.GetNameWithFlag] a ich [allies|e] získavajú nezávislosť" # todo: CHANGED
+ PEACE_TREATY_GRANT_INDEPENDENCE_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] a ich [allies] získavajú nezávislosť" # todo: CHANGED
  PEACE_TREATY_BLOCKED_NO_UNION_CB: "@trigger_no! Nemôžeme vytvoriť osobnú úniu s nimi bez použitia [ShowCasusBelliName('cb_claim_throne')] [casus_belli|e]." # todo: NEW TRANSLATION
  PEACE_TREATY_BLOCKED_WAR_GOAL: "@trigger_no! [war_goal|e] $NAME|Y$ blokuje túto zmluvu." # todo: NEW TRANSLATION
  PEACE_TREATY_NO_RULER: "@trigger_no! [COUNTRY.GetLongName] nemá [ruler|e], takže táto zmluva nie je platná." # todo: NEW TRANSLATION
@@ -1164,7 +1164,7 @@
  BUYPROV_FLAVOR: "Kúpa lokality od iného štátu prevedie nad ňou kontrolu za dohodnutú cenu." # todo: NEW TRANSLATION
  BUYPROV_ASK_DESC: "$ACTOR$ chce kúpiť $PROV$ od nás za $PRICE$ [gold_i]." # todo: NEW TRANSLATION
  NOT_SELL_CITY_ALL_TOO_FAR: "@trigger_no! [TARGET_COUNTRY.GetName] nemá žiadnu lokalitu, ktorá je buď susedná s [COUNTRY.GetNameWithNoTooltip], alebo príbrežná a v ich [naval_range|e]." # todo: NEW TRANSLATION
- NOT_SELL_CITY_TOO_FAR: "@trigger_no! [LOCATION.GetName] nie je susedná s [COUNTRY.GetNameWithNoTooltip], je vnútrozemská alebo je mimo ich [naval_range|e]." # todo: NEW TRANSLATION
+ NOT_SELL_CITY_TOO_FAR: "@trigger_no! [LOCATION.GetName] nie je priľahlé k [COUNTRY.GetNameWithNoTooltip] ani k jeho vazalom, je vnútrozemské alebo sa nachádza mimo jeho [naval_range|e]." # todo: CHANGED
  NOT_SELL_CITY_BEING_ANNEXED: "@trigger_no! [COUNTRY.GetNameWithNoTooltip] je práve anektovaný." # todo: NEW TRANSLATION
  NOT_SELL_OUR_LAST_CITY: "@trigger_no! Nie je možné predať poslednú lokalitu!" # todo: NEW TRANSLATION
  NOT_SELL_CITY_UNDER_SIEGE: "@trigger_no! Nie je možné predať lokalitu pod obliehaním!" # todo: NEW TRANSLATION
@@ -2501,3 +2501,8 @@
  CANCEL_appanage_DESC: "Ukončiť stav apanáže." # todo: NEW TRANSLATION
  war_goal_imperial_ban_conquer_province: "$war_goal_conquer_province$" # todo: NEW TRANSLATION
  war_goal_imperial_ban_conquer_province_desc: "$war_goal_conquer_province_desc$" # todo: NEW TRANSLATION
+ PEACE_TREATY_GRANT_INDEPENDENCE_SEPARATE: "[COUNTRY.GetNameWithFlag] majú udelenú nezávislosť" # todo: NEW TRANSLATION
+ PEACE_TREATY_GRANT_INDEPENDENCE_SEPARATE_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] majú udelenú nezávislosť" # todo: NEW TRANSLATION
+ SUBJECT_TYPE_ALLOW_SUBJECT: "$EFFECT_LIST_BULLET$$SUBJECT$ má povolené vytvoriť si vlastné [subjects|e]." # todo: NEW TRANSLATION
+ war_goal_take_capital_liberate_hre_member: "Oslobodenie člena Svätej rímskej ríše" # todo: NEW TRANSLATION
+ war_goal_take_capital_liberate_hre_member_desc: "$generic_war_goal_take_capital_desc$" # todo: NEW TRANSLATION

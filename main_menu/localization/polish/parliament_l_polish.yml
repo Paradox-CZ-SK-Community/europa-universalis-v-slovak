@@ -5,7 +5,7 @@
  IO_PARLIAMENT_DURATION_TXT: "#T [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] v zasadnutí#!\nRokuje o [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebate.GetName] ešte [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration|W] dní v @location![InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]." # todo: NEW TRANSLATION
  PARLIAMENT_ISSUE_WILL_FAIL: "#T Návrh nebude schválený#!\n@trigger_no! [Player.GetGovernment.GetParliament.GetName] #R NE#! schváli [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName]." # todo: NEW TRANSLATION
  PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Návrh bude schválený#!\n[Player.GetGovernment.GetParliament.GetName] schváli [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName]." # todo: NEW TRANSLATION
- HOSTILE_PARLIAMENT_MARKER: "#T Nepriateľské [ParliamentMarker.GetGovernment.GetParliament.GetName] v zasadnutí#!\nMôže byť prerušené [occupying|e] [location|e]." # todo: NEW TRANSLATION
+ HOSTILE_PARLIAMENT_MARKER: "#T Nepriateľský [ParliamentMarker.GetCountry.GetGovernment.GetParliament.GetName] v zasadnutí#!\nDá sa prerušiť [occupying|e] [location|e]." # todo: CHANGED
  PARLIAMENT_NEVER_CALLED: "The $NAME$ has not been called." # todo: NEW TRANSLATION
  PARLIAMENT_CALLED_DATE: "The $NAME$ was called $WHEN|Y$ ago " # todo: NEW TRANSLATION
  PARLIAMENT_MODIFIER_WHEN_DEBATED_TT: "Počas rokovania o návrhu" # todo: NEW TRANSLATION
@@ -50,7 +50,7 @@
  prepare_for_war_select_province_title: "Vyberte [province|e], ktorý bude stanovený ako [war_goal|e]" # todo: NEW TRANSLATION
  select_a_country_to_get_casus_belli_on: "Vyberte [country|e], na ktorý nám náš [Player.GetGovernment.GetParliament.GetName] udelí [casus_belli|e]." # todo: NEW TRANSLATION
  prepare_for_war: "Vytvoriť casus belli" # todo: NEW TRANSLATION
- prepare_for_war_desc: "Požiadať [Player.GetGovernment.GetParliament.GetName], aby schválil [war|e] tým, že nám poskytne legitimný [casus_belli|e].\n• Vyberieme krajinu, na ktorú získame [ShowCasusBelliName('cb_fabricated_conquer_province')] [casus_belli|e]" # todo: NEW TRANSLATION
+ prepare_for_war_desc: "Žiadame [Player.GetGovernment.GetParliament.GetName], aby schválil [war|e] tým, že nám poskytne legitímny [casus_belli|e].\n• Vyberieme krajinu, ktorá nie je [rebel|e] národom ani naším [subject|e], ktorá leží v rámci nášho [diplomatic_range|e] a s ktorou momentálne nemáme [truce|e], aby sme získali: \n[ShowCasusBelliName('cb_fabricated_conquer_province')] [casus_belli|e]" # todo: CHANGED
  PARLIAMENT_IN_SESSION: "[Player.GetGovernment.GetParliament.GetName] v zasadnutí" # todo: NEW TRANSLATION
  promote_castle_building: "Podporiť stavbu $castle$" # todo: NEW TRANSLATION
  promote_castle_building_desc: "V celej krajine sú vynikajúce miesta pre možné opevnenia, pripravené zastaviť postup našich nepriateľov." # todo: NEW TRANSLATION
@@ -228,7 +228,7 @@
  new_model_army_pi_desc: "Útrapy prebiehajúcej občianskej vojny proti royalistom ukázali, že naša armáda potrebuje úplnú reformu." # todo: NEW TRANSLATION
  edict_of_nantes_issue: "Nantský edikt" # todo: NEW TRANSLATION
  edict_of_nantes_issue_desc: "Po rokoch náboženských bojov je čas podporiť jednotu prostredníctvom spolužitia a ukončiť zbytočné prelievanie krvi." # todo: NEW TRANSLATION
- end_the_french_wars_of_religion_tt: "[ShowDisasterName('french_wars_of_religion')] [disaster|e] skončí" # todo: NEW TRANSLATION
+ end_the_french_wars_of_religion_tt: "[ShowDisasterName('french_wars_religion')] [disaster|e] sa skončí" # todo: CHANGED
  mug_promote_rajput_officials: "Povýšiť $rajasthani_language$ úradníkov" # todo: NEW TRANSLATION
  mug_promote_rajput_officials_desc: "Povýšením ľudí hovoriacich $rajasthani_language$ v krajine si môžeme zabezpečiť viacero militaristických úradníkov, na ktorých sa môžeme spoľahnúť." # todo: NEW TRANSLATION
  promote_rajput_officials_passed_tt: "Objaví sa schopný člen [ShowLanguageName('rajasthani_language')] [language|e]." # todo: NEW TRANSLATION
