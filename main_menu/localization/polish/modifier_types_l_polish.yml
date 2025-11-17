@@ -50,9 +50,9 @@
  MODIFIER_TYPE_NAME_morale_recovery_in_friendly: "Obnova morálky na priateľskom území" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_morale_recovery_in_friendly: "Toto ovplyvňuje, ako rýchlo sa [morale|e] [regiment|e] obnovuje v [friendly|e] [locations|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_land_morale_recovery: "Rýchlosť obnovy morálky armády" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_land_morale_recovery: "Toto ovplyvňuje, ako rýchlo sa [morale|e] [regiment|e] obnovuje, keď je pod maximom." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_land_morale_recovery: "Toto ovplyvňuje, ako rýchlo sa [morale|e] [regiment|e] zotavuje, keď je pod svojím maximom." # todo: CHANGED
  MODIFIER_TYPE_NAME_naval_morale_recovery: "Rýchlosť obnovy morálky námorníctva" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_naval_morale_recovery: "Toto ovplyvňuje, ako rýchlo sa [morale|e] [ship|e] obnovuje, keď je pod maximom." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_naval_morale_recovery: "Toto ovplyvňuje, ako rýchlo sa [morale|e] [ship|e] zotavuje, keď je pod svojím maximom." # todo: CHANGED
  MODIFIER_TYPE_NAME_land_unit_attrition: "Attrícia armády" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_land_unit_attrition: "Toto ovplyvňuje, koľko [attrition|e] utrpí [regiment|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_naval_unit_attrition: "Attrícia námorníctva" # todo: NEW TRANSLATION
@@ -81,7 +81,7 @@
  MODIFIER_TYPE_DESC_ship_repair_at_sea_to_max_strength: "Toto ovplyvňuje, do akej úrovne sa môže [ship|e] [repair|e], keď nie je v [port|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_cultural_tradition: "Kultúrna tradícia" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_cultural_tradition: "Toto ovplyvňuje [cultural_tradition|e] našej [primary_culture|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_cultural_tradition_modifier: "Kultúrna tradícia" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_cultural_tradition_modifier: "Kultúrna tradícia %" # todo: CHANGED
  MODIFIER_TYPE_DESC_cultural_tradition_modifier: "$MODIFIER_TYPE_DESC_cultural_tradition$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_cultural_tradition: "Kultúrna tradícia" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_cultural_tradition: "Toto ovplyvňuje [cultural_tradition|e] našej [primary_culture|e]." # todo: NEW TRANSLATION
@@ -2340,7 +2340,7 @@
  MODIFIER_TYPE_DESC_sengoku_increment_recruitment_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('sengoku_increment_recruitment')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_sengoku_offer_hostage_cost_modifier: "$sengoku_offer_hostage$ Náklady" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_sengoku_offer_hostage_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('sengoku_offer_hostage')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_sengoku_ask_for_hostage_cost_modifier: "$sengoku_ask_for_hostage$ Náklady # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_sengoku_ask_for_hostage_cost_modifier: "$sengoku_ask_for_hostage$ Náklady # todo: NEW TRANSLATION"
  MODIFIER_TYPE_DESC_sengoku_ask_for_hostage_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('sengoku_ask_for_hostage')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_sengoku_prove_heritage_cost_modifier: "$sengoku_prove_heritage$ náklady" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_sengoku_prove_heritage_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('sengoku_prove_heritage')]." # todo: NEW TRANSLATION
@@ -2720,7 +2720,7 @@
  MODIFIER_TYPE_NAME_peace_offer_negotiation_power: "Vyjednávacia sila pri ponuke mieru" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_peace_offer_negotiation_power: "To zvyšuje percento War Score, ktoré národ získa v mierovej dohode v porovnaní s ostatnými krajinami." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_language_change_threshold_modifier: "Modifikátor prahu zmeny jazyka" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_language_change_threshold_modifier: "Ovplyvňuje, ako silnejší musí byť jazyk, aby bol považovaný za kandidáta na súdny alebo liturgický jazyk." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_language_change_threshold_modifier: "Toto ovplyvňuje, o koľko silnejší musí byť jazyk, aby bol považovaný za kandidáta na dvorný alebo liturgický jazyk." # todo: CHANGED
  MODIFIER_TYPE_NAME_can_propose_papal_bulls: "Môže navrhovať pápežské buly" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_can_propose_papal_bulls: "Toto umožňuje [country|e] navrhnúť [papal_bulls|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_enact_papal_bull_cost_modifier: "Náklady na schválenie pápežskej buly" # todo: NEW TRANSLATION
@@ -2750,7 +2750,7 @@
  MODIFIER_TYPE_NAME_landfriede_cooldown: "Časové oneskorenie Landfriede" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_landfriede_cooldown: "Toto je časové oneskorenie po použití [ShowCountryInteractionName('enforce_landfriede')] [country_interaction|e] a predtým, než ho možno znova použiť." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allow_overrule_imperial_diet: "Môže prehlasovať cisársky snem" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_allow_overrule_imperial_diet: "Toto umožňuje [hre_emperor|e] použiť [ShowResolutionName('overrule_imperial_diet')] [resolution|e] na vynútenie výsledku debaty [GetInternationalOrganizationType('hre').GetName]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_allow_overrule_imperial_diet: "Toto umožňuje [hre_emperor|e] použiť [ShowGenericActionName('overrule_imperial_diet')] [action|e] na vynútenie výsledku debaty [GetInternationalOrganizationType('hre').GetName]." # todo: CHANGED
  MODIFIER_TYPE_NAME_monthly_papal_authority: "Mesačná pápežská autorita" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_monthly_papal_authority: "Ovplyvňuje, koľko [papal_authority|e] získame každý mesiac." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_papal_authority_modifier: "Modifikátor pápežskej autority" # todo: NEW TRANSLATION
@@ -2995,8 +2995,8 @@
  MODIFIER_TYPE_DESC_hanseatic_shipwright_guild_max_level: "To ovplyvňuje maximálnu úroveň, ktorú môže [ShowBuildingTypeName('hanseatic_shipwright_guild')] dosiahnuť." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allows_hanseatic_federation_buildings: "Umožňuje budovy Hanzovej federácie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_allows_hanseatic_federation_buildings: "Umožňuje prístup k budovám [ShowBuildingTypeName('hanseatic_kontor')] a [ShowBuildingTypeName('hanseatic_shipwright_guild')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_always_allow_levies: "Domobrana vždy povolená" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_always_allow_levies: "Ovplyvňuje, či môžu byť [levies|e] povolené v čase [peace|e] a pri absencii [rebels|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_always_allow_levies: "Vždy povolené všetky odvody" # todo: CHANGED
+ MODIFIER_TYPE_DESC_always_allow_levies: "Umožňuje [country|e] vždy povolať svoje [army_levies|e] a [navy_levies|e], aj keď nie sú vo [war|e] a nemajú žiadnych [rebels|e]." # todo: CHANGED
  MODIFIER_TYPE_NAME_excluded_from_paying_tithe: "Vylúčený z desiatku" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_excluded_from_paying_tithe: "Toto oslobodzuje [country|e] od povinnosti platiť [tithe|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_tithe_cost_modifier: "Modifikátor ceny desiatku" # todo: NEW TRANSLATION
@@ -3790,3 +3790,11 @@
  MODIFIER_TYPE_DESC_forbid_multiple_policies_vote: "Zabraňuje [international_organization|e] mať k dispozícii viac než navrhovanú a aktuálnu sadu [policies|e] pre [ShowResolutionName('policy_vote')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_change_government_type_price_cost_modifier: "$change_government_type_price$ Cost Modifier" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_change_government_type_price_cost_modifier: "Ovplyvňuje [costs|e] zmeny nášho [government_type|e] cez [actions|e] v $lateralview_form_new_country_entry_name$."" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_exempt_from_tribute_cost_modifier: "Náklady na $exempt_from_tribute$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_exempt_from_tribute_cost_modifier: "Toto ovplyvňuje [costs|e] pre [ShowGenericActionName('exempt_from_tribute')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_always_allow_navy_levies: "Vždy povolené námorné odvody" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_always_allow_navy_levies: "Umožňuje [country|e] vždy povolať svoje [navy_levies|e], aj keď nie je vo [war|e] a nemá žiadnych [rebels|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_always_allow_army_levies: "Vždy povolené pozemné odvody" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_always_allow_army_levies: "Umožňuje [country|e] vždy povolať svoje [army_levies|e], aj keď nie je vo [war|e] a nemá žiadnych [rebels|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_rto_create_uc_bey_cost_modifier: "Modifikátor nákladov na $create_uc_bey$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_rto_create_uc_bey_cost_modifier: "Toto ovplyvňuje [costs|e] pre [ShowGenericActionName('create_uc_bey')]." # todo: NEW TRANSLATION

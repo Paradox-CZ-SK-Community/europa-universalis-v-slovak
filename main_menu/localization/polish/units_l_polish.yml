@@ -496,7 +496,7 @@
  a_steppe_horde_desc: "Mongolské deti sa učia jazdiť a strieľať z luku a očakáva sa, že sa pripoja k nájazdovým skupinám, keď vyrastú. V Horde muži kombinujú roľnícke aktivity v čase mieru, zvyčajne pastierstvo, a vojenské povinnosti, keď to veliteľ kmene vyžaduje." # todo: NEW TRANSLATION
  a_tribal_cavalry: "Kmeňová jazda" # todo: NEW TRANSLATION
  a_tribal_cavalry_desc: "Mnohé kmene žijúce na okraji našej krajiny stavajú svoje bytie okolo chovu a starostlivosti o kone a dobytok; žijúc celý život okolo týchto zvierat, rodia sa z nich vynikajúci jazdci.\n\nV zriedkavej príležitosti keď sa silná ruka podarí zorganizovať týchto neukojných bojovníkov do čiastočne súdržnej jednotky, tvoria rýchlu a prekvapivo efektívnu silu." # todo: NEW TRANSLATION
- a_handgonners: "Pochodniari"  # todo: NEW TRANSLATION
+ a_handgonners: "Pochodniari" # todo: NEW TRANSLATION
  a_handgonners_desc: "$a_handgonners$ držia nový typ strelného zariadenia naplneného prachom, ktoré vypaľuje smrteľné olovené guľky a ničí nepriateľské línie, hoci musia byť plne chránení, pretože ich ručné dela sa veľmi pomaly znovu nabíjajú." # todo: NEW TRANSLATION
  a_archers: "Lukostrelci" # todo: NEW TRANSLATION
  a_archers_desc: "$a_archers$ podporujú našich pešiakov paľbou na diaľku, čo im umožňuje postupovať proti nepriateľským líniám pri útoku a lepšie chrániť pozíciu pri obrane." # todo: NEW TRANSLATION
@@ -606,7 +606,7 @@
  a_infantry_column: "Peší stĺpec" # todo: NEW TRANSLATION
  a_infantry_column_desc: "Zvýšená paľba vyvinutá jednotkami radovej pechoty vedie k vzniku nového typu taktiky pechoty, založeného na nácviku rýchlej zmeny formácie z rady do stĺpca a rozhodujúcom útoku s bajonetmi na postavenú nepriateľskú pechotu." # todo: NEW TRANSLATION
  a_cuirassiers_desc: "Držiac krok s meniacimi sa časmi, $a_cuirassiers$ sú ťažká jazda, ktorá odhodila kopije v prospech pištolí a šablí ako svojich hlavných zbraní." # todo: NEW TRANSLATION
- a_flying_battery_desc: "Delostrelectvo je na bojisku zničujúce, no úplne k ničomu, ak nepriateľ nevstúpi do jeho dostrelnej vzdialenosti. $a_flying_battery$ má schopnosť premiestniť sa tam, kde je najviac potrebná, a rýchlo sa redeployovať pred akoukoľvek nepriateľskou odvetou." # todo: NEW TRANSLATION
+ a_flying_battery_desc: "Delostrelectvo je na bojisku zničujúce, ale úplne nepoužiteľné, ak nepriateľ nevstúpi do jeho dostrelu. $a_flying_battery$ má schopnosť presunúť sa tam, kde je najviac potrebná, a rýchlo sa znovu nasadiť skôr, než protivník stihne zareagovať." # todo: CHANGED
  a_order_knights: "Rytieri rádu" # todo: NEW TRANSLATION
  a_order_knights_desc: "V rytier­skom ráde sa od členov vyžaduje majstrovstvo v boji a služba záujmom rádu v bitke. Preto sú $a_order_knights$ najlepšími vojakmi, akých môže rád ponúknuť." # todo: NEW TRANSLATION
  a_conscripts: "Odvedenci" # todo: NEW TRANSLATION
@@ -827,7 +827,7 @@
  STAT_CLIMATE_UNIT: ""[CLIMATE.GetIcon][CLIMATE.GetNameNoUnderline]";"$VAL1|=-2%$";"$VAL2|=+2%$"" # todo: NEW TRANSLATION
  STAT_TOPOGRAPHY_UNIT: ""[TOPOGRAPHY.GetIcon][TOPOGRAPHY.GetNameNoUnderline]";"$VAL1|=-2%$";"$VAL2|=+2%$"" # todo: NEW TRANSLATION
  STAT_VEGETATION_UNIT: ""[VEGETATION.GetIcon][VEGETATION.GetNameNoUnderline]";"$VAL1|=-2%$";"$VAL2|=+2%$"" # todo: NEW TRANSLATION
- COPIED_FROM_COMPARISON: "A [SUBUNITDEFINITION.GetName] má $VAL$ [$NAME$|e] v porovnaní s $ORIG$ [TARGET_SUBUNITDEFINITION.GetName]." # todo: NEW TRANSLATION
+ COPIED_FROM_COMPARISON: "[SUBUNITDEFINITION.GetName] majú $VAL$ [$NAME$|e] v porovnaní s $ORIG$ [TARGET_SUBUNITDEFINITION.GetName]." # todo: CHANGED
  SUBUNITYPE_COMBAT_TT_TITLE: "Bojový výkon" # todo: NEW TRANSLATION
  SUBUNITYPE_IMPACT_TT_TITLE: "Vplyv terénu" # todo: NEW TRANSLATION
  BOMBARD_SUBUNIT_TT: "[artillery_bonus|e]: [SUBUNIT.GetArtilleryBonus|2Y]" # todo: NEW TRANSLATION
@@ -1141,7 +1141,7 @@
  CT_STRENGTH_CASUALTIES: "$ICON$ Straty z taktik: $VAL|+=%$\n" # todo: NEW TRANSLATION
  CT_STRENGTH_CASUALTIES_NAVAL: "$ICON$ poškodené z taktik: $VAL|+=%$\n" # todo: NEW TRANSLATION
  CT_STRENGTH_FACTOR: "$ICON$ Hodinový násobiteľ: $VAL|2Y$\n" # todo: NEW TRANSLATION
- CT_LEVY: "[levy|e] násobiteľ: $VAL|2%$\n" # todo: NEW TRANSLATION
+ CT_LEVY: "[levy|e] proti [regulars|e]: $VAL|2%$\n" # todo: CHANGED
  CT_VS_LEVY: "$THEM$ je [levy|e]: $VAL|2+=%$\n" # todo: NEW TRANSLATION
  CT_MORALE_FACTOR: "[morale_i] hodinový násobiteľ: $VAL|2Y$\n" # todo: NEW TRANSLATION
  CT_UNIT_STRE: "$ICON$ $THEM$: $VAL|+=%$\n" # todo: NEW TRANSLATION
@@ -1154,13 +1154,13 @@
  CT_NOT_ENGAGED_MORALE_FACTOR: "[morale_i] $THEM$ nie je zapojený: $VAL|+=%$\n" # todo: NEW TRANSLATION
  CT_NO_MORALE_DAMAGE_NOT_ENGAGED: "$THEM$ nie je zapojený, takže nie je utrpené žiadne [morale_i] poškodenie\n" # todo: NEW TRANSLATION
  MOVE_LEFT_FLANK: "Presun na ľavé krídlo" # todo: NEW TRANSLATION
- MOVE_ALL_LEFT_FLANK: "Presuň všetky z tejto kategórie na ľavé krídlo" # todo: NEW TRANSLATION
+ MOVE_ALL_LEFT_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetCategory.GetName] na ľavé krídlo" # todo: CHANGED
  MOVE_RIGHT_FLANK: "Presun na pravé krídlo" # todo: NEW TRANSLATION
- MOVE_ALL_RIGHT_FLANK: "Presuň všetky z tejto kategórie na pravé krídlo" # todo: NEW TRANSLATION
+ MOVE_ALL_RIGHT_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetCategory.GetName] na pravé krídlo" # todo: CHANGED
  MOVE_CENTER_FLANK: "Presun do stredu" # todo: NEW TRANSLATION
- MOVE_ALL_CENTER_FLANK: "Presuň všetky z tejto kategórie do stredu" # todo: NEW TRANSLATION
+ MOVE_ALL_CENTER_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetCategory.GetName] na stredné krídlo" # todo: CHANGED
  MOVE_RESERVES_FLANK: "Presun do rezervy" # todo: NEW TRANSLATION
- MOVE_ALL_RESERVES_FLANK: "Presuň všetky z tejto kategórie do rezervy" # todo: NEW TRANSLATION
+ MOVE_ALL_RESERVES_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetCategory.GetName] do rezervy" # todo: CHANGED
  COMBAT_LEFT: "Ľavé krídlo" # todo: NEW TRANSLATION
  COMBAT_CENTER: "Stred" # todo: NEW TRANSLATION
  COMBAT_RIGHT: "Pravé krídlo" # todo: NEW TRANSLATION
@@ -1239,7 +1239,7 @@
  SIEGE_STARTED_DATE: "Začalo pred [Siege.GetTotalDays|V] dňami" # todo: NEW TRANSLATION
  OCC_PHASE_TIMER: "Pokrok obsadzovania v [Siege.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  SIEGE_PHASE_TIMER: "Pokrok obliehania v [Siege.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- SIEGE_PHASE_SIZE_SHORT: "[Siege.GetPhaseSize|Y]d" # todo: NEW TRANSLATION
+ SIEGE_PHASE_SIZE_SHORT: "[Siege.GetPhaseSize|Y]$DAYS_SHORT_LOC$" # todo: CHANGED
  GO_TO_SIEGE: "Otvoriť $game_concept_siege$ [Siege.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  SIEGE_IN_X_DAYS: "Ďalšia fáza obliehania bude o $VAL|Y$ deň(ov)." # todo: NEW TRANSLATION
  OCC_PHASE_TITLE: "Táto $game_concept_occupation$ trvá [Siege.GetPhaseSize|Y] deň z dôvodu:" # todo: NEW TRANSLATION
@@ -1906,10 +1906,16 @@
  a_esho_cavalry_oyo: "Esho jazda" # todo: NEW TRANSLATION
  SUB_FOOD_CONSUMPTION_ICON: "[food_consumption_icon|e]" # todo: NEW TRANSLATION
  a_esho_cavalry_oyo_desc: "Profesionálne pluky menších náčelníkov v rámci národa, títo jazdci nie sú vyberaní podľa známostí, ale podľa zásluh." # todo: NEW TRANSLATION
- REPAIR_SHIP_NO_SAILORS: "Táto [navy|e] sa nedá opraviť, pretože nemáme [sailors|e]."  # todo: NEW TRANSLATION
- MOVE_ALL_TYPE_LEFT_FLANK: "Presunúť všetky jednotky tohto typu na ľavé krídlo"  # todo: NEW TRANSLATION
- MOVE_ALL_TYPE_RIGHT_FLANK: "Presunúť všetky jednotky tohto typu na pravé krídlo"  # todo: NEW TRANSLATION
- MOVE_ALL_TYPE_CENTER_FLANK: "Presunúť všetky jednotky tohto typu na stredné krídlo"  # todo: NEW TRANSLATION
- MOVE_ALL_TYPE_RESERVES_FLANK: "Presunúť všetky jednotky tohto typu do záloh"  # todo: NEW TRANSLATION
- TRANSFER_SUBUNIT_TYPE_TT: "Presunúť všetky jednotky tohto typu"  # todo: NEW TRANSLATION
- TRANSFER_SUBUNIT_CATEGORY_TT: "Presunúť všetky jednotky z tejto kategórie"  # todo: NEW TRANSLATION
+ REPAIR_SHIP_NO_SAILORS: "Táto [navy|e] sa nedá opraviť, pretože nemáme [sailors|e]." # todo: NEW TRANSLATION
+ MOVE_ALL_TYPE_LEFT_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetName] na ľavé krídlo" # todo: CHANGED
+ MOVE_ALL_TYPE_RIGHT_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetName] na pravé krídlo" # todo: CHANGED
+ MOVE_ALL_TYPE_CENTER_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetName] na stredné krídlo" # todo: CHANGED
+ MOVE_ALL_TYPE_RESERVES_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetName] do rezervy" # todo: CHANGED
+ TRANSFER_SUBUNIT_TYPE_TT: "Preniesť všetky [SubUnit.GetDefinition.GetName]" # todo: CHANGED
+ TRANSFER_SUBUNIT_CATEGORY_TT: "Preniesť všetky [SubUnit.GetDefinition.GetCategory.GetName]" # todo: CHANGED
+ n_long_fada_2: "Veľký Long Fada" # todo: NEW TRANSLATION
+ n_long_fada_2_desc: "Vylepšený $n_long_fada$, $n_long_fada_2$ je väčšie plavidlo s viacerými veslami a početnejšou posádkou, schopné vykonávať dlhšie plavby a prejavovať väčšiu moc na moriach." # todo: NEW TRANSLATION
+ n_birlinn: "Birlinn" # todo: NEW TRANSLATION
+ n_birlinn_desc: "Ľahké galeje patriace miestnym náčelníkom spájajú naše ostrovy, ale v čase vojny ich možno povolať." # todo: NEW TRANSLATION
+ a_order_knights_2: "Baneretovia Rádu" # todo: NEW TRANSLATION
+ a_order_knights_2_desc: "$a_order_knights_2$ sú najskúsenejší a najzručnejší rytieri Rádu, často vedú menšie oddiely vojakov do bitky pod vlastným praporom." # todo: NEW TRANSLATION

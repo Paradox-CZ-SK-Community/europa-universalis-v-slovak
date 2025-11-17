@@ -100,7 +100,7 @@
  ALERT_PARLIAMENT_NO_ISSUE: "Momentálne sa nič neprejednáva." # todo: NEW TRANSLATION
  ALERT_UNPROFITABLE_BUILDINGS: "#T Neziskové budovy#!" # todo: NEW TRANSLATION
  ALERT_UNPROFITABLE_BUILDINGS_TEXT: "[buildings|e] sú neziskové v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
- ALERT_UNPROFITABLE_BUILDINGS_ENTRY: "[BUILDING.GetName] in [BUILDING.GetLocation.GetName] : [BUILDING.GetProfit|+=2][gold_i]" # todo: NEW TRANSLATION
+ ALERT_UNPROFITABLE_BUILDINGS_ENTRY: "[BUILDING.GetName] v [BUILDING.GetLocation.GetName] : [BUILDING.GetNetProfitValuePerLevel|+=2][gold_i]" # todo: CHANGED
  ALERT_UNPROFITABLE_BUILDINGS_TOOLTIP: "#T Neziskové budovy v [UnprofitableBuildingsEntry.GetMarket.GetName]#!" # todo: NEW TRANSLATION
  ALERT_UNPROFITABLE_BUILDINGS_TOOLTIP_TEXT: "Nasledujúce [buildings|e] sú neziskové:" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_INPUT: "#T Budovy postrádajú vstupy#!" # todo: NEW TRANSLATION
@@ -108,10 +108,10 @@
  ALERT_BUILDINGS_MISSING_INPUT_MARKET: "[MARKET.GetName]:" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_INPUT_GOODS: "  @[GOODS.GetKey]![GOODS.GetName]:" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_INPUT_BUILDING: "$BULLET_WITH_TAB$ chýba $GOODS_AMOUNT$ pre $BUILDING_AMOUNT|0$ $BUILDING_NAME$" # todo: NEW TRANSLATION
- ALERT_BUILDINGS_MISSING_EMPLOYEES: "#T Budovy postrádajú zamestnancov#!\nNiektoré z našich [buildings|e] nemajú zamestnancov." # todo: NEW TRANSLATION
+ ALERT_BUILDINGS_MISSING_EMPLOYEES: "Niektorým našim [buildings|e] chýbajú pracovníci." # todo: CHANGED
  ALERT_BUILDINGS_MISSING_EMPLOYEES_LOCATION: "[LOCATION.GetName] (Rýchlosť povýšenia [LOCATION.GetPromote]):" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_EMPLOYEES_POP_TYPE: "  [POP_TYPE.GetName]:" # todo: NEW TRANSLATION
- ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING: "$MISSING|Y$ [POP_TYPE.GetIcon] pre [BUILDING_TYPE.GetName] v [LOCATION.GetName] :" # todo: NEW TRANSLATION
+ ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING: "[SBuildingWithMissingEmployees.GetMissingEmployees] [SBuildingWithMissingEmployees.GetBuilding.GetType.GetPopType.GetIcon] pre [SBuildingWithMissingEmployees.GetBuilding.GetType.GetName] v [SBuildingWithMissingEmployees.GetBuilding.GetLocation.GetName]:" # todo: CHANGED
  ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING_MONTHS: "#L ($MONTHS|0$ mesiacov)#!" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING_NONE: "#R žiadne povýšenie#!" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING_LARGE: "Z ďalších $NUM$ lokalít: $VAL|Y$@population!" # todo: NEW TRANSLATION
@@ -120,8 +120,8 @@
  ALERT_PROMOTE_BREAKDOWN_DETAILS: "[LOCATION.GetPromoteInfo]" # todo: NEW TRANSLATION
  ALERT_PROMOTE_BREAKDOWN_DETAIL_FOR_POP_HEADER: "Toto je ďalej upravené podľa:" # todo: NEW TRANSLATION
  ALERT_PROMOTE_BREAKDOWN_DETAIL_FOR_POP: "[POP_TYPE.GetName] [promote|e] rýchlosť: $VALUE|%+=$" # todo: NEW TRANSLATION
- ALERT_RGO_MISSING_EMPLOYEES: "#T RGO postrádajú zamestnancov#!\nNiektoré z našich [resource_gathering_operations|e] nemajú zamestnancov." # todo: NEW TRANSLATION
- ALERT_RGO_MISSING_EMPLOYEES_LOCATION: "$MISSING$ pre [LOCATION.GetRawMaterial.GetIcon] v [LOCATION.GetName]:" # todo: NEW TRANSLATION
+ ALERT_RGO_MISSING_EMPLOYEES: "Niektorým našim [resource_gathering_operations|e] chýbajú pracovníci." # todo: CHANGED
+ ALERT_RGO_MISSING_EMPLOYEES_LOCATION: "[SBuildingWithMissingEmployees.GetMissingEmployees] pre [SBuildingWithMissingEmployees.GetLocation.GetRawMaterial.GetIcon] v [SBuildingWithMissingEmployees.GetLocation.GetName]:" # todo: CHANGED
  ALERT_RGO_MISSING_EMPLOYEES_LARGE: "Z ďalších $NUM$ lokalít: $VAL|Y$@population!" # todo: NEW TRANSLATION
  ALERT_INFLATION_RATE: "#T Rastúca inflácia#!\nNaša inflácia je $INFLATION|V2%$, ale rastie o $CHANGE|<V2%R$ za mesiac." # todo: NEW TRANSLATION
  ALERT_HIGH_INFLATION_RISING: "#T Vysoká inflácia#!\nNaša inflácia je vysoká: $INFLATION|V2%R$ a rastie o $CHANGE|<V2%R$ za mesiac." # todo: NEW TRANSLATION
@@ -151,13 +151,13 @@
  ALERT_HELP_INFORMATION: "#T Vitajte v Europa Universalis V#!\n\nOdporúčame si pred začatím kampane pozrieť @agenda! #high Agenda#!. Uvidíte historický kontext a tipy prispôsobené počiatočnej situácii vašej [country|e].\n\nMôžete sa tiež pozrieť na [Link('hints', '', '@hint! Panel tipov')] pre zobrazenie kompletného zoznamu tipov." # todo: NEW TRANSLATION
  ALERT_NON_EXPERT_WELCOME: "#T Začiatočné rady pre [Player.GetNameWithNoTooltip] V#!\n\nAk chcete vedieť, ako začať s vašou krajinou, odporúčame prečítať počiatočný tip." # todo: NEW TRANSLATION
  ALERT_POPS_WITH_NEEDS: "Pops s potrebami" # todo: NEW TRANSLATION
- ALERT_POPS_WITH_NEEDS_TEXT: "[pops|e] postrádajú [goods|e] v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
+ ALERT_POPS_WITH_NEEDS_TEXT: "[pops|e] postrádajú [goods|e] v niektorých našich [markets|e]. Nemalo by nás to znepokojovať, pokiaľ nezačnú [rebel|e]." # todo: CHANGED
  ALERT_POPS_WITH_NEEDS_ENTRY: "$BULLET_WITH_TAB$Chýba $MISSINGGOODS$ v [MARKET.GetName]" # todo: NEW TRANSLATION
  CONTROL_GROUPS_ALERT_ADVICE: "#T Možné skupiny ovládania#!\nMôžete vytvoriť skratky na niektoré entity stlačením Ctrl+číslo s vybranou entitou:\n$BULLET$[markets|e]\n$BULLET$[locations|e]\n$BULLET$[units|e]\n$BULLET$[characters|e]\n$BULLET$[goods|e]\n$BULLET$[international_organizations|e]\n$BULLET$[countries|e]" # todo: NEW TRANSLATION
  CALL_PARLIAMENT_ALERT: "#T [Player.GetGovernment.GetParliament.GetName] možné#!\nTeraz môžeme povolať naše [estates|e] do [Player.GetGovernment.GetParliament.GetName], aby sme vyriešili prípadné [parliament_issue|e], zároveň to dáva príležitosti vytvoriť [casus_belli|e], zvýšiť [taxes|e] alebo získať väčšie [army_levies|e] a [navy_levies|e]." # todo: NEW TRANSLATION
  ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "#T [Player.GetGovernment.GetParliament.GetName] požadované#!\nNaše [estates|e] sú nespokojné, pretože uplynulo $VAL|0Y$ mesiacov od posledného zvolania [parliament|e]. Momentálne to má nasledujúce efekty:\n$HOW$" # todo: NEW TRANSLATION
- ALERT_HAS_DISLOYAL_SUBJECTS: "#T Neloajálni poddaní#!\nNiektorí z našich [subjects|e] majú nízke [subject_loyalty|e] a nepridajú sa do našich [wars|e]:" # todo: NEW TRANSLATION
- ALERT_HAS_REBELLIOUS_SUBJECTS: "#T Rebelskí poddaní#!\nNiektorí z našich [subjects|e] majú veľmi nízke [subject_loyalty|e] a nepridajú sa do našich [wars|e]:\n" # todo: NEW TRANSLATION
+ ALERT_HAS_DISLOYAL_SUBJECTS: "Niektorí z našich [subjects|e] majú nízku [subject_loyalty|e] a nezúčastnia sa našich [wars|e]:" # todo: CHANGED
+ ALERT_HAS_REBELLIOUS_SUBJECTS: "Niektorí z našich [subjects|e] majú veľmi nízku [subject_loyalty|e] a nezúčastnia sa našich [wars|e]:\n" # todo: CHANGED
  ALERT_DISLOYAL_SUBJECTS_ENTRY: "$BULLET_WITH_TAB$[COUNTRY.GetName]: $LOYALTY$" # todo: NEW TRANSLATION
  ALERT_DISLOYAL_SUBJECTS_EXTRA_NUM: " a ďalších $VAL|V$ [subjects|e]..." # todo: NEW TRANSLATION
  ALERT_HAS_UNRAISED_LEVIES: "#T Nepovolané domobrany#!\nMôžeme povolať [levies|e] na boj v našich [wars|e].\n\n" # todo: NEW TRANSLATION
@@ -173,7 +173,7 @@
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "#T Trhy s nízkymi zásobami potravín#!\nV nasledujúcich [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] mesiacoch dôjde k vyčerpaniu [food_stockpile|e] na nasledujúcich [markets|e]:\n" # todo: NEW TRANSLATION
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_ENTRY: "@market! [Market.GetName]: [Market.GetFoodStockpile|2Y]@food! ([Market.GetMonthlyFoodWithLabel])" # todo: NEW TRANSLATION
  ALERT_NO_PARLIAMENT_DEBATE: "#T Žiadne debaty v parlamente#!\n[COUNTRY.GetGovernment.GetParliament.GetName] je aktívny, ale neprejednávajú žiadne [parliament_issues|e].\n\nRadšej im dajme niečo na riešenie!\n\n" # todo: NEW TRANSLATION
- ALERT_DEPOPULATING_LOCATIONS: "#T Lokality sa vyľudňujú#!\nNiektoré [locations|e] rýchlo strácajú [population|e]!\n\n" # todo: NEW TRANSLATION
+ ALERT_DEPOPULATING_LOCATIONS: "Niektoré [locations|e] rýchlo strácajú svoju [population|e]!\n\n" # todo: CHANGED
  ALERT_DEPOPULATING_LOCATIONS_ENTRY: "@location! [LOCATION.GetName]: [LOCATION.GetPopulationChangeLabel]@population!" # todo: NEW TRANSLATION
  ALERT_DEPOPULATING_LOCATIONS_LARGE: "Z ďalších $NUM$ lokalít: $VAL$@population!" # todo: NEW TRANSLATION
  ALERT_TRUCE_EXPIRES: "#T Máme prímeria, ktoré čoskoro vypršia#!\nKeď [truce|e] skončí, vojna môže byť opäť vyhlásená!\n$COUNTRIES$\n\n" # todo: NEW TRANSLATION
@@ -235,4 +235,13 @@
  ALERT_PRIORITY_PERSONALIZED: "8" # todo: NEW TRANSLATION
  ALERT_HAS_LESS_POWER_IN_UNION: "#T [Localize('senior_partner')] postavenie ohrozené #!" # todo: NEW TRANSLATION
  ALERT_HAS_LESS_POWER_IN_UNION_TEXT: "Môžeme stratiť naše [senior_partner|e] postavenie v [AlertHasLessPowerInUnion.GetUnion.GetName]. Nasledujúci [members|e] majú vyšší [great_power_score|e] ako my:" # todo: NEW TRANSLATION
- ALERT_HAS_LESS_POWER_IN_UNION_LEFT_CLICK: "Otvoriť zobrazenie [union|e]" # todo: NEW TRANSLATION
+ ALERT_HAS_LESS_POWER_IN_UNION_LEFT_CLICK: "Otvoriť zobrazenie [union|e]"
+ ALERT_BUILDINGS_MISSING_EMPLOYEES_TT: "#T Budovy bez zamestnancov#!"
+ ALERT_RGO_MISSING_EMPLOYEES_TT: "#T RGO bez zamestnancov#!"
+ ALERT_DEPOPULATING_LOCATIONS_TT: "#T Lokality sa vyľudňujú#!"
+ ALERT_CTA_CYCLE_LOCATIONS_LEFT_CLICK: "Prechádzať medzi [Concept('locations','lokalitami')|e]"
+ ALERT_HAS_DEVASTATED_LOCATIONS: "#T Zdevastované [Localize('Locations')] #!"
+ ALERT_HAS_DEVASTATED_LOCATIONS_TEXT: "Nasledujúce [GetDataModelSize(AlertHasDevastatedLocations.GetDevastatedLocations)|w] [locations|e] sú zdevastované:" # todo: NEW TRANSLATION
+ ALERT_CTA_CYCLE_POLICIES_LEFT_CLICK: "Prechádzať medzi [Concept('policies','politikami')|e]"
+ ALERT_CAN_CODIFY_NEW_POLICIES: "#T Nové [Localize('Policies')|l] sú dostupné #!"
+ ALERT_CAN_CODIFY_NEW_POLICIES_TEXT: "Nasledujúce [Concept('laws','zákony')|e] je možné kodifikovať pomocou nových [Concept('policies','politík')|e]:"
