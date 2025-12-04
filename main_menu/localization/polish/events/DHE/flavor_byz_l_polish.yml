@@ -49,7 +49,7 @@
  flavor_byz.13.title: "Brilantné centrum učenia" # todo: NEW TRANSLATION
  flavor_byz.13.desc: "Napriek ťažkostiam obklopujúcim náš ľud zostávajú naše umenia a kultúra živé a prestížne ako nikdy predtým. Žiadne miesto nie je lepším príkladom nášho umeleckého vplyvu a kultivácie než [target_location.GetName]. Slúžiac ako odrazový mostík k rozvoju a šíreniu [ShowInstitutionName('renaissance')], ľudia privítali a rozvinuli školy umenia a myslenia a zažili nádherné zlaté obdobie filozofie a [ROOT.GetCountry.GetAdjective] prejavu." # todo: NEW TRANSLATION
  flavor_byz.13.a: "Financovať jeho rozšírenie." # todo: NEW TRANSLATION
- flavor_byz.13.b: "Nech sa bohatstvo rozšíri po [target_province.GetName]!" # todo: NEW TRANSLATION
+ flavor_byz.13.b: "Nech sa bohatstvo rozšíri po [target_province.GetNameWithNoTooltip]!" # todo: CHANGED
  flavor_byz.13.c: "Tieto peniaze je lepšie vynaložiť inde." # todo: NEW TRANSLATION
  flavor_byz.14.title: "Návrh [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]" # todo: NEW TRANSLATION
  flavor_byz.14.desc: "Naša flotila už dlhý čas chátra. To, čo bolo kedysi hrdým odvetvím našej mohutnej moci, sa stalo predmetom posmechu sveta. Nepochybne sa naši drzí susedia, ktorí túžia po našej krajine, pustili do sporu o naše námorné panstvo a často vykonávajú vpády cez naše prístavy. V čase našej núdze sa delegáti zo [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] prihlásili s kurióznym návrhom. Podľa ich korešpondencie chcú prevziať velenie nad našimi námornými silami a zároveň ich financovať..." # todo: NEW TRANSLATION
@@ -118,7 +118,7 @@
  flavor_byz.28.title: "[ROOT.GetCountry.GetGovernment.GetCourtTitle] v [ShowAreaNameWithNoTooltip('morea_area')]" # todo: NEW TRANSLATION
  flavor_byz.28.desc: "S naším úpadkom v [ShowRegionName('balkan_region')] prišiel [target_character.GetName] s plánom, aby naša ríša prežila. Zriadením novej strediskovej vlády v [target_location.GetName] a opevnením [ShowAreaName('morea_area')] môžeme zaistiť, že žiadny cudzinec nás neobsadí bez veľkých strát." # todo: NEW TRANSLATION
  flavor_byz.28.a: "Možno majú slová [target_character.GetNameWithNoTooltip] isté opodstatnenie..." # todo: NEW TRANSLATION
- flavor_byz.28.b: "Opustenie [target_location2.GetName] nám nič neprinesie." # todo: NEW TRANSLATION
+ flavor_byz.28.b: "Opustenie [target_location2.GetNameWithNoTooltip] nám nič dobré neprinesie." # todo: CHANGED
  flavor_byz.29.title: "Katholikon Mouseion" # todo: NEW TRANSLATION
  flavor_byz.29.desc: "Keďže [target_location.GetName] je popredným mestom rodu [target_character.GetDynasty.GetName], [target_character.GetName] plánuje inštitúciu v kláštore sv. Jána Prodroma. Taká stavba by si vyžadovala veľa zdrojov a mnohé diela, ktoré by naša krajina možno musela objednať." # todo: NEW TRANSLATION
  flavor_byz.29.a: "Žiadna cena nezastaví [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -181,7 +181,7 @@
  flavor_byz.42.desc: "Narodený v [target_location.GetName], [target_artist.GetName] študoval západné medicínske a filozofické smery od veľmi mladého veku. Študoval na viacerých univerzitách, nadobudol množstvo vedomostí a ovláda mnohé jazyky. Možno takýto vzdelaný filozof bude užitočný v našom [ROOT.GetCountry.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION
  flavor_byz.42.historical_info: "Narodený na Mykonose, Alexandros Mavrokordatos bol grécky lekár za tureckej nadvlády. Po štúdiu na Západe, najmä na Univerzite v Bologni, napísal niekoľko traktátov, ako #italic Instrumentum Pneumaticum Circulandi Sanguinis sive modu usu pulmonum#!. Neskôr slúžil sultánovi Mehmedovi IV., pomáhal pri rokovaniach, ktoré viedli k Treaty of Karlowitz v roku 1699, a podarilo sa mu získať značnú moc na osmanskom dvore, čo umožnilo jeho rodine vládnuť v Moldavsku." # todo: NEW TRANSLATION
  flavor_byz.42.a: "Pozvime [target_artist.GetNameWithNoTooltip] do [target_location2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_byz.42.b: "Bol by skvelým diplomatom pre [target_country.GetName]." # todo: NEW TRANSLATION
+ flavor_byz.42.b: "Bol by skvelým diplomatom pre [target_country.GetNameWithNoTooltip]." # todo: CHANGED
  flavor_byz.42.c: "Je príliš nákladný na udržiavanie." # todo: NEW TRANSLATION
  flavor_byz.43.title: "Založenie Heptanese školy" # todo: NEW TRANSLATION
  flavor_byz.43.desc: "Keď už je Krétska škola etablovaná a západné umenie dominuje v [ShowContinentName('europe')], [ShowCultureName('greek_culture')] preberajú tento nový umelecký smer. Predovšetkým [ShowLocationName('corfu')] zažilo novú vlnu týchto umelcov. Možno je čas založiť novú školu v [ShowProvinceDefinitionName('ionian_islands_province')]." # todo: NEW TRANSLATION
@@ -293,7 +293,7 @@
  flavor_byz.1102.title: "Debata storočí" # todo: NEW TRANSLATION
  flavor_byz.1102.desc: "'To je úplná katastrofa.' 'Je toto koniec pre [ShowReligionAdjective('orthodox')] vieru?' sú len niektoré z často počutých fráz okolo konfliktu medzi [target_character2.GetName] a [target_character.GetName]. Zatiaľ čo prvý je zanieteným zástancom hesychastických praktík, druhý bojoval zubami-nechtami, aby ich zdiskreditoval a delegitimizoval. Vzájomne si vhadzujúc urážky a zároveň volajúc na božstvo, tieto dve osoby naozaj spôsobili rozkol medzi veriacimi [ShowReligionAdjectiveWithNoTooltip('orthodox')] v [target_location.GetName]. Musí sa konať hneď, inak riskujeme, že pobúrenie prerastie do povstania!" # todo: NEW TRANSLATION
  flavor_byz.1102.a: "Konaj podľa toho, čo kážeš, a zostaň radšej ticho, ideálne navždy!" # todo: NEW TRANSLATION
- flavor_byz.1102.b: "[target_character.GetNameWithNoTooltip] sa bude páčiť [target_character.GetHerHis] nový domov v [target_country.GetName]." # todo: NEW TRANSLATION
+ flavor_byz.1102.b: "[target_character.GetNameWithNoTooltip] bude mať rád [target_character.GetHerHis] nový domov v [target_country.GetNameWithNoTooltip]." # todo: CHANGED
  flavor_byz_title_key: "Ruka mieru" # todo: NEW TRANSLATION
  flavor_byz.1200.title: "$flavor_byz_title_key$" # todo: NEW TRANSLATION
  flavor_byz.1200.desc: "Antagonistické sklony [GetCountry('TUR').GetName] sa ukázali byť ťažko zvládnuteľné a odvádzajú nás od našich skutočných cieľov stabilizovať náš [ROOT.GetCountry.GetFlavorRank]. Našťastie vládca nášho hlučného a hádavého suseda, [orhan_scope.GetName], prejavil záujem o milovanú dcéru nášho vládcu, milovanú [theodora_scope.GetName].\n\nMôžeme prisľúbiť ruku [theodora_scope.GetShortNameWithNoTooltip] [orhan_scope.GetShortNameWithNoTooltip] a zabezpečiť trvalú alianciu, ktorá ukončí ich agresie." # todo: NEW TRANSLATION
