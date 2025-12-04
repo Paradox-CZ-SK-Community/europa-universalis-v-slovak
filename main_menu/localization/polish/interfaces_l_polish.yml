@@ -176,7 +176,7 @@
  RENTED_SUBUNITS: "Podjednotky" # todo: NEW TRANSLATION
  UNIT_MAINTENANCE_DET: "Údržba $VAL$[$ICON$_i] pre [UNIT.GetNameWithNoTooltip] z dôvodu:" # todo: NEW TRANSLATION
  UNIT_REPAIR_DET: "Oprava/posilnenie $VAL$[$ICON$_i] pre [UNIT.GetNameWithNoTooltip] z dôvodu:" # todo: NEW TRANSLATION
- AW_STR_SCALE: "Pri $VAL|%2$ [strength|e]: #V x$VAL|$#!" # todo: NEW TRANSLATION
+ AW_STR_SCALE: "Pri $VAL|%2$ [strength|e]: #V x$VAL|2$#!" # todo: CHANGED
  CURRENTLY_REINFORCE_PER_MONTH: "Každý mesiac" # todo: NEW TRANSLATION
  BEST_ARMY_UNIT_ENTRY: "[SUBUNITDEFINITION.GetCategory.GetIcon][SUBUNITDEFINITION.GetCategory.GetNameWithNoTooltip]: [SUBUNITDEFINITION.GetName]" # todo: NEW TRANSLATION
  FOREIGN_COUNTRY_ARMY: "Armády [Country.GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
@@ -214,8 +214,8 @@
  CONTINUE_AS_COUNTRY: "[Select_CString(FrontEndMainView.HasLatestPlaythrough, Concatenate(Localize('CONTINUE_AS_PREFIX'), Concatenate(PlaythroughItem.GetPlaythroughPlayerCountryName, Localize('CONTINUE_AS_SUFFIX'))), Localize('MULTIPLAYER_LOADING'))]" # todo: NEW TRANSLATION
  MIGRATION_INF_PROV_HED: "$VAL$ minulý mesiac z dôvodu:" # todo: NEW TRANSLATION
  WAR_SCORE_TT_TILE: "Vojnové skóre v [War.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- WAR_SCORE_SOURCES: "Vojnové skóre [War.GetWarScore|+=2%/] je spôsobené:" # todo: NEW TRANSLATION
- PEACE_VIEW_WAR_SCORE_SOURCES: "Vojnové skóre [PeaceOfferLateralView.GetWarScore|+=2%/] je spôsobené:" # todo: NEW TRANSLATION
+ WAR_SCORE_SOURCES: "Hodnota [war_score|e] [War.GetWarScore|+=2%/] [war_score_icon] je spôsobená:" # todo: CHANGED
+ PEACE_VIEW_WAR_SCORE_SOURCES: "Hodnota [war_score|e] [PeaceOfferLateralView.GetWarScore|+=2%/] [war_score_icon] je spôsobená:" # todo: CHANGED
  AND_X_MORE_OCCUPIED: "a ďalších $NUM$ [occupied|e]: $VAL|+=2%/$" # todo: NEW TRANSLATION
  AND_X_MORE_BATTLES: "a ďalších $NUM$ [battles|e]: $VAL|+=2%/$" # todo: NEW TRANSLATION
  CURRENT_RESEARCH_TITLE: "Aktuálny výskum" # todo: NEW TRANSLATION
@@ -245,8 +245,6 @@
  COUNTRY_INST_EMBRACED: "[INSTITUTION.GetName]: [embraced|e]" # todo: NEW TRANSLATION
  COUNTRY_INST_UNKNOWN: "[INSTITUTION.GetName]: neznáme" # todo: NEW TRANSLATION
  COUNTRY_INST_PROGRESS: "[INSTITUTION.GetName]: $VAL|2%V$" # todo: NEW TRANSLATION
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_CABINET_INSTITUTIONS_HEADER: "Pokrok inštitúcií v [InteractionTarget.GetProvince.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  CURRENT_FOOD_IN_TT: "Aktuálne zásoby potravín" # todo: NEW TRANSLATION
  MONTHLY_FOOD_BALANCE_IN_TT: "Mesačná zmena" # todo: NEW TRANSLATION
  DAILY_FOOD_BALANCE_IN_TT: "Denná zmena" # todo: NEW TRANSLATION
@@ -638,7 +636,7 @@
  RAISE_LEVY_IN_LOC: "Levy budú zvolané v [LOCATION.GetName]" # todo: NEW TRANSLATION
  RAISE_N_LEVY_IN_LOC: "Levy budú zvolané v [LOCATION.GetName]" # todo: NEW TRANSLATION
  NUM_ARTIST_HEADER: "Umeleckí umelci v [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- NUM_POSSIBLE_ARTITS_WHY: "Krajina [Country.GetLongName] dokáže podporiť [Country.GetModifierCappedValueWithNoTooltip('num_possible_artists')|W] $game_concept_artists$. V súčasnosti je v našej krajine [Country.GetCharacterArtistsAmount|W] $game_concept_artists$." # todo: NEW TRANSLATION
+ NUM_POSSIBLE_ARTITS_WHY: "Momentálne máme v našom [country|e] [Country.GetCharacterArtistsAmount|W] $game_concept_artists$.\n\n#italic Mohli by sme zaplatiť za najať až [Country.GetModifierCappedValueWithNoTooltip('num_possible_artists')|W] $game_concept_artists$, ak by sme ich mali menej, ale ďalší by mohli do nášho [country] prísť inými spôsobmi, napríklad cez [events|e].#!" # todo: CHANGED
  NUM_OF_CURR_ARTISTS: "Toto sú naši [artists|e]:" # todo: NEW TRANSLATION
  NO_NUMBER_OF_ARTISTS: "V súčasnosti nemáme žiadnych dostupných [artists|e]." # todo: NEW TRANSLATION
  CURR_ARTISTS_HAS_JOB_TT: "Pracuje na novom [Character.GetArtInProgress.GetName], a je približne [Character.GetArtProgress|%0Y] hotový." # todo: NEW TRANSLATION
@@ -725,7 +723,7 @@
  EXPENSE_MAINT_TT_TEXT: "Pri investícii [MaintenanceSetting.GetSliderValue|2=%V] je [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.GetName] [MaintenanceSetting.GetExpense|+=2R]@gold!." # todo: CHANGED
  EXPENSE_MAINT_TT_TEXT_LONG: "Pri investícii [MaintenanceSetting.GetSliderValue|2=%V] je [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.GetName] [MaintenanceSetting.GetExpense|+=2R]@gold!, čo má za následok mesačnú zmenu [MaintenanceSetting.GetExpenseBenefit]." # todo: CHANGED
  EXPENSE_MAINT_TT_TEXT_LONG_ALT: "Pri investícii [MaintenanceSetting.GetSliderValue|2=%V] je [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.GetName] [MaintenanceSetting.GetExpense|+=2R]@gold!." # todo: CHANGED
- EXPENSE_MAINT_MAX_INVESTMENT_T: "Maximálna investícia je [MaintenanceSetting.GetMaxExpenseNoFormat|2V]@gold! z nášho [economical_base|e] [MaintenanceSetting.GetSettingOwner.GetEconomicalBase|2]@tax_base!.\nToto je spôsobené naším [Localize(Concatenate('MODIFIER_TYPE_NAME_', MaintenanceSetting.GetModifier))|V] [MaintenanceSetting.GetSettingOwner.GetModifierValueNoFormat(MaintenanceSetting.GetModifier)]:" # todo: NEW TRANSLATION
+ EXPENSE_MAINT_MAX_INVESTMENT_T: "Maximálna investícia je [MaintenanceSetting.GetMaxExpenseNoFormat|2V]@gold! z nášho [economical_base|e] vo výške [MaintenanceSetting.GetSettingOwner.GetEconomicalBaseWithLabel|2]@tax_base!.\nToto je spôsobené naším [Localize(Concatenate('MODIFIER_TYPE_NAME_', MaintenanceSetting.GetModifier))|V] vo výške [MaintenanceSetting.GetSettingOwner.GetModifierValueNoFormat(MaintenanceSetting.GetModifier)]:" # todo: CHANGED
  FORTS_LIMIT_TT_TEXT_TITLE: "Limit pevností [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  FORTS_LIMIT_TT_LIST_TITLE: "Limit pevností je [Country.GetFortLimit|W] z dôvodu:" # todo: NEW TRANSLATION
  FORTS_LIMIT_TT_LIST_TITLEb: "[fort_limit] usage is $AMOUNT|2$ kvôli:" # todo: NEW TRANSLATION
@@ -738,7 +736,7 @@
  PAYEE_SCALE_REASON: "$PAYER$ dostáva $PERCENTAGE|%Y$ z celkového príspevku. Z celkovej proporcie $TOTAL|2Y$ je ich podiel založený na:" # todo: NEW TRANSLATION
  LEGITIMACY_INVESTMENT_TOOLTIP_T: "$game_concept_court_maintenance$ [CEconomy.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  LEGITIMACY_INVESTMENT_TT_TEXT: "Pri investícii [CEconomy.GetMaintenancePercentage('court_maintenance')|2=%V] je #V $game_concept_court_maintenance$#! [CEconomy.GetCountry.GetName] [CEconomy.GetExpenseSettingInvestmentExpenseInfo('court_maintenance')|2R]@gold!, pre mesačný nárast [CEconomy.GetExpenseSettingChange('court_maintenance')|2=G]@[CEconomy.GetCountry.GetGovernment.GetGovernmentType.GetPowerKey]!." # todo: NEW TRANSLATION
- LEGITIMACY_INVESTMENT_TOOLTIP: "Maximálna investícia je [CEconomy.GetMaxExpenseSettingExpenseNoFormat('court_maintenance')|2V]@gold! z nášho [economical_base|e] [CEconomy.GetCountry.GetEconomicalBase] @tax_base!.\nToto je spôsobené naším [Localize(Concatenate('MODIFIER_TYPE_NAME_', CEconomy.GetExpenseSettingModifier('court_maintenance')))|V] [CEconomy.GetCountry.GetModifierValueNoFormat(CEconomy.GetExpenseSettingModifier('court_maintenance'))]:" # todo: NEW TRANSLATION
+ LEGITIMACY_INVESTMENT_TOOLTIP: "Maximálna investícia je [CEconomy.GetMaxExpenseSettingExpenseNoFormat('court_maintenance')|2V]@gold! z nášho [economical_base|e] vo výške [CEconomy.GetCountry.GetEconomicalBaseWithLabel] @tax_base!.\nToto je spôsobené naším [Localize(Concatenate('MODIFIER_TYPE_NAME_', CEconomy.GetExpenseSettingModifier('court_maintenance')))|V] vo výške [CEconomy.GetCountry.GetModifierValueNoFormat(CEconomy.GetExpenseSettingModifier('court_maintenance'))]:" # todo: CHANGED
  CULTURE_INVESTMENT_TOOLTIP_T: "$game_concept_cultural_maintenance_s$ [CEconomy.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  CULTURE_INVESTMENT_TT_TEXT: "Pri investícii [CEconomy.GetMaintenancePercentage('cultural_maintenance')|2=%V] je #V $game_concept_cultural_maintenance_s$#! [CEconomy.GetCountry.GetName] [CEconomy.GetExpenseSettingInvestmentExpenseInfo('cultural_maintenance')|2R]@gold!, pre mesačný nárast [CEconomy.GetExpenseSettingChange('cultural_maintenance')|+2=G]@prestige!." # todo: NEW TRANSLATION
  CULTURE_INVESTMENT_TOOLTIP: "Zdroje:" # todo: NEW TRANSLATION
@@ -1169,7 +1167,7 @@
  FOREIGN_REL_INCOME: "[income] [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ARMY_SIZE_TT_TITLE: "Veľkosť armády [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ARMY_SIZE_TT_TEXT: "Veľkosť armády [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- ARMY_SIZE_TT_TABLE_TITLE: "[Country.GetName] môže postaviť [Country.GetRaisedAndPotentialLevyStrength|L0] mužov, kombinujúc [regulars], povolané [army_levies] a potenciálne [army_levies]. Najeďte kurzorom ponad čísla pre detaily." # todo: CHANGED
+ ARMY_SIZE_TT_TABLE_TITLE: "[Country.GetName] môže naverbovať [Country.GetTotalArmyStrengthAndPotentialLevies|L0] mužov, kombinujúc [regulars], povolané [army_levies] a potenciálne [army_levies]. Najeďte kurzorom myši na čísla pre podrobnosti." # todo: CHANGED
  NAVY_SIZE_TT_TITLE: "Veľkosť námorníctva [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  NAVY_SIZE_TT_TEXT: "Veľkosť námorníctva [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  NAVY_SIZE_TT_TABLE_TITLE: "[Country.GetName] môže zmobilizovať [Country.GetTotalNavyStrengthAndPotentialLevies|0W] [ships], kombinujúc [regulars] a [navy_levies]:" # todo: CHANGED
@@ -1247,7 +1245,6 @@
  PROMOTION_TT_TEXT: "Rýchlosť povyšovania populácie v [Player.GetName] je [Player.GetModifierValueNoFormat('global_pop_promotion_speed_modifier')]" # todo: NEW TRANSLATION
  LIST_TITLE_PROMOTION: "Rýchlosť povyšovania populácie [Player.GetModifierValueWithNoTooltipNoSign('global_pop_promotion_speed_modifier')|V] je spôsobená:" # todo: NEW TRANSLATION
  LIST_TITLE_DEMOTION: "Rýchlosť znižovania populácie [Player.GetModifierValueWithNoTooltipNoSign('global_pop_demotion_speed_modifier')|V] je spôsobená:" # todo: NEW TRANSLATION
- PROMOTION_DEMOTION_CONCEPT: "#w | #e $game_concept_demotion$#!" # todo: NEW TRANSLATION
  DIPLOMACY_RELATIONS_TAB: "Vzťahy" # todo: NEW TRANSLATION
  DIPLOMACY_RELATIONS_TAB_TEXT: "Odtiaľto môžete spravovať svoju [diplomacy|e] s inými [countries|e]." # todo: NEW TRANSLATION
  DIPLOMACY_RELATIONS_TAB_FLAVOR_TEXT: "'V záležitostiach ľudí je príliv. Ktorý, chytený pri prúde, vedie k šťastiu.'" # todo: NEW TRANSLATION
@@ -1562,7 +1559,6 @@
  AREA_IS_NOT_ADJACENT_TO_FULLY_DISCOVERED: "@trigger_no![AREA.GetName] nie je susediaca s oblasťou, ktorú máme úplne [discovered|e]!" # todo: NEW TRANSLATION
  AREA_IS_NOT_ADJACENT_TO_SEA_OR_CONTROLLED: "@trigger_no![AREA.GetName] nie je ani pobrežná, ani nesusedí s oblasťou, ktorú my alebo [subject|e] [owns|e]." # todo: NEW TRANSLATION
  AREA_IS_ALREADY_EXPLORING: "@trigger_no! Už máme misiu na [discover|e] [AREA.GetName]" # todo: NEW TRANSLATION
- AREA_IS_NOT_ADJACENT: "@trigger_fail! Nepreskúmali sme žiadnu [area|e] susediacu s [AREA.GetName]" # todo: NEW TRANSLATION
  START_EXPLORATION: "Začať prieskum" # todo: NEW TRANSLATION
  START_EXPLORATION_I: "Ľavé kliknutie pre začatie prieskumu" # todo: NEW TRANSLATION
  POSSIBLE_EXPLORATIONS: "Možné nové prieskumy" # todo: NEW TRANSLATION
@@ -2370,7 +2366,7 @@
  SORT_POP_GOODS_ACCESS: "Prístup k tovaru" # todo: NEW TRANSLATION
  SORT_POP_SATISFACTION: "Spokojnosť" # todo: NEW TRANSLATION
  SORT_POP_REBEL: "Vernosť" # todo: NEW TRANSLATION
- LOYAL_POP: "(verný)" # todo: NEW TRANSLATION
+ LOYAL_POP: "Loajálny" # todo: CHANGED
  POP_JOIN_REBELS: "Ak je [pop_satisfaction|e] pod [LOCATION.GetModifierValueWithCountryCapped('local_pop_join_rebel_threshold', 'pop_join_rebel_threshold')], pop sa pridá k [rebel|e].\nStane sa opäť verný, ak spokojnosť vzrastie nad [LOCATION.GetModifierValueWithCountryCapped('local_pop_leave_rebels_threshold', 'pop_leave_rebels_threshold')]." # todo: NEW TRANSLATION
  POP_CURRENT_SATISFACTION: "Spokojnosť [POP.GetUncappedSatisfaction|+=2%] je spôsobená:" # todo: NEW TRANSLATION
  POP_CURRENT_LITERACY_HEADER: "#T Aktuálna gramotnosť#!\nAktuálna gramotnosť $VALUE|2/%Y$\n" # todo: NEW TRANSLATION
@@ -2778,7 +2774,7 @@
  EST_SATISFACTION_TITLE: "Aktuálna spokojnosť [Estate.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_TAX_TOO_LOW: "@warning_icon! Keďže spokojnosť je pod $VAL|Y2%$, nie je možné od tejto šľachty vyberať [taxes|e]." # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_TAX_THRESHOLD: "Ak spokojnosť klesne pod $VAL|Y2%$, nebude možné od tejto šľachty vyberať [taxes|e]." # todo: NEW TRANSLATION
- ESTATE_SATISFACTION_TOOLTIP: "Aktuálne: [ESTATE.GetSatisfaction|Y2%]\nMesačná zmena: $CHANGE_TARGET$\n[estate_satisfaction_equilibrium|e]: $TARGET$" # todo: NEW TRANSLATION
+ ESTATE_SATISFACTION_TOOLTIP: "[estate_satisfaction|e]: [ESTATE.GetSatisfactionWithTooltip|L2%]\nMesačná zmena: $CHANGE_TARGET$\n[estate_satisfaction_equilibrium|e]: $TARGET$" # todo: CHANGED
  ESTATE_SATISFACTION_LEVY_TOO_LOW: "@warning_icon! Keďže spokojnosť je pod $VAL|Y2%$, nie je možné od tejto šľachty povolať [army_levies|e] ani [navy_levies|e]." # todo: NEW TRANSLATION
  ESTATE_SATISFACTION: "[estate_satisfaction|e]: [ESTATE.GetSatisfaction|Y%] (#TOOLTIP:$BREAKDOWN_TAG$ $CHANGE|L$#! mesačne k $TARGET$)" # todo: NEW TRANSLATION
  ESTATE_POWER: "[estate_power|e]: $VAL|2%V$" # todo: NEW TRANSLATION
@@ -2970,7 +2966,7 @@
  VIEW_MARKET: "Zobraziť [market|e] v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
  GOODS_COST_FOR_DEMAND_ENTRY: "$VAL|2V$ [GOODS.GetIcon][GOODS.GetName]: $COST|-=2$@gold!\n" # todo: NEW TRANSLATION
  GOODS_COST_FOR_DEMAND_S_ENTRY: "$VAL|2V$ [GOODS.GetIcon][GOODS.GetName]: #TOOLTIP:GOODS_PRICE_ON_MARKET,$DESC_KEY$,X $COST|2-=L$@gold!#!" # todo: NEW TRANSLATION
- ESTATE_NON_ALWAYS_LOYAL_BREAKDOWN: "[gold|e]: [Estate.GetGold|2]@gold!\n[estate_satisfaction|e]: [Estate.GetSatisfactionWithTooltip]\n[estate_satisfaction_equilibrium|e]: [Estate.GetTargetSatisfactionTooltipWrapper]\n[estate_enrichment|e]: [Estate.GetCountry.GetModifierValue('estate_enrichment')]\n" # todo: NEW TRANSLATION
+ ESTATE_NON_ALWAYS_LOYAL_BREAKDOWN: "[estate_enrichment|e]: [Estate.GetCountry.GetModifierValue('estate_enrichment')]\n" # todo: CHANGED
  ESTATE_BREAKDOWN: "[AddLocalizationIf(Not(Estate.GetType.IsAlwaysLoyal), 'ESTATE_NON_ALWAYS_LOYAL_BREAKDOWN')][estate_power|e]: [Estate.GetRelativePowerWithTooltip] @power!" # todo: NEW TRANSLATION
  ESTATE_INCOME_BREAKDOWN: "Zdroje príjmu z daní pre [Estate.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  TAXING_ESTATE_INCOME_BREAKDOWN: "Zdanené príjmy pre [Estate.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -3095,11 +3091,8 @@
  LOCPOP_ITEM_POLTICAL_POWER: "#T Politická sila#!\nV [LOCATION.GetName] je $VAL|V$ [POP_TYPE.GetName] a každých #V 1 000#! [pops|e] poskytuje $EST_VAL|-=2$ [political_power|e], ktoré je potom ďalej modifikované:\n" # todo: NEW TRANSLATION
  GOODS_OUTPUT_BUILDING_ENTRY: "[BUILDING.GetName]: $VAL|+=2$" # todo: NEW TRANSLATION
  PROSPERITY_IN_LOC: "[prosperity] v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- PROSP_CHANGE_DUE_TO: "[prosperity] je [Location.GetProsperity|2%+], a mesačne sa mení o [Location.GetModifierValueWithCountryNoFormat('local_monthly_prosperity','global_monthly_prosperity')] z dôvodu:" # todo: CHANGED
+ PROSP_CHANGE_DUE_TO: "[prosperity] je [Location.GetProsperity|2%+], a mesačne sa mení o [Location.GetProsperityChange|+=2%] kvôli:" # todo: CHANGED
  PROSP_EFFECT_DUE_TO: "[prosperity] [Location.GetProsperity|2%V+] má nasledovné efekty:" # todo: NEW TRANSLATION
- LOCATION_PROSPERTITY_TOOLTIP: "#T Prosperita#!\n[prosperity|e] v [LOCATION.GetName] je momentálne [LOCATION.GetProsperity|2%+], a mesačne sa mení o [LOCATION.GetModifierValueWithCountry('local_monthly_prosperity','global_monthly_prosperity')], pričom momentálne má nasledujúce účinky:\n[LOCATION.GetProsperityEffect]" # todo: NEW TRANSLATION
- LOCATION_DEVASTATION_TOOLTIP: "Negatívna [prosperity] sa bude tiež zotavovať o [LOCATION.GetModifierValueWithCountry('local_devastation_recovery','global_devastation_recovery')] každý mesiac." # todo: NEW TRANSLATION
- LOCATION_DEVASTATION_UI_TOOLTIP: "Ak je [prosperity] negatívna, bude sa tiež zotavovať o [Location.GetModifierValueWithCountryNoFormat('local_devastation_recovery','global_devastation_recovery')] každý mesiac z dôvodu:" # todo: NEW TRANSLATION
  LOCATION_DEVELOPMENT_TOOLTIP: "#T Rozvoj#!\n[development|e] v [LOCATION.GetName] je momentálne [LOCATION.GetDevelopment|2], a mesačne sa mení o [LOCATION.GetModifierValueAndPercentWithCountry('local_monthly_development','local_monthly_development_modifier','global_monthly_development')], pričom momentálne má nasledujúce účinky:\n[LOCATION.GetDevelopmentEffect]" # todo: NEW TRANSLATION
  DEVELOPMENT_IN_LOC: "Rozvoj je [Location.GetDevelopment|2V] v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  DEV_EFFECT_DUE_TO: "Rozvoj [Location.GetDevelopment|2V] má nasledujúce účinky:" # todo: NEW TRANSLATION
@@ -3131,7 +3124,7 @@
  RAW_MATERIAL_LOCATION_TABLE_TITLE_TT: "Celkovo sa každý mesiac predá [Location.GetRawMaterialsOutput|2W] [Location.GetRawMaterial.GetIcon] za [Location.GetRawMaterialsPrice|G2]@gold! ([Location.GetMarketAccessWithTooltip]) na [Location.GetMarket.GetName]." # todo: NEW TRANSLATION
  RAW_MATERIAL_LOCATION_TABLE_CURRENT_OUTPUT_TT_TITLE: "Celkový výstup [Location.GetRawMaterial.GetNameWithNoTooltip] je [Location.GetRawMaterialsOutput|2]@good! z dôvodu:" # todo: NEW TRANSLATION
  RAW_MATERIAL_LOCATION_TABLE_CURRENT_OUTPUT_TT_TEXT: "Každá úroveň tohto [rgo|e] produkuje [Divide_CFixedPoint(Location.GetRawMaterialsOutput, Location.GetMaxRGOWorkers)|W] [Location.GetRawMaterial.GetIcon]" # todo: NEW TRANSLATION
- RAW_MATERIAL_LOCATION_TABLE_MAX_LEVEL_T: "Maximálna úroveň $game_concept_rgo$" # todo: NEW TRANSLATION
+ RAW_MATERIAL_LOCATION_TABLE_MAX_LEVEL_T: "Maximálna úroveň $game_concept_rgo$ v [Location.GetNameWithNoTooltip]" # todo: CHANGED
  RAW_MATERIAL_LOCATION_TABLE_MAX_LEVEL_TT_TITLE: "Maximálna úroveň RGO je [Location.GetMaximumMaxRGOWorkersValueForUI|0W] z dôvodu:" # todo: NEW TRANSLATION
  RAW_MATERIAL_LOCATION_TABLE_TT: "Aktuálne [employment|e]:" # todo: NEW TRANSLATION
  RAW_MATERIAL_LOCATION_TABLE_END_TT: "[output|e] za úroveň:" # todo: NEW TRANSLATION
@@ -3598,7 +3591,7 @@
  CCI_ALREADY: "@trigger_no! Už máme [colonial_charter|e] v [PROVINCE_DEFINITION.GetName]." # todo: NEW TRANSLATION
  CCI_WASTELAND: "@trigger_no! [PROVINCE_DEFINITION.GetName] sa nedá kolonizovať, pretože je nepriechodný." # todo: NEW TRANSLATION
  CCI_OWNS: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože ho už vlastníme." # todo: NEW TRANSLATION
- CCI_BIG_POP: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože populácia je už príliš vysoká." # todo: NEW TRANSLATION
+ CCI_BIG_POP: "@trigger_no!Nemôžeme kolonizovať [LOCATION.GetName] pretože populácia už presahuje $VAL$." # todo: CHANGED
  CCI_TRUCE: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože máme [truce|e] s [COUNTRY.GetLongNameWithFlag]." # todo: NEW TRANSLATION
  CCI_HAS_OWNER: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože ho vlastní [COUNTRY.GetLongNameWithFlag]." # todo: NEW TRANSLATION
  CCI_TOOLOW_PP: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože [COUNTRY.GetLongNameWithFlag] má príliš vysokú [power_projection|e]." # todo: NEW TRANSLATION
@@ -4033,7 +4026,7 @@
  NO_BUILD_ROAD_ENABLED: "@trigger_no!Musíme preskúmať [ADVANCE_DEFINITION.GetName] [advance|e], aby sme mohli stavať [roads|e]" # todo: NEW TRANSLATION
  BUILD_ROAD_NOT_ADJACENT: "@trigger_no![LOCATION.GetName] a [TARGET_LOCATION.GetName] nie sú susediace, takže nemožno postaviť [road|e]." # todo: NEW TRANSLATION
  BUILD_ROAD_ALREADY: "@trigger_no!Už staviame [ROAD_TYPE.GetName] medzi [LOCATION.GetName] a [TARGET_LOCATION.GetName]." # todo: NEW TRANSLATION
- BUILD_ROAD_NOT_NO_ROUTE: "@trigger_no! [LOCATION.GetName] nie je susedné s hranicami našej krajiny alebo z vybranej lokality nie je možné nájsť trasu k nemu" # todo: NEW TRANSLATION
+ BUILD_ROAD_NOT_NO_ROUTE: "@trigger_no!Nie je možné nájsť trasu k [LOCATION.GetName] zo zvoleného [location|e]" # todo: CHANGED
  ROAD_DISTANCE_IMP: "Náklady za vzdialenosť od hlavného mesta $ROAD$ namiesto $NOT_ROAD$" # todo: NEW TRANSLATION
  ROAD_MOVEMENTE_IMP: "$BULLET_WITH_TAB$Náklady na pohyb pre [armies|e]: $VAL|-=2%$\n\n" # todo: NEW TRANSLATION
  SELECT_PROVINCE_FOR_CASUS_BELLI: "Vyberte [province|e] pre [casus_belli|e]:" # todo: NEW TRANSLATION
@@ -5891,8 +5884,8 @@
  MP_CHAT_TO_HIDE: "Skryť multiplayer chat" # todo: NEW TRANSLATION
  MP_CHAT_TO_PIN: "Ľavým klikom pripnúť multiplayer chat" # todo: NEW TRANSLATION
  MP_CHAT_TO_UNPIN: "Ľavým klikom odpnúť multiplayer chat" # todo: NEW TRANSLATION
- FAV_MAPMODES_TO_PIN: "Ľavým klikom pripnúť obľúbené mapmody" # todo: NEW TRANSLATION
- FAV_MAPMODES_TO_UNPIN: "Ľavým klikom odpnúť obľúbené mapmody" # todo: NEW TRANSLATION
+ FAV_MAPMODES_TO_PIN: "Ľavým kliknutím pripnite obľúbené mapové režimy" # todo: CHANGED
+ FAV_MAPMODES_TO_UNPIN: "Ľavým kliknutím odopnite obľúbené mapové režimy" # todo: CHANGED
  ASSUME_CONTROL: "Prevziať kontrolu" # todo: NEW TRANSLATION
  ASSUME_CONTROL_TT: "#T Prevziať kontrolu nad obliehaním #!" # todo: NEW TRANSLATION
  ASSUME_CONTROL_WEAKER: "@trigger_no! Máme iba $US|Y$ mužov schopných útoku, zatiaľ čo $WHO|Y$ má $THEM|Y$ mužov. Potrebujeme viac, aby sme mohli prevziať kontrolu." # todo: NEW TRANSLATION
@@ -5919,11 +5912,11 @@
  TAKE_OVER_SIEGE_OWNER_HAS_ENOUGH: "@trigger_no! Súčasný veliteľ obliehania musí mať menej mužov, než je potrebné na obliehanie." # todo: NEW TRANSLATION
  GARRISON_SORTIE_TT: "Garnizónny výpad" # todo: NEW TRANSLATION
  garrison_sortie: "$GARRISON_SORTIE_TT$" # todo: NEW TRANSLATION
- garrison_sortie_desc: "Zaútočte na armádu obliehajúcu pevnosť s [garrison|e].\nAk sa [combat|e] prehrá, aj [siege|e] bude okamžite stratené." # todo: NEW TRANSLATION
- MAP_COLOR_LEDGER_TITLE: "Legenda" # todo: NEW TRANSLATION
- MAP_COLOR_LEDGER_SIMPLE: "#T Legenda#! Vyhľadávač tohto mapového režimu." # todo: NEW TRANSLATION
- OPEN_MAP_COLOR_LEDGER: "Otvoriť vyhľadávač" # todo: NEW TRANSLATION
- CLOSE_MAP_COLOR_LEDGER: "Zatvoriť vyhľadávač" # todo: NEW TRANSLATION
+ garrison_sortie_desc: "Zaútočte na armádu obliehajúcu pevnôť s [garrison|e].\nAk bude [combat|e] prehratý, [siege|e] bude tiež okamžite stratené." # todo: CHANGED
+ MAP_COLOR_LEDGER_TITLE: "Legenda mapového režimu" # todo: CHANGED
+ MAP_COLOR_LEDGER_SIMPLE: "#T Legenda mapového režimu#! Zobraziť legendu tohto mapového režimu." # todo: CHANGED
+ OPEN_MAP_COLOR_LEDGER: "Otvoriť legendu" # todo: CHANGED
+ CLOSE_MAP_COLOR_LEDGER: "Zatvoriť legendu" # todo: CHANGED
  REQUIREMENT_ARE_NOT_MET: "@trigger_no! Požiadavky nie sú splnené" # todo: NEW TRANSLATION
  CURRENT_ARMIES_HEADER: "Aktuálne armády" # todo: NEW TRANSLATION
  CURRENT_NAVIES_HEADER: "Aktuálne námorníctva" # todo: NEW TRANSLATION
@@ -6062,7 +6055,7 @@
  UNIT_DISEASE_SUBUNITS_PRESENCE_TT: "[Unit.GetNumSubunitsWithDiseasePresence(Disease.Self)|W] $game_concept_sub_units$ postihnutých s priemerným [Unit.GetDiseasePresence(Disease.Self)|0W%] výskytom." # todo: NEW TRANSLATION
  UNIT_PRESENCES_LABEL: "$game_concept_disease$ výskyty pre túto [unit|e]" # todo: NEW TRANSLATION
  UNIT_RESISTANCES_LABEL: "$game_concept_disease$ odolnosti pre túto [unit|e]" # todo: NEW TRANSLATION
- TRANSPORT_CAPACITY_SIMPLE: "#T Prepravná kapacita #! Sila armády [strength|e], ktorú by toto [navy|e] mohlo prepraviť, momentálne máme [UnitMarkerItem.GetUnit.GetUsedTransportCapacity] prepravených až do maxima [UnitMarkerItem.GetUnit.GetMaxTransportCapacity]." # todo: NEW TRANSLATION
+ TRANSPORT_CAPACITY_SIMPLE: "#T Kapacita prepravy #! [strength|e] armády, ktoré táto [navy|e] môže prepraviť; momentálne máme prepravených [UnitMarkerItem.GetUnit.GetUsedTransportCapacity] až do maxima [UnitMarkerItem.GetUnit.GetMaxTransportCapacity]." # todo: CHANGED
  RECRUIT_ARMIES: "Naverbovať [armies]" # todo: NEW TRANSLATION
  RECRUIT_NAVIES: "Naverbovať [navies]" # todo: NEW TRANSLATION
  RAISE_ARMY_LEVIES_TT: "Povolať [army_levies]" # todo: NEW TRANSLATION
@@ -6104,10 +6097,10 @@
  BANKRUPTCY_UNTIL: "Do [Country.GetBankruptcyEndDate|V] nasledujúce účinky" # todo: NEW TRANSLATION
  IN_BANKRUPTCY: "Sme v bankrote!" # todo: NEW TRANSLATION
  DECLARE_BANKRUPTCY: "Vyhlásiť bankrot" # todo: NEW TRANSLATION
- DECLARE_BANKRUPTCY_EFFECT: "Naša krajina vyhlási bankrot. Všetok náš dlh bude odpustený, ale následky na našu ekonomiku a vzťahy s veriteľmi budú vážne. Stratíme $STABHIT|=+0$ [stability|e]. $EFFECT$" # todo: NEW TRANSLATION
- BANKRUPTCY_NO_LOANS: "Nie je možné vyhlásiť bankrot bez dlhu." # todo: NEW TRANSLATION
+ DECLARE_BANKRUPTCY_EFFECT: "Náš štát vyhlási bankrot. Všetky naše dlhy budú odpustené, ale následky pre našu ekonomiku a vzťahy s veriteľmi budú závažné." # todo: CHANGED
+ BANKRUPTCY_NO_LOANS: "Nie je možné vyhlásiť bankrot bez zadlženia." # todo: CHANGED
  UNIT_BREAKDOWN: "[SubUnitType.GetNameWithNoTooltip] atribúty" # todo: NEW TRANSLATION
- UNIT_BREAKDOWN_TT: "#T [SubUnitType.GetNameWithNoTooltip] atribúty#! Toto zobrazuje všetky detaily [SubUnitType.GetName], jeho rôzne schopnosti a štatistiky." # todo: NEW TRANSLATION
+ UNIT_BREAKDOWN_TT: "#T [SubUnitType.GetNameWithNoTooltip] Attributes#! Toto zobrazuje všetky detaily [SubUnitType.GetName], jeho rôzne schopnosti a štatistiky." # todo: CHANGED
  REB_CURRENT_PROGRESS: "Postup k povstaniu" # todo: NEW TRANSLATION
  REB_MONTHLY_PROGRESS: "Mesačný postup" # todo: NEW TRANSLATION
  EXPAND_RAW_GOODS_LATERAL_VIEW_TOGGLE_TOOLTIP: "Prepnúť viditeľnosť tohto typu [goods|e]" # todo: NEW TRANSLATION
@@ -6345,8 +6338,8 @@
  CANDIDATE_NOT_ON_LIST: "Krajina nie je platným kandidátom" # todo: NEW TRANSLATION
  CONFIRM_ACTION: "Ste si istí, že chcete\n'$ACTION$'?" # todo: CHANGED
  CONFIRM_TITLE: "Ste si istí?" # todo: CHANGED
- PIN_ACTION: "Pripnúť akciu" # todo: NEW TRANSLATION
- UNPIN_ACTION: "Odopnúť akciu" # todo: NEW TRANSLATION
+ PIN_ACTION: "Pripnúť akciu do kontextového menu" # todo: CHANGED
+ UNPIN_ACTION: "Odepnúť akciu z kontextového menu" # todo: CHANGED
  PIN_CATEGORY: "Pripnúť kategóriu" # todo: NEW TRANSLATION
  UNPIN_CATEGORY: "Odopnúť kategóriu" # todo: NEW TRANSLATION
  EXPAND_CATEGORY: "Rozbaliť kategóriu" # todo: NEW TRANSLATION
@@ -6381,24 +6374,13 @@
  RELEASE_COUNTRY_INFO: "[COUNTRY.GetName] bude odovzdaná: $LIST$" # todo: NEW TRANSLATION
  RELEASE_COUNTRY_OTHER_CORES_INFO: "[COUNTRY.GetName] má jadrá, ktoré nám nepatria na: $LIST$" # todo: NEW TRANSLATION
  INVALID_TARGET: "@trigger_no! Neplatný cieľ" # todo: CHANGED
- EMBRACED_INSTITUTIONS_HEADER: "Osvojené inštitúcie v [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_CABINET_INSTITUTIONS_HEADER: "Pokrok inštitúcií v [InteractionTarget.GetProvince.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  AREA_IS_NOT_ADJANCENT: "@trigger_fail! Nepreskúmali sme žiadnu [area|e] priľahlú k [AREA.GetName]" # todo: NEW TRANSLATION
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_CABINET_INSTITUTIONS_HEADER: "Pokrok inštitúcií v [InteractionTarget.GetProvince.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_CABINET_INSTITIONS_HEADER: "Pokrok inštitúcií v [InteractionTarget.GetProvince.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_CABINET_INSTITIONS_HEADER: "Pokrok inštitúcií v [InteractionTarget.GetProvince.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  EMBRACED_CABINET_INSTITITIONS_HEADER: "Pokrok inštitúcií v [InteractionTarget.GetProvince.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]"
  ADVANCES_INFO_OF_COUNTRY: "Zaujímavé pokroky [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  NO_UNIQUE_ADVANCES: "[COUNTRY.GetLongNameWithNoTooltip] nemá žiadne jedinečné vylepšenia."
  UNIQUE_ADVANCES_TITLE: "Jedinečné vylepšenia"
  UNIQUE_ADVANCE_RESEARCHED: "@trigger_yes![ADVANCE_DEFINITION.GetAge.GetIcon] [ADVANCE_DEFINITION.GetName]"
  UNIQUE_ADVANCE_NOT_RESEARCHED: "    [ADVANCE_DEFINITION.GetAge.GetIcon] [ADVANCE_DEFINITION.GetName]"
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetAltAdjectiveWithNoTooltip('L')]"
  MAX_WAR_EXHAUSTION_TT_TEXT: "Maximálna vojnová únava [Country.GetNameWithNoTooltip] je [Country.GetModifierValue('max_war_exhaustion')]. Dosiahnutie tohto limitu počas [Concept('war','vojny')|e] prinúti [Concept('country','krajinu')] kapitulovať."
  SORT_MARITIME_PRESENCE_COUNTRY_NAME: "Zoradiť podľa [Concept('country','krajiny')|e] námorných prítomností"
  SORT_MARITIME_PRESENCE_POWER: "Zoradiť podľa sily námorných prítomností"
@@ -6413,7 +6395,6 @@
  CONQUISTADOR_CONSTRUCTION_DURATION_DAYS: "[CONSTRUCTION.GetName]: $VAL|Y$$DAYS_SHORT_LOC$" # todo: CHANGED
  ARMY_SIZE_WITH_CONCEPT: "Veľkosť [Concept('army','armády')|e]"
  NAVY_SIZE_WITH_CONCEPT: "Veľkosť [Concept('navy','námorníctva')|e]"
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]"
  DAMAGE_TAKEN_MULTIPLIER: "[damage_taken|e]: $VAL|2%-=$" # todo: NEW TRANSLATION
  SUB_CONTINENT_ADJACENCIES: "Susedné subkontinenty" # todo: NEW TRANSLATION
  SUB_CONTINENT_ADJ: "[SUB_CONTINENT.GetName]" # todo: NEW TRANSLATION
@@ -6423,7 +6404,6 @@
  CUR_POP_DEMANDS: "Aktuálne požiadavky" # todo: NEW TRANSLATION
  POTENTIAL_ARMY_OVERVIEW: "Potenciálne [army_levies]" # todo: NEW TRANSLATION
  POTENTIAL_NAVY_OVERVIEW: "Potenciálne [navy_levies]" # todo: NEW TRANSLATION
- EMBRACED_INSTITUTIONS_HEADER: "Prijaté inštitúcie v [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  NO_PROXIMITY_TT_TEXT: "Toto [location|e] je príliš ďaleko od [capital_with_icon|e]. [proximity] ostatných [locations] vyššie na ceste k [capital] musí byť vylepšené, aby sa k tomuto mohol dostať akýkoľvek [proximity]." # todo: NEW TRANSLATION
  LOBBY_START_OBSERVER_PRESELECTED: "Začať sledovať [GameLobby.GetSelectedCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  LOBBY_OBSERVING_PRESELECTED: "Sleduje [LobbyView.GetSelectedPlayable.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -6442,8 +6422,8 @@
  GOODS_POP_DEMAND_INFO_HEADER: "Dopyt obyvateľstva po [GOODS.GetIcon][GOODS.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  NO_POPS_WANTS_THIS: "@trigger_no!Žiadny [pop|e] nikdy nebude chcieť tento tovar." # todo: NEW TRANSLATION
  POP_ONLY_IF_DEVELOPMENT: "Popy musia žiť v [location|e] s [development|e] nad $VAL|0G$, aby ho požadovali." # todo: NEW TRANSLATION
- POP_WANT_IF_WEALTH: "Každých 1000 [POP_TYPE.GetIcon][POP_TYPE.GetName] (ak [estate|e] má $WEALTH|%2V$ príjmy vs výdavky) : $NEED|+=G5$" # todo: NEW TRANSLATION
- POP_WANT_ALWAYS: "Každých 1000 [POP_TYPE.GetIcon][POP_TYPE.GetName]: $NEED|+=G5$" # todo: NEW TRANSLATION
+ POP_WANT_IF_WEALTH: "Každých 1000 [POP_TYPE.GetIcon] [POP_TYPE.GetName] (ak [estate|e] má $WEALTH|%2V$ príjem oproti výdavkom) : $NEED|+=G5$" # todo: CHANGED
+ POP_WANT_ALWAYS: "Každých 1000 [POP_TYPE.GetIcon] [POP_TYPE.GetName]: $NEED|+=G5$" # todo: CHANGED
  NO_ALLOW_SUBJECTS_TYPE_BLOCKS: "@trigger_no!Sme [SUBJECT_TYPE.GetName] a preto nemôžeme vytvárať nových [subjects|e]." # todo: NEW TRANSLATION
  IS_BLOCKED_FROM_CREATING_SUBJECTS: "@trigger_no!Nemôžeme vytvárať nových subjektov kvôli $MODIFIER_NAME$!" # todo: NEW TRANSLATION
  FOOD_M_IMPACT: "[provinces|e] budú môcť nakúpiť $VAL|2%V$ z [food|e], ktoré potrebujú." # todo: NEW TRANSLATION
@@ -6459,10 +6439,46 @@
  NAVY_BREAKDOWN_HEADER_TOOLTIP_TITLE: "Toto sú aktuálne povolané [ships|e]" # todo: NEW TRANSLATION
  ARMY_BRK_POT_LEVIES: "@levy!Potenciálne odvedené sily: [Country.GetArmyLevyPotentialStrength]@army_strength!" # todo: NEW TRANSLATION
  NAVY_BRK_POT_LEVIES: "@levy!Potenciálne odvedené sily: [Country.GetNavyLevyPower]@navy_strength!" # todo: NEW TRANSLATION
- LEVY_COMBAT_POWER_FOR_SD_TT: "[levy_combat_efficiency|e] je $VAL|V%2$ oproti [regulars|e]" # todo: NEW TRANSLATION
- LEVY_COMBAT_POWER_BASE: "Základ: $VAL|2%$" # todo: NEW TRANSLATION
- LEVY_COMBAT_POWER_VALUE: "[AGE.GetIcon][SUBUNITCATEGORY.GetIcon] Sila proti $BASE|V$: #G x$VAL|2$#!" # todo: NEW TRANSLATION
+ LEVY_COMBAT_POWER_FOR_SD_TT: "[AGE.GetIcon][levy_combat_efficiency|e] predvolené vs [regulars|e]: #V x$VAL|2$#!" # todo: CHANGED
  TT_LEVY_COMBAT_EFFICIENCY_TITLE: "$game_concept_levy_combat_efficiency$ krajiny [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  TT_LEVY_COMBAT_EFFICIENCY_TEXT: "$game_concept_levy_combat_efficiency$ krajiny [Country.GetNameWithNoTooltip] je [Country.GetModifierValue('levy_combat_efficiency_modifier')]" # todo: NEW TRANSLATION
  DAYS_SHORT_LOC: "d" # todo: NEW TRANSLATION
  DAYS_LONG_LOC: "dní"" # todo: NEW TRANSLATION
+ OPEN_TRADES_SUBTAB: "Otvorené obchody na tomto trhu" # todo: NEW TRANSLATION
+ ECO_BASE_LABEL: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|2L$@gold!#!" # todo: NEW TRANSLATION
+ ECO_BASE_HEADER: "Ekonomická základňa $VAL|2$@gold!" # todo: NEW TRANSLATION
+ ECO_BASE_POP: "$POP$@population!: $VAL|+=2$" # todo: NEW TRANSLATION
+ ECO_BASE_TAX: "$TAX|2$ [tax_base|e]: $VAL|+=2$" # todo: NEW TRANSLATION
+ ECO_BASE_TRADE_VALUE: "$TRADE|2$ [trade|e] objem: $VAL|+=2$" # todo: NEW TRANSLATION
+ ECO_BASE_TRADE_PROFIT: "$TRADE|2$ [trade|e] zisk: $VAL|+=2$" # todo: NEW TRANSLATION
+ ECO_BASE_SUBJECT: "$TAX|2$ [tax_base|e] od [subjects|e]: $VAL|+=2$" # todo: NEW TRANSLATION
+ ECO_BASE_INTEREST: "$INCOME|2$@gold! z [interest|e]: $VAL|+=2$" # todo: NEW TRANSLATION
+ ECO_BASE_INSTITUTIONS: "$NUM$ [institutions|e] [embraced|e]: $VAL|+=2%$" # todo: NEW TRANSLATION
+ JOMINI_MULTIPLAYER_GUI_SERVER_SORT_LABEL_PASSWORD_DESC: "Zoradiť podľa serverov vyžadujúcich heslo" # todo: NEW TRANSLATION
+ JOMINI_MULTIPLAYER_GUI_SERVER_SORT_LABEL_SERVER_NAME_DESC: "Zoradiť podľa názvu hry" # todo: NEW TRANSLATION
+ JOMINI_MULTIPLAYER_GUI_SERVER_SORT_LABEL_VERSION_DESC: "Zoradiť podľa kontrolného súčtu" # todo: NEW TRANSLATION
+ JOMINI_MULTIPLAYER_GUI_SERVER_SORT_LABEL_PLAYERS_DESC: "Zoradiť podľa počtu hráčov" # todo: NEW TRANSLATION
+ JOMINI_MULTIPLAYER_GUI_SERVER_SORT_LABEL_STATUS_DESC: "Zoradiť podľa stavu hry" # todo: NEW TRANSLATION
+ TRADE_PROFIT_GROUPED_BY_GOOD_ENTRY: "$AMOUNT$ [GOODS.GetIcon][GOODS.GetName]: $PROFIT|+G2V$@gold!" # todo: NEW TRANSLATION
+ TRADE_PROFIT_GROUPED_BY_GOOD_TT_TTILE: "[profit|e] z exportu a importu [trades|e] v [Merchant.GetMarket.GetName]" # todo: NEW TRANSLATION
+ PROSPERITY_DECAY: "Pokles: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2%$#!" # todo: NEW TRANSLATION
+ PROSP_DEC_TT: "Pokles je $PERC|2R%$ z aktuálnej prosperity kvôli" # todo: NEW TRANSLATION
+ RECOVERY_DUE_TO: "Keď je [prosperity|e] pod 0, zotavuje sa o $VAL|+=2%$ kvôli" # todo: NEW TRANSLATION
+ ATTRITION_MORE_SOURCES: "Z externých zdrojov pre toto [location]:" # todo: NEW TRANSLATION
+ BUILDING_LEVEL_MAX_TABLE_TITLE: "Maximálna úroveň v [Location.GetNameWithNoTooltip] je [Building.GetMaxLevel|0Y] z dôvodu:" # todo: NEW TRANSLATION
+ UPGRADE_BUILDING_ACTION_CTRL: "Začať vylepšovať na [BuildingType.GetNameWithNoTooltip] až [GetDefine('NGUI','BUILDINGS_QUEUE_CTRL_CLICK')] krát" # todo: NEW TRANSLATION
+ UPGRADE_BUILDING_ACTION_SHIFT: "Začať vylepšovať na [BuildingType.GetNameWithNoTooltip] toľkokrát, koľko je možné" # todo: NEW TRANSLATION
+ CONSTRUCTION_INFO_STALLED_SHORT: "@trigger_no! Pozastavené!" # todo: NEW TRANSLATION
+ CANT_UPGRADE_BUILD_WITHOUT_CANDIDATES: "@trigger_no! Nemôžeme postaviť [BUILDING_TYPE.GetName], pretože v [LOCATION.GetName] už nie sú žiadne možné [buildings|e] na vylepšenie." # todo: NEW TRANSLATION
+ BUILD_ROAD_NOT_NOT_ADJACENT: "@trigger_no! [LOCATION.GetName] nie je susedná s hranicami nášho [country|e] ani našich [subjects|e]" # todo: NEW TRANSLATION
+ MAPMODE_TRADE_RANGE: "#T $mapmode_trade_range_name$#!\n$mapmode_common_start$ ktoré [markets|e] sú v rámci vášho [trade_range|e] daného trhu." # todo: NEW TRANSLATION
+ mapmode_trade_range_name: "Obchodný dosah" # todo: NEW TRANSLATION
+ heir_status_icon: "Ikona dediča" # todo: NEW TRANSLATION
+ LEVY_COMBAT_POWER_MOD: "A upravené pre [Player.GetLongName]: [Player.GetModifierValue('levy_combat_efficiency_modifier')]" # todo: NEW TRANSLATION
+ LEVY_COMBAT_POWER_TOTAL: "Celková efektívnosť v [battle|e]: $VAL|2G%$" # todo: NEW TRANSLATION
+ DEC_BAN_CONTROL: "$BULLET$[control|e] nad [locations|e]: $VAL|+=2%$" # todo: NEW TRANSLATION
+ DEC_BAN_STABILITY: "$BULLET$ [stability|e]: $VAL|=+0$" # todo: NEW TRANSLATION
+ DEC_BAN_INFLATION: "$BULLET$ [inflation|e]: $VAL|=%-2$" # todo: NEW TRANSLATION
+ DEC_BAN_BUILDING: "$BULLET$ [building|e] úrovne stratené: $VAL|2%R$" # todo: NEW TRANSLATION
+ PIN_OUTLINER: "Pripnúť do prehľadu" # todo: NEW TRANSLATION
+ UNPIN_OUTLINER: "Odpnúť z prehľadu" # todo: NEW TRANSLATION

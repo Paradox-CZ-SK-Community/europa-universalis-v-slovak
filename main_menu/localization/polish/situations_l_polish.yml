@@ -20,7 +20,7 @@
  TOP_TOTAL_DEATHS_TITLE: "Najviac postihnuté krajiny sú:" # todo: NEW TRANSLATION
  RIVALS_TOTAL_DEATHS_TITLE: "Naši rivali boli tiež postihnutí:" # todo: NEW TRANSLATION
  TOTAL_DEATHS_ENTRY: "[COUNTRY.GetLongNameWithFlag]: $AMOUNT|0$" # todo: NEW TRANSLATION
- TOTAL_DEATHS_ENTRY_UKNOWN_COUNTRY: "Vymreté [countries|e]:  $AMOUNT|0$" # todo: NEW TRANSLATION
+ TOTAL_DEATHS_ENTRY_UKNOWN_COUNTRY: "Vymreté [countries|e]: $AMOUNT|0$" # todo: CHANGED
  TOTAL_DEATHS_LARGE: "Z ďalších $NUM$ krajín: $VAL|0$" # todo: NEW TRANSLATION
  COUNTRY_DEATHS: "Úmrtia podľa krajiny" # todo: NEW TRANSLATION
  NO_COUNTRY_DEATHS: "Neboli hlásené žiadne úmrtia." # todo: NEW TRANSLATION
@@ -81,7 +81,7 @@
  SITUATION_ABSTENTIONS_VOTERS_TITLE: "Neutrálnych voličov: [VoteTargetGlue.GetVoterCount|V0]" # todo: NEW TRANSLATION
  SITUATION_ABSTENTIONS_VOTES_TITLE: "Neutrálne hlasy: [VoteTargetGlue.GetVotesCount|V0]" # todo: NEW TRANSLATION
  SITUATION_NOT_VOTED_TITLE: "Ešte nehlasovali: [GetDataModelSize(SituationView.GetNotVotedYet)|V0]" # todo: NEW TRANSLATION
- SITUATION_VOTES_PROGRESS: "#T [Country.GetNameWithNoTooltip] Pokrok hlasovania o koncile#! Pokrok smerom k tomu, aby [Country.GetName] mohla zvolať koncil, je [VoteTargetGlue.GetVotePercentage|V2%]. Podpora rôznych [cardinals|e] rastie každý mesiac o #Y 1#! zatiaľ čo určité akcie ju môžu ešte zvýšiť.\n\nKardináli získavajú [SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('western_schism_cardinal_weight_bonus').GetValue|Y0] dodatočnú váhu pre svoju podporu." # todo: NEW TRANSLATION
+ SITUATION_VOTES_PROGRESS: "#T [Country.GetNameWithNoTooltip] Pokrok hlasovania Rady #! Pokrok vo schopnosti [Country.GetName] zvolať radu je [VoteTargetGlue.GetVotePercentage|V2%]. Podpora rôznych [cardinals|e] rastie každý mesiac o #Y 1#!, pričom určité kroky ju môžu ešte viac zvýšiť." # todo: CHANGED
  western_schism_1_tt: "Existujú kandidáti [ROOT.GetVariable('schism_pope_cardinal').GetCardinal.GetName] a [ROOT.GetVariable('schism_opponent_cardinal').GetCardinal.GetName]" # todo: NEW TRANSLATION
  western_schism_2_tt: "[ROOT.GetVariable('schism_pope_cardinal').GetCardinal.GetName] viedol viac než 2 koncily" # todo: NEW TRANSLATION
  western_schism_3_tt: "[ROOT.GetVariable('schism_opponent_cardinal').GetCardinal.GetName] viedol viac než 2 koncily" # todo: NEW TRANSLATION
@@ -119,7 +119,7 @@
  ws_schism_show_support_for_one_pope_tt: "Vybraný kandidát dostane podporu pri hlasovaní v $western_schism$." # todo: NEW TRANSLATION
  ws_show_unity_of_faith_tt: "Každé [location|e] v určenej [province|e] získa [ShowModifier('ws_show_unity_of_faith')]." # todo: NEW TRANSLATION
  western_schism_pope_score: "Skóre papálneho kandidáta" # todo: NEW TRANSLATION
- western_schism_anti_pope_score: "Skóre proti-pápežského kandidáta" # todo: NEW TRANSLATION
+ western_schism_anti_pope_score: "Skóre antipápežského kandidáta" # todo: CHANGED
  great_pestilence: "Veľká morová nákaza" # todo: NEW TRANSLATION
  great_pestilence_desc: "Zahraničie nás zasiahli strašné správy. Bieda a mor sa šíria po krajinách a nesú so sebou smrť, zjavne šírenú tajomnými vousatými cudzincami. Táto nákaza nie je niečo, čo by naši starší kedy počuli, a žiadne odpovede v spomienkach našich predkov by nám nepomohli čeliť katastrofe, ak by sa dostala do našich osád. Zomrú naši ľudia, alebo nejako odoláme, keď k nám dorazí táto chodivá smrť?" # todo: NEW TRANSLATION
  great_pestilence_info: "[ROOT.GetVariable('great_pestilence_origin').GetLocation.GetName]" # todo: NEW TRANSLATION
@@ -166,7 +166,7 @@
  ROTT_GRAPH_TITLE_TT: "Rozpis skóre" # todo: NEW TRANSLATION
  ROTT_LEADER_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[monthly_income_trade_and_tax|e]: [Country.GetEstimatedMonthlyIncomeTradeAndTax|2]" # todo: NEW TRANSLATION
  ROTT_LEADER_COUNTRY_SCORE_TITLE_TT: "Najsilnejší štát" # todo: NEW TRANSLATION
- ROTT_LEADER_COUNTRY_SCORE_FLAVOR_TT: "#italic Každý mesiac sa vyhodnocuje celkový výkon krajín v [ShowSituationNameWithNoTooltip('rise_of_the_ottomans')] [situation|e] a pozície troch najsilnejších sa aktualizujú podľa nových skóre.#!\n\nAk je Beylik [subject|e], toto uplatní #R -25%#! zníženie ich celkového skóre." # todo: NEW TRANSLATION
+ ROTT_LEADER_COUNTRY_SCORE_FLAVOR_TT: "#italic Každý mesiac sa hodnotí celkový výkon krajín v [ShowSituationNameWithNoTooltip('rise_of_the_ottomans')] [situation|e] a pozície troch najsilnejších sa aktualizujú podľa nových skóre.#!" # todo: CHANGED
  ROTT_SECOND_COUNTRY_SCORE_TT: "[military_strength|e]: [Country.GetMilitaryStrength]\n[monthly_income_trade_and_tax|e]: [Country.GetEstimatedMonthlyIncomeTradeAndTax|2]" # todo: NEW TRANSLATION
  ROTT_SECOND_COUNTRY_SCORE_TITLE_TT: "Druhý najsilnejší" # todo: NEW TRANSLATION
  ROTT_SECOND_COUNTRY_SCORE_FLAVOR_TT: "$ROTT_LEADER_COUNTRY_SCORE_FLAVOR_TT$" # todo: NEW TRANSLATION
@@ -411,7 +411,7 @@
  fall_of_delhi_opposers_progress: "#T [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]#!\nToto je [share_of_power_gc|e] tých, ktorí sa stavajú proti [GetCountry('DLH').GetName]. Ak dosiahne #R 50%#!, môže sa pre [GetCountry('DLH').GetNameWithNoTooltip] spustiť [ShowDisasterName('dissolution_of_delhi')] [disaster|e]." # todo: NEW TRANSLATION
  SUPPORTERS_OF_COUNTRY: "Podpora od [Country.GetLongName]" # todo: NEW TRANSLATION
  has_never_had_situation_before_tt: "Túto [situation|e] ešte nikdy nemal" # todo: NEW TRANSLATION
- delhi_situation_info_tt: "Situácia [ShowSituationName('fall_of_delhi')] sa môže čoskoro začať. Počas týchto búrlivých čias budeme čeliť veľkým povstaniam po celom území. Naši susedia a poddaní môžu zdvihnúť meč proti nám, ak sa naša autorita včas nezotaví. Vo vnútri krajiny intrikujúci [ShowEstateTypeName('nobles_estate')] ohrozujú zvrhnutie našej nestabilnej vlády...\n" # todo: NEW TRANSLATION
+ delhi_situation_info_tt: "The [ShowSituationName('fall_of_delhi')] [situation|e] may commence soon. During that turbulent time, we will face massive rebellion across our lands. Our neighbors and subjects may take up the sword against us, should our authority not recover in time. Internally, the scheming [ShowEstateTypeName('nobles_estate')] threaten to overthrow our unstable rule...\n" # todo: CHANGED
  has_decided_to_cede_territories_tt: "[GetCountry('DLH').GetName] sa rozhodol postúpiť územia v udalosti '#Y $delhi_situation.16.title$#!'" # todo: NEW TRANSLATION
  gain_2_progress_for_delhi_tt: "Získame #G 2%#! [share_of_power_gc|e] počas [GetSituationByKey('fall_of_delhi').GetName] [situation|e]" # todo: NEW TRANSLATION
  gain_5_progress_for_claimants_tt: "Naši nepriatelia získajú #R 5%#! [share_of_power_gc|e] počas [GetSituationByKey('fall_of_delhi').GetName] [situation|e]" # todo: NEW TRANSLATION
@@ -486,7 +486,7 @@
  RTR_GRAPH_TITLE_TT: "Sila krajiny" # todo: NEW TRANSLATION
  RTR_GRAPH_TT: "[great_power_score|e]: [Country.GetGreatPowerScore|Y]" # todo: NEW TRANSLATION
  RTR_GRAPH_FLAVOR_CHINA_TT: "#italic [GetCountry('CHI').GetName] je vždy antagonistom [GetInternationalOrganizationType('red_turban_rebels').GetName].#!" # todo: NEW TRANSLATION
- RTR_GRAPH_FLAVOR_REBEL_TT: "#italic Najsilnejší z [GetUniqueInternationalOrganization('red_turban_rebels').GetName] je určený podľa [great_power_score] členov mesačne. Kto má najvyššie skóre, stáva sa automaticky novým najsilnejším vojvodcom.#!" # todo: NEW TRANSLATION
+ RTR_GRAPH_FLAVOR_REBEL_TT: "#italic Najsilnejší z [GetUniqueInternationalOrganization('red_turban_rebels').GetName] sa určuje mesačne podľa [great_power_score] členov. Ten, kto má najvyššie skóre, sa automaticky stáva vojvodcom#!" # todo: CHANGED
  rtr_grant_titles: "Udeľovať tituly" # todo: NEW TRANSLATION
  rtr_grant_titles_desc: "#flavor Sľub moci a vplyvu na nebeskom dvore láka každého muža. Udeľovaním špeciálnych titulov a privilégií rebelským frakciám ich možno presvedčíme, aby sa stali našimi lojalistami, alebo aspoň prijali dočasné prímerie...#!\n\n[actor.GetName] minie #R 5#! legitimity a prevedie časť svojho [income|e], aby zvýšil $rtr_yuan_allegiance$ cieľovej krajiny o #G +15#!" # todo: NEW TRANSLATION
  rtr_grant_titles_select_country: "Vybrať [ShowGovernmentReformNameWithNoTooltip('warring_state')]" # todo: NEW TRANSLATION
@@ -534,7 +534,7 @@
  italian_league_3_leader_rank: "Vodca Tretej talianskej ligy" # todo: NEW TRANSLATION
  join_league_choose_text: "Vyberte ligu, ku ktorej sa chcete pridať." # todo: NEW TRANSLATION
  join_a_league: "Pridať sa k lige" # todo: NEW TRANSLATION
- join_a_league_desc: "Vo [ShowRegionName('italy_region')] sa rozpútala vojna. Musíme urobiť všetko pre ochranu našej suverenity pred votrelcami zo zahraničných líg. Aby sme to dosiahli, musíme zvážiť vstup do niektorej z aktívnych talianskych líg!" # todo: NEW TRANSLATION
+ join_a_league_desc: "V [ShowRegionName('italy_region')] vypukla vojna. Musíme chrániť našu suverenitu pred votrelcami z cudzích líg. Aby sme to dosiahli, musíme sa pridať k aktívnej talianskej lige!" # todo: CHANGED
  create_italian_league: "Vytvoriť taliansku ligu" # todo: NEW TRANSLATION
  create_italian_league_desc: "Obrana našej domoviny spočíva na našich pleciach. Ak sa nespojíme, staneme sa ľahkou korisťou pre zahraničných dobyvateľov..." # todo: NEW TRANSLATION
  choose_province_to_plan_campaign_text: "Vyberte provinciu ako cieľ našej kampane." # todo: NEW TRANSLATION
@@ -667,7 +667,7 @@
  request_antipiracy_policy_tt: "Kontaktujeme ich a pokúsime sa presvedčiť ich, aby zmenili svoje zákony." # todo: NEW TRANSLATION
  choose_an_uncolonized_location: "Vyberte nekolonizované [location|e], kam presunúť naše sídlo." # todo: NEW TRANSLATION
  create_allied_pirate_nation: "Vytvoriť podriadený pirátsky štát" # todo: NEW TRANSLATION
- create_allied_pirate_nation_desc: "Napísaním listiny (letter of marque), pridelením lokácie, jedného z našich flotíl a počiatočného zlata, aby sme prilákali prvých členov posádky, zabezpečíme vznik brlohu pirátov a lúpežníkov, ktorí spravia život obchodným flotilám našich nepriateľov oveľa ťažším, zatiaľ čo naše plavidlá prejdú bez problémov." # todo: NEW TRANSLATION
+ create_allied_pirate_nation_desc: "Vydaním listu povolenia na korzárstvo, pridelením vhodného sídla pre veliteľstvo a ponúknutím zlata, aby sme prilákali prvých členov posádky, vytvoríme doupě pirátov a zbojníkov, ktorí nepriateľským lodiam výrazne sťažia život, zatiaľ čo naše lode budú môcť prejsť bezpečne." # todo: CHANGED
  create_allied_pirate_nation_tt: "A [navy_based|e] [subject|e] will appear in the designated [location|e]. We will have the opportunity to play as them." # todo: NEW TRANSLATION
  request_antipiracy_policy: "Požiadať o politiku proti pirátstvu" # todo: NEW TRANSLATION
  request_antipiracy_policy_desc: "Pirátske morie na vysokých moriach je tak ťažké vymýtiť preto, že niektoré bezbožné národy majú tú drzosť otvorene podporovať a financovať lúpežníkov. Môžeme sa ich pokúsiť presvedčiť, aby napravili túto chybu silou našej diplomacie." # todo: NEW TRANSLATION
@@ -731,7 +731,7 @@
  STARVING_PROVINCE_ENTRY_REST: "...a až $AMOUNT|Y0$ ďalších!" # todo: NEW TRANSLATION
  EXTENDED_WINTER_AFFECTED_LOCATIONS_TOOLTIP: "Zo $TOTAL_AMOUNT$ našich vlastnených [locations|e] je $AMOUNT|0$ [locations|e] postihnutých $little_ice_age$:" # todo: NEW TRANSLATION
  EXTENDED_WINTER_STARVING_PROVINCES_TOOLTIP: "$AMOUNT|0$ z $TOTAL_AMOUNT|0$ vlastnených [provinces|e] sú [starving|e]:" # todo: NEW TRANSLATION
- little_ice_age_desc: "Chlad Malej doby ľadovej skúša odolnosť nášho ľudu a núti vládcov prispôsobiť sa, inak budú svedkami, ako ich panstvo upadá do utrpenia. Či už starostlivým vládnutím alebo čírym prežitím, história si zapamätá tých, ktorí toto kruté obdobie prežijú a prekonajú." # todo: NEW TRANSLATION
+ little_ice_age_desc: "Mrazivý chlad Malej doby ľadovej skúša našu odolnosť a núti nášho vládcu prispôsobiť sa, alebo sledovať, ako jeho panstvo upadá do zamrznutého pekla. Či už prostredníctvom opatrného vládnutia, alebo číreho inštinktu prežitia, história si zapamätá tých, ktorí prekonajú toto obdobie veľkých ťažkostí." # todo: CHANGED
  locations_in_designated_market_get_enforced_rationing_policy_tt: "Každé [province_capital|e], ktoré vlastníme v určenom [market|e], získa [ShowModifier('enforced_rationing_policy')] na #Y 10#! rokov" # todo: NEW TRANSLATION
  province_gains_expanded_food_production_modifier_and_potential_tt: "Vybraná [province|e] získa [ShowModifier('expanded_food_production_modifier')] na #Y 10#! rokov.\n\nAk je to možné, [location|e] s najvyššou produkciou [food_raw_material|e] v tej istej provincii tiež získa [ShowModifier('expanded_production_of_raw_goods_modifier')] na #Y 10#! rokov." # todo: NEW TRANSLATION
  enforce_rationing_policies: "Zaviesť prerozdeľovací režim potravín" # todo: NEW TRANSLATION
@@ -761,3 +761,6 @@
  CURRENT_LEAGUE_LEADER_DIP_REP: "Súčasný vodca ligy [diplomatic_reputation|e]" # todo: NEW TRANSLATION
  CURRENT_LEAGUE_LEADER_OPINION: "Súčasný vodca ligy [opinion|e]" # todo: NEW TRANSLATION
  locations_with_extended_winter_will_be_affected_by_the_following_modifiers_tt: "[locations|e] postihnuté predĺženou [winter|e] budú trpieť nasledujúcimi [location_modifiers|e] až do konca tejto [situation|e]:" # todo: NEW TRANSLATION
+ AFFECTED_MY_POPS_ENTRY: "$AMOUNT$ ďalších [pops|e] vo vašej krajine je postihnutých, možno prisťahovalci z iných oblastí." # todo: NEW TRANSLATION
+ AFFECTED_OTHER_POPS_ENTRY: "$AMOUNT$ ďalších zahraničných [pops|e] vo vašej krajine je postihnutých, možno imigranti." # todo: NEW TRANSLATION
+ AFFECTED_FOREIGN_POPS_ENTRY: "$AMOUNT$ z vašich [pops|e] mimo vašej krajiny je tiež postihnutých." # todo: NEW TRANSLATION

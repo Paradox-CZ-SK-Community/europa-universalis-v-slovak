@@ -2152,10 +2152,10 @@
  CREATE_CASUS_BELLI_HOW: "Na vytvorenie [CASUS_BELLI.GetNameWithNoTooltip] Casus Belli musia platiť nasledujúce podmienky:\n$HOW$" # todo: NEW TRANSLATION
  CANCEL_CREATE_CASUS_BELLI_TITLE: "Zrušiť vytváranie Casus Belli" # todo: NEW TRANSLATION
  WARGOAL_CONSEQUENCES: "Následky" # todo: NEW TRANSLATION
- DEFENDER_SIDE_COUNTRIES: "[defender|e] side [countries|e]" # todo: NEW TRANSLATION
- ATTACKER_SIDE_COUNTRIES: "[attacker|e] side [countries|e]" # todo: NEW TRANSLATION
- WAR_SCORE_TOOLTIP_ATTACKER: "#T Wargoal dosiahnutý#! [attacker|e] dosiahol [war_goal|e], takže [war_score|e] sa mesačne zvyšuje v ich prospech." # todo: NEW TRANSLATION
- WAR_SCORE_TOOLTIP_DEFENDER: "#T Wargoal dosiahnutý#! [defender|e] dosiahol [war_goal|e], takže [war_score|e] sa mesačne zvyšuje v ich prospech." # todo: NEW TRANSLATION
+ DEFENDER_SIDE_COUNTRIES: "[GetDataModelSize(WarLateralView.GetEnemyParticipants)] $game_concept_countries$" # todo: CHANGED
+ ATTACKER_SIDE_COUNTRIES: "[GetDataModelSize(WarLateralView.GetFriendlyParticipants)] $game_concept_countries$" # todo: CHANGED
+ WAR_SCORE_TOOLTIP_ATTACKER: "#T Vojnový cieľ dosiahnutý#! [war_attacker|e] dosiahol [war_goal|e], takže [war_score|e] sa im mesačne pripisuje." # todo: CHANGED
+ WAR_SCORE_TOOLTIP_DEFENDER: "#T Vojnový cieľ dosiahnutý#! [war_defender|e] dosiahol [war_goal|e], takže [war_score|e] sa im mesačne pripisuje." # todo: CHANGED
  DIP_CHAR_ON_MISSION: "$NAME$ už je na misii.\nVráti sa $DATE$." # todo: NEW TRANSLATION
  DIP_CHAR_AVAILABLE: "$NAME$ je k dispozícii pre túto misiu." # todo: NEW TRANSLATION
  DIP_NONE: "<Žiadne>" # todo: NEW TRANSLATION
@@ -2376,7 +2376,7 @@
  RIVALS_GO_TO_RIVAL: "Prejsť na [rival|e]" # todo: NEW TRANSLATION
  RIVALS_GO_TO_COUNTRY_RIVAL: "Prejsť na [COUNTRY.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  RIVALS_REMOVE_RIVAL: "Odstrániť [rival|e]" # todo: NEW TRANSLATION
- RIVALS_REMOVE_RIVAL_SPECIFIC: "Odstrániť [COUNTRY.GetName] ako [rival|e]." # todo: NEW TRANSLATION
+ RIVALS_REMOVE_RIVAL_SPECIFIC: "Odstrániť [COUNTRY.GetName] ako [rival|e] za $COST|R$." # todo: CHANGED
  RIVALS_ALREADY: "#T Rivalita#! Sú už naším [rival|e]." # todo: NEW TRANSLATION
  CAN_ENABLE_DEPENDENCY_ALREADY_SUBJECT: "Už je podriadený štát" # todo: NEW TRANSLATION
  CAN_ENABLE_DEPENDENCY_INVALID_SUBJECT_TYPE: "Neplatný typ podriadeného štátu" # todo: NEW TRANSLATION
@@ -2506,3 +2506,19 @@
  SUBJECT_TYPE_ALLOW_SUBJECT: "$EFFECT_LIST_BULLET$$SUBJECT$ má povolené vytvoriť si vlastné [subjects|e]." # todo: NEW TRANSLATION
  war_goal_take_capital_liberate_hre_member: "Oslobodenie člena Svätej rímskej ríše" # todo: NEW TRANSLATION
  war_goal_take_capital_liberate_hre_member_desc: "$generic_war_goal_take_capital_desc$" # todo: NEW TRANSLATION
+ GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO: "[COUNTRY.GetName] je #V ##[Country.GetGreatPowerRank]#! s $VAL|0V$ [great_power_score|e]." # todo: NEW TRANSLATION
+ DIPLOREASON_YEARS_IN_UNION: "Roky v našom [union|e]" # todo: NEW TRANSLATION
+ DIPLOREASON_TRUST: "Ich [trust|e] voči nám" # todo: NEW TRANSLATION
+ DIPLOREASON_UNION_SUPPORTS_ORGANIZATION: "Akýkoľvek člen [union|e] je v Organizácii" # todo: NEW TRANSLATION
+ DIPLOREASON_UNION_OPPOSES_ORGANIZATION: "Akýkoľvek člen [union|e] je v opačnej Organizácii" # todo: NEW TRANSLATION
+ is_republic: "Je [ShowGovernmentTypeName('republic')]" # todo: NEW TRANSLATION
+ DIPLOREASON_OUR_SUBJECT: "Nemajú v tejto veci slovo" # todo: NEW TRANSLATION
+ DIPLOREASON_DEFENSIVE_WAR: "[SCOPE.sWar('target').GetName] je obranná vojna" # todo: NEW TRANSLATION
+ DIPLOREASON_WAR_LEADER: "Je vodcom vojny" # todo: NEW TRANSLATION
+ DIPLOREASON_AVERAGE_UPPER_CLASS_ESTATE_SATISFACTION: "Priemerná [upper_class|e] [estate_satisfaction|e]" # todo: NEW TRANSLATION
+ DIPLOREASON_REVERSE_RELATIVE_STRENGTH: "Sila [TARGET_COUNTRY.GetName] oproti [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ OPEN_HRE_DIPLOMACY: "Otvoriť diplomaciu Sväto-rímskej ríše" # todo: NEW TRANSLATION
+ PEACE_TREATY_ANTAGONISM_GAINED_NO_TOOLTIP: "$VAL|+-2=$" # todo: NEW TRANSLATION
+ PEACE_TREATY_ANTAGONISM_GAINED: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+-2=$#!" # todo: NEW TRANSLATION
+ COST_OF_RELATION: "Cena vzťahu" # todo: NEW TRANSLATION
+ REASONS_TO_KEEP_RELATION_TT: "#T Dôvody na udržanie #!" # todo: NEW TRANSLATION

@@ -61,9 +61,9 @@
  matrilineal_non_exclusive_desc: "Je to typ [heir_selection|e] v ríši, kde nový [ruler|e] je najspôsobilejšia osoba z dynastie predchádzajúceho [ruler]." # todo: NEW TRANSLATION
  bank_selection: "Výber nového bankového riaditeľa" # todo: NEW TRANSLATION
  elective_succession: "Elektívna sukcesia" # todo: NEW TRANSLATION
- elective_succession_desc: "Je to typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je nový vládca volený [ShowEstateTypeName('nobles_estate')]. Hoci by bol každý šľachtic oprávnený byť zvolený, voliči uprednostňujú člena súčasnej dynastie." # todo: NEW TRANSLATION
+ elective_succession_desc: "Ide o typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je nový vládca volený [ShowEstateTypeName('nobles_estate')]. Hoci by každý šľachtic mohol byť zvolený, voliči uprednostňujú člena súčasnej dynastie na post panovníka.\n\n$UNSTABLE_UNION_WARNING$" # todo: CHANGED
  dynastic_elective_succession: "Dynastická elektívna sukcesia" # todo: NEW TRANSLATION
- dynastic_elective_succession_desc: "Je to typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom nový vládca je volený [ShowEstateTypeName('nobles_estate')]. Iba členovia vládnucej dynastie sú oprávnení byť zvolení." # todo: NEW TRANSLATION
+ dynastic_elective_succession_desc: "Ide o typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je nový vládca volený [ShowEstateTypeName('nobles_estate')]. Len členovia vládnucej dynastie sú oprávnení byť zvolení.\n\n$UNSTABLE_UNION_WARNING$" # todo: CHANGED
  dynastic_elective_succession_best_candidate_desc: "Určené hlasovaním [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
  papal_election: "Pápežská konkláve" # todo: NEW TRANSLATION
  papal_election_desc: "Keď pápež zomrie, [cardinals|e] sa zhromaždia, aby rokovali o tom, kto bude nový pápež. Môže to byť rýchle, ale niekedy to môže trvať aj niekoľko rokov." # todo: NEW TRANSLATION
@@ -225,8 +225,6 @@
  REVOKE_PRIVILEDGE_STABILITY: "@trigger_no! Potrebujeme [stability|e] krajiny nad $VAL|Y$, aby sme mohli odobrať [ESTATE_PRIVILEGE.GetName] od [ESTATE.GetName]." # todo: NEW TRANSLATION
  REVOKE_PRIVILEDGE_TT: "Náklady na odstránenie: $COST$ a $VAL|+=2%$ [estate_satisfaction|e]" # todo: NEW TRANSLATION
  GRANT_PRIVILEGE_TRIGGER_NO: "Nie je možné udeliť [ESTATE_PRIVILEGE.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
- REVOKE_PRIVILEDGE_TRIGGER_NO: "Nie je možné odobrať [ESTATE_PRIVILEGE.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
- REVOKE_PRIVILEDGE_CONDITIONS: "Podmienky odobratie" # todo: NEW TRANSLATION
  ESTATE_OPINION_BASE: "Názor krajiny" # todo: NEW TRANSLATION
  ESTATE_OPINION_BOTH_MONARCHY: "Obe sú [ShowGovernmentTypeName('monarchy')]" # todo: NEW TRANSLATION
  ESTATE_OPINION_BOTH_REPUBLIC: "Obe sú [ShowGovernmentTypeName('republic')]" # todo: NEW TRANSLATION
@@ -965,7 +963,7 @@
  settle_the_frontier_select_character: "Vyberte [character|e], ktorého chcete poslať:" # todo: NEW TRANSLATION
  settle_the_frontier_no_character: "$NO_POSSIBLE_CHARACTERS$" # todo: NEW TRANSLATION
  settle_the_frontier_active: "Osídľovanie [SCOPE.sProvinceDefinition('target').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- settle_the_frontier_action_progress: "[SCOPE.sCountry('actor').GetGovernment.GetCabinetActionImplementationProgress('settle_the_frontier')|2]%" # todo: NEW TRANSLATION
+ settle_the_frontier_action_progress: "[SCOPE.sCountry('actor').GetGovernment.GetCabinetActionImplementationProgress('settle_the_frontier')|2%]" # todo: CHANGED
  settle_the_frontier_action_progress_wordier: "Osídľovanie bude dokončené [SCOPE.sCountry('actor').GetGovernment.GetCabinetActionImplementationDate('settle_the_frontier')]" # todo: NEW TRANSLATION
  settle_the_frontier_action_progress_long_wordier: "@province_integration_speed! [SCOPE.sCountry('actor').GetGovernment.GetCabinetActionImplementationDate('settle_the_frontier')]" # todo: NEW TRANSLATION
  settle_the_frontier_action_progress_tooltip: "Pokrok osídľovania [SCOPE.sProvinceDefinition('target').GetName]: [SCOPE.sCountry('actor').GetGovernment.GetCabinetActionImplementationProgress('settle_the_frontier')|2%]\n#Y $settler_character_truthfulness$#! z [SCOPE.sCharacter('recipient').GetName]: [SCOPE.sCharacter('recipient').MakeScope.GetVariable('settling_no_mans_land_var').GetValue|+=0]" # todo: NEW TRANSLATION
@@ -1031,3 +1029,4 @@
  UNIQUE_POLICY_TITLE: "Unikátna politika" # todo: NEW TRANSLATION
  UNIQUE_POLICY_DESC: "Táto politika je unikátna pre [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  mlo_restore_kingdom_lombardy_action_progress_long_wordier: "@restore_lombardy! [SCOPE.sProvince('target').GetIntegrationETA] \n\n@province_integration_speed! #W [Cabinet.GetActionNumProgress|%]#!" # todo: NEW TRANSLATION
+ UNSTABLE_UNION_WARNING: "#Y Tento $game_concept_succession_law$ môže mať neželané následky pre ktorúkoľvek z našich súčasných alebo budúcich únií.#!" # todo: NEW TRANSLATION

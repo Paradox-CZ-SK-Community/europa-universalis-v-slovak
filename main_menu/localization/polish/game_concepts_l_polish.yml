@@ -71,7 +71,7 @@
  game_concept_goods_demands: "Dopyty po tovaroch" # todo: NEW TRANSLATION
  game_concept_goods_demand_desc: "Toto sú [goods|e], ktoré sú potrebné pre [construction|e], [production_method|e], [pop_needs|e] alebo čokoľvek iné, čo si vyžaduje tovar." # todo: NEW TRANSLATION
  game_concept_government_needs: "Potreby vlády" # todo: NEW TRANSLATION
- game_concept_government_needs_desc: "[government_needs] sú tie [goods|e], ktoré vaše [country|e] potrebuje pre [constructions|e] ako [buildings|e], vylepšenie [location_rank|e], nábor [armies|e] a [navies|e] alebo prípravu [explorations|e].\n\n[constructions|e] sa zastavia, ak nemôžu byť [government_needs] uspokojené na [market|e] danej [location|e], preto by uspokojovanie [government_needs] malo byť prioritou každej vlády." # todo: NEW TRANSLATION
+ game_concept_government_needs_desc: "[government_needs] sú tie [goods|e], ktoré vaša [country|e] potrebuje pre [constructions|e] ako [buildings|e], vylepšovanie [location_rank|e], verbovanie [armies|e] a [navies|e] alebo prípravu [explorations|e].\n\n[constructions|e] sa zastavia, ak [government_needs] nemožno zabezpečiť na [market|e] v [location|e], preto by uspokojenie [government_needs] malo byť prioritou každej vlády." # todo: CHANGED
  game_concept_production_method: "Spôsob výroby" # todo: NEW TRANSLATION
  game_concept_production_methods: "Spôsoby výroby" # todo: NEW TRANSLATION
  game_concept_production_method_desc: "Je to nastavenie, ktoré možno zmeniť v [building|e], aby sa zmenili [goods|e] potrebné pre jeho výkon a/alebo čo je daná budova schopná robiť." # todo: NEW TRANSLATION
@@ -303,7 +303,7 @@
  game_concept_food_source: "Zdroj jedla" # todo: NEW TRANSLATION
  game_concept_food_source_desc: "[army|e] bude zbierať jedlo z [province|e], kde má [food_access|e], z priateľského [supply_depot|e] alebo z [navy|e], ktorá [distributing_food|e]." # todo: NEW TRANSLATION
  game_concept_logistics_distance: "Logistická vzdialenosť" # todo: NEW TRANSLATION
- game_concept_logistics_distance_desc: "To je vzdialenosť, akú môže [army|e] sledovať svoje zásobovacie línie k [food_source|e]. Armády budú získavať jedlo z [province|e], kde majú [food_access|e], z priateľského [supply_depot|e] alebo z [navy|e], ktorá [distributing_food|e]. [hostile|e] [army] alebo [zone_of_control|e] to zablokuje." # todo: NEW TRANSLATION
+ game_concept_logistics_distance_desc: "Toto udáva, ako ďaleko môže [army|e] viesť svoje zásobovacie linky k [food_source|e]. Armády budú získavať jedlo z [province|e], kde majú [food_access|e], z priateľského [supply_depot|e] alebo z [navy|e], ktorá [distributing_food|e]. [hostile|e] armáda alebo [zone_of_control|e] to zablokujú." # todo: CHANGED
  game_concept_military_objective: "Vojenský cieľ" # todo: NEW TRANSLATION
  game_concept_military_objectives: "Vojenské ciele" # todo: NEW TRANSLATION
  game_concept_military_objective_desc: "[armies|e] a [navies|e] môžu mať priradené ciele, ktoré sa budú snažiť plniť samostatne." # todo: NEW TRANSLATION
@@ -312,7 +312,7 @@
  game_concept_army_desc: "Armáda je skupina [regiments|e] vedená [character|e], ktorá môže viesť [battles|e] a [siege|e] protivníkových [fortifications|e]." # todo: NEW TRANSLATION
  game_concept_navy: "Námorníctvo" # todo: NEW TRANSLATION
  game_concept_navies: "Námorné sily" # todo: NEW TRANSLATION
- game_concept_navy_desc: "Námorné sily umožňujú [country|e] premietať moc za hranice svojho územia. [navies|e] sú skupiny [ships|e] vedené [character|e], ktoré môžu viesť [battles|e], [blockade|e] [hostile|e] pobrežia, narušovať nepriateľskú [maritime_presence|e] a prepravovať [armies|e] tam, kde sú potrebné. Tiež pomáhajú s logistikou, keďže môžu [distribute_food|e] a [gather_food|e]." # todo: NEW TRANSLATION
+ game_concept_navy_desc: "Námorné sily umožňujú [country|e] presadzovať moc za hranicami svojho územia. Námorné sily sú skupiny [ships|e] vedené [character|e], ktoré môžu viesť [battles|e], [blockade|e] [hostile|e] pobrežia, narúšať nepriateľskú [maritime_presence|e] a prepravovať [armies|e] tam, kde sú potrebné. Tiež pomáhajú s logistikou, pretože môžu [distribute_food|e] a [gather_food|e]." # todo: CHANGED
  game_concept_ship: "Loď" # todo: NEW TRANSLATION
  game_concept_ships: "Lode" # todo: NEW TRANSLATION
  game_concept_ship_desc: "Základná stavebná jednotka [navy|e]. Loď môže niesť [food|e], [regiments|e] a svoju posádku. Každá loď má špecifický [ship_type|e]." # todo: NEW TRANSLATION
@@ -571,7 +571,7 @@
  game_concept_promoted: "Povýšený" # todo: NEW TRANSLATION
  game_concept_promotes: "Povýšenia" # todo: NEW TRANSLATION
  game_concept_promotion: "Povýšenie" # todo: NEW TRANSLATION
- game_concept_promote_desc: "[pops|e] sa budú [promote|e] z [ShowPopTypeName('peasants')] keď sú v ich [location|e] k dispozícii voľné pozície. Popy musia mať aspoň [tolerated_culture|e], aby sa mohli povýšiť." # todo: NEW TRANSLATION
+ game_concept_promote_desc: "[pops|e] sa budú [promote|e] z [ShowPopTypeName('peasants')] vždy, keď sú v ich [location|e] dostupné voľné pozície. Pops musia byť aspoň [tolerated_culture|e], aby sa mohli [promote|e]." # todo: CHANGED
  game_concept_demoted: "Degradovaný" # todo: NEW TRANSLATION
  game_concept_demotion: "Degradácia" # todo: NEW TRANSLATION
  game_concept_demote: "Degradovať" # todo: NEW TRANSLATION
@@ -604,7 +604,7 @@
  game_concept_power_projection: "Projekcia sily" # todo: NEW TRANSLATION
  game_concept_power_projection_desc: "[countries|e] s vyššou $game_concept_power_projection$ môžu vykořisťovať národy s nižšou. Ak máme vyššiu hodnotu ako iná krajina, môžeme v ich [locations|e] postaviť [ShowBuildingTypeName('trade_office')], [ShowBuildingTypeName('slave_center')], [ShowBuildingTypeName('missionary_building')] alebo iné špecifické budovy. Čím vyššia je naša $game_concept_power_projection$, tým rýchlejšie môžu naše [colonial_charters|e] získať kontrolu nad lokalitami. Mať vyššiu $game_concept_power_projection$ než iná krajina tiež znižuje [stability|e] náklady na vyhlásenie [war|e] voči nej, ako aj [war_exhaustion|e]." # todo: NEW TRANSLATION
  game_concept_proximity: "Blízkosť" # todo: NEW TRANSLATION
- game_concept_proximity_desc: "Proximita [location_with_icon|e] meria, ako blízko sa nachádza k [capital_with_icon|e] jeho [owner|e] a určuje, koľko [control_with_icon|e] môžu mať [locations].\n\n[proximity] začína na #high 100%#! v [capital] každého [country|e] a preskakuje na blízke [locations], čím im pridelí [proximity]. Pri každom ďalšom preskoku sa časť [proximity] stratí v závislosti od terénu a infraštruktúry prítomnej v [location]. Tá časť [proximity], ktorá sa stratí pri preskoku z jedného [location] do druhého, sa nazýva Proximity Cost.\n\nNáklady na proximitu medzi [locations] sa výrazne líšia v závislosti od [topography_with_icon|e] a [vegetation_with_icon|e]. Na súši sa dajú znížiť výstavbou [roads_with_icon|e], zvýšením [development_with_icon|e] a [ShowSocietyDirectionName('land')] [societal_value_with_icon|e]. Na mori ich môžu znížiť [harbor_capacity_with_icon|e], [maritime_presence_with_icon|e] a [ShowSocietyDirectionName('naval')] [societal_value]." # todo: CHANGED
+ game_concept_proximity_desc: "Proximitu [location_with_icon|e] meria, ako blízko sa nachádza k [capital_with_icon|e] svojho [owner|e], a určuje, koľko [control_with_icon|e] môžu [locations] mať.\n\n[proximity] začína na #high 100%#! v [capital] každej [country|e] a preskakuje na blízke [locations], čím im prideľuje [proximity]. Časť [proximity] sa stratí pri každom ďalšom preskoku v závislosti od terénu a infraštruktúry prítomnej v [location]. [proximity], ktorá sa stratí pri preskoku z jednej [location] na druhú, sa nazýva náklady na proximitu.\n\nNáklady na proximitu medzi [locations] sa výrazne líšia podľa [topography_with_icon|e] a [vegetation_with_icon|e]. Na súši ich možno znížiť budovaním [roads_with_icon|e], zvyšovaním [development_with_icon|e] a [ShowSocietyDirectionName('land')] [societal_value_with_icon|e]. Na mori ich možno znížiť [harbor_capacity_with_icon|e], [maritime_presence_with_icon|e] a [ShowSocietyDirectionName('naval')] [societal_value]." # todo: CHANGED
  game_concept_output: "Produkcia" # todo: NEW TRANSLATION
  game_concept_produces: "Produkuje" # todo: NEW TRANSLATION
  game_concept_producing: "Produkujúce" # todo: NEW TRANSLATION
@@ -638,7 +638,7 @@
  game_concept_estates: "Stavy"
  game_concept_estate_type: "Typ stavu" # todo: NEW TRANSLATION
  game_concept_estate_types: "Typy stavov" # todo: NEW TRANSLATION
- game_concept_estate_desc: "Špeciálne záujmové skupiny v rámci [country_with_icon|e]. Stavy majú [estate_power_with_icon|e], ktoré predstavujú ich politickú silu v rámci vlády, [estate_satisfaction_with_icon|e], ktoré ukazujú, do akej miery sú ich potreby napĺňané, a [estate_opinions|e] o iných krajinách.\n\nStavy tiež môžu mať [estate_privileges_with_icon|e], čo sú osobitné práva zvyšujúce ich moc, ktoré vláda môže udeľovať alebo odoberať. Na oplátku [estates] poskytujú [taxes_with_icon|e], [army_levies_with_icon|e] a [navy_levies_with_icon|e] svojej [country].\n\nStavy zbierajú [tax_base_with_icon|e] z [locations_with_icon|e], ako aj časť zisku z [trade|e], a tieto bohatstvo používajú na stavbu [buildings_with_icon|e] a platenie za [pop_needs_with_icon|e]. Ak je ich [estate_satisfaction] nízka, budú stavať iba stavovské budovy na podporu vlastného [estate_power].\n\nKaždý [character_with_icon|e] patrí k jednému zo Stavov a zvyšuje jeho moc, keď je menovaný do [cabinet_with_icon|e], alebo keď velí [armies|e] a [navies|e]. Niektoré [heir_selections|e] obmedzujú ich [heirs|e] na konkrétne stavy." # todo: NEW TRANSLATION
+ game_concept_estate_desc: "Špeciálne záujmové skupiny v [country_with_icon|e], Stavy majú [estate_power_with_icon|e], ktoré predstavujú ich politickú silu v rámci vlády, [estate_satisfaction_with_icon|e], ktoré ukazujú, ako dobre sú ich potreby naplnené, a [estate_opinions|e] o iných krajinách.\n\nStavy môžu mať aj [estate_privileges_with_icon|e], čo sú osobitné práva zvyšujúce ich moc, ktoré môže vláda udeľovať alebo odoberať. Na oplátku [estates] poskytujú [taxes_with_icon|e], [army_levies_with_icon|e] a [navy_levies_with_icon|e] svojej [country].\n\nStavy vyberajú [tax_base_with_icon|e] z [locations_with_icon|e], ako aj časť zisku z [trade|e], a používajú tieto prostriedky na stavbu [buildings_with_icon|e] a platenie [pop_needs_with_icon|e]. Ak je ich [estate_satisfaction] nízka, budú stavať len budovy stavov na podporu vlastnej [estate_power].\n\nKaždý [character_with_icon|e] patrí k jednému zo Stavov a zvyšuje jeho moc pri vymenovaní do [cabinet_with_icon|e] alebo pri velení [armies|e] a [navies|e]. Niektoré [heir_selections|e] obmedzujú ich [heirs|e] na konkrétne stavy." # todo: CHANGED
  game_concept_estate_opinion: "Názor stavu" # todo: NEW TRANSLATION
  game_concept_estate_opinions: "Názory stavov" # todo: NEW TRANSLATION
  game_concept_estate_opinion_desc: "Stavy v [country|e] budú mať názory o iných krajinách, t.j. proti ktorým byť [hostile|e] a s ktorými nadviazať priateľstvo, všetko za účelom naplnenia vlastných potrieb." # todo: NEW TRANSLATION
@@ -696,7 +696,7 @@
  game_concept_lender: "Veriteľ" # todo: NEW TRANSLATION
  game_concept_lender_desc: "To je buď banka, ktorá požičiava [gold|e], aby na tom zarobila [interest|e], alebo iná [country|e], ktorá peniaze požičiava." # todo: NEW TRANSLATION
  game_concept_borrower: "Dlžník" # todo: NEW TRANSLATION
- game_concept_borrower_desc: "To je [country|e], ktorá je dlžná [gold|e] a musí zaň platiť [interest|e], zvyčajne inej [country|e] alebo [estate|e]." # todo: NEW TRANSLATION
+ game_concept_borrower_desc: "Ide o [country|e], ktorá dlží [gold|e] a musí zaň platiť [interest|e], zvyčajne inej [country|e] alebo [estate|e]." # todo: CHANGED
  adm_concept: "[adm|e]" # todo: NEW TRANSLATION
  dip_concept: "[dip|e]" # todo: NEW TRANSLATION
  mil_concept: "[mil|e]" # todo: NEW TRANSLATION
@@ -730,7 +730,7 @@
  game_concept_retreat: "Ústup" # todo: NEW TRANSLATION
  game_concept_retreats: "Ústupy" # todo: NEW TRANSLATION
  game_concept_retreating: "Ustupovanie" # todo: NEW TRANSLATION
- game_concept_retreat_desc: "[army|e] alebo [navy|e] môžu byť nútené ustúpiť po prehranej bitke, kvôli príliš nízkemu [morale|e], alebo sa môžu rozhodnúť [retreat|e] dobrovoľne. Počas ústupu nebudú schopné znovu bojovať ani dostať nové rozkazy, kým nedosiahnu svoj cieľ." # todo: NEW TRANSLATION
+ game_concept_retreat_desc: "[army|e] alebo [navy|e] môže byť nútená ustúpiť po prehre bitky, ak má príliš nízke [morale|e], alebo sa môže dobrovoľne rozhodnúť [retreat|e]. Počas ústupu nebude schopná opäť bojovať ani dostať nové rozkazy, kým nedosiahne svoj cieľ." # todo: CHANGED
  game_concept_army_tradition: "Armádna tradícia" # todo: NEW TRANSLATION
  game_concept_army_tradition_i: "@army_tradition!" # todo: NEW TRANSLATION
  game_concept_army_tradition_desc: "Toto predstavuje nahromadené skúsenosti [armies|e], [battles|e] a [sieges|e] danej [country|e]." # todo: NEW TRANSLATION
@@ -757,7 +757,7 @@
  game_concept_embrace_desc: "[country|e] môže [embrace|e] [institution|e], keď dostatočná časť [population|e] danej [country|e] žije v [locations|e], kde sa plne rozšírila. To znamená, že krajina úplne pochopila [institution] a môže [research|e] [advances|e], ktoré ju vyžadujú." # todo: NEW TRANSLATION
  game_concept_advance: "Pokrok" # todo: NEW TRANSLATION
  game_concept_advances: "Pokroky" # todo: NEW TRANSLATION
- game_concept_advance_desc: "Pokroky predstavujú nápady, vynálezy, technológie a iné oblasti ľudského poznania.\n\nNaraz môže byť [researched|e] len jeden [advance|e], a rýchlosť, akou [country|e] môže ich skúmať, závisí od ich [research_progress_with_icon|e].\n\nS každým [age|e] sa objavujú nové Pokroky, ktoré môžu [countries] objavovať. Niektoré sú exkluzívne pre konkrétne [countries], [cultures|e] alebo [religions|e], ale väčšina jednoducho vyžaduje [embraced|e] príslušné [institutions_with_icon|e].\n\nRýchlosť, akou postupujeme k novým [advances_with_icon|e], závisí hlavne od sily nášho [liturgical_language_with_icon|e], priemernej [literacy_with_icon|e] našich [pops_with_icon|e], [estate_satisfaction|e] nášho [ShowEstateTypeName('clergy_estate')] a počtu [institutions_with_icon|e], ktoré máme [embraced|e]." # todo: NEW TRANSLATION
+ game_concept_advance_desc: "Pokroky predstavujú myšlienky, vynálezy, technológie a iné oblasti ľudského poznania.\n\nNaraz môže byť [researched|e] len jeden Advance a rýchlosť, akou ich môže [country|e] skúmať, závisí od ich [research_progress_with_icon|e].\n\nS každým [age|e] sa pre [countries] sprístupnia nové [advances_with_icon|e]. Niektoré sú exkluzívne pre konkrétne [countries], [cultures|e] alebo [religions|e], ale väčšina vyžaduje len prijatie príslušných [institutions_with_icon|e].\n\nRýchlosť, akou postupujeme k novým [advances_with_icon|e], závisí hlavne od sily nášho [liturgical_language_with_icon|e], priemernej [literacy_with_icon|e] našich [pops_with_icon|e], [estate_satisfaction|e] nášho [ShowEstateTypeName('clergy_estate')] a počtu [institutions_with_icon|e], ktoré sme [embraced|e]." # todo: CHANGED
  game_concept_research: "Výskum" # todo: NEW TRANSLATION
  game_concept_researched: "Vyskúmané" # todo: NEW TRANSLATION
  game_concept_researching: "Výskum" # todo: NEW TRANSLATION
@@ -797,7 +797,7 @@
  game_concept_integrating: "Integruje sa" # todo: NEW TRANSLATION
  game_concept_integration_list_title: "Integrované [location] získava nasledujúce efekty:" # todo: NEW TRANSLATION
  game_concept_integration_list: "[ShowModifierEffect('integration_integrated')]" # todo: NEW TRANSLATION
- game_concept_integration_desc: "Integrované [location|e] bolo riadne začlenené do štátu a je preto oveľa jednoduchšie ho spravovať než [conquered|e] [location].\n\n[conquered|e] [locations] je potrebné integrovať pomocou [cabinet_action|e], ktorá cielená na celú [province|e] a ktorej rýchlosť závisí od rôznych faktorov, vrátane počtu [locations], ich [culture|e] alebo ich [location_rank|e]." # todo: NEW TRANSLATION
+ game_concept_integration_desc: "Integrovaná [location|e] bola riadne začlenená do štátu, a preto sa spravuje omnoho ľahšie než [conquered|e] [location].\n\n[conquered|e] [locations] je potrebné integrovať pomocou [cabinet_action|e], ktorá cieli na celú [province|e], a ktorej rýchlosť závisí od rôznych faktorov vrátane počtu [locations], ich [culture|e] alebo ich [location_rank|e]." # todo: CHANGED
  game_concept_government_reform: "Reforma vlády" # todo: NEW TRANSLATION
  game_concept_government_reforms: "Vládne reformy" # todo: NEW TRANSLATION
  game_concept_reforms: "Reformy" # todo: NEW TRANSLATION
@@ -864,7 +864,7 @@
  game_concept_law_desc: "Každý zákon musí mať zvolenú [policy|e], inak nie je aktívny. Rôzne [government_types|e] a [religions|e] získavajú rôzne zákony a viac zákonov je udelených prostredníctvom [advances|e]. V závislosti od toho, ktorú [policy] v zákone vyberieme, často ovplyvníme naše [societal_values|e]." # todo: NEW TRANSLATION
  game_concept_antagonism: "Antagonizmus" # todo: NEW TRANSLATION
  game_concept_antagonism_i: "@antagonism!" # todo: NEW TRANSLATION
- game_concept_antagonism_desc: "Antagonizmus ukazuje, ako nás ostatné [countries|e] pravdepodobne vnímajú, a ovplyvňuje ich [opinion|e] o nás. Ak cítia veľa antagonizmu voči nám, krajiny, ktoré nás považujú za relevantné pre svoje záujmy, budú menej ochotné sa angažovať v [diplomacy|e] a môžu konať proti našim záujmom. Antagonizmus je spôsobený základnými rozdielmi v [societal_values|e], [government_types|e], [religion|e], [culture|e] a [language|e] medzi krajinami. Niektoré akcie môžu tiež spôsobiť 'antagonizmovú bombu' v [location|e], ktorá ovplyvní susedné krajiny v rôznej miere v závislosti od toho, ako veľmi im na tom mieste a na agresorovi záleží. Efekty týchto antagonizmových 'bômb' sa zvyčajne časom rozptýlia." # todo: NEW TRANSLATION
+ game_concept_antagonism_desc: "Antagonizmus ukazuje, ako nás pravdepodobne vnímajú iné [countries|e], čo ovplyvňuje ich [opinion|e] o nás. Ak k nám cítia veľa antagonizmu, krajiny, ktoré nás považujú za relevantných pre svoje záujmy, budú menej naklonené zapájať sa do [diplomacy|e] a môžu konať proti našim záujmom. Antagonizmus spôsobujú základné rozdiely v [societal_values|e], [government_types|e], [religion|e], [culture|e] a [language|e] medzi krajinami. Niektoré akcie môžu tiež spustiť antagonizujúcu 'bombu' v [location|e], ktorá ovplyvní blízke krajiny v rôznej miere v závislosti od toho, ako veľmi sa im dané miesto a antagonizujúca krajina týkajú. Tieto účinky antagonizujúcej 'bomby' sa zvyčajne s časom rozptýlia." # todo: CHANGED
  game_concept_antagonism_received_modifier: "Obdržaný antagonizmus" # todo: NEW TRANSLATION
  game_concept_antagonism_received_modifier_desc: "To udáva, do akej miery nepriateľské diplomatické akcie ako [war|e] ovplyvnia náš [antagonism|e]." # todo: NEW TRANSLATION
  game_concept_diplomatic_action: "Diplomatická akcia" # todo: NEW TRANSLATION
@@ -875,7 +875,7 @@
  game_concept_diplomatically_limited: "Diplomaticky obmedzené" # todo: NEW TRANSLATION
  game_concept_limited_diplomacy: "Obmedzená diplomacia" # todo: NEW TRANSLATION
  game_concept_unlimited_diplomacy: "Neobmedzená diplomacia" # todo: NEW TRANSLATION
- game_concept_diplomatic_limitation_desc: "[country|e], ktorý je buď veľmi závislým [subject|e] alebo [junior_partner|e] v [union|e], môže byť diplomaticky obmedzený. To znamená, že nasledujúce diplomatické akcie sú buď nemožné, alebo výrazne obmedzené:\n\n$BULLET$ [ShowRelationTypeName('alliance')]\n\n$BULLET$ [ShowRelationTypeName('food_access')]\n\n$BULLET$ [ShowRelationTypeName('guarantee')]\n\n$BULLET$ [ShowRelationTypeName('military_access')]\n\n$BULLET$ [ShowRelationTypeName('fleet_basing_rights')]\n\n$BULLET$ [ShowGenericActionName('create_building_subject')]\n\n$BULLET$ [ShowGenericActionName('create_province_subject')]\n\nVäčšina subjektov s obmedzenou diplomaciou nie je schopná vyhlásiť vlastné [wars|e], pokiaľ nie sú mierené na veľmi špecifické ciele." # todo: NEW TRANSLATION
+ game_concept_diplomatic_limitation_desc: "Krajina, ktorá je buď veľmi závislým [subject|e] alebo [junior_partner|e] v [union|e], môže byť diplomaticky obmedzená. To znamená, že nasledujúce diplomatické akcie sú buď nemožné, alebo výrazne obmedzené:\n\n$BULLET$ [ShowRelationTypeName('alliance')]\n$BULLET$ [ShowRelationTypeName('food_access')]\n$BULLET$ [ShowRelationTypeName('guarantee')]\n$BULLET$ [ShowRelationTypeName('military_access')]\n$BULLET$ [ShowRelationTypeName('fleet_basing_rights')]\n$BULLET$ [ShowGenericActionName('create_building_subject')]\n$BULLET$ [ShowGenericActionName('create_province_subject')]\n\nVäčšina subjektov s obmedzenou diplomaciou nie je schopná vyhlásiť vlastné [wars|e], pokiaľ nie sú cieľom veľmi špecifických spojencov." # todo: CHANGED
  game_concept_diplomats: "Diplomati" # todo: NEW TRANSLATION
  game_concept_diplomat: "Diplomat" # todo: NEW TRANSLATION
  game_concept_diplomat_desc: "Reprezentuje, koľko [diplomacy|e] môže [country|e] vykonať za daný čas. Niektoré [advances|e] alebo [societal_values|e] tento počet zvýšia." # todo: NEW TRANSLATION
@@ -931,7 +931,7 @@
  game_concept_war_leaders: "Vodcovia vojny" # todo: NEW TRANSLATION
  game_concept_war_leader_desc: "$game_concept_war_leader$ je jedna z dvoch [countries|e], ktoré vedú svoju príslušnú stranu v [war|e]. Budú diskutovať o možných výsledkoch konfliktu rozhodovaním o [peace_treaties|e]." # todo: NEW TRANSLATION
  game_concept_call_to_arms: "Volanie do zbrane" # todo: NEW TRANSLATION
- game_concept_call_to_arms_desc: "Volanie do zbrane je [diplomatic_action|e], ktorú je možné vykonať počas [war|e] voči každému [ally|e] a iným [countries|e], ktoré sa zaviazali zúčastňovať sa vojenských konfliktov.\n\nKrajiny, ktoré sú [defender|e], automaticky povolajú svojich spojencov do vojny, zatiaľ čo krajiny, ktoré sú [attacker|e], ich musia povolať manuálne a je pre ne ťažšie presvedčiť ich, aby sa pripojili." # todo: NEW TRANSLATION
+ game_concept_call_to_arms_desc: "Výzva na zbrane je [diplomatic_action|e], ktorú je možné vykonať počas [war|e] voči všetkým [ally|e] a iným [countries|e], ktoré prisľúbili účasť na vojenských konfliktoch.\n\nKrajiny, ktoré sú [war_defender|e], automaticky zvolajú svojich spojencov do vojny, zatiaľ čo krajiny, ktoré sú [war_attacker|e], ich musia volať manuálne a je pre nich ťažšie presvedčiť ich, aby sa pridali." # todo: CHANGED
  game_concept_treaty: "Dohoda" # todo: NEW TRANSLATION
  game_concept_treaties: "Dohody" # todo: NEW TRANSLATION
  game_concept_treaty_desc: "Dohoda je podpísaný diplomatický stav medzi dvoma alebo viac [countries|e]. Môžu byť na obmedzený čas alebo do odvolania.\nDohody zahŕňajú [alliances|e], [military_access|e], [truce|e] a mnoho ďalších, ktoré je možné vytvoriť prostredníctvom [diplomacy|e]." # todo: NEW TRANSLATION
@@ -1325,7 +1325,7 @@
  game_concept_forts: "Pevnosti" # todo: NEW TRANSLATION
  game_concept_fortification_desc: "Sú to obranné [buildings|e] navrhnuté na ochranu vlastných [locations|e] [country|e] proti [enemy|e] [armies|e]. [Location] s pevnosťou nemôže byť okamžite [sieged|e], namiesto toho vyžaduje dlhodobé [siege]. Niektoré [advances|e] umožňujú stavať efektívnejšie pevnosti, pričom každá úroveň zvyšuje náročnosť [siege], potrebného na ich [occupy|e].\n\nPevnosti majú [zone_of_control|e] nad susednými [locations].\n\nPevnosti majú náklady na [fort_maintenance_with_icon|e], ktoré idú priamo do [treasury] krajiny a závisia od cien [goods] na ich [market|e]. Všetky [countries] majú [fort_limit] počtu pevností, ktoré môžu efektívne udržiavať; jeho prekročenie zvyšuje [fort_maintenance] výrazne." # todo: NEW TRANSLATION
  game_concept_fort_limit: "Limit pevností" # todo: NEW TRANSLATION
- game_concept_fort_limit_desc: "$game_concept_fort_limit$ [country_with_icon|e] predstavuje jeho schopnosť udržiavať [fortifications_with_icon|e] bez nadmerného zaťaženia administratívy. [Country] môže prekročiť svoj Limit pevností, ale to spôsobí postupne rastúce náklady na [fort_maintenance_with_icon|e].\n\n$game_concept_fort_limit$ rastie hlavne s počtom vlastnených [locations_with_icon|e], ale aj s [country_rank_with_icon|e] a počtom [locations] so [ShowLocationRankName('city')] [location_rank|e]. [ShowSocietyDirectionName('defensive')] [societal_value_with_icon|e] a niektoré [advances_with_icon|e] ho tiež môžu zvýšiť." # todo: NEW TRANSLATION
+ game_concept_fort_limit_desc: "Hodnota $game_concept_fort_limit$ [country_with_icon|e] predstavuje jej schopnosť udržiavať [fortifications_with_icon|e] bez preťažovania administratívy. Krajina môže prekročiť svoj Fort Limit, avšak takéto prekročenie bude spôsobovať postupne vyššie náklady na [fort_maintenance_with_icon|e].\n\n$game_concept_fort_limit$ sa zvyšuje predovšetkým s počtom vlastnených [locations_with_icon|e], ale aj s [country_rank_with_icon|e] a počtom [locations] s [ShowLocationRankName('city')] [location_rank|e]. [ShowSocietyDirectionName('defensive')] [societal_value_with_icon|e] a niektoré [advances_with_icon|e] ho tiež môžu zvýšiť." # todo: CHANGED
  game_concept_zone_of_control: "Zóna kontroly" # todo: NEW TRANSLATION
  game_concept_zones_of_control: "Zóny kontroly" # todo: NEW TRANSLATION
  game_concept_zone_of_control_desc: "Reprezentuje obranné schopnosti [fortification|e] blokovať pohyb [enemy|e] [armies|e] cez [locations|e] susediace s ňou. Útočná [army], stojaca na [enemy] [location] susediacej s [enemy] [fort], bude musieť najprv [siege|e] túto [fort] skôr, než sa bude môcť pohnúť ďalej do inej susednej [location] tejto [fort]." # todo: NEW TRANSLATION
@@ -1889,7 +1889,7 @@
  game_concept_natural_harbor_suitability: "Vhodnosť prírodného prístavu" # todo: NEW TRANSLATION
  game_concept_natural_harbor_suitability_desc: "Ako dobre sa [location|e] prirodzene hodí na kotvenie lodí a nakladanie/vykládanie mužov a materiálu, ešte pred akýmikoľvek ľudskými vylepšeniami. Znižuje náklady na výstavbu prístavných [buildings|e] a zvyšuje [harbor_capacity|e]." # todo: NEW TRANSLATION
  game_concept_harbor_capacity: "Kapacita prístavu" # todo: NEW TRANSLATION
- game_concept_harbor_capacity_desc: "Kapacita prístavu znižuje náklady na prechod medzi morom a súšou v výpočtoch [proximity|e] a [trade|e].\n\nKapacita prístavu [location] závisí hlavne od jeho [natural_harbor_suitability|e], ale mnohé prístavné [buildings|e] ju môžu tiež výrazne zvýšiť." # todo: NEW TRANSLATION
+ game_concept_harbor_capacity_desc: "Kapacita prístavu znižuje náklady pri prechode z mora na súš a naopak vo výpočtoch [proximity|e] a [trade|e].\n\nKapacita prístavu [location] závisí najmä od jeho [natural_harbor_suitability|e], ale mnohé prístavné [buildings|e] ju môžu tiež výrazne zvýšiť." # todo: CHANGED
  game_concept_payment: "Platba" # todo: NEW TRANSLATION
  game_concept_payments: "Platby" # todo: NEW TRANSLATION
  game_concept_payment_desc: "Ide o dohodu v [international_organization|e], kde niektorí členovia sú povinní platiť iným [members|e] [gold|e], [manpower|e], [sailors|e] alebo niečo iné výmenou za členstvo v organizácii. Platby môžu byť zavedené alebo zrušené cez rôzne [laws|e]." # todo: NEW TRANSLATION
@@ -1922,3 +1922,9 @@
  game_concept_great_power_rank: "Veľmoc $game_concept_great_power_rank_short$" # todo: NEW TRANSLATION
  game_concept_great_power_rank_short: "Poradie" # todo: NEW TRANSLATION
  game_concept_great_power_rank_desc: "Poradie veľmocí zobrazuje aktuálnu pozíciu, ktorú [country|e] zaujíma v pretekoch o konečné víťazstvo. Poradie sa určuje súčtom [great_power_score|e]." # todo: NEW TRANSLATION
+ game_concept_war_attacker: "Útočník" # todo: NEW TRANSLATION
+ game_concept_war_attackers: "Útočníci" # todo: NEW TRANSLATION
+ game_concept_war_attacker_desc: "V [war_with_icon|e] je Útočník stranou, ktorej vodca inicioval konflikt a zvolil [casus_belli_with_icon|e].\n\nAby strana Útočníka získala [war_score_with_icon|e], musí splniť [war_goal_with_icon|e]." # todo: NEW TRANSLATION
+ game_concept_war_defender: "Obranca" # todo: NEW TRANSLATION
+ game_concept_war_defenders: "Obrancovia" # todo: NEW TRANSLATION
+ game_concept_war_defender_desc: "V [war_with_icon|e] je Obranca stranou, na ktorú bola vyhlásená vojna. Strana Obrancu automaticky povolá svojich [allies_with_icon|e] do [war].\n\nAby strana Obrancu získala [war_score_with_icon|e], musí zabrániť [war_attacker|e] v splnení [war_goal_with_icon|e]." # todo: NEW TRANSLATION
