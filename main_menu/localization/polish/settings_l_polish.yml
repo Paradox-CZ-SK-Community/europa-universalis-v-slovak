@@ -21,15 +21,15 @@
   SETTING_HIDE_GAMECONTROLLER_CURSOR_TOOLTIP: "#T $SETTING_HIDE_GAMECONTROLLER_CURSOR$#!\nSkryje kurzor pri používaní gamepadu namiesto myši." # todo: NEW TRANSLATION
   CAMERA_TABLETOP: "Stolový pohľad" # todo: NEW TRANSLATION
   SETTING_Master: "Hlavná" # todo: NEW TRANSLATION
-  SETTING_Music: "     Hudba" # todo: NEW TRANSLATION
-  SETTING_UI: "     Rozhranie" # todo: NEW TRANSLATION
-  SETTING_Ui_Clock: "          Tik hodiniek rýchlosti hry" # todo: NEW TRANSLATION
-  SETTING_Effects: "     Svet" # todo: NEW TRANSLATION
-  SETTING_Ambient_Map: "          Mapa" # todo: NEW TRANSLATION
-  SETTING_Armies: "               Armády a námorníctvo" # todo: NEW TRANSLATION
-  SETTING_Ambient_Map_Background: "               Ambientné pozadie mapy" # todo: NEW TRANSLATION
-  SETTING_Ambient_Objects: "               Ambientné objekty na mape" # todo: NEW TRANSLATION
-  SETTING_Ambient_Panel: "          Ambientné ilustrácie" # todo: NEW TRANSLATION
+  SETTING_Music: "@setting_immediatly!Music" # todo: CHANGED
+  SETTING_UI: "@setting_immediatly!Interface" # todo: CHANGED
+  SETTING_Ui_Clock: "@setting_immediatly!Game Speed Clock Tick" # todo: CHANGED
+  SETTING_Effects: "@setting_immediatly!World" # todo: CHANGED
+  SETTING_Ambient_Map: "@setting_immediatly!Map" # todo: CHANGED
+  SETTING_Armies: "@setting_immediatly!Armies and Navies" # todo: CHANGED
+  SETTING_Ambient_Map_Background: "@setting_immediatly!Ambient Map Background" # todo: CHANGED
+  SETTING_Ambient_Objects: "@setting_immediatly!Ambient Map Objects" # todo: CHANGED
+  SETTING_Ambient_Panel: "@setting_immediatly!Ambient Illustrations" # todo: CHANGED
   SETTING_Master_TOOLTIP: "#T Hlavná hlasitosť\n#!Nastavuje hlasitosť všetkých zvukov v hre." # todo: NEW TRANSLATION
   SETTING_Music_TOOLTIP: "#T Hlasitosť hudby\n#!Nastavuje hlasitosť všetkej hudby v hre." # todo: NEW TRANSLATION
   SETTING_UI_TOOLTIP: "#T Hlasitosť rozhrania\n#!Nastavuje hlasitosť zvukov používateľského rozhrania." # todo: NEW TRANSLATION
@@ -269,11 +269,11 @@
   SETTING_FLATMAP_MODE_ALWAYS: "Vždy" # todo: NEW TRANSLATION
   SETTING_FLATMAP_MODE_NEVER: "Nikdy" # todo: NEW TRANSLATION
   SETTING_MAXIMIZE_TICK_SPEED: "Maximalizovať rýchlosť tickov" # todo: NEW TRANSLATION
-  SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritizuje využitie CPU pre rýchlosť tickov pri maximálnej rýchlosti hry namiesto udržiavania plynulého počtu snímok za sekundu. Po aktivácii spôsobí, že rýchlosť 4 bude pri deaktivovaní fungovať ako rýchlosť 5." # todo: NEW TRANSLATION
+  SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritizuje využitie CPU pre rýchlosť tickov pri maximálnej rýchlosti hry namiesto udržiavania plynulého počtu snímok za sekundu. Po aktivácii spôsobí, že rýchlosť 4 bude pri deaktivovaní fungovať ako rýchlosť 5." # todo: CHANGED NUMBER
   SETTING_DISABLE_3D_TERRAIN: "Vypnúť 3D terén" # todo: NEW TRANSLATION
   SETTING_DISABLE_3D_TERRAIN_TOOLTIP: "#T $SETTING_DISABLE_3D_TERRAIN$#!\nVypne načítanie 3D terénu pre zvýšenie výkonu." # todo: NEW TRANSLATION
   SETTING_FILL_IN_IMPASSABLE_TERRAIN: "Vyplniť nepriechodný terén" # todo: CHANGED
-  SETTING_FILL_IN_IMPASSABLE_TERRAIN_TOOLTIP: "#T $SETTING_FILL_IN_IMPASSABLE_TERRAIN$#!\nUrčuje, či je nepriechodný terén zahrnutý do hraníc štátu na mape." # todo: CHANGED
+  SETTING_FILL_IN_IMPASSABLE_TERRAIN_TOOLTIP: "#T $SETTING_FILL_IN_IMPASSABLE_TERRAIN$#!\nUrčuje, či sú nepriechodné terény zahrnuté v hraniciach krajiny na mape." # todo: CHANGED
   SETTING_CAMERA_ROTATION_RESET: "Resetovanie rotácie kamery" # todo: NEW TRANSLATION
   SETTING_CAMERA_ROTATION_RESET_TOOLTIP: "#T $SETTING_CAMERA_ROTATION_RESET$#!\nUrčuje, či sa má kamera automaticky vrátiť do východiskovej polohy po otočení používateľom." # todo: NEW TRANSLATION
   SETTING_FLATMAP_WATER_COLOR: "Farba vody na plochej mape" # todo: NEW TRANSLATION
@@ -287,8 +287,8 @@
   MAPNAME_MODE_ALWAYS_OFF: "Vždy vypnuté" # todo: NEW TRANSLATION
   SETTING_SUBJECTS_USE_OVERLORD_NAME: "Subjekty používajú meno panovníka" # todo: NEW TRANSLATION
   SETTING_SUBJECTS_USE_OVERLORD_NAME_TOOLTIP: "#T $SETTING_SUBJECTS_USE_OVERLORD_NAME$#!\nUrčuje, či subjekty zobrazujú meno svojho vrchného vládcu, keď je politická mapa oddialená." # todo: NEW TRANSLATION
-  SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "Nie" # todo: NEW TRANSLATION
-  SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Áno (Predvolené)" # todo: NEW TRANSLATION
+  SETTING_SUBJECTS_USE_OVERLORD_NAME_NO: "Nie (predvolené)" # todo: CHANGED
+  SETTING_SUBJECTS_USE_OVERLORD_NAME_YES: "Áno" # todo: CHANGED
   SETTING_SUBJECTS_USE_OVERLORD_COLOR: "Subjekty používajú farbu vládcu" # todo: NEW TRANSLATION
   SETTING_SUBJECTS_USE_OVERLORD_COLOR_TOOLTIP: "#T $SETTING_SUBJECTS_USE_OVERLORD_COLOR$#!\nUrčuje, ako subjekty zobrazujú farbu svojho vládcu na politickej mape." # todo: NEW TRANSLATION
   SETTING_SUBJECTS_USE_OVERLORD_COLOR_NO: "Nie" # todo: NEW TRANSLATION
@@ -324,14 +324,37 @@
   SETTING_GAME_SPEED_ON_WAR_TOOLTIP: "#T $SETTING_GAME_SPEED_ON_WAR$#!\nZmeňte, čo sa stane s rýchlosťou hry, keď naša krajina vstúpi do vojny." # todo: NEW TRANSLATION
   SETTING_GAME_SPEED_ON_WAR_LEAVE: "Bez zmeny" # todo: NEW TRANSLATION
   SETTING_GAME_SPEED_ON_WAR_1: "Najnižšia rýchlosť" # todo: NEW TRANSLATION
-  SETTING_GAME_SPEED_ON_WAR_2: "Nízka rýchlosť" # todo: NEW TRANSLATION
-  SETTING_GAME_SPEED_ON_WAR_3: "Stredná rýchlosť" # todo: NEW TRANSLATION
-  SETTING_GAME_SPEED_ON_WAR_4: "Vysoká rýchlosť" # todo: NEW TRANSLATION
-  SETTING_GAME_SPEED_ON_WAR_5: "Najvyššia rýchlosť" # todo: NEW TRANSLATION
+  SETTING_GAME_SPEED_ON_WAR_2: "Nižšia rýchlosť" # todo: CHANGED
+  SETTING_GAME_SPEED_ON_WAR_3: "Nízka rýchlosť" # todo: CHANGED
+  SETTING_GAME_SPEED_ON_WAR_4: "Stredná rýchlosť" # todo: CHANGED
+  SETTING_GAME_SPEED_ON_WAR_5: "Vysoká rýchlosť" # todo: CHANGED
   SETTING_GAME_SPEED_ON_UNIT_SELECT: "Rýchlosť hry pri vstupe vybratej jednotky do boja" # todo: NEW TRANSLATION
   SETTING_GAME_SPEED_ON_UNIT_SELECT_TOOLTIP: "#T $SETTING_GAME_SPEED_ON_UNIT_SELECT$#!\nZmeňte, čo sa stane s rýchlosťou hry, keď vyberieme jednotku." # todo: NEW TRANSLATION
   SETTING_ENABLE_PARTICLES: "Povoliť častice" # todo: NEW TRANSLATION
   SETTING_ENABLE_PARTICLES_TOOLTIP: "#T $SETTING_ENABLE_PARTICLES$\n#!Umožňuje vypnúť časticové efekty v hre pre zvýšenie výkonu." # todo: NEW TRANSLATION
   SETTING_GUI_TEXTURE_STREAMING: "GUI Texture Streaming" # todo: NEW TRANSLATION
   SETTING_GUI_TEXTURE_STREAMING_TOOLTIP: "#T $SETTING_GUI_TEXTURE_STREAMING$\n#!Prepnite streamovanie prvkov grafického používateľského rozhrania\nZapnutie tohto zníži využitie VRAM, ale môže spôsobiť dočasné zhoršenie kvality." # todo: NEW TRANSLATION
-  SETTINGS_WARNING_PLAYSET: "Zobraziť dialóg s upozornením na chyby sady nastavení" # todo: NEW TRANSLATION
+  SETTING_MUSIC_CATEGORY: "Hudba" # todo: NEW TRANSLATION
+  SETTING_Music_Intensity: "Intenzita hudby" # todo: NEW TRANSLATION
+  SETTING_Music_Intensity_TOOLTIP: "#T Music Intensity\n#!Ovláda celkovú intenzitu statických hudobných mixov. K dispozícii len pre režimy statickej filmovej alebo statickej kultúrnej hudby." # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE: "Typ hudobného systému" # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE$\n#!Vyberte, ako má hudobný systém fungovať: plne dynamické zoznamy skladieb, viac kurátorské filmové alebo kultúrne výbery, statické zoznamy skladieb alebo žiadna hudba." # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL: "Dynamické - všetky" # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_ALL$\n#!Používa plne dynamický hudobný systém s prístupom ku všetkým skladbám." # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC: "Dynamické - filmové" # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CINEMATIC$\n#!Používa dynamický hudobný systém so zameraním na viac filmové skladby." # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL: "Dynamické - kultúrne" # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_DYNAMIC_CULTURAL$\n#!Používa dynamický hudobný systém so zameraním na skladby zodpovedajúce kultúrnemu kontextu." # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC: "Statické - filmové" # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CINEMATIC$\n#!Používa viac statický, menej reaktívny zoznam skladieb s prevahou filmových skladieb." # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL: "Statické - kultúrne" # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_STATIC_CULTURAL$\n#!Používa viac statický, menej reaktívny zoznam skladieb s dôrazom na kultúrny kontext." # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC: "Bez hudby" # todo: NEW TRANSLATION
+  SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC_TOOLTIP: "#T $SETTING_MUSIC_SYSTEM_TYPE_NOMUSIC$\n#!Vypne hudobný systém." # todo: NEW TRANSLATION
+  SETTING_INPUT_ACTION_TOGGLE_ALERT_STASH: "Prepnúť menu upozornení" # todo: NEW TRANSLATION
+  SETTING_INPUT_ACTION_SPEED_SIX: "Rýchlosť 6" # todo: NEW TRANSLATION
+  SETTING_INPUT_ACTION_SPEED_SEVEN: "Rýchlosť 7" # todo: NEW TRANSLATION
+  SETTING_INPUT_ACTION_TOGGLE_WINDOW_COLLAPSE: "Prepnúť zbalenie okna" # todo: NEW TRANSLATION
+  SETTING_GAME_SPEED_ON_WAR_6: "Vyššia rýchlosť" # todo: NEW TRANSLATION
+  SETTING_GAME_SPEED_ON_WAR_7: "Najvyššia rýchlosť" # todo: NEW TRANSLATION
+  SETTING_WARNING_PLAYSET: "Zobraziť dialóg upozorňujúci na chyby v playsete" # todo: NEW TRANSLATION

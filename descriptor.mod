@@ -2,6 +2,6 @@ version="0.3"
 tags={
 	"Translation"
 }
-name="Test"
-supported_version="1.0.*"
+name="Slovenčina do Europa Universalis V"
+supported_version="1.1.*"
 remote_file_id="3600943912"

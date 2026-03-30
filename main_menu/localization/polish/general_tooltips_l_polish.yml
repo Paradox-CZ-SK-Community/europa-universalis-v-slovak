@@ -380,7 +380,7 @@
   DISEASE_PRESENCE_SUB_UNIT_TOOLTIP: "[SUBUNIT.GetName]: [DISEASE.GetName]: $PRESENCE|%$ prítomnosť, $RESISTANCE|%$ odolnosť" # todo: NEW TRANSLATION
   DISEASE_PRESENCE_UNIT_TOOLTIP: "[UNIT.GetName]: [DISEASE.GetName]: $NUM|Y$ podjednotiek postihnutých so priemerom $PRESENCE|%$ prítomnosti a $RESISTANCE|%$ odolnosti" # todo: NEW TRANSLATION
   CLOSEST_PORT_LOCATION_TOOLTIP: "Najbližší [port|e] pre [COUNTRY.GetLongName] je [LOCATION.GetName]" # todo: NEW TRANSLATION
-  AI_CONQUER_DESIRE_TOOLTIP: "Vypočítaný záujem [COUNTRY.GetLongName] o dobytie [LOCATION.GetName] je $SCORE|Y$, uložená hodnota je $CACHE|Y$.\n" # todo: CHANGED
+  AI_CONQUER_DESIRE_TOOLTIP: "[COUNTRY.GetLongName] vypočítaná túžba dobyť [LOCATION.GetName] je $SCORE|2Y$, uložená hodnota je $CACHE|Y$.\n" # todo: CHANGED
   AI_CONTROLLER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti ovládania s ďalšími $NUMBER$ lokalitami.\nKontrolórom je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
   AI_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti vlastníka s ďalšími $NUMBER$ lokalitami.\nMajiteľ je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
   AI_MAP_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti vlastníka mapy s ďalšími $NUMBER$ lokalitami.\nVlastník mapy je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
@@ -461,11 +461,10 @@
   LOCATION_SUPPLY_MISSING_STRENGTH: "Niektoré [units] postrádajú [strength]\n$BULLET$Hmotnosť pri plnej sile: $VAL|R$" # todo: NEW TRANSLATION
   UNIT_WEIGHT_HEADER: "#T Hmotnosti jednotiek#!" # todo: NEW TRANSLATION
   UNIT_WEIGHT_ENTRY: "[SUBUNIT.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2LV$#!" # todo: NEW TRANSLATION
-  ATTRITION_DUE_TO: "#T [food_consumption] Postih#!\nPostih $VAL|R2%$ za [food_consumption|e] je spôsobený" # todo: CHANGED
+  ATTRITION_DUE_TO: "#T [attrition]#!\n$VAL|R2%$ [attrition|e] je spôsobený" # todo: CHANGED
   ARMY_TOO_LARGE: "Nad [supply_limit|e]: $VAL|-=2$" # todo: NEW TRANSLATION
-  LEADING_TO_ATTRITION: "#R [food_consumption] Postih#!: #TOOLTIP:$BREAKDOWN_TAG$ $ATTRITION|RL%$#!" # todo: CHANGED
-  ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Aktuálne sa neuplatňujú žiadne postihy za [food_consumption]." # todo: CHANGED
-  ATTRITION_DUE_TO_WEIGHT: "[supply_limit] vs Potrebné zásobovanie: $VAL|V$" # todo: NEW TRANSLATION
+  LEADING_TO_ATTRITION: "#R [attrition]#!: #TOOLTIP:$BREAKDOWN_TAG$ $ATTRITION|RL%$#!" # todo: CHANGED
+  ATTRITION_NONE_SOURCE: "$BULLET_WITH_TAB$Momentálne netrpíte žiadnym úbytkom." # todo: CHANGED
   OUTSIDE_OF_NAVAL_RANGE_ATTRITION: "Mimo námornej dosahu: $VALUE|2/-=$" # todo: CHANGED
   FROZEN_ATTRITION: "[frozen|e] More: $VALUE|2-=$" # todo: CHANGED
   NAVY_FROZEN_ATTRITION: "Uviaznutí v [frozen|e] mori: $VALUE|2/-=$" # todo: NEW TRANSLATION
@@ -503,7 +502,7 @@
   HOLY_SITE_TT_INFO: "[holy_site_type_short|e]: [HOLY_SITE.GetType.GetName]\n[location|e]: [LOCATION.GetName]" # todo: NEW TRANSLATION
   NO_AVAILABLE_TARGETS_WITH_REASON: "@trigger_no! $REASON$" # todo: NEW TRANSLATION
   NO_AVAILABLE_TARGETS: "@trigger_no! Žiadne dostupné ciele" # todo: NEW TRANSLATION
-  PROXIMITY_ADJACENT_DISTANCE: "#V Náklady na proximitu tohto úseku sú $DISTANCE|+=$ z dôvodu:#!\n$BREAKDOWN$" # todo: NEW TRANSLATION
+  PROXIMITY_ADJACENT_DISTANCE: "#V Náklady segmentu ([LOCATION.GetName]@button_simple_smaller![TARGET_LOCATION.GetName]) sú $DISTANCE|+=$ z dôvodu:#!\n$BREAKDOWN$" # todo: CHANGED
   PROXIMITY_ADJACENT_DISTANCE_NUM: "Náklady na proximitu tohto úseku:: $DISTANCE$" # todo: NEW TRANSLATION
   PROXIMITY_ADJACENT_DISTANCE_TEXT: "Stavba [roads|e] alebo zvýšenie [maritime_presence|e] zníži náklady na proximitu medzi [locations|e]." # todo: NEW TRANSLATION
   PROXIMITY_ADJACENT_NAME: "Náklady na proximitu medzi $game_concept_locations$" # todo: NEW TRANSLATION
@@ -515,3 +514,23 @@
   ALONGSIDE: "Pozdĺž" # todo: NEW TRANSLATION
   ACTIVE_EMPLOYMENT_SYSTEM: "Momentálne máme aktívny [EMPLOYMENT_SYSTEM.GetName]." # todo: NEW TRANSLATION
   NO_ACTIVE_EMPLOYMENT_SYSTEM: "Momentálne nemáme žiadny aktívny [employment_system|e]." # todo: NEW TRANSLATION
+  SCRIPTED_GEOGRAPHY_TITLE_TT: "[ScriptedGeography.GetName]" # todo: NEW TRANSLATION
+  SCRIPTED_GEOGRAPHY_NUM_OF_LOCATIONS: "[ScriptedGeography.GetName] má [ScriptedGeography.GetNumberOfLocationsForScriptedGeography] [locations|e] celkom." # todo: NEW TRANSLATION
+  GEOGRAPHY_IN_SCRIPTED_GEOGRAPHY: "[ScriptedGeography.GetName] sa skladá z:" # todo: NEW TRANSLATION
+  GEOGRAPHY_SUFFIX: ", a $NUM$ ďalších" # todo: NEW TRANSLATION
+  GEOGRAPHY_LOCATION: "$BULLET$$NUM$ [locations|e], vrátane $ENTRIES$." # todo: NEW TRANSLATION
+  GEOGRAPHY_PROVINCE_DEFINITION: "$BULLET$$NUM$ [province_definitions|e], vrátane $ENTRIES$." # todo: NEW TRANSLATION
+  GEOGRAPHY_AREA: "$BULLET$$NUM$ [areas|e], vrátane $ENTRIES$." # todo: NEW TRANSLATION
+  GEOGRAPHY_REGION: "$BULLET$$NUM$ [regions|e], vrátane $ENTRIES$." # todo: NEW TRANSLATION
+  GEOGRAPHY_SUB_CONTINENT: "$BULLET$$NUM$ [sub_continents|e], vrátane $ENTRIES$." # todo: NEW TRANSLATION
+  GEOGRAPHY_CONTINENT: "$BULLET$$NUM$ [continents|e], vrátane $ENTRIES$." # todo: NEW TRANSLATION
+  GEOGRAPHY_ENTRY_LOCATION: "#L [LOCATION.GetName]#!" # todo: NEW TRANSLATION
+  GEOGRAPHY_ENTRY_PROVINCE_DEFINITION: "#L [PROVINCE_DEFINITION.GetName]#!" # todo: NEW TRANSLATION
+  GEOGRAPHY_ENTRY_AREA: "#L [AREA.GetName]#!" # todo: NEW TRANSLATION
+  GEOGRAPHY_ENTRY_REGION: "#L [REGION.GetName]#!" # todo: NEW TRANSLATION
+  GEOGRAPHY_ENTRY_SUB_CONTINENT: "#L [SUB_CONTINENT.GetName]#!" # todo: NEW TRANSLATION
+  GEOGRAPHY_ENTRY_CONTINENT: "#L [CONTINENT.GetName]#!" # todo: NEW TRANSLATION
+  LOCATION_CLICK_RECRUIT_TEMPLATE_LATERALVIEW: "Kliknutím ľavým tlačidlom vyberte túto [location|e] a začnite nábor [unit_template|e]\nKliknutím pravým tlačidlom vyberte túto [location|e] a zrušte prebiehajúci nábor" # todo: NEW TRANSLATION
+  FOOD_CONSUMPTION_PENALTY_DUE_TO: "#R Postih spotreby potravín#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" # todo: NEW TRANSLATION
+  FOOD_CONSUMPTION_PENALTY_TO_WEIGHT: "#T Postih spotreby potravín#!\n$VAL|2%$ z dôvodu nedostatku zásob v [LOCATION.GetName]\n[supply_limit]: $SUPPLY_LIMIT|2V$\nPotrebné: $NEED|2V$" # todo: NEW TRANSLATION
+  ATTRITION_TOOLTIP_HEADER: "#R Úbytok#!: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|RL%$#!" # todo: NEW TRANSLATION

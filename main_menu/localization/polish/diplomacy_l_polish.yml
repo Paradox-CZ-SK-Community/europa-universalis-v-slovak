@@ -41,7 +41,7 @@
   HEGEMONY_LOSE: "Na to, aby sme stratili [HEGEMONY.GetNameWithNoTooltip], potrebujeme nasledovné\n$HOW$" # todo: NEW TRANSLATION
   GREATPOWER_TITLE_HEADER: "Veľmoc [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
   NORMALPOWER_TITLE_HEADER: "[Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
-  POWER_TEXT: "[Country.GetName] je #V ##[Country.GetGreatPowerRank]#! mocnosťou na svete s [Country.GetGreatPowerScore|V]." # todo: CHANGED
+  POWER_TEXT: "[Country.GetName] je #V ##[Country.GetGreatPowerRank]#! mocnosť na svete s [Country.GetGreatPowerScore|V]." # todo: CHANGED
   GREATPOWER_BENEFITS: "Byť ##[Country.GetGreatPowerRank] veľmocou prináša nasledovné výhody:" # todo: NEW TRANSLATION
   GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO: "[COUNTRY.GetName] je #V ##[Country.GetGreatPowerRank]#! s $VAL|0V$ [great_power_score|e]." # todo: NEW TRANSLATION
   GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO_AND_THRESHOLD: "[COUNTRY.GetName] je #V ##[Country.GetGreatPowerRank]#! s $VAL|0V$ [great_power_score|e].\n#H V súčasnosti potrebujeme viac ako $THRESHOLD|0V$ [great_power_score|e], aby sme dosiahli stav [great_power|e].#!" # todo: NEW TRANSLATION
@@ -142,7 +142,7 @@
   SPYNETWORK_BENEFITS_SIEGE: "• Zrýchľuje naše obliehania ich územia o $VAL|+=2%$" # todo: NEW TRANSLATION
   SPYNETWORK_REDUCE_ANTAGONISM: "• Znižuje, ako naši [antagonism|e] vnímajú, o $VAL|-=2%$" # todo: NEW TRANSLATION
   ACTUAL_BUILD_SPY_TT: "Základná hodnota: $BASE|Y$\nVýstavba špionážnej siete [COUNTRY.GetName]: [COUNTRY.GetModifierValue('spy_network_construction')]\nProtispionáž [TARGET_COUNTRY.GetAdjective]: [TARGET_COUNTRY.GetModifierValueInverse('counter_espionage')]\n[COUNTRY.GetCulture.GetName] [cultural_influence|e] vs [TARGET_COUNTRY.GetCulture.GetName] [cultural_tradition|e]: $CULTURE|+=2%$" # todo: NEW TRANSLATION
-  ACTUAL_COUNTER_SPY_TT: "Šanca na odhalenie špióna je $CHANCE|2%$ za rok, ak je sieť aspoň [GetDefine('NDiplomacy','MIN_SPY_NETWORK_SIZE_FOR_DISCOVERY')][spy_network_i].\n\nZákladná hodnota: $BASE|%Y$\n[TARGET_COUNTRY.GetAdjective] protišpionáž: [COUNTRY.GetModifierValue('counter_espionage')]\n[COUNTRY.GetCulture.GetName] [cultural_influence|e] proti [TARGET_COUNTRY.GetCulture.GetName] [cultural_tradition|e]: $CULTURE|+=2%$" # todo: CHANGED
+  ACTUAL_COUNTER_SPY_TT: "Pravdepodobnosť odhalenia špióna je $CHANCE|2%$ za rok, keď sieť dosiahne aspoň [GetDefine('NDiplomacy','MIN_SPY_NETWORK_SIZE_FOR_DISCOVERY')][spy_network_i].\n\nZákladná hodnota: $BASE|%Y$\nProtišpionáž [TARGET_COUNTRY.GetAdjective]: [COUNTRY.GetModifierValue('counter_espionage')]\n[COUNTRY.GetCulture.GetName] [cultural_influence|e] oproti [TARGET_COUNTRY.GetCulture.GetName] [cultural_tradition|e]: $CULTURE|+=2%$" # todo: CHANGED
   SELECT_TRANSFER_OCCUPATION_TARGET: "Vyberte [country|e], ktorému chcete previesť [control|e]" # todo: NEW TRANSLATION
   CANNOT_TRANSFER_NOT_OCCUPIED: "[LOCATION.GetName] nie je obsadené" # todo: NEW TRANSLATION
   CANNOT_TRANSFER_NOT_AT_WAR: "Nemôžeme previesť [LOCATION.GetName], pretože nie sme vo vojne s vlastníkom" # todo: NEW TRANSLATION
@@ -193,7 +193,7 @@
   INTERNATIONAL_ORGANIZATION_PAYS_ENTRY: "[INTERNATIONAL_ORGANIZATION.GetName] ($PAYMENT_NAME$): $CHANGE$" # todo: NEW TRANSLATION
   COVERT_ACTION_ENTRY: "[RELATION_TYPE.GetName] s [COUNTRY.GetName]: $CHANGE$" # todo: NEW TRANSLATION
   PAY_TO_OVERLORD_ENTRY: "($TYPE$) pre [COUNTRY.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $CHANGE$#!" # todo: NEW TRANSLATION
-  OVER_LORD_FACTOR_HEADER: "#T Platenie $VAL|V2%$ platby#!\nToto je spôsobené\nZáklad: $BASE|%$" # todo: CHANGED
+  OVER_LORD_FACTOR_HEADER: "#T Platíme $VAL|V2%$ z platby#!\nToto je spôsobené\nZáklad: $BASE|%$" # todo: CHANGED
   TITHE_catholic: "Pápežské [tithe|e] z $NUM|$ krajín: $CHANGE$" # todo: NEW TRANSLATION
   ECONOMIC_SUPPORT_FROM_ENTRY: "[economic_support|e] od [COUNTRY.GetName]: $CHANGE$" # todo: NEW TRANSLATION
   PAY_ECONOMIC_SUPPPORT_ENTRY: "[economic_support|e] pre [COUNTRY.GetName]: $CHANGE$" # todo: NEW TRANSLATION
@@ -202,11 +202,11 @@
   PAY_WAR_REPARATIONS_ENTRY: "[war_reparations|e] pre [COUNTRY.GetName]: $CHANGE$" # todo: NEW TRANSLATION
   NORMAL_WAR_NAME: "$NUM$$ORDER$ $FIRSTNAME$–$SECONDNAME$ vojna" # todo: CHANGED
   INDEPENDENCE_WAR_NAME: "$NUM$$ORDER$ povstanie proti $SECONDNAME$" # todo: NEW TRANSLATION
-  AGRESSION_WAR_NAME: "$NUM$$ORDER$ vojna agresie $FIRSTNAME$" # todo: CHANGED
-  COALITION_WAR_NAME: "$NUM$$ORDER$ vojna Koalície proti $SECONDNAME$" # todo: CHANGED
-  COLONIAL_WAR_NAME: "$NUM$$ORDER$ Koloniálna vojna $FIRSTNAME$ a $SECONDNAME$" # todo: CHANGED
+  AGRESSION_WAR_NAME: "$NUM$$ORDER$ Vojna agresie $FIRSTNAME$" # todo: CHANGED
+  COALITION_WAR_NAME: "$NUM$$ORDER$ vojna Anti-$SECONDNAME$ koalície" # todo: CHANGED
+  COLONIAL_WAR_NAME: "$NUM$$ORDER$ koloniálna vojna $FIRSTNAME$ a $SECONDNAME$" # todo: CHANGED
   CLAIM_THRONE_WAR_NAME: "$NUM$$ORDER$ vojna o nástupníctvo $SECONDNAME$" # todo: CHANGED
-  ANNEXING_ME_WAR_NAME: "$NUM$$ORDER$ vojna proti anektácii $FIRSTNAME$" # todo: CHANGED
+  ANNEXING_ME_WAR_NAME: "$NUM$$ORDER$ vojna proti anexii $FIRSTNAME$" # todo: CHANGED
   WE_DONT_WANT_TO_BECOME_PART_OF_YOUR_COUNTRY: "Chceme zostať nezávislým [country|e]" # todo: NEW TRANSLATION
   CRUSADE_WAR_NAME: "$NUM$$ORDER$ krížová výprava proti $SECONDNAME$" # todo: NEW TRANSLATION
   JIHAD_WAR_NAME: "$NUM$$ORDER$ $jihad$ proti $SECONDNAME$" # todo: CHANGED
@@ -216,10 +216,10 @@
   DISSOLVE_TATAR_YOKE_NAME: "$NUM$$ORDER$ vojna na odstránenie tatárskeho jha" # todo: NEW TRANSLATION
   LEAGUE_OF_PUBLIC_WEAL_NAME: "Vojna za verejné blaho" # todo: NEW TRANSLATION
   SENGOKU_WAR_NAME: "$NUM$$ORDER$ vojna proti $SECONDNAME$ v $sengoku$" # todo: CHANGED
-  CLAN_EXPANSION_WAR_NAME: "$NUM$$ORDER$ vojna rozširovania klanu proti $SECONDNAME$" # todo: CHANGED
+  CLAN_EXPANSION_WAR_NAME: "$NUM$$ORDER$ vojna expanzie klanu proti $SECONDNAME$" # todo: CHANGED
   NANBOKUCHOU_WAR_NAME: "$NUM$$ORDER$ vojna proti $SECONDNAME$ v $nanbokuchou$" # todo: CHANGED
   red_turban_rebellions_WAR_NAME: "$NUM$$ORDER$ $FIRSTNAME$ $red_turban_rebellions$" # todo: CHANGED
-  red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME: "$NUM$$ORDER$ $FIRSTNAME$–$SECONDNAME$ vojna o regionálnu nadvládu" # todo: CHANGED
+  red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME: "$NUM$$ORDER$ regionálna vojna nadvlády $FIRSTNAME$–$SECONDNAME$" # todo: CHANGED
   CIVIL_WAR_NAME: "$NUM$$ORDER$ $FIRSTNAME$ občianska vojna" # todo: CHANGED
   UNIFY_ILKHANATE_WAR_NAME: "$NUM$$ORDER$ vojna proti $SECONDNAME$ za $cb_unify_ilkahante$" # todo: CHANGED
   FALSE_ILKHAN_CLAIMANT_WAR_NAME: "$NUM$$ORDER$ [GetUniqueInternationalOrganization('ilkhanate').GetNameWithNoTooltip] vojna o nárok proti $SECONDNAME$" # todo: CHANGED
@@ -324,8 +324,8 @@
   DIPMAPMODE_TT_FLEET_BASING: "$OWNER|U$ poskytujú [fleet_basing_rights|E] $WHO$" # todo: NEW TRANSLATION
   DIPMAPMODE_TT_TRADING: "$OWNER|U$ obchodujú s $WHO$" # todo: NEW TRANSLATION
   DIPMAPMODE_TT_TRUCE: "$OWNER|U$ majú [truce|e] s $WHO$ do $DATE$" # todo: NEW TRANSLATION
-  DIPMAPMODE_TT_RANGE_INSIDE: "@$FLAG$! $OWNER|U$ sa nachádzajú #G vnútri#! [diplomatic_range|e] ($RANGE|V$) $WHO$ kvôli $WHY$." # todo: CHANGED
-  DIPMAPMODE_TT_RANGE_OUTSIDE: "@$FLAG$! $OWNER|U$ sú #R mimo#! [diplomatic_range|e] ($RANGE|V$) $WHO$ kvôli $WHY$." # todo: CHANGED
+  DIPMAPMODE_TT_RANGE_INSIDE: "@$FLAG$! $OWNER|U$ sú #G v rámci#! [diplomatic_range|e] ($RANGE|V$) $WHO$ z dôvodu: $WHY$." # todo: CHANGED
+  DIPMAPMODE_TT_RANGE_OUTSIDE: "@$FLAG$! $OWNER|U$ sú #R mimo#! [diplomatic_range|e] ($RANGE|V$) $WHO$ z dôvodu: $WHY$." # todo: CHANGED
   WAR_ATTACKERS: "Útočníci: $NAME$" # todo: NEW TRANSLATION
   WAR_DEFENDERS: "Obrancovia: $NAME$" # todo: NEW TRANSLATION
   WAR_WARGOAL: "[war_goal|e] $NAME$" # todo: NEW TRANSLATION
@@ -812,7 +812,7 @@
   IMPROVE_RELATION_ALREADY: "@trigger_no! Už sa snažíme zlepšiť ich názor na nás." # todo: NEW TRANSLATION
   IMPROVE_RELATION_DESC: "Týmto sa ich názor na nás časom zlepší o $VAL|+=$!" # todo: NEW TRANSLATION
   IMPROVE_ANTAGONISM_DESC: "Týmto sa ich antagonizmus voči nám časom zníži o $ANTAGONISM|+=$!" # todo: NEW TRANSLATION
-  IMPROVE_RELATION_AND_ANTAGONISM_DESC: "Týmto sa ich názor na nás časom zlepší o $VAL|+=$ a ich antagonizmus voči nám zníži o $ANTAGONISM|+=$!" # todo: NEW TRANSLATION
+  IMPROVE_RELATION_AND_ANTAGONISM_DESC: "Týmto ich názor na nás zlepšíme o $VAL|+=$ a znížime ich antagonizmus voči nám o $ANTAGONISM|-=$ v priebehu času!" # todo: CHANGED
   IMPROVE_RELATIONDESC: "Chceme zlepšiť názor s $COUNTRY$? Týmto sa ich názor na nás časom zlepší o $VAL|+=$, ale tiež nás to bude stáť $COST$." # todo: NEW TRANSLATION
   CANCEL_IMPROVE_RELATIONDESC: "Chceme zrušiť naše pokusy zlepšiť názor $COUNTRY$?" # todo: NEW TRANSLATION
   CANCEL_IMPROVE_RELATIONTITLE: "Zrušiť zlepšovanie názoru" # todo: NEW TRANSLATION
@@ -874,7 +874,7 @@
   BUILD_SPYNETWORK_NO_SPYNETWORK: "@trigger_no! Nevybudovávame [spy_network|E] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
   COUNTER_SPYNETWORK_SUBJECT: "@trigger_no! [COUNTRY.GetName] sú [subject|e] $OVERLORD$" # todo: NEW TRANSLATION
   INTERVENE_IN_WARTITLE: "Zasiahnuť do vojny" # todo: NEW TRANSLATION
-  INTERVENE_IN_WAR_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
+  INTERVENE_IN_WAR_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: CHANGED
   INTERVENE_IS_ALREADY_IN_WAR: "@trigger_no! Už sme v inej [war|e]!" # todo: NEW TRANSLATION
   INTERVENE_IN_WAR_NOT_AT_WAR: "@trigger_no!$WHO$ nie je vo [war|e]." # todo: NEW TRANSLATION
   INTERVENE_IN_WAR_NOT_SUBJECT: "@trigger_no!$WHO$ je subjekt." # todo: NEW TRANSLATION
@@ -1047,21 +1047,21 @@
   PEACE_TREATY_REVOKE_CORE: "Odobrať nároky [TARGET_COUNTRY.GetNameWithFlag] v [LOCATION.GetName]" # todo: NEW TRANSLATION
   PEACE_TREATY_REVOKE_CORE_short: "Odobrať nároky [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] v [LOCATION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   PEACE_REVOKE_CORE_MULT: "Odobrať nárok" # todo: NEW TRANSLATION
-  PEACE_TREATY_CANCEL: "Prepustiť [COUNTRY.GetNameWithFlag] spod [COUNTRY.GetDiplomacy.GetOverlord.GetNameWithNoTooltip] a zablokovať akékoľvek iné vzťahy na #Y $MONTHS$#! mesiacov" # todo: CHANGED
+  PEACE_TREATY_CANCEL: "Prepustiť [COUNTRY.GetNameWithFlag] od [COUNTRY.GetDiplomacy.GetOverlord.GetNameWithNoTooltip] a zablokovať akékoľvek iné vzťahy na #Y $MONTHS$#! mesiacov" # todo: CHANGED
   PEACE_TREATY_CANCEL_short: "Prepustiť [COUNTRY.GetNameWithFlagWithNoTooltip] spod nadvlády [COUNTRY.GetDiplomacy.GetOverlord.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   PEACE_TREATY_SUBJECT_OF: "[TARGET_COUNTRY.GetFlagIcon] [TARGET_COUNTRY.GetName] sa stáva [SUBJECT_TYPE.GetName] [COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
   PEACE_TREATY_SUBJECT_OF_short: "@[TARGET_COUNTRY.GetFlag]! [TARGET_COUNTRY.GetNameWithNoTooltip] sa stáva [SUBJECT_TYPE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   PEACE_TREATY_ROYAL_MARRIAGE: "[royal_marriage|e] medzi [CHARACTER.GetName] a [TARGET_CHARACTER.GetName] utvrdí puto medzi [TARGET_COUNTRY.GetLongNameWithFlag] a [COUNTRY.GetLongNameWithFlag]." # todo: NEW TRANSLATION
   PEACE_TREATY_ROYAL_MARRIAGE_short: "[Localize('game_concept_royal_marriage')] medzi [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] a [COUNTRY.GetNameWithFlagWithNoTooltip]." # todo: NEW TRANSLATION
-  PEACE_TREATY_UNION: "[COUNTRY.GetNameWithFlag] ustanoví [Character.GetName] za [ruler|e] [TARGET_COUNTRY.GetName], čím vytvorí osobnú úniu, ak je to potrebné" # todo: CHANGED
-  PEACE_TREATY_UNION_short: "[Character.GetName] sa stáva [ruler|e] [TARGET_COUNTRY.GetName]" # todo: CHANGED
+  PEACE_TREATY_UNION: "[COUNTRY.GetNameWithFlag] inštaluje [Character.GetName] ako [ruler|e] [TARGET_COUNTRY.GetNameWithFlag], čím vytvorí osobnú úniu, ak bude potrebné," # todo: CHANGED
+  PEACE_TREATY_UNION_short: "[Character.GetShortNameWithNoTooltip] sa stáva [ruler] [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: CHANGED
   PEACE_TREATY_GAIN_RELATION: "[TARGET_COUNTRY.GetNameWithFlag] poskytuje [RELATION_TYPE.GetNameWithContext(TARGET_COUNTRY.Self, COUNTRY.Self)] [COUNTRY.GetName]" # todo: NEW TRANSLATION
   PEACE_TREATY_GAIN_RELATION_short: "[TARGET_COUNTRY.GetNameWithFlag] poskytuje [RELATION_TYPE.GetNameWithContext(TARGET_COUNTRY.Self, COUNTRY.Self)] [COUNTRY.GetName]" # todo: NEW TRANSLATION
   PEACE_TREATY_WAR_REPARATIONS: "[TARGET_COUNTRY.GetNameWithFlag] platí [war_reparations|E] [COUNTRY.GetName]" # todo: NEW TRANSLATION
   PEACE_TREATY_WAR_REPARATIONS_short: "[TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] platí [Localize('game_concept_war_reparations')] [COUNTRY.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   PEACE_TREATY_LIBERATE_SLAVES: "[TARGET_COUNTRY.GetNameWithFlag] prepustí všetkých [COUNTRY.GetAdjective] otrokov" # todo: NEW TRANSLATION
   PEACE_TREATY_LIBERATE_SLAVES_short: "[TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] prepustí všetkých [COUNTRY.GetAdjectiveWithNoTooltip] otrokov" # todo: NEW TRANSLATION
-  PEACE_TREATY_ANNUL_TREATIES: "[COUNTRY.GetNameWithFlag] zruší všetky #L #TOOLTIP:$TREATIES$ zmluvy#! #! s [TARGET_COUNTRY.GetNameWithFlag] na #Y $MONTHS$#! mesiacov" # todo: CHANGED
+  PEACE_TREATY_ANNUL_TREATIES: "[COUNTRY.GetNameWithFlag] ruší všetky #L #TOOLTIP:$TREATIES$ zmluvy#! s [TARGET_COUNTRY.GetNameWithFlag] na #Y $MONTHS$#! mesiacov" # todo: CHANGED
   PEACE_TREATY_ANNUL_TREATIES_short: "[COUNTRY.GetNameWithFlag] ruší všetky #L #TOOLTIP:$TREATIES$ zmluvy#! #! s [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
   PEACE_TREATY_FORCE_MIGRATE: "[COUNTRY.GetNameWithFlag] migruje preč z [PROVINCE.GetName]" # todo: NEW TRANSLATION
   PEACE_TREATY_FORCE_MIGRATE_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] migruje preč z [PROVINCE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1075,7 +1075,7 @@
   PEACE_TREATY_GRANT_INDEPENDENCE_SEPARATE_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] získali nezávislosť" # todo: NEW TRANSLATION
   PEACE_TREATY_BLOCKED_NO_UNION_CB: "@trigger_no! Nemôžeme vytvoriť osobnú úniu s nimi bez použitia [ShowCasusBelliName('cb_claim_throne')] [casus_belli|e]." # todo: NEW TRANSLATION
   PEACE_TREATY_BLOCKED_WAR_GOAL: "@trigger_no! [war_goal|e] $NAME|Y$ blokuje túto zmluvu." # todo: NEW TRANSLATION
-  PEACE_TREATY_NO_RULER: "@trigger_no! Pretendent na trón, [CHARACTER.GetName], je mŕtvy." # todo: CHANGED
+  PEACE_TREATY_NO_RULER: "@trigger_no! Nárokovateľ na trón, [CHARACTER.GetName], je mŕtvy." # todo: CHANGED
   PEACE_TREATY_ALREADY_RULER: "@trigger_no! Nárokovník na trón, [CHARACTER.GetName], je už [ruler|e]." # todo: NEW TRANSLATION
   PEACE_TREATY_NOT_SAME_RELIGION_GROUP: "@trigger_no! [COUNTRY.GetLongName] nie je [RELIGION_GROUP.GetName]." # todo: NEW TRANSLATION
   PEACE_TREATY_WAR_GOAL_TRIGGER_BLOCK_TAKE_LOCATIONS: "@trigger_no! Nemôžeme odobrať územie od [TARGET_COUNTRY.GetName] z nasledujúcich dôvodov:\n$WHY$" # todo: NEW TRANSLATION
@@ -1162,11 +1162,11 @@
   PEACE_COST_POWER_PROJECTION_DIFFERENCE: "[power_projection|e]: $VAL|-=%$\n" # todo: NEW TRANSLATION
   PEACE_COST_HAS_CLAIM: "Má nárok: $VAL|-=%$\n" # todo: NEW TRANSLATION
   PEACE_COST_ON_HIGHER_RANK: "$WHO_RANK$ vs $RANK$: $VAL|-=%$\n" # todo: NEW TRANSLATION
-  PEACE_COST_NOT_TARGET: "[COUNTRY.GetNameWithFlag] nie je pôvodným útočníkom ani obrancou v [war|e]: $VAL|-=%$\n" # todo: CHANGED
+  PEACE_COST_NOT_TARGET: "[COUNTRY.GetNameWithFlag] nie je pôvodným útočníkom ani brániacim sa v [war|e]: $VAL|-=%$\n" # todo: CHANGED
   PEACE_COST_CASUS_BELLI: "Casus Belli: $VAL|-=%$\n" # todo: NEW TRANSLATION
   PEACE_PROV_LIST: "$NAME$: #TOOLTIP:$PEACE_COST_BREAKDOWN_TAG$ $VAL|+=2$#!\n" # todo: NEW TRANSLATION
   PEACE_FROM_TERRITORY: "[COUNTRY.GetNameWithNoTooltip] [locations|e]: $VAL|+=$" # todo: NEW TRANSLATION
-  PEACE_TREATY_JUNOR_PARTNER: "Ustanoviť nového [ruler|e]: $VAL|+=$" # todo: CHANGED
+  PEACE_TREATY_JUNOR_PARTNER: "Inštalovať nového [ruler|e]: $VAL|+=$" # todo: CHANGED
   PEACE_TREATY_RM_HEIR_FACTOR: "$RANK|O$ v rade na trón: $VAL|+=$" # todo: NEW TRANSLATION
   PEACE_TREATY_RM_AGE_FACTOR: "Vek [CHARACTER.GetName]: $VAL|+=$" # todo: NEW TRANSLATION
   PEACE_TREATY_S_NEW_RELATION: "[RELATION_TYPE.GetName]: $VAL|+=$" # todo: NEW TRANSLATION
@@ -1182,20 +1182,20 @@
   PT_NAME_RELEASE: "(Prepustiť krajinu)" # todo: NEW TRANSLATION
   PT_NAME_CANCEL_SUBJECT: "(Zrušiť subjekt)" # todo: NEW TRANSLATION
   PT_NAME_BECOME_SUBJECT: "(Stať sa subjektom)" # todo: NEW TRANSLATION
-  SELLPROVTITLE: "Predať lokalitu" # todo: NEW TRANSLATION
+  SELLPROVTITLE: "Predaj lokalít" # todo: CHANGED
   SELLPROV_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
-  SELLPROV_REQDESC: "Chceme predať $PROV$ krajine $RECIPIENT$ za $PRICE$ [gold_i]?" # todo: NEW TRANSLATION
+  SELLPROV_REQDESC: "Chceme predať $PROV$ príjemcovi $RECIPIENT$ za $PRICE$[gold_i]?" # todo: CHANGED
   SELLPROV_TOOLTIP_HEADER: "Predať lokalitu krajine [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
   SELLPROV_TOOLTIP_HEADER_NO_TARGET: "Predať lokalitu krajine [country|e]" # todo: NEW TRANSLATION
   SELLPROV_FLAVOR: "Predaj lokality inému štátu prevedie nad ňou kontrolu za dohodnutú cenu." # todo: NEW TRANSLATION
   SELLPROV_ASK_DESC: "$ACTOR$ chce predať $PROV$ vám za $PRICE$ [gold_i]." # todo: NEW TRANSLATION
-  SELLLOCATIONDESC: "Vyberte cieľové miesto na uskutočnenie tejto akcie s $COUNTRY$." # todo: CHANGED
+  SELLLOCATIONDESC: "Vyberte cieľovú lokalitu na vykonanie tejto akcie s $COUNTRY$." # todo: CHANGED
   sell_province_final: "[SCOPE.sLocation('target_location').GetName] bude predané [SCOPE.sCountry('recipient').GetName] za [SCOPE.GetValue('target_price')|0][gold_i]" # todo: NEW TRANSLATION
   buy_province_final: "Kúpime [SCOPE.sLocation('target_location').GetName] od [SCOPE.sCountry('recipient').GetName] za [SCOPE.GetValue('target_price')|0][gold_i]" # todo: NEW TRANSLATION
   choose_a_location_first: "Najprv vyberte [location|e]" # todo: NEW TRANSLATION
-  BUYPROVTITLE: "Kúpiť lokalitu" # todo: NEW TRANSLATION
+  BUYPROVTITLE: "Nákup lokalít" # todo: CHANGED
   BUYPROV_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
-  BUYPROV_REQDESC: "Chceme kúpiť $PROV$ od $RECIPIENT$ za $PRICE$ [gold_i]?" # todo: NEW TRANSLATION
+  BUYPROV_REQDESC: "Chceme kúpiť $PROV$ od $RECIPIENT$ za $PRICE$[gold_i]?" # todo: CHANGED
   BUYPROV_TOOLTIP_HEADER: "Kúpiť lokalitu od [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
   BUYPROV_TOOLTIP_HEADER_NO_TARGET: "Kúpiť lokalitu od krajiny [country|e]" # todo: NEW TRANSLATION
   BUYPROV_FLAVOR: "Kúpa lokality od iného štátu prevedie nad ňou kontrolu za dohodnutú cenu." # todo: NEW TRANSLATION
@@ -1219,11 +1219,11 @@
   ANNEXINVALID: "@trigger_no! Môžeme anektovať len národ, ktorý je naším subjektom aspoň $YEARS|YS$ rokov, a to nie je možné pred $DATE|Y$." # todo: NEW TRANSLATION
   ANNEX_WAR: "@trigger_no! Bojujeme v $WAR$ aby sme im pomohli získať slobodu, takže nemôžeme vtedy začať anexiu." # todo: NEW TRANSLATION
   ANNEX_TOO_LOW: "@trigger_no! Náš [subject|e] musí mať aspoň $NEED|Y$ názor na nás, a momentálne má len $VAL|Y0$, aby sme mohli začať anexiu." # todo: NEW TRANSLATION
-  ANNEX_CIVIL_WAR: "@trigger_no! Náš [subject|e] je vo [civil_war|e], takže nie je možné začať anexiu." # todo: NEW TRANSLATION
+  ANNEX_CIVIL_WAR: "@trigger_no! Náš [subject|e] je v [civil_war|e], takže nemôžeme začať anexiu." # todo: CHANGED
   ANNEX_DISLOYAL: "@trigger_no! Náš [subject|e] je [disloyal_subject|e], takže nie je možné začať anexiu." # todo: NEW TRANSLATION
   ANNEX_TOO_LOW_IO: "@trigger_no! [INTERNATIONAL_ORGANIZATION.GetName] vyžaduje, aby [COUNTRY.GetName] mal aspoň $NEED|Y$ názor na nás, a momentálne má len $VAL|Y0$, aby sme mohli začať anexiu." # todo: NEW TRANSLATION
-  ANNEX_SUBJECT_TYPE: "Základná hodnota [annexation|e] pre [SUBJECT_TYPE.GetName]: $VAL|+=2$" # todo: NEW TRANSLATION
-  ANNEX_INTERNATIONAL_ORGANIZATION: "[INTERNATIONAL_ORGANIZATION.GetName]: $VAL|+=2$" # todo: NEW TRANSLATION
+  ANNEX_SUBJECT_TYPE: "Anexácia [SUBJECT_TYPE.GetName]" # todo: CHANGED
+  ANNEX_INTERNATIONAL_ORGANIZATION: "Anexácia [INTERNATIONAL_ORGANIZATION.GetName]" # todo: CHANGED
   ANNEX_TINY_SUBJECT: "[TARGET_COUNTRY.GetName] je oveľa menší: $VAL|+=2%$" # todo: NEW TRANSLATION
   ANNEX_SUBJECT_DISLOYAL: "@trigger_no! #R [COUNTRY.GetName] je momentálne nelojálny a nemožno ho anektovať. #!" # todo: NEW TRANSLATION
   ANNEX_MULTIPLE_PENALTY: "Viaceré [annexations|e] súčasne: $VAL|+=2%$" # todo: NEW TRANSLATION
@@ -1260,9 +1260,9 @@
   SUBJECT_TYPE_SUBJECT_MODIFIER: "\n$EFFECT_LIST_BULLET$$SUBJECT$ má nasledujúce modifikátory:\n$EFFECT$" # todo: NEW TRANSLATION
   SUBJECT_TYPE_LIMITED_DIPLOMACY: "$EFFECT_LIST_BULLET$$SUBJECT$ je [diplomatically_limited|e] zo strany $OVERLORD$." # todo: NEW TRANSLATION
   SUBJECT_TYPE_GIVES_FLEET_BASING: "$EFFECT_LIST_BULLET$$SUBJECT$ dáva $OVERLORD$ [fleet_basing_rights|e]." # todo: NEW TRANSLATION
-  SUBJECT_TYPE_GIVES_FOOD_ACCESS: "$EFFECT_LIST_BULLET$$SUBJECT$ poskytuje $OVERLORD$ [food_access|e]." # todo: NEW TRANSLATION
+  SUBJECT_TYPE_GIVES_FOOD_ACCESS: "$EFFECT_LIST_BULLET$[food_access|e] je zdieľaný medzi $SUBJECT$ a $OVERLORD$." # todo: CHANGED
   SUBJECT_TYPE_ALLOW_SUBJECT: "$EFFECT_LIST_BULLET$$SUBJECT$ má povolené vytvoriť si vlastné [subjects|e]." # todo: NEW TRANSLATION
-  SUBJECT_TYPE_PAYS: "$EFFECT_LIST_BULLET$$SUBJECT$ platí $COST$ $OVERLORD$ každý mesiac." # todo: NEW TRANSLATION
+  SUBJECT_TYPE_PAYS: "$EFFECT_LIST_BULLET$$SUBJECT$ by platil $COST$ každý mesiac $OVERLORD$." # todo: CHANGED
   SUBJECT_TYPE_ALLOWED_WARS: "$EFFECT_LIST_BULLET$$OVERLORD$ povoľuje $SUBJECT$ začať vlastné [wars|e]." # todo: NEW TRANSLATION
   SUBJECT_TYPE_MONTHLY_EFFECT: "\nKaždý mesiac:\n$EFFECT$" # todo: NEW TRANSLATION
   SUBJECT_TYPE_ONLY_OVERLORD_COURT_LANGUAGE: "$EFFECT_LIST_BULLET$$SUBJECT$ musí používať rovnaký [court_language|e] ako $OVERLORD$." # todo: NEW TRANSLATION
@@ -1870,7 +1870,7 @@
   SENDGIFTTITLE: "Poslať dar" # todo: NEW TRANSLATION
   SENDGIFT_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
   SENDGIFTNEWDESC: "Chceme poslať dar krajine $COUNTRY$? Toto nás bude stáť $COST$ a zlepší naše vzťahy až o $VAL|G$. A spôsobí to, že nám $COUNTRY$ bude dlžné $FAVORS|G$ láskavosťami." # todo: NEW TRANSLATION
-  SENDGIFTDESC: "Týmto zlepšíme naše vzťahy až o $AMOUNT|G$. Môžeme získať maximálne $MAX|G$ zvýšenie mienky posielaním darov. Taktiež im to spôsobí, že nám budú dlžní $FAVORS|G$ láskavostí." # todo: CHANGED
+  SENDGIFTDESC: "Týmto zlepšíme naše vzťahy až o $AMOUNT|G$. Maximálne môžeme získať $MAX|G$ zvýšenie názoru od posielania darov. Tiež nám tým budú dlžiť $FAVORS|G$ priazne." # todo: CHANGED
   SENDGIFT_TOOLTIP_HEADER: "Poslať dar v hodnote [gold_i] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
   SENDGIFT_TOOLTIP_HEADER_NO_TARGET: "Poslať dar v hodnote [gold_i] [country|e]" # todo: NEW TRANSLATION
   SENDGIFT_FLAVOR: "Dar okamžite zvýši názor krajiny na nás výmenou za peniaze, čím budú ochotnejší akceptovať ďalšie diplomatické kroky. Veľkosť daru sa prispôsobuje bohatstvu prijímajúcej krajiny." # todo: NEW TRANSLATION
@@ -1878,7 +1878,7 @@
   ALREADY_CALLED_ALLY: "@trigger_no! Už sme vo [war|e] s tými istými nepriateľmi" # todo: NEW TRANSLATION
   CALL_ALLIED_ENEMY: "@trigger_no! Sú spojencom nepriateľa" # todo: NEW TRANSLATION
   ALREADY_AT_WAR: "@trigger_no! Sú už vo [war|e] s nepriateľom" # todo: NEW TRANSLATION
-  ALREADY_AT_WAR_COUNTRY: "@trigger_no! Už sú vo [war|e] s [ENEMY.GetName]" # todo: NEW TRANSLATION
+  ALREADY_AT_WAR_COUNTRY: "@trigger_no! Už sú vo [war|e] s [COUNTRY.GetName]" # todo: CHANGED
   X_CAN_NOT_JOIN_OFF_WAR: "@trigger_no! $NAME|Y$ má prímerie s $TARGET|Y$, takže sa nemôže pripojiť k žiadnym útočným [wars|e]." # todo: NEW TRANSLATION
   SUPPORTREBSTOPTITLE: "Ukončiť podporu povstalcov" # todo: NEW TRANSLATION
   SUPPORTREBSTOP_CATEGORY: "CATEGORY_COVERT_ACTIONS" # todo: NEW TRANSLATION
@@ -1897,11 +1897,11 @@
   SUPPORTREB_NO_REBELS: "@trigger_no! V [COUNTRY.GetName] niet žiadnych povstalcov, ktorých by sme mohli podporiť." # todo: NEW TRANSLATION
   SELECTED_WARGOAL_IS: "[war_goal|e] $NAME|Y$" # todo: NEW TRANSLATION
   generic_war_goal_take_province: "Získať [PROVINCE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
-  generic_war_goal_take_province_desc: "[war_goal|e] je získať cieľovú [province|e]. Získajte bonus [war_score|e] za obsadenie cieľovej [province]. Budeme dostávať priebežný [war_score|e] za držanie [province]." # todo: NEW TRANSLATION
+  generic_war_goal_take_province_desc: "[war_goal|e] je dobyť cieľovú [province|e]. Získajte bonus [war_score|e] za obsadenie cieľovej [province]. Budeme dostávať prírastkový [war_score|e] za obsadenie a držanie každej [location|e] v provincii." # todo: CHANGED
   generic_war_goal_take_capital: "Obsadiť hlavné mesto [PROVINCE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
-  generic_war_goal_take_capital_desc: "[war_goal|e] je obsadiť hlavné mesto nepriateľa [province|e]. Budeme dostávať priebežný [war_score|e] za obsadenie všetkých [province], kde nepriateľ má svoje [capital|e]." # todo: NEW TRANSLATION
+  generic_war_goal_take_capital_desc: "[war_goal|e] je dobyť nepriateľské hlavné mesto [province|e]. Dostaneme prírastkový [war_score|e] za obsadenie všetkých [locations|e] v [province|e]." # todo: CHANGED
   generic_war_goal_defend_capital: "Brániť hlavné mesto [PROVINCE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
-  generic_war_goal_defend_capital_desc: "[war_goal|e] je brániť naše hlavné mesto [province|e]. Dostaneme priebežný [war_score|e] za obranu všetkých [province], kde máme naše [capital|e]." # todo: NEW TRANSLATION
+  generic_war_goal_defend_capital_desc: "[war_goal|e] je brániť naše hlavné mesto [province|e]. Dostaneme prírastkový [war_score|e] za obranu nášho [capital|e] a každej [location|e] v jeho provincii." # todo: CHANGED
   generic_war_goal_naval_superiority: "Preukázať námornú prevahu" # todo: NEW TRANSLATION
   generic_war_goal_naval_superiority_desc: "[war_goal|e] je preukázať námornú prevahu. Získajte bonus [war_score|e] z víťazstiev v námorných bitkách. Ak [blockade|e] blokujeme prístav (a náš protivník nie), dostaneme priebežný [war_score|e]." # todo: NEW TRANSLATION
   generic_war_goal_superiority: "Preukázať prevahu" # todo: NEW TRANSLATION
@@ -1909,7 +1909,7 @@
   generic_war_goal_enforce_military_access: "$generic_war_goal_superiority$" # todo: CHANGED
   generic_war_goal_enforce_military_access_desc: "$generic_war_goal_superiority_desc$" # todo: CHANGED
   generic_war_goal_independence: "Oslobodiť [PROVINCE.GetCountry.GetNameWithNoTooltip]" # todo: CHANGED
-  generic_war_goal_independence_desc: "Cieľom [war_goal|e] je ovládnutie celého [country|e] [PROVINCE.GetCountry.GetName].\nNezávislostné hnutia získavajú postupné [war_score_with_icon|e], ak zabránia svojmu bývalému [overlord|e] v [occupying|e] ich územia.\n\nBývalý [subject|e] musí presadiť svoju nezávislosť prostredníctvom [peace_treaty|e]. [white_peace_with_icon|e] obnoví stav pred [war|e]." # todo: CHANGED
+  generic_war_goal_independence_desc: "[war_goal|e] je ovládnuť celú [country|e] [PROVINCE.GetCountry.GetName].\nNezávislisti získajú postupný [war_score_with_icon|e], ak zabránia svojmu bývalému [overlord|e] obsadiť ich územie.\n\nBývalý [subject|e] musí presadiť svoju nezávislosť prostredníctvom [peace_treaty|e]. [white_peace_with_icon|e] obnoví stav pred [war|e]." # todo: CHANGED
   generic_war_goal_destroy_army: "Zničiť armádu" # todo: NEW TRANSLATION
   generic_war_goal_destroy_army_desc: "[war_goal|e] je zničiť nepriateľské [armies|e]. Ak jedna strana má [army|e] a druhá nie, dostane priebežný [war_score|e]." # todo: NEW TRANSLATION
   war_goal_enforce_military_access: "$generic_war_goal_superiority$" # todo: NEW TRANSLATION
@@ -1924,12 +1924,10 @@
   war_goal_none_desc: "@trigger_no! Pre túto vojnu neexistuje žiadny [war_goal|e]." # todo: NEW TRANSLATION
   war_goal_take_country: "Získať [COUNTRY.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   war_goal_take_province_tribal_feud: "$generic_war_goal_take_province$" # todo: NEW TRANSLATION
-  war_goal_take_country_nationalist: "$war_goal_take_country$" # todo: NEW TRANSLATION
   war_goal_take_capital: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
   war_goal_defend_capital: "$generic_war_goal_defend_capital$" # todo: NEW TRANSLATION
   war_goal_take_capital_coalition: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
   war_goal_take_capital_prevent_annexation: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
-  war_goal_take_capital_force_migration: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
   war_goal_take_capital_imperial: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
   war_goal_take_capital_tributary: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
   war_goal_take_capital_tributary_desc: "$generic_war_goal_take_capital_desc$" # todo: NEW TRANSLATION
@@ -1951,8 +1949,8 @@
   war_goal_humiliate: "Ponížiť" # todo: NEW TRANSLATION
   war_goal_independence: "$generic_war_goal_independence$" # todo: NEW TRANSLATION
   war_goal_independence_desc: "$generic_war_goal_independence_desc$" # todo: NEW TRANSLATION
-  war_goal_take_capital_claim_throne: "Získať hlavné mesto [PROVINCE.GetNameWithNoTooltip] a ustanoviť [CHARACTER.GetName] za ich [ruler|e]" # todo: CHANGED
-  war_goal_take_capital_claim_throne_desc: "$generic_war_goal_take_capital_desc$ Keď vyhráme, môžeme potom ustanoviť [CHARACTER.GetName] za ich [ruler|e]." # todo: CHANGED
+  war_goal_take_capital_claim_throne: "Získať hlavné mesto [PROVINCE.GetNameWithNoTooltip] a nainštalovať [CHARACTER.GetName] ako ich [ruler|e]" # todo: CHANGED
+  war_goal_take_capital_claim_throne_desc: "$generic_war_goal_take_capital_desc$ Keď vyhráme, môžeme potom nainštalovať [CHARACTER.GetName] ako ich [ruler|e]." # todo: CHANGED
   war_goal_crusade_conquest: "$generic_war_goal_take_province$" # todo: NEW TRANSLATION
   war_goal_crusade_conquest_desc: "$generic_war_goal_take_province_desc$" # todo: NEW TRANSLATION
   war_goal_jihad_conquest: "$generic_war_goal_take_province$" # todo: NEW TRANSLATION
@@ -1989,7 +1987,6 @@
   war_goal_naval_desc: "[war_goal|e] je preukázať námornú prevahu. Získajte bonus [war_score|e] z víťazstiev v námorných bitkách. Ak [blockade|e] blokujeme prístav (a náš protivník nie), dostaneme priebežný [war_score|e]." # todo: NEW TRANSLATION
   war_goal_take_country_desc: "[war_goal|e] je získať nepriateľskú krajinu. Získajte bonus [war_score|e] za výhry v obliehaniach nepriateľských pevností a za obsadenie nepriateľského územia." # todo: NEW TRANSLATION
   war_goal_take_province_tribal_feud_desc: "[war_goal|e] je získať cieľovú provinciu. Získajte bonus [war_score|e] za obsadenie cieľovej provincie. Budeme dostávať priebežný [war_score|e] za držanie provincie." # todo: NEW TRANSLATION
-  war_goal_take_country_nationalist_desc: "[war_goal|e] je získať nepriateľskú krajinu. Získajte bonus [war_score|e] za obsadenie nepriateľského územia našej [culture_group|e]." # todo: NEW TRANSLATION
   war_goal_defend_capital_desc: "$generic_war_goal_defend_capital$" # todo: NEW TRANSLATION
   war_goal_take_capital_desc: "$generic_war_goal_take_capital_desc$" # todo: NEW TRANSLATION
   war_goal_take_capital_colony_war: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
@@ -2008,8 +2005,7 @@
   war_goal_fabricated_conquer_province_desc: "[war_goal|e] je získať [PROVINCE.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
   war_goal_religious_conquer_province: "Získať [PROVINCE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   war_goal_religious_conquer_province_desc: "[war_goal|e] je získať [PROVINCE.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
-  war_goal_take_capital_force_migration_desc: "[war_goal|e] je obsadiť hlavné mesto krajiny, aby sme ich prinútili presťahovať sa z tejto lokality." # todo: NEW TRANSLATION
-  war_goal_take_capital_imperial_desc: "[war_goal|e] je obsadiť cisárove hlavné mesto." # todo: NEW TRANSLATION
+  war_goal_take_capital_imperial_desc: "[war_goal|e] je dobyť nepriateľské hlavné mesto." # todo: CHANGED
   war_goal_take_border_desc: "[war_goal|e] je získať nepriateľské oblasti susediace s naším územím." # todo: NEW TRANSLATION
   war_goal_superiority_desc: "[war_goal|e] je vyhrať viac bitiek než náš nepriateľ." # todo: NEW TRANSLATION
   war_goal_superiority_heretic_desc: "[war_goal|e] je vyhrať viac bitiek než náš heretický nepriateľ." # todo: NEW TRANSLATION
@@ -2149,7 +2145,7 @@
   ABORTANNEXTITLE: "Zrušiť anexiu" # todo: NEW TRANSLATION
   ABORTANNEX_CATEGORY: "CATEGORY_SUBJECT_ACTIONS" # todo: NEW TRANSLATION
   UNION_ABORTANNEX_CATEGORY: "CATEGORY_UNION_ACTIONS" # todo: NEW TRANSLATION
-  ANNEXNEWDESC: "Chceme úplne anektovať $COUNTRY$? Už nebudú ďalším štátom na mape, ale budú priamo spravovaní našimi miestnymi guvernérmi, ktorí udržia obyvateľstvo pod kontrolou. Úplná anexia $COUNTRY$ potrvá do $WHEN|Y$, a počas tohto času dostanú [ShowCasusBelliName('cb_resist_annexation')] [casus_belli|e] proti nám, a budeme mať nasledujúce účinky:\n$EFFECT$" # todo: NEW TRANSLATION
+  ANNEXNEWDESC: "Chceme úplne anektovať $COUNTRY$? Už nebudú ďalším národom na mape, ale budú priamo spravovaní našimi miestnymi guvernérmi, ktorí udržia obyvateľstvo na uzde.\n\nÚplná anexia $COUNTRY$ potrvá do $WHEN|Y$, a počas tohto času dostanú [ShowCasusBelliName('cb_resist_annexation')] [casus_belli|e] proti nám, a my budeme mať nasledujúce efekty:\n\n$EFFECT$" # todo: CHANGED
   ABORTANNEXDESC: "Zrušiť naše snahy anektovať $COUNTRY$." # todo: NEW TRANSLATION
   ABORTANNEX_DESC: "Chceme zrušiť naše snahy anektovať $COUNTRY$?" # todo: NEW TRANSLATION
   DECWARREQDESC: "Vyhlásenie [war|e] je niekedy posledným krokom diplomacie. Akt vyhlásenia [war|e] zhorší názor, ktorý majú na nás ostatné krajiny." # todo: NEW TRANSLATION
@@ -2201,8 +2197,8 @@
   CREATE_CASUS_BELLI_HOW: "Na vytvorenie [CASUS_BELLI.GetNameWithNoTooltip] Casus Belli musia platiť nasledujúce podmienky:\n$HOW$" # todo: NEW TRANSLATION
   CANCEL_CREATE_CASUS_BELLI_TITLE: "Zrušiť vytváranie Casus Belli" # todo: NEW TRANSLATION
   WARGOAL_CONSEQUENCES: "Následky" # todo: NEW TRANSLATION
-  DEFENDER_SIDE_COUNTRIES: "[GetDataModelSize(WarLateralView.GetEnemyParticipants)] $game_concept_countries$" # todo: CHANGED
-  ATTACKER_SIDE_COUNTRIES: "[GetDataModelSize(WarLateralView.GetFriendlyParticipants)] $game_concept_countries$" # todo: CHANGED
+  DEFENDER_SIDE_COUNTRIES: "[GetDataModelSize(WarLateralView.GetDefenderParticipants)] $game_concept_countries$" # todo: CHANGED
+  ATTACKER_SIDE_COUNTRIES: "[GetDataModelSize(WarLateralView.GetAttackerParticipants)] $game_concept_countries$" # todo: CHANGED
   WAR_SCORE_TOOLTIP_ATTACKER: "#T Vojnový cieľ dosiahnutý#! [war_attacker|e] dosiahol [war_goal|e], takže [war_score|e] sa im mesačne pripisuje." # todo: CHANGED
   WAR_SCORE_TOOLTIP_DEFENDER: "#T Vojnový cieľ dosiahnutý#! [war_defender|e] dosiahol [war_goal|e], takže [war_score|e] sa im mesačne pripisuje." # todo: CHANGED
   CASUS_BELLI_ON_BEHALF_OF: "Tento [casus_belli|e] je dostupný v mene nášho [subject|e] [COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -2237,7 +2233,7 @@
   REQUESTATTACKREQ: "$COUNTRY$ žiada, či môžu zoslať hnev [war|e] na $LIST$.\n\nAk to prijmeme, zrušíme alianciu s $TARGET$. Ak to odmietneme, $ACTOR$ sa môže sťažovať, ale poslúchne náš rozkaz." # todo: NEW TRANSLATION
   CALLTITLE: "Povolanie do zbraní" # todo: NEW TRANSLATION
   CALL_ALLY_TITLE: "Povolať do $WAR$" # todo: NEW TRANSLATION
-  CALL_ALLY_PROMISED_TITLE: "Privolať s prisľúbenou zemou do $WAR$" # todo: CHANGED
+  CALL_ALLY_PROMISED_TITLE: "Povolať so sľúbenou krajinou do $WAR$" # todo: CHANGED
   CALL_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
   CALLREQDESC: "$COUNTRY$ nás vyzýva, aby sme sa k nim pridali v ich [war|e] proti $LIST$." # todo: NEW TRANSLATION
   CALLREQ_LIST: "$DATA$" # todo: NEW TRANSLATION
@@ -2441,7 +2437,7 @@
   RIVALS_NOT_OPTION: "@trigger_no! [COUNTRY.GetNameWithNoTooltip] nie je vhodný ako [rival|e]" # todo: NEW TRANSLATION
   RIVALS_ADD_LEFT_CLICK: "Ľavým kliknutím vyberte [COUNTRY.GetNameWithNoTooltip] ako [rival|e]" # todo: NEW TRANSLATION
   RIVALS_REMOVE_LEFT_CLICK: "Ľavým kliknutím zrušíte výber [COUNTRY.GetNameWithNoTooltip] ako [rival|e]" # todo: NEW TRANSLATION
-  RIVALS_NO_POSITIVE_OPINION: "@trigger_no! [COUNTRY.GetName] má [opinion|e] $CURR|+=2$ o nás, a tá musí byť nižšia než $VAL|V$." # todo: CHANGED
+  RIVALS_NO_POSITIVE_OPINION: "@trigger_no! Naše [opinion|e] o [COUNTRY.GetName] je $CURR|+=2$, a musí byť nižšie ako $VAL|V$." # todo: CHANGED
   RIVALS_NOT_ENOUGH_RANK: "@trigger_no! [COUNTRY.GetName] má vyšší [country_rank|e] ako my." # todo: NEW TRANSLATION
   RIVALS_NOT_ENOUGH_POPS: "@trigger_no! [COUNTRY.GetName] má o 25% viac [pops|e] ako my." # todo: NEW TRANSLATION
   RIVALS_ANY_OF_THESE: "@trigger_no! Ktorákoľvek z nasledujúcich:" # todo: NEW TRANSLATION
@@ -2462,8 +2458,8 @@
   OUR_EXPECTED_NAVY_SIZE_COMPARISON: "Naša očakávaná veľkosť [navy|e] v porovnaní s nimi" # todo: NEW TRANSLATION
   THEY_THREATENED_BY_RELIGIOUS_ENEMIES: "Sú ohrození nevercami" # todo: NEW TRANSLATION
   ALLY_WONT_ACCEPT_CALL: "Nemôžeme povolať spojenca, ktorý neprijme výzvu." # todo: NEW TRANSLATION
-  ALLY_PROMISE_LAND: "#T Sľúbte pôdu#! Sľúbte im pôdu v mierovej dohode, aby ste ich presvedčili pridať sa do vojny." # todo: CHANGED
-  ALLY_DOES_NOT_WANT_ANY_LAND: "Nechcú od vodcu nepriateľa žiadne územie." # todo: NEW TRANSLATION
+  ALLY_PROMISE_LAND: "#T Prisľúbiť územie#! Prisľúbte im územie v mierovej dohode, aby ste ich presvedčili pridať sa do vojny." # todo: CHANGED
+  ALLY_DOES_NOT_WANT_ANY_LAND: "#T Prisľúbiť územie#! Nechcú žiadne územie od vodcu nepriateľa." # todo: CHANGED
   ANTAGONISM_BASE: "Základ: $VALUE|-=$" # todo: NEW TRANSLATION
   ANTAGONISM_FROM_DEVELOPMENT: "Z [development|e]: $VALUE|-=$" # todo: NEW TRANSLATION
   ANTAGONISM_MODIFIER: "$NAME$: $MODIFIER|%-=$" # todo: NEW TRANSLATION
@@ -2553,3 +2549,100 @@
   REQUEST_uc_bey_LOWER_IN_SUBJECT_CHAIN: "$country_lower_in_subject_chain$" # todo: NEW TRANSLATION
   COST_OF_RELATION: "Cena vzťahu" # todo: NEW TRANSLATION
   REASONS_TO_KEEP_RELATION_TT: "#T Dôvody na udržanie #!" # todo: NEW TRANSLATION
+  THEY_ARE_THREAT_HEADER: "#T [COUNTRY.GetNameWithNoTooltip] je hrozba#!" # todo: NEW TRANSLATION
+  THEY_ARE_NOT_THREAT_HEADER: "#T [COUNTRY.GetNameWithNoTooltip] NIE JE [threat|e]" # todo: NEW TRANSLATION
+  THREAT_DETAIL: "[COUNTRY.GetLongName] má $VAL|2$ [threat|e] z dôvodu\nVplyv vzdialenosti je $DIST|2%$" # todo: NEW TRANSLATION
+  THREAT_LEVEL_BASE: "Základná hodnota: $VAL|-=2$" # todo: NEW TRANSLATION
+  THREAT_LEVEL_DUE_TO_TAX: "$US|G0$ ekonomika vs $THEM|R0$ ekonomika pri $DIST|V2%$: $VAL|-=2$" # todo: NEW TRANSLATION
+  THREAT_LEVEL_DUE_TO_MP: "$US|G0$ vojenská sila vs $THEM|R0$ vojenská sila pri $DIST|2V%$: $VAL|-=2$" # todo: NEW TRANSLATION
+  THREAT_LEVEL_DUE_TO_POP: "$US|G0$ obyvateľstvo vs $THEM|R0$ obyvateľstvo pri $DIST|2V%$: $VAL|-=2$" # todo: NEW TRANSLATION
+  THREAT_IMPACT: "Ako náš [rival|e] získame" # todo: NEW TRANSLATION
+  AI_WILL_ATTACK_ENTRY_FORMAT: "$KEY$: $VALUE|-=2$" # todo: NEW TRANSLATION
+  DP_MODIFIER_SCALE_FORMAT: "$KEY$: $VALUE+=\"$" # todo: NEW TRANSLATION
+  DIPMAPMODE_TT_COALITION: "$OWNER|U$ je #G súčasťou [coalition|e] proti#! $WHO$" # todo: NEW TRANSLATION
+  WAR_DESCRIPTION_WITH_WARGOAL: "Túto vojnu začal [COUNTRY.GetName] dňa $DATE$. Cieľom [war_goal|e] je [WAR.GetWarGoal.GetName]." # todo: NEW TRANSLATION
+  RELATION_STARTS: "Získame nový $RELATION$ s [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
+  RELATION_ENDS: "$RELATION$ s [TARGET_COUNTRY.GetName] končí." # todo: NEW TRANSLATION
+  CB_REASON_IMPORTANT_CB: "Dôležitý casus belli" # todo: NEW TRANSLATION
+  NO_BUY_SELL_UNTIL: "@trigger_no! Nemôžeme kupovať ani predávať [locations|e] pred $DATE|Y$." # todo: NEW TRANSLATION
+  DIPLOREASON_THEY_REJECTED_DEMAND_ALREADY: "Už odmietli našu požiadavku" # todo: NEW TRANSLATION
+  DIPLOREASON_WE_ALREADY_MADE_DEMAND: "Nedávno sme už predložili našu požiadavku" # todo: NEW TRANSLATION
+  DIPLOREASON_IS_WINNING: "Vyhráva" # todo: NEW TRANSLATION
+  DIPLOREASON_IS_LOSING: "Prehráva" # todo: NEW TRANSLATION
+  DIPLOREASON_ALREADY_DID_ACTION: "Túto diplomatickú akciu sme už vykonali" # todo: NEW TRANSLATION
+  DIPLOREASON_NO_REASON_FOR_DIPLOMACY: "Už nemáme dôvod vykonávať túto diplomaciu" # todo: NEW TRANSLATION
+  DIPLOREASON_HAS_COMPLIED_WITH_DEMAND_BEFORE: "Už skôr vyhoveli tejto požiadavke" # todo: NEW TRANSLATION
+  DIPLOREASON_THREATENED_BY_ACTOR: "Ohrození nami" # todo: NEW TRANSLATION
+  DIPLOREASON_THEY_WOULD_ACCEPT: "Prijali by to" # todo: NEW TRANSLATION
+  DIPLOREASON_WE_WANT_WAR: "Chceme [war|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_WE_HAVE_CASUS_BELLI: "Už máme [casus_belli|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_AVERAGE_ESTATE_SATISFACTION: "Priemerné [estate_satisfaction|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_RECIPIENT_IS_IN_A_DISASTER: "[TARGET_COUNTRY.GetName] zažíva [disaster|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_RECIPIENT_WAR_EXHAUSTION: "Ich [war_exhaustion|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_RECIPIENT_STABILITY: "Ich [stability|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_RECIPIENT_GOVERNMENT_POWER: "Ich [government_power|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_RECIPIENT_LOANS: "Ich [loans|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_RECIPIENT_NEGATIVE_BALANCE: "Ich negatívny mesačný zostatok" # todo: NEW TRANSLATION
+  DIPLOREASON_ROYAL_TIES_WITH_TARGET: "[royal_marriage|e] s cieľovou krajinou" # todo: NEW TRANSLATION
+  DIPLO_REVOLTERS: "@trigger_no! Nevyjednávame s povstalcami!" # todo: NEW TRANSLATION
+  DIPLO_MERCENARIES: "@trigger_no! Nemôžeme posielať diplomatov k žoldnierom." # todo: NEW TRANSLATION
+  IMPROVE_RELATION_AND_ANTAGONISM_MAXED_OUT_DESC: "Týmto v priebehu času udržíme ich názor na nás na $VAL|+=$ a ich antagonizmus voči nám na $ANTAGONISM|+=$!" # todo: NEW TRANSLATION
+  PEACE_TREATY_RETURN_CORE: "Vrátiť [LOCATION.GetName] [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
+  PEACE_TREATY_RETURN_CORE_short: "Vrátiť [LOCATION.GetNameWithNoTooltip] [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+  PEACE_RETURN_CORE_MULT: "Vrátiť jadro" # todo: NEW TRANSLATION
+  PEACE_TREATY_TRANSFER_SUBJECT: "Preniesť [COUNTRY.GetDiplomacy.GetSubjectType.GetNameWithNoTooltip] [COUNTRY.GetNameWithFlag] od [COUNTRY.GetDiplomacy.GetOverlord.GetNameWithNoTooltip] na [TARGET_COUNTRY.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+  PEACE_TREATY_TRANSFER_SUBJECT_short: "Preniesť [COUNTRY.GetNameWithFlag] od [COUNTRY.GetDiplomacy.GetOverlord.GetNameWithNoTooltip] na [TARGET_COUNTRY.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+  PEACE_TREATY_RETURN_CORE_CEDE: "@trigger_no! [LOCATION.GetName] má byť vrátené [COUNTRY.GetName]" # todo: NEW TRANSLATION
+  PEACE_TREATY_REVOLTER_NO_REVOLTER: "@trigger_no! [COUNTRY.GetLongName] nie je povstalec." # todo: NEW TRANSLATION
+  AUC_THREAT: "Sú pre nás [threat|e]" # todo: NEW TRANSLATION
+  PEACE_RETURN_CORE_MULTIPLIER: "Násobiteľ antagonizmu za vrátenie jadra: $VAL|2-=%$" # todo: NEW TRANSLATION
+  PEACE_PLACE_NON_UNION_MAKING_CHARACTER_DISCOUNT: "Zľava kvôli nevytvoreniu [union|e]: $VAL|2-=%$" # todo: NEW TRANSLATION
+  PT_NAME_TRANSFER_SUBJECT: "(Preniesť subjekt)" # todo: NEW TRANSLATION
+  HEGEMON_ULTIMATUM_WAR_AND_DEMAND: "Hegemónske ultimátum: vojna a požiadavka" # todo: NEW TRANSLATION
+  HEGEMON_ULTIMATUM_WAR_ORIGINAL_DEMAND: "Pôvodná hegémonska požiadavka" # todo: NEW TRANSLATION
+  SELL_PROV_FROM_COUNTRY_TITLE: "$SELLPROVTITLE$ pre [SellLocationActionView.GetBuyer.GetName]" # todo: NEW TRANSLATION
+  sell_buy_location_price: "Celkové náklady:" # todo: NEW TRANSLATION
+  sell_buy_send_offer: "$PEACE_OFFER_SEND_OFFER$" # todo: NEW TRANSLATION
+  BUY_PROV_FROM_COUNTRY_TITLE: "$BUYPROVTITLE$ od [SellLocationActionView.GetSeller.GetName]" # todo: NEW TRANSLATION
+  NOT_SELL_CITY_CAPITAL: "@trigger_no! [LOCATION.GetName] je [capital|e]." # todo: NEW TRANSLATION
+  TRANSFER_OCCUPATION_TO_COUNTRY_TITLE: "Preniesť okupáciu na $TARGET$" # todo: NEW TRANSLATION
+  TRANSFER_OCCUPATION_MULTI_CONFIRM: "Prenesieme okupáciu $PROV$ na $TARGET$." # todo: NEW TRANSLATION
+  ANNEX_NO_THEM_WAR: "@trigger_no! Náš [subject|e] je vo [war|e], takže nemôžeme začať anexiu." # todo: NEW TRANSLATION
+  ANNEX_NO_WE_WAR: "@trigger_no! Sme vo [war|e], takže nemôžeme začať anexiu." # todo: NEW TRANSLATION
+  SUBJECT_TYPE_PAYING: "$EFFECT_LIST_BULLET$$SUBJECT$ platí $COST$ každý mesiac $OVERLORD$." # todo: NEW TRANSLATION
+  IO_WITHDRAW_CHOOSE_AMOUNT: "Vyberte sumu na výber:" # todo: NEW TRANSLATION
+  IO_WITHDRAW_CONFIRM_AMOUNT: "Vybrať zvolenú sumu" # todo: NEW TRANSLATION
+  IO_WITHDRAW_TOOLTIP_DESC: "Vyberieme z pokladnice organizácie zvolenú sumu @gold!." # todo: NEW TRANSLATION
+  TAKE_PROVINCE: "Dobyť provinciu" # todo: NEW TRANSLATION
+  NAVAL_SUPERIORITY: "Námorná prevaha" # todo: NEW TRANSLATION
+  SUPERIORITY: "Prevaha" # todo: NEW TRANSLATION
+  ENFORCE_MILITARY_ACCESS: "Vynútiť vojenský prístup" # todo: NEW TRANSLATION
+  DEFEND_CAPITAL: "Brániť hlavné mesto" # todo: NEW TRANSLATION
+  INDEPENDENCE: "Nezávislosť" # todo: NEW TRANSLATION
+  TAKE_CAPITAL: "Dobytie hlavného mesta" # todo: NEW TRANSLATION
+  TAKE_BORDER: "Obsadiť pohraničie" # todo: NEW TRANSLATION
+  TAKE_COUNTRY: "Dobytie krajiny" # todo: NEW TRANSLATION
+  DESTROY_ARMY: "Zničiť armádu" # todo: NEW TRANSLATION
+  INVALID_WAR_GOAL: "Neoprávnená vojna" # todo: NEW TRANSLATION
+  war_goal_take_province_nationalist: "$war_goal_take_province$" # todo: NEW TRANSLATION
+  war_goal_superiority_force_migration: "$generic_war_goal_superiority$" # todo: NEW TRANSLATION
+  war_goal_take_capital_enforce_hegemon_demands: "$generic_war_goal_take_capital$" # todo: NEW TRANSLATION
+  war_goal_superiority_rival: "$generic_war_goal_superiority$" # todo: NEW TRANSLATION
+  war_goal_superiority_coalition: "$generic_war_goal_superiority$" # todo: NEW TRANSLATION
+  war_goal_superiority_coalition_desc: "$generic_war_goal_superiority_desc$" # todo: NEW TRANSLATION
+  war_goal_take_province_nationalist_desc: "[war_goal|e] je získať nepriateľskú krajinu. Získate bonus [war_score|e] za obsadenie nepriateľského územia nášho [culture_group|e]." # todo: NEW TRANSLATION
+  war_goal_superiority_force_migration_desc: "$generic_war_goal_superiority_desc$" # todo: NEW TRANSLATION
+  war_goal_take_capital_enforce_hegemon_demands_desc: "$generic_war_goal_take_capital_desc$" # todo: NEW TRANSLATION
+  war_goal_superiority_rival_desc: "$war_goal_superiority_desc$" # todo: NEW TRANSLATION
+  DIP_ANSWER_LATER: "Odpovedať neskôr" # todo: NEW TRANSLATION
+  ENFORCE_PEACE: "Vynútiteľný mier" # todo: NEW TRANSLATION
+  DIPLOREASON_SAME_RELIGION_GROUP: "Rovnaká [religion_group|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_TOTAL_ABILITY_COMPARED_TO_RULER: "[SCOPE.sCharacter('target').GetName] celkové schopnosti v porovnaní s [SCOPE.sCountry('recipient').GetGovernment.GetRuler.GetName]" # todo: NEW TRANSLATION
+  DIPLOREASON_GOVERNMENT_POWER: "Naše [government_power|e]" # todo: NEW TRANSLATION
+  DIPLOREASON_THE_ENEMY_OF_MY_ENEMY: "Je nepriateľom ich nepriateľov" # todo: NEW TRANSLATION
+  DIPLOREASON_DYNASTIC_POWER_IN_HRE: "[dynastic_power|e] v [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
+  RIVALS_NO_SAME_RULER: "@trigger_fail! Máme rovnakého [ruler|e] ako [COUNTRY.GetName]." # todo: NEW TRANSLATION
+  CAN_ENABLE_DEPENDENCY_ALREADY_OVERLORD: "Už je naším nadvládcom alebo vyšší" # todo: NEW TRANSLATION
+  RIVALS_NOT_THREAT: "@trigger_no! [COUNTRY.GetName] nie je pre nás [threat|e]." # todo: NEW TRANSLATION
+  ANTAGONISM_BASE_BREAKDOWN: "#T Rozpis antagonizmu#!\nZáklad: $VALUE|-=$" # todo: NEW TRANSLATION
+  TEU_POL_BOH_truce: "@trigger_no! Prímerie s [COUNTRY.GetName] im zakazuje zasahovať do vojny" # todo: NEW TRANSLATION

@@ -139,16 +139,16 @@
   settle_country: "Osídliť krajinu" # todo: NEW TRANSLATION
   settle_country_desc: "V týchto krajinách sme ustanovili našu náboženskú a kultúrnu prevahu, spravme to oficiálnym a [settle|e] tu natrvalo, aby sme mohli obhospodarovať polia a stavať zlepšenia pre lepší život." # todo: NEW TRANSLATION
   hire_advisor: "Najať $game_concept_courtier$" # todo: NEW TRANSLATION
-  hire_advisor_desc: "Minúť zlato na prilákanie nového [character|e] do nášho dvora." # todo: NEW TRANSLATION
+  hire_advisor_desc: "Minúť [legitimacy|e] [legitimacy_i|e] na prilákanie nového [character|e] do nášho dvora." # todo: CHANGED
   hire_advisor_effect: "Nový [character|e] je najatý a vstupuje do našej krajiny." # todo: NEW TRANSLATION
   hire_artist: "Najať umelca" # todo: NEW TRANSLATION
   hire_artist_desc: "Minúť zlato na prilákanie nového [artist|e] do nášho dvora." # todo: NEW TRANSLATION
   hire_artist_effect: "Nový [artist|e] je najatý a vstupuje do našej krajiny." # todo: NEW TRANSLATION
   train_general: "Vyškoliť generála" # todo: NEW TRANSLATION
-  train_general_desc: "Minúť zlato na vycvičenie nového [general|e]. Nebudú oprávnení byť členom nášho [cabinet|e]." # todo: NEW TRANSLATION
+  train_general_desc: "Minúť [army_tradition|e] [army_tradition_i|e] na vycvičenie nového [general|e]. Nebude im dovolené byť členom nášho [cabinet|e]." # todo: CHANGED
   train_general_effect: "Nový [general|e] je vycvičený a vstupuje do našej krajiny." # todo: NEW TRANSLATION
   train_admiral: "Vyškoliť admirála" # todo: NEW TRANSLATION
-  train_admiral_desc: "Minúť zlato na vycvičenie nového [admiral|e]. Nebudú oprávnení byť členom nášho [cabinet|e]." # todo: NEW TRANSLATION
+  train_admiral_desc: "Minúť [navy_tradition|e] [navy_tradition_i|e] na vycvičenie nového [admiral|e]. Nebude im dovolené byť členom nášho [cabinet|e]." # todo: CHANGED
   train_admiral_effect: "Nový [admiral|e] je vycvičený a vstupuje do našej krajiny." # todo: NEW TRANSLATION
   create_market_desc: "Vytvorte nový [market|e] v cieľovej [location|e]. [price|e] závisí od súčasného [market_access|e] danej [location|e]." # todo: NEW TRANSLATION
   create_market_select_location: "Vyberte [location|e], v ktorej vytvoríte nový [market|e]" # todo: NEW TRANSLATION
@@ -484,8 +484,8 @@
   POLICY_GUARANTEED_FREEDOM: "Reforma zaručuje našu nezávislosť" # todo: NEW TRANSLATION
   POLICY_RESPECTS_SOVEREIGNTY: "Reforma rešpektuje našu suverenitu" # todo: NEW TRANSLATION
   POLICY_RESTRICTS_SOVEREIGNTY: "Reforma obmedzuje našu suverenitu" # todo: NEW TRANSLATION
-  POLICY_POPULARITY_TO_ENACT: "Popularita prijatia [SCOPE.sPolicy('policy').GetName]" # todo: CHANGED
-  POLICY_POPULARITY_TO_KEEP: "Popularita udržania [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName]" # todo: CHANGED
+  POLICY_POPULARITY_TO_ENACT: "Popularita zavedenia [SCOPE.sPolicy('policy').GetName]" # todo: CHANGED
+  POLICY_POPULARITY_TO_KEEP: "[SCOPE.sInternationalOrganization('recipient').Custom('GetReasonToKeepLaw')]" # todo: CHANGED
   POLICY_STRATEGIC_VALUE: "Strategická hodnota" # todo: NEW TRANSLATION
   POLICY_LOSING_OPPORTUNITY_TO_CENTRALIZE: "Stratili by sme príležitosť zcentralizovať organizáciu" # todo: NEW TRANSLATION
   POLICY_WOULD_BECOME_LEADER_OF_ORGANIZATION: "Stal by sa vodcom organizácie" # todo: NEW TRANSLATION
@@ -610,10 +610,10 @@
   convert_culture: "Konvertovať kultúru" # todo: NEW TRANSLATION
   deport_heretics_select_province: "Vyberte provinciu, z ktorej deportovať" # todo: NEW TRANSLATION
   rot_plan_invasion: "Plánovať inváziu" # todo: NEW TRANSLATION
-  rot_plan_invasion_desc: "Vyberte [country|e], na ktorý chcete naplánovať inváziu." # todo: NEW TRANSLATION
-  rot_plan_invasion_select_country: "Vyberte krajinu, na ktorú chcete naplánovať inváziu" # todo: NEW TRANSLATION
+  rot_plan_invasion_desc: "Vyberte [country|e], proti ktorému plánujete inváziu." # todo: CHANGED
+  rot_plan_invasion_select_country: "Vyberte [country|e] pre naplánovanie invázie" # todo: CHANGED
   rot_plan_invasion_no_countries: "@trigger_no! Nie sú k dispozícii žiadne platné susedné [countries|e], ktoré nie sú [allies|e] ani s [actor.GetName] nemajú [truce|e]" # todo: NEW TRANSLATION
-  rot_plan_invasion_tt: "[actor.GetName] získa [ShowCasusBelliName('cb_timurs_conquests')] [casus_belli|E] na cieľovú [country|e]" # todo: NEW TRANSLATION
+  rot_plan_invasion_tt: "Získame [ShowCasusBelliName('cb_timurs_conquests')] [casus_belli|E] na cieľovú [country|e]" # todo: CHANGED
   rot_select_core_region: "Vybrať jadrový región" # todo: NEW TRANSLATION
   rot_select_core_region_desc: "Vyberte [region|e], ktorý povýšime na #Y Core Region#! pre [actor.GetName]." # todo: NEW TRANSLATION
   rot_select_core_region_select_region: "Vyberte región, ktorý povýšime na Core Region" # todo: NEW TRANSLATION
@@ -653,7 +653,7 @@
   sengoku_summon_to_court_desc: "Vládcovia klanov odmietajú našu autoritu. Mali by sme ich predvolať na náš dvor, aby sme ich udržali pod kontrolou, alebo využiť ich odmietnutie ako dôvod ich zradcovstva." # todo: NEW TRANSLATION
   sengoku_proclaim_clan_independence: "Vyhlásiť nezávislosť klanu" # todo: NEW TRANSLATION
   sengoku_proclaim_clan_independence_desc: "[GetUniqueInternationalOrganization('japanese_shogunate').GetName] zoslabla a už nedokáže efektívne kontrolovať klany. Musíme využiť situáciu a vyhlásiť nezávislosť od autority $JAPANESE_SHOGUNATE_LEADER_MALE$" # todo: NEW TRANSLATION
-  clan_has_valid_landable_location.tt: "Sme prítomní v [locations|e], kde nie sú prítomné žiadne iné klany" # todo: NEW TRANSLATION
+  clan_has_valid_landable_location.tt: "Sme prítomní v [locations|e], ktoré vlastní $JAPANESE_SHOGUNATE_LEADER_MALE$, v ktorých máme väčšinu [foreign_buildings|e]" # todo: CHANGED
   sengoku_increment_recruitment: "Zvýšiť nábor" # todo: NEW TRANSLATION
   sengoku_increment_recruitment_desc: "Pred nami sú neisté časy a budú sa viesť vojny. Mali by sme rozšíriť naše armády o nových rekrutov." # todo: NEW TRANSLATION
   sengoku_offer_hostage: "Ponúknuť rukojemníka" # todo: NEW TRANSLATION
@@ -1076,7 +1076,7 @@
   choose_the_tatar_country_no_countries: "Nie je k dispozícii žiadna krajina" # todo: NEW TRANSLATION
   break_the_yoke: "Osloboďte sa od [GetInternationalOrganization('tatar_yoke').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   break_the_yoke_desc: "Je načase, aby sa náš ľud vzoprel útlaku [ShowSpecialStatusName('tatar_overlord')] a zhodil okovy, ktoré boli uvalené na ľud [ShowCultureGroupName('russian_group')]." # todo: NEW TRANSLATION
-  break_tatar_yoke_tt: "Vyhlásime jedinú [ShowCasusBelliName('cb_break_free_tatar_yoke')] [war|e] proti [GetInternationalOrganization('tatar_yoke').GetLeaderCountry.GetName]. Po vynútení [ShowPeaceTreatyTypeName('break_from_tatar_yoke')] opustíme [GetInternationalOrganization('tatar_yoke').GetName]." # todo: CHANGED
+  break_tatar_yoke_tt: "Vyhlásime samostatnú [ShowCasusBelliName('cb_break_free_tatar_yoke')] [war|e] proti [GetInternationalOrganization('tatar_yoke').GetLeaderCountry.GetName]. Akonáhle bude vynútená [ShowPeaceTreatyTypeName('break_from_tatar_yoke')], opustíme [GetInternationalOrganization('tatar_yoke').GetName]." # todo: CHANGED
   ask_to_become_tax_collector: "Požiadať o povýšenie titulu" # todo: NEW TRANSLATION
   ask_to_become_tax_collector_desc: "Súčasný [ShowSpecialStatusName('tatar_tax_collector')] už nie je vhodný na vyberanie tribútu nášho ľudu. My by sme boli lepší na túto pozíciu a mohli by sme sa stať vodcom [ShowCultureGroupName('russian_group')] v tomto vzťahu." # todo: NEW TRANSLATION
   ask_to_become_tax_collector_tt: "Požiadať [GetCountry('GLH').GetName] o prevod [ShowSpecialStatusName('tatar_tax_collector')] na nás." # todo: NEW TRANSLATION
@@ -1106,3 +1106,31 @@
   gov_action_republic_to_theocracy_desc: "Podľa príkazu $clergy_estate$ sme povinní prijať naše rastúce teokratické hodnoty. Pod božským vedením dosiahne naša zbožnosť bezprecedentné výšky, aké doteraz nevideli slabé republiky." # todo: NEW TRANSLATION
   theocracy_to_republic: "$transition_to_republic$" # todo: NEW TRANSLATION
   theocracy_to_republic_desc: "Upadajúca moc nášho $clergy_estate$ sa nepriaznivo prejavila na vnímateľnej stabilite nášho štátu. Cez sériu reforiem a rokovaní prenesieme tú málo autority, ktorú im zostáva, na $burghers_estate$." # todo: NEW TRANSLATION
+  improve_our_cultural_view: "Zlepšiť názor našej kultúry" # todo: NEW TRANSLATION
+  improve_our_cultural_view_desc: "Snažiť sa zlepšiť názor našej [culture|e] na inú." # todo: NEW TRANSLATION
+  improve_our_cultural_view_effect: "[SCOPE.sCountry('actor').GetName] zlepšil názor svojej [culture|e] na [SCOPE.sCulture('target').GetName]." # todo: NEW TRANSLATION
+  improve_our_cultural_view_choose_culture: "Vyberte [culture|e], o ktorej chceme zlepšiť názor našej kultúry:" # todo: NEW TRANSLATION
+  reduce_our_cultural_view: "Zhoršiť názor našej kultúry" # todo: NEW TRANSLATION
+  reduce_our_cultural_view_desc: "Snažiť sa zhoršiť názor našej [culture|e] na inú." # todo: NEW TRANSLATION
+  reduce_our_cultural_view_effect: "[SCOPE.sCountry('actor').GetName] zhoršil názor svojej [culture|e] na [SCOPE.sCulture('target').GetName]." # todo: NEW TRANSLATION
+  reduce_our_cultural_view_choose_culture: "Vyberte [culture|e], o ktorej chceme zhoršiť názor našej kultúry:" # todo: NEW TRANSLATION
+  withdraw_from_organization_treasury: "Výber z pokladnice organizácie" # todo: NEW TRANSLATION
+  withdraw_from_organization_treasury_desc: "Vybrať časť pokladnice [international_organization|e] ([treasury|e]) a privlastniť si ju." # todo: NEW TRANSLATION
+  withdraw_from_organization_treasury_select_gold_amount: "Vyberte množstvo [gold|e], ktoré sa vyberie z organizácie:" # todo: NEW TRANSLATION
+  provoke_rebels: "Provokovať povstalcov" # todo: NEW TRANSLATION
+  provoke_rebels_desc: "Provokovať [rebels|e], aby sa vzbúrili proti nám." # todo: NEW TRANSLATION
+  provoke_rebels_tt: "Vybrané [rebellion|e] bude vyprovokované k vzbure proti nám, aby sme ich na bojisku raz a navždy rozdrvili!" # todo: NEW TRANSLATION
+  law_debate_cooldowns_tt: "[SCOPE.sLaw('root').GetName] už bol navrhnutý a nemožno ho znovu navrhnúť až do #Y [ShowExpirationDateInVariableListForTarget(SCOPE.sInternationalOrganization('recipient'), 'law_debate_cooldowns', SCOPE.sLaw('root'))]#!" # todo: NEW TRANSLATION
+  POLICY_POPULARITY_TO_KEEP_DYNAMIC: "Popularita zachovania [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName]" # todo: NEW TRANSLATION
+  POLICY_POPULARITY_TO_KEEP_STATIC: "Popularita zachovania aktuálne aktívnej politiky" # todo: NEW TRANSLATION
+  POLICY_REASON_TO_VOTE_FOR_TARGET: "Z dôvodov hlasovať za [SCOPE.sPolicy('evaluation_policy').GetName]" # todo: NEW TRANSLATION
+  rot_declare_conquest_ambition: "Vyhlásiť dobyvateľskú ambíciu" # todo: NEW TRANSLATION
+  rot_declare_conquest_ambition_desc: "Vyberte [region|e], ktorú vyhlásime za našu dobyvateľskú ambíciu." # todo: NEW TRANSLATION
+  rot_declare_conquest_ambition_select_region: "Vyberte región, ktorý vyhlásime za našu dobyvateľskú ambíciu" # todo: NEW TRANSLATION
+  rot_declare_conquest_ambition_no_regions: "@trigger_no! Žiadny platný susedný [region|e], ktorý by sme mohli vyhlásiť za našu dobyvateľskú ambíciu. Musíme najskôr zabezpečiť, aby naša krajina dominovala [actor.GetCapital.GetRegion.GetName]!" # todo: NEW TRANSLATION
+  rot_declare_conquest_ambition_tt: "Cieľový [region|e] sa stane naším určeným #Y Regiónom dobyvateľskej ambície#!!" # todo: NEW TRANSLATION
+  rot_declare_conquest_ambition_at: "[ShowGenericActionName('rot_plan_invasion')] proti krajinám v tomto regióne bude okamžitým vyhlásením [war|e] namiesto vytvorenia [casus_belli|e]" # todo: NEW TRANSLATION
+  rot_declare_conquest_ambition_bt: "Každé [location|e] vlastnené nepriateľskou krajinou v tomto regióne získa [ShowModifier('rot_timur_scare')] [location_modifier|e] (aplikované pri vyhlásení vojny a zaniká počas #Y 10 rokov#!). Efekt sa uplatňuje len pokiaľ je [GetCharacter('chg_timur_lame_borjigin').GetName] pri moci" # todo: NEW TRANSLATION
+  rot_plan_invasion_at: "Ak je cieľová krajina v tom istom regióne ako náš [capital|E], potom namiesto toho vyhlásime [ShowCasusBelliName('cb_timurs_conquests')] [war|E] proti nej." # todo: NEW TRANSLATION
+  rot_plan_invasion_bt: "Ak je cieľová krajina v tom istom regióne ako náš [capital|E] alebo je v našom #Y Regióne dobyvateľskej ambície#! ([recipient.MakeScope.GetVariable('rot_conquest_ambition').GetRegion.GetName]) potom namiesto toho vyhlásime [ShowCasusBelliName('cb_timurs_conquests')] [war|E] proti nej." # todo: NEW TRANSLATION
+  ruler_regent_relatives_crown_estate_tt: "[actor.GetGovernment.GetRulerOrRegent.GetName] a [actor.GetGovernment.GetRulerOrRegent.GetHerHis] blízki príbuzní sa stanú súčasťou $crown_estate$ [estate|e]" # todo: NEW TRANSLATION
