@@ -31,7 +31,7 @@
   flavor_gen.7.a: "Zaviesť #italic Statuta Gazerie#!" # todo: NEW TRANSLATION
   flavor_gen.7.b: "Nemôžeme si to dovoliť." # todo: NEW TRANSLATION
   flavor_gen.8.title: "Bankrot Casa San Giorgio" # todo: NEW TRANSLATION
-  flavor_gen.8.desc: "V roku 1407 začal Ufficio di San Giorgio bankový obchod, požičiavajúc peniaze svojim akcionárom a poskytujúc služby ako zmenky. Do roku 1437 banka tiež spravovala mincovňu. Pokračujúce štátne zadlžovanie a nedostatočné kapitálové vybavenie banku zrazili v roku 1444.\n\nČo máme robiť?" # todo: NEW TRANSLATION
+  flavor_gen.8.desc: "[target_country.GetLongName] sa v poslednom čase ocitli v mnohých finančných problémoch. Ich neschopnosť správne hospodáriť s peniazmi je hanbou pre banku a v týchto zlom časoch prišli k nám po pomoc. S našou pomocou by mohli vdýchnuť trochu čerstvého vzduchu do svojich účtov a udržať sa nad vodou, kým nebudú schopní sa znovu udržať sami." # todo: CHANGED
   flavor_gen.8.a: "Zachráňme banku!" # todo: NEW TRANSLATION
   flavor_gen.8.b: "Nech zomrie..." # todo: NEW TRANSLATION
   flavor_gen.9.title: "Spor Guelphov a Ghibellinov" # todo: NEW TRANSLATION
@@ -59,7 +59,7 @@
   flavor_gen.13.desc: "[ROOT.GetCountry.GetAdjective] bankári financovali mnohé zahraničné podniky španielskej koruny. Niektorí historici túto dobu nazývali Vekom [ROOT.GetCountry.GetAdjectiveWithNoTooltip]. Počas tejto éry vzniklo niekoľko nádherných palácov pozdĺž Strada Nuova, ale netrvalo to večne — keď Turci obsadili Chios, zrútil sa [ROOT.GetCountry.GetAdjective] obchodný impérium na východnom Stredozemí." # todo: NEW TRANSLATION
   flavor_gen.13.a: "Toto bude trvať večne!" # todo: NEW TRANSLATION
   flavor_gen.14.title: "Osud Gazarie" # todo: NEW TRANSLATION
-  flavor_gen.14.desc: "Pád [ShowLocationName('constantinople')] nie je len šokom pre kresťanský svet, ale tiež koncom [ROOT.GetCountry.GetAdjective] koloniálnych ambícií v Čiernom mori. Je jasné, že [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Gazaria je odsúdená padnúť pod tureckou hrozbou.\n\nKeďže nemáme veľa dôvodov držať kolóniu, objavili sa nápady postúpiť ju Casa San Giorgio. Hoci je osud kolónie zpečatený, môže mať ešte šancu na prežitie pod suverenitou banky." # todo: NEW TRANSLATION
+  flavor_gen.14.desc: "[ShowLocationName('constantinople')]'s pád nie je len otrasom pre kresťanský svet, ale aj koncom existencie [ROOT.GetCountry.GetAdjective] koloniálnych ambícií v Čiernom mori. Je jasné, že [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Gazaria je odsúdená padnúť tureckej hrozbe.\n\nKeďže pre nás existuje len málo dôvodov kolóniu držať, objavili sa návrhy ju postúpiť [target_country.GetLongName]. Hoci je osud kolónie spečatený, pod suverenitou banky by mohla mať stále šancu na prežitie." # todo: CHANGED
   flavor_gen.14.a: "Postúpme Gazariu banke." # todo: NEW TRANSLATION
   flavor_gen.14.b: "Dokážeme a obraníme Gazariu sami!" # todo: NEW TRANSLATION
   flavor_gen.15.title: "Maona z Chiosu a Phocae" # todo: NEW TRANSLATION
@@ -132,10 +132,10 @@
   flavor_gen.28.a: "Nech Grimaldi pokračujú vo svojom obchode." # todo: NEW TRANSLATION
   flavor_gen.28.b: "Táto Skala patrí nám!" # todo: NEW TRANSLATION
   flavor_gen.29.title: "Zlatý rok Casa San Giorgio" # todo: NEW TRANSLATION
-  flavor_gen.29.desc: "Bankový podnik Casa San Giorgio bol v poslednej dobe veľmi ziskový, čo prinieslo veľký prospech [ROOT.GetCountry.GetLongName]." # todo: NEW TRANSLATION
+  flavor_gen.29.desc: "Bankovníctvo [target_country.GetLongName] bolo v poslednej dobe celkom ziskové, čo výrazne prospelo [ROOT.GetCountry.GetLongName]." # todo: CHANGED
   flavor_gen.29.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
   flavor_gen.30.title: "Finančné problémy Casa San Giorgio" # todo: NEW TRANSLATION
-  flavor_gen.30.desc: "Bankový podnik Casa San Giorgio v poslednom čase prešiel problémami, utrpel finančné straty, ktorým teraz musí čeliť [ROOT.GetCountry.GetLongName]." # todo: NEW TRANSLATION
+  flavor_gen.30.desc: "Bankovníctvo [target_country.GetLongName] malo v poslednom čase problémy, utrpelo finančné straty, ktorým sa teraz musí postaviť [ROOT.GetCountry.GetLongName]." # todo: CHANGED
   flavor_gen.30.a: "Znepokojujúce..." # todo: NEW TRANSLATION
   flavor_gen.31.title: "Univerzita v Janove" # todo: NEW TRANSLATION
   flavor_gen.31.desc: "Mesto [ShowLocationName('genoa')] je miestom bohatstva a prosperity. Aj keď je prevažne obchodné mesto, hodnota vzdelania nie je jeho občanom cudzia — existujú tam fakulty udeľujúce tituly v právach, teológii, medicíne a umení.\n\nNa príkaz pápeža [GetCountry('PAP').GetGovernment.GetRuler.GetName] bola Kolegia teológie oficiálne založená v Janove v svätom roku [GetCurrentYear]." # todo: NEW TRANSLATION
@@ -190,3 +190,24 @@
   flavor_gen.45.desc: "[sampieru_corso.GetName] naberá silu v exile s cudzou podporou. Teraz sa rozhodol, že nastal čas na povstanie po celom ostrove, ktoré má oslobodiť Korziku spod našej nadvlády." # todo: NEW TRANSLATION
   flavor_gen.45.a: "Korzikánci sa opäť vzbúrajú!" # todo: NEW TRANSLATION
   flavor_gen.45.a.tt: "Všetko obyvateľstvo [ShowCultureName('corsican')] v [ShowProvinceDefinitionName('cismonte_province')] a [ShowProvinceDefinitionName('pumonte_province')] sa pridá k [corsican_independence_fighter.GetName]"" # todo: NEW TRANSLATION
+  flavor_gen.8.historical_info: "V roku 1407 začala bankovú činnosť #italic Casa delle compere e dei banchi di San Giorgio#!, neformálne známa ako #italic Ufficio di San Giorgio#!; požičiavala peniaze svojim akcionárom a poskytovala služby ako zmenky. Do roku 1437 banka spravovala aj mincovňu. Pokračujúce štátne pôžičky a nedostatočné kapitálové zabezpečenie spôsobili jej pád v roku 1444." # todo: NEW TRANSLATION
+  flavor_gen.46.title: "Banka svätého Juraja" # todo: NEW TRANSLATION
+  flavor_gen.46.desc: "Obchod a obchodovanie v Stredozemí majú svoje výhody, ale môžu tiež zaťažovať financie našej krajiny, najmä ak sa chceme postaviť do konkurencie s niektorými susedmi. Aby sme tomu uľavili, bude založená nová banka, ktorá použije [ShowWorkOfArtName('palazzo_san_giorgio')] ako svoje sídlo. Určite poslúži ako prostriedok, aby naša krajina vstúpila do novej éry bohatstva a prosperity." # todo: NEW TRANSLATION
+  flavor_gen.46.a: "Banka bude slúžiť našim záujmom." # todo: NEW TRANSLATION
+  flavor_gen.46.b: "Poďme sa kúpať v peniazoch!" # todo: NEW TRANSLATION
+  flavor_gen.46.historical_info: "Banka svätého Juraja, alebo #italic Casa delle compere e dei banchi di San Giorgio#!, bola založená v roku 1407 Janovskou republikou. Jej hlavným cieľom bolo zvládnuť rastúce výdavky a dlhy spôsobené ich vojnou proti Benátkam o hospodársku nadvládu v Stredozemí. So sídlom v #italic Palazzo San Giorgio#! slúžila ako hlavná finančná inštitúcia Janova, až do miery, že spravovala mnohé zámoorské územia krajiny, priamo alebo nepriamo. Až do jej zrušenia Napoleonom v roku 1805 banka slúžila mnohým vládcov a osobnostiam Európy, od Kryštofa Kolumba po cisára Karola V." # todo: NEW TRANSLATION
+  flavor_gen.47.title: "$flavor_gen.46.title$" # todo: NEW TRANSLATION
+  flavor_gen.47.desc: "Boli sme poverení, aby sme pomohli financiám [GetCountry('GEN').GetName] a určite z ich patronátu veľa získame. Sme však tiež voľní rozšíriť naše pobočky do iných krajín, a okolo je mnoho plných pokladníc, ktoré by mohli profitovať z našej správy... samozrejme za poplatok." # todo: NEW TRANSLATION
+  flavor_gen.47.a: "$flavor_gen.46.b$" # todo: NEW TRANSLATION
+  flavor_gen.48.title: "Rozšírenie [target_art.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+  flavor_gen.48.desc: "[target_art.GetName] je naším menom a sídlom. Ako také jeho pôsobivosť a veľkoleposť sa odráža na nás a na tom, ako nás vnímajú ľudia. Boli predložené plány na rozšírenie budovy, aby lepšie vyhovovala našim rastúcim aktivitám a zároveň zvýšila náš verejný obraz." # todo: NEW TRANSLATION
+  flavor_gen.48.a: "Pokračovať v rozšírení." # todo: NEW TRANSLATION
+  flavor_gen.48.b: "Je to príliš drahé." # todo: NEW TRANSLATION
+  flavor_gen.49.title: "Renovácia [target_art.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+  flavor_gen.49.desc: "[target_art.GetName] slúži ako naše sídlo už určitý čas a čas začína na budove zanechávať stopy. Možno by sme mali investovať prostriedky do jej renovácie, aby mohla naďalej reprezentovať naše slávne bohatstvo." # todo: NEW TRANSLATION
+  flavor_gen.49.a: "Obnovme budovu do jej bývalej veľkoleposti." # todo: NEW TRANSLATION
+  flavor_gen.49.b: "$flavor_gen.48.b$" # todo: NEW TRANSLATION
+  flavor_gen.50.title: "Ďalšie rozšírenie [target_art.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+  flavor_gen.50.desc: "[target_art.GetName] naďalej slúži ako naše sídlo a symbol nášho bohatstva. Aby bol ešte viditeľnejší pre verejnosť, navrhované sú plány na nové krídlo s monumentálnou fasádou zdobenou mnohými freskami, vrátane obrazu svätého Juraja zabíjajúceho draka." # todo: NEW TRANSLATION
+  flavor_gen.50.a: "$flavor_gen.48.a$" # todo: NEW TRANSLATION
+  flavor_gen.50.b: "$flavor_gen.48.b$" # todo: NEW TRANSLATION

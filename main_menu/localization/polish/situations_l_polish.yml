@@ -341,7 +341,7 @@
   demand_autonomy_desc: "Musíme využiť náš vplyv proti nášmu vrchnému, aby sme získali špeciálne privilégiá, ktoré prospejú len nám a našej prosperite." # todo: NEW TRANSLATION
   influence_french_subject: "Ovplyvniť [GetCountry('FRA').GetAdjectiveWithNoTooltip] poddaného" # todo: NEW TRANSLATION
   influence_french_subject_desc: "Zasiatím semien pochybností a rozdelenia medzi [GetCountry('FRA').GetLongName] a ich poddanými výrazne pomôžeme našim vojenským snahám proti nim!" # todo: NEW TRANSLATION
-  influence_french_subject_tt: "Vybraný [GetCountry('FRA').GetAdjective] subjekt môže byť presvedčený, aby sa nepripojil k žiadnym obranným vojnám počas nasledujúcich #Y 5#! rokov výmenou za [gold|e] [gold_i]" # todo: CHANGED
+  influence_french_subject_tt: "Vybraný [GetCountry('FRA').GetAdjective] vazal môže byť presvedčený, aby sa nepridal do žiadnych obranných vojen počas najbližších #Y 5#! rokov výmenou za [gold|e] [gold_i]" # todo: CHANGED
   demand_appanage_promotion: "Žiadať povýšenie na [ShowSubjectTypeNameWithNoTooltip('appanage')]" # todo: NEW TRANSLATION
   demand_appanage_promotion_desc: "Náš prestíž a lesk nemôžu byť obmedzené pod prostým titlom [ShowSubjectTypeName('vassal')]. Ako sa náš vplyv rozširuje, náš titul musí odrážať našu silu a dôležitosť pod [GetCountry('FRA').GetAdjective] zástavou." # todo: NEW TRANSLATION
   fra_has_eligible_child_tt: "[GetCountry('FRA').GetGovernment.GetRulerOrRegent.GetDynasty.GetName] z [GetCountry('FRA').GetName] má [character|e], ktorý je oprávnený stať sa naším [heir|e]" # todo: NEW TRANSLATION
@@ -428,7 +428,7 @@
   COUNTRIES_AROUND_DELHI: "Uchádzač počas [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   COUNTRY_AFFECTED_BY_FALL_OF_DELHI: "Táto krajina je súčasťou [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip] [situation|e]. Môže sa rozhodnúť podporovať buď [GetCountry('DLH').GetName] alebo jeho pretendentov." # todo: NEW TRANSLATION
   fall_of_delhi_delhi_progress: "#T [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]#!\nToto je [GetCountry('DLH').GetName] [share_of_power_gc|e]. Budú víťazmi, ak dosiahne #Y 100%#! pred začiatkom [ShowDisasterName('dissolution_of_delhi')] [disaster|e]." # todo: NEW TRANSLATION
-  fall_of_delhi_opposers_progress: "#T [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]#!\nToto je [share_of_power_gc|e] tých, ktorí sa stavajú proti [GetCountry('DLH').GetName]. Ak dosiahne #R 80%#!, môže sa pre [GetCountry('DLH').GetNameWithNoTooltip] stať [ShowDisasterName('dissolution_of_delhi')] [disaster|e]." # todo: CHANGED
+  fall_of_delhi_opposers_progress: "#T [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]#!\nToto je [share_of_power_gc|e] tých, ktorí sa stavajú proti [GetCountry('DLH').GetName]. Ak dosiahne #R 80%#!, môže sa pre [GetCountry('DLH').GetNameWithNoTooltip] stať [ShowDisasterName('dissolution_of_delhi')] [disaster|e]." # todo: CHANGED NUMBER
   SUPPORTERS_OF_COUNTRY: "Podpora od [Country.GetLongName]" # todo: NEW TRANSLATION
   has_never_had_situation_before_tt: "Túto [situation|e] ešte nikdy nemal" # todo: NEW TRANSLATION
   delhi_situation_info_tt: "The [ShowSituationName('fall_of_delhi')] [situation|e] may commence soon. During that turbulent time, we will face massive rebellion across our lands. Our neighbors and subjects may take up the sword against us, should our authority not recover in time. Internally, the scheming [ShowEstateTypeName('nobles_estate')] threaten to overthrow our unstable rule...\n" # todo: CHANGED
@@ -477,10 +477,10 @@
   red_turban_rebellions: "Povstania Červených turbanov" # todo: NEW TRANSLATION
   red_turban_rebellions_desc: "[ShowCultureGroupName('chinese_group')] sa vzbúria proti svojim [GetCountry('CHI').GetCulture.GetName] vládcov. Rebeli vyhlasujú svoje štáty a vrhajú celé [GetCountry('CHI').GetName] do občianskej vojny, hroziacej pohltiť dynastiu $YUA$..." # todo: NEW TRANSLATION
   red_turban_rebellions_strongest_red_turban_rebel_tt: " [GetInternationalOrganizationType('red_turban_rebels').GetName] majú vodcu, ktorý bude musieť ovládať #Y 65.00%#! [locations|e], ktoré sú súčasťou [GetUniqueInternationalOrganization('middle_kingdom').GetName]" # todo: NEW TRANSLATION
-  RTR_EMPEROR: "Ten [GetUniqueInternationalOrganization('middle_kingdom').GetLeaderTitle] z [GetUniqueInternationalOrganization('middle_kingdom').GetNameWithNoTooltip] [THIS.GetLocation.GetOwner.GetName]" # todo: CHANGED
-  RTR_STRONGEST_REBEL: "Najsilnejší rebelský vojvodca [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #R [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
-  RTR_LOYALIST: "Lojalistický [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #G [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
-  RTR_REBEL: "Rebel [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #R [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
+  RTR_EMPEROR: "[GetUniqueInternationalOrganization('middle_kingdom').GetLeaderTitle] z [GetUniqueInternationalOrganization('middle_kingdom').GetNameWithNoTooltip] [THIS.GetLocation.GetOwner.GetName]" # todo: CHANGED
+  RTR_STRONGEST_REBEL: "Najsilnejší vodca povstalcov [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #R [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
+  RTR_LOYALIST: "Lojalista [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #G [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
+  RTR_REBEL: "Povstalec [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #R [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
   RTR_NEUTRAL: "Autonómny a neutrálny [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #Y [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
   RTR_LOYALISTS_TITLE: "Lojalisti [GetCountry('CHI').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
   RTR_NEUTRALS_TITLE: "Neutrálni" # todo: NEW TRANSLATION
@@ -606,7 +606,7 @@
   NOT_GOOD_RELATIONS_WITH_DEFENDER: "Zlé vzťahy a obranná vojna" # todo: NEW TRANSLATION
   FIGHTING_OUR_FOE_TOOLTIP: "Bojuje proti nášmu [enemy|e] alebo [rival|e]" # todo: NEW TRANSLATION
   NUM_LOANS_TOOLTIP: "Počet [loans|e]" # todo: NEW TRANSLATION
-  IW_BALANCE_OF_POWER: "Rovnováha síl" # todo: NEW TRANSLATION
+  IW_BALANCE_OF_POWER: "Veľkosť zahraničnej ligy" # todo: CHANGED
   FOREIGN_LEAGUE: "Naša liga je zahraničná" # todo: NEW TRANSLATION
   ALREADY_MEMBER_OF_LEAGUE: "Už [member|e] ligy" # todo: NEW TRANSLATION
   IO_HOSTS_FRIENDS: "Naši [allies|e] v tejto lige" # todo: NEW TRANSLATION
@@ -783,3 +783,5 @@
   STARVING_PROVINCES: "[starving|e] [provinces|e]" # todo: NEW TRANSLATION
   select_market: "Vyberte si [market|e]" # todo: NEW TRANSLATION
   no_markets_available: "@trigger_no! Žiadne [markets|e] k dispozícii" # todo: NEW TRANSLATION
+  ROT_CONQUEST_AMBITION: "Cieľ dobyvateľskej ambície [GetCountry('TIM').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+  war_goal_owned_by_us_tt: "Tento [war_goal|e] NIE JE [location|e] ani [province|e], ktoré vlastníme" # todo: NEW TRANSLATION
