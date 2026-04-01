@@ -169,7 +169,7 @@
   game_concept_merged_culture_group_merges: "Zjednocuje" # todo: NEW TRANSLATION
   game_concept_merged_culture_group_merged_culture: "Zjednotená kultúra" # todo: NEW TRANSLATION
   game_concept_merged_culture_group_merging: "Zjednotenie"
-  game_concept_merged_culture_group_desc: "Niektoré [culture_groups|e] môžu byť $game_concept_merged_culture_group_merged$ do jednej [culture|e].\n\nKrajina môže $game_concept_merged_culture_group_merge$ jednu zo [culture_groups] svojej [primary_culture|e], čo spôsobí vytvorenie novej [culture]. [pops|e] starej [primary_culture|e] a tie z [accepted_cultures|e], ktoré sú v tej istej [culture_group_short] a používajú rovnaký [language|e], budú okamžite asimilované.\n\n$game_concept_merged_culture_groups$ majú výrazný bonus k [assimilating|e] kultúram tejto $game_concept_culture_group$.\n\nA [culture_group] môže byť $game_concept_merged_culture_group_merged$ len raz." # todo: CHANGED
+  game_concept_merged_culture_group_desc: "Niektoré [culture_groups|e] je možné $game_concept_merged_culture_group_merged$ do jednej [culture|e].\n\nKrajina môže $game_concept_merged_culture_group_merge$ jednu zo svojich [primary_culture|e]'s [culture_groups], čo spôsobí vytvorenie novej [culture]. [pops|e] starej [primary_culture|e] a tie z [accepted_cultures|e], ktoré sú v tej istej [culture_group_short] a používajú rovnaký [language|e], budú okamžite asimilované.\n\n$game_concept_merged_culture_groups$ majú významný bonus k [assimilating|e] kultúram tejto $game_concept_culture_group$.\n\n[culture_group] môže byť $game_concept_merged_culture_group_merged$ len raz." # todo: CHANGED
   game_concept_dominant_religion: "Dominantné náboženstvo" # todo: NEW TRANSLATION
   game_concept_dominant_religion_desc: "Dominantné náboženstvo je [religion|e], ktorému nasleduje najviac [pops|e] v [location|e] alebo [country|e].\nThis does not necessarily mean that it is the majority." # todo: NEW TRANSLATION
   game_concept_convert: "Konvertovať" # todo: NEW TRANSLATION
@@ -205,7 +205,7 @@
   game_concept_tolerated_culture_short: "Tolerovaná" # todo: NEW TRANSLATION
   game_concept_tolerate: "Tolerovať" # todo: NEW TRANSLATION
   game_concept_tolerated_cultures: "Tolerované kultúry" # todo: NEW TRANSLATION
-  game_concept_tolerated_culture_desc: "Každá [country|e] môže mať niekoľko [cultures|e], ktoré sú zaobchádzané lepšie než [non_accepted_cultures|e], ale nie tak dobre ako [primary_culture|e].\n\nPresný počet kultúr, ktoré si krajina môže dovoliť tolerovať bez trestov, je variabilný a môže ho zvýšiť niekoľko [advances|e].\n\n[pops|e] patriace k tolerovanej kultúre môžu byť povolané ako [army_levies|e] a [navy_levies|e] bez potreby špeciálneho [law|e].\n\n[pops_with_icon|e] patriace k $game_concept_tolerated_culture$ uvidia svoje [pop_satisfaction_with_icon|e] zvýšené o [GetDefine('NPop','TOLERATED_CULTURE_SATISFACTION')|%G]." # todo: CHANGED
+  game_concept_tolerated_culture_desc: "Každá [country|e] môže mať niekoľko [cultures|e], s ktorými sa zaobchádza lepšie než s [non_accepted_cultures|e], ale nie tak dobre ako s [primary_culture|e].\n\nPresný počet kultúr, ktoré si krajina môže dovoliť tolerovať bez postihov, je variabilný a môže byť zvýšený niektorými [advances|e].\n\n[pops|e] patriace k tolerovanej kultúre je možné naverbovať ako [army_levies|e] a [navy_levies|e] bez potreby špeciálneho [law|e].\n\n[pops_with_icon|e] patriace k $game_concept_tolerated_culture$ uvidia zvýšenie svojej [pop_satisfaction_with_icon|e] o [GetDefine('NPop','TOLERATED_CULTURE_SATISFACTION')|%G]." # todo: CHANGED
   game_concept_primary_culture: "Hlavná kultúra" # todo: NEW TRANSLATION
   game_concept_primary_culture_short: "Hlavná" # todo: NEW TRANSLATION
   game_concept_primary_cultures: "Hlavné kultúry" # todo: NEW TRANSLATION
@@ -247,7 +247,7 @@
   game_concept_assimilated: "Asimilované"
   game_concept_assimilation: "Asimilácia"
   game_concept_assimilation_rate: "Rýchlosť asimilácie"
-  game_concept_assimilate_desc: "Toto je proces, pri ktorom sa [pops|e] jednej [culture|e] postupne menia na [primary_culture|e] krajiny, ktorá ich [owns|e].\n\nProces sa urýchli, ak má [primary_culture] vysokú [culture_war_power|e] v porovnaní s kultúrou [pop|e].\n\nNiektoré špecifické [cultures|e] sú priamo viazané na svoju [faith|e], takže nebudú môcť byť asimilované, pokiaľ nebudú najskôr [converted|e].\n\nKultúra musí byť buď prítomná v krajine, alebo mať neutrálne alebo lepšie vzťahy s hráčom, aby bola vyberateľná." # todo: CHANGED
+  game_concept_assimilate_desc: "Ide o proces, pri ktorom sa [pops|e] jednej [culture|e] časom menia na [primary_culture|e] [country|e], ktorá ich [owns|e].\n\nProces sa zrýchľuje, ak má [primary_culture] vysokú [culture_war_power|e] oproti kultúre daného [pop|e].\n\nNiektoré konkrétne [cultures|e] sú priamo viazané na svoju [faith|e], takže nebudú asimilovateľné, kým nebudú najprv [converted|e].\n\nKultúra musí byť buď prítomná v krajine, alebo mať voči hráčovi neutrálny alebo vyšší názor, aby bola vyberateľná." # todo: CHANGED
   game_concept_occupation: "Okupácia"
   game_concept_occupations: "Okupácie"
   game_concept_occupied: "Okupované"
@@ -348,12 +348,12 @@
   game_concept_importing: "Dovážanie" # todo: NEW TRANSLATION
   game_concept_imported: "Dovezené" # todo: NEW TRANSLATION
   game_concept_imports: "Dovozy" # todo: NEW TRANSLATION
-  game_concept_import_desc: "Import je [trade|e], ktorý presúva [goods|e] do [market|e], a tým zvyšuje jeho [supply|e] v tom [market]." # todo: CHANGED
+  game_concept_import_desc: "Import je [trade|e], ktorý presúva [goods|e] do [market|e], a tým zvyšuje jeho [supply|e] v tomto [market|e]." # todo: CHANGED
   game_concept_export: "Vývoz" # todo: NEW TRANSLATION
   game_concept_exporting: "Vyvážanie" # todo: NEW TRANSLATION
   game_concept_exported: "Vyvezené" # todo: NEW TRANSLATION
   game_concept_exports: "Vývozy" # todo: NEW TRANSLATION
-  game_concept_export_desc: "Export je [trade|e], ktorý presúva [goods|e] z [market|e] von, a tým zvyšuje jeho [demand|e] v tom [market].\n\nAk viacero obchodov snaží exportovať rovnaké tovary, sú tovary prideľované v poradí podľa [merchant_power|e]." # todo: CHANGED
+  game_concept_export_desc: "Export je [trade|e], ktorý presúva [goods|e] z [market|e] von a tým zvyšuje jeho [demand|e] v tom [market|e].\n\nAk sa viaceré obchodné toky snažia exportovať rovnaké tovary, sú tovary prideľované podľa poradia [merchant_power|e]." # todo: CHANGED
   game_concept_trade_income: "Príjem z obchodu" # todo: NEW TRANSLATION
   game_concept_trade_income_desc: "Peniaze získané z [trades_with_icon|e] predajom [goods_with_icon|e] na [markets_with_icon|e].\n\nPríjem z obchodu sa delí medzi Korunu a [estates_with_icon|e] podľa ich [estate_power_with_icon|e]. Iba percento [crown_power_with_icon|e] ide do [treasury|e]." # todo: NEW TRANSLATION
   game_concept_trade_expense: "Náklady na obchod" # todo: NEW TRANSLATION
@@ -419,7 +419,7 @@
   game_concept_common_languages: "Bežné jazyky" # todo: NEW TRANSLATION
   game_concept_common_language_desc: "Toto je [language|e] [primary_culture|e] v [country|e]. Ak je to zároveň [court_language|e], [ShowEstateTypeName('peasants_estate')] bude spokojný." # todo: NEW TRANSLATION
   game_concept_market_language: "Jazyk trhu"
-  game_concept_market_language_desc: "Toto je [language|e], ktorým hovorí väčšina [ShowPopTypeName('burghers')] v [market_center|e].\n\n[ShowPopTypeNameWithNoTooltip('burghers')] ktorí hovoria svoj miestny $game_concept_market_language$ sa nebudú [assimilate|e] do [culture|e], ktorá nepoužíva toto $game_concept_market_language$." # todo: CHANGED
+  game_concept_market_language_desc: "Toto je [language|e], ktorým hovorí väčšina [ShowPopTypeName('burghers')] v [market_center|e].\n\n[ShowPopTypeNameWithNoTooltip('burghers')] ktorí hovoria svoj lokálny $game_concept_market_language$ sa nebudú [assimilate|e] do [culture|e], ktorá nepoužíva tento $game_concept_market_language$." # todo: CHANGED
   game_concept_foreign_language: "Cudzí jazyk" # todo: NEW TRANSLATION
   game_concept_foreign_language_desc: "[language|e], ktorý nie je ani [common_language|e], ani [liturgical_language|e] [country|e], bude považovaný za $game_concept_foreign_language$." # todo: NEW TRANSLATION
   game_concept_court_language: "Jazyk dvora" # todo: NEW TRANSLATION
@@ -573,7 +573,7 @@
   game_concept_promoted: "Povýšený" # todo: NEW TRANSLATION
   game_concept_promotes: "Povýšenia" # todo: NEW TRANSLATION
   game_concept_promotion: "Povýšenie" # todo: NEW TRANSLATION
-  game_concept_promote_desc: "[pops|e] sa budú [promote|e] z [ShowPopTypeName('peasants')] keď pre nich v [location|e] existujú možné pozície. [pops|e] musia patriť aspoň k [tolerated_culture|e], aby sa mohli [promote|e]." # todo: CHANGED
+  game_concept_promote_desc: "[pops|e] sa budú [promote|e] z [ShowPopTypeName('peasants')] keď sú v ich [location|e] dostupné vhodné pozície. Pops musia patriť aspoň k [tolerated_culture|e], aby sa mohli povýšiť." # todo: CHANGED
   game_concept_demoted: "Degradovaný" # todo: NEW TRANSLATION
   game_concept_demotion: "Degradácia" # todo: NEW TRANSLATION
   game_concept_demote: "Degradovať" # todo: NEW TRANSLATION
@@ -1031,7 +1031,7 @@
   game_concept_import_market_desc: "Toto je [market|e], kde sa [goods|e] obchodujú predajom, čím vzniká [import|e]." # todo: NEW TRANSLATION
   game_concept_market: "Trh" # todo: NEW TRANSLATION
   game_concept_markets: "Trhy" # todo: NEW TRANSLATION
-  game_concept_market_desc: "Trh je miesto, kde sa [goods|e] kupujú a predávajú.\nJe založený v [market_center|e], ale zahŕňa aj iné lokality na základe ich [market_access|e] a [protectionism|e].\nVšetky tieto lokality budú výhradne kupovať od a predávať do [stockpile|e] tohto trhu.\n\n[markets] sú farebne označené podľa toho, nakoľko sú pre vás relevantné:\n\nPodľa vašich vzťahov s nimi môžu byť [markets] [domestic_markets], [trading_markets], [foreign_markets] alebo [distant_markets]." # todo: CHANGED
+  game_concept_market_desc: "Trh je miesto, kde sa [goods|e] kupujú a predávajú.\nNachádza sa v [market_center|e], ale zahŕňa aj iné lokácie na základe ich [market_access|e] a [protectionism|e].\nVšetky tieto lokácie budú výlučne nakupovať od a predávať do tohto trhu [stockpile|e].\n\n[markets] sú farebne označené podľa toho, aké sú pre vás relevantné:\n\nPodľa vášho vzťahu s nimi môžu byť [markets] [domestic_markets], [trading_markets], [foreign_markets] alebo [distant_markets]." # todo: CHANGED
   SUBTAB_TRADING_TT_TEXT: "Na tejto karte môžete spravovať svoje [trades|e], ak máte [merchant_capacity|e] v akomkoľvek [market|e]." # todo: NEW TRANSLATION
   game_concept_protectionism: "Trhová ochrana" # todo: NEW TRANSLATION
   game_concept_trade_protection: "Trhová ochrana" # todo: NEW TRANSLATION
@@ -1076,7 +1076,7 @@
   game_concept_hegemony_desc: "Hegemónia sa ustanovuje v rôznych oblastiach, kde [great_power|e] s najvyššou úrovňou v každej oblasti bude vyhlásený za Hegemona a získa určité výhody.\n[ShowDatabase('hegemony')]" # todo: NEW TRANSLATION
   game_concept_tier: "Úroveň" # todo: NEW TRANSLATION
   game_concept_tiers: "Úrovne" # todo: NEW TRANSLATION
-  game_concept_tier_desc: "Toto je názov úrovne, do ktorej patrí [formable_country|e]. Každá [country|e] patrí do úrovne od I po IV, v závislosti od náročnosti podmienok na formovanie. Najdôležitejšie je, že [countries] môžu formovať iba krajiny s vyššou úrovňou než majú teraz." # todo: CHANGED
+  game_concept_tier_desc: "Toto je názov úrovne, ktorú má [formable_country|e]. Každá [country|e] patrí do úrovne od I do IV, v závislosti od náročnosti požiadaviek na formovanie. Najdôležitejšie je, že [countries] môžu formovať len krajiny vyšších úrovní než svoju aktuálnu." # todo: CHANGED
   game_concept_country_rank: "Rang krajiny" # todo: NEW TRANSLATION
   game_concept_country_ranks: "Rangy krajín" # todo: NEW TRANSLATION
   game_concept_country_rank_upper_desc: "The $game_concept_country_rank$ represents the respect [countries|e] inspire among their peers. It will primarily depend on the size and might of a $game_concept_country$, although tradition alone is often enough to command respect so once acquired a Rank can never be lost.\n\nEach $game_concept_country_rank$ allows greater diplomatic capabilities, with higher Ranks unlocking new means to influence other $game_concept_countries$ through [diplomacy|e]." # todo: NEW TRANSLATION
@@ -1114,10 +1114,10 @@
   game_concept_relation_type_desc: "Toto sú vzťahy, ktoré môžeme nadviazať s [country|e]. Buď cez [diplomacy|e] alebo interakciou s [subject|e].\n\nPríklady zahŕňajú [ShowRelationTypeName('embargo_nation')], [ShowRelationTypeName('sound_toll_exemption')] alebo [ShowRelationTypeName('scutage')]." # todo: NEW TRANSLATION
   game_concept_army_levy: "Armádny branec" # todo: NEW TRANSLATION
   game_concept_army_levies: "Armádny branci" # todo: NEW TRANSLATION
-  game_concept_army_levy_desc: "Armádny odvod je [regiment|e] vybraný priamo z [pops|e]. Keď je jednotka zrekrutovaná, [pops], z ktorých boli verbovaní, sa znížia, a keď je jednotka rozpustená, preživší sa vrátia k [pops]. Títo ľudia sú menej vycvičení než bežná [army|e] verbovaná z [manpower|e] a nedostávajú posily.\n\nLeviový [regiment|e] má tiež nasledujúci efekt:\n\n[ShowModifierEffect('is_army_levy')]" # todo: CHANGED
+  game_concept_army_levy_desc: "Armádny lízing (levy) je [regiment|e] vybraný priamo z [pops|e]. Keď je jednotka naverbovaná, sú znížené [pops], z ktorých bola odobratá, a keď je jednotka rozpustená, preživší sa vrátia späť k [pops]. Títo ľudia sú menej vycvičení než bežná [army|e] naverbovaná z [manpower|e] a neprijímajú posily.\n\nLevy [regiment|e] má tiež nasledujúci efekt:\n\n[ShowModifierEffect('is_army_levy')]" # todo: CHANGED
   game_concept_navy_levy: "Povolané loďstvo" # todo: NEW TRANSLATION
   game_concept_navy_levies: "Povolané loďstvo" # todo: NEW TRANSLATION
-  game_concept_navy_levy_desc: "Námorný odvod je transportná [ship|e], ktorá bola zabavená priamo od [pops|e]. Keď je jednotka zrekrutovaná, [pops], ktorí vlastnia loď, a ich posádka sú odobratí z [pops] v [locations|e], a keď je jednotka rozpustená, preživší sa vrátia k [pops]. Tieto lode sú všeobecne menej pevné než [navy|e] verbovaná z [sailors|e] a mali by byť chránené správnymi loďami s delami.\n\nLeviová [ship|e] má tiež nasledujúci efekt:\n\n[ShowModifierEffect('is_navy_levy')]" # todo: CHANGED
+  game_concept_navy_levy_desc: "Námorný lízing (levy) je transportná [ship|e], ktorá bola zabavená priamo od [pops|e]. Keď je jednotka naverbovaná, sú z [pops] v [locations|e] odobratí vlastníci lode a ich posádka, a keď je jednotka rozpustená, preživší sa vrátia späť k [pops]. Tieto lode sú všeobecne krehkejšie než [navy|e] naverbované z [sailors|e] a mali by byť chránené vhodnými plavidlami s delami.\n\nLevy [ship|e] má tiež nasledujúci efekt:\n\n[ShowModifierEffect('is_navy_levy')]" # todo: CHANGED
   game_concept_levy: "Branec" # todo: NEW TRANSLATION
   game_concept_levies: "Branci" # todo: NEW TRANSLATION
   game_concept_levy_desc: "Branci je vojenská jednotka, ktorú [pop|e] povolá, keď je vyzvaná. Je to buď [army_levy|e] alebo [navy_levy|e]." # todo: NEW TRANSLATION
@@ -1217,7 +1217,7 @@
   game_concept_disasters: "Katastrofy" # todo: NEW TRANSLATION
   game_concept_disaster_desc: "Katastrofa je významná a rušivá udalosť ovplyvňujúca jediný [country|e], ktorá môže trvať alebo zostať aktívna dlhý čas, kým ju krajina neprekoná.\n\nMedzi najdôležitejšie katastrofy patria [ShowDisasterName('ambrosian_republic_disaster')] a [ShowDisasterName('dissolution_of_delhi')]." # todo: NEW TRANSLATION
   game_concept_tax_efficiency: "Efektivita výberu daní" # todo: NEW TRANSLATION
-  game_concept_tax_efficiency_desc: "Ukazuje, aká efektívna je naša [country|e] pri vyberaní [tax|e]. Ovplyvňuje množstvo $game_concept_taxes$, ktoré sa dostane do [treasury|e] pri zdaňovaní [estates|e]." # todo: CHANGED
+  game_concept_tax_efficiency_desc: "Toto ukazuje, ako efektívna je naša [country|e] pri výbere [tax|e]. Ovplyvňuje množstvo $game_concept_taxes$, ktoré sa pri zdanení [estates|e] dostane do [treasury|e]." # todo: CHANGED
   game_concept_trade_efficiency: "Efektivita obchodu" # todo: NEW TRANSLATION
   game_concept_trade_efficiency_desc: "Toto upravuje, ako ziskový bude [trade|e], tým že priamo ovplyvňuje cenu, za ktorú predávate [goods|e] cieľovému [market|e]." # todo: NEW TRANSLATION
   game_concept_production_efficiency: "Efektivita produkcie" # todo: NEW TRANSLATION
@@ -1233,12 +1233,12 @@
   game_concept_minimum_tax: "Minimálna daň" # todo: NEW TRANSLATION
   game_concept_min_tax_desc: "Toto je najnižšie percento [tax|e], ktoré môže byť odobraté z [estate|e]." # todo: NEW TRANSLATION
   game_concept_profit: "Zisk" # todo: NEW TRANSLATION
-  game_concept_profit_desc: "Toto je množstvo, ktoré [building|e] alebo [rgo|e] prispieva do [wealth|e] svojej [location]. Inými slovami, [gold|e], ktoré sú vytvorené z [building].\n\nAk je to záporné, budova sa považuje za stratovú a prestane fungovať." # todo: CHANGED
+  game_concept_profit_desc: "Toto je suma, ktorú [building|e] alebo [rgo|e] prispieva k [wealth|e] svojho [location]. Inými slovami, [gold|e], ktoré sú vytvorené z [building].\n\nAk je hodnota negatívna, budova sa považuje za neprofesionálnu a prestane fungovať." # todo: CHANGED
   game_concept_tax: "Daň" # todo: NEW TRANSLATION
   game_concept_taxes: "Dane" # todo: NEW TRANSLATION
-  game_concept_tax_desc: "Môžeme rozhodnúť vyberať dane od našich [estates|e]. To zvýši náš [treasury|e], ale vyššie dane znížia ich [estate_satisfaction|e].\n\nMnožstvo [wealth|e], ktoré je možné zdaníť, závisí od [control|e] [locations|e], ktoré generujú [wealth] pre [estates]." # todo: CHANGED
+  game_concept_tax_desc: "Môžeme sa rozhodnúť vyberať dane od našich [estates|e]. To zvýši náš [treasury|e], no vyššie dane znížia ich [estate_satisfaction|e].\n\nMnožstvo [wealth|e], ktoré je možné zdaňovať, závisí od [control|e] lokácií generujúcich [wealth] pre [estates]." # todo: CHANGED
   game_concept_tax_base: "Daňový základ" # todo: NEW TRANSLATION
-  game_concept_tax_base_desc: "Daňový základ je celkové množstvo [wealth|e], ktoré môže byť ovplyvnené [taxes|e] v [location], čo priamo závisí od jeho [control|e]. Bohatstvo bez [control] ide priamo k [estates] a nemôže byť zdanené.\n\n[wealth] sa delí medzi [estates] podľa ich [wealth_share|e] v [location]. Každé [estate] potom platí časť tohto daňového základu do [treasury|e] podľa [tax_rate|e], ktorý je im uložený." # todo: CHANGED
+  game_concept_tax_base_desc: "Tax Base (daňový základ) je celkové množstvo [wealth|e], ktoré môže byť ovplyvnené [taxes|e] v [location], čo priamo závisí od jeho [control|e]. Bohatstvo bez [control] ide priamo [estates], a nemožno ho zdaňovať.\n\n[wealth] je rozdelené medzi [estates] podľa ich [wealth_share|e] v [location]. Každé [estate] potom zaplatí časť tohto daňového základu do [treasury|e] podľa uvalenej [tax_rate|e]." # todo: CHANGED
   game_concept_bankrupt: "Bankrot" # todo: NEW TRANSLATION
   game_concept_bankruptcy: "Bankrot" # todo: NEW TRANSLATION
   game_concept_bankrupt_desc: "[country|e], ktorá sa rozhodne vyhlásiť bankrot, vymaže všetok svoj [debt|e]. Avšak to prinesie 5-ročné obdobie prísnych [modifiers|e].\n[country] môže byť tiež donútená k bankrotu, ak jej dôjdu peniaze a nebude schopná zobrať ďalšie [loans|e]." # todo: NEW TRANSLATION
@@ -1250,7 +1250,7 @@
   game_concept_formable_country_formation: "Sformovanie" # todo: NEW TRANSLATION
   game_concept_formable_forming: "Formuje sa" # todo: NEW TRANSLATION
   game_concept_formable_countries: "Krajiny na sformovanie" # todo: NEW TRANSLATION
-  game_concept_formable_country_desc: "Formovateľná krajina je nová národná identita, ktorú môže vytvoriť (alebo znovu vytvoriť) [country|e], ktorý splní určité podmienky.\n\nTieto podmienky môžu zahŕňať kontrolu určitého percenta [locations|e] v [region|e] alebo vlastnenie konkrétnej [primary_culture|e].\n\nMôžeme vytvoriť iba Formovateľnú krajinu, ktorá má vyšší [tier|e] než náš súčasný [tier].\n\nTypicky predstavujú historické zväzky alebo dokonca legendárne ambície. Po formovaní stará [country] zmení svoje meno, zástavu a farby na tie formovateľnej krajiny." # todo: CHANGED
+  game_concept_formable_country_desc: "Formovateľná krajina (Formable Country) je nová národná identita, ktorú môže [country|e] vytvoriť (alebo obnoviť) splnením určitých podmienok.\n\nTieto podmienky môžu zahŕňať kontrolu percenta [locations|e] v [region|e] alebo mať konkrétnu [primary_culture|e].\n\nMôžeme vytvoriť len Formable Country, ktorá má vyšší [tier|e] než náš aktuálny [tier].\n\nZvyčajne predstavujú historické únie alebo dokonca legendárne ambície. Po vytvorení sa stará [country] zmení názov, vlajku a farby na tie, ktoré má Formable Country." # todo: CHANGED
   game_concept_revolter: "Povstalec" # todo: NEW TRANSLATION
   game_concept_revolt: "Povstanie" # todo: NEW TRANSLATION
   game_concept_revolter_desc: "Povstanie nastane, keď sa skupina [locations|e] odtrhne ako nový [country|e] a začne [war|e] proti pôvodnému [owner|e]." # todo: NEW TRANSLATION
@@ -1274,7 +1274,7 @@
   game_concept_disloyal_subjects: "Nelojálni vazali" # todo: NEW TRANSLATION
   game_concept_disloyal_subject: "Nelojálny vazal" # todo: NEW TRANSLATION
   game_concept_disloyal_subjects_short: "Nelojálni" # todo: NEW TRANSLATION
-  game_concept_disloyal_subjects_desc: "Keď má [subject] menej než [GetDefine('NDiplomacy','TOO_DISLOYAL_THRESHOLD')] [subject_loyalty|e] voči svojmu [overlord|e], stane sa nelojálnym vazalom.\n\nV takomto stave už nebude pomáhať v [wars|e] svojho [overlord] a nemožno ho [annexed|e]." # todo: CHANGED
+  game_concept_disloyal_subjects_desc: "Keď má [subject] menej než [GetDefine('NDiplomacy','TOO_DISLOYAL_THRESHOLD')] [subject_loyalty|e] voči svojmu [overlord|e], stáva sa z neho Disloyal Subject.\n\nV takomto stave už nebude pomáhať v [wars|e] svojho [overlord] a nemožno ho [annexed|e]." # todo: CHANGED
   game_concept_loyal_subjects: "Lojálni vazali" # todo: NEW TRANSLATION
   game_concept_loyal_subject: "Lojálny vazal" # todo: NEW TRANSLATION
   game_concept_loyal_subjects_short: "Lojálni" # todo: NEW TRANSLATION
@@ -1345,7 +1345,7 @@
   game_concept_role_desc: "$game_concept_roles$ sú rôzne pozície, ktoré môže dospelý [character|e] zaujímať v [country|e]. [Abilities|e] $game_concept_character$ budú mať rôzne účinky podľa jeho Role a budú môcť získať rôzne [traits|e].\n\nNormálne môže $game_concept_character$ vykonávať len jednu rolu naraz, ale niekedy môžu [rulers|e] a [regents|e] pôsobiť aj ako [generals|e] alebo [admirals|e]." # todo: NEW TRANSLATION
   game_concept_regent: "Regent" # todo: NEW TRANSLATION
   game_concept_regents: "Regenti" # todo: NEW TRANSLATION
-  game_concept_regent_desc: "Toto je [character|e], ktorý počas [regency|e] vykonáva funkciu [ruler|e] [country|e]." # todo: CHANGED
+  game_concept_regent_desc: "Toto je [character|e], ktorý pôsobí ako [ruler|e] [country|e] počas [regency|e]." # todo: CHANGED
   game_concept_commander: "Veliteľ" # todo: NEW TRANSLATION
   game_concept_commanders: "Velitelia" # todo: NEW TRANSLATION
   game_concept_commander_desc: "Veliteľ je [admiral|e] alebo [general|e] zodpovedný za [unit|e]." # todo: NEW TRANSLATION
@@ -1427,7 +1427,7 @@
   game_concept_self_control_desc: "Sebakontrola meria, do akej miery sa [country|e] a jeho [ruler|e] vzdávajú pôžitkov a materiálnych statkov a ako nasledujú cestu jógy.\n\nMať kladnú hodnotu $self_control$ znamená sklon k asketizmu, čo prináša výhody k [stability|e], [migration|e], [annexation|e] a znižuje spotrebu [food|e], zatiaľ čo záporné $self_control$ naznačuje sklon k rozpustilosti, čo zvyšuje [tax|e] a spotrebu [food|e] ale znižuje [war_exhaustion|e]. Vyvážené $self_control$ zase prináša lepšiu rýchlosť [research|e], [prestige|e] a [estate_satisfaction|e]." # todo: NEW TRANSLATION
   game_concept_doom: "Záhuba" # todo: NEW TRANSLATION
   game_concept_doom_i: "@doom!" # todo: NEW TRANSLATION
-  game_concept_doom_desc: "Doom je špeciálna mena používaná [countries|e] s [ShowReligionAdjective('nahuatl')] [religion|e].\n\nVlastnenie [locations|e] — najmä [towns_and_cities|e] — pasívne zvyšuje Doom.\n\nVysoká hodnota Doomu znižuje [ShowModifierTypeName('subject_loyalty')] a [ShowModifierTypeName('global_estate_target_satisfaction')], ale zvyšuje [ShowModifierTypeName('stability_decay')].\n\nExistuje niekoľko spôsobov, ako znížiť Doom, vrátane:\n- Zabíjanie [enemy|e] jednotiek v [combat|e]\n- Lúpežné prepadávanie [locations] s vysokým [development|e]\n\nKeď sa napokon dosiahne maximálny Doom, [ruler|e] a celá ich [dynasty|e] sú obetovaní a nahradení novým [ruler]." # todo: CHANGED
+  game_concept_doom_desc: "Doom je špeciálna mena používaná [countries|e] s [ShowReligionAdjective('nahuatl')] [religion|e].\n\nVlastnenie [locations|e] — najmä [towns_and_cities|e] — pasívne zvyšuje Doom.\n\nVysoká hodnota Doom znižuje [ShowModifierTypeName('subject_loyalty')] a [ShowModifierTypeName('global_estate_target_satisfaction')], ale zvyšuje [ShowModifierTypeName('stability_decay')].\n\nExistuje niekoľko spôsobov, ktoré Doom znižujú, vrátane:\n- Zabíjania [enemy|e] jednotiek v [combat|e]\n- Lúpeží [locations] s vysokým [development|e]\n\nKeď je konečne dosiahnutý maximálny Doom, [ruler|e] a ich celá [dynasty|e] sú obetovaní a nahradení novým [ruler]." # todo: CHANGED
   game_concept_religious_reform: "Náboženská reforma" # todo: NEW TRANSLATION
   game_concept_religious_reform_desc: "Náboženská reforma je niekedy potrebná alebo vítaná pre lepší osud [religion|e], predstavuje neustále prispôsobovanie obradov a viery v dôsledku túžob veriacich a inštitúcií." # todo: NEW TRANSLATION
   game_concept_patriarch: "Patriarcha" # todo: NEW TRANSLATION
@@ -1549,7 +1549,7 @@
   game_concept_flanking_ability: "Schopnosť obkľúčenia" # todo: NEW TRANSLATION
   game_concept_flanking_ability_desc: "Toto určuje, koľko poškodenia môže spôsobiť jednotkám v inej [section|e] počas boja." # todo: NEW TRANSLATION
   game_concept_secure_flanks: "Zabezpečené krídla" # todo: NEW TRANSLATION
-  game_concept_secure_flanks_desc: "Toto poskytuje obranný bonus, keď sú v susednom [section|e] [friendly|e] jednotky. Ak sú oba boky zabezpečené, bonus sa zdvojnásobí." # todo: CHANGED
+  game_concept_secure_flanks_desc: "Poskytuje obranný bonus, keď sa v susednej [section|e] nachádzajú [friendly|e] jednotky. Ak sú zabezpečené obe krídla, bonus sa zdvojnásobí." # todo: CHANGED
   game_concept_combat_power: "Bojová sila" # todo: NEW TRANSLATION
   game_concept_combat_power_desc: "Toto je priama atribút poškodzovania [regiment|e] v [combat|e]. Násobí sa [strength|e] [regiment] pri určovaní, koľko poškodenia [regiment] spôsobí." # todo: NEW TRANSLATION
   game_concept_frontage: "Šírka fronty" # todo: NEW TRANSLATION
@@ -1574,11 +1574,11 @@
   game_concept_bombard_efficiency_desc: "Toto je šanca, že delostrelecké [regiments|e] budú strieľať počas [bombard_phase|e]." # todo: NEW TRANSLATION
   game_concept_phase: "Fáza" # todo: NEW TRANSLATION
   game_concept_phases: "Fázy" # todo: NEW TRANSLATION
-  game_concept_phase_desc: "Sú dve fázy [combat|e], začínajúc počiatočnou [GetDefine('NCombat','BOMBARD_HOURS')|W]-hodinovou [bombard_phase|e] (ak sú niektoré [regiments|e] schopné [bombard|e]), po ktorej nasleduje [combat_phase|e]." # todo: CHANGED
+  game_concept_phase_desc: "V [combat|e] sú dve fázy, ktoré začínajú počiatočnou [GetDefine('NCombat','BOMBARD_HOURS')|W]-hodinovou [bombard_phase|e] (ak sú prítomné [regiments|e], ktoré dokážu [bombard|e]), po ktorej nasleduje [combat_phase|e]." # todo: CHANGED
   game_concept_combat_phase: "Bojová fáza" # todo: NEW TRANSLATION
   game_concept_combat_phase_desc: "Bojová fáza je hlavná [phase|e] [combat|e], ktorá prebieha po počiatočnej [bombard_phase|e]. [regiments|e] alebo [ships|e] sa pokúšajú zapojiť svojich [enemy|e] protějšků." # todo: NEW TRANSLATION
   game_concept_bombard_phase: "Bombardovacia fáza" # todo: NEW TRANSLATION
-  game_concept_bombard_phase_desc: "Bombardovacia fáza je úvodná [phase|e] [combat|e], ktorá prebieha pred hlavnou [combat_phase|e]. Trvá [GetDefine('NCombat','BOMBARD_HOURS')|W] hodín a využívajú ju výhradne [regiments|e], ktoré môžu [bombard|e], napríklad [ShowUnitCategoryName('army_artillery')].\n\nKaždú hodinu Bombardovacej fázy majú platné [regiments] šancu [bombard], čo spôsobí poškodenie ich [combat_power|e] nepriateľskému [regiment] na tom istom [section|e]." # todo: CHANGED
+  game_concept_bombard_phase_desc: "Bombard fáza je úvodná fáza [combat|e], ktorá prebieha pred hlavnou [combat_phase|e]. Trvá [GetDefine('NCombat','BOMBARD_HOURS')|W] hodín a využívajú ju výlučne [regiments|e], ktoré môžu [bombard|e], napríklad [ShowUnitCategoryName('army_artillery')].\n\nKaždú hodinu Bombard fázy majú platné [regiments] šancu [bombard], čo spôsobí ich [combat_power|e] ako poškodenie nepriateľskému [regiment] na rovnakej [section|e]." # todo: CHANGED
   game_concept_bombard: "Bombardovať" # todo: NEW TRANSLATION
   game_concept_bombarding: "Bombardovanie" # todo: NEW TRANSLATION
   game_concept_bombard_desc: "[regiments|e], ktoré dokážu bombardovať, spôsobia svoje [combat_power|e] ako poškodenie počas úvodnej [bombard_phase|e] [combat|e]." # todo: NEW TRANSLATION
@@ -1748,7 +1748,7 @@
   game_concept_stability_investment_desc: "Vynaloženie časti [budget|e] na [stability|e] je jedným z troch hlavných spôsobov, ako zvýšiť stabilitu; ostatné zahŕňajú použitie [cabinet_actions|e] alebo mať dostatok [ShowEstateTypeName('clergy_estate')] primárneho [primary_religion|e]." # todo: NEW TRANSLATION
   game_concept_sound_toll: "Prieplavné mýto" # todo: NEW TRANSLATION
   game_concept_sound_tolls: "Prieplavné mýta" # todo: NEW TRANSLATION
-  game_concept_sound_toll_desc: "Sú prielivy na svete, kde môže kontrolujúci vyberať poplatok od [trades|e], ktoré nimi preplávajú. Napríklad:\n$BULLET_WITH_TAB$[ShowLocationName('oresund')]\n$BULLET_WITH_TAB$[ShowLocationName('gulf_izmit')]\n\nKaždý mýtny prieliv je viazaný na konkrétnu pevninskú [location|e], ktorú musíte vlastniť, aby ste boli kontrolujúcim prielivu, a [income|e] generovaný z mýta sa škaluje podľa vášho [control|e] v tej [location]." # todo: CHANGED
+  game_concept_sound_toll_desc: "Existujú niektoré úžiny na svete, kde môže kontrolor vyberať poplatok od [trades|e] plaviacich sa okolo. Napríklad:\n$BULLET_WITH_TAB$[ShowLocationName('oresund')]\n$BULLET_WITH_TAB$[ShowLocationName('gulf_izmit')]\n\nKaždý Sound Toll je viazaný na konkrétnu pevninskú [location|e], ktorú musíte vlastniť, aby ste boli kontrolorom úžiny, a [income|e] generovaný z mýta je škálovaný podľa vášho [control|e] v tejto [location]." # todo: CHANGED
   game_concept_great_power_score: "Skóre veľmoci $game_concept_great_power_score_short$" # todo: NEW TRANSLATION
   game_concept_great_power_score_short: "Skóre" # todo: NEW TRANSLATION
   game_concept_great_power_score_desc: "Skóre veľmoci je nepochybným meradlom, ktorá [country|e] je najlepšia. Najvyššie hodnotené $game_concept_countries$ sú [great_powers|e]. Celkový počet veľmocí sa mení v závislosti od porovnania skóre najvyššej veľmoci s ostatnými.\n\n$game_concept_countries$ získavajú $game_concept_great_power_score_short$ vlastníctvom väčšej [population|e], vyššieho [prestige|e], zvýšením [country_rank|e] a rôznymi ďalšími zdrojmi.\n\n[Subjects|e] tiež odovzdávajú určitú percentuálnu časť svojho skóre svojmu [overlord|e], v závislosti od ich [subject_type|e]." # todo: NEW TRANSLATION

@@ -3,8 +3,8 @@
   PARLIAMENT_DURATION_TXT: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] dní zostáva v @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]" # todo: NEW TRANSLATION
   PARLIAMENT_DURATION_TXT_NO_LOCATION: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] dní zostáva" # todo: NEW TRANSLATION
   IO_PARLIAMENT_DURATION_TXT: "#T [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] v zasadnutí#!\nRokuje o [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebateName] ešte [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration|W] dní v @location![InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]." # todo: CHANGED
-  PARLIAMENT_ISSUE_WILL_FAIL: "#T Návrh zlyhá#!\n@trigger_no! [Player.GetGovernment.GetParliament.GetName] #R NESCHVÁLI#! [Player.GetGovernment.GetParliament.GetCurrentDebateName]." # todo: CHANGED
-  PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Návrh prejde#!\n[Player.GetGovernment.GetParliament.GetName] schváli [Player.GetGovernment.GetParliament.GetCurrentDebateName]." # todo: CHANGED
+  PARLIAMENT_ISSUE_WILL_FAIL: "#T Návrh zlyhá#!\n@trigger_no! [Player.GetGovernment.GetParliament.GetName] #R NE#! schváli [Player.GetGovernment.GetParliament.GetCurrentDebateName]." # todo: CHANGED
+  PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Návrh bude schválený#!\n[Player.GetGovernment.GetParliament.GetName] schváli [Player.GetGovernment.GetParliament.GetCurrentDebateName]." # todo: CHANGED
   HOSTILE_PARLIAMENT_MARKER: "#T Nepriateľský [ParliamentMarker.GetCountry.GetGovernment.GetParliament.GetName] v zasadnutí#!\nDá sa prerušiť [occupying|e] [location|e]." # todo: CHANGED
   PARLIAMENT_NEVER_CALLED: "The $NAME$ has not been called." # todo: NEW TRANSLATION
   PARLIAMENT_CALLED_DATE: "The $NAME$ was called $WHEN|Y$ ago " # todo: NEW TRANSLATION
@@ -37,7 +37,7 @@
   IO_PARLIAMENT_OPPOSERS: "Oponenti" # todo: NEW TRANSLATION
   IO_PARLIAMENT_VOTERS: "Podporovatelia" # todo: NEW TRANSLATION
   call_parliament: "Zvolať parlament" # todo: NEW TRANSLATION
-  call_parliament_desc: "Týmto zvoláme parlament v snahe získať podporu na vyriešenie [parliament_issue|e], zmenu [policies|e] v našich [laws|e], vytvorenie [casus_belli|e], zvýšenie [taxes|e] alebo navýšenie [army_levies|e] a [navy_levies|e].\n\nPočas tejto schôdze získame nasledujúce efekty: [ShowModifier('parliament_in_session')], [ShowModifier('parliament_location')]; a buď [ShowModifier('parliament_in_capital')] alebo [ShowModifier('parliament_outside_capital')] v závislosti od vybratej [location|e]." # todo: CHANGED
+  call_parliament_desc: "Týmto zvoláme parlament, aby sme získali podporu na vyriešenie [parliament_issue|e], zmenu [policies|e] v našich [laws|e], vytvorenie [casus_belli|e], zvýšenie [taxes|e] alebo väčšie [army_levies|e] a [navy_levies|e].\n\nPočas tohto zasadnutia získame nasledujúce efekty: [ShowModifier('parliament_in_session')], [ShowModifier('parliament_location')]; a buď [ShowModifier('parliament_in_capital')] alebo [ShowModifier('parliament_outside_capital')] v závislosti od vybranej [location|e]." # todo: CHANGED
   request_more_taxes: "Požiadať o dodatočné dane" # todo: NEW TRANSLATION
   request_more_taxes_desc: "Požiadať [Player.GetGovernment.GetParliament.GetName] , aby nám umožnil vyberať viac [tax|e] od [estates|e]." # todo: NEW TRANSLATION
   ask_for_larger_levies: "Požiadať o väčšie odvody" # todo: NEW TRANSLATION
@@ -50,7 +50,7 @@
   prepare_for_war_select_province_title: "Vyberte [province|e], ktorý bude stanovený ako [war_goal|e]" # todo: NEW TRANSLATION
   select_a_country_to_get_casus_belli_on: "Vyberte [country|e], na ktorý nám náš [Player.GetGovernment.GetParliament.GetName] udelí [casus_belli|e]." # todo: NEW TRANSLATION
   prepare_for_war: "Vytvoriť casus belli" # todo: NEW TRANSLATION
-  prepare_for_war_desc: "Požiadať [Player.GetGovernment.GetParliament.GetName] o schválenie [war|e] udelením legitímneho [casus_belli|e].\n• Vyberieme krajinu, ktorá nie je [rebel|e] štát ani naším [subject|e], ktorá sa nachádza v našom [diplomatic_range|e], a s ktorou momentálne nemáme [truce|e], aby sme získali: \n[ShowCasusBelliName('cb_parliament_conquer_province')] [casus_belli|e].\n• [casus_belli|e] bude trvať [GetDefine('NDiplomacy','CASUS_BELLI_MONTHS')] mesiacov ([Divide_int32(GetDefine('NDiplomacy','CASUS_BELLI_MONTHS'), '(int32)12')] rokov)." # todo: CHANGED
+  prepare_for_war_desc: "Žiadame [Player.GetGovernment.GetParliament.GetName], aby schválil [war|e] tým, že nám poskytne legitímny [casus_belli|e].\n• Zvolíme krajinu, ktorá nie je [rebel|e] národom ani naším [subject|e], ktorá leží v rámci nášho [diplomatic_range|e], a s ktorou momentálne nemáme [truce|e], aby sme získali:\n[ShowCasusBelliName('cb_parliament_conquer_province')] [casus_belli|e].\n• Táto [casus_belli|e] potrvá [GetDefine('NDiplomacy','CASUS_BELLI_MONTHS')] mesiacov ([Divide_int32(GetDefine('NDiplomacy','CASUS_BELLI_MONTHS'), '(int32)12')] rokov)." # todo: CHANGED
   PARLIAMENT_IN_SESSION: "[Player.GetGovernment.GetParliament.GetName] v zasadnutí" # todo: NEW TRANSLATION
   promote_castle_building: "Podporiť stavbu $castle$" # todo: NEW TRANSLATION
   promote_castle_building_desc: "V celej krajine sú vynikajúce miesta pre možné opevnenia, pripravené zastaviť postup našich nepriateľov." # todo: NEW TRANSLATION
