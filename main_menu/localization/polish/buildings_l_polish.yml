@@ -1,5 +1,6 @@
 ﻿l_polish:
- local_governor_tt: "Ak je v [SCOPE.sCountry('actor').GetNameWithNoTooltip] menej ako [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] [ShowBuildingTypeName('local_governor')] (aktuálne [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V])." # todo: NEW TRANSLATION
+ local_governor_tt: "Ak je súčet [ShowBuildingTypeName('local_governor')] a [ShowBuildingTypeName('lieutenancy')] v [SCOPE.sCountry('actor').GetNameWithNoTooltip] menší než [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] (Guvernéri [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Lietenantstvá [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V])." # todo: CHANGED
+ lieutenancy_tt: "Ak je súčet [ShowBuildingTypeName('local_governor')] a [ShowBuildingTypeName('lieutenancy')] v [SCOPE.sCountry('actor').GetNameWithNoTooltip] menší než [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] (Guvernéri: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Lietenantstvá: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V])." # todo: NEW TRANSLATION
  naval_governor_tt: "Ak je v [SCOPE.sCountry('actor').GetNameWithNoTooltip] menej ako [SCOPE.sCountry('actor').GetModifierValue('num_naval_governors')] [ShowBuildingTypeName('naval_governor')] (aktuálne [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('naval_governor')|V])." # todo: NEW TRANSLATION
  local_bailiff_tt: "Ak je v [SCOPE.sCountry('actor').GetNameWithNoTooltip] menej ako [SCOPE.sCountry('actor').GetModifierValue('num_bailiffs')] [ShowBuildingTypeName('bailiff')] (aktuálne [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('bailiff')|V])." # todo: NEW TRANSLATION
  colonial_category: "Koloniálne budovy"
@@ -20,8 +21,12 @@
  rgo_building_category_desc: "[buildings|e], ktoré nám umožňujú získať [Concept('raw_materials','suroviny'ň|e], ku ktorým nemáme dostatočný prístup."
  trade_company_building: "Budova obchodnej spoločnosti"
  satellite_trade_building: "Satelitná obchodná budova"
+ colonial_administration: "Koloniálna správa" # todo: NEW TRANSLATION
+ colonial_administration_desc: "Zámorské kolónie sú často centrami výmeny širokého spektra tovarov a produktov. V dôsledku toho aj administratívne závislosti prosperujú, podporujú a regulujú činnosť koloniálnych obchodníkov." # todo: NEW TRANSLATION
  free_village: "Slobodná dedina" # todo: NEW TRANSLATION
  free_village_desc: "Spoločenstvo slobodných roľníkov, ktoré vzniklo bez viazanosti na povinnosti voči zemepánom typické pre vidiecku spoločnosť." # todo: NEW TRANSLATION
+ merchant_guild_chapel: "Kaplnka obchodného cechu" # todo: NEW TRANSLATION
+ merchant_guild_chapel_desc: "Kaplnka pripojená k urbanizovanej komunite, sponzorovaná bohatými obchodníkmi, ktorí profitujú z prebiehajúceho obchodného ruchu. Je to miesto uctievania zasvätené patrónovi a slúži ako archív poznania pre rukopisy a sväté texty." # todo: NEW TRANSLATION
  guild: "Cech"
  workshop: "Dielňa"
  midgame_manufactory: "Manufaktúra"
@@ -129,7 +134,11 @@
  funduq: "Karavanserail"
  funduq_desc: "Verejná budova nachádzaná v dôležitých obchodných mestách, kde si obchodníci môžu oddýchnuť, stretnúť sa a uskladniť svoj tovar."
  fortress_granary: "Agadir"
- fortress_granary_desc: "Opevnený spoločný sklad obilia tradične budovaný v Severnej Afrike. Postavené na kopcoch poskytujú ochranu a obrannú pozíciu pre okolité polia."
+ fortress_granary_desc: "Opevnená spoločná sýpka tradične stavaná ľuďmi Severnej Afriky. Postavené na kopcoch poskytujú ochranu a obranné body pre okolité polia a prérie." # todo: CHANGED
+ aqueduct_system: "Systém akvaduktov" # todo: NEW TRANSLATION
+ aqueduct_system_desc: "Cez starostlivo kladené kamenné kanály a gravitačne napájané rúry zabezpečuje táto stavba stály prívod čerstvej vody. Hoci je jednoduchá na konštrukciu, tieto diela predstavujú prvý krok k organizovanému mestskému zásobovaniu vodou." # todo: NEW TRANSLATION
+ hippodrome: "Hipodróm" # todo: NEW TRANSLATION
+ hippodrome_desc: "Hipodróm stojí ako bijúce srdce [ShowLocationName('constantinople')], kde sa pod dohľadom panovníka stretávajú hromové preteky, cisárske ceremónie a vôľa ľudu. Tu sa fanúšikovia a súťažiaci stretávajú nielen o slávu na trati, ale aj o vplyv v samotnom kráľovstve. Monumenty získané z pobreží Stredozemného mora zdobia jeho chrbticu a hlásajú nadvládu a odkaz. Tento veľkolepý amfiteáter je však viac než len divadlo; je to kotol verejnej mienky, kde chvála môže vzbudiť vládcu po celé generácie." # todo: NEW TRANSLATION
  university: "Univerzita"
  library: "Knižnica"
  opera_house: "Opera"
@@ -165,10 +174,24 @@
  peasants_hunting_grounds: "Loviská pre roľníkov"
  local_schools: "Miestne školy"
  local_newspaper: "Miestne noviny"
+ early_council_hall: "Miestna rada" # todo: NEW TRANSLATION
+ early_council_hall_desc: "Vládca nemôže byť na všetkých miestach krajiny súčasne. Delegovaním správy miestnym orgánom môže autorita dvora zasiahnuť aj do najodľahlejších častí nášho územia." # todo: NEW TRANSLATION
+ council_hall: "Radnica" # todo: NEW TRANSLATION
+ council_hall_desc: "Každá forma miestnej správy potrebuje vhodné miesto na zhromaždenia a primerané podmienky pre činnosť. Budova dostatočnej veľkosti a vybavenia s priestrannou rokovacou sieňou je kľúčová." # todo: NEW TRANSLATION
+ modern_council_hall: "Rozšírená radnica" # todo: NEW TRANSLATION
+ modern_council_hall_desc: "Rast miest a zvýšené potreby správy si vyžadujú rozšírenie budovy miestnych orgánov, aby mohli naďalej primerane vykonávať svoje funkcie. Väčšie archívy a registre slúžia ako rozšírenie autority samotného dvora." # todo: NEW TRANSLATION
  naval_governor: "Námorný guvernér" # todo: NEW TRANSLATION
  naval_governor_desc: "$local_governor_desc$" # todo: NEW TRANSLATION
  local_governor: "Miestny guvernér" # todo: NEW TRANSLATION
  local_governor_desc: "Rezidencia regionálnej moci, ktorá rozširuje dosah štátu do jeho najvzdialenejších krajov a rozširuje jeho vplyv za hranice bezprostredného okolia. Keď sú prepojené s hlavným mestom cestnou sieťou, pôsobia ako uzly správy a administrácie." # todo: NEW TRANSLATION
+ local_estates: "Miestne panstvá" # todo: NEW TRANSLATION
+ local_estates_desc: "Zdroj moci šľachty spočíva v ich rozsiahlych majetkoch, zvyčajne poľnohospodárskych pozemkoch, ktoré roľníci obhospodarujú buď formou roboty, alebo platením nájmu." # todo: NEW TRANSLATION
+ noble_courts: "Šľachtické súdy" # todo: NEW TRANSLATION
+ noble_courts_desc: "Kľúčovým aspektom moci šľachty je schopnosť vykonávať spravodlivosť na svojich panstvách. To sa realizuje sieťou úradníkov, ktorí v ich zemiach vykonávajú a presadzujú šľachtické zákony." # todo: NEW TRANSLATION
+ nobles_mansion: "Šľachtické sídlo" # todo: NEW TRANSLATION
+ nobles_mansion_desc: "Šľachta zvyčajne využíva viacero rezidencií roztrúsených po svojich panstvách a v dôležitých centrách moci. Tieto sídla sú chrbticou ich majetkov a vyžadujú neustálu údržbu majetku a personálu pripraveného slúžiť svojim pánom." # todo: NEW TRANSLATION
+ nobled_sponsored_temple: "Šľachtou sponzorovaný chrám" # todo: NEW TRANSLATION
+ nobled_sponsored_temple_desc: "Jedným zo spôsobov, ako šľachta verejne prejavuje svoju oddanosť, je sponzorovanie chrámov na svojich územiach. Zvyčajne sú tieto chrámy obsluhované duchovnými patriacimi k ich dynastii alebo blízkymi služobníkmi." # todo: NEW TRANSLATION
  horse_breeders: "Chov koní"
  porcelain_guild: "Pec na porcelán"
  naval_supplies_guild: "Cech námorných zásob"
@@ -303,6 +326,8 @@
  star_fort: "Hviezdicová pevnosť"
  fortress: "Pevnosť"
  stockade: "Palisáda"
+ city_walls: "Mestské hradby" # todo: NEW TRANSLATION
+ city_walls_desc: "Veľké opevnenia obkružujúce celé mesto, $city_walls$ poskytujú ochranu pred votrelcami a pocit bezpečia pre jeho obyvateľov." # todo: NEW TRANSLATION
  armory: "Zbrojnica"
  barracks: "Kasárne"
  regimental_camp: "Tábor regimentov"
@@ -330,6 +355,11 @@
  royal_garden_desc: "Rozľahlá kráľovská záhrada je kúskom raja na Zemi, miesto, kde si šľachta dvora môže oddýchnuť a venovať sa zbytočným rozkošiam pri vychutnávaní prekvitajúcej upravenej prírodnej záhrady."
  pirate_stronghold: "Pirátska pevnosť"
  pirate_stronghold_desc: "Úbohý včelín ničoty a závažných previnení, dom najodvážnejších a najnelegálnejších súkromných korzárov — táto budova je srdcom pirátskej republiky."
+ hre_imperial_armory: "Cisárska zbrojnica" # todo: NEW TRANSLATION
+ hre_imperial_armory_foreign: "$hre_imperial_armory$ (v zahraničí)" # todo: NEW TRANSLATION
+ hre_imperial_armory_foreign_desc: "$hre_imperial_armory$ poskytuje cisárovi ľudskú silu pre jeho armády.\n\n#Y Zmení sa na [ShowBuildingTypeName('hre_imperial_armory_own')] keď sa [location|e] ocitne vo vlastníctve [ShowSpecialStatusName('emperor')].#!" # todo: NEW TRANSLATION
+ hre_imperial_armory_own: "$hre_imperial_armory$ (domáce)" # todo: NEW TRANSLATION
+ hre_imperial_armory_own_desc: "$hre_imperial_armory$ poskytuje cisárovi ľudskú silu pre jeho armády.\n\n#Y Zmení sa na [ShowBuildingTypeName('hre_imperial_armory_foreign')] keď [location|e] už nebude vo vlastníctve [ShowSpecialStatusName('emperor')].#!" # todo: NEW TRANSLATION
  entrepot: "Entrepôt"
  trading_hub: "Obchodné centrum"
  customs_house: "Colnica"
@@ -353,6 +383,7 @@
  rock_of_monaco: "Skala Monaka"
  camara_comptos: "Cámara de Comptos"
  camara_comptos_desc: "#italic $camara_comptos$#! je suverénny súd špecializovaný na finančné záležitosti. Inšpiruje sa inštitúciou rovnakého mena v Paríži."
+ camara_comptos_why: "$camara_comptos$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  llotja_seda: "La Llotja de la Seda"
  llotja_seda_desc: "La Llotja, ohromujúce architektonické dielo, sa skladá z troch častí, vrátane #italic 'Sala de Contratació'#!, prepychovo zdobeného obchodného sálu so skrútenými stĺpmi, kde si obchodníci dohadujú zmluvy, a Pavilónu konzulátu, ktorý slúži ako sídlo #italic 'Tribunal del Mar'#!. Centrálná veža La Llotja sa používa ako väzenie pre dlžníkov."
  zwinger: "Zwinger"
@@ -385,16 +416,21 @@
  college_of_poets_why: "$college_of_poets$ môže byť postavené iba prostredníctvom udalosti."
  bibliotheca_corviniana: "Bibliotheca Corviniana"
  bibliotheca_corviniana_desc: "$bibliotheca_corviniana$ je renomovaná renesančná knižnica, ktorá obsahuje rozsiahlu zbierku rukopisov a kníh."
+ bibliotheca_corviniana_why: "$bibliotheca_corviniana$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  the_cipher_secretary: "Šifrovací tajomník"
  the_cipher_secretary_desc: "Šifrovací tajomník je štátny úrad, ktorý šifruje správy obchodníkov a diplomatov na ochranu záujmov Republiky."
  teatro_san_cassiano: "Teatro San Cassiano"
  teatro_san_cassiano_desc: "$teatro_san_cassiano$ je prvé verejné operné divadlo na svete, čo predstavuje významný míľnik v histórii divadelných umení a upevňuje Benátky ako vedúce kultúrne centrum."
+ teatro_san_cassiano_why: "$teatro_san_cassiano$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  doges_palace: "Dóžov palác"
  doges_palace_desc: "Dóžov palác v Benátkach slúži ako rezidencia dóžu, hlavného magistráta a vodcu Benátskej republiky."
+ doges_palace_why: "$doges_palace$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  piazza_san_marco: "Piazza San Marco"
  piazza_san_marco_desc: "Piazza San Marco, známe aj ako Námestie sv. Marka, je hlavné verejné námestie v Benátkach. Je preslávené svojou úchvatnou architektúrou, vrátane Baziliky sv. Marka, Campanile a Dóžovho paláca, a slúži ako sociálne, náboženské a politické srdce mesta."
+ piazza_san_marco_why: "$piazza_san_marco$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  walls_of_ston: "Stonské hradby"
  walls_of_ston_desc: "$walls_of_ston$ sú masívnym reťazcom opevnení, ktoré chránia obchodné mesto Ragusa (dnešný Dubrovnik)."
+ walls_of_ston_why: "$walls_of_ston$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  swi_collegium_helveticum: "Collegium Helveticum"
  swi_collegium_helveticum_desc: "$swi_collegium_helveticum$ vzdeláva najtalentovanejších kňazov švajčiarskeho národa. Hoci sa priamo nenachádza na švajčiarskom území, collegium je hlavným cieľom pre začínajúcich teológov."
  swi_collegium_helveticum_why: "$swi_collegium_helveticum$ môže byť postavené iba prostredníctvom udalosti."
@@ -404,6 +440,7 @@
  kronborg_desc: "Hrad $kronborg$, situovaný pri vstupe do Öresundského prielivu, historicky slúžil ako kľúčové pevnostné miesto na kontrolu a vyberanie mýta z plavidiel plávajúcich medzi Baltským a Severným morom."
  husuni_kubwa: "Husuni Kubwa"
  husuni_kubwa_desc: "Rozsiahly kráľovský komplex pôvodne zadaný [GetCharacter('zan_abu_al_mawahib_al_hasan_ibn_suleiman').GetName]. Táto rezidencia vystavovala krásnu [ShowCultureName('swahili_culture')] architektúru a slúžila rovnako kráľovským ako aj obchodným úlohám, pôsobiac ako de facto trhové a skladové haly hlavného mesta pre mnohých obchodníkov v našej doméne."
+ husuni_kubwa_why: "$husuni_kubwa$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  magistrato_alla_sanita: "Magistrato alla Sanità"
  magistrato_alla_sanita_desc: "Magistrato alla Sanità je orgán verejného zdravotníctva zodpovedný za dohľad a riadenie opatrení na prevenciu a kontrolu šírenia chorôb, najmä moru."
  imperial_city_of_hue: "Cisárske mesto $hue_location$"
@@ -416,8 +453,10 @@
  castel_sant_angelo_desc: "Pôvodne postavený cisárom Hadriánom ako mauzóleum pre jeho rodinu, $castel_sant_angelo$ bol prestavaný pápežmi a stal sa jednou z najsilnejších pevností [ShowLocationName('rome')]."
  quirinal_palace: "Kvirinálsky palác"
  quirinal_palace_desc: "$quirinal_palace$ je letné sídlo pápežov, situované na rovnomennom pahorku s výhľadom na mesto [ShowLocationName('rome')]."
+ quirinal_palace_why: "$quirinal_palace$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  ambras_castle: "Hrad Ambras"
  ambras_castle_desc: "$ambras_castle$ je stredoveká pevnosť prestavaná, aby slúžila ako sídlo dynastie, ceremoniálne a kultúrne miesto, ktoré uchováva rozsiahlu zbierku vzácnych predmetov zhromaždených našimi vládnucimi."
+ ambras_castle_why: "$ambras_castle$ možno postaviť iba prostredníctvom udalosti." # todo: NEW TRANSLATION
  belvedere_palace: "Belvederský palác"
  belvedere_palace_desc: "$belvedere_palace$ je veľký palác vo Viedni preslávený svojou architektonickou veľkoleposťou a úlohou kultúrneho centra, v ktorom sa nachádza rozsiahla zbierka európskeho umenia."
  sco_palace_of_holyroodhouse: "Palác Holyroodhouse"
@@ -477,7 +516,7 @@
  stannary_court_why: "Môže byť postavený iba [GetCountry('ENG').GetName] v [ShowProvinceDefinitionName('cornwall_province')] a [ShowProvinceDefinitionName('devon_province')] potom, čo bol prijatý zákon o Stannary."
  stannary_court_destroy: "[event|e] $flavor_eng.67.title$ nastala po roku #Y 1601#!"
  lieutenancy: "Lieutenancia"
- lieutenancy_desc: "Budova lieutenancie predstavuje sídlo lieutenanta, ktorý spravuje územie namiesto vládcu."
+ lieutenancy_desc: "Lieutenancia je sídlo miestodržiteľa, kráľovského delegáta, ktorý spravuje vzdialené územie v mene koruny. Zdieľa rovnaký limit guvernérov ako [ShowBuildingTypeName('local_governor')], čo odráža jej úlohu ako iberskej alternatívy ku štandardnej provinčnej administrácii, nie ako dodatočnej vrstvy vlády." # todo: CHANGED
  not_in_capital_region: "Nemožno postaviť v [Concept('region','regióne')|e] [Concept('capital','hlavného mesta ')|e]"
  ostrog: "Ostrog"
  ostrog_desc: "$ostrog$ je malá drevená pevnosť stavaná v odľahlých častiach Ruska. Vzhľadom na závislosť od dreva sú ostrogy relatívne lacné a rýchle na výstavbu."
@@ -488,7 +527,8 @@
  sofa_barracks: "Sofa kasárne" # todo: NEW TRANSLATION
  sofa_barracks_desc: "$sofa_barracks$ sú špecializované kasárne, ktoré umožňuje vlastníkovi verbovať [ShowUnitDefinitionName('a_sofa_infantry')] a [ShowUnitDefinitionName('a_mandekalu_cavalry')] v [Concept('location','lokácii')|e]." # todo: skloňovanie
  viceroyalty: "Miestokráľovstvo" # todo: NEW TRANSLATION
- viceroyalty_desc: "Budova miestokráľovstva slúži ako oficiálne sídlo a administratívne centrum pre miestokráľa, ktorý spravuje územie v mene panovníka."
+ viceroyalty_desc: "Vicekráľovstvo je administratívne a obchodné sídlo koruny v koloniálnej krajine-subjekte, postavené nadvládcom v hlavnom meste subjektu. Slúži ako rezidencia vicekráľa a organizuje cisársky obchod, smerujúc koloniálne príjmy späť k nadvládcovi a zároveň podporujúc koloniálne hlavné mesto ako obchodné centrum." # todo: CHANGED
+ viceroyalty_in_colonial_capital_only: "Môže byť postavené iba v [capital|e] subjektu typu [ShowSubjectTypeName('colonial_nation')]." # todo: NEW TRANSLATION
  barcelona_royal_shipyard: "Kráľovské lodenice v Barcelone"
  barcelona_royal_shipyard_desc: "Kráľovské lodenice v Barcelone, známe aj ako 'Drassanes Reials de Barcelona', sa nachádzajú vedľa prístavu Barcelony. Ich história siaha do 13. storočia a prešli viacerými rozšíreniami. Služili ako stredisko stavby lodí, námorného arzenálu a skladovania galejí, zohrávajúc dôležitú úlohu v námorných aktivitách."
  royal_atarazanas_seville: "Kráľovské Atarazanas v Seville"
@@ -570,7 +610,7 @@
  jurchen_barracks: "Jurchenské kasárne"
  jurchen_barracks_desc: "Tieto kasárne slúžia ako zhromaždisko pre našich vojakov, na prípravu do boja, tréning zručností a udržiavanie našich hrdých tradícií."
  provincial_garrison: "Stanica posádky"
- provincial_garrison_desc: "Provincie sú piliermi, ktoré udržiavajú [GetInternationalOrganizationType('middle_kingdom')]. Na ich obranu proti akémukoľvek útočníkovi je potrebné zriadiť posádky s trvalou stanicou vojakov."
+ provincial_garrison_desc: "Provinčné oblasti sú piliermi, ktoré udržiavajú [GetInternationalOrganizationType('middle_kingdom').GetName]. Aby sa proti nim mohol brániť pred akýmkoľvek útočníkom, je potrebné zriadiť posádky s trvalou stanicou vojakov." # todo: CHANGED
  kremlin: "Kremeľ"
  kremlin_desc: "$kremlin$ pôsobí ako administratívne a duchovné centrum, ako aj symbol autority zodpovedajúci nášmu rastúcemu vplyvu. Poskytuje obyvateľom dôležité útočisko proti nájazdom a obliehaniam vďaka svojej impozantnej veľkosti a mohutným múrom a vežiam."
  kremlin_why: "Môže byť postavený len v [ShowLocationName('moscow')]." # todo: skloňovanie
@@ -826,6 +866,7 @@
  rural_clothmaker_desc: "Malý cech, kde sa textílie ručne vyrábali z miestnych materiálov. Zohráva dôležitú úlohu v miestnej ekonomike, poskytuje odevy a obchodné tovary."
  mason_desc: "Obsadzovaný kvalifikovanými pracovníkmi, ktorí režú a tvarujú kameň pre stavbu, $mason$ je nevyhnutný pre výstavbu odolných a trvácnych stavieb."
  embassy_desc: "Stredisko diplomacie a miesto stretnutí, kde zástupcovia cudzích národov vedú rokovania a podporujú vznik potenciálnych aliancií."
+ embassy_max_rank_tt: "Môže byť postavená len v hlavnom meste krajiny s [country_rank|e] rovnakým alebo vyšším ako náš" # todo: NEW TRANSLATION
  firearms_manufactory_desc: "Často opisovaná ako životná sila nášho vojenského výrobného komplexu, manufaktúra strelných zbraní vyrába palné zbrane rôznych tvarov a veľkostí, ako sú pištole, pušky a ďalšie."
  cannon_foundry_desc: "V odlievarní diel sa kanóny liatia a montujú z roztaveného kovu. Kľúčové pre vybavenie armád delostrelectvom, čím sa zvyšujú vojenské schopnosti štátu."
  cannon_maker_desc: "Cech špecializovaný na výrobu a montáž kanónov. Tieto silné zbrane sú nevyhnutné pri obliehaniach a obrane."
@@ -911,7 +952,7 @@
  zazzau_walls: "Hradby $zazzau$" # todo: NEW TRANSLATION
  zazzau_walls_desc: "Ako ukážka sily voči ostatným národom v [ShowRegionName('guinea_region')] tieto hradby demonštrujú susedom silu danej lokality." # todo: skloňovanie
  eghabho_nore_mansion: "Vila Eghabho N'ore"
- eghabho_nore_mansion_desc: "Vila náčelníka mesta. Je zodpovedný za správu lokality v mene vládcu."
+ eghabho_nore_mansion_desc: "Dom náčelníka mesta. Ten je zodpovedný za správu lokality v mene vládcu." # todo: CHANGED
  ribat: "Ribāṭ"
  ribat_desc: "Malé opevnenie určené predovšetkým na ochranu karaván alebo malých oblastí pred nájazdmi."
  delhi_tomb: "Indická hrobka"

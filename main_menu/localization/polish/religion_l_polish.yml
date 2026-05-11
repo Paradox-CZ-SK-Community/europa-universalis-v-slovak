@@ -40,6 +40,7 @@
  convert_religion_desc: "Zmeniť náboženstvo nášho [country|e]" # todo: NEW TRANSLATION
  convert_religion_select_religion: "Vyberte [religion|e], na ktoré sa chcete konvertovať" # todo: NEW TRANSLATION
  convert_religion_tt: "Cieľové [religion|e] je buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomné viac než #Y 40.0%#!" # todo: NEW TRANSLATION
+ no_convert_religion_tt: "@trigger_fail!Žiadna dostupná [religion|e], ktorá by bola buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomná viac než #Y 40.0%#!" # todo: NEW TRANSLATION
  change_liturgical_language: "Zmeniť liturgický jazyk" # todo: NEW TRANSLATION
  change_liturgical_language_desc: "Zmeniť [liturgical_language|e] nášho [country|e]" # todo: NEW TRANSLATION
  change_liturgical_language_select_dailect: "Vyberte nový [dialect|e]" # todo: NEW TRANSLATION
@@ -52,6 +53,8 @@
  periphora_select_icon: "Vyberte ikonu, s ktorou začať periphora" # todo: NEW TRANSLATION
  periphora_select_destination: "Vyberte konečné miesto pre periphora" # todo: NEW TRANSLATION
  PERIPHORA_NAME: "Periphora [WORK_OF_ART.GetName] z [LOCATION.GetName] do [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ invite_patriarch_delegation: "Pozvať delegáciu patriarchu" # todo: NEW TRANSLATION
+ invite_patriarch_delegation_desc: "Pozveme delegáciu nášho patriarchu, aby sme zlepšili vzťahy a prerokovali rôzne otázky viery a správy našej krajiny." # todo: NEW TRANSLATION
  canonize: "Kanonizovať" # todo: NEW TRANSLATION
  canonize_desc: "[canonize|e] [character|e], vyhlásiť ich za svätého a udeliť našej krajine dodatočné výhody podľa toho, akí schopní boli za života." # todo: NEW TRANSLATION
  canonize_select_character: "Vyberte [character|e], ktorého chcete [canonize|e]" # todo: NEW TRANSLATION
@@ -75,6 +78,7 @@
  RESEARCH_QUEUE_SLOT: "V rade na výskum: Slot $SLOT$" # todo: NEW TRANSLATION
  HOLY_SITE_TT_RELIGION_INFO: "Sväté miesto pre: #subtle_name [RELIGION.GetNameNoUnderline]#![RELIGION.GetIcon]" # todo: NEW TRANSLATION
  HOLY_SITE_TT_GOD_INFO: "Súvisí s [god|e]: [GOD.GetName]." # todo: NEW TRANSLATION
+ GOD_POSSIBLE_EFFECTS_HEADER: "#weak Možné účinky:#!" # todo: NEW TRANSLATION
  HOLY_SITE_TT_AVATAR_INFO: "Súvisí s [avatar|e]: [AVATAR.GetName]." # todo: NEW TRANSLATION
  HOLY_SITE_TT_RELIGION: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ všetky $RELIGIONS$ [countries|e] získajú:\n$INFO$" # todo: NEW TRANSLATION
  HOLY_SITE_TT_COUNTRY: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ [COUNTRY.GetNameWithFlag] získa:\n$INFO$" # todo: NEW TRANSLATION
@@ -96,6 +100,7 @@
  excommunicate_resolution_desc: "Každá [ShowReligionAdjective('catholic')|U] osoba, ktorá je exkomunikovaná [GetCountry('PAP').GetGovernment.GetRulerTitle], je vylúčená zo štruktúry Cirkvi a je jej odopreté prijímanie sviatostí.\n\nToto bude [excommunicate|e] [ruler|e] cieľovej krajiny." # todo: NEW TRANSLATION
  excommunicate_resolution_specific: "Exkomunikovať [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
  excommunicate_resolution_specific_desc: "Každá [ShowReligionAdjective('catholic')|U] osoba, ktorá je exkomunikovaná [GetCountry('PAP').GetGovernment.GetRulerTitle], je vylúčená zo štruktúry Cirkvi a je jej odopreté prijímanie sviatostí.\n\nToto bude [excommunicate|e] [ruler|e] [SCOPE.sCountry('target').GetName]." # todo: NEW TRANSLATION
+ excommunicate_resolution_no_pap_tt: "Nie je to [GetCountry('PAP').GetName] - namiesto toho použite [ShowCountryInteractionName('excommunicate')] [country_interaction|e]" # todo: NEW TRANSLATION
  vote_in_excommunicate_resolution: "Hlasovať o exkomunikácii [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
  vote_in_excommunicate_resolution_desc: "Rozhodnúť, či chceme podporiť exkomunikáciu [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
  excommunicate_select_country: "Vyberte [country|e], ktorú sa pokúsite [excommunicate|e]" # todo: NEW TRANSLATION
@@ -178,6 +183,7 @@
  vote_in_inter_gravissimas: "Hlasovať o $inter_gravissimas$" # todo: NEW TRANSLATION
  vote_in_inter_gravissimas_desc: "Rozhodnúť, či chceme podporiť alebo odmietnuť návrh $inter_gravissimas$." # todo: NEW TRANSLATION
  inter_gravissimas_active: "Predložiť pápežskú bulu '$inter_gravissimas$'" # todo: NEW TRANSLATION
+ custom_saints_concept: "[Religion.GetSaintsConcept(Country)]" # todo: NEW TRANSLATION
  folk_african_group: "Africké ľudové náboženstvá" # todo: NEW TRANSLATION
  folk_african_group_ADJ: "Africké ľudové náboženstvá" # todo: NEW TRANSLATION
  folk_argentinian_group: "Argentínske ľudové náboženstvá" # todo: NEW TRANSLATION
@@ -535,18 +541,21 @@
  adopt_ometeotl_desc: "Despite the polytheistic nature of our religion, among our highest classes the worship of a unique almighty God named #italic Ōmeteōtl#! is common. This God has the qualities of all Gods that are just the representation of these qualities. We will worship #italic Ōmeteōtl#! as the only God." # todo: NEW TRANSLATION
  elevate_patron_god: "Povýšiť nášho patrónneho boha" # todo: NEW TRANSLATION
  elevate_patron_god_desc: "Each [ShowCultureName('nahua_culture')] realm usually worships one God over the rest as their patron God. We will put our patron God not only at the top of our devotion, but as main God of our religion." # todo: NEW TRANSLATION
+ ruler_or_regent_total_abilities: "[ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName] [total_ability|e]" # todo: NEW TRANSLATION
  establish_cihuacoatl: "Zriadiť funkciu Cihuacōātl" # todo: NEW TRANSLATION
  establish_cihuacoatl_desc: "We will establish the figure of the #italic Cihuacōātl#! (literally 'Serpent Woman'), similar to that of a vizier. This will help our rulers manage our realm, by making the #italic Cihuacōātl#! handle the city ruling so that the ruler can deal with more important issues." # todo: NEW TRANSLATION
  expand_cuahpipiltin: "Rozšíriť Cuāhpipiltin" # todo: NEW TRANSLATION
  expand_cuahpipiltin_desc: "We will create a new caste in our society: the #italic Cuāhpipiltin#! will be the nobles by service, in opposition to the #italic Pīpiltin#!, the nobles by blood. They will be raised from military service, but also integrated from other tribes or vassals." # todo: NEW TRANSLATION
  increase_militarism: "Zvýšiť militarizmus" # todo: NEW TRANSLATION
  increase_militarism_desc: "Our warriors are the ones providing us with captives that can be used for the most important sacrifices to our gods. We should make our society more militaristic to strengthen this influx of captives." # todo: NEW TRANSLATION
+ percentage_of_soldiers_in_country: "Podiel [ShowPopTypeName('soldiers')] v našej [country|e]" # todo: NEW TRANSLATION
  institute_flower_wars: "Zaviesť Kvetinové vojny" # todo: NEW TRANSLATION
  institute_flower_wars_desc: "As our society depends on sacrifices, we need a way to get more of them. By instituting the 'Flower Wars' we can agree with our neighbors on fair combats and both sides can sacrifice captives to appease our Gods." # todo: NEW TRANSLATION
  legal_reforms: "Právne reformy" # todo: NEW TRANSLATION
  legal_reforms_desc: "While our city-states do have their coded rules, as [ShowCultureName('nahua_culture')] societies change, so should our legal codes. We will start a series of reforms in our legal codes that better adapt to our newer needs." # todo: NEW TRANSLATION
  raise_sacrifice_rate: "Zvýšiť mieru obetí" # todo: NEW TRANSLATION
  raise_sacrifice_rate_desc: "Our Gods sacrificed their blood for us humans, and we have a debt with them. But the amount of blood does not seem to be enough to satiate their thirst. We will increase the rate and prevalence of our sacrifices so that Our Gods' blood is replenished more quickly." # todo: NEW TRANSLATION
+ percentage_of_slaves_in_country: "Podiel [ShowPopTypeName('slaves')] v našej [country|e]" # todo: NEW TRANSLATION
  RELIGIOUS_FOCUS_NOT_IN_QUEUE: "Nie je v rade výskumu" # todo: NEW TRANSLATION
  NOT_RELIGIOUS_FOCUS_QUEUED: "Žiadne [religious_focuses|e] v rade" # todo: NEW TRANSLATION
  HAS_NOT_RELIGIOUS_FOCUS_QUEUED: "@trigger_no!This [religious_focuses|e] is not already queued" # todo: NEW TRANSLATION
@@ -598,23 +607,23 @@
  catholic_influenced_rites: "[ShowReligionAdjectiveWithNoTooltip('catholic')]-ovplyvnené obredi" # todo: NEW TRANSLATION
  catholic_influenced_rites_desc: "Introduce rites such as mass, sacraments and liturgy of the hours, in adjacency to the [ShowReligionAdjective('catholic')] practices." # todo: NEW TRANSLATION
  essence_tenet: "Podstata" # todo: NEW TRANSLATION
- essence_tenet_desc: "Known also as ousia (#italic ουσία#!), this tenet represents the presence of Divinity as part of the architecture of the universe around us, and our struggle to embrace it fully." # todo: NEW TRANSLATION
+ essence_tenet_desc: "Známe tiež ako ousia (#italic ουσία#!), toto učenie predstavuje výklad, podľa ktorého je božská podstata Boha totožná s božskou podstatou Krista." # todo: CHANGED
  accept_essence_tenet: "Prijať učenie o podstate" # todo: NEW TRANSLATION
  accept_essence_tenet_desc: "$accept_aspect_key$" # todo: NEW TRANSLATION
  deny_essence_tenet: "Odmietnuť učenie o podstate" # todo: NEW TRANSLATION
  deny_essence_tenet_desc: "$reject_aspect_key$" # todo: NEW TRANSLATION
- person_tenet: "Osoba" # todo: NEW TRANSLATION
- person_tenet_desc: "Deriving from the core concept of concrete reality (#italic υπόστασις#!) this tenet delves into the philosophical and fundamental reality and substance that supports all reality. Having made its appearance in ancient debates, it resurfaced as an important proponent in determining the nature of the Holy Trinity, where it describes its three proponents as sharing one divine essence." # todo: NEW TRANSLATION
- accept_person_tenet: "Prijať učenie o osobe" # todo: NEW TRANSLATION
- accept_person_tenet_desc: "$accept_aspect_key$" # todo: NEW TRANSLATION
- deny_person_tenet: "Odmietnuť učenie o osobe" # todo: NEW TRANSLATION
- deny_person_tenet_desc: "$reject_aspect_key$" # todo: NEW TRANSLATION
- prosopon_tenet: "Maska" # todo: NEW TRANSLATION
- prosopon_tenet_desc: "Known also as prosopon (#italic πρόσωπον#!), this tenet marries the concept of divine identity and person (#italic υπόστασις#!). Its goal is to underline the uniqueness and value in personhood both in the divine and believers." # todo: NEW TRANSLATION
- accept_prosopon_tenet: "Prijať učenie o maske" # todo: NEW TRANSLATION
- accept_prosopon_tenet_desc: "$accept_aspect_key$" # todo: NEW TRANSLATION
- deny_prosopon_tenet: "Odmietnuť učenie o maske" # todo: NEW TRANSLATION
- deny_prosopon_tenet_desc: "$reject_aspect_key$" # todo: NEW TRANSLATION
+ person_tenet: "Hypostáza" # todo: CHANGED
+ person_tenet_desc: "Pochádzajúce z hlavného konceptu konkrétnej reality (#italic υπόστασις#!), toto učenie sa zaoberá podstatou a povahou Krista a Boha a tým, či ich božské podstaty majú jednu alebo viac manifestácií." # todo: CHANGED
+ accept_person_tenet: "Jedna hypostáza" # todo: CHANGED
+ accept_person_tenet_desc: "Povaha Krista a Boha je jedna a tá istá." # todo: CHANGED
+ deny_person_tenet: "Viaceré hypostázy" # todo: CHANGED
+ deny_person_tenet_desc: "Kristus a Boh sú rôzne prejavy božskej podstaty." # todo: CHANGED
+ prosopon_tenet: "Prosopon" # todo: CHANGED
+ prosopon_tenet_desc: "Pôvodne znamenajúce Masku (#italic πρόσωπον#!), toto učenie sa sústreďuje na Osobu Krista a na to, či je on jedinou osobou, alebo zahŕňa dve rozdielne — božskú a ľudskú." # todo: CHANGED
+ accept_prosopon_tenet: "Monoprosopický koncept" # todo: CHANGED
+ accept_prosopon_tenet_desc: "Kristus má len jednu osobu." # todo: CHANGED
+ deny_prosopon_tenet: "Dyoprosopický koncept" # todo: CHANGED
+ deny_prosopon_tenet_desc: "Kristus má dve osoby, božskú a ľudskú." # todo: CHANGED
  christological_debates_tenet: "Kristologické debaty" # todo: NEW TRANSLATION
  christological_debates_tenet_desc: "Debates on the aspect of Christ, our stance towards our brethren sects and our position on the nature of worship are the lifeblood of keeping our belief alive and vibrant!" # todo: NEW TRANSLATION
  allow_christological_debates_tenet: "Povoliť kristologické debaty" # todo: NEW TRANSLATION
@@ -627,6 +636,18 @@
  allow_double_sabbath_tenet_desc: "Both Sunday and Saturday are considered sacred." # todo: NEW TRANSLATION
  forbid_double_sabbath_tenet: "Zakázať dvojitú sobotu" # todo: NEW TRANSLATION
  forbid_double_sabbath_tenet_desc: "The observance of the Sabbath is no longer necessary when celebrating the Lord's Day on Sunday." # todo: NEW TRANSLATION
+ interpatriarchal_relations_tenet: "Medzipatriarchálne vzťahy" # todo: NEW TRANSLATION
+ interpatriarchal_relations_tenet_desc: "Napriek tomu, že rôzni patriarchovia sú v rozhodovaní autonómni a nepodliehajú žiadnej vyššej autorite, sú stále súčasťou tej istej viery. Preto je nevyhnutné a dokonca potrebné mať určité vzájomné interakcie a spoločné diskusie." # todo: NEW TRANSLATION
+ cooperation_between_patriarchs_tenet: "Spolupráca medzi patriarchami" # todo: NEW TRANSLATION
+ cooperation_between_patriarchs_tenet_desc: "Patriarchovia by mali spolupracovať pre väčší úžitok Cirkvi ako celku, aj keď každý z nich si zachováva plnú autoritu svojej patriarchie." # todo: NEW TRANSLATION
+ independent_acting_patriarchs_tenet: "Nezávisle konajúci patriarchovia" # todo: NEW TRANSLATION
+ independent_acting_patriarchs_tenet_desc: "Patriarchovia majú plnú moc nad svojimi patriarchátmi, a tak môžu samostatne rozhodovať o najlepšom postupe bez potreby diskusií s ostatnými patriarchami." # todo: NEW TRANSLATION
+ ruler_and_patriarch_tenet: "Vzťahy medzi vládcom a patriarchom" # todo: NEW TRANSLATION
+ ruler_and_patriarch_tenet_desc: "Patriarcha pracuje pre duše ľudí, čo ho občas stavia do interakcie so svetskou autoritou. Akú úlohu by mali pri stretnutí s patriarchom zaujať vládci krajiny, je tiež otázka viery." # todo: NEW TRANSLATION
+ caesaropapism_tenet: "Cézaropapizmus" # todo: NEW TRANSLATION
+ caesaropapism_tenet_desc: "Svetskí vládcovia sú hlavní strážcovia a garanti Cirkvi, a ako takí ich rozhodnutia ovplyvňujú fungovanie patriarchu. Sú zástupcami Boha, aby vládli Jeho kráľovstvu tu na Zemi." # todo: NEW TRANSLATION
+ independent_authorities_tenet: "Nezávislé autority" # todo: NEW TRANSLATION
+ independent_authorities_tenet_desc: "Čo je cisárovo, dajte cisárovi; čo je božie, dajte Bohu." # todo: NEW TRANSLATION
  change_maintenance_tt: "This will impact the [maintenance|e] of our monasteries" # todo: NEW TRANSLATION
  accept_aspect_key: "Our patriarchate will integrate this aspect into its core beliefs, embraced by all our members." # todo: NEW TRANSLATION
  reject_aspect_key: "Our patriarchate will reject this aspect into its core beliefs, embraced by all our members." # todo: NEW TRANSLATION
@@ -770,7 +791,7 @@
  consolamentum: "Consolamentum" # todo: NEW TRANSLATION
  consolamentum_desc: "Keďže životný proces nevyhnutne prináša ľútosť za naše hriechy, potreba prijatia útechy, aby sme vstúpili do Nebies čistými a priblížili sa k Bohu, sa stáva zrejmou. Prijatím #italic Consolamentum#! je náš ľud odpustený zo svojich hriechov pri blížiacej sa smrti," # todo: NEW TRANSLATION
  pescatarianism: "Pescatariánstvo" # todo: NEW TRANSLATION
- pescatarianism_desc: "Zvieratá nesú reinkarnované duše, a preto ich nemôžeme jesť. Ryby, bytosti spontánne vzniknuté, nemôžu byť považované za zvieratá a môžu sa jesť." # todo: NEW TRANSLATION
+ pescatarianism_desc: "Zvieratá sú nositeľmi reinkarnovaných duší, a preto ich nemôžeme jesť. Ryby, bytosti spontánne stvorené, sa nemôžu považovať za zvieratá a môžu sa jesť." # todo: CHANGED
  the_perfects: "Dokonalí" # todo: NEW TRANSLATION
  the_perfects_desc: "Tí medzi nami, ktorí sú zvlášť oddaní Bohu a cnostiam, ktoré by mal človek nasledovať, sa nazývajú Dokonalí. Títo muži a ženy prijímajú #italic Consolamentum#! za svoju oddanosť a stávajú sa Dokonalými. Na rozdiel od bežných ľudí Dokonalí prijímajú #italic Consolamentum#! dvakrát v živote: keď sú povýšené do novej úlohy a pred smrťou." # todo: NEW TRANSLATION
  baptism_by_fire: "Krst ohňom" # todo: NEW TRANSLATION
@@ -799,6 +820,12 @@
  pietism_desc: "Pietizmus sa zameriava na individuálnu zbožnosť každého veriacich a zdôrazňuje vnútornú premenu, ktorá vedie k zbožnému kresťanskému životu." # todo: NEW TRANSLATION
  prima_scriptura: "Prima Scriptura" # todo: NEW TRANSLATION
  prima_scriptura_desc: "Hoci Sväté písmo má byť považované za hlavný zdroj spasenia, nemôže byť považované za jediný zdroj božského zjavenia." # todo: NEW TRANSLATION
+ ritual_purification: "Rituálne očistenie" # todo: NEW TRANSLATION
+ ritual_purification_desc: "Duša aj telo veriacich musia byť čisté a bez nečistôt, aby sa mohli priblížiť k Bohu." # todo: NEW TRANSLATION
+ specialized_canon: "Špecializovaný kánon" # todo: NEW TRANSLATION
+ specialized_canon_desc: "Knihy inšpirované Bohom si zasluhujú úctu a štúdium, dokonca aj tie s nižšou duchovnou kvalitou, ktoré iné vyznania úplne odmietajú." # todo: NEW TRANSLATION
+ eastward_prayer: "Modlitba smerom na východ" # todo: NEW TRANSLATION
+ eastward_prayer_desc: "Je bežnou praxou v celom kresťanstve modliť sa smerom na východ, k vychádzajúcemu slnku Krista. Niektoré iné vyznania môžu byť v tejto orientácii voľnejšie, ale pre nás nie je iný spôsob modlitby, ani verejnej, ani súkromnej, a všetky naše kostoly musia byť upravené tak, aby tomu zodpovedali." # todo: NEW TRANSLATION
  demand_church_tax: "Pýtať apoštolský daň" # todo: NEW TRANSLATION
  demand_church_tax_desc: "V časoch núdze budú všetky národy, ktoré sa zaviazali poskytnúť nám finančnú pomoc prostredníctvom [ShowEstatePrivilegeName('apostolic_tax_privilege')] [estate_privilege|e], vyzvané, aby tak urobili v mene Boha." # todo: NEW TRANSLATION
  20_years_cd: "Táto interakcia je dostupná každých #Y 20#! rokov" # todo: NEW TRANSLATION
@@ -890,6 +917,26 @@
  JUDAISM_GOD: "Jahve" # todo: NEW TRANSLATION
  MUSLIM_GOD: "Alláh" # todo: NEW TRANSLATION
  god_desc: "Boh je hlavné božstvo v konkrétnom náboženstve. Zatiaľ čo niektoré náboženstvá môžu obsahovať mnoho bohov a uctievať ich viac-menej rovnako, iné môžu sústrediť svoju vieru do jedného špecifického božstva, a ďalšie môžu popierať existenciu iných bohov okrem svojho vlastného." # todo: NEW TRANSLATION
+ god_monarch_power_desc_none: "Tento [GOD.GetGodOrGoddessWithNoTooltip] nie je spojený s žiadnou [ability|e]." # todo: NEW TRANSLATION
+ god_monarch_power_desc_adm: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [adm_short_with_icon|e] [ability|e]." # todo: NEW TRANSLATION
+ god_monarch_power_desc_dip: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [dip_short_with_icon|e] [ability|e]." # todo: NEW TRANSLATION
+ god_monarch_power_desc_mil: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [mil_short_with_icon|e] [ability|e]." # todo: NEW TRANSLATION
+ OMEN_POWER_MODIFIER_RULER_adm: "[RULER.GetShortName] – [adm_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_MODIFIER_RULER_dip: "[RULER.GetShortName] – [dip_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_MODIFIER_RULER_mil: "[RULER.GetShortName] – [mil_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "$RULER_NAME$ – [adm_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "$RULER_NAME$ – [dip_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "$RULER_NAME$ – [mil_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_MODIFIER_OMEN: "Účinky zvýšené o: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_MODIFIER_GOD: "[omens|e] upravené o: $VAL|%2Y$" # todo: NEW TRANSLATION
+ OMEN_RELATED_GOD: "Tento [omen|e] môže byť udelený [GOD.GetName]" # todo: NEW TRANSLATION
+ OMEN_TIME_LEFT: "Vyprší o $TIME$" # todo: NEW TRANSLATION
+ omen_monarch_power_scale_desc_none: "Účinok tohto [omen|e] nie je upravovaný žiadnou [ability|e]." # todo: NEW TRANSLATION
+ omen_monarch_power_scale_desc_adm: "Účinok tohto [omen|e] je upravovaný [adm_short_with_icon|e] [ability|e]." # todo: NEW TRANSLATION
+ omen_monarch_power_scale_desc_dip: "Účinok tohto [omen|e] je upravovaný [dip_short_with_icon|e] [ability|e]." # todo: NEW TRANSLATION
+ omen_monarch_power_scale_desc_mil: "Účinok tohto [omen|e] je upravovaný [mil_short_with_icon|e] [ability|e]." # todo: NEW TRANSLATION
+ MONARCH_POWER_PERCENTAGE_IN_COUNTRY_SCALE_SCRIPT_DESC: "$POWER_NAME$ (škálovanie omenov)" # todo: NEW TRANSLATION
+ god_omens_desc: "Tento boh môže udeliť nasledujúce [omens|e]:" # todo: NEW TRANSLATION
  inti: "Inti" # todo: NEW TRANSLATION
  inti_ADJ: "Inti" # todo: NEW TRANSLATION
  inti_desc: "$inti_god$, spolu s $viracocha$, sú hlavnými bohmi, ktorí vedú a chránia obyvateľov $andes_region$" # todo: NEW TRANSLATION
@@ -910,6 +957,30 @@
  mama_cocha_desc: "[ShowGodName('mama_cocha')] je bohyňa mora ľudí [ShowRegionName('andes_region')]." # todo: NEW TRANSLATION
  urpihuachac_god: "Urpihuachac" # todo: NEW TRANSLATION
  urpihuachac_god_desc: "[ShowGodName('urpihuachac_god')] je matka vtákov a rýb pre ľud [ShowRegionName('andes_region')]." # todo: NEW TRANSLATION
+ zeus_god: "Zeus" # todo: NEW TRANSLATION
+ zeus_god.latin_language: "Jupiter" # todo: NEW TRANSLATION
+ zeus_god_desc: "[ShowGodNameWithNoTooltip('zeus_god')] je kráľ olympských bohov, vládca neba, hromu, zákona a kozmického poriadku." # todo: NEW TRANSLATION
+ zeus_god_omen: "Vzduch zhustne a hrom za obzorom zamrmle. Vtáky krúžia zvláštne, akoby čakali nebeský príkaz, a na chvíľu svet pôsobí dokonale ticho. Upútali sme pozornosť [ShowGodName('zeus_god')]..." # todo: NEW TRANSLATION
+ aphrodite_god: "Aphrodite" # todo: NEW TRANSLATION
+ aphrodite_god.latin_language: "Venus" # todo: NEW TRANSLATION
+ aphrodite_god_desc: "[ShowGodNameWithNoTooltip('aphrodite_god')] je bohyňa lásky, túžby, krásy a spoločenskej harmónie." # todo: NEW TRANSLATION
+ aphrodite_god_omen: "Po uliciach sa rozplýva nežné teplo. Milenci hovoria otvorenejšie, staré zášti akoby bledli a ruže kvitnú aj tam, kde by nemali. Dokonca aj najtvrdšie srdcia môžu mať pocit, že nás navštívila [ShowGodName('aphrodite_god')]..." # todo: NEW TRANSLATION
+ poseidon_god: "Poseidon" # todo: NEW TRANSLATION
+ poseidon_god.latin_language: "Neptune" # todo: NEW TRANSLATION
+ poseidon_god_desc: "[ShowGodNameWithNoTooltip('poseidon_god')] je boh mora, zemetrasení a neskrotených síl prírody." # todo: NEW TRANSLATION
+ poseidon_god_omen: "Prílivy sa zmenia a lode zaskučia pod váhou neviditeľných síl. Poverčiví námorníci šepkajú o prúdoch, ktoré skôr vedú než odporujú, a vlny bijú o breh ako vzdialený potlesk. Zdá sa, že [ShowGodName('poseidon_god')] vypočul našu modlitbu..." # todo: NEW TRANSLATION
+ hermes_god: "Hermes" # todo: NEW TRANSLATION
+ hermes_god.latin_language: "Mercury" # todo: NEW TRANSLATION
+ hermes_god_desc: "[ShowGodNameWithNoTooltip('hermes_god')] je posol bohov, patrón obchodu, cestovania a dôvtipu." # todo: NEW TRANSLATION
+ hermes_god_omen: "Susedia posielajú vrelé správy, mince sa ľahko menia rukami a cestovatelia majú pocit, že každá cesta je z kopca. [ShowGodName('hermes_god')] opäť kráča medzi nami..." # todo: NEW TRANSLATION
+ ares_god: "Ares" # todo: NEW TRANSLATION
+ ares_god.latin_language: "Mars" # todo: NEW TRANSLATION
+ ares_god_desc: "[ShowGodNameWithNoTooltip('ares_god')] je boh vojny v jeho násilnej a ničivej podobe." # todo: NEW TRANSLATION
+ ares_god_omen: "Nebo získava červený nádych a naši generáli sa prebúdajú zo snov o dobytí s hnevom v srdciach. Povahy sa rozhorčujú, odvaha narastá a samotná zem akoby túžila po pochodujúcich nohách. [ShowGodName('ares_god')] sa netrpezlivo prebúdza." # todo: NEW TRANSLATION
+ athena_god: "Athena" # todo: NEW TRANSLATION
+ athena_god.latin_language: "Minerva" # todo: NEW TRANSLATION
+ athena_god_desc: "[ShowGodNameWithNoTooltip('athena_god')] je bohyňa múdrosti, stratégie a disciplinovaného vojenského umenia." # todo: NEW TRANSLATION
+ athena_god_omen: "Náhla jasnosť sa usadí nad radami i veliteľmi, akoby múdrosť sama si prisadla za stôl. Plány sa zladia, spory utíchnu a výkrik sovy prereže noc s desivou istotou. Iste nám [ShowGodName('athena_god')] udeľuje svoju priazeň." # todo: NEW TRANSLATION
  odin_god: "Óðinn" # todo: NEW TRANSLATION
  odin_god_desc: "$odin_god$ je Pán Ásov, ktorý obetoval jedno oko za múdrosť a zavesil sa na Svetovom strome na deväť dní a nocí, aby získal poznanie rún." # todo: NEW TRANSLATION
  worship_odin_god: "$worship_title1$ $odin_god$ $worship_title2$" # todo: NEW TRANSLATION
@@ -2184,3 +2255,6 @@
  thunder_god_desc: "$thunder_god$ predstavuje bezprostrednosť a ľahostajnosť osudu." # todo: NEW TRANSLATION
  worship_thunder_god: "$worship_title1$ $thunder_god$ $worship_title2$" # todo: NEW TRANSLATION
  worship_thunder_god_desc: "$worship_desc1$ [ShowGodName('thunder_god')] $worship_desc2$" # todo: NEW TRANSLATION
+ PERIPHORA_ENDED_CAPTURED: "Bolo zajaté [COUNTRY.GetName]." # todo: NEW TRANSLATION
+ PERIPHORA_ENDED_NO_PATH: "Neexistuje spôsob, aby sa to dostalo do cieľa." # todo: NEW TRANSLATION
+ PERIPHORA_ENDED_FINISHED: "Ľudia oslavujú, keď dorazí do cieľa." # todo: NEW TRANSLATION

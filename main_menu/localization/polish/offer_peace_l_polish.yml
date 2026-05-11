@@ -21,7 +21,8 @@
  SUGGEST_PEACE_TT: "Návrh mierovej ponuky od AI." # todo: NEW TRANSLATION
  ANNEX_ALL_LOCATIONS_PEACE_TT: "Anexovať všetky lokality" # todo: NEW TRANSLATION
  GIVE_ALL_LOCATIONS_PEACE_TT: "Odovzdať všetky lokality" # todo: NEW TRANSLATION
- CANNOT_SELECT_ALL_LOCATIONS: "@trigger_no!Nie je možné vybrať všetky lokality" # todo: NEW TRANSLATION
+ CANNOT_SELECT_ALL_LOCATIONS: "@trigger_no!Všetky lokality sú vybraté" # todo: CHANGED
+ CANNOT_ANNEX_ALL_LOCATIONS: "@trigger_no!Nedá sa vybrať všetky lokality" # todo: NEW TRANSLATION
  OFFER_PEACE_DECREASE_GOLD_TOOLTIP: "Maximum je $MAX_LOANS|W0$ [loans|e], dohromady $MAX|+=2$[gold_i] ($WS|W$ [war_score_icon])." # todo: NEW TRANSLATION
  OFFER_PEACE_INCREASE_GOLD_TOOLTIP: "Maximum je $MAX_LOANS|W0$ [loans|e], dohromady $MAX|+=2$[gold_i] ($WS|W$ [war_score_icon])." # todo: NEW TRANSLATION
  SACRIFICE: "Obeta" # todo: NEW TRANSLATION
@@ -129,6 +130,7 @@
  peace_expand_clan_influence_entry: "Rozšíriť vplyv nášho klanu do [target.GetName]" # todo: NEW TRANSLATION
  peace_expand_clan_influence_entry_short: "Rozšíriť vplyv nášho klanu do [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  expand_clan_influence_other.tt: "Získame vlastníctvo územia [loser.GetName] v [target.GetName]" # todo: NEW TRANSLATION
+ expand_clan_influence_no_target_tt: "Získame vlastníctvo ich územia v cieľovej [location|e]" # todo: NEW TRANSLATION
  peace_revoke_clan_autonomy: "Zrušiť autonómiu klanu" # todo: NEW TRANSLATION
  peace_revoke_clan_autonomy_entry: "Znížiť autonómiu [TARGET_COUNTRY.GetNameWithFlag] a premeniť ich naspäť na [extraterritorial_country|e]" # todo: NEW TRANSLATION
  peace_revoke_clan_autonomy_entry_short: "Znížiť autonómiu [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
@@ -192,7 +194,11 @@
  claim_timurid_empire_entry: "Požadovať ríšu [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
  claim_timurid_empire_entry_short: "Požadovať ríšu [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
  claim_timurid_empire_tooltip: "Anexujeme a staneme sa [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- FAVORS_GAIN_FROM_LAND: "[COUNTRY.GetName] dostane viac územia, než očakával z ich $CONT|%Y$ príspevku do vojny, a bude vám dlžiť $AMT|Y$ [favors|e]." # todo: NEW TRANSLATION
+ dissolve_hanseatic_league_peace_deal: "Rozpustiť Hanzovú ligu" # todo: NEW TRANSLATION
+ dissolve_hanseatic_league_peace_deal_entry: "Rozpustiť Hanzovú ligu" # todo: NEW TRANSLATION
+ dissolve_hanseatic_league_peace_deal_entry_short: "Rozpustiť Hanzovú ligu" # todo: NEW TRANSLATION
+ FAVORS_GAIN_FROM_LAND_NOT_PROMISED: "[COUNTRY.GetName] dostane územie, hoci mu žiadne nebolo prisľúbené. Na základe ich $CONT|%Y$ príspevku do vojny, ak im dáte $PERC|%Y$ z ponuky, budú vám dlžní $AMT|Y$ [favors|e]." # todo: NEW TRANSLATION
+ FAVORS_GAIN_FROM_LAND: "[COUNTRY.GetName] dostane viac územia, než očakával vzhľadom na ich $CONT|%Y$ príspevok do vojny. Ak im dáte $PERC|%Y$ z ponuky, budú vám dlžní $AMT|Y$ [favors|e]." # todo: CHANGED
  TRUST_HIT_FROM_NO_LAND: "[COUNTRY.GetName] dostane menej územia, než očakával z ich $CONT|%Y$ príspevku do vojny, čo znižuje ich [trust|e] o $AMT|-$ a [opinion|e] o $OPINION|+$." # todo: NEW TRANSLATION
  EXPECTS_BIGGER_DEAL: "[COUNTRY.GetName] verí, že by sme od nich mohli vymáhať lepšiu dohodu." # todo: NEW TRANSLATION
  AI_WANTS_PROVINCES: "[COUNTRY.GetName] má záujem o nasledujúce lokality: $LIST$." # todo: NEW TRANSLATION
@@ -204,6 +210,7 @@
  PEACE_OFFER_CLEAR_DEMAND_DESC: "Vymazať mierovú požiadavku pre [PeaceOfferLateralView.GetSelectedParticipant.GetName]." # todo: NEW TRANSLATION
  PEACE_OFFER_SEND_OFFER_BALANCE: "@trigger_no!Nemôžeme odoslať ponuku so záporným zostatkom, naši nepriatelia ju neprijmú!" # todo: NEW TRANSLATION
  PEACE_OFFER_SEND_MAX_WAR_SCORE: "@trigger_no!Nemôžeme odoslať ponuku s celkovou hodnotou presahujúcou maximálne vojnové skóre!" # todo: NEW TRANSLATION
+ PEACE_OFFER_LIMITED_DIPLOMACY: "@trigger_no! [COUNTRY.GetName] nemôže rokovať za seba; rokovať treba s ich [overlord|e]." # todo: NEW TRANSLATION
  PEACE_OFFER_WAR_SCORE_COST: "#T $NAME$#!\nNáklady [peace_cost|e] $VAL|V2$ sú spôsobené:" # todo: NEW TRANSLATION
  PEACE_OFFER_ANTAGONISM_TAKER: "#T $NAME$#!\nTáto [peace_treaty|e] poskytuje [COUNTRY.GetNameWithFlag] základ $VAL|-=2$[antagonism_i] voči iným krajinám z dôvodu:" # todo: NEW TRANSLATION
  PEACE_OFFER_INCDECWARSCORETOOLTIP: "[PeaceOfferWarScoreTreatyGlue.GetIncWarScoreTooltip]\n\n[PeaceOfferWarScoreTreatyGlue.GetDecWarScoreTooltip]" # todo: NEW TRANSLATION
@@ -212,6 +219,13 @@
  PEACE_OFFER_GOLDINFLATIONTOOLTIP: "[PeaceOfferWarScoreTreatyGlue.GetInflationFromTreaty]" # todo: NEW TRANSLATION
  PEACE_OFFER_WITHGOLD: "$DEMANDING_COUNTRY$ dostane [PeaceOfferWarScoreTreatyGlue.GetValue], čo spôsobí zvýšenie o $INFLATION|V2%R$ [inflation|e]." # todo: NEW TRANSLATION
  PEACE_OFFER_WITHOUTGOLD: "Zmluva neobsahuje požiadavku na zlato, preto nemá vplyv na ekonomiku požadujúcej krajiny." # todo: NEW TRANSLATION
+ PEACE_OFFER_NO_WHITE_PEACE: "@trigger_no! [CASUS_BELLI.GetName] NEDOVOLÍ žiadny biely mier!" # todo: NEW TRANSLATION
+ PEACE_OFFER_REQUIRES_PEACE_TREATY: "@trigger_no! [CASUS_BELLI.GetName] vyžaduje $NAME$ [peace_treaty|e], inak nie je možné rokovať o mieri" # todo: NEW TRANSLATION
+ PEACE_OFFER_REQUIRES_PEACE_TREATIES: "@trigger_no! [CASUS_BELLI.GetName] vyžaduje nasledujúce [peace_treaties|e]: $PEACE_TREATIES$" # todo: NEW TRANSLATION
+ PEACE_OFFER_REQUIRES_ATTACKER_PEACE_TREATY: "@trigger_no! Ako útočník vyžaduje [CASUS_BELLI.GetName] $NAME$ [peace_treaty|e], inak nie je možné rokovať o mieri" # todo: NEW TRANSLATION
+ PEACE_OFFER_REQUIRES_ATTACKER_PEACE_TREATIES: "@trigger_no! Ako útočník vyžaduje [CASUS_BELLI.GetName] nasledujúce [peace_treaties|e]: $PEACE_TREATIES$" # todo: NEW TRANSLATION
+ PEACE_OFFER_REQUIRES_DEFENDER_PEACE_TREATY: "@trigger_no! Ako obranca vyžaduje [CASUS_BELLI.GetName] $NAME$ [peace_treaty|e], inak nie je možné rokovať o mieri" # todo: NEW TRANSLATION
+ PEACE_OFFER_REQUIRES_DEFENDER_PEACE_TREATIES: "@trigger_no! Ako obranca vyžaduje [CASUS_BELLI.GetName] nasledujúce [peace_treaties|e]: $PEACE_TREATIES$" # todo: NEW TRANSLATION
  PEACE_TREATY_WARLEADER_FILTER: "[PeaceOfferLateralView.GetSelectedParticipant.GetLongNameWithFlagWithNoTooltip] (vojnový vodca)" # todo: NEW TRANSLATION
  PEACE_TREATY_OFFER: "Návrh zmluvy" # todo: NEW TRANSLATION
  PEACE_TREATY_DEMAND: "Požiadavka zmluvy" # todo: NEW TRANSLATION
@@ -238,10 +252,15 @@
  rtr_demand_occupied_territories_desc: "Žiadať všetky [occupied|e] lokality od cieľovej [country|e]." # todo: NEW TRANSLATION
  rtr_demand_occupied_territories_tt: "Každá [loser.GetAdjective] [location|e] obsadená [winner.GetName] bude zabraná [winner.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  rtr_demand_occupied_territories_no_winner_loser_tt: "Akékoľvek [location|e], ktoré víťaz obsadí od porazeného, sú zabavené." # todo: NEW TRANSLATION
+ rtr_demand_all_chinese_territories: "Požadovať všetky čínske územia" # todo: NEW TRANSLATION
+ rtr_demand_all_chinese_territories_entry: "$rtr_demand_all_chinese_territories$" # todo: NEW TRANSLATION
+ rtr_demand_all_chinese_territories_entry_short: "$rtr_demand_all_chinese_territories$" # todo: NEW TRANSLATION
+ rtr_demand_all_chinese_territories_desc: "Požadovať každú [location|e], ktorú vlastní cieľová [country|e] a ich [subjects|e], vrátane neobsadených území." # todo: NEW TRANSLATION
+ rtr_demand_all_chinese_territories_tt: "Každá [loser.GetAdjective] [location|e] a každá [location|e], ktorú vlastnia [loser.GetName]'s [subjects|e], bude zabavená [winner.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  rtr_demand_complete_annexation: "Žiadať úplnú anexiu" # todo: NEW TRANSLATION
  rtr_demand_complete_annexation_entry: "$rtr_demand_complete_annexation$" # todo: NEW TRANSLATION
  rtr_demand_complete_annexation_entry_short: "$rtr_demand_complete_annexation$" # todo: NEW TRANSLATION
- rtr_demand_complete_annexation_desc: "Len pod jednou zástavou sa môže $china$ navrátiť k pokoju!" # todo: NEW TRANSLATION
+ rtr_demand_complete_annexation_desc: "Len pod jednou zástavou sa môže $china$ vrátiť k mieri! Úplne anektuje cieľovú [country|e] a integruje všetky ich územia — nie je potrebná žiadna okupácia." # todo: CHANGED
  peace_mandate_of_heaven: "Získať mandát nebes" # todo: NEW TRANSLATION
  peace_mandate_of_heaven_entry: "$peace_mandate_of_heaven$" # todo: NEW TRANSLATION
  peace_mandate_of_heaven_entry_short: "$peace_mandate_of_heaven$" # todo: NEW TRANSLATION
@@ -349,6 +368,7 @@
  peace_dismantle_hre_desc: "[GetUniqueInternationalOrganization('hre').GetName] sám bude rozbitý, jeho koruna odhodená a jeho kniežatá ponechané vládnuť samostatne, oslobodené od cisárskych pút." # todo: NEW TRANSLATION
  dissolve_coalition_desc: "Táto liga oportunistov bude rozptýlená, jej členovia skrotení a rozdelení, už viac nespojení proti nám." # todo: NEW TRANSLATION
  dissolve_league_peace_deal_desc: "Ich liga už nebude, jej príčina zničená a jej členovia donútení stáť oddelene v pokoji. To prinesie veľkú zmenu v rovnováhe síl počas [GetSituationByKey('italian_wars').GetName]." # todo: NEW TRANSLATION
+ dissolve_hanseatic_league_peace_deal_desc: "Hanzová liga už prestala byť užitočná a svojím vplyvom v mnohých európskych mestách spôsobuje viac škody než osohu. Všetci podriadení pod Ligou budú oslobodení." # todo: NEW TRANSLATION
  execute_ruler_desc: "Zaplatia najvyššiu cenu za vzdor, popravení naším dekrétom, aby všetci poznali našu moc." # todo: CHANGED
  peace_expand_clan_influence_desc: "Náš klan povstane ešte vyššie, nárokujúci si nové práva a územia na úkor tých, ktorí nám vzdorovali." # todo: NEW TRANSLATION
  peace_force_renounce_ilkhan_claim_desc: "Naši nepriatelia zanechajú všetky nároky na vládu [GetUniqueInternationalOrganization('ilkhanate').GetName], zrieknuc sa dedičstva, ktoré si nepravom prisvojovali." # todo: NEW TRANSLATION

@@ -2,9 +2,12 @@
  balanced_army: "Vyvážená armáda" # todo: NEW TRANSLATION
  balanced_army_desc: "Nastaví vyváženú armádu so zhodnými typmi [regiments|e] v [center|e] aj na [flanks|e]." # todo: NEW TRANSLATION
  cav_inf_cav: "Kavaléria na krídlach" # todo: NEW TRANSLATION
- cav_inf_cav_desc: "Týmto budú [ShowUnitCategoryName('army_cavalry')] na [flanks|e] a [ShowUnitCategoryName('army_infantry')] v [center|e]." # todo: NEW TRANSLATION
+ cav_inf_cav_desc: "Tým sa [ShowUnitCategoryName('army_heavy_cavalry')] a [ShowUnitCategoryName('army_light_cavalry')] umiestnia na [flanks|e], zatiaľ čo [ShowUnitCategoryName('army_heavy_infantry')] a [ShowUnitCategoryName('army_light_infantry')] budú v [center|e]." # todo: CHANGED
  balanced_navy: "Vyvážené námorníctvo" # todo: NEW TRANSLATION
  balanced_navy_desc: "Nastaví vyvážené námorníctvo so zhodnými typmi v [ships|e] v [center|e] aj na [flanks|e]." # todo: NEW TRANSLATION
+ balance_formation_button_name: "Vyvážiť formáciu" # todo: NEW TRANSLATION
+ balance_formation_button_action: "Použiť formáciu: [Unit.GetUnitFormationPreference.GetName]" # todo: NEW TRANSLATION
+ formation_template_button_action: "Zmeniť šablónu vyváženia" # todo: NEW TRANSLATION
  subunit_structure_army_roman: "$TYPE$ $ROMAN$"
  subunit_structure_army_roman_nickname: "$TYPE$ $ROMAN$ $NICKNAME$"
  subunit_structure_army_roman_levy: "$TYPE$"
@@ -112,6 +115,10 @@
  subunit_type_army_infantry_spanish: "Infantería" # todo: NEW TRANSLATION
  subunit_type_army_infantry_north_italian: "Fantaria" # todo: NEW TRANSLATION
  subunit_type_army_infantry_south_italian: "Fanteria" # todo: NEW TRANSLATION
+ subunit_type_army_infantry_neapolitan_dialect: "Fantaria" # todo: NEW TRANSLATION
+ subunit_type_army_infantry_sicilian_dialect: "Fàntaria" # todo: NEW TRANSLATION
+ subunit_type_army_infantry_sardinian_dialect: "Infanteria" # todo: NEW TRANSLATION
+ subunit_type_army_infantry_rhaetian_dialect: "Infantaria" # todo: NEW TRANSLATION
  subunit_type_army_infantry_scottish_gaelic: "Coisichean" # todo: NEW TRANSLATION
  subunit_type_army_infantry_irish: "Coisithe" # todo: NEW TRANSLATION
  subunit_type_army_infantry_scots: "Fute" # todo: NEW TRANSLATION
@@ -173,6 +180,7 @@
  subunit_type_army_cavalry_french: "Cavalerie" # todo: NEW TRANSLATION
  subunit_type_army_cavalry_north_italian: "Cavaleria" # todo: NEW TRANSLATION
  subunit_type_army_cavalry_south_italian: "Cavalleria" # todo: NEW TRANSLATION
+ subunit_type_army_cavalry_neapolitan_dialect: "Cavallarìa" # todo: NEW TRANSLATION
  subunit_type_army_cavalry_scottish_gaelic: "Eachraidh" # todo: NEW TRANSLATION
  subunit_type_army_cavalry_irish: "Marcra" # todo: NEW TRANSLATION
  subunit_type_army_cavalry_english: "Horse" # todo: NEW TRANSLATION
@@ -209,6 +217,8 @@
  subunit_type_army_artillery_french: "Artillerie" # todo: NEW TRANSLATION
  subunit_type_army_artillery_north_italian: "Artiglieria" # todo: NEW TRANSLATION
  subunit_type_army_artillery_south_italian: "Artiglieria" # todo: NEW TRANSLATION
+ subunit_type_army_artillery_sicilian_dialect: "Artigghiaria" # todo: NEW TRANSLATION
+ subunit_type_army_artillery_rhaetian_dialect: "Artilleria" # todo: NEW TRANSLATION
  subunit_type_army_artillery_scottish_gaelic: "Artailéireachd" # todo: NEW TRANSLATION
  subunit_type_army_artillery_irish: "Artileara" # todo: NEW TRANSLATION
  subunit_type_army_artillery_scots: "Artalzary" # todo: NEW TRANSLATION
@@ -243,6 +253,9 @@
  subunit_type_army_auxiliary_french: "Auxiliaire" # todo: NEW TRANSLATION
  subunit_type_army_auxiliary_north_italian: "Ausiliaria" # todo: NEW TRANSLATION
  subunit_type_army_auxiliary_south_italian: "Ausiliari" # todo: NEW TRANSLATION
+ subunit_type_army_auxiliary_neapolitan_dialect: "Ausiliare" # todo: NEW TRANSLATION
+ subunit_type_army_auxiliary_sardinian_dialect: "Ausiliariu" # todo: NEW TRANSLATION
+ subunit_type_army_auxiliary_rhaetian_dialect: "Auxiliar" # todo: NEW TRANSLATION
  subunit_type_army_auxiliary_breton: "Skoazell" # todo: NEW TRANSLATION
  subunit_type_army_auxiliary_welsh: "Cynorthwyol" # todo: NEW TRANSLATION
  subunit_type_army_auxiliary_english: "Auxiliary" # todo: NEW TRANSLATION
@@ -250,13 +263,86 @@
  SUBUNIT_LIMIT_MAX: "Maximálny" # todo: NEW TRANSLATION
  SUBUNIT_LIMIT_MAX_MERC: "#T Hiring Maximum#!\nMaximálny počet [PossibleSubUnitDefinition.GetSubUnitDefinition.GetName], ktorý sa dá najať: #T [PossibleSubUnitDefinition.GetMax]#!" # todo: NEW TRANSLATION
  SUBUNIT_LIMIT_SCALE_WITH_QUALITY: "Závisí od [ShowSocietyDirectionName('quality')] [societal_value|e]" # todo: NEW TRANSLATION
+ SUBUNIT_LIMIT_BASE: "Základ" # todo: NEW TRANSLATION
+ ROMAN_CULTURE_PERCENTAGE: "Podiel obyvateľov rímskej kultúry" # todo: NEW TRANSLATION
+ GREEK_CULTURE_PERCENTAGE: "Podiel obyvateľov gréckej kultúry" # todo: NEW TRANSLATION
  SUBUNIT_LIMIT_MIN: "#T Hiring Minimum#!\nMinimálny počet, ktorý sa dá najať." # todo: NEW TRANSLATION
  ST: "."
  ND: "."
  TH: "."
  RD: "."
  ARMY_NAME: "$NUM$$ORDER$ armáda"
+ ARMY_NAME_roman: "Legio $ROMAN$" # todo: NEW TRANSLATION
+ ARMY_NAME_french: "$ORDINAL$ Armée" # todo: NEW TRANSLATION
+ ARMY_NAME_occitan: "$ORDINAL$ Armada" # todo: NEW TRANSLATION
+ ARMY_NAME_breton: "$ORDINAL$ Arme" # todo: NEW TRANSLATION
+ ARMY_NAME_brythonic: "$ORDINAL$ Llu" # todo: NEW TRANSLATION
+ ARMY_NAME_scottish: "$ORDINAL$ Feachd" # todo: NEW TRANSLATION
+ ARMY_NAME_irish: "$ORDINAL$ Feachtas" # todo: NEW TRANSLATION
+ ARMY_NAME_dutch: "$NUM$. Leger" # todo: NEW TRANSLATION
+ ARMY_NAME_german: "$NUM$. Heer" # todo: NEW TRANSLATION
+ ARMY_NAME_frisian: "$NUM$. Hear" # todo: NEW TRANSLATION
+ ARMY_NAME_spanish: "$ORDINAL$ Ejército" # todo: NEW TRANSLATION
+ ARMY_NAME_italian: "$ORDINAL$ Esercito" # todo: NEW TRANSLATION
+ ARMY_NAME_portuguese: "$ORDINAL$ Exército" # todo: NEW TRANSLATION
+ ARMY_NAME_swedish: "$ORDINAL$ Armén" # todo: NEW TRANSLATION
+ ARMY_NAME_norwegian: "$ORDINAL$ Hæren" # todo: NEW TRANSLATION
+ ARMY_NAME_danish: "$ORDINAL$ Hæren" # todo: NEW TRANSLATION
+ ARMY_NAME_icelandic: "$ORDINAL$ Her" # todo: NEW TRANSLATION
+ ARMY_NAME_scandinavian: "$ORDINAL$ Hær" # todo: NEW TRANSLATION
+ ARMY_NAME_greek: "$ORDINAL$ Stratia" # todo: NEW TRANSLATION
+ ARMY_NAME_arabic: "Jaysh $NUM$" # todo: NEW TRANSLATION
+ ARMY_NAME_turkish: "$NUM$. Ordu" # todo: NEW TRANSLATION
+ ARMY_NAME_persian: "$NUM$. Sepah" # todo: NEW TRANSLATION
+ ARMY_NAME_mongol: "$NUM$. Tümen" # todo: NEW TRANSLATION
+ ARMY_NAME_east_slavic: "$ORDINAL$ Rati" # todo: NEW TRANSLATION
+ ARMY_NAME_belarusian: "$ORDINAL$ Voyska" # todo: NEW TRANSLATION
+ ARMY_NAME_ukrainian: "$ORDINAL$ Viysko" # todo: NEW TRANSLATION
+ ARMY_NAME_bulgarian: "$ORDINAL$ Voiska" # todo: NEW TRANSLATION
+ ARMY_NAME_polish: "$NUM$. Wojsko" # todo: NEW TRANSLATION
+ ARMY_NAME_czech: "$NUM$. Vojsko" # todo: NEW TRANSLATION
+ ARMY_NAME_hungarian: "$NUM$. Hadsereg" # todo: NEW TRANSLATION
+ ARMY_NAME_albanian: "$NUM$. Ushtri" # todo: NEW TRANSLATION
+ ARMY_NAME_basque: "$NUM$. Gudaroste" # todo: NEW TRANSLATION
+ ARMY_NAME_lithuanian: "$NUM$. Kariuomenė" # todo: NEW TRANSLATION
+ ARMY_NAME_tamazight: "Tagmart $NUM$" # todo: NEW TRANSLATION
  NAVY_NAME: "$NUM$$ORDER$ námorníctvo"
+ NAVY_NAME_roman: "Classis $ROMAN$" # todo: NEW TRANSLATION
+ NAVY_NAME_french: "$ORDINAL$ Flotte" # todo: NEW TRANSLATION
+ NAVY_NAME_occitan: "$ORDINAL$ Estòl" # todo: NEW TRANSLATION
+ NAVY_NAME_breton: "$ORDINAL$ Flot" # todo: NEW TRANSLATION
+ NAVY_NAME_brythonic: "$ORDINAL$ Llynges" # todo: NEW TRANSLATION
+ NAVY_NAME_scottish: "$ORDINAL$ Cobhlach" # todo: NEW TRANSLATION
+ NAVY_NAME_irish: "$ORDINAL$ Cabhlach" # todo: NEW TRANSLATION
+ NAVY_NAME_dutch: "$NUM$. Vloot" # todo: NEW TRANSLATION
+ NAVY_NAME_german: "$NUM$. Flotte" # todo: NEW TRANSLATION
+ NAVY_NAME_frisian: "$NUM$. Floot" # todo: NEW TRANSLATION
+ ARMY_NAME_english: "$ORDINAL$ Army" # todo: NEW TRANSLATION
+ NAVY_NAME_english: "$ORDINAL$ Fleet" # todo: NEW TRANSLATION
+ NAVY_NAME_spanish: "$ORDINAL$ Armada" # todo: NEW TRANSLATION
+ NAVY_NAME_italian: "$ORDINAL$ Flotta" # todo: NEW TRANSLATION
+ NAVY_NAME_portuguese: "$ORDINAL$ Armada" # todo: NEW TRANSLATION
+ NAVY_NAME_swedish: "$ORDINAL$ Flottan" # todo: NEW TRANSLATION
+ NAVY_NAME_norwegian: "$ORDINAL$ Flåten" # todo: NEW TRANSLATION
+ NAVY_NAME_danish: "$ORDINAL$ Flåden" # todo: NEW TRANSLATION
+ NAVY_NAME_icelandic: "$ORDINAL$ Floti" # todo: NEW TRANSLATION
+ NAVY_NAME_scandinavian: "$ORDINAL$ Flote" # todo: NEW TRANSLATION
+ NAVY_NAME_greek: "$ORDINAL$ Droungos" # todo: NEW TRANSLATION
+ NAVY_NAME_arabic: "Ustuul $NUM$" # todo: NEW TRANSLATION
+ NAVY_NAME_turkish: "$NUM$. Donanma" # todo: NEW TRANSLATION
+ NAVY_NAME_persian: "$NUM$. Navgân" # todo: NEW TRANSLATION
+ NAVY_NAME_mongol: "$NUM$. Tsereg" # todo: NEW TRANSLATION
+ NAVY_NAME_east_slavic: "$ORDINAL$ Flot" # todo: NEW TRANSLATION
+ NAVY_NAME_belarusian: "$ORDINAL$ Flota" # todo: NEW TRANSLATION
+ NAVY_NAME_ukrainian: "$ORDINAL$ Flota" # todo: NEW TRANSLATION
+ NAVY_NAME_bulgarian: "$ORDINAL$ Flota" # todo: NEW TRANSLATION
+ NAVY_NAME_polish: "$NUM$. Flota" # todo: NEW TRANSLATION
+ NAVY_NAME_czech: "$NUM$. Flotila" # todo: NEW TRANSLATION
+ NAVY_NAME_hungarian: "$NUM$. Hajóhad" # todo: NEW TRANSLATION
+ NAVY_NAME_albanian: "$NUM$. Flotë" # todo: NEW TRANSLATION
+ NAVY_NAME_basque: "$NUM$. Ontzidia" # todo: NEW TRANSLATION
+ NAVY_NAME_lithuanian: "$NUM$. Laivynas" # todo: NEW TRANSLATION
+ NAVY_NAME_tamazight: "Ilel $NUM$" # todo: NEW TRANSLATION
  REGIMENT_NAME: "$HOME$'s $NUM$$ORDER$ pluk"
  RANDOM_LAND_MERCENARY_NAME0: "$LOCATION_NAME$ Modrá armáda"
  RANDOM_LAND_MERCENARY_NAME1: "$LOCATION_ADJ$ rytieri" # todo: NEW TRANSLATION
@@ -284,18 +370,22 @@
  RANDOM_NAVAL_MERCENARY_NAME3: "$LOCATION_NAME$ bukanieri" # todo: NEW TRANSLATION
  SUB_UNIT_IMPRISONED: "Uväznené - patrí [COUNTRY.GetName]" # todo: NEW TRANSLATION
  SUB_UNIT_IMPRISONED_TITLE: "Uväznená jednotka" # todo: NEW TRANSLATION
- army_infantry: "Pechota" # todo: NEW TRANSLATION
- army_cavalry: "Kavaléria" # todo: NEW TRANSLATION
+ army_light_infantry: "Ľahká pechota" # todo: NEW TRANSLATION
+ army_light_cavalry: "Ľahká jazda" # todo: NEW TRANSLATION
+ army_heavy_infantry: "Ťažká pechota" # todo: NEW TRANSLATION
+ army_heavy_cavalry: "Ťažká jazda" # todo: NEW TRANSLATION
  army_artillery: "Delostrelectvo" # todo: NEW TRANSLATION
  army_auxiliary: "Pomocné" # todo: NEW TRANSLATION
  navy_galley: "Galéra" # todo: NEW TRANSLATION
  navy_heavy_ship: "Ťažká loď" # todo: NEW TRANSLATION
  navy_light_ship: "Ľahká loď" # todo: NEW TRANSLATION
  navy_transport: "Transportná loď" # todo: NEW TRANSLATION
- army_artillery_desc: "Dostreľové zbrane obsluhované posádkou špecialistov, ktoré vystreľujú projektily predovšetkým určené na prerážanie a ničenie opevnení." # todo: NEW TRANSLATION
- army_auxiliary_desc: "Pomocné jednotky sú mimoriadne rozmanité jednotky, ktorých účelom je podporovať hlavné sily armády." # todo: NEW TRANSLATION
- army_cavalry_desc: "Kavaléria sú jednotky jazdcov na koňoch, charakterizované mimoriadnou pohyblivosťou a nárazovou silou." # todo: NEW TRANSLATION
- army_infantry_desc: "Pechota sú pešie jednotky, ktoré obyčajne tvoria jadro pravidelných armád." # todo: NEW TRANSLATION
+ army_artillery_desc: "Strelné zbrane obsluhované posádkou špecialistov, ktoré vypúšťajú projektily hlavne určené na prerazenie a zničenie opevnení." # todo: CHANGED
+ army_auxiliary_desc: "Pomocné jednotky sú veľmi rôznorodá skupina jednotiek, ktorých účelom je podporovať hlavné bojové zložky armády." # todo: CHANGED
+ army_light_cavalry_desc: "Ľahká jazda sú jazdecké jednotky charakterizované svojou extrémnou mobilitou." # todo: NEW TRANSLATION
+ army_heavy_cavalry_desc: "Ťažká jazda sú jazdecké jednotky charakterizované svojou šokovou silou." # todo: NEW TRANSLATION
+ army_light_infantry_desc: "Ľahká pechota sú pešie jednotky, ktoré väčšinou používajú diaľkové zbrane a často slúžia ako streľci." # todo: NEW TRANSLATION
+ army_heavy_infantry_desc: "Ťažká pechota sú pešie jednotky, ktoré zvyčajne tvoria väčšinu pravidelných armád." # todo: NEW TRANSLATION
  navy_galley_desc: "Galéry sú plavidlá s plytkým ponorom, poháňané hlavne veslami, a primárne sa používajú v pobrežných vodách." # todo: NEW TRANSLATION
  navy_heavy_ship_desc: "Ťažké lode sú veľké plavidlá vybavené viacerými stěžňami a niekoľkými palubami, používané na vedenie vojny a projekciu moci po celom svete." # todo: NEW TRANSLATION
  navy_light_ship_desc: "Ľahké lode sú malé a relatívne lacné plavidlá s plytkým kýlom, zamerané na rýchlosť, obratnosť a jednoduché ovládanie." # todo: NEW TRANSLATION
@@ -422,28 +512,40 @@
  n_long_fada_2_desc: "Vylepšený $n_long_fada$, $n_long_fada_2$ je väčšie plavidlo s viacerými veslami a väčšou posádkou, schopné vykonávať dlhšie plavby a prejaviť väčšiu moc na moriach." # todo: NEW TRANSLATION
  n_birlinn: "Birlinn" # todo: NEW TRANSLATION
  n_birlinn_desc: "Ľahké galeje patriace miestnym náčelníkom spájajú naše ostrovy, ale v čase vojny ich možno povolať do služby." # todo: NEW TRANSLATION
- a_age_1_traditions_infantry: "Vek tradícií – Pechota" # todo: NEW TRANSLATION
- a_age_1_traditions_cavalry: "Vek tradícií – Jazda" # todo: NEW TRANSLATION
+ a_age_1_traditions_light_infantry: "Vek tradícií — ľahká pechota" # todo: NEW TRANSLATION
+ a_age_1_traditions_heavy_infantry: "Vek tradícií — ťažká pechota" # todo: NEW TRANSLATION
+ a_age_1_traditions_light_cavalry: "Vek tradícií — ľahká jazda" # todo: NEW TRANSLATION
+ a_age_1_traditions_heavy_cavalry: "Vek tradícií — ťažká jazda" # todo: NEW TRANSLATION
  a_age_1_traditions_auxiliary: "Vek tradícií – Podporné jednotky" # todo: NEW TRANSLATION
  a_age_1_traditions_artillery: "Vek tradícií – Artiléria" # todo: NEW TRANSLATION
- a_age_2_renaissance_infantry: "Vek renesancie – Pechota" # todo: NEW TRANSLATION
- a_age_2_renaissance_cavalry: "Vek renesancie – Jazda" # todo: NEW TRANSLATION
+ a_age_2_renaissance_light_infantry: "Vek renesancie — ľahká pechota" # todo: NEW TRANSLATION
+ a_age_2_renaissance_heavy_infantry: "Vek renesancie — ťažká pechota" # todo: NEW TRANSLATION
+ a_age_2_renaissance_light_cavalry: "Vek renesancie — ľahká jazda" # todo: NEW TRANSLATION
+ a_age_2_renaissance_heavy_cavalry: "Vek renesancie — ťažká jazda" # todo: NEW TRANSLATION
  a_age_2_renaissance_auxiliary: "Vek renesancie – Podporné jednotky" # todo: NEW TRANSLATION
  a_age_2_renaissance_artillery: "Vek renesancie – Artiléria" # todo: NEW TRANSLATION
- a_age_3_discovery_infantry: "Vek objavov – Pechota" # todo: NEW TRANSLATION
- a_age_3_discovery_cavalry: "Vek objavov – Jazda" # todo: NEW TRANSLATION
+ a_age_3_discovery_light_infantry: "Vek objavov — ľahká pechota" # todo: NEW TRANSLATION
+ a_age_3_discovery_heavy_infantry: "Vek objavov — ťažká pechota" # todo: NEW TRANSLATION
+ a_age_3_discovery_light_cavalry: "Vek objavov — ľahká jazda" # todo: NEW TRANSLATION
+ a_age_3_discovery_heavy_cavalry: "Vek objavov — ťažká jazda" # todo: NEW TRANSLATION
  a_age_3_discovery_auxiliary: "Vek objavov – Podporné jednotky" # todo: NEW TRANSLATION
  a_age_3_discovery_artillery: "Vek objavov – Artiléria" # todo: NEW TRANSLATION
- a_age_4_reformation_infantry: "Vek reformácie – Pechota" # todo: NEW TRANSLATION
- a_age_4_reformation_cavalry: "Vek reformácie – Jazda" # todo: NEW TRANSLATION
+ a_age_4_reformation_light_infantry: "Vek reformácie — ľahká pechota" # todo: NEW TRANSLATION
+ a_age_4_reformation_heavy_infantry: "Vek reformácie — ťažká pechota" # todo: NEW TRANSLATION
+ a_age_4_reformation_light_cavalry: "Vek reformácie — ľahká jazda" # todo: NEW TRANSLATION
+ a_age_4_reformation_heavy_cavalry: "Vek reformácie — ťažká jazda" # todo: NEW TRANSLATION
  a_age_4_reformation_auxiliary: "Vek reformácie – Podporné jednotky" # todo: NEW TRANSLATION
  a_age_4_reformation_artillery: "Vek reformácie – Artiléria" # todo: NEW TRANSLATION
- a_age_5_absolutism_infantry: "Vek absolutizmu – Pechota" # todo: NEW TRANSLATION
- a_age_5_absolutism_cavalry: "Vek absolutizmu – Jazda" # todo: NEW TRANSLATION
+ a_age_5_absolutism_light_infantry: "Vek absolutizmu — ľahká pechota" # todo: NEW TRANSLATION
+ a_age_5_absolutism_heavy_infantry: "Vek absolutizmu — ťažká pechota" # todo: NEW TRANSLATION
+ a_age_5_absolutism_light_cavalry: "Vek absolutizmu — ľahká jazda" # todo: NEW TRANSLATION
+ a_age_5_absolutism_heavy_cavalry: "Vek absolutizmu — ťažká jazda" # todo: NEW TRANSLATION
  a_age_5_absolutism_auxiliary: "Vek absolutizmu – Podporné jednotky" # todo: NEW TRANSLATION
  a_age_5_absolutism_artillery: "Vek absolutizmu – Artiléria" # todo: NEW TRANSLATION
- a_age_6_revolutions_infantry: "Vek revolúcií – Pechota" # todo: NEW TRANSLATION
- a_age_6_revolutions_cavalry: "Vek revolúcií – Jazda" # todo: NEW TRANSLATION
+ a_age_6_revolutions_light_infantry: "Vek revolúcií — ľahká pechota" # todo: NEW TRANSLATION
+ a_age_6_revolutions_heavy_infantry: "Vek revolúcií — ťažká pechota" # todo: NEW TRANSLATION
+ a_age_6_revolutions_light_cavalry: "Vek revolúcií — ľahká jazda" # todo: NEW TRANSLATION
+ a_age_6_revolutions_heavy_cavalry: "Vek revolúcií — ťažká jazda" # todo: NEW TRANSLATION
  a_age_6_revolutions_auxiliary: "Vek revolúcií – Podporné jednotky" # todo: NEW TRANSLATION
  a_age_6_revolutions_artillery: "Vek revolúcií – Artiléria" # todo: NEW TRANSLATION
  a_warriors: "Bojovníci" # todo: NEW TRANSLATION
@@ -594,6 +696,8 @@
  a_houfnice_desc: "Predpokladá sa, že moderné húfnice dostali svoje meno podľa houfníc vyvinutých husitmi v 15. storočí. Tieto delá s krátkou hlavňou boli namontované na vozoch a používané na bojisku na vystreľovanie gulí a kanistrového streliva na podporu pechoty." # todo: CHANGED
  a_serbian_hussars: "Srbskí husári" # todo: NEW TRANSLATION
  a_serbian_hussars_desc: "Husári sú ľahká jazda, ktorej pôvod možno vystopovať v družinách srbských jazdcov. Ich ľahké brnenie a rýchle kone im umožňujú prekabátiť akýkoľvek iný pluk a otvárajú cestu k rozvoju inovatívnych stratégií." # todo: NEW TRANSLATION
+ a_hajduk: "Hajduk" # todo: NEW TRANSLATION
+ a_hajduk_desc: "$a_hajduk$ sú ľahká pechota bežná v $balkan_region$ a okolitých oblastiach. Pôsobia ako autonómne bandy, títo pohraničníci sú často vytlačení do hôr daňovým utláčaním, právnymi sporami alebo túžbou po vojenskej sláve, špecializujú sa na narúšanie zásobovacích liniek a prepady daňových konvojov." # todo: NEW TRANSLATION
  a_peasant_levy: "Roľnícka domobrana" # todo: NEW TRANSLATION
  a_peasant_levy_desc: "$a_peasant_levy$ je zložená z bežných ľudí povolaných na vojenskú službu svojím pánom. Muži majú priniesť vlastnú výzbroj, takže kvalita novo vytvorených jednotiek môže veľmi kolísať." # todo: NEW TRANSLATION
  a_supply_carts: "Zásobovacie vozy" # todo: NEW TRANSLATION
@@ -773,7 +877,7 @@
  normal_training: "Normálne" # todo: NEW TRANSLATION
  elite_training: "Doplnkové" # todo: NEW TRANSLATION
  rushed_training: "Urýchlené" # todo: NEW TRANSLATION
- normal_navy_method: "Normálne" # todo: NEW TRANSLATION
+ normal_navy_method: "Normálne (námorné)" # todo: CHANGED
  normal_training_desc: "Toto je predvolený spôsob výcviku [regiment|e]." # todo: NEW TRANSLATION
  elite_training_desc: "Vojaci v [regiments|e] získajú viac [experience|e], za cenu dlhšieho výcviku." # todo: NEW TRANSLATION
  rushed_training_desc: "Tieto [regiments|e] nebudú dokonca ani na plnej sile [maximum_strength|e], než budú nasadené." # todo: NEW TRANSLATION
@@ -858,10 +962,10 @@
  STAT_CLIMATE_IMPACT: "[CLIMATE.GetIcon][CLIMATE.GetNameNoUnderline]: $VAL|=-2%$" # todo: NEW TRANSLATION
  STAT_TOPOGRAPHY_IMPACT: "[TOPOGRAPHY.GetIcon][TOPOGRAPHY.GetNameNoUnderline]: $VAL|=-2%$" # todo: NEW TRANSLATION
  STAT_VEGETATION_IMPACT: "[VEGETATION.GetIcon][VEGETATION.GetNameNoUnderline]: $VAL|=-2%$" # todo: NEW TRANSLATION
- STAT_TITLE_UNIT: ""Terén";"Pohyb";"Boj"" # todo: NEW TRANSLATION
- STAT_CLIMATE_UNIT: ""[CLIMATE.GetIcon][CLIMATE.GetNameNoUnderline]";"$VAL1|=-2%$";"$VAL2|=+2%$"" # todo: NEW TRANSLATION
- STAT_TOPOGRAPHY_UNIT: ""[TOPOGRAPHY.GetIcon][TOPOGRAPHY.GetNameNoUnderline]";"$VAL1|=-2%$";"$VAL2|=+2%$"" # todo: NEW TRANSLATION
- STAT_VEGETATION_UNIT: ""[VEGETATION.GetIcon][VEGETATION.GetNameNoUnderline]";"$VAL1|=-2%$";"$VAL2|=+2%$"" # todo: NEW TRANSLATION
+ STAT_TITLE_UNIT: "#col Terén#! #col Pohyb#! #col Boj#!" # todo: CHANGED
+ STAT_CLIMATE_UNIT: "#col [CLIMATE.GetIcon][CLIMATE.GetNameNoUnderline]#! #col $VAL1|=-2%$#! #col $VAL2|=+2%$#!" # todo: CHANGED
+ STAT_TOPOGRAPHY_UNIT: "#col [TOPOGRAPHY.GetIcon][TOPOGRAPHY.GetNameNoUnderline]#! #col $VAL1|=-2%$#! #col $VAL2|=+2%$#!" # todo: CHANGED
+ STAT_VEGETATION_UNIT: "#col [VEGETATION.GetIcon][VEGETATION.GetNameNoUnderline]#! #col $VAL1|=-2%$#! #col $VAL2|=+2%$#!" # todo: CHANGED
  COPIED_FROM_COMPARISON: "[SUBUNITDEFINITION.GetName] majú $VAL$ [$NAME$|e] v porovnaní s $ORIG$ základnej [TARGET_SUBUNITDEFINITION.GetNameWithNoTooltip]." # todo: CHANGED
  SUBUNITYPE_COMBAT_TT_TITLE: "Bojový výkon" # todo: NEW TRANSLATION
  SUBUNITYPE_IMPACT_TT_TITLE: "Vplyv terénu" # todo: NEW TRANSLATION
@@ -881,18 +985,18 @@
  SUBUNIT_MAINTENANCE_COST: "$NUM$ [SUBUNITDEFINITION.GetName] Údržba: #TOOLTIP:$UNIT_BREAKDOWN_TAG$ $VALUE|<2-=$@gold!#!" # todo: NEW TRANSLATION
  INDIVIDUAL_SUBUNIT_MAINTENANCE_COST: "[SUBUNIT.GetName] Údržba: #TOOLTIP:$UNIT_BREAKDOWN_TAG$ $VALUE|<2-=$@gold!#!\n" # todo: NEW TRANSLATION
  ALL_SUBUNITS_MAINTENANCE_COST_HEADER: "Náklady na údržbu sú $BASE_COST|<2-=$@gold! z dôvodu:" # todo: NEW TRANSLATION
- SUBUNIT_MAINTENANCE_COST_PERCENT_ENTRY: "$NAME$: $VALUE|%2-=$" # todo: NEW TRANSLATION
- SUBUNIT_MAINTENANCE_COST_PERCENT_MULTIPLIER_ENTRY: "$NAME$: $VALUE|%2$" # todo: NEW TRANSLATION
+ SUBUNIT_MAINTENANCE_EFFICIENCY: "$NAME$ pri #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%2+=L$#!: $DIV|-=%$" # todo: NEW TRANSLATION
+ SUBUNIT_MAINTENANCE_COST_PERCENT_MULTIPLIER_ENTRY: "$NAME$: x$VALUE|2$" # todo: CHANGED
  SUBUNIT_REPAIR_COST: "$NUM$ [SUBUNITDEFINITION.GetName] Doplnenie a oprava: $VALUE|<2-=$@gold!" # todo: NEW TRANSLATION
  PRISONERS_MAINTENANCE_FACTOR: "Udržiavanie zajatcov" # todo: NEW TRANSLATION
  MOTHBALL_MAINTENANCE_FACTOR: "Údržba odstavených" # todo: NEW TRANSLATION
- SUBUNIT_MAINTENANCE_FACTOR: "Investícia do údržby" # todo: NEW TRANSLATION
+ SUBUNIT_MAINTENANCE_FACTOR: "Investícia do údržby: $VALUE|%2V$" # todo: CHANGED
  REINFORCEMENT_RATE: "Miera doplnenia" # todo: NEW TRANSLATION
  REINFORCE_SPEED: "Rýchlosť doplnenia v [SubUnit.GetUnit.GetLocation.GetName]" # todo: NEW TRANSLATION
  REPAIR_SPEED: "Rýchlosť opravy" # todo: NEW TRANSLATION
  REPAIR_SPEED_IN_LOC: "$REPAIR_SPEED$ v [SubUnit.GetUnit.GetLocation.GetName]" # todo: NEW TRANSLATION
  REPAIR_REGIMENT_IS_LEVY: "Tento [regiment|e] je [levy|e] a nebude sa [reinforce|e]." # todo: NEW TRANSLATION
- REPAIR_REGIMENT_IS_MERCENARY: "Tento [regiment|e] je [mercenary|e] a nebude sa [reinforce|e]." # todo: NEW TRANSLATION
+ REPAIR_REGIMENT_IS_MERCENARY: "Tento [regiment|e] je [mercenary|e] a preto sa nebude [reinforce|e]." # todo: CHANGED
  SUBUNIT_STRENGTH_HEADER: "Aktuálna sila" # todo: NEW TRANSLATION
  SHIP_UNDAMAGDE: "Táto [ship|e] je úplne nepoškodená." # todo: NEW TRANSLATION
  FULL_REGIMENT: "Tento [regiment|e] má všetkých svojich mužov." # todo: NEW TRANSLATION
@@ -978,7 +1082,7 @@
  FRONTAGE_USAGE_HEAD: "Aktuálne využívaná frontáž $VAL|2V$ z dôvodu:" # todo: NEW TRANSLATION
  MAX_FRONTAGE_LABEL_TT: "#T Maximálna frontáž#!\nMaximálna frontáž je $VAL|2V$ z dôvodu:" # todo: NEW TRANSLATION
  FRONTAGE_USAGE: "Využitie frontáže" # todo: NEW TRANSLATION
- FRONTAGE_USAGE_ENTRY: ""[SUBUNIT.GetDefinition.GetCategory.GetIcon] [SUBUNIT.GetTypeIcon] [SUBUNIT.GetName]";"[SUBUNIT.GetDefinition.GetName]"#M;"[SUBUNIT.GetStat('frontage')] [frontage_icon]";"[SUBUNIT.GetStrength] [SelectLocalization(SUBUNIT.IsRegiment, '@army_strength!', '@navy_strength!')]"" # todo: NEW TRANSLATION
+ FRONTAGE_USAGE_ENTRY: "#col [SUBUNIT.GetDefinition.GetCategory.GetIcon] [SUBUNIT.GetTypeIcon] [SUBUNIT.GetName]#! #col_m [SUBUNIT.GetDefinition.GetName]#! #col [SUBUNIT.GetStat('frontage')] [frontage_icon]#! #col [SUBUNIT.GetStrength] [SelectLocalization(SUBUNIT.IsRegiment, '@army_strength!', '@navy_strength!')]#!" # todo: CHANGED
  CURRENT_MORALE_IN_TT: "Aktuálna morálka" # todo: NEW TRANSLATION
  MONTHLY_MORALE_IN_TT: "Denná zmena" # todo: NEW TRANSLATION
  MAX_MORALE_IN_TT: "Maximálna morálka" # todo: NEW TRANSLATION
@@ -1019,7 +1123,7 @@
  ESTIMATE_ARIVAL: "Príde do $PROV|Y$ dňa $DATE|Y$" # todo: NEW TRANSLATION
  DEFINITE_ESTIMATE_ARIVAL: "Príde do [TARGET_LOCATION.GetNameWithNoTooltip] dňa $DATE|Y$" # todo: NEW TRANSLATION
  POSSIBLE_ESTIMATE_ARIVAL: "Prišiel by do [TARGET_LOCATION.GetNameWithNoTooltip] dňa $DATE|Y$" # todo: NEW TRANSLATION
- RAISE_LEVY_TYPE: ""[SUBUNITDEFINITION.GetCategory.GetIcon] [SUBUNITDEFINITION.GetName]";"";"";""#M" # todo: CHANGED
+ RAISE_LEVY_TYPE: "#col[SUBUNITDEFINITION.GetCategory.GetIcon] [SUBUNITDEFINITION.GetName]#! #col #! #col #! #col_m #!" # todo: CHANGED
  POSSIBLE_ESTIMATE_ARIVAL_LOCKED: "Pohyb je uzamknutý, takže po príchode do [LOCATION.GetName] by dorazil do [TARGET_LOCATION.GetNameWithNoTooltip] dňa $DATE|Y$" # todo: NEW TRANSLATION
  NAVY_HIDDEN_SIMPLE_TOOLTIP: "#T Skrytá flotila#! [UnitMarkerItem.GetHiddenTooltip]" # todo: NEW TRANSLATION
  ARMY_HIDDEN_SIMPLE_TOOLTIP: "#T Skrytá armáda#! [UnitMarkerItem.GetHiddenTooltip]" # todo: NEW TRANSLATION
@@ -1027,6 +1131,7 @@
  NAVY_HIDDEN_CONCEPT: "[navy|E]" # todo: NEW TRANSLATION
  ADJ_WASTELAND_NAME: "nenazvaná pustatina" # todo: NEW TRANSLATION
  UNIT_IS_EXILED_TT: "Jednotka je momentálne v [exile|E], čo znamená, že nebude schopná obliehať ani bojovať, kým ju nepresunieme späť na priateľské územie!" # todo: NEW TRANSLATION
+ UNIT_IS_EXILED_SHORT_TT: "Jednotka sa momentálne nachádza v [exile|E]." # todo: NEW TRANSLATION
  UNIT_IS_RETREAT_TT: "#T Unit Retreating #! Jednotka je v [retreat|e]" # todo: NEW TRANSLATION
  UNIT_IS_SWIMMING_TO_SAFETY_TT: "Pláva do bezpečia!" # todo: NEW TRANSLATION
  UNIT_IS_SHAT_RETREAT_TT: "[retreating|e] do $WHERE|Y$" # todo: NEW TRANSLATION
@@ -1130,6 +1235,7 @@
  COMBAT_RIVER_CROSSING: "[river_crossing|e] penalizácia na [attacker|e]." # todo: NEW TRANSLATION
  COMBAT_STRAIT_CROSSING: "[strait_crossing|e] penalizácia na [attacker|e]." # todo: NEW TRANSLATION
  COMBAT_SEA_LANDING: "[sea_landing|e] penalizácia na [attacker|e]." # todo: NEW TRANSLATION
+ COMBAT_COMMANDER: "Bojový bonus veliteľa." # todo: NEW TRANSLATION
  COMBAT_ASSAULT: "Útok" # todo: NEW TRANSLATION
  COMBAT_MODIFIER_DICE: "Hod kockami" # todo: NEW TRANSLATION
  COMBAT_MODIFIER_SHOCK: "Šok" # todo: NEW TRANSLATION
@@ -1139,6 +1245,7 @@
  COMBAT_MODIFIER_RIVER_CROSSING: "$BULLET_WITH_TAB$[river_crossing|e] penalizácia" # todo: NEW TRANSLATION
  COMBAT_MODIFIER_STRAIT_CROSSING: "$BULLET_WITH_TAB$[strait_crossing|e] penalizácia" # todo: NEW TRANSLATION
  COMBAT_MODIFIER_SEA_LANDING: "$BULLET_WITH_TAB$[sea_landing|e] penalizácia" # todo: NEW TRANSLATION
+ COMBAT_MODIFIER_COMMANDER: "$BULLET_WITH_TAB$Bonus veliteľa" # todo: NEW TRANSLATION
  COMBAT_MODIFIER_ASSAULT: "Útok" # todo: NEW TRANSLATION
  RETREATED_UNITS_BATTLE_SIDE: "Jednotky ustúpili" # todo: NEW TRANSLATION
  IMPRISONED_UNITS_BATTLE_SIDE: "Zajatci" # todo: NEW TRANSLATION
@@ -1175,7 +1282,7 @@
  CFI_INITIAIVE_HOUR: "$HOUR|V$ hodín v boji: $VAL|+=2%$" # todo: NEW TRANSLATION
  CFI_UNIT_SUB: "[SUBUNITDEFINITION.GetName] [initiative|e]: $VAL|2G$" # todo: NEW TRANSLATION
  CFI_UNIT_DETAIL: "#T Celkom $VAL|2$ iniciatívy#!\nKaždý bod [initiative|e] dáva $SCALE|2%V$ šancu." # todo: NEW TRANSLATION
- CFCS_UNIT_DETAIL: "#T Celkom $VAL|2$ bojovej rýchlosti#!\nKaždý bod [combat_speed|e] dáva $SCALE|2%V$ šancu." # todo: NEW TRANSLATION
+ CFCS_UNIT_DETAIL: "#T Spolu $VAL|2$ bojovej rýchlosti#!\nKaždý bod [combat_speed|e] poskytuje $SCALE|2%V$ šancu opustiť rezervy.\nIba pluky s najvyšším [combat_power|e] — až do dostupného [frontage|e] — sú každý hodinu oprávnené hodiť." # todo: CHANGED
  CFCS_UNIT_SUB: "[SUBUNITDEFINITION.GetName] [combat_speed|e]: $VAL|2G$" # todo: NEW TRANSLATION
  SUB_COM_BOMB_NOT: "[SUBUNITCATEGORY.GetName] nemôže spôsobovať škodu počas: #R $bombard_PHASE$#!" # todo: NEW TRANSLATION
  COMBATTOOLTIP_WE_MANY_L: "Napádajú nás: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|G$ pluky#!" # todo: NEW TRANSLATION
@@ -1201,6 +1308,8 @@
  CT_MORALE_DAMAGE: "$IMPACT|+=2$[morale_icon]" # todo: NEW TRANSLATION
  CT_IMPACT_ON_DISCIPLINE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%$ [discipline|e]#!: $DAMAGE$" # todo: NEW TRANSLATION
  UNIT_BREAKDOWN_DISCIPLINE: "Disciplína pluku\n[discipline|e] $VAL|+=%$ z dôvodu:" # todo: NEW TRANSLATION
+ CT_IMPACT_ON_TARGET_DISCIPLINE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%$ [discipline|e] cieľa#!: $DAMAGE$" # todo: NEW TRANSLATION
+ UNIT_BREAKDOWN_TARGET_DISCIPLINE: "Disciplína pluku\n[discipline|e] $VAL|+=%$ z dôvodu:" # todo: NEW TRANSLATION
  CT_IMPACT_ON_VS_RELIGION: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%$ vs [TARGET_SUBUNIT.GetController.GetReligion]#!: $DAMAGE$" # todo: NEW TRANSLATION
  UNIT_BREAKDOWN_VS_RELIGION: "Náboženské zanietenie\n$VAL|+=%$ voči [TARGET_SUBUNIT.GetController.GetReligion] z dôvodu:" # todo: NEW TRANSLATION
  CT_IMPACT_ON_POWER: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%$ [SUBUNIT.GetController.GetAdjective] [SUBUNIT.GetDefinition.GetCategory.GetName]#!: $DAMAGE$" # todo: NEW TRANSLATION
@@ -1213,7 +1322,8 @@
  VISUAL_STRENGTH_WITH_ICON_SHIP: "[ship|e] v $PERC|2%$ stave" # todo: NEW TRANSLATION
  CT_IMPACT_ON_COMBAT_POWER: "$VAL|+=%$ [SUBUNIT.GetDefinition.GetName] [combat_power|e]: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_FLANKING_ABILITY: "$VAL|+=%$ [SUBUNIT.GetDefinition.GetName] [flanking_ability|e]: $DAMAGE$" # todo: NEW TRANSLATION
- CT_IMPACT_ON_LEVY_VS_REGULAR: "$VAL|+=%$ [levy|e] vs [regulars|e]: $DAMAGE$" # todo: NEW TRANSLATION
+ CT_IMPACT_ON_LEVY_VS_REGULAR: "$VAL|+=%$ $SUB_UNIT_LEVY$ proti [regulars|e]: $DAMAGE$" # todo: CHANGED
+ DETAIL_CT_IMPACT_ON_LEVY_VS_REGULAR: "$VAL|+=%$ #TOOLTIP:$BREAKDOWN_TAG$ $SUB_UNIT_LEVY$ proti Regular#!: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_EXPERIENCE: "$VAL|+=%$ [experience|e] of [TARGET_SUBUNIT.GetName]: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_CATEGORY_TAKEN: "$VAL|+=%$ Cieľ je [TARGET_SUBUNIT.GetDefinition.GetCategory.GetName]: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_COMBINED_ARMS: "$VAL|+=%$ [combined_arms|e]: $DAMAGE$" # todo: NEW TRANSLATION
@@ -1221,10 +1331,11 @@
  CT_IMPACT_ON_GUNS_VS_HULL: "$VAL|+=%$ [cannons|e] vs [hull_size|e]: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_NAVAL_DAMAGE_TAKEN: "$VAL|+=%$ Prijaté námorné poškodenie: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_SECURED_FLANKS: "$VAL|+=%$ [secure_flanks|e]: $DAMAGE$" # todo: NEW TRANSLATION
- CT_IMPACT_ON_TOPOPGRAHY: "$VAL|+=%$ [SUBUNIT.GetLocation.GetTopography.GetName]: $DAMAGE$" # todo: NEW TRANSLATION
- CT_IMPACT_ON_CLIMATE: "$VAL|+=%$ [SUBUNIT.GetLocation.GetClimate.GetName]: $DAMAGE$" # todo: NEW TRANSLATION
- CT_IMPACT_ON_VEGETATION: "$VAL|+=%$ [SUBUNIT.GetLocation.GetVegetation.GetName]: $DAMAGE$" # todo: NEW TRANSLATION
+ CT_IMPACT_ON_TOPOGRAPHY: "$VAL|+=%$ [SUBUNIT.GetUnit.GetLocation.GetTopography.GetName]: $DAMAGE$" # todo: NEW TRANSLATION
+ CT_IMPACT_ON_CLIMATE: "$VAL|+=%$ [SUBUNIT.GetUnit.GetLocation.GetClimate.GetName]: $DAMAGE$" # todo: CHANGED
+ CT_IMPACT_ON_VEGETATION: "$VAL|+=%$ [SUBUNIT.GetUnit.GetLocation.GetVegetation.GetName]: $DAMAGE$" # todo: CHANGED
  CT_IMPACT_ON_REGULAR_VS_LEVY: "$VAL|+=%$ [regular|e] vs [levy|e]: $DAMAGE$" # todo: NEW TRANSLATION
+ DETAIL_CT_IMPACT_ON_REGULAR_VS_LEVY: "$VAL|+=%$ #TOOLTIP:$BREAKDOWN_TAG$ Regular proti $TARGET_SUB_UNIT_LEVY$#!: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_CURRENT_STRENGTH: "$VAL|+=%$ z [SUBUNIT.GetStrengthWithIcon]: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_STRENGTH_DAMAGE_DONE: "$VAL|+=%$ z [strength_damage_done|e]: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_STRENGTH_DAMAGE_TAKEN: "$VAL|+=%$ z [strength_damage_taken|e]: $DAMAGE$" # todo: NEW TRANSLATION
@@ -1233,6 +1344,11 @@
  CT_IMPACT_ON_NOT_ENGAGED: "$VAL|+=%$ [TARGET_SUBUNIT.GetName] nie je [engaged|e]: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_MORALE_SCALE: "$VAL|+=%$ Morálka oproti základnej morálke: $DAMAGE$" # todo: NEW TRANSLATION
  CT_IMPACT_ON_RELATIVE_STRENGTH: "$VAL|+=%$ z [SUBUNIT.GetCurrentStrengthPercentage|2%] z [max_strength|e]: $DAMAGE$" # todo: NEW TRANSLATION
+ TARGET_SUB_UNIT_LEVY: "#L Levy@[TARGET_SUBUNIT.GetController.GetFlag]!#!" # todo: NEW TRANSLATION
+ SUB_UNIT_LEVY: "#L Levy@[SUBUNIT.GetController.GetFlag]!#!" # todo: NEW TRANSLATION
+ REGULAR_VS_LEVY_BREAKDOWN_HEADER: "#T Regular proti Levy#!\n$VAL|+=%$ je vypočítaná ako jedna delená faktorom $FACTOR|V$.\nFaktor $FACTOR|V$ sa počíta z [TARGET_SUBUNIT.GetController.GetName] [levy_combat_efficiency|e].\nZáklad: 100%\n$LEV_EFF$" # todo: NEW TRANSLATION
+ LAND_LEVY_COMBAT_IMPACT: "Vplyv pozemných leví v boji: x$FACTOR$" # todo: NEW TRANSLATION
+ LEVY_VS_REGULAR_BREAKDOWN_HEADER: "#T $VAL$ z dôvodu:#!\nFaktor $FACTOR|V$ sa počíta z [SUBUNIT.GetController.GetName] [levy_combat_efficiency|e]:\nZáklad: 100%\n$LEV_EFF$" # todo: NEW TRANSLATION
  MOVE_LEFT_FLANK: "Presun na ľavé krídlo" # todo: NEW TRANSLATION
  MOVE_ALL_LEFT_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetCategory.GetName] na ľavé krídlo" # todo: CHANGED
  MOVE_ALL_TYPE_LEFT_FLANK: "Presunúť všetky [SubUnit.GetDefinition.GetName] na ľavé krídlo"
@@ -1291,6 +1407,7 @@
  CURRENT_GARRISON: "Aktuálny [garrison|e]" # todo: NEW TRANSLATION
  MAX_GARRISON: "Maximálna posádka" # todo: NEW TRANSLATION
  FORT_LEVEL: "$game_concept_fort$ úroveň" # todo: NEW TRANSLATION
+ FORT_BREACH_LEVEL: "Prielezy v hradbách" # todo: NEW TRANSLATION
  FORT_IN_LOCATION: "$game_concept_fort$ v [CityMarker.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  FORT_LEVEL_VAL: "#e Úroveň opevnenia#W : [LocationView.GetLocation.GetFortLevel]" # todo: NEW TRANSLATION
  GARRISON_FLAVOR: "Všetky aktívne pevnosti vyžadujú stálu posádku na obsluhu múrov a vykonávanie hliadok. Toto udáva, koľko vojakov sa momentálne nachádza v posádke pevnosti." # todo: NEW TRANSLATION
@@ -1316,9 +1433,9 @@
  SIEGE_BREACH_EXPLANATION: "V každej fáze obliehania má útočník šancu preraziť múry. Prerazenie múrov dáva $BREACHBONUS|=+$ bonus k hode pri obliehaní. " # todo: NEW TRANSLATION
  SIEGE_OUTCOME_LABEL: "Výsledok fázy obliehania" # todo: NEW TRANSLATION
  SIEGE_CHANCE_SHORT: "V každej fáze sa hodí kockou medzi $MIN|Y$ a $MAX|Y$ (Dice Range) a potom sa upraví o #R $MODIFIERS|L+$#!." # todo: CHANGED
- FALL_CHANCE_TITLE: "\"Možné výsledky\";\"Rozsah hodu\";\"Šanca\" # todo: CHANGED
+ FALL_CHANCE_TITLE: "#col_t Možné výsledky#! #col_t Rozsah kociek#! #col_t Šanca#!" # todo: CHANGED
  SIEGE_CHANCE_EXPLANATION: "Pri každej fáze obliehania sa hodí kocka (od $MIN|Y$ do $MAX|Y$). K hodu sa potom pripočítajú modifikátory obliehania ($MODIFIERS|+=$). Pri prirodzenom hode 1 utrpia útočiaci Epidémiu, ktorá zníži ich počty o $VAL|R%$ z ich [maximum_strength|e]" # todo: NEW TRANSLATION
- SIEGE_CHANCE_LINE: "\"#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!";\"$RANGE$\";\"$CHANCE$\"" # todo: NEW TRANSLATION
+ SIEGE_CHANCE_LINE: "#col #TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!#! #col $RANGE$#! #col $CHANCE$#!" # todo: CHANGED
  SIEGE_DATES: "" # todo: NEW TRANSLATION
  SIEGE_DATE_TOTAL: "Toto obliehanie prebieha už [Siege.GetTotalDays|V] dní." # todo: NEW TRANSLATION
  SIEGE_STARTED_DATE: "Začalo pred [Siege.GetTotalDays|V] dňami" # todo: NEW TRANSLATION
@@ -1381,11 +1498,11 @@
  UNIT_FOOD_CONSUMPTION_ENTRY: "$COUNT$ [SUBUNITDEFINITION.GetName]: $VAL|+=2$" # todo: NEW TRANSLATION
  FOODCONSUMPTION_FROM_UNITS: "Základ z [regiments|e]: $VAL|Y$" # todo: NEW TRANSLATION
  FOODCONSUMPTION_FROM_SUPPLY_LIMIT: "Dopad z prekročenia [supply_limit|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|=-2L%$#!" # todo: NEW TRANSLATION
- UNIT_FOOD_INFO: "[UNIT.GetMonthsOfFood] mesiacov kapacity jedla" # todo: NEW TRANSLATION
+ UNIT_FOOD_INFO: "[UNIT.GetDurationOfFood] zásob potravín" # todo: CHANGED
  UNIT_FOOD_INFO_N: "Kapacita jedla" # todo: NEW TRANSLATION
- ARMY_FOOD_INFO: "#T [UNIT.GetMonthsOfFood] mesiacov kapacity jedla#!\nTáto [army|e] momentálne má $CURR|2Y$ [food|e] z maximálnych $MAX|Y2$." # todo: NEW TRANSLATION
+ ARMY_FOOD_INFO: "#T [UNIT.GetDurationOfFood] zásob potravín#!\nTáto [army|e] má momentálne $CURR|2Y$ [food|e] z maximálnych $MAX|Y2$." # todo: CHANGED
  NAVY_FOOD_INFO: "#T Kapacita jedla#!\nTáto [navy|e] momentálne nesie $CURR|2Y$ jedla z maximálnych $MAX|Y2$." # todo: NEW TRANSLATION
- FOOD_SUPPLY_MONTHS: "Táto [army|e] môže momentálne fungovať [UNIT.GetMonthsOfFood|Y] mesiacov bez prístupu k ďalšiemu [food|e]." # todo: NEW TRANSLATION
+ FOOD_SUPPLY_MONTHS: "Táto [army|e] môže momentálne operovať [UNIT.GetDurationOfFood|Y] bez prístupu k ďalším [food|e]." # todo: CHANGED
  FOOD_CHANGE_BY: "Zásoby [food|e] sa menia o $VAL|+=2$ každý mesiac" # todo: NEW TRANSLATION
  FOOD_LASTS_FOR: " a vystačí ešte $VAL|Y$ mesiac(ov)." # todo: NEW TRANSLATION
  UNIT_LOSING_FOOD: "@trigger_no! Kvôli $WHY$ [army|e] tento mesiac používa $VAL|R2$ zo svojich zásob [food|e]." # todo: NEW TRANSLATION
@@ -1421,6 +1538,7 @@
  CREATE_SUPPLY_DEPOT_CTA: "Vytvoriť [supply_depot|e] v [LOCATION.GetName] za cenu $COST$. Vložíme do neho $FOOD|2Y$ jedla." # todo: NEW TRANSLATION
  SUPPLY_DEPOT_NAME: "Zásobovací sklad [SUPPLY_DEPOT.GetOwner.GetAdjectiveWithNoTooltip] v [SUPPLY_DEPOT.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  SUPPLYDEPOT_UI_TOOLTIP: "Vlastník: [SUPPLY_DEPOT.GetOwner.GetLongNameWithFlag]\nAktuálne jedlo: [SUPPLY_DEPOT.GetFood.GetCurrentFood|2Y]\nKapacita: [SUPPLY_DEPOT.GetCapacity]\nPoloha: [SUPPLY_DEPOT.GetLocation.GetName]" # todo: NEW TRANSLATION
+ ONLY_PRISONERS: "@trigger_no! V tejto jednotke sú iba [prisoners|e]." # todo: NEW TRANSLATION
  SUPPLY_DEPOT_ALREADY: "@trigger_no! V [LOCATION.GetName] už je [supply_depot|e]" # todo: NEW TRANSLATION
  SUPPLY_DEPOT_CANT: "@trigger_no! Nemáme potrebný pokrok na vytvorenie [supply_depot|e]." # todo: NEW TRANSLATION
  SUPPLY_DEPOT_NOT_CONTROLLED: "@trigger_no! Nekontrolujeme [LOCATION.GetName]" # todo: NEW TRANSLATION
@@ -1501,9 +1619,11 @@
  SPLIT_HALF_INFO: "Týmto sa jednotka rozdelí na dve čo najrovnomernejšie polovice." # todo: NEW TRANSLATION
  SPLIT_HALF_CTA: "Rozdeliť jednotku na polovice." # todo: NEW TRANSLATION
  CANT_SPLIT_HALF: "@trigger_no! Potrebujete aspoň dve podjednotky na rozdelenie na polovice" # todo: NEW TRANSLATION
+ SAVE_ARMY_AS_TEMPLATE_INFO: "Uložiť zloženie tohto [army|e] ako novú [unit_template|e]." # todo: NEW TRANSLATION
+ SAVE_ARMY_AS_TEMPLATE_CTA: "Uložiť aktuálne zloženie ako šablónu." # todo: NEW TRANSLATION
  ASSAULT_ALREADY: "@trigger_no! Útok už prebieha." # todo: NEW TRANSLATION
  ASSAULT_NOT_MERCES: "@trigger_no! Pokiaľ nie je prerazenie, [mercenaries|e] odmietnu pridať sa k útoku." # todo: NEW TRANSLATION
- ASSAULT_TOO_WEAK: "@trigger_no! Nie je dostatok [ShowUnitCategoryName('army_infantry')] v tomto obliehaní na uskutočnenie útoku." # todo: NEW TRANSLATION
+ ASSAULT_TOO_WEAK: "@trigger_no! Nie je dostatok [ShowUnitCategoryName('army_light_infantry')] alebo [ShowUnitCategoryName('army_heavy_infantry')] dostupných pri tomto obliehaní na útok." # todo: CHANGED
  ASSAULT_IS_DEFENDER: "@trigger_no! Obranca obliehania nemôže nariadiť útok." # todo: NEW TRANSLATION
  ASSAULT_INTERRUPTED: "@trigger_no! Obliehanie bolo prerušené bitkou." # todo: NEW TRANSLATION
  ASSAULT_NOT_IN_COMMAND: "@trigger_no! Nie sme celkovo v velení tohto obliehania." # todo: NEW TRANSLATION
@@ -1519,6 +1639,12 @@
  TOGGLE_RETURN_HOME_AT_WAR_OFF_INFO: "Toto [navy|e] bude hľadať priateľský prístav, keď sme vo [war|e]." # todo: NEW TRANSLATION
  TOGGLE_RETURN_HOME_AT_WAR_ON_CTA: "Nastaviť [navy|e], aby sa vracalo do prístavu počas vojny" # todo: NEW TRANSLATION
  TOGGLE_RETURN_HOME_AT_WAR_OFF_CTA: "Zastaviť vracanie sa [navy|e] do prístavu počas vojny" # todo: NEW TRANSLATION
+ TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_ON: "Priateľské jednotky nesmú nastupovať" # todo: NEW TRANSLATION
+ TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_OFF: "Priateľské jednotky môžu nastupovať" # todo: NEW TRANSLATION
+ TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_ON_INFO: "Táto [navy|e] neumožňuje priateľským jednotkám nastupovať." # todo: NEW TRANSLATION
+ TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_OFF_INFO: "Táto [navy|e] umožňuje priateľským jednotkám nastupovať." # todo: NEW TRANSLATION
+ TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_ON_CTA: "Nastaviť, aby [navy|e] povolila priateľským jednotkám nastupovať" # todo: NEW TRANSLATION
+ TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_OFF_CTA: "Zastaviť [navy|e] v povoľovaní priateľských jednotiek nastupovať" # todo: NEW TRANSLATION
  TOGGLE_ATTACH_OFF: "Pripojenie povolené" # todo: NEW TRANSLATION
  TOGGLE_ATTACH_OFF_INFO: "Táto jednotka umožňuje ostatným jednotkám sa k nej pripojiť." # todo: NEW TRANSLATION
  TOGGLE_ATTACH_OFF_INFO_FALSE: "Táto jednotka NEumožňuje ostatným jednotkám sa k nej pripojiť." # todo: NEW TRANSLATION
@@ -1545,6 +1671,7 @@
  UW_ATTACHED_TO: "(Pripojené k $NAME$)" # todo: NEW TRANSLATION
  UW_NOT_POSSIBLE_TO_ATTACH: "@trigger_no! Tu nie sú žiadne priateľské jednotky, ktoré by umožnili pripojenie." # todo: NEW TRANSLATION
  UW_NOT_POSSIBLE_TO_ATTACH_MOVED_TOO_FAR: "@trigger_no! Tu nie sú žiadne priateľské jednotky, ktoré umožňujú pripojenie a presunuli sa najviac $PERCENTAGE$% smerom k svojej nasledujúcej provincii." # todo: NEW TRANSLATION
+ CANNOT_TOGGLE_ATTACH_FOCUS_SIEGE: "@trigger_no! Nie je možné prepínať pripojenie, keď je jednotka pridelená k $OBJECTIVE$." # todo: NEW TRANSLATION
  MERGE_TO_STRONGEST: "Zlúčiť do najsilnejšej jednotky" # todo: NEW TRANSLATION
  MERGE_TO_STRONGEST_INFO: "Všetky jednotky sa presunú, aby sa pridali k najsilnejšej vybratej jednotke ([UNIT.GetName] v [UNIT.GetLocation.GetName])." # todo: NEW TRANSLATION
  MERGE_TO_STRONGEST_CTA: "Zlúčiť jednotky." # todo: NEW TRANSLATION
@@ -1659,7 +1786,8 @@
  UNIT_LACKS_ACCESS_TO_TARGET_PROVINCE: "@trigger_no! Sem sa nedá presunúť, jednotka nemá prístup." # todo: NEW TRANSLATION
  MOVEMENT_LOCKED: "#T Pohyb zablokovaný#!\nTáto jednotka sa presunula viac ako do polovice k svojej ďalšej [location|e] a jej pohyb sa nedá zastaviť." # todo: NEW TRANSLATION
  UNIT_TARGET_NOT_DISCOVERED: "@trigger_no! Nie je možné presunúť sa do [location|e], ktoré nebolo [discovered|e]." # todo: NEW TRANSLATION
- SLOW_SPEED_T: "Jednotka je príliš veľká" # todo: NEW TRANSLATION
+ NAVY_RETURN_HOME_AT_WAR_BLOCKS_MOVE: "@trigger_no! Nie je možné presunúť túto flotilu na more, kým je aktívna Return Home at War." # todo: NEW TRANSLATION
+ SLOW_SPEED_T: "Jednotka je ťažkopádna" # todo: CHANGED
  SLOW_SPEED: "Táto jednotka sa kvôli veľkosti pohybuje pomalšie." # todo: NEW TRANSLATION
  SELECT_OBJECTIVE_UNIT: "Vybrať cieľ" # todo: NEW TRANSLATION
  SELECT_OBJECTIVE_UNIT_INFO: "Vyberte cieľ, ku ktorému sa má jednotka priblížiť." # todo: NEW TRANSLATION
@@ -1685,6 +1813,7 @@
  REPAIR_SHIP_INFO: "Pošlite [navy|e] do priateľského [port|e], aby sa opravila." # todo: NEW TRANSLATION
  REPAIR_SHIP_CTA: "Kliknite pre rozkaz vrátiť sa do prístavu a opraviť sa." # todo: NEW TRANSLATION
  REPAIR_SHIP_NO_PORTS: "Nie sú žiadne priateľské [ports|e], kde by sa $NAME$ mohol opraviť." # todo: NEW TRANSLATION
+ REPAIR_SHIP_ALREADY_IN_PORT: "$NAME$ je už v [port|e]." # todo: NEW TRANSLATION
  REPAIR_SHIP_NOT_DAMAGED: "$NAME$ nie je poškodený ani nebol na mori dosť dlho, aby utrpel úbytky." # todo: NEW TRANSLATION
  UNIT_FOR_SHIP_LOAD: "$NAME$ by potreboval $VAL|Y$ [ships|e] pre jeho naloženie.\n" # todo: NEW TRANSLATION
  UNIT_FOR_SHIP_LOAD_NONE: "@trigger_no! V tejto [seazone|e] nie sú žiadne flotily!" # todo: NEW TRANSLATION
@@ -1749,6 +1878,8 @@
  CONSOLIDATE_NOT_IN_COMBAT: "@trigger_no! Nie je možné konsolidovať, keď je jednotka v boji." # todo: NEW TRANSLATION
  CONSOLIDATE_NO_MEN: "@trigger_no! V tejto [unit|e] nie sú žiadni muži." # todo: NEW TRANSLATION
  CONSOLIDATE_NONE_AROUND: "@trigger_no! V tejto [army|e] nie sú žiadne [regiments|e], ktoré by sa dali zlúčiť s iným [regiment|e]." # todo: NEW TRANSLATION
+ CONSOLIDATE_REGULARS_CONFIRM_TITLE: "Konsolidovať pluky" # todo: NEW TRANSLATION
+ CONSOLIDATE_REGULARS_CONFIRM_DESC: "Táto armáda obsahuje [regulars|e]. Konsolidácia môže niektoré z nich spotrebovať alebo zničiť. Naozaj chcete pokračovať?" # todo: NEW TRANSLATION
  LACK_OF_LEADER_TT: "#T Žiadny veliteľ#!\nV súčasnosti nie je žiadny [character|e] pridelený na vedenie tejto jednotky. Toto má nasledujúce efekty:\n$EFFECT$." # todo: NEW TRANSLATION
  CHANGE_LEADER_TT: "#T Zmeniť veliteľa#!\n" # todo: NEW TRANSLATION
  ASSIGN_LEADER_TT: "#T Priradiť veliteľa#!\n" # todo: NEW TRANSLATION
@@ -1759,6 +1890,8 @@
  NO_LEADER_SWAP_COMBAT: "@trigger_no! Toto nie je možné, pretože je táto jednotka v boji." # todo: NEW TRANSLATION
  CLICK_TO_REPLACE: "Nahradiť [general]" # todo: NEW TRANSLATION
  CLICK_TO_REPLACE_ADMIRAL: "Nahradiť [admiral]" # todo: NEW TRANSLATION
+ REMOVE_GENERAL: "Odstrániť [general]" # todo: NEW TRANSLATION
+ REMOVE_ADMIRAL: "Odstrániť [admiral]" # todo: NEW TRANSLATION
  CHARJOB_UNIT_REBEL: "@trigger_no![CHARACTER.GetName] je [rebel|e] a nemôže byť veliteľom jednotky." # todo: NEW TRANSLATION
  CHARJOB_UNIT_EXPLORATION: "@trigger_no![CHARACTER.GetName] je momentálne na misii [exploration|e] a nemôže byť veliteľom jednotky." # todo: NEW TRANSLATION
  CHARJOB_UNIT_CABINET: "@trigger_no![CHARACTER.GetName] pracuje v kabinete a nemôže byť veliteľom jednotky." # todo: NEW TRANSLATION
@@ -1815,6 +1948,7 @@
  UPGRADE_FLEET_NO_UNITS: "@trigger_no! V tejto [navy|e] nie sú žiadne [ships|e], ktoré by sa tu dali upgradovať." # todo: CHANGED
  UPGRADE_FLEET_MOTHBALLED: "[navy|e] je odstavená a nedá sa vylepšiť." # todo: NEW TRANSLATION
  UPGRADE_FLEET_NOT_IN_OWNED_PORT: "Na vylepšenie [navy|e] musí byť v prístave, ktorý vlastníme my alebo jeden z našich subjektov." # todo: NEW TRANSLATION
+ UPGRADE_FLEET_CANNOT_UPGRADE_SUMMARY: "\n#TOOLTIP:$BREAKDOWN_TAG$ $NUM|L$#! [ships|e] nie je možné vylepšiť." # todo: NEW TRANSLATION
  UPGRADE_FLEET_UNIT_TYPE_LIMIT_REACHED: "@trigger_fail! Dosiahli sme limit [SUBUNIT.GetTypeName]." # todo: NEW TRANSLATION
  UPGRADE_FLEET_LEVIES_ARE_RUBBISH: "@trigger_no! Nemôžeme vylepšiť [levies|e]." # todo: NEW TRANSLATION
  UPGRADE_ARMY: "Vylepšiť armádu" # todo: NEW TRANSLATION
@@ -1823,11 +1957,12 @@
  UPGRADE_ARMY_CTA: "Vylepšiť naše [army|e]." # todo: NEW TRANSLATION
  UPGRADE_ARMY_NO_UNITS: "@trigger_no! V tejto [army|e] nie sú žiadne [regiments|e], ktoré by sa dali vylepšiť." # todo: NEW TRANSLATION
  UPGRADE_ARMY_NOT_IN_FRIENDLY_LOCATION: "@trigger_no![UNIT.GetName] nie je v priateľskom [location|e]." # todo: NEW TRANSLATION
- UPGRADE_ARMY_NO_BETTER_REGIMENT_TYPE: "@trigger_no! Neexistujú lepšie typy [regiment|e], na ktoré by sa dalo vylepšiť." # todo: NEW TRANSLATION
- UPGRADE_ARMY_UNIT_TYPE_LIMIT_REACHED: "@trigger_fail! Dosiahli sme limit tohto typu [regiment|e]." # todo: NEW TRANSLATION
- UPGRADE_ARMY_LEVIES_ARE_RUBBISH: "@trigger_no! Nemôžeme vylepšiť [levies|e]." # todo: NEW TRANSLATION
- UPGRADE_ARMY_MERCS_ARENT_YOURS: "@trigger_no! Nemôžeme vylepšiť [mercenaries|e]." # todo: NEW TRANSLATION
- UPGRADE_SUBUNIT: "Vylepšiť [SubUnit.GetName] za [GetUpgradeSubUnitCostValue(SubUnit.Self)]@gold!" # todo: CHANGED
+ UPGRADE_ARMY_NO_BETTER_REGIMENT_TYPE: "@trigger_no! [SUBUNIT.GetName] nemá žiadne možné vylepšenia." # todo: CHANGED
+ UPGRADE_ARMY_UNIT_TYPE_LIMIT_REACHED: "@trigger_fail! Dosiahli sme náš limit pre typ [SUBUNIT.GetDefinition.GetName]." # todo: CHANGED
+ UPGRADE_ARMY_LEVIES_ARE_RUBBISH: "@trigger_no! [SUBUNIT.GetName] je [levy|e]." # todo: CHANGED
+ UPGRADE_ARMY_MERCS_ARENT_YOURS: "@trigger_no! [SUBUNIT.GetName] je [mercenary|e]." # todo: CHANGED
+ UPGRADE_ARMY_PRISONERS_CAN_ROT: "@trigger_no! [SUBUNIT.GetName] je [prisoner|e]." # todo: NEW TRANSLATION
+ UPGRADE_SUBUNIT: "Vylepšiť [SubUnit.GetName] na [GetUpgradeSubUnitName(SubUnit.Self)] za [GetUpgradeSubUnitCostValue(SubUnit.Self)|2]@gold!" # todo: CHANGED
  REFILL_GARRISON: "Dopĺňanie posádky" # todo: NEW TRANSLATION
  REFILL_GARRISON_INFO: "Použite našu [army|e] na doplnenie [garrison|e] [fort|e]." # todo: NEW TRANSLATION
  REFILL_GARRISON_CTA: "Dopĺňať našu [garrison|e]." # todo: NEW TRANSLATION
@@ -1901,22 +2036,61 @@
  TOGGLE_UNIT_SELECTION_TT: "Prepnúť výber" # todo: NEW TRANSLATION
  SELECT_COMMANDER_SILHOUETTE: "\n\nĽavé kliknutie vyberie aktuálneho veliteľa; pravé kliknutie zmení veliteľa" # todo: NEW TRANSLATION
  SELECT_ADMIRAL_SILHOUETTE: "\n\nĽavé kliknutie vyberie aktuálneho admirála; pravé kliknutie zmení admirála" # todo: NEW TRANSLATION
- UNIT_CATEGORY_MAIN_TT: ""Počet";"Typ"#T#M;"Sila"" # todo: NEW TRANSLATION
- UNIT_CATEGORY_MAIN_TT_N: ""Počet";"Typ"#T#M" # todo: NEW TRANSLATION
+ COMBAT_POWER_CAT_LABEL: "[combat_power|e] [SubUnitCategory.GetNameWithNoTooltip] je [SubUnitCategory.GetCombatAbility(Player.Self)|+=0%] kvôli" # todo: NEW TRANSLATION
+ UNIT_CATEGORY_MAIN_TITLE_TEXT: "Táto bojová strana sa skladá z nasledujúcich typov jednotiek" # todo: NEW TRANSLATION
+ SUBUNIT_CATEGORY_AVAILABLE_HEADER: "Aktuálne dostupné" # todo: NEW TRANSLATION
+ SUBUNIT_CATEGORY_AVAILABLE_ENTRY: " • [SUBUNITDEFINITION.GetName]" # todo: NEW TRANSLATION
+ SUBUNIT_CATEGORY_LOCKED_HEADER: "Z budúcich [advances|e]" # todo: NEW TRANSLATION
+ SUBUNIT_CATEGORY_LOCKED_ENTRY: " • [SUBUNITDEFINITION.GetName]:  $ADVANCE$" # todo: NEW TRANSLATION
+ ADV_UNIT_ENTRY: "[ADVANCE_DEFINITION.GetName][ADVANCE_DEFINITION.GetAge.GetIcon]" # todo: NEW TRANSLATION
+ UNIT_CATEGORY_MAIN_TT: "#col_t Počet#! #col_m_t Typ#! #col_t Sila#!" # todo: CHANGED
+ UNIT_CATEGORY_MAIN_TT_N: "#col_t Počet#! #col_m_t Typ#!" # todo: CHANGED
  UNIT_CATEGORY_NONE_N: "Žiadne [SUBUNITCATEGORY.GetName] jednotky v tejto [navy|e]." # todo: NEW TRANSLATION
  UNIT_CATEGORY_NONE_A: "Žiadne [SUBUNITCATEGORY.GetName] jednotky v tomto [army|e]." # todo: NEW TRANSLATION
- UNIT_CATEGORY_LEVY_NAVY_ENTRY: ""$COUNT|V$@naval_levy!";"[SUBUNITDEFINITION.GetName]"" # todo: NEW TRANSLATION
- UNIT_CATEGORY_LEVY_ARMY_ENTRY: ""$COUNT|V$@levy!";"[SUBUNITDEFINITION.GetName]";"$MEN|V$@army_strength!"" # todo: NEW TRANSLATION
- UNIT_CATEGORY_MERCS_NAVY_ENTRY: ""$COUNT|V$@naval_mercenary!";"[SUBUNITDEFINITION.GetName]"" # todo: NEW TRANSLATION
- UNIT_CATEGORY_MERCS_ARMY_ENTRY: ""$COUNT|V$@mercenary!";"[SUBUNITDEFINITION.GetName]";"$MEN|V$@army_strength!"" # todo: NEW TRANSLATION
- UNIT_CATEGORY_NAVY_ENTRY: ""$COUNT|V$@naval_regular!";"[SUBUNITDEFINITION.GetName]"" # todo: NEW TRANSLATION
- UNIT_CATEGORY_ARMY_ENTRY: ""$COUNT|V$@regular!";"[SUBUNITDEFINITION.GetName]";"$MEN|V$@army_strength!"" # todo: NEW TRANSLATION
+ UNIT_CATEGORY_LEVY_NAVY_ENTRY: "#col $COUNT|V$@naval_levy!#! #col [SUBUNITDEFINITION.GetName]#!" # todo: CHANGED
+ UNIT_CATEGORY_LEVY_ARMY_ENTRY: "#col $COUNT|V$@levy!#! #col [SUBUNITDEFINITION.GetName]#! #col $MEN|V$@army_strength!#!" # todo: CHANGED
+ UNIT_CATEGORY_MERCS_NAVY_ENTRY: "#col $COUNT|V$@naval_mercenary!#! #col [SUBUNITDEFINITION.GetName]#!" # todo: CHANGED
+ UNIT_CATEGORY_MERCS_ARMY_ENTRY: "#col $COUNT|V$@mercenary!#! #col [SUBUNITDEFINITION.GetName]#! #col $MEN|V$@army_strength!#!" # todo: CHANGED
+ UNIT_CATEGORY_NAVY_ENTRY: "#col $COUNT|V$@naval_regular!#! #col [SUBUNITDEFINITION.GetName]#!" # todo: CHANGED
+ UNIT_CATEGORY_ARMY_ENTRY: "#col $COUNT|V$@regular!#! #col [SUBUNITDEFINITION.GetName]#! #col $MEN|V$@army_strength!#!" # todo: CHANGED
  LOSSES_FRIENDLY: "Súčasné straty" # todo: NEW TRANSLATION
  UNIT_CATEGORY_TYPE: "Typ" # todo: NEW TRANSLATION
- WAR_LOSSES_HEADER_DET: ""Typ"#T#M;"Bitka";"Úbytky";"Zajaté";"Spolu"" # todo: NEW TRANSLATION
- WAR_LOSSES_ARMY_ENTRY: ""[SUBUNITCATEGORY.GetIcon][SUBUNITCATEGORY.GetName]";"$BATTLE|V$";"$ATTRITION|V$";"$CAPTURE|V$";"$TOTAL|V$"" # todo: NEW TRANSLATION
- WAR_LOSSES_NAVY_ENTRY: ""[SUBUNITCATEGORY.GetIcon][SUBUNITCATEGORY.GetName]";"$BATTLE|V$";"$ATTRITION|V$";"$CAPTURE|V$";"$TOTAL|V$"" # todo: NEW TRANSLATION
+ WAR_LOSSES_HEADER_DET: "#col_m_t Typ#! #col_t Bitka#! #col_t Attrícia#! #col_t Zajatí#! #col_t Spolu#!" # todo: CHANGED
+ WAR_LOSSES_ARMY_ENTRY: "#col [SUBUNITCATEGORY.GetIcon][SUBUNITCATEGORY.GetName]#! #col $BATTLE|V$#! #col $ATTRITION|V$#! #col $CAPTURE|V$#! #col $TOTAL|V$#!" # todo: CHANGED
+ WAR_LOSSES_NAVY_ENTRY: "#col [SUBUNITCATEGORY.GetIcon][SUBUNITCATEGORY.GetName]#! #col $BATTLE|V$#! #col $ATTRITION|V$#! #col $CAPTURE|V$#! #col $TOTAL|V$#!" # todo: CHANGED
  unit_template_desc: "(Toto je len šablóna, nemalo by to byť nikdy viditeľné)" # todo: NEW TRANSLATION
+ a_light_infantry: "Ľahká pechota" # todo: NEW TRANSLATION
+ a_heavy_infantry: "Ťažká pechota" # todo: NEW TRANSLATION
+ a_heavy_cavalry: "Ťažká jazda" # todo: NEW TRANSLATION
+ a_light_cavalry: "Ľahká jazda" # todo: NEW TRANSLATION
+ a_light_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_heavy_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_heavy_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_light_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_1_traditions_light_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_1_traditions_heavy_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_1_traditions_light_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_1_traditions_heavy_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_2_renaissance_light_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_2_renaissance_heavy_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_2_renaissance_light_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_2_renaissance_heavy_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_3_discovery_light_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_3_discovery_heavy_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_3_discovery_light_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_3_discovery_heavy_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_4_reformation_light_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_4_reformation_heavy_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_4_reformation_light_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_4_reformation_heavy_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_5_absolutism_light_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_5_absolutism_heavy_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_5_absolutism_light_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_5_absolutism_heavy_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_6_revolutions_light_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_6_revolutions_heavy_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_6_revolutions_light_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
+ a_age_6_revolutions_heavy_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
  a_age_1_traditions_infantry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
  a_age_1_traditions_cavalry_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
  a_age_1_traditions_auxiliary_desc: "$unit_template_desc$" # todo: NEW TRANSLATION
@@ -1972,7 +2146,7 @@
  SUBUNIT_PREFIX_HRMS: "Hr. Ms." # todo: NEW TRANSLATION
  SUBUNIT_PREFIX_USS: "USS" # todo: NEW TRANSLATION
  SUBUNIT_PREFIX_REGALSKEPP: "Regalskepp" # todo: NEW TRANSLATION
- a_byzantine_cataphracts: "[GetCountry('BYZ').GetAdjectiveWithNoTooltip] Kataphrakty" # todo: NEW TRANSLATION
+ a_byzantine_cataphracts: "Byzantskí kataphrakti" # todo: CHANGED
  a_byzantine_cataphracts_desc: "Silné zoskupenie ťažko obrnených rytierov, Kataphrakty tvoria elitu našich jazdeckých jednotiek. Obozbrojení krátkou kopijou nazývanou 'kontos' a pokrytí šupinovým brnením, títo vojaci vnášajú strach do sŕdc našich nepriateľov. Vírenie ocele v podobe nezastaviteľnej vlny jazdcov zasadzuje smrteľný úder všetkým, ktorí sa snažia pošliapať náš ľud." # todo: NEW TRANSLATION
  a_byz_helepolis_cannon_unit: "Modernizovaný Helepolis" # todo: NEW TRANSLATION
  a_byz_helepolis_cannon_unit_desc: "Helepolis slúžil mnohým byzantským cisárom v minulosti. S príchodom strelného prachu a vznikom nových obliehacích strojov sa obliehacie delostrelectvo prispôsobilo a nadobudlo svoju novú smrteľnú podobu." # todo: NEW TRANSLATION
@@ -2018,22 +2192,22 @@
  a_dahomey_amazons: "Dahomejské amazónky"
  a_dahomey_amazons_desc: "Pluk žien pochádzajúcich z [ShowRegionName('guinea_region')]. Vnášajú strach do nepriateľských radov a spôsobujú zničujúce škody."
  a_esho_cavalry_oyo: "Jazda Esho"
- a_esho_cavalry_oyo_desc: "Profesionálne pluky menších náčelníkov v rámci národa, títo jazdci nie sú vyberaní podľa známostí, ale podľa meritu."
+ a_esho_cavalry_oyo_desc: "Profesionálny pluk zložený z menších náčelníkov, títo jazdci nie sú vyberaní podľa známostí, ale podľa zásluh." # todo: CHANGED
  a_saxon_defensioner: "Saský Defensioner" # todo: NEW TRANSLATION
- a_saxon_defensioner_desc: "#italic Defensioner#! sú veteránske jednotky z našich drsných krajín na hraniciach s českými zemami. Zverené do úlohy zabezpečiť bezpečnosť v priesmykoch Rudných hôr, tieto jednotky nám dobre poslúžia v bojoch v členitom teréne." # todo: NEW TRANSLATION
+ a_saxon_defensioner_desc: "#italic Defensioner#! sú veteránske oddiely z drsných krajín na českej hranici. Po poverení zabezpečovať priechody v Krušných horách, tieto jednotky nám dobre poslúžia v bitkách v ťažkom teréne." # todo: CHANGED
  a_prussian_grenadiers: "Pruskí grenadieri" # todo: NEW TRANSLATION
- a_prussian_grenadiers_desc: "$a_prussian_grenadiers$ sú elitné jednotky Pruskej armády. Ich rola ako predvoja pri obliehaniach a útokoch vyžaduje nebojácnych vojakov, verbovaných z najsilnejších mužov našej krajiny." # todo: NEW TRANSLATION
+ a_prussian_grenadiers_desc: "$a_prussian_grenadiers$ sú elitné jednotky pruskej armády. Ich úloha predvojov pri obliehaniach a útokoch si vyžaduje nebojácnych bojovníkov, verbovaných z najsilnejších mužov v našej krajine." # todo: CHANGED
  a_bavarian_jager: "Bavorskí Jäger" # todo: NEW TRANSLATION
- a_bavarian_jager_desc: "Regimenty skúsených lovcov a lesníkov. V lesnom teréne im nebudú mať súperi rovnocenných protivníkov; budú schopní obsadiť a obťažovať našich nepriateľov, ak sa odvážia vstúpiť do našich lesov." # todo: NEW TRANSLATION
+ a_bavarian_jager_desc: "Pluky skúsených lovcov a lesníkov. Tieto jednotky budú neprekonateľné v zalesnenom teréne, schopné brániť a obťažovať našich nepriateľov, ak sa odvážia vstúpiť do našich lesov." # todo: CHANGED
  a_hesse_jager: "Hessenskí Jäger" # todo: NEW TRANSLATION
- a_hesse_jager_desc: "Skúsení lovci tvoria tieto elitné ľahké jednotky. Ich znalosť miestneho terénu zvýši našu schopnosť bojovať v zalesnenom teréne, hoci ich výzbroj nie je vhodná na dlhodobé boje." # todo: NEW TRANSLATION
+ a_hesse_jager_desc: "Elitné ľahké jednotky zložené z odborných lovcov. Ich znalosť nášho terénu zvýši našu schopnosť bojovať v hustých lesoch, hoci ich výzbroj nie je vhodná na dlhodobé boje." # todo: CHANGED
  a_austrian_grenzhussar: "Grenzhussar" # todo: NEW TRANSLATION
  a_austrian_grenzhussar_desc: "Umiestnené v pohraničných posádkach, tieto pluky husárov budú schopné hliadkovať a zabezpečovať odľahlé časti nášho štátu, pričom budú šetriť náš rozpočet." # todo: NEW TRANSLATION
  a_pandur: "Pandur Infantry" # todo: NEW TRANSLATION
- a_pandur_desc: "Zregrutovaní z našich slovinských a chorvátskych území, tieto ľahké jednotky sú dobre vybavené na udržiavanie pokoja v pohraničných oblastiach. Ich znalosť domáceho terénu z nich robí silného protivníka pre každého votrelca." # todo: NEW TRANSLATION
+ a_pandur_desc: "Verbovaní z našich karpatských a balkánskych krajín, tieto ľahké jednotky sú dobre vybavené na stráženie pokoja v pohraničných regiónoch. Ich znalosť domoviny z nich urobí obávaného protivníka pre každého útočníka." # todo: CHANGED
  a_austrian_grenzer: "Grenzer Infantry" # todo: NEW TRANSLATION
  a_austrian_grenzer_desc: "$a_pandur_desc$" # todo: NEW TRANSLATION
  a_gebirgsschutzen_infantry: "Gebirgsschützen" # todo: NEW TRANSLATION
- a_gebirgsschutzen_infantry_desc: "Títo horskí strelci sú neprekonateľní v pohybe po alpských oblastiach a v porážaní našich nepriateľov v zradnom teréne horských priesmykov. Ich ľahké vybavenie a voľná organizácia ich predurčujú na boj vo vysokých nadmorských výškach." # todo: NEW TRANSLATION
+ a_gebirgsschutzen_infantry_desc: "Títo horskí strelci sú neprekonateľní v priechode alpským terénom a v premáhaní našich nepriateľov v zradných horských priesmykoch. Ich ľahké vybavenie a voľná organizácia ich dokonale predurčujú na boj vo vysokých nadmorských výškach." # todo: CHANGED
  a_grenadiers: "Grenadiers" # todo: NEW TRANSLATION
- a_grenadiers_desc: "Pôvodom z raných jednotiek vyzbrojených výbušninami, tieto $a_grenadiers$ slúžia ako elitné predvoje našich armád. Aj keď granáty, ktoré im dali meno, už nie sú ich jediným účelom, ich vynikajúci výcvik z nich robí výborné útočné jednotky." # todo: NEW TRANSLATION
+ a_grenadiers_desc: "Vyvinutí z skorších jednotiek vybavených výbušninami, tieto $a_grenadiers$ slúžia ako elitné predvoje našich armád. Hoci granáty, od ktorých majú meno, už nie sú ich jediným zameraním, ich vynikajúci výcvik ich predurčuje na vynikajúcich útočných bojovníkov." # todo: CHANGED

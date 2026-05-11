@@ -32,6 +32,8 @@
  NOT_country_rank_equal: "Nie je [TARGET_COUNTRY_RANK.GetName]" # todo: NEW TRANSLATION
  location_rank_equal: "[LOCATION.GetName] má [location_rank|e] [TARGET_LOCATION_RANK.GetName]" # todo: NEW TRANSLATION
  NOT_location_rank_equal: "Nie je [TARGET_LOCATION_RANK.GetName]" # todo: NEW TRANSLATION
+ original_location_rank_equal: "[LOCATION.GetName] začal kampaň ako [TARGET_LOCATION_RANK.GetName]"
+ NOT_original_location_rank_equal: "Nezačal kampaň ako [TARGET_LOCATION_RANK.GetName]"
  parliament_type_equal: "Má [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
  NOT_parliament_type_equal: "Nemá [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
  land_ownership_rule_equal: "Má [TARGET_LAND_OWNERSHIP_RULE.GetName] [land_ownership_rule|e]" # todo: NEW TRANSLATION
@@ -112,6 +114,8 @@
  NOT_language_family_equal: "[language_family|e] jazyka [LANGUAGE.GetName] nie je [TARGET_LANGUAGE_FAMILY.GetName]" # todo: NEW TRANSLATION
  court_language_equal: "[court_language|e] je [TARGET_LANGUAGE.GetName]" # todo: NEW TRANSLATION
  NOT_court_language_equal: "[court_language|e] nie je [TARGET_LANGUAGE.GetName]" # todo: NEW TRANSLATION
+ country_dominant_language_equal: "[dominant_language|e] je [TARGET_LANGUAGE.GetName]"
+ NOT_country_dominant_language_equal: "[dominant_language|e] NIE JE [TARGET_LANGUAGE.GetName]"
  liturgical_language_equal: "[liturgical_language|e] je [TARGET_LANGUAGE.GetName]" # todo: NEW TRANSLATION
  NOT_liturgical_language_equal: "[liturgical_language|e] nie je [TARGET_LANGUAGE.GetName]" # todo: NEW TRANSLATION
  group_equal: "[religion_group|e] je [TARGET_RELIGION_GROUP.GetName]" # todo: NEW TRANSLATION
@@ -209,6 +213,8 @@
  culture_percentage_in_country_greater_than: "Percento populácie, ktorá patrí k [TARGET_CULTURE.GetName], je väčšie ako $NUM|Y%2$" # todo: NEW TRANSLATION
  religion_percentage_in_country_greater_or_equal: "Percento populácie, ktorá vyznáva [TARGET_RELIGION.GetName], je väčšie alebo rovné $NUM|Y%2$" # todo: NEW TRANSLATION
  religion_percentage_in_country_greater_than: "Percento populácie, ktorá vyznáva [TARGET_RELIGION.GetName], je väčšie ako $NUM|Y%2$" # todo: NEW TRANSLATION
+ monarch_power_percentage_in_country_greater_or_equal: "Panovníkova $NAME$ [ability|e] je väčšia alebo rovná $NUM|Y%2$"
+ monarch_power_percentage_in_country_greater_than: "Panovníkova $NAME$ [ability|e] je väčšia ako $NUM|Y%2$"
  num_artists_greater_than: "Má viac [artists|e] ako $NUM$" # todo: NEW TRANSLATION
  num_artists_less_than: "Má menej [artists|e] ako $NUM$" # todo: NEW TRANSLATION
  estate_tax_base_greater_than: "[estate_tax_base|e] je väčší ako $VALUE$" # todo: NEW TRANSLATION
@@ -385,6 +391,7 @@
  not_on_same_continent_as_capital: "Lokácia nie je na rovnakom kontinente ako hlavné mesto" # todo: NEW TRANSLATION
  dominant_culture_is_owners_culture: "[dominant_culture|e] je rovnaká ako [owner|e]'s [culture|e]" # todo: NEW TRANSLATION
  dominant_culture_is_of_owners_culture_group: "[dominant_culture|e] patrí do [owner|e] [culture_group_short|e]"
+ dominant_culture_is_of_steppe_group: "[dominant_culture|e] patrí do [ShowCultureGroupName('steppe_group')] [culture_group_short|e]"
  non_leader_countries_cannot_initiate_resolutions: "Krajiny, ktoré nie sú lídrami, nemôžu iniciovať debaty o zákonoch" # todo: NEW TRANSLATION
  non_member_countries_cannot_initiate_resolutions: "Krajiny, ktoré nie sú členmi, nemôžu iniciovať debaty o zákonoch" # todo: NEW TRANSLATION
  location_province_equal: "[LOCATION.GetName] je v [TARGET_PROVINCE.GetName]" # todo: NEW TRANSLATION
@@ -656,6 +663,8 @@
  NOT_market_owner_equal: "[MARKET.GetName] nie je v [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  character_owner_equal: "Žije v [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_character_owner_equal: "Žije v [TARGET_COUNTRY.GetName] (nie)" # todo: NEW TRANSLATION
+ character_owner_not_equal: "Nežije v [TARGET_COUNTRY.GetName]"
+ NOT_character_owner_not_equal: "Žije v [TARGET_COUNTRY.GetName]"
  trade_owner_equal: "Obchodník je z [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_trade_owner_equal: "Obchodník nie je z [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  location_owner_equal: "[LOCATION.GetName] vlastní [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -669,8 +678,11 @@
  NOT_province_owner_equal: "Nevlastní ho [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  unit_owner_equal: "Slúži [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_unit_owner_equal: "Neslúži [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ unit_owner_not_equal: "Neslúži [TARGET_COUNTRY.GetName]"
+ NOT_unit_owner_not_equal: "Slúži [TARGET_COUNTRY.GetName]"
  sub_unit_owner_equal: "Slúži [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_sub_unit_owner_equal: "Neslúži [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ sub_unit_owner_not_equal: "Neslúži [TARGET_COUNTRY.GetName]"
  pop_owner_equal: "Patrí [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_pop_owner_equal: "Nepatrí [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  colonial_charter_owner_equal: "Vlastní ho [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -738,6 +750,7 @@
  any_market_with_merchants_count: "$PARAMETERS$ [market|e], v ktorom má [COUNTRY.GetName] [merchants|e]" # todo: NEW TRANSLATION
  any_port_in_country: "Akýkoľvek [port|e] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
  any_sound_toll_in_country: "Akýkoľvek [sound_toll|e] v [COUNTRY.GetName]"
+ any_spy_network_built_in_us: "Akákoľvek [country|e] aktívne budujúca [spy_network|e] v [COUNTRY.GetName]"
  any_privateer_in_area: "Akýkoľvek [privateer|e] v [AREA.GetName]" # todo: NEW TRANSLATION
  any_hired_mercenary: "Akýkoľvek [mercenary|e] najatý krajinou" # todo: NEW TRANSLATION
  any_rented_out_mercenary: "Akýkoľvek [mercenary|e] prenajatý z krajiny" # todo: NEW TRANSLATION
@@ -783,6 +796,14 @@
  NOT_any_market_center_in_country_count: "Nie $PARAMETERS$ [markets|e] s centrom v [COUNTRY.GetName]" # todo: NEW TRANSLATION
  any_market_center_in_country_percent: "$PARAMETERS$ [markets|e] s centrom v [COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_any_market_center_in_country_percent: "Nie $PARAMETERS$ [markets|e] s centrom v [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ any_market_in_world: "Akýkoľvek [market|e] na svete"
+ NOT_any_market_in_world: "Žiadny [market|e] na svete"
+ any_market_in_world_all: "Všetky [markets|e] na svete"
+ NOT_any_market_in_world_all: "Nie všetky [markets|e] na svete"
+ any_market_in_world_count: "$PARAMETERS$ [markets|e] na svete"
+ NOT_any_market_in_world_count: "Nie $PARAMETERS$ [markets|e] na svete"
+ any_market_in_world_percent: "$PARAMETERS$ [markets|e] na svete"
+ NOT_any_market_in_world_percent: "Nie $PARAMETERS$ [markets|e] na svete"
  any_province: "Akýkoľvek [province|e] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
  any_province_count: "$PARAMETERS$ [provinces|e] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
  any_province_percent: "$PARAMETERS$ [provinces|e] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -853,6 +874,10 @@
  any_revolutionary_all: "Všetky [revolutionary|e] [countries|e]" # todo: NEW TRANSLATION
  any_revolutionary_count: "$PARAMETERS$ [revolutionary|e] [countries|e]" # todo: NEW TRANSLATION
  any_revolutionary_percent: "$PARAMETERS$ [revolutionary|e] [countries|e]" # todo: NEW TRANSLATION
+ any_location_in_scripted_geography: "Akákoľvek [location|e] v [SCRIPTED_GEOGRAPHY.GetName]"
+ any_location_in_scripted_geography_all: "Všetky [locations|e] v [SCRIPTED_GEOGRAPHY.GetName]"
+ any_location_in_scripted_geography_percent: "$PARAMETERS$ [locations|e] v [SCRIPTED_GEOGRAPHY.GetName]"
+ any_location_in_scripted_geography_count: "$PARAMETERS$ [locations|e] v [SCRIPTED_GEOGRAPHY.GetName]"
  any_location_in_area: "Akákoľvek [location|e] v [AREA.GetName]" # todo: NEW TRANSLATION
  any_location_in_area_all: "Všetky [locations|e] v [AREA.GetName]" # todo: NEW TRANSLATION
  any_location_in_area_percent: "$PARAMETERS$ [locations|e] v [AREA.GetName]" # todo: NEW TRANSLATION
@@ -1243,7 +1268,16 @@
  every_overlord_or_above: "Každý [overlord|e] alebo vyšší" # todo: NEW TRANSLATION
  random_overlord_or_above: "Náhodný [overlord|e] alebo vyšší" # todo: NEW TRANSLATION
  any_unit: "Akákoľvek [army|e] alebo [navy|e] v krajine" # todo: NEW TRANSLATION
+ any_army: "Akákoľvek [army|e] v krajine"
+ any_navy: "Akákoľvek [navy|e] v krajine"
  any_sub_unit: "Akýkoľvek [regiment|e] alebo [ship|e] v krajine" # todo: NEW TRANSLATION
+ NOT_sub_unit: "Žiadny [regiment|e] ani [ship|e]"
+ any_sub_unit_all: "Všetky [regiments|e] alebo [ships|e]"
+ NOT_any_sub_unit_all: "Nie všetky [regiments|e] alebo [ships|e]"
+ any_sub_unit_count: "$PARAMETERS$ [regiments|e] alebo [ships|e]"
+ NOT_any_sub_unit_count: "Nie $PARAMETERS$ [regiments|e] alebo [ships|e]"
+ any_sub_unit_percent: "$PARAMETERS$ [regiments|e] alebo [ships|e]"
+ NOT_any_sub_unit_percent: "Nie $PARAMETERS$ [regiments|e] alebo [ships|e]"
  random_unit: "Náhodný [army|e] alebo [navy|e] v krajine" # todo: NEW TRANSLATION
  every_unit: "Každá [army|e] alebo [navy|e] v krajine" # todo: NEW TRANSLATION
  any_character: "Akýkoľvek [character|e] v krajine" # todo: NEW TRANSLATION
@@ -1409,10 +1443,28 @@
  any_current_law_all: "Všetky [laws|e]" # todo: NEW TRANSLATION
  any_current_law_count: "$PARAMETERS$ [laws|e]" # todo: NEW TRANSLATION
  any_current_law_percentage: "$PARAMETERS$ [laws|e]" # todo: NEW TRANSLATION
+ NOT_any_current_bureaucracy_type: "Žiadna [bureaucracy|e]"
+ any_current_bureaucracy_type: "Akákoľvek [bureaucracy|e]"
+ any_current_bureaucracy_type_all: "Všetky [bureaucracies|e]"
+ any_current_bureaucracy_type_count: "$PARAMETERS$ [bureaucracies|e]"
+ any_current_bureaucracy_type_percentage: "$PARAMETERS$ [bureaucracies|e]"
+ NOT_any_current_bureaucracy: "Žiadna [bureaucracy|e]"
+ any_current_bureaucracy: "Akákoľvek [bureaucracy|e]"
+ any_current_bureaucracy_all: "Všetky [bureaucracies|e]"
+ any_current_bureaucracy_count: "$PARAMETERS$ [bureaucracies|e]"
+ any_current_bureaucracy_percentage: "$PARAMETERS$ [bureaucracies|e]"
  any_current_policy: "Akákoľvek [policy|e]" # todo: NEW TRANSLATION
  any_current_policy_all: "Všetky [policies|e]" # todo: NEW TRANSLATION
  any_current_policy_count: "$PARAMETERS$ [policies|e]" # todo: NEW TRANSLATION
  any_current_policy_percentage: "$PARAMETERS$ [policies|e]" # todo: NEW TRANSLATION
+ any_current_policy_in_international_organization: "Akákoľvek [policy|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_any_current_policy_in_international_organization: "Žiadna [policy|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
+ any_current_policy_in_international_organization_all: "Všetky [policies|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_any_current_policy_in_international_organization_all: "Nie všetky [policies|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
+ any_current_policy_in_international_organization_count: "$PARAMETERS$ [policies|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_any_current_policy_in_international_organization_count: "Nie $PARAMETERS$ [policies|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
+ any_current_policy_in_international_organization_percentage: "$PARAMETERS$ [policies|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_any_current_policy_in_international_organization_percentage: "Nie $PARAMETERS$ [policies|e] v [INTERNATIONAL_ORGANIZATION.GetName]"
  any_policy_in_law: "Akákoľvek [policy|e] v [LAW.GetName]" # todo: NEW TRANSLATION
  NOT_any_policy_in_law: "Žiadna [policy|e] v [LAW.GetName]" # todo: NEW TRANSLATION
  any_policy_in_law_all: "Všetky [policies|e] v [LAW.GetName]" # todo: NEW TRANSLATION
@@ -1486,6 +1538,28 @@
  any_culture_all: "Všetky [cultures|e]" # todo: NEW TRANSLATION
  any_culture_count: "$PARAMETERS$ [culture|e]" # todo: NEW TRANSLATION
  any_culture_percent: "$PARAMETERS$ [culture|e]" # todo: NEW TRANSLATION
+ any_town_rights_in_country: "Akékoľvek [town_rights|e] v [COUNTRY.GetName]"
+ NOT_any_town_rights_in_country: "Žiadne [town_rights|e] v [COUNTRY.GetName]"
+ any_town_rights_in_country_all: "Všetky [town_rights|e] v [COUNTRY.GetName]"
+ NOT_any_town_rights_in_country_all: "Nie všetky [town_rights|e] v [COUNTRY.GetName]"
+ any_town_rights_in_country_count: "$PARAMETERS$ [town_rights|e] v [COUNTRY.GetName]"
+ NOT_any_town_rights_in_country_count: "Nie $PARAMETERS$ [town_rights|e] v [COUNTRY.GetName]"
+ any_town_rights_in_country_percent: "$PARAMETERS$ [town_rights|e] v [COUNTRY.GetName]"
+ NOT_any_town_rights_in_country_percent: "Nie $PARAMETERS$ [town_rights|e] v [COUNTRY.GetName]"
+ any_town_rights_in_location: "Akékoľvek [town_rights|e] v [LOCATION.GetName]"
+ NOT_any_town_rights_in_location: "Žiadne [town_rights|e] v [LOCATION.GetName]"
+ any_town_rights_in_location_all: "Všetky [town_rights|e] v [LOCATION.GetName]"
+ NOT_any_town_rights_in_location_all: "Nie všetky [town_rights|e] v [LOCATION.GetName]"
+ any_town_rights_in_location_count: "$PARAMETERS$ [town_rights|e] v [LOCATION.GetName]"
+ NOT_any_town_rights_in_location_count: "Nie $PARAMETERS$ [town_rights|e] v [LOCATION.GetName]"
+ any_town_rights_in_location_percent: "$PARAMETERS$ [town_rights|e] v [LOCATION.GetName]"
+ NOT_any_town_rights_in_location_percent: "Nie $PARAMETERS$ [town_rights|e] v [LOCATION.GetName]"
+ town_rights_type_equal: "Je [TARGET_TOWN_RIGHTS.GetName]"
+ NOT_town_rights_type_equal: "Nie je [TARGET_TOWN_RIGHTS.GetName]"
+ town_rights_type_not_equal: "Nie je [TARGET_TOWN_RIGHTS.GetName]"
+ NOT_town_rights_type_not_equal: "Je [TARGET_TOWN_RIGHTS.GetName]"
+ town_rights_this_equal: "Je [TARGET_TOWN_RIGHTS.GetName]"
+ NOT_town_rights_this_equal: "Nie je [TARGET_TOWN_RIGHTS.GetName]"
  any_active_estate: "Akýkoľvek aktívny [estate|e]" # todo: NEW TRANSLATION
  any_active_estate_all: "Všetky aktívne [estates|e]" # todo: NEW TRANSLATION
  any_active_estate_count: "$PARAMETERS$ aktívnych [estate|e]" # todo: NEW TRANSLATION
@@ -1562,6 +1636,8 @@
  NOT_is_situation_active_trigger: "[TARGET_SITUATION.GetName] momentálne neprebieha" # todo: NEW TRANSLATION
  country_exists_trigger: "[TARGET_COUNTRY.GetName] existuje" # todo: NEW TRANSLATION
  NOT_country_exists_trigger: "[TARGET_COUNTRY.GetName] neexistuje" # todo: NEW TRANSLATION
+ io_exists_trigger: "[TARGET_INTERNATIONAL_ORGANIZATION.GetName] existuje"
+ NOT_io_exists_trigger: "[TARGET_INTERNATIONAL_ORGANIZATION.GetName] neexistuje"
  dynasty_exists_trigger: "[TARGET_DYNASTY.GetName] [dynasty|e] existuje"
  NOT_dynasty_exists_trigger: "[TARGET_DYNASTY.GetName] [dynasty|e] NEexistuje"
  unique_international_organization_type_exists_trigger: "[TARGET_INTERNATIONAL_ORGANIZATION_TYPE.GetName] existuje" # todo: NEW TRANSLATION
@@ -1570,6 +1646,8 @@
  NOT_has_global_variable_trigger: "Nemá globálnu premennú: $VARIABLE$" # todo: NEW TRANSLATION
  has_variable_trigger: "Má premennú: $VARIABLE$" # todo: NEW TRANSLATION
  NOT_has_variable_trigger: "Nemá premennú: $VARIABLE$" # todo: NEW TRANSLATION
+ has_dlc_trigger: "Má DLC: $DLC$"
+ NOT_has_dlc_trigger: "Nemá DLC: $DLC$"
  country_var_greater_or_equal: "[country|e] má $VAR_NAME$ s hodnotou $NUM$ alebo viac" # todo: NEW TRANSLATION
  country_var_greater_than: "[country|e] má $VAR_NAME$ s hodnotou viac ako $NUM" # todo: NEW TRANSLATION
  country_var_less_or_equal: "[country|e] má $VAR_NAME$ s hodnotou $NUM$ alebo menej" # todo: NEW TRANSLATION
@@ -1768,6 +1846,10 @@
  NOT_DEVELOPMENT_TRIGGER: "NEMÁ $COMPARATOR$ $NUM|Y$ [development|e]" # todo: NEW TRANSLATION
  THIRD_DEVELOPMENT_TRIGGER: "[LOCATION.GetName] má $COMPARATOR$ $NUM|Y$ [development|e]" # todo: NEW TRANSLATION
  NOT_THIRD_DEVELOPMENT_TRIGGER: "[LOCATION.GetName] NEMÁ $COMPARATOR$ $NUM|Y$ [development|e]" # todo: NEW TRANSLATION
+ RGO_LEVEL_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ úroveň [rgo|e]"
+ NOT_RGO_LEVEL_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ úroveň [rgo|e]"
+ THIRD_RGO_LEVEL_TRIGGER: "[LOCATION.GetName] má $COMPARATOR$ $NUM|V0$ úroveň [rgo|e]"
+ NOT_THIRD_RGO_LEVEL_TRIGGER: "[LOCATION.GetName] nemá $COMPARATOR$ $NUM|V0$ úroveň [rgo|e]"
  MAX_RGO_WORKERS_TRIGGER: "Môže mať $COMPARATOR$ $NUM|V0$ v $RGO$" # todo: NEW TRANSLATION
  NOT_MAX_RGO_WORKERS_TRIGGER: "NEMÔŽE mať $COMPARATOR$ $NUM|%Y$ v $RGO$" # todo: NEW TRANSLATION
  THIRD_MAX_RGO_WORKERS_TRIGGER: "[LOCATION.GetName] môže mať $COMPARATOR$ $NUM|V0$ v $RGO$" # todo: NEW TRANSLATION
@@ -1843,6 +1925,10 @@
  NOT_LOCATION_RANK_TRIGGER: "Nie je $NAME$" # todo: NEW TRANSLATION
  THIRD_LOCATION_RANK_TRIGGER: "[LOCATION.GetName] je $NAME$" # todo: NEW TRANSLATION
  NOT_THIRD_LOCATION_RANK_TRIGGER: "[LOCATION.GetName] nie je $NAME$" # todo: NEW TRANSLATION
+ ORIGINAL_LOCATION_RANK_TRIGGER: "Bol [TARGET_LOCATION_RANK.GetName] na začiatku kampane"
+ NOT_ORIGINAL_LOCATION_RANK_TRIGGER: "Nebol [TARGET_LOCATION_RANK.GetName] na začiatku kampane"
+ THIRD_ORIGINAL_LOCATION_RANK_TRIGGER: "[LOCATION.GetName] bol [TARGET_LOCATION_RANK.GetName] na začiatku kampane"
+ NOT_THIRD_ORIGINAL_LOCATION_RANK_TRIGGER: "[LOCATION.GetName] nebol $NAME$ na začiatku kampane"
  INSTITUTION_PROGRESS_TRIGGER: "Pokrok pre $NAME$ je $COMPARATOR$ $NUM|Y/%$" # todo: NEW TRANSLATION
  NOT_INSTITUTION_PROGRESS_TRIGGER: "Pokrok pre $NAME$ NIE JE $COMPARATOR$ $NUM|Y/%$" # todo: NEW TRANSLATION
  THIRD_INSTITUTION_PROGRESS_TRIGGER: "Pokrok pre $NAME$ v [LOCATION.GetName] je $COMPARATOR$ $NUM|Y/%$" # todo: NEW TRANSLATION
@@ -1965,6 +2051,18 @@
  NOT_IS_REQUIRED_FOR_FORMABLE_TRIGGER: "Nie je vyžadované pre [formable_country_form|e] [FORMABLE_COUNTRY.GetName]" # todo: NEW TRANSLATION
  THIRD_IS_REQUIRED_FOR_FORMABLE_TRIGGER: "[LOCATION.GetName] je vyžadované pre [formable_country_form|e] [FORMABLE_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_IS_REQUIRED_FOR_FORMABLE_TRIGGER: "[LOCATION.GetName] nie je vyžadované pre [formable_country_form|e] [FORMABLE_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ IS_IN_SCRIPTED_GEOGRAPHY_TRIGGER: "Je v [TARGET_SCRIPTED_GEOGRAPHY.GetName]"
+ NOT_IS_IN_SCRIPTED_GEOGRAPHY_TRIGGER: "Nie je v [TARGET_SCRIPTED_GEOGRAPHY.GetName]"
+ THIRD_IS_IN_SCRIPTED_GEOGRAPHY_TRIGGER: "[LOCATION.GetName] je v [TARGET_SCRIPTED_GEOGRAPHY.GetName]"
+ NOT_THIRD_IS_IN_SCRIPTED_GEOGRAPHY_TRIGGER: "[LOCATION.GetName] nie je v [TARGET_SCRIPTED_GEOGRAPHY.GetName]"
+ HAS_TOWN_RIGHTS_TRIGGER: "Má [TARGET_TOWN_RIGHTS_TYPE.GetName]"
+ NOT_HAS_TOWN_RIGHTS_TRIGGER: "Nemá [TARGET_TOWN_RIGHTS_TYPE.GetName]"
+ THIRD_HAS_TOWN_RIGHTS_TRIGGER: "[LOCATION.GetName] má [TARGET_TOWN_RIGHTS_TYPE.GetName]"
+ NOT_THIRD_HAS_TOWN_RIGHTS_TRIGGER: "[LOCATION.GetName] nemá [TARGET_TOWN_RIGHTS_TYPE.GetName]"
+ HAS_DIFFERENT_TOWN_RIGHTS_THAN_TRIGGER: "Má iné mestské práva než [TARGET_LOCATION.GetName]"
+ NOT_HAS_DIFFERENT_TOWN_RIGHTS_THAN_TRIGGER: "Nemá iné mestské práva než [TARGET_LOCATION.GetName]"
+ THIRD_HAS_DIFFERENT_TOWN_RIGHTS_THAN_TRIGGER: "[LOCATION.GetName] má iné mestské práva než [TARGET_LOCATION.GetName]"
+ NOT_THIRD_HAS_DIFFERENT_TOWN_RIGHTS_THAN_TRIGGER: "[LOCATION.GetName] nemá iné mestské práva než [TARGET_LOCATION.GetName]"
  FOOD_VALUE_TRIGGER: "Hodnota [food|e] je $COMPARATOR$ $NUM|Y$" # todo: NEW TRANSLATION
  NOT_FOOD_VALUE_TRIGGER: "Hodnota [food|e] nie je $COMPARATOR$ $NUM|Y$" # todo: NEW TRANSLATION
  THIRD_FOOD_VALUE_TRIGGER: "[GOODS.GetName] hodnota [food|e] je $COMPARATOR$ $NUM|Y$" # todo: NEW TRANSLATION
@@ -2045,6 +2143,12 @@
  NOT_FIRST_ECO_BASE_TRIGGER: "Nemáme $COMPARATOR$ $NUM|Y$ [economical_base|e]" # todo: NEW TRANSLATION
  THIRD_ECO_BASE_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|Y$ [economical_base|e]" # todo: NEW TRANSLATION
  NOT_THIRD_ECO_BASE_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|Y$ [economical_base|e]" # todo: NEW TRANSLATION
+ CAPITAL_WEALTH_TRIGGER: "Má $COMPARATOR$ $NUM|Y$ [wealth|e] v [province|e] [capital|e]"
+ NOT_CAPITAL_WEALTH_TRIGGER: "Nemá $COMPARATOR$ $NUM|Y$ [wealth|e] v [province|e] [capital|e]"
+ FIRST_CAPITAL_WEALTH_TRIGGER: "Máme $COMPARATOR$ $NUM|Y$ [wealth|e] v [province|e] [capital|e]"
+ NOT_FIRST_CAPITAL_WEALTH_TRIGGER: "Nemáme $COMPARATOR$ $NUM|Y$ [wealth|e] v [province|e] [capital|e]"
+ THIRD_CAPITAL_WEALTH_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|Y$ [wealth|e] v [province|e] [capital|e]"
+ NOT_THIRD_CAPITAL_WEALTH_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|Y$ [wealth|e] v [province|e] [capital|e]"
  MINTING_VALUE_TRIGGER: "Má $COMPARATOR$ $NUM|%Y$ [minting|e]" # todo: NEW TRANSLATION
  NOT_MINTING_VALUE_TRIGGER: "Nemá $COMPARATOR$ $NUM|%Y$ [minting|e]" # todo: NEW TRANSLATION
  FIRST_MINTING_VALUE_TRIGGER: "Máme $COMPARATOR$ $NUM|%Y$ [minting|e]" # todo: NEW TRANSLATION
@@ -2184,6 +2288,14 @@
  THIRD_HAS_RIVER_TRIGGER: "[LOCATION.GetName] má rieku" # todo: NEW TRANSLATION
  NOT_HAS_RIVER_TRIGGER: "Nemá rieku" # todo: NEW TRANSLATION
  NOT_THIRD_HAS_RIVER_TRIGGER: "[LOCATION.GetName] nemá rieku" # todo: NEW TRANSLATION
+ HAS_ANY_TOWN_RIGHTS_TRIGGER: "Má mestské práva"
+ THIRD_HAS_ANY_TOWN_RIGHTS_TRIGGER: "[LOCATION.GetName] má mestské práva"
+ NOT_HAS_ANY_TOWN_RIGHTS_TRIGGER: "Nemá žiadne mestské práva"
+ NOT_THIRD_HAS_ANY_TOWN_RIGHTS_TRIGGER: "[LOCATION.GetName] nemá žiadne mestské práva"
+ HAS_MAX_TOWN_RIGHTS_TRIGGER: "Má maximálny počet mestských práv"
+ THIRD_HAS_MAX_TOWN_RIGHTS_TRIGGER: "[LOCATION.GetName] má maximálny počet mestských práv"
+ NOT_HAS_MAX_TOWN_RIGHTS_TRIGGER: "Nemá maximálny počet mestských práv"
+ NOT_THIRD_HAS_MAX_TOWN_RIGHTS_TRIGGER: "[LOCATION.GetName] nemá maximálny počet mestských práv"
  IS_ADJACENT_TO_LAKE_TRIGGER: "Hraničí s jazerom" # todo: NEW TRANSLATION
  NOT_IS_ADJACENT_TO_LAKE_TRIGGER: "Nie je pri jazere" # todo: NEW TRANSLATION
  THIRD_IS_ADJACENT_TO_LAKE_TRIGGER: "[LOCATION.GetName] hraničí s jazerom" # todo: NEW TRANSLATION
@@ -2313,10 +2425,22 @@
  PLAYER_IS_NOT_HAS_OR_HAD_TAG_TRIGGER: "Nehrajeme a nikdy sme nehrali za $NAME|Y$" # todo: NEW TRANSLATION
  THIRD_HAS_OR_HAD_TAG_TRIGGER: "Krajina je alebo bola $NAME|Y$" # todo: NEW TRANSLATION
  NOT_THIRD_HAS_OR_HAD_TAG_TRIGGER: "Krajina nie je a nebola $NAME|Y$" # todo: NEW TRANSLATION
+ ORIGINAL_TAG_TRIGGER: "Pôvodne bol $NAME|Y$"
+ IS_NOT_ORIGINAL_TAG_TRIGGER: "Pôvodne nebol $NAME|Y$"
+ PLAYER_ORIGINAL_TAG_TRIGGER: "Pôvodne sme boli $NAME|Y$"
+ PLAYER_IS_NOT_ORIGINAL_TAG_TRIGGER: "Pôvodne sme neboli $NAME|Y$"
+ THIRD_ORIGINAL_TAG_TRIGGER: "Krajina bola pôvodne $NAME|Y$"
+ NOT_THIRD_ORIGINAL_TAG_TRIGGER: "Krajina nebola pôvodne $NAME|Y$"
  HAS_DOOM_TRIGGER: "Používa [doom|E]" # todo: NEW TRANSLATION
  NOT_HAS_DOOM_TRIGGER: "Nepoužíva [doom|E]" # todo: NEW TRANSLATION
  THIRD_HAS_DOOM_TRIGGER: "[COUNTRY.GetName] používa [doom|E]"
  NOT_THIRD_HAS_DOOM_TRIGGER: "[COUNTRY.GetName] nepoužíva [doom|E]"
+ IS_INVOKING_OMEN_TRIGGER: "Momentálne vyvoláva [omen|e]"
+ NOT_IS_INVOKING_OMEN_TRIGGER: "Nevyvoláva momentálne [omen|e]"
+ FIRST_IS_INVOKING_OMEN_TRIGGER: "Momentálne vyvolávame [omen|e]"
+ NOT_FIRST_IS_INVOKING_OMEN_TRIGGER: "Nevyvolávame momentálne [omen|e]"
+ THIRD_IS_INVOKING_OMEN_TRIGGER: "[COUNTRY.GetName] momentálne vyvoláva [omen|e]"
+ NOT_THIRD_IS_INVOKING_OMEN_TRIGGER: "[COUNTRY.GetName] momentálne nevyvoláva [omen|e]"
  TOPOGRAPHY_COUNT_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [locations|e], ktoré sú [TARGET_TOPOGRAPHY.GetName] $current_value_V0$"
  NOT_TOPOGRAPHY_COUNT_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [locations|e], ktoré sú [TARGET_TOPOGRAPHY.GetName] $current_value_V0$"
  FIRST_TOPOGRAPHY_COUNT_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [locations|e], ktoré sú [TARGET_TOPOGRAPHY.GetName] $current_value_V0$"
@@ -2353,6 +2477,18 @@
  NOT_FIRST_CLIMATE_PERCENT_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V2%$ [locations|e], ktoré sú [TARGET_CLIMATE.GetName] $current_value_Vpercent2$"
  THIRD_CLIMATE_PERCENT_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V2%$ [locations|e], ktoré sú [TARGET_CLIMATE.GetName] $current_value_Vpercent2$"
  NOT_THIRD_CLIMATE_PERCENT_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|V2%$ [locations|e], ktoré sú [TARGET_CLIMATE.GetName] $current_value_Vpercent2$"
+ NUM_RGO_OF_METHOD_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [locations|e] s $ENUM$ surovinou"
+ NOT_NUM_RGO_OF_METHOD_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [locations|e] s $ENUM$ surovinou"
+ FIRST_NUM_RGO_OF_METHOD_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [locations|e] s $ENUM$ surovinou"
+ NOT_FIRST_NUM_RGO_OF_METHOD_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [locations|e] s $ENUM$ surovinou"
+ THIRD_NUM_RGO_OF_METHOD_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V0$ [locations|e] s $ENUM$ surovinou"
+ NOT_THIRD_NUM_RGO_OF_METHOD_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|V0$ [locations|e] s $ENUM$ surovinou"
+ HAS_ANY_RGO_OF_GOODS_METHOD_TRIGGER: "Má aspoň jednu [location|e] s $ENUM$ surovinou"
+ NOT_HAS_ANY_RGO_OF_GOODS_METHOD_TRIGGER: "Nemá žiadnu [location|e] s $ENUM$ surovinou"
+ FIRST_HAS_ANY_RGO_OF_GOODS_METHOD_TRIGGER: "Máme aspoň jednu [location|e] s $ENUM$ surovinou"
+ NOT_FIRST_HAS_ANY_RGO_OF_GOODS_METHOD_TRIGGER: "Nemáme žiadnu [location|e] s $ENUM$ surovinou"
+ THIRD_HAS_ANY_RGO_OF_GOODS_METHOD_TRIGGER: "[COUNTRY.GetName] má aspoň jednu [location|e] s $ENUM$ surovinou"
+ NOT_THIRD_HAS_ANY_RGO_OF_GOODS_METHOD_TRIGGER: "[COUNTRY.GetName] nemá žiadnu [location|e] s $ENUM$ surovinou"
  COUNTRY_RELIGION_TRIGGER: "[COUNTRY.GetName] je $RELIGION$" # todo: NEW TRANSLATION
  NOT_COUNTRY_RELIGION_TRIGGER: "[COUNTRY.GetName] nie je $RELIGION$" # todo: NEW TRANSLATION
  PLAYER_COUNTRY_RELIGION_TRIGGER: "Naša krajina je $RELIGION$" # todo: NEW TRANSLATION
@@ -2667,6 +2803,12 @@
  NOT_I_HAVE_THIS_TRUST_OF_TARGET_OR_ABOVE: "Náš [trust|E] voči [TARGET_COUNTRY.GetName] nie je $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION
  COUNTRY_HAS_THIS_TRUST_OF_TARGET_OR_ABOVE: "[COUNTRY.GetName] má [trust|E] voči [TARGET_COUNTRY.GetName] $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION
  NOT_COUNTRY_HAS_THIS_TRUST_OF_TARGET_OR_ABOVE: "[COUNTRY.GetName] nemá [trust|E] voči [TARGET_COUNTRY.GetName] $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION
+ HAS_THIS_TRUST_EQUILIBRIUM_OF_TARGET_OR_ABOVE: "[trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_HAS_THIS_TRUST_EQUILIBRIUM_OF_TARGET_OR_ABOVE: "[trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ I_HAVE_THIS_TRUST_EQUILIBRIUM_OF_TARGET_OR_ABOVE: "Náš [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_I_HAVE_THIS_TRUST_EQUILIBRIUM_OF_TARGET_OR_ABOVE: "Náš [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ COUNTRY_HAS_THIS_TRUST_EQUILIBRIUM_OF_TARGET_OR_ABOVE: "[COUNTRY.GetName] [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_COUNTRY_HAS_THIS_TRUST_EQUILIBRIUM_OF_TARGET_OR_ABOVE: "[COUNTRY.GetName] [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
  ANTAGONISM_TRIGGER: "[antagonism|E] voči [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION
  NOT_ANTAGONISM_TRIGGER: "[antagonism|E] voči [TARGET_COUNTRY.GetName] nie je $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION
  WE_ANTAGONISM_TRIGGER: "Náš [antagonism|E] voči [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION
@@ -3144,6 +3286,12 @@
  NOT_FIRST_COUNTRY_POP_TRIGGER: "Nemáme celkovú populáciu $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
  THIRD_COUNTRY_POP_TRIGGER: "[COUNTRY.GetName] má celkovú populáciu $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
  NOT_THIRD_COUNTRY_POP_TRIGGER: "[COUNTRY.GetName] nemá celkovú populáciu $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
+ MONTHLY_POPULATION_CHANGE_TRIGGER: "Mesačná zmena populácie je $COMPARATOR$ $NUM|V0$ $current_value_V0$"
+ NOT_MONTHLY_POPULATION_CHANGE_TRIGGER: "Mesačná zmena populácie NIE JE $COMPARATOR$ $NUM|V0$ $current_value_V0$"
+ FIRST_MONTHLY_POPULATION_CHANGE_TRIGGER: "Máme mesačnú zmenu populácie $COMPARATOR$ $NUM|V0$ $current_value_V0$"
+ NOT_FIRST_MONTHLY_POPULATION_CHANGE_TRIGGER: "Nemáme mesačnú zmenu populácie $COMPARATOR$ $NUM|V0$ $current_value_V0$"
+ THIRD_MONTHLY_POPULATION_CHANGE_TRIGGER: "[COUNTRY.GetName] má mesačnú zmenu populácie $COMPARATOR$ $NUM|V0$ $current_value_V0$"
+ NOT_THIRD_MONTHLY_POPULATION_CHANGE_TRIGGER: "[COUNTRY.GetName] nemá mesačnú zmenu populácie $COMPARATOR$ $NUM|V0$ $current_value_V0$"
  TOTAL_POPULATION_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Má celkovú populáciu $COMPARATOR$ $NUM|V0$ v [TARGET_INTERNATIONAL_ORGANIZATION.GetName] $current_value_V0$" # todo: NEW TRANSLATION
  NOT_TOTAL_POPULATION_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nemá celkovú populáciu $COMPARATOR$ $NUM|V0$ v [TARGET_INTERNATIONAL_ORGANIZATION.GetName] $current_value_V0$" # todo: NEW TRANSLATION
  FIRST_TOTAL_POPULATION_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Máme celkovú populáciu $COMPARATOR$ $NUM|V0$ v [TARGET_INTERNATIONAL_ORGANIZATION.GetName] $current_value_V0$" # todo: NEW TRANSLATION
@@ -3210,6 +3358,12 @@
  NOT_FIRST_COUNTRY_RANK_LEVEL_TRIGGER: "NEMÁME [country_rank|e] úroveň $COMPARATOR$ $NUM|V0$ $current_value_V0" # todo: NEW TRANSLATION
  THIRD_COUNTRY_RANK_LEVEL_TRIGGER: "[COUNTRY.GetName] má [country_rank|e] úroveň $COMPARATOR$ $NUM|V0$ $current_value_V0" # todo: NEW TRANSLATION
  NOT_THIRD_COUNTRY_RANK_LEVEL_TRIGGER: "[COUNTRY.GetName] NEMÁ [country_rank|e] úroveň $COMPARATOR$ $NUM|V0$ $current_value_V0" # todo: NEW TRANSLATION
+ COUNTRY_RANK_LEVEL_LESS_OR_EQUAL_TRIGGER: "[country_rank|e] je najviac ako u [TARGET_COUNTRY.GetName]"
+ NOT_COUNTRY_RANK_LEVEL_LESS_OR_EQUAL_TRIGGER: "[country_rank|e] NIE JE najviac ako u [TARGET_COUNTRY.GetName]"
+ FIRST_COUNTRY_RANK_LEVEL_LESS_OR_EQUAL_TRIGGER: "Náš [country_rank|e] je najviac ako u [TARGET_COUNTRY.GetName]"
+ NOT_FIRST_COUNTRY_RANK_LEVEL_LESS_OR_EQUAL_TRIGGER: "Náš [country_rank|e] NIE JE najviac ako u [TARGET_COUNTRY.GetName]"
+ THIRD_COUNTRY_RANK_LEVEL_LESS_OR_EQUAL_TRIGGER: "[COUNTRY.GetName] [country_rank|e] je najviac ako u [TARGET_COUNTRY.GetName]"
+ NOT_THIRD_COUNTRY_RANK_LEVEL_LESS_OR_EQUAL_TRIGGER: "[COUNTRY.GetName] [country_rank|e] NIE JE najviac ako u [TARGET_COUNTRY.GetName]"
  COUNTRY_RANK_LEVEL_ON_DATE_TRIGGER: "Mal [country_rank|e] úroveň $COMPARATOR$ $NUM|V0$ $current_value_V0$ dňa $DATE$" # todo: NEW TRANSLATION
  NOT_COUNTRY_RANK_LEVEL_ON_DATE_TRIGGER: "NEMAL [country_rank|e] úroveň $COMPARATOR$ $NUM|V0$ $current_value_V0$ dňa $DATE$" # todo: NEW TRANSLATION
  FIRST_COUNTRY_RANK_LEVEL_ON_DATE_TRIGGER: "Mali sme [country_rank|e] úroveň $COMPARATOR$ $NUM|V0$ $current_value_V0$ dňa $DATE$" # todo: NEW TRANSLATION
@@ -3224,6 +3378,10 @@
  NOT_ESTATE_TARGET_SATISFACTION_TRIGGER: "Cieľové [estate_satisfaction|E] NENÍ $COMPARATOR$ $NUM|2%V$" # todo: NEW TRANSLATION
  THIRD_ESTATE_TARGET_SATISFACTION_TRIGGER: "[ESTATE.GetName] majú cieľové [estate_satisfaction|E] $COMPARATOR$ $NUM|2%V$" # todo: NEW TRANSLATION
  NOT_THIRD_ESTATE_TARGET_SATISFACTION_TRIGGER: "[ESTATE.GetName] NEMAJÚ cieľové [estate_satisfaction|E] $COMPARATOR$ $NUM|2%V$" # todo: NEW TRANSLATION
+ ESTATE_MONTHLY_SATISFACTION_CHANGE_TRIGGER: "Mesačná zmena [estate_satisfaction|E] je $COMPARATOR$ $NUM|2%V$ $current_value_Vpercent2$"
+ NOT_ESTATE_MONTHLY_SATISFACTION_CHANGE_TRIGGER: "Mesačná zmena [estate_satisfaction|E] NIE JE $COMPARATOR$ $NUM|2%V$ $current_value_Vpercent2$"
+ THIRD_ESTATE_MONTHLY_SATISFACTION_CHANGE_TRIGGER: "[ESTATE.GetName] má mesačnú zmenu [estate_satisfaction|E] $COMPARATOR$ $NUM|2%V$ $current_value_Vpercent2$"
+ NOT_THIRD_ESTATE_MONTHLY_SATISFACTION_CHANGE_TRIGGER: "[ESTATE.GetName] nemá mesačnú zmenu [estate_satisfaction|E] $COMPARATOR$ $NUM|2%V$ $current_value_Vpercent2$"
  ESTATE_POWER_TRIGGER: "[estate_power|E] je $COMPARATOR$ $NUM|2%V$" # todo: NEW TRANSLATION
  NOT_ESTATE_POWER_TRIGGER: "[estate_power|E] NENÍ $COMPARATOR$ $NUM|2%V$" # todo: NEW TRANSLATION
  THIRD_ESTATE_POWER_TRIGGER: "[ESTATE.GetName] majú [estate_power|E] $COMPARATOR$ $NUM|2%V$" # todo: NEW TRANSLATION
@@ -3236,6 +3394,10 @@
  NOT_ESTATE_TAXABLE_INCOME_TRIGGER: "NEMÁ zdaniteľný príjem $COMPARATOR$ $NUM|2V$[gold_i]" # todo: NEW TRANSLATION
  THIRD_ESTATE_TAXABLE_INCOME_TRIGGER: "[ESTATE.GetName] majú zdaniteľný príjem $COMPARATOR$ $NUM|2V$[gold_i]" # todo: NEW TRANSLATION
  NOT_THIRD_ESTATE_TAXABLE_INCOME_TRIGGER: "[ESTATE.GetName] NEMAJÚ zdaniteľný príjem $COMPARATOR$ $NUM|2V$[gold_i]" # todo: NEW TRANSLATION
+ ESTATE_NUM_BUILDINGS_TRIGGER: "Vlastní $COMPARATOR$ $NUM|0Y$ [building|e]"
+ NOT_ESTATE_NUM_BUILDINGS_TRIGGER: "Nemá $COMPARATOR$ $NUM|0Y$ [building|e]"
+ THIRD_ESTATE_NUM_BUILDINGS_TRIGGER: "[ESTATE.GetName] vlastní $COMPARATOR$ $NUM|0Y$ [building|e]"
+ NOT_THIRD_ESTATE_NUM_BUILDINGS_TRIGGER: "[ESTATE.GetName] nemá $COMPARATOR$ $NUM|0Y$ [building|e]"
  ESTATE_TAX_TRIGGER: "Má súčasnú [tax|e] $COMPARATOR$ $NUM|2Y$[gold_i]" # todo: NEW TRANSLATION
  NOT_ESTATE_TAX_TRIGGER: "NEMÁ súčasnú [tax|e] $COMPARATOR$ $NUM|2Y$[gold_i]" # todo: NEW TRANSLATION
  THIRD_ESTATE_TAX_TRIGGER: "[ESTATE.GetName] majú súčasnú [tax|e] $COMPARATOR$ $NUM|2Y$[gold_i]" # todo: NEW TRANSLATION
@@ -3377,6 +3539,12 @@
  NOT_FIRST_NUM_LOANS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [loans|e]" # todo: NEW TRANSLATION
  THIRD_NUM_LOANS_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V0$ [loans|e]" # todo: NEW TRANSLATION
  NOT_THIRD_NUM_LOANS_TRIGGER: "[COUNTRY.GetName] NEMÁ $COMPARATOR$ $NUM|V0$ [loans|e]" # todo: NEW TRANSLATION
+ NUM_COUNTRY_THAT_CAN_BE_CALLED_OFFENSIVELY_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [countries|e], ktoré možno povolať ofenzívne"
+ NOT_NUM_COUNTRY_THAT_CAN_BE_CALLED_OFFENSIVELY_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [countries|e], ktoré možno povolať ofenzívne"
+ FIRST_NUM_COUNTRY_THAT_CAN_BE_CALLED_OFFENSIVELY_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [countries|e], ktoré možno povolať ofenzívne"
+ NOT_FIRST_NUM_COUNTRY_THAT_CAN_BE_CALLED_OFFENSIVELY_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [countries|e], ktoré možno povolať ofenzívne"
+ THIRD_NUM_COUNTRY_THAT_CAN_BE_CALLED_OFFENSIVELY_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V0$ [countries|e], ktoré možno povolať ofenzívne"
+ NOT_THIRD_NUM_COUNTRY_THAT_CAN_BE_CALLED_OFFENSIVELY_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|V0$ [countries|e], ktoré možno povolať ofenzívne"
  NUM_CHARACTERS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [characters|e] $current_value_V0" # todo: NEW TRANSLATION
  NOT_NUM_CHARACTERS_TRIGGER: "NEMÁ $COMPARATOR$ $NUM|V0$ [characters|e] $current_value_V0" # todo: NEW TRANSLATION
  FIRST_NUM_CHARACTERS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [characters|e] $current_value_V0" # todo: NEW TRANSLATION
@@ -3585,6 +3753,12 @@
  NOT_FIRST_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_TRIGGER: "My alebo ktorýkoľvek z našich [non_sovereign_subjects|e] nevlastní [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  THIRD_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_TRIGGER: "[COUNTRY.GetName] alebo ktorýkoľvek z jeho [non_sovereign_subjects|e] vlastní [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_TRIGGER: "[COUNTRY.GetName] ani ktorýkoľvek z jeho [non_sovereign_subjects|e] nevlastní [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_ENTIRE_PROVINCE_TRIGGER: "Vlastní alebo ktorékoľvek z jeho [non_sovereign_subjects|e] vlastní celé [TARGET_PROVINCE_DEFINITION.GetName]"
+ NOT_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_ENTIRE_PROVINCE_TRIGGER: "On alebo ktorékoľvek z jeho [non_sovereign_subjects|e] nevlastní celé [TARGET_PROVINCE_DEFINITION.GetName]"
+ FIRST_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_ENTIRE_PROVINCE_TRIGGER: "My alebo niektorý z našich [non_sovereign_subjects|e] vlastním celé [TARGET_PROVINCE_DEFINITION.GetName]"
+ NOT_FIRST_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_ENTIRE_PROVINCE_TRIGGER: "My alebo niektorý z našich [non_sovereign_subjects|e] nevlastní celé [TARGET_PROVINCE_DEFINITION.GetName]"
+ THIRD_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_ENTIRE_PROVINCE_TRIGGER: "[COUNTRY.GetName] alebo niektorý z jeho [non_sovereign_subjects|e] vlastní celé [TARGET_PROVINCE_DEFINITION.GetName]"
+ NOT_THIRD_OWNS_OR_NON_SOVEREIGN_SUBJECT_OWNS_ENTIRE_PROVINCE_TRIGGER: "[COUNTRY.GetName] alebo niektorý z jeho [non_sovereign_subjects|e] nevlastní celé [TARGET_PROVINCE_DEFINITION.GetName]"
  CONTROLS_TRIGGER: "Kontroluje [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  NOT_CONTROLS_TRIGGER: "Nekontroluje [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  FIRST_CONTROLS_TRIGGER: "Kontrolujeme [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
@@ -3736,6 +3910,30 @@
  NOT_FIRST_RECEIVES_ISOLATION_EXEMPTION_FROM_TRIGGER: "Nedostávame výnimku [isolation|e] od [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$" # todo: NEW TRANSLATION
  THIRD_RECEIVES_ISOLATION_EXEMPTION_FROM_TRIGGER: "[COUNTRY.GetName] dostáva výnimku [isolation|e] od [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$" # todo: NEW TRANSLATION
  NOT_THIRD_RECEIVES_ISOLATION_EXEMPTION_FROM_TRIGGER: "[COUNTRY.GetName] nedostáva výnimku [isolation|e] od [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$" # todo: NEW TRANSLATION
+ GIVES_DEFENSIVE_SUPPORT_TO_TRIGGER: "Príde na obrannú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ NOT_GIVES_DEFENSIVE_SUPPORT_TO_TRIGGER: "Nepríde na obrannú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ FIRST_GIVES_DEFENSIVE_SUPPORT_TO_TRIGGER: "Prídeme [TARGET_COUNTRY.GetName] na obrannú pomoc$EXISTING_RELATIONS$"
+ NOT_FIRST_GIVES_DEFENSIVE_SUPPORT_TO_TRIGGER: "Neprídeme [TARGET_COUNTRY.GetName] na obrannú pomoc$EXISTING_RELATIONS$"
+ THIRD_GIVES_DEFENSIVE_SUPPORT_TO_TRIGGER: "[COUNTRY.GetName] poskytne obrannú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ NOT_THIRD_GIVES_DEFENSIVE_SUPPORT_TO_TRIGGER: "[COUNTRY.GetName] neposkytne obrannú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ RECEIVES_DEFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] im poskytne obrannú pomoc$EXISTING_RELATIONS$"
+ NOT_RECEIVES_DEFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] im neposkytne obrannú pomoc$EXISTING_RELATIONS$"
+ FIRST_RECEIVES_DEFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] nám poskytne obrannú pomoc$EXISTING_RELATIONS$"
+ NOT_FIRST_RECEIVES_DEFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] nám neposkytne obrannú pomoc$EXISTING_RELATIONS$"
+ THIRD_RECEIVES_DEFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] poskytne obrannú pomoc [COUNTRY.GetName]$EXISTING_RELATIONS$"
+ NOT_THIRD_RECEIVES_DEFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] neposkytne obrannú pomoc [COUNTRY.GetName]$EXISTING_RELATIONS$"
+ GIVES_OFFENSIVE_SUPPORT_TO_TRIGGER: "Poskytne útočnú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ NOT_GIVES_OFFENSIVE_SUPPORT_TO_TRIGGER: "Neposkytne útočnú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ FIRST_GIVES_OFFENSIVE_SUPPORT_TO_TRIGGER: "Poskytneme útočnú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ NOT_FIRST_GIVES_OFFENSIVE_SUPPORT_TO_TRIGGER: "Neposkytneme útočnú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ THIRD_GIVES_OFFENSIVE_SUPPORT_TO_TRIGGER: "[COUNTRY.GetName] poskytne útočnú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ NOT_THIRD_GIVES_OFFENSIVE_SUPPORT_TO_TRIGGER: "[COUNTRY.GetName] neposkytne útočnú pomoc [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$"
+ RECEIVES_OFFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] im poskytne útočnú pomoc$EXISTING_RELATIONS$"
+ NOT_RECEIVES_OFFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] im neposkytne útočnú pomoc$EXISTING_RELATIONS$"
+ FIRST_RECEIVES_OFFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] nám poskytne útočnú pomoc$EXISTING_RELATIONS$"
+ NOT_FIRST_RECEIVES_OFFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] nám neposkytne útočnú pomoc$EXISTING_RELATIONS$"
+ THIRD_RECEIVES_OFFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] poskytne útočnú pomoc [COUNTRY.GetName]$EXISTING_RELATIONS$"
+ NOT_THIRD_RECEIVES_OFFENSIVE_SUPPORT_FROM_TRIGGER: "[TARGET_COUNTRY.GetName] neposkytne útočnú pomoc [COUNTRY.GetName]$EXISTING_RELATIONS$"
  HAS_TRADE_TREATY_WITH_TRIGGER: "Má zmluvu týkajúcu sa [market_attraction|e] s [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$" # todo: NEW TRANSLATION
  NOT_HAS_TRADE_TREATY_WITH_TRIGGER: "Nemá zmluvu týkajúcu sa [market_attraction|e] s [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$" # todo: NEW TRANSLATION
  FIRST_HAS_TRADE_TREATY_WITH_TRIGGER: "Máme zmluvu týkajúcu sa [market_attraction|e] s [TARGET_COUNTRY.GetName]$EXISTING_RELATIONS$" # todo: NEW TRANSLATION
@@ -3856,6 +4054,12 @@
  NOT_PLAYER_HAS_LAW_TRIGGER: "Nemáme $LAW$ [law|e]" # todo: NEW TRANSLATION
  THIRD_HAS_LAW_TRIGGER: "[COUNTRY.GetName] má $LAW$ [law|e]" # todo: NEW TRANSLATION
  NOT_THIRD_HAS_LAW_TRIGGER: "[COUNTRY.GetName] nemá $LAW$ [law|e]" # todo: NEW TRANSLATION
+ HAS_AREA_PREFERENCE_TRIGGER: "Má [TARGET_AREA_PREFERENCE.GetName] ako preferenciu oblasti AI"
+ NOT_HAS_AREA_PREFERENCE_TRIGGER: "Nemá [TARGET_AREA_PREFERENCE.GetName] ako preferenciu oblasti AI"
+ FIRST_HAS_AREA_PREFERENCE_TRIGGER: "Máme [TARGET_AREA_PREFERENCE.GetName] ako preferenciu oblasti AI"
+ NOT_FIRST_HAS_AREA_PREFERENCE_TRIGGER: "Nemáme [TARGET_AREA_PREFERENCE.GetName] ako preferenciu oblasti AI"
+ THIRD_HAS_AREA_PREFERENCE_TRIGGER: "[COUNTRY.GetName] má [TARGET_AREA_PREFERENCE.GetName] ako preferenciu oblasti AI"
+ NOT_THIRD_HAS_AREA_PREFERENCE_TRIGGER: "[COUNTRY.GetName] nemá [TARGET_AREA_PREFERENCE.GetName] ako preferenciu oblasti AI"
  RESEARCH_PROGRESS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [research_progress|E]" # todo: NEW TRANSLATION
  NOT_RESEARCH_PROGRESS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [research_progress|E]" # todo: NEW TRANSLATION
  FIRST_RESEARCH_PROGRESS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [research_progress|E]" # todo: NEW TRANSLATION
@@ -4051,6 +4255,30 @@
  NOT_FIRST_NUM_OPEN_REFORM_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ voľné miesto pre [government_reforms|e] $current_value_V0$" # todo: NEW TRANSLATION
  THIRD_NUM_OPEN_REFORM_SLOTS_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V0$ voľné miesto pre [government_reforms|e] $current_value_V0$" # todo: NEW TRANSLATION
  NOT_THIRD_NUM_OPEN_REFORM_SLOTS_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|V0$ voľné miesto pre [government_reforms|e] $current_value_V0$" # todo: NEW TRANSLATION
+ NUM_BUREAUCRACIES_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ NOT_NUM_BUREAUCRACIES_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ FIRST_NUM_BUREAUCRACIES_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ NOT_FIRST_NUM_BUREAUCRACIES_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ THIRD_NUM_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ NOT_THIRD_NUM_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
+ NOT_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
+ FIRST_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
+ NOT_FIRST_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
+ THIRD_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
+ NOT_THIRD_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
+ MAX_BUREAUCRACY_SLOTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
+ NOT_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
+ FIRST_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
+ NOT_FIRST_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
+ THIRD_MAX_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
+ NOT_THIRD_MAX_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
+ ALLOW_BUREAUCRACIES_TRIGGER: "Má povolené [bureaucracies|e]"
+ NOT_ALLOW_BUREAUCRACIES_TRIGGER: "Nemá povolené [bureaucracies|e]"
+ FIRST_ALLOW_BUREAUCRACIES_TRIGGER: "Máme povolené [bureaucracies|e]"
+ NOT_FIRST_ALLOW_BUREAUCRACIES_TRIGGER: "Nemáme povolené [bureaucracies|e]"
+ THIRD_ALLOW_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName] má povolené [bureaucracies|e]"
+ NOT_THIRD_ALLOW_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName] nemá povolené [bureaucracies|e]"
  NUM_AVATARS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [avatars|e]" # todo: NEW TRANSLATION
  NOT_NUM_AVATARS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [avatars|e]" # todo: NEW TRANSLATION
  FIRST_NUM_AVATARS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [avatars|e]" # todo: NEW TRANSLATION
@@ -4323,6 +4551,12 @@
  NOT_WE_RELIGION_IN_COUNTRY_TRIGGER: "Nemáme $COMPARATOR$ $NUM|Y2%$ [TARGET_RELIGION.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  THIRD_RELIGION_IN_COUNTRY_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|Y2%$ [TARGET_RELIGION.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  NOT_THIRD_RELIGION_IN_COUNTRY_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|Y2%$ [TARGET_RELIGION.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
+ MONARCH_POWER_IN_COUNTRY_TRIGGER: "Panovníkova $NAME$ [ability|e] je $COMPARATOR$ $NUM|Y2%$ $current_value_2percentY$"
+ NOT_MONARCH_POWER_IN_COUNTRY_TRIGGER: "Panovníkova $NAME$ [ability|e] NIE JE $COMPARATOR$ $NUM|Y2%$ $current_value_2percentY$"
+ WE_MONARCH_POWER_IN_COUNTRY_TRIGGER: "Náš panovník $NAME$ [ability|e] je $COMPARATOR$ $NUM|Y2%$ $current_value_2percentY$"
+ NOT_WE_MONARCH_POWER_IN_COUNTRY_TRIGGER: "Náš panovník $NAME$ [ability|e] NIE JE $COMPARATOR$ $NUM|Y2%$ $current_value_2percentY$"
+ THIRD_MONARCH_POWER_IN_COUNTRY_TRIGGER: "Panovník [COUNTRY.GetName] $NAME$ [ability|e] je $COMPARATOR$ $NUM|Y2%$ $current_value_2percentY$"
+ NOT_THIRD_MONARCH_POWER_IN_COUNTRY_TRIGGER: "Panovník [COUNTRY.GetName] $NAME$ [ability|e] NIE JE $COMPARATOR$ $NUM|Y2%$ $current_value_2percentY$"
  RELIGION_GROUP_IN_COUNTRY_TRIGGER: "Má $COMPARATOR$ $NUM|Y2%$ [TARGET_RELIGION_GROUP.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  NOT_RELIGION_GROUP_IN_COUNTRY_TRIGGER: "Nemá $COMPARATOR$ $NUM|Y2%$ [TARGET_RELIGION_GROUP.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  WE_RELIGION_GROUP_IN_COUNTRY_TRIGGER: "Máme $COMPARATOR$ $NUM|Y2%$ [TARGET_RELIGION_GROUP.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
@@ -4341,6 +4575,12 @@
  NOT_WE_CULTURE_IN_COUNTRY_TRIGGER: "Nemáme $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  THIRD_CULTURE_IN_COUNTRY_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  NOT_THIRD_CULTURE_IN_COUNTRY_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
+ CULTURE_GROUP_POPS_IN_COUNTRY_TRIGGER: "Má $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$"
+ NOT_CULTURE_GROUP_POPS_IN_COUNTRY_TRIGGER: "Nemá $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$"
+ WE_CULTURE_GROUP_POPS_IN_COUNTRY_TRIGGER: "Máme $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$"
+ NOT_WE_CULTURE_GROUP_POPS_IN_COUNTRY_TRIGGER: "Nemáme $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$"
+ THIRD_CULTURE_GROUP_POPS_IN_COUNTRY_TRIGGER: "[COUNTRY.GetName] má $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$"
+ NOT_THIRD_CULTURE_GROUP_POPS_IN_COUNTRY_TRIGGER: "[COUNTRY.GetName] nemá $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$"
  CULTURE_GROUP_IN_COUNTRY_TRIGGER: "Má $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  NOT_CULTURE_GROUP_IN_COUNTRY_TRIGGER: "Nemá $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
  WE_CULTURE_GROUP_IN_COUNTRY_TRIGGER: "Máme $COMPARATOR$ $NUM|Y2%$ [TARGET_CULTURE_GROUP.GetName] [population|e] $current_value_2percentY$" # todo: NEW TRANSLATION
@@ -4484,6 +4724,10 @@
  NOT_FIRST_REBEL_HAS_MODIFIER_TRIGGER: "Nemáme $MODIFIER|Y$" # todo: NEW TRANSLATION
  THIRD_REBEL_HAS_MODIFIER_TRIGGER: "[REBEL.GetName] má $MODIFIER|Y$" # todo: NEW TRANSLATION
  NOT_THIRD_REBEL_HAS_MODIFIER_TRIGGER: "[REBEL.GetName] nemá $MODIFIER|Y$" # todo: NEW TRANSLATION
+ REBEL_HAS_SUPPORT_FROM_TRIGGER: "Má podporu od [TARGET_POP_TYPE.GetName]"
+ NOT_REBEL_HAS_SUPPORT_FROM_TRIGGER: "Nemá podporu od [TARGET_POP_TYPE.GetName]"
+ THIRD_REBEL_HAS_SUPPORT_FROM_TRIGGER: "[REBEL.GetName] má podporu od [TARGET_POP_TYPE.GetName]"
+ NOT_THIRD_REBEL_HAS_SUPPORT_FROM_TRIGGER: "[REBEL.GetName] nemá podporu od [TARGET_POP_TYPE.GetName]"
  any_country_supporting_rebel: "Akákoľvek podporujúca krajina" # todo: NEW TRANSLATION
  any_country_supporting_rebel_count: "$PARAMETERS$ podporujúcich krajín" # todo: NEW TRANSLATION
  any_country_supporting_rebel_percentage: "$PARAMETERS$ podporujúcich krajín" # todo: NEW TRANSLATION
@@ -4504,6 +4748,10 @@
  NOT_COURT_DIALECT_EQUAL_TRIGGER: "Nie je aktuálny [court_language|e]" # todo: NEW TRANSLATION
  LITURGICAL_DIALECT_EQUAL_TRIGGER: "Je aktuálny [liturgical_language|e]" # todo: NEW TRANSLATION
  NOT_LITURGICAL_DIALECT_EQUAL_TRIGGER: "Nie je aktuálny [liturgical_language|e]" # todo: NEW TRANSLATION
+ CULTURE_IS_ACTIVE_TRIGGER: "[culture|e] je aktívna"
+ NOT_CULTURE_IS_ACTIVE_TRIGGER: "[culture|e] nie je aktívna"
+ THIRD_CULTURE_IS_ACTIVE_TRIGGER: "[CULTURE.GetName] [culture|e] je aktívna"
+ NOT_THIRD_CULTURE_IS_ACTIVE_TRIGGER: "[CULTURE.GetName] [culture|e] nie je aktívna"
  NONE_CULTURAL_TRADITION_TRIGGER: "[culture|e] má $COMPARATOR$ $NUM|V0$ [cultural_tradition|e]" # todo: NEW TRANSLATION
  NOT_NONE_CULTURAL_TRADITION_TRIGGER: "[culture|e] nemá $COMPARATOR$ $NUM|V0$ [cultural_tradition|e]" # todo: NEW TRANSLATION
  CULTURAL_TRADITION_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [cultural_tradition|e]" # todo: NEW TRANSLATION
@@ -4588,6 +4836,12 @@
  NOT_IS_MERGED_CULTURE_GROUP_OF_TRIGGER: "Nie je [merged_culture_group_merged|e] z [TARGET_CULTURE_GROUP.GetName] [culture_group_short|e]" # todo: NEW TRANSLATION
  THIRD_IS_MERGED_CULTURE_GROUP_OF_TRIGGER: "[CULTURE.GetName] je [merged_culture_group_merged|e] z [TARGET_CULTURE_GROUP.GetName] [culture_group_short|e]" # todo: NEW TRANSLATION
  NOT_THIRD_IS_MERGED_CULTURE_GROUP_OF_TRIGGER: "[CULTURE.GetName] nie je [merged_culture_group_merged|e] z [TARGET_CULTURE_GROUP.GetName] [culture_group_short|e]" # todo: NEW TRANSLATION
+ NONE_MERGED_CULTURE_GROUP_CONTAINS_CULTURE_TRIGGER: "[culture|e]'s [merged_culture_group|e] obsahuje [TARGET_CULTURE.GetName]"
+ NOT_NONE_MERGED_CULTURE_GROUP_CONTAINS_CULTURE_TRIGGER: "[culture|e]'s [merged_culture_group|e] neobsahuje [TARGET_CULTURE.GetName]"
+ MERGED_CULTURE_GROUP_CONTAINS_CULTURE_TRIGGER: "[merged_culture_group|e] obsahuje [TARGET_CULTURE.GetName]"
+ NOT_MERGED_CULTURE_GROUP_CONTAINS_CULTURE_TRIGGER: "[merged_culture_group|e] neobsahuje [TARGET_CULTURE.GetName]"
+ THIRD_MERGED_CULTURE_GROUP_CONTAINS_CULTURE_TRIGGER: "[CULTURE.GetName]'s [merged_culture_group|e] obsahuje [TARGET_CULTURE.GetName]"
+ NOT_THIRD_MERGED_CULTURE_GROUP_CONTAINS_CULTURE_TRIGGER: "[CULTURE.GetName]'s [merged_culture_group|e] neobsahuje [TARGET_CULTURE.GetName]"
  CULTURE_OPINION_IMPACT_TRIGGER: "Kultúrny vplyv voči [TARGET_CULTURE.GetName] je $COMPARATOR$ $NUM|2Y$" # todo: NEW TRANSLATION
  NOT_CULTURE_OPINION_IMPACT_TRIGGER: "Kultúrny vplyv voči [TARGET_CULTURE.GetName] nie je $COMPARATOR$ $NUM|2Y$" # todo: NEW TRANSLATION
  THIRD_CULTURE_OPINION_IMPACT_TRIGGER: "Kultúrny vplyv [CULTURE.GetName] voči [TARGET_CULTURE.GetName] je $COMPARATOR$ $NUM|2Y$" # todo: NEW TRANSLATION
@@ -4606,6 +4860,14 @@
  NOT_HAS_DIALECT_TRIGGER: "Nemá pevný [liturgical_language|e]" # todo: NEW TRANSLATION
  THIRD_HAS_DIALECT_TRIGGER: "[RELIGION.GetName] má pevný [liturgical_language|e]" # todo: NEW TRANSLATION
  NOT_THIRD_HAS_DIALECT_TRIGGER: "[RELIGION.GetName] nemá pevný [liturgical_language|e]" # todo: NEW TRANSLATION
+ IS_GOD_FEMALE_TRIGGER: "Je ženská [goddess|e]"
+ NOT_IS_GOD_FEMALE_TRIGGER: "Nie je ženská [goddess|e]"
+ THIRD_IS_GOD_FEMALE_TRIGGER: "[GOD.GetName] je ženská [goddess|e]"
+ NOT_THIRD_IS_GOD_FEMALE_TRIGGER: "[GOD.GetName] nie je ženská [goddess|e]"
+ HAS_OMENS_TRIGGER: "Môže vyvolať [omens|e]"
+ NOT_HAS_OMENS_TRIGGER: "Nemôže vyvolať [omens|e]"
+ THIRD_HAS_OMENS_TRIGGER: "[RELIGION.GetName] môže vyvolať [omens|e]"
+ NOT_THIRD_HAS_OMENS_TRIGGER: "[RELIGION.GetName] nemôže vyvolať [omens|e]"
  HAS_PURITY_TRIGGER: "Používa [purity|E]" # todo: NEW TRANSLATION
  NOT_HAS_PURITY_TRIGGER: "Nepoužíva [purity|E]" # todo: NEW TRANSLATION
  THIRD_HAS_PURITY_TRIGGER: "[RELIGION.GetName] používa [purity|E]" # todo: NEW TRANSLATION
@@ -4626,6 +4888,10 @@
  NOT_IS_HOLY_SITE_FOR_TRIGGER: "Nie je [holy_site|E] pre [TARGET_RELIGION.GetName]" # todo: NEW TRANSLATION
  THIRD_IS_HOLY_SITE_FOR_TRIGGER: "[LOCATION.GetName] je [holy_site|E] pre [TARGET_RELIGION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_IS_HOLY_SITE_FOR_TRIGGER: "[LOCATION.GetName] nie je [holy_site|E] pre [TARGET_RELIGION.GetName]" # todo: NEW TRANSLATION
+ IS_HOLY_SITE_TYPE_TRIGGER: "Je [TARGET_HOLY_SITE_TYPE.GetName] [holy_site_type|e]"
+ NOT_IS_HOLY_SITE_TYPE_TRIGGER: "Nie je [TARGET_HOLY_SITE_TYPE.GetName] [holy_site_type|e]"
+ THIRD_IS_HOLY_SITE_TYPE_TRIGGER: "[LOCATION.GetName] je [TARGET_HOLY_SITE_TYPE.GetName] [holy_site_type|e]"
+ NOT_THIRD_IS_HOLY_SITE_TYPE_TRIGGER: "[LOCATION.GetName] nie je [TARGET_HOLY_SITE_TYPE.GetName] [holy_site_type|e]"
  IS_LOCATION_HOLY_SITE_FOR_TRIGGER: "Je [holy_site|E] pre [TARGET_RELIGION.GetName]" # todo: NEW TRANSLATION
  NOT_IS_LOCATION_HOLY_SITE_FOR_TRIGGER: "Nie je [holy_site|E] pre [TARGET_RELIGION.GetName]" # todo: NEW TRANSLATION
  THIRD_IS_LOCATION_HOLY_SITE_FOR_TRIGGER: "[LOCATION.GetName] je [holy_site|E] pre [TARGET_RELIGION.GetName]" # todo: NEW TRANSLATION
@@ -5114,6 +5380,10 @@
  NOT_HAS_ESTATE_TYPE_TRIGGER: "Nepatrí k [TARGET_ESTATE_TYPE.GetName] [estate|E]" # todo: NEW TRANSLATION
  THIRD_HAS_ESTATE_TYPE_TRIGGER: "[CHARACTER.GetName] patrí k [TARGET_ESTATE_TYPE.GetName] [estate|E]" # todo: NEW TRANSLATION
  NOT_THIRD_HAS_ESTATE_TYPE_TRIGGER: "[CHARACTER.GetName] nepatrí k [TARGET_ESTATE_TYPE.GetName] [estate|E]" # todo: NEW TRANSLATION
+ VALID_GENDER_FOR_HEIR_SELECTION_TRIGGER: "Má pohlavie vhodné pre [TARGET_HEIR_SELECTION.GetName]"
+ BIT_VALID_GENDER_FOR_HEIR_SELECTION_TRIGGER: "Nemá pohlavie vhodné pre [TARGET_HEIR_SELECTION.GetName]"
+ THIRD_VALID_GENDER_FOR_HEIR_SELECTION_TRIGGER: "[CHARACTER.GetName] má pohlavie vhodné pre [TARGET_HEIR_SELECTION.GetName]"
+ BIT_THIRD_VALID_GENDER_FOR_HEIR_SELECTION_TRIGGER: "[CHARACTER.GetName] nemá pohlavie vhodné pre [TARGET_HEIR_SELECTION.GetName]"
  VALID_ESTATE_FOR_HEIR_SELECTION_TRIGGER: "Patrí k [estate|e] platnému pre [TARGET_HEIR_SELECTION.GetName]" # todo: NEW TRANSLATION
  NOT_VALID_ESTATE_FOR_HEIR_SELECTION_TRIGGER: "Nepatrí k [estate|e] platnému pre [TARGET_HEIR_SELECTION.GetName]" # todo: NEW TRANSLATION
  THIRD_VALID_ESTATE_FOR_HEIR_SELECTION_TRIGGER: "[CHARACTER.GetName] patrí k [estate|e] platnému pre [TARGET_HEIR_SELECTION.GetName]" # todo: NEW TRANSLATION
@@ -5247,6 +5517,14 @@
  NOT_IS_ELIGIBLE_FOR_ROYAL_MARRIAGE_TRIGGER: "Nemôže uzavrieť [royal_marriage|e]" # todo: NEW TRANSLATION
  THIRD_IS_ELIGIBLE_FOR_ROYAL_MARRIAGE_TRIGGER: "[CHARACTER.GetName] môže uzavrieť [royal_marriage|e]" # todo: NEW TRANSLATION
  NOT_THIRD_IS_ELIGIBLE_FOR_ROYAL_MARRIAGE_TRIGGER: "[CHARACTER.GetName] nemôže uzavrieť [royal_marriage|e]" # todo: NEW TRANSLATION
+ IS_ELIGIBLE_FOR_MARRIAGE: "Je spôsobilý na akýkoľvek druh manželstva"
+ NOT_IS_ELIGIBLE_FOR_MARRIAGE: "Nie je spôsobilý na akýkoľvek druh manželstva"
+ THIRD_IS_ELIGIBLE_FOR_MARRIAGE: "[CHARACTER.GetName] je spôsobilý na akýkoľvek druh manželstva"
+ NOT_THIRD_IS_ELIGIBLE_FOR_MARRIAGE: "[CHARACTER.GetName] nie je spôsobilý na akýkoľvek druh manželstva"
+ CAN_MARRY_CHARACTER_TRIGGER: "Môže sa zosobášiť s [TARGET_CHARACTER.GetName]"
+ NOT_CAN_MARRY_CHARACTER_TRIGGER: "Nemôže sa zosobášiť s [TARGET_CHARACTER.GetName]"
+ THIRD_CAN_MARRY_CHARACTER_TRIGGER: "[CHARACTER.GetName] sa môže zosobášiť s [TARGET_CHARACTER.GetName]"
+ NOT_THIRD_CAN_MARRY_CHARACTER_TRIGGER: "[CHARACTER.GetName] sa nemôže zosobášiť s [TARGET_CHARACTER.GetName]"
  CHARACTER_ADULT_TRIGGER: "Je [adult|e]" # todo: NEW TRANSLATION
  NOT_CHARACTER_ADULT_TRIGGER: "Je [child|e]" # todo: NEW TRANSLATION
  THIRD_CHARACTER_ADULT_TRIGGER: "[CHARACTER.GetName] je [adult|e]" # todo: NEW TRANSLATION
@@ -5473,6 +5751,10 @@
  NOT_NUM_UNION_COUNTRIES_TRIGGER: "Nemá $COMPARATOR$ $NUM|Y0$ [countries|e] v akejkoľvek [personal_union|e] $current_value_0Y$" # todo: NEW TRANSLATION
  THIRD_NUM_UNION_COUNTRIES_TRIGGER: "[DYNASTY.GetName] má $COMPARATOR$ $NUM|Y0$ [countries|e] v akejkoľvek [personal_union|e] $current_value_0Y$" # todo: NEW TRANSLATION
  NOT_THIRD_NUM_UNION_COUNTRIES_TRIGGER: "[DYNASTY.GetName] nemá $COMPARATOR$ $NUM|Y0$ [countries|e] v akejkoľvek [personal_union|e] $current_value_0Y$" # todo: NEW TRANSLATION
+ NUM_ADULT_AVAILABLE_DYNASTY_MEMBERS_TRIGGER: "Má $COMPARATOR$ $NUM|Y0$ dospelých dostupných [dynasty|e] [characters|e]"
+ NOT_NUM_ADULT_AVAILABLE_DYNASTY_MEMBERS_TRIGGER: "Nemá $COMPARATOR$ $NUM|Y0$ dospelých dostupných [dynasty|e] [characters|e]"
+ THIRD_NUM_ADULT_AVAILABLE_DYNASTY_MEMBERS_TRIGGER: "[DYNASTY.GetName] má $COMPARATOR$ $NUM|Y0$ dospelých dostupných [characters|e]"
+ NOT_THIRD_NUM_ADULT_AVAILABLE_DYNASTY_MEMBERS_TRIGGER: "[DYNASTY.GetName] nemá $COMPARATOR$ $NUM|Y0$ dospelých dostupných [characters|e]"
  DYNASTY_BOOL_MODIFIER_YES_TRIGGER: "Má $MODIFIER_NAME$" # todo: NEW TRANSLATION
  NOT_DYNASTY_BOOL_MODIFIER_YES_TRIGGER: "Nemá $MODIFIER_NAME$" # todo: NEW TRANSLATION
  THIRD_DYNASTY_BOOL_MODIFIER_YES_TRIGGER: "[DYNASTY.GetName] má $MODIFIER_NAME$" # todo: NEW TRANSLATION
@@ -6004,6 +6286,12 @@
  NOT_HAS_PRISONERS_TRIGGER: "Nemá [prisoners|e]" # todo: NEW TRANSLATION
  THIRD_HAS_PRISONERS_TRIGGER: "[UNIT.GetName] má [prisoners|e]" # todo: NEW TRANSLATION
  NOT_THIRD_HAS_PRISONERS_TRIGGER: "[UNIT.GetName] nemá [prisoners|e]" # todo: NEW TRANSLATION
+ NONE_HAS_ONLY_PRISONERS_TRIGGER: "[unit|e] má iba [prisoners|e]"
+ NOT_NONE_HAS_ONLY_PRISONERS_TRIGGER: "[unit|e] nemá iba [prisoners|e]"
+ HAS_ONLY_PRISONERS_TRIGGER: "Má iba [prisoners|e]"
+ NOT_HAS_ONLY_PRISONERS_TRIGGER: "Nemá iba [prisoners|e]"
+ THIRD_HAS_ONLY_PRISONERS_TRIGGER: "[UNIT.GetName] má iba [prisoners|e]"
+ NOT_THIRD_HAS_ONLY_PRISONERS_TRIGGER: "[UNIT.GetName] nemá iba [prisoners|e]"
  NONE_CAN_UPGRADE_UNIT_TRIGGER: "[unit|e] sa dá vylepšiť" # todo: NEW TRANSLATION
  NOT_NONE_CAN_UPGRADE_UNIT_TRIGGER: "[unit|e] sa nedá vylepšiť" # todo: NEW TRANSLATION
  CAN_UPGRADE_UNIT_TRIGGER: "Dá sa vylepšiť" # todo: NEW TRANSLATION
@@ -6066,6 +6354,24 @@
  NOT_UNIT_CATEGORY_STRENGTH_TRIGGER: "Nemá $COMPARATOR$ $SIZE|V0$ $NAME$" # todo: NEW TRANSLATION
  THIRD_UNIT_CATEGORY_STRENGTH_TRIGGER: "[UNIT.GetName] má $COMPARATOR$ $SIZE|V0$ $NAME$" # todo: NEW TRANSLATION
  NOT_THIRD_UNIT_CATEGORY_STRENGTH_TRIGGER: "[UNIT.GetName] nemá $COMPARATOR$ $SIZE|V0$ $NAME$" # todo: NEW TRANSLATION
+ NONE_HAS_LEVIES_TRIGGER: "[unit|e] má [levies|e]"
+ NOT_NONE_HAS_LEVIES_TRIGGER: "[unit|e] nemá [levies|e]"
+ HAS_LEVIES_TRIGGER: "Má [levies|e]"
+ NOT_HAS_LEVIES_TRIGGER: "Nemá [levies|e]"
+ THIRD_HAS_LEVIES_TRIGGER: "[UNIT.GetName] má [levies|e]"
+ NOT_THIRD_HAS_LEVIES_TRIGGER: "[UNIT.GetName] nemá [levies|e]"
+ NONE_HAS_REGULARS_TRIGGER: "[unit|e] má [regulars|e]"
+ NOT_NONE_HAS_REGULARS_TRIGGER: "[unit|e] nemá [regulars|e]"
+ HAS_REGULARS_TRIGGER: "Má [regulars|e]"
+ NOT_HAS_REGULARS_TRIGGER: "Nemá [regulars|e]"
+ THIRD_HAS_REGULARS_TRIGGER: "[UNIT.GetName] má [regulars|e]"
+ NOT_THIRD_HAS_REGULARS_TRIGGER: "[UNIT.GetName] nemá [regulars|e]"
+ NONE_HAS_MERCENARIES_TRIGGER: "[unit|e] má [mercenaries|e]"
+ NOT_NONE_HAS_MERCENARIES_TRIGGER: "[unit|e] nemá [mercenaries|e]"
+ HAS_MERCENARIES_TRIGGER: "Má [mercenaries|e]"
+ NOT_HAS_MERCENARIES_TRIGGER: "Nemá [mercenaries|e]"
+ THIRD_HAS_MERCENARIES_TRIGGER: "[UNIT.GetName] má [mercenaries|e]"
+ NOT_THIRD_HAS_MERCENARIES_TRIGGER: "[UNIT.GetName] nemá [mercenaries|e]"
  HAS_BREACH_TRIGGER: "Má prielom" # todo: NEW TRANSLATION
  NOT_HAS_BREACH_TRIGGER: "Nemá prielom" # todo: NEW TRANSLATION
  THIRD_HAS_BREACH_TRIGGER: "[SIEGE.GetName] má prielom" # todo: NEW TRANSLATION
@@ -6232,10 +6538,60 @@
  NOT_BLOCKS_FULL_ANNEXATION_TRIGGER: "Umožňuje úplné anektovanie"
  THIRD_BLOCKS_FULL_ANNEXATION_TRIGGER: "[PEACE_TREATY.GetName] blokuje úplné anektovanie"
  NOT_THIRD_BLOCKS_FULL_ANNEXATION_TRIGGER: "[PEACE_TREATY.GetName] umožňuje úplné anektovanie"
+ BUREAUCRACY_MAINTENANCE_TRIGGER: "Aktuálna úroveň [bureaucracy_maintenance|e] je $COMPARATOR$ $NUM|0Y$"
+ NOT_BUREAUCRACY_MAINTENANCE_TRIGGER: "Aktuálna úroveň [bureaucracy_maintenance|e] NIE JE $COMPARATOR$ $NUM|0Y$"
+ THIRD_BUREAUCRACY_MAINTENANCE_TRIGGER: "[BUREAUCRACY.GetName] má aktuálnu úroveň [bureaucracy_maintenance|e] $COMPARATOR$ $NUM|0Y$"
+ NOT_THIRD_BUREAUCRACY_MAINTENANCE_TRIGGER: "[BUREAUCRACY.GetName] nemá aktuálnu úroveň [bureaucracy_maintenance|e] $COMPARATOR$ $NUM|0Y$"
+ BUREAUCRACY_ENTRENCHMENT_TRIGGER: "Aktuálne [entrenchment|e] je $COMPARATOR$ $NUM|0Y$"
+ NOT_BUREAUCRACY_ENTRENCHMENT_TRIGGER: "Aktuálne [entrenchment|e] NIE JE $COMPARATOR$ $NUM|0Y$"
+ THIRD_BUREAUCRACY_ENTRENCHMENT_TRIGGER: "[BUREAUCRACY.GetName] má aktuálne [entrenchment|e] $COMPARATOR$ $NUM|0Y$"
+ NOT_THIRD_BUREAUCRACY_ENTRENCHMENT_TRIGGER: "[BUREAUCRACY.GetName] nemá aktuálne [entrenchment|e] $COMPARATOR$ $NUM|0Y$"
+ HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Má [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ NOT_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Nemá [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ FIRST_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Máme [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ NOT_FIRST_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Nemáme [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ THIRD_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "[COUNTRY.GetName] má [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ NOT_THIRD_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "[COUNTRY.GetName] nemá [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ BUREAUCRACY_LIKED_BY_ESTATE_TYPE_TRIGGER: "Je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_LIKED_BY_ESTATE_TYPE_TRIGGER: "Nie je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_LIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_LIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] nie je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ BUREAUCRACY_LIKED_BY_ESTATE_TRIGGER: "Je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_LIKED_BY_ESTATE_TRIGGER: "Nie je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_LIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_LIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] nie je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ BUREAUCRACY_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "Je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "Nie je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] nie je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ BUREAUCRACY_DISLIKED_BY_ESTATE_TRIGGER: "Je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_DISLIKED_BY_ESTATE_TRIGGER: "Nie je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_DISLIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_DISLIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY.GetName] [bureaucracy|e] nie je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TYPE_TRIGGER: "Je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TYPE_TRIGGER: "Nie je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] nie je obľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TRIGGER: "Je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TRIGGER: "Nie je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_TYPE_LIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] nie je obľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "Je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "Nie je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TYPE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] nie je neobľúbená u [TARGET_ESTATE_TYPE.GetName] [estate|e]"
+ BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TRIGGER: "Je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TRIGGER: "Nie je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ THIRD_BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
+ NOT_THIRD_BUREAUCRACY_TYPE_DISLIKED_BY_ESTATE_TRIGGER: "[BUREAUCRACY_TYPE.GetName] [bureaucracy|e] nie je neobľúbená u [TARGET_ESTATE.GetName] [estate|e]"
  POLICY_LEVEL_TRIGGER: "Má [policy|e] úroveň $COMPARATOR$ $NUM|0Y$ $current_value_0Y$"
  NOT_POLICY_LEVEL_TRIGGER: "Nemá [policy|e] úroveň $COMPARATOR$ $NUM|0Y$ $current_value_0Y$"
  THIRD_POLICY_LEVEL_TRIGGER: "[POLICY.GetName] má [policy|e] úroveň $COMPARATOR$ $NUM|0Y$ $current_value_0Y$"
  NOT_THIRD_POLICY_LEVEL_TRIGGER: "[POLICY.GetName] nemá [policy|e] úroveň $COMPARATOR$ $NUM|0Y$ $current_value_0Y$"
+ POLICY_POSSIBLE_FOR_COUNTRY_TRIGGER: "Je možná pre [TARGET_COUNTRY.GetName]"
+ NOT_POLICY_POSSIBLE_FOR_COUNTRY_TRIGGER: "Nie je možná pre [TARGET_COUNTRY.GetName]"
+ THIRD_POLICY_POSSIBLE_FOR_COUNTRY_TRIGGER: "[POLICY.GetName] je možná pre [TARGET_COUNTRY.GetName]"
+ NOT_THIRD_POLICY_POSSIBLE_FOR_COUNTRY_TRIGGER: "[POLICY.GetName] nie je možná pre [TARGET_COUNTRY.GetName]"
  is_adjacent_to_owned_or_subject_owns: "Susedí s [owned|e] [location|e], alebo je vlastnená [subject|e]" # todo: NEW TRANSLATION
  is_coastal_within_range: "Je [coastal|e] [location|e] v dosahu [naval_range|e]" # todo: NEW TRANSLATION
  start_exploration_within_naval_range: "Je vzdialená [actor.GetEffectiveDistanceFromCapital(THIS.GetArea.GetCapital)|0V] a náš [naval_range|e] je [actor.GetNavalRange]" # todo: NEW TRANSLATION
@@ -6351,6 +6707,14 @@
  NOT_TOTAL_ENEMIES_TRIGGER: "Nemá celkovo $COMPARATOR$ $NUM|V0$ nepriateľov" # todo: NEW TRANSLATION
  THIRD_TOTAL_ENEMIES_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má celkovo $COMPARATOR$ $NUM|V0$ nepriateľov" # todo: NEW TRANSLATION
  NOT_THIRD_TOTAL_ENEMIES_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] nemá celkovo $COMPARATOR$ $NUM|V0$ nepriateľov" # todo: NEW TRANSLATION
+ IO_TOTAL_GREAT_POWER_SCORE_TRIGGER: "Má celkové skóre veľmoci $COMPARATOR$ $NUM|V0$"
+ NOT_IO_TOTAL_GREAT_POWER_SCORE_TRIGGER: "Nemá celkové skóre veľmoci $COMPARATOR$ $NUM|V0$"
+ THIRD_IO_TOTAL_GREAT_POWER_SCORE_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má celkové skóre veľmoci $COMPARATOR$ $NUM|V0$"
+ NOT_THIRD_IO_TOTAL_GREAT_POWER_SCORE_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] nemá celkové skóre veľmoci $COMPARATOR$ $NUM|V0$"
+ IO_TOTAL_MILITARY_STRENGTH_TRIGGER: "Má celkovú vojenskú silu $COMPARATOR$ $NUM|V0$"
+ NOT_IO_TOTAL_MILITARY_STRENGTH_TRIGGER: "Nemá celkovú vojenskú silu $COMPARATOR$ $NUM|V0$"
+ THIRD_IO_TOTAL_MILITARY_STRENGTH_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má celkovú vojenskú silu $COMPARATOR$ $NUM|V0$"
+ NOT_THIRD_IO_TOTAL_MILITARY_STRENGTH_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] nemá celkovú vojenskú silu $COMPARATOR$ $NUM|V0$"
  MAX_COUNTRIES_WITH_SPECIAL_STATUS_TRIGGER: "Má maximálny počet krajín so statusom '$STATUS$' $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
  NOT_MAX_COUNTRIES_WITH_SPECIAL_STATUS_TRIGGER: "Nemá maximálny počet krajín so statusom '$STATUS$' $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
  THIRD_MAX_COUNTRIES_WITH_SPECIAL_STATUS_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má maximálny počet krajín so statusom '$STATUS$' $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
@@ -6792,6 +7156,12 @@
  NOT_OVERLORD_CAN_ENFORCE_PEACE_ON_SUBJECT_TRIGGER: "Neumožňuje [overlord|e] prinútiť [subject|e] opustiť [war|e]" # todo: NEW TRANSLATION
  THIRD_OVERLORD_CAN_ENFORCE_PEACE_ON_SUBJECT_TRIGGER: "[SUBJECT_TYPE.GetName] umožňuje [overlord|e] prinútiť [subject|e] opustiť [war|e]" # todo: NEW TRANSLATION
  NOT_THIRD_OVERLORD_CAN_ENFORCE_PEACE_ON_SUBJECT_TRIGGER: "[SUBJECT_TYPE.GetName] NEUmožňuje [overlord|e] prinútiť [subject|e] opustiť [war|e]" # todo: NEW TRANSLATION
+ NONE_SUBJECT_CAN_BE_ANNEXED_TRIGGER: "[subject_type|e] umožňuje [annexation|e]"
+ NOT_NONE_SUBJECT_CAN_BE_ANNEXED_TRIGGER: "[subject_type|e] neumožňuje [annexation|e]"
+ SUBJECT_CAN_BE_ANNEXED_TRIGGER: "Umožňuje [annexation|e]"
+ NOT_SUBJECT_CAN_BE_ANNEXED_TRIGGER: "Neumožňuje [annexation|e]"
+ THIRD_SUBJECT_CAN_BE_ANNEXED_TRIGGER: "[SUBJECT_TYPE.GetName] umožňuje [annexation|e]"
+ NOT_THIRD_SUBJECT_CAN_BE_ANNEXED_TRIGGER: "[SUBJECT_TYPE.GetName] neumožňuje [annexation|e]"
  NONE_HAS_OVERLORDS_RULER_TRIGGER: "[subject_type|e] používa [overlord|e]'s' [ruler|e]" # todo: NEW TRANSLATION
  NOT_NONE_HAS_OVERLORDS_RULER_TRIGGER: "[subject_type|e] NEPOUŽÍVA [overlord|e]'s' [ruler|e]" # todo: NEW TRANSLATION
  HAS_OVERLORDS_RULER_TRIGGER: "Používa [overlord|e]'s' [ruler|e]" # todo: NEW TRANSLATION
@@ -6895,6 +7265,10 @@
  NOT_INTERNATIONAL_ORGANIZATION_POPULATION_TRIGGER: "Nemá celkovú populáciu $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
  THIRD_INTERNATIONAL_ORGANIZATION_POPULATION_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má celkovú populáciu $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
  NOT_THIRD_INTERNATIONAL_ORGANIZATION_POPULATION_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] nemá celkovú populáciu $COMPARATOR$ $NUM|V0$ $current_value_V0$" # todo: NEW TRANSLATION
+ INTERNATIONAL_ORGANIZATION_ECONOMICAL_BASE_TRIGGER: "Má celkovú [economical_base|e] $NUM|V2$"
+ NOT_INTERNATIONAL_ORGANIZATION_ECONOMICAL_BASE_TRIGGER: "Nemá celkovú [economical_base|e] $NUM|V2$"
+ THIRD_INTERNATIONAL_ORGANIZATION_ECONOMICAL_BASE_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má celkovú [economical_base|e] $NUM|V2$"
+ NOT_THIRD_INTERNATIONAL_ORGANIZATION_ECONOMICAL_BASE_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] nemá celkovú [economical_base|e] $NUM|V2$"
  HAS_LAND_OWNERSHIP_RULE_TRIGGER: "Má [land_ownership_rule|e]" # todo: NEW TRANSLATION
  NOT_HAS_LAND_OWNERSHIP_RULE_TRIGGER: "Nemá [land_ownership_rule|e]" # todo: NEW TRANSLATION
  THIRD_HAS_LAND_OWNERSHIP_RULE_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má [land_ownership_rule|e]" # todo: NEW TRANSLATION
@@ -7005,6 +7379,12 @@
  NOT_FIRST_PARLIAMENT_TYPE_UTILITY_TRIGGER: "Naša užitočnosť $PARLIAMENT_TYPE$ nie je $COMPARATOR$ $NUM|Y0$" # todo: NEW TRANSLATION
  THIRD_PARLIAMENT_TYPE_UTILITY_TRIGGER: "[COUNTRY.GetAdjective] užitočnosť $PARLIAMENT_TYPE$ je $COMPARATOR$ $NUM|Y0$" # todo: NEW TRANSLATION
  NOT_THIRD_PARLIAMENT_TYPE_UTILITY_TRIGGER: "[COUNTRY.GetAdjective] užitočnosť $PARLIAMENT_TYPE$ nie je $COMPARATOR$ $NUM|Y0$" # todo: NEW TRANSLATION
+ POLICY_UTILITY_TRIGGER: "Užitočnosť $POLICY$ je $COMPARATOR$ $NUM|Y0$"
+ NOT_POLICY_UTILITY_TRIGGER: "Užitočnosť $POLICY$ nie je $COMPARATOR$ $NUM|Y0$"
+ FIRST_POLICY_UTILITY_TRIGGER: "Naša užitočnosť $POLICY$ je $COMPARATOR$ $NUM|Y0$"
+ NOT_FIRST_POLICY_UTILITY_TRIGGER: "Naša užitočnosť $POLICY$ nie je $COMPARATOR$ $NUM|Y0$"
+ THIRD_POLICY_UTILITY_TRIGGER: "Užitočnosť $POLICY$ pre [COUNTRY.GetAdjective] je $COMPARATOR$ $NUM|Y0$"
+ NOT_THIRD_POLICY_UTILITY_TRIGGER: "Užitočnosť $POLICY$ pre [COUNTRY.GetAdjective] nie je $COMPARATOR$ $NUM|Y0$"
  ESTATE_TYPE_ALLOWED_IN_CABINET_TRIGGER: "Postavy z $ESTATE_TYPE$ sú povolené v [cabinet|e]" # todo: NEW TRANSLATION
  NOT_ESTATE_TYPE_ALLOWED_IN_CABINET_TRIGGER: "Postavy z $ESTATE_TYPE$ nie sú povolené v [cabinet|e]" # todo: NEW TRANSLATION
  FIRST_ESTATE_TYPE_ALLOWED_IN_CABINET_TRIGGER: "Postavy z $ESTATE_TYPE$ sú povolené v našom [cabinet|e]" # todo: NEW TRANSLATION
@@ -7132,3 +7512,64 @@
  current_age_at_least_5_tt: "Súčasný [age|e] je aspoň [ShowAgeName('age_5_absolutism')] alebo neskorší" # todo: NEW TRANSLATION
  current_age_at_least_6_tt: "Súčasný [age|e] je aspoň [ShowAgeName('age_6_revolutions')] alebo neskorší" # todo: NEW TRANSLATION
  location_population_greater_or_equal: "[LOCATION.GetName] má celkovú populáciu aspoň $COMPARATOR$ $NUM|V3$ $current_value_Y3$" # todo: NEW TRANSLATION
+ MOVEMENT_PRESENCE_TRIGGER: "[TARGET_MOVEMENT.GetName] ovplyvňuje $COMPARATOR$ $POPSM|Y$ [pops|e]"
+ NOT_MOVEMENT_PRESENCE_TRIGGER: "[TARGET_MOVEMENT.GetName] neovplyvňuje $COMPARATOR$ $POPS|Y$ [pops|e]"
+ THIRD_MOVEMENT_PRESENCE_TRIGGER: "[TARGET_MOVEMENT.GetName] ovplyvňuje $COMPARATOR$ $POPS|Y$ [pops|e] v $SOURCE$"
+ NOT_THIRD_MOVEMENT_PRESENCE_TRIGGER: "[TARGET_MOVEMENT.GetName] neovplyvňuje $COMPARATOR$ $POPSM|Y$ [pops|e] v $SOURCE$"
+ NUM_OF_COMMON_RIVALS_TRIGGER: "Spoločných [rivals|e] s [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V0$"
+ NOT_NUM_OF_COMMON_RIVALS_TRIGGER: "Spoločných [rivals|e] s [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V0$"
+ FIRST_NUM_OF_COMMON_RIVALS_TRIGGER: "Našich spoločných [rivals|e] s [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V0$"
+ NOT_FIRST_NUM_OF_COMMON_RIVALS_TRIGGER: "Našich spoločných [rivals|e] s [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V0$"
+ THIRD_NUM_OF_COMMON_RIVALS_TRIGGER: "[COUNTRY.GetName] má spoločných [rivals|e] s [TARGET_COUNTRY.GetName] $COMPARATOR$ $NUM|V0$"
+ NOT_THIRD_NUM_OF_COMMON_RIVALS_TRIGGER: "[COUNTRY.GetName] nemá spoločných [rivals|e] s [TARGET_COUNTRY.GetName] $COMPARATOR$ $NUM|V0$"
+ NUM_OF_COMMON_RIVALS_AND_ENEMIES_TRIGGER: "Spoločných [rivals|e] a [enemies|e] s [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V0$"
+ NOT_NUM_OF_COMMON_RIVALS_AND_ENEMIES_TRIGGER: "Spoločných [rivals|e] a [enemies|e] s [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V0$"
+ FIRST_NUM_OF_COMMON_RIVALS_AND_ENEMIES_TRIGGER: "Našich spoločných [rivals|e] a [enemies|e] s [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V0$"
+ NOT_FIRST_NUM_OF_COMMON_RIVALS_AND_ENEMIES_TRIGGER: "Našich spoločných [rivals|e] a [enemies|e] s [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V0$"
+ THIRD_NUM_OF_COMMON_RIVALS_AND_ENEMIES_TRIGGER: "[COUNTRY.GetName] má spoločných [rivals|e] a [enemies|e] s [TARGET_COUNTRY.GetName] $COMPARATOR$ $NUM|V0$"
+ NOT_THIRD_NUM_OF_COMMON_RIVALS_AND_ENEMIES_TRIGGER: "[COUNTRY.GetName] nemá spoločných [rivals|e] a [enemies|e] s [TARGET_COUNTRY.GetName] $COMPARATOR$ $NUM|V0$"
+ THIS_TRUST_OF_PREV_TRIGGER: "[trust|E] [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_THIS_TRUST_OF_PREV_TRIGGER: "[trust|E] [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ FIRST_THIS_TRUST_OF_PREV_TRIGGER: "Náš [trust|E] voči [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_FIRST_THIS_TRUST_OF_PREV_TRIGGER: "Náš [trust|E] voči [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ THIRD_THIS_TRUST_OF_PREV_TRIGGER: "[COUNTRY.GetName] [trust|E] voči [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_THIRD_THIS_TRUST_OF_PREV_TRIGGER: "[COUNTRY.GetName] [trust|E] voči [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ PREV_TRUST_OF_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [trust|E] je $COMPARATOR$ $NUM|V00$"
+ NOT_PREV_TRUST_OF_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [trust|E] NIE JE $COMPARATOR$ $NUM|V00$"
+ FIRST_PREV_TRUST_OF_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [trust|E] voči nám je $COMPARATOR$ $NUM|V00$"
+ NOT_FIRST_PREV_TRUST_OF_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [trust|E] voči nám NIE JE $COMPARATOR$ $NUM|V00$"
+ THIRD_PREV_TRUST_OF_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [trust|E] voči [COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_THIRD_PREV_TRUST_OF_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [trust|E] voči [COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ PREV_SPY_NETWORK_IN_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [spy_network|E] je $COMPARATOR$ $NUM|V00$"
+ NOT_PREV_SPY_NETWORK_IN_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [spy_network|E] NIE JE $COMPARATOR$ $NUM|V00$"
+ FIRST_PREV_SPY_NETWORK_IN_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [spy_network|E] v našej krajine je $COMPARATOR$ $NUM|V00$"
+ NOT_FIRST_PREV_SPY_NETWORK_IN_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [spy_network|E] v našej krajine NIE JE $COMPARATOR$ $NUM|V00$"
+ THIRD_PREV_SPY_NETWORK_IN_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [spy_network|E] v [COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_THIRD_PREV_SPY_NETWORK_IN_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [spy_network|E] v [COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ THIS_SPY_NETWORK_IN_PREV_TRIGGER: "[spy_network|E] v [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_THIS_SPY_NETWORK_IN_PREV_TRIGGER: "[spy_network|E] v [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ FIRST_THIS_SPY_NETWORK_IN_PREV_TRIGGER: "Naša [spy_network|E] v [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_FIRST_THIS_SPY_NETWORK_IN_PREV_TRIGGER: "Naša [spy_network|E] v [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ THIRD_THIS_SPY_NETWORK_IN_PREV_TRIGGER: "[COUNTRY.GetName] [spy_network|E] v [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$"
+ NOT_THIRD_THIS_SPY_NETWORK_IN_PREV_TRIGGER: "[COUNTRY.GetName] [spy_network|E] v [TARGET_COUNTRY.GetName] NIE JE $COMPARATOR$ $NUM|V00$"
+ PREV_FAVORS_WITH_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [favors|E] sú $COMPARATOR$ $NUM|V00$"
+ NOT_PREV_FAVORS_WITH_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [favors|E] nie sú $COMPARATOR$ $NUM|V00$"
+ FIRST_PREV_FAVORS_WITH_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [favors|E] s nami sú $COMPARATOR$ $NUM|V00$"
+ NOT_FIRST_PREV_FAVORS_WITH_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [favors|E] s nami nie sú $COMPARATOR$ $NUM|V00$"
+ THIRD_PREV_FAVORS_WITH_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [favors|E] s [COUNTRY.GetName] sú $COMPARATOR$ $NUM|V00$"
+ NOT_THIRD_PREV_FAVORS_WITH_THIS_TRIGGER: "[TARGET_COUNTRY.GetName] [favors|E] s [COUNTRY.GetName] nie sú $COMPARATOR$ $NUM|V00$"
+ THIS_FAVORS_WITH_PREV_TRIGGER: "[favors|E] s [TARGET_COUNTRY.GetName] sú $COMPARATOR$ $NUM|V00$"
+ NOT_THIS_FAVORS_WITH_PREV_TRIGGER: "[favors|E] s [TARGET_COUNTRY.GetName] nie sú $COMPARATOR$ $NUM|V00$"
+ FIRST_THIS_FAVORS_WITH_PREV_TRIGGER: "Naše [favors|E] s [TARGET_COUNTRY.GetName] sú $COMPARATOR$ $NUM|V00$"
+ NOT_FIRST_THIS_FAVORS_WITH_PREV_TRIGGER: "Naše [favors|E] s [TARGET_COUNTRY.GetName] nie sú $COMPARATOR$ $NUM|V00$"
+ THIRD_THIS_FAVORS_WITH_PREV_TRIGGER: "[COUNTRY.GetName] [favors|E] s [TARGET_COUNTRY.GetName] sú $COMPARATOR$ $NUM|V00$"
+ NOT_THIRD_THIS_FAVORS_WITH_PREV_TRIGGER: "[COUNTRY.GetName] [favors|E] s [TARGET_COUNTRY.GetName] nie sú $COMPARATOR$ $NUM|V00$"
+ location_not_recently_raided: "Lokalita nebola nedávno prepadnutá"
+ location_has_enemy_imperial_family_holding_tt: "Lokalita má držbu nepriateľskej cisárskej rodiny"
+ location_has_enemy_clan_holding_tt: "Lokalita má držbu nepriateľského klanu"
+ HAS_PERSONALITY_TRIGGER: "AI osobnosť je $PERSONALITY$"
+ NOT_HAS_PERSONALITY_TRIGGER: "AI osobnosť nie je $PERSONALITY$"
+ FIRST_HAS_PERSONALITY_TRIGGER: "Naša AI osobnosť je $PERSONALITY$"
+ NOT_FIRST_HAS_PERSONALITY_TRIGGER: "Naša AI osobnosť nie je $PERSONALITY$"
+ THIRD_HAS_PERSONALITY_TRIGGER: "AI osobnosť [COUNTRY.GetName] je $PERSONALITY$"
+ NOT_THIRD_HAS_PERSONALITY_TRIGGER: "AI osobnosť [COUNTRY.GetName] nie je $PERSONALITY$"

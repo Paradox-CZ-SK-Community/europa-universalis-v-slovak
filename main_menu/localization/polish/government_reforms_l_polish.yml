@@ -36,8 +36,8 @@
  mlo_council_of_justice_desc: "Pôvodne nástroj na riešenie miestnych sporov medzi sedliakmi, Rada spravodlivosti sa premenila na najvýznamnejší súd v krajine, ktorý rieši prípady a funguje ako štít pre náš ľud naprieč krajinou." # todo: NEW TRANSLATION
  mlo_secret_council: "Tajná rada" # todo: NEW TRANSLATION
  mlo_secret_council_desc: "Tajná rada je zbor jedincov prevažne šľachtického pôvodu. Jej právomoci pokrývajú naše územie a často sa stavia do konfliktu s agendou vládcu. Väčšina kľúčového rozhodovania v mene panovníka je často preverovaná Tajnou radou." # todo: NEW TRANSLATION
- scottish_shires_reform: "Hrabstvá [GetCountry('SCO').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- scottish_shires_reform_desc: "Zavedené [GetCharacter('sco_malcolm_iii').GetName], hrabstvá rozdeľujú [GetCountry('SCO').GetNameWithNoTooltip] na administratívne okresy, pričom každé hrabstvo má vlastnú štruktúru." # todo: NEW TRANSLATION
+ scottish_shires_reform: "Hrabstvá $SCO$" # todo: CHANGED
+ scottish_shires_reform_desc: "Zavedený [GetCharacter('sco_malcolm_iii').GetName], systém hrabstiev rozdeľuje $SCO$ na administratívne okresy, pričom každé hrabstvo má vlastnú štruktúru." # todo: CHANGED
  merchant_republic: "Obchodná republika" # todo: NEW TRANSLATION
  merchant_republic_desc: "Republika založená na princípoch obchodu. Tok peňazí je najdôležitejší pre rodiny, ktoré vládnu republike." # todo: NEW TRANSLATION
  noble_elite: "Šľachtická elita" # todo: NEW TRANSLATION
@@ -74,7 +74,11 @@
  guru_leadership_reform_desc: "Krajinu vedie múdry $guru$, starajúci sa o všetky duchovné potreby obyvateľstva aj o svetské záležitosti a vedúci ich k osvieteniu." # todo: NEW TRANSLATION
  primas_germaniae: "Primas Germaniae" # todo: NEW TRANSLATION
  primas_germaniae_plural: "Primas Germaniae" # todo: NEW TRANSLATION
- primas_germaniae_desc: "Držíme prestížny titul Primas Germaniae, najdôležitejšieho katolíckeho arcibiskupa v Svätej ríši rímskej." # todo: NEW TRANSLATION
+ primas_germaniae_desc: "Držíme prestížny titul Primas Germaniae, ktorý nás vyčleňuje ako jednu z najdôležitejších cirkevných hodností v [GetUniqueInternationalOrganization('hre').GetName]." # todo: CHANGED
+ town_specialization: "Šité na mieru $game_concept_town_rights$" # todo: NEW TRANSLATION
+ town_specialization_desc: "Mestské sídla sú svalstvom, ktoré poháňa našu krajinu. Ich rozvoj priťahuje väčšinu našej populácie a ich rušné hospodárstva poskytujú príležitosti i výhody pre všetkých. Ak im poskytujeme vhodné zákony, predpisy a privilégiá, môžeme zabezpečiť, že nám budú čo najviac prospešné, každý podľa svojej situácie a potrieb." # todo: NEW TRANSLATION
+ capitalistic_cities: "Podpora hospodárstva" # todo: NEW TRANSLATION
+ capitalistic_cities_desc: "Naša ekonomika stojí na priemysle našich miest a obcí. Poskytnutie primeraných predpisov zabezpečí, že udržíme tieto odvetvia v najlepšom možnom výkone, znižujúc náklady a maximalizujúc výhody." # todo: NEW TRANSLATION
  the_combination_act: "Obmedzené pracovné zväzy" # todo: NEW TRANSLATION
  the_combination_act_desc: "Boli prijaté všetky opatrenia, aby sa predišlo budúcim štrajkom. Všetky nezákonné formácie obchodných či pracovných zväzov sú odteraz zakázané." # todo: NEW TRANSLATION
  the_recruiting_act: "Povinná námorná služba" # todo: NEW TRANSLATION
@@ -197,8 +201,10 @@
  state_sponsored_markets_desc: "Obchodné centrá musia byť zriadené so štátnou podporou na podporu obchodu. Vládna podpora zabezpečí spravodlivé ceny a ekonomický rast." # todo: NEW TRANSLATION
  coastal_city_or_town_gets_tt: "Každé vlastnené [coastal|e] [towns_and_cities|e] získa:" # todo: NEW TRANSLATION
  every_coastal_location_gains_tt: "Každé vlastnené [coastal|e] [location|e] získa:" # todo: NEW TRANSLATION
+ plutocratic_monarchy: "Plutokratická monarchia" # todo: NEW TRANSLATION
+ plutocratic_monarchy_desc: "Monarchia, ktorá spravuje svoje financie spoliehaním sa na obchodnícku triedu a zabezpečením toku obchodu." # todo: NEW TRANSLATION
  alsno_stadga: "Alsnö Stadga" # todo: NEW TRANSLATION
- alsno_stadga_desc: "Tento súbor pravidiel zriadil [GetCharacter('swe_magnus_ladulas').GetName] v roku 1280 v Alsnö Hus, aby upravil a formalizoval výsady [ShowEstateTypeName('nobles_estate')], pričom zároveň chránil [ShowPopTypeName('peasants')] pred ich vykorisťovaním. Preto ho obyčajní ľudia nazývali 'Ladulås', alebo "Barn-Lock" po anglicky." # todo: NEW TRANSLATION
+ alsno_stadga_desc: "Sada pravidiel bola zavedená [GetCharacter('swe_magnus_ladulas').GetName] v roku 1280 na Alsnö Hus, aby regulovala a formalizovala výhody [ShowEstateTypeName('nobles_estate')], pričom zároveň chránila [ShowPopTypeName('peasants')] pred ich zneužívaním. Preto ho obyčajní ľudia prezývali 'Ladulås', alebo po anglicky 'Barn-Lock'." # todo: CHANGED
  papacy_reform: "Svätá stolica" # todo: NEW TRANSLATION
  papacy_reform_desc: "Svätá stolica je jurisdikciou biskupa [ShowLocationName('rome')], the #italic Pontifex Maximus#!, hlavy [ShowReligionAdjective('catholic')] cirkvi, známeho ako [GetCountry('PAP').GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  kingdom_of_god_reform: "Božie kráľovstvo" # todo: NEW TRANSLATION
@@ -475,9 +481,8 @@
  taluqdar_nobility_desc: "Taluqdari, aristokrati v rôznych indických dynastiách, vlastnia rozsiahle pozemky, vyberajú dane a zohrávajú významné úlohy v našej architektúre a ekonomike. Ako vlastníci pôdy s veľkou mocou a vplyvom na dvore sú Taluqdari indickým ekvivalentom vysokej šľachty iných regiónov." # todo: NEW TRANSLATION
  mhr_ashta_pradhan: "Ashta Pradhan" # todo: NEW TRANSLATION
  mhr_ashta_pradhan_desc: "$mhr_ashta_pradhan$ - #italic Moderná rada ministrov#! - je systém ministerskej delegácie ľudu [ShowLanguageName('marathi_language')]. Rada má za úlohu viesť správu štátu a dohliadať na záležitosti financií, diplomacie, vojenských a náboženských vecí." # todo: NEW TRANSLATION
- theme_system: "Systém tém" # todo: NEW TRANSLATION
- theme_system_desc: "Systém provinčných veliteľstiev a armád, vedený strategosom s dvojitou povinnosťou chrániť miestnych a upevňovať autoritu na príkaz [GetCountry('BYZ').GetFlavorRank]. Tento systém nahradil provincionálnu správu za Diocletiana a slúžil nášmu ľudu odvtedy." # todo: NEW TRANSLATION
- byz_theme_system_not_obselete_tt: "Systém $theme_system$ nebol zneplatnený prostredníctvom [event|e]" # todo: NEW TRANSLATION
+ theme_system: "Upadajúci systém tém" # todo: CHANGED
+ theme_system_desc: "Systém provinčných veliteľstiev a armád, vedený strategosom s dvojitou zodpovednosťou — chrániť miestnych obyvateľov a ustanoviť autoritu na príkaz [GetCountry('BYZ').GetFlavorRank]. Tento systém nahradil provinčnú správu Diocletiana a slúži nášmu ľudu odvtedy. Hoci čas ho oslabil, stále pretrváva ako relikt dávnych vekov." # todo: CHANGED
  kritai_katholikoi: "Kritai Katholikoi" # todo: NEW TRANSLATION
  kritai_katholikoi_desc: "Kritai Katholikoi, hovorovo nazývaní #italic Univerzálni spravodlivci Rimanov#!, sa stali stelesnením vrcholu [GetCountry('BYZ').GetAdjective] právomoci. Vznikli z reforiem [GetCharacter('byz_andronikos_ii_palaiologos').GetName] v roku 1296, pôvodne ich tvorilo dvanásť sudcov zo svetových i cirkevných kruhov. Neskôr boli zúžené na panel štvorice; tento ctený súd má bezkonkurenčnú moc bez možnosti odvolania. V priebehu rokov sa ich jurisdikcia rozšírila na veľkú časť spoločnosti, kde konajú pojednávania na základe písomných sťažností, vrátane odborných svedectiev, a tajné rokovania vedúce k rozhodnutiam väčšinou." # todo: NEW TRANSLATION
  speransky_liberalization_reform: "Speranského liberalizačná reforma" # todo: NEW TRANSLATION
@@ -498,9 +503,9 @@
  bohemian_commonwealth_reform_desc: "Commonwealth predstavuje reformovanú ústavu kráľovstva, udeľujúcu viac privilégií a slobôd rôznym národom žijúcim v našich hraniciach." # todo: NEW TRANSLATION
  kritai_katholikoi_reformed: "Reformovaní Kritai Katholikoi" # todo: NEW TRANSLATION
  kritai_katholikoi_reformed_desc: "Hoci súdny systém vytvorený [GetCharacter('byz_andronikos_ii_palaiologos').GetName] mal počiatočný úspech, stále v ňom boli problémy, ktoré umožňovali jednotlivým sudcom sledovať vlastné záujmy. Reformami tohto najvyššieho súdu sa každý právny proces zefektívnil pri zabezpečení eliminácie korupcie medzi sudcami." # todo: NEW TRANSLATION
+ is_currently_in_disaster_for_byz_tt: "[ShowDisasterName('fate_of_the_phoenix')] je momentálne aktívny alebo sme ho víťazne dokončili" # todo: NEW TRANSLATION
  modern_imperial_army: "Moderná cisárska armáda" # todo: NEW TRANSLATION
  modern_imperial_army_desc: "Starý $theme_system$ [GetCountry('BYZ').GetName] sa ukázal byť chybný, posilňoval guvernérov a generálov namiesto vládcu. Namiesto toho bola vytvorená nová cisárska armáda, v ktorej je byť vojakom profesiou, nie povinnosťou." # todo: NEW TRANSLATION
- byz_reformed_imperial_army_tt: "Vytvoril $modern_imperial_army$ prostredníctvom [event|e]" # todo: NEW TRANSLATION
  omani_overseas_ambitions_reform: "Zámery za morom" # todo: NEW TRANSLATION
  omani_overseas_ambitions_reform_desc: "Hoci koncepty zámoria a kolonializmu existujú od antiky, pozorovali sme moderné metódy kolonializmu a osvojili sme si ich, čo nám umožňuje prispôsobiť sa spôsobom ich správy zámoorských území a vytvoriť vlastné koloniálne impérium." # todo: NEW TRANSLATION
  seven_provinces: "Sedem provincií" # todo: NEW TRANSLATION
@@ -590,3 +595,20 @@
  guru_granth_sahib_reform_desc: "$guru_granth_sahib_desc$"" # todo: NEW TRANSLATION
  shahbandariyya_reform: "Shāhbandariyya" # todo: NEW TRANSLATION
  shahbandariyya_reform_desc: "$shahbandar_desc$" # todo: NEW TRANSLATION
+ partitio_reform: "Partitio Terrarum Imperii Romaniae" # todo: NEW TRANSLATION
+ partitio_reform_desc: "Po štvrtom križiackom ťažení bol Východorímsky cisársky teritórium rozdelený medzi niekoľko západoeurópskych rodín, ktoré následne založili sériu križiackych kniežatstiev. Kým tieto politické útvary existovali, predstavovali stálu hrozbu pre cisárstvo." # todo: NEW TRANSLATION
+ ach_heirs_of_the_latin_empire: "Titulárni vládcovia Latinského cisárstva" # todo: NEW TRANSLATION
+ ach_heirs_of_the_latin_empire_desc: "Hoci sme odvtedy stratili kontrolu nad [ShowLocationName('constantinople')], sídlom moci pre [GetCountry('LAT').GetLongName], naše nároky na ňu zostávajú rovnako silné ako vždy." # todo: NEW TRANSLATION
+ ath_rule_of_the_catalans: "Dominancia [ShowCultureNameWithNoTooltip('catalan')] Spoločnosti" # todo: NEW TRANSLATION
+ ath_rule_of_the_catalans_desc: "Od zadržania [GetCountry('ATH').GetLongNameWithNoTooltip] vyvíja [ShowCultureNameWithNoTooltip('catalan')] Spoločnosť značný vojenský vplyv nad [ShowScriptedGeographyName('greece_geography')]." # todo: NEW TRANSLATION
+ ath_catalan_company_expelled_or_stability: "Môže byť manuálne odstránené, ak je [stability|e] nad #G +60.00#!, alebo priamo cez určité [GetCountry('ATH').GetAdjectiveWithNoTooltip] [dynamic_historical_events|e]." # todo: NEW TRANSLATION
+ lat_papal_restoration_claimant: "[GetCountry('PAP').GetAdjectiveWithNoTooltip] podpora na znovuzískanie [ShowLocationNameWithNoTooltip('constantinople')]" # todo: NEW TRANSLATION
+ lat_papal_restoration_claimant_desc: "Hoci [GetCountry('LAT').GetLongName] odvtedy zaniklo v dôsledku [GetCountry('BYZ').GetLongName], nedávne kampane križiackych štátov v [ShowScriptedGeographyName('greece_geography')] povzbudili [GetCountry('PAP').GetAdjectiveWithNoTooltip] sponzorstvo na obnovu cisárstva." # todo: NEW TRANSLATION
+ lat_restored_rule_of_the_latins: "Obnovené panovanie Latínov" # todo: NEW TRANSLATION
+ lat_restored_rule_of_the_latins_desc: "Kedysi považované za navždy stratené pred znovuzrodeným [GetCountry('BYZ').GetName], [GetCountry('LAT').GetLongNameWithNoTooltip] bolo napokon obnovené v [ShowLocationName('constantinople')] a opäť slúži ako bašta [ShowReligionAdjective('catholic')] vlády v rámci [ShowScriptedGeographyName('greece_geography')]." # todo: NEW TRANSLATION
+ mass_levy_system: "Systém masového odvodu" # todo: NEW TRANSLATION
+ mass_levy_system_desc: "Zriadením systému masovej brannej povinnosti môžeme povolať do vojenskej služby celú populáciu nášho kráľovstva. Táto široká mobilizácia napĺňa naše armády obyčajnými vojakmi, prijímajúc filozofiu, že víťazstvo prichádza počtom skôr než individuálnou zručnosťou." # todo: NEW TRANSLATION
+ free_market_charters: "Listiny voľného trhu" # todo: NEW TRANSLATION
+ free_market_charters_desc: "Udeľovaním listín, ktoré zaručujú voľný obchod a chránia záujmy obchodníkov, podporujeme rozkvet obchodu v celom našom kráľovstve. Bohaté obchodné vrstvy získavajú politický vplyv, presúvajúc moc od tradičnej šľachty k tým, ktorí disponujú kapitálom." # todo: NEW TRANSLATION
+ representative_assemblies: "Zastupiteľské zhromaždenia" # todo: NEW TRANSLATION
+ representative_assemblies_desc: "Zriadením zastupiteľských zhromaždení, ktoré dávajú hlas obyčajným ľuďom, decentralizujeme autoritu a podporujeme širšiu politickú účasť. Miestna správa sa stáva vnímavejšou a jednotlivé slobody sú kodifikované ako základný kameň nášho politického poriadku." # todo: NEW TRANSLATION

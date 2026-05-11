@@ -23,6 +23,8 @@
  PARLIAMENT_IF_FAIL_TT: "Ak debata #R zlyhá#!" # todo: NEW TRANSLATION
  PARLIAMENT_CURRENT_SUPPORT: "Aktuálna podpora v parlamente: $SUPPORT$%" # todo: NEW TRANSLATION
  NO_POSSIBLE_AGENDAS: "@trigger_no! Neostali žiadne možné [parliament_agendas|e]." # todo: NEW TRANSLATION
+ LAWS_THAT_CAN_BE_DEBATED: "Politiky, o ktorých možno diskutovať" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_NO_LAWS_CALL_DIET: "@trigger_no! Žiadne [laws|e] dostupné na diskusiu. Pre zobrazenie všetkých zákonov skontrolujte Imperiálnu ústavu." # todo: NEW TRANSLATION
  ACTIVE_PARLIAMENT_SUPPORT_POWER: "Základ je $VAL|2G$ [estate_power|e] upravený nasledovným:" # todo: NEW TRANSLATION
  ACTIVE_PARLIAMENT_SUPPORT_IMPORTANCE: "Dôležitosť agendy: $VAL|2+=%$" # todo: NEW TRANSLATION
  ACTIVE_PARLIAMENT_SUPPORT_SATISFACTION: "[estate_satisfaction|e]: $VAL|2+=%$" # todo: NEW TRANSLATION
@@ -36,6 +38,12 @@
  IO_PARLIAMENT_NON_VOTERS: "Ešte nehlasovali" # todo: NEW TRANSLATION
  IO_PARLIAMENT_OPPOSERS: "Oponenti" # todo: NEW TRANSLATION
  IO_PARLIAMENT_VOTERS: "Podporovatelia" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_VOTED: "Hlasované" # todo: NEW TRANSLATION
+ IO_PARLIAMENT_VOTES_LEFT: "Zostávajúce hlasy:" # todo: NEW TRANSLATION
+ IO_IF_DEBATE_FAILS: "#r Ak neuspeje#!" # todo: NEW TRANSLATION
+ IO_IF_DEBATE_PASSES: "#g Ak prejde#!" # todo: NEW TRANSLATION
+ IO_LAW_DEBATE_POLICY_KEPT: "[policy|e] zostáva" # todo: NEW TRANSLATION
+ IO_LAW_DEBATE_POLICY_SET: "[policy|e] je ustanovená" # todo: NEW TRANSLATION
  call_parliament: "Zvolať parlament" # todo: NEW TRANSLATION
  call_parliament_desc: "Týmto zvoláme parlament, aby sme získali podporu na vyriešenie [parliament_issue|e], zmenu [policies|e] v našich [laws|e], vytvorenie [casus_belli|e], zvýšenie [taxes|e] alebo väčšie [army_levies|e] a [navy_levies|e].\n\nPočas tohto zasadnutia získame nasledujúce efekty: [ShowModifier('parliament_in_session')], [ShowModifier('parliament_location')]; a buď [ShowModifier('parliament_in_capital')] alebo [ShowModifier('parliament_outside_capital')] v závislosti od vybranej [location|e]." # todo: CHANGED
  request_more_taxes: "Požiadať o dodatočné dane" # todo: NEW TRANSLATION
@@ -60,6 +68,10 @@
  promote_star_fort_building_desc: "$promote_castle_building_desc$" # todo: NEW TRANSLATION
  promote_fortress_building: "Podporiť stavbu $fortress$" # todo: NEW TRANSLATION
  promote_fortress_building_desc: "$promote_castle_building_desc$" # todo: NEW TRANSLATION
+ promote_pike_and_shot_tactics: "Podporiť taktiku pík a palných zbraní" # todo: NEW TRANSLATION
+ promote_pike_and_shot_tactics_desc: "Kombinácia pík a palných zbraní v disciplinovaných formáciách je sily, s ktorou treba počítať. Podporou prísneho výcviku v týchto formáciách zabezpečíme, že naša armáda prekoná nepriateľa v útoku i obrane." # todo: NEW TRANSLATION
+ promote_artillery_doctrine: "Podporiť delostreleckú doktrínu" # todo: NEW TRANSLATION
+ promote_artillery_doctrine_desc: "Rozhodujúca sila delostrelectva na bojisku je nesporná a musíme okolo toho budovať našu vojenskú doktrínu. Musíme zabezpečiť, aby naše armády obsahovali mocné delá schopné rozbiť nepriateľské línie i opevnenia." # todo: NEW TRANSLATION
  sponsor_a_university: "Sponzorovať $university$" # todo: NEW TRANSLATION
  sponsor_a_university_desc: "Šírenie poznania v snahe o duševné osvietenie a pochopenie božského je ušľachtilým cieľom, ktorý musíme podporiť všetkou našou finančnou a politickou silou zriadením vplyvných liturgických inštitúcií." # todo: NEW TRANSLATION
  pops_in_province_gain_20_satisfaction: "[pops|e] v [province|e] tejto [location|e] získajú [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
@@ -606,6 +618,9 @@
  pa_construct_market_village: "Požiadavka na nové trhovisko" # todo: NEW TRANSLATION
  pa_construct_market_village_simple: "Požiadavka na nové trhoviská" # todo: NEW TRANSLATION
  pa_construct_market_village_desc: "Ten [estate|e] nás žiada, aby sme postavili nové $market_village$ pre ich obchodné aktivity." # todo: RETRANSLATED ENGLISH
+ pa_construct_city_walls: "Požiadavka na $city_walls$" # todo: NEW TRANSLATION
+ pa_construct_city_walls_simple: "Požiadavka na $city_walls$" # todo: NEW TRANSLATION
+ pa_construct_city_walls_desc: "Obyvatelia nás žiadajú, aby sme vybudovali nové [ShowBuildingTypeNameWithNoTooltip('city_walls')] na ich ochranu." # todo: NEW TRANSLATION
  pa_break_alliance: "Zrušiť alianciu" # todo: NEW TRANSLATION
  pa_break_alliance_simple: "$pa_break_alliance$" # todo: NEW TRANSLATION
  pa_break_alliance_desc: "Táto aliancia je v rozpore so záujmami tohto [estate|e] a oni si myslia, že by bolo prospešné, keby sa [alliance|e] rozpadla." # todo: NEW TRANSLATION
@@ -630,6 +645,12 @@
  pa_reduce_naval_recruitment: "Znížiť nábor do námorníctva" # todo: NEW TRANSLATION
  pa_reduce_naval_recruitment_simple: "$pa_reduce_naval_recruitment$" # todo: NEW TRANSLATION
  pa_reduce_naval_recruitment_desc: "Členov tohto [estate|e] znepokojuje náš intenzívny nábor do námorníctva a chcú znížiť počet ľudí povolaných do služby." # todo: NEW TRANSLATION
+ pa_increase_entrenchment: "Posilniť byrokratické zakorenenie" # todo: NEW TRANSLATION
+ pa_increase_entrenchment_simple: "$pa_increase_entrenchment$" # todo: NEW TRANSLATION
+ pa_increase_entrenchment_desc: "Členovia tohto [estate|e] sa zdajú tlačiť za posilnenie súčasnej byrokracie, pravdepodobne aby upevnili svoj inštitucionálny vplyv." # todo: NEW TRANSLATION
+ pa_decrease_entrenchment: "Znížiť byrokratické zakorenenie" # todo: NEW TRANSLATION
+ pa_decrease_entrenchment_simple: "$pa_decrease_entrenchment$" # todo: NEW TRANSLATION
+ pa_decrease_entrenchment_desc: "Členovia tohto [estate|e] sa zdajú presadzovať zníženie súčasného byrokratického zakorenenia, pravdepodobne s cieľom obmedziť inštitucionálny vplyv." # todo: NEW TRANSLATION
  promote_mamluks: "Povýšiť $mamluk$" # todo: NEW TRANSLATION
  promote_mamluks_desc: "Elitní vojaci schopní zaujať kľúčové pozície v našej správe, vojaci $mamluk$ a držitelia týchto úradov sú chrbticou našej stratokratickej správy a majú obrovský vplyv." # todo: NEW TRANSLATION
  new_mamluk_appears_tt: "#Y Nový $mamluk$ bude povýšen#!" # todo: NEW TRANSLATION
@@ -648,3 +669,182 @@
  pa_hre_affirmation_of_free_city_rights_desc: "Obnovujeme práva a záruky $free_city_plural$, čím zabezpečujeme ich stabilitu a prosperitu v rámci Ríše." # todo: NEW TRANSLATION
  opinion_hre_pa_supports_free_cities: "Podporuje [ShowSpecialStatusNamePluralWithNoTooltip('free_city')]" # todo: NEW TRANSLATION
  pa_hre_affirmation_of_free_city_rights_tt: "Každé nezávislé [ShowSpecialStatusName('free_city')] získa [ShowNamedValue('stability_mild_bonus')|+=2] [stability|e], zatiaľ čo každá krajina, ktorá proti nim v súčasnosti vedie vojnu, stráca [ShowBiasValue('opinion_hre_pa_supports_free_cities')|+] názor voči [GetUniqueInternationalOrganization('hre').GetLeaderTitle] [GetUniqueInternationalOrganization('hre').GetName]." # todo: RETRANSLATED ENGLISH
+ royal_monopoly_on_trade: "Kráľovský monopol na obchod" # todo: NEW TRANSLATION
+ royal_monopoly_on_trade_desc: "Naši obchodníci sa dostatočne nabažili ziskov z obchodu. Ustanovením kráľovského monopolu na kľúčové tovary presunieme tieto príjmy do rúk koruny, kde budú slúžiť celému kráľovstvu." # todo: NEW TRANSLATION
+ charter_subject_governors: "Ustanoviť guvernérov pre podriadené územia" # todo: NEW TRANSLATION
+ charter_subject_governors_desc: "Naši vzdialení poddaní požadujú pozornosť, ktorú koruna sotva môže poskytnúť. Ustanovením formálnych guvernérov s kráľovskou autoritou upevníme našu kontrolu nad týmito zemami a zaistíme, že ich výnosy prúdia správne do pokladnice." # todo: NEW TRANSLATION
+ establish_colonial_administration: "Zriadiť koloniálnu správu" # todo: NEW TRANSLATION
+ establish_colonial_administration_desc: "Kolónie, ktoré sme založili v zámoří, musia byť spravované ako riadne súčasti nášho kráľovstva, nie ponechané náhodným dobrodruhom. Musíme zriadiť primerané administratívne štruktúry." # todo: NEW TRANSLATION
+ reform_the_royal_treasury: "Reformovať kráľovskú pokladnicu" # todo: NEW TRANSLATION
+ reform_the_royal_treasury_desc: "Nekontrolované rozširovanie razby mincí zvýšilo ceny a oslabilo hodnotu našej meny. Dôkladný audit kráľovských financií a reforma pokladničných praktík by obnovili stabilnú menu v ríši." # todo: NEW TRANSLATION
+ issue_royal_censure: "Vydanie kráľovského pokarhania" # todo: NEW TRANSLATION
+ issue_royal_censure_desc: "Naši rivali podnikli kroky, ktoré nemožno nechať bez formálneho odsúdenia. Kráľovské pokarhanie, podporené autoritou tohto parlamentu, jasne ukáže, že takúto činnosť nebudeme tolerovať bez reakcie." # todo: NEW TRANSLATION
+ mandate_emergency_levies: "Nariadiť núdzové príspevky" # todo: NEW TRANSLATION
+ mandate_emergency_levies_desc: "Náš vojnový úspech potrebuje väčšiu podporu zo všetkých kútov ríše. Koruna musí vyzvať všetky stavy a poddaných, aby prispeli, čo môžu, aby sme túto skúšku prekonali." # todo: NEW TRANSLATION
+ fund_royal_art_patronage: "Financovať kráľovský patronát umenia" # todo: NEW TRANSLATION
+ fund_royal_art_patronage_desc: "Veľkosť ríše sa meria nielen armádami a zlatom, ale aj dielami umenia a kultúry, ktoré produkuje. Mali by sme investovať do patronátu umelcov a remeselníkov, ktorí zveční slávu našej dynastie." # todo: NEW TRANSLATION
+ institute_feudal_levies: "Zaviesť feudálne odvody" # todo: NEW TRANSLATION
+ institute_feudal_levies_desc: "Základom každej skvelej armády je jazdecká šľachta. Formalizovaním vojenských povinností šľachtických domov — najmä dodávania ťažkej jazdy — posilníme naše sily v poli." # todo: NEW TRANSLATION
+ establish_military_exercises: "Zaviesť vojenské cvičenia" # todo: NEW TRANSLATION
+ establish_military_exercises_desc: "Naše šľachtické družiny ochabnú v dobách pokoja. Nariadením pravidelných polných cvičení a turnajov zabezpečíme, že naši bojovníci zostanú zruční a armády pripravené, keď príde výzva." # todo: NEW TRANSLATION
+ establish_heralds_college: "Zriadiť kolégium heraldikov" # todo: NEW TRANSLATION
+ establish_heralds_college_desc: "Prednosť titulov, práva erbu a poradie šľachtických hodností sú záležitosti veľkého významu. Kolégium heraldikov by prinieslo poriadok do týchto vecí a zvýšilo prestíž nášho kráľovstva v zahraničí." # todo: NEW TRANSLATION
+ promote_chivalric_orders: "Podporiť rytierske rády" # todo: NEW TRANSLATION
+ promote_chivalric_orders_desc: "Naše rytierske rády sú zosobnením šľachtickej vojenskej cnosti. Uznaním a financovaním posilníme putá medzi korunou a jej najlepšími bojovníkmi." # todo: NEW TRANSLATION
+ license_noble_privateers: "Udeľovať povolenia šľachtickým korzárom" # todo: NEW TRANSLATION
+ license_noble_privateers_desc: "More ponúka bohatstvo odvážnym a šľachtické rody sú schopné vybaviť vojnové lode pre zisk. Udeľovaním listín dáme ich podnikaniu formu a legitímnosť, pričom koruna bude ťažiť z narušenia nepriateľského obchodu." # todo: NEW TRANSLATION
+ monopolize_land_trade_routes: "Monopol na pozemné obchodné trasy" # todo: NEW TRANSLATION
+ monopolize_land_trade_routes_desc: "Naša šľachta kontroluje cesty, priechody a mosty, ktorými musí prechádzať pozemný obchod. Udeľovaním formálnych mýtnych práv nad pozemnými obchodníkmi nasmerujeme tieto zisky do rúk najvernejších poddaných." # todo: NEW TRANSLATION
+ fund_noble_colonization: "Financovať šľachtickú kolonizáciu" # todo: NEW TRANSLATION
+ fund_noble_colonization_desc: "Veľké šľachtické rody majú prostriedky a ambície financovať koloniálne výpravy. Mali by sme im udeliť chartu a podporiť tieto podniky, aby rozšírili náš dosah za obzor." # todo: NEW TRANSLATION
+ grant_exclusive_hunting_rights: "Udeľovať výhradné práva na lov" # todo: NEW TRANSLATION
+ grant_exclusive_hunting_rights_desc: "Lesy a zver patria prirodzene do domény šľachty. Udeľovaním výhradných práv na lov a správu týchto území posilníme ich väzbu na panstvo a vernosť korunke." # todo: NEW TRANSLATION
+ establish_noble_garrison_law: "Zaviesť zákon o šľachtických posádkach" # todo: NEW TRANSLATION
+ establish_noble_garrison_law_desc: "Nepokoje ohrozujú našu ríšu a bez silných miestnych posádok ich nezastavíme. Nech sú šľachtické rody zákonom povinné udržiavať opevnené pozície vo svojich doménach, pripravené brániť korunu a krajinu." # todo: NEW TRANSLATION
+ establish_clergy_charity: "Zriadiť cirkevnú charitu" # todo: NEW TRANSLATION
+ establish_clergy_charity_desc: "Naši ľudia trpia hladom, zatiaľ čo sýpky veľkých pánov sú plné. Je povinnosťou Cirkvi organizovať pomoc chudobným a hladným — povinnosť, ktorú musíme formalizovať a financovať." # todo: NEW TRANSLATION
+ launch_religious_missions: "Vyslať náboženské misie" # todo: NEW TRANSLATION
+ launch_religious_missions_desc: "Veľká časť našej ríše ešte leží mimo svetla pravej viery. Cirkev musí organizovať a posielať misionárov, aby privádzali duše do viery, a my im poskytneme potrebnú podporu." # todo: NEW TRANSLATION
+ institute_canonical_law: "Zaviesť kanonické právo" # todo: NEW TRANSLATION
+ institute_canonical_law_desc: "Ríša rozdelená vo viere je rozdelená v duchu. Kódifikáciou cirkevného práva a jeho jednotnou aplikáciou v provinciách posilníme putá viery, ktoré spájajú náš ľud." # todo: NEW TRANSLATION
+ establish_inquisition_courts: "Zriadiť inkvizičné súdy" # todo: NEW TRANSLATION
+ establish_inquisition_courts_desc: "Semienka herézy sa usadzujú a len systematická činnosť cirkevných súdov ich môže vyrvať. Musíme konať rýchlo, kým sa nákaza nerozšíri." # todo: NEW TRANSLATION
+ promote_religious_tolerance: "Podporiť náboženskú toleranciu" # todo: NEW TRANSLATION
+ promote_religious_tolerance_desc: "V našej ríši žijú mnohí, ktorí nezdieľajú našu vieru, a ich nespokojnosť rodí nepokoje. Je múdre, aby Cirkev uznala, že mier skôr prinesie tolerancia než neustále konflikty." # todo: NEW TRANSLATION
+ fund_monastery_network: "Financovať sieť kláštorov" # todo: NEW TRANSLATION
+ fund_monastery_network_desc: "Kláštory sú centrá učenia, charity a poriadku. Mali by sme rozšíriť ich sieť a patrične ich dotovať, aby ich dobré skutky dosiahli každý kút ríše." # todo: NEW TRANSLATION
+ establish_pilgrimage_routes: "Zriadiť pútnické trasy" # todo: NEW TRANSLATION
+ establish_pilgrimage_routes_desc: "Sväté miesta priťahujú pútnikov zblízka i zďaleka. Formálnym chránením a údržbou ciest k týmto miestam prejavíme zbožnosť a prinesieme našej ríši prestíž." # todo: NEW TRANSLATION
+ regulate_tithe_collection: "Regulovať zber desiatkov" # todo: NEW TRANSLATION
+ regulate_tithe_collection_desc: "Zber desiatkov je nejednotný a sporný. Štandardizáciou podielu cirkvi na príjmoch zabezpečíme spravodlivé a spoľahlivé príjmy pre klerikov a zbavíme ľud neistoty." # todo: NEW TRANSLATION
+ sponsor_theological_seminaries: "Financovať teologické semináre" # todo: NEW TRANSLATION
+ sponsor_theological_seminaries_desc: "Vzdelaný klerik je základom duchovne zdravej ríše. Musíme financovať zriadenie a rozšírenie seminárov na vychovanie novej generácie učených duchovných." # todo: NEW TRANSLATION
+ promote_export_trade: "Podporiť vývoz" # todo: NEW TRANSLATION
+ promote_export_trade_desc: "Naši obchodníci sú pripravení odviezť naše tovary do najvzdialenejších kútov sveta, ale potrebujú podporu parlamentu na rozšírenie sietí. Podpora vývozu obohatí krajinu a posilní naše postavenie v zahraničí." # todo: NEW TRANSLATION
+ establish_import_controls: "Zaviesť dovozné kontroly" # todo: NEW TRANSLATION
+ establish_import_controls_desc: "Nesmie sa dovoliť, aby záplava zahraničných tovarov podrývala našich domácich výrobcov. Zavedením formálnych kontrol nad tým, čo vstupuje na trh, ochránime priemysel a zabezpečíme konkurencieschopnosť našich obchodníkov." # todo: NEW TRANSLATION
+ fund_trade_expeditions: "Financovať obchodné expedície" # todo: NEW TRANSLATION
+ fund_trade_expeditions_desc: "Obchodné cechy sú pripravené spojiť kapitál na diaľkové plavby, ale takéto podniky vyžadujú zákonnú podporu a istotu, ktorú prináša parlament." # todo: NEW TRANSLATION
+ establish_commodity_exchange: "Zriadiť burzu komodít" # todo: NEW TRANSLATION
+ establish_commodity_exchange_desc: "Naše trhové centrá sú rušné, ale postrádajú formálnu burzu, kde by sa veľkoobjemové tovary obchodovali usporiadane. Zriadenie takejto burzy by spravilo naše trhy závideniahodné." # todo: NEW TRANSLATION
+ promote_maritime_trade: "Podporiť námorný obchod" # todo: NEW TRANSLATION
+ promote_maritime_trade_desc: "Morské cesty sú diaľnicami bohatstva pre odvážnych. Mali by sme investovať do infraštruktúry a inštitúcií podporujúcich námorný obchod a zabezpečiť, aby naši obchodníci ovládli vody." # todo: NEW TRANSLATION
+ license_trading_companies: "Licencovať obchodné spoločnosti" # todo: NEW TRANSLATION
+ license_trading_companies_desc: "Riziká a odmeny diaľkového obchodu sú príliš veľké pre jediného obchodníka. Mali by sme licencovať formálne obchodné spoločnosti, aby spájali zdroje a zdieľali riziká v prospech celej ríše." # todo: NEW TRANSLATION
+ establish_customs_houses: "Zriadiť colnice" # todo: NEW TRANSLATION
+ establish_customs_houses_desc: "Naše hranice sú priepustné a zahraniční obchodníci profitujú z dovozu bez účtovania. Vybudovaním colníc vnútornímusporiadame dovoz a zaistíme spravodlivý podiel pre korunu a našich obchodníkov." # todo: NEW TRANSLATION
+ fund_artisan_guilds: "Financovať cechy remeselníkov" # todo: NEW TRANSLATION
+ fund_artisan_guilds_desc: "Zruční remeselníci vyrábajú výrobky výnimočnej kvality, no postrádajú organizáciu a podporu. Mali by sme financovať a chrániť cechy, ktoré ich zastupujú." # todo: NEW TRANSLATION
+ establish_trade_insurance: "Zriadiť obchodné poistenie" # todo: NEW TRANSLATION
+ establish_trade_insurance_desc: "Riziká obchodu — vraky lodí, banditizmus, vojna — odrádzajú mnohých obchodníkov od podnikov, ktoré by obohatili ríšu. Zriadením formálnych poistných schém umožníme obchodníkom obchodovať s väčšou istotou." # todo: NEW TRANSLATION
+ expand_postal_relay_network: "Rozšíriť sieť poštových staníc" # todo: NEW TRANSLATION
+ expand_postal_relay_network_desc: "Spoľahlivá komunikácia je životodarnou tepnou obchodu. Obchodné domy sú ochotné financovať sieť prestupných staníc, ktoré by prenášali správy a tovary rýchlejšie — investíciu, ktorá sa mnohonásobne vráti." # todo: NEW TRANSLATION
+ establish_common_food_stores: "Zriadiť spoločné zásobárne potravín" # todo: NEW TRANSLATION
+ establish_common_food_stores_desc: "Naši ľudia sú zraniteľní voči zlým úrodom a hlad rodí zúfalstvo. Zriadením komunitných zásobníkov obilia zabezpečíme, že žiadna bieda nezanechá ľud bez pomoci." # todo: NEW TRANSLATION
+ promote_farming_innovation: "Podporiť poľnohospodárske inovácie" # todo: NEW TRANSLATION
+ promote_farming_innovation_desc: "Nové metódy osevného striedania a obhospodarovania priniesli pozoruhodné výsledky inde. Podporíme ich prijatie naprieč kráľovstvom, aby polia prinášali vyššie výnosy a ľudia trpeli menej." # todo: NEW TRANSLATION
+ sponsor_irrigation_projects: "Financovať zavlažovacie projekty" # todo: NEW TRANSLATION
+ sponsor_irrigation_projects_desc: "Veľa našej pôdy by prinieslo omnoho viac úrody, keby sa k nej dostala voda. Financovaním výstavby vodných kanálov a zavlažovacích diel zmeníme suché územia na úrodné polia." # todo: NEW TRANSLATION
+ reduce_serfdom: "Znížiť nevoľníctvo" # todo: NEW TRANSLATION
+ reduce_serfdom_desc: "Putá nevoľníctva ťažia obyčajný ľud, viažu ho k zemi a dusia prácu, ktorá nás živí. Uľahčením týchto bremien a povolením väčšej mobility posilníme vernosť a produktivitu ľudu." # todo: NEW TRANSLATION
+ establish_village_councils: "Zriadiť dedinské rady" # todo: NEW TRANSLATION
+ establish_village_councils_desc: "Naše vidiecke komunity riadia vzdialení páni, ktorí nepoznajú miestne potreby. Zriadením dedinských rád s právomocou spravovať miestne záležitosti dáme ľuďom hlas a prinesieme poriadok bližšie k domovu." # todo: NEW TRANSLATION
+ charter_artisan_guilds: "Udeľovať listiny remeselníckym cechom" # todo: NEW TRANSLATION
+ charter_artisan_guilds_desc: "Majstri a učni v dielňach pracujú bez formálneho uznania od koruny. Udeľovaním cechových listín uvedieme ich remeslá pod zákonný poriadok a získame priazeň tých, ktorých ruky udržujú prosperitu." # todo: NEW TRANSLATION
+ subsidize_grain_imports: "Dotovať dovoz obilia" # todo: NEW TRANSLATION
+ subsidize_grain_imports_desc: "Naše trhy môžu nakŕmiť ľud, ale len ak cena obilia zostane dostupná. Dotovaním dovozu obilia zabezpečíme, že nedostatok a bieda nevedú k zúfalstvu." # todo: NEW TRANSLATION
+ rural_crafts_charter: "Charta vidieckych remesiel" # todo: NEW TRANSLATION
+ rural_crafts_charter_desc: "Mestské cechy dusia domáce výroby, ktoré udržujú vidiecke rodiny v ťažkých časoch. Mali by sme udeliť chartu a chrániť vidieckych remeselníkov pred takýmto zasahovaním." # todo: NEW TRANSLATION
+ prevent_noble_enclosure: "Zabrániť uzurpácii spoločných pozemkov šľachtou" # todo: NEW TRANSLATION
+ prevent_noble_enclosure_desc: "Veľkí páni už príliš dlho zabierajú spoločné pozemky, od ktorých závisia naši roľníci. Musíme chrániť to málo, čo im zostalo, skôr než sa nespokojnosť zmení na niečo oveľa nebezpečnejšie." # todo: NEW TRANSLATION
+ declare_war_taxes: "Vyhlásiť vojnové dane" # todo: NEW TRANSLATION
+ declare_war_taxes_desc: "Náš vojnový úspech si vyžaduje prostriedky nad rámec bežných príjmov. Parlament musí povoliť núdzové odvody od všetkých stavov — bremeno zdieľané všetkými pre prežitie a slávu ríše." # todo: NEW TRANSLATION
+ wartime_cavalry_reserve: "Vojnová jazdecká rezerva" # todo: NEW TRANSLATION
+ wartime_cavalry_reserve_desc: "Rozhodujúce stretutie môže prísť kedykoľvek a musíme zabezpečiť, aby naša ťažká jazda bola v plnej pohotovosti. Nech sa šľachtické rody zaviažu udržiavať svojich najlepších jazdcov v neustálom pohotovostnom stave, kým vojna neskončí." # todo: NEW TRANSLATION
+ fortify_frontier_passes: "Opevniť pohraničné priechody" # todo: NEW TRANSLATION
+ fortify_frontier_passes_desc: "Naše hranice sú silné len do miery, v akej sú opevnené priechody, ktorými nás nepriatelia môžu napadnúť. Mali by sme financovať spevnenie každého zraniteľného priechodu — premeniť prírodné obrany na pasce pre vtieravých nepriateľov." # todo: NEW TRANSLATION
+ military_chaplaincy: "Vojenská kaplánska služba" # todo: NEW TRANSLATION
+ military_chaplaincy_desc: "Naše armády bojujú nielen za korunu a krajinu, ale aj za vieru a povinnosť. Zahrnutím klerikov ako kaplánov do našich síl udržíme ducha vojakov počas ťažkostí tažení." # todo: NEW TRANSLATION
+ establish_field_hospitals: "Zriadiť polné nemocnice" # todo: NEW TRANSLATION
+ establish_field_hospitals_desc: "Príliš veľa našich vojakov umiera nie od nepriateľských rán, ale od zranení, ktoré by sa dali liečiť, a chorôb, ktorým by sa dalo predísť. Nech Cirkev zorganizuje pohyblivé nemocnice, ktoré budú nasledovať naše armády a zachrániť životy tých, ktorí za nás bojujú." # todo: NEW TRANSLATION
+ naval_supply_contracts: "Námorné zásobovacie zmluvy" # todo: NEW TRANSLATION
+ naval_supply_contracts_desc: "Naša flotila nemôže zostať na mori bez spoľahlivého zásobovania a obchodné cechy majú siete na jeho zabezpečenie. Uzatváraním zmlúv s nimi zaistíme, že naše lode budú zásobené a pripravené bojovať bez obáv z nedostatku." # todo: NEW TRANSLATION
+ fund_siege_engineers: "Financovať obliehacích inžinierov" # todo: NEW TRANSLATION
+ fund_siege_engineers_desc: "Múry nepriateľov nespadnú bez odborného umu, ktorý ich zničí. Mestské cechy môžu financovať špecializovaných inžinierov a obliehaciu techniku potrebnú na zníženie aj najsilnejších opevnení." # todo: NEW TRANSLATION
+ wartime_harvest_pooling: "Vojnové spoločné zásoby úrody" # todo: NEW TRANSLATION
+ wartime_harvest_pooling_desc: "Naše armády kráčajú na žalúdkoch a hladná armáda sa zle bojuje. Organizovaním zhromažďovania prebytkov úrody do regionálnych skladov môžu naši ľudia priamo zásobovať sily, ktoré ich chránia." # todo: NEW TRANSLATION
+ supply_line_labor_draft: "Odvod pracovnej sily na zásobovacie trasy" # todo: NEW TRANSLATION
+ supply_line_labor_draft_desc: "Cesty, ktoré nesú naše zásoby na front, musia byť udržiavané a materiál presúvaný bez prestania. Náš ľud môže slúžiť vojnovému úsiliu prácou na zásobovacích trasách — príspevkom rovnako dôležitým ako akýkoľvek meč." # todo: NEW TRANSLATION
+ royal_road_commission: "Kráľovská komisia ciest" # todo: NEW TRANSLATION
+ royal_road_commission_desc: "Cesty spájajúce naše kráľovstvo sú tepnami, ktorými prúdi autorita a obchod. Zriadením riadnej siete udržiavaných kráľovských ciest zabezpečíme, že naša moc dosiahne každý kút krajiny rýchlo." # todo: NEW TRANSLATION
+ mountain_pass_charters: "Charty horských priechodov" # todo: NEW TRANSLATION
+ mountain_pass_charters_desc: "Naše šľachtické rody strážia horské priechody, ktoré rozdeľujú naše územie. Udeľovaním charty na ich údržbu a posádky zabezpečíme, že vzdialenosť a terén už neizolujú provincie od koruny." # todo: NEW TRANSLATION
+ establish_parish_waypoints: "Zriadiť farské zastávky" # todo: NEW TRANSLATION
+ establish_parish_waypoints_desc: "Cesty našej ríše sú dlhé a vzdialenosti unavujú posla i cestovateľa. Zriadením farských staníc pozdĺž kľúčových trás môže Cirkev poskytovať oddych, vedenie a podporu všetkým, ktorí prechádzajú našimi zemami." # todo: NEW TRANSLATION
+ coastal_trading_post_network: "Sieť pobrežných obchodných staníc" # todo: NEW TRANSLATION
+ coastal_trading_post_network_desc: "Naše pobrežia ponúkajú prirodzené prístavy a zastávky, ktoré ostávajú nevyužité pre nedostatok zariadení. Sieť pobrežných obchodných staníc financovaná obchodníkmi zníži náklady a riziká námorného obchodu a priblíži vzdialené provincie k metropole." # todo: NEW TRANSLATION
+ rural_road_upkeep_corvee: "Corvée na údržbu vidieckych ciest" # todo: NEW TRANSLATION
+ rural_road_upkeep_corvee_desc: "Naše vidiecke cesty chátrajú pre nedostatok organizovanej údržby. Požadovaním skromnej pracovnej služby od roľníckych domácností na udržanie miestnych ciest priechodných zabezpečíme, že žiadna časť ríše nebude odrezaná od centra." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_royal_monopoly_mod: "Kráľovský obchodný monopol" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_charter_governors_mod: "Guvernéri s chartou" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_colonial_admin_mod: "Koloniálna správa" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_royal_treasury_mod: "Reforma pokladnice" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_royal_censure_mod: "Kráľovské pokarhanie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_emergency_levies_mod: "Núdzové odvody" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_royal_art_patronage_mod: "Kráľovský patronát umenia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_feudal_levies_mod: "Feudálne vojenské povinnosti" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_military_exercises_mod: "Vojenské cvičenia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_heralds_college_mod: "Kolégium heraldikov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_chivalric_orders_mod: "Uznanie rytierskych rád" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_noble_privateers_mod: "Licencia pre šľachtických korzárov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_land_trade_mod: "Šľachtický monopol na pozemný obchod" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_noble_colonization_mod: "Charta šľachtickej kolonizácie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_hunting_rights_mod: "Výhradné práva na lov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_garrison_law_mod: "Zákon o šľachtických posádkach" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_garrison_law_failure_mod: "Zanedbané posádky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_clergy_charity_mod: "Organizácia cirkevnej charity" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_religious_missions_mod: "Náboženské misie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_canonical_law_mod: "Kanonické právo" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_inquisition_courts_mod: "Inkvizičné súdy" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_inquisition_failure_mod: "Protiakcia voči inkvizícii" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_religious_tolerance_mod: "Edikt náboženskej tolerancie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_monastery_network_mod: "Sieť kláštorov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_pilgrimage_routes_mod: "Pútnické trasy" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_tithe_collection_mod: "Regulovaný zber desiatkov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_theological_seminaries_mod: "Teologické semináre" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_export_trade_mod: "Podpora vývozu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_import_controls_mod: "Dovozné kontroly" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_trade_expeditions_mod: "Obchodné expedície" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_commodity_exchange_mod: "Burza komodít" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_maritime_trade_mod: "Podpora námorného obchodu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_trading_companies_mod: "Licencia obchodnej spoločnosti" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_customs_houses_mod: "Colnice" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_artisan_guilds_mod: "Charta remeselníckych cechov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_trade_insurance_mod: "Schéma obchodného poistenia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_postal_relay_mod: "Sieť poštových staníc" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_common_food_stores_mod: "Spoločné zásobárne potravín" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_farming_innovation_mod: "Poľnohospodárske inovácie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_irrigation_projects_mod: "Zavlažovacie projekty" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_reduce_serfdom_mod: "Znížené nevoľníctvo" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_serfdom_slave_fail_mod: "Nepokoje otrokov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_serfdom_peasant_fail_mod: "Nepokoje roľníkov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_village_councils_mod: "Dedinské rady" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_artisan_guild_charters_mod: "Charty remeselníckych cechov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_grain_imports_mod: "Dotácie na dovoz obilia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_rural_crafts_mod: "Charta vidieckych remesiel" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_noble_enclosure_mod: "Ochrana spoločných pozemkov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_war_taxes_mod: "Vojnové dane" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_cavalry_reserve_mod: "Jazdecká rezerva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_frontier_passes_mod: "Opevnené pohraničie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_military_chaplaincy_mod: "Vojenské kaplánstvo" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_field_hospitals_mod: "Polné nemocnice" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_naval_supply_mod: "Zmluvy na námorné zásobovanie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_siege_engineers_mod: "Obliehací inžinieri" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_harvest_pooling_mod: "Spoločné zásoby úrody" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_supply_labor_mod: "Odvod pracovnej sily na zásobovacie trasy" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_supply_labor_fail_mod: "Nepokoje kvôli odvodom na zásobovacie trasy" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_royal_roads_mod: "Kráľovská komisia ciest" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_mountain_passes_mod: "Charty horských priechodov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_parish_waypoints_mod: "Farské zastávky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_coastal_posts_mod: "Pobrežné obchodné stanice" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_road_corvee_mod: "Corvée na údržbu ciest" # todo: NEW TRANSLATION

@@ -1,5 +1,6 @@
 ﻿l_polish:
  flavor_teu.1.title: "Pruská konfederácia povstáva" # todo: NEW TRANSLATION
+ flavor_teu.1.entry: "$flavor_teu.1.title$" # todo: NEW TRANSLATION
  flavor_teu.1.desc: "Napriek našim najlepším snahám sme nedokázali zastaviť úsilie Pruskej konfederácie podkopať vládu [ROOT.GetCountry.GetAdjective]. Mestá, ktoré prisľúbili svoj podporu Konfederácii, zmobilizovali armádu a povstali v otvorenom povstaní. Ako sme predpokladali, mnohí jej členovia majú väzby na Poľsko a už požiadali o poľskú intervenciu v nadchádzajúcom konflikte. Zdá sa, že krvavý boj v Prusku je nevyhnutný, pokiaľ sa nevzdáme našej nadvlády nad týmito mestami." # todo: NEW TRANSLATION
  flavor_teu.1.a: "Zabite každého zradcu!" # todo: NEW TRANSLATION
  prussian_confederation_support: "Všetci [ShowCultureName('prussian')] [ShowPopTypeName('nobles')] a [ShowPopTypeName('burghers')] v [ShowAreaName('prussia_area')] sa pridajú k [prussian_confederation.GetName]" # todo: NEW TRANSLATION
@@ -7,16 +8,19 @@
  flavor_teu.1.b: "Toto nie je vojna, ktorú by sme mohli vyhrať." # todo: NEW TRANSLATION
  prussian_confederation: "Pruská konfederácia" # todo: NEW TRANSLATION
  flavor_teu.2.title: "Pruská konfederácia žiada poľskú podporu" # todo: NEW TRANSLATION
+ flavor_teu.2.entry: "$flavor_teu.2.title$" # todo: NEW TRANSLATION
  flavor_teu.2.desc: "Organizácia nazývajúca sa [prussian_confederation.GetName] sa vzoprela nespravodlivostiam teutónskej vlády! Predtým sme jej členom dali tiché uistenia, že by sme podporili ich vec v prípade otvorenej vojny. Výmenou sa Konfederácia dohodla, že pruské země majú pripadnúť Poľsku po vyhnaní tyranských Rytierov. Z tejto dohody môžeme veľa získať, ale mali by sme sa pripraviť na krvavý boj." # todo: NEW TRANSLATION
  flavor_teu.2.a: "Budú mať našu plnú podporu. Do boja!" # todo: NEW TRANSLATION
  flavor_teu.2.b: "To nie je naša záležitosť." # todo: NEW TRANSLATION
  flavor_teu.3.title: "Liga jašteríc" # todo: NEW TRANSLATION
+ flavor_teu.3.entry: "$flavor_teu.3.title$" # todo: NEW TRANSLATION
  flavor_teu.3.desc: "Dopadli ku nám správy o lokálnom [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] v [ShowProvinceDefinitionName('chelmno_province')], ktorý sa organizuje do spolku známeho ako 'Zväz jašteríc.' Oficiálnym zámerom zväzu je bojovať proti bezprávu a chrániť svoje záujmy. Hoci spoločnosť môže pôsobiť legitímne, niektorí sa domnievajú, že ich blízkosť k [GetCountry('POL').GetAdjective] hranici by mohla naznačovať, že ide v skutočnosti o separatistické hnutie." # todo: NEW TRANSLATION
  flavor_teu.3.historical_info: "Liga jašteríc, v latinčine známa ako #italic Societas Lacertarum#!, bola organizáciou pruských rytierov z Chełmna založenou v roku 1397 ako rytierksé bratstvo. Neskôr, v roku 1410, počas bitky pri Grunwalde, jeden zo zakladateľov, Nicholas von Renys, spustil zástavu čelmińského pluku a podnietil ústup. Po incidente boli členovia Únie označení za zradcov." # todo: NEW TRANSLATION
  flavor_teu.3.a: "Dovoľte Lige existovať." # todo: NEW TRANSLATION
  flavor_teu.3.b: "Majú zlé úmysly!" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_teu_lizard_league: "Eidechsenbund" # todo: NEW TRANSLATION
  flavor_teu.4.title: "Pruský hold" # todo: NEW TRANSLATION
+ flavor_teu.4.entry: "$flavor_teu.4.title$" # todo: NEW TRANSLATION
  flavor_teu.4.desc: "Porážka [GetCountry('TEU').GetLongName] znamenala návrat veľkej časti Pomerélie späť do našich radov, ale tiež dobytie území v [ShowAreaName('prussia_area')]. Hoci sú zdecimovaní, [GetCountry('TEU').GetAdjectiveWithNoTooltip] rytieri stále stoja a kontrolujú mnohé inštitúcie v tejto oblasti.\n\nKeďže územia vo Východnom Prusku môže byť ťažké integrovať, objavili sa návrhy prinútiť existujúcu elitu Rádu sekularizovať sa a zložiť prísahu vernosti pred [pol_ruler.GetName]. Pod týmto plánom by boli staré územia [GetCountry('TEU').GetName] rozdelené na '[ROOT.GetCountry.GetGovernment.GetAdjective|U] Prusko', priamo začlenené do koruny, a '[ShowScriptedGeographyName('ducal_prussia_geography')]', ktoré by držali sekularizovaní Prusovia." # todo: CHANGED
  flavor_teu.4.historical_info: "Po trinásťročnej vojne proti Teutónskemu rádu v rokoch 1454-1466 bolo Prusko rozdelené na 'Kráľovské Prusko', priamo držené Kráľovstvom Poľsko, a východné provincie, ktoré zostali súčasťou rádu ako vazal, známe ako 'Vojvodské Prusko'. V roku 1525 bol štát Teutónskeho rádu sekularizovaný jeho Hochmeisterom Albertom von Hohenzollernom a od tej doby sa nazýval 'Vojvodstvo Prusko'." # todo: NEW TRANSLATION
  flavor_teu.4.a: "Prinúťte ich, aby sa podriadili!" # todo: NEW TRANSLATION
@@ -30,46 +34,59 @@
  flavor_teu.6.title: "Pohanskí [ShowReligionAdjectiveWithNoTooltip('romuva')] v [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_teu.6.desc: "Ohavné [ShowReligionAdjective('romuva')] pohanstvo nie je dôveryhodné. Títo odporní neveriaci, napriek všetkej láskavosti a zhovievavosti, ktorú sme im preukázali napriek ich viere, vyvolali nové povstanie v [target_location.GetName]. Hoci nie je veľké a nevyžaduje okamžitú mobilizáciu našich síl, stále je to nepríjemnosť pre našu svätú misiu a musí byť potlačené. Ak by sa takéto neorganizované zástupy zoskupili do väčšej sily, mohlo by to ohroziť kontrolu [ROOT.GetCountry.GetAdjective] nad takýmito pohanskými provinciami." # todo: NEW TRANSLATION
  flavor_teu.6.a: "Postavte [ShowBuildingTypeNameWithNoTooltip('castle')] na dohľad nad [target_location.GetProvince.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_teu.6.a.entry: "Postavte [ShowBuildingTypeNameWithNoTooltip('castle')], aby ste dohliadali nad provinciou." # todo: NEW TRANSLATION
  flavor_teu.6.b: "Prinúťte miestneho #italic Komtur#!, aby sa tým zaoberal." # todo: NEW TRANSLATION
  teuton_6_event_trigger_information: "Tento [event|e] sa môže spustiť z nasledujúcich podmienok:\n[ShowTriggerConditionsForScope('teu_event_6_trigger', SCOPE.sLocation('target_location').GetLocation.MakeScope.Self))]" # todo: NEW TRANSLATION
  flavor_teu.7.title: "Mestské zákony [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_teu.7.entry: "Mestské zákony Gdaňska" # todo: NEW TRANSLATION
  flavor_teu.7.desc: "Rang [target_location.GetRank.GetName] [target_location.GetName] je ekonomickým pilierom a hlavným obchodným prístavom [ROOT.GetCountry.GetLongName]. On, podobne ako niekoľko ďalších, naďalej využíva $lubeck$ City Law kvôli hlbokým väzbám s [target_country.GetLongName], čo je tiež bod napätia medzi nimi a ich [ROOT.GetCountry.GetGovernment.GetAdjective] pánmi. Aby sme ukončili konflikt, [ROOT.GetCountry.GetNameWithNoTooltip] je ochotné nechať [target_location.GetNameWithNoTooltip] prijať [ShowEstatePrivilegeName('kulm_law')] pri zachovaní niektorých privilégií súčasného poriadku, posilnení miestnej rady a udelení väčšej autonómie. Takéto riešenie umožní [target_location.GetRank.GetNameWithNoTooltip] prosperovať ako obchodné centrum v [target_location.GetMarket.GetName]." # todo: NEW TRANSLATION
  flavor_teu.7.a: "Presadiť toto riešenie." # todo: NEW TRANSLATION
  flavor_teu.7.b: "Zachovať súčasný poriadok." # todo: NEW TRANSLATION
  flavor_teu.8.title: "Hospodársky útlm" # todo: NEW TRANSLATION
+ flavor_teu.8.entry: "$flavor_teu.8.title$" # todo: NEW TRANSLATION
  flavor_teu.8.desc: "Posledné časy boli pre [ROOT.GetCountry.GetLongName] ťažké. Hospodársky útlm priviedol mnohých [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] do chudoby a pokladnica [ROOT.GetCountry.GetNameWithNoTooltip] sa alarmujúco vyprázdňuje. Takáto situácia je nočnou morou a môže sa ešte zhoršiť, ak s ňou nič neurobíme. Aby sme sa vyhli stavu, že budeme musieť prijať ďalší dlh na pokrytie existujúcich splátok, mohli by sme zvážiť uloženie novej dane na naše držby roztrúsené po celom [ShowContinentName('europe')]. Takýto krok by nebol úplne bezprecedentný, ale výška dane by mohla byť. Načo nám je [ShowBuildingTypeName('order_commandery')], ak nám neprináša žiadny úžitok?" # todo: NEW TRANSLATION
  flavor_teu.8.a: "Uvaliť vysokú daň." # todo: NEW TRANSLATION
  flavor_teu.8.b: "Uložiť im miernu daň." # todo: NEW TRANSLATION
  flavor_teu.8.c: "Nájdeme iný zdroj príjmov." # todo: NEW TRANSLATION
  flavor_teu.11.title: "Revízia [ShowEstatePrivilegeNameWithNoTooltip('kulm_law')]" # todo: NEW TRANSLATION
+ flavor_teu.11.entry: "Revízia Kulmského práva" # todo: NEW TRANSLATION
  flavor_teu.11.desc: "[ShowSituationName('black_death')] zdecimovala celý kontinent [ShowContinentName('europe')], vyhubila množstvo miest a ponorila osady do ruín. Hoci ekonomický dopad na [ROOT.GetCountry.GetLongName] bol hrozný, horšie je, že nižší počet obyvateľov v Nemecku znížil migračný tlak a zmenšil rast populácie v [ShowAreaName('prussia_area')]. Pokiaľ neposkytneme viac stimulov pre prisťahovalcov do [ROOT.GetCountry.GetAdjectiveWithNoTooltip] krajín, čoskoro zostaneme bez migrantov, ktorí tvoria podstatnú súčasť našej misie pokresťančovania." # todo: NEW TRANSLATION
  flavor_teu.11.a: "Poskytnúť migrantom viac výhod." # todo: NEW TRANSLATION
  flavor_teu.11.b: "Budeme sa s tým musieť vysporiadať." # todo: NEW TRANSLATION
  flavor_teu.12.title: "Monopol na [ShowGoodsNameWithNoTooltip('amber')]" # todo: NEW TRANSLATION
+ flavor_teu.12.entry: "Monopol na jantár" # todo: NEW TRANSLATION
  flavor_teu.12.desc: "[ROOT.GetCountry.GetLongName] vlastní množstvo zdrojov a prírodných bohatstiev, no málo z nich je také významné a žiadané ako [target_goods.GetName]. Práve preto ho [ROOT.GetCountry.GetFlavorRank] postavil pod [ROOT.GetCountry.GetGovernment.GetAdjective] jurisdikciu a bude ho naďalej považovať za cenný monopol. Takýto protekcionizmus však riskuje rozhorčenie [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], ktorí chcú byť zahrnutí do tohto obchodu a mohli by z neho veľa profitovať." # todo: NEW TRANSLATION
  flavor_teu.12.a: "Posilniť našu kontrolu nad surovinou." # todo: NEW TRANSLATION
  flavor_teu.12.b: "Uvoľniť náš monopol." # todo: NEW TRANSLATION
  flavor_teu.12.c: "Udeľte ho namiesto toho [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]." # todo: NEW TRANSLATION
+ flavor_teu.12.c.entry: "Namiesto toho ho prisúďte $peasants_estate$." # todo: NEW TRANSLATION
  flavor_teu.13.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_teu.13.desc: "Dostali sme správy o istej kotvičke menom [target_character.GetName], ktorá si získala slávu v celej [ROOT.GetCountry.GetFlavorRank] vďaka svojim víziám. Počas svojho života [target_character.GetShortNameWithNoTooltip] prežila mnoho zjavení, ktoré upútali pozornosť celého [ROOT.GetCountry.GetLongName]. Napriek tomu mnohí tieto vízie odmietajú za falošné, zatiaľ čo iní im veria. Sú dokonca ľudia, ktorí by chceli vidieť [target_character.GetHerHim] upálenú na hranici za čarodejníctvo.\n\nV súčasnosti [target_character.GetNameWithNoTooltip] už prežila jeden čarodejnícky proces, no to neodrádza [target_character.GetHisHer] nepriateľov od požadovania ďalšieho." # todo: NEW TRANSLATION
+ flavor_teu.13.entry: "Dorothy von Montau, pustovníčka" # todo: NEW TRANSLATION
+ flavor_teu.13.desc: "Dostali sme správy o istej pustovníčke menom [target_character.GetName], ktorá sa svojimi víziami preslávila v celom [ROOT.GetCountry.GetFlavorRank]. Počas svojho života [target_character.GetShortNameWithNoTooltip] zažila mnoho zjavení, ktoré upútali pozornosť celého [ROOT.GetCountry.GetLongName]. Mnohí však tieto vízie považujú za falošné, zatiaľ čo iní im veria. Dokonca sú i takí, ktorí by ju chceli upáliť za čarodejníctvo.\n\nK tomuto okamihu [target_character.GetNameWithNoTooltip] už prežila jeden proces o čarodejníctvo, no to neodradilo jej nepriateľov od požiadavky na ďalší." # todo: CHANGED
  flavor_teu.13.a: "Tieto vízie sú naozaj fascinujúce." # todo: NEW TRANSLATION
- flavor_teu.13.b: "Vypočujte si odvolania nepriateľov [target_character.GetHerHis]." # todo: NEW TRANSLATION
+ flavor_teu.13.b: "Vypočujte si žiadosti jej nepriateľov." # todo: CHANGED
  flavor_teu.14.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_teu.14.desc: "Kňaz veľkého potenciálu si urobil meno v [ROOT.GetCountry.GetFlavorRank]. Keďže dlhodobo pôsobil na [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character.GetSheHe] je známy ako schopný kronikár, ktorý by mohol pomôcť vytvoriť dielo vyplňujúce medzery v [target_work_of_art.GetName], ktoré bolo zhotovené v roku [target_work_of_art.GetCreationDate] [target_work_of_art.GetCreator.GetName]." # todo: NEW TRANSLATION
- flavor_teu.14.a: "Potrebujeme služby [target_character.GetHerHis]!" # todo: NEW TRANSLATION
- flavor_teu.14.b: "Prepustite [target_character.GetHerHim]." # todo: NEW TRANSLATION
+ flavor_teu.14.entry: "Johann von Posilge, kronikár" # todo: NEW TRANSLATION
+ flavor_teu.14.desc: "Klérik veľkého potenciálu si v [ROOT.GetCountry.GetFlavorRank] urobil meno ako [target_character.GetHerselfHimself]. Keďže bol dlhý čas súčasťou [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle], je známy ako zručný kronikár, ktorý by mohol pomôcť vytvoriť dielo a zaplniť medzery v [target_work_of_art.GetName], ktoré vzniklo v roku [target_work_of_art.GetCreationDate] autorom [target_work_of_art.GetCreator.GetName]." # todo: CHANGED
+ flavor_teu.14.a: "Potrebujeme jeho služby!" # todo: CHANGED
+ flavor_teu.14.b: "Odmietnuť ho." # todo: CHANGED
  teu_event_within_5_to_10_years: "Tento [event|e] sa odohrá v priebehu 5 až 10 rokov, pokiaľ bude [target_character.GetName] ešte nažive." # todo: NEW TRANSLATION
  flavor_teu.15.title: "$chronik_des_land_preussens$" # todo: NEW TRANSLATION
+ flavor_teu.15.entry: "$flavor_teu.15.title$" # todo: NEW TRANSLATION
  flavor_teu.15.desc: "Práca [target_character.GetName] sa konečne vyplatila, lebo [target_character.GetSheHe] dokončil(a) celoživotné dielo, [target_work_of_art.GetName], [ShowWorkOfArtTypeName('chronicle')] opisujúcu históriu [ROOT.GetCountry.GetLongName] od 1360-tych rokov až po súčasnosť." # todo: NEW TRANSLATION
  flavor_teu.15.a: "[ROOT.GetCountry.Custom('common_string_wonder')]" # todo: NEW TRANSLATION
+ flavor_teu.15.a.entry: "$common_string_marvelous$" # todo: NEW TRANSLATION
  flavor_teu.16.title: "Großschäffer [ROOT.GetCountry.GetFlavorRank]" # todo: NEW TRANSLATION
+ flavor_teu.16.entry: "$flavor_teu.16.title$" # todo: NEW TRANSLATION
  flavor_teu.16.desc: "Großschäfferi sú manažéri [ROOT.GetCountry.GetAdjective] obchodných záujmov v zahraničí. Nesú veľkú zodpovednosť a privilégiá a majú výhradné právo obchodovať so [ShowGoodsName('wheat')] a [ShowGoodsName('amber')] v prístavoch [ShowLocationName('gdansk')] a [ShowLocationName('konigsberg')] v uvedenom poradí. Takéto veľké privilégiá a množstvo moci im priniesli nepriateľstvo [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], ktorí sú pevne proti právam udeleným týmto ministrom [ROOT.GetCountry.GetFlavorRank] a chceli by tieto práva zrušiť. Na druhej strane je [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] veľmi spokojný s príjmami, ktoré Großschäfferi prinášajú, a rád by im udelil ďalšie privilégiá." # todo: NEW TRANSLATION
  flavor_teu.16.a: "Zrušiť ich monopol." # todo: NEW TRANSLATION
  flavor_teu.16.b: "Využiť inštitúciu." # todo: NEW TRANSLATION
  flavor_teu.16.c: "Zachovať status quo." # todo: NEW TRANSLATION
  flavor_teu.17.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_teu.17.desc: "[target_character.GetName] je [target_character.GetArtistType.GetName], narodený v [target_character.GetBirthLocation.GetName]. Študoval na [ShowBuildingTypeName('university')] v [ShowLocationName('krakow')] a je k dispozícii na najatie; pracoval pre mnohých rôznych politických predstaviteľov po celom [ShowContinentName('europe')]. Možno by sme mali vyhľadať aj služby [target_character.GetHerHis]." # todo: NEW TRANSLATION
+ flavor_teu.17.entry: "Petrus de Grudziadz, skladateľ" # todo: NEW TRANSLATION
+ flavor_teu.17.desc: "[target_character.GetName] je [target_character.GetArtistType.GetName], narodený v [target_character.GetBirthLocation.GetName]. Študoval na [ShowBuildingTypeName('university')] v [ShowLocationName('krakow')], je k dispozícii na najatie a pracoval pre mnohých rôznych politických predstaviteľov po celom [ShowContinentName('europe')]. Možno by sme mali požiadať o jeho služby tiež." # todo: CHANGED
  flavor_teu.17.a: "Stať sa patrónom [target_character.GetArtistType.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_teu.17.a.entry: "Staňte sa patrónom umelca." # todo: NEW TRANSLATION
  flavor_teu.17.b: "Nemôžeme si dovoliť takéto prostriedky." # todo: NEW TRANSLATION
  teu_impact_on_kulm_law: "[ShowEstatePrivilegeName('kulm_law')] bude upravený o:\n#g +10.0%#! [ShowModifierTypeName('rural_migration_attraction')]\n#r -10.0%#! [ShowModifierTypeName('burghers_estate_max_tax')]" # todo: NEW TRANSLATION
  teu_impact_on_kulm_law_not_revised: "[ShowEstatePrivilegeName('kulm_law')] bude upravený o:\n#r -50.0%#! [ShowModifierTypeName('german_migration_attraction_modifier')]" # todo: NEW TRANSLATION
@@ -77,33 +94,37 @@
  kulm_law_not_revised_tooltip: "Rozhodol sa nerevidovať [ShowEstatePrivilegeName('kulm_law')] prostredníctvom $flavor_teu.11.title$ [event|e]." # todo: NEW TRANSLATION
  flavor_teu.100.title: "Pruská križiacka výprava" # todo: NEW TRANSLATION
  flavor_teu.100.desc: "Pred mnohými rokmi slávni križiaci Baltu vyhlásili svoju Pruskú križiacku výpravu na slávu Krista. Mnohí muži nasledovali jej volanie, jedným z nich bol pýcha [ROOT.GetCountry.GetAdjective] koruny: [target.GetName]." # todo: NEW TRANSLATION
- flavor_teu.100.desc.crusader_returns: "$flavor_teu.100.desc$\n\nVylievala sa krv, zisk prestíže bol veľký a česť bola obrúchaná, zatiaľ čo neveriaci a zlí pohania sa pred [target.GetHerHis] svätým hnevom trepali strachom. Teraz sa [target.GetSheHe] vrátil(a) do milujúcich náručia svojho veľkolepého [ROOT.GetCountry.GetFlavorRank]!" # todo: NEW TRANSLATION
- flavor_teu.100.desc.crusader_dead: "$flavor_teu.100.desc$\n\nHoci sme do rytiera vkladali veľkú nádej, Pán mal pre [target.GetHerHim] iné plány. Prostredníctvom krutých a podlých taktik preklatí pohania padli i mohutný križiak. [ROOT.GetCountry.GetAdjectiveWithNoTooltip] ľud oplakáva [target.GetHerHis] smrť." # todo: NEW TRANSLATION
+ flavor_teu.100.desc.crusader_returns: "$flavor_teu.100.desc$\n\nPrelial sa krv, získala sa prestíž a česť bola obhájená, zatiaľ čo neveriaci a zlí pohania sa pred jeho svätým hnevom chveli strachom. Teraz sa vrátil do náručia svojho veľkolepého [ROOT.GetCountry.GetFlavorRank]!" # todo: CHANGED
+ flavor_teu.100.desc.crusader_dead: "$flavor_teu.100.desc$\n\nHoci náš [ROOT.GetCountry.GetFlavorRank] do rytiera vložil veľkú vieru, Pán mal pre neho iné plány. Prostredníctvom bezohľadných a ohavných taktík prekliati pohania skolili toho mocného križiaka. [ROOT.GetCountry.GetAdjectiveWithNoTooltip] ľudia volajú po jeho smrti." # todo: CHANGED
  flavor_teu.100.desc.fallback: "Legenda praví, že bol raz rytier vybraný [ROOT.GetCountry.GetAdjective] korunou na účasť v Pruskej križiackej výprave.\n\nAko to už býva s legendami, aj tento príbeh je len dobre rozprávaná rozprávka." # todo: NEW TRANSLATION
- flavor_teu.100.a: "Nech je [target.GetSheHe] príkladom pre mnohých ďalších rytierov!" # todo: NEW TRANSLATION
+ flavor_teu.100.a: "Nech je príkladom pre mnohých ďalších rytierov!" # todo: CHANGED
  flavor_teu.100.b: "Títo divosi za to zaplatia krvou!" # todo: NEW TRANSLATION
  flavor_teu.100.c: "Je to však veľký príbeh." # todo: NEW TRANSLATION
  flavor_teu.101.title: "Smrť križiaka" # todo: NEW TRANSLATION
  target: "[target.GetName]" # todo: NEW TRANSLATION
- flavor_teu.101.desc.infection_death: "Populárny križiak [target.GetName] niekoľko dní bojoval so zle vyzerajúcou horúčkou. Hoci mu [ROOT.GetCountry.GetGovernment.GetRulerTitle] radil, aby sa vrátil domov, križiak trval na zostaní kvôli sláve. Nakoniec si však všetko odniesol len objatie Smrti." # todo: NEW TRANSLATION
- flavor_teu.101.desc.training_accident_death: "Tragédia zasiahla [ROOT.GetCountry.GetAdjective] kasárne! Počas tréningu sa križiak [target.GetName] pustil do súboja s panošom, aby zlepšil svoje a jeho bojové zručnosti, a v skutočnosti sa strhol súboj s mečmi. Bohužiaľ pre šľachtica, panoš zdvihol meč príliš vysoko a usekol [target.GetNameWithNoTooltip] hlavu. [target.GetSheHe|U] zomrel(a) okamžite." # todo: NEW TRANSLATION
- flavor_teu.101.desc.river_drowning_death: "Jednou z hlavných čŕt našich rytierov je ťažký pancier. Aj keď robí naše zbrane prakticky nezraniteľnými proti seknutiam, má to svoje nevýhody. Jednou z nich, ktorá sa opäť prejavila, je jeho nevhodnosť pri vode. Keď rytier padne do rieky, kovový pancier sa stane jeho mokrým hrobom.\n\nKrižiak [target.GetName] sa túto lekciu naučil na tvrdo, keď [target.GetSheHe] spolu so svojimi spoluritiermi vyrazil na lúpežné výpravy do osád neveriacich. Počas svojej cesty spadol z koňa do rieky a utopil sa." # todo: NEW TRANSLATION
- flavor_teu.101.desc.fallback: "Cudziný križiak, [target.GetName], bol dnes ráno nájdený mŕtvy v posteli. Príčina smrti je pre všetkých záhadou, keďže bol ešte večer úplne živý a nezjavujú sa žiadne známky násilnej smrti..." # todo: NEW TRANSLATION
- flavor_teu.101.a: "Nech [target.GetHerHis] duša odpočíva v pokoji." # todo: NEW TRANSLATION
+ flavor_teu.101.desc.infection_death: "Obľúbený križiak [target.GetName] už niekoľko dní bojoval s ťažkou horúčkou. Hoci ho [ROOT.GetCountry.GetGovernment.GetRulerTitle] radil vrátiť sa domov, križiak trval na tom, že zostane kvôli sláve. Nakoniec si však odniesol len objatie Smrti." # todo: CHANGED
+ flavor_teu.101.desc.training_accident_death: "Tragédia zasiahla [ROOT.GetCountry.GetAdjective] kasárne! Počas cvičenia sa križiak [target.GetName] pustil do súboja s panošom, aby zlepšil svoje i jeho bojové schopnosti, a skutočne sa s chlapcom pobili na meče. Bohužiaľ pre šľachtica panoš zarezal meč príliš vysoko a dekapitoval [target.GetNameWithNoTooltip]. Zomrel okamžite." # todo: CHANGED
+ flavor_teu.101.desc.river_drowning_death: "Jednou z kľúčových vlastností našich rytierov je ťažké brnenie. Hoci naše jednotky takto zostávajú prakticky neporaziteľné voči seknutiam, má to aj určité nevýhody. Jednou z nich, ktorá sa opäť prejavila, je jeho nevhodnosť vo vode. Keď rytier spadne do rieky, kovové brnenie sa stane jeho mokrým hrobom.\n\nKrižiak [target.GetName] sa túto lekciu naučil tvrdo, keď on a jeho spolorytierovia vyrazili na jazdu, aby plenili dediny neveriacich. Počas cesty spadol z koňa do rieky a utopil sa." # todo: CHANGED
+ flavor_teu.101.desc.fallback: "Cudzí križiak, [target.GetName], bol dnes ráno nájdený mŕtvy vo svojej posteli. Príčina smrti je pre všetkých záhadou, keďže ešte večer bol úplne pri zdraví a ani neexistujú známky násilnej smrti..." # todo: CHANGED
+ flavor_teu.101.a: "Nech jeho duša odpočíva v pokoji." # todo: CHANGED
  flavor_teu.101.b: "Aspoň vieme, že panoš vie narábať s mečom." # todo: NEW TRANSLATION
  flavor_teu.101.c: "Nešťastný, no bežný osud." # todo: NEW TRANSLATION
- flavor_teu.101.zzz: "Len Pán vie, čo sa s [target.GetHerHim] stalo..." # todo: NEW TRANSLATION
+ flavor_teu.101.zzz: "Iba Pán vie, čo sa s ním stalo..." # todo: CHANGED
  flavor_teu.102.title: "$flavor_teu.101.title$" # todo: NEW TRANSLATION
+ flavor_teu.102.entry: "$flavor_teu.102.title$" # todo: NEW TRANSLATION
  flavor_teu.102.desc: "$flavor_teu.100.desc.crusader_dead$" # todo: NEW TRANSLATION
- flavor_teu.102.a: "To sú rozhodne nepríjemné správy" # todo: NEW TRANSLATION
+ flavor_teu.102.a: "To sú určite nepríjemné správy." # todo: CHANGED
  flavor_pol_teu.1.title: "Verdikt z roku 1339" # todo: NEW TRANSLATION
+ flavor_pol_teu.1.entry: "$flavor_pol_teu.1.title$" # todo: NEW TRANSLATION
  flavor_pol_teu.1.desc: "V roku 1335 sme podali sťažnosť proti [GetCountry('TEU').GetName] k [GetCountry('PAP').GetAdjective] [GetCountry('PAP').GetGovernment.GetCourtTitle]. Po rokoch čakania konečne dorazila [GetCountry('PAP').GetAdjectiveWithNoTooltip] komisia a proces rokovania sa začal. Ako sme očakávali, sudcovia nami predloženú sťažnosť uznali a rozhodli, že [GetCountry('TEU').GetNameWithNoTooltip] má vrátiť provincie [ShowProvinceDefinitionName('danzig_province')], [ShowProvinceDefinitionName('tuchola_province')], [ShowProvinceDefinitionName('kuyavia_province')], [ShowProvinceDefinitionName('dobrzyn_province')] a [ShowProvinceDefinitionName('stolp_province')]." # todo: NEW TRANSLATION
  flavor_pol_teu.1.historical_info: "Ako v roku 1319, tak aj v roku 1335 podali poľské strany sťažnosti proti Teutónskemu rádu na Pápalskom dvore, požadujúc navrátenie 'Danzig Pomerania' späť Poľsku. V prípade sťažnosti z roku 1335 komisia poslaná Pápalstvom rozhodla, že teutónska agresia bola nespravodlivá a že územia majú byť vrátené a má byť vyplatená náhrada. Teutónsky rád sa proti tomuto rozhodnutiu odvolal, a po pápežskom prerokovaní bol nútený vrátiť iba obsadené územia, Bydgoszcz a Dobrzyń." # todo: NEW TRANSLATION
  flavor_pol_teu.1.a: "A mysleli sme si, že spravodlivosť je mŕtva..." # todo: NEW TRANSLATION
  flavor_pol_teu.2.title: "$flavor_pol_teu.1.title$" # todo: NEW TRANSLATION
  flavor_pol_teu.2.desc: "Ďalšie súdne rozhodnutie! Rovnako ako v roku 1319, aj v roku 1335 [pol_polish_side.GetName] podal ďalšiu sťažnosť Svätému Otcovi v nádeji na výsledok, ktorý by nás ponížil a prinútil vzdať sa našich oprávnených získaní. No [GetCountry('PAP').GetAdjective] komisia, určite skorumpovaná, vydala ďalšie smiešne rozhodnutie, určujúc, že máme vrátiť provincie [ShowProvinceDefinitionName('danzig_province')], [ShowProvinceDefinitionName('tuchola_province')], [ShowProvinceDefinitionName('dobrzyn_province')], [ShowProvinceDefinitionName('kuyavia_province')] a [ShowProvinceDefinitionName('stolp_province')] [pol_polish_side.GetLongNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_pol_teu.2.a: "To je absurdné! Musíme sa okamžite odvolať k [GetCountry('PAP').GetGovernment.GetRulerTitle]!" # todo: NEW TRANSLATION
+ flavor_pol_teu.2.a.entry: "To je absurdné! Musíme sa mu okamžite obrátiť." # todo: NEW TRANSLATION
  flavor_pol_teu.2.b: "Nebudeme spochybňovať legitímnosť [GetCountry('PAP').GetAdjectiveWithNoTooltip] komisie." # todo: NEW TRANSLATION
+ flavor_pol_teu.2.b.entry: "Nebudeme spochybňovať legitímnosť $PAP_ADJ$ poverenia." # todo: NEW TRANSLATION
  flavor_pol_teu.2.c: "Nič im neodovzdáme!" # todo: NEW TRANSLATION
  flavor_pol_teu.3.title: "Konflikt medzi [pol_polish_side.GetNameWithNoTooltip] a [pol_teutonic_side.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_pol_teu.3.desc: "Politika medzi [pol_polish_side.GetName] a [pol_teutonic_side.GetName] je viac vypätá ako inokedy. [pol_teutonic_side.GetAdjectiveWithNoTooltip] obsadenie Pomerélie zanechalo horkú pachuť v ústach [pol_polish_side.GetAdjectiveWithNoTooltip], čo ich podnietilo podávať proti Rytierom viacero sťažností.\n\nNedávne vyšetrovanie našej komisie v [pol_polish_side.GetNameWithNoTooltip] rozhodlo, že [pol_teutonic_side.GetAdjectiveWithNoTooltip] strana má vzdať veľké územné úseky [pol_polish_side.GetAdjectiveWithNoTooltip], čo vyvolalo odvolanie. Musíme túto záležitosť vyriešiť zmierlivo." # todo: NEW TRANSLATION
@@ -139,6 +160,7 @@
  flavor_pol_teu.8.a: "Aspoň je to lepšie než to, čo zosnovali Poliaci." # todo: NEW TRANSLATION
  flavor_pol_teu.8.b: "Nevzdáme ani kúsok územia, nech to žiada ktokoľvek!" # todo: NEW TRANSLATION
  flavor_teu.300.title: "[GetCountry('POL').GetAdjectiveWithNoTooltip] Ľahostajnosť" # todo: NEW TRANSLATION
+ flavor_teu.300.entry: "$POL_ADJ$ Ľahostajnosť" # todo: NEW TRANSLATION
  flavor_teu.300.desc: "Počas posledných rokov napätie s [GetCountry('POL').GetAdjective] neustále narastalo. Obe strany veria, že vojna medzi nimi je nevyhnutná, no žiadna strana nie je ochotná začať konflikt. Presvedčení o [GetCountry('POL').GetAdjectiveWithNoTooltip] úmysloch, mnohí vysokopostavení úradníci začali navrhovať, aby [teu_ruler.GetName] nechal našu stranu pred nimi položiť provokačné dva nahé meče." # todo: NEW TRANSLATION
  flavor_teu.300.historical_info: "V roku 1410 Poľsko dosiahlo svoje najrozhodujúcejšie víťazstvo nad Rádom v bitke pri Grunwalde počas takzvanej Veľkej vojny. Hovorí sa, že poľská strana sa snažila unaviť druhú stranu odpočinkom v tieni blízkych lesov a bitka sa začala až potom, čo Teutóni poslali posla nesúceho dva nahé meče, aby Poľákov vyzvali na boj." # todo: NEW TRANSLATION
  flavor_teu.300.a: "Ak im chýbajú meče, my im ich dodáme." # todo: NEW TRANSLATION
@@ -151,10 +173,12 @@
  flavor_teu.302.desc: "Pár nahých mečov, ktoré sme dostali od [GetCountry('TEU').GetName], nadobudol nový symbolický význam. Ako znak [GetCountry('TEU').GetAdjectiveWithNoTooltip] arogancie sa naše nedávne trestné taženie proti nim postaralo o to, že sa stali pripomienkou našich víťazstiev. Stali sa súčasťou zbierky insignií [ROOT.GetCountry.GetGovernment.GetAdjective]." # todo: NEW TRANSLATION
  flavor_teu.302.a: "Víťazstvo nad nimi stálo za preliatú krv." # todo: NEW TRANSLATION
  flavor_swe_teu.1.title: "Ten [target_country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_swe_teu.1.victual_brother_info: "Baltské more bolo domovom pirátstva odjakživa. Medzi námorníkmi a rybármi z [target_location.GetName] je mnoho takých, ktorí sa snažia viesť život pirátstva a zločinu. Medzi nimi [target_character.GetName] a [target_character.GetHerHis] banda tzv. Likedeelers teraz vlaje čierna zástava po našich moriach, s úmyslom obohatiť sa okrádaním všetkých nešťastníkov, ktorí ich stretnú. Niektorí z týchto darebákov, tzv. 'Vitalienbrüder', teraz obsadili ostrov [ShowProvinceDefinitionName('gotland_province')] a zriadili si svoje hlavné mesto v [ShowLocationName('visby')]. Ich činy viedli k poklesu obchodu v oblasti a ich neprestajné pirátstvo nakoniec povedie k úplnému zániku nášho obchodu." # todo: NEW TRANSLATION
+ flavor_swe_teu.1.entry: "Vitalienbrüder" # todo: NEW TRANSLATION
+ flavor_swe_teu.1.victual_brother_info: "Baltické more je kolískou pirátstva od nepamäti. Medzi námorníkmi a rybármi z [target_location.GetName] je mnoho takých, ktorí sa snažia viesť život pirátstva a zločinu. Medzi nimi [target_character.GetName] a jeho banda takzvaných Likedeelers teraz vlajú čiernu zástavu naprieč našimi moriami a chcú sa obohatiť lúpením každého, kto sa im postaví do cesty. Niektorí z týchto lotrov, takzvaní 'Vitalienbrüder', obsadili ostrov [ShowProvinceDefinitionName('gotland_province')] a zriadili tam svoje hlavné sídlo v [ShowLocationName('visby')]. Ich činy viedli k úpadku obchodu v oblasti a ich neustále pirátstvo nakoniec povedie k úplnej skaze nášho obchodu." # todo: CHANGED
  flavor_swe_teu.1.desc: "$flavor_swe_teu.1.victual_brother_info$ Musíme sa s nimi vysporiadať skôr, než sa upevnia na našom ostrove." # todo: NEW TRANSLATION
  flavor_swe_teu.1.historical_info: "Klaus Störtebeker bol legendárny nemecký pirát na konci 14. storočia, známy z lúpeží lodí Hanzovej ligy. Viedol Vitalienbrüder, pirátsku skupinu pôvodne najatú ako súkromníci vojvodami z Meklenburska proti kráľovnej Margarete, no neskôr sa obrátili proti svojim zamestnávateľom. Zajatý v roku 1401 pri Heligolande, on a jeho posádka boli popravení v Hamburgu. Podľa legendy dosiahol dohodu: tých, ktorých by po sťatí dokázal obísť, by ušetrili. Údajne sa mu podarilo prejsť viacerých svojich mužov, než ho kat potkol a porušil dohodu. Jeho meno, ktoré znamená '#italic vypiť korbel jedným dúškom#!', odráža jeho notorickú pitnú schopnosť." # todo: NEW TRANSLATION
  flavor_swe_teu.1.a: "Požiadame o pomoc [fief_offer_target.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_swe_teu.1.a.entry: "Požiadajme ho o pomoc." # todo: NEW TRANSLATION
  flavor_swe_teu.1.b: "Vysporiadame sa s nimi sami, nech to bude akokoľvek nákladné." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_teu_wrath_of_the_pirates: "Hnev pirátov" # todo: NEW TRANSLATION
  vtb_operates_in_the_baltic_tt: "[target_country.GetLongName] začne svoje operácie naprieč pobrežiami [ShowAreaNameWithNoTooltip('baltic_area')]" # todo: NEW TRANSLATION
@@ -169,12 +193,16 @@
  flavor_swe_teu.3.a: "Zamerajme sa teda na naše priority!" # todo: NEW TRANSLATION
  flavor_swe_teu.3.b: "Dobre, urobíme to sami." # todo: NEW TRANSLATION
  flavor_swe_teu.4.title: "Bratstvo Vitalienbrüder" # todo: NEW TRANSLATION
+ flavor_swe_teu.4.entry: "$flavor_swe_teu.4.title$" # todo: NEW TRANSLATION
  flavor_swe_teu.4.desc: "Zradení našimi [GetCountry('HSA').GetAdjective] partnermi, náš zväz sa musel uspokojiť s podlejšou formou obživy - pirátstvom. Ako základňu operácií sme si vybrali ostrov [ShowProvinceDefinitionName('gotland_province')]. Ak je proti nám celý svet, postavíme sa mu. Nech pyšní obchodníci trasú, keď naši námorní psi rozdupú ich ubohé obchodné lode." # todo: NEW TRANSLATION
  flavor_swe_teu.4.a: "$pirate_events.1.a$" # todo: NEW TRANSLATION
  flavor_swe_teu.5.title: "Ostrov sporu" # todo: NEW TRANSLATION
+ flavor_swe_teu.5.entry: "$flavor_swe_teu.5.title$" # todo: NEW TRANSLATION
  flavor_swe_teu.5.desc: "Nachádzajúci sa v srdci [ShowScriptedGeographyName('baltic_sea_geography')], ostrov [ShowProvinceDefinitionName('gotland_province')] je nevyhnutným aktívom pre každú mocnosť, ktorá chce dosiahnuť cieľ #italic Dominium Maris Baltici#!. Preto existujú aj ďalšie miestne mocnosti, ktoré určite plánujú zmocniť sa tohto cenného panstva z našich rúk. S našou slábnucou námornou silou by sme mohli zvážiť odstúpenie ostrova jednej z týchto mocností." # todo: CHANGED
  flavor_swe_teu.5.a: "Ponúknime ostrov [first_offer.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_swe_teu.5.a.entry: "Ponúknite mu ostrov." # todo: NEW TRANSLATION
  flavor_swe_teu.5.b: "[second_offer.GetNameWithNoTooltip] to určite prijme." # todo: NEW TRANSLATION
+ flavor_swe_teu.5.b.entry: "Postava to určite prijme." # todo: NEW TRANSLATION
  flavor_swe_teu.5.c: "Nevzdáme svoje územie." # todo: NEW TRANSLATION
  flavor_swe_teu.6.title: "Oči na [gutnish_province.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_swe_teu.6.desc: "Máme silný záujem o ostrov [ShowProvinceDefinitionName('gotland_province')]. Ako jedna z hlavných mocností povodia [ShowScriptedGeographyName('baltic_sea_geography')] by nám veľký úžitok prinieslo držanie tohto ostrova na križovatke obchodných ciest a v srdci vnútorného mora. Môže to byť náš prvý krok k tomu, aby sme si toto more privlastnili. Bohužiaľ v tejto ambícii nie sme sami a musíme konať rýchlo, ak ho chceme získať pre seba." # todo: CHANGED
@@ -191,6 +219,7 @@
  flavor_swe_teu.8.b: "Musíme zostať ostražití." # todo: NEW TRANSLATION
  teu_rejected_sale: "Odmietnutá ponuka predaja" # todo: NEW TRANSLATION
  flavor_dan_teu.1.title: "Povstanie v noci svätého Juraja" # todo: NEW TRANSLATION
+ flavor_dan_teu.1.entry: "$flavor_dan_teu.1.title$" # todo: NEW TRANSLATION
  flavor_dan_teu.1.desc: "Katastrofa zasiahla v našich panstvách v [ShowProvinceDefinitionName('estonia_province')]. Pôvodné [ShowCultureName('estonian')] obyvateľstvo, nespokojné s tým, že sme im pred niekoľkými desaťročiami ukázali Svetlo Kristovo, povstalo v ozbrojenom povstaní. V pokojný deň spustili smrteľný útok na naše posádky a hrady. Zo seba si zvolili štyroch vodcov, ktorých si trúfajú nazývať 'kráľmi'. Na výsmech k rane navyše, vo svojom diabolskom 'pomste' začali zabíjať svojich bývalých pánov a ochráncov v pohanskom záchvate. To nebudeme tolerovať a ich povstanie bude potlačené." # todo: NEW TRANSLATION
  flavor_dan_teu.1.historical_info: "V noci svätého Juraja v roku 1343 sa pôvodné estónske obyvateľstvo vzbúrilo proti svojim dánskym pánom a rôznym zahraničným šľachticom, ktorí nad nimi vládli. Na čelo povstania si zvolili 'Štyroch kráľov' z radov svojich, ktorí boli neskôr oklamaní pascou a zabití. Povstanie prekročilo dánske hranice a rozšírilo sa na územia Livónskej ordy a na ostrovy Ösel." # todo: NEW TRANSLATION
  flavor_dan_teu.1.a: "Nech sú prekliatí!" # todo: NEW TRANSLATION

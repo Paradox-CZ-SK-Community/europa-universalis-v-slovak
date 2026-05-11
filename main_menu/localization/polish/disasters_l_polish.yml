@@ -78,6 +78,7 @@
  horde_civil_war: "Hordová občianska vojna" # todo: NEW TRANSLATION
  horde_civil_war_desc: "Opäť je spochybnená autorita nášho vládcu! Súperiací vojvodca hrozí horde občianskou vojnou, aby si nárokoval trón. Horda musí vyraziť do boja proti vlastným odpadlíckym bojovníkom..." # todo: NEW TRANSLATION
  horde_civil_war_end_trigger_no_rebels: "Ani jeden [rebel|e] nie je #Y Pretender#! vzbúrenc" # todo: NEW TRANSLATION
+ horde_civil_war_capital_has_neighbor_province_tt: "Hlavné mesto má prístup k susednej provincii" # todo: NEW TRANSLATION
  horde_civil_war_crown_supporters: "Lojalisti hordy" # todo: NEW TRANSLATION
  horde_civil_war_pretender_supporters: "Renegáti hordy" # todo: NEW TRANSLATION
  GUI_REBEL_OWNED_LOCATIONS: "[locations|e] vlastnené [rebels|e]: [DisasterView.GetDisaster.GetOwner.MakeScope.GetVariable('GUI_pretender_rebel_character').GetCharacter.GetCourtCountry.GetOwnedLocationCount]" # todo: NEW TRANSLATION
@@ -94,8 +95,8 @@
  revolutionary_chaos_desc: "Ancien régime už neexistuje! Stabilita a bezpečie mladej republiky sú však stále ohrozené, keď rôzne frakcie bojujú o nadvládu vo vláde." # todo: NEW TRANSLATION
  sinicization_disaster: "Vplyv Číny" # todo: NEW TRANSLATION
  sinicization_disaster_desc: "Náš čas pod vplyvom [GetCountry('CHI').GetName] priniesol národu mnohé výhody. Táto väzba však narušila našu spoločenskú tkaninu, odpojila nás od tradícií a ohrozuje našu nezávislosť." # todo: NEW TRANSLATION
- has_opted_to_side_with_china_in_events_tt: "Dostatočne #G podporil#! vplyv [GetCountry('CHI').GetName] na našom dvore cez udalosti" # todo: NEW TRANSLATION
- has_opted_to_stay_sovereign_from_china_in_events_tt: "Dostatočne #G obmedzil#! vplyv [GetCountry('CHI').GetName] na našom dvore cez udalosti" # todo: NEW TRANSLATION
+ has_opted_to_side_with_china_in_events_tt: "Dostatočne #G promoted#! vplyv [GetCountry('CHI').GetNameWithNoTooltip] v našom dvore prostredníctvom [events|e] ([THIS.GetVariable('china_side').GetValue]/30)" # todo: CHANGED
+ has_opted_to_stay_sovereign_from_china_in_events_tt: "Dostatočne #G curbed#! vplyv [GetCountry('CHI').GetNameWithNoTooltip] v našom dvore prostredníctvom [events|e] ([THIS.GetVariable('sovereign_side').GetValue]/30)" # todo: CHANGED
  crisis_of_the_chinese_dynasty: "Kríza [GetCountry('CHI').GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  crisis_of_the_chinese_dynasty_desc: "Nebo stmavlo a zošedlo, sme na pokraji straty nebeskej priazne! Vzrastá vnútorný aj vonkajší tlak, kolabujúca byrokracia a zlyhanie poľnohospodárstva nás stavili do nevýhodnej pozície. Ľud nás už nepriznáva za legitímnych vládcov nášho [GetCountry('CHI').GetFlavorRank]." # todo: NEW TRANSLATION
  ccd_celestial_authority_trigger: "Naša [celestial_authority_gc|e] je aspoň #Y 90#! (aktuálne: #Y [GetUniqueInternationalOrganization('middle_kingdom').MakeScope.GetVariable('celestial_authority').GetValue|V1]#!)" # todo: NEW TRANSLATION
@@ -166,7 +167,7 @@
  reach_compromise_with_huguenots: "Dosiahnuť kompromis s hugenotmi" # todo: NEW TRANSLATION
  reach_compromise_with_huguenots_desc: "Nedokážeme udržať pretrvávajúce rozdelenie v našich krajinách. Kompromis a jednota nám preto ukážu cestu von z tejto pohromy." # todo: NEW TRANSLATION
  time_of_troubles: "Doba nepokojov" # todo: NEW TRANSLATION
- time_of_troubles_desc: "Obdobie spoločenských i hospodárskych problémov; náš národ bojuje s hladom aj vojnou a zároveň s opozíciou proti Cirkvi a aristokracii." # todo: NEW TRANSLATION
+ time_of_troubles_desc: "Je to temné obdobie spoločenských a hospodárskych nepokojov. Našu krajinu sužujú hlad a vojna, a zároveň sa snaží znášať odpor voči duchovenstvu a šľachte. Obkolesené zo všetkých strán psami sváru, naše územie je na pokraji roztrhania a pohltenia..." # todo: CHANGED
  decline_of_empire: "Sebaspokojný úpadok" # todo: CHANGED
  decline_of_empire_desc: "Raz mocné a neotrasiteľné, naše panstvo teraz balansuje na pokraji zrútenia. Korupcia hnije v našich inštitúciách, naše provincie sa pod váhou zanedbania stávajú nepokojné a cudzie veľmoci krúžia ako supy, dychtivé rozparcelovať to, čo zostalo z našej slávy. Zlatý vek, ktorý nás kedysi charakterizoval, ustúpil do spomienok a trhliny v našich základoch sa s každým dňom rozširujú. Ak nebudeme rýchlo konať, aby sme odstránili hnilobu zvnútra a obnovili kontrolu, naše impérium sa zrúti, zanechajúc len ruiny a ľútosť, tieň našej bývalej slávy..." # todo: CHANGED
  has_not_had_decline_of_empire_last_25_years: "V posledných #Y 25#! rokoch nemalo tento [disaster|e]" # todo: NEW TRANSLATION
@@ -183,7 +184,8 @@
  coup_attempt: "Pokus o puč" # todo: NEW TRANSLATION
  coup_attempt_desc: "Tiene za trónom obiehajú dvor ako hladné supy! Sú tu takí, ktorí usilujú o predčasný zánik nášho vládcu a dosadenie bábky na trón!" # todo: NEW TRANSLATION
  recently_had_coup_attempt_inconclusive_tt: "V posledných #Y 5#! rokoch nemal nejednoznačný ani úspešný pokus o puč" # todo: NEW TRANSLATION
- conspirators_murdered_ruler_tt: "Sprisahanci úspešne zavraždili nášho vládcu" # todo: NEW TRANSLATION
+ conspirators_murdered_ruler_tt: "Sprisahanci úspešne zavraždili nášho [ruler|e]" # todo: CHANGED
+ any_conspirator_became_ruler_tt: "Jeden zo sprisahancov bol korunovaný za [ruler|e]" # todo: NEW TRANSLATION
  byzantine_succession_crisis: "[GetCountry('BYZ').GetAdjectiveWithNoTooltip] nástupnícka kríza" # todo: NEW TRANSLATION
  byzantine_succession_crisis_desc: "Intrikujúci nárokovatelia a vplyvní temní aktéri plánujú zvrhnutie dynastie [GetCountry('BYZ').GetAdjective]. Rozvrat zachvacuje dvor, keď mocní generáli a cudzí zasahovatelia sa snažia ovplyvniť výsledok tohto búrlivého obdobia. Naša oslabená prítomnosť v [ShowRegionName('balkan_region')] priniesla veľkú neistotu pre budúcnosť posledného legitímneho bastiónu $ROM$." # todo: NEW TRANSLATION
  castilian_civil_war: "[GetCountry('CAS').GetAdjectiveWithNoTooltip] občianska vojna" # todo: NEW TRANSLATION

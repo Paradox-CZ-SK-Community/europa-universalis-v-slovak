@@ -16,10 +16,13 @@
  STATIC_MODIFIER_NAME_is_explorer: "Prieskumník" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_excommunicated: "Exkomunikovaný" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_interdict: "Interdikt" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_inflation_impact: "[inflation|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_factional_strife: "Frakčné spory" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_chi_factional_strife: "Konflikt medzi frakciou zameranou na [ShowCultureName('mongolian_culture')] a [ShowLanguageFamilyName('chinese_language_family')]-konfuciánskou skupinou spôsobil atentát na predchádzajúceho cisára, ako aj všeobecný pokles centrálnej moci, byrokracie a armády [GetCountry('CHI').GetName]." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_administration_in_disarray: "Správa v rozklade" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_chi_administration_in_disarray: "Aj keby boli všetky problémy vnútri [GetCountry('CHI').GetName] vyriešené a konflikt medzi rôznymi frakciami ukončený; administratívne problémy pretrvajú aj v dohľadnej budúcnosti." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_chi_yuan_religious_stability: "Náboženská autorita Yuan" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_chi_yuan_religious_stability: "[GetCountry('CHI').GetName] si udržiava určitú mieru cisárskej náboženskej autority, ktorá zabraňuje sektárnym napätiam vyhrotiť sa do otvoreného povstania — zatiaľ." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_temporary_insanity_adm: "Administratívne šialenstvo" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_temporary_insanity_dip: "Diplomatické šialenstvo" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_temporary_insanity_mil: "Vojenské šialenstvo" # todo: NEW TRANSLATION
@@ -98,6 +101,8 @@
  STATIC_MODIFIER_NAME_receiving_rein_in_junior_diplomacy: "Mladšia diplomacia pod kontrolou" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_giving_support_loyalists: "Podpora lojalistov" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_receiving_support_loyalists: "Dostávame podporu lojalistov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_giving_curb_pronoia_military_action: "Obmedzovanie vojenských akcií $pronoia$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_receiving_curb_pronoia_military_action: "Vojenské akcie obmedzené" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_receiving_divert_trade: "Dostávame presmerovanie obchodu" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_giving_send_officers: "Vysielanie dôstojníkov" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_receiving_send_officers: "Dostávame dôstojníkov" # todo: NEW TRANSLATION
@@ -306,6 +311,8 @@
  STATIC_MODIFIER_NAME_liberalism_progress_cabinet_efficiency: "$CABINET_INFLUENCING$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_mysticism_progress_cabinet_efficiency: "$CABINET_INFLUENCING$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_jurisprudence_progress_cabinet_efficiency: "$CABINET_INFLUENCING$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_latinization_progress_cabinet_efficiency: "$CABINET_INFLUENCING$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_hellenization_progress_cabinet_efficiency: "$CABINET_INFLUENCING$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_feudalism_birth: "Kolíska $feudalism$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_legalism_birth: "Kolíska $legalism$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_meritocracy_birth: "Kolíska $meritocracy$" # todo: NEW TRANSLATION
@@ -314,6 +321,7 @@
  STATIC_MODIFIER_NAME_professional_armies_birth: "Kolíska $professional_armies$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_new_world_birth: "Kolíska $new_world$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_printing_press_birth: "Kolíska $printing_press$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_printing_press_books: "$printing_press$ Poptávka po knihách" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_pike_and_shot_birth: "Kolíska $pike_and_shot$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_confessionalism_birth: "Kolíska $confessionalism$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_global_trade_birth: "Kolíska $global_trade$" # todo: NEW TRANSLATION
@@ -345,6 +353,9 @@
  STATIC_MODIFIER_NAME_province_capital: "[province_capital|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_control: "[control|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_control_50: "[control|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_relative_subject_power: "[economical_base|e] of [subjects|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_subject_territory_connectivity: "[subject_territory_connectivity|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_subject_territory_connectivity: "Ako dobre je územie tohto subjektu prepojené so srdcom nadvlády. Vzdialené alebo izolované subjekty sa ťažšie spravujú." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_inverse_control: "Nedostatok [control|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_is_port: "[port|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_proximity_to_capital: "[proximity|e] k [capital|e]" # todo: NEW TRANSLATION
@@ -357,9 +368,26 @@
  STATIC_MODIFIER_NAME_unemployed_peasants: "Nezamestnaní roľníci" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_refugees_welcome: "Utečenci vítaní" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_adjacent_colonization_target: "Cieľ kolonizácie" # todo: NEW TRANSLATION
- STATIC_MODIFIER_NAME_river_flowing_through_TT: "Rieka pretekajúca" # todo: NEW TRANSLATION
- STATIC_MODIFIER_NAME_river_flowing_through: "[river|e] preteká" # todo: NEW TRANSLATION
- STATIC_MODIFIER_NAME_river_flowing_through_coast: "[river|e] preteká cez [coast|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_1_TT: "Pretekajúci potok" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_1: "Pretekajúci potok" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_1_TT: "Potok pretekajúci pobrežím" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_1: "Potok preteká cez [coast|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_2_TT: "Pretekajúci prúd" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_2: "Pretekajúci prúd" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_2_TT: "Prúd pretekajúci pobrežím" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_2: "Prúd preteká cez [coast|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_3_TT: "Pretekajúca rieka" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_3: "Pretekajúca [river|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_3_TT: "Rieka pretekajúca pobrežím" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_3: "[river|e] preteká cez [coast|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_4_TT: "Veľká rieka pretekajúca" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_4: "Veľká [river|e] preteká" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_4_TT: "Veľká rieka pretekajúca pobrežím" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_4: "Veľká [river|e] preteká cez [coast|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_5_TT: "Hlavná rieka pretekajúca" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_5: "Hlavná [river|e] preteká" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_5_TT: "Hlavná rieka pretekajúca pobrežím" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_river_flowing_through_coast_5: "Hlavná [river|e] preteká cez [coast|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_coastal: "[coastal|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_total_population: "[population|e] v [location|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_rgo_level: "Úroveň [rgo|e]" # todo: NEW TRANSLATION
@@ -449,6 +477,8 @@
  STATIC_MODIFIER_NAME_benedictus_deus: "Benedictus Deus" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_inter_gravissimas: "Inter Gravissimas" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_papacy_blocked_modifier: "Pápežstvo zrušené" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_high_papal_authority: "Vysoká pápežská autorita" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_low_papal_authority: "Nízka pápežská autorita" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_is_army_levy: "Nábor" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_is_army_mercenary: "Žoldnieri" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_is_army_regular: "Pravidelní" # todo: NEW TRANSLATION
@@ -475,6 +505,7 @@
  STATIC_MODIFIER_NAME_por_wool_town: "Mesto vlny" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_por_esmeraldo_do_situ_orbis_modifier: "$esmeraldo_do_situ_orbis$ in Private Use" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_por_interpreters: "Východní tlmočníci" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_por_printing_ordinances_modifier: "Nariadenia o tlači" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_por_refused_ordinances: "Odmietli prijať nariadenia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_por_misericordia: "Misericórdia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_por_focusing_on_own_buildings: "Vnútorné zameranie" # todo: NEW TRANSLATION
@@ -578,6 +609,29 @@
  STATIC_MODIFIER_NAME_prepare_for_katun: "Príprava na K'atun" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_katun_celebration: "K'atun oslavený" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_katun_celebration_bad: "Oslava K'atunu zle vedená" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_compitalia_modifier: "Festival Compitalia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lupercalia_modifier: "Festival Lupercalia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_quinquatria_modifier: "Festival Quinquatria" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_fordicidia_modifier: "Festival Fordicidia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_mercuralia_modifier: "Festival Mercuralia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_vestalia_modifier: "Festival Vestalia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_neptunalia_modifier: "Festival Neptunalia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_vinalia_rustica_modifier: "Festival Vinalia Rustica" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ludi_romani_modifier: "Festival Ludi Romani" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_equus_october_modifier: "Festival Equus October" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ludi_plebeii_modifier: "Festival Ludi Plebeii" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_saturnalia_modifier: "Festival Saturnalia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_gymnopaedia_modifier: "Festival Gymnopaedia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_laphria_modifier: "Festival Laphria" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lykaia_modifier: "Festival Lykaia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_panathenaic_games_modifier: "Panathénajské hry" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_apaturia_modifier: "Festival Apaturia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_hetairideia_modifier: "Festival Hetairideia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_apellai_modifier: "Festival Apellai" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_halieia_modifier: "Festival Halieia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_heraclean_games_modifier: "Heraklové hry" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_carneia_modifier: "Carneia hry" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_panionia_modifier: "Panionia hry" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_sco_witchcraft_act: "Skotský zákon o čarodejníctve" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_sco_loch_ness_sightings: "Pozorovania Nessie" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_sco_dunbar_castle: "Hrad Dunbar" # todo: NEW TRANSLATION
@@ -585,6 +639,10 @@
  STATIC_MODIFIER_NAME_ruler_adm: "Administratívna schopnosť panovníka" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_ruler_dip: "Diplomatická schopnosť panovníka" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_ruler_mil: "Vojenská schopnosť panovníka" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ruler_primary_culture: "Vládca [primary_culture|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ruler_accepted_culture: "Vládca [accepted_culture|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ruler_tolerated_culture: "Vládca [tolerated_culture|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ruler_foreign_culture: "Vládca [foreign_culture|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_parliament_location: "Miesto parlamentu" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_parliament_location: "Bohatí a mocní sa zhromažďujú v tomto [location|e], aby sa zúčastnili [parliament|e]." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_parliament_in_capital: "Parlament v hlavnom meste" # todo: NEW TRANSLATION
@@ -603,8 +661,6 @@
  STATIC_MODIFIER_DESC_has_road: "Toto [location|e] má aspoň jednu [road|e] do susedného [location|e]." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_has_road_connected_to_capital: "Cesta pripojená k hlavnému mestu" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_has_road_connected_to_capital: "Táto [location|e] má [road|e] sieť pripojenú k [capital|e]." # todo: NEW TRANSLATION
- STATIC_MODIFIER_NAME_sickly_character: "Chorľavá postava" # todo: NEW TRANSLATION
- STATIC_MODIFIER_NAME_healthy_character: "Zdravá postava" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_harbor: "[harbor_capacity|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_raw_material_relative_price: "Cena [raw_materials|e] na [market|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_location_size_impact: "[location_size|e]" # todo: NEW TRANSLATION
@@ -622,6 +678,7 @@
  STATIC_MODIFIER_NAME_peasants_estate_less_levy_obligations: "Menej povinností na odvod pre $peasants_estate$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_rise_of_the_horde: "Vzostup Hordy" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_war_declared_on_us: "Vyhlásená nám vojna" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_unconditionally_surrendered: "[unconditionally_surrendered|e]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_refused_favors: "Odmietnuté priazne" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_professed_trust: "Vyjadrená dôvera" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_major_discovery: "Veľký objav" # todo: NEW TRANSLATION
@@ -652,6 +709,8 @@
  STATIC_MODIFIER_NAME_parliament_in_session: "[Localize('game_concept_parliament')] v zasadnutí" # todo: CHANGED
  STATIC_MODIFIER_NAME_parliament_not_called: "[parliament|e] nezvolaný" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_enforced_internal_peace: "Vynútený vnútorný mier" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_hre_internal_peace_enforced: "Vynútený vnútorný mier" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_hre_internal_peace_enforced: "Toto zakazuje všetkým [members|e] z [GetUniqueInternationalOrganization('hre').GetName] vyhlasovať medzi sebou akýkoľvek [war|e]." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_possible_promotion_percentage: "Mnoho príležitostí" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_societal_value_push_centralization: "Spoločenský tlak na $centralization_focus$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_societal_value_push_decentralization: "Spoločenský tlak na $decentralization_focus$" # todo: NEW TRANSLATION
@@ -684,6 +743,7 @@
  STATIC_MODIFIER_NAME_societal_value_push_absolutism: "Spoločenský tlak na $absolutism_focus$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_societal_value_push_liberalism: "Spoločenský tlak na $liberalism_focus$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_hundred_years_war_impact: "$hundred_years_war$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_rise_of_timur_impact: "$rise_of_timur$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_infrastructure_funds_modifier: "Fondy na infraštruktúru" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_warrior_banners_modifier: "Vojenské zástavy" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_foreign_donations_modifier: "Zahraničné dary" # todo: NEW TRANSLATION
@@ -745,6 +805,7 @@
  STATIC_MODIFIER_NAME_expanded_mines_modifier: "Rozšírené bane" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_good_omen_modifier: "Dobré znamenia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_good_omen_modifier: "Obdobie obnovy v spojení s miernym počasím a dostatkom jedla sú niektoré z dobrých znamení — bohovia sú spokojní." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_architect_of_felicity_modifier: "Architekt blaženosti" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_coins_in_our_name_modifier: "Mince v našom mene" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_influence_of_the_old_capital_modifier: "Vplyv starého hlavného mesta" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_osmans_dream_modifier: "Osmánov sen" # todo: NEW TRANSLATION
@@ -815,6 +876,8 @@
  STATIC_MODIFIER_NAME_recent_tribunal_modifier: "Nedávny tribunál" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_defensive_effort_modifier: "Obranné úsilie" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_defensive_effort_modifier: "Do tejto lokality bolo nasadené veľké množstvo vojakov na jej ochranu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_promoted_hesychastic_influences_modifier: "Podpora hesychastických vplyvov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_suppressed_hesychastic_influences_modifier: "Potlačené hesychastické vplyvy" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_fortifications_broken_modifier: "Poškodené opevnenia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_fortifications_broken_modifier: "Zemetrasenie zničilo opevnenia v tejto lokalite, čím ju ponechalo široko otvorenú útokom." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_fortification_works_modifier: "Opevňovacie práce" # todo: NEW TRANSLATION
@@ -976,6 +1039,11 @@
  STATIC_MODIFIER_NAME_jap_osaka_castle: "$Osaka$ hrad" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_buildings_sabotaged: "Budovy poškodené sabotážou" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_buildings_sabotaged: "Naše budovy a majetok boli poškodené podvratnými činmi nepriateľa." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_flatland: "[capital|e] v [ShowTopographyName('flatland')]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_mountains: "[capital|e] v [ShowTopographyName('mountains')]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_hills: "[capital|e] v [ShowTopographyName('hills')]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_plateau: "[capital|e] v [ShowTopographyName('plateau')]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_wetlands: "[capital|e] v [ShowTopographyName('wetlands')]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_blocked_from_high_kingship: "Zvrhnutý z [GetInternationalOrganizationType('high_kingship').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_overthrew_high_king: "Zvrhli [GetInternationalOrganizationType('high_kingship').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_promised_spoils_modifier: "Podiel na koristi" # todo: NEW TRANSLATION
@@ -1139,6 +1207,7 @@
  STATIC_MODIFIER_NAME_fra_warlike_sun_king: "Vojnovitý vládca" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_fra_sun_king_court_patronage: "Nadmierny patronát dvorových úradníkov" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_fra_sun_king_scaled_back_court_patronage: "Zredukovaný patronát" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_is_byz_john_kantakouzenos: "Megas Domestikos" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_the_sun_king_bonus: "Kráľ Slnka" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_vauban_engineering: "Vaubanovo inžinierstvo" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_is_andre_fleury: "Minister Fleury" # todo: NEW TRANSLATION
@@ -1297,10 +1366,65 @@
  STATIC_MODIFIER_NAME_PRU_harsh_suppression: "Tvrdé potlačenie šľachty" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_PRU_mild_suppression: "Mierne potlačenie šľachty" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_PRU_noble_reconciliation: "Usmírenie so šľachtou" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_continued_patronage_of_institutions_modifier: "Pokračujúca podpora inštitúcií" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_byz_relinquish_taxes_for_nobles_modifier: "Nižšie dane pre šľachtu" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_expanded_assembly_powers_modifier: "Rozšírené právomoci zhromaždenia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_byz_reliance_on_italian_navies: "Závislosť na talianskom loďstve" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_byz_mercantile_self_reliance_modifier: "Obchodná sebestačnosť" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_bureaucratic_spending_reform_modifier: "Reformy byrokratických výdavkov" # todo: NEW TRANSLATION
+ current_entrenchment_of_selected_bureaucracy_desc: "Aktuálna hodnota [entrenchment|e] vybranej [bureaucracy|e]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_rome_reclaimed_modifier: "$rome$ Získané späť" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_rome_lost_modifier: "$rome$ Stratené" # todo: NEW TRANSLATION
+ as_long_as_location_owner_orthodox_desc: "pokiaľ vlastníkom [ShowLocationName('rome')] je [ShowReligionAdjective('orthodox')]" # todo: NEW TRANSLATION
+ as_long_as_location_owner_is_not_catholic_desc: "pokiaľ vlastníkom [ShowLocationName('rome')] NIE JE [ShowReligionAdjective('catholic')]" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_morea_nobles: "Mocná šľachtická rodina" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_courtly_intrigues: "Dvorné intriky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_out_of_monarchs_favor: "Mimo priazne panovníka" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_cracking_down_on_nobility: "Prísne potláčanie mocnej šľachty" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_kantakouzenos_co_emperor: "Spolucisár" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_underhanded_techniques: "Zákerné metódy" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_grand_fair_of_st_demetrius: "Byzantské Dimitria" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_lacking_jewels: "Chýbajúce šperky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_violated_agreement: "Porušené dohody" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_BYZ_co_emperor_country: "Magnátov spolucisárstvo" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_sale_of_albania: "Predaj albánskych titulov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_focus_on_rule: "Zamerané na posilnenie vlády" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_focus_on_diplomacy: "Získavanie diplomatickej podpory" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_focus_on_restoration: "Zamerané na latinskú obnovu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_crush_the_purple_phoenix: "Zdrvte Purpurového Fénixa" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_avoided_byzantine_civil_war: "Vyhli sa zásahu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_favored_the_french: "Podporiť francúzsku šľachtu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_compromise_wth_the_greeks: "Dohoda s Grékmi" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_crowning_of_a_new_emperor: "Koronácia nového latinského cisára" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_bolster_calls_for_restoration: "Posilnenie snáh o obnovu impéria" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ach_leverage_latin_title_political: "Využitie latinského vplyvu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_support_from_the_papacy: "Podpora pápežstva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_tax_catalan_appeasement: "Presmerované príjmy z vojvodstva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_estate_power_catalan_appeasement: "Rozšírenie katalánskych privilégií" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_expulsion_of_the_catalan_company: "Vyhostenie Katalánskej spoločnosti" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_strike_into_thessaly: "Útok do Thessálie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_favored_latin_elite: "Podpora latínskej elity" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_placated_the_greek_populace: "Upokojenie gréckeho obyvateľstva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_rewarded_catalans_greek_lands: "Odmennili katalánom grécke územia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_encroached_rule_of_the_catalan_company: "Zasahovanie do vlády Katalánskej spoločnosti" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_wary_of_the_catalan_company: "Ostražitosť voči Katalánskej spoločnosti" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_a_distinct_latin_bureaucracy: "Reformovaná latinská byrokracia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_catalan_inspired_bureaucracy: "Byrokracia inšpirovaná Kataláncami" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_neapolitan_inspired_bureaucracy: "Byrokracia inšpirovaná Anjou" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_byzantine_inspired_bureaucracy: "Byzantsky inšpirovaná byrokracia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_crusader_inspired_bureaucracy: "Byrokracia inšpirovaná križiakmi" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_strike_the_beyliks: "Útok na bejliky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_defensive_approach_to_anatolia: "Defenzívny prístup k Anatolii" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_avoided_bulgaria_serbia_campaigns: "Vyhli sa ďalším rekonkvestám na Balkáne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_leveraged_patriarchate_for_estate_gain: "Využitie patriarchátu na zisky pre šľachtu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_refused_to_restore_patriarchate: "Odmietnuté obnovenie patriarchátu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_end_of_byzantine_culture: "Koniec byzantskej kultúry" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_legacy_of_rome: "Dedičstvo Ríma" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_restoration_of_the_constantinople_patriarchate: "Obnovenie patriarhátu Konstantinopola" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_permitted_catalan_settlements: "Povolené katalánske osady" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_a_permanent_capital: "Trvalé hlavné mesto Atén" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ath_benefits_of_the_shifting_capitals: "Výhody presúvania hlavných miest" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lat_improved_location_integration: "Zlepšená integrácia územia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_pol_krakow_university_modifier: "Studium Generale" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_pol_prosperity_works_modifier: "Práce na prosperite" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_piotrokow_wislica_statutes_impact_modifier: "Sociálne & právne reformy" # todo: NEW TRANSLATION
@@ -1311,6 +1435,7 @@
  STATIC_MODIFIER_NAME_character_mourning_modifier: "Smútok" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_stronghold_of_the_burghers_modifier: "Oporný bod mešťanov" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_pol_levy_support_modifier: "Podpora odvodov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_victory_over_china: "Víťazstvo nad Čínou" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_mercury_elixir_modifier: "Elixír z ortuti" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_away_from_the_court_modifier: "Mimo dvora" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_silver_tribute_subject_modifier: "Platby strieborného tribútu" # todo: NEW TRANSLATION
@@ -1348,10 +1473,13 @@
  STATIC_MODIFIER_NAME_yua_hostile_court: "Hostilný dvor" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_stood_up_to_eunuchs: "Odolávanie eunuchom" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_yua_troop_rotation: "Rotácia vojakov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_yua_troop_rotation: "Generáli a ich jednotky sa neustále presúvajú medzi regiónmi, aby sa zabránilo tomu, že by si niektorý veliteľ vybudoval osobné oddanosti. To znižuje účinnosť ľahkej pechoty, ale zároveň znižuje pravdepodobnosť, že sa obyvateľstvo pridá k povstaniu." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_army_reforms: "Reformy armády" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_yua_hyperinflation: "Vysoká inflácia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_yua_hyperinflation: "Tlač papierových peňazí zaplavila ekonomiku a zvýšila ceny. Hoci platy ťažkej pechoty možno znížiť naturálne, mesačná inflácia teraz eroduje hodnotu našej pokladnice." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_grand_pronouncements: "Veľké vyhlásenia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_yua_shortages: "Nedostatok prostriedkov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_yua_shortages: "Vojna nechala pokladnicu neschopnú udržiavať plnú vojenskú prevádzku. Pluky sú dopĺňané pomalšie, keď sú zásoby a mzdy ťahané na doraz." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_compiling_grand_encyclopedia: "Zostavovanie Lèishū" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_army_reform_cost: "Podnikanie reforiem armády" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chi_eastern_bureau: "Východné skladisko" # todo: NEW TRANSLATION
@@ -1468,6 +1596,7 @@
  STATIC_MODIFIER_DESC_the_book_of_hunting: "Vďaka jasnej dokumentácii našich poľovných revírov naši poľovníci rozkvitnú." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_seal_of_hansa_modifier: "Pečať Hansa" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_seal_of_hansa_modifier: "Združenie obchodníkov je mocné len do miery, do akej jeho dôstojníci disponujú vážnosťou." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_hindered_shipbuilding_research_modifier: "Obmedzený výskum stavby lodí" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_ubv_philipp_apian_map: "Mapa Philippa Apiana" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_ubv_philipp_apian_map: "Nová mapa krajiny od slávneho kartografa Philippa Apiana." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_cas_converted_behetrias: "Konvertované Behetrías" # todo: NEW TRANSLATION
@@ -1778,6 +1907,7 @@
  STATIC_MODIFIER_NAME_dlh_foreign_appointee: "Zahraničný nominant" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_dlh_slaves_in_cabinet: "Mamlukovia v kabinete" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_dlh_iqta_holder_appeasement: "Uspokojenie držiteľov $iqta_law$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_anglican_vestments_modifier: "Anglikánske rúcha" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_parliamentarists_victorious_modifier: "Víťazní parlamentári" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_fewer_demands_from_subjects_modifier: "Menej požiadaviek od poddaných" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_fra_religious_league_modifier: "Náboženská liga" # todo: NEW TRANSLATION
@@ -1819,6 +1949,7 @@
  STATIC_MODIFIER_NAME_consolidated_trade_modifier: "Konsolidovaný obchod" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_major_push_for_reform: "Rozsiahle snahy o reformu" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_nahuatl_temple_expansion_modifier: "Rozšírenie chrámu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_push_for_religious_reformation_modifier: "Podpora náboženskej reformy" # todo: NEW TRANSLATION
  nahuatl_temple_expansion_modifier: "[ShowModifier('nahuatl_temple_expansion_modifier')]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_siege_artillery_engineer: "Najatie veliteľa delostrelectva" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_hw_heretic_conversions_modifier: "Snahy o konverziu kacírov" # todo: NEW TRANSLATION
@@ -1945,6 +2076,8 @@
  STATIC_MODIFIER_NAME_iro_simon_treatments: "Simonove misijné opatrenia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chk_exodus_of_cahokia: "Exodus Cahokie" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chk_preservation_of_cahokia: "Zachovanie Cahokie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_chk_funding_woodhenge_restoration: "Financovanie obnovy Woodhenge" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_chk_funding_new_woodhenge_expansion: "Financovanie rozšírenia obnoveného Woodhenge" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chk_return_of_political_elite: "Znovuzrodenie politickej elity" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chk_warbands_for_food_aggression: "Vojenské družiny lúpiace pre jedlo" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_chk_reintroduction_of_nixtamalization: "Opätovné zavedenie nixtamalizácie" # todo: NEW TRANSLATION
@@ -1988,3 +2121,130 @@
  STATIC_MODIFIER_NAME_new_capital_modifier: "Nové hlavné mesto" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_recent_inspection_modifier: "Nedávna inšpekcia" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_entrenched_cabinet_member: "Pevne zakorenený člen kabinetu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_orthodox_clerical_proceedings_modifier: "Klerikálne konania" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_orthodox_clerical_proceedings_modifier: "Dôkladnejšie preskúmanie našich klerikálnych postupov určite zlepší ich efektivitu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_orthodox_clerical_taxation_modifier: "Klerikálne zdaňovanie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_orthodox_clerical_taxation_modifier: "Musíme usilovať o výber spravodlivých daní od nášho [ShowEstateTypeName('clergy_estate')] v súlade s právom krajiny." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_orthodox_conversion_efforts_modifier: "Snahy o konverziu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_orthodox_conversion_efforts_modifier: "Snaha vybudovať zbožnú spoločnosť sa stala našou hlavnou prioritou v náboženských záležitostiach." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_orthodox_spiritual_literature_and_understanding_modifier: "Duchovné skúmanie a výmena" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_orthodox_spiritual_literature_and_understanding_modifier: "Budeme skúmať diela cudzích autorov zo Západu a Východu, aby sme lepšie porozumeli svetu okolo nás." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_orthodox_cabinet_eff_modifier: "Ortodoxné konania v kabinete" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_orthodox_cabinet_eff_modifier: "Vysoký a zbožný štandard pre náš kabinet zabezpečí vynikajúce legislatívne schopnosti jednotlivcov, ktorí zastávajú úrady v našich krajinách." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_orthodox_cabinet_examinations_modifier: "Kabinetné skúšky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_orthodox_cabinet_examinations_modifier: "Rozšírenie našej administratívy pod naším náboženským právom je veľkým krokom k vytvoreniu efektívnejšej vlády." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_orthodox_protect_the_faith_modifier: "V obrane viery" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_orthodox_protect_the_faith_modifier: "Výzva na vyhladenie pohanov a heretikov rovnako znie našim ľuďom ako hudba, keď prichádzajú brániť naše územia a vieru." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_patriarch_increase_baptism_modifier: "Hromadné krsty" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_patriarch_increase_baptism_modifier: "Aby sa rozšírila sláva a svetlo Kristovo, organizujú sa hromadné krsty, aby mohli byť pohania prijatí do náručia Cirkvi." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_patriarch_sponsors_monasteries_modifier: "Kláštory podporované patriarchom" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_patriarch_sponsors_monasteries_modifier: "Kristus je duša Cirkvi, ale klerici sú jej krv a svaly. Patriarcha schválil a podporil výstavbu nových kláštorov, aby sa telo Cirkvi mohlo rozrastať." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_patriarch_improved_relations_modifier: "Skvelá delegácia patriarchu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_patriarch_improved_relations_modifier: "Delegácia patriarchu mala tak skvelé skúsenosti pri návšteve našej krajiny, že povesť o našej veľkoleposti a pohostinnosti sa už šíri." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_patriarch_rally_population_modifier: "Náboženské nadšenie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_patriarch_rally_population_modifier: "Sme služobníci Krista a Jeho Cirkvi. Naši ľudia sú pripravení brániť ju proti každému nepriateľovi vďaka povzbudeniu od delegácie patriarchu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_patriarch_peace_modifier: "Pokojné rozjímanie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_patriarch_peace_modifier: "Delegácia patriarchu pripomenula našim ľuďom posolstvo pokoja, ktoré poslal Kristus, a povzbudila k rozjímaniu nad týmito slovami." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_influential_strategos: "Vplyvný strategos" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_influential_strategos: "Veľké víťazstvá tejto postavy vytvorili legendu, ktorá inšpiruje ľudí vysokého i nízkeho postavenia." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_increased_italian_privileges: "Zvýšené privilégia cudzincov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_increased_italian_privileges: "Obchodníci na tomto mieste si užívajú väčšiu autonómiu a zahraniční obchodníci sa hrnú, aby založili nové trhy." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_strengthened_crown_control: "Posilnené priame vládnutie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_strengthened_crown_control: "Namiesto toho, aby každý obchodník mohol nárokovať si časť tohto miesta, bol vydaný chrysobull, ktorý chráni záujmy štátu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_lesser_italian_privileges: "Znížené privilégia cudzincov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_lesser_italian_privileges: "Privilégiá udelené zahraničným obchodníkom boli zmenené tak, aby prospechli štátu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_favored_hellenic_ways: "Uprednostnené helénske zvyky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_favored_hellenic_ways: "Namiesto toho, aby sme dovolili západným tradíciám zakoreniť sa v našej spoločnosti, by sme mali podporovať len tie, ktoré zodpovedajú helénskemu charakteru." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_favored_latin_ways: "Uprednostnené latinské zvyky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_favored_latin_ways: "Naša krajina sa zaujala o spôsoby Západu, a preto sme sa rozhodli ich podporovať." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_new_generation: "Nová generácia, nové zvyky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_new_generation: "Namiesto spoliehania sa na starú gardu, ktorej metódy sú zastarané, sme sa rozhodli podporiť túto novú krv, aby sme otestovali efektivitu ich prístupov." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_allowed_corrupt_cabinet: "Dovolení skorumpovaní úradníci" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_allowed_corrupt_cabinet: "Namiesto zbavenia krajiny schopných, hoci skorumpovaných ľudí, sme sa rozhodli nechať ich zatiaľ vo funkcii, čo vedie k viac nedostatkom v administratíve." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_polis_influence_in_court: "Vplyv polis" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_polis_influence_in_court: "Početné polis v našej krajine získali vplyv, čo sťažuje schvaľovanie návrhov v parlamente." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_allowed_translations_of_old_latin_works: "Povolený preklad diel $latin_language$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_allowed_translations_of_old_latin_works: "Staré [ShowLanguageNameWithNoTooltip('latin_language')] texty sa pomaly prekladajú, čo umožní bežným ľuďom ich čítať." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_promotion_of_trade: "Podpora obchodu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_promotion_of_trade: "Vďaka štátnemu financovaniu je toto miesto lepšie prispôsobené pre každého obchodníka, ktorý chce dosiahnuť zisk." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_recent_aid_during_wartime: "Pomoc pohraničnej stráži" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_recent_aid_during_wartime: "The $a_akritai$ of this location have received aid, bolstering their defenses against any enemy." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_reinforced_akritai: "Posilnení $a_akritai$" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_reinforced_akritai: "Namiesto toho, aby $a_akritai$ na tomto mieste upadli, bola poslaná ďalšia pomoc, čím sú opäť pripravení do služby." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_slow_collapse_of_defences: "Pomalé zrútenie obrany" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_slow_collapse_of_defences: "Nedostatok štátnej pomoci spôsobil, že $a_akritai$ na tomto mieste zanedbávajú svoje povinnosti ako pohraničná stráž." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_decline_of_meditteranean_trade: "Úpadok stredomorského obchodu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_decline_of_meditteranean_trade: "Nové trasy vytvorené objavom $new_world$ viedli k poklesu dôležitosti tohto miesta." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_influential_polis: "Vplyvná polis" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_influential_polis: "Vzostup nových mužov na tomto mieste viedol k zvýšeniu jeho dôležitosti v štáte." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_greek_culture_mystras_scholarship_teachings_spread: "$mystras$ Šírenie učenia" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_greek_culture_mystras_scholarship_teachings_spread: "Učenie $mystras$ štipendiálnej školy sa rozšírilo na toto miesto a umožňuje ľuďom získať otvorenejší pohľad na svet." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_increased_kephale_support: "Zvýšená podpora Kephalē" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_bul_patron_of_bulgarias_revival: "Patrón oživenia Bulharska" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_bul_patron_of_bulgarias_revival: "Náš vládca je odhodlaný oživiť naše umenie, kultúru a vedy v snahe obnoviť slávne dni vlády Simeona Veľkého." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_bul_conqueror_of_constantinople: "Dobývateľ Konštantínopolu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_bul_conqueror_of_constantinople: "Veľkí dobyvatelia minulosti, či už Krum alebo Simeon, stáli pred hradbami Konštantínopolu, no nikdy ich nevideli padnúť pod bulharskými zástavami. To, čo nedokázali dosiahnuť oni, sa teraz podarilo, a náš panovník bude zapamätaný titulom hodným tohto bezprecedentného triumfu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_bos_devils_student: "Diablov žiak" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_bos_devils_student: "Naskytla sa nám jedinečná príležitosť obnoviť nezávislosť národa a musíme urobiť všetko, čo je v našich silách, aby sme ju zabezpečili." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_affirmation_of_biljno_polje: "Potvrdenie Biljno Polje" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_affirmation_of_biljno_polje: "Verejne sme potvrdili dohody podpísané na Biljno Polje, čo môže upokojiť nepriateľov našej cirkvi, zatiaľ čo súkromne pokračujeme v našich zvykoch." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_roman_culture_movement_momentum_waning: "Sila hnutia slabne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_desc_roman_culture_movement_momentum_waning: "Hoci boli ľudia spočiatku nadšení z príchodu novej [culture|e], teraz sa z toho už unavujú." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_roman_culture_movement_momentum_waning_locally: "Sila hnutia tu slabne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_desc_roman_culture_movement_momentum_waning_locally: "Hoci boli ľudia spočiatku nadšení z príchodu novej [culture|e], teraz sa tu z toho už unavujú." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_hellenism_religion_movement_momentum_waning: "Sila hnutia slabne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_desc_hellenism_religion_movement_momentum_waning: "Nadšenie z platonického oživenia začína u obyvateľstva slabnúť." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_hellenism_religion_movement_momentum_waning_locally: "Sila hnutia tu slabne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_desc_hellenism_religion_movement_momentum_waning_locally: "Miesto záujmu o platonické oživenie tu slabne." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_hellenism_religion_movement_suppressed: "Platónske oživenie potlačené" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_hellenism_religion_movement_suppressed: "Orgány začali potláčať platonické oživenie, čo zvyšuje odolnosť voči jeho šíreniu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_surge_in_naval_expansion_modifier: "Nárast námornej expanzie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_textile_monopolies_modifier: "Textilné monopoly" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_quality_arms_modifier: "Výnimočná výroba zbraní" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_quality_artisan_craftsmanship_modifier: "Povestné remeselné spracovanie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_standardized_brewing_practices_modifier: "Štandardizované postupy varenia piva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_advanced_masonry_techniques_modifier: "Pokročilé murárske techniky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_surplus_food_modifier: "Nadbytok potravín" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_granary_town_famine_modifier: "Nedostatok (hlad)" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_province_innovative_tooling_techniques_modifier: "Inovatívne techniky nástrojárstva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_poor_tool_quality_modifier: "Nízka kvalita nástrojov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_province_faceting_techniques_modifier: "Pokročilé techniky fazetovania" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_recruitment_drive_modifier: "Náborová kampaň" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_rampant_crime_modifier: "Vypuklá kriminalita" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_center_of_learning_modifier: "Centrum vzdelávania" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_local_artisans_retired_modifier: "Nedostatok remeselníkov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_local_construction_boom_modifier: "Stavebný boom" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_quarrying_strain_modifier: "Zaťaženie lomov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_staple_port_commercial_stagnation_modifier: "Komerčná stagnácia hlavného prístavu" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_local_maritime_boom_modifier: "Námorný boom" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_major_fire_modifier: "Veľký požiar" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_location_innovative_tooling_techniques_modifier: "Inovatívne techniky výroby nástrojov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_location_faceting_techniques_modifier: "Pokročilé techniky fazetovania" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_local_quality_standards_modifier: "Miestne štandardy kvality" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_urban_center_attracts_artisans_modifier: "Priťahovanie remeselníkov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_local_brewing_boom_modifier: "Boom varenia piva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_ocean: "Hlavné mesto v oceáne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_deep_ocean: "Hlavné mesto v hlbokom oceáne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_coastal_ocean: "Hlavné mesto v pobrežnom oceáne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_inland_sea: "Hlavné mesto v vnútrozemskom mori" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_narrows: "Hlavné mesto v zúženom prielive" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_lakes: "Hlavné mesto pri jazerách" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_high_lakes: "Hlavné mesto pri vysokohorských jazerách" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_salt_pans: "Hlavné mesto pri soľných panvách" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_atoll: "Hlavné mesto na atol" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_flatland_wasteland: "Hlavné mesto v rovinatom spustošení" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_hills_wasteland: "Hlavné mesto v kopcovitom spustošení" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_plateau_wasteland: "Hlavné mesto na plytčine (spustošenie)" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_wetlands_wasteland: "Hlavné mesto v močiaroch (spustošenie)" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_dune_wasteland: "Hlavné mesto v dunovom spustošení" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_mesa_wasteland: "Hlavné mesto na mesa spustošení" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_mountain_wasteland: "Hlavné mesto v horskom spustošení" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_capital_in_ocean_wasteland: "Hlavné mesto v oceánskom spustošení" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_byz_born_in_the_purple_modifier: "Narodený v purpure" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_sold_core_territory: "Predané jadrové územie" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ai_stability_target_peasant_wars_disaster: "Povstanie sedliakov" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_ai_succession_disaster_targets: "Kríza následníctva" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_pious_prosperity_modifier: "Zbožná prosperita" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_pious_prosperity_modifier: "Duch zbožnosti a starostlivosti o obyčajných ľudí, ako ho uložil synod, priniesol obnovenú prosperitu a stabilitu našim komunitám." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_enforced_peace: "Vynútený mier" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_is_lbv_heinrich_xiv_wittelsbach: "Leprou vojvodu Heinricha" # todo: NEW TRANSLATION
