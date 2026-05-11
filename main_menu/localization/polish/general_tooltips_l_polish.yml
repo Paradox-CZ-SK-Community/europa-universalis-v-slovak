@@ -33,12 +33,16 @@
  CABINET_ACTION_MODIFIER: "[cabinet_action_icon] $CABINET_ACTION$" # todo: NEW TRANSLATION
  COUNTRY_RANK_MODIFIER: "$COUNTRY_RANK$ [country_rank|e]" # todo: NEW TRANSLATION
  RELIGIOUS_ASPECT_MODIFIER: "$RELIGIOUS_ASPECT$ [religious_aspect|e]" # todo: NEW TRANSLATION
+ RELIGION_MODIFIER: "$RELIGION$ [primary_religion|e]" # todo: NEW TRANSLATION
  AVATAR_MODIFIER: "$AVATAR$ [avatar|e]" # todo: NEW TRANSLATION
  GOD_MODIFIER: "$GOD$ [god|e]" # todo: NEW TRANSLATION
+ OMEN_MODIFIER: "$OMEN$ [omen|e]" # todo: NEW TRANSLATION
+ BUREAUCRACY_MODIFIER: "$BUREAUCRACY_TYPE$ [bureaucracy|e]" # todo: NEW TRANSLATION
  VEGETATION_MODIFIER: "$VEGETATION$ [vegetation|e]" # todo: NEW TRANSLATION
  TOPOGRAPHY_MODIFIER: "$TOPOGRAPHY$ [topography|e]" # todo: NEW TRANSLATION
  CLIMATE_MODIFIER: "$CLIMATE$ [climate|e]" # todo: NEW TRANSLATION
  LOCATION_RANK_MODIFIER: "$LOCATION_RANK$ [location_rank|e]" # todo: NEW TRANSLATION
+ LOCATION_RANK_CAPITAL_MODIFIER: "[capital|e] má $LOCATION_RANK$ [location_rank|e]" # todo: NEW TRANSLATION
  SUBJECT_TYPE_OVERLORD_MODIFIER_LOC: "$SUBJECT_TYPE$ [subjects|e]" # todo: NEW TRANSLATION
  SUBJECT_TYPE_IS_SUBJECT_MODIFIER_LOC: "Je $SUBJECT_TYPE$ [subject_type|e]" # todo: NEW TRANSLATION
  RELIGIONGROUP_MODIFIER: "$NAME$ [religion_group|e]" # todo: NEW TRANSLATION
@@ -371,6 +375,10 @@
  MARITIME_PRESENCE_LABEL_ENTRY: "[COUNTRY.GetLongNameWithFlag]: $VAL$($CHANGE|+=$)" # todo: NEW TRANSLATION
  RESISTANCES_LABEL: "$game_concept_disease$ odolnosti v [location|e]" # todo: NEW TRANSLATION
  LOCATION_DISEASE_HEADER: "Choroby v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ MOVEMENT_RESISTANCES_LABEL: "$game_concept_movement$ odolnosti v [location|e]" # todo: NEW TRANSLATION
+ LOCATION_MOVEMENTS_HEADER: "Hnutia v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ LOCATION_MOVEMENTS_INFO_HEADER: "#col_t Lokalita#! #col_t Hnutie#! #col_t Stúpenci#!" # todo: NEW TRANSLATION
+ LOCATION_NO_MOVEMENTS_INFO: "[LOCATION.GetNameWithNoTooltip] momentálne nemá žiadne hnutia." # todo: NEW TRANSLATION
  WINTER_BLOCKS_MOVEMENT: "@trigger_no! Je nemožné presunúť akúkoľvek armádu do [TOPOGRAPHY.GetName] počas $STATIC_MODIFIER_NAME_winter_normal$ alebo $STATIC_MODIFIER_NAME_winter_severe$." # todo: NEW TRANSLATION
  ZOC_BLOCKS_MOVEMENT: "@trigger_no! Armáda je zablokovaná a nemôže prejsť cez [zone_of_control|e] blízkeho [fort|e]." # todo: NEW TRANSLATION
  DISEASE_PRESENCE_LOCATION_TOOLTIP: "#T [DISEASE.GetNameWithNoTooltip]#!\nPrítomnosť: $PRESENCE|2R%2$\nOdolnosť: $RESISTANCE|%2$" # todo: NEW TRANSLATION
@@ -384,6 +392,10 @@
  AI_CONTROLLER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti ovládania s ďalšími $NUMBER$ lokalitami.\nKontrolórom je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
  AI_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti vlastníka s ďalšími $NUMBER$ lokalitami.\nMajiteľ je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
  AI_MAP_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti vlastníka mapy s ďalšími $NUMBER$ lokalitami.\nVlastník mapy je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
+ MOVEMENT_PRESENCE_LOCATION_TOOLTIP: "#col [LOCATION.GetName]#! #col_m [MOVEMENT.GetName]#! #col $AFFECTED$ [pops|e] z $TOTAL$#!" # todo: NEW TRANSLATION
+ MOVEMENT_PRESENCE_SUB_UNIT_TOOLTIP: "[SUBUNIT.GetName]: [MOVEMENT.GetName]: $AFFECTED$ vojakov sú stúpencami z $TOTAL$" # todo: NEW TRANSLATION
+ MOVEMENT_PRESENCE_UNIT_TOOLTIP: "[UNIT.GetName]: [MOVEMENT.GetName]: $NUM|Y$ podjednotiek ovplyvnených, $AFFECTED$ vojakov z $TOTAL$" # todo: NEW TRANSLATION
+ MOVEMENT_PRESENCE_POP_TOOLTIP: "[POP.GetName]: [MOVEMENT.GetName]: $AFFECTED$ [pops|e] sú stúpencami z $TOTAL$" # todo: NEW TRANSLATION
  PROVINCE_DEFINITION_TOOLTIP: "Počet [locations|e]: [PROVINCE_DEFINITION.GetNumLocations]\n[area|e]: [PROVINCE_DEFINITION.GetArea.GetName]" # todo: NEW TRANSLATION
  PROV_DEF_MEMBERS_HEADER: "[locations|e] z [PROVINCE_DEFINITION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  PROV_DEF_MEMBERS_ENTRY: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName] [LOCATION.GetOwner.GetFlagIcon] [SelectLocalization( LOCATION.IsProvinceCapital , 'PROVINCE_CAPITAL_TOOLTIP', '' )]: [LOCATION.GetTotalPopulationWithBreakDown] [population_icon]" # todo: NEW TRANSLATION
@@ -453,19 +465,21 @@
  LOCATION_COLONIAL_OWNED: "Domovina [COUNTRY.GetName]" # todo: NEW TRANSLATION
  LOCATION_COLONIAL_BUILDINS: "[buildings|e]: $INFO$" # todo: NEW TRANSLATION
  NO_PORT_TO_TRACE_FLEET_FROM: "Nemáme žiadny [port|e], z ktorého by sme mohli určiť námorný dosah." # todo: NEW TRANSLATION
- INSIDE_NAVAL_RANGE_TT: "Námorná vzdialenosť $VALUE|2Y$ je v rámci nášho [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|G] [naval_range|E]" # todo: NEW TRANSLATION
- NOT_INSIDE_NAVAL_RANGE_TT: "@trigger_no! Námorná vzdialenosť $VALUE|2R$ NIE JE v rámci nášho [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|Y] [naval_range|E]" # todo: NEW TRANSLATION
+ INSIDE_NAVAL_RANGE_TT: "Námorná vzdialenosť $VALUE|2Y$ ($PCT|0Y$% nášho [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|G] [naval_range|E]) — v dosahu." # todo: CHANGED
+ NOT_INSIDE_NAVAL_RANGE_TT: "@trigger_no! Námorná vzdialenosť $VALUE|2R$ ($PCT|0Y$% nášho [Player.GetDoubleModifierValue('naval_range','naval_range_modifier')|Y] [naval_range|E]) — mimo dosahu." # todo: CHANGED
+ NAVAL_RANGE_MAPMODE_LAND_NOT_ON_NAVAL_GRAPH_TT: "Táto [location|e] nie je [port|e] ani [seazone|e] na námornej mape trás, takže nemá námornú vzdialenosť od nášho [country|e]." # todo: NEW TRANSLATION
  INSIDE_COLONIAL_RANGE_TT: "Námorná vzdialenosť $VALUE|2Y$ je v rámci nášho [Player.GetDoubleModifierValue('colonial_range','colonial_range_modifier')|G] [colonial_range|E]" # todo: NEW TRANSLATION
  NOT_INSIDE_COLONIAL_RANGE_TT: "@trigger_no! Námorná vzdialenosť $VALUE|2R$ NIE JE v rámci nášho [Player.GetDoubleModifierValue('colonial_range','colonial_range_modifier')|Y] [colonial_range|E]" # todo: NEW TRANSLATION
  MAPMODE_MILITARY_ACCESS_LOCATION_TT: "$COUNTRY$ poskytuje [military_access|e] pre $OTHER$" # todo: NEW TRANSLATION
  MAPMODE_TRUCE_LOCATION_TT: "$COUNTRY$ má prímerie s $OTHER$ do $DATE|V$." # todo: NEW TRANSLATION
  ADJACENT_TRADE_RANGE_TT: "[MARKET.GetName] je priľahlý k jednému z našich [markets|e]." # todo: NEW TRANSLATION
  INSIDE_TRADE_RANGE_TT: "Obchodná vzdialenosť $VALUE|2Y$ od [Market.GetName] je v rámci nášho [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|G] [trade_range|E]." # todo: NEW TRANSLATION
- NOT_INSIDE_TRADE_RANGE_TT: "@trigger_no! Obchodná vzdialenosť $VALUE|2R$ od [Market.GetName] NIE JE v rámci nášho [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|Y] [trade_range|E]." # todo: NEW TRANSLATION
+ NOT_INSIDE_TRADE_RANGE_TT: "Obchodná vzdialenosť $VALUE|2Y$ od [Market.GetName] presahuje náš [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|Y] [trade_range|E]. Prepravné náklady budú na tejto trase vyššie." # todo: CHANGED
  TOP_N_LOCATIONS_HEADER: "#T Najlepších $NUM$ lokalít#!" # todo: NEW TRANSLATION
  BOTTOM_N_LOCATIONS_HEADER: "#T Najhorších $NUM$ lokalít#!" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_LABEL: "#TOOLTIP:$BREAKDOWN_TAG$ $POP_CHANGE|L$#!" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_ENTRY: "[LOCATION.GetName]: [LOCATION.GetPopulationChangeLabel]" # todo: NEW TRANSLATION
+ LOCATION_NATURAL_GROWTH_ENTRY: "[LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $NATURAL_GROWTH$#!" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY: "$MOVETYPE$: $POP_CHANGE$" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_MIGRATION: "$MOVETYPE$: #TOOLTIP:$BREAKDOWN_TAG$ $POP_CHANGE$#!" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_MIGRATION_TITLE_IN: "Migrácia do $LOCATION$" # todo: NEW TRANSLATION
@@ -501,6 +515,7 @@
  UNIT_ABILITY_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ pre [UNIT_ABILITY.GetName]" # todo: NEW TRANSLATION
  CABINET_ACTION_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ pre [CABINET_ACTION.GetName]" # todo: NEW TRANSLATION
  BUILDING_TYPE_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [advance|e], aby sme mohli postaviť [BUILDING_TYPE.GetName]" # todo: NEW TRANSLATION
+ TOWN_RIGHTS_TYPE_NOT_ADVANCE: "@trigger_no! Musíme mať preskúmané $ADVANCE_LIST$ [advance|e], aby sme mohli postaviť [TOWN_RIGHTS_TYPE.GetName]" # todo: NEW TRANSLATION
  ROAD_TYPE_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [advance|e], aby sme mohli postaviť [ROAD_TYPE.GetName]" # todo: NEW TRANSLATION
  EMPLOYMENT_SYSTEM_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [advance|e], aby sme mohli používať [EMPLOYMENT_SYSTEM.GetName]" # todo: NEW TRANSLATION
  LAW_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [advance|e], aby sme mohli kodifikovať [LAW.GetName]" # todo: NEW TRANSLATION

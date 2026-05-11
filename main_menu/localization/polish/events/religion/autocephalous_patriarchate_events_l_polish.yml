@@ -1,11 +1,20 @@
 ﻿l_polish:
- ap_falls_desc_key: "Po búrlivom obliehaní a hrdinskom bránení miestnej posádky padlo [target_location.GetName] pod moc našich veľkých armád. Vo svojich hradbách sídli mocný náboženský úrad, keďže [target_location.GetRank.GetNameWithNoTooltip] kedysi hostil osobnosti [ShowReligionAdjective('orthodox')] viery. Otázkou zostáva, či túto príbuznú inštitúciu zrušíme alebo ju prijmeme pod našu ochranu?" # todo: NEW TRANSLATION
+ ap_falls_desc_key: "Po búrlivom obliehaní a statočnej obrane pevnostnej posádky padlo [target_location.GetName] pod moc našich veľkých armád." # todo: CHANGED
+ ap_diplomatic_desc_key: "Po začlenení [target_location.GetName] do [scope:winner.GetFlavorRank] [scope:winner.GetName]," # todo: NEW TRANSLATION
+ ap_falls_desc_key_2: "V jeho hradbách sídli mocná náboženská autorita, keďže [target_location.GetRank.GetNameWithNoTooltip] kedysi hostilo predstaviteľov [ShowReligionAdjective('orthodox')] viery. Otázkou zostáva, či zrušíme túto príbuznú inštitúciu, alebo ju prijmeme pod našu ochranu?" # todo: NEW TRANSLATION
  autocephalous_patriarchates.1.title: "Padlo sídlo autocefalického patriarchátu!" # todo: NEW TRANSLATION
- autocephalous_patriarchates.1.desc: "$ap_falls_desc_key$" # todo: NEW TRANSLATION
- autocephalous_patriarchates.1.a: "Zrušiť patriarchát." # todo: NEW TRANSLATION
- autocephalous_patriarchates.1.b: "Zachovať patriarchát." # todo: NEW TRANSLATION
+ autocephalous_patriarchates.1.desc: "$ap_falls_desc_key$ Bolo to sídlo [target_ap.GetName], a teraz je na nás rozhodnúť, čo urobiť s touto patriarchálnou autoritou." # todo: CHANGED
+ autocephalous_patriarchates.1.desc_diplomatic: "$ap_diplomatic_desc_key$ sídlo [target_ap.GetName] teraz pripadá pod našu jurisdikciu. Je na nás rozhodnúť, čo urobiť s touto patriarchálnou inštitúciou." # todo: NEW TRANSLATION
+ autocephalous_patriarchates.1.a: "Nepotrebujeme ich patriarchát, keď máme vlastný." # todo: CHANGED
+ autocephalous_patriarchates.1.b: "Nebudeme zasahovať do autority patriarchu." # todo: CHANGED
+ autocephalous_patriarchates.1.c: "Teraz to budeme my, kto bude jednať s patriarchom." # todo: NEW TRANSLATION
+ every_member_of_scopeloser_ap_loses_opinion_of_scopewinner_tt: "Každý člen [target_ap.GetName] stratí [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|+=0] náklonnosť k nám" # todo: CHANGED
+ every_member_of_winner_ap_gains_opinion_of_scopewinner_tt: "Každý člen [target_winner_ap.GetName] získa [ShowBiasValue('destroyed_another_autocephalous_patriarchate')|+=0] náklonnosť k nám" # todo: NEW TRANSLATION
  autocephalous_patriarchates.2.title: "Padlo sídlo autocefalického patriarchátu!" # todo: NEW TRANSLATION
- autocephalous_patriarchates.2.desc: "$ap_falls_desc_key$" # todo: NEW TRANSLATION
+ autocephalous_patriarchates.2.desc: "$ap_falls_desc_key$ $ap_falls_desc_key_2$" # todo: CHANGED
+ autocephalous_patriarchates.2.desc_diplomatic: "$ap_diplomatic_desc_key$ $ap_falls_desc_key_2$" # todo: NEW TRANSLATION
  autocephalous_patriarchates.2.a: "Zrušiť patriarchát." # todo: NEW TRANSLATION
  autocephalous_patriarchates.2.b: "Zachovať ho." # todo: NEW TRANSLATION
- every_member_of_scopeloser_ap_loses_opinion_of_scopewinner_tt: "Každý člen [target_ap.GetName] stratí [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|+=0] náklonnosť k nám" # todo: CHANGED
+ autocephalous_patriarchates.3.title: "Obnovenie patriarchátu [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ autocephalous_patriarchates.3.desc: "Presťahovaním [recipient.GetName] do [target_location.GetName] bola obnovená sláva [target.GetType.GetName]. Odteraz bude patriarchát viesť záležitosti viery s majestátom a úctou, ktoré prislúchajú takému vznešenému sídlu." # todo: NEW TRANSLATION
+ autocephalous_patriarchates.3.a: "Pre väčšiu slávu [ROOT.GetCountry.GetReligion.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION

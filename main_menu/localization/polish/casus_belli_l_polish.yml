@@ -1,4 +1,5 @@
 ﻿l_polish:
+ cannot_be_enforced_peace_on: "Nedá sa zastaviť vynúteným mierom" # todo: NEW TRANSLATION
  cb_conquer_province: "Nároky na provinciu" # todo: NEW TRANSLATION
  cb_conquer_province_PROV: "Nároky na [PROVINCE.GetName]" # todo: NEW TRANSLATION
  cb_parliament_conquer_province: "Nároky na provinciu schválené parlamentom" # todo: NEW TRANSLATION
@@ -17,6 +18,7 @@
  cb_declined_call_to_arms: "Odmietol výzvu na zbrane" # todo: NEW TRANSLATION
  cb_exploration: "Prieskum" # todo: NEW TRANSLATION
  cb_imperial_ban: "Ríšsky zákaz" # todo: NEW TRANSLATION
+ cb_imperial_ban_PROV: "$cb_imperial_ban$ ([PROVINCE.GetName])" # todo: NEW TRANSLATION
  cb_independence_war_PROV: "$cb_independence_war$" # todo: NEW TRANSLATION
  cb_independence_war: "Nezávislosť" # todo: NEW TRANSLATION
  cb_resist_annexation: "Odolať anektácii" # todo: NEW TRANSLATION
@@ -31,6 +33,8 @@
  cb_religious_conformance: "Náboženská jednotnosť" # todo: NEW TRANSLATION
  cb_annex: "Anektovať" # todo: NEW TRANSLATION
  cb_disloyal_subject: "Nevernosť vazala" # todo: NEW TRANSLATION
+ cb_disloyal_subject_PROV: "$cb_disloyal_subject$ namierené na [PROVINCE.GetName]" # todo: NEW TRANSLATION
+ cb_gag_force_country_into_faction_PROV: "$cb_gag_force_country_into_faction$" # todo: NEW TRANSLATION
  cb_force_migration: "Nútené presídľovanie" # todo: NEW TRANSLATION
  cb_hegemon: "Zvrhnúť hegemóna" # todo: NEW TRANSLATION
  cb_hegemon_ultimatum: "Ultimátum hegemóna" # todo: NEW TRANSLATION
@@ -145,9 +149,9 @@
  cb_native_subjugation_desc: "Prinúťte [society_of_pops|e] prijať našu nadvládu!" # todo: NEW TRANSLATION
  cb_location_flip_on_occupation: "#Y Tento [casus_belli|e] nám umožňuje okamžite dobyť [locations|e] v [ShowSubContinentName('east_asia')] pri okupácii.#!" # todo: NEW TRANSLATION
  cb_red_turban_rebellions: "$red_turban_rebellions$" # todo: NEW TRANSLATION
- cb_red_turban_rebellions_desc: "Tyrania $YUA$ bola tolerovaná dost dlho! Je čas, aby Čína opäť bola vládnutá [ShowCultureGroupName('chinese_group')]!\n\n#Y Umožňuje [ShowPeaceTreatyTypeName('rtr_rein_in_rebellion')] a [ShowPeaceTreatyTypeName('rtr_demand_occupied_territories')] [peace_treaty|e]#!" # todo: NEW TRANSLATION
+ cb_red_turban_rebellions_desc: "Tyraniu $YUA$ bolo znášané už príliš dlho! Je čas, aby Čínou opäť vládla [ShowCultureGroupName('chinese_group')]!\n\n#Y Umožňuje [ShowPeaceTreatyTypeName('rtr_rein_in_rebellion')], [ShowPeaceTreatyTypeName('rtr_demand_occupied_territories')] a [ShowPeaceTreatyTypeName('rtr_demand_all_chinese_territories')] [peace_treaties|e]#!" # todo: CHANGED
  cb_red_turban_rebellions_rein_in_rebels: "Potlačiť povstalcov" # todo: NEW TRANSLATION
- cb_red_turban_rebellions_rein_in_rebels_desc: "Patetickí [GetUniqueInternationalOrganization('red_turban_rebels').GetName] si dovoľujú povstať proti našej vláde. Musia byť skrotení!\n\n#Y Umožňuje [ShowPeaceTreatyTypeName('rtr_rein_in_rebellion')] a [ShowPeaceTreatyTypeName('rtr_demand_occupied_territories')] [peace_treaties|e]#!" # todo: NEW TRANSLATION
+ cb_red_turban_rebellions_rein_in_rebels_desc: "Patetické [GetUniqueInternationalOrganization('red_turban_rebels').GetName] majú tú drzosť vzbúriť sa proti našej vláde. Musia byť skrotení!\n\n#Y Umožňuje [ShowPeaceTreatyTypeName('rtr_rein_in_rebellion')], [ShowPeaceTreatyTypeName('rtr_demand_occupied_territories')] a [ShowPeaceTreatyTypeName('rtr_demand_all_chinese_territories')] [peace_treaties|e]#!" # todo: CHANGED
  cb_red_turban_rebellions_against_other_rebels: "Regionálna nadvláda" # todo: NEW TRANSLATION
  cb_red_turban_rebellions_against_other_rebels_desc: "Títo prétendenti si myslia, že môžu vládnuť Číne. Musíme ich naučiť, kde sa mýlia, a dobyť ich zem pre seba!\n\n#Y Umožňuje [ShowPeaceTreatyTypeName('rtr_demand_complete_annexation')] [peace_treaty|e]#!" # todo: NEW TRANSLATION
  cb_league_of_public_weal: "Liga verejného blaha" # todo: NEW TRANSLATION
@@ -185,6 +189,9 @@
  cb_reclaim_andalucia_desc: "Vládnutie [ShowReligionGroupAdjective('christian')] nad [ShowRegionName('iberia_region')] musí skončiť. Pošleme armádu a obnovíme $ADU$!\n\nAk sa nám po vojne podarí vlastniť [ShowLocationName('cordoba')] a #Y 80%#! oblasti [ShowAreaName('andalusia_area')], získame udalosť stať sa $ADU$" # todo: NEW TRANSLATION
  cb_sco_invade_england: "Invázia do [GetCountry('ENG').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  cb_sco_invade_england_desc: "Naši [GetCountry('FRA').GetAdjective] spojenci nás požiadali, aby sme dodržali podmienky Auld Alliance a spustili inváziu do [GetCountry('ENG').GetName]. Keďže je [GetCountry('ENG').GetNameWithNoTooltip] zapojená do vojny v [GetCountry('FRA').GetNameWithNoTooltip], poskytuje to [GetCountry('SCO').GetName] príležitosť obsadiť susedné pohraničné provincie." # todo: NEW TRANSLATION
+ cb_lat_reconquest: "Latinské znovudobytie" # todo: NEW TRANSLATION
+ cb_lat_reconquest_desc: "Nastal čas získať späť stratené územia [GetCountry('LAT').GetLongNameWithNoTooltip]!\n\nPoužitie [ShowCasusBelliNameWithNoTooltip('cb_lat_reconquest')] [casus_belli|e] obmedzuje dobytie území mimo [ShowScriptedGeographyName('frankokratia_geography')]." # todo: NEW TRANSLATION
+ cb_lat_reconquest_valid_locations: "[target.GetName] vlastní [location|e] v rámci [ShowScriptedGeographyName('frankokratia_geography')]" # todo: NEW TRANSLATION
  cb_raiding_retaliation: "Odplata za nájazdy" # todo: NEW TRANSLATION
  cb_raiding_retaliation_desc: "Pomstíme sa nepriateľom, ktorí napádali naše obyvateľstvo." # todo: NEW TRANSLATION
  cb_chinese_unification: "Zjednotiť $china$" # todo: NEW TRANSLATION

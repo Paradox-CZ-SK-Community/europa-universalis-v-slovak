@@ -6,7 +6,7 @@
  COUNTRY_OPINION_OF_TT: "Aktuálny názor ($OPINION|2+=$) je spôsobený:" # todo: NEW TRANSLATION
  COUNTRY_TRUST_OF_SELF: "#T $WHO$ Dôvera#!\nZrejme $TARGET|Y$ dôverujú sami sebe." # todo: NEW TRANSLATION
  COUNTRY_TRUST_OF_SELF_PLAYER: "#T Dôvera v $TARGET$#!\n$TARGET|Y$ je naša vlastná krajina!" # todo: NEW TRANSLATION
- COUNTRY_TRUST_OF: "#T [COUNTRY.GetAdjectiveWithNoTooltip] Dôvera voči [TARGET_COUNTRY.GetLongNameWithNoTooltip]#!\n[Select_CString(TARGET_COUNTRY.IsPlayer, 'Their', 'Our')] dôvera v ($TRUST|2+=$) je spôsobená:" # todo: NEW TRANSLATION
+ COUNTRY_TRUST_OF: "#T [COUNTRY.GetAdjectiveWithNoTooltip] dôvera k [TARGET_COUNTRY.GetLongNameWithNoTooltip]#!\n[Select_CString(TARGET_COUNTRY.IsPlayer, 'Their', 'Our')] dôvera je $TRUST$ a v nasledujúcom mesiaci sa zmení o $TRUST_CHANGE|2+=$ z dôvodu:\n$CHANGE_REASONS$\nRovnováha je $EQUILIBRIUM|2$ z dôvodu:" # todo: CHANGED
  COUNTRY_TRUST_OF_TT: "Dôvera ($TRUST|+=$) je spôsobená:" # todo: NEW TRANSLATION
  COUNTRY_ANTAGONISM_TOWARDS_SELF: "#T [COUNTRY.GetAdjective] Antagonizmus#!\nZrejme [TARGET_COUNTRY.GetName] necítia žiaden antagonizmus voči sebe." # todo: NEW TRANSLATION
  COUNTRY_ANTAGONISM_TOWARDS_SELF_PLAYER: "#T Antagonizmus voči [TARGET_COUNTRY.GetName]#!\n[TARGET_COUNTRY.GetName] je naša vlastná krajina!" # todo: NEW TRANSLATION
@@ -38,20 +38,25 @@
  ANTAGONISM_ENTRY_FOR_COUNTRY_WITH_BREAKDOWN: "[COUNTRY.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-V2$#!" # todo: NEW TRANSLATION
  ANTAGONISM_ENTRY_WITH_BREAKDOWN: "$NAME$: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-=1$#!" # todo: NEW TRANSLATION
  ANTAGONISM_ENTRY: "$NAME$: $VAL|1=-$" # todo: NEW TRANSLATION
- ANTAGONISM_ENTRY_CHANGE: "$NAME$: $VAL|1=-$ ($CHANGE|2=-$ yearly)" # todo: NEW TRANSLATION
+ ANTAGONISM_ENTRY_CHANGE: "$NAME$: $VAL|1=-$ (#TOOLTIP:$BREAKDOWN_TAG$ $CHANGE|2=-$#! ročne)" # todo: CHANGED
  ANTAGONISM_ENTRY_CHANGE_THEM: "[COUNTRY.GetName] $MODIFIER$: $VAL|-=$ ročne" # todo: NEW TRANSLATION
+ ANTAGONISM_YEARLY_CHANGE_BASE: "Prirodzený úbytok: $VAL|2=-$ ročne" # todo: NEW TRANSLATION
+ ANTAGONISM_YEARLY_CHANGE_MODIFIER: "[COUNTRY.GetName] $MODIFIER$: $VAL|2=-$ ročne" # todo: NEW TRANSLATION
+ ANTAGONISM_YEARLY_CHANGE_OPINION_IMPROVEMENT: "Zlepšenie náklonnosti: $VAL|2=-$ ročne" # todo: NEW TRANSLATION
  OPINION_SAME_CULTURE_ENTRY: "Obidvaja majú [CULTURE.GetName] [primary_culture|e]: $VAL|0=+$\n" # todo: NEW TRANSLATION
  OPINION_CULTURE_ENTRY: "[CULTURE.GetName] názor na [TARGET_CULTURE.GetName]: $VAL|0=+$\n" # todo: NEW TRANSLATION
  OPINION_SHARED_CULTURE_GROUPS: "$NUM$ z $TOTAL$ zdieľaných [culture_groups|e]: $VAL|=+$\n" # todo: NEW TRANSLATION
  OPINION_RELIGIOUS_TOLERANCE_ENTRY: "#T Dôvody tolerancie#!\n[COUNTRY.GetAdjective] náboženská [tolerance|e] voči [TARGET_RELIGION.GetName]: $VAL|0=+$\n" # todo: NEW TRANSLATION
  OPINION_RELIGION_GENERAL_VIEW_ENTRY: "[RELIGION.GetAdjective] pohľad na [TARGET_RELIGION.GetName]: $VAL|0=+$\n" # todo: NEW TRANSLATION
  OPINION_RELIGION_ENTRY: "[COUNTRY.GetAdjective] pohľad na krajiny [TARGET_RELIGION.GetAdjective]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L0=+$#!\n" # todo: NEW TRANSLATION
+ OPINION_EXCOMMUNICATED: "[CHARACTER.GetName] je exkomunikovaný" # todo: NEW TRANSLATION
  CULTURE_BREAKDOWN_TOOLTIP: "#T Rozloženie [CULTURE.GetNameWithNoTooltip]#!\n[CULTURE.GetName] [pops|e] sú rozšírené medzi nasledujúcimi [provinces|e]:" # todo: NEW TRANSLATION
  CULTURE_BREAKDOWN_TOOLTIP_ENTRY: "@provincia! [PROVINCE.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $POP_SIZE|L$#!" # todo: CHANGED
  ICI_HEADER: "[CULTURE.GetNameWithNoTooltip] v [PROVINCE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ICI_POP_ENTRY: "[POP.GetName]: [POP.GetSize] [POP.GetType.GetIcon]" # todo: CHANGED
  OPINION_CULTURE_TOOLTIP: "#T [CULTURE.GetNameWithNoTooltip] pohľad na [TARGET_CULTURE.GetNameWithNoTooltip]#!\n$TITLE$ názor poskytuje nasledovné:\nNázor krajín [CULTURE.GetName] na krajiny [TARGET_CULTURE.GetName]: $VAL|0=+$" # todo: NEW TRANSLATION
  OPINION_CULTURE_POP_TOOLTIP: "[pop_satisfaction|e] [CULTURE.GetNameWithNoTooltip] [pops|e]: $VAL|=+2%$" # todo: NEW TRANSLATION
+ OPINION_CULTURE_ASSIMILATION_TOOLTIP: "[assimilation|e] z [TARGET_CULTURE.GetName] [pops|e]: $VAL|=+2%$" # todo: NEW TRANSLATION
  RELIGION_BREAKDOWN_TOOLTIP: "#T Rozloženie [RELIGION.GetNameWithNoTooltip]#!\n[RELIGION.GetName] [pops|e] sú rozšírené medzi nasledujúcimi [provinces|e]:" # todo: NEW TRANSLATION
  RELIGION_BREAKDOWN_TOOLTIP_ENTRY: "@provincia! [PROVINCE.GetName]: $POP_SIZE$ [population_icon]" # todo: CHANGED
  OPINION_RELIGION_TOOLTIP: "#T [RELIGION.GetNameWithNoTooltip] pohľad na [TARGET_RELIGION.GetNameWithNoTooltip] #!\n$TITLE$ názor poskytuje nasledovné:\nNázor [RELIGION.GetAdjective] krajín na [TARGET_RELIGION.GetAdjective] krajiny: $VAL|0=+$" # todo: NEW TRANSLATION
@@ -190,8 +195,8 @@
  trust_they_rival_us: "[rival|e]" # todo: NEW TRANSLATION
  trust_mutual_rival: "Vzájomný [rival|e]" # todo: NEW TRANSLATION
  trust_supporting_rival: "Podporuje rivala" # todo: NEW TRANSLATION
- trust_receiving_guarantee: "Dlhodobé $guarantee$" # todo: NEW TRANSLATION
- trust_alliance: "Dlhodobé $alliance$" # todo: NEW TRANSLATION
+ trust_receiving_guarantee: "Záruka" # todo: CHANGED
+ trust_alliance: "Aliancia" # todo: CHANGED
  trust_declared_war: "Vyhlásil vojnu" # todo: NEW TRANSLATION
  trust_cant_afford_tribute: "Nedokáže zaplatiť tribut" # todo: NEW TRANSLATION
  trust_broke_alliance: "Zrušil alianciu" # todo: NEW TRANSLATION
@@ -241,6 +246,8 @@
  opinion_cardinal_selected: "Kardinál sa stal pápežom" # todo: NEW TRANSLATION
  opinion_jubilee_bad: "Pápež nesúhlasí s jubileom" # todo: NEW TRANSLATION
  opinion_jubilee_good: "Pápež súhlasí s jubileom" # todo: NEW TRANSLATION
+ stolen_jewels: "Ukradnuté šperky" # todo: NEW TRANSLATION
+ BYZ_latin_emperor_opinion: "Titulárny latinský cisár" # todo: NEW TRANSLATION
  western_schism_opposing_side: "Oponent v západnom schizme" # todo: NEW TRANSLATION
  western_schism_rethinking_our_approach: "Prehodnocujeme náš prístup" # todo: NEW TRANSLATION
  declared_oboedientia: "Vyhlásil Oboedientia" # todo: NEW TRANSLATION
@@ -333,6 +340,7 @@
  trust_protects_pirates: "Chráni pirátov" # todo: NEW TRANSLATION
  trust_sco_fra_renaissance_auld_alliance: "Stará aliancia" # todo: NEW TRANSLATION
  trust_sco_fra_auld_alliance: "Obnovenie Starej aliancie" # todo: NEW TRANSLATION
+ trust_ach_naples_court_ties: "Hlboké väzby na dvor Neapola" # todo: NEW TRANSLATION
  pol_gave_up_on_wschowa: "Vzdal sa Wschowy" # todo: NEW TRANSLATION
  kor_persecuted_cotton_theft: "Prenasledoval krádež bavlny" # todo: NEW TRANSLATION
  opinion_good_relations: "Dobré vzťahy" # todo: NEW TRANSLATION
@@ -455,7 +463,15 @@
  opinion_historical_rival_CAS_ccw: "Porušené sľuby" # todo: NEW TRANSLATION
  opinion_historical_rival_target_ccw: "Neopodstatnené požiadavky" # todo: NEW TRANSLATION
  opinion_granted_electorship: "Udelené elektorstvo" # todo: NEW TRANSLATION
+ opinion_granted_legatus_natus: "Udelený Legatus Natus" # todo: NEW TRANSLATION
+ opinion_granted_primas_germaniae: "Udelený Primas Germaniae" # todo: NEW TRANSLATION
+ opinion_granted_free_city: "Udelené slobodné mesto" # todo: NEW TRANSLATION
+ opinion_granted_kingdom_title: "Udelený kráľovský titul" # todo: NEW TRANSLATION
+ opinion_granted_country_privileges: "Udelené štátne privilégiá" # todo: NEW TRANSLATION
  opinion_rescinded_electorship: "Odvolané elektorstvo" # todo: NEW TRANSLATION
+ opinion_rescinded_legatus_natus: "Zrušený Legatus Natus" # todo: NEW TRANSLATION
+ opinion_rescinded_primas_germaniae: "Zrušený Primas Germaniae" # todo: NEW TRANSLATION
+ opinion_rescinded_free_city: "Odňaté slobodné mesto" # todo: NEW TRANSLATION
  opinion_demanded_unlawful_territory: "Požadoval nezákonné územie" # todo: NEW TRANSLATION
  hre_emperor_defends_empire: "Cisárska obrana" # todo: NEW TRANSLATION
  opinion_added_land_to_hre: "Pridal územie do [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
@@ -516,6 +532,7 @@
  member_same_league: "Člen tej istej ligy" # todo: NEW TRANSLATION
  opinion_weakened_our_league: "Oslabil našu ligu" # todo: NEW TRANSLATION
  opinion_strengthened_our_league: "Posilnil našu ligu" # todo: NEW TRANSLATION
+ io_opinion_foreign_league_balkan: "$member_same_league$" # todo: NEW TRANSLATION
  io_opinion_foreign_league_france: "$member_same_league$" # todo: NEW TRANSLATION
  io_opinion_foreign_league_hre: "$member_same_league$" # todo: NEW TRANSLATION
  io_opinion_foreign_league_iberia: "$member_same_league$" # todo: NEW TRANSLATION
@@ -722,9 +739,14 @@
  antagonism_bav_ignore_feudal_traditions_harsh: "Násilne anektoval $LBV$" # todo: NEW TRANSLATION
  antagonism_broke_subject_union: "Rozbil úniu subjektov" # todo: NEW TRANSLATION
  antagonism_peace_rtr_demand_all_occupied_territories: "Požadovať všetky obsadené územia" # todo: NEW TRANSLATION
+ antagonism_peace_rtr_demand_all_chinese_territories: "Požadovať všetky čínske územia" # todo: NEW TRANSLATION
  antagonism_anti_scaligeri_league: "Proti-Scaligeri liga" # todo: NEW TRANSLATION
  antagonism_ordered_me_to_annul_treaties: "Nariadil nám zrušiť zmluvy s iným [country|e]" # todo: NEW TRANSLATION
  antagonism_ordered_someone_to_annul_treaties_with_us: "Nariadil inému [country|e] zrušiť zmluvy s nami" # todo: NEW TRANSLATION
+ antagonism_maritime_aggression: "Námorná agresia" # todo: NEW TRANSLATION
+ antagonism_seized_papal_capital: "Obsadili pápežské hlavné mesto" # todo: NEW TRANSLATION
+ antagonism_infidel_holds_rome: "Neveriaci ovládajú [ShowLocationNameWithNoTooltip('rome')]" # todo: NEW TRANSLATION
+ antagonism_ach_byzantine_civil_war_intervention: "Zasiali chaos v Byzancii" # todo: NEW TRANSLATION
  por_shared_letters_with_persian_shah: "Vymenil listy" # todo: NEW TRANSLATION
  por_converted_to_true_faith: "Prešiel na pravú vieru" # todo: NEW TRANSLATION
  por_rejected_jesus: "Vysmial nás" # todo: NEW TRANSLATION
@@ -749,7 +771,28 @@
  opinion_tax_collector_rejected: "Odmietol povýšenie" # todo: NEW TRANSLATION
  chk_raided_our_city: "Prepadli Cahokiu" # todo: NEW TRANSLATION
  antagonism_chk_raiding_neighbors_for_food: "Plienenie susedov kvôli jedlu" # todo: NEW TRANSLATION
+ ach_nap_court_ties: "Väzby na dvor Neapola" # todo: NEW TRANSLATION
+ ach_nap_court_ties_monetary: "Finančné väzby na Neapol" # todo: NEW TRANSLATION
+ ach_epirus_support_rebel_victory: "Podporili povstanie Orsini" # todo: NEW TRANSLATION
+ ach_epirus_support_rebel_victory_betrayed: "Zradili nás!" # todo: NEW TRANSLATION
+ ach_claimed_the_peloponnese: "Nárokovali Peloponéz" # todo: NEW TRANSLATION
+ ach_ath_frankokratia_ties: "Latinské väzby" # todo: NEW TRANSLATION
+ ach_papal_latin_restoration_guarantee: "Podpora pápežského štátu" # todo: NEW TRANSLATION
+ ach_pap_sacked_constantinople_again: "Vyplienili Konštantínopol" # todo: NEW TRANSLATION
+ ach_rejected_papacy_offer: "Odmietli návrh na obnovenie Latinskej ríše" # todo: NEW TRANSLATION
+ ath_byz_raided_our_greek_holdings: "Prepadli naše severné grécke državy" # todo: NEW TRANSLATION
+ ath_befriend_epirus: "Spriatelení" # todo: NEW TRANSLATION
+ ath_acknowledged_the_latin_claim: "Uznali naše nároky na Latinskú ríšu" # todo: NEW TRANSLATION
+ ath_papal_latin_restoration: "Podporil pápežský návrh na obnovenie Latinskej ríše" # todo: NEW TRANSLATION
+ ath_declined_papal_latin_restoration: "Odmietol pápežskú ponuku na obnovenie Latinskej ríše" # todo: NEW TRANSLATION
+ ath_claimed_thessalonica: "Nárokovali Solún" # todo: NEW TRANSLATION
+ ath_proclaimed_rival_thessalonica_kingdom: "Vyhlásili konkurenčné kráľovstvo Solúna" # todo: NEW TRANSLATION
+ lat_patriarchate_of_constantinople_restored: "Obnovený latinský patriarchát Konštantínopolu" # todo: NEW TRANSLATION
+ burned_venice: "Spálili $venice$" # todo: NEW TRANSLATION
  ayd_byz_cooperation: "Spolupráca proti [GetCountry('TUR').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ prevented_ship_building_technology_from_spreading: "Zabránili zdieľaniu technológie stavby lodí" # todo: NEW TRANSLATION
+ sided_with_palamas_opinion_modifier: "Postavil sa na stranu Palamasa" # todo: NEW TRANSLATION
+ sided_with_barlaam_opinion_modifier: "Postavil sa na stranu Barlaama" # todo: NEW TRANSLATION
  ira_rejected_persian_diplomats: "Odmietol perzských diplomatov" # todo: NEW TRANSLATION
  ira_visited_capital: "Navštívil hlavné mesto" # todo: NEW TRANSLATION
  ira_increased_ties: "Zvýšil väzby" # todo: NEW TRANSLATION
@@ -782,3 +825,19 @@
  nov_seized_control_of_peterhof: "Obsadil Peterhof kontor" # todo: NEW TRANSLATION
  nov_friendly_hanseatic_relations: "Priaznivé hanseatské vzťahy" # todo: NEW TRANSLATION
  dan_banned_lutheran_bible: "Zakázal luteránsku Bibliu" # todo: NEW TRANSLATION
+ opinion_catholic_delegation: "Katolícka delegácia" # todo: NEW TRANSLATION
+ opinion_invited_patriarch_delegation: "Pozvaná delegácia patriarchu" # todo: NEW TRANSLATION
+ orthodox_synod_diplomatic_embassy_modifier: "Diplomatické veľvyslanectvo" # todo: NEW TRANSLATION
+ alliance_with_lutherans: "Nepriateľ môjho nepriateľa" # todo: NEW TRANSLATION
+ mocked_nation: "Posmievali sa nášmu národu" # todo: NEW TRANSLATION
+ opinion_bos_aspirations_of_liberty: "Aspirácie slobody" # todo: NEW TRANSLATION
+ opinion_bos_proclaimed_kingdom_of_bosnia: "Vyhlásili Kráľovstvo Bosny" # todo: NEW TRANSLATION
+ opinion_bos_diplomatic_restraint: "Diplomatická zdrženlivosť" # todo: NEW TRANSLATION
+ opinion_bos_became_catholic: "Prešli na katolicizmus" # todo: NEW TRANSLATION
+ opinion_bos_became_orthodox: "Prešli na pravoslávie" # todo: NEW TRANSLATION
+ opinion_rag_ottoman_partnership: "Osmanské partnerstvo" # todo: NEW TRANSLATION
+ opinion_bul_proclaimed_an_empire: "Vyhlásili impérium" # todo: NEW TRANSLATION
+ cro_approved_the_merge: "Schválili zlúčenie Chorvátska a Slavónska" # todo: NEW TRANSLATION
+ cro_rejected_the_merge: "Odmietli zlúčenie Chorvátska a Slavónska" # todo: NEW TRANSLATION
+ cro_dismissal_of_nelipic: "Zamietnutie nároku Nelipića" # todo: NEW TRANSLATION
+ cro_legitimation_of_nelipic: "Legalizácia nároku Nelipića" # todo: NEW TRANSLATION

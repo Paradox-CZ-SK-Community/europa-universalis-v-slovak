@@ -1,6 +1,10 @@
 ﻿l_polish:
- MODIFIER_TYPE_NAME_trade_efficiency: "Efektivita obchodu" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_trade_efficiency: "$game_concept_trade_efficiency_desc$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_selling_efficiency: "Efektivita predaja" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_selling_efficiency: "$game_concept_selling_efficiency_desc$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_export_efficiency: "Efektivita exportu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_export_efficiency: "$game_concept_export_efficiency_desc$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_import_efficiency: "Efektivita importu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_import_efficiency: "$game_concept_import_efficiency_desc$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_trade_income: "Príjem z obchodu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_trade_income: "$game_concept_trade_income_desc$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_army_weight_modifier: "Váha armády" # todo: NEW TRANSLATION
@@ -27,12 +31,12 @@
  MODIFIER_TYPE_DESC_army_logistics_distance_modifier: "$MODIFIER_TYPE_DESC_army_logistics_distance$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_force_army_maintenance: "Minimálna údržba armády 100%" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_force_army_maintenance: "Určuje, či je vaša [army|e] vždy pri maximálnych výdavkoch alebo nie." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_maintenance_cost: "Udržiavanie armády" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_maintenance_cost: "Toto mení, koľko [gold|e] a [manpower|e] je potrebné na udržiavanie [regiment|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_navy_maintenance_cost: "Udržiavanie námorníctva" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_navy_maintenance_cost: "Toto mení, koľko [gold|e] a [sailors|e] je potrebné na udržiavanie [ship|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_mercenary_maintenance_cost: "Udržiavanie žoldnierov" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_mercenary_maintenance_cost: "Toto ovplyvňuje, koľko [gold|e] sa platí za [mercenaries|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_maintenance_efficiency: "Efektivita údržby armády" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_maintenance_efficiency: "Mení, koľko [gold|e] a [manpower|e] je potrebné na udržanie [regiment|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_navy_maintenance_efficiency: "Efektivita údržby námorníctva" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_navy_maintenance_efficiency: "Mení, koľko [gold|e] a [sailors|e] je potrebné na udržanie [ship|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_mercenary_maintenance_efficiency: "Efektivita údržby žoldnierov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_mercenary_maintenance_efficiency: "Toto ovplyvňuje, koľko [gold|e] sa platí za [mercenaries|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_army_reinforce_cost: "Náklady na doplnenie armády" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_army_reinforce_cost: "Toto ovplyvňuje, koľko [gold|e] a [manpower|e] bude stáť [reinforce|e] [regiment|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_repair_speed: "Rýchlosť opráv námorníctva" # todo: NEW TRANSLATION
@@ -75,6 +79,8 @@
  MODIFIER_TYPE_DESC_ignore_zone_of_control: "Toto ovplyvňuje, či [army|e] môže ignorovať [hostile|e] [zone_of_control|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_fort_level: "Úroveň pevnosti" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_fort_level: "Toto ovplyvňuje [fortifications|e], ktoré má [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_minimum_fort_level: "Minimálna úroveň pevnosti" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_minimum_fort_level: "Nastavuje dolnú hranicu efektívnej úrovne [fort|e] [location|e]. Nesčítava sa s reálnou pevnosťou — platí vyššia hodnota." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_propagating_zone_of_control: "Umožňuje zónu kontroly" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_propagating_zone_of_control: "Toto ovplyvňuje, či toto [location|e] môže šíriť [zone_of_control|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_regiment_reinforcement_speed: "Rýchlosť dopĺňania" # todo: NEW TRANSLATION
@@ -127,8 +133,20 @@
  MODIFIER_TYPE_DESC_local_pop_demotion_speed_modifier: "Toto ovplyvňuje, ako rýchlo sa [pops|e] [demote|e] v tomto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_pop_demotion_speed_modifier: "Rýchlosť degradácie obyvateľstva" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_pop_demotion_speed_modifier: "Toto ovplyvňuje, ako rýchlo sa [pops|e] [demote|e] vo všetkých [locations|e] krajiny." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_can_grant_town_rights: "Môže udeľovať mestské práva" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_can_grant_town_rights: "Určuje, či môže [country|e] udeliť [town_rights|e] alebo nie." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_possible_town_rights: "Možné mestské práva" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_possible_town_rights: "Určuje, koľko [town_rights|e] môže mať [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_capital_possible_town_rights: "Možné mestské práva" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_capital_possible_town_rights: "Určuje, koľko ďalších [town_rights|e] môže mať [country|e] vo svojom [capital|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_grant_town_rights_cost_modifier: "Cena za udelenie mestských práv" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_grant_town_rights_cost_modifier: "Určuje cenu za udelenie [town_rights|e] [town_or_city|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_revoke_town_rights_cost_modifier: "Cena za odobratie mestských práv" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_revoke_town_rights_cost_modifier: "Určuje cenu za odobratie [town_rights|e] od [town_or_city|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_migration_attraction: "Atraktivita migrácie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_migration_attraction: "Toto ovplyvňuje, či sa [pops|e] chcú [migrate|e] do tohto [location|e] alebo od neho preč." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_migration_attraction: "Atraktivita migrácie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_migration_attraction: "Ovplyvňuje, či [pops|e] chcú [migrate|e] do alebo z [locations|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_rural_migration_attraction: "Atraktivita migrácie do vidieka" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_rural_migration_attraction: "Toto ovplyvňuje, či sa [pops|e] chcú [migrate|e] do alebo od [rural_locations|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_non_rural_migration_attraction: "Atraktivita migrácie do miest" # todo: NEW TRANSLATION
@@ -149,6 +167,14 @@
  MODIFIER_TYPE_DESC_local_pop_conversion_speed_modifier: "Toto ovplyvňuje, ako rýchlo sa [pops|e] [convert|e] v tomto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_pop_conversion_speed_modifier: "Rýchlosť konverzie obyvateľstva %" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_pop_conversion_speed_modifier: "Toto ovplyvňuje, ako rýchlo sa [pops|e] [convert|e] vo všetkých [locations|e] krajiny." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_heretic_pop_conversion_speed_modifier: "Rýchlosť konverzie kacírskych populácií %" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_heretic_pop_conversion_speed_modifier: "Ovplyvňuje, ako rýchlo sa [pops|e] tej istej [religion_group|e] [convert|e] vo všetkých [locations|e] v rámci [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_heretic_pop_conversion_speed_modifier: "Lokálna rýchlosť konverzie kacírskych populácií %" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_heretic_pop_conversion_speed_modifier: "Ovplyvňuje, ako rýchlo sa [pops|e] tej istej [religion_group|e] [convert|e] v tomto [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_heathen_pop_conversion_speed_modifier: "Rýchlosť konverzie pohanských populácií %" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_heathen_pop_conversion_speed_modifier: "Ovplyvňuje, ako rýchlo sa [pops|e] inej [religion_group|e] [convert|e] vo všetkých [locations|e] v rámci [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_heathen_pop_conversion_speed_modifier: "Lokálna rýchlosť konverzie pohanských populácií %" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_heathen_pop_conversion_speed_modifier: "Ovplyvňuje, ako rýchlo sa [pops|e] inej [religion_group|e] [convert|e] v tomto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_pop_assimilation_speed: "Rýchlosť asimilácie obyvateľstva" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_pop_assimilation_speed: "Toto ovplyvňuje, ako rýchlo sa [pops|e] [assimilate|e] v tomto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_pop_assimilation_speed: "Rýchlosť asimilácie obyvateľstva" # todo: NEW TRANSLATION
@@ -169,12 +195,16 @@
  MODIFIER_TYPE_DESC_local_monthly_development_modifier: "Toto ovplyvňuje, o koľko sa [development|e] mení mesačne v [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_monthly_prosperity: "Mesačná prosperita" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_monthly_prosperity: "Toto ovplyvňuje, o koľko sa [prosperity|e] mení mesačne vo všetkých [locations|e] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_non_rural_monthly_prosperity: "Mesačná prosperita v [towns_and_cities]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_non_rural_monthly_prosperity: "Ovplyvňuje, o koľko sa [prosperity|e] mesačne mení vo všetkých nevidieckych [locations|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_prosperity_decay: "Pokles prosperity" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_prosperity_decay: "Ovplyvňuje, ako rýchlo [prosperity|e] mizne v [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_prosperity_decay: "Pokles prosperity" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_prosperity_decay: "Ovplyvňuje, ako rýchlo [prosperity|e] mizne vo všetkých [locations|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_monthly_development: "Mesačný rozvoj" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_monthly_development: "Toto ovplyvňuje, o koľko sa [development|e] mení mesačne vo všetkých [locations|e] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_non_rural_monthly_development: "Mesačný rozvoj v [towns_and_cities]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_non_rural_monthly_development: "Ovplyvňuje, o koľko sa [development|e] mesačne mení vo všetkých nevidieckych [locations|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_power_projection: "Projekcia moci" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_power_projection: "Toto ovplyvňuje, koľko [power_projection|e] má [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_lack_of_control_impact_on_warscore: "Vplyv kontroly na vojnové skóre" # todo: NEW TRANSLATION
@@ -208,9 +238,9 @@
  MODIFIER_TYPE_NAME_global_monthly_control_decline: "Mesačný pokles kontroly" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_monthly_control_decline: "Toto je, o koľko sa zníži [control|e], keď je nad maximom vo všetkých [locations|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_rgo_build_time: "Čas rozšírenia ťažby surovín" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_local_rgo_build_time: "Toto ovplyvňuje, koľko času trvá rozšíriť množstvo [pops|e] zhromažďujúcich [raw_materials|e] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_rgo_build_time: "Ovplyvňuje, koľko času trvá zväčšiť počet [pops|e] zbierajúcich [raw_materials|e] v [location|e]." # todo: CHANGED
  MODIFIER_TYPE_NAME_global_rgo_build_time: "Čas rozšírenia ťažby surovín" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_global_rgo_build_time: "Toto ovplyvňuje, koľko času trvá rozšíriť množstvo [pops|e] zhromažďujúcich [raw_materials|e] vo všetkých [locations|e] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_rgo_build_time: "Ovplyvňuje, koľko času trvá zväčšiť počet [pops|e] zbierajúcich [raw_materials|e] vo všetkých [locations|e] v [country|e]." # todo: CHANGED
  MODIFIER_TYPE_NAME_building_owner_maritime_presence: "Námorná prítomnosť pre majiteľa" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_building_owner_maritime_presence: "Toto ovplyvňuje [maritime_presence|e] v susedných [seazones|e] pre vlastníka [building|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_maritime_presence: "Miestna námorná prítomnosť" # todo: NEW TRANSLATION
@@ -229,12 +259,10 @@
  MODIFIER_TYPE_DESC_land_cost_on_distance_from_capital: "Toto ovplyvňuje [proximity|e] náklady medzi [locations|e], keď sa ide cez bežné [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_land_cost_on_distance_from_capital_speed_propagation: "Rýchlosť šírenia blízkosti cez súš" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_land_cost_on_distance_from_capital_speed_propagation: "Ovplyvňuje rýchlosť, akou sa [proximity|e] pohybuje cez [locations|e], keď prechádza normálnym [location|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_port_cost_distance_from_capital: "@port! Náklady podľa vzdialenosti cez prístav" # todo: CHANGED
+ MODIFIER_TYPE_NAME_port_cost_distance_from_capital: "@port!Náklady na blízkosť cez prístav" # todo: CHANGED
  MODIFIER_TYPE_DESC_port_cost_distance_from_capital: "Toto ovplyvňuje [proximity|e] náklady medzi [locations|e], keď sa ide z [port|e] do [seazone|e] alebo naopak." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_port_cost_distance_impact: "Vplyv proximy cez prístav" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_local_port_cost_distance_impact: "Ovplyvňuje náklady [proximity|e] medzi [locations|e] pri vstupe do [seazone|e] alebo pri odchode z neho." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_local_port_cost_distance_from_capital_speed_propagation: "Rýchlosť proximy cez prístav" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_local_port_cost_distance_from_capital_speed_propagation: "Ovplyvňuje rýchlosť [proximity|e] medzi [locations|e] pri vstupe do [seazone|e] alebo pri odchode z neho." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_port_cost_distance_impact: "@port!Ovplyvňuje [proximity|e] náklady medzi [locations|e] pri vstupe do [seazone|e] alebo pri jeho opustení." # todo: CHANGED
  MODIFIER_TYPE_NAME_land_cost_going_downstream: "@river! Náklady pri pohybe po prúde rieky" # todo: CHANGED
  MODIFIER_TYPE_DESC_land_cost_going_downstream: "Toto ovplyvňuje [proximity|e] náklady medzi [locations|e], keď sa ide po prúde pozdĺž [river|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_land_cost_going_upstream: "@river! Náklady pri pohybe proti prúdu rieky" # todo: CHANGED
@@ -255,6 +283,10 @@
  MODIFIER_TYPE_DESC_local_sailors_modifier: "Toto ovplyvňuje, koľko [sailors|e] môže [location|e] poskytovať každý mesiac." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_manpower_modifier: "Mesačný prísun mužstva" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_manpower_modifier: "Toto ovplyvňuje, koľko [manpower|e] môže [location|e] poskytovať každý mesiac." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_max_sailors: "Maximálny počet námorníkov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_max_sailors: "Zvyšuje maximálny počet [sailors|e], ktorými môže [country|e] disponovať." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_max_manpower: "Maximálny počet mužstva" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_max_manpower: "Zvyšuje maximálny počet [manpower|e], ktorými môže [country|e] disponovať." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_sailors: "Mesačný počet námorníkov" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_sailors: "Toto ovplyvňuje, koľko [sailors|e] môže [location|e] poskytovať každý mesiac." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_cap_maximum_population_growth_at_zero: "Žiadny možný rast populácie" # todo: NEW TRANSLATION
@@ -263,6 +295,38 @@
  MODIFIER_TYPE_DESC_local_population_growth: "Toto ovplyvňuje [population_growth|e] v [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_population_growth: "Rast populácie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_population_growth: "Toto ovplyvňuje [population_growth|e] vo všetkých [locations|e] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_nobles_pop_growth: "$nobles$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_nobles_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('nobles')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_nobles_pop_growth: "$nobles$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_nobles_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('nobles')] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_clergy_pop_growth: "$clergy$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_clergy_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('clergy')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_clergy_pop_growth: "$clergy$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_clergy_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('clergy')] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_burghers_pop_growth: "$burghers$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_burghers_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('burghers')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_burghers_pop_growth: "$burghers$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_burghers_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('burghers')] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_laborers_pop_growth: "$laborers$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_laborers_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('laborers')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_laborers_pop_growth: "$laborers$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_laborers_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('laborers')] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_soldiers_pop_growth: "$soldiers$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_soldiers_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('soldiers')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_soldiers_pop_growth: "$soldiers$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_soldiers_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('soldiers')] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_peasants_pop_growth: "$peasants$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_peasants_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('peasants')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_peasants_pop_growth: "$peasants$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_peasants_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('peasants')] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_tribesmen_pop_growth: "$tribesmen$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_tribesmen_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('tribesmen')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_tribesmen_pop_growth: "$tribesmen$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_tribesmen_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('tribesmen')] v [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_slaves_pop_growth: "$slaves$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_slaves_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('slaves')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_slaves_pop_growth: "$slaves$ rast" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_slaves_pop_growth: "Ovplyvňuje [population_growth|e] [ShowPopTypeName('slaves')] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_population_capacity: "Lokálna kapacita populácie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_population_capacity: "Toto ovplyvňuje, koľko [pops|e] môže žiť v tejto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_population_capacity_modifier: "Lokálna kapacita populácie %" # todo: NEW TRANSLATION
@@ -317,6 +381,8 @@
  MODIFIER_TYPE_DESC_local_merchant_power: "Toto ovplyvňuje, koľko [merchant_power|e] by [owner|e] získal z tejto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_merchant_capacity: "Obchodná kapacita" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_merchant_capacity: "Toto ovplyvňuje, koľko [merchant_capacity|e] by [owner|e] tejto [location|e] získal." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_merchant_capacity_modifier: "$MODIFIER_TYPE_NAME_local_merchant_capacity$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_merchant_capacity_modifier: "$MODIFIER_TYPE_DESC_local_merchant_capacity$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_merchant_capacity_from_building: "Obchodná kapacita pre vlastníka" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_merchant_capacity_from_building: "Toto ovplyvňuje, koľko [merchant_capacity|e] by získal vlastník tejto [building|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_merchant_capacity_modifier: "Obchodná kapacita" # todo: NEW TRANSLATION
@@ -355,6 +421,8 @@
  MODIFIER_TYPE_DESC_discipline: "Toto ovplyvňuje [discipline|e] [regiment|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_military_tactics: "Vojenské taktiky" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_military_tactics: "Toto ovplyvňuje [military_tactics|e] [regiment|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_commander_combat_bonus: "Bojový bonus veliteľa" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_commander_combat_bonus: "Pevný bonus k hodu pri každej fáze boja, ktorú vedie tento [commander|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_combined_arms_max_threshold: "Práh kombinovaných zbraní" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_combined_arms_max_threshold: "Určuje maximálne percento [unit|e], ktoré môže [unit_category|e] predstavovať, aby poskytovalo bonus k [combined_arms|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_combined_arms_min_percent_for_bonus: "Požiadavka pre kombinované zbrane" # todo: NEW TRANSLATION
@@ -431,6 +499,12 @@
  MODIFIER_TYPE_DESC_global_integration_speed_modifier: "Toto ovplyvňuje, ako rýchlo môže [country|e] [integrate|e] [locations|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_government_reform_slots: "Možné vládne reformy" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_government_reform_slots: "Toto ovplyvňuje, koľko [government_reforms|e] môže mať [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_omens_offered: "Ponúkané znamenia" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_omens_offered: "Ovplyvňuje, koľko [omens|e] [country|e] dostane ponúknutých od [gods|e], keď použije [ShowGenericActionName('select_omen_god')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_omen_time_modifier: "Trvanie znamenia" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_omen_time_modifier: "Ovplyvňuje trvanie všetkých vyvolaných [omens|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_omen_strength_modifier: "Sila znamenia" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_omen_strength_modifier: "Ovplyvňuje silu všetkých vyvolaných [omens|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_government_size: "Počet miest v kabinete" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_government_size: "Toto ovplyvňuje, koľko [characters|e] môže byť v [cabinet|e] naraz." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_skill_of_new_artists: "Zručnosť nových umelcov" # todo: NEW TRANSLATION
@@ -470,7 +544,9 @@
  MODIFIER_TYPE_NAME_monthly_tribal_cohesion: "Mesačná kmeňová kohézia" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_monthly_tribal_cohesion: "Toto ovplyvňuje, koľko [tribal_cohesion|e] získava [country|e] každý mesiac." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_character_cabinet_efficiency: "Efektivita v kabinete" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_character_cabinet_efficiency: "Toto ovplyvňuje [cabinet_efficiency|e] [character|e], keď pracuje v [cabinet|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_character_cabinet_efficiency: "Ovplyvňuje [cabinet_efficiency|e] [character|e], keď pracuje v [cabinet|e]." # todo: CHANGED
+ MODIFIER_TYPE_NAME_cabinet_trait_impact_modifier: "Vplyv črty kabinetu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_cabinet_trait_impact_modifier: "Ovplyvňuje silu účinkov [cabinet_trait|e], keď [character|e] pracuje v [cabinet|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_country_cabinet_efficiency: "Efektivita nášho kabinetu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_country_cabinet_efficiency: "Toto ovplyvňuje [cabinet_efficiency|e] všetkých [characters|e] v [cabinet|e] [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_has_codified_laws: "Môže kodifikovať zákony" # todo: NEW TRANSLATION
@@ -521,12 +597,14 @@
  MODIFIER_TYPE_DESC_antagonism_breaking_truce_giving_modifier: "Toto ovplyvňuje, koľko [antagonism|e] pociťujeme voči [country|e], keď poruší prímerie." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_antagonism_declared_war_no_cb_giving_modifier: "Antagonizmus z vyhlásenia vojny bez casus belli" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_antagonism_declared_war_no_cb_giving_modifier: "Toto ovplyvňuje, koľko [antagonism|e] pociťujeme voči [country|e], keď vyhlási [war|e] bez [casus_belli|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_antagonism_monthly_change_modifier: "Mesačná zmena antagonizmu" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_antagonism_monthly_change_modifier: "Toto ovplyvňuje, ako sa každý mesiac mení [antagonism|e] pre daný [country|e]." # todo: CHANGED
- MODIFIER_TYPE_NAME_global_war_score_cost: "Náklady na vojnové skóre" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_global_war_score_cost: "Toto ovplyvňuje, koľko [war_score|e] bude stáť tomuto [country|e] získať územie." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_local_war_score_cost: "Náklady na vojnové skóre" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_local_war_score_cost: "Toto ovplyvňuje, koľko [war_score|e] bude stáť, aby bola táto [location|e] odobraná v [peace_treaty|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_antagonism_monthly_change_modifier: "Úbytok antagonizmu" # todo: CHANGED
+ MODIFIER_TYPE_DESC_antagonism_monthly_change_modifier: "Ovplyvňuje, ako sa dočasné zdroje [antagonism|e] znižujú pre [country|e] každý mesiac." # todo: CHANGED
+ MODIFIER_TYPE_NAME_global_war_score_efficiency: "Efektivita vojenského skóre" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_war_score_efficiency: "Ovplyvňuje, koľko [war_score|e] bude stáť získanie územia pre toto [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_war_score_vs_other_religion_efficiency: "Efektivita vojenského skóre proti inému náboženstvu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_war_score_vs_other_religion_efficiency: "Ovplyvňuje, koľko [war_score|e] bude stáť získanie územia od nepriateľa, ktorý nasleduje iné [religion|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_war_score_efficiency: "Efektivita vojenského skóre" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_war_score_efficiency: "Ovplyvňuje, koľko [war_score|e] bude stáť obsadenie tohto [location|e] v [peace_treaty|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_subject_income_modifier: "Príjem subjektu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_subject_income_modifier: "Toto zvyšuje, koľko [subjects|e] platia [country|e] každý mesiac." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_payment_to_overlord_modifier: "Platby pánovi" # todo: NEW TRANSLATION
@@ -641,8 +719,8 @@
  MODIFIER_TYPE_DESC_local_trade_protection_factor: "Toto priamo znižuje [market_attraction|e], ktoré majú [foreign|e] [markets|e] na [locations|e], čím zvyšuje pravdepodobnosť, že pripadnú pod [market|e] ich [owner|e].\n\nJeden bod Ochrany trhu neguje jeden bod Atraktivity trhu každého cudzieho [market]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_trade_protection_factor: "Ochrana trhu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_trade_protection_factor: "$MODIFIER_TYPE_DESC_local_trade_protection_factor$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_court_spending_cost: "Očakávané náklady na dvor" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_court_spending_cost: "Ovplyvňuje, aká časť [tax_base|e] sa očakáva byť [court_maintenance|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_court_spending_cost_modifier: "Očakávané výdavky na dvór" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_court_spending_cost_modifier: "Ovplyvňuje, aká časť [tax_base|e] sa očakáva byť [court_maintenance|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_diplomatic_spending_cost: "Očakávané diplomatické výdavky" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_diplomatic_spending_cost: "Ovplyvňuje, aká časť [tax_base|e] sa očakáva byť [diplomatic_maintenance|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allow_subjects: "Môže mať poddaných" # todo: NEW TRANSLATION
@@ -659,6 +737,22 @@
  MODIFIER_TYPE_DESC_stability_cost: "Ovplyvňuje náklady na [stability_investment|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_unrest: "Nepokoje" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_unrest: "Ovplyvňuje [unrest|e] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_crown_estate_unrest: "[ShowEstateTypeName('crown_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_crown_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('crown_estate')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_nobles_estate_unrest: "[ShowEstateTypeName('nobles_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_nobles_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('nobles_estate')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_clergy_estate_unrest: "[ShowEstateTypeName('clergy_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_clergy_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('clergy_estate')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_burghers_estate_unrest: "[ShowEstateTypeName('burghers_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_burghers_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('burghers_estate')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_peasants_estate_unrest: "[ShowEstateTypeName('peasants_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_peasants_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('peasants_estate')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_dhimmi_estate_unrest: "[ShowEstateTypeName('dhimmi_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_dhimmi_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('dhimmi_estate')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_tribes_estate_unrest: "[ShowEstateTypeName('tribes_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_tribes_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('tribes_estate')] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_cossacks_estate_unrest: "[ShowEstateTypeName('cossacks_estate')] nepokoje" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_cossacks_estate_unrest: "Ovplyvňuje [unrest|e] [ShowEstateTypeName('cossacks_estate')] v [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_separatism: "Separatizmus" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_separatism: "Ovplyvňuje [separatism|e] v [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_separatism: "Separatizmus" # todo: NEW TRANSLATION
@@ -703,8 +797,18 @@
  MODIFIER_TYPE_DESC_fort_limit_modifier: "$MODIFIER_TYPE_DESC_fort_limit$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_fort_maintenance_cost: "Údržba pevností" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_fort_maintenance_cost: "Ovplyvňuje, koľko [gold|e] stoja naše [fortifications|e] každý mesiac." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_merchant_maintenance_cost: "Náklady na obchod" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_merchant_maintenance_cost: "Ovplyvňuje, koľko stoja naši [merchants|e] pri vykonávaní [trades|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_market_building_levels: "Úrovne obchodných budov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_market_building_levels: "Ovplyvňuje, koľko [ShowBuildingCategoryName('trade_category')] [buildings|e] môže mať [country|e] v každom [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_merchant_maintenance_efficiency: "Efektivita údržby obchodníkov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_merchant_maintenance_efficiency: "Ovplyvňuje, koľko stoja naši [merchants|e] pri vykonávaní [trades|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_jewelry_guild_building_levels: "Úrovne budov cechu klenotníkov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_jewelry_guild_building_levels: "Zvyšuje maximálnu úroveň [ShowBuildingTypeName('jewelry_guild')] v tomto [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_marketplace_building_levels: "Úrovne budov trhu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_marketplace_building_levels: "Zvyšuje maximálnu úroveň [ShowBuildingTypeName('marketplace')] v tomto [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_cloth_guild_building_levels: "Úrovne budov textilného cechu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_cloth_guild_building_levels: "Zvyšuje maximálnu úroveň [ShowBuildingTypeName('cloth_guild')] v tomto [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_fine_cloth_guild_building_levels: "Úrovne budov cechu jemného plátna" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_fine_cloth_guild_building_levels: "Zvyšuje maximálnu úroveň [ShowBuildingTypeName('fine_cloth_guild')] v tomto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_build_new_buildings_cost: "Náklady na nové budovy" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_build_new_buildings_cost: "Ovplyvňuje, koľko [costs|e] stojí postavenie novej [building|e] v tomto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_build_buildings_cost: "Náklady na budovy" # todo: NEW TRANSLATION
@@ -748,9 +852,9 @@
  MODIFIER_TYPE_NAME_p_expensive_building_age_6_revolutions_cost_modifier: "$p_expensive_building_age_6_revolutions$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_p_expensive_building_age_6_revolutions_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí postavenie [buildings|e] umožnených v [ShowAgeName('age_6_revolutions')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_manpower_modifier: "Živá sila" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_global_manpower_modifier: "Ovplyvňuje, koľko [manpower|e] [country|e] získa." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_manpower_modifier: "Ovplyvňuje, koľko [manpower|e] [country|e] získa mesačne." # todo: CHANGED
  MODIFIER_TYPE_NAME_global_sailors_modifier: "Námorníci" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_global_sailors_modifier: "Ovplyvňuje, koľko [sailors|e] [country|e] získa." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_sailors_modifier: "Ovplyvňuje, koľko [sailors|e] [country|e] získa mesačne." # todo: CHANGED
  MODIFIER_TYPE_NAME_tax_income_efficiency: "Daňová efektivita" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_tax_income_efficiency: "Ovplyvňuje [tax_efficiency|e] [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_monthly_karma: "Mesačná karma" # todo: NEW TRANSLATION
@@ -832,7 +936,7 @@
  MODIFIER_TYPE_NAME_own_coast_naval_combat_bonus: "Boj mimo vlastného pobrežia" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_own_coast_naval_combat_bonus: "Toto dáva bonus alebo penalizáciu [navies|e] bojujúcim v [seazones|e] susediacich s ich [owned|e] [locations|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_subject_not_obligated_to_join_war: "Môže sa vyhnúť vstupu do vojen nadoverovateľa" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_subject_not_obligated_to_join_war: "Toto umožňuje [subject|e] vyhnúť sa vstupu do akejkoľvek [war|e], ktorú začne [overlord|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_subject_not_obligated_to_join_war: "Umožňuje [subject|e] vyhnúť sa vstupu do akéhokoľvek [war|e], ktorý [overlord|e] #I začne#." # todo: CHANGED
  MODIFIER_TYPE_NAME_can_build_cities: "Môže stavať mestá" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_can_build_cities: "Toto nám umožňuje stavať [towns_or_cities|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_can_settle: "Môže osídľovať" # todo: NEW TRANSLATION
@@ -875,7 +979,7 @@
  MODIFIER_TYPE_DESC_can_invite_settlers: "Toto umožňuje [country|e] použiť interakciu [ShowCountryInteractionName('invite_settlers')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_nobles_max_literacy: "Lokálny max gramotnosti pre šľachtu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_nobles_max_literacy: "Toto ovplyvňuje [literacy|e] pre všetkých [ShowPopTypeName('nobles')] v tejto [location|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_global_nobles_max_literacy: "Maximálna gramotnosť šľachty" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_nobles_max_literacy: "Maximálna gramotnosť pre šľachtu" # todo: CHANGED
  MODIFIER_TYPE_DESC_global_nobles_max_literacy: "Toto ovplyvňuje [literacy|e] pre všetkých [ShowPopTypeName('nobles')] v tomto [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_clergy_max_literacy: "Lokálny max gramotnosti pre klérus" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_clergy_max_literacy: "Toto ovplyvňuje [literacy|e] pre všetkých [ShowPopTypeName('clergy')] v tejto [location|e]." # todo: NEW TRANSLATION
@@ -905,6 +1009,8 @@
  MODIFIER_TYPE_DESC_national_church_power_cost_modifier: "Toto ovplyvňuje [costs|e] pre akcie Cirkvi." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_hussite_wars_actions_price_cost_modifier: "$hussite_wars_actions_price$ Modifier" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_hussite_wars_actions_price_cost_modifier: "Toto ovplyvňuje [cost|e] [actions|e] spojených so [ShowSituationName('hussite_wars')] [situation|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_megalopolis_upgrade_cost_modifier: "Cena založenia megalopolu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_megalopolis_upgrade_cost_modifier: "Ovplyvňuje [costs|e] vytvorenia [ShowLocationRankName('megalopolis')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_city_upgrade_cost_modifier: "Cena práv mesta" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_city_upgrade_cost_modifier: "Toto ovplyvňuje [costs|e] vytvorenia [ShowLocationRankName('city')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_town_upgrade_cost_modifier: "Cena založenia mesta" # todo: NEW TRANSLATION
@@ -913,6 +1019,10 @@
  MODIFIER_TYPE_DESC_rural_settlement_upgrade_cost_modifier: "NEPOUŽÍVA SA" # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_rural_settlement_downgrade_cost_modifier: "Cena degradácie na rurálne sídlo" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_rural_settlement_downgrade_cost_modifier: "Toto ovplyvňuje [costs|e] downgradovania [ShowLocationRankName('town')] alebo [ShowLocationRankName('city')] na [ShowLocationRankName('rural_settlement')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_hre_army_building_cost_modifier: "$hre_army_building$ Módifikátor nákladov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_hre_army_building_cost_modifier: "Ovplyvňuje [cost|e] výstavby [ShowBuildingTypeName('hre_imperial_armory_foreign')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_hre_imperial_armory_level: "$hre_army_building$ Available Level" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_hre_imperial_armory_level: "Ovplyvňuje, koľko úrovní [ShowBuildingTypeName('hre_imperial_armory_foreign')] je dostupných na výstavbu." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_build_gravel_road_cost_modifier: "Cena výstavby $gravel_road$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_build_gravel_road_cost_modifier: "Toto ovplyvňuje cenu výstavby [ShowRoadTypeName('gravel_road')] v tomto [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_build_paved_road_cost_modifier: "Cena výstavby $paved_road$" # todo: NEW TRANSLATION
@@ -1103,6 +1213,8 @@
  MODIFIER_TYPE_DESC_local_peasants_estate_power: "Ovplyvňuje [estate_power|e] $peasants_estate$ v tejto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_dhimmi_estate_power: "Lokálna moc Ḏimmī" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_dhimmi_estate_power: "Ovplyvňuje [estate_power|e] $dhimmi_estate$ v tejto [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_crown_power_from_population: "Moc koruny z populácie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_crown_power_from_population: "Ovplyvňuje, koľko [estate_power|e] získa $crown_estate$ za každé [pop|e] v celom [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_crown_estate_power: "Kráľovská moc" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_crown_estate_power: "Ovplyvňuje [estate_power|e] $crown_estate$, teda [crown_power|e], v celej [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_nobles_estate_power: "Moc šľachty" # todo: NEW TRANSLATION
@@ -1213,14 +1325,24 @@
  MODIFIER_TYPE_DESC_monthly_towards_jurisprudence: "Ovplyvňuje zmenu smerom k [ShowSocietyDirectionName('jurisprudence')] [societal_values|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allow_mysticism_vs_jurisprudence: "Povoliť $mysticism_vs_jurisprudence$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_allow_mysticism_vs_jurisprudence: "Umožňuje, aby krajina bola formovaná medzi [ShowSocietyDirectionName('mysticism')] a [ShowSocietyDirectionName('jurisprudence')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_monthly_towards_latinization: "Mesačný pokrok k Latinitas" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_monthly_towards_latinization: "Ovplyvňuje zmenu smerom k [ShowSocietyDirectionName('latinization')] [societal_values|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_monthly_towards_hellenization: "Mesačný pokrok k Rōmanismós" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_monthly_towards_hellenization: "Ovplyvňuje zmenu smerom k [ShowSocietyDirectionName('hellenization')] [societal_values|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_allow_latinization_vs_hellenization: "Povoliť $latinization_vs_hellenization$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_allow_latinization_vs_hellenization: "Umožňuje, aby bol štát formovaný medzi [ShowSocietyDirectionName('latinization')] a [ShowSocietyDirectionName('hellenization')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_army_artillery_power: "$army_artillery$ Sila" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_army_artillery_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_artillery')] [regiments|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_army_auxiliary_power: "$army_auxiliary$ Sila" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_army_auxiliary_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_auxiliary')] [regiments|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_cavalry_power: "$army_cavalry$ Sila" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_cavalry_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_cavalry')] [regiments|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_infantry_power: "$army_infantry$ Sila" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_infantry_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_infantry')] [regiments|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_cavalry_power: "$army_light_cavalry$ sila" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_cavalry_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_light_cavalry')] [regiments|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_infantry_power: "$army_light_infantry$ sila" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_infantry_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_light_infantry')] [regiments|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_cavalry_power: "$army_heavy_cavalry$ sila" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_cavalry_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_heavy_cavalry')] [regiments|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_infantry_power: "$army_heavy_infantry$ sila" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_infantry_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('army_heavy_infantry')] [regiments|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_navy_galley_power: "$navy_galley$ Sila" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_navy_galley_power: "Ovplyvňuje [combat|e] schopnosť [ShowUnitCategoryName('navy_galley')] [ships|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_navy_heavy_ship_power: "$navy_heavy_ship$ Sila" # todo: NEW TRANSLATION
@@ -1339,15 +1461,19 @@
  MODIFIER_TYPE_NAME_change_heir_selection_cost_modifier: "Náklady na zmenu výberu dediča" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_change_heir_selection_cost_modifier: "Ovlivňuje, koľko to [costs|e] zmeniť [heir_selection|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_expand_rgo_mining_cost_modifier: "Náklady na rozšírenie ťažby" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_expand_rgo_mining_cost_modifier: "Ovlivňuje, koľko to [costs|e] zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú bane.\n#V Raw Goods#! using #V Mining #!: [GetListOfGoodsUsingMethod('mining')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_expand_rgo_mining_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú bane.\n#V Raw Goods#! using #V Mining #!: [GetListOfGoodsUsingMethod('mining')]." # todo: CHANGED
  MODIFIER_TYPE_NAME_expand_rgo_farming_cost_modifier: "Náklady na rozšírenie poľnohospodárstva" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_expand_rgo_farming_cost_modifier: "Ovlivňuje, koľko to [costs|e] zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú farmy.\n#V Raw Goods#! using #V Farming #!: [GetListOfGoodsUsingMethod('farming')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_expand_rgo_farming_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú farmy.\n#V Raw Goods#! using #V Farming #!: [GetListOfGoodsUsingMethod('farming')]." # todo: CHANGED
  MODIFIER_TYPE_NAME_expand_rgo_hunting_cost_modifier: "Náklady na rozšírenie lovu" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_expand_rgo_hunting_cost_modifier: "Ovlivňuje, koľko to [costs|e] zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú lov.\n#V Raw Goods#! using #V Hunting #!: [GetListOfGoodsUsingMethod('hunting')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_expand_rgo_hunting_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú lov.\n#V Raw Goods#! using #V Hunting #!: [GetListOfGoodsUsingMethod('hunting')]." # todo: CHANGED
  MODIFIER_TYPE_NAME_expand_rgo_gathering_cost_modifier: "Náklady na rozšírenie zberu" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_expand_rgo_gathering_cost_modifier: "Ovlivňuje, koľko to [costs|e] zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú zber.\n#V Raw Goods#! using #V Gathering #!: [GetListOfGoodsUsingMethod('gathering')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_expand_rgo_gathering_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú zber.\n#V Raw Goods#! using #V Gathering #!: [GetListOfGoodsUsingMethod('gathering')]." # todo: CHANGED
  MODIFIER_TYPE_NAME_expand_rgo_forestry_cost_modifier: "Náklady na rozšírenie lesníctva" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_expand_rgo_forestry_cost_modifier: "Ovlivňuje, koľko to [costs|e] zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú lesníctvo.\n#V Raw Goods#! using #V Forestry #!: [GetListOfGoodsUsingMethod('forestry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_expand_rgo_forestry_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí zvýšiť počet [pops|e] pracujúcich s [raw_materials|e], ktoré vyžadujú lesníctvo.\n#V Raw Goods#! using #V Forestry #!: [GetListOfGoodsUsingMethod('forestry')]." # todo: CHANGED
+ MODIFIER_TYPE_NAME_expand_aqueduct_system_cost_modifier: "Náklady na rozšírenie akvaduktov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_expand_aqueduct_system_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí postavenie [ShowBuildingTypeName('aqueduct_system')] [building|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_build_hippodrome_price_cost_modifier: "Módifikátor nákladov na výstavbu hippodrómu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_build_hippodrome_price_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí postavenie [ShowBuildingTypeName('hippodrome')] [building|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_embrace_institution_cost_modifier: "Náklady na prijatie inštitúcie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_embrace_institution_cost_modifier: "Ovlivňuje, koľko to [costs|e] [embrace|e] [institution|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_grant_privilege_cost_modifier: "Náklady na udelenie privilégií" # todo: NEW TRANSLATION
@@ -1386,14 +1512,14 @@
  MODIFIER_TYPE_DESC_war_when_military_acces_cost_modifier: "Ovlivňuje, koľko to [costs|e] vyhlásiť [war|e], keď máme [military_access|e] v inom [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_war_no_cb_cost_modifier: "Náklady na vojnu bez casus belli" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_war_no_cb_cost_modifier: "Ovlivňuje, koľko to [costs|e] vyhlásiť [war|e] bez [casus_belli|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_war_on_subject_cost_modifier: "Náklady na vojnu proti subjektu" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_war_on_subject_cost_modifier: "Ovlivňuje, koľko to [costs|e] vyhlásiť [war|e] na nášho [subject|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_war_on_same_religion_cb_cost_modifier: "Náklady na vojnu s rovnakým náboženstvom" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_war_on_same_religion_cb_cost_modifier: "Ovlivňuje, koľko to [costs|e] vyhlásiť [war|e] proti niekomu s rovnakým [religion|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_war_on_same_religion_no_cb_cost_modifier: "Náklady na neopodstatnenú vojnu s rovnakým náboženstvom" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_war_on_same_religion_no_cb_cost_modifier: "Ovlivňuje, koľko to [costs|e] vyhlásiť [war|e] proti niekomu s rovnakým [religion|e] bez [casus_belli|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_war_on_different_religion_cost_modifier: "Náklady na vojnu s iným náboženstvom" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_war_on_different_religion_cost_modifier: "Ovlivňuje, koľko to [costs|e] vyhlásiť [war|e] proti niekomu s iným [religion|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_war_on_subject_cost_modifier: "Trest za vojnu proti subjektu" # todo: CHANGED
+ MODIFIER_TYPE_DESC_war_on_subject_cost_modifier: "Ovplyvňuje trest udelený za vyhlásenie [war|e] proti nášmu vlastnému [subject|e]." # todo: CHANGED
+ MODIFIER_TYPE_NAME_war_on_same_religion_cb_cost_modifier: "Trest za vojnu s rovnakým náboženstvom" # todo: CHANGED
+ MODIFIER_TYPE_DESC_war_on_same_religion_cb_cost_modifier: "Ovplyvňuje trest udelený za vyhlásenie [war|e] na niekoho s rovnakým [religion|e]." # todo: CHANGED
+ MODIFIER_TYPE_NAME_war_on_same_religion_no_cb_cost_modifier: "Trest za neoprávnenú vojnu proti rovnakému náboženstvu" # todo: CHANGED
+ MODIFIER_TYPE_DESC_war_on_same_religion_no_cb_cost_modifier: "Ovplyvňuje trest udelený za vyhlásenie [war|e] na niekoho s rovnakým [religion|e] bez [casus_belli|e]." # todo: CHANGED
+ MODIFIER_TYPE_NAME_war_on_different_religion_cost_modifier: "Trest za vojnu proti inému náboženstvu" # todo: CHANGED
+ MODIFIER_TYPE_DESC_war_on_different_religion_cost_modifier: "Ovplyvňuje trest udelený za vyhlásenie [war|e] na niekoho s iným [religion|e]." # todo: CHANGED
  MODIFIER_TYPE_NAME_send_gift_cost_modifier: "Náklady na poslanie daru" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_send_gift_cost_modifier: "Ovlivňuje, koľko to [costs|e] poslať dar." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_replace_rival_cost_modifier: "Náklady na výmenu rivala" # todo: NEW TRANSLATION
@@ -1450,10 +1576,14 @@
  MODIFIER_TYPE_DESC_convert_religion_cost_modifier: "Ovlivňuje, koľko to [costs|e] zmeniť [state_religion|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_policy_vote_cost_modifier: "Náklady na návrh politiky" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_policy_vote_cost_modifier: "Ovlivňuje, koľko to [costs|e] navrhnúť [policy|e] v [international_organization|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_select_omen_god_cost_modifier: "Cena za výber boha znamení" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_select_omen_god_cost_modifier: "Ovplyvňuje [costs|e] spojené s [ShowGenericActionName('select_omen_god')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_orthodox_synod_cost_modifier: "Náklady na pravoslávny synod" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_orthodox_synod_cost_modifier: "Ovlivňuje [costs|e] [ShowGenericActionName('orthodox_synod')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_periphora_cost_modifier: "Náklady na perihforu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_periphora_cost_modifier: "Ovlivňuje [costs|e] [ShowGenericActionName('periphora')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_invite_patriarch_delegation_cost_modifier: "$invite_patriarch_delegation$ náklady" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_invite_patriarch_delegation_cost_modifier: "Ovplyvňuje [costs|e] spojené s [ShowGenericActionName('invite_patriarch_delegation')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_canonize_cost_modifier: "Náklady na kanonizáciu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_canonize_cost_modifier: "Ovlivňuje [costs|e] [ShowGenericActionName('canonize')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_add_accepted_culture_cost_modifier: "Náklady na pridanie akceptovanej kultúry" # todo: NEW TRANSLATION
@@ -1473,7 +1603,9 @@
  MODIFIER_TYPE_NAME_remove_location_from_international_organization_cost_modifier: "Náklady na odstránenie lokality z medzinárodnej organizácie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_remove_location_from_international_organization_cost_modifier: "Toto ovplyvňuje [costs|e] spojené s odstránením [location|e] z [international_organization|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_small_estate_building_cost_modifier: "Náklady na výstavbu budov malého panstva" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_small_estate_building_cost_modifier: "Toto ovplyvňuje, koľko [costs|e] stojí výstavba malých [estate|e] budov." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_small_estate_building_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí postavenie malých [estate_buildings|e]." # todo: CHANGED
+ MODIFIER_TYPE_NAME_expensive_estate_building_cost_modifier: "Náklady na drahé budovy panstiev" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_expensive_estate_building_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí vybudovanie [estate_buildings|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_orthodox_monastery_building_cost_modifier: "Náklady na výstavbu pravoslávneho kláštora" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_orthodox_monastery_building_cost_modifier: "Toto ovplyvňuje, koľko [costs|e] stojí výstavba [ShowBuildingTypeName('orthodox_monastery')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_miaphysite_monastery_building_cost_modifier: "Náklady na výstavbu miáfyzitského kláštora" # todo: NEW TRANSLATION
@@ -1486,18 +1618,32 @@
  MODIFIER_TYPE_DESC_remove_lutheran_preacher_cost_modifier: "Toto ovplyvňuje, koľko [costs|e] stojí odstránenie [ShowBuildingTypeName('lutheran_preachers')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_remove_panaqa_early_cost_modifier: "Náklady na skoré odstránenie Panaqa" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_remove_panaqa_early_cost_modifier: "Toto ovplyvňuje, koľko [costs|e] stojí odstránenie [ShowBuildingTypeName('panaqa_building')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_infantry_build_cost_modifier: "$army_infantry$ Build Cost" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_infantry_build_cost_modifier: "Toto ovplyvňuje, koľko stojí [recruit|e] [ShowUnitCategoryName('army_infantry')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_infantry_reinforce_cost_modifier: "$army_infantry$ Reinforcement Cost" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_infantry_reinforce_cost_modifier: "Toto ovplyvňuje, koľko stojí [reinforce|e] [ShowUnitCategoryName('army_infantry')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_infantry_maintenance_cost_modifier: "$army_infantry$ Maintenance Cost" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_infantry_maintenance_cost_modifier: "Toto ovplyvňuje, koľko stojí [maintain|e] [ShowUnitCategoryName('army_infantry')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_cavalry_build_cost_modifier: "$army_cavalry$ Build Cost" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_cavalry_build_cost_modifier: "Toto ovplyvňuje, koľko stojí [recruit|e] [ShowUnitCategoryName('army_cavalry')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_cavalry_reinforce_cost_modifier: "$army_cavalry$ Reinforcement Cost" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_cavalry_reinforce_cost_modifier: "Toto ovplyvňuje, koľko stojí [reinforce|e] [ShowUnitCategoryName('army_cavalry')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_army_cavalry_maintenance_cost_modifier: "$army_cavalry$ Maintenance Cost" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_army_cavalry_maintenance_cost_modifier: "Toto ovplyvňuje, koľko stojí [maintain|e] [ShowUnitCategoryName('army_cavalry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_merchant_guild_chapel_price_cost_modifier: "$merchant_guild_chapel_price$ Módifikátor nákladov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_merchant_guild_chapel_price_cost_modifier: "Ovplyvňuje, koľko stojí postavenie [ShowBuildingTypeName('merchant_guild_chapel')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_infantry_build_cost_modifier: "$army_light_infantry$ náklady na výstavbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_infantry_build_cost_modifier: "Ovplyvňuje, koľko stojí [recruit|e] [ShowUnitCategoryName('army_light_infantry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_infantry_reinforce_cost_modifier: "$army_light_infantry$ náklady na posily" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_infantry_reinforce_cost_modifier: "Ovplyvňuje, koľko stojí [reinforce|e] [ShowUnitCategoryName('army_light_infantry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_infantry_maintenance_cost_modifier: "$army_light_infantry$ náklady na údržbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_infantry_maintenance_cost_modifier: "Ovplyvňuje, koľko stojí [maintain|e] [ShowUnitCategoryName('army_light_infantry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_infantry_build_cost_modifier: "$army_heavy_infantry$ náklady na výstavbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_infantry_build_cost_modifier: "Ovplyvňuje, koľko stojí [recruit|e] [ShowUnitCategoryName('army_heavy_infantry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_infantry_reinforce_cost_modifier: "$army_heavy_infantry$ náklady na posily" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_infantry_reinforce_cost_modifier: "Ovplyvňuje, koľko stojí [reinforce|e] [ShowUnitCategoryName('army_heavy_infantry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_infantry_maintenance_cost_modifier: "$army_heavy_infantry$ náklady na údržbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_infantry_maintenance_cost_modifier: "Ovplyvňuje, koľko stojí [maintain|e] [ShowUnitCategoryName('army_heavy_infantry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_cavalry_build_cost_modifier: "$army_light_cavalry$ náklady na výstavbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_cavalry_build_cost_modifier: "Ovplyvňuje, koľko stojí [recruit|e] [ShowUnitCategoryName('army_light_cavalry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_cavalry_reinforce_cost_modifier: "$army_light_cavalry$ náklady na posily" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_cavalry_reinforce_cost_modifier: "Ovplyvňuje, koľko stojí [reinforce|e] [ShowUnitCategoryName('army_light_cavalry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_light_cavalry_maintenance_cost_modifier: "$army_light_cavalry$ náklady na údržbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_light_cavalry_maintenance_cost_modifier: "Ovplyvňuje, koľko stojí [maintain|e] [ShowUnitCategoryName('army_light_cavalry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_cavalry_build_cost_modifier: "$army_heavy_cavalry$ náklady na výstavbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_cavalry_build_cost_modifier: "Ovplyvňuje, koľko stojí [recruit|e] [ShowUnitCategoryName('army_heavy_cavalry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_cavalry_reinforce_cost_modifier: "$army_heavy_cavalry$ náklady na posily" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_cavalry_reinforce_cost_modifier: "Ovplyvňuje, koľko stojí [reinforce|e] [ShowUnitCategoryName('army_heavy_cavalry')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_army_heavy_cavalry_maintenance_cost_modifier: "$army_heavy_cavalry$ náklady na údržbu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_army_heavy_cavalry_maintenance_cost_modifier: "Ovplyvňuje, koľko stojí [maintain|e] [ShowUnitCategoryName('army_heavy_cavalry')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_army_artillery_build_cost_modifier: "$army_artillery$ Build Cost" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_army_artillery_build_cost_modifier: "Toto ovplyvňuje, koľko stojí [recruit|e] [ShowUnitCategoryName('army_artillery')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_army_artillery_reinforce_cost_modifier: "$army_artillery$ Reinforcement Cost" # todo: NEW TRANSLATION
@@ -1604,24 +1750,18 @@
  MODIFIER_TYPE_DESC_cleansing_ritual_yanantin_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('cleansing_ritual_yanantin')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_religious_offering_cost_modifier: "Náklady náboženskej obetnej akcie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_religious_offering_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('religious_offering')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_pilgrimage_purity_cost_modifier: "Náklady náboženskej akcie $pilgrimage_purity$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_pilgrimage_purity_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('pilgrimage_purity')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_pilgrimage_yanantin_cost_modifier: "Náklady náboženskej akcie $pilgrimage_yanantin$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_pilgrimage_yanantin_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('pilgrimage_yanantin')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_pilgrimage_mayan_cost_modifier: "Náklady náboženskej akcie $pilgrimage_mayan$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_pilgrimage_mayan_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('pilgrimage_mayan')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_pilgrimage_action_cost_modifier: "Náklady na náboženskú akciu $pilgrimage_action$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_pilgrimage_action_cost_modifier: "Ovplyvňuje [costs|e] spojené s [ShowGenericActionName('pilgrimage_action')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_nahuatl_religious_actions_price_cost_modifier: "$nahuatl$ Módifikátor nákladov náboženských akcií" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_nahuatl_religious_actions_price_cost_modifier: "Ovplyvňuje [costs|e] [actions|e] spojených s [ShowReligionName('nahuatl')] [religion|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_inti_ceremonial_festivals_cost_modifier: "Náklady náboženskej akcie $inti_ceremonial_festivals$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_inti_ceremonial_festivals_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('inti_ceremonial_festivals')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_mayan_ceremonial_festivals_cost_modifier: "Náklady náboženskej akcie $mayan_ceremonial_festivals$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_mayan_ceremonial_festivals_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('mayan_ceremonial_festivals')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_sacrifice_noble_blood_cost_modifier: "Náklady náboženskej akcie $sacrifice_noble_blood$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_sacrifice_noble_blood_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('sacrifice_noble_blood')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_pilgrimage_piety_cost_modifier: "Náklady náboženskej akcie $pilgrimage_piety$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_pilgrimage_piety_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('pilgrimage_piety')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_change_main_school_cost_modifier: "Náklady náboženskej akcie $change_main_school$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_change_main_school_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('change_main_school')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_pilgrimage_jain_cost_modifier: "Náklady náboženskej akcie $pilgrimage_jain$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_pilgrimage_jain_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('pilgrimage_jain')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_sell_icon_cost_modifier: "Náklady akcie predaja ikony" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_sell_icon_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowCountryInteractionName('sell_icon')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_army_losses_in_war_cost_modifier: "Náklady strát armády v bitke" # todo: NEW TRANSLATION
@@ -1632,7 +1772,7 @@
  MODIFIER_TYPE_DESC_losses_to_disease_cost_modifier: "Toto ovplyvňuje [costs|e] strát [pops|e] a [armies|e] spôsobených [disease|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_damage_done_versus_heathens_modifier: "Poškodenie spôsobené proti pohanom v bitke" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_damage_done_versus_heathens_modifier: "Toto ovplyvňuje poškodenie spôsobené proti pohanským [hostile|e] [armies|e] počas [battle|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_damage_done_versus_heretics_modifier: "Poškodenie spôsobené proti heretikom v bitke" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_damage_done_versus_heretics_modifier: "Poškodenie voči kacírom v boji" # todo: CHANGED
  MODIFIER_TYPE_DESC_damage_done_versus_heretics_modifier: "Toto ovplyvňuje poškodenie spôsobené proti heretickým [hostile|e] [armies|e] počas [battle|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_get_claim_from_imperial_court_cost_modifier: "Náklady na získanie nároku z cisárskeho dvora" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_get_claim_from_imperial_court_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('get_claim_from_imperial_court')]." # todo: NEW TRANSLATION
@@ -1722,8 +1862,8 @@
  MODIFIER_TYPE_DESC_ban_exports_of_ivory: "Toto blokuje [export|e] [ShowGoodsName('ivory')] zo všetkých [markets|e], ktoré vlastní [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_ban_exports_of_fur: "Zákaz vývozu $fur$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_ban_exports_of_fur: "Toto blokuje [export|e] [ShowGoodsName('fur')] zo všetkých [markets|e], ktoré vlastní [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_ban_exports_of_lumber: "Zákaz vývozu $wood$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_ban_exports_of_lumber: "Toto blokuje [export|e] [ShowGoodsName('wood')] zo všetkých [markets|e], ktoré vlastní [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_ban_exports_of_lumber: "Zákaz exportu $lumber$" # todo: CHANGED
+ MODIFIER_TYPE_DESC_ban_exports_of_lumber: "Zablokuje [export|e] [ShowGoodsName('lumber')] zo všetkých [markets|e], ktoré vlastní [country|e]." # todo: CHANGED
  MODIFIER_TYPE_NAME_ban_exports_of_salt: "Zákaz vývozu $salt$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_ban_exports_of_salt: "Toto blokuje [export|e] [ShowGoodsName('salt')] zo všetkých [markets|e], ktoré vlastní [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_ban_exports_of_tropical_wood: "Zákaz vývozu $tropical_wood$" # todo: NEW TRANSLATION
@@ -2238,6 +2378,8 @@
  MODIFIER_TYPE_DESC_maximum_stockpile_capacity: "Toto je maximum akéhokoľvek [good|e], ktoré môže byť uložené v tomto [market|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_foreign_export_from_market_cost_modifier: "Náklady na export z trhu pre zahraničných obchodníkov" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_foreign_export_from_market_cost_modifier: "Toto ovplyvňuje náklady [export|e] z [markets|e] vlastnených [country|e] pre iné [countries|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_export_impact_on_demand: "Vplyv exportu na dopyt" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_export_impact_on_demand: "Upravuje, do akej miery prispieva dopyt [burgher_trade|e] a bežný [trade|e] k výpočtom cien na [markets|e] vlastnených týmto [country|e].\n\nVyššie hodnoty zvyšujú vplyv exportov na cenu, čím tlačia ceny nahor." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_ban_exports_of_marble: "Zákaz vývozu $marble$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_ban_exports_of_marble: "Toto blokuje [export|e] [ShowGoodsName('marble')] zo všetkých [markets|e], ktoré vlastní [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_ban_imports_of_marble: "Zákaz dovozu $marble$" # todo: NEW TRANSLATION
@@ -2508,10 +2650,10 @@
  MODIFIER_TYPE_DESC_global_trade_through_owned_territory_cost_modifier: "Toto ovplyvňuje dosah [trade_range|e] [country|e] pri cestovaní cez [location|e], ktoré [own|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_trade_embark_disembark_cost_modifier: "Náklady na nalodenie/vylodenie pri obchode" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_trade_embark_disembark_cost_modifier: "Toto ovplyvňuje používanie [trade_range|e] [country|e] pri vstupe do alebo opustení [port|e] v tejto [location|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_trade_land_movement_cost_modifier: "Dosah obchodu používaný cez súš" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_trade_land_movement_cost_modifier: "Toto ovplyvňuje dosah [trade_range|e] [country|e] pri cestovaní cez [location|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_trade_sea_movement_cost_modifier: "Dosah obchodu používaný po mori" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_trade_sea_movement_cost_modifier: "Toto ovplyvňuje dosah [trade_range|e] [country|e] pri cestovaní cez [seazone|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_trade_land_efficiency: "Efektivita pozemného obchodu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_trade_land_efficiency: "Ovplyvňuje dosah [trade_range|e] [country|e] pri cestovaní cez [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_trade_sea_efficiency: "Efektivita námorného obchodu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_trade_sea_efficiency: "Ovplyvňuje dosah [trade_range|e] [country|e] pri cestovaní cez [seazone|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_add_religious_aspect_christian_cost_modifier: "Náklady na pridanie náboženského aspektu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_add_religious_aspect_christian_cost_modifier: "Toto ovplyvňuje [costs|e] pridania [religious_aspect|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_remove_religious_aspect_christian_cost_modifier: "Náklady na odstránenie náboženského aspektu" # todo: NEW TRANSLATION
@@ -2526,6 +2668,8 @@
  MODIFIER_TYPE_DESC_demand_church_tax_price_cost_modifier: "Toto ovplyvňuje [costs|e] [ShowGenericActionName('demand_church_tax')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_blocked_from_marriage: "Zabránené manželstvo" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_blocked_from_marriage: "Toto ovplyvňuje, či sa [character|e] môže [marry|e] alebo nie." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_marriage_desirability: "Atraktivita pri sobáši" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_marriage_desirability: "Ovplyvňuje, aký žiaduci je [character|e] ako partner pre [marriage|e]. Negatívne hodnoty sťažujú ostatným [countries|e] prijatie alebo navrhnutie manželstva a znižujú [prestige|e], ktoré [country|e] [spouse|e] získa." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_blocks_privateer_raids: "Zabraňuje raziám korzárov" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_blocks_privateer_raids: "Toto znemožní [privateers|e] zotročovať ľudí v tejto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allow_privateers_slave_raid: "Korzári budú robiť razie za otrokmi" # todo: NEW TRANSLATION
@@ -2614,20 +2758,62 @@
  MODIFIER_TYPE_DESC_local_great_pestilence_impact_modifier: "Ako veľmi veľká morová pohroma postihuje [locations|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_malaria_impact_modifier: "Vplyv malárie" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_malaria_impact_modifier: "Ako veľmi epidémia malárie postihuje [locations|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_bubonic_plague_resistance_modifier: "Odolnosť proti bubonickému moru" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_bubonic_plague_resistance_modifier: "Odolnosť proti bubonickému moru v celom [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_smallpox_resistance_modifier: "Odolnosť proti pravým kiahňam" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_smallpox_resistance_modifier: "Odolnosť proti pravým kiahňam v celom [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_typhus_resistance_modifier: "Odolnosť proti týfusu" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_typhus_resistance_modifier: "Odolnosť proti týfusu v celom [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_influenza_resistance_modifier: "Odolnosť proti chrípke" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_influenza_resistance_modifier: "Odolnosť proti chrípke v celom [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_measles_resistance_modifier: "Odolnosť proti osýpkam" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_measles_resistance_modifier: "Odolnosť proti osýpkam v celom [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_great_pestilence_resistance_modifier: "Odolnosť proti veľkej morovej nákaze" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_great_pestilence_resistance_modifier: "Odolnosť proti veľkej morovej nákaze v celom [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_malaria_resistance_modifier: "Odolnosť proti malárii" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_malaria_resistance_modifier: "Odolnosť proti malárii v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_bubonic_plague_resistance_modifier: "Odolnosť proti bubonickému moru" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_bubonic_plague_resistance_modifier: "Odolnosť proti bubonickému moru v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_smallpox_resistance_modifier: "Odolnosť proti kiahňam" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_smallpox_resistance_modifier: "Odolnosť proti kiahňam v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_typhus_resistance_modifier: "Odolnosť proti týfusu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_typhus_resistance_modifier: "Odolnosť proti týfusu v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_influenza_resistance_modifier: "Odolnosť proti chrípke" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_influenza_resistance_modifier: "Odolnosť proti chrípke v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_measles_resistance_modifier: "Odolnosť proti osýpkam" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_measles_resistance_modifier: "Odolnosť proti osýpkam v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_great_pestilence_resistance_modifier: "Odolnosť proti veľkej morovej nákaze" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_great_pestilence_resistance_modifier: "Odolnosť proti veľkej morovej nákaze v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_malaria_resistance_modifier: "Odolnosť proti malárii" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_malaria_resistance_modifier: "Odolnosť proti malárii v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_bubonic_plague_resistance_modifier: "Odolnosť proti bubonickému moru" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_bubonic_plague_resistance_modifier: "Odolnosť proti bubonickému moru v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_smallpox_resistance_modifier: "Odolnosť proti kiahňam" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_smallpox_resistance_modifier: "Odolnosť proti kiahňam v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_typhus_resistance_modifier: "Odolnosť proti týfusu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_typhus_resistance_modifier: "Odolnosť proti týfusu v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_influenza_resistance_modifier: "Odolnosť proti chrípke" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_influenza_resistance_modifier: "Odolnosť proti chrípke v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_measles_resistance_modifier: "Odolnosť proti osýpkam" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_measles_resistance_modifier: "Odolnosť proti osýpkam v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_great_pestilence_resistance_modifier: "Odolnosť proti veľkej morovej nákaze" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_great_pestilence_resistance_modifier: "Odolnosť proti veľkej morovej nákaze v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_malaria_resistance_modifier: "Odolnosť proti malárii" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_malaria_resistance_modifier: "Odolnosť proti malárii v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_bubonic_plague_growth_modifier: "Rast bubonického moru" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_bubonic_plague_growth_modifier: "Rast bubonického moru v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_smallpox_growth_modifier: "Rast kiahní" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_smallpox_growth_modifier: "Rast kiahní v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_typhus_growth_modifier: "Rast týfusu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_typhus_growth_modifier: "Rast týfusu v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_influenza_growth_modifier: "Rast chrípky" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_influenza_growth_modifier: "Rast chrípky v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_measles_growth_modifier: "Rast osýpok" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_measles_growth_modifier: "Rast osýpok v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_great_pestilence_growth_modifier: "Rast veľkej morovej nákazy" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_great_pestilence_growth_modifier: "Rast veľkej morovej nákazy v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_malaria_growth_modifier: "Rast malárie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_malaria_growth_modifier: "Rast malárie v celom [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_bubonic_plague_growth_modifier: "Rast bubonického moru" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_bubonic_plague_growth_modifier: "Rast bubonického moru v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_smallpox_growth_modifier: "Rast kiahní" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_smallpox_growth_modifier: "Rast kiahní v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_typhus_growth_modifier: "Rast týfusu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_typhus_growth_modifier: "Rast týfusu v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_influenza_growth_modifier: "Rast chrípky" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_influenza_growth_modifier: "Rast chrípky v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_measles_growth_modifier: "Rast osýpok" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_measles_growth_modifier: "Rast osýpok v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_great_pestilence_growth_modifier: "Rast veľkej morovej nákazy" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_great_pestilence_growth_modifier: "Rast veľkej morovej nákazy v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_malaria_growth_modifier: "Rast malárie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_malaria_growth_modifier: "Rast malárie v [location|e]." # todo: NEW TRANSLATION
  bubonic_plague_location_modifier: "Bubonický mor v [location|e]" # todo: NEW TRANSLATION
  typhus_location_modifier: "Týfus v [location|e]" # todo: NEW TRANSLATION
  malaria_location_modifier: "Malária v [location|e]" # todo: NEW TRANSLATION
@@ -2729,6 +2915,8 @@
  MODIFIER_TYPE_DESC_allowed_to_become_shogun: "Toto umožňuje tejto postave stať sa vodcom $JAPANESE_SHOGUNATE_LEADER_MALE$." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_favoring_buddhism: "Umožňuje $game_concept_sects$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_favoring_buddhism: "Umožňuje interakciu s [ShowReligionAdjective('mahayana')] [sects|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_coalition_strength_tolerance: "Tolerance sily koalície" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_coalition_strength_tolerance: "Koľko vyššej sily v potenciálnej koalícii v porovnaní s ich vlastnou je vodca pripravený tolerovať pri obsadzovaní územia v [war|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_korean_gunnery_modification_cost_modifier: "Náklady na úpravu kórejského delostrelectva" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_korean_gunnery_modification_cost_modifier: "Ovplyvňuje, koľko to [costs|e] stojí postaviť [ShowBuildingTypeName('korean_gunnery_land_defense')] a [ShowBuildingTypeName('korean_gunnery_coastal_defense')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_n_panokseon_build_cost_modifier: "$n_panokseon$ Náklady na stavbu" # todo: NEW TRANSLATION
@@ -2787,7 +2975,7 @@
  MODIFIER_TYPE_DESC_peace_offer_negotiation_power: "To zvyšuje percento War Score, ktoré národ získa v mierovej dohode v porovnaní s ostatnými krajinami." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_language_change_threshold_modifier: "Modifikátor prahu zmeny jazyka" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_language_change_threshold_modifier: "Toto ovplyvňuje, o koľko silnejší musí byť jazyk, aby bol považovaný za kandidáta na dvorný alebo liturgický jazyk." # todo: CHANGED
- MODIFIER_TYPE_NAME_can_propose_papal_bulls: "Môže navrhovať pápežské buly" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_can_propose_papal_bulls: "Môže navrhnúť pápežské bully" # todo: CHANGED
  MODIFIER_TYPE_DESC_can_propose_papal_bulls: "Toto umožňuje [country|e] navrhnúť [papal_bulls|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_enact_papal_bull_cost_modifier: "Náklady na schválenie pápežskej buly" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_enact_papal_bull_cost_modifier: "Ovplyvňuje [costs|e] schválenia [papal_bull|e]." # todo: NEW TRANSLATION
@@ -2842,9 +3030,155 @@
  MODIFIER_TYPE_NAME_treasure_voyage_cargo_size_modifier: "Modifikátor veľkosti nákladu pokladnej plavby" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_treasure_voyage_cargo_size_modifier: "Upravuje množstvo [gold|e], ktoré môže byť odoslané cez [ShowGenericActionName('start_a_treasure_voyage')] [action|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_eunuch_power: "Modifikátor moci eunucha" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_eunuch_power: "Upravuje [modifiers|e] poskytované [ShowGovernmentReformName('empower_the_eunuchs')] [government_reform|e]. Získavanie pre $MODIFIER_TYPE_NAME_country_cabinet_efficiency$ je lineárne a zisk pre $MODIFIER_TYPE_NAME_court_spending_cost$ je exponenciálny." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_global_pop_silver_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('silver')]" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_global_pop_silver_demand: "Upravuje [pop_needs|e] [ShowGoodsName('silver')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_eunuch_power: "Toto upravuje [modifiers|e] udelené [ShowGovernmentReformName('empower_the_eunuchs')] [government_reform|e]. Zisk pre $MODIFIER_TYPE_NAME_country_cabinet_efficiency$ je lineárny a zisk pre $MODIFIER_TYPE_NAME_court_spending_cost_modifier$ je exponenciálny." # todo: CHANGED
+ MODIFIER_TYPE_NAME_global_fine_cloth_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('fine_cloth')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_fine_cloth_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('fine_cloth')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_paper_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('paper')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_paper_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('paper')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_books_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('books')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_books_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('books')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_livestock_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('livestock')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_livestock_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('livestock')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_silver_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('silver')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_silver_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('silver')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_wine_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('wine')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_wine_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('wine')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_liquor_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('liquor')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_liquor_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('liquor')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_beer_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('beer')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_beer_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('beer')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_fur_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('fur')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_fur_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('fur')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_beeswax_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('beeswax')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_beeswax_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('beeswax')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_lumber_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('lumber')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_lumber_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('lumber')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_coal_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('coal')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_coal_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('coal')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_pearls_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('pearls')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_pearls_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('pearls')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_amber_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('amber')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_amber_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('amber')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_goods_gold_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('goods_gold')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_goods_gold_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('goods_gold')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_ivory_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('ivory')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_ivory_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('ivory')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_incense_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('incense')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_incense_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('incense')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_gems_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('gems')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_gems_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('gems')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_marble_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('marble')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_marble_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('marble')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_horses_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('horses')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_horses_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('horses')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_elephants_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('elephants')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_elephants_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('elephants')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_medicaments_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('medicaments')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_medicaments_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('medicaments')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_masonry_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('masonry')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_masonry_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('masonry')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_mercury_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('mercury')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_mercury_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('mercury')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_tools_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('tools')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_tools_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('tools')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_glass_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('glass')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_glass_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('glass')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_pottery_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('pottery')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_pottery_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('pottery')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_furniture_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('furniture')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_furniture_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('furniture')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_porcelain_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('porcelain')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_porcelain_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('porcelain')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_lacquerware_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('lacquerware')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_lacquerware_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('lacquerware')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_jewelry_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('jewelry')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_jewelry_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('jewelry')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_cloth_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('cloth')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_cloth_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('cloth')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_weaponry_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('weaponry')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_weaponry_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('weaponry')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_firearms_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('firearms')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_firearms_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('firearms')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_salt_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('salt')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_salt_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('salt')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_sugar_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('sugar')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_sugar_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('sugar')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_tobacco_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('tobacco')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_tobacco_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('tobacco')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_tea_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('tea')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_tea_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('tea')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_cocoa_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('cocoa')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_cocoa_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('cocoa')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_coffee_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('coffee')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_coffee_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('coffee')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_saffron_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('saffron')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_saffron_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('saffron')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_pepper_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('pepper')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_pepper_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('pepper')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_cloves_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('cloves')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_cloves_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('cloves')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_chili_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('chili')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_chili_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('chili')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_potato_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('potato')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_potato_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('potato')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_maize_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('maize')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_maize_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('maize')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_millet_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('millet')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_millet_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('millet')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_wild_game_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('wild_game')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_wild_game_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('wild_game')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_fish_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('fish')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_fish_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('fish')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_legumes_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('legumes')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_legumes_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('legumes')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_olives_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('olives')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_olives_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('olives')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_wheat_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('wheat')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_wheat_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('wheat')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_fruit_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('fruit')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_fruit_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('fruit')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_rice_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('rice')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_rice_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('rice')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_clay_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('clay')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_clay_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('clay')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_sand_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('sand')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_sand_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('sand')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_iron_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('iron')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_iron_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('iron')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_copper_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('copper')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_copper_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('copper')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_stone_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('stone')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_stone_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('stone')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_tin_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('tin')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_tin_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('tin')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_lead_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('lead')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_lead_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('lead')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_silk_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('silk')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_silk_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('silk')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_dyes_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('dyes')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_dyes_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('dyes')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_fiber_crops_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('fiber_crops')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_fiber_crops_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('fiber_crops')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_saltpeter_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('saltpeter')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_saltpeter_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('saltpeter')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_alum_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('alum')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_alum_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('alum')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_cotton_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('cotton')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_cotton_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('cotton')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_tar_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('tar')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_tar_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('tar')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_naval_supplies_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('naval_supplies')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_naval_supplies_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('naval_supplies')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_cannons_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('cannons')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_cannons_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('cannons')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_steel_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('steel')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_steel_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('steel')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_leather_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('leather')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_leather_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('leather')] [produced_good|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_wool_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('wool')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_wool_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('wool')] [raw_material|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_slaves_goods_pop_demand: "Globálny dopyt po [ShowGoodsNameWithNoTooltip('slaves_goods')]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_slaves_goods_pop_demand: "Upravuje [pop_needs|e] [ShowGoodsName('slaves_goods')] [raw_material|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_enables_german_migration: "Povoľuje nemecké migračné udalosti" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_enables_german_migration: "Umožňuje spúšťať [events|e] migrácie [pops|e] z [ShowCultureGroupName('german_group')] do našich [locations|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_german_migration_attraction_modifier: "Modifikátor príťažlivosti pre nemeckú migráciu" # todo: NEW TRANSLATION
@@ -2879,13 +3213,13 @@
  MODIFIER_TYPE_DESC_subjugation_preference_modifier: "Toto upravuje, ako pravdepodobné je, že AI [country|e] podmaní [countries|e] diplomaticky namiesto vyhlásenia [war|e]." # todo: CHANGED
  MODIFIER_TYPE_NAME_ai_require_cb_for_war: "AI vyžaduje casus belli" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_ai_require_cb_for_war: "Určuje, či AI krajiny budú potrebovať [casus_belli|e] na vyhlásenie vojny alebo nie." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_ai_opinion_bias: "Predpojatosť názoru AI" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_ai_opinion_bias: "Predpojatosť hodnotenia AI" # todo: CHANGED
  MODIFIER_TYPE_DESC_ai_opinion_bias: "Ovplyvňuje prah [opinion|e], ktorý bude AI [country|e] brať do úvahy pri výbere cieľa pre [war|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_ai_stability_target_modifier: "Cieľ stability pre AI" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_ai_stability_target_modifier: "Nastavuje minimálny cieľ stability, ktorý sa AI bude snažiť dosiahnuť a pod ktorý nepôjde." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_ai_government_power_target_modifier: "Cieľ vládnej moci pre AI" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_ai_government_power_target_modifier: "Nastavuje minimálny cieľ vládnej moci, ktorý sa AI bude snažiť dosiahnuť a pod ktorý nepôjde." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_ai_force_annexation_modifier: "Modifikátor núteného anektovania AI" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_ai_force_annexation_modifier: "Módifikátor nútenej anexie AI" # todo: CHANGED
  MODIFIER_TYPE_DESC_ai_force_annexation_modifier: "Tento modifikátor núti AI krajiny anektovať svojich subjektov, keď je to možné." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_expected_warscore_modifier: "Modifikátor očakávaného vojnového skóre" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_expected_warscore_modifier: "Upravuje, koľko očakávame získať vo vojne." # todo: NEW TRANSLATION
@@ -2981,6 +3315,8 @@
  MODIFIER_TYPE_DESC_allow_thema_headquarters: "Umožňuje nám stavať [ShowBuildingTypeName('thema_headquarters')] [building|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_num_of_varangian_units: "Počet Varjag jednotiek" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_num_of_varangian_units: "Ovplyvňuje, koľko [ShowUnitDefinitionName('a_varangians')] [units|e] môžeme mať súčasne." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_num_of_legionaries_modifier: "Módifikátor počtu legionárov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_num_of_legionaries_modifier: "Ovplyvňuje, koľko Legionárskych [regiments|e] môžeme mať naraz." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_can_use_council_of_three_lands_modifier: "Povoľuje Radu troch krajín" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_can_use_council_of_three_lands_modifier: "Umožňuje nám použiť [ShowPolicyName('council_of_three_lands_policy')] [policy|e], ktorá je súčasťou [ShowLawName('inquisition_law')] [law|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_character_mourning_modifier: "Smútok" # todo: NEW TRANSLATION
@@ -3027,8 +3363,8 @@
  MODIFIER_TYPE_DESC_rtr_appease_the_court_price_cost_modifier: "Ovplyvňuje [costs|e] [ShowGenericActionName('rtr_appease_the_court')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_rtr_rein_in_area_price_cost_modifier: "Cena [ShowGenericActionNameWithNoTooltip('rtr_rein_in_area')]" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_rtr_rein_in_area_price_cost_modifier: "Ovplyvňuje [costs|e] [ShowGenericActionName('rtr_rein_in_area')]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_rtr_demand_annexation_price_cost_modifier: "[ShowGenericActionNameWithNoTooltip('rtr_demand_annexation')] – náklady" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_rtr_demand_annexation_price_cost_modifier: "Ovplyvňuje [costs|e] pre [ShowGenericActionName('rtr_demand_annexation')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_rtr_demand_annexation_price_cost_modifier: "[ShowCountryInteractionNameWithNoTooltip('rtr_demand_annexation')] Náklady" # todo: CHANGED
+ MODIFIER_TYPE_DESC_rtr_demand_annexation_price_cost_modifier: "Ovplyvňuje [costs|e] [ShowCountryInteractionName('rtr_demand_annexation')]." # todo: CHANGED
  MODIFIER_TYPE_NAME_change_employment_system_cost_modifier: "Cena [ShowGenericActionNameWithNoTooltip('change_employment_system')]" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_change_employment_system_cost_modifier: "Ovplyvňuje [costs|e] [ShowGenericActionName('change_employment_system')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_restrict_peranakan_trading_rights_price_cost_modifier: "Cena [ShowGenericActionNameWithNoTooltip('restrict_peranakan_trading_rights')]" # todo: NEW TRANSLATION
@@ -3119,6 +3455,8 @@
  MODIFIER_TYPE_DESC_wotr_action_price_cost_modifier: "Ovplyvňuje [costs|e] [actions|e] v [ShowDisasterName('war_of_the_roses')] [disaster|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_peasants_war_actions_price_cost_modifier: "Modifikátor ceny $peasants_war_actions_price$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_peasants_war_actions_price_cost_modifier: "Ovplyvňuje [costs|e] [actions|e] v [ShowDisasterName('peasants_war')] [disaster|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_rise_of_the_szlachta_cost_modifier: "$rise_of_the_szlachta$ Módifikátor nákladov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_rise_of_the_szlachta_cost_modifier: "Ovplyvňuje [costs|e] [actions|e] spojených s [ShowDisasterName('rise_of_the_szlachta')] [disaster|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_provoke_rebels_price_cost_modifier: "$provoke_rebels_price$ – modifikátor nákladov" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_provoke_rebels_price_cost_modifier: "Ovplyvňuje [costs|e] pre [ShowGenericActionName('provoke_rebels')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_seek_relations_with_the_byzantines_price_cost_modifier: "Modifikátor nákladov na nadviazanie vzťahov s Byzantíncami" # todo: NEW TRANSLATION
@@ -3267,6 +3605,8 @@
  MODIFIER_TYPE_DESC_can_build_kurmina_headquarter: "Umožňuje výstavbu [ShowBuildingTypeName('kurmina_headquarter')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_christian_tenet_price_cost_modifier: "Náklady na kresťanský tenet" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_christian_tenet_price_cost_modifier: "Ovplyvňuje [costs|e] implementácie kresťanského tenetu v [autocephalous_patriarchates|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_jurchen_confederation_law_price_cost_modifier: "Jurchen Confederation Law Cost" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_jurchen_confederation_law_price_cost_modifier: "Ovplyvňuje [costs|e] schválenia [law|e] v [ShowInternationalOrganizationType('jurchen_confederation')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allow_tributary_subject: "Povoliť [ShowSubjectTypeNameWithNoTooltip('tributary')] subjekty" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_allow_tributary_subject: "Toto umožňuje [country|e] mať [ShowSubjectTypeName('tributary')] [subjects|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_smuggler_cove_price_cost_modifier: "Náklady na výstavbu $smuggler_cove$" # todo: NEW TRANSLATION
@@ -3309,6 +3649,8 @@
  MODIFIER_TYPE_DESC_migrate_to_new_waters_cost_modifier: "Ovplyvňuje [costs|e] migrácie do nových vôd." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_slave_market_max_level: "$slave_market$ Maximálna úroveň" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_slave_market_max_level: "Mení, koľko úrovní môže mať [ShowBuildingTypeName('slave_market')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_aqueduct_system_max_level: "$aqueduct_system$ Max Level" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_aqueduct_system_max_level: "Upravuje, koľko úrovní môže mať [ShowBuildingTypeName('aqueduct_system')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allow_diplomacy_force_embargo: "Vynútiť embargo" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_allow_diplomacy_force_embargo: "Umožňuje vynútiť [ShowRelationTypeName('embargo_nation')] jedného [country|e] voči inému štátu." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_allow_cabinet_naval_focus: "$cab_naval_focus$" # todo: NEW TRANSLATION
@@ -3673,6 +4015,8 @@
  MODIFIER_TYPE_DESC_allow_rgo_slave_demand: "Toto nám umožňuje používať [ShowPopTypeName('slaves')] pre [rgo|e], okrem [ShowPopTypeName('laborers')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_occupation_time: "Doba obsadzovania" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_occupation_time: "Toto ovplyvňuje, ako rýchlo sa oblieha [location|e] bez [fortifications|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_max_siege_memory: "Maximálny postup obliehania" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_max_siege_memory: "Upravuje maximálne množstvo [siege|e] postupu, ktoré sa môže nahromadiť proti tomuto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_tribesmen_max_literacy: "Lokálna maximálna gramotnosť pre $tribesmen$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_local_tribesmen_max_literacy: "Toto ovplyvňuje [literacy|e] pre všetkých [ShowPopTypeName('tribesmen')] v tejto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_global_tribesmen_max_literacy: "Maximálna gramotnosť pre $tribesmen$" # todo: NEW TRANSLATION
@@ -3863,6 +4207,8 @@
  MODIFIER_TYPE_DESC_create_colonial_federation_cost_modifier: "Ovplyvňuje [costs|e] [ShowGenericActionName('create_colonial_federation')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_disallows_female_rulers: "Zakazuje ženských vládcov" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_disallows_female_rulers: "Toto zakazuje akýmkoľvek potenciálnym ženským [rulers|e] alebo [heirs|e] uplatniť sa." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_byz_born_in_the_purple: "Narodený v purpurovom" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_byz_born_in_the_purple: "Postava, ktorá sa narodila, keď jej rodič bol [ruler|e] [GetCountry('BYZ').GetLongName], je #italic Porphyrogenitos#!, čo znamená, že sa doslova narodila v purpurovom zariadení vnútri cisárskeho paláca. To jej dáva legitimitu a prestíž medzi byzantskou šľachtou a mierne jej pomáha pri [ShowHeirSelectionName('byzantine_succession')] [heir_selection|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_diplomatic_upkeep_modifier: "Modifikátor diplomatických nákladov" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_diplomatic_upkeep_modifier: "Upravuje, koľko by krajina stála na [diplomatic_upkeep|e] pre jej [overlord|e], keby bola [subject|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_building_owner_overlord_maritime_presence: "Námorná prítomnosť pre zvrchovateľa" # todo: NEW TRANSLATION
@@ -3887,8 +4233,12 @@
  MODIFIER_TYPE_DESC_country_bans_saffron_shirts: "Toto bráni našim [pops|e] s [ShowLanguageName('gaelic_language')] [language|e] alebo [ShowCultureGroupName('hibernian_group')] [culture_group|e] nosiť #italic léine chróich#! tuniky v štýle [ShowCultureGroupName('celtic_group')], čo znižuje [demand|e] po [ShowGoodsName('saffron')] na ich [market|e]. V oblečení ako my budú vyzerať oveľa civilizovanejšie." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_country_can_use_lordship_of_ireland_cb: "Môže použiť [GetUniqueInternationalOrganization('lordship_of_ireland').GetNameWithNoTooltip] Casus Belli" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_country_can_use_lordship_of_ireland_cb: "Umožňuje krajine v [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] použiť [ShowGenericActionName('lordship_of_ireland_casus_belli')] na vytvorenie [ShowCasusBelliName('cb_subjugation')] [casus_belli|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_country_marriage_banned: "Manželstvo zakázané" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_country_marriage_banned: "Zabraňuje štátu vykonávať [royal_marriages|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_country_celtic_marriage_banned: "Zakázané keltské manželstvá" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_country_celtic_marriage_banned: "Zabraňuje [characters|e] v krajine [marrying|e] [ShowCultureGroupName('celtic_group')] $game_concept_characters$." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_num_of_cataphracts_modifier: "Módifikátor počtu kataphraktov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_num_of_cataphracts_modifier: "Ovplyvňuje, koľko [regiments|e] kataphraktov môžeme mať naraz." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_lordship_of_ireland_casus_belli_cost_modifier: "[ShowGenericActionNameWithNoTooltip('lordship_of_ireland_casus_belli')] Náklady" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_lordship_of_ireland_casus_belli_cost_modifier: "Ovplyvňuje [costs|e] [ShowGenericActionName('lordship_of_ireland_casus_belli')] v [GetUniqueInternationalOrganization('lordship_of_ireland').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_lordship_of_ireland_invite_planters_cost_modifier: "[ShowGenericActionNameWithNoTooltip('lordship_of_ireland_invite_planters')] Náklady" # todo: NEW TRANSLATION
@@ -3899,8 +4249,8 @@
  MODIFIER_TYPE_DESC_forbid_multiple_policies_vote: "Zabraňuje [international_organization|e] mať k dispozícii viac než navrhovanú a aktuálnu sadu [policies|e] pre [ShowResolutionName('policy_vote')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_change_government_type_price_cost_modifier: "$change_government_type_price$ Cost Modifier" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_change_government_type_price_cost_modifier: "Ovplyvňuje [costs|e] zmeny nášho [government_type|e] cez [actions|e] v $lateralview_form_new_country_entry_name$."" # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_union_allowed_enforce_peace: "Povoliť $subject_enforce_peace$ v $union$" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_union_allowed_enforce_peace: "Umožňuje [ShowSpecialStatusName('senior_partner')] použiť [ShowCountryInteractionName('subject_enforce_peace')] [diplomatic_action|e] na [ShowSpecialStatusNamePlural('junior_partner')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_union_allowed_enforce_peace: "Povoliť $union_enforce_peace$ v $union$" # todo: CHANGED
+ MODIFIER_TYPE_DESC_union_allowed_enforce_peace: "Umožňuje [ShowSpecialStatusName('senior_partner')] použiť [ShowCountryInteractionName('union_enforce_peace')] [diplomatic_action|e] na [ShowSpecialStatusNamePlural('junior_partner')]." # todo: CHANGED
  MODIFIER_TYPE_NAME_union_unlock_rein_in_junior_diplomacy: "Odomknúť $rein_in_junior_diplomacy$" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_union_unlock_rein_in_junior_diplomacy: "Umožňuje [ShowSpecialStatusName('senior_partner')] použiť [ShowRelationTypeName('rein_in_junior_diplomacy')] [relation_type|e] na [ShowSpecialStatusNamePlural('junior_partner')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_unlock_prikazi_reform_cabinet_actions: "Odomknúť $prikazi_reform$ [cabinet_actions|e]" # todo: NEW TRANSLATION
@@ -4043,7 +4393,7 @@
  MODIFIER_TYPE_DESC_maize_impacts_inflation: "Určuje, ako výroba [ShowGoodsName('maize')] ovplyvňuje [inflation|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_rice_impacts_inflation: "Vplyv ryže na infláciu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_rice_impacts_inflation: "Určuje, ako výroba [ShowGoodsName('rice')] ovplyvňuje [inflation|e] v [country|e]." # todo: NEW TRANSLATION
- MODIFIER_TYPE_NAME_millet_impacts_inflation: "Vplyv pšenovca na infláciu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_millet_impacts_inflation: "$millet$ ovplyvňuje infláciu" # todo: CHANGED
  MODIFIER_TYPE_DESC_millet_impacts_inflation: "Určuje, ako výroba [ShowGoodsName('millet')] ovplyvňuje [inflation|e] v [country|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_legumes_impacts_inflation: "Vplyv strukovín na infláciu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_legumes_impacts_inflation: "Určuje, ako výroba [ShowGoodsName('legumes')] ovplyvňuje [inflation|e] v [country|e]." # todo: NEW TRANSLATION
@@ -4210,7 +4560,9 @@
  MODIFIER_TYPE_NAME_global_food_decay: "Strata potravín" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_global_food_decay: "Ovplyvňuje, koľko uložených [food|e] sa stratí každý mesiac." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_local_food_decay: "Strata potravín" # todo: NEW TRANSLATION
- MODIFIER_TYPE_DESC_local_food_decay: "Ovplyvňuje, koľko uložených [food|e] sa stratí každý mesiac v tejto [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_food_decay: "Ovplyvňuje, koľko uskladneného [food|e] z [food_stockpile|e] [province|e] sa každý mesiac stratí." # todo: CHANGED
+ MODIFIER_TYPE_NAME_local_food_decay_modifier: "Znehodnocovanie potravín" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_food_decay_modifier: "Násobiteľ ovplyvňujúci, koľko uskladneného [food|e] sa každý mesiac stratí v tomto [location|e]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_flatland_proximity_impact: "Vplyv proximy cez rovinu" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_flatland_proximity_impact: "Ovplyvňuje náklady [proximity|e] pri prechode cez [ShowTopographyName('flatland')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_mountains_proximity_impact: "Vplyv proximy cez hory" # todo: NEW TRANSLATION
@@ -4255,3 +4607,91 @@
  MODIFIER_TYPE_DESC_mountain_wasteland_proximity_impact: "Ovplyvňuje náklady [proximity|e] pri prechode cez [ShowTopographyName('mountain_wasteland')]." # todo: NEW TRANSLATION
  MODIFIER_TYPE_NAME_ocean_wasteland_proximity_impact: "Vplyv proximy cez step v oceáne" # todo: NEW TRANSLATION
  MODIFIER_TYPE_DESC_ocean_wasteland_proximity_impact: "Ovplyvňuje náklady [proximity|e] pri prechode cez [ShowTopographyName('ocean_wasteland')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_bureaucracy_implementation_cost_modifier: "Módifikátor nákladov na zavedenie byrokracie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_bureaucracy_implementation_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí pridať [bureaucracy|e] do vášho [government|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_bureaucracy_removal_cost_modifier: "Módifikátor nákladov na odstránenie byrokracie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_bureaucracy_removal_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí odstrániť [bureaucracy|e] z vášho [government|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_bureaucracy_maintenance_cost_modifier: "Módifikátor nákladov na udržiavanie byrokracie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_bureaucracy_maintenance_cost_modifier: "Ovplyvňuje, koľko [costs|e] stojí udržiavať [bureaucracy|e] vo vašom [government|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_bureaucracy_entrenchment_speed_modifier: "Módifikátor rýchlosti zakorenenia byrokracie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_bureaucracy_entrenchment_speed_modifier: "Ovplyvňuje, ako rýchlo sa [bureaucracy|e] stane [entrenched|e] vo vašom [government|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_max_bureaucracy_slots: "Maximálny počet slotov byrokracie" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_max_bureaucracy_slots: "Ovplyvňuje, koľko [bureaucracies|e] môžete pridať do vášho [government|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_allow_bureaucracy: "Povoliť byrokraciu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_allow_bureaucracy: "Umožňuje [government|e] mať [bureaucracies|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_country_allow_canonization: "Povoliť $game_concept_canonization$" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_country_allow_canonization: "Umožňuje [country|e] [canonize|e] mŕtvych [rulers|e], ak ich [religion|e] má $game_concept_saints$." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_estate_satisfaction_from_legitimacy: "Rovnováha spokojnosti stavov z legitimity" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_estate_satisfaction_from_legitimacy: "Ovplyvňuje [estate_satisfaction_equilibrium|e] všetkých [estates|e] v [country|e] na základe našej [legitimacy|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_may_hire_eunuch_advisors: "Môže zamestnať eunuchov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_may_hire_eunuch_advisors: "Umožňuje malú pravdepodobnosť, že sa cez [ShowGenericActionName('hire_advisor')] [action|e] v karte Kabinet objaví postava eunucha. Eunuchi majú [ShowTraitName('castrated')] [trait|e] a vyššie priemerné [abilities|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_train_general_ability: "Zvýšená schopnosť generála" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_train_general_ability: "Tento [modifier|e] zvyšuje každú [ability|e] [general|e], ktorého získame cez [ShowGenericActionName('train_general')] [action|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_train_admiral_ability: "Zvýšená schopnosť admirála" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_train_admiral_ability: "Tento [modifier|e] zvyšuje každú [ability|e] [admiral|e], ktorého získame cez [ShowGenericActionName('train_admiral')] [action|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_frankokratia_vassal_state_may_declare_war: "Povolené [wars|e] v rámci Frankokratia." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_frankokratia_vassal_state_may_declare_war: "Umožňuje vyhlasovať [wars|e] ako [ShowSubjectTypeName('vassal')] [subject|e] proti národom, ktoré držia územia v [ShowScriptedGeographyName('frankokratia_geography')]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_lat_access_to_latin_reintegration_cabinet: "Reintegrácia provincie [cabinet_action|e]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_lat_access_to_latin_reintegration_cabinet: "Umožňuje [ShowCabinetActionName('lat_reintegrate_province')] [cabinet_action|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_lat_access_to_reconquest_cb: "Môže vytvoriť Latin Reconquest [casus_belli|e]" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_lat_access_to_reconquest_cb: "Môže vytvoriť [ShowCasusBelliName('cb_lat_reconquest')] Casus Belli" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_roman_culture_movement_resistance_modifier: "Globálny [ShowMovementDefinitionNameWithNoTooltip('roman_culture_movement')] Módifikátor odolnosti pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_roman_culture_movement_resistance_modifier: "Miera odporu voči [ShowMovementDefinitionName('roman_culture_movement')] [movement|e] všade." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_roman_culture_movement_resistance_modifier: "Národný [ShowMovementDefinitionNameWithNoTooltip('roman_culture_movement')] Módifikátor odolnosti pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_roman_culture_movement_resistance_modifier: "Koľko odporu majú [locations|e] vlastnené [country|e] voči [ShowMovementDefinitionName('roman_culture_movement')] [movement|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_roman_culture_movement_resistance_modifier: "Lokálny [ShowMovementDefinitionNameWithNoTooltip('roman_culture_movement')] Módifikátor odolnosti pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_roman_culture_movement_resistance_modifier: "Koľko odporu má [location|e] voči [ShowMovementDefinitionName('roman_culture_movement')] [movement|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_roman_culture_movement_growth_modifier: "Globálny [ShowMovementDefinitionNameWithNoTooltip('roman_culture_movement')] Módifikátor rastu pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_roman_culture_movement_growth_modifier: "Ako veľmi rastie [ShowMovementDefinitionName('roman_culture_movement')] [movement|e] vo všetkých [locations|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_roman_culture_movement_growth_modifier: "Národný [ShowMovementDefinitionNameWithNoTooltip('roman_culture_movement')] Módifikátor rastu pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_roman_culture_movement_growth_modifier: "Ako veľmi rastie [ShowMovementDefinitionName('roman_culture_movement')] [movement|e] v [locations|e] vlastnených [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_roman_culture_movement_growth_modifier: "Lokálny [ShowMovementDefinitionNameWithNoTooltip('roman_culture_movement')] Módifikátor rastu pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_roman_culture_movement_growth_modifier: "Ako veľmi rastie [ShowMovementDefinitionName('roman_culture_movement')] [movement|e] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_allow_roman_movement: "Povoliť [ShowMovementDefinitionNameWithNoTooltip('roman_culture_movement')] pohyb" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_allow_roman_movement: "Umožňuje [ShowMovementDefinitionName('roman_culture_movement')] [movement|e] vzniknúť." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_hellenism_religion_movement_impact_modifier: "[ShowMovementDefinitionNameWithNoTooltip('hellenism_religion_movement')] Módifikátor vplyvu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_hellenism_religion_movement_impact_modifier: "Ako veľmi [ShowMovementDefinitionName('hellenism_religion_movement')] [movement|e] ovplyvňuje [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_hellenism_religion_movement_resistance_modifier: "Globálny [ShowMovementDefinitionNameWithNoTooltip('hellenism_religion_movement')] Módifikátor odolnosti pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_hellenism_religion_movement_resistance_modifier: "Miera odporu voči [ShowMovementDefinitionName('hellenism_religion_movement')] [movement|e] všade." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_hellenism_religion_movement_resistance_modifier: "Národný [ShowMovementDefinitionNameWithNoTooltip('hellenism_religion_movement')] Módifikátor odolnosti pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_hellenism_religion_movement_resistance_modifier: "Koľko odporu majú [locations|e] vlastnené [country|e] voči [ShowMovementDefinitionName('hellenism_religion_movement')] [movement|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_hellenism_religion_movement_resistance_modifier: "Lokálny [ShowMovementDefinitionNameWithNoTooltip('hellenism_religion_movement')] Módifikátor odolnosti pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_hellenism_religion_movement_resistance_modifier: "Koľko odporu má [location|e] voči [ShowMovementDefinitionName('hellenism_religion_movement')] [movement|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_global_hellenism_religion_movement_growth_modifier: "Globálny [ShowMovementDefinitionNameWithNoTooltip('hellenism_religion_movement')] Módifikátor rastu pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_global_hellenism_religion_movement_growth_modifier: "Ako veľmi rastie [ShowMovementDefinitionName('hellenism_religion_movement')] [movement|e] vo všetkých [locations|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_national_hellenism_religion_movement_growth_modifier: "Národný [ShowMovementDefinitionNameWithNoTooltip('hellenism_religion_movement')] Módifikátor rastu pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_national_hellenism_religion_movement_growth_modifier: "Ako veľmi rastie [ShowMovementDefinitionName('hellenism_religion_movement')] [movement|e] v [locations|e] vlastnených [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_local_hellenism_religion_movement_growth_modifier: "Lokálny [ShowMovementDefinitionNameWithNoTooltip('hellenism_religion_movement')] Módifikátor rastu pohybu" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_local_hellenism_religion_movement_growth_modifier: "Ako veľmi rastie [ShowMovementDefinitionName('hellenism_religion_movement')] [movement|e] v [location|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_contact_patriarch_of_constantinople_cost_modifier: "Módifikátor nákladov na kontaktovanie patriarchu v Konštantínopole" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_contact_patriarch_of_constantinople_cost_modifier: "Ovplyvňuje [cost|e] kontaktovania patriarchu v Konštantínopole." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_monthly_nahualt_reform_progress: "Mesačný pokrok reformy Nahuatl" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_monthly_nahualt_reform_progress: "Ovplyvňuje rýchlosť náboženských reforiem pre [country|e], ktorý nasleduje [ShowReligionAdjective('nahuatl')] [religion|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_rise_of_the_szlachta_actions_price_cost_modifier: "$rise_of_the_szlachta_actions_price$ Módifikátor nákladov" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_rise_of_the_szlachta_actions_price_cost_modifier: "Ovplyvňuje [cost|e] [actions|e] spojených s [ShowDisasterName('rise_of_the_szlachta')] [disaster|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_trust_recovery: "[trust|e] Módifikátor obnovy" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_trust_recovery: "Ovplyvňuje, ako rýchlo sa [trust|e] obnovuje, keď je pod rovnováhou." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_trust_decay: "[trust|e] Módifikátor úbytku" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_trust_decay: "Ovplyvňuje, ako rýchlo [trust|e] klesá, keď je nad rovnováhou." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_nomos_empsychos_bureaucracy_impact_modifier: "$nomos_empsychos_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_nomos_empsychos_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_honorary_titles_bureaucracy_impact_modifier: "$honorary_titles_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_honorary_titles_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_court_eunuchs_bureaucracy_impact_modifier: "$court_eunuchs_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_court_eunuchs_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_ritualistic_court_bureaucracy_impact_modifier: "$ritualistic_court_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_ritualistic_court_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_sixty_books_of_the_basilika_bureaucracy_impact_modifier: "$sixty_books_of_the_basilika_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_sixty_books_of_the_basilika_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_romanitas_bureaucracy_impact_modifier: "$romanitas_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_romanitas_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_imperial_senate_bureaucracy_impact_modifier: "$imperial_senate_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_imperial_senate_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_kephalai_bureaucracy_impact_modifier: "$kephalai_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_kephalai_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_magister_militum_bureaucracy_impact_modifier: "$magister_militum_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_magister_militum_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_themata_bureaucracy_impact_modifier: "$themata_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_themata_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION
+ MODIFIER_TYPE_NAME_allelengyon_bureaucracy_impact_modifier: "$allelengyon_bureaucracy$ Impact" # todo: NEW TRANSLATION
+ MODIFIER_TYPE_DESC_allelengyon_bureaucracy_impact_modifier: "Ako veľmi [bureaucracy|e] ovplyvňuje [country|e]." # todo: NEW TRANSLATION

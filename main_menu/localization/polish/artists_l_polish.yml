@@ -131,8 +131,8 @@
  art_quality_very_good: "Regionálne preslávený" # todo: NEW TRANSLATION
  art_quality_great: "Majstrovské dielo" # todo: NEW TRANSLATION
  art_quality_best: "Magnum Opus" # todo: NEW TRANSLATION
- ART_WAS_DESTROYED: "Nasledujúce umelecké diela boli zničené: $LIST$." # todo: NEW TRANSLATION
- ART_WAS_CAPTURED: "Nasledujúce umelecké diela boli zajaté a odvlečené do [COUNTRY.GetCapital.GetName]: $LIST$." # todo: NEW TRANSLATION
+ ART_WAS_DESTROYED: "Nasledujúce [works_of_art|e] boli zničené: $LIST$." # todo: CHANGED
+ ART_WAS_CAPTURED: "Nasledujúce [works_of_art|e] boli zajaté a odvezené do [COUNTRY.GetCapital.GetName]: $LIST$." # todo: CHANGED
  WORK_OF_ART_DATA: "[art_quality|e]: [WORK_OF_ART.GetQualityName|V] ([WORK_OF_ART.GetQuality|Y]%)\nType: [WORK_OF_ART.GetDefinition.GetName]\nCreated: [WORK_OF_ART.GetCreationDate]\nOrigin: [WORK_OF_ART.GetOrigin.GetName]" # todo: NEW TRANSLATION
  WORK_OF_ART_CREATOR: "[WORK_OF_ART.GetCreator.GetArtistType.GetName]: [WORK_OF_ART.GetCreatorName]" # todo: NEW TRANSLATION
  WORK_OF_ART_DESTROYED: "Bolo to smutne zničené a stratené dňa [WORK_OF_ART.GetDestructionDate]." # todo: NEW TRANSLATION
@@ -142,8 +142,9 @@
  WORK_OF_ART_LOCATION_MODS: "V každom [location|e], ak je toto najlepšie [work_of_art|e] prítomné, nasleduje:" # todo: NEW TRANSLATION
  WORK_OF_ART_MODIFIER_SCALE: "Všetky modifikátory sú škálované o $VAL|%+=Y$:" # todo: NEW TRANSLATION
  WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Z [art_quality|e]: $VAL|%+=Y$" # todo: NEW TRANSLATION
+ WORK_OF_ART_MODIFIER_SCALE_DESC: "Prínosy, ktoré poskytuje [WORK_OF_ART_TYPE.GetName], sú ovplyvnené týmito modifikátormi:" # todo: NEW TRANSLATION
  WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Z [country|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!" # todo: NEW TRANSLATION
- CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] pracuje na novom [CHARACTER.GetArtInProgress.GetName], a je dokončený približne [CHARACTER.GetArtProgress|%0Y]." # todo: NEW TRANSLATION
+ CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] pracuje na novej [CHARACTER.GetArtInProgress.GetName] a práce sú hotové približne na [CHARACTER.GetArtProgress|%0Y].\nPokrok [work_of_art|e] závisí od úrovne [court_maintenance|e]." # todo: CHANGED
  CHAR_WORK_OF_ART_HEADER: "[works_of_art|e]" # todo: NEW TRANSLATION
  CHAR_WORK_OF_ART_HEADER_S: "Vytvoril umelecké dielo s názvom" # todo: NEW TRANSLATION
  CHAR_WORK_OF_ART_HEADER_P: "Vytvoril nasledujúce umelecké diela" # todo: NEW TRANSLATION
@@ -170,6 +171,7 @@
  teotihuacan_temple: "Chrámy v $ORIGIN$" # todo: NEW TRANSLATION
  teotihuacan_temple_desc: "Chrám Slnka v Teotihuacáne, postavený okolo roku 200 n. l., je jednou z najväčších predkolumbovských pyramíd v Amerike. Nachádza sa v srdci starobylého mesta pri dnešnom Mexico City, bol zosúladený s astronomickými javmi a zohrával ústrednú úlohu v rituálnom živote Mesoameričanov. Postavený z vulkanického kameňa a potiahnutý omietkou, slúžil na prejav politickej a náboženskej dominancie Teotihuacánu a bol tak majestátny, že ovplyvnil neskoršie civilizácie, vrátane Aztékov, ktorí ho uctievali ako posvätné miesto." # todo: NEW TRANSLATION
  de_jure_belli_ac_pacis: "De Jure Belli Ac Pacis" # todo: NEW TRANSLATION
+ book_of_kells: "Kniha z Kells" # todo: NEW TRANSLATION
  bayeux_tapestry_key: "Tkanina z $bayeux$" # todo: NEW TRANSLATION
  two_icons_of_archangel_michael: "Dve ikony archanjela Michaela" # todo: NEW TRANSLATION
  vladislav_hall: "Vladislavova sieň" # todo: NEW TRANSLATION
@@ -385,6 +387,10 @@
  chronica_provinz_lyfflandt_desc: "The $chronica_provinz_lyfflandt$ popisuje históriu [ShowAreaName('baltic_area')] od polovice 12. storočia do polovice 16. storočia a výrazne sa sústreďuje na annály [GetCountry('LIV').GetName]." # todo: NEW TRANSLATION
  chronik_des_land_preussens: "Chronik des Landes Preussen" # todo: NEW TRANSLATION
  chronik_des_land_preussens_desc: "The $chronik_des_land_preussens$ podrobne zaznamenáva udalosti, ktoré sa odohrali v [GetCountry('TEU').GetName] a v oblasti [ShowAreaName('prussia_area')] počas veľkej časti druhej polovice 14. storočia." # todo: NEW TRANSLATION
+ roman_history: "Rímske dejiny" # todo: NEW TRANSLATION
+ roman_history_desc: "Séria 37 kníh, $roman_history$, je kronikou udalostí, ktoré sa odohrali v [GetCountry('BYZ').GetName] od začiatku 13. storočia až do polovice 14. storočia." # todo: NEW TRANSLATION
+ byzantine_crown_jewels: "$BYZ_ADJ$ korunné klenoty" # todo: NEW TRANSLATION
+ byzantine_crown_jewels_desc: "Súbor nádherných drahokamov, ktoré zdobia koruny a ďalšie symboly moci [GetCountry('BYZ').GetAdjective]." # todo: NEW TRANSLATION
  on_miracles_signs_and_revelations: "On Miracles, Signs and Revelations" # todo: NEW TRANSLATION
  astronomiae_instauratae_progymnasmata: "Astronomiae Instauratae Progymnasmata" # todo: NEW TRANSLATION
  gesta_danorum: "Gesta Danorum" # todo: NEW TRANSLATION
@@ -650,6 +656,7 @@
  art_name_a_praise_of_freedom_desc: "Chvála slobôd a slobody, ktoré ľudia v našej krajine užívajú; slúži nielen ako oslava našich politík, ale aj ako povzbudenie ľudí, aby hľadali takúto slobodu." # todo: NEW TRANSLATION
  art_key_holy_leader_portrait_desc: "Zobrazenie vládcu ako svätého vodcu a spasiteľa, ktoré určite rozhnevá najkonzervatívnejších členov viery." # todo: NEW TRANSLATION
  holy_crown_of_hungary_crooked_desc: "$holy_crown_of_hungary_desc$ Avšak teraz utrpela určité poškodenie a časť jej bývalej slávy je preč." # todo: NEW TRANSLATION
+ book_of_kells_desc: "Zhotovená keltskými mníchmi okolo roku 800 n. l., Kniha z Kells je iluminovaný evanjeliárny rukopis preslávený svojou prepracovanou kaligrafiou a ohromujúcou výzdobou. Pôvodne vytvorený v kláštore Iona a neskôr uchovávaný v Kells, patrí medzi najlepšie dochované diela insulárneho umenia a je majstrovským dielom raného stredoveku." # todo: NEW TRANSLATION
  bayeux_tapestry_key_desc: "Zobrazuje udalosti $norman$ dobytia $ENG$; ide o 70 metrov dlhý výšivkový pás a prvotriedny príklad svetského románskeho umenia." # todo: NEW TRANSLATION
  two_icons_of_archangel_michael_desc: "Vyplienené z [ShowLocationName('constantinople')] počas štvrtej križiackej výpravy, tieto dve ikony teraz zdobia siene katedrály v [ShowLocationName('venice')]." # todo: NEW TRANSLATION
  stone_of_scone_desc: "Kameň zo Scone, známy aj ako Kameň osudu, je starobylý symbol škótskej kráľovskej moci. Tradične používaný pri korunovačných obradoch škótskych panovníkov, sídlil v opátstve Scone až do roku 1296, keď ho po svojom víťazstve v Prvej vojne o škótsku nezávislosť zhabal Eduard I. z Anglicka. Eduard dal kameň umiestniť pod Korunovačnú stoličku v Westminsterskom opátstve, kde sa stal súčasťou anglickej korunovačnej tradície." # todo: NEW TRANSLATION
@@ -991,4 +998,16 @@
  codex_manesse: "#italic Codex Manesse#!" # todo: NEW TRANSLATION
  codex_manesse_desc: "Tento rukopis obsahuje niektoré z najslávnejších diel #italic Minnesang#! v dialekte $central_german_dialect$. Zhromaždené piesne sú sprevádzané krásnymi ilustráciami, nielen významných členov stredovekej nemeckej šľachty, ako členov dynastie Hohenstaufen, ale aj jednotlivých básnikov, ktorí piesne pôvodne napísali." # todo: NEW TRANSLATION
  sistine_chapel: "Sixtínska kaplnka" # todo: NEW TRANSLATION
- sistine_chapel_desc: "Pôvodne známa ako #italic Capella Magna#!, 'Veľká kaplnka', $sistine_chapel$ je hlavnou kaplnkou pápežského dvora. Stala sa miestom, kde sa konajú pápežské konkláve, a jej interiér sa stal jedným z najpozoruhodnejších umeleckých priestorov, aké kedy vznikli. Na začiatku 16. storočia Michelangelo premenil strop dramatickými biblickými scénami, naplnil ho silnými, výraznými postavami, ktoré zmenili smerovanie západného umenia, a neskôr sa vrátil, aby za hlavným oltárom namaľoval ohromujúci Posledný súd." # todo: NEW TRANSLATION
+ sistine_chapel_desc: "Pôvodne známa ako #italic Capella Magna#!, 'Veľká kaplnka', $sistine_chapel$ je hlavná kaplnka Pápežského dvora. Stala sa miestom, kde sa konajú pápežské konkláve, a jej interiér sa nakoniec vyvinul do jedného z najpozoruhodnejších umeleckých priestorov, aké kedy vznikli. V začiatkoch 1500. rokov Michelangelo premenil strop dramatickými scénami z Biblie, zaplnil ho silnými, expresívnymi postavami, ktoré zmenili smerovanie západného umenia, a neskôr sa vrátil namaľovať ohromujúci Posledný súd za hlavným oltárom." # todo: CHANGED
+ rila_monastery_art: "Kláštor Rila" # todo: NEW TRANSLATION
+ rila_monastery_art_desc: "Založený v 10. storočí pustovníkom sv. Ivanom z Rily a ukrytý v drsných horách rovnomenného mena, tento pravoslávny kláštor sa čoskoro stal duchovným majákom slovanského kresťanstva. Kláštor bol významným pútnickým miestom a dostával značné dary od každého bulharského panovníka od svojho vzniku. Slúžil ako dôležité centrum pre uchovávanie bulharského jazyka, literatúry a náboženských tradícií v dobách ťažkostí, pričom mnísi udržiavali bohatú tradíciu prepísania rukopisov, ikonopisectva a skladania hymn." # todo: NEW TRANSLATION
+ boyana_church_frescoes: "Fresky kostola v Boyane" # todo: NEW TRANSLATION
+ boyana_church_frescoes_desc: "Maľované v roku 1259, tieto stredoveké fresky zdobia malý kostol v Boyane pri $ORIGIN$. Predstavujú prielom v byzantskom umení, predvídajúc renesančný humanizmus individualizovanými portrétmi a dynamickými kompozíciami, a zobrazujú rozmanité náboženské postavy vrátane Krista a Panny Márie. Fresky vynikajú živou realistickosťou, jemným modelovaním tvárí, výraznými gestami a zmyslom pre individuálny charakter, ktorý postavám dodáva takmer prítomný život, čím predstavujú významný umelecký pokrok v stredovekom Balkáne." # todo: NEW TRANSLATION
+ kiev_missal: "Kijevský missál" # todo: NEW TRANSLATION
+ kiev_missal_desc: "Kijevský missál pozostáva z malej skupiny pergamenových listov zo záveru 10. storočia, napísaných v najstaršej forme glagolského písma. Obsahuje časti missálu rímskeho obradu preložené do staroslovienčiny a text odráža prechodné obdobie, keď slovanskí kresťania prijímali liturgické praktiky z východnej i západnej tradície. Dochované fragmenty zostávajú jednými z najdôležitejších dokumentov pre pochopenie skorého šírenia kresťanstva medzi Slovanmi a vývoja ich písanej kultúry." # todo: NEW TRANSLATION
+ euphrasian_basilica: "Eufráziova bazilika" # todo: NEW TRANSLATION
+ euphrasian_basilica_desc: "Postavená v 6. storočí v pobrežnom meste Poreč biskupom Eufráziom, táto veľkolepá ranokresťanská bazilika nahradila starší kostol a stala sa ukážkou byzantského umenia v juhovýchodnom Stredomorí. Vnútro dominuje mozaika v apside zobrazujúca Krista na tróne medzi svätými a mučeníkmi, obklopená trblietavými zlatými tesserami a živými postavami, ktoré vyjadrujú božskú majestátnosť a pokojnú autoritu." # todo: NEW TRANSLATION
+ carta_monastery: "Kláštor Cârța" # todo: NEW TRANSLATION
+ carta_monastery_desc: "Založený v 13. storočí ako cisterciánske opatstvo v južných Karpatoch v Sedmohradsku, kláštor bol zriadený pod patronátom Uhorskéj koruny a osídlený mníchmi nasledujúcimi prísne ideály Bieleho rádu. Jeho kostol, postavený v prechodnom románsko-gotickom slohu, mal vysokú fasádu, lomené oblúky a rebrové klenby. Jeho výstavba zaviedla a pomohla rozvíjať francúzske gotické umenie v regióne. Komplex zahŕňal kláštorné budovy usporiadané okolo kolégia, čo odrážalo cisterciánsky dôraz na jednoduchosť, manuálnu prácu a kontempláciu." # todo: NEW TRANSLATION
+ gospels_of_tsar_ivan_alexander: "Evanjeliá cára Ivana Alexandra" # todo: NEW TRANSLATION
+ gospels_of_tsar_ivan_alexander_desc: "Evanjeliá cára Ivana Alexandra sú bohato iluminovanou knihou, ktorá stelesňuje kultúrne ambície a náboženskú oddanosť druhej bulharskej zlatej doby." # todo: NEW TRANSLATION

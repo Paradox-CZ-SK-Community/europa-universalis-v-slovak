@@ -2,6 +2,7 @@
  PRICE_ON_WAR_IMPACT_ENTRY: "@trigger_yes!$NAME$ : $PRICE$"
  PRICE_ON_WAR_ANTAGONISM: "To tiež spôsobí, že ostatné [Concept('countries','krajiny')|e] k nám budú mať [Concept('antagonism','antagonizmus')|e]; presná výška závisí od toho, ako veľmi im na tejto vojne záleží:"
  PRICE_ON_WAR_ANTAGONISM_ENTRY: "$NAME$: Základ $VAL|Y$[antagonism_i]"
+ PRICE_ON_WAR_ANTAGONISM_ENTRY_LOCATION: "$NAME$ ([LOCATION.GetRank.GetIcon] [LOCATION.GetName]): Základ $VAL|Y$[antagonism_i]" # todo: NEW TRANSLATION
  PRICE_ON_WAR_KICKED_OUT_OF_IO: "Niektoré [Concept('international_organizations','medzinárodné organizácie')|e] nesúhlasia s vyhlásením vojny voči ostatným členom:"
  PRICE_ON_WAR_KICKED_OUT_OF_IO_ENTRY: "@trigger_yes!Budeme vylúčení z [INTERNATIONAL_ORGANIZATION.GetName]"
  DECLARE_WAR_ENEMY_ALLY_ALREADY_AT_WAR: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] sa NEMÔŽE pridať do [Concept('war','vojny')|e], pretože už bojuje vo [Concept('war','vojne')|e] s @[DEFENDER.GetFlag]! [DEFENDER.GetName|Y]"
@@ -18,6 +19,9 @@
  DECLARE_WAR_CONFIRMATION_WARGOAL: "Vyhlásiť [Concept('war','vojny')|e] proti @[DEFENDER.GetFlag]! [DEFENDER.GetName|Y] s [Concept('war_goal','vojnovými cielmi')|e] $WARGOAL|Y$"
  DECLARE_WAR_CONFIRMATION_WARLEADER: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] sa stane vodcom nepriateľov vo [Concept('war','vojne')|e]"
  DECLARE_WAR_CONFIRMATION_STABHIT: "Okamžité účinky:"
+ INTERVENE_WAR_UNION_MEMBER_WARNING_TITLE: "Zásah proti členovi únie" # todo: NEW TRANSLATION
+ INTERVENE_WAR_UNION_MEMBER_WARNING_DESC: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] je členom vašej únie a bude na opačnej strane tejto vojny. Zasahnutie rozbije úniu! Ste si istí, že chcete zasiahnuť?" # todo: NEW TRANSLATION
+ INTERVENE_IN_WAR_CONFIRM_ACCEPT: "Zasiahnuť aj tak" # todo: NEW TRANSLATION
  DECLARE_WAR_COST: "Náklady na vyhlásenie vojny"
  DECLARE_WAR_NO_CASUS_BELLI_SELECTED: "Nebolo vybraté žiadne [casus_belli|e]."
  CANNOT_DECLARE_WAR_NO_WAR_GOAL: "@trigger_no! Musíme vybrať cieľ vojny."
@@ -25,3 +29,4 @@
  BREAKING_COBELLIGERENT_TRUCE: "Zvolenie tejto [Concept('country','krajiny')|e] ako [Concept('cobelligerent','spolubojovníka')|e] počas [Concept('truce','prímeria')|e] bude mať za následok stratu [Concept('stability','stability')|e]!"
  CANT_BREAK_COBELLIGERENT_TRUCE: "[country|e] sa nedá povolať, pokiaľ má [truce|e] s nepriateľom" # todo: NEW TRANSLATION
  WILL_ACCEPT_PROMISE_LAND: "[Country.GetName] prijme [call_to_arms|el], ak mu sľúbite, že mu dáte územie v [Concept('peace_treaty','mierovej zmluve')|e]."
+ PRICE_ON_WAR_TRUST: "Vyhlásenie vojny okamžite zníži našu [trust|e] s obrancami o [GetDefine('NDiplomacy', 'TRUST_CHANGE_DECLARE_WAR')|R] a navyše o [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_DEFENDER')|R], ak porušujeme s nimi [truce|e]. Porušenie [truce|e] zníži našu [trust|e] u každej inej krajiny v dosahu o [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_IN_RANGE')|R]." # todo: NEW TRANSLATION

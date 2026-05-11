@@ -1,7 +1,9 @@
 ﻿l_polish:
+ megalopolis: "Megalopolis" # todo: NEW TRANSLATION
  city: "Metropola"
  town: "Mesto"
  rural_settlement: "Vidiek"
+ megalopolis_desc: "Možno najväčšie dielo ľudstva, Megalopolis je rozľahlé mestské centrum, ktoré ukazuje vrchol architektonického a kultúrneho úspechu." # todo: NEW TRANSLATION
  city_desc: "Samotný vrchol civilizácie — metropola je rušné veľkomesto priemyslu, veľkých chrámov a sídel vládnej moci, rozložené do viacerých štvrtí."
  town_desc: "Skromné sídlo schopné zabezpečiť základnú výrobu; mesto označuje začiatky mestského života."
  rural_settlement_desc: "Vidiek je krajina pripravená na využitie, zahŕňa všetko od divočiny po zoskupenia vidieckych dedín."
@@ -53,6 +55,8 @@
  PURITY_TT_IF_LOW_T: "Ak by sme mali [purity|V] pod #V 25#!, získali by sme:" # todo: NEW TRANSLATION
  HONOR_TT_TEXT: "Máme [CountryReligionLateralView.GetCountry.GetFixedPointCurrencyValue('honor')|W] [honor|V] a každý mesiac sa mení o [CountryReligionLateralView.GetCountry.GetModifierValue('monthly_honor')]." # todo: NEW TRANSLATION
  HONOR_TT_CURRENT_TEXT: "Pri [honor|V] na [Country.GetFixedPointCurrencyValue('honor')|W] dostávame nasledujúce efekty:" # todo: NEW TRANSLATION
+ HONOR_TT_IF_HIGH_T: "Keby sme mali [honor|V] nad #V 75#!, dostali by sme:" # todo: NEW TRANSLATION
+ HONOR_TT_IF_LOW_T: "Keby sme mali [honor|V] pod #V 25#!, dostali by sme:" # todo: NEW TRANSLATION
  KARMA_TT_TEXT: "Máme [CountryReligionLateralView.GetCountry.GetFixedPointCurrencyValue('karma')|W] [karma|V] a každý mesiac sa mení o [CountryReligionLateralView.GetCountry.GetModifierValue('monthly_karma')]." # todo: NEW TRANSLATION
  KARMA_TT_CURRENT_TEXT: "Pri [karma|V] na [Country.GetFixedPointCurrencyValue('karma')|W] dostávame nasledujúce efekty:" # todo: NEW TRANSLATION
  KARMA_TT_IF_NEUTRAL_T: "Ak by sme mali [karma|V] medzi #V -33#! a #V 33#!, získali by sme:" # todo: NEW TRANSLATION
@@ -99,7 +103,9 @@
  EXPENSE_FROM_FORT: "[fort_maintenance|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
  EXPENSE_FROM_STABILITY: "[stability_investment|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
  EXPENSE_FROM_UPKEEP: "[buildings|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
- PRIVATEER_MAINTENANCE_COST: "[privateer_maintenance|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
+ PRIVATEER_MAINTENANCE_COST: "[privateer_maintenance|e]: $VAL|<+=2$[$ICON$_i]" # todo: CHANGED
+ BUREAUCRACY_MAINTENANCE_COST: "[bureaucracy|e]: $VAL|<+=2$[$ICON$_i]" # todo: NEW TRANSLATION
+ SPECIFIC_BUREAUCRACY_MAINTENANCE_COST: "[BUREAUCRACY_TYPE.GetName] pri $MAINTENANCE|2%$ [bureaucracy_maintenance|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|<+=2$[$ICON$_i]#!" # todo: NEW TRANSLATION
  SAILORS_FROM_POPS: "[sailors|e] z obyvateľov: $VAL$ [sailors_i|e]" # todo: NEW TRANSLATION
  MANPOWER_FROM_POPS: "[manpower|e] z obyvateľov: $VAL$ [manpower_i|e]" # todo: NEW TRANSLATION
  MANPOWER_INCOME_WITH_BREAKDOWN: "Mesačne [manpower|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$ [manpower_i|e]#!" # todo: NEW TRANSLATION
@@ -110,10 +116,12 @@
  INCOME_FROM_INFLATION: "[minting|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
  EXPENSE_FROM_EXPLORATION: "Prieskumné misie: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
  EXPENSE_FROM_SUBSIDIES: "Dotované budovy: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
- TRADE_OVERVIEW_NON_ZERO_MERCHANTS: "Trhy s [Player.GetAdjective] [merchant_capacity|e]:" # todo: NEW TRANSLATION
+ TRADE_OVERVIEW_NON_ZERO_MERCHANTS: "Trhy s [Player.GetAdjective] [merchant_capacity|]:" # todo: CHANGED
  MARKET_WITH_TOTAL_MERCHANT_CAPACITY: "[MARKET.GetShortName]: [MARKET.GetMerchantTotalCapacity(Player.Self)|2+]" # todo: NEW TRANSLATION
  RESOURCES_FROM_LOCATIONS: "Z [locations|e]: $VAL|<+=2$" # todo: NEW TRANSLATION
  RESOURCES_FROM_BUILDINGS: "Z [buildings|e]: $VAL|<+=2$" # todo: NEW TRANSLATION
+ ADDITIONAL_MODIFIER_ENTRENCHMENT: "[entrenchment|e]: $VAL|-=%$" # todo: NEW TRANSLATION
+ MINTING_FULL_EFFICIENCY_INCOME: "Pri zvolenom nastavení [minting|e] by príjem pri plnej efektivite bol $VAL|2+=$@income!" # todo: NEW TRANSLATION
  army_tradition: "Vojenská tradícia" # todo: NEW TRANSLATION
  navy_tradition: "Námorná tradícia" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_percent: "$VAL|2-=%$" # todo: NEW TRANSLATION
@@ -360,10 +368,10 @@
  OUR_CURRENCY_MONTHLY_CHANGE: "" # todo: NEW TRANSLATION
  CURRENCY_MONTHLY_CHANGE: "" # todo: NEW TRANSLATION
  HISTORICAL_TAX_BASE_LABEL: "Historické [tax_base|e] medzi [Country.GetHistoricalMinTaxBase|2L]@gold! a [Country.GetHistoricalMaxTaxBase|2L]@gold!" # todo: NEW TRANSLATION
- ARMY_MAINTENANCE_COST: "Udržiavanie armády: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" # todo: NEW TRANSLATION
- NAVY_MAINTENANCE_COST: "Udržiavanie flotily: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" # todo: NEW TRANSLATION
- ARMY_REINFORCE_COST: "Posilňovanie armád: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" # todo: NEW TRANSLATION
- NAVY_REINFORCE_COST: "Oprava lodí: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" # todo: NEW TRANSLATION
+ ARMY_MAINTENANCE_COST: "#italic $BULLET$Náklady na armádu: $VAL$#!" # todo: CHANGED
+ NAVY_MAINTENANCE_COST: "#italic $BULLET$Náklady na námorníctvo: $VAL$#!" # todo: CHANGED
+ ARMY_REINFORCE_COST: "#italic $BULLET$Dopĺňanie armád: $VAL$#!" # todo: CHANGED
+ NAVY_REINFORCE_COST: "#italic $BULLET$Opravy lodí: $VAL$#!#!" # todo: CHANGED
  CURRENCY_DECAY: "$CURRENCY$ Úbytok: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!" # todo: NEW TRANSLATION
  STABILITY_DECAY: "Pokles stability: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!\n" # todo: NEW TRANSLATION
  STABILITY_DECAY_BRK_TT: "#T Zdroj poklesu stability#!" # todo: NEW TRANSLATION
@@ -426,7 +434,7 @@
  explore_area_card_name: "Oblasť [PossibleExplorationItem.GetArea.GetNameWithNoTooltip] ([PossibleExplorationItem.GetArea.GetRegion.GetNameWithNoTooltip])" # todo: NEW TRANSLATION
  privatter_area_card_name: "Oblasť [PossiblePrivateerItem.GetArea.GetNameWithNoTooltip] ([PossiblePrivateerItem.GetArea.GetRegion.GetNameWithNoTooltip])" # todo: NEW TRANSLATION
  start_exploration: "Začať prieskum" # todo: NEW TRANSLATION
- start_exploration_on: "Začať prípravy prieskumu v [Area.GetName]" # todo: NEW TRANSLATION
+ start_exploration_on: "Začať prípravu prieskumu" # todo: CHANGED
  start_exploration_desc_tooltip: "Začneme s prípravami nového prieskumu, po ich dokončení sa vydáme do neznáma." # todo: NEW TRANSLATION
  start_exploration_desc: "[SCOPE.sCharacter('character').GetName] začne pripravovať nový prieskum [SCOPE.sArea('target').GetName] v [SCOPE.sLocation('launch_location').GetName]. Príprava bude trvať [GetExplorationPreparationTimeDays(SCOPE.sCountry('actor'),SCOPE.sCharacter('character'),SCOPE.sLocation('launch_location'))] deň(ov), po ktorých sa vydá do neznáma." # todo: RETRANSLATED ENGLISH
  start_exploration_land: "Začať prieskum" # todo: NEW TRANSLATION
@@ -444,10 +452,12 @@
  scaled_lost_war: "Prehra vo vojne" # todo: NEW TRANSLATION
  national_church_power: "Náklady na akcie národnej cirkvi" # todo: NEW TRANSLATION
  hussite_wars_actions_price: "$hussite_wars$ Náklady na akcie situácie" # todo: NEW TRANSLATION
+ megalopolis_upgrade: "Vylepšiť na Megalopolis" # todo: NEW TRANSLATION
  city_upgrade: "Povýšiť na mesto" # todo: NEW TRANSLATION
  town_upgrade: "Povýšiť na mestečko" # todo: NEW TRANSLATION
  rural_settlement_upgrade: "Povýšenie vidieckej osady" # todo: NEW TRANSLATION
  rural_settlement_downgrade: "Zníženie vidieckej osady" # todo: NEW TRANSLATION
+ hre_army_building: "Budova cisárskej armády" # todo: NEW TRANSLATION
  p_building_age_1_traditions: "[ShowAgeNameWithNoTooltip('age_1_traditions')] Budovy" # todo: NEW TRANSLATION
  p_building_age_2_renaissance: "[ShowAgeNameWithNoTooltip('age_2_renaissance')] Budovy" # todo: NEW TRANSLATION
  p_building_age_3_discovery: "[ShowAgeNameWithNoTooltip('age_3_discovery')] Budovy" # todo: NEW TRANSLATION
@@ -466,6 +476,7 @@
  small_culture_building: "Malá kultúrna budova" # todo: NEW TRANSLATION
  small_religion_building: "Malá náboženská budova" # todo: NEW TRANSLATION
  small_estate_building: "Náklady na malú šľachtickú budovu" # todo: NEW TRANSLATION
+ expensive_estate_building: "Náklady na výstavbu drahého panstva" # todo: NEW TRANSLATION
  orthodox_monastery_building: "Náklady na výstavbu ortodoxného kláštora" # todo: NEW TRANSLATION
  miaphysite_monastery_building: "Náklady na výstavbu miaphysitského kláštora" # todo: NEW TRANSLATION
  cardinal_price: "Cena kardinála" # todo: NEW TRANSLATION
@@ -473,17 +484,21 @@
  cheap_building: "Lacná budova" # todo: NEW TRANSLATION
  remove_lutheran_preacher: "Odstrániť kazateľa" # todo: NEW TRANSLATION
  remove_panaqa_early: "Odstrániť Panaqa predčasne" # todo: NEW TRANSLATION
- army_infantry_build: "Náklady na výstavbu pechoty" # todo: NEW TRANSLATION
- army_infantry_reinforce: "Náklady na posily pechoty" # todo: NEW TRANSLATION
- army_infantry_maintenance: "Náklady na údržbu pechoty" # todo: NEW TRANSLATION
- army_marine_build: "Náklady na výstavbu námorných jednotiek" # todo: NEW TRANSLATION
- army_marine_reinforce: "Náklady na posily námorných jednotiek" # todo: NEW TRANSLATION
- army_marine_maintenance: "Náklady na údržbu námorných jednotiek" # todo: NEW TRANSLATION
+ merchant_guild_chapel_price: "$merchant_guild_chapel$ Cena" # todo: NEW TRANSLATION
+ army_light_infantry_build: "Náklady na vybudovanie ľahkej pechoty" # todo: NEW TRANSLATION
+ army_light_infantry_reinforce: "Náklady na posilnenie ľahkej pechoty" # todo: NEW TRANSLATION
+ army_light_infantry_maintenance: "Náklady na údržbu ľahkej pechoty" # todo: NEW TRANSLATION
+ army_heavy_infantry_build: "Náklady na vybudovanie ťažkej pechoty" # todo: NEW TRANSLATION
+ army_heavy_infantry_reinforce: "Náklady na posilnenie ťažkej pechoty" # todo: NEW TRANSLATION
+ army_heavy_infantry_maintenance: "Náklady na údržbu ťažkej pechoty" # todo: NEW TRANSLATION
  archer_infantry_construction: "Výstavba lukostreleckej pechoty" # todo: NEW TRANSLATION
  archer_infantry_maintenance: "Údržba lukostreleckej pechoty" # todo: NEW TRANSLATION
- army_cavalry_build: "Náklady na výstavbu jazdy" # todo: NEW TRANSLATION
- army_cavalry_reinforce: "Náklady na posily jazdy" # todo: NEW TRANSLATION
- army_cavalry_maintenance: "Náklady na údržbu jazdy" # todo: NEW TRANSLATION
+ army_light_cavalry_build: "Náklady na vybudovanie ľahkej jazdy" # todo: NEW TRANSLATION
+ army_light_cavalry_reinforce: "Náklady na posilnenie ľahkej jazdy" # todo: NEW TRANSLATION
+ army_light_cavalry_maintenance: "Náklady na údržbu ľahkej jazdy" # todo: NEW TRANSLATION
+ army_heavy_cavalry_build: "Náklady na vybudovanie ťažkej jazdy" # todo: NEW TRANSLATION
+ army_heavy_cavalry_reinforce: "Náklady na posilnenie ťažkej jazdy" # todo: NEW TRANSLATION
+ army_heavy_cavalry_maintenance: "Náklady na údržbu ťažkej jazdy" # todo: NEW TRANSLATION
  army_artillery_build: "Náklady na výstavbu delostrelectva" # todo: NEW TRANSLATION
  army_artillery_reinforce: "Náklady na posily delostrelectva" # todo: NEW TRANSLATION
  army_artillery_maintenance: "Náklady na údržbu delostrelectva" # todo: NEW TRANSLATION
@@ -558,6 +573,7 @@
  revolution_actions_price: "$the_revolution$ Náklady na hlavné akcie" # todo: NEW TRANSLATION
  wotr_action_price: "$war_of_the_roses$ Náklady na hlavné akcie" # todo: NEW TRANSLATION
  peasants_war_actions_price: "$peasants_war$ Náklady na hlavné akcie" # todo: NEW TRANSLATION
+ rise_of_the_szlachta_actions_price: "$rise_of_the_szlachta$ Cena hlavných akcií" # todo: NEW TRANSLATION
  religious_turmoil_actions_price: "$religious_turmoil$ Náklady na hlavné akcie" # todo: NEW TRANSLATION
  change_government_type_price: "Náklady na zmenu $government_type$" # todo: NEW TRANSLATION
  provoke_rebels_price: "Cena hlavných akcií $provoke_rebels$" # todo: NEW TRANSLATION
@@ -591,6 +607,7 @@
  SUBTAB_ECONOMY_NEEDS: "Aktuálne potreby" # todo: NEW TRANSLATION
  SUBTAB_ECONOMY_BUDGET: "Rozpočet" # todo: NEW TRANSLATION
  RGO_BUILD: "ROZŠÍRIŤ PRODUKCIU [ExpandProductionLateralView.GetGoods.GetName]" # todo: NEW TRANSLATION
+ RGO_BUILD_GOODS_PRICE_IMPACT_ON_COST: "Z predvolenej trhovej ceny [GOODS.GetName] ([GOODS.GetDefaultMarketPrice|1]@gold!): $SCALE$" # todo: NEW TRANSLATION
  TOTAL_PRODUCTION: "Celková produkcia v [country|e]" # todo: NEW TRANSLATION
  GOOD_PRODUCTION: "Produkcia [GOODS.GetName]" # todo: NEW TRANSLATION
  SELECT_LOCATION: "Vybrať lokalitu" # todo: NEW TRANSLATION
@@ -600,8 +617,9 @@
  EXPAND_PRODUCTION_SORT_PROD: "Zoradiť podľa produkcie v každej [location|e]" # todo: NEW TRANSLATION
  EXPAND_PRODUCTION_SORT_WORKERS: "Zoradiť podľa počtu pracovníkov v každej [location|e]" # todo: NEW TRANSLATION
  BUILD_B_FOR_G: "Stavať" # todo: NEW TRANSLATION
- GREATEST_SURPLUS: "Najväčší prebytok" # todo: NEW TRANSLATION
- GREATEST_NEEDS: "Najväčšie potreby" # todo: NEW TRANSLATION
+ GREATEST_SURPLUS: "Najväčší lokálny prebytok" # todo: CHANGED
+ GREATEST_NEEDS: "Najväčšie lokálne nedostatky" # todo: CHANGED
+ LOCAL_BALANCE: "Lokálna bilancia" # todo: NEW TRANSLATION
  MARKET_SURPLYS_LABEL_SHORT: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!" # todo: NEW TRANSLATION
  MARKET_PRICE_WITH_CHANGE: "$VAL|2$@$DIFFERENCE$!@$ICON$!" # todo: NEW TRANSLATION
  GOODS_MARKET_ENTRY_TITLE: "[GoodsMarketEntry.GetGoods.GetNameWithNoTooltip] v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -621,6 +639,7 @@
  SORT_BY_MARKET_CAPACITY_TT: "Zoradiť podľa celkovej [merchant_capacity|e] v [market|e]" # todo: NEW TRANSLATION
  SORT_BY_SURPLUS_MARKETS_TT: "Zoradiť podľa prebytku [goods|e] v [market|e]" # todo: NEW TRANSLATION
  SORT_BY_DEMAND_MARKETS_TT: "Zoradiť podľa najviac žiadaných [goods|e] v [market|e]" # todo: NEW TRANSLATION
+ SORT_BY_BURGHER_TRADING_TT: "Zoradiť podľa kapacity [burgher_trade|e] v [market|e]" # todo: NEW TRANSLATION
  SORT_BY_SURPLUS_TT: "Zoradiť podľa dostupného prebytku želaného [good|e] v [market|e]" # todo: NEW TRANSLATION
  SORT_BY_TRANSPORT_COST_TT: "Zoradiť podľa nákladov na dopravu želaného [good|e] v [market|e]" # todo: NEW TRANSLATION
  SORT_BY_MOVING_GOODS_AMOUNT_TT: "Zoradiť podľa skutočného množstva [good|e], ktoré budú prepravované" # todo: NEW TRANSLATION
@@ -654,7 +673,12 @@
  capitalism_desc: "Budovy sú obsadzované podľa toho, ktoré prinášajú najväčší zisk." # todo: NEW TRANSLATION
  capitalism_prioritising_infrastructure: "Najprv infraštruktúra, potom najziskovejšie" # todo: NEW TRANSLATION
  capitalism_prioritising_infrastructure_desc: "Budovy sa najprv obsadzujú podľa infraštruktúry a potom podľa ziskovosti." # todo: NEW TRANSLATION
+ capitalism_prioritising_infrastructure_trade: "Infraštruktúra, obchod, potom najziskovejšie" # todo: NEW TRANSLATION
+ capitalism_prioritising_infrastructure_trade_desc: "Budovy sú napĺňané najprv infraštruktúrou, potom obchodom a následne podľa toho, čo prináša najväčší zisk." # todo: NEW TRANSLATION
+ capitalism_prioritising_infrastructure_trade_and_culture: "Infraštruktúra, obchod, kultúra, potom najziskovejšie" # todo: NEW TRANSLATION
+ capitalism_prioritising_infrastructure_trade_and_culture_desc: "Budovy sú napĺňané najprv infraštruktúrou, potom obchodom, potom kultúrou a nakoniec podľa toho, čo prináša najväčší zisk." # todo: NEW TRANSLATION
  christian_tenet_price: "$christian_ADJ$ Cena dogmy" # todo: NEW TRANSLATION
+ jurchen_confederation_law_price: "Cena zákona Jurchen Confederation" # todo: NEW TRANSLATION
  western_schism_ri_actions_price: "Ovplyvniť $western_schism$" # todo: NEW TRANSLATION
  western_schism_gold_actions_price: "Prečkať $western_schism$" # todo: NEW TRANSLATION
  lia_actions_price: "$little_ice_age$ Náklady na akcie situácie" # todo: NEW TRANSLATION

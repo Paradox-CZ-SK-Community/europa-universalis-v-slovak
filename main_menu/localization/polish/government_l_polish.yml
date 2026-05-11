@@ -17,10 +17,16 @@
  UNLOCK_ONGOING_RELATION_DESC: "Umožniť automatizácii zmeniť toto [diplomatic_action]." # todo: NEW TRANSLATION
  SELECT_THIS_CABINET: "Vybrať túto pozíciu v kabinete" # todo: NEW TRANSLATION
  POLICY_IS_PART_OF_LAW: "Toto je [policy|e] zákona [LAW.GetName] [law|e]." # todo: NEW TRANSLATION
+ EXPANDED_CABINET_VIEW: "Rozšírené zobrazenie kabinetu" # todo: NEW TRANSLATION
+ COMPACT_CABINET_VIEW: "Kompaktné zobrazenie kabinetu" # todo: NEW TRANSLATION
  ESTATE_TYPE_GIVE_TAX_TO_OTHER: "$BULLET_WITH_TAB$V závislosti od [ShowModifierTypeName('global_peasant_enfranchisment')] príjmy pôjdu do [ESTATE_TYPE.GetName]." # todo: NEW TRANSLATION
  TAX_BASE_PEASANT_ENFRANCH: "[peasant_enfranchisement|e]: [Location.GetPeasantEnfranchisment|2G%] [peasant_enfranchisement_icon]" # todo: NEW TRANSLATION
  PEASANT_ENFRANCHISMENT: "Minimálne $MIN|2%$ a maximálne $MAX|2%$" # todo: NEW TRANSLATION
- PEASANT_ENFRANCHISMENT_TITLE: "#T $MODIFIER_TYPE_NAME_global_peasant_enfranchisment$#!" # todo: NEW TRANSLATION
+ PEASANT_ENFRANCHISMENT_TITLE: "[peasant_enfranchisement|e] je [Location.GetPeasantEnfranchisment|2G%] z dôvodu:" # todo: CHANGED
+ LOCATION_PEASANT_ENFRANCHISMENT_TITLE: "[peasant_enfranchisement] v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ PEASANT_ENFRANCHISMENT_TT_TITLE: "Priemerné $game_concept_peasant_enfranchisement$ v [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ PEASANT_ENFRANCHISMENT_TT_TEXT: "[pops|e] tohto [estate|e] majú priemerné volebné právo #W [Estate.GetAvgEnfranchisment|0%]#![peasant_enfranchisement_icon], takže dostávajú iba toto percento zo svojho [wealth_share|e]. Zvyšok ich príjmov sa prevádza na [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
+ PEASANT_ENFRANCHISMENT_TT_TABLE: "Globálny modifikátor v [Country.GetNameWithNoTooltip] je [Country.GetModifierValueNoFormat('global_peasant_enfranchisment')] z dôvodu:" # todo: NEW TRANSLATION
  legitimacy: "Legitímnosť" # todo: NEW TRANSLATION
  republican_tradition: "Republikánska tradícia" # todo: NEW TRANSLATION
  devotion: "Oddanosť" # todo: NEW TRANSLATION
@@ -41,6 +47,8 @@
  absolute_cognatic_primogeniture: "Absolútna kognatická primogenitúra" # todo: NEW TRANSLATION
  tanistry_elective: "Tanistry - voľba" # todo: NEW TRANSLATION
  tanistry_elective_desc: "Tradičná gaelská forma vlády, pri ktorej vládnuca klan vyberá najspôsobilejšieho dediča medzi sebou. Byť patrilineárnym potomkom historického vládcu zvyšuje šancu na výber, hoci je považované za nevhodné voliť dieťa súčasného vládcu.\n\nProces má tendenciu viesť k výberu najkvalifikovanejšej osoby, ale pretože vláda sa často prepletá cez viaceré vetvy rodokmeňa v pomerne arbitrárnom výbere, často to vedie k sporom." # todo: NEW TRANSLATION
+ byzantine_succession: "Byzantská sukcesia" # todo: NEW TRANSLATION
+ byzantine_succession_desc: "Zložitý systém dedenia, ktorý kombinuje prvky primogenitúry a volebnej monarchie, čím umožňuje pružnejší prístup k výberu panovníka a zároveň zachováva spojenie s cisárskym rodom." # todo: NEW TRANSLATION
  salic_law: "Salické právo" # todo: NEW TRANSLATION
  semi_salic_law: "Semi-salické právo" # todo: NEW TRANSLATION
  partition_inheritance: "Delené dedenie" # todo: NEW TRANSLATION
@@ -82,8 +90,8 @@
  veche_selection_best_candidate_desc: "Nový [ruler|e] je vybraný pomocou [ShowCountryInteractionName('invite_prince')] [country_interaction|e]." # todo: NEW TRANSLATION
  bank_selection_desc: "Je to typ [heir_selection|e] bankárskej rodiny, pri ktorom je [ruler|e] vybraný medzi členmi dynastie." # todo: NEW TRANSLATION
  pirate_elective_desc: "Je to typ [heir_selection|e] pirátskej [ShowGovernmentTypeName('republic')], pri ktorom je [ruler|e] vybraný medzi kandidátmi posádkami." # todo: NEW TRANSLATION
- cognatic_primogeniture_desc: "Je to typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je [heir|e] najstarší mužský potomok súčasného [ruler|e], hoci ženy môžu dediť, ak nie je vhodnejší muž." # todo: NEW TRANSLATION
- absolute_cognatic_primogeniture_desc: "Je to typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je [heir|e] najstaršie dieťa (muž alebo žena) súčasného [ruler|e]." # todo: NEW TRANSLATION
+ cognatic_primogeniture_desc: "Ide o typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], ktorý nasleduje najstaršiu líniu vládnucej rodiny a uprednostňuje mužov pred ženami. Potomkovia zosnulého [heir|e] zdedia miesto svojho rodiča v poradí dedenia pred ostatnými deťmi [ruler|e]." # todo: CHANGED
+ absolute_cognatic_primogeniture_desc: "Ide o typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], ktorý nasleduje najstaršiu líniu vládnucej rodiny bez ohľadu na pohlavie. Potomkovia zosnulého [heir|e] zdedia miesto svojho rodiča v poradí dedenia pred ostatnými deťmi [ruler|e]." # todo: CHANGED
  salic_law_desc: "Je to typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je [ruler|e] najstarší mužský potomok predchádzajúceho [ruler]. Ženské deti nikdy nemôžu dediť ani previesť právo na trón svojim synom." # todo: NEW TRANSLATION
  semi_salic_law_desc: "Je to typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je [ruler|e] najstarší mužský potomok predchádzajúceho [ruler]. Ženské deti nikdy nemôžu dediť, ale môžu previesť právo na trón svojim synom." # todo: NEW TRANSLATION
  partition_inheritance_desc: "Je to typ [heir_selection|e] [ShowGovernmentTypeName('monarchy')], pri ktorom je [ruler|e] najstarší mužský potomok predchádzajúceho [ruler] a všetci ostatní mužskí potomkovia získavajú práva na menšie tituly a územia. Ženské deti nikdy nemôžu dediť ani previesť právo na trón svojim synom.\n\nKeď nový vládca nastúpi na trón, najmenej kontrolované provincie krajiny dostanú dodatočné penalizácie k ich [control|e], pretože sa rozdeľujú medzi bratmi nového vládcu." # todo: NEW TRANSLATION
@@ -137,6 +145,7 @@
  HEIR_SELECTION_UNTIL_DEATH: "• Vládne doživotne" # todo: NEW TRANSLATION
  HEIR_SELECTION_TERM: "• Vládne $MONTHS|Y$ mesiacov" # todo: NEW TRANSLATION
  HEIR_SELECTION_ALL_IN_COUNTRY: "• Zohľadnení všetci v [country|e]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_ALL_IN_OVERLORD: "• Zohľadnení všetci v [overlord|e]" # todo: NEW TRANSLATION
  HEIR_SELECTION_ALL_IN_DYNASTY: "• Zohľadnení všetci v [ruler|e]'s [dynasty|e]" # todo: NEW TRANSLATION
  HEIR_SELECTION_TRACE_SIBLINGS: "• Prostredníctvom súrodencov vládcu" # todo: NEW TRANSLATION
  HEIR_SELECTION_THROUGH_FEMALE: "• Prostredníctvom ženskej línie" # todo: NEW TRANSLATION
@@ -158,7 +167,7 @@
  CURRENT_REGENCY_TOOLTIP_NAME: "$REGENCY$" # todo: NEW TRANSLATION
  CURRENT_REGENCY_TOOLTIP_DESC: "Momentálne nás v krajine vládne $REGENCY$ až do #V $DATE$#!, čo nám dáva nasledujúce efekty:\n\n$EFFECTS$" # todo: NEW TRANSLATION
  CURRENT_REGENCY_INDEFINITELY_TOOLTIP_DESC: "V krajine nás vládne $REGENCY$ #V na neurčito#!, čo nám dáva nasledujúce efekty:\n\n$EFFECTS$" # todo: NEW TRANSLATION
- supported_heirs_rule: "• Postavy musia byť podporené cudzím štátom pomocou [ShowCountryInteractionName('support_heir_interaction')] alebo musia byť u nás v priazni cez [ShowCharacterInteractionName('favor_heir')]" # todo: NEW TRANSLATION
+ supported_heirs_rule: "• Postavy musia byť podporené cudzou krajinou pomocou [ShowRelationTypeName('support_heir')] alebo obľúbené u nás prostredníctvom [ShowCharacterInteractionName('favor_heir')]" # todo: CHANGED
  BANK_OLDER_HEIR_DESC: "• Skóre za každý rok veku" # todo: NEW TRANSLATION
  COGNATIC_PRIMOGENITURE_PARENT_IS_RULER_DESC: "• Skóre za to, že ktorýkoľvek rodič je vládca" # todo: NEW TRANSLATION
  COGNATIC_PRIMOGENITURE_GRANDPARENT_IS_RULER_DESC: "• Skóre za to, že ktorýkoľvek starý rodič je vládca" # todo: NEW TRANSLATION
@@ -185,6 +194,14 @@
  HEIR_SELECTION_IS_RULER_SON_DESC: "• Je syn [Concept('ruler','panovníka')|e]"
  HEIR_SELECTION_IS_RULER_GRANDSON_DESC: "• Je vnuk [Concept('ruler','panovníka')|e]"
  HEIR_SELECTION_IS_RULER_DESC: "• Je [ruler|el]"
+ HEIR_SELECTION_BORN_IN_THE_PURPLE_DESC: "• Je [ShowModifierTypeName('byz_born_in_the_purple')]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_BLIND_DESC: "• Je [ShowTraitName('blind')]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_CASTRATED_DESC: "• Je [ShowTraitName('castrated')]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_DISFIGURED_DESC: "• Je [ShowTraitName('disfigured')]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_ONE_EYED_DESC: "• Je [ShowTraitName('one_eyed')]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_MAIMED_DESC: "• Je [ShowTraitName('maimed')]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_HUNCHBACK_DESC: "• Je [ShowTraitName('hunchback')]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_SCARRED_DESC: "• Je [ShowTraitName('scarred')]" # todo: NEW TRANSLATION
  FORMAT_NO_VALUE: "$KEY$" # todo: NEW TRANSLATION
  HEIR_SELECTION_ADMIRAL_DESC: "• Skóre za [admiral|e]" # todo: NEW TRANSLATION
  HEIR_SELECTION_GENERAL_DESC: "• Skóre za [general|e]" # todo: NEW TRANSLATION
@@ -229,13 +246,19 @@
  GRANT_PRIVILEDGE_ALREADY: "@trigger_no! Už udeľujeme [ESTATE_PRIVILEGE.GetName] [ESTATE.GetName]" # todo: NEW TRANSLATION
  GRANT_PRIVILEDGE_TT: "Udelením [ESTATE.GetName] za cenu $COST$ sa udeľuje\n[ESTATE_PRIVILEGE.GetEffectText]\n\nA bude mať nasledujúci dopad na [estate_satisfaction|e]\n[ESTATE.GetName]: $IMPACT$\n$OTHER$" # todo: CHANGED
  ANNOY_OTHER_ESTATE: "[ESTATE.GetName]: $VAL|+=2%$ ([ESTATE.GetSatisfaction|%]@satisfaction!)" # todo: NEW TRANSLATION
+ ESTATE_LOCATIONS_POWER_TITLE: "Sila lokalít [ESTATE.GetName] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ ESTATE_LOCATIONS_POWER_ENTRY: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L$#!" # todo: NEW TRANSLATION
+ ESTATE_LOCATION_POWER_BREAKDOWN: "$VAL$ z dôvodu\nPočet [POP_TYPE.GetName] v [Location.GetName]: $SIZE$\nZáklad pre [ESTATE.GetName]: x$BASE$\n$MODIFIER$" # todo: NEW TRANSLATION
+ ESTATE_LOCATION_POWER_LOCAL_MODIFIER_HEADER: "$BULLET_WITH_TAB$ #T $MODIFIER$ z [LOCATION.GetName]#!\n" # todo: NEW TRANSLATION
+ ESTATE_LOCATION_POWER_GLOBAL_MODIFIER_HEADER: "$BULLET_WITH_TAB$ #T Globálne modifikátory z [Country.GetName]#!\n" # todo: NEW TRANSLATION
+ ESTATE_SATISFACTION_CHANGE: "$VAL|+=%$" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_CHANGE_INITIAL: "[ESTATE.GetName]: $PRE_POST_HIT_TEXT$" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_PRE_HIT: "$VAL|%$@satisfaction_neutral!" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_PRE_HIT_G: "$VAL|+%$@satisfaction_happy!" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_PRE_HIT_R: "$VAL|-%$@satisfaction_sad!" # todo: NEW TRANSLATION
- ESTATE_SATISFACTION_POST_HIT: " @button_simple! $VAL|%$@satisfaction_neutral!" # todo: NEW TRANSLATION
- ESTATE_SATISFACTION_POST_HIT_G: " @button_simple! $VAL|+%$@satisfaction_happy!" # todo: NEW TRANSLATION
- ESTATE_SATISFACTION_POST_HIT_R: " @button_simple! $VAL|-%$@satisfaction_sad!" # todo: NEW TRANSLATION
+ ESTATE_SATISFACTION_POST_HIT: " (@button_simple!$VAL|%$@satisfaction_neutral!)" # todo: CHANGED
+ ESTATE_SATISFACTION_POST_HIT_G: " (@button_simple!$VAL|+%$@satisfaction_happy!)" # todo: CHANGED
+ ESTATE_SATISFACTION_POST_HIT_R: " (@button_simple!$VAL|-%$@satisfaction_sad!)" # todo: CHANGED
  INSTANTLY_ALSO: "A okamžite aj nasledujúce..." # todo: NEW TRANSLATION
  GRANT_PRIVILEDGE: "Udeľ privilégium" # todo: NEW TRANSLATION
  REVOKE_PRIVILEDGE: "Odobrať privilégium" # todo: NEW TRANSLATION
@@ -297,6 +320,7 @@
  ESTATE_TYPE_POLITICAL_POWER: "$BULLET_WITH_TAB$Každých #G 1,000#! [pops|e] dáva tomuto stavu $VAL|+=2$ [estate_power|e]" # todo: NEW TRANSLATION
  ESTATE_TYPE_TAX_SPLIT: "$BULLET_WITH_TAB$Každých #G 1,000#! [pops|e] dáva tomuto stavu $VAL|+=2$ podielov z [tax_base|e]" # todo: NEW TRANSLATION
  ESTATE_TYPE_POPTYPE: "$BULLET_WITH_TAB$[POP_TYPE.GetName] [pops|e] môžu patriť tomuto [estate|e]" # todo: NEW TRANSLATION
+ TARGET_SATISFACTION_BUREAUCRACY: "[bureaucracy_icon|e] $NAME$ [bureaucracy|e]: $VAL|+2V%$" # todo: NEW TRANSLATION
  ADD_REFORM_TT_TITLE: "Zaviesť [reform|e]" # todo: NEW TRANSLATION
  REFORMS_SCROLL_LIST_EMPTY: "Žiadne reformy nevyhovujú tomuto vyhľadávaciemu kritériu" # todo: NEW TRANSLATION
  ADD_REFORM_TT: "Zaviesť [GOVERNMENT_REFORM.GetName] ako súčasť našej vlády" # todo: NEW TRANSLATION
@@ -315,10 +339,15 @@
  MAJOR_REFORM: "[major_reform|e]" # todo: NEW TRANSLATION
  FULLY_IMPLEMENTED_TT: "$OBJECT$ implementované dňa #V $DATE$#!\nStav implementácie: 100%\n" # todo: NEW TRANSLATION
  NEWLY_IMPLEMENTED_TT: "$OBJECT$ implementované dňa #V $DATE$#!\nStav implementácie: #V $PERCENTAGE|2%$#!\nDokončené: #V $COMPLETED_DATE$#!\n" # todo: NEW TRANSLATION
+ IO_POLICY_IMPLEMENTED_ON: "Zavedené #V $DATE$#!" # todo: NEW TRANSLATION
  TIME_TO_IMPLEMENT: "To trvá $DAYS$ dní na úplné zavedenie." # todo: NEW TRANSLATION
  TIME_TO_REFORM_TITLE: "Čas na implementáciu [GovernmentReformItem.GetReform.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  TIME_TO_REFORM: "[GovernmentReformItem.GetReform.GetTimeToImplementText]" # todo: NEW TRANSLATION
  MAJOR_REFORM_content: "Krajina môže mať naraz len jednu $game_concept_major_reform$." # todo: NEW TRANSLATION
+ ADD_BUREAUCRACY_NOT_ALLOWED: "@trigger_no! Nemáme povolené [bureaucracies|e]." # todo: NEW TRANSLATION
+ ADD_BUREAUCRACY_ALREADY_HAVE: "@trigger_no! Už máme túto [bureaucracy|e]." # todo: NEW TRANSLATION
+ ADD_BUREAUCRACY_ALREADY_HAVE_ENOUGH: "@trigger_no! Už sme vyčerpali pridelený počet [bureaucracies|e]." # todo: NEW TRANSLATION
+ REMOVE_BUREAUCRACY_DONT_HAVE: "@trigger_no! Túto [bureaucracy|e] nemáme." # todo: NEW TRANSLATION
  SET_CABINET_ALREADY_THIS: "@trigger_no![CHARACTER.GetName] je už zamestnaný v tejto [cabinet|e] pozícii." # todo: NEW TRANSLATION
  SET_CABINET_ALREADY: "@trigger_no![CHARACTER.GetName] je už zamestnaný v [cabinet|e]." # todo: NEW TRANSLATION
  SET_CABINET_REBEL: "@trigger_no![CHARACTER.GetName] je [rebel|e] a nemôže slúžiť v [cabinet|e]." # todo: NEW TRANSLATION
@@ -474,9 +503,15 @@
  jurisprudence_focus: "Jurisprudencia" # todo: NEW TRANSLATION
  mysticism_vs_jurisprudence: "Mysticizmus vs Jurisprudencia" # todo: NEW TRANSLATION
  mysticism_vs_jurisprudence_desc: "Krajina naklonená k $mysticism_focus$ (Bāṭin interpretácia) hľadá skryté a hlbšie významy, zatiaľ čo $jurisprudence_focus$ (Ẓāhir interpretácia) sa zameriava na doslovné významy Koránu a hadísov." # todo: NEW TRANSLATION
+ latinization_focus: "Latinitas" # todo: NEW TRANSLATION
+ hellenization_focus: "Rōmanismós" # todo: NEW TRANSLATION
+ latinization_vs_hellenization: "$latinization_focus$ vs $hellenization_focus$" # todo: NEW TRANSLATION
+ latinization_vs_hellenization_desc: "Krajina [country|e], ktorá prijíma $latinization_focus$, obracia sa na sily latinského Západu — talianske republiky, frankovské dvory a prúdy renesancie — pre podporu, partnerstvo a obnovu prostredníctvom diplomacie a selektívneho prispôsobenia. Krajina zakorenená v $hellenization_focus$ pevne zachováva svoje nepretrhnuté rímske dedičstvo, podporované pravoslávnou vierou, inštitúciami cisárskej správy a trvácnou tradíciou Konštantínopola." # todo: NEW TRANSLATION
  encourage_societal_value_towards: "Podporiť spoločenskú hodnotu smerom k $VALUE$ v kabinete" # todo: NEW TRANSLATION
  ENCOURAGE_SOCIETAL_VALUE_TOWARDS_LEFT: "Podporiť [Localize('game_concept_societal_value')] smerom k [SocietalValue.GetLeftLabelWithNoTooltip]" # todo: NEW TRANSLATION
  ENCOURAGE_SOCIETAL_VALUE_TOWARDS_RIGHT: "Podporiť [Localize('game_concept_societal_value')] smerom k [SocietalValue.GetRightLabelWithNoTooltip]" # todo: NEW TRANSLATION
+ GOV_REFORMS_BASED_ON: "$game_concept_reforms$ odomknuté pomocou" # todo: NEW TRANSLATION
+ GOTO_REFORMS: "Pozri naše [government_reforms]" # todo: NEW TRANSLATION
  select_area_to_benefit: "Vyberte oblasť, ktorá získa výhodu" # todo: NEW TRANSLATION
  soldiers_as_workforce_select_area: "$select_area_to_benefit$" # todo: NEW TRANSLATION
  soldiers_as_workforce_no_areas: "$NO_POSSIBLE_AREAS$" # todo: NEW TRANSLATION
@@ -501,6 +536,8 @@
  POP_TYPE_IN_LOC_ENTRY: "[LOCATION.GetName]: $NUM$[POP_TYPE.GetIcon]" # todo: NEW TRANSLATION
  AREA_MARITIME_INFO: "[maritime_presence|e] v [AREA.GetName]" # todo: NEW TRANSLATION
  AREA_MARITIME_ENTRY: "[LOCATION.GetName]: $VAL|/V$" # todo: NEW TRANSLATION
+ AREA_HARBOR_CAPACITY_SUM_INFO: "Súhrn [harbor_capacity|e] z #V $NUM$#! [port|e] v [AREA.GetName]:\n#V $SUM|W2$#!\n$BREAKDOWN$" # todo: NEW TRANSLATION
+ AREA_HARBOR_CAPACITY_ENTRY: "[LOCATION.GetName]: $VAL|W2$" # todo: NEW TRANSLATION
  naval_focus_select_area: "$select_area_to_benefit$" # todo: NEW TRANSLATION
  naval_focus_no_areas: "$NO_POSSIBLE_AREAS$" # todo: NEW TRANSLATION
  cab_naval_focus: "Námorná podpora" # todo: NEW TRANSLATION
@@ -546,7 +583,7 @@
  study_institutions_active: "Podpora inštitúcií v [SCOPE.sProvince('target').GetNameWithHighlightOnly]" # todo: NEW TRANSLATION
  study_institutions_action_progress: "[SCOPE.sProvince('target').GetInstitutionProgress]" # todo: NEW TRANSLATION
  study_institutions_action_progress_wordier: "[SCOPE.sProvince('target').GetInstitutionSummary]" # todo: NEW TRANSLATION
- study_institutions_action_progress_long_wordier: "@political_power! [SCOPE.sProvince('target').GetInstitutionSummary]" # todo: NEW TRANSLATION
+ study_institutions_action_progress_long_wordier: "@government! [SCOPE.sProvince('target').GetInstitutionSummary]" # todo: CHANGED
  study_institutions_action_progress_tooltip: "[SCOPE.sProvince('target').GetInstitutionDetails]" # todo: NEW TRANSLATION
  form_new_culture: "Podporiť novú kultúru" # todo: NEW TRANSLATION
  form_new_culture_active: "Podpora novej [actor.GetAdjectiveWithNoTooltip] kultúry" # todo: NEW TRANSLATION
@@ -603,7 +640,7 @@
  reduce_inflation_action_progress_long_wordier: "@inflation! [SCOPE.sCountry('actor').GetCurrencyValue('inflation')|2%]" # todo: NEW TRANSLATION
  reduce_inflation_action_progress_tooltip: "[SCOPE.sCountry('actor').GetCurrencyTooltipValueDescription('inflation')]" # todo: NEW TRANSLATION
  promote_religion: "Konvertovať provinciu" # todo: NEW TRANSLATION
- promote_religion_desc: "Týmto zvýšime počet [pops|e], ktoré sa budú každý mesiac [convert|e] na vybranú [religion|e]." # todo: NEW TRANSLATION
+ promote_religion_desc: "Toto zvýši počet [pops|e], ktoré sa každý mesiac [convert|e] na vybrané [religion|e].\n\nMôže byť zvolená iba hlavná [primary_religion|e] krajiny a náboženstvá v tom istom [religion_group|e], ktoré majú v krajine aspoň 1% zastúpenie." # todo: CHANGED
  promote_religion_action: "Konvertovať [SCOPE.sProvince('target_province').GetNameWithNoTooltip] na [SCOPE.sReligion('target_religion').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  promote_religion_select_religion: "Vyberte [religion|e], na ktorú chcete [convert|e] [pops|e] v [province|e]:" # todo: NEW TRANSLATION
  promote_religion_select_province: "Vyberte [province|e], v ktorej chcete [convert|e] [pops|e]:" # todo: NEW TRANSLATION
@@ -658,9 +695,9 @@
  pop_promote_action_desc: "Týmto sa naša [population|e] bude [promoted|e] rýchlejšie." # todo: NEW TRANSLATION
  pop_promote_action_action: "Podporiť urbanizáciu" # todo: NEW TRANSLATION
  pop_promote_action_active: "Urbanizácia [SCOPE.sProvince('target').GetNameWithHighlightOnly]" # todo: CHANGED
- pop_promote_action_action_progress: "[SCOPE.sProvince('target').GetMissingWorkers]" # todo: CHANGED
- pop_promote_action_action_progress_wordier: "[SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]" # todo: NEW TRANSLATION
- pop_promote_action_action_progress_long_wordier: "@population! [SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]\n@employees! [SCOPE.sProvince('target').GetMissingWorkers]" # todo: CHANGED
+ pop_promote_action_action_progress: "[SCOPE.sProvince('target').GetMissingWorkersRaw]" # todo: CHANGED
+ pop_promote_action_action_progress_wordier: "@employees! [SCOPE.sProvince('target').GetMissingWorkersRaw]" # todo: CHANGED
+ pop_promote_action_action_progress_long_wordier: "@employees! [SCOPE.sProvince('target').GetMissingWorkersRaw]\n@population! [SCOPE.sCountry('actor').GetDoubleModifierValue('global_pop_promotion_speed','global_pop_promotion_speed_modifier')]" # todo: CHANGED
  pop_promote_action_action_progress_tooltip: "Urbanizácia @province! [SCOPE.sProvince('target').GetName]:\n@local_pop_promotion_speed_positive! [Localize('MODIFIER_TYPE_NAME_local_pop_promotion_speed')]: [SCOPE.sCabinet('cabinet').GetEffectiveSkillOnlyEffect]\nChýbajúci zamestnanci: [SCOPE.sProvince('target').GetMissingWorkersRaw]@employees!" # todo: CHANGED
  stabilize_country: "Stabilizovať krajinu" # todo: NEW TRANSLATION
  stabilize_country_desc: "Toto je jeden z troch hlavných spôsobov, ako zvýšiť [stability|e] v našom [country|e]. Druhý závisí od pomeru klerikov v krajine a tretí závisí od toho, koľko nášho [budget|e] sme ochotní na to minúť." # todo: NEW TRANSLATION
@@ -687,7 +724,7 @@
  integrate_province_action_progress_wordier: "Integrácia bude dokončená [SCOPE.sProvince('target').GetIntegrationETA]" # todo: NEW TRANSLATION
  integrate_province_action_progress_long_wordier: "@province_integration_speed! [SCOPE.sProvince('target').GetIntegrationETA] \n\n@province_integration_speed! #W [Cabinet.GetActionNumProgress|%]#!" # todo: NEW TRANSLATION
  integrate_province_action_progress_tooltip: "[integration|e] na #W [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]#!\nIntegrácia by mala byť dokončená [SCOPE.sProvince('target').GetIntegrationETA|Y]" # todo: NEW TRANSLATION
- integrate_province_action_progress_tooltip_1: "Rast postupu integrácie provincie je [SCOPE.sProvince('target').GetIntegrationModifiers|+=2] každý mesiac z dôvodu:\n[SCOPE.sProvince('target').GetIntegrationModifiersBreakdown]" # todo: NEW TRANSLATION
+ integrate_province_action_progress_tooltip_1: "Rast postupu provincie je [SCOPE.sProvince('target').GetIntegrationSpeed|+=2] každý mesiac z dôvodu:\n[SCOPE.sProvince('target').GetIntegrationSpeedBreakdown]" # todo: CHANGED
  integrate_province_action_progress_tooltip_2: "Nárast postupu v [SCOPE.sProvince('target').GetNumIntegrationLocations|V0] lokalitách:\n[SCOPE.sProvince('target').GetNumIntegrationLocationsBreakdown]" # todo: NEW TRANSLATION
  integrate_area: "Integrovať oblasť" # todo: NEW TRANSLATION
  integrate_area_desc: "Keď dobyjeme [area|e], musíme ju [integrate|e], aby sa stala súčasťou nášho [country|e]. Ak nebude integrovaná, [pops|e] v oblasti sa môžu [rebel|e]." # todo: NEW TRANSLATION
@@ -709,7 +746,7 @@
  develop_province_action_progress_tooltip: "[SCOPE.sProvince('target').GetAverageDevelopmentInfo]" # todo: NEW TRANSLATION
  recovery_effort: "Úsilie o obnovu" # todo: NEW TRANSLATION
  recovery_effort_desc: "Toto je najlepší spôsob, ako sa zotaviť z negatívnej [prosperity|e] v vybranej [province|e]. Môže to byť kľúčové po vojne alebo epidémii." # todo: NEW TRANSLATION
- recovery_effort_action: "Pomôcť [SCOPE.sProvince('target').GetName] zotaviť sa.\n\n[SCOPE.sProvince('target').GetAverageProsperityInfo]" # todo: NEW TRANSLATION
+ recovery_effort_action: "Pomôcť [SCOPE.sProvince('target').GetName] zotaviť sa" # todo: CHANGED
  recovery_effort_select_province: "Vyberte [province|e], v ktorej chcete zvýšiť [prosperity|e]:" # todo: NEW TRANSLATION
  recovery_effort_active: "Pomáhanie [SCOPE.sProvince('target').GetNameWithHighlightOnly] zotaviť sa" # todo: NEW TRANSLATION
  recovery_effort_action_progress: "[SCOPE.sProvince('target').GetAverageProsperity|V2]" # todo: NEW TRANSLATION
@@ -776,18 +813,21 @@
  appease_estate_action_progress_wordier: "[estate_satisfaction|e] je [SCOPE.sEstate('target').GetSatisfaction|2%]" # todo: NEW TRANSLATION
  appease_estate_action_progress_long_wordier: "[estate_satisfaction|e] [SCOPE.sEstate('target').GetName] je [SCOPE.sEstate('target').GetSatisfaction|2%]" # todo: NEW TRANSLATION
  appease_estate_action_progress_tooltip: "[SCOPE.sEstate('target').GetName] [estate|e] momentálne má [SCOPE.sEstate('target').GetSatisfaction|2%] [estate_satisfaction|e] s cieľovým stavom [SCOPE.sEstate('target').GetTargetSatisfaction|2%]" # todo: NEW TRANSLATION
- if_nobles_estate_selected: "Ak je vybraný [ShowEstateTypeName('nobles_estate')]:" # todo: NEW TRANSLATION
- if_clergy_estate_selected: "Ak je vybraný [ShowEstateTypeName('clergy_estate')]:" # todo: NEW TRANSLATION
- if_burghers_estate_selected: "Ak je vybraný [ShowEstateTypeName('burghers_estate')]:" # todo: NEW TRANSLATION
- if_peasants_estate_selected: "Ak je vybraný [ShowEstateTypeName('peasants_estate')]:" # todo: NEW TRANSLATION
- if_dhimmi_estate_selected: "Ak je vybraný [ShowEstateTypeName('dhimmi_estate')]:" # todo: NEW TRANSLATION
- if_tribes_estate_selected: "Ak je vybraný [ShowEstateTypeName('tribes_estate')]:" # todo: NEW TRANSLATION
- if_cossacks_estate_selected: "Ak je vybraný [ShowEstateTypeName('cossacks_estate')]:" # todo: NEW TRANSLATION
+ appease_estate_selected_estate_will_receive: "Vybrané [estate|e] získa bonusy k [estate_satisfaction|e]." # todo: NEW TRANSLATION
+ appease_estate_hover: "Udelí vybranému [estate|e] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_hover_nobles: "Udelí [ShowEstateTypeName('nobles_estate')] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_hover_clergy: "Udelí [ShowEstateTypeName('clergy_estate')] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_hover_burghers: "Udelí [ShowEstateTypeName('burghers_estate')] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_hover_peasants: "Udelí [ShowEstateTypeName('peasants_estate')] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_hover_dhimmi: "Udelí [ShowEstateTypeName('dhimmi_estate')] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_hover_tribes: "Udelí [ShowEstateTypeName('tribes_estate')] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_hover_cossacks: "Udelí [ShowEstateTypeName('cossacks_estate')] obnovenie [estate_satisfaction|e] a bonusy k [estate_satisfaction_equilibrium|e]." # todo: NEW TRANSLATION
+ appease_estate_active_modifier: "Bonusy vybraného [estate|e]:" # todo: NEW TRANSLATION
  encourage_migration: "Podporiť migráciu" # todo: NEW TRANSLATION
- encourage_migration_desc: "Toto zvýši pravdepodobnosť, že sa [pops|e] budú [migrate|e] do tohto [location|e]." # todo: NEW TRANSLATION
+ encourage_migration_desc: "Tým sa zvýši pravdepodobnosť, že sa [pops|e] budú [migrate|e] do tejto [location|e].\n\nPoznámka: priradenie v kabinete tiež urýchľuje [migration|e] vo všetkých vlastnených lokalitách, nielen v tej vybratej." # todo: CHANGED
  encourage_migration_action: "Podporiť migráciu do [SCOPE.sLocation('target').GetName]" # todo: NEW TRANSLATION
  encourage_migration_select_province: "Vyberte [location|e], do ktorého chcete podporiť [migration|e]:" # todo: NEW TRANSLATION
- encourage_migration_active: "Podporovanie migrácie do [SCOPE.sLocation('target').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ encourage_migration_active: "Podpora migrácie do [SCOPE.sLocation('target').GetName]" # todo: CHANGED
  encourage_migration_action_progress: "[SCOPE.sLocation('target').GetTotalPopulation] ([SCOPE.sLocation('target').GetMigrationChange]@population!)" # todo: CHANGED
  encourage_migration_action_progress_wordier: "[SCOPE.sLocation('target').GetMigrationChange] obyvateľov migrovalo minulý mesiac." # todo: NEW TRANSLATION
  encourage_migration_action_progress_long_wordier: "@migration_attraction! [SCOPE.sLocation('target').GetMigrationChange] \n\n@migration_speed! [SCOPE.sCountry('actor').GetModifierValue('global_migration_speed_modifier')]" # todo: NEW TRANSLATION
@@ -906,6 +946,25 @@
  send_secret_royal_inspectors_action_progress_wordier: "Priemerné [control|e] v [SCOPE.sProvince('target').GetNameWithNoTooltip]: [SCOPE.sProvince('target').GetAverageControl|V2%]" # todo: NEW TRANSLATION
  send_secret_royal_inspectors_action_progress_long_wordier: "@self_control! [SCOPE.sProvince('target').GetAverageControl|V2%]" # todo: NEW TRANSLATION
  send_secret_royal_inspectors_action_progress_tooltip: "[SCOPE.sProvince('target').GetAverageControlInfo]" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency: "Posilniť byrokratickú efektivitu" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_desc: "Naša administrácia závisí od mnohých byrokratických pilierov, z ktorých mnohé sú staré a pomalé. Aby sme zachovali ich efektivitu a zabránili tomu, že ich údržba rozvráti náš rozpočet, bolo by rozumné poveriť schopného člena kabinetu dohľadom nad ich fungovaním." # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_action: "Posilňovanie byrokratickej efektivity" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_active: "$bolster_bureaucratic_efficiency_action$" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_active_action_title: "$bolster_bureaucratic_efficiency_action$" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('maintain_bureaucracy_price_cost_modifier')]" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_action_progress_wordier: "@bureaucracy_entrenchment! [SCOPE.sCountry('actor').GetModifierValue('maintain_bureaucracy_price_cost_modifier')]" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_action_progress_long_wordier: "@bureaucracy_entrenchment! [SCOPE.sCountry('actor').GetModifierValue('maintain_bureaucracy_price_cost_modifier')]" # todo: NEW TRANSLATION
+ bolster_bureaucratic_efficiency_action_progress_tooltip: "Znižuje $MODIFIER_TYPE_NAME_maintain_bureaucracy_price_cost_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('maintain_bureaucracy_price_cost_modifier')]" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment: "Zvýšiť byrokratické zakorenenie" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_desc: "To umožní kabinetu upevniť existujúci administratívny poriadok, urýchli konsolidáciu našich byrokratických štruktúr a spraví ich ťažšie odstrániteľnými." # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_action: "Upevňovanie byrokracie" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_active: "$increase_bureaucratic_entrenchment_action$" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_active_action_title: "$increase_bureaucratic_entrenchment_action$" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('global_bureaucracy_entrenchment_speed_modifier')]" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_action_progress_wordier: "@bureaucracy_entrenchment! [SCOPE.sCountry('actor').GetModifierValue('global_bureaucracy_entrenchment_speed_modifier')]" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_action_progress_long_wordier: "@bureaucracy_entrenchment! [SCOPE.sCountry('actor').GetModifierValue('global_bureaucracy_entrenchment_speed_modifier')]" # todo: NEW TRANSLATION
+ increase_bureaucratic_entrenchment_action_progress_tooltip: "Zvyšuje $MODIFIER_TYPE_NAME_global_bureaucracy_entrenchment_speed_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_bureaucracy_entrenchment_speed_modifier')]" # todo: NEW TRANSLATION
+ not_while_decrease_bureaucratic_entrenchment_active: "Nemôžeme použiť túto [cabinet_action|e], pokiaľ je momentálne aktívne [ShowCabinetActionName('decrease_bureaucratic_entrenchment')]" # todo: NEW TRANSLATION
  byz_extensive_conscription: "Rozsiahla branná povinnosť" # todo: NEW TRANSLATION
  byz_extensive_conscription_desc: "V časoch vojny a keď je naša viera ohrozená, keď bojujeme za ochranu posvätného, je našou povinnosťou povolať všetkých telesne spôsobilých zbožných mužov, aby slúžili a splnili svoje povinnosti proti našim neveriacim nepriateľom." # todo: NEW TRANSLATION
  byz_extensive_conscription_action: "Naverbovať" # todo: NEW TRANSLATION
@@ -976,10 +1035,10 @@
  kazenny_active: "Spravovanie $kazenny$ prikaz" # todo: CHANGED
  kazenny_active_action_title: "Spravovanie $kazenny$ prikazu" # todo: NEW TRANSLATION
  kazenny_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]" # todo: CHANGED
- kazenny_action_progress_wordier: "@tax_efficiency!: [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')] @proximity_cost!: [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_cost_modifier')]" # todo: CHANGED
- kazenny_action_progress_long_wordier: "@tax_efficiency! [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]\n  @proximity_cost! [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_cost_modifier')]" # todo: NEW TRANSLATION
- kazenny_action_progress_tooltip: "Zvyšuje $MODIFIER_TYPE_NAME_tax_income_efficiency$\n[SCOPE.sCountry('actor').GetDescriptionFor('tax_income_efficiency')]" # todo: CHANGED
- kazenny_action_progress_tooltip_1: "Znižuje $MODIFIER_TYPE_NAME_global_distance_from_capital_cost_modifier$\n[SCOPE.sCountry('actor').GetDescriptionFor('global_distance_from_capital_cost_modifier')]" # todo: NEW TRANSLATION
+ kazenny_action_progress_wordier: "@tax_efficiency!: [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')] @proximity_cost!: [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_speed_propagation')]" # todo: CHANGED
+ kazenny_action_progress_long_wordier: "@tax_efficiency! [SCOPE.sCountry('actor').GetModifierValue('tax_income_efficiency')]\n @proximity_cost! [SCOPE.sCountry('actor').GetModifierValue('global_distance_from_capital_speed_propagation')]" # todo: CHANGED
+ kazenny_action_progress_tooltip: "Táto kabinetná akcia zvyšuje [ShowModifierTypeName('tax_income_efficiency')]:\n[SCOPE.sCountry('actor').GetDescriptionFor('tax_income_efficiency')]" # todo: CHANGED
+ kazenny_action_progress_tooltip_1: "Táto kabinetná akcia zvyšuje [ShowModifierTypeName('global_distance_from_capital_speed_propagation')]:\n[SCOPE.sCountry('actor').GetDescriptionFor('global_distance_from_capital_speed_propagation')]" # todo: CHANGED
  aptekarsky: "Aptekarsky" # todo: NEW TRANSLATION
  aptekarsky_desc: "Toto umožní nášmu kabinetu sústrediť sa na prikaz zdravotných a liečebných záležitostí, čo umožní lepšie rozdelenie liekov a rýchle šírenie poznatkov o potenciálnych liečbách." # todo: NEW TRANSLATION
  aptekarsky_action: "Spravovanie $aptekarsky$ prikaz" # todo: CHANGED
@@ -994,10 +1053,10 @@
  bolshogo_dvortsa_action: "Spravovanie $bolshogo_dvortsa$ prikaz" # todo: CHANGED
  bolshogo_dvortsa_active: "Spravovanie $bolshogo_dvortsa$ prikaz" # todo: CHANGED
  bolshogo_dvortsa_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]" # todo: CHANGED
- bolshogo_dvortsa_action_progress_wordier: "@religious_influence!: [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n@court_spending!: [SCOPE.sCountry('actor').GetModifierValue('court_spending_cost')]" # todo: CHANGED
- bolshogo_dvortsa_action_progress_long_wordier: "@religious_influence! [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n    @court_spending! [SCOPE.sCountry('actor').GetModifierValue('court_spending_cost')]" # todo: NEW TRANSLATION
+ bolshogo_dvortsa_action_progress_wordier: "@religious_influence!: [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n@court_spending!: [SCOPE.sCountry('actor').GetCourtSpendingCost]" # todo: CHANGED
+ bolshogo_dvortsa_action_progress_long_wordier: "@religious_influence! [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n    @court_spending! [SCOPE.sCountry('actor').GetCourtSpendingCost]" # todo: CHANGED
  bolshogo_dvortsa_action_progress_tooltip: "Zvyšuje $MODIFIER_TYPE_NAME_monthly_religious_influence$\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_religious_influence')]" # todo: CHANGED
- bolshogo_dvortsa_action_progress_tooltip_1: "Znižuje $MODIFIER_TYPE_NAME_court_spending_cost$\n[SCOPE.sCountry('actor').GetDescriptionFor('court_spending_cost')]" # todo: NEW TRANSLATION
+ bolshogo_dvortsa_action_progress_tooltip_1: "Znižuje náklady na dvorské výdavky\n[SCOPE.sCountry('actor').GetCourtSpendingCostDetails]" # todo: CHANGED
  gaituguiliu_policy: "Gǎitǔguīliú Policy" # todo: NEW TRANSLATION
  gaituguiliu_policy_desc: "Toto zvýši asimiláciu akéhokoľvek cudzieho [culture|e] a náš zisk $celestial_authority$." # todo: NEW TRANSLATION
  gaituguiliu_policy_action: "$gaituguiliu_policy$" # todo: NEW TRANSLATION
@@ -1043,7 +1102,7 @@
  settle_the_frontier_desc: "Kabinet sa bude snažiť osídliť nekolonizovanú [province|e] skupinou [pops|e]." # todo: NEW TRANSLATION
  settle_the_frontier_action: "Osídliť [SCOPE.sProvinceDefinition('target').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  settle_the_frontier_select_province_definition: "Vyberte [province|e], ktoré chcete osídliť:" # todo: NEW TRANSLATION
- settle_the_frontier_no_provinces: "$no_valid_provinces$" # todo: NEW TRANSLATION
+ settle_the_frontier_no_provinces: "@trigger_no! Nemôžeme nájsť žiadne vhodné miesto na obsadenie. Cieľ musí:\nNie byť už kolonizovaný nami alebo aspoň 3 inými krajinami;\nMať obývateľné lokality;\nByť objavený;\nByť susediaci s nami alebo jedným z našich subjektov, alebo byť v dosahu." # todo: CHANGED
  settle_the_frontier_select_character: "Vyberte [character|e], ktorého chcete poslať:" # todo: NEW TRANSLATION
  settle_the_frontier_no_character: "$NO_POSSIBLE_CHARACTERS$" # todo: NEW TRANSLATION
  settle_the_frontier_active: "Osídľovanie [SCOPE.sProvinceDefinition('target').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1057,6 +1116,7 @@
  settle_the_frontier_tt: "Povolíme [events|e] na obdobie nasledujúcich #Y 10 rokov#!, ktoré opisujú proces osídľovania cieľovej [province|e]" # todo: NEW TRANSLATION
  settle_the_frontier_character_tt: "Cieľový [character|e] je poslaný do cieľovej [province|e], aby osídlil neobsadenú pôdu" # todo: NEW TRANSLATION
  settle_the_frontier_modifier_desc: "až do osídlenia cieľovej [province|e] alebo do ich smrti" # todo: NEW TRANSLATION
+ settle_the_frontier_select_province_none: "@trigger_no! Žiadna z našich [provinces|e] pozdĺž hranice susediacej s cieľovou provinciou nespĺňa nasledujúce kritériá:" # todo: NEW TRANSLATION
  PARLIAMENT_HOW: "Je potrebné, aby sa nasledujúce zmenilo na [PARLIAMENT_TYPE.GetNameWithNoTooltip]\n$HOW$" # todo: NEW TRANSLATION
  no_parliament: "Žiadny parlament" # todo: NEW TRANSLATION
  no_parliament_desc: "Jediným dôvodom zvolať ostatných pred vládcu môže byť vydávanie rozkazov, nie diskusia o politike." # todo: NEW TRANSLATION
@@ -1105,3 +1165,21 @@
  GOVERNMENT_WINDOW_SORT_BY_POPULATION: "Zoradiť podľa populácie" # todo: NEW TRANSLATION
  GOVERNMENT_WINDOW_SORT_BY_POWER: "Zoradiť podľa moci" # todo: NEW TRANSLATION
  GOVERNMENT_WINDOW_SORT_BY_SATISFACTION: "Zoradiť podľa spokojnosti" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_enforce_peace_declined: "Vynútenie mieru odmietnuté" # todo: NEW TRANSLATION
+ promote_religious_reformation: "Podporiť [ShowReligionAdjectiveWithNoTooltip('nahuatl')] reformu" # todo: NEW TRANSLATION
+ promote_religious_reformation_desc: "Viera je bijúcim srdcom nášho ľudu a posvätným putom medzi našimi vládcami, našimi bohmi a svetom. Nové učenia treba viesť starostlivo, aby nerozštiepili rovnováhu, ktorá udržiava naše krajiny a náš osud. Vymenovaním dôveryhodného hlasu dvora, ktorý dohliadne na túto svätú prácu, urýchlime reformu a zabezpečíme, aby priniesla silu namiesto zbytočných nepokojov." # todo: NEW TRANSLATION
+ promote_religious_reformation_action: "Podpora [ShowReligionAdjectiveWithNoTooltip('nahuatl')] reformy" # todo: NEW TRANSLATION
+ promote_religious_reformation_active: "$promote_religious_reformation_action$" # todo: NEW TRANSLATION
+ promote_religious_reformation_action_progress: "" # todo: NEW TRANSLATION
+ promote_religious_reformation_action_progress_wordier: "Pracuje na podpore náboženskej reformy" # todo: NEW TRANSLATION
+ promote_religious_reformation_action_progress_tooltip: "Táto kabinetná akcia zvyšuje [ShowModifierTypeName('monthly_nahualt_reform_progress')]:\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_nahualt_reform_progress')]" # todo: NEW TRANSLATION
+ lat_reintegrate_province: "Znovu začleniť [GetCountry('LAT').GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
+ lat_reintegrate_province_desc: "Keď sme znovu obsadili [province|e] v rámci [ShowScriptedGeographyName('frankokratia_geography')], musíme ju [integrate|e], aby sa stala súčasťou nášho [country|e]." # todo: NEW TRANSLATION
+ lat_reintegrate_province_action: "Znovu začleniť [SCOPE.sProvince('target').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ lat_reintegrate_province_active: "Znovu začleňovanie [SCOPE.sProvince('target').GetNameWithHighlightOnly]" # todo: NEW TRANSLATION
+ lat_reintegrate_province_action_progress: "[Cabinet.GetActionNumProgress|%]" # todo: NEW TRANSLATION
+ lat_reintegrate_province_action_progress_wordier: "$lat_reintegrate_province_active$" # todo: NEW TRANSLATION
+ lat_reintegrate_province_progress_wordier: "[integration|e] bude dokončená [SCOPE.sProvince('target').GetIntegrationETA]" # todo: NEW TRANSLATION
+ lat_reintegrate_province_progress_long_wordier: "@province_integration_speed! [SCOPE.sProvince('target').GetIntegrationETA] \n\n@province_integration_speed! #W [Cabinet.GetActionNumProgress|%]#!" # todo: NEW TRANSLATION
+ lat_reintegrate_province_action_progress_tooltip: "[integration|e] na #W [SCOPE.sCabinet('cabinet').GetActionNumProgress|%]#!\nIntegrácia by mala byť dokončená [SCOPE.sProvince('target').GetIntegrationETA|Y]" # todo: NEW TRANSLATION
+ location_located_in_frankokratia_region: "Je to [conquered|e] [location|e] v rámci [ShowScriptedGeographyName('frankokratia_geography')]" # todo: NEW TRANSLATION

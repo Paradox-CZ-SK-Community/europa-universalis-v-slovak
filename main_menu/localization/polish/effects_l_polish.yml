@@ -19,6 +19,8 @@
  CONDITIONAL_EFFECT_ELSE_PAST_FALSE: "@trigger_no!Inak by sa stali nasledujúce účinky:" # todo: NEW TRANSLATION
  KILL_CHARACTER_EFFECT: "[TARGET_CHARACTER.GetName] zomrie" # todo: NEW TRANSLATION
  PAST_KILL_CHARACTER_EFFECT: "[TARGET_CHARACTER.GetName] zomrel" # todo: NEW TRANSLATION
+ REVOKE_TOWN_RIGHTS_EFFECT: "Odobrať [TARGET_TOWN_RIGHTS.GetName]" # todo: NEW TRANSLATION
+ PAST_REVOKE_TOWN_RIGHTS_EFFECT: "[town_rights|e] boli zrušené" # todo: NEW TRANSLATION
  TRIGGER_EVENT_EFFECT: "Stane sa [event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'" # todo: NEW TRANSLATION
  PAST_TRIGGER_EVENT_EFFECT: "Stala sa [event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'" # todo: NEW TRANSLATION
  WE_TRIGGER_EVENT_EFFECT: "Nás postihne [event|e] '#TOOLTIP:$BREAKDOWN_TAG$ $EVENT|Y$#!'" # todo: NEW TRANSLATION
@@ -39,7 +41,7 @@
  PAST_REMOVE_MIGRATION_EFFECT: "Migrácia $AMOUNT|Y$ $NAME$ každý mesiac z $FROM$ do $TO$ sa zastavila" # todo: NEW TRANSLATION
  RANDOM_LIST_EFFECT: "#Y Jedna z $SIZE$ možností sa stane:#!\n" # todo: NEW TRANSLATION
  RANDOM_EFFECT: "#Y $CHANCE$%#! šanca na " # todo: NEW TRANSLATION
- RANDOM_LIST_EFFECT_HEADER: "#S $DESC$:#!" # todo: NEW TRANSLATION
+ RANDOM_LIST_EFFECT_HEADER: "#Y $DESC$:#!" # todo: CHANGED
  RANDOM_LIST_DEFAULT_DESC: "Možné výsledky" # todo: NEW TRANSLATION
  RANDOM_LIST_DEFAULT_MULTIPLE_DESC: "Možné výsledky, vyberie sa ľubovoľná kombinácia $VALUE|V0$ výsledkov" # todo: NEW TRANSLATION
  RANDOM_LIST_DEFAULT_MULTIPLE_UNIQUE_DESC: "Možné výsledky, vyberie sa $VALUE|V0$ unikátnych výsledkov" # todo: NEW TRANSLATION
@@ -219,12 +221,12 @@
  PAST_SET_PARLIAMENT_ISSUE_EFFECT: "Nastavil [parliament_issue|e] na [TARGET_PARLIAMENT_ISSUE.GetName]" # todo: NEW TRANSLATION
  PAST_FIRST_SET_PARLIAMENT_ISSUE_EFFECT: "Nastavili sme [parliament_issue|e] na [TARGET_PARLIAMENT_ISSUE.GetName]" # todo: NEW TRANSLATION
  PAST_THIRD_SET_PARLIAMENT_ISSUE_EFFECT: "$WHO$ nastavil [parliament_issue|e] na [TARGET_PARLIAMENT_ISSUE.GetName]" # todo: NEW TRANSLATION
- SET_PARLIAMENT_TYPE_EFFECT: "Nastaví [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Nastavíme [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ nastaví [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- PAST_SET_PARLIAMENT_TYPE_EFFECT: "Nastavil [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- PAST_FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Nastavili sme [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- PAST_THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ nastavil [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]" # todo: NEW TRANSLATION
+ SET_PARLIAMENT_TYPE_EFFECT: "Nastavuje [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" # todo: CHANGED
+ FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Nastavíme [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" # todo: CHANGED
+ THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ nastavuje [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" # todo: CHANGED
+ PAST_SET_PARLIAMENT_TYPE_EFFECT: "Nastavil [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" # todo: CHANGED
+ PAST_FIRST_SET_PARLIAMENT_TYPE_EFFECT: "Nastavili sme [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName\n$ESTATES_EFFECT$" # todo: CHANGED
+ PAST_THIRD_SET_PARLIAMENT_TYPE_EFFECT: "$WHO$ nastavil [parliament_type|e] na [TARGET_PARLIAMENT_TYPE.GetName]\n$ESTATES_EFFECT$" # todo: CHANGED
  SET_PARLIAMENT_ISSUE_SUPPORT_EFFECT: "Nastaví podporu v $PARLIAMENT$ na $VALUE|2%Y$" # todo: NEW TRANSLATION
  NEG_SET_PARLIAMENT_ISSUE_SUPPORT_EFFECT: "Nastaví podporu v $PARLIAMENT$ na $VALUE|2%Y$" # todo: NEW TRANSLATION
  FIRST_SET_PARLIAMENT_ISSUE_SUPPORT_EFFECT: "Nastavíme podporu v $PARLIAMENT$ na $VALUE|2%Y$" # todo: NEW TRANSLATION
@@ -419,6 +421,18 @@
  PAST_LOSE_CURRENCY_EFFECT: "Stratil $CURRENCY$" # todo: NEW TRANSLATION
  PAST_FIRST_LOSE_CURRENCY_EFFECT: "Stratili sme $CURRENCY$" # todo: NEW TRANSLATION
  PAST_THIRD_LOSE_CURRENCY_EFFECT: "$PROVIDER$ stratil $CURRENCY$" # todo: NEW TRANSLATION
+ GAIN_TRUST_EFFECT: "Získava $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ LOSE_TRUST_EFFECT: "Stráca $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ WE_GAIN_TRUST_EFFECT: "Získame $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ WE_LOSE_TRUST_EFFECT: "Strácame $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ THIRD_GAIN_TRUST_EFFECT: "[COUNTRY.GetLongName] získava $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ THIRD_LOSE_TRUST_EFFECT: "[COUNTRY.GetLongName] stráca $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ GAIN_TRUST_EFFECT_PAST: "Získal $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ LOSE_TRUST_EFFECT_PAST: "Stratil $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ WE_GAIN_TRUST_EFFECT_PAST: "Získali sme $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ WE_LOSE_TRUST_EFFECT_PAST: "Stratili sme $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ THIRD_GAIN_TRUST_EFFECT_PAST: "[COUNTRY.GetLongName] získal $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
+ THIRD_LOSE_TRUST_EFFECT_PAST: "[COUNTRY.GetLongName] stratil $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: CHANGED
  SET_CURRENCY_EFFECT: "Nastaví $CURRENCY$" # todo: NEW TRANSLATION
  FIRST_SET_CURRENCY_EFFECT: "Nastavíme $CURRENCY$" # todo: NEW TRANSLATION
  THIRD_SET_CURRENCY_EFFECT: "$PROVIDER$ nastaví $CURRENCY$" # todo: NEW TRANSLATION
@@ -491,36 +505,36 @@
  WE_LOSE_OPINION_EFFECT_NO_DURATION_PAST: "Stratili sme $VALUE|-0$ [opinion|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  THIRD_GAIN_OPINION_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] získal $VALUE|+0$ [opinion|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  THIRD_LOSE_OPINION_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] stratil $VALUE|-0$ [opinion|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- GAIN_TRUST_EFFECT: "Získava $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
- LOSE_TRUST_EFFECT: "Stráca $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
- WE_GAIN_TRUST_EFFECT: "Získame $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
- WE_LOSE_TRUST_EFFECT: "Strácame $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
- THIRD_GAIN_TRUST_EFFECT: "[COUNTRY.GetLongName] získava $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
- THIRD_LOSE_TRUST_EFFECT: "[COUNTRY.GetLongName] stráca $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
- GAIN_TRUST_EFFECT_NO_DURATION: "Získava $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- LOSE_TRUST_EFFECT_NO_DURATION: "Stráca $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- WE_GAIN_TRUST_EFFECT_NO_DURATION: "Získame $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- WE_LOSE_TRUST_EFFECT_NO_DURATION: "Strácame $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- THIRD_GAIN_TRUST_EFFECT_NO_DURATION: "[COUNTRY.GetLongName] získava $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- THIRD_LOSE_TRUST_EFFECT_NO_DURATION: "[COUNTRY.GetLongName] stráca $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- REMOVE_TRUST_MODIFIER_EFFECT: "Stráca modifikátor dôvery $TYPE|Y$ voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- WE_REMOVE_TRUST_MODIFIER_EFFECT: "Strácame modifikátor dôvery $TYPE|Y$ voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- THIRD_REMOVE_TRUST_MODIFIER_EFFECT: "[COUNTRY.GetLongName] stráca modifikátor dôvery $TYPE|Y$ voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- GAIN_TRUST_EFFECT_PAST: "Získal $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
- LOSE_TRUST_EFFECT_PAST: "Stratil $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
- WE_GAIN_TRUST_EFFECT_PAST: "Získali sme $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
- WE_LOSE_TRUST_EFFECT_PAST: "Stratili sme $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
- THIRD_GAIN_TRUST_EFFECT_PAST: "[COUNTRY.GetName] získal $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
- THIRD_LOSE_TRUST_EFFECT_PAST: "[COUNTRY.GetName] stratil $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
- GAIN_TRUST_EFFECT_NO_DURATION_PAST: "Získal $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- LOSE_TRUST_EFFECT_NO_DURATION_PAST: "Stratil $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- WE_GAIN_TRUST_EFFECT_NO_DURATION_PAST: "Získali sme $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- WE_LOSE_TRUST_EFFECT_NO_DURATION_PAST: "Stratili sme $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- THIRD_GAIN_TRUST_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] získal $VALUE|+0$ [trust|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- THIRD_LOSE_TRUST_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] stratil $VALUE|-0$ [trust|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- REMOVE_TRUST_MODIFIER_EFFECT_PAST: "Stratil modifikátor dôvery $TYPE|Y$ voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- WE_REMOVE_TRUST_MODIFIER_EFFECT_PAST: "Stratili sme modifikátor dôvery $TYPE|Y$ voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- THIRD_REMOVE_TRUST_MODIFIER_EFFECT_PAST: "[COUNTRY.GetName] stratil modifikátor dôvery $TYPE|Y$ voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ GAIN_TRUST_EQUILIBRIUM_EFFECT: "Získava $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
+ LOSE_TRUST_EQUILIBRIUM_EFFECT: "Stráca $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT: "Získame $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT: "Strácame $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT: "[COUNTRY.GetLongName] získava $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT: "[COUNTRY.GetLongName] stráca $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
+ GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Získava $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Stráca $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Získame $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "Strácame $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "[COUNTRY.GetLongName] získava $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION: "[COUNTRY.GetLongName] stráca $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT: "Stráca modifikátor $TYPE|Y$ rovnováhy dôvery voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ WE_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT: "Strácame modifikátor $TYPE|Y$ rovnováhy dôvery voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ THIRD_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT: "[COUNTRY.GetLongName] stráca modifikátor $TYPE|Y$ rovnováhy dôvery voči [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
+ GAIN_TRUST_EQUILIBRIUM_EFFECT_PAST: "Získal $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
+ LOSE_TRUST_EQUILIBRIUM_EFFECT_PAST: "Stratil $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT_PAST: "Získali sme $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT_PAST: "Stratili sme $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT_PAST: "[COUNTRY.GetName] získal $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT_PAST: "[COUNTRY.GetName] stratil $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName] na $DURATION$" # todo: NEW TRANSLATION
+ GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Získal $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Stratil $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ WE_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Získali sme $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ WE_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "Stratili sme $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ THIRD_GAIN_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] získal $VALUE|+0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ THIRD_LOSE_TRUST_EQUILIBRIUM_EFFECT_NO_DURATION_PAST: "[COUNTRY.GetName] stratil $VALUE|-0$ [trust_equilibrium|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT_PAST: "Stratil modifikátor $TYPE|Y$ rovnováhy dôvery voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ WE_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT_PAST: "Stratili sme modifikátor $TYPE|Y$ rovnováhy dôvery voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ THIRD_REMOVE_TRUST_EQUILIBRIUM_MODIFIER_EFFECT_PAST: "[COUNTRY.GetName] stratil modifikátor $TYPE|Y$ rovnováhy dôvery voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  GAIN_ANTAGONISM_EFFECT: "Získava $VALUE|+0$ [antagonism|e] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
  LOSE_ANTAGONISM_EFFECT: "Stráca $VALUE|-0$ [antagonism|e] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
  WE_GAIN_ANTAGONISM_EFFECT: "Získame $VALUE|+0$ [antagonism|e] voči [TARGET_COUNTRY.GetLongName] na $DURATION$" # todo: NEW TRANSLATION
@@ -597,6 +611,12 @@
  PAST_GAIN_ESTATE_GOLD_EFFECT: "[TARGET_ESTATE.GetName] $GAINED_LOST$ $VAL|2+=$[gold_i]" # todo: NEW TRANSLATION
  PAST_FIRST_GAIN_ESTATE_GOLD_EFFECT: "Naše [TARGET_ESTATE.GetName] $GAINED_LOST$ $VAL|+=$[gold_i]" # todo: NEW TRANSLATION
  PAST_THIRD_GAIN_ESTATE_GOLD_EFFECT: "[TARGET_ESTATE.GetName] v [COUNTRY.GetName] $GAINED_LOST$ $VAL|+=$[gold_i]" # todo: NEW TRANSLATION
+ DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "Bankárske statky získajú $VALUE|2G$[gold_i]" # todo: NEW TRANSLATION
+ FIRST_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "Naše bankárske statky získajú $VALUE|2G$[gold_i]" # todo: NEW TRANSLATION
+ THIRD_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "Bankárske statky [COUNTRY.GetName] získajú $VALUE|2G$[gold_i]" # todo: NEW TRANSLATION
+ PAST_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "Bankárske statky získali $VALUE|2G$[gold_i]" # todo: NEW TRANSLATION
+ PAST_FIRST_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "Naše bankárske statky získali $VALUE|2G$[gold_i]" # todo: NEW TRANSLATION
+ PAST_THIRD_DISTRIBUTE_GOLD_TO_BANKING_ESTATES_EFFECT: "Bankárske statky [COUNTRY.GetName] získali $VALUE|2G$[gold_i]" # todo: NEW TRANSLATION
  ESTATE_GAIN_GOLD_EFFECT: "$GAIN_LOSE$ $VAL|2+=$[gold_i]" # todo: NEW TRANSLATION
  THIRD_ESTATE_GAIN_GOLD_EFFECT: "[ESTATE.GetName] $GAIN_LOSE$ $VAL|+=$[gold_i]" # todo: NEW TRANSLATION
  PAST_ESTATE_GAIN_GOLD_EFFECT: "$GAINED_LOST$ $VAL|2+=$[gold_i]" # todo: NEW TRANSLATION
@@ -734,7 +754,7 @@
  DEFINE_TAG_EFFECT: "Je vytvorený ako historický tag $NAME|Y$" # todo: NEW TRANSLATION
  WE_DEFINE_TAG_EFFECT: "Sme vytvorení ako historický tag $NAME|Y$" # todo: NEW TRANSLATION
  THIRD_DEFINE_TAG_EFFECT: "[COUNTRY.GetName] sú vytvorení ako historický tag $NAME|Y$" # todo: NEW TRANSLATION
- PAST_DEFINE_TAG_EFFECT: "Boli sme vytvorení ako $NAME|Y$" # todo: NEW TRANSLATION
+ PAST_DEFINE_TAG_EFFECT: "Bol vytvorený ako $NAME|Y$" # todo: CHANGED
  PAST_WE_DEFINE_TAG_EFFECT: "Boli sme vytvorení ako $NAME|Y$" # todo: NEW TRANSLATION
  PAST_THIRD_DEFINE_TAG_EFFECT: "[COUNTRY.GetName] boli vytvorení ako $NAME|Y$" # todo: NEW TRANSLATION
  CHANGE_COUNTRY_FLAG_EFFECT: "Zmení vlajku na $NAME|Y$" # todo: NEW TRANSLATION
@@ -875,6 +895,18 @@
  PAST_LOSE_LIBERTY_DESIRE_EFFECT: "Stratil $VALUE|2G$ [liberty_desire|e]" # todo: NEW TRANSLATION
  PAST_FIRST_LOSE_LIBERTY_DESIRE_EFFECT: "Stratili sme $VALUE|2R$ [liberty_desire|e]" # todo: NEW TRANSLATION
  PAST_THIRD_LOSE_LIBERTY_DESIRE_EFFECT: "[COUNTRY.GetName] stratil $VALUE|2G$ [liberty_desire|e]" # todo: NEW TRANSLATION
+ GAIN_SCORE_EFFECT: "Získava $VALUE|0R$ [score|e]" # todo: NEW TRANSLATION
+ FIRST_GAIN_SCORE_EFFECT: "Získame $VALUE|0G$ [score|e]" # todo: NEW TRANSLATION
+ THIRD_GAIN_SCORE_EFFECT: "[COUNTRY.GetName] získava $VALUE|0R$ [score|e]" # todo: NEW TRANSLATION
+ PAST_GAIN_SCORE_EFFECT: "Získal $VALUE|0R$ [score|e]" # todo: NEW TRANSLATION
+ PAST_FIRST_GAIN_SCORE_EFFECT: "Získali sme $VALUE|0G$ [score|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_GAIN_SCORE_EFFECT: "[COUNTRY.GetName] získal $VALUE|0R$ [score|e]" # todo: NEW TRANSLATION
+ LOSE_SCORE_EFFECT: "Stráca $VALUE|0G$ [score|e]" # todo: NEW TRANSLATION
+ FIRST_LOSE_SCORE_EFFECT: "Strácame $VALUE|0R$ [score|e]" # todo: NEW TRANSLATION
+ THIRD_LOSE_SCORE_EFFECT: "[COUNTRY.GetName] stráca $VALUE|0G$ [score|e]" # todo: NEW TRANSLATION
+ PAST_LOSE_SCORE_EFFECT: "Stratil $VALUE|0G$ [score|e]" # todo: NEW TRANSLATION
+ PAST_FIRST_LOSE_SCORE_EFFECT: "Stratili sme $VALUE|0R$ [score|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_LOSE_SCORE_EFFECT: "[COUNTRY.GetName] stratil $VALUE|0G$ [score|e]" # todo: NEW TRANSLATION
  PERFORM_COUNTRY_INTERACTION_EFFECT: "Vykonáva #Y $DIPLO_ACTION$#! voči [TARGET_COUNTRY.GetName], spôsobujúc nasledujúce účinky:\n$COUNTRY_INTERACTION$\n$OUTCOME$" # todo: CHANGED
  THIRD_PERFORM_COUNTRY_INTERACTION_EFFECT: "[COUNTRY.GetName] vykonáva #Y $DIPLO_ACTION$#! voči [TARGET_COUNTRY.GetName], spôsobujúc nasledujúce účinky:\n$COUNTRY_INTERACTION$\n$OUTCOME$" # todo: CHANGED
  WE_PERFORM_COUNTRY_INTERACTION_EFFECT: "Vykonávame #Y $DIPLO_ACTION$#! voči [TARGET_COUNTRY.GetName], spôsobujúc nasledujúce účinky:\n$COUNTRY_INTERACTION$\n$OUTCOME$" # todo: CHANGED
@@ -1085,18 +1117,18 @@
  PAST_REMOVE_RELIGIOUS_FOCUS_EFFECT: "Odstránené [TARGET_RELIGIOUS_FOCUS.GetName] ako dokončený [religious_focus|e]" # todo: NEW TRANSLATION
  PAST_THIRD_REMOVE_RELIGIOUS_FOCUS_EFFECT: "[COUNTRY.GetName] odstránil(a) [TARGET_RELIGIOUS_FOCUS.GetName] ako dokončený [religious_focus|e]" # todo: NEW TRANSLATION
  PAST_WE_REMOVE_RELIGIOUS_FOCUS_EFFECT: "Odstránili sme [TARGET_RELIGIOUS_FOCUS.GetName] ako dokončený [religious_focus|e]" # todo: NEW TRANSLATION
- GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] získava $VALUE|2%G$ pokroku" # todo: NEW TRANSLATION
- FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] získava $VALUE|2%G$ pokroku" # todo: NEW TRANSLATION
- THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] zo strany [COUNTRY.GetName] získava $VALUE|2%G$ pokroku" # todo: NEW TRANSLATION
- LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] stráca $VALUE|2%R$ pokroku" # todo: NEW TRANSLATION
- FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] stráca $VALUE|2%R$ pokroku" # todo: NEW TRANSLATION
- THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] zo strany [COUNTRY.GetName] stráca $VALUE|2%R$ pokroku" # todo: NEW TRANSLATION
- PAST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] získal $VALUE|2%G$ pokroku" # todo: NEW TRANSLATION
- PAST_FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] získal $VALUE|2%G$ pokroku" # todo: NEW TRANSLATION
- PAST_THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] zo strany [COUNTRY.GetName] získal $VALUE|2%G$ pokroku" # todo: NEW TRANSLATION
- PAST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] stratil $VALUE|2%R$ pokroku" # todo: NEW TRANSLATION
- PAST_FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] stratil $VALUE|2%R$ pokroku" # todo: NEW TRANSLATION
- PAST_THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] zo strany [COUNTRY.GetName] stratil $VALUE|2%R$ pokroku" # todo: NEW TRANSLATION
+ GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] získava $VALUE|0G$% pokroku" # todo: CHANGED
+ FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] získava $VALUE|0G$% pokroku" # todo: CHANGED
+ THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] krajiny [COUNTRY.GetName] získava $VALUE|0G$% pokroku" # todo: CHANGED
+ LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] stráca $VALUE|0R$% pokroku" # todo: CHANGED
+ FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] stráca $VALUE|0R$% pokroku" # todo: CHANGED
+ THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] krajiny [COUNTRY.GetName] stráca $VALUE|0R$% pokroku" # todo: CHANGED
+ PAST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] získal $VALUE|0G$% pokroku" # todo: CHANGED
+ PAST_FIRST_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] získal $VALUE|0G$% pokroku" # todo: CHANGED
+ PAST_THIRD_GAIN_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] krajiny [COUNTRY.GetName] získal $VALUE|0G$% pokroku" # todo: CHANGED
+ PAST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] stratil $VALUE|0R$% pokroku" # todo: CHANGED
+ PAST_FIRST_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Náš výskum aktuálneho [religious_focus|e] stratil $VALUE|0R$% pokroku" # todo: CHANGED
+ PAST_THIRD_LOSE_RELIGIOUS_FOCUS_PROGRESS_EFFECT: "Výskum aktuálneho [religious_focus|e] krajiny [COUNTRY.GetName] stratil $VALUE|0R$% pokroku" # todo: CHANGED
  ADD_AVATAR_EFFECT: "Pridá [TARGET_AVATAR.GetName] ako [avatar|e]" # todo: NEW TRANSLATION
  THIRD_ADD_AVATAR_EFFECT: "[COUNTRY.GetName] pridáva [TARGET_AVATAR.GetName] ako [avatar|e]" # todo: NEW TRANSLATION
  WE_ADD_AVATAR_EFFECT: "Pridáme [TARGET_AVATAR.GetName] ako [avatar|e]" # todo: NEW TRANSLATION
@@ -1317,6 +1349,22 @@
  PAST_ADD_GOD_EFFECT: "Uctieval(a) [TARGET_GOD.GetName] ako svoje hlavné [god|e]" # todo: NEW TRANSLATION
  PAST_WE_ADD_GOD_EFFECT: "Uctievali sme [TARGET_GOD.GetName] ako nášho hlavného [god|e]" # todo: NEW TRANSLATION
  PAST_THIRD_ADD_GOD_EFFECT: "[COUNTRY.GetName] uctieval [TARGET_GOD.GetName] ako svojho hlavného [god|e]" # todo: NEW TRANSLATION
+ REMOVE_OMEN: "Príde o [omen|e]" # todo: NEW TRANSLATION
+ THIRD_REMOVE_OMEN: "[COUNTRY.GetName] príde o [omen|e]" # todo: NEW TRANSLATION
+ PAST_REMOVE_OMEN: "Prišiel o [omen|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_REMOVE_OMEN: "[COUNTRY.GetName] prišiel o [omen|e]" # todo: NEW TRANSLATION
+ ADD_OMEN_EFFECT: "[COUNTRY.GetName] vyvolá [TARGET_OMEN.GetName] [omen|e]" # todo: NEW TRANSLATION
+ WE_ADD_OMEN_EFFECT: "Vyvoláme [TARGET_OMEN.GetName] [omen|e]" # todo: NEW TRANSLATION
+ THIRD_ADD_OMEN_EFFECT: "[COUNTRY.GetName] vyvolá [TARGET_OMEN.GetName] [omen|e]" # todo: NEW TRANSLATION
+ PAST_ADD_OMEN_EFFECT: "Vyvolal [TARGET_OMEN.GetName] [omen|e]" # todo: NEW TRANSLATION
+ PAST_WE_ADD_OMEN_EFFECT: "Vyvolali sme [TARGET_OMEN.GetName] [omen|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_OMEN_EFFECT: "[COUNTRY.GetName] vyvolal [TARGET_OMEN.GetName] [omen|e]" # todo: NEW TRANSLATION
+ ADD_OMEN_GOD_EFFECT: "[COUNTRY.GetName] si vyberie [TARGET_GOD.GetName] ako vedenie pri výbere [omen|e]" # todo: NEW TRANSLATION
+ WE_ADD_OMEN_GOD_EFFECT: "Vyberieme si [TARGET_GOD.GetName] ako vedenie pri výbere [omen|e]" # todo: NEW TRANSLATION
+ THIRD_ADD_OMEN_GOD_EFFECT: "[COUNTRY.GetName] si vyberie [TARGET_GOD.GetName] ako vedenie pri výbere [omen|e]" # todo: NEW TRANSLATION
+ PAST_ADD_OMEN_GOD_EFFECT: "Zvolil [TARGET_GOD.GetName] [god|e]" # todo: NEW TRANSLATION
+ PAST_WE_ADD_OMEN_GOD_EFFECT: "Zvolili sme [TARGET_GOD.GetName] [god|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_OMEN_GOD_EFFECT: "[COUNTRY.GetName] zvolil [TARGET_GOD.GetName] [god|e]" # todo: NEW TRANSLATION
  MOVE_ART_EFFECT: "Presúva sa do [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  THIRD_MOVE_ART_EFFECT: "[WORK_OF_ART.GetName] sa presúva do [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  PAST_MOVE_ART_EFFECT: "Presunuté do [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
@@ -1443,14 +1491,14 @@
  THIRD_MOVE_CHARACTER_EFFECT: "[CHARACTER.GetName] sa presúva do [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
  PAST_MOVE_CHARACTER_EFFECT: "Presunutý do [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  PAST_THIRD_MOVE_CHARACTER_EFFECT: "[CHARACTER.GetName] bol presunutý do [TARGET_COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- ADD_TRAIT_EFFECT: "Získava [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
- THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] získava [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
- PAST_ADD_TRAIT_EFFECT: "Získal [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
- PAST_THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] získal [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
- REMOVE_TRAIT_EFFECT: "Stráca [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
- THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] stráca [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
- PAST_REMOVE_TRAIT_EFFECT: "Stratil [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
- PAST_THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] stratil [TARGET_TRAIT.GetName]" # todo: NEW TRANSLATION
+ ADD_TRAIT_EFFECT: "Získava [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
+ THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] získava [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
+ PAST_ADD_TRAIT_EFFECT: "Získal [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
+ PAST_THIRD_ADD_TRAIT_EFFECT: "[CHARACTER.GetName] získal [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
+ REMOVE_TRAIT_EFFECT: "Stráca [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
+ THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] stráca [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
+ PAST_REMOVE_TRAIT_EFFECT: "Stratil [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
+ PAST_THIRD_REMOVE_TRAIT_EFFECT: "[CHARACTER.GetName] stratil [TARGET_TRAIT.GetName] [trait|e]" # todo: CHANGED
  GAIN_ARTIST_SKILL_EFFECT: "Získava $VALUE|2%G$ [artistic_skill|E]" # todo: NEW TRANSLATION
  THIRD_GAIN_ARTIST_SKILL_EFFECT: "[CHARACTER.GetName] získava $VALUE|2%G$ [artistic_skill|E]" # todo: NEW TRANSLATION
  LOSE_ARTIST_SKILL_EFFECT: "Stráca $VALUE|2%R$ [artistic_skill|E]" # todo: NEW TRANSLATION
@@ -1635,6 +1683,42 @@
  PAST_LOOT_LOCATION_EFFECT: "Plienil [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  PAST_FIRST_LOOT_LOCATION_EFFECT: "Plienili sme [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  PAST_THIRD_LOOT_LOCATION_EFFECT: "$WHO$ plienil [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ ADD_BUREAUCRACY_EFFECT: "Zriaďuje [TARGET_BUREAUCRACY_TYPE.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ FIRST_ADD_BUREAUCRACY_EFFECT: "Zriaďujeme [TARGET_BUREAUCRACY_TYPE.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ THIRD_ADD_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] zriaďuje [TARGET_BUREAUCRACY_TYPE.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ PAST_ADD_BUREAUCRACY_EFFECT: "Zriadil [TARGET_BUREAUCRACY_TYPE.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ PAST_FIRST_ADD_BUREAUCRACY_EFFECT: "Zriadili sme [TARGET_BUREAUCRACY_TYPE.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] zriadil [TARGET_BUREAUCRACY_TYPE.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ FIRST_REMOVE_BUREAUCRACY_EFFECT: "Zrušíme [TARGET_BUREAUCRACY.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ REMOVE_BUREAUCRACY_EFFECT: "Zruší [TARGET_BUREAUCRACY.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ THIRD_REMOVE_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] zruší [TARGET_BUREAUCRACY.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ PAST_REMOVE_BUREAUCRACY_EFFECT: "Zrušil [TARGET_BUREAUCRACY.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ PAST_FIRST_REMOVE_BUREAUCRACY_EFFECT: "Zrušili sme [TARGET_BUREAUCRACY.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_REMOVE_BUREAUCRACY_EFFECT: "[COUNTRY.GetName] zrušil [TARGET_BUREAUCRACY.GetName] [bureaucracy|e]" # todo: NEW TRANSLATION
+ ADD_ENTRENCHMENT_EFFECT: "Získava $VALUE|2G$ [entrenchment|e]" # todo: NEW TRANSLATION
+ LOSE_ENTRENCHMENT_EFFECT: "Stráca $VALUE|R$ [entrenchment|e]" # todo: NEW TRANSLATION
+ THIRD_ADD_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] získava $VALUE|2G$ [entrenchment|e]" # todo: NEW TRANSLATION
+ THIRD_LOSE_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] stráca $VALUE|R$ [entrenchment|e]" # todo: NEW TRANSLATION
+ PAST_ADD_ENTRENCHMENT_EFFECT: "Získal $VALUE|2G$ [entrenchment|e]" # todo: NEW TRANSLATION
+ PAST_LOSE_ENTRENCHMENT_EFFECT: "Stratil $VALUE|R$ [entrenchment|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] získal $VALUE|2G$ [entrenchment|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_LOSE_ENTRENCHMENT_EFFECT: "[BUREAUCRACY.GetName] stratil $VALUE|R$ [entrenchment|e]" # todo: NEW TRANSLATION
+ SET_ENTRENCHMENT_EFFECT: "[entrenchment|e] je nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ THIRD_SET_ENTRENCHMENT_EFFECT: "[entrenchment|e] [BUREAUCRACY.GetName] je nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ PAST_SET_ENTRENCHMENT_EFFECT: "[entrenchment|e] bolo nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ PAST_THIRD_SET_ENTRENCHMENT_EFFECT: "[entrenchment|e] [BUREAUCRACY.GetName] bolo nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ SET_MAINTENANCE_EFFECT: "[maintenance|e] je nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ THIRD_SET_MAINTENANCE_EFFECT: "[maintenance|e] [BUREAUCRACY.GetName] je nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ PAST_SET_MAINTENANCE_EFFECT: "[maintenance|e] bolo nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ PAST_THIRD_SET_MAINTENANCE_EFFECT: "[maintenance|e] [BUREAUCRACY.GetName] bolo nastavené na $VALUE|%V$" # todo: NEW TRANSLATION
+ LOCK_MAINTENANCE_EFFECT: "[maintenance|e] je zamknuté a nedá sa zmeniť" # todo: NEW TRANSLATION
+ UNLOCK_MAINTENANCE_EFFECT: "[maintenance|e] je odomknuté a môže byť opäť voľne menené" # todo: NEW TRANSLATION
+ THIRD_LOCK_MAINTENANCE_EFFECT: "[maintenance|e] [BUREAUCRACY.GetName] je zamknuté a nedá sa zmeniť" # todo: NEW TRANSLATION
+ THIRD_UNLOCK_MAINTENANCE_EFFECT: "[maintenance|e] [BUREAUCRACY.GetName] je odomknuté a môže byť opäť voľne menené" # todo: NEW TRANSLATION
+ PAST_LOCK_MAINTENANCE_EFFECT: "[maintenance|e] bolo zamknuté" # todo: NEW TRANSLATION
+ PAST_UNLOCK_MAINTENANCE_EFFECT: "[maintenance|e] bolo odomknuté" # todo: NEW TRANSLATION
+ PAST_THIRD_LOCK_MAINTENANCE_EFFECT: "[maintenance|e] [BUREAUCRACY.GetName] bolo zamknuté" # todo: NEW TRANSLATION
+ PAST_THIRD_UNLOCK_MAINTENANCE_EFFECT: "[maintenance|e] [BUREAUCRACY.GetName] bolo odomknuté" # todo: NEW TRANSLATION
  CHANGE_MODIFIER_SIZE_EFFECT: "Zmení silu $MODIFIER$ o $VALUE|+=2$, čo vedie k jeho nahradeniu za $NEW_MODIFIER$" # todo: NEW TRANSLATION
  FIRST_CHANGE_MODIFIER_SIZE_EFFECT: "Meníme silu $MODIFIER$ o $VALUE|+=2$, čo vedie k jeho nahradeniu za $NEW_MODIFIER$" # todo: NEW TRANSLATION
  THIRD_CHANGE_MODIFIER_SIZE_EFFECT: "$WHO$ mení silu $MODIFIER$ o $VALUE|+=2$, čo vedie k jeho nahradeniu za $NEW_MODIFIER$" # todo: NEW TRANSLATION
@@ -1798,6 +1882,14 @@
  THIRD_SET_GARRISON_SIZE_EFFECT: "[LOCATION.GetName] nastaví silu [garrison|e] na $VALUE|2Y$" # todo: NEW TRANSLATION
  PAST_SET_GARRISON_SIZE_EFFECT: "Nastavil silu [garrison|e] na $VALUE|2Y$" # todo: NEW TRANSLATION
  PAST_THIRD_SET_GARRISON_SIZE_EFFECT: "[LOCATION.GetName] nastavil silu [garrison|e] na $VALUE|2Y$" # todo: NEW TRANSLATION
+ GRANT_TOWN_RIGHTS_EFFECT: "Je udelené [TARGET_TOWN_RIGHTS_TYPE.GetName]" # todo: NEW TRANSLATION
+ THIRD_GRANT_TOWN_RIGHTS_EFFECT: "Udelí [TARGET_TOWN_RIGHTS_TYPE.GetName] pre [LOCATION.GetName]" # todo: NEW TRANSLATION
+ PAST_GRANT_TOWN_RIGHTS_EFFECT: "Bolo udelené [TARGET_TOWN_RIGHTS_TYPE.GetName]" # todo: NEW TRANSLATION
+ PAST_THIRD_GRANT_TOWN_RIGHTS_EFFECT: "Udelené [TARGET_TOWN_RIGHTS_TYPE.GetName] pre [LOCATION.GetName]" # todo: NEW TRANSLATION
+ REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "Odobrať [TARGET_TOWN_RIGHTS_TYPE.GetName]" # todo: NEW TRANSLATION
+ THIRD_REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "Odobrať [TARGET_TOWN_RIGHTS_TYPE.GetName] z [LOCATION.GetName]" # todo: NEW TRANSLATION
+ PAST_REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "Stratené [TARGET_TOWN_RIGHTS_TYPE.GetName]" # todo: NEW TRANSLATION
+ PAST_THIRD_REVOKE_TOWN_RIGHTS_OF_TYPE_EFFECT: "[TARGET_TOWN_RIGHTS_TYPE.GetName] bol odobraný z [LOCATION.GetName]" # todo: NEW TRANSLATION
  ADD_PROVINCE_MODIFIER: "Získava $MODIFIER|V$$SCALE$" # todo: NEW TRANSLATION
  FIRST_ADD_PROVINCE_MODIFIER: "Získame $MODIFIER|V$$SCALE$" # todo: NEW TRANSLATION
  THIRD_ADD_PROVINCE_MODIFIER: "[PROVINCE.GetName] získava $MODIFIER|V$$SCALE$" # todo: NEW TRANSLATION
@@ -2308,6 +2400,12 @@
  PAST_FIRST_REMOVE_ACCEPTED_CULTURE_EFFECT: "Odstránili sme [TARGET_CULTURE.GetName] ako [accepted_culture|e]" # todo: NEW TRANSLATION
  THIRD_REMOVE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.GetName] odstráni [TARGET_CULTURE.GetName] ako [accepted_culture|e]" # todo: NEW TRANSLATION
  PAST_THIRD_REMOVE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.GetName] odstránil [TARGET_CULTURE.GetName] ako [accepted_culture|e]" # todo: NEW TRANSLATION
+ DEMOTE_ACCEPTED_CULTURE_EFFECT: "Znižuje status [TARGET_CULTURE.GetName] z [accepted_culture|e] na [tolerated_culture|e]" # todo: NEW TRANSLATION
+ PAST_DEMOTE_ACCEPTED_CULTURE_EFFECT: "Znížil status [TARGET_CULTURE.GetName] z [accepted_culture|e] na [tolerated_culture|e]" # todo: NEW TRANSLATION
+ FIRST_DEMOTE_ACCEPTED_CULTURE_EFFECT: "Znížime status [TARGET_CULTURE.GetName] z [accepted_culture|e] na [tolerated_culture|e]" # todo: NEW TRANSLATION
+ PAST_FIRST_DEMOTE_ACCEPTED_CULTURE_EFFECT: "Znížili sme status [TARGET_CULTURE.GetName] z [accepted_culture|e] na [tolerated_culture|e]" # todo: NEW TRANSLATION
+ THIRD_DEMOTE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.GetName] znižuje status [TARGET_CULTURE.GetName] z [accepted_culture|e] na [tolerated_culture|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_DEMOTE_ACCEPTED_CULTURE_EFFECT: "[COUNTRY.GetName] znížil status [TARGET_CULTURE.GetName] z [accepted_culture|e] na [tolerated_culture|e]" # todo: NEW TRANSLATION
  ADD_TOLERATED_CULTURE_EFFECT: "Pridáva [TARGET_CULTURE.GetName] ako [tolerated_culture|e]" # todo: NEW TRANSLATION
  PAST_ADD_TOLERATED_CULTURE_EFFECT: "Pridal [TARGET_CULTURE.GetName] ako [tolerated_culture|e]" # todo: NEW TRANSLATION
  FIRST_ADD_TOLERATED_CULTURE_EFFECT: "Pridávame [TARGET_CULTURE.GetName] ako [tolerated_culture|e]" # todo: CHANGED
@@ -2387,3 +2485,64 @@
  PAST_START_WEATHER_SYSTEM_EFFECT: "[LOCATION.GetName] videl $DESC$ smerujúce k [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  PAST_THIRD_START_WEATHER_SYSTEM_EFFECT: "[LOCATION.GetName] videl $DESC$ smerujúce k [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  START_TUTORIAL_LESSON: "Spustí tutoriál $TUTORIAL_NAME$" # todo: NEW TRANSLATION
+ SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] vzniká s $VALUE|0$ stúpencami" # todo: NEW TRANSLATION
+ THIRD_SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] vzniká v $IN|Y$ s $VALUE|0$ stúpencami" # todo: NEW TRANSLATION
+ PAST_SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] vznikol s $VALUE|0$ stúpencami" # todo: NEW TRANSLATION
+ PAST_THIRD_SPAWN_MOVEMENT_EFFECT: "[TARGET_MOVEMENT_DEFINITION.GetName] vznikol v $IN|Y$ s $VALUE|0$ stúpencami" # todo: NEW TRANSLATION
+ ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] sa objaví v $IN$, aby šíril [movement|e]" # todo: NEW TRANSLATION
+ THIRD_ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] sa objaví v $IN$, aby šíril [MOVEMENT.GetName]" # todo: NEW TRANSLATION
+ PAST_ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] sa objavil v $IN$, aby šíril [movement|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] sa objavil v $IN$, aby šíril [MOVEMENT.GetName]" # todo: NEW TRANSLATION
+ REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] prestane šíriť [movement|e]" # todo: NEW TRANSLATION
+ THIRD_REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] prestane šíriť [MOVEMENT.GetName]" # todo: NEW TRANSLATION
+ PAST_REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] prestal šíriť [movement|e]" # todo: NEW TRANSLATION
+ PAST_THIRD_REMOVE_SPREADER_EFFECT: "[TARGET_CHARACTER.GetName] prestal šíriť [MOVEMENT.GetName]" # todo: NEW TRANSLATION
+ SPREAD_TO_LOCATION_EFFECT: "Získava $POPS$ stúpencov v [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ THIRD_SPREAD_TO_LOCATION_EFFECT: "[MOVEMENT.GetName] získava $POPS$ stúpencov v [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ PAST_SPREAD_TO_LOCATION_EFFECT: "Získal $POPS$ stúpencov v [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ PAST_THIRD_SPREAD_TO_LOCATION_EFFECT: "[MOVEMENT.GetName] získal $POPS$ stúpencov v [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ ADD_MOVEMENT_MODIFIER_DURATION: "Získava $MODIFIER|V$ na $DURATION|Y$$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ THIRD_ADD_MOVEMENT_MODIFIER_DURATION: "[MOVEMENT.GetName] získava $MODIFIER|V$ na $DURATION|Y$$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ PAST_ADD_MOVEMENT_MODIFIER_DURATION: "Získal $MODIFIER|V$ na $DURATION|Y$$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_MOVEMENT_MODIFIER_DURATION: "[MOVEMENT.GetName] získal $MODIFIER|V$ na $DURATION|Y$$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ ADD_MOVEMENT_MODIFIER_FOREVER: "Získava $MODIFIER|V$ až do $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ THIRD_ADD_MOVEMENT_MODIFIER_FOREVER: "[MOVEMENT.GetName] získava $MODIFIER|V$ až do $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ PAST_ADD_MOVEMENT_MODIFIER_FOREVER: "Získal $MODIFIER|V$ až do $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_MOVEMENT_MODIFIER_FOREVER: "[MOVEMENT.GetName] získal $MODIFIER|V$ až do $END_OF_TIME_MOVEMENT$.$SCALE$$DECAYING$" # todo: NEW TRANSLATION
+ REMOVE_MOVEMENT_MODIFIER: "Stráca účinok $MODIFIER|V$" # todo: NEW TRANSLATION
+ THIRD_REMOVE_MOVEMENT_MODIFIER: "[MOVEMENT.GetName] stráca účinok $MODIFIER|V$" # todo: NEW TRANSLATION
+ PAST_REMOVE_MOVEMENT_MODIFIER: "Stratil účinok $MODIFIER|V$" # todo: NEW TRANSLATION
+ PAST_THIRD_REMOVE_MOVEMENT_MODIFIER: "[MOVEMENT.GetName] stratil účinok $MODIFIER|V$" # todo: NEW TRANSLATION
+ RELEASE_NON_CORES_EFFECT: "Uvoľní všetky nejadrové provincie" # todo: NEW TRANSLATION
+ FIRST_RELEASE_NON_CORES_EFFECT: "Uvoľníme všetky naše nejadrové provincie" # todo: NEW TRANSLATION
+ THIRD_RELEASE_NON_CORES_EFFECT: "[COUNTRY.GetName] uvoľní všetky nejadrové provincie" # todo: NEW TRANSLATION
+ PAST_RELEASE_NON_CORES_EFFECT: "Uvoľnil všetky nejadrové provincie" # todo: NEW TRANSLATION
+ PAST_FIRST_RELEASE_NON_CORES_EFFECT: "Uvoľnili sme všetky naše nejadrové provincie" # todo: NEW TRANSLATION
+ PAST_THIRD_RELEASE_NON_CORES_EFFECT: "[COUNTRY.GetName] uvoľnil všetky nejadrové provincie" # todo: NEW TRANSLATION
+ ADD_AREA_PREFERENCE_EFFECT: "Pridáva $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ FIRST_ADD_AREA_PREFERENCE_EFFECT: "Pridáme $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ THIRD_ADD_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] pridáva $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ PAST_ADD_AREA_PREFERENCE_EFFECT: "Pridal $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ PAST_FIRST_ADD_AREA_PREFERENCE_EFFECT: "Pridali sme $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ PAST_THIRD_ADD_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] pridal $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ REMOVE_AREA_PREFERENCE_EFFECT: "Odstraňuje $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ FIRST_REMOVE_AREA_PREFERENCE_EFFECT: "Odstránime $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ THIRD_REMOVE_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] odstraňuje $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ PAST_REMOVE_AREA_PREFERENCE_EFFECT: "Odstránil $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ PAST_FIRST_REMOVE_AREA_PREFERENCE_EFFECT: "Odstránili sme $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ PAST_THIRD_REMOVE_AREA_PREFERENCE_EFFECT: "[COUNTRY.GetName] odstránil $NAME$ ako preferenciu oblasti pre AI" # todo: NEW TRANSLATION
+ REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Odstraňuje všetky preferencie oblastí pre AI" # todo: NEW TRANSLATION
+ FIRST_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Odstránime všetky naše preferencie oblastí pre AI" # todo: NEW TRANSLATION
+ THIRD_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "[COUNTRY.GetName] odstraňuje všetky preferencie oblastí pre AI" # todo: NEW TRANSLATION
+ PAST_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Odstránil všetky preferencie oblastí pre AI" # todo: NEW TRANSLATION
+ PAST_FIRST_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "Odstránili sme všetky naše preferencie oblastí pre AI" # todo: NEW TRANSLATION
+ PAST_THIRD_REMOVE_ALL_AREA_PREFERENCES_EFFECT: "[COUNTRY.GetName] odstránil všetky preferencie oblastí pre AI" # todo: NEW TRANSLATION
+ SET_PERSONALITY_EFFECT: "Osobnosť AI nastavená na [TARGET_AI_PERSONALITY.GetName]" # todo: NEW TRANSLATION
+ FIRST_SET_PERSONALITY_EFFECT: "Naša osobnosť AI nastavená na [TARGET_AI_PERSONALITY.GetName]" # todo: NEW TRANSLATION
+ THIRD_SET_PERSONALITY_EFFECT: "Osobnosť AI [COUNTRY.GetName] nastavená na [TARGET_AI_PERSONALITY.GetName]" # todo: NEW TRANSLATION
+ PAST_SET_PERSONALITY_EFFECT: "Osobnosť AI nastavená na [TARGET_AI_PERSONALITY.GetName]" # todo: NEW TRANSLATION
+ PAST_FIRST_SET_PERSONALITY_EFFECT: "Naša osobnosť AI bola nastavená na [TARGET_AI_PERSONALITY.GetName]" # todo: NEW TRANSLATION
+ PAST_THIRD_SET_PERSONALITY_EFFECT: "Osobnosť AI [COUNTRY.GetName] bola nastavená na [TARGET_AI_PERSONALITY.GetName]" # todo: NEW TRANSLATION
+ DESTROY_BUILDING_COUNTRY_EFFECT: "[TARGET_COUNTRY.GetName] zanikne" # todo: NEW TRANSLATION
+ PAST_DESTROY_BUILDING_COUNTRY_EFFECT: "[TARGET_COUNTRY.GetName] zaniklo" # todo: NEW TRANSLATION
+ ESTATES_EFFECT: "Efekty stavov:" # todo: NEW TRANSLATION

@@ -6,7 +6,11 @@
  WARGOAL_IS_CONQUEST: "#T Vynútený cieľ vojny#!\n"
  WARGOAL_IS_SAFE: "#T Chránený cieľ vojny#!\n"
  WAR_LATERALVIEW_ANNEX_REVOLTER: "Anektovať vzbúrenca"
+ WAR_LATERALVIEW_ANNEX_ALL_REVOLTERS: "Pripojiť všetkých povstalcov" # todo: NEW TRANSLATION
  WAR_LATERALVIEW_GRANT_INDEPENDENCE: "Udeliť nezávislosť"
+ WAR_LATERALVIEW_REIN_IN_SUBJECT: "Udržať podriadeného" # todo: NEW TRANSLATION
+ WAR_LATERALVIEW_REIN_IN_SUBJECT_TOOLTIP: "Otvorte rokovania o mieri, aby ste ukončili túto vojnu o nezávislosť a pritom si ponechali [COUNTRY.GetName] ako svojho [subject|e].\n\nAk uzavriete mier bez udelenia nezávislosti, [COUNTRY.GetName] sa vráti do svojho statusu [subject|e]. Môžete tiež jednoducho dohodnúť [white peace|e], aby ste vojnu ukončili bez teritoriálnych zmien.\n\n#S Máte dostatočný [warscore|e], aby ste donútili [COUNTRY.GetName] prijať mier.#!" # todo: NEW TRANSLATION
+ WAR_LATERALVIEW_GRANT_INDEPENDENCE_THIRD_OUTCOME_HINT: "#S Tip: Toto nie je vaša jediná možnosť. Ak vyjednáte mier bez udelenia nezávislosti — alebo jednoducho vyhráte túto vojnu — [COUNTRY.GetName] sa opäť stane vaším [subject|e].#!" # todo: NEW TRANSLATION
  WARGOAL_IS_CONTESTED: "@trigger_no!Cieľ vojny je stále sporný."
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS_PEACE: "Keď uplynie $NEED|Y$ dní bez sporu o cieľ vojny, môže byť podpísané status quo ante bellum a $WHO|Y$ si ponechá $NAME|Y$!\nAktuálne uplynulo $DAYS|G$ dní."
  WARGOAL_TICKED_ENOUGH_DAYS_PEACE: "Ubehlo viac než $NEED|Y$ dní, počas ktorých bol $NAME|Y$ plne obránený, $WHO|Y$ teraz môže vynútiť status quo ante bellum!"
@@ -18,6 +22,10 @@
  WARGOAL_NOT_FULLY_SAFE: "@trigger_no!Cieľ vojny $NAME|Y$ je úplne ovládaný útočníkmi!"
  WARGOAL_NOT_TICKED_FUL: "@trigger_no!Cieľ vojny ešte nebol ovládaný dostatočne dlho a poskytuje útočníkom len bonus $VAL|+=2$, keď potrebujú $NEED|+=0$."
  WARGOAL_NOT_TICKED_FUL_SAFE: "@trigger_no!Cieľ vojny nebol dostatočne dlho udržiavaný v bezpečí a poskytuje obranným silám len bonus $VAL|+=2$, keď potrebujú $NEED|+=0$."
+ WAR_FORBIDS_WHITE_PEACE_TOOLTIP: "#R [CASUS_BELLI.GetName] zakazuje [white_peace|e]!#!" # todo: NEW TRANSLATION
+ WAR_REQUIRES_PEACE_TREATIES_TOOLTIP: "Nasledujúce [peace_treaties|e] musia byť vynútené, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION
+ WAR_REQUIRES_ATTACKER_PEACE_TREATIES_TOOLTIP: "Nasledujúce [peace_treaties|e] musia byť vynútené útočníkom, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION
+ WAR_REQUIRES_DEFENDER_PEACE_TREATIES_TOOLTIP: "Nasledujúce [peace_treaties|e] musia byť vynútené obrancom, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION
  WAR_LATERALVIEW_DATE_TOOLTIP: "Vojna začala [WarLateralView.GetWar.GetStartDate]"
  WAR_LATERALVIEW_WAR_GOAL_TOOLTIP: "Túto vojnu začal [WarLateralView.GetWar.GetOriginalAttacker.GetName] proti [WarLateralView.GetWar.GetOriginalDefendersList].\n[WarLateralView.GetWar.GetWarGoal.GetDescription]"
  WAR_OVERVIEW_WINLOSE_VS: "@[COUNTRY.GetFlag]! $NUM$ proti @[TARGET_COUNTRY.GetFlag]! $TARGET_NUM$"
@@ -123,8 +131,8 @@
  JOIN_WAR_REASON_DESC_InternationalOrganization: "[COUNTRY.GetName] je v [INTERNATIONAL_ORGANIZATION.GetName] spolu s [TARGET_COUNTRY.GetAltAdjective('I')]."
  JOIN_WAR_REASON_RivalClaimant: "Rivalitný nárok na [TARGET_COUNTRY.GetAdjective] trón"
  JOIN_WAR_REASON_DESC_RivalClaimint: "[COUNTRY.GetName] si nárokuje trón [TARGET_COUNTRY.GetAltAdjective('G')] a sú ochotní bojovať oň."
- JOIN_WAR_REASON_Scripted: "Skriptované"
- JOIN_WAR_REASON_DESC_Scripted: "Skriptované"
+ JOIN_WAR_REASON_Scripted: "Udalosti" # todo: CHANGED
+ JOIN_WAR_REASON_DESC_Scripted: "Udalosti ich priviedli do vojny." # todo: CHANGED
  LEAVE_WAR_REASON_WarEnded: "Vojna skončila"
  LEAVE_WAR_REASON_Annexed: "Anektovaný [TARGET_COUNTRY.GetName]"
  LEAVE_WAR_REASON_CountryDoesNotExist: "Krajina už neexistuje"
@@ -137,6 +145,7 @@
  LEAVE_WAR_REASON_Abandoned: "Opustili svojich priateľov [TARGET_COUNTRY.GetName] v ich hodine potreby"
  LEAVE_WAR_REASON_ForcedAbandoned: "Donútení svojím suzerénom opustiť svojich priateľov [TARGET_COUNTRY.GetName] v ich hodine potreby"
  LEAVE_WAR_REASON_BrokeFreeOfOverlord: "Oslobodili sa spod nadvlády svojho [overlord|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ LEAVE_WAR_REASON_Scripted: "Udalosti ich donútili odísť" # todo: NEW TRANSLATION
  REFUSE_TO_JOIN_WAR_REASON_HumanDeclined: "Hráč odmietol pripojiť sa."
  REFUSE_TO_JOIN_WAR_REASON_NotEnoughReasons: "Nemajú dosť dôvodov na pripojenie sa."
  REFUSE_TO_JOIN_WAR_REASON_ConflictOfInterests: "Podporili by obe krajiny, keby mohli, ale nemôžu, takže zostali neutrálni."
