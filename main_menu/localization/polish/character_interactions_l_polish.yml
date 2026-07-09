@@ -114,10 +114,10 @@
  commission_art: "Objednať umelecké dielo" # todo: NEW TRANSLATION
  commission_art_concept: "[work_of_art|e]" # todo: CHANGED
  commission_art_act: "$commission_art$" # todo: NEW TRANSLATION
- commission_art_desc_specific: "[recipient.GetName] začína vytvárať [work_of_art|e]." # todo: NEW TRANSLATION
+ commission_art_desc_specific: "[SCOPE.sCharacter('recipient').GetName] začína vytvárať [work_of_art|e]." # todo: CHANGED
  commission_art_desc: "Postava [character|e] vytvorí [work_of_art|e]." # todo: NEW TRANSLATION
  commission_art_past: "Umelecké dielo objednané." # todo: NEW TRANSLATION
- commission_art_act_past: "[recipient.GetName] bol vybraný, aby pre nás vytvoril nádherné [work_of_art|e]." # todo: NEW TRANSLATION
+ commission_art_act_past: "[SCOPE.sCharacter('recipient').GetName] bol vybraný, aby pre nás vytvoril(a) nádherné [work_of_art|e]." # todo: CHANGED
  abdicate: "Abdikovať" # todo: NEW TRANSLATION
  abdicate_concept: "[ruler|e]" # todo: NEW TRANSLATION
  abdicate_act: "$abdicate$" # todo: NEW TRANSLATION
@@ -158,18 +158,18 @@
  join_foreign_order_of_chivalry_select_title: "Vyberte krajinu, ktorej rádu sa chcete pridať" # todo: NEW TRANSLATION
  join_foreign_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] vstúpi do #Y Rádu šľachty#! cieľovej krajiny. Získané bonusy závisia od samotného rádu." # todo: NEW TRANSLATION
  join_foreign_order_of_chivalry_desc: "Postava [character|e] vstúpi do #Y Rádu šľachty#! cieľovej krajiny. Získané bonusy závisia od samotného rádu." # todo: NEW TRANSLATION
- join_foreign_order_of_chivalry_past: "[SCOPE.sCountry('target').Custom('GetOrderOfChivalry')]" # todo: NEW TRANSLATION
- join_foreign_order_of_chivalry_act_past: "[SCOPE.sCharacter('recipient').GetName] vstúpil do #Y [SCOPE.sCountry('target').Custom('GetOrderOfChivalry')]#! [SCOPE.sCountry('target').GetName]! Nasledujúce efekty sa teraz vzťahujú na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('target').Custom('GetOrderOfChivalryBonusTooltip')]" # todo: NEW TRANSLATION
+ join_foreign_order_of_chivalry_past: "[SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]" # todo: CHANGED
+ join_foreign_order_of_chivalry_act_past: "[SCOPE.sCharacter('recipient').GetName] sa pridal(a) k #Y [SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]#! [SCOPE.sCountry('target').GetName]! Nasledujúce efekty sa teraz vzťahujú na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('target').GetActiveChivalricOrder.GetCharacterModifierText]" # todo: CHANGED
  character_can_join_order_of_chivalry_tt: "[SCOPE.sCharacter('recipient').GetName] sa môže pridať k dostupnému #Y Rádu šľachty#!" # todo: NEW TRANSLATION
  join_foreign_order_of_chivalry_no_countries: "@trigger_no! Žiadny platný #Y Rád šľachty#! nie je dostupný." # todo: NEW TRANSLATION
  order_of_chivalry_country_cooldown: "Žiadny iný [character|e] sa nepridal k #Y Rádu šľachty#! v posledných #Y 10 rokoch#!." # todo: NEW TRANSLATION
  invite_to_order_of_chivalry: "Pozvať do rádu šľachty" # todo: NEW TRANSLATION
  invite_to_order_of_chivalry_concept: "[character|e]" # todo: NEW TRANSLATION
  invite_to_order_of_chivalry_act: "$invite_to_order_of_chivalry$" # todo: NEW TRANSLATION
- invite_to_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude pozvaný do nášho #Y [SCOPE.sCountry('actor').Custom('GetOrderOfChivalry')]#!. Ak prijme, nasledujúce efekty sa uplatnia na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('actor').Custom('GetOrderOfChivalryBonusTooltip')]" # todo: NEW TRANSLATION
+ invite_to_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude pozvaný/á do nášho #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!. Ak pozvanie prijme, nasledujúce efekty sa uplatnia na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]" # todo: CHANGED
  invite_to_order_of_chivalry_desc: "Postava [character|e] bude pozvaná do nášho #Y Rádu šľachty#!." # todo: NEW TRANSLATION
- invite_to_order_of_chivalry_past: "[SCOPE.sCharacter('recipient').GetName] sa pridal do #Y [SCOPE.sCountry('actor').Custom('GetOrderOfChivalry')]#!!" # todo: NEW TRANSLATION
- invite_to_order_of_chivalry_act_past: "Nasledujúce efekty sa teraz vzťahujú na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('actor').Custom('GetOrderOfChivalryBonusTooltip')]" # todo: NEW TRANSLATION
+ invite_to_order_of_chivalry_past: "[SCOPE.sCharacter('recipient').GetName] sa pridal(a) do #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!!" # todo: CHANGED
+ invite_to_order_of_chivalry_act_past: "Nasledujúce efekty sa teraz uplatňujú na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]" # todo: CHANGED
  banish_character: "Vyhostiť" # todo: NEW TRANSLATION
  banish_character_concept: "[character|e]" # todo: NEW TRANSLATION
  banish_character_act: "$banish_character$" # todo: NEW TRANSLATION
@@ -246,3 +246,10 @@
  tur_appoint_dragoman_desc_specific: "Vymenovať [character|e] do pozície dragomana, čím získa [ShowModifier('dragoman_modifier')] [modifier|e]." # todo: NEW TRANSLATION
  tur_appoint_dragoman_past: "[SCOPE.sCharacter('recipient').GetName] bol vymenovaný ako [ShowModifier('dragoman_modifier')]" # todo: CHANGED
  tur_appoint_dragoman_act_past: "[SCOPE.sCharacter('recipient').GetName] bol vymenovaný ako [ShowModifier('dragoman_modifier')], čím posilnil ľud [SCOPE.sCharacter('recipient').GetCulture.GetName]." # todo: CHANGED
+ dismiss_artist: "Prepustiť umelca" # todo: NEW TRANSLATION
+ dismiss_artist_concept: "[artist|e]" # todo: NEW TRANSLATION
+ dismiss_artist_act: "$dismiss_artist$" # todo: NEW TRANSLATION
+ dismiss_artist_desc: "Odstráňte [artist|e] z nášho dvora. Rozšíri sa správa, že sme náročný mecenáš." # todo: NEW TRANSLATION
+ dismiss_artist_desc_specific: "Odstráňte [SCOPE.sCharacter('recipient').GetName] z nášho dvora. Toto nás bude stáť [prestige|e] a môže rozhnevať príslušný [estate|e]." # todo: NEW TRANSLATION
+ dismiss_artist_past: "Umelec prepustený" # todo: NEW TRANSLATION
+ dismiss_artist_act_past: "[SCOPE.sCharacter('recipient').GetName] už nie je v našom dvore." # todo: NEW TRANSLATION

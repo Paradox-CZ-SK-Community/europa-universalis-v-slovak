@@ -1,7 +1,7 @@
-version="0.3"
+version="0.6"
 tags={
 	"Translation"
 }
 name="Slovenčina do Europa Universalis V"
-supported_version="1.1.*"
+supported_version="1.3.*"
 remote_file_id="3600943912"

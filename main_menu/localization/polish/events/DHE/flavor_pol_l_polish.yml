@@ -57,6 +57,7 @@
  flavor_pol.8.b: "Neskompromisne sa nebudeme dohodovať s [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]!" # todo: NEW TRANSLATION
  flavor_pol.8.b.entry: "Neurobíme kompromis s takými ako $nobles_estate$!" # todo: NEW TRANSLATION
  flavor_pol.8.historical_info: "Za vlády Jána I. Albrechta, syna Kazimíra IV., pokračovala politika ústupkov šľachte. V roku 1496 bol zavedený Piotrkówski štatút. Znamenal, že poddanstvo bolo posilnené a uznané zákonom. Zakazoval všetkým robotníkom presúvať sa zo svojich dedín, okrem jedného ročne. Neskôr bol rozšírený o pracovnú povinnosť šesť dní v týždni. V tomto bode stratili poľskí roľníci nielen všetku moc, ale aj slobodu. Moc prešla do rúk šľachty." # todo: NEW TRANSLATION
+ variable_rise_of_szlachta_szlachta_outcome_variable_tt: "Šľachta získala moc" # todo: NEW TRANSLATION
  flavor_pol.9.title: "[ShowEstatePrivilegeNameWithNoTooltip('nieszawa_privileges')]" # todo: NEW TRANSLATION
  flavor_pol.9.entry: "Nieszawské privilégiá" # todo: NEW TRANSLATION
  flavor_pol.9.desc: "Po predchádzajúcich ústupkoch voči [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a počas našich súčasných bojov o moc bol [target_character.GetName] opäť prinútený vstúpiť do nových rokovaní s nimi. [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] navrhli dohodu za účelom zvyšovania vojska, vrátane žoldnierov. V snahe vyriešiť naliehavé problémy [target_character.GetNameWithNoTooltip] musel prijať [ShowEstatePrivilegeNameWithNoTooltip('nieszawa_privileges')], čo naznačovalo, že [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] má právo usporiadať miestne #italic Conventiones Particulares#!, bez ktorých sa nedali získať vojská ani vyberať dane. Týmto spôsobom získala [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] účinnú a mocnú organizáciu so spoločným vzájomným záujmom a právomocou nad vojenskou a daňovou legislatívou." # todo: NEW TRANSLATION
@@ -113,31 +114,33 @@
  flavor_pol.18.desc: "Expanzívne sklony [GetCountry('TUR').GetName] viedli k novej vlne dobrovoľníkov prichádzajúcich do našich plukov, aby bránili svoju [ShowReligionGroupAdjective('christian')] vieru proti pohanskému postupu." # todo: NEW TRANSLATION
  flavor_pol.18.a: "Budeme brániť kresťanstvo." # todo: NEW TRANSLATION
  flavor_pol.18.historical_info: "Poľsko a Osmanská ríša sa dostali do konfliktu v 70. a 80. rokoch 17. storočia, keď sa kozaci v poľskej časti rozdelenej Ukrajiny postavili pod osmanskú nadvládu a žiadali tatársku pomoc proti Poľsku. Víťazstvá hetmana Jána Sobieskeho iba dočasne oddialili hrozbu a v roku 1672 čelil Commonwealth veľkej invázii Osmanskej ríše. Pád kľúčovej pohraničnej pevnosti Kamieniec Podolský bol sprevádzaný ponižujúcim mierom v Buchači. V roku 1683 Sobieski viedol pomocné vojsko do Viedne, obliehanej Osmanskými vojskami, a ako vrchný veliteľ spojeneckých síl dosiahol rozhodujúce víťazstvo, ktoré znamenalo začiatok ústupu Osmanov z Európy." # todo: NEW TRANSLATION
- pol_stag_maybe_more: "Možno sa neskôr objavia ďalšie príležitosti." # todo: NEW TRANSLATION
- flavor_pol.19.title: "Koniec stagnácie" # todo: NEW TRANSLATION
- flavor_pol.19.entry: "$flavor_pol.19.title$" # todo: NEW TRANSLATION
- flavor_pol.19.desc: "Naše súčasné zdieľanie moci s [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] z [ROOT.GetCountry.GetName] má dlhú tradíciu v našej správe. Niektorí z našich poradcov nás nabádajú, aby sme sa snažili obrátiť túto situáciu v prospech [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], zatiaľ čo iní uprednostňujú pokračovanie súčasného stavu." # todo: NEW TRANSLATION
- flavor_pol.19.a: "Nie, zmena by bola príliš problematická." # todo: NEW TRANSLATION
- flavor_pol.19.b: "Zmeňme túto deprimujúcu situáciu." # todo: NEW TRANSLATION
- flavor_pol.19.historical_info: "Keď sa Ján Sobieski stal kráľom Poľska a vytvoril si povesť spasiteľa Viedne počas obliehania mesta osmanskými silami v roku 1683, tešil sa pomerne nezvyčajnej podpore zo strany poľského Sejmu. Táto podpora však neviedla k posunu moci medzi poľskou šľachtou a monarchom." # todo: NEW TRANSLATION
- flavor_pol.20.title: "Koniec stagnácie" # todo: NEW TRANSLATION
- flavor_pol.20.entry: "$flavor_pol.20.title$" # todo: NEW TRANSLATION
- flavor_pol.20.desc: "$flavor_pol.19.desc$" # todo: NEW TRANSLATION
- flavor_pol.20.a: "Nie, zmena by bola príliš problematická." # todo: NEW TRANSLATION
- flavor_pol.20.b: "Zmeňme túto deprimujúcu situáciu." # todo: NEW TRANSLATION
+ flavor_pol.19.title: "Slávny [ROOT.GetCountry.GetGovernment.GetRulerTitle]" # todo: CHANGED
+ flavor_pol.19.entry: "Slávny kráľ" # todo: CHANGED
+ flavor_pol.19.desc: "[target_character.GetName] je oslavovaný po celom [ROOT.GetCountry.GetCapital.GetName] ako záchranca [ROOT.GetCountry.GetReligion.GetAdjective] Európy. [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sklápajú hlavy na verejnosti, zatiaľ čo nás v súkromí pozorne sledujú.\n\nPo prvý raz za generáciu si [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] zaslúžila viac vernosti než strachu. Niektorí z našich poradcov nás nabádajú, aby sme využili túto výhodu a prelomili zvieraciu slučku šľachtických privilégií skôr, než okamih opadne. Iní radia trpezlivosť — [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] majú dlhú pamäť a dnešná vďačnosť sa môže zmeniť na zajtrajšie sprisahanie." # todo: CHANGED
+ flavor_pol.19.a: "Neznehodnocujme ich dobrú vôľu prílišným nátlakom." # todo: CHANGED
+ pol_stag_maybe_more_tt: "Neskôr sa môžu objaviť ďalšie príležitosti" # todo: NEW TRANSLATION
+ flavor_pol.19.b: "Využime chvíľu, kým je náš prestíž bezkonkurenčný." # todo: CHANGED
+ flavor_pol.19.historical_info: "Keď sa Ján Sobieski stal kráľom Poľska a získal povesť spasiteľa Viedne počas obliehania mesta osmanskými silami v roku 1683, tešil sa aj pomerne nezvyčajnej podpore zo strany poľského Sejmu. Táto podpora však nevyústila v presun moci medzi poľským šľachtickým stavom a panovníkom." # todo: CHANGED
+ flavor_pol.20.title: "Veľký plán [ROOT.GetCountry.GetGovernment.GetRulerTitle]" # todo: CHANGED
+ flavor_pol.20.entry: "Kráľov veľký plán" # todo: CHANGED
+ flavor_pol.20.desc: " [ROOT.GetCountry.GetGovernment.GetRulerTitle] s ťažko skrytou frustráciou pozoruje rozvrátené mechanizmy nášho [ROOT.GetCountry.GetGovernment.GetParliament.GetName]. [ShowEstatePrivilegeName('liberum_veto')] paralyzovalo zasadnutie za zasadnutím a [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] berú každé sedenie ako šport, hádzajúc vetá ako oštepy, nechávajúc každý návrh umrieť na podlahe snemovne.\n\nStále zostáva okno príležitosti. Niektorí medzi [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], ktorí sa boja cudzej centralizácie, by paradoxne mohli prijať reformy, ktoré posilnia [ROOT.GetCountry.GetFlavorRank] ako celok na úkor chaotických privilégiií, ktoré teraz ohrozujú jeho prežitie." # todo: CHANGED
+ flavor_pol.20.a: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] to neprijmú." # todo: CHANGED
+ flavor_pol.20.b: "Náš [ROOT.GetCountry.GetFlavorRank] nemôže prežiť ďalšie storočie paralýzy." # todo: CHANGED
  flavor_pol.20.historical_info: "Keď sa August II. v roku 1697 ujal poľského trónu, prišiel do Poľska s veľkými ambíciami o centralizovaný štát a o zjednotenie svojho saského domova s Poľskom. Tieto ciele sa však nepodarili kvôli pretrvávajúcim konfliktom a odporu poľského Sejmu." # todo: NEW TRANSLATION
- flavor_pol.21.title: "Ukončenie stagnácie" # todo: NEW TRANSLATION
- flavor_pol.21.entry: "$flavor_pol.21.title$" # todo: NEW TRANSLATION
- flavor_pol.21.desc: "$flavor_pol.19.desc$" # todo: NEW TRANSLATION
- flavor_pol.21.a: "Nie, zmena situácie je príliš problematická." # todo: NEW TRANSLATION
- flavor_pol.21.b: "Zmeňme túto deprimujúcu situáciu." # todo: NEW TRANSLATION
- flavor_pol.21.historical_info: "Po nástupe Stanisława Augusta Poniatowského na poľský trón v roku 1764 začal vlnu ústavných reforiem, vrátane plánovaného zrušenia starých šľachtických privilégií. Tieto plány sa však rozpadli kvôli zahraničnému zásahu Pruska a Ruska, ktoré hrozili vojnou." # todo: NEW TRANSLATION
- flavor_pol.22.title: "Ukončenie stagnácie" # todo: NEW TRANSLATION
+ flavor_pol.21.title: "Prvý ťah [ROOT.GetCountry.GetGovernment.GetRulerTitle]" # todo: CHANGED
+ flavor_pol.21.entry: "Kráľov prvý ťah" # todo: CHANGED
+ flavor_pol.21.desc: "[target_character.GetName], nesúc myšlienky [ShowInstitutionName('enlightenment')], nastúpil/a na trón s reformným duchom, ktorý našich susedov znepokojuje rovnako, ako našich filozofov nadchýna. [target_character.GetHerHis|U] poradcovia vypracovali návrhy, ktoré by zrušili tak [ShowEstatePrivilegeName('liberum_veto')] ako aj [ShowEstatePrivilegeName('nieszawa_privileges')], nahradzujúc šľachtické brzdenie fungujúcim legislatívnym poriadkom.\n\nDvory našich susedov nás však pozorne sledujú. Zahraničné mocnosti profitujú zo slabého [ROOT.GetCountry.GetLongName] a dali to najavo prostredníctvom vyslancov, ktorých zdvorilosť sotva skrýva hrozbu, že akékoľvek posilnenie [ROOT.GetCountry.GetAdjective] centrálnej moci považujú za provokáciu. Otázkou zostáva, či sa odvážime reformovať pod ich pozorným dohľadom." # todo: CHANGED
+ flavor_pol.21.a: "Táto reforma prinesie vojnu skôr, než prinesie poriadok." # todo: CHANGED
+ pol_stag_last_chance_tt: "Môžu sa ešte objaviť reformné snahy, no času ubúda" # todo: NEW TRANSLATION
+ flavor_pol.21.b: "Nenecháme sa cudzími hrozbami zadržať navždy." # todo: CHANGED
+ flavor_pol.21.historical_info: "Po nástupe Stanisława Augusta Poniatowského na poľský trón v roku 1764 zahájil vlnu ústavných reforiem, vrátane plánovaného zrušenia starých šľachtických privilégií. Tieto plány sa však rozpadli kvôli zahraničnému zásahu Pruska a Ruska, ktoré hrozili vojnou." # todo: CHANGED
+ flavor_pol.22.title: "Ústava z 3. mája" # todo: CHANGED
  flavor_pol.22.entry: "$flavor_pol.22.title$" # todo: NEW TRANSLATION
- flavor_pol.22.desc: "$flavor_pol.19.desc$" # todo: NEW TRANSLATION
- flavor_pol.22.a: "Nie, zmena situácie je príliš problematická." # todo: CHANGED
- flavor_pol.22.b: "Zmeňme túto deprimujúcu situáciu." # todo: CHANGED
- flavor_pol.22.historical_info: "Stanisław Poniatowski podnikol v roku 1787 druhý pokus o reformu poľského štátu a obrátil sa na Rusko s ponukou aliancie výmenou za podporu pri zriadení poľskej armády. Túto ponuku odmietla Katarína Veľká a viedlo to k následnému rozdeleniu Poľska." # todo: NEW TRANSLATION
+ flavor_pol.22.desc: "Náš [ROOT.GetCountry.GetGovernment.GetRulerTitle] predložil [ROOT.GetCountry.GetGovernment.GetParliament.GetName] najrozsiahlejší akt sebarenovácie, ktorý si [ROOT.GetCountry.GetName] kedy predstavilo: novú ústavu, ktorá by zrušila [ShowEstatePrivilegeName('liberum_veto')], posilnila [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] a premenila túto roztrieštenú krajinu na fungujúci moderný štát.\n\nVyslanci našich susedov doručili svoje posolstvá. Jazyk je diplomatický; význam nie. Ak budeme pokračovať, riskujeme zahraničný zásah. Ak ustúpime, pochováme poslednú šancu [ROOT.GetCountry.GetNameWithNoTooltip] na suverenitu pod rovnakými šľachtickými privilégiiami, ktoré nás dusia už viac než storočie. Dejiny zaznamenajú tento moment jedným alebo druhým spôsobom." # todo: CHANGED
+ flavor_pol.22.a: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] by roztrhali [ROOT.GetCountry.GetFlavorRank] skôr, než by sa vzdali tejto moci." # todo: CHANGED
+ pol_stag_no_more_tt: "Toto je posledný okamih na uchopenie iniciatívy" # todo: NEW TRANSLATION
+ flavor_pol.22.b: "Schválime ústavu. Nech je [ROOT.GetCountry.GetNameWithNoTooltip] zapamätané ako národ, ktorý si zvolil vlastný osud." # todo: CHANGED
+ flavor_pol.22.historical_info: "Stanisław Poniatowski podnikol druhý pokus o reformu poľského štátu v roku 1787, keď oslovil Rusko s ponukou aliancie výmenou za podporu pri zriadení poľskej armády. Táto ponuka bola odmietnutá Katarínou II. a nakoniec viedla k rozdeleniu Poľska. Ústava z 3. mája 1791 bola napriek tomu prijatá, čím sa stala prvou kodifikovanou národnou ústavou v Európe. Bola krátkodobá — rusko-poľská vojna v roku 1792 a druhé rozdelenie nasledovali do roka." # todo: CHANGED
  flavor_pol.23.title: "The [ROOT.GetCountry.GetGovernment.GetParliament.GetNameWithNoTooltip] dodržiava naše politiky" # todo: NEW TRANSLATION
  flavor_pol.23.desc: "Našťastie našli politiky nášho štátu pochopenie v [ROOT.GetCountry.GetGovernment.GetParliament.GetName], ktorý sa rozhodol podporiť naše snahy počas súčasnej schôdze." # todo: NEW TRANSLATION
  flavor_pol.23.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
@@ -273,6 +276,7 @@
  flavor_pol.45.desc: "Zjednotenie [pol_country.GetLongName] a [lit_country.GetLongName] pod jedným panovníkom viedlo k vzniku novej veľmoci v [ShowContinentName('europe')]. [pol_dynasty_founder.GetName] je široko uznávaný ako vládca, s ktorým treba rátať, a je isté, že jeho potomkovia budú rešpektovaní po stáročia. To prinieslo [pol_dynasty_founder.GetShortNameWithNoTooltip] uznanie a mnohí považujú [pol_dynasty_founder.GetHimHer] za zakladateľa novej dynastie." # todo: NEW TRANSLATION
  flavor_pol.45.historical_info: "Jagiellonská dynastia bola založená v roku 1386 Władysławom II. Jagellom jeho manželstvom s kráľovnou Jadwigou Poľskou, čo zjednotilo Poľsko a Litvu v osobnej únii. Dynastia vládla obom krajinám až do roku 1572, keď línia vymrela a poľsko-litovská únia začala byť spravovaná kráľmi volenými prostredníctvom volebnej monarchie." # todo: NEW TRANSLATION
  flavor_pol.45.a: "Toto je začiatok novej éry." # todo: NEW TRANSLATION
+ flavor_pol.45.b: "Sláva dynastie [pol_dynasty_founder.GetDynasty.GetNameWithNoTooltip] je už dobre známa." # todo: NEW TRANSLATION
  flavor_pol.46.title: "Zrušené zasnúbenie" # todo: NEW TRANSLATION
  flavor_pol.46.desc.a: "Dostala sa k nám správa o nešťastnej smrti [dead_character.GetName]. Hlboko smútime nad touto stratou a ľutujeme aj zmeškanú príležitosť ešte viac spojiť obe dynastie. Je zrejmé, že s týmto udalostí sa zasnúbenie medzi [polish_candidate.GetNameWithNoTooltip] a [lithuanian_candidate.GetName] zrušilo." # todo: NEW TRANSLATION
  flavor_pol.46.desc.b: "Politika dynastického zjednotenia medzi [polish_candidate.GetDynasty.GetName] a [lithuanian_candidate.GetDynasty.GetName] je pre našu vnútornú politiku druhoradá. Preto sme sa rozhodli zosobášiť [polish_candidate.GetName] s niekým iným, čo by nám prinieslo oveľa väčší úžitok." # todo: NEW TRANSLATION
@@ -286,6 +290,10 @@
  flavor_pol.47.historical_info: "Unia w Krewie bola podpísaná vtedajším veľkokniežaťom Litvy Jogailom, aby objasnila a ratifikovala jeho záväzky voči poľským a litovským pánom. Jogaila sa mal obrátiť na katolicizmus spolu so svojím dvorom a niektorí poľskí zajatci mali byť prepustení. Jogaila tiež prisľúbil začlenenie litevských zeme a Rus' do poľskej koruny." # todo: NEW TRANSLATION
  flavor_pol.47.a: "Ratifikujme úniu a oslavujme sobáš!" # todo: NEW TRANSLATION
  flavor_pol.47.b: "Nemôžeme si to dovoliť." # todo: NEW TRANSLATION
+ POL_marriage_happening_tt: "Kráľovská únia s [GetCountry('LIT').GetName] bola dohodnutá" # todo: NEW TRANSLATION
+ POL_betrothal_initiated_tt: "Bolo začaté zasnúbenie s [GetCountry('LIT').GetName]" # todo: NEW TRANSLATION
+ POL_pol_candidate_ready_tt: "Manželský kandidát [GetCountry('POL').GetAdjective] je spôsobilý na sobáš" # todo: NEW TRANSLATION
+ POL_lit_candidate_ready_tt: "Manželský kandidát [GetCountry('LIT').GetAdjective] je spôsobilý na sobáš" # todo: NEW TRANSLATION
  flavor_pol.48.title: "Żupy Krakowskie" # todo: NEW TRANSLATION
  flavor_pol.48.entry: "$flavor_pol.48.title$" # todo: NEW TRANSLATION
  flavor_pol.48.desc: "Jeden z našich správcov predložil návrh premeniť dva dôležité [ShowGoodsName('salt')] bane v [ShowLocationName('wieliczka')] na [ROOT.GetCountry.GetGovernment.GetAdjective] spoločnosť a dať ich pod kontrolu špecializovanejšej inštitúcie. Štatút by ďalej kodifikoval všetky formality týkajúce sa ťažby [ShowGoodsNameWithNoTooltip('salt')], jej použitia pri výrobe tovaru, exportu a daní zo všetkých spomenutých oblastí. Takýto akt by mohol viesť k nárastu príjmov, čo by umožnilo ambicióznejšie projekty a kampane v budúcnosti." # todo: NEW TRANSLATION
@@ -447,6 +455,7 @@
  flavor_pol.1602.a: "Vrátime [loan_pledge.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_pol.1602.a.entry: "Vrátime [ShowLocationNameWithNoTooltip('lubica')]." # todo: NEW TRANSLATION
  flavor_pol.1602.b: "Prijmite, prosím, tento legitímny pakt, ktorý ospravedlňuje naše trvalé držanie." # todo: NEW TRANSLATION
+ variable_has_taken_pledge_of_spisz_tt: "Uhorsko prisľúbilo spišské mestá" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_pol_honored_agreement: "Dodržaná dohoda o zástave [ShowProvinceDefinitionName('szepes_province')]" # todo: NEW TRANSLATION
  flavor_pol.1603.title: "Osud pôžičky" # todo: NEW TRANSLATION
  flavor_pol.1603.desc.a: "Uhradili sme [loan_giver.GetAdjective] v plnej výške, a predsa odmietajú vrátiť nám dediny [ShowProvinceDefinitionName('szepes_province')]. Ako zámienku uvádzajú nejaký vymyslený pakt, ktorý si iste sfalšovali, aby nás presvedčili, že [loan_pledge.GetName] zostane u nich. Aké absurdné! Ich podvodné taktiky ich dovedú k záhube." # todo: NEW TRANSLATION
@@ -454,3 +463,4 @@
  flavor_pol.1603.b: "[ROOT.GetCountry.GetReligion.GetGodName] ich odsúdi." # todo: NEW TRANSLATION
  flavor_pol.1603.b.entry: "Náš Boh ich súdi." # todo: NEW TRANSLATION
  flavor_pol.1603.a: "Dobré obchody!"" # todo: NEW TRANSLATION
+ pol_stag_maybe_more: "Možno sa neskôr objavia ďalšie príležitosti." # todo: NEW TRANSLATION

@@ -6,7 +6,8 @@
  ACHIEVEMENT_NOT_POSSIBLE_TITLE: "Úspech nie je dostupný" # todo: NEW TRANSLATION
  ACHIEVEMENT_REQUIRES_DLC_TITLE: "Úspech DLC" # todo: NEW TRANSLATION
  ACHIEVEMENT_REQUIRES_DLC: "Má povolené DLC: [GameDLC.GetName]" # todo: NEW TRANSLATION
- ACHIEVEMENT_NOT_POSSIBLE_IRONMAN: "Úspechy sú dostupné iba v režime Ironman." # todo: NEW TRANSLATION
+ ACHIEVEMENT_REQUIRES_DLC_PASS: "#indent_newline:0 #trigger_pass @trigger_pass! $ACHIEVEMENT_REQUIRES_DLC$#!#!" # todo: NEW TRANSLATION
+ ACHIEVEMENT_REQUIRES_DLC_FAIL: "#indent_newline:0 #trigger_fail @trigger_fail! $ACHIEVEMENT_REQUIRES_DLC$#!#!" # todo: NEW TRANSLATION
  IRONMAN_LABEL: "Ironman" # todo: NEW TRANSLATION
  IRONMAN_SAVEGAME_NAME: "Ironman $COUNTRY$" # todo: NEW TRANSLATION
  IRONMAN_SAVELABEL_NAME: "Uložená hra Ironman" # todo: NEW TRANSLATION
@@ -23,7 +24,7 @@
  ACHIEVEMENTS_ENABLED_NO_HEADER: "#P Dostupné#!" # todo: NEW TRANSLATION
  ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Nedostupné#!" # todo: NEW TRANSLATION
  ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON: "#N Nedostupné#!\n\nÚspechy sa momentálne nedajú odomknúť počas hrania hry.\n$ACHIEVEMENTS_EXPLANATION$" # todo: NEW TRANSLATION
- ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Úspechy je možné odomknúť iba ak:\n$EFFECT_LIST_BULLET$Hráte v režime pre jedného hráča\n$EFFECT_LIST_BULLET$Je povolený režim Ironman\n$EFFECT_LIST_BULLET$Hra ešte nedosiahla dátum konca hry\n$EFFECT_LIST_BULLET$Nepoužívate uloženú hru iného hráča\n$EFFECT_LIST_BULLET$Súbory hry ovplyvňujúce hrateľnosť nie sú upravené a nepoužívate žiadne špeciálne spúšťacie voľby. (t. j. kontrolný súčet nie je upravený)" # todo: CHANGED
+ ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Úspechy je možné odomknúť iba ak:\n$EFFECT_LIST_BULLET$Nie sú povolené žiadne pravidlá hry, ktoré blokujú úspechy\n$EFFECT_LIST_BULLET$Hráte v režime pre jedného hráča\n$EFFECT_LIST_BULLET$Nie ste v režime pozorovateľa\n$EFFECT_LIST_BULLET$Nikdy ste túto uloženú hru nehrali v multiplayeri\n$EFFECT_LIST_BULLET$Hra ešte nedosiahla koncový dátum\n$EFFECT_LIST_BULLET$Nepoužívate uloženú hru iného hráča\n$EFFECT_LIST_BULLET$Nepoužívate žiadne špeciálne spúšťacie možnosti" # todo: CHANGED
  ACHIEVEMENT_GROUP_TITLE_CAESAR: "[Group.GetName]" # todo: NEW TRANSLATION
  ACHIEVEMENT_GROUP_AMOUNT_CAESAR: "[Group.CalcNumberOfUnlockedVisibleAchievements] / [Group.GetNumberOfVisibleAchievements]" # todo: NEW TRANSLATION
  ACHIEVEMENT_until_death_do_us_apart: "Až kým nás smrť nerozdelí" # todo: NEW TRANSLATION
@@ -180,13 +181,31 @@
  ACHIEVEMENT_DESC_the_great_great_wall: "Majte mestské hradby v každej lokalite pozdĺž trasy Veľkého múru." # todo: NEW TRANSLATION
  ACHIEVEMENT_a_tale_of_two_cities: "Príbeh dvoch miest" # todo: NEW TRANSLATION
  ACHIEVEMENT_DESC_a_tale_of_two_cities: "Majte v tej istej provincii dve mestá, z ktorých obe majú maximálny počet mestských práv a žiadne mestské právo nie je medzi nimi zdieľané." # todo: NEW TRANSLATION
+ ACHIEVEMENT_gilt_edged: "Pozlátené" # todo: NEW TRANSLATION
+ ACHIEVEMENT_DESC_gilt_edged: "Dosiahnite 80 kreditnej spoľahlivosti bez toho, aby ste niekedy vyhlásili bankrot." # todo: NEW TRANSLATION
+ ACHIEVEMENT_cowabunga: "Cowabunga!" # todo: NEW TRANSLATION
+ ACHIEVEMENT_DESC_cowabunga: "Majte na svojom dvore súčasne maliara, sochára, architekta a vedca." # todo: NEW TRANSLATION
+ ACHIEVEMENT_counting_circles: "Kruhy grófov" # todo: NEW TRANSLATION
+ ACHIEVEMENT_DESC_counting_circles: "Začnite ako grófstvo a staňte sa vodcom cisárskeho kruhu." # todo: NEW TRANSLATION
+ ACHIEVEMENT_if_you_cant_beat_em_join_em: "Ak ich nemôžeš poraziť, pridaj sa k nim" # todo: NEW TRANSLATION
+ ACHIEVEMENT_DESC_if_you_cant_beat_em_join_em: "Vyhrajte situáciu Guelphs and Ghibellines po tom, čo ste aspoň raz zmenili stranu a v každej frakcii strávili aspoň jeden mesiac." # todo: NEW TRANSLATION
+ ACHIEVEMENT_league_of_legends: "Liga legiend" # todo: NEW TRANSLATION
+ ACHIEVEMENT_DESC_league_of_legends: "Zvíťazte v situácii Talianskych vojen ako vodca akejkoľvek ligy." # todo: NEW TRANSLATION
+ ACHIEVEMENT_uomo_universale: "Uomo Universale" # todo: NEW TRANSLATION
+ ACHIEVEMENT_DESC_uomo_universale: "Ako krajina talianskej kultúry vlastnite rodište renesancie a zároveň buďte plne inovatívni." # todo: NEW TRANSLATION
  ACHIEVEMENT_GROUP_very_easy_achievements: "Veľmi ľahké" # todo: NEW TRANSLATION
  ACHIEVEMENT_GROUP_easy_achievements: "Ľahké" # todo: NEW TRANSLATION
  ACHIEVEMENT_GROUP_medium_achievements: "Stredné" # todo: NEW TRANSLATION
  ACHIEVEMENT_GROUP_hard_achievements: "Ťažké" # todo: NEW TRANSLATION
  ACHIEVEMENT_GROUP_very_hard_achievements: "Veľmi ťažké" # todo: NEW TRANSLATION
- PLAY_BUTTON_IRONMAN_MODE_TOOLTIP: "Ironman režim\n[SelectLocalization(GameIsIronman, 'IRONMAN_ENABLED_NO_HEADER', 'IRONMAN_DISABLED_NO_HEADER')]" # todo: NEW TRANSLATION
+ PLAY_BUTTON_IRONMAN_MODE_TOOLTIP: "Ironman režim\n[SelectLocalization(GameWouldBeIronman, 'IRONMAN_ENABLED_NO_HEADER', 'IRONMAN_DISABLED_NO_HEADER')]" # todo: CHANGED
  PLAY_BUTTON_ACHIEVEMENTS_TOOLTIP: "Úspechy [SelectLocalization(CanGetAchievements, 'ACHIEVEMENTS_ENABLED_NO_HEADER', 'ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON')]" # todo: NEW TRANSLATION
  has_emerged_victorious_during_rise_of_ottomans_situation_tt: "Počas [ShowSituationName('rise_of_the_ottomans')] [situation|e] sme vyšli víťazne ako najsilnejší bejlik" # todo: NEW TRANSLATION
  had_timur_as_past_ruler_tt: "Jedným z našich predchádzajúcich [rulers|e] je [GetCharacter('chg_timur_lame_borjigin').GetName]" # todo: NEW TRANSLATION
  hussites_won_hussite_wars_situation_tt: "[ShowReligionName('hussite')] vyšli víťazne počas [ShowSituationName('hussite_wars')] [situation|e]" # todo: NEW TRANSLATION
+ gilt_edged_tt: "Nikdy sme nevyhlásili bankrot" # todo: NEW TRANSLATION
+ if_you_cant_beat_em_join_em_win_tt: "Zvíťazili sme v [ShowSituationName('guelphs_and_ghibellines')] [situation|e]" # todo: NEW TRANSLATION
+ if_you_cant_beat_em_join_em_switch_tt: "Zmenili sme aspoň raz stranu a v každej frakcii sme strávili aspoň jeden mesiac" # todo: NEW TRANSLATION
+ league_of_legends_tt: "Viedli sme Ligu k víťazstvu v [ShowSituationName('italian_wars')] [situation|e]" # todo: NEW TRANSLATION
+ uomo_universale_renaissance_tt: "Vlastníme rodište renesancie" # todo: NEW TRANSLATION
+ ACHIEVEMENT_NOT_POSSIBLE_IRONMAN: "Úspechy sú dostupné iba v režime Ironman." # todo: NEW TRANSLATION

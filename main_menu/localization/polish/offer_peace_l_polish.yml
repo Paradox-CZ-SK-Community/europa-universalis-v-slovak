@@ -83,6 +83,10 @@
  peace_dismantle_hre: "Rozpustiť $hre$" # todo: NEW TRANSLATION
  peace_dismantle_hre_entry: "Rozpustiť [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
  peace_dismantle_hre_entry_short: "Rozpustiť [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ peace_destroy_autocephalous_patriarchate: "Zničiť [target_ap.GetName]" # todo: NEW TRANSLATION
+ peace_destroy_autocephalous_patriarchate_entry: "Zničiť ich $autocephalous_patriarchate$" # todo: NEW TRANSLATION
+ peace_destroy_autocephalous_patriarchate_entry_short: "Zničiť ich $autocephalous_patriarchate$" # todo: NEW TRANSLATION
+ peace_destroy_autocephalous_patriarchate_members_tt: "Každý člen [target_ap.GetName] stratí [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|+=0] [opinion|e] voči nám a získa [ShowBiasValue('antagonism_destroyed_autocephalous_patriarchate')|+=0] [antagonism|e] voči nám" # todo: NEW TRANSLATION
  dismantle_fortifications: "Rozobrať opevnenia" # todo: NEW TRANSLATION
  dismantle_fortifications_entry: "[target.GetOwner.GetFlagIcon] Rozobrať opevnenia v [target.GetName]" # todo: NEW TRANSLATION
  dismantle_fortifications_entry_short: "@[target.GetOwner.GetFlag]! Rozobrať opevnenia v [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -168,9 +172,9 @@
  peace_force_into_jurchen_confederation_entry: "$peace_force_into_jurchen_confederation$" # todo: NEW TRANSLATION
  peace_force_into_jurchen_confederation_entry_short: "$peace_force_into_jurchen_confederation$" # todo: NEW TRANSLATION
  peace_force_into_jurchen_confederation_desc: "Pod naším vedením sa im bude dariť lepšie!" # todo: NEW TRANSLATION
- peace_take_over_market_center: "Prevziať obchodné centrum" # todo: NEW TRANSLATION
- peace_take_over_market_center_entry: "Prevziať obchodné centrum od [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- peace_take_over_market_center_entry_short: "Prevziať obchodné centrum od [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ peace_take_over_market_center: "Prevziať [target_market.GetName]" # todo: CHANGED
+ peace_take_over_market_center_entry: "Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetNameWithFlag]" # todo: CHANGED
+ peace_take_over_market_center_entry_short: "Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: CHANGED
  execute_ruler: "Popraviť vládcu" # todo: NEW TRANSLATION
  execute_ruler_entry: "$execute_ruler$" # todo: NEW TRANSLATION
  execute_ruler_entry_short: "$execute_ruler$" # todo: NEW TRANSLATION
@@ -181,8 +185,12 @@
  league_of_public_weal_royalist_victory_entry: "Liga verejného blaha bude potlačená" # todo: NEW TRANSLATION
  league_of_public_weal_royalist_victory_entry_short: "Liga verejného blaha bude potlačená" # todo: NEW TRANSLATION
  dissolve_league_peace_deal: "Rozpustiť ligu" # todo: NEW TRANSLATION
- dissolve_league_peace_deal_entry: "Rozpustiť ich ligu" # todo: NEW TRANSLATION
- dissolve_league_peace_deal_entry_short: "Rozpustiť ich ligu" # todo: NEW TRANSLATION
+ dissolve_league_peace_deal_entry: "[TARGET_COUNTRY.GetNameWithFlag] rozpustí svoju ligu v [GetSituationByKey('italian_wars').GetName]" # todo: CHANGED
+ dissolve_league_peace_deal_entry_short: "[TARGET_COUNTRY.GetNameWithFlag] rozpustí svoju ligu v [GetSituationByKey('italian_wars').GetName]" # todo: CHANGED
+ SCALE_WITH_NUM_MEMBERS: "Počet [members|e]" # todo: NEW TRANSLATION
+ challenge_league_leadership_peace_treaty: "Nárokovať vodcovstvo Ligy" # todo: NEW TRANSLATION
+ challenge_league_leadership_peace_treaty_entry: "Nárokovať vedenie Talianskej ligy" # todo: NEW TRANSLATION
+ challenge_league_leadership_peace_treaty_entry_short: "Nárokovať vedenie Talianskej ligy" # todo: NEW TRANSLATION
  peace_force_renounce_ilkhan_claim: "Vynútiť vzdanie sa nároku na [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION
  peace_force_renounce_ilkhan_claim_entry: "Vynútiť [country|e], aby sa vzdala nároku na vedenie [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION
  peace_force_renounce_ilkhan_claim_entry_short: "Vynútiť [country|e], aby sa vzdala nároku na vedenie [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION
@@ -194,6 +202,22 @@
  claim_timurid_empire_entry: "Požadovať ríšu [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
  claim_timurid_empire_entry_short: "Požadovať ríšu [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
  claim_timurid_empire_tooltip: "Anexujeme a staneme sa [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
+ scaligeri_victory: "Presadiť požiadavky Scaligerov" # todo: NEW TRANSLATION
+ scaligeri_victory_entry: "Presadiť požiadavky Scaligerov" # todo: NEW TRANSLATION
+ scaligeri_victory_entry_short: "$scaligeri_victory_entry$" # todo: NEW TRANSLATION
+ scaligeri_victory_desc: "Niekoľko nepriateľských krajín si dovolilo postaviť sa proti a zmenšiť územia [ShowDynastyName('scala_dynasty')]. Je čas odstrániť slabých!" # todo: NEW TRANSLATION
+ ver_milanese_demands: "$MLO_ADJ$ požiadavky" # todo: NEW TRANSLATION
+ ver_milanese_demands_entry: "$MLO_ADJ$ požiadavky" # todo: NEW TRANSLATION
+ ver_milanese_demands_entry_short: "$ver_milanese_demands_entry$" # todo: NEW TRANSLATION
+ ver_milanese_demands_desc: "Komplexný súbor požiadaviek v $SCALIGER_WAR_NAME$, ktoré predkladá [GetCountry('MLO').GetLongName]." # todo: NEW TRANSLATION
+ ver_florentine_demands: "$FLO_ADJ$ požiadavky" # todo: NEW TRANSLATION
+ ver_florentine_demands_entry: "$FLO_ADJ$ požiadavky" # todo: NEW TRANSLATION
+ ver_florentine_demands_entry_short: "$ver_florentine_demands_entry$" # todo: NEW TRANSLATION
+ ver_florentine_demands_desc: "Všetko, čo v $SCALIGER_WAR_NAME$ požaduje [GetCountry('FLO').GetLongName]." # todo: NEW TRANSLATION
+ ver_venetian_demands: "$VEN_ADJ$ požiadavky" # todo: NEW TRANSLATION
+ ver_venetian_demands_entry: "$VEN_ADJ$ požiadavky" # todo: NEW TRANSLATION
+ ver_venetian_demands_entry_short: "$ver_venetian_demands_entry$" # todo: NEW TRANSLATION
+ ver_venetian_demands_desc: "Naše požiadavky v $SCALIGER_WAR_NAME$." # todo: NEW TRANSLATION
  dissolve_hanseatic_league_peace_deal: "Rozpustiť Hanzovú ligu" # todo: NEW TRANSLATION
  dissolve_hanseatic_league_peace_deal_entry: "Rozpustiť Hanzovú ligu" # todo: NEW TRANSLATION
  dissolve_hanseatic_league_peace_deal_entry_short: "Rozpustiť Hanzovú ligu" # todo: NEW TRANSLATION
@@ -209,8 +233,8 @@
  PEACE_OFFER_CLEAR_OFFER_DESC: "Vymazať mierovú ponuku pre [PeaceOfferLateralView.GetSelectedParticipant.GetName]." # todo: NEW TRANSLATION
  PEACE_OFFER_CLEAR_DEMAND_DESC: "Vymazať mierovú požiadavku pre [PeaceOfferLateralView.GetSelectedParticipant.GetName]." # todo: NEW TRANSLATION
  PEACE_OFFER_SEND_OFFER_BALANCE: "@trigger_no!Nemôžeme odoslať ponuku so záporným zostatkom, naši nepriatelia ju neprijmú!" # todo: NEW TRANSLATION
- PEACE_OFFER_SEND_MAX_WAR_SCORE: "@trigger_no!Nemôžeme odoslať ponuku s celkovou hodnotou presahujúcou maximálne vojnové skóre!" # todo: NEW TRANSLATION
- PEACE_OFFER_LIMITED_DIPLOMACY: "@trigger_no! [COUNTRY.GetName] nemôže rokovať za seba; rokovať treba s ich [overlord|e]." # todo: NEW TRANSLATION
+ PEACE_OFFER_SEND_MAX_WAR_SCORE: "@trigger_no! Nemôžeme poslať [peace_offer|e] na viac ako #W 100#! [peace_cost_with_icon|e]!" # todo: CHANGED
+ PEACE_OFFER_LIMITED_DIPLOMACY: "@trigger_no! Ako lojálny [subject|e] s obmedzenou [diplomacy|e], [COUNTRY.GetName] nemôže rokovať za seba, rokovať s ich [overlord|e]." # todo: CHANGED
  PEACE_OFFER_WAR_SCORE_COST: "#T $NAME$#!\nNáklady [peace_cost|e] $VAL|V2$ sú spôsobené:" # todo: NEW TRANSLATION
  PEACE_OFFER_ANTAGONISM_TAKER: "#T $NAME$#!\nTáto [peace_treaty|e] poskytuje [COUNTRY.GetNameWithFlag] základ $VAL|-=2$[antagonism_i] voči iným krajinám z dôvodu:" # todo: NEW TRANSLATION
  PEACE_OFFER_INCDECWARSCORETOOLTIP: "[PeaceOfferWarScoreTreatyGlue.GetIncWarScoreTooltip]\n\n[PeaceOfferWarScoreTreatyGlue.GetDecWarScoreTooltip]" # todo: NEW TRANSLATION
@@ -334,6 +358,7 @@
  AI_DESIRE_CABINET: "Žiadni voľní členovia kabinetu" # todo: NEW TRANSLATION
  AI_DESIRE_REACH: "Nedosiahnuteľné" # todo: NEW TRANSLATION
  AI_DESIRE_BORDERGORE: "Spôsobilo by chaotické hranice" # todo: NEW TRANSLATION
+ AI_DESIRE_ANNEXATION: "Blízko anektovania" # todo: NEW TRANSLATION
  AI_DESIRE_WARSCORE_USED: "Využité vojnové skóre" # todo: NEW TRANSLATION
  AI_DESIRE_REVOLTER: "Je to povstanie" # todo: NEW TRANSLATION
  AI_DESIRE_DOOM_REDUCTION: "Zníženie doom" # todo: NEW TRANSLATION
@@ -366,8 +391,10 @@
  claim_timurid_empire_desc: "Zmluvou i právom si vyhlásime dedičov veľkého dedičstva [GetCharacter('chg_timur_lame_borjigin').GetShortName] a všetkého, čo sa mu kedysi klaňalo." # todo: NEW TRANSLATION
  dismantle_fortifications_desc: "Ich múry a opevnenia budú zrúcané kameň po kameni, zanechajúc ich zraniteľnými pred budúcim súdom." # todo: NEW TRANSLATION
  peace_dismantle_hre_desc: "[GetUniqueInternationalOrganization('hre').GetName] sám bude rozbitý, jeho koruna odhodená a jeho kniežatá ponechané vládnuť samostatne, oslobodené od cisárskych pút." # todo: NEW TRANSLATION
+ peace_destroy_autocephalous_patriarchate_desc: "Ich patriarchát bude rozpustený zmluvou, jeho hierarchia zosadená a jeho členovia ponechaní, aby si našli nového duchovného pána." # todo: NEW TRANSLATION
  dissolve_coalition_desc: "Táto liga oportunistov bude rozptýlená, jej členovia skrotení a rozdelení, už viac nespojení proti nám." # todo: NEW TRANSLATION
  dissolve_league_peace_deal_desc: "Ich liga už nebude, jej príčina zničená a jej členovia donútení stáť oddelene v pokoji. To prinesie veľkú zmenu v rovnováhe síl počas [GetSituationByKey('italian_wars').GetName]." # todo: NEW TRANSLATION
+ challenge_league_leadership_peace_treaty_desc: "Silou zbraní sme dokázali, že sme dominantnou silou v Taliansku. Vedenie ich Ligy nám teraz prechádza, zatiaľ čo ich bývalý vodca je odňatý velenia právom dobytia." # todo: NEW TRANSLATION
  dissolve_hanseatic_league_peace_deal_desc: "Hanzová liga už prestala byť užitočná a svojím vplyvom v mnohých európskych mestách spôsobuje viac škody než osohu. Všetci podriadení pod Ligou budú oslobodení." # todo: NEW TRANSLATION
  execute_ruler_desc: "Zaplatia najvyššiu cenu za vzdor, popravení naším dekrétom, aby všetci poznali našu moc." # todo: CHANGED
  peace_expand_clan_influence_desc: "Náš klan povstane ešte vyššie, nárokujúci si nové práva a územia na úkor tých, ktorí nám vzdorovali." # todo: NEW TRANSLATION

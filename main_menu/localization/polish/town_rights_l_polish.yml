@@ -2,10 +2,23 @@
  revoke_town_rights: "Zrušiť mestské práva" # todo: NEW TRANSLATION
  revoke_town_rights_desc: "" # todo: NEW TRANSLATION
  REVOKE_TOWN_RIGHTS_FROM: "Odobrať [town_rights|E] od [TownRightsItem.GetFirstLocationName]" # todo: NEW TRANSLATION
+ REVOKE_LOCATION_TOWN_RIGHT: "Odobrať [town_rights|E] z [Location.GetName]" # todo: NEW TRANSLATION
  staple_port: "Staplový prístav" # todo: NEW TRANSLATION
  staple_port_desc: "Tomuto [location|e] boli udelené právne privilégiá, ktoré dávajú [ShowEstateTypeName('burghers_estate')] väčšie práva nad miestnym [trade|e]." # todo: NEW TRANSLATION
  granary_town: "Mesto so sýpkou" # todo: NEW TRANSLATION
  granary_town_desc: "Tomuto [location|e] boli udelené právne privilégiá a nariadenia na zvýšenie jeho produkcie a skladovania [food|e]." # todo: NEW TRANSLATION
+ market_charter: "Trhové privilégium" # todo: NEW TRANSLATION
+ market_charter_desc: "Táto [location|e] získala právo usporiadať pravidelné trhy, ktoré priťahujú obchodníkov a rozširujú kapacitu jej miestneho [ShowBuildingTypeName('marketplace')]." # todo: NEW TRANSLATION
+ free_town_charter: "Štatút slobodného mesta" # todo: NEW TRANSLATION
+ free_town_charter_desc: "Táto [location|e] získala práva samosprávy, čím sa znížila priama autorita [ShowEstateTypeName('crown_estate')] výmenou za väčšiu slobodu pri prilákaní osadníkov a obchodovaní." # todo: NEW TRANSLATION
+ fortress_town: "Pevnostné mesto" # todo: NEW TRANSLATION
+ fortress_town_desc: "Táto [location|e] bola určená ako vojenská posádka, dostáva investície do opevnenia a [manpower|e]. Trvalá vojenská prítomnosť vytláča civilný obchod." # todo: NEW TRANSLATION
+ mining_charter: "Ťažobné privilégium" # todo: NEW TRANSLATION
+ mining_charter_desc: "Táto [location|e] získala formálne práva na prevádzkovanie a rozširovanie ťažobných operácií, čím sa zvyšuje rozsah ťažby. [ShowEstateTypeName('peasants_estate')] sú v dôsledku toho podrobení prísnejším povinnostiam." # todo: NEW TRANSLATION
+ mining_charter_rgo_tt: "Má ťažobnú surovinu [raw_material|e] alebo produkuje [ShowGoodsName('salt')] vo vnútrozemí" # todo: NEW TRANSLATION
+ studium_privileges: "Študijné privilégiá" # todo: NEW TRANSLATION
+ studium_privileges_desc: "Táto [location|e] bola uznaná za centrum vzdelania, čo jej udeľuje právo udržiavať školy a pritiahnuť učencov. Takéto aktivity napomáhajú rozvoju [literacy|e] a šíreniu [institution|e], hoci zriedka priamo obohacujú štátnu pokladnicu." # todo: NEW TRANSLATION
+ studium_privileges_rank_tt: "Lokalita je [ShowLocationRankName('city')] alebo [ShowLocationRankName('megalopolis')]" # todo: NEW TRANSLATION
  royal_tooling_rights: "Práva na výrobu nástrojov" # todo: NEW TRANSLATION
  royal_tooling_rights_desc: "Tomuto [location|e] boli udelené právne privilégiá týkajúce sa výroby a distribúcie [ShowGoodsName('tools')], čo mu poskytuje významnú konkurenčnú výhodu." # todo: NEW TRANSLATION
  royal_jewelry_rights: "Práva na výrobu šperkov" # todo: NEW TRANSLATION
@@ -35,9 +48,11 @@
  nuremberg_rights_town_rights_desc: "$magdeburg_rights_town_rights_desc$" # todo: NEW TRANSLATION
  upper_bergregal: "Horný bergregal" # todo: NEW TRANSLATION
  upper_bergregal_desc: "Postúpenie práva vykonávať banícke operácie mestu zvýši prostriedky dostupné na prieskum ďalších minerálov a zvýši príťažlivosť pre potenciálnych nových osadníkov. Bohužiaľ to prináša tvrdšie obmedzenia pre miestnych obyčajných ľudí a ich schopnosť profitovať z baní samotných." # todo: NEW TRANSLATION
- unlock_bergregal_rights_tt: "Odomkne [ShowTownRightsName ('upper_bergregal')] a [ShowTownRightsName('lower_bergregal')] [town_rights]" # todo: NEW TRANSLATION
+ upper_bergregal_raw_material_tt: "Produkuje [ShowGoodsName('silver')], [ShowGoodsName('goods_gold')], [ShowGoodsName('gems')] alebo [ShowGoodsName('salt')] vo vnútrozemí" # todo: NEW TRANSLATION
+ unlock_bergregal_rights_tt: "Odomkne [ShowTownRightsName('upper_bergregal')] a [ShowTownRightsName('lower_bergregal')] [town_rights]" # todo: CHANGED
  lower_bergregal: "Dolný bergregal" # todo: NEW TRANSLATION
  lower_bergregal_desc: "$upper_bergregal_desc$" # todo: NEW TRANSLATION
+ lower_bergregal_raw_material_tt: "Produkuje [ShowGoodsName('iron')], [ShowGoodsName('copper')], [ShowGoodsName('lead')], [ShowGoodsName('tin')], [ShowGoodsName('alum')], [ShowGoodsName('marble')], [ShowGoodsName('mercury')], [ShowGoodsName('coal')], [ShowGoodsName('stone')] alebo [ShowGoodsName('saltpeter')]" # todo: NEW TRANSLATION
  stapelrecht_town_rights: "[ShowSpecialStatusNameWithNoTooltip('free_city')] Staplové práva" # todo: NEW TRANSLATION
  stapelrecht_town_rights_desc: "Titul [ShowSpecialStatusName('free_city')] udelený nám [ShowSpecialStatusName('emperor')] nám poskytuje slobodu zavádzať určité privilégiá v našich mestách, čo prospieva miestnym obchodníkom a núti viac zahraničných obchodníkov obchodovať cez naše územie." # todo: NEW TRANSLATION
  kulm_town_rights: "Kulmské práva" # todo: NEW TRANSLATION
@@ -88,11 +103,20 @@
  scandinavian_thing_rights: "Tingsrätt" # todo: NEW TRANSLATION
  scandinavian_thing_rights_desc: "Tomuto [location|e] boli udelené formálne zhromažďovacie práva (tingsrätt), čo poskytuje jeho obyvateľom uznávané právne fórum pre správu a súdnictvo. Kráľovská autorita je obmedzená výmenou za usporiadanejšie a lojálnejšie obyvateľstvo." # todo: NEW TRANSLATION
  imperial_breadbasket_rights: "Cisárska obilnica" # todo: NEW TRANSLATION
- imperial_breadbasket_rights_granary_tt: "Má [ShowBuildingTypeName('granary')] na maximálnej úrovni." # todo: NEW TRANSLATION
+ imperial_breadbasket_rights_granary_tt: "Má [ShowBuildingTypeName('granary')] na úrovni 5 alebo vyššej" # todo: CHANGED
+ imperial_breadbasket_rights_rank_tt: "Lokalita je [ShowLocationRankName('city')] alebo [ShowLocationRankName('megalopolis')]" # todo: NEW TRANSLATION
  imperial_breadbasket_rights_desc: "Tomuto [location|e] bola zverená zásobovacia úloha pre širšie kráľovstvo, jeho sýpky boli rozšírené, aby zodpovedali našim ambicióznym plánom. Obilie prúdi dovnútra i von pod imperiálnym dohľadom, zásobujúc obyvateľov i armádu hojnosťou." # todo: NEW TRANSLATION
  constantinopolitan_silk_monopoly_rights: "Hodvábny monopol [ShowLocationNameWithNoTooltip('constantinople')]" # todo: NEW TRANSLATION
+ constantinopolitan_silk_monopoly_rights_tt: "Lokalita je [ShowLocationName('constantinople')] s plne rozvinutým [raw_material|e]" # todo: NEW TRANSLATION
  constantinopolitan_silk_monopoly_rights_desc: "V [ShowLocationName('constantinople')] je výroba [ShowGoodsName('silk')] držaná na vysokej úrovni, dlhá tradícia siahajúca cez generácie. Dielne prosperujú pod imperiálnym dohľadom, hoci celá produkcia sa riadi monopolom." # todo: NEW TRANSLATION
  scholai_literacy_rights: "Scholai privilégia" # todo: NEW TRANSLATION
+ scholai_literacy_rights_tt: "Dominantná kultúra patrí do [ShowCultureGroupName('greek_group')] a miestna [literacy|e] nepresahuje 125 % priemeru krajiny" # todo: NEW TRANSLATION
  scholai_literacy_rights_desc: "Toto [location|e] je uznávané ako centrum učenia, kde sa písmo pestuje pod oficiálnym patronátom. Poznanie sa šíri rýchlo, hoci takéto aktivity málokedy obohatia pokladnicu. Lenivé mysle sú hračkami diabla." # todo: NEW TRANSLATION
  municipia_privilegia: "Privilégiá municipií" # todo: NEW TRANSLATION
+ municipia_privilegia_latin_tt: "Vlastník inklinuje k [ShowSocietyDirectionName('latinization')] alebo má [ShowLanguageName('latin_language')] ako dvorový či dominantný jazyk" # todo: NEW TRANSLATION
  municipia_privilegia_desc: "Tomuto [location|e] bol pridelený status municipium, jeho občanom boli udelené práva podľa nášho zákona. Lokálni eliti získavajú väčší vplyv, viažu územie bližšie na tradície [ShowSocietyDirectionName('latinization')]." # todo: NEW TRANSLATION
+ agrarian_community_town_right: "Listina náboženskej slobody" # todo: NEW TRANSLATION
+ agrarian_community_town_right_desc: "Táto [location|e] obdržala osobitné práva, ktoré uznávajú náboženskú slobodu každého jednotlivca výmenou za poskytnutie veľkej časti svojho územia na výrobu potravín a surovín." # todo: NEW TRANSLATION
+ agrarian_community_raw_material_tt: "Produkuje [ShowGoodsName('wheat')], [ShowGoodsName('maize')], [ShowGoodsName('rice')], [ShowGoodsName('millet')], [ShowGoodsName('legumes')], [ShowGoodsName('potato')], [ShowGoodsName('livestock')], [ShowGoodsName('olives')], [ShowGoodsName('fruit')] alebo [ShowGoodsName('beeswax')]" # todo: NEW TRANSLATION
+ enlightened_leadership_reform_town_right: "Práva rady obyčajných ľudí" # todo: NEW TRANSLATION
+ enlightened_leadership_reform_town_right_desc: "Táto [location|e] získala právo otvoriť svoju miestnu radu pre obyčajných ľudí. To dáva roľníctvu hlas v miestnych záležitostiach a umožňuje mu žiadať väčšie práva pre seba." # todo: NEW TRANSLATION

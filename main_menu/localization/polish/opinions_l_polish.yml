@@ -22,6 +22,10 @@
  COUNTRY_OPINION_OF_MYSELF: "Milovať seba nie je márnivosť. Je to obnova zdravia." # todo: NEW TRANSLATION
  OPINION_ENTRY: "$NAME$: $VAL|2=+$\n" # todo: NEW TRANSLATION
  OPINION_ANTAGONISM_ENTRY: "$NAME$: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+2$#!\n" # todo: NEW TRANSLATION
+ OPINION_TIMED_ENTRY: "$NAME$ $SUFFIX$: $VAL|2=+$\n" # todo: NEW TRANSLATION
+ OPINION_TIMED_ENTRY_CHANGE: "$NAME$ $SUFFIX$: $VAL|0=+$ ($CHANGE|2=+$ yearly)\n" # todo: NEW TRANSLATION
+ BIAS_TEMPORAL_EXPIRES: " #flavor (vyprší $DATE$)#!" # todo: NEW TRANSLATION
+ BIAS_TEMPORAL_FADING: " #flavor (vyprcháva okolo ~$YEAR$)#!" # todo: NEW TRANSLATION
  OPINION_BASE_FROM_ANTAGONISM: "#T Dopad antagonizmu#!\nKaždý antagonizmus dáva $EACH|+=$ [opinion|e]\nZo $BASE|R0$ [antagonism|e]: $VAL|+$" # todo: NEW TRANSLATION
  OPINION_MODIFIED_BY_TITLE: "Toto je následne ďalej upravené (najmenej na 5%):" # todo: NEW TRANSLATION
  OPINION_MODIFIED_BY_NEIGHBOUR: "Sused: $VAL|-%$" # todo: NEW TRANSLATION
@@ -33,8 +37,8 @@
  OPINION_MODIFIED_BY_DEFENSIVE_SUPPORT: "Prijíma obrannú podporu: $VAL|-%$" # todo: NEW TRANSLATION
  OPINION_MODIFIED_BY_ROYAL_MARRIAGE: "[royal_marriage|e]: $VAL|-%$" # todo: NEW TRANSLATION
  OPINION_MODIFIED_BY_IO: "Zdieľajú [international_organization|e]: $VAL|-%$" # todo: NEW TRANSLATION
- TRUST_ENTRY: "$NAME$: $VAL|=+0$" # todo: NEW TRANSLATION
- TRUST_ENTRY_CHANGE: "$NAME$: $VAL|0=+$ ($CHANGE|2=+$ yearly)" # todo: NEW TRANSLATION
+ TRUST_ENTRY: "$NAME$: $VAL|=+0$" # todo: CHANGED NUMBER
+ TRUST_ENTRY_CHANGE: "$NAME$: $VAL|0=+$ ($CHANGE|2=+$ yearly)" # todo: CHANGED NUMBER
  ANTAGONISM_ENTRY_FOR_COUNTRY_WITH_BREAKDOWN: "[COUNTRY.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-V2$#!" # todo: NEW TRANSLATION
  ANTAGONISM_ENTRY_WITH_BREAKDOWN: "$NAME$: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-=1$#!" # todo: NEW TRANSLATION
  ANTAGONISM_ENTRY: "$NAME$: $VAL|1=-$" # todo: NEW TRANSLATION
@@ -135,6 +139,7 @@
  io_opinion_hre: "Spolu [member|e] Ríše" # todo: NEW TRANSLATION
  io_opinion_high_kingship: "[member|e] toho istého High Kingship" # todo: NEW TRANSLATION
  io_opinion_high_king: "Náš Veľký kráľ" # todo: NEW TRANSLATION
+ opinion_voted_for_high_king: "Podporili sme ich za Vysokého kráľa" # todo: NEW TRANSLATION
  io_opinion_lordship_of_ireland: "[member|e] Lordstva Írska" # todo: NEW TRANSLATION
  io_opinion_lord_of_ireland: "Pán Írska" # todo: NEW TRANSLATION
  io_opinion_autocephalous_patriarchate: "V rovnakom autocefalnom patriarcháte" # todo: NEW TRANSLATION
@@ -160,6 +165,7 @@
  opinion_threatening_rival: "Vyhrážanie sa rivala" # todo: NEW TRANSLATION
  opinion_enemy: "Nepriateľ" # todo: NEW TRANSLATION
  opinion_defending_our_rival: "Bráni nášho rivala" # todo: NEW TRANSLATION
+ opinion_expelled_from_league: "Vylúčený z Ligy" # todo: NEW TRANSLATION
  opinion_enemy_of_my_enemy: "Nepriateľ môjho nepriateľa" # todo: NEW TRANSLATION
  opinion_rival_of_my_rival: "Rival môjho rivala" # todo: NEW TRANSLATION
  opinion_defended_our_land: "Bránil našu krajinu" # todo: NEW TRANSLATION
@@ -311,6 +317,7 @@
  denied_petition_for_crusade_modifier: "Odmietol žiadosť o krížovú výpravu" # todo: NEW TRANSLATION
  disputed_title_of_jerusalem: "Spor o titul Jeruzalema" # todo: NEW TRANSLATION
  restored_title_of_jerusalem_modifier: "Obnovil titul Jeruzalema" # todo: NEW TRANSLATION
+ opinion_violated_sovereignty: "Porušenie našej súverenity" # todo: CHANGED
  allows_state_piracy_modifier: "Dovoľuje štátne pirátstvo" # todo: NEW TRANSLATION
  protected_from_critics: "Chránený pred kritikou" # todo: NEW TRANSLATION
  opinion_union_of_crowns_pact: "Pakt Únie korún" # todo: NEW TRANSLATION
@@ -384,6 +391,7 @@
  opinion_fra_aggressive_entrance_into_italy: "Agresívny vstup do Talianska" # todo: NEW TRANSLATION
  opinion_fra_allied_aggression_concerns: "Znepokojujúci vstup do Talianska" # todo: NEW TRANSLATION
  opinion_mlo_betrayal: "Milaneská zrada" # todo: NEW TRANSLATION
+ opinion_mfa_betrayal: "Nepridal sa ku kampani proti $BYZ$" # todo: NEW TRANSLATION
  opinion_mor_betrayal: "Marocká zrada" # todo: NEW TRANSLATION
  opinion_seized_our_courts_resources: "Zmocnil sa zdrojov nášho dvora!" # todo: NEW TRANSLATION
  opinion_called_into_war_by_overlord: "Zavolaný do vojny vrchnosti" # todo: NEW TRANSLATION
@@ -432,7 +440,6 @@
  opinion_levies_requested_by_overlord: "Žoldné sily požadované vrchnosťou" # todo: NEW TRANSLATION
  opinion_joined_our_order_of_chivalry: "Pridal sa k nášmu Rádu rytierstva" # todo: NEW TRANSLATION
  opinion_opinion_influenced: "Ovlivnil názor" # todo: NEW TRANSLATION
- opinion_violated_sovereignty: "Porušil našu suverenitu" # todo: NEW TRANSLATION
  opinion_increased_loan_interest: "Zvýšil úrok z našich pôžičiek" # todo: NEW TRANSLATION
  opinion_diplomatic_outreach: "Diplomatická iniciatíva" # todo: NEW TRANSLATION
  opinion_refused_demands: "Odmietol požiadavky" # todo: NEW TRANSLATION
@@ -445,6 +452,8 @@
  opinion_denied_special_access: "Odmietol špeciálny prístup" # todo: NEW TRANSLATION
  opinion_religious_hostilities: "Náboženské nepriateľstvá" # todo: NEW TRANSLATION
  pol_political_intervention_modifier: "Politický zásah" # todo: NEW TRANSLATION
+ opinion_pol_reform_threatens_neighbors: "Výstraha: poľská reforma" # todo: NEW TRANSLATION
+ opinion_pol_constitution_threatens_neighbors: "Ústavná kríza v Poľsku" # todo: NEW TRANSLATION
  opinion_decline_crown_of_vassal: "Odmietol korunu nášho vazala" # todo: NEW TRANSLATION
  opinion_common_enemy: "Spoločný nepriateľ" # todo: NEW TRANSLATION
  opinion_elevated_to_celestial_governor: "Povýšený na $celestial_governor$" # todo: NEW TRANSLATION
@@ -540,14 +549,16 @@
  io_opinion_italian_league_2: "$member_same_league$" # todo: NEW TRANSLATION
  io_opinion_italian_league_3: "$member_same_league$" # todo: NEW TRANSLATION
  opinion_refused_invitation_to_league: "Odmietol pozvanie" # todo: NEW TRANSLATION
+ opinion_diplomatic_misunderstanding: "Diplomatické nedorozumenie" # todo: NEW TRANSLATION
+ opinion_diplomatic_accord: "Diplomatická dohoda" # todo: NEW TRANSLATION
  opinion_steadfast_loyalty: "Neochvejná lojalita" # todo: NEW TRANSLATION
  fought_with_us_modifier: "Bojoval na našej strane v talianskych vojnách" # todo: NEW TRANSLATION
- iw_victors_of_the_war_trust: "Víťazi talianskych vojen" # todo: NEW TRANSLATION
  opinion_refuses_to_join_our_side: "Odmieta pridať sa na našu stranu" # todo: NEW TRANSLATION
  opinion_guelphs_sanction_emperor: "Rozhnieval ríšu" # todo: NEW TRANSLATION
  opinion_ghibellines_sanction_pope: "Rozhnieval pápeža" # todo: NEW TRANSLATION
  opinion_guelphs_support_imperial_rivals: "Guelphovia podporujú" # todo: NEW TRANSLATION
  opinion_ghibellines_refuses_to_support_us: "Ghibellini odmietli nás podporiť" # todo: NEW TRANSLATION
+ opinion_ghibellines_agreed_to_support_us: "Zásah v Taliansku" # todo: NEW TRANSLATION
  opinion_death_of_yakub_i: "Smrť Yakuba I." # todo: NEW TRANSLATION
  opinion_professed_mutual_loyalty: "Vyznali vzájomnú vernosť" # todo: NEW TRANSLATION
  opinion_alliance_against_pope: "Aliancia proti pápežovi" # todo: NEW TRANSLATION
@@ -595,6 +606,7 @@
  opinion_refused_imperial_petition: "Odmietol cisársku petíciu" # todo: NEW TRANSLATION
  opinion_refused_shogunate_authority: "Odmietol autoritu šógunátu" # todo: NEW TRANSLATION
  trust_common_enemy: "Spoločný nepriateľ" # todo: NEW TRANSLATION
+ iw_shared_defeat_trust: "Koniec talianskych vojen" # todo: NEW TRANSLATION
  opinion_revoked_shugo_office: "Odvolal úrad Shugo" # todo: NEW TRANSLATION
  opinion_usurped_shugo_office: "Usurpoval úrad Shugo" # todo: NEW TRANSLATION
  opinion_demanded_extra_payment: "Požadoval dodatočnú platbu" # todo: NEW TRANSLATION
@@ -729,12 +741,14 @@
  antagonism_skilled_diplomat: "Zručný diplomat" # todo: NEW TRANSLATION
  antagonism_revealed_sham_documents: "Prezradil falošné dokumenty" # todo: NEW TRANSLATION
  antagonism_created_splinter_autocephalous_patriarchate: "Vytvoril odtrhnutú [autocephalous_patriarchate|e]" # todo: NEW TRANSLATION
+ antagonism_destroyed_autocephalous_patriarchate: "Zničil náš $autocephalous_patriarchate$" # todo: NEW TRANSLATION
  antagonism_claimed_empire: "Nárokoval cisárstvo" # todo: NEW TRANSLATION
  antagonism_embraced_piracy: "Prijal pirátstvo" # todo: NEW TRANSLATION
  antagonism_rejected_piracy: "Odmietol pirátstvo" # todo: NEW TRANSLATION
  antagonism_trade_wars: "Obchodné vojny" # todo: NEW TRANSLATION
  antagonism_cultural_development: "Kultúrny rozvoj" # todo: NEW TRANSLATION
  antagonism_maps_stolen: "Ukradli mapy" # todo: NEW TRANSLATION
+ antagonism_casus_belli_annulled: "Casus belli zrušený" # todo: NEW TRANSLATION
  antagonism_bav_ignore_feudal_traditions_mild: "Vazalizoval $LBV$" # todo: NEW TRANSLATION
  antagonism_bav_ignore_feudal_traditions_harsh: "Násilne anektoval $LBV$" # todo: NEW TRANSLATION
  antagonism_broke_subject_union: "Rozbil úniu subjektov" # todo: NEW TRANSLATION
@@ -788,6 +802,7 @@
  ath_claimed_thessalonica: "Nárokovali Solún" # todo: NEW TRANSLATION
  ath_proclaimed_rival_thessalonica_kingdom: "Vyhlásili konkurenčné kráľovstvo Solúna" # todo: NEW TRANSLATION
  lat_patriarchate_of_constantinople_restored: "Obnovený latinský patriarchát Konštantínopolu" # todo: NEW TRANSLATION
+ italian_culture_hired_our_artist: "Potajomky najal umelca!" # todo: NEW TRANSLATION
  burned_venice: "Spálili $venice$" # todo: NEW TRANSLATION
  ayd_byz_cooperation: "Spolupráca proti [GetCountry('TUR').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  prevented_ship_building_technology_from_spreading: "Zabránili zdieľaniu technológie stavby lodí" # todo: NEW TRANSLATION
@@ -837,7 +852,24 @@
  opinion_bos_became_orthodox: "Prešli na pravoslávie" # todo: NEW TRANSLATION
  opinion_rag_ottoman_partnership: "Osmanské partnerstvo" # todo: NEW TRANSLATION
  opinion_bul_proclaimed_an_empire: "Vyhlásili impérium" # todo: NEW TRANSLATION
+ opinion_bul_placated_subject: "Uspokojený vazal" # todo: NEW TRANSLATION
  cro_approved_the_merge: "Schválili zlúčenie Chorvátska a Slavónska" # todo: NEW TRANSLATION
  cro_rejected_the_merge: "Odmietli zlúčenie Chorvátska a Slavónska" # todo: NEW TRANSLATION
  cro_dismissal_of_nelipic: "Zamietnutie nároku Nelipića" # todo: NEW TRANSLATION
  cro_legitimation_of_nelipic: "Legalizácia nároku Nelipića" # todo: NEW TRANSLATION
+ luc_refused_alliance: "Odmietol našu alianciu" # todo: NEW TRANSLATION
+ luc_refused_to_sell_us: "Odmietol nám predať" # todo: NEW TRANSLATION
+ luc_did_not_intervene_in_trade: "Nezasiahol do nášho obchodu" # todo: NEW TRANSLATION
+ luc_refused_to_buy_our_subject: "Odmietol kúpiť nášho poddaného" # todo: NEW TRANSLATION
+ pis_salted_genoa: "Posolil Janov" # todo: NEW TRANSLATION
+ pis_rejected_rulership_of_country: "Odmietol vládu" # todo: NEW TRANSLATION
+ pis_rejected_university_papal_bull: "Odmietol našu pápežskú bulu" # todo: NEW TRANSLATION
+ opinion_refused_my_bribe: "Odmietol náš úplatok" # todo: NEW TRANSLATION
+ opinion_received_imperial_grant: "Získal cisársky grant" # todo: NEW TRANSLATION
+ opinion_demanded_loyalty: "Žiadal našu vernosť" # todo: NEW TRANSLATION
+ opinion_reformed_circle_coinage: "Reformoval razbu mincí v kruhu" # todo: NEW TRANSLATION
+ opinion_reduction_of_circle_titles: "Vykonal zníženie titulov v kruhu" # todo: NEW TRANSLATION
+ byz_ven_anti_genoese_pact: "Spoločný pakt proti Janovu." # todo: NEW TRANSLATION
+ ven_anti_genoese_pact_against_them: "Spoločný pakt s Byzanciou proti nim." # todo: NEW TRANSLATION
+ byz_refused_venetian_pact: "Odmietol náš proti-janovský pakt." # todo: NEW TRANSLATION
+ iw_victors_of_the_war_trust: "Víťazi talianskych vojen" # todo: NEW TRANSLATION

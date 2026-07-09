@@ -131,7 +131,7 @@
  DIALECT_AND_LANGUAGE: "$DIALECT$ ($LANGUAGE$)" # todo: NEW TRANSLATION
  LANGUAGE_AND_DIALECT: "$LANGUAGE$ ($DIALECT$ [dialect|e])" # todo: NEW TRANSLATION
  DIALECT_TT_LANGUAGE: "[dialect|e] jazyka [Dialect.GetLanguage.GetName] [language|e]" # todo: NEW TRANSLATION
- LANGUAGE_POWER_TT: "[language_power|E]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2L%$#!" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_TT: "[language_power|E]: $VAL$" # todo: CHANGED
  THE_CULTURE_OVERVIEW_TITLE: "[culture|e] v [CountryCultureLateralView.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  COUNTRIES_WITH_CULTURE_LABEL: "Krajiny s [CountryCultureLateralView.GetCulture.GetNameWithNoTooltip] [culture|e]" # todo: NEW TRANSLATION
  SELECTED_CULTURE_OUR_OPINION: "Názory [CountryCultureLateralView.GetCulture.GetNameWithNoTooltip] na ostatné [cultures|e]" # todo: NEW TRANSLATION
@@ -154,7 +154,12 @@
  LANGUAGE_FAMILY_TT_LANGUAGES_SINGULAR: "[language|e]: $LANGUAGES$" # todo: NEW TRANSLATION
  LANGUAGE_FAMILY_TT_LANGUAGES_PLURAL: "[languages|e]: $LANGUAGES$" # todo: NEW TRANSLATION
  LANGUAGE_POWER_TT_TITLE: "Sila jazyka" # todo: NEW TRANSLATION
- LANGUAGE_POWER_BREAKDOWN: "[LANGUAGE.GetNameWithNoTooltip] má silu $VAL|2G$, zatiaľ čo [TARGET_LANGUAGE.GetName] má $TARGET_VAL|Y2$\n\n" # todo: CHANGED
+ LANGUAGE_POWER_LITURGICAL_REACH_TITLE: "[ShowPopTypeName('clergy')] [pops|E] v krajinách, kde je toto [liturgical_language|e]" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_COURT_PRESTIGE_TITLE: "[primary_culture|E] [political_power|e] upravená podľa [country_rank|e] v krajinách, kde je toto [court_language|e]" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_COMMON_USAGE_TITLE: "[merchant_capacity|E] v krajinách, kde je toto [common_language|e]" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_CULTURAL_INFLUENCE_TITLE: "[cultural_influence|E] od [cultures|e] používajúcich tento [language|e]" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_BREAKDOWN: "[LANGUAGE.GetNameWithNoTooltip] má silu $VAL|2G$, zatiaľ čo [TARGET_LANGUAGE.GetName] má $TARGET_VAL|Y2$." # todo: CHANGED
+ LANGUAGE_POWER_BREAKDOWN_SECOND: "$PERC|V%2$ sily z toho dôvodu, že [LANGUAGE.GetNameWithNoTooltip] má silu $VAL|2G$, zatiaľ čo [TARGET_LANGUAGE.GetName] má $TARGET_VAL|Y2$." # todo: NEW TRANSLATION
  LANGUAGE_POWER_CLERGY_HEAD: "#T Za každých #V 1 000#! [ShowPopTypeName('clergy')] [pops|e] [primary_religion|e], kde je to [liturgical_language|e], poskytuje $VAL|2Y$#!" # todo: NEW TRANSLATION
  LANGUAGE_POWER_CLERGY_ENTRY: "$BULLET_WITH_TAB$$CLERGY|Y$ v [COUNTRY.GetName]: $VAL|2+=$" # todo: NEW TRANSLATION
  LANGUAGE_POWER_CLERGY_OTHER: "$BULLET_WITH_TAB$$CLERGY|Y$ v $NUM$ ďalších [countries|e]: $VAL|2+=$" # todo: NEW TRANSLATION
@@ -381,7 +386,9 @@
  LOCATION_NO_MOVEMENTS_INFO: "[LOCATION.GetNameWithNoTooltip] momentálne nemá žiadne hnutia." # todo: NEW TRANSLATION
  WINTER_BLOCKS_MOVEMENT: "@trigger_no! Je nemožné presunúť akúkoľvek armádu do [TOPOGRAPHY.GetName] počas $STATIC_MODIFIER_NAME_winter_normal$ alebo $STATIC_MODIFIER_NAME_winter_severe$." # todo: NEW TRANSLATION
  ZOC_BLOCKS_MOVEMENT: "@trigger_no! Armáda je zablokovaná a nemôže prejsť cez [zone_of_control|e] blízkeho [fort|e]." # todo: NEW TRANSLATION
+ NO_PATH_AVAILABLE: "@trigger_no! Neexistuje žiadna platná cesta k cieľovému miestu." # todo: NEW TRANSLATION
  DISEASE_PRESENCE_LOCATION_TOOLTIP: "#T [DISEASE.GetNameWithNoTooltip]#!\nPrítomnosť: $PRESENCE|2R%2$\nOdolnosť: $RESISTANCE|%2$" # todo: NEW TRANSLATION
+ DISEASE_ENDEMIC_LOCATION_TOOLTIP: "#T [DISEASE.GetNameWithNoTooltip]#!\nEndemická oblasť\nZákladná miera nákazy za interval: $RATE|2R%2$\nTáto lokalita je svojou geografiou prirodzene náchylná k tejto chorobe." # todo: NEW TRANSLATION
  DISEASE_PRESENCE_LOCATION_TOOLTIP_SOME_POPS: "[pops|e] z migrácie na rôznych úrovniach: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" # todo: NEW TRANSLATION
  INFECTION_BREAKDOWN: "Rozpis infekcie" # todo: NEW TRANSLATION
  DISEASE_PRESENCE_POP_TOOLTIP: "[POP.GetName]: [DISEASE.GetName]: $PRESENCE|%$ prítomnosť, $RESISTANCE|%$ odolnosť" # todo: NEW TRANSLATION
@@ -392,10 +399,11 @@
  AI_CONTROLLER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti ovládania s ďalšími $NUMBER$ lokalitami.\nKontrolórom je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
  AI_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti vlastníka s ďalšími $NUMBER$ lokalitami.\nMajiteľ je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
  AI_MAP_OWNER_AREA_TOOLTIP: "[LOCATION.GetName] sa nachádza v oblasti vlastníka mapy s ďalšími $NUMBER$ lokalitami.\nVlastník mapy je [COUNTRY.GetName].\nPočet susedných oblastí ovládania: $AI_MAP_OWNER_AREA_TOOLTIP$." # todo: NEW TRANSLATION
- MOVEMENT_PRESENCE_LOCATION_TOOLTIP: "#col [LOCATION.GetName]#! #col_m [MOVEMENT.GetName]#! #col $AFFECTED$ [pops|e] z $TOTAL$#!" # todo: NEW TRANSLATION
+ MOVEMENT_PRESENCE_LOCATION_TOOLTIP: "#col [LOCATION.GetName]#! #col_m [MOVEMENT.GetName]#! #col $AFFECTED$ [pops|e] z $TOTAL$ ($VAL|%2$)#!" # todo: CHANGED
  MOVEMENT_PRESENCE_SUB_UNIT_TOOLTIP: "[SUBUNIT.GetName]: [MOVEMENT.GetName]: $AFFECTED$ vojakov sú stúpencami z $TOTAL$" # todo: NEW TRANSLATION
  MOVEMENT_PRESENCE_UNIT_TOOLTIP: "[UNIT.GetName]: [MOVEMENT.GetName]: $NUM|Y$ podjednotiek ovplyvnených, $AFFECTED$ vojakov z $TOTAL$" # todo: NEW TRANSLATION
  MOVEMENT_PRESENCE_POP_TOOLTIP: "[POP.GetName]: [MOVEMENT.GetName]: $AFFECTED$ [pops|e] sú stúpencami z $TOTAL$" # todo: NEW TRANSLATION
+ MOVEMENT_RESISTANCE_VALUE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|L1%$#!" # todo: NEW TRANSLATION
  PROVINCE_DEFINITION_TOOLTIP: "Počet [locations|e]: [PROVINCE_DEFINITION.GetNumLocations]\n[area|e]: [PROVINCE_DEFINITION.GetArea.GetName]" # todo: NEW TRANSLATION
  PROV_DEF_MEMBERS_HEADER: "[locations|e] z [PROVINCE_DEFINITION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  PROV_DEF_MEMBERS_ENTRY: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName] [LOCATION.GetOwner.GetFlagIcon] [SelectLocalization( LOCATION.IsProvinceCapital , 'PROVINCE_CAPITAL_TOOLTIP', '' )]: [LOCATION.GetTotalPopulationWithBreakDown] [population_icon]" # todo: NEW TRANSLATION
@@ -406,10 +414,24 @@
  PROV_DEF_MEMBERS_CORRIDENTRY: "[LOCATION.GetName]: [corridor|e]" # todo: NEW TRANSLATION
  PROVINCE_CAPITAL_TOOLTIP: "[province_capital_icon]" # todo: NEW TRANSLATION
  AREA_TOOLTIP: "[region|e]: [AREA.GetRegion.GetName]\nPočet [locations|e]: [AREA.GetNumLocations]" # todo: NEW TRANSLATION
+ AREA_POPULATION_INFO: "[population|e]: [AREA.GetTotalPopulation]" # todo: NEW TRANSLATION
+ AREA_GREAT_POWER_INFO_DOMINATED: "[great_power_points|e]: $VAL$ · Dominované krajinou [COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
+ AREA_GREAT_POWER_INFO_CONTESTED: "[great_power_points|e]: $VAL$ · Sporné" # todo: NEW TRANSLATION
  SEA_AREA_TOOLTIP: "[AREA.GetNameWithNoTooltip]: Pobrežná oblasť [seazones|e]" # todo: NEW TRANSLATION
  OPEN_SEA_AREA_TOOLTIP: "[AREA.GetNameWithNoTooltip]: Otvorená oblasť [seazones|e]" # todo: NEW TRANSLATION
  AREA_MEMBERS_HEADER: "[provinces|e] z [AREA.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  AREA_MEMBERS_ENTRY: "@province! [PROVINCE_DEFINITION.GetName]: [PROVINCE_DEFINITION.GetNumLocations]" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_LAND_HEADER: "[mercenary|e] (pozemné)" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_NAVAL_HEADER: "[mercenary|e] (námorné)" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_ELIGIBLE: "Môžu sa stať žoldniermi: $MEN$" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_AVAILABLE: "K dispozícii na nábor: $MEN$" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_RESERVE: "Formuje sa mužstvo: $MEN$" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_RESERVE_NAVAL: "Formujú sa námorníci: $MEN$" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_HIRED: "Prenajatí: $MEN$ v $COMPANIES$ spoločnostiach" # todo: NEW TRANSLATION
+ AREA_MERCENARIES_CAPTAINS: "Voľní kapitáni: $NUM$" # todo: NEW TRANSLATION
+ MERCENARY_QUANTITY_MEN: "$MEN$@army_strength!" # todo: NEW TRANSLATION
+ MERCENARY_QUANTITY_SHIPS: "$NUM$@navy_strength!" # todo: NEW TRANSLATION
+ MERCENARY_QUANTITY_SAILORS: "$MEN$@sailors!" # todo: NEW TRANSLATION
  REGION_TOOLTIP: "[sub_continent|e]: [REGION.GetSubContinent.GetName]" # todo: NEW TRANSLATION
  REGION_LIST_TITLE_TOOLTIP: "Zoznam [areas|e] v tomto regióne" # todo: NEW TRANSLATION
  SUB_CONTINENT_TOOLTIP: "[continent|e]: [SUB_CONTINENT.GetContinent.GetName]" # todo: NEW TRANSLATION
@@ -482,6 +504,7 @@
  LOCATION_NATURAL_GROWTH_ENTRY: "[LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $NATURAL_GROWTH$#!" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY: "$MOVETYPE$: $POP_CHANGE$" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_MIGRATION: "$MOVETYPE$: #TOOLTIP:$BREAKDOWN_TAG$ $POP_CHANGE$#!" # todo: NEW TRANSLATION
+ LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_REPRODUCTION: "#TOOLTIP:$BREAKDOWN_TAG$ $MOVETYPE|L$: $POP_CHANGE$#!" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_MIGRATION_TITLE_IN: "Migrácia do $LOCATION$" # todo: NEW TRANSLATION
  LOCATION_POPULATION_GROWTH_BREAKDOWN_ENTRY_MIGRATION_TITLE_OUT: "Migrácia z $LOCATION$" # todo: NEW TRANSLATION
  INVALID_NAVAL_RANGE_TT: "Nie je to navigovateľná vodná plocha" # todo: NEW TRANSLATION
@@ -505,6 +528,8 @@
  ARMY_AT_SEA_ATTRITION: "Na mori: $VALUE|2-=$" # todo: CHANGED
  NAVAL_DAYS_AT_SEA: "Dni na mori: $VAL|2/-=$" # todo: CHANGED
  HOSTILE_NAVAL_ATTRITION: "Nepriateľské námorné baterie a pevnosti: $VALUE|2-=$" # todo: CHANGED
+ LOCAL_ATTRITION_SHELTERED_BY_FORT: "Chránené v priateľskom [fort|e]: $VALUE|2-=$" # todo: NEW TRANSLATION
+ LOCAL_ATTRITION_SHELTERED_BY_FORT_ZOC: "V rámci priateľskej [fort|e] [zone_of_control|e]: $VALUE|2-=$" # todo: NEW TRANSLATION
  STUCK_IN_ICE_TT: "Uviaznuté v [frozen|e] vode v [LOCATION.GetName]." # todo: NEW TRANSLATION
  UNIT_HIDDEN_TT_FROM_LAND: "[hidden|e] pred susednými pozemnými [locations|e]." # todo: NEW TRANSLATION
  UNIT_HIDDEN_TT_FROM_LAND_AND_SEA: "[hidden|e] pred susednými pozemnými [locations|e] a [seazones|e]." # todo: NEW TRANSLATION

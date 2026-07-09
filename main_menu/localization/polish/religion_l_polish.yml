@@ -41,15 +41,16 @@
  convert_religion_select_religion: "Vyberte [religion|e], na ktoré sa chcete konvertovať" # todo: NEW TRANSLATION
  convert_religion_tt: "Cieľové [religion|e] je buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomné viac než #Y 40.0%#!" # todo: NEW TRANSLATION
  no_convert_religion_tt: "@trigger_fail!Žiadna dostupná [religion|e], ktorá by bola buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomná viac než #Y 40.0%#!" # todo: NEW TRANSLATION
+ theocracy_subject_cannot_convert_tt: "@trigger_fail!Sme teokratickým subjektom teokracie" # todo: NEW TRANSLATION
  change_liturgical_language: "Zmeniť liturgický jazyk" # todo: NEW TRANSLATION
  change_liturgical_language_desc: "Zmeniť [liturgical_language|e] nášho [country|e]" # todo: NEW TRANSLATION
  change_liturgical_language_select_dailect: "Vyberte nový [dialect|e]" # todo: NEW TRANSLATION
  change_court_language: "Zmeniť jazyk dvora" # todo: NEW TRANSLATION
- change_court_language_desc: "Zmeniť [court_language|e] nášho [country|e]" # todo: NEW TRANSLATION
+ change_court_language_desc: "Zmeňte [court_language|e] nášho [country|e]\n\nMôžeme zmeniť náš jazyk dvora na:\n$BULLET$[common_language],\n$BULLET$[liturgical_language],\n$BULLET$[dominant_dialect|e],\n$BULLET$Jazyk [market_language|e] nášho [capital],\n$BULLET$Jazyk [accepted_culture|e],\n$BULLET$Jazyk nášho panovníka,\n$BULLET$Jazyk hlavy našej dynastie,\n$BULLET$Jazyk [court_language] lídra [international_organization_leader|e],\n$BULLET$Jazyk [court_language] nášho [overlord|e]." # todo: CHANGED
  orthodox_synod: "Pravoslávny synod" # todo: NEW TRANSLATION
  orthodox_synod_desc: "Zvolať Svätý synod. Toto je najvyššia autorita v Cirkvi a formuluje pravidlá a predpisy týkajúce sa organizácie Cirkvi, viery a poriadku bohoslužieb." # todo: NEW TRANSLATION
  periphora: "Periphora" # todo: NEW TRANSLATION
- periphora_desc: "Zorganizovať periphora (grécky výraz pre 'procesia'). Vezme ikonu [work_of_art|e] na cestu a presunie ju do iného [location|e]! Keď ikona putuje, prinesie výhody lokalitám, ktorými prechádza, až kým nedosiahne svoje konečné miesto." # todo: NEW TRANSLATION
+ periphora_desc: "Zorganizujte periphora (grécky výraz pre 'sprievod'). Táto akcia vezme ikonu [work_of_art|e] na cestu a presunie ju do iného [location|e]! Ikona strávi približne mesiac v každej lokalite pozdĺž trasy a počas presunu týmto lokalitám poskytuje svoje bonusy kvality umenia. Sledujte jej priebeh v mapovom režime Diela umenia." # todo: CHANGED
  periphora_select_icon: "Vyberte ikonu, s ktorou začať periphora" # todo: NEW TRANSLATION
  periphora_select_destination: "Vyberte konečné miesto pre periphora" # todo: NEW TRANSLATION
  PERIPHORA_NAME: "Periphora [WORK_OF_ART.GetName] z [LOCATION.GetName] do [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
@@ -656,15 +657,18 @@
  add_religious_aspect: "Pridať náboženský aspekt" # todo: NEW TRANSLATION
  add_religious_aspect_christian: "Pridať náboženský aspekt" # todo: NEW TRANSLATION
  add_religious_aspect_inti: "Uctiť Boha" # todo: NEW TRANSLATION
+ add_religious_aspect_hellenism: "Pridať náboženský aspekt" # todo: NEW TRANSLATION
  add_religious_aspect_desc: "Adds a [religious_aspect|e] to our [country_s] version of the [religion|e]." # todo: NEW TRANSLATION
  remove_religious_aspect: "Odstrániť náboženský aspekt" # todo: NEW TRANSLATION
  remove_religious_aspect_christian: "Odstrániť náboženský aspekt" # todo: NEW TRANSLATION
  remove_religious_aspect_inti: "Prestať uctievať Boha" # todo: NEW TRANSLATION
+ remove_religious_aspect_hellenism: "Odstrániť náboženský aspekt" # todo: NEW TRANSLATION
  remove_religious_aspect_desc: "Removes a [religious_aspect|e] to our [country_s] version of the [religion|e]." # todo: NEW TRANSLATION
  remove_religious_aspect_select_which: "Vyberte, ktorý [religious_aspect|e] odstrániť" # todo: NEW TRANSLATION
  change_religious_aspect: "Nahradiť náboženský aspekt" # todo: NEW TRANSLATION
  change_religious_aspect_christian: "Nahradiť náboženský aspekt" # todo: NEW TRANSLATION
  change_religious_aspect_inti: "Zmeniť uctievaného Boha" # todo: NEW TRANSLATION
+ change_religious_aspect_hellenism: "Nahradiť náboženský aspekt" # todo: NEW TRANSLATION
  change_religious_aspect_desc: "Replaces a [religious_aspect|e] to our [country_s] version of the [religion|e]." # todo: NEW TRANSLATION
  change_religious_aspect_select_which: "Vyberte, ktorý [religious_aspect|e] nahradiť" # todo: NEW TRANSLATION
  appease_the_gods: "Uspokojte bohov" # todo: NEW TRANSLATION
@@ -700,6 +704,7 @@
  reform_society_action_desc: "Nastal čas, aby naša spoločnosť prešla veľkými zmenami, keď budeme brániť náš ľud pred nepriateľmi. Opustením zastaralých presvedčení a administratívnych metód z minulosti prijmeme budúcnosť cez toto turbulentné obdobie." # todo: NEW TRANSLATION
  commence_reform_society_disaster_tt: "#R Spúšťa sa#! [ShowDisasterName('reform_society')] [disaster|e]. #Y Ak bude úspešné, môže nastať nasledovné:#!" # todo: NEW TRANSLATION
  eligible_for_reform_society_disaster_tt: "Zaviedli sme [ShowGenericActionName('reform_society_action')] [action|e]" # todo: NEW TRANSLATION
+ reform_society_already_triggered_tt: "Už sme vykonali [ShowGenericActionName('reform_society_action')] [action|e]" # todo: NEW TRANSLATION
  inti_ceremonial_festivals: "Usporiadať obrad" # todo: NEW TRANSLATION
  inti_ceremonial_festivals_desc: "Ceremoniálny festival sa slávi mesačne, každý raz s inou témou. Tentoraz vložíme moc vlády do oslavy a spravíme ju väčšou ako obvykle." # todo: NEW TRANSLATION
  zamay_quilla_tt: "Na Zamay Quilla, prvom mesiaci, sa oslava točí okolo plodnosti a rastu kukurice." # todo: NEW TRANSLATION
@@ -927,6 +932,16 @@
  OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "$RULER_NAME$ – [adm_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
  OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "$RULER_NAME$ – [dip_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
  OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "$RULER_NAME$ – [mil_short_with_icon|e] [ability|e]: $VAL|%+=2$" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_TT_adm: "[omens|e] pre [adm_short|e] [gods|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [ruler|e]'s #W $SKILL$#! [adm|e]" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_TT_dip: "[omens|e] pre [dip_short|e] [gods|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [ruler|e]'s #W $SKILL$#! [dip|e]" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_TT_mil: "[omens|e] pre [mil_short|e] [gods|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [ruler|e]'s #W $SKILL$#! [mil|e]" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_TITLE_adm: "Administratívni bohovia" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_TITLE_dip: "Diplomatickí bohovia" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_TITLE_mil: "Vojenskí bohovia" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_GODS_HEADING_adm: "Administratívni bohovia v našom náboženstve" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_GODS_HEADING_dip: "Diplomatickí bohovia v našom náboženstve" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_GODS_HEADING_mil: "Vojenskí bohovia v našom náboženstve" # todo: NEW TRANSLATION
+ OMEN_POWER_PILL_GOD_ROW: "[GOD.GetName]" # todo: NEW TRANSLATION
  OMEN_POWER_MODIFIER_OMEN: "Účinky zvýšené o: $VAL|%+=2$" # todo: NEW TRANSLATION
  OMEN_POWER_MODIFIER_GOD: "[omens|e] upravené o: $VAL|%2Y$" # todo: NEW TRANSLATION
  OMEN_RELATED_GOD: "Tento [omen|e] môže byť udelený [GOD.GetName]" # todo: NEW TRANSLATION

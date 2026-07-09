@@ -13,7 +13,7 @@
  REBEL_PROGRESS_LACK_OF_CONTROL: "Z $GOLD|2$@gold! kvôli nedostatku [Concept('control','kontroly')|e]: $VAL|2-=%$"
  REBEL_PROGRESS_MODIFIER: "$REBEL$ Modifikátor postupu rebelov"
  REBEL_HOUSE_SUPPORT: "Podporované [DYNASTY.GetName]: $VAL|2-=%$"
- REBEL_POWER_OF_SUPPORT: "Základná [political_power|e] rebelov: $VAL|-2V$\nCelková [political_power|el] [Concept('primary_culture','hlavnej kultúry')|e]: #G -#!$SIZE|V2+$\nFaktor [Concept('political_power','politickej sily')|e] [Concept('primary_culture','hlavnej kultúry')|e]: $SIZE_FACTOR|V2+%$\nMiera: $SCALE|V2%$\nAk je sila rebelov viac ako $PERC|%2V$ sily primárnej kultúry, získajú postup."
+ REBEL_POWER_OF_SUPPORT: "Moc rebelov [political_power|e]: $VAL|V2$\n[political_power] Požadované: $REQUIRED_POWER|V2$\nNedostatok politickej moci: $SHORTFALL|V2$\nMesačný pokrok: $PROGRESS|+=2%$" # todo: CHANGED
  REBEL_STALLED_CIVIL_WAR: "Zmrazené kvôli [Concept('civil_war','občianskej vojne')|e]."
  REBEL_STALLED_NOT_ENOUGH: "Pozastavené kvôli nedostatku podporovateľov: #V +/-0.0%#!" # todo: CHANGED
  REBEL_PROGRESS_ESTATE: "[estate_power|e]: $VAL|2-=%$"
@@ -21,6 +21,7 @@
  REBEL_NATIONALISM_SOURCE: "Nacionalizmus\nZákladný nacionalizmus: $VAL|2=-%$"
  REBEL_NATIONALISM_CULTURE_WAR: "[CULTURE.GetName] [cultural_influence|e] proti [TARGET_CULTURE.GetName] [cultural_tradition|e]: $VAL|-=2%$" # todo: CHANGED
  REBEL_LACK_OF_INTEGRATION: "Nedostatok [integration|e]: $VAL|2=-%$" # todo: NEW TRANSLATION
+ all_other_pops_tt: "Všetky ostatné [pops|e] stratia #R 20#! [pop_satisfaction|e]." # todo: NEW TRANSLATION
  RSI_HEADER: "Dôvody, prečo [Concept('pops','populácie')|e] podporujú týchto rebelov."
  RSI_ESTATE: "$BULLET$[estate|e] [ESTATE.GetNameWithNoTooltip] dôvody" # todo: NEW TRANSLATION
  RSI_ENTRY: "$NAME$: $VAL|2+=%$"
@@ -137,6 +138,8 @@
  percy_uprising_country_adjective: "$percy_uprising$"
  mortimer_uprising_country: "$mortimer_uprising$"
  mortimer_uprising_country_adjective: "$mortimer_uprising$"
+ percy_and_mortimer_uprising_country: "$percy_and_mortimer_uprising$" # todo: NEW TRANSLATION
+ percy_and_mortimer_uprising_country_adjective: "$percy_and_mortimer_uprising$" # todo: NEW TRANSLATION
  lollard_uprising_country: "$lollard_uprising$"
  lollard_uprising_country_adjective: "$lollard_uprising$"
  henry_tudor_support_country: "$henry_tudor_support$"
@@ -356,7 +359,7 @@
  chiprovtsi_uprising_country_adjective: "$ADJ$ $chiprovtsi_uprising$"
  dobrujan_revolt_country: "$dobrujan_revolt$" # todo: NEW TRANSLATION
  dobrujan_revolt_country_adjective: "$ADJ$ $dobrujan_revolt$" # todo: NEW TRANSLATION
- nikephoros_ii_orsini_revolt_country: "$orsini_revolt$" # todo: NEW TRANSLATION
+ nikephoros_ii_orsini_revolt_country: "$nikephoros_ii_orsini_revolt$" # todo: CHANGED
  nikephoros_ii_orsini_revolt_country_adjective: "$ADJ$ $Orsini$" # todo: NEW TRANSLATION
  pretender_rebels: "[pretender_rebels_icon] Pretendent"
  slave_rebels: "Otroci"
@@ -404,9 +407,12 @@
  REBELS_CABINET_MODIFIER: "@rebels_default! Rebeli mesačná zmena: #G -0.25%#!"
  REBEL_SUPPORT_HEADER: "Kraje podporujúce [Rebel.GetNameWithNoTooltip]"
  REBEL_DOES_HAVE_SUPPORTERS: "[Rebel.GetName] sú podporovaní nasledujúcimi [Concept('countries','krajinami')|e]:"
+ REBEL_VICTORY_DEMANDS_TOOLTIP_TITLE: "Ak vyhrajú" # todo: NEW TRANSLATION
  REBEL_SUPPRESS_PRIORITY_TOOLTIP_ON: "Uprednostniť potláčanie: #G Aktívne#!\n\nArmády, ktoré používajú automatické potláčanie rebelov, budú k tomuto povstaniu odoslané pred ostatnými." # todo: NEW TRANSLATION
  REBEL_SUPPRESS_PRIORITY_TOOLTIP_OFF: "Uprednostniť potláčanie: #R Neaktívne#!\n\nKliknutím označte toto povstanie ako prioritné. Armády, ktoré používajú automatické potláčanie rebelov, budú sem odoslané pred ostatnými." # todo: NEW TRANSLATION
  REBEL_SUPPRESS_PRIORITY_TITLE: "Uprednostniť potláčanie" # todo: NEW TRANSLATION
  REBEL_SUPPRESS_PRIORITY_DESC: "Armády, ktoré používajú automatické potláčanie rebelov, budú k tomuto povstaniu odoslané pred ostatnými." # todo: NEW TRANSLATION
  REBEL_SUPPRESS_PRIORITY_MARK: "Označiť toto povstanie ako prioritné" # todo: NEW TRANSLATION
  REBEL_SUPPRESS_PRIORITY_UNMARK: "Odznačiť toto povstanie ako prioritné" # todo: NEW TRANSLATION
+ REBEL_LEGEND_WILL_REVOLT: "Pridá sa k povstaniu" # todo: NEW TRANSLATION
+ REBEL_LEGEND_HAS_SUPPORT: "Má určitú podporu povstalcov" # todo: NEW TRANSLATION

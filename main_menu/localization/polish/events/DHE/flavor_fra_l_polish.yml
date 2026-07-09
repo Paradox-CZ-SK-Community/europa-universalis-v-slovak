@@ -293,6 +293,7 @@
  flavor_fra.1123.b: "Zaviesť dočasné pozastavenie Fouage." # todo: NEW TRANSLATION
  flavor_fra.1123.c: "Zrušiť daň za každú cenu!" # todo: NEW TRANSLATION
  flavor_fra.1123.historical_info: "Na svojej smrteľnej posteli v roku 1380 Karol prikázal zrušiť Fouage a ďalšie dane zavedené počas jeho vlády v Storočnej vojne. Štát sa však stal na Fouage čoraz viac závislým a daň bola v mesiacoch po Karolovej smrti znovu zavedená, čo viedlo k niekoľkým novým daňovým povstaniam po celom Francúzsku." # todo: NEW TRANSLATION
+ variable_imposed_fouage_tax_tt: "Daň fouage bola uložená" # todo: NEW TRANSLATION
  flavor_fra.1122.title: "Povstania Harelle a Maillotin" # todo: NEW TRANSLATION
  flavor_fra.1122.entry: "$flavor_fra.1122.title$" # todo: NEW TRANSLATION
  flavor_fra.1122.desc: "Hoci pôvodné zrušenie [ShowLawName('fra_fouage_tax')] príkazom [GetCountry('FRA').GetGovernment.GetPreviousRuler.GetName] bolo mnohými členmi [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] oslavované, následné opätovné zavedenie štátom premenilo počiatočnú úľavu na hnev. V meste [ShowLocationName('rouen')] tento hnev dosiahol bod varu a členovia miestnych cechov plánujú organizované povstanie proti štátu. Ďalej v [ShowLocationName('paris')] odpor voči návratu [ShowLawNameWithNoTooltip('fra_fouage_tax')] viedol mnohých, aby sa ozbrojili palicami, čo hrozí ďalším povstaním." # todo: NEW TRANSLATION
@@ -310,6 +311,7 @@
  flavor_fra.1131.b: "Skúsiť vyjednať kompromis s Marcelom." # todo: NEW TRANSLATION
  flavor_fra.1131.c: "Zúfalé časy žiadajú zúfalé opatrenia." # todo: NEW TRANSLATION
  flavor_fra.1131.historical_info: "Po bitke pri Poitiers a zajatí kráľa Jána II. bol Dauphin Karol, teraz ako regent, nútený zvolať Generálne stavy, aby riešil následky bitky. Stretol sa s ostrou opozíciou Étienna Marcela, ktorý využil vplyv Tretieho stavu a požadoval od Karola súhlasy vrátane podpísania Veľkého nariadenia a ďalších politických ústupkov, ako napríklad prepustenie Karola „Zlého“ z Navarry, s ktorým Marcel politicky spolupracoval. Hoci Karol spočiatku odolával Marcelovým požiadavkám, nakoniec im ustúpil a nariadenie podpísal. Kráľ Ján II. však nariadenie v roku 1357 zakázal, čím zabránil jeho úplnému vykonaniu." # todo: NEW TRANSLATION
+ variable_is_etienne_marcel_tt: "Etienne Marcel rozvíril Generálne stavy" # todo: NEW TRANSLATION
  flavor_fra.1132.title: "Daňové embargo mešťanov" # todo: NEW TRANSLATION
  flavor_fra.1132.entry: "$flavor_fra.1132.title$" # todo: NEW TRANSLATION
  flavor_fra.1132.desc: "Nedávne kroky koruny rozčúlili vodcu [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], [SCOPE.sCharacter('etienne_marcel').GetName], ktorý v reakcii vyhlásil daňové embargo proti dvoru. Napriek možnej represálii mnohí významní obchodníci a pridružené cechy uposlúchli volanie vodcu [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] a zakázali výber daní." # todo: NEW TRANSLATION
@@ -332,6 +334,8 @@
  flavor_fra.1134.a: "Jeho ambície už korunę nebudú znepokojovať." # todo: NEW TRANSLATION
  flavor_fra.1134.b: "Všetky dohody s ním sú teraz neplatné." # todo: NEW TRANSLATION
  flavor_fra.1134.c: "Marcel môže byť mŕtvy, ale jeho vplyvná dedičina naďalej pretrváva." # todo: NEW TRANSLATION
+ variable_marcel_executed_by_crown_tt: "Etienne Marcel bol popravený korunou" # todo: NEW TRANSLATION
+ variable_marcel_reputation_ruined_tt: "Povesť Etiennea Marcela je zničená" # todo: NEW TRANSLATION
  flavor_fra.1135.title: "Pokrok [ROOT.GetCountry.GetGovernment.GetAdjective|U]" # todo: NEW TRANSLATION
  flavor_fra.1135.entry: "$flavor_fra.1135.title$" # todo: NEW TRANSLATION
  flavor_fra.1135.desc: "Náhly vzostup [target_character.GetName] a jeho následná opozícia voči vláde [fra_ruler.GetName] vyvolali politické napätie po celom [ROOT.GetCountry.GetName]. Vďaka silným väzbám na rôzne cechy v [ROOT.GetCountry.GetNameWithNoTooltip] vytvorila kampaň [target_character.GetLastNameWithNoTooltip] proti [fra_ruler.GetShortNameWithNoTooltip] obavy v rade, že organizované povstanie vedené [target_character.GetNameWithNoTooltip] by sa mohlo čoskoro uskutočniť.\n\nUsilujúc o obnovenie autority, [fra_ruler.GetShortNameWithNoTooltip] požiadal o podporu na turné cez [target_province.GetName], jedno z hlavných sídiel známych svojou vernosťou [target_character.GetNameWithNoTooltip]. Niektorí na [ROOT.GetCountry.GetGovernment.GetCourtTitle] však navrhli, aby [fra_ruler.GetShortNameWithNoTooltip] namiesto toho získal priazeň obyvateľov [ShowLocationName('paris')], keďže [target_character.GetNameWithNoTooltip] môže pokúsiť sa využiť turné na zvolanie svojich ľudí proti [fra_ruler.GetShortNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -454,6 +458,8 @@
  flavor_fra_nrm.2.desc: "Využijúc príležitosť oslobodiť sa od [french_nation.GetAdjective] [french_nation.GetGovernment.GetAdjective] snáh o konsolidáciu, nespokojní [ROOT.GetCountry.GetAdjective] páni zvolili [nrm_ruler.GetName] za nového [ROOT.GetCountry.GetGovernment.GetRulerTitle] v [ROOT.GetCountry.GetNameWithNoTooltip]. Vďaka blízkym väzbám s [eng_ruler.GetName] sa [nrm_ruler.GetShortNameWithNoTooltip] stal vazalom a získal ochranu [english_nation.GetName].\n\nSpráva o nástupe [nrm_ruler.GetShortNameWithNoTooltip] vyvolala hnev v [french_nation.GetAdjectiveWithNoTooltip] [french_nation.GetGovernment.GetAdjective] [french_nation.GetGovernment.GetCourtTitle], ktorá teraz vyhlásila všetky pozemky a tituly držané pánmi [ROOT.GetCountry.GetAdjectiveWithNoTooltip] za zkonfiskované." # todo: NEW TRANSLATION
  flavor_fra_nrm.2.a: "[ROOT.GetCountry.GetNameWithNoTooltip] nájde väčšiu ochranu pod [english_nation.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_fra_nrm.2.a.entry: "Nájdeme väčšiu ochranu pod $ENG$." # todo: NEW TRANSLATION
+ variable_new_norman_duke_tt: "Bol ustanovený nový vévoda Normandie" # todo: NEW TRANSLATION
+ variable_norman_lords_revolt_tt: "Páni Normandie sú v povstaní" # todo: NEW TRANSLATION
  fra_cores_on_normandy_nrm: "[french_nation.GetName] získa [cores|e] na všetkých [norman_nation.GetAdjective] [locations|e]." # todo: NEW TRANSLATION
  flavor_fra.1180.title: "[joan_of_arc.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_fra.1180.entry: "Jeanne d'Arc" # todo: NEW TRANSLATION
@@ -461,6 +467,7 @@
  flavor_fra.1180.a: "Ale pozornosť predsa venoval." # todo: NEW TRANSLATION
  flavor_fra.1180.a.entry: "Ale predsa venoval pozornosť." # todo: NEW TRANSLATION
  flavor_fra.1180.b: "Môžeme dosiahnuť víťazstvo bez jej pomoci!" # todo: CHANGED
+ variable_recently_lost_to_england_tt: "Nedávno sme utrpeli porážku od Anglicka" # todo: NEW TRANSLATION
  flavor_fra.2000.title: "Oživenie proti [GetCountry('ENG').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_fra.2000.entry: "Obnova boja proti Angličanom" # todo: NEW TRANSLATION
  flavor_fra.2000.desc: "Hoci naše počiatočné konflikty s [GetCountry('ENG').GetName] priviedli [ROOT.GetCountry.GetFlavorRank] k strate viacerých častí [ROOT.GetCountry.GetName] do invázie [ruler_eng.GetDynasty.GetName], pod vedením [ruler_fra.GetName] sú väčšina týchto území opäť pod kontrolou [ROOT.GetCountry.GetAdjectiveWithNoTooltip]. Toto oživenie výrazne zvýšilo morálku v celej krajine a vnuklo nádej, že vojna je takmer u konca; ak tieto úspechy budú pokračovať, [GetCountry('ENG').GetAdjectiveWithNoTooltip] votrelci budú vyhnaní z [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -492,6 +499,8 @@
  flavor_fra.2005.b: "Nemôžeme riskovať finančnú skazu kvôli záchrane jedného človeka." # todo: NEW TRANSLATION
  flavor_fra.2005.c: "Privítať jej návrat." # todo: NEW TRANSLATION
  flavor_fra.2005.d: "Jej návrat je zázrak, ale nemôžeme riskovať, že ju znova stratíme." # todo: NEW TRANSLATION
+ variable_fra_joan_peacefully_released_tt: "Jana z Arku bola pokojne prepustená" # todo: NEW TRANSLATION
+ variable_fra_joan_ransom_tt: "Jana z Arku bola vykúpená" # todo: NEW TRANSLATION
  flavor_fra.2006.title: "Spor o nástupníctvo" # todo: NEW TRANSLATION
  flavor_fra.2006.entry: "$flavor_fra.2006.title$" # todo: NEW TRANSLATION
  flavor_fra.2006.desc: "Vstup [ruler_fra.GetName] na trón [GetCountry('FRA').GetName] sa ukázal byť ťažkou úlohou. Korunovácia [ruler_fra.GetShortNameWithNoTooltip] prišla v čase, keď veľká časť [GetCountry('FRA').GetNameWithNoTooltip] bola obsadená [GetCountry('ENG').GetAdjective]. Tieto vojenské dobytia spôsobili, že niektorí naši poddaní sediaci na hraniciach s okupovanými územiami [GetCountry('ENG').GetAdjectiveWithNoTooltip] údajne len formálne uznávajú [GetCountry('ENG').GetAdjectiveWithNoTooltip] panovníka a dokonca ho považujú za právoplatného vládcu [GetCountry('FRA').GetNameWithNoTooltip]. Chýry hovoria, že na dvore sú aj takí, ktorí by radšej videli [ruler_eng.GetName] ako vládcu [GetCountry('FRA').GetNameWithNoTooltip] namiesto [ruler_fra.GetShortNameWithNoTooltip]. V dohľadnej dobe budú mať [ruler_fra.GetShortNameWithNoTooltip] a tí v [ruler_fra.GetHisHer] línii problém upevniť svoju vládu ako panovníka [GetCountry('FRA').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -601,6 +610,10 @@
  flavor_fra.2033.desc: "Pôvodne menšia politická frakcia vazalov znepokojených procesom postupnej centralizácie [GetCountry('FRA').GetName], Liga verejného dobra sa rozšírila a zahrňuje niekoľko významných pánov z appanátnych krajín. Zvolený za vodcu Ligy, [league_leader_ruler.GetName], vydal zoznam požiadaviek, z ktorých najdôležitejšia je rýchla decentralizácia štátu a návrat do obdobia vlády [GetCharacter('fra_philippe_iv_capet').GetName].\n\nAk dvor odmietne tieto požiadavky prijať, Liga prepukne do otvoreného povstania proti Korune." # todo: NEW TRANSLATION
  flavor_fra.2033.a: "Tieto požiadavky sú pohoršujúce!" # todo: NEW TRANSLATION
  flavor_fra.2033.b: "Nemáme na výber, musíme prijať požiadavky Ligy." # todo: NEW TRANSLATION
+ flavor_fra.2035.t: "Výzva do zbraní od Ligy" # todo: NEW TRANSLATION
+ flavor_fra.2035.desc: "Dostala sa k nám správa, že League of the Public Weal povstala v otvorenom vzbure proti [GetCountry('FRA').GetLongName]. Ako rovnocenný člen Ligy sa teraz musíme rozhodnúť, či dodržíme naše záväzky a zapojíme sa do tohto boja za našu autonómiu, alebo zostaneme bokom a necháme iných niesť bremeno vojny." # todo: NEW TRANSLATION
+ flavor_fra.2035.a: "Stojíme po boku Ligy! Naša vec je jedna." # todo: NEW TRANSLATION
+ flavor_fra.2035.b: "V tomto čase nebudeme riskovať otvorenú vojnu." # todo: NEW TRANSLATION
  flavor_fra.2034.title_royalist: "Víťazstvo kráľovského dvora" # todo: NEW TRANSLATION
  flavor_fra.2034.title_league: "Víťazstvo Ligy" # todo: NEW TRANSLATION
  flavor_fra.2034.entry: "$flavor_fra.2034.title_league$" # todo: NEW TRANSLATION
@@ -705,6 +718,7 @@
  flavor_fra.2107.b: "[target_character.GetShortNameWithNoTooltip] si zachová svoje súčasné postavenie." # todo: NEW TRANSLATION
  flavor_fra.2107.b.entry: "Postava si zachová svoju súčasnú pozíciu." # todo: NEW TRANSLATION
  flavor_fra.2107.historical_info: "Obľúbený dvoran v dvoroch Ľudovíta XI. a Karola VIII., Étienne de Vesc mal značný vplyv. Najprv si získal priazeň Ľudovíta XI. vzdelávaním dauphina Karola a sprevádzal dauphina počas obdobia choroby. Neskôr sa Étienne pripojil k dvoru Karola, keď sa stal kráľom Francúzska, a stal sa významným spojencom pri povzbuzovaní invázie do Talianska v roku 1494 s cieľom získať Neapol." # todo: NEW TRANSLATION
+ variable_france_italian_interests_tt: "Francúzsko má záujmy v Taliansku" # todo: NEW TRANSLATION
  flavor_fra.2108.t: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_fra.2108.entry: "Gian Giacomo Trivulzio" # todo: NEW TRANSLATION
  flavor_fra.2108.desc: "Naše snahy budovať vzťahy v [ShowRegionName('italy_region')] upútali pozornosť neblahého kondotiéra [target_character.GetName]. Osvedčený schopný veliteľ, [target_character.GetShortNameWithNoTooltip] dosiahol už viaceré víťazstvá v konfliktoch v [ShowRegionNameWithNoTooltip('italy_region')] a jeho skúsenosti by nepochybne boli cenné, keby sme sa zapojili do sporu na Apeninskom polostrove. Na dvore však vyjadrujú obavy z honorára, ktorý [target_character.GetShortNameWithNoTooltip] požaduje za svoje služby." # todo: NEW TRANSLATION

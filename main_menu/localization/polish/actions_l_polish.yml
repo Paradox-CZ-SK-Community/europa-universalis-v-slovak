@@ -16,6 +16,12 @@
  pilgrimage_action: "Púť" # todo: NEW TRANSLATION
  pilgrimage_action_desc: "Navštíviť [holy_site|e], aby sme posilnili väzby s našou vierou." # todo: NEW TRANSLATION
  pilgrimage_select_holy_site_title: "Vyberte [holy_site|e], ktorú navštívite" # todo: NEW TRANSLATION
+ PILGRIMAGE_HOLY_SITE_TRAVEL_MONTHS: "$MONTHS|0$ mesiacov" # todo: NEW TRANSLATION
+ PILGRIMAGE_HOLY_SITE_GOLD_COST: "$GOLD|0$@gold!" # todo: NEW TRANSLATION
+ PILGRIMAGE_HOLY_SITE_INFLUENCE_GAIN: "+$INFLUENCE|0$@religious_influence!" # todo: NEW TRANSLATION
+ HOLY_SITE_SORT_BY_TRAVEL_MONTHS: "Kliknite pre zoradenie podľa času cestovania" # todo: NEW TRANSLATION
+ HOLY_SITE_SORT_BY_GOLD_COST: "Kliknite pre zoradenie podľa nákladov na zlato" # todo: NEW TRANSLATION
+ HOLY_SITE_SORT_BY_INFLUENCE_GAIN: "Kliknite pre zoradenie podľa získaného vplyvu" # todo: NEW TRANSLATION
  prepare_for_katun: "Pripraviť sa na ďalší K'atun" # todo: NEW TRANSLATION
  prepare_for_katun_nothing: "Zastaviť prípravy na ďalší K'atun" # todo: NEW TRANSLATION
  prepare_for_katun_nothing_desc: "Zastavte nákladné prípravy na [katun|e]" # todo: NEW TRANSLATION
@@ -34,6 +40,7 @@
  join_sect: "Pridať sa k sekte" # todo: NEW TRANSLATION
  join_sect_desc: "Pridajte sa k [sect|e]." # todo: NEW TRANSLATION
  join_sect_choose_sect: "Vyberte [sect|e], ku ktorej sa pridať" # todo: NEW TRANSLATION
+ join_sect_max_sects_tt: "Sme členom menej [sect|e] skupín, než naša viera povoľuje." # todo: NEW TRANSLATION
  disfavor_sect: "Nepodporovať sektu" # todo: NEW TRANSLATION
  disfavor_sect_desc: "Nepodporujte [sect|e]. Budeme jej šírenie na našom území odrádzať, hoci ak v nej budeme, dostaneme dodatočné sankcie." # todo: NEW TRANSLATION
  disfavor_sect_choose_sect: "Vyberte [sect|e], ktorú chcete nepodporovať" # todo: NEW TRANSLATION
@@ -119,6 +126,7 @@
  create_autocephalous_patriarchate_tt: "[actor.GetName] vytvára nový [GetInternationalOrganizationType('autocephalous_patriarchate').GetName]" # todo: NEW TRANSLATION
  third_rome: "Tretí Rím" # todo: NEW TRANSLATION
  third_rome_desc: "Vytvorte [holy_site|e] v sídle nášho [autocephalous_patriarchate|e]." # todo: NEW TRANSLATION
+ choose_war: "Vyberte vojnu" # todo: NEW TRANSLATION
  relocate_ecumenical_patriarchate: "Presunúť ekumenický patriarchát" # todo: NEW TRANSLATION
  relocate_ecumenical_patriarchate_desc: "Presuňte sídlo nášho [autocephalous_patriarchate|e] na [holy_site|e], aby ste získali dodatočné bonusy." # todo: NEW TRANSLATION
  relocate_ecumenical_patriarchate_select_holy_site: "Vyberte [holy_site|e], kam presunúť sídlo" # todo: NEW TRANSLATION
@@ -135,7 +143,7 @@
  hire_advisor_desc: "Minúť [government_power|e], aby sme povolali nového [character|e] do nášho dvora." # todo: CHANGED
  hire_advisor_effect: "Nový [character|e] je najatý a vstupuje do našej krajiny." # todo: NEW TRANSLATION
  hire_artist: "Najať umelca" # todo: NEW TRANSLATION
- hire_artist_desc: "Minúť zlato na prilákanie nového [artist|e] do nášho dvora." # todo: NEW TRANSLATION
+ hire_artist_desc: "Podporte nového [artist|e], aby vstúpil do nášho dvora." # todo: CHANGED
  hire_artist_effect: "Nový [artist|e] je najatý a vstupuje do našej krajiny." # todo: NEW TRANSLATION
  improve_our_cultural_view: "Zlepšiť názor našej kultúry" # todo: NEW TRANSLATION
  improve_our_cultural_view_desc: "Snažiť sa zlepšiť názor našej [culture|e] na inú." # todo: NEW TRANSLATION
@@ -233,6 +241,34 @@
  PERFORM_REDUCTION_T: "Vykonať redukciu" # todo: NEW TRANSLATION
  perform_reduction: "Vykonať redukciu" # todo: NEW TRANSLATION
  perform_reduction_desc: "Znížiť moc [estate|e] zničením ich [buildings|e]. Toto ovplyvní ich [estate_satisfaction|e]." # todo: NEW TRANSLATION
+ ESTATE_ACTIONS_MENU_T: "Akcie stavov" # todo: NEW TRANSLATION
+ ESTATE_ACTIONS_LATERALVIEW_T: "Interagovať s [EstateActionsLateralView.GetEstate.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ ask_for_extra_levies: "Požiadať o dodatočné levy" # todo: NEW TRANSLATION
+ ask_for_extra_levies_desc: "Požiadajte [estate|e] o dodatočné sily. Ich zdroje budú zaťažené a ich [estate_satisfaction|e] prudko klesne — pokiaľ sa nebránite pred útokom." # todo: NEW TRANSLATION
+ ASK_FOR_EXTRA_LEVIES_T: "Požiadať o dodatočné levy" # todo: NEW TRANSLATION
+ ask_for_extra_levies_cooldown: "Požiadať o dodatočné levy" # todo: NEW TRANSLATION
+ extraordinary_taxes: "Uvaliť mimoriadne dane" # todo: NEW TRANSLATION
+ extraordinary_taxes_desc: "Uvalte výnimočné dane na [estate|e] na jeden rok, čím zvýšite ich maximálny daňový strop. Ich [estate_satisfaction|e] utrpí — menej, ak sa bránite pred útokom." # todo: NEW TRANSLATION
+ EXTRAORDINARY_TAXES_T: "Uvaliť mimoriadne dane" # todo: NEW TRANSLATION
+ extraordinary_taxes_cooldown: "Uvaliť mimoriadne dane" # todo: NEW TRANSLATION
+ ask_clergy_for_legitimacy: "Požiadať duchovenstvo o potvrdenie legitimity" # todo: NEW TRANSLATION
+ ask_clergy_for_legitimacy_desc: "Požiadajte $clergy_estate$, aby vykonali ceremónie a poskytli verejné vyhlásenia posilňujúce božský mandát vášho panovníka. Udelí [legitimacy|e] na úkor duchovnej [estate_satisfaction|e]." # todo: NEW TRANSLATION
+ ask_clergy_for_legitimacy_cooldown: "Požiadať duchovenstvo o potvrdenie legitimity" # todo: NEW TRANSLATION
+ ask_nobility_for_diplomats: "Požiadať šľachtu o vyslancov" # todo: NEW TRANSLATION
+ ask_nobility_for_diplomats_desc: "Požiadajte $nobles_estate$, aby vyslali dodatočných vyslancov a poskytli svoje kontakty na cudzích dvoroch. Udelí [diplomats|e] na úkor šľachtickej [estate_satisfaction|e]." # todo: NEW TRANSLATION
+ ask_nobility_for_diplomats_cooldown: "Požiadať šľachtu o vyslancov" # todo: NEW TRANSLATION
+ ask_burghers_for_loan: "Požiadať o núdzový grant" # todo: NEW TRANSLATION
+ ask_burghers_for_loan_desc: "Požiadajte $burghers_estate$, aby vyplatili núdzový grant z ich vlastnej pokladnice, pričom očakávajú protislužby. Prenesie až polovicu burgherského zlatého fondu do koruny na úkor burgherskej [estate_satisfaction|e]. Na rozdiel od pôžičky to nevyčerpáva našu [Concept('loan', 'loan capacity')]." # todo: NEW TRANSLATION
+ ask_burghers_for_loan_cooldown: "Požiadať o núdzový grant" # todo: NEW TRANSLATION
+ ask_commoners_for_stability: "Osloviť obyčajných ľudí" # todo: NEW TRANSLATION
+ ask_commoners_for_stability_desc: "Požiadajte obyčajných ľudí, aby zorganizovali občianske aktivity, ktoré utišia nepokoje a upokoja populáciu. Udelí [stability|e] na úkor [estate_satisfaction|e] obyčajných ľudí." # todo: NEW TRANSLATION
+ ask_commoners_for_stability_cooldown: "Osloviť obyčajných ľudí" # todo: NEW TRANSLATION
+ ask_tribes_for_manpower: "Povolať kmene do zbraní" # todo: NEW TRANSLATION
+ ask_tribes_for_manpower_desc: "Požiadajte kmeňových vodcov alebo kozáckych veliteľov, aby povolali svojich bojovníkov za odmenu v podobe autonómie alebo sľubov plenienia. Udelí [manpower|e] na úkor kmeňovej [estate_satisfaction|e]." # todo: NEW TRANSLATION
+ ask_tribes_for_manpower_cooldown: "Povolať kmene do zbraní" # todo: NEW TRANSLATION
+ call_emergency_parliament: "Zvolať núdzový parlament" # todo: NEW TRANSLATION
+ call_emergency_parliament_desc: "Zvolajte mimoriadne zasadnutie [parliament|e] pod nátlakom, obchádzajúc bežný cooldown. Stojí to [legitimacy|e]. Dostupné len počas vojny a ak je bežný cooldown stále v platnosti." # todo: NEW TRANSLATION
+ call_emergency_parliament_cooldown: "Zvolať núdzový parlament" # todo: NEW TRANSLATION
  migrate_pop_based_country_select_source_area: "Vyberte [area|e], z ktorej presunúť [pops|e]:" # todo: NEW TRANSLATION
  migrate_pop_based_country_select_source_province: "Vyberte [province|e], z ktorého presunúť [pops|e]:" # todo: NEW TRANSLATION
  migrate_pop_based_country_select_destination_province: "Vyberte [province|e], do ktorého presunúť [pops|e]:" # todo: NEW TRANSLATION
@@ -347,7 +383,7 @@
  migrate_pop_based_country_desc: "#T Presun popov#!\nPresuňte [pops|e] z jednej [location|e] do druhej." # todo: NEW TRANSLATION
  steppe_horde_to_monarchy: "Prejsť na $monarchy$" # todo: NEW TRANSLATION
  steppe_horde_to_monarchy_desc: "Súčasné problémy sa nedajú vyriešiť, pokiaľ je následníctvo štátu veľmi ohrozené. Občianske vojny a boje o trón sú príliš časté. Bojovníci sa rozpadávajú a bojujú medzi sebou namiesto toho, aby nasledovali silnú autoritu.\n\nNomádsky vek už pominul. Prichádza éra novej [ShowGovernmentTypeNameWithNoTooltip('monarchy')]!" # todo: NEW TRANSLATION
- steppe_horde_to_monarchy_tt: "Reformujeme sa na [ShowGovernmentTypeName('monarchy')] a staneme sa [settled|e] krajinou\n#Y Tento proces trvá 15 rokov#!" # todo: NEW TRANSLATION
+ steppe_horde_to_monarchy_tt: "Reformujeme sa na [ShowGovernmentTypeName('monarchy')] a staneme sa [settled_country|e]\n#Y Tento proces trvá 15 rokov, kým sa dokončí#!" # todo: CHANGED
  relocate_market: "Presunúť trh" # todo: NEW TRANSLATION
  relocate_market_desc: "Presuňte [market|e] na iné [location|e]" # todo: NEW TRANSLATION
  relocate_market_select_market: "Vyberte [market|e] na presun:" # todo: NEW TRANSLATION
@@ -368,6 +404,13 @@
  provoke_rebels: "Provokovať povstalcov" # todo: NEW TRANSLATION
  provoke_rebels_desc: "Provokovať [rebels|e], aby sa vzbúrili proti nám." # todo: NEW TRANSLATION
  provoke_rebels_tt: "Vybrané [rebellion|e] bude vyprovokované k vzbure proti nám, aby sme ich na bojisku raz a navždy rozdrvili!" # todo: NEW TRANSLATION
+ negotiate_rebels_buy_off: "Uplatiť povstalcov" # todo: NEW TRANSLATION
+ negotiate_rebels_buy_off_desc: "Vydajte zlato na úplatok vodcom [rebels|e] a znížte ich postup smerom k povstaniu." # todo: NEW TRANSLATION
+ negotiate_rebels_buy_off_cooldown: "Uplatiť povstalcov" # todo: NEW TRANSLATION
+ negotiate_rebels_buy_off_no_target_tt: "Nebola vybraná žiadna [rebellion|e]." # todo: NEW TRANSLATION
+ negotiate_rebels_accept_demands: "Prijať ich požiadavky" # todo: NEW TRANSLATION
+ negotiate_rebels_accept_demands_desc: "Ustúpte ich požiadavkám, aby ste sa vyhli [rebellion|e] alebo [civil_war|e]." # todo: NEW TRANSLATION
+ negotiate_rebels_accept_demands_no_target_tt: "Nebola vybraná žiadna [rebellion|e]." # todo: NEW TRANSLATION
  hire_privateer: "Najmite súkromného korzára" # todo: NEW TRANSLATION
  hire_privateer_desc: "Najmite [privateer|e], aby pustošil [area|e]. " # todo: NEW TRANSLATION
  hire_privateer_select_area: "Vyberte [area|e], ktoré má [privateer|e] pustošiť:" # todo: NEW TRANSLATION
@@ -385,10 +428,14 @@
  delist_unit_merc_destroyed: "Jednotka bola vyradená" # todo: NEW TRANSLATION
  spread_reformation_through_trade: "Šíriť reformáciu prostredníctvom obchodu" # todo: NEW TRANSLATION
  spread_reformation_through_trade_desc: "Naši obchodníci cestujú obchodnými cestami severnej Európy a sú čoraz viac vystavení novým protestantským myšlienkam. Môžeme povzbudiť naše obchodné stanice, aby prijali reformovanú vieru." # todo: NEW TRANSLATION
- spread_reformation_through_trade_tt: "The [pops|e] linked to our [Hanseatic Kontors|e] that are still [Catholic|e] will convert to the selected [religion|e]." # todo: NEW TRANSLATION
+ spread_reformation_through_trade_tt: "[pops|e] prepojené s naším [ShowBuildingTypeName('hanseatic_kontor')], ktoré sú stále [ShowReligionAdjective('catholic')], prejdú na vybranú [religion|e]." # todo: CHANGED
  embrace_the_reformation: "Prijať reformáciu" # todo: NEW TRANSLATION
  embrace_the_reformation_desc: "$reformation$ sa ujala v našej krajine! Bolo by rozumné prijať zmeny a byť vnímaní ako bašta novej viery." # todo: NEW TRANSLATION
  embrace_the_reformation_tt: "Naša [country|e] konvertuje na vybranú [religion|e], vrátane nášho [ruler|e], [consort|e], [heir|e] a [children|e] nášho [ruler|e]." # todo: NEW TRANSLATION
+ sponsor_the_reformation: "Sponzorovať reformáciu" # todo: NEW TRANSLATION
+ sponsor_the_reformation_desc: "Myšlienky $reformation$ sú lákavé a mohli by priniesť úžitok našej krajine! Ak nadviažeme spojenia s tými, ktorí hlásajú tieto nové idey, môžeme urýchliť ich šírenie v našej krajine." # todo: NEW TRANSLATION
+ sponsor_the_reformation_tt: "Naša [country|e] pozve vybraný [movement|e] a jeden z členov našej vlády sa stane šíriteľom zvoleného [movement|e]." # todo: NEW TRANSLATION
+ sponsor_the_reformation_no_movements: "@trigger_no! Žiadny [movement|e] dostupný" # todo: NEW TRANSLATION
  dissolve_monasteries: "Zrušiť kláštory" # todo: NEW TRANSLATION
  dissolve_monasteries_desc: "Papistický mníšsky život je zastaralý a heretický. Musíme zrušiť viac zostávajúcich nekonformných náboženských domov, zbaviť ich pôdy a skonfiškovať ich cennosti." # todo: NEW TRANSLATION
  militarise_religious_icons: "Militarizovať náboženské ikony" # todo: NEW TRANSLATION
@@ -412,7 +459,7 @@
  bosnian_church_diplomacy: "Poslať vyslancov do Ríma" # todo: NEW TRANSLATION
  bosnian_church_diplomacy_desc: "V dôsledku izolácie našej viery sú naše väzby na katolicizmus často spochybňované mnohými susedmi, ktorí nás obviňujú z kacírstva. Mali by sme poslať zástupcu našej cirkvi do Ríma, aby zložil prísahu vernosti pápežovi a ukončil tieto klebety, ktoré nás ohrozujú." # todo: CHANGED
  bosnian_church_diplomacy_tt: "Zlepšíme naše vzťahy s krajinami, ktoré nasledujú [ShowLocationName('rome')]" # todo: NEW TRANSLATION
- improve_opinion_with_all_catholics_tt: "Zlepšíme [opinion|e] každého [ShowReligionAdjective('catholic')] [country|e] o #G 50#!" # todo: NEW TRANSLATION
+ improve_opinion_with_all_catholics_tt: "Zlepšíme [opinion|e] každého [ShowReligionAdjective('catholic')] [country|e] voči nám o [ShowBiasValue('opinion_bosnian_church_diplomacy')|+=0]" # todo: CHANGED
  expose_the_enemies_of_the_faith: "Odhaľte nepriateľov viery" # todo: NEW TRANSLATION
  expose_the_enemies_of_the_faith_desc: "Historicky bola naša krajina považovaná za hniezdo kacírstva, cieľ krížových výprav a pod tlakom, aby sme opustili naše rítusy. Preto spočíva sila našej cirkvi v ostražitosti; identifikovaním agentov nepriateľských cirkví a dvorov im odoberáme všetky prostriedky na podkopanie našej viery a opätovné ohrozenie nás." # todo: NEW TRANSLATION
  expose_the_enemies_of_the_faith_tt: "Zmenší veľkosť každého nepriateľského [spy_network|e] v [country|e] o #G -10.00#!" # todo: NEW TRANSLATION
@@ -463,6 +510,7 @@
  VOTE_LOCK_REASON_BRIBED: "Zdajú sa byť neochotní zmeniť svoj hlas. Možno boli podplatení?" # todo: NEW TRANSLATION
  VOTE_LOCK_REASON_FAVOURS: "Zdajú sa byť neochotní zmeniť svoj hlas. Možno si vyžiadali protislužbu." # todo: NEW TRANSLATION
  VOTE_LOCK_REASON_SUPPORT: "Nezmenia svoj hlas, pretože ich [emperor.GetName] podporil proti rebelom pretendentom." # todo: NEW TRANSLATION
+ VOTE_LOCK_REASON_CIRCLE_LEADER: "Ich [imperial_circle|e] vodca ich prinútil zaujať tento postoj a neodštiepia sa." # todo: NEW TRANSLATION
  USEFULNESS_OF_GOVERNMENT_REFORM: "Užitočnosť [government_reform|e]" # todo: NEW TRANSLATION
  USEFULNESS_OF_PARLIAMENT_TYPE: "Užitočnosť [parliament_type|e]" # todo: NEW TRANSLATION
  USEFULNESS_OF_POLICY: "Užitočnosť [policy|e]" # todo: NEW TRANSLATION
@@ -470,6 +518,12 @@
  ACTOR_ACCEPTANCE: "Ochota aktéra prijať [country_interaction|e], ak je požadované" # todo: NEW TRANSLATION
  BIAS_FROM_RULER_TRAITS: "Predpojatosti z vlastností vládcu [traits|e]" # todo: NEW TRANSLATION
  OPPOSES_RULER_TRAITS: "Proti vlastnostiam vládcu [traits|e]" # todo: NEW TRANSLATION
+ WANTS_TO_CONTAIN_TARGET: "Chce obmedziť cieľ" # todo: NEW TRANSLATION
+ OPINION_OF_DEFENDER_IN_COMPARISON_TO_TARGET: "Názor obrancu v porovnaní s názorom útočníka" # todo: NEW TRANSLATION
+ MILITARY_STRENGTH_IN_COMPARISON_TO_TARGET: "Vojenská sila v porovnaní s útočníkom" # todo: NEW TRANSLATION
+ MILITARY_STRENGTH_IN_COMPARISON_TO_ACTOR: "Vojenská sila v porovnaní s [actor.GetName]" # todo: NEW TRANSLATION
+ PERSONALITY_OF_TARGET: "Vládnuca osobnosť [recipient.GetName]" # todo: NEW TRANSLATION
+ PERSONALITY_OF_ACTOR: "Vládnuca osobnosť [actor.GetName]" # todo: NEW TRANSLATION
  PROVIDES_POWER_OPPORTUNITY: "Poskytuje príležitosť uchopenia moci" # todo: NEW TRANSLATION
  BENEFITS_US: "Prospeje nám" # todo: NEW TRANSLATION
  OPINION_OF_OTHER_MEMBERS: "Názor ostatných členov" # todo: NEW TRANSLATION
@@ -479,6 +533,7 @@
  OPINION_OF_FREE_CITIES: "Názor ostatných [ShowSpecialStatusNamePlural('free_city')]" # todo: NEW TRANSLATION
  DOES_NOT_BENEFITS_US: "Nepomôže nám" # todo: NEW TRANSLATION
  GREAT_POWER_LEADER_COMPARISON: "[great_power_score|e] v porovnaní s [international_organization_leader_short|e]" # todo: NEW TRANSLATION
+ TAX_BASE_LEADER_COMPARISON: "[tax_base|e] v porovnaní s [international_organization_leader_short|e]" # todo: NEW TRANSLATION
  LEVEL_OF_EMPEROR_COMFORT_REFORMS: "Úroveň pohodlia cisára pri reformách" # todo: NEW TRANSLATION
  POLICY_PRINCE_OPPOSES: "Kniežatá sú proti tejto politike" # todo: NEW TRANSLATION
  POLICY_EMPEROR_WANTS: "$emperor$ chce túto politiku" # todo: NEW TRANSLATION
@@ -487,7 +542,7 @@
  UNION_WE_ARE_SENIOR_PARTNER: "Sme [ShowSpecialStatusName('senior_partner')]" # todo: NEW TRANSLATION
  UNION_DIPLOMATIC_REPUTATION_OF_SENIOR_PARTNER: "Diplomatická reputácia [senior_partner_scope.GetName]" # todo: NEW TRANSLATION
  UNION_TRUST_OF_SENIOR_PARTNER: "Dôvera [senior_partner_scope.GetName]" # todo: NEW TRANSLATION
- UNION_GREAT_POWER_SCORE_COMPARED_TO_SENIOR_PARTNER: "Skóre veľkej moci v porovnaní s [senior_partner_scope.GetName]" # todo: NEW TRANSLATION
+ UNION_ECONOMICAL_BASE_COMPARED_TO_SENIOR_PARTNER: "[economical_base|e] v porovnaní s [senior_partner_scope.GetName]" # todo: NEW TRANSLATION
  UNION_CULTURAL_INFLUENCE_VS_TRADITION: "Kultúrny vplyv [senior_partner_scope.GetName] vs. kultúrna tradícia $junior_partner$" # todo: NEW TRANSLATION
  UNION_NOBLES_OPINION_OF_SENIOR_PARTNER: "Názor $nobles_estate$ na [senior_partner_scope.GetName]" # todo: NEW TRANSLATION
  UNION_BURGHERS_OPINION_OF_SENIOR_PARTNER: "Názor $burghers_estate$ na [senior_partner_scope.GetName]" # todo: NEW TRANSLATION
@@ -533,15 +588,18 @@
  POLICY_BIAS_EMPEROR_WANTS: "Cisár si praje prijať tento zákon" # todo: NEW TRANSLATION
  POLICY_BIAS_EMPEROR_OPPOSES: "Cisár nechce prijať tento zákon" # todo: NEW TRANSLATION
  POLICY_BIAS_PRINCE_WANTS: "Princ si praje prijať tento zákon" # todo: NEW TRANSLATION
+ POLICY_BIAS_PRINCE_SUPPORTS: "Princ podporuje prijatie zákona" # todo: NEW TRANSLATION
  POLICY_BIAS_PRINCE_OPPOSES: "Princ nechce prijať tento zákon" # todo: NEW TRANSLATION
  POLICY_BIAS_OPINION_OF_EMPEROR: "Názor cisára" # todo: NEW TRANSLATION
  POLICY_BIAS_OPINION_OF_IO_LEADER: "Názor vodcu" # todo: NEW TRANSLATION
  POLICY_BIAS_IMPERIAL_AUTHORITY: "$imperial_authority$" # todo: NEW TRANSLATION
+ POLICY_BIAS_VOTE_WITH_EMPEROR: "Hlasovanie s cisárom (názor x $imperial_authority$)" # todo: NEW TRANSLATION
  POLICY_VOTE_BIAS: "Z túžby hlasovať o [SCOPE.sPolicy('vote').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- POLICY_WANTS_TO_KEEP_CURRENT_POLICY: "Z dôvodu túžby zachovať [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName]" # todo: NEW TRANSLATION
+ POLICY_WANTS_TO_KEEP_CURRENT_POLICY: "Z preferencie ponechať [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName] namiesto [SCOPE.sPolicy('vote').GetNameWithNoTooltip]" # todo: CHANGED
  POLICY_WANTS_TO_REMOVE_CURRENT_POLICY: "Z dôvodu túžby odstrániť [SCOPE.sInternationalOrganization('recipient').GetImplementedPolicyForLaw(SCOPE.sLaw('target').Self).GetName]" # todo: NEW TRANSLATION
- POLICY_REASON_TO_VOTE_FOR_PROPOSED_POLICY: "Zo dôvodov hlasovať namiesto toho za [SCOPE.sInternationalOrganization('recipient').MakeScope.GetVariable('ai_io_law_target').GetPolicy.GetName]" # todo: NEW TRANSLATION
- POLICY_REASON_TO_VOTE_FOR_TARGET: "Z dôvodov hlasovať za [SCOPE.sPolicy('evaluation_policy').GetName]" # todo: NEW TRANSLATION
+ POLICY_REASON_TO_VOTE_FOR_PROPOSED_POLICY: "Z preferencie [SCOPE.sPolicy('vote').GetNameWithNoTooltip] pred [SCOPE.sInternationalOrganization('recipient').MakeScope.GetVariable('ai_io_law_target').GetPolicy.GetName]" # todo: CHANGED
+ POLICY_REASON_TO_VOTE_FOR_PREVIEWED_POLICY: "Z preferencie [SCOPE.sPolicy('vote').GetNameWithNoTooltip] pred [SCOPE.sPolicy('previewed_vote').GetName]" # todo: NEW TRANSLATION
+ POLICY_REASON_TO_VOTE_FOR_TARGET: "Z preferencie [SCOPE.sPolicy('evaluation_policy').GetName] pred [SCOPE.sPolicy('vote').GetNameWithNoTooltip]" # todo: CHANGED
  POLICY_BASE_REASON_KEEP_POLICY: "Z túžby zachovať už zavedenú politiku" # todo: NEW TRANSLATION
  POLICY_BASE_REASON_REFORM_POLICY: "Zo snahy reformovať už zavedenú politiku" # todo: NEW TRANSLATION
  POLICY_PROPOSE_BIAS: "Z túžby navrhnúť [SCOPE.sPolicy('vote').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -821,7 +879,7 @@
  send_people_to_the_colonies_no_countries: "$no_valid_countries$" # todo: NEW TRANSLATION
  send_people_to_the_colonies_destination_no_provinces: "$no_valid_provinces$" # todo: NEW TRANSLATION
  kbo_pop_promote_action_no_provinces: "$no_valid_provinces$" # todo: NEW TRANSLATION
- swe_slash_and_burn_new_farms_no_provinces: "@trigger_no! Neboli nájdené žiadne vhodné [provinces|e]. Cieľová provincia musí:\nByť v oblasti Norrland alebo Finland (okrem provincií Finland a Nyland);\nMať [population|e] nižšie ako 10;\nMať rozvoj nižší ako 20;\nUž nebýť podporovaná touto akciou ani akciou Vypudiť ľudí." # todo: CHANGED
+ swe_slash_and_burn_new_farms_no_provinces: "@trigger_no! Neboli nájdené žiadne vhodné [provinces|e]. Cieľová provincia musí:\nByť v oblasti Norrland alebo Finland (okrem provincií Finland a Nyland);\nMať [population|e] nižšie ako 10;\nMať rozvoj nižší ako 20;\nUž nebýť podporovaná touto akciou ani akciou Vypudiť ľudí." # todo: CHANGED NUMBER
  send_secret_royal_inspectors_no_provinces: "$no_valid_provinces$" # todo: NEW TRANSLATION
  aclla_distribution_no_provinces: "$no_valid_provinces$" # todo: NEW TRANSLATION
  assume_fort_command_no_areas: "$no_valid_areas$" # todo: NEW TRANSLATION
@@ -890,7 +948,8 @@
  treasure_voyage_select_character_no_characters: "$no_valid_characters$" # todo: NEW TRANSLATION
  join_a_league_no_ios: "$no_valid_international_organizations$" # todo: NEW TRANSLATION
  plan_campaign_in_italy_no_provinces: "@trigger_no! Nespĺňame jednu alebo viac požiadaviek pre túto [action|e]" # todo: CHANGED
- intervene_in_italian_campaign_no_countries: "$no_valid_countries$" # todo: NEW TRANSLATION
+ iw_intervene_in_war_no_countries: "@trigger_no! Momentálne neexistujú žiadni vodcovia cudzích líg, ktorí by viedli [war|e] proti vodcovi talianskej ligy" # todo: NEW TRANSLATION
+ choose_war_to_intervene_in: "Vyberte [war|e], do ktorého zasiahnete" # todo: NEW TRANSLATION
  iw_send_aid_no_countries: "$no_valid_countries$" # todo: NEW TRANSLATION
  make_unit_available_for_hire_no_units: "$no_valid_units$" # todo: NEW TRANSLATION
  delist_unit_no_mercenaries: "$no_valid_mercenaries$" # todo: NEW TRANSLATION
@@ -1072,8 +1131,10 @@
  lordship_of_ireland_form_kingdom_desc: "Titul kráľa Írska je konečne náš na uchopenie, čo posilní našu legitimitu nad krajinou a jej ľudom." # todo: NEW TRANSLATION
  lordship_of_ireland_form_kingdom_region_tt: "Každá [location|e] v [ShowRegionName('ireland_region')] [region|e] musí byť [owned|e] členom [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]." # todo: NEW TRANSLATION
  IRE_f_lordship_tt: "Toto nemôžeme urobiť, pokiaľ sme [member|e] [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]. Iba [international_organization_leader_short|e] môže tak urobiť cez akciu [ShowGenericActionName('lordship_of_ireland_form_kingdom')]." # todo: NEW TRANSLATION
- neither_highkingship_nor_lordship_exist_tt: "Ani [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] ani [GetUniqueInternationalOrganization('high_kingship').GetName] nemôžu existovať." # todo: NEW TRANSLATION
+ neither_highkingship_nor_lordship_exist_tt: "Ani [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] ani [GetInternationalOrganizationType('high_kingship').GetName] v [ShowRegionName('ireland_region')] nemôžu existovať." # todo: CHANGED
  IRE_f_sole_high_kingship_tt: "Sme jediným zostávajúcim členom Vysokého kráľovstva Írska." # todo: NEW TRANSLATION
+ IRE_high_kingship_f_leader_tt: "Musíme byť [international_organization_leader_short|e] [GetInternationalOrganizationType('high_kingship').GetName] [ShowRegionName('ireland_region')]" # todo: NEW TRANSLATION
+ IRE_lordship_of_ireland_f_leader_tt: "Musíme byť [ShowSpecialStatusName('lord_of_ireland')] [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]" # todo: NEW TRANSLATION
  violate_treaty_of_tordesillas: "Porušiť $treaty_of_tordesillas$" # todo: NEW TRANSLATION
  violate_treaty_of_tordesillas_desc: "$treaty_of_tordesillas$ je len kúsok bezvýznamného papiera pre tých, ktorí riskujú svoje životy, aby si vykopali lepšiu budúcnosť v nevděčnej a nebezpečnej novej zemi.\n\nIgnorujeme tieto pravidlá a dovolíme nášmu ľudu vziať si to, čo majú právo vlastniť." # todo: NEW TRANSLATION
  stop_violate_treaty_of_tordesillas: "Prestať porušovať zmluvu o [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('treaty_location').GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1132,10 +1193,10 @@
  reclaim_high_kingship_land_desc: "$cb_high_kingship_reclamation_desc$" # todo: NEW TRANSLATION
  overthrow_high_king: "$cb_high_kingship_overthrow$" # todo: NEW TRANSLATION
  overthrow_high_king_desc: "$cb_high_kingship_overthrow_desc$" # todo: NEW TRANSLATION
- claim_high_kingship: "Uplatniť nárok na titul Vysokého kráľa" # todo: NEW TRANSLATION
- claim_high_kingship_desc: "Vyhláste svoju ambíciu stať sa Vysokým kráľom Írska, čím otvoríte titul na voľbu medzi írskymi kráľovstvami." # todo: NEW TRANSLATION
  subjugate_high_kingship_member: "$cb_high_kingship_subjugate$" # todo: NEW TRANSLATION
  subjugate_high_kingship_member_desc: "$cb_high_kingship_subjugate_desc$" # todo: NEW TRANSLATION
+ high_kingship_reclaim_land: "$cb_high_kingship_reclamation$" # todo: NEW TRANSLATION
+ high_kingship_subjugate_member: "$cb_high_kingship_subjugate$" # todo: NEW TRANSLATION
  transition_to_monarchy: "Prejsť na $monarchy$" # todo: NEW TRANSLATION
  transition_to_republic: "Prejsť na $republic$" # todo: NEW TRANSLATION
  transition_to_theocracy: "Prejsť na $theocracy$" # todo: NEW TRANSLATION
@@ -1158,3 +1219,16 @@
  theocracy_to_republic: "$transition_to_republic$" # todo: NEW TRANSLATION
  theocracy_to_republic_desc: "Upadajúca moc nášho $clergy_estate$ sa nepriaznivo prejavila na vnímateľnej stabilite nášho štátu. Cez sériu reforiem a rokovaní prenesieme tú málo autority, ktorú im zostáva, na $burghers_estate$." # todo: NEW TRANSLATION
  nahuatl_religious_actions_price: "$nahuatl$ Cena náboženských akcií" # todo: NEW TRANSLATION
+ set_province_capital: "Určiť provinčné hlavné mesto" # todo: NEW TRANSLATION
+ set_province_capital_desc: "Určte toto [location|e] ako trvalé [province_capital|e], čím sa zabráni automatickému prerozdeleniu na základe [population_growth|e]." # todo: NEW TRANSLATION
+ seek_artist: "Hľadať umelca" # todo: NEW TRANSLATION
+ seek_artist_desc: "Vyslať agentov, aby našli a naverbovali špecialistu z vybranej disciplíny pre náš dvor." # todo: NEW TRANSLATION
+ seek_artist_select_type: "Vyberte disciplínu" # todo: NEW TRANSLATION
+ choose_circle: "Vyberte cisársky kruh" # todo: NEW TRANSLATION
+ choose_circle_leader: "Vyberte vodcu kruhu" # todo: NEW TRANSLATION
+ choose_emperor: "Vyberte cisára" # todo: NEW TRANSLATION
+ choose_yourself: "Vyberte seba" # todo: NEW TRANSLATION
+ UNION_GREAT_POWER_SCORE_COMPARED_TO_SENIOR_PARTNER: "Skóre veľkej moci v porovnaní s [senior_partner_scope.GetName]" # todo: NEW TRANSLATION
+ intervene_in_italian_campaign_no_countries: "$no_valid_countries$" # todo: NEW TRANSLATION
+ claim_high_kingship: "Uplatniť nárok na titul Vysokého kráľa" # todo: NEW TRANSLATION
+ claim_high_kingship_desc: "Vyhláste svoju ambíciu stať sa Vysokým kráľom Írska, čím otvoríte titul na voľbu medzi írskymi kráľovstvami." # todo: NEW TRANSLATION

@@ -14,6 +14,8 @@
  country_name_construction_prefix_name_map: "$PREFIX$ $NAME$" # todo: CHANGED
  country_name_construction_prefix_name_horde: "$country_name_construction_prefix_adjective_rank$" # todo: NEW TRANSLATION
  country_name_construction_prefix_name_horde_map: "$country_name_construction_prefix_adjective_rank_map$" # todo: NEW TRANSLATION
+ country_name_construction_prefix_name_bank_special: "$country_name_construction_prefix_name$" # todo: NEW TRANSLATION
+ country_name_construction_prefix_name_bank_special_map: "$country_name_construction_prefix_name_map$" # todo: NEW TRANSLATION
  country_name_construction_sultanate: "$country_name_construction_prefix_rank_of_name$" # todo: NEW TRANSLATION
  country_name_construction_sultanate_map: "$country_name_construction_prefix_rank_of_name_map$" # todo: NEW TRANSLATION
  country_name_construction_crown: "$country_name_construction_prefix_rank_of_name$" # todo: NEW TRANSLATION
@@ -64,6 +66,11 @@
  rank_empire_revolutionary_ruler_female.short: "Cis." # todo: NEW TRANSLATION
  rank_empire_latin_empire: "$rank_empire$" # todo: NEW TRANSLATION
  rank_empire_latin_empire_prefix: "Latinský" # todo: NEW TRANSLATION
+ rank_empire_latin_empire_ADJ: "cisársky" # todo: NEW TRANSLATION
+ rank_empire_latin_empire_ruler_male: "Cisár" # todo: NEW TRANSLATION
+ rank_empire_latin_empire_ruler_female: "Cisárovná" # todo: NEW TRANSLATION
+ rank_empire_latin_empire_ruler_male.short: "Cis." # todo: NEW TRANSLATION
+ rank_empire_latin_empire_ruler_female.short: "Cis." # todo: NEW TRANSLATION
  rank_empire_muslim: "Kalifát" # todo: NEW TRANSLATION
  rank_empire_muslim_ADJ: "kalifátsky" # todo: NEW TRANSLATION
  rank_empire_muslim_ruler_male: "Ḵalīfa" # todo: NEW TRANSLATION
@@ -259,6 +266,9 @@
  rank_kingdom_maori: "Kingitanga" # todo: NEW TRANSLATION
  rank_kingdom_maori_ruler_male: "Kingi" # todo: NEW TRANSLATION
  rank_kingdom_maori_ruler_female: "Kuini" # todo: NEW TRANSLATION
+ rank_kingdom_maori_native: "Waka" # todo: NEW TRANSLATION
+ rank_kingdom_maori_native_ruler_male: "Ariki" # todo: NEW TRANSLATION
+ rank_kingdom_maori_native_ruler_female: "Ariki" # todo: NEW TRANSLATION
  rank_kingdom_maya: "K'uhul Ajawil" # todo: NEW TRANSLATION
  rank_kingdom_maya_ruler_male: "K'uhul Ajaw" # todo: NEW TRANSLATION
  rank_kingdom_maya_ruler_female: "$rank_kingdom_maya_ruler_male$" # todo: NEW TRANSLATION
@@ -553,8 +563,8 @@
  rank_duchy_pirate_republic: "$rank_duchy_republic$" # todo: NEW TRANSLATION
  rank_duchy_pirate_republic_prefix: "$pirate_prefix$" # todo: NEW TRANSLATION
  rank_duchy_pirate_republic_ADJ: "$pirate_ADJ$" # todo: NEW TRANSLATION
- rank_duchy_pirate_republic_ruler_male: "Veľký [ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain_female')]" # todo: CHANGED
- rank_duchy_pirate_republic_ruler_female: "Veľká [ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain_female')]" # todo: CHANGED
+ rank_duchy_pirate_republic_ruler_male: "Veľký [ROOT.GetCountry.GetCulture.Custom('character_title_prefix_captain_female')]" # todo: CHANGED
+ rank_duchy_pirate_republic_ruler_female: "Veľká [ROOT.GetCountry.GetCulture.Custom('character_title_prefix_captain_female')]" # todo: CHANGED
  rank_duchy_bank: "Banka" # todo: NEW TRANSLATION
  rank_duchy_bank_ruler_male: "Predseda" # todo: NEW TRANSLATION
  rank_duchy_bank_ruler_female: "Predsedkyňa" # todo: NEW TRANSLATION
@@ -598,6 +608,8 @@
  rank_duchy_celtic_irish_ruler_male: "Rí" # todo: NEW TRANSLATION
  rank_duchy_celtic_irish_ruler_female: "Banríon" # todo: NEW TRANSLATION
  rank_duchy_horde: "Horda" # todo: NEW TRANSLATION
+ rank_duchy_horde_ruler_suffix_male: "Noyan" # todo: NEW TRANSLATION
+ rank_duchy_horde_ruler_suffix_female: "Noyon" # todo: NEW TRANSLATION
  rank_duchy_bishopric: "Knížacie biskupstvo" # todo: NEW TRANSLATION
  rank_duchy_bishopric_ruler_male: "Kníže-biskup" # todo: NEW TRANSLATION
  rank_duchy_bishopric_ruler_female: "Knížna-biskupka" # todo: NEW TRANSLATION
@@ -696,6 +708,8 @@
  rank_county_revolutionary_ruler_male: "Gróf" # todo: NEW TRANSLATION
  rank_county_revolutionary_ruler_female: "Grófka" # todo: NEW TRANSLATION
  rank_county_horde: "Horda" # todo: NEW TRANSLATION
+ rank_county_horde_ruler_suffix_male: "Beg" # todo: NEW TRANSLATION
+ rank_county_horde_ruler_suffix_female: "Begum" # todo: NEW TRANSLATION
  rank_county_mormaerdom: "Mormaerdom" # todo: NEW TRANSLATION
  rank_county_mormaerdom_ruler_male: "Mormaer" # todo: NEW TRANSLATION
  rank_county_mormaerdom_ruler_female: "Ban-Mormaer" # todo: NEW TRANSLATION
@@ -730,8 +744,8 @@
  rank_county_pirate_republic: "$rank_county_republic$" # todo: NEW TRANSLATION
  rank_county_pirate_republic_prefix: "$pirate_prefix$" # todo: NEW TRANSLATION
  rank_county_pirate_republic_ADJ: "$pirate_ADJ$" # todo: NEW TRANSLATION
- rank_county_pirate_republic_ruler_male: "[ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain')]" # todo: CHANGED
- rank_county_pirate_republic_ruler_female: "[ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain_female')]" # todo: CHANGED
+ rank_county_pirate_republic_ruler_male: "[ROOT.GetCountry.GetCulture.Custom('character_title_prefix_captain')]" # todo: CHANGED
+ rank_county_pirate_republic_ruler_female: "[ROOT.GetCountry.GetCulture.Custom('character_title_prefix_captain_female')]" # todo: CHANGED
  rank_county_republic_revolutionary: "$rank_county_republic$" # todo: NEW TRANSLATION
  rank_county_republic_revolutionary_prefix: "$revolutionary_prefix$" # todo: NEW TRANSLATION
  rank_county_republic_revolutionary_ADJ: "$revolutionary_ADJ$" # todo: NEW TRANSLATION
@@ -1017,6 +1031,20 @@
  republic_male_rank_county_pirate_brethren_reform_spanish_language: "Capitán" # todo: NEW TRANSLATION
  republic_female_rank_county_pirate_brethren_reform_scandinavian_language: "Kapten" # todo: NEW TRANSLATION
  republic_male_rank_county_pirate_brethren_reform_scandinavian_language: "Kapten" # todo: NEW TRANSLATION
+ republic_female_rank_county_pirate_brethren_reform_ligurian_dialect: "Capitàna" # todo: NEW TRANSLATION
+ republic_male_rank_county_pirate_brethren_reform_ligurian_dialect: "Capitàn" # todo: NEW TRANSLATION
+ republic_female_rank_county_pirate_brethren_reform_venetian_dialect: "Capitania" # todo: NEW TRANSLATION
+ republic_male_rank_county_pirate_brethren_reform_venetian_dialect: "Capitanio" # todo: NEW TRANSLATION
+ republic_female_rank_county_pirate_brethren_reform_sicilian_dialect: "Capitana" # todo: NEW TRANSLATION
+ republic_male_rank_county_pirate_brethren_reform_sicilian_dialect: "Capitanu" # todo: NEW TRANSLATION
+ republic_female_rank_county_pirate_brethren_reform_neapolitan_dialect: "Capitane" # todo: NEW TRANSLATION
+ republic_male_rank_county_pirate_brethren_reform_neapolitan_dialect: "Capitane" # todo: NEW TRANSLATION
+ republic_female_rank_county_pirate_brethren_reform_sardinian_dialect: "Capitana" # todo: NEW TRANSLATION
+ republic_male_rank_county_pirate_brethren_reform_sardinian_dialect: "Capitanu" # todo: NEW TRANSLATION
+ republic_female_rank_county_pirate_brethren_reform_rhaetian_dialect: "Capitana" # todo: NEW TRANSLATION
+ republic_male_rank_county_pirate_brethren_reform_rhaetian_dialect: "Capitanus" # todo: NEW TRANSLATION
+ republic_female_rank_county_pirate_brethren_reform_dalmatian_dialect: "Capitana" # todo: NEW TRANSLATION
+ republic_male_rank_county_pirate_brethren_reform_dalmatian_dialect: "Capitan" # todo: NEW TRANSLATION
  republic_male_rank_duchy_pirate_brethren_reform: "Komodor" # todo: NEW TRANSLATION
  republic_female_rank_duchy_pirate_brethren_reform: "Komodor" # todo: NEW TRANSLATION
  republic_male_rank_kingdom_pirate_brethren_reform: "Admirál" # todo: NEW TRANSLATION
