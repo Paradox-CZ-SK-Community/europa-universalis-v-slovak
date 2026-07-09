@@ -32,7 +32,7 @@
  flavor_ira.5.entry: "Perzské miniatúry" # todo: NEW TRANSLATION
  flavor_ira.5.desc: "V umení [target_country.GetCulture.GetName] zákaz zobrazovania ľudskej postavy nikdy úplne nezasiahol svetskú literatúru a [target_country.GetCulture.GetNameWithNoTooltip] [target_country.GetGovernment.GetEstateName('nobles_estate')] už od pamäti ľudstva zadávali iluminované rukopisy obsahujúce vynikajúce a veľmi drahé maľby miniatúr. S obnovením [target_country.GetLongName] priemysel maľby miniatúr teraz rozkvitá. Diela majstrov školy priťahujú nielen domácich kupcov, ale teraz sa vyvážajú do celého [ShowReligionGroupAdjective('muslim')] sveta." # todo: NEW TRANSLATION
  flavor_ira.5.a: "Mali by sme motivovať našich umelcov k vytváraniu väčšieho množstva týchto malieb." # todo: NEW TRANSLATION
- flavor_ira.5.a.tt: "#Y 3#! z našich najlepších [ShowArtistTypeName('painter')] začne pracovať na [ShowWorkOfArtTypeName('miniature_painting')] [works_of_art|e]" # todo: NEW TRANSLATION
+ flavor_ira.5.a.tt: "#Y 3#! z našich najlepších [ShowArtistTypeName('painter')] začne pracovať na [ShowWorkOfArtTypeName('miniature_painting')] [Concept('works_of_art','umelecké diela')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.5.b: "To sú pekné ilustrácie." # todo: NEW TRANSLATION
  flavor_ira.6.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ira.6.entry: "Iskandar Munshi, kronikár" # todo: NEW TRANSLATION
@@ -59,30 +59,30 @@
  flavor_ira.10.desc: "Milenárna sekta sústredená okolo [target_character.GetCulture.GetName]-ského teológa [target_character.GetName] rýchlo získava nasledovníkov medzi obyvateľmi v [target_location.GetArea.GetName]. Podľa neho je poslom Imáma 'Alího a Mahdího, hoci mnohí v okolí [target_ruler.GetName] také tvrdenia odsudzujú ako heretické.\n\nKeď sekta naďalej získava nasledovníkov a finančné prostriedky, zostáva nejasné, či sa [target_character.GetLastNameWithNoTooltip|U] alebo niektorý z jeho nástupcov stanú významným faktorom v politike [ROOT.GetCountry.GetName]." # todo: CHANGED
  flavor_ira.10.a: "[ROOT.GetCountry.Custom('common_string_ok')]" # todo: NEW TRANSLATION
  flavor_ira.10.a.entry: "$common_string_alright$" # todo: NEW TRANSLATION
- flavor_ira.10.a.tt: "Každé [location|e] v [target_location.GetArea.GetName] získa [ShowModifier('ira_mushashaiya')] na #Y 10 rokov#! a mnoho [pops|e] sa obráti na [ShowReligionName('shia')]" # todo: NEW TRANSLATION
+ flavor_ira.10.a.tt: "Každé [Concept('location','lokalita')|e] v [target_location.GetArea.GetName] získa [ShowModifier('ira_mushashaiya')] na #Y 10 rokov#! a mnoho [Concept('pops','populácií')|e] sa obráti na [ShowReligionName('shia')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.10.b: "[target_ruler.GetShortNameWithNoTooltip] sa od neho môže veľa naučiť." # todo: CHANGED
  flavor_ira.10.b.entry: "Vládca sa od neho môže veľa naučiť." # todo: NEW TRANSLATION
  flavor_ira.10.c: "Je zjavne kacírom, zabiť ho." # todo: CHANGED
- flavor_ira.10.c.tt: "Každé [ShowReligionAdjective('shia')] [location|e] v [target_location.GetArea.GetName] získa [ShowModifier('ira_mushashaiya')] na #Y 5 rokov#!" # todo: NEW TRANSLATION
+ flavor_ira.10.c.tt: "Každé [ShowReligionAdjective('shia')] [Concept('location','lokalita')|e] v [target_location.GetArea.GetName] získa [ShowModifier('ira_mushashaiya')] na #Y 5 rokov#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.11.title: "Vzostup Ṣafawiyya" # todo: NEW TRANSLATION
  flavor_ira.11.entry: "$flavor_ira.11.title$" # todo: NEW TRANSLATION
  flavor_ira.11.desc: "Bohatá súfijská sekta Ṣafawiyya v severozápadnej [ShowRegionName('persia_region')] začala transformáciu z prevažne asketickej skupiny na vojenský rád. Myšlienky sekty sa výrazne vyvíjali od pôvodných [ShowReligionAdjective('sunni')] koreňov bližšie k [ShowReligionName('shia')]. Teraz sa ich doktrína posunula ešte ďalej, keď sú vodcovia sekty čoraz viac vnímaní ako polobohovia a ich veriaci sa stávajú čoraz militantnejšími." # todo: NEW TRANSLATION
  flavor_ira.11.a: "[ROOT.GetCountry.Custom('common_string_ok')]" # todo: NEW TRANSLATION
  flavor_ira.11.a.entry: "$common_string_alright$" # todo: NEW TRANSLATION
  flavor_ira.11.b: "Mali by zmierniť svoje učenie." # todo: NEW TRANSLATION
- flavor_ira.11.b.tt: "Každé [owned|e] [location|e] s [dominant_religion|e], ktorý nie je [ShowReligionName('shia')], získa [ShowModifier('ira_safawiya')] na #Y 10 rokov#!" # todo: NEW TRANSLATION
+ flavor_ira.11.b.tt: "Každé [Concept('owned','vlastnené')|e] [Concept('location','lokalita')|e] s [Concept('dominant_religion','dominantným náboženstvom')|e], ktorý nie je [ShowReligionName('shia')], získa [ShowModifier('ira_safawiya')] na #Y 10 rokov#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.12.title: "$qizilbash$ povstanie" # todo: NEW TRANSLATION
  flavor_ira.12.desc: "Vystúpenie náboženského štátu [ShowCultureName('farsi_culture')] rozbúšilo srdcia [ROOT.GetCountry.Custom('GetQizilbashEstateName')] v našich krajinách. Menšie zrážky s vládnymi úradníkmi sa teraz vyostrili a eskalovali do bodu, že ak sa to nebude kontrolovať, hrozí to prerásť do povstania." # todo: NEW TRANSLATION
  flavor_ira.12.a: "[ROOT.GetCountry.Custom('common_string_ok')]" # todo: NEW TRANSLATION
  flavor_ira.12.a.entry: "$common_string_alright$" # todo: NEW TRANSLATION
- flavor_ira.12.a.tt: "[ShowCultureName('farsi_culture')] [pops|e] po celom našom území stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_ira.12.a.tt: "[ShowCultureName('farsi_culture')] [Concept('pops','Populácie')|e] po celom našom území stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.12.b: "Udržíme ich pod kontrolou." # todo: NEW TRANSLATION
  flavor_ira.13.title: "Ľudia [target_culture.GetNameWithNoTooltip] v [target_country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ira.13.entry: "Arméni v Perzii" # todo: NEW TRANSLATION
  flavor_ira.13.desc: "Dobyvanie vždy prináša do našej správy nových ľudí. Pre ľudí [target_culture.GetName], čestných bojovníkov Kaukazu, osud pripravil pád do rúk [target_character.GetName]. Keď sú posledné separatistické prvky potlačené rôznymi prostriedkami, otázka, čo urobiť s ich obyvateľstvom, visí nad hlavami [target_character.GetNameWithNoTooltip] a [target_character.GetHerHis] poradcov. Mnohí medzi [target_country.Custom('GetQizilbashEstateName')] tvrdia, že v našej správe nemáme miesto pre nepoddajných neveriacich. Napriek tomu má zmysel a perspektívu dovoliť im harmonicky sa rozvíjať pod našou zástavou..." # todo: NEW TRANSLATION
  flavor_ira.13.historical_info: "Vždy existovali styky medzi Arménmi a Perziou a dokonca Seldžuci priviedli do Perzie mnoho arménskych otrokov a obchodníkov. Avšak #italic Great Surgun#! alebo Veľké vysťahovanie vykonal 'Abbās the Great' v rokoch 1604–1605 počas Osmansko‑Safávidskej vojny, a stovky tisíc Arménov boli násilne deportovaní do Perzie. Mnohé arménske mestá boli vyrabované a zničené a väčšina deportovaných zomrela na ceste. V Perzii boli spočiatku dobre prijatí a mohli prosperovať, ale neskôr boli nútení prijať islam a boli vystavení diskriminácii. Oprázdnené oblasti boli znovu osídlené rôznymi kmeňmi Turkov a Kurdov, čo výrazne zmenilo demografiu regiónu." # todo: NEW TRANSLATION
  flavor_ira.13.a: "Umožniť ich príchod do našej spoločnosti!" # todo: NEW TRANSLATION
- flavor_ira.13.a.tt: "#Y 40%#! z [ShowCultureName('armenian_culture')] [people|e] z #Y 5#! našich najviac osídlených lokalít v [ShowRegionName('caucasus_region')] sa presunie do [target_location.GetName]" # todo: NEW TRANSLATION
+ flavor_ira.13.a.tt: "#Y 40%#! z [ShowCultureName('armenian_culture')] [Concept('people','ľudí')|e] z #Y 5#! našich najviac osídlených lokalít v [ShowRegionName('caucasus_region')] sa presunie do [target_location.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.13.b: "Nemôžeme zriediť našu nadradenú kastu." # todo: NEW TRANSLATION
  flavor_ira.14.title: "[ShowCultureNameWithNoTooltip('turkmen_culture')] regrúti sa hrnú pod zástavy" # todo: NEW TRANSLATION
  flavor_ira.14.entry: "Turkménska kultúra priťahuje zástupy pod zástavy" # todo: NEW TRANSLATION
@@ -116,7 +116,7 @@
  flavor_ira.19.entry: "$flavor_ira.19.title$" # todo: NEW TRANSLATION
  flavor_ira.19.desc: "Počas našich mnohých tažení sa pravidlá vedenia vojny opakovane menili. Naši predkovia zvykli viesť vojny na koňoch, s mečmi a lukmi. Objav strelného prachu však zmenil spôsob, akým vyhladzujeme nepriateľov. Naše oddiely nielen prijali arkebúz — dlhú novú palnú zbraň — ale dokonca ju začlenili do svojich kultúrnych tradícií a každodenného života. V dôsledku toho si naši pešiaci aj jazdci vybudovali meno na bojisku." # todo: NEW TRANSLATION
  flavor_ira.19.a: "Naša zručnosť s arkebúzom je nedostižná!" # todo: NEW TRANSLATION
- flavor_ira.19.a.tt: "Každý [ShowUnitDefinitionName('a_tofangchi')] získa [ShowNamedValue('subunit_experience_severe_bonus')|+=2%] [experience|e]" # todo: NEW TRANSLATION
+ flavor_ira.19.a.tt: "Každý [ShowUnitDefinitionName('a_tofangchi')] získa [ShowNamedValue('subunit_experience_severe_bonus')|+=2%] [Concept('experience','skúsenosti')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.19.b: "Nemôžeme sa vzdať našich tradícií!" # todo: NEW TRANSLATION
  flavor_ira.20.title: "Lev [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ira.20.entry: "$flavor_ira.20.title$" # todo: NEW TRANSLATION
@@ -135,7 +135,7 @@
  flavor_ira.22.desc: "[ShowCultureGroupName('turkic_group')] nie sú v [ROOT.GetCountry.GetName] ničím nezvyčajným. Samotné [ROOT.GetCountry.GetGovernment.GetEstateName('tribes_estate')] sú [ShowCultureGroupNameWithNoTooltip('turkic_group')] a ako také sú príbuzné svojim usadeným príbuzným z [ShowRegionName('anatolia_region')].\n\nMnohé [ShowCultureGroupNameWithNoTooltip('turkic_group')] národy v našich novo dobitých provinciách sa pridali k rôznym skupinám [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('tribes_estate')] a boli integrované do našej spoločnosti. Hoci ich územia už nebudú spôsobovať problémy nášmu [ROOT.GetCountry.GetFlavorRank], samotné rastúce vplyvy [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('tribes_estate')] sú dôvodom na obavy..." # todo: NEW TRANSLATION
  flavor_ira.22.a: "S [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('tribes_estate')] sa môžeme vysporiadať neskôr." # todo: NEW TRANSLATION
  flavor_ira.22.a.entry: "S $tribes_estate$ sa môžeme zaoberať neskôr." # todo: NEW TRANSLATION
- flavor_ira.22.a.tt: "Každé [owned|e] [location|e] s [ShowCultureGroupName('turkic_group')] [culture_group] ako [dominant_culture|e] stratí [ShowNamedValue('control_weak_penalty')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ flavor_ira.22.a.tt: "Každé [Concept('owned','vlastnené')|e] [Concept('location','lokalita')|e] s [ShowCultureGroupName('turkic_group')] [culture_group] ako [Concept('dominant_culture','dominantná kultúra')|e] stratí [ShowNamedValue('control_weak_penalty')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.22.b: "Zakážte im pripojiť sa k [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('tribes_estate')]." # todo: NEW TRANSLATION
  flavor_ira.22.b.entry: "Zakážte im pripojiť sa k $tribes_estate$." # todo: NEW TRANSLATION
  flavor_ira.23.title: "Otroci [ShowCultureNameWithNoTooltip('georgian_culture')] v [ROOT.GetCountry.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -143,11 +143,11 @@
  flavor_ira.23.desc: "Dobyvanie vždy privádza do nášho spoločenstva nových ľudí. Pre [ShowCultureName('georgian_culture')] a [ShowCultureName('armenian_culture')] ľudí, čestných bojovníkov z [ShowRegionName('caucasus_region')], osud pripravil ich pád pod ruky nášho [ROOT.GetCountry.GetFlavorRank]. Keď sa teraz sklonia pred nami, otázka, čo urobiť s ich populáciou, visí nad hlavami [target_ruler.GetName] a [target_ruler.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle].\n\nMnohí medzi [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] tvrdia, že v našej správe nemáme miesto pre nepoddajných neveriacich. Napriek tomu má zmysel a perspektívu umožniť im harmonicky prosperovať pod našou zástavou..." # todo: NEW TRANSLATION
  flavor_ira.23.a: "Budú prosperovať v našom veľkom [ROOT.GetCountry.GetFlavorRank]!" # todo: NEW TRANSLATION
  flavor_ira.23.a.entry: "V našej veľkej ríši sa im bude dariť!" # todo: NEW TRANSLATION
- flavor_ira.23.tt.common: "Každý [owned|e] [pop|e] [ShowCultureName('georgian_culture')] alebo [ShowCultureName('armenian_culture')] [culture|e] získa" # todo: NEW TRANSLATION
- flavor_ira.23.a.tt: "$flavor_ira.23.tt.common$ #G 15%#! [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_ira.23.tt.common: "Každý [Concept('owned','vlastnené')|e] [Concept('pop','populácia')|e] [ShowCultureName('georgian_culture')] alebo [ShowCultureName('armenian_culture')] [Concept('culture','kultúra')|e] získa" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_ira.23.a.tt: "$flavor_ira.23.tt.common$ #G 15%#! [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.23.b: "Nikdy nebudú [ROOT.GetCountry.GetAdjectiveWithNoTooltip]!" # todo: NEW TRANSLATION
  flavor_ira.23.b.entry: "Nikdy nebudú naši!" # todo: NEW TRANSLATION
- flavor_ira.23.b.tt: "$flavor_ira.23.tt.common$ #R -10%#! [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_ira.23.b.tt: "$flavor_ira.23.tt.common$ #R -10%#! [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.24.title: "[target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ira.24.entry: "Založenie Ahmedabadu" # todo: NEW TRANSLATION
  flavor_ira.24.desc: "Hoci to nie je obzvlášť významné, [target_location.GetRank.GetName] je obývaný od dávnych čias a niektorí v [ROOT.GetCountry.GetGovernment.GetCourtTitle] [target_ruler.GetName] ho považujú za ideálne miesto na rozvoj bezprecedentného mesta. Ak tomu venujeme naše úsilie, môžeme skutočne vytvoriť centrum [ROOT.GetCountry.GetCulture.GetName] kultúry a vzdelania v srdci [target_location.GetArea.GetName]." # todo: NEW TRANSLATION
@@ -187,7 +187,7 @@
  flavor_ira.31.a: "Začneme zlepšovať našu vojenskú infraštruktúru." # todo: NEW TRANSLATION
  flavor_ira.31.b: "Zameriame sa na zlepšenie kvality a výcviku našich jednotiek." # todo: NEW TRANSLATION
  flavor_ira.31.c: "Je čas náboru väčšieho počtu vojakov." # todo: NEW TRANSLATION
- ira_grant_prosperity_to_armory_building_locations: "Každá [location|e], ktorá má #Y vojenskú#! [building|e], získa [ShowNamedValue('prosperity_mild_bonus')|+=2%] [prosperity|e]" # todo: NEW TRANSLATION
+ ira_grant_prosperity_to_armory_building_locations: "Každá [Concept('location','lokalita')|e], ktorá má #Y vojenskú#! [Concept('building','budovu')|e], získa [ShowNamedValue('prosperity_mild_bonus')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.32.title: "$imamzadeh_hossein$" # todo: NEW TRANSLATION
  flavor_ira.32.entry: "$flavor_ira.32.title$" # todo: NEW TRANSLATION
  flavor_ira.32.desc: "Aj keď naše hlavné mesto v [target_location.GetName] nám prinieslo mnoho výhod, [target_character.GetName] si všimol(a) nedostatok náboženského a umeleckého vyjadrenia. Chcúc sa [target_character.GetHerselfHimself] prejaviť ako zbožný/á [ROOT.GetCountry.GetReligion.GetAdjective], [target_character.GetSheHe] plánuje postaviť hrobku syna Imáma Abū al-Ḥasan al-Thānī. Hoci by mnohí z našich [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] ľudí privítali začatie stavby, je to pomerne nákladný projekt, ktorý si [ROOT.GetCountry.GetName] možno nemôže dovoliť." # todo: NEW TRANSLATION
@@ -213,8 +213,8 @@
  flavor_ira.37.a.entry: "Do nášho kabinetu prijímame schopných ľudí." # todo: NEW TRANSLATION
  flavor_ira.37.b: "Nebudeme urážať našich [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]." # todo: NEW TRANSLATION
  flavor_ira.37.b.entry: "Neurazíme naše $nobles_estate$." # todo: NEW TRANSLATION
- ira_all_armenian_pops_gain_satisfaction: "Všetky naše [ShowCultureName('armenian_culture')] [pops|e] získajú [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
- ira_all_armenian_pops_lose_satisfaction: "Všetky naše [ShowCultureName('armenian_culture')] [pops|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ ira_all_armenian_pops_gain_satisfaction: "Všetky naše [ShowCultureName('armenian_culture')] [Concept('pops','populácie')|e] získajú [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ira_all_armenian_pops_lose_satisfaction: "Všetky naše [ShowCultureName('armenian_culture')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.38.title: "$ali_qapu_palace$" # todo: NEW TRANSLATION
  flavor_ira.38.entry: "$flavor_ira.38.title$" # todo: NEW TRANSLATION
  flavor_ira.38.desc: "Absencia vhodného paláca pre rod [target_character.GetDynasty.GetName] uškodila našemu právu vládnuť nad [ROOT.GetCountry.GetName]. Keď nás [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] považujú za slabých, hrozí nám prevrat. Namiesto použitia armády na potlačenie nepokojov a vyvolávania bezvýznamných ústupkov [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], mali by sme ukázať naše bohatstvo postavením paláca. [target_character.GetName] už položil základy takéhoto monumentu v [target_location.GetName], s cieľom premeniť [target_location.GetRank.GetName] na skutočné hlavné mesto [ROOT.GetCountry.GetNameWithNoTooltip]. Plánovaný nazvať $ali_qapu_palace$, Veľká brána, jeho interiér bude obsahovať početné maľby, hudobnú sálu a ďalšie luxusy hodné [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
@@ -230,8 +230,8 @@
  flavor_ira.40.desc: "Obyvatelia [ShowReligionAdjective('zoroastrian')] možno pôvodne patria do [ShowRegionName('persia_region')], no naša viera [ROOT.GetCountry.GetReligion.GetAdjective] dominuje regiónu už stáročia a naše zvyky prevládajú medzi [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. Napriek tomu niektorí stále nasledujú učenie [ShowReligionNameWithNoTooltip('zoroastrian')] a vzdorujú slovám Proroka, mier s ním. Aj keď majú ochranu [ROOT.GetCountry.GetGovernment.GetEstateName('dhimmi_estate')], [target_character.GetName] chce na nich vynútiť konverziu — niečo, čo by im pripomenulo, že vládne nad nimi [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], a zároveň by uspokojilo našich [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]." # todo: NEW TRANSLATION
  flavor_ira.40.a: "Naučia sa spôsoby [ShowReligionGroupNameWithNoTooltip('muslim')]." # todo: NEW TRANSLATION
  flavor_ira.40.b: "Nebudeme ignorovať ich práva ako [ShowReligionAdjectiveWithNoTooltip('zoroastrian')] ľudí." # todo: NEW TRANSLATION
- ira_conversion_of_zoroastrians_tt: "Veľké množstvo našich [ShowReligionAdjective('zoroastrian')] [pops|e] sa konvertuje na [ROOT.GetCountry.GetReligion.GetName], ale všetky [ShowReligionAdjective('zoroastrian')] [pops|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
- ira_satisfaction_for_zoroastrians_tt: "Všetky naše [ShowReligionAdjective('zoroastrian')] [pops|e] získajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ ira_conversion_of_zoroastrians_tt: "Veľké množstvo našich [ShowReligionAdjective('zoroastrian')] [Concept('pops','populácií')|e] sa konvertuje na [ROOT.GetCountry.GetReligion.GetName], ale všetky [ShowReligionAdjective('zoroastrian')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ira_satisfaction_for_zoroastrians_tt: "Všetky naše [ShowReligionAdjective('zoroastrian')] [Concept('pops','populácie')|e] získajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.41.title: "Farangī-Sāzī Art Style" # todo: NEW TRANSLATION
  flavor_ira.41.entry: "$flavor_ira.41.title$" # todo: NEW TRANSLATION
  flavor_ira.41.desc: "Aj keď [ROOT.GetCountry.GetName] a jeho umelci tvorili jedno majstrovské dielo za druhým, teraz dosiahli svoj zenit. Nechcúc zaostávať, [target_character2.GetName] plánuje kopírovať umelecký štýl [target_country.GetName]. Mnohí ich umelci, ako aj spôsoby kultúry [target_country.GetCulture.GetName], zaujali [ROOT.GetCountry.GetGovernment.GetCourtTitle] a už začali rozvíjať Farangī-Sāzī štýl. Hoci to môže poškodiť spôsoby [ROOT.GetCountry.GetCulture.GetName], môže stáť za to túto snahu sponzorovať." # todo: NEW TRANSLATION
@@ -263,7 +263,7 @@
  flavor_ira.45.a: "Sú vítaní v [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: CHANGED
  flavor_ira.45.a.entry: "Sú vítaní v našej krajine." # todo: NEW TRANSLATION
  flavor_ira.45.b: "Preč s nimi!" # todo: NEW TRANSLATION
- ira_qajar_dynasty_may_claim_crown: "Rod [ShowDynastyName('qajar_dynasty')] [dynasty|e] sa pokúsi nárokovať si náš trón, ak nám chýba [legitimacy|e] a [stability|e]" # todo: NEW TRANSLATION
+ ira_qajar_dynasty_may_claim_crown: "Rod [ShowDynastyName('qajar_dynasty')] [Concept('dynasty','dynastia')|e] sa pokúsi nárokovať si náš trón, ak nám chýba [Concept('legitimacy','legitimita')|e] a [Concept('stability','stabilita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.46.title: "Vzbura kmeňov [ShowDynastyNameWithNoTooltip('qajar_dynasty')]" # todo: NEW TRANSLATION
  flavor_ira.46.entry: "Vzbura kmeňov dynastie Qajar" # todo: NEW TRANSLATION
  flavor_ira.46.desc: "Napriek tomu, že sme v minulosti vítali kmene [ShowDynastyName('qajar_dynasty')], [rebellion_ruler.GetName] zazrel rozkol v [ROOT.GetCountry.GetName] a zhromaždil podporu, aby si nárokoval trón od [current_ruler.GetName]. Už si [rebellion_ruler.GetNameWithNoTooltip] zvolil armádu proti nám a teraz postupuje na [ROOT.GetCountry.GetCapital.GetName]." # todo: NEW TRANSLATION
@@ -290,8 +290,8 @@
  flavor_ira.49.a: "Uskutočníme vôľu [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]." # todo: NEW TRANSLATION
  flavor_ira.49.a.entry: "Budeme presadzovať vôľu $clergy_estate$." # todo: NEW TRANSLATION
  flavor_ira.49.b: "Rešpektujme ich práva." # todo: NEW TRANSLATION
- ira_convert_christian_people_tt: "Niektoré z našich [ShowReligionGroupAdjective('christian')] [pops|e] sa premenia na [ROOT.GetCountry.GetReligion.GetName], ale všetky naše [ShowReligionGroupAdjectiveWithNoTooltip('christian')] [pops|e] stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
- ira_happier_christians_tt: "Všetky naše [ShowReligionGroupAdjective('christian')] [pops|e] získajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ ira_convert_christian_people_tt: "Niektoré z našich [ShowReligionGroupAdjective('christian')] [Concept('pops','populácií')|e] sa premenia na [ROOT.GetCountry.GetReligion.GetName], ale všetky naše [ShowReligionGroupAdjectiveWithNoTooltip('christian')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ira_happier_christians_tt: "Všetky naše [ShowReligionGroupAdjective('christian')] [Concept('pops','populácie')|e] získajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.50.title: "Vzostup dynastie [ShowDynastyNameWithNoTooltip('safavid_dynasty')]" # todo: NEW TRANSLATION
  flavor_ira.50.entry: "Vzostup Safavidskej dynastie" # todo: NEW TRANSLATION
  flavor_ira.50.desc: "Náš vplyv v [ShowRegionName('persia_region')] nie je taký veľký, ako by sme si priali, napriek tomu mnohí na [ROOT.GetCountry.GetGovernment.GetCourtTitle] chcú túto situáciu zmeniť. [target_character.GetName] tiež chce začať zbrojiť svoje armády, aby posilnil/a vplyv dynastie [ShowDynastyName('safavid_dynasty')] v [ShowRegionName('persia_region')]. Keďže je tiež schopným vojenským vodcom, mnohí si myslia, že by mohol/mohla priniesť slávu [ROOT.GetCountry.GetName] a možno povýšiť [ROOT.GetCountry.GetFlavorRank] na hegemóna regiónu." # todo: NEW TRANSLATION
@@ -310,7 +310,7 @@
  flavor_ira.1000.desc: "V staroveku sa ríše [GetCountry('BYZ').GetName] a [GetCountry('ERA').GetName] niekoľkokrát stretli v boji o nadvládu nad [ShowSubContinentName('middle_east')]. A zdá sa, že história sa opakuje, keď [root_character.GetName] z [root_country.GetLongName] a [target_character.GetName] z [target_country.GetLongName] súperia o rovnaký geografický región. Vzťahy medzi našimi dvoma štátmi sú napäté a je len otázkou času, kým sa naše armády nestretnú na bojisku..." # todo: NEW TRANSLATION
  flavor_ira.1000.historical_info: "Vzťah medzi Safavidmi a Osmanskými bol od založenia Safavidskej ríše založený na rivalite a súťažení. Náboženské konflikty, boj o obchodnú nadvládu na Blízkom východe a všeobecná hrozba jeden pre druhého zabezpečili, že sa žiadna strana nechcela zmieriť s druhou. Začínajúc bitkou pri Čaldirane v roku 1514 mali tieto dve moslimské pušné ríše spolu 11 vojen, pričom ich konfrontácia vyvrcholila perzským víťazstvom v vojne 1821 - 1823." # todo: NEW TRANSLATION
  flavor_ira.1000.a: "Táto rivalita je naším dedičstvom..." # todo: NEW TRANSLATION
- flavor_ira.1000.a.tt: "Povolíme ďalšie [events|e], ktoré ešte viac rozhnevajú [target_country.GetName]" # todo: NEW TRANSLATION
+ flavor_ira.1000.a.tt: "Povolíme ďalšie [Concept('events','udalosti')|e], ktoré ešte viac rozhnevajú [target_country.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.1000.b: "...ale nemusí to byť náš osud." # todo: NEW TRANSLATION
  variable_strongest_beylik_variable_tt: "Sme najsilnejší z beylikov" # todo: NEW TRANSLATION
  flavor_ira.1001.a: "Nakoniec pokľaknú pred nami." # todo: NEW TRANSLATION
@@ -325,10 +325,10 @@
  flavor_ira.1011.desc: "[root_country.Custom('GetQizilbashEstateName')], [ShowReligionAdjective('shia')] kacíri, v poslednej dobe spôsobujú problémy v [target_location.GetName]. Zdá sa, že [root_country.GetLongName] im poslal finančnú podporu, aby vyvolal povstanie. Teraz títo povstalci požadujú veľkú mieru autonómie v [target_province.GetName] a v ďalších krajinách obsadených týmito fanatikmi..." # todo: NEW TRANSLATION
  qizilbash_uprising: "$qizilbash$ Povstanie" # todo: NEW TRANSLATION
  flavor_ira.1011.a: "Ukončime ich herézu raz a navždy!" # todo: NEW TRANSLATION
- flavor_ira.1011.a.tt: "Každý [ShowReligionName('shia')] [pop|e] v [THIS.GetProvince.GetName] bude nútene konvertovaný na [ShowReligionName('sunni')]. #Y 10%#! obyvateľstva bude pri tom #R stratených#!" # todo: NEW TRANSLATION
+ flavor_ira.1011.a.tt: "Každý [ShowReligionName('shia')] [Concept('pop','populácia')|e] v [THIS.GetProvince.GetName] bude nútene konvertovaný na [ShowReligionName('sunni')]. #Y 10%#! obyvateľstva bude pri tom #R stratených#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.1011.b: "Môžeme ich vyčkať." # todo: NEW TRANSLATION
  flavor_ira.1011.c: "Ustúpme ich požiadavkám." # todo: NEW TRANSLATION
- flavor_ira.1011.c.tt: "Každé vlastnené [location|e] v [target_province.GetArea.GetName] zmení [control|e] o #R -100.0%#!" # todo: NEW TRANSLATION
+ flavor_ira.1011.c.tt: "Každé vlastnené [Concept('location','lokalita')|e] v [target_province.GetArea.GetName] zmení [Concept('control','kontrole')|e] o #R -100.0%#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.1020.title: "Kampaň [root_country.GetAdjectiveWithNoTooltip] proti [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ira.1020.entry: "Otomanská kampaň proti Perzii" # todo: NEW TRANSLATION
  flavor_ira.1020.desc: "Vzťahy medzi [root_character.GetName] a [target_character.GetName] sú na doteraz najnižšom bode. Náboženské rozdiely, spory o hranice a všeobecné konkurenčné ambície vyvolávajú medzi [target_country.GetName] a [root_country.GetName] veľké napätie. Plány na kampaň proti [target_country.GetAdjectiveWithNoTooltip] územiam sú už v príprave..." # todo: NEW TRANSLATION
@@ -364,7 +364,7 @@
  flavor_ira.1202.entry: "Odliv mozgov šíitov" # todo: NEW TRANSLATION
  flavor_ira.1202.desc: "Už uplynuli stáročia odvtedy, čo existoval silný [ShowReligionAdjective('shia')] štát v [ShowRegionName('persia_region')] alebo inde. S narodením nášho [ROOT.GetCountry.GetFlavorRank] a naším príklonom k [ShowReligionNameWithNoTooltip('shia')] k nám prichádza čoraz viac [ShowReligionAdjectiveWithNoTooltip('shia')] teológov, duchovných a rôznych vzdelaných ľudí z celého [ShowReligionGroupName('muslim')] sveta na naše hranice.\n\nJe to celkom priaznivé, keďže v našich krajinách chýbajú [ShowReligionAdjectiveWithNoTooltip('shia')] právnici, duchovní a úradníci, avšak tento vývoj spôsobil, že sa mnohí panovníci [ShowReligionGroupNameWithNoTooltip('muslim')] cítia voči nášmu štátu ohrození." # todo: NEW TRANSLATION
  flavor_ira.1202.a: "Privítajme našich bratov." # todo: NEW TRANSLATION
- flavor_ira.1202.a.tt: "Každá známa [country|e], ktorá je [ShowReligionAdjective('shia')] alebo má [location|e] s [ShowReligionAdjectiveWithNoTooltip('shia')] [dominant_religion|e], stratí [ShowBiasValue('opinion_irritated')|-=0] [opinion|e] voči nám" # todo: NEW TRANSLATION
+ flavor_ira.1202.a.tt: "Každá známa [Concept('country','krajina')|e], ktorá je [ShowReligionAdjective('shia')] alebo má [Concept('location','lokalita')|e] s [ShowReligionAdjectiveWithNoTooltip('shia')] [Concept('dominant_religion','dominantným náboženstvom')|e], stratí [ShowBiasValue('opinion_irritated')|-=0] [Concept('opinion','názorom')|e] voči nám" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.1202.b: "Nemôžeme prijať všetkých." # todo: CHANGED
  flavor_ira.1300.title: "[target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ira.1300.entry: "Premiestnenie hlavného mesta do Isfahanu" # todo: NEW TRANSLATION

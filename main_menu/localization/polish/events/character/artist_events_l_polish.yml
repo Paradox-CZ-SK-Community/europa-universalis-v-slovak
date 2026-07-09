@@ -25,7 +25,7 @@
  artist_events.5.title: "Zástanca nových umení" # todo: NEW TRANSLATION
  artist_events.5.desc: "Náš ľud je známy svojou zručnosťou pre výtvarné umenia, obzvlášť tie slovné, ktoré vyryjú naše meno a spoločenskú stopu do stránok dejín. Len málokto dosiahol takú výsosť ako [target_character.GetName], ktorého zručnosti pri pere sú legendárne a hýbu tisíckami ľudí. [target_character.GetHerHis|U] najnovšie dielo vychvaľuje našu nedávnu históriu i našu ušľachtilú povahu — óda na našich predkov a zdieľanie poznania pre naše potomstvo." # todo: NEW TRANSLATION
  artist_events.5.a: "Aké to šťastné časy!" # todo: NEW TRANSLATION
- artist_events.5.tt: "Všetky naše [pops|e], ktoré žijú v [province|e] nášho [capital|e], získajú [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ artist_events.5.tt: "Všetky naše [Concept('pops','populácie')|e], ktoré žijú v [Concept('province','provincii')|e] nášho [Concept('capital','hlavnom meste')|e], získajú [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.5.b: "[target_character.GetHerHis|U] umenie prinesie peknú sumu." # todo: NEW TRANSLATION
  artist_events.6.title: "Nástenné maľby [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  artist_events.6.desc: "Mnoho farieb používaných pri tvorbe je pre maliarov ako [target_character.GetName] druhou prirodzenosťou. [target_character.GetHerHis|U] ťahy prinášajú ľuďom radosť, spájajúc chudobných a bohatých, zdravých a chorých, keď sa obdivujú pri pohľade na diela okolo centra [target_location.GetName]. Nedávno dostávame rastúci počet žiadostí o ďalšie financovanie tohto nového štýlu umenia postavením väčšieho počtu múrov, ktoré by [target_character.GetNameWithNoTooltip] skrášľoval." # todo: NEW TRANSLATION
@@ -88,7 +88,7 @@
  artist_events.21.title: "Život v meste" # todo: NEW TRANSLATION
  artist_events.21.desc: "Rozvoj mestských centier v našom [ROOT.GetCountry.GetFlavorRank] priniesol mnohé výhody pre našu spoločnosť. Avšak spolu s touto vlnou centralizácie prichádzajú nevýhody vysoko urbanizovaného prostredia. Pôvodne navrhnuté cechom vedeným [target_character.GetName], sa [target_location.GetName] zmenilo na nočnú moru — stiesnené a priam hrozné miesto na život." # todo: NEW TRANSLATION
  artist_events.21.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
- artist_events.21.tt: "Všetky naše [pops|e] v [target_location.GetName] stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ artist_events.21.tt: "Všetky naše [Concept('pops','populácie')|e] v [target_location.GetName] stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.22.title: "Modernizované mestské centrum" # todo: NEW TRANSLATION
  artist_events.22.desc: "Mnohé sídla v našej doméne sú ozdobené krásnymi a novo postavenými stavbami. Medzi nimi [target_location.GetName] nedávno začalo priťahovať ľudí zďaleka vďaka architektonickým dielam [target_character.GetName], ktorých plánovanie a návrhy priniesli [target_location.GetNameWithNoTooltip] potrebné zlepšenie." # todo: NEW TRANSLATION
  artist_events.22.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
@@ -103,7 +103,7 @@
  artist_events.25.title: "Matka učenia" # todo: NEW TRANSLATION
  artist_events.25.desc: "Deň čo deň svietia svetlá v dielni [target_character.GetName]. Neúnavné pokusy zlepšiť [target_character.GetHerHis] techniku, nekonečné iterácie zdokonaľovania návrhov. Hoci [target_character.GetSheHe] nemusí byť najzdatnejším architektom, [target_character.GetNameWithNoTooltip] sa určite snaží a s časom sa len zlepší." # todo: NEW TRANSLATION
  artist_events.25.a: "[target_character.GetHerHis|U] túžba po zlepšení by nám všetkým mala slúžiť ako inšpirácia!" # todo: NEW TRANSLATION
- country_events.25.tt: "[target_character.GetName] môže získať novú #G pozitívnu#! [trait|e]" # todo: NEW TRANSLATION
+ country_events.25.tt: "[target_character.GetName] môže získať novú #G pozitívnu#! [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.26.title: "Vášnivé debaty" # todo: NEW TRANSLATION
  artist_events.26.desc: "Zvýšené tóny a hlučné spory nie sú v našom [ROOT.GetCountry.GetGovernment.GetCourtTitle] ničím nezvyčajným. Keď hostíme rôznych významných predstaviteľov umeleckej a teoretickej scény, treba očakávať isté trenie medzi týmito intelektuálmi. Avšak nedávne debaty o povahe, výchove a ľudskom rozume prebudili v [target_character.GetName] takmer divoké správanie; nahnevane kráča po palácových záhradách, ukazuje na slúžky a rôznych žiadateľov a kladie im útočné otázky, vyzývajúc ich na debate." # todo: NEW TRANSLATION
  artist_events.26.a: "Sme nad týmto." # todo: NEW TRANSLATION
@@ -128,7 +128,7 @@
  artist_events.32.title: "Ukážka novej ikonografie v [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  artist_events.32.desc: "Diela viery a umenia majú značnú moc a vplyv v našich hraniciach. Keď [target_character.GetName] predstavil [target_character.GetHerHis] novú líniu ikon, ľudia vyznania [ROOT.GetCountry.GetReligion.GetAdjective] v [target_location.GetName] sa radovali pri pohľade na takú pozoruhodnú krásu." # todo: NEW TRANSLATION
  artist_events.32.a: "Je to znak nášho umeleckého intelektu a hlbokej sily viery." # todo: NEW TRANSLATION
- artist_events.32.tt: "Všetci [ROOT.GetCountry.GetReligion.GetAdjective] [pops|e] v [target_location.GetName] získajú [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ artist_events.32.tt: "Všetci [ROOT.GetCountry.GetReligion.GetAdjective] [Concept('pops','populácie')|e] v [target_location.GetName] získajú [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.33.title: "Najatie nesprávnych ľudí" # todo: NEW TRANSLATION
  artist_events.33.desc: "Zámožní členovia nášho [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] nedávno objednali sériu ikon od [target_character.GetName]. Napriek tomu, že diela boli hotové pomerne skoro, veľmi sa sťažovali na nedostatok starostlivosti, profesionality a odbornosti, ktoré sú pri pohľade na ikonografove práce zjavné. Ich hnev môže mať nečakané následky, keďže majú veľký vplyv na náboženské záležitosti v našej spoločnosti." # todo: NEW TRANSLATION
  artist_events.33.a: "Môžeme uhradiť výdavky ikonografa v ich mene." # todo: NEW TRANSLATION
@@ -144,19 +144,19 @@
  artist_events.36.desc: "Už nejaký čas [target_character.GetName] žiada o potenciálne sponzorstvo, ktoré by zlepšilo [target_character.GetHerHis] metalurgické zručnosti. Podľa [target_character.GetHerHim] by sada kováčskych lekcií v [target_location.GetName] veľmi pomohla rozvoju remesla. Mnohí z našich radcov sú pomerne otvorení podpore tohto snaženia za poznaním, do ktorého sa pustil [target_character.GetShortNameWithNoTooltip]." # todo: NEW TRANSLATION
  artist_events.36.a: "Dobre, financujte štúdium [target_character.GetHerHis]!" # todo: NEW TRANSLATION
  artist_events.36.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" # todo: NEW TRANSLATION
- based_on_same_culture_highest_lit_pop_tt: "Získaná [artistic_skill|e] závisí od priemernej [literacy|e] [pops|e], ktoré zdieľajú [culture|e] [artist|e]; momentálne sú to [target_pop.GetName]" # todo: NEW TRANSLATION
- based_on_country_average_literacy_tt: "Získaná [artistic_skill|e] závisí od priemernej [literacy|e] nášho [country|e]" # todo: NEW TRANSLATION
+ based_on_same_culture_highest_lit_pop_tt: "Získaná [Concept('artistic_skill','umelecká zručnosť')|e] závisí od priemernej [Concept('literacy','gramotnosti')|e] [Concept('pops','populácie')|e], ktoré zdieľajú [Concept('culture','kultúra')|e] [Concept('artist','umelec')|e]; momentálne sú to [target_pop.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ based_on_country_average_literacy_tt: "Získaná [Concept('artistic_skill','umelecká zručnosť')|e] závisí od priemernej [Concept('literacy','gramotnosti')|e] nášho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.37.title: "[target_character.GetShortNameWithNoTooltip] navrhuje vylepšenia" # todo: NEW TRANSLATION
  artist_events.37.desc: "[target_character.GetName] nedávno navrhol prepracovaný plán na ďalšie zvýšenie produkcie [target_material.GetName] v [target_location.GetName]. Pod dohľadom [target_character.GetHerHis] sa predpokladá výrazné zlepšenie objemu ťažby suroviny počas [target_character.GetHerHis] pobytu na danom mieste. Avšak [target_character.GetSheHe] nebude k dispozícii, aby v našom [ROOT.GetCountry.GetGovernment.GetCourtTitle] prijímal objednávky na umenie podľa potreby." # todo: NEW TRANSLATION
  artist_events.37.a: "To je dobrý nápad." # todo: NEW TRANSLATION
  artist_events.37.b: "Schopnosti [target_character.GetHerHis|U] budú využité inde." # todo: NEW TRANSLATION
- artist_busy_tt: "Kým [target_character.GetNameWithNoTooltip] pracuje na zlepšení produkcie [raw_material|e] v [target_location.GetNameWithNoTooltip], #R ne#! budeme môcť [ShowCharacterInteractionName('commission_art')] od [target_character.GetHerHim]" # todo: NEW TRANSLATION
+ artist_busy_tt: "Kým [target_character.GetNameWithNoTooltip] pracuje na zlepšení produkcie [Concept('raw_material','surovina')|e] v [target_location.GetNameWithNoTooltip], #R ne#! budeme môcť [ShowCharacterInteractionName('commission_art')] od [target_character.GetHerHim]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.38.title: "Využitie baní" # todo: NEW TRANSLATION
  artist_events.38.desc: "Náš [ROOT.GetCountry.GetFlavorRank] je požehnaný vlastníctvom niekoľkých vysoko cenných baní, ktoré poskytujú kvalitné kovy. Jeden z našich umelcov, kováč s menom [target_character.GetName], navrhol využiť [target_character.GetHerHis] zručnosti na zlepšenie buď našej infraštruktúry, alebo baníckych techník pomocou precízne spracovaných kovov pod [target_character.GetHerHis] dohľadom." # todo: NEW TRANSLATION
  artist_events.38.a: "Práca [target_character.GetHerHis|U] doplní naše ofenzívne snahy." # todo: NEW TRANSLATION
  artist_events.38.b: "Snažme sa zlepšiť našu infraštruktúru." # todo: NEW TRANSLATION
  artist_events.38.c: "Nech naši učenci a umelci študujú a učia sa z týchto techník." # todo: NEW TRANSLATION
- depends_on_prosp_artist_skill_and_control_tt: "Získaný [development|e] závisí od [control|e] a [prosperity|e] [locations|e], ako aj od zručnosti [artist|e]" # todo: NEW TRANSLATION
+ depends_on_prosp_artist_skill_and_control_tt: "Získaný [Concept('development','rozvoj')|e] závisí od [Concept('control','kontroly')|e] a [Concept('prosperity','prosperity')|e] [Concept('locations','lokalít')|e], ako aj od zručnosti [Concept('artist','umelec')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.39.title: "Ohlušujúci zvuk pokroku" # todo: NEW TRANSLATION
  artist_events.39.desc: "[target_character.GetName] sa preslávil svojím neúnavným kladivovaním, pri ktorom kuje od rána do večera. Hoci je [target_character.GetHerHis] práca nepopierateľne kvalitná, neustály hluk rozhodol dvoranov, poradcov a dokonca aj miestne zvieratá.\n\nSťažnosti sa pohybujú od nespavosti až po rušenie čítaní poézie. [target_character_2.GetName] žiada, aby kováča presťahovali alebo umlčali, tvrdíac, že [target_character_2.GetHerHis] činnosť je príliš cenná na to, aby sme s ňou zasahovali." # todo: NEW TRANSLATION
  artist_events.39.a: "[target_character_2.GetShortNameWithNoTooltip] sa musí naučiť oceniť umenie!" # todo: NEW TRANSLATION
@@ -175,18 +175,18 @@
  artist_events.42.a: "Právny pohľad [target_character_2.GetShortNameWithNoTooltip] trestá korupciu." # todo: NEW TRANSLATION
  artist_events.42.b: "Nemôžeme riskovať rozhnevanie [target_character.GetShortNameWithNoTooltip] a jeho/jej podporovateľov." # todo: NEW TRANSLATION
  artist_events.42.c: "[target_character.GetSheHe|U] zabúda na svoje miesto." # todo: NEW TRANSLATION
- depends_on_change_policy_cost_tt: "Zaplatené [stability|e] veľmi závisí od aktuálnych [costs|e] na zmenu [policy|e] v [law|e]" # todo: NEW TRANSLATION
+ depends_on_change_policy_cost_tt: "Zaplatené [Concept('stability','stabilita')|e] veľmi závisí od aktuálnych [Concept('costs','nákladov')|e] na zmenu [Concept('policy','politiku')|e] v [Concept('law','zákone')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  target_character_will_never_dare_again_tt: "Vedomosti a rečnícke schopnosti [target_character_2.GetShortName] nenechávajú miesto odporcom, a preto [target_character.GetShortName] už nikdy neskúsi takýto podlý ťah" # todo: NEW TRANSLATION
  artist_events.43.title: "Zákonné dobro" # todo: NEW TRANSLATION
  artist_events.43.desc: "Naša spoločnosť bola dlhodobo formovaná podporou umenia a silnými právnymi základmi. [target_character.GetName], preslávený svojimi výrečnými rečami a literárnymi úspechmi v oblasti jurisprudencie, vytesal veľkú dobu pokroku v umeleckých políčkach ako veľký právnik. Musíme preto zvážiť, ako najlepšie využiť taký talent a zamestnať [target_character.GetHerHim], aby sme maximalizovali náš vnímaný prestíž a legitímnosť." # todo: NEW TRANSLATION
  artist_events.43.a: "[target_character.GetSheHe|U] je žiarivým príkladom nášho zdravého aparátu." # todo: NEW TRANSLATION
  artist_events.43.b: "Zamestnajme [target_character.GetHerHis] služby výhradne vo vláde." # todo: NEW TRANSLATION
- jurist_busy_tt: "[target_character.GetShortName] bude slúžiť #Y 5#! rokov v našej vláde, pasívne zvyšujúc našu [cabinet_efficiency|e] a [tax_efficiency|e] o #G +10%#!\nKým [target_character.GetSheHe] slúži, #R ne#! budeme môcť [ShowCharacterInteractionName('commission_art')] od [target_character.GetHerHim]." # todo: NEW TRANSLATION
+ jurist_busy_tt: "[target_character.GetShortName] bude slúžiť #Y 5#! rokov v našej vláde, pasívne zvyšujúc našu [Concept('cabinet_efficiency','efektivitu kabinetu')|e] a [Concept('tax_efficiency','efektivita výberu daní')|e] o #G +10%#!\nKým [target_character.GetSheHe] slúži, #R ne#! budeme môcť [ShowCharacterInteractionName('commission_art')] od [target_character.GetHerHim]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  artist_events.44.title: "Bremeno milosrdenstva" # todo: NEW TRANSLATION
  artist_events.44.desc: "Naše zákony spravujú spravodlivo po celom našom [ROOT.GetCountry.GetFlavorRank]. Aj voči tým, ktorí sa snažia rozvrátiť náš pokrok a zničiť nás, ponúka jurisdikcia rozvážnu ruku bez predsudkov.\n\nTakým prípadom sú [target_rebel.GetName] a ich stúpenci. Rozvážny prístup k právnej ochrane [target_character.GetName] pomohol odkloniť mnohých od rebélie a dal nám šancu ovplyvniť ich podľa našich predstáv." # todo: NEW TRANSLATION
  artist_events.44.a: "Dobrý pastier prijíma stratené ovce späť." # todo: NEW TRANSLATION
  artist_events.44.b: "Využite príležitosť a núťte ich prijať našu kultúru!" # todo: NEW TRANSLATION
- every_supporter_pop_gains_20_satisfaction_tt: "Každý [pop|e], ktorý podporuje [ROOT.GetRebel.GetName] [rebellion|e], získa [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]" # todo: CHANGED
+ every_supporter_pop_gains_20_satisfaction_tt: "Každý [Concept('pop','populácia')|e], ktorý podporuje [ROOT.GetRebel.GetName] [Concept('rebellion','povstanie')|e], získa [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: CHANGED # todo: CONCEPT CASE
  artist_events.45.title: "Príjemná právna zhoda" # todo: NEW TRANSLATION
  artist_events.45.desc: "Zdá sa, že [target_character.GetName] nedávno zastupoval významné členy [target_estate.GetName] pred súdom a dosiahol priaznivé výsledky. Ako odmenu urobili štedrú darovanú čiastku do našich truhlíc. Hoci táto finančná výhoda určite zvýši naše bohatstvo, naši poradcovia majú množstvo návrhov, ako správne investovať novo nadobudnuté peniaze." # todo: NEW TRANSLATION
  artist_events.45.a: "Ďakujeme im za dar!" # todo: NEW TRANSLATION

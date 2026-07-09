@@ -6,10 +6,10 @@
  kor_hostile_attitude: "Vzájomný nepriateľský postoj" # todo: NEW TRANSLATION
  flavor_kor.1.b: "Čo sa stane bez mongolského vedenia?" # todo: NEW TRANSLATION
  kor_friendly_attitude: "Vzájomný priateľský postoj" # todo: NEW TRANSLATION
- flavor_kor.1.a.at: "#R Pokiaľ bude akýkoľvek [ShowCultureName('mongolian_culture')] [character|e] z [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] na našom dvore, budú sa periodicky spúšťať [events|e], ktoré obmedzia našu vládu a spôsobia straty zdrojov.#!" # todo: NEW TRANSLATION
- flavor_kor.1.a.tt: "Zaujmeme nepriateľský postoj voči [GetCountry('CHI').GetName], čím si navzájom znižujeme náklonnosť o [ShowBiasValue('kor_hostile_attitude')|0]. Ak odstránime všetky [ShowCultureName('mongolian_culture')] [THIS.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [characters|e] z krajiny, budeme môcť odstrániť [ShowGovernmentReformName('son_in_law_rule')]" # todo: NEW TRANSLATION
+ flavor_kor.1.a.at: "#R Pokiaľ bude akýkoľvek [ShowCultureName('mongolian_culture')] [Concept('character','postava')|e] z [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] na našom dvore, budú sa periodicky spúšťať [Concept('events','udalosti')|e], ktoré obmedzia našu vládu a spôsobia straty zdrojov.#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_kor.1.a.tt: "Zaujmeme nepriateľský postoj voči [GetCountry('CHI').GetName], čím si navzájom znižujeme náklonnosť o [ShowBiasValue('kor_hostile_attitude')|0]. Ak odstránime všetky [ShowCultureName('mongolian_culture')] [THIS.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [Concept('characters','postavy')|e] z krajiny, budeme môcť odstrániť [ShowGovernmentReformName('son_in_law_rule')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_kor.1.b.tt: "Zaujmeme pro-[GetCountry('CHI').GetName] postoj, čím si navzájom zvyšujeme náklonnosť o [ShowBiasValue('kor_friendly_attitude')|0]. Ak splníme požiadavky [ShowCultureName('mongolian_culture')] [THIS.GetCountry.GetGovernment.GetEstateName('nobles_estate')], budeme môcť posilniť väzby medzi našimi štátmi" # todo: NEW TRANSLATION
- flavor_kor.1.a.TIP: "Pomocou [character_interactions|e] [ShowCharacterInteractionName('banish_character')] môžeme odstrániť stúpencov [GetCountry('CHI').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_kor.1.a.TIP: "Pomocou [Concept('character_interactions','interakcií postáv')|e] [ShowCharacterInteractionName('banish_character')] môžeme odstrániť stúpencov [GetCountry('CHI').GetNameWithNoTooltip]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_kor.2.title: "Požiadavky mongolských aristokratov" # todo: NEW TRANSLATION
  flavor_kor.2.desc: "Keď sú kľúčové miesta obsadené aristokratmi [ShowCultureName('mongolian_culture')], sú zdroje štátu na ich milosť..." # todo: NEW TRANSLATION
  flavor_kor.2.desc.demand: "[target_character.GetName], súčasný hovorca za [target_country.GetName] v našom štáte, vyhlásil nové požiadavky v mene svojich pánov." # todo: NEW TRANSLATION
@@ -37,8 +37,8 @@
  flavor_kor.5.desc: "Naša spolupráca a podpora trónu [target_country.GetAdjective] nám získala dôveru a priazeň vládcov a ľudu [ShowCultureName('mongolian_culture')]. Osud [ROOT.GetCountry.GetName] a [target_country.GetNameWithNoTooltip] je teraz navzájom prepletený — nielen v dobru, ale aj v zle." # todo: NEW TRANSLATION
  flavor_kor.5.a: "Nech je naša vernosť patrične odmenená." # todo: NEW TRANSLATION
  kor_upgrade_son_in_law: "[ShowGovernmentReformName('son_in_law_rule')] bude posilnený, čím sa odstránia niektoré tresty a pridajú nové výhody." # todo: NEW TRANSLATION
- has_upgraded_son_in_law: "Vylepšil [ShowGovernmentReformName('son_in_law_rule')] prostredníctvom $flavor_kor.5.title$ [event|e]." # todo: NEW TRANSLATION
- not_has_upgraded_son_in_law: "Nevylepšil [ShowGovernmentReformName('son_in_law_rule')] prostredníctvom $flavor_kor.5.title$ [event|e]." # todo: NEW TRANSLATION
+ has_upgraded_son_in_law: "Vylepšil [ShowGovernmentReformName('son_in_law_rule')] prostredníctvom $flavor_kor.5.title$ [Concept('event','udalosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ not_has_upgraded_son_in_law: "Nevylepšil [ShowGovernmentReformName('son_in_law_rule')] prostredníctvom $flavor_kor.5.title$ [Concept('event','udalosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  kor_tied_to_mongol_influence_tt: "Osud spätý s hnutím [ShowCultureName('mongolian_culture')]" # todo: NEW TRANSLATION
  flavor_kor.6.title: "[target_character.GetNameWithNoTooltip] z [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_kor.6.entry: "Cisárovná družka Gi z dynastie Jüan" # todo: NEW TRANSLATION
@@ -51,9 +51,9 @@
  flavor_kor.7.desc: "[target_character.GetName] sa stal(a) vládnucou autoritou v [target_country.GetName], no stále je [target_character.GetDaughterSon] z [from_country.GetName], provincie-[from_country.GetFlavorRank] voči nášmu veľkému [target_country.GetFlavorRank]. Preto sú [target_character.GetHisHer] väzby na [from_country.GetAdjectiveWithNoTooltip] územia stále silné napriek [target_character.GetHisHer] novému postaveniu moci v [target_country.GetNameWithNoTooltip].\n\n[from_country.GetGovernment.GetRuler.GetName] požiadal o dar, ktorý by podporil [from_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_kor.7.a: "Zlato postačí pre [from_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_kor.7.a.entry: "Zlato im úplne postačí." # todo: NEW TRANSLATION
- flavor_kor.7.a.tt: "[from_country.GetName] získa [gold|e]" # todo: NEW TRANSLATION
+ flavor_kor.7.a.tt: "[from_country.GetName] získa [Concept('gold','dukáty')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_kor.7.b: "Darujme im naše vzácne artefakty." # todo: NEW TRANSLATION
- flavor_kor.7.b.tt: "[from_country.GetName] získa [prestige|e]" # todo: NEW TRANSLATION
+ flavor_kor.7.b.tt: "[from_country.GetName] získa [Concept('prestige','prestíž')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_kor.7.zzz: "Nepotrebujú žiadny dar." # todo: NEW TRANSLATION
  flavor_kor.8.title: "Dar od [target_country.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  flavor_kor.8.desc: "Milostivý [target_country.GetGovernment.GetRulerTitle], [target_country.GetGovernment.GetRulerOrRegent.GetShortName], poslal [target_country.GetGovernment.GetRulerOrRegent.GetHisHer] pozdravy!" # todo: NEW TRANSLATION
@@ -84,20 +84,20 @@
  flavor_kor.13.entry: "$flavor_kor.13.title$" # todo: NEW TRANSLATION
  flavor_kor.13.desc: "[ShowReligionName('mahayana')] bol(a) štátnym náboženstvom a morálnym kompasom [ROOT.GetCountry.GetName] po stáročia. Vplyv a postavenie [ShowReligionGroupName('buddhist')] presahujú obyčajné náboženstvo; stalo sa z neho organizácia sama o sebe, kde členovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] získali veľký vplyv, moc a pôdu v rámci nášho [ROOT.GetCountry.GetFlavorRank].\n\nOdkedy [ROOT.GetCountry.GetNameWithNoTooltip] padlo pod mongolskou inváziou, prominentné postavenie [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] bolo nahradené starou šľachtou, ktorú sme mali, tvoriac stav [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. Avšak s povstaním tohto nového stavu prišiel aj záujem o starú čínsku literatúru — a záujem o učenie Konfucia. Dramatický rozvoj v našom systéme viery a obradoch môže nastať, ak sa konfuciánske myšlienky rozšíria po našej krajine..." # todo: NEW TRANSLATION
  flavor_kor.13.a: "Sledujme, ako sa situácia vyvinie..." # todo: NEW TRANSLATION
- flavor_kor.13.a.tt: "Stávame sa oprávnení získavať viac #Y udalostí súvisiacich s konfucianizmom#! [events|e]" # todo: NEW TRANSLATION
+ flavor_kor.13.a.tt: "Stávame sa oprávnení získavať viac #Y udalostí súvisiacich s konfucianizmom#! [Concept('events','udalosťami')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_kor.14.title: "Vzostup neo-konfucianistov" # todo: NEW TRANSLATION
  flavor_kor.14.entry: "$flavor_kor.14.title$" # todo: NEW TRANSLATION
  flavor_kor.14.desc: "Politická stabilita [ROOT.GetCountry.GetLongName] bola narušená nástupom novej skupiny známej ako neo-konfucianisti. Sú to učenci z vidieka, ktorí tradične nepatrili do konzervatívnej elity [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], ktorá vládla krajine. Ich zrejmé schopnosti povzbudzujú [ROOT.GetCountry.GetGovernment.GetRulerTitle], aby ich zamestnal vo vláde; ich reformistické názory však spolu so súťažou s establišmentom [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] o pôdu a pozície viedli k čoraz častejším zrážkam medzi rôznymi frakciami v [ROOT.GetCountry.GetAdjectiveWithNoTooltip] politike." # todo: NEW TRANSLATION
  flavor_kor.14.a: "Pred nami je ťažké obdobie..." # todo: NEW TRANSLATION
- flavor_kor.14.a.tt: "Odomkne sa nasledujúce:\n- [ShowAdvanceName('confucian_academy_advance')] [advances|e] pre #Y $age_2_renaissance$#!\n- [ShowEstatePrivilegeName('petty_bureaucracy')] a [ShowEstatePrivilegeName('scholar_officials')] [estate_privileges|e]\n- [ShowLawName('imperial_examination_law')] [policy|e] z [ShowLawName('bureaucracy_law')] [law|e]" # todo: NEW TRANSLATION
- has_neo_confucianism_tt: "Odohrala sa udalosť #Y Vzostup neo-konfucianistov#! [event|e]" # todo: NEW TRANSLATION
+ flavor_kor.14.a.tt: "Odomkne sa nasledujúce:\n- [ShowAdvanceName('confucian_academy_advance')] [Concept('advances','pokroky')|e] pre #Y $age_2_renaissance$#!\n- [ShowEstatePrivilegeName('petty_bureaucracy')] a [ShowEstatePrivilegeName('scholar_officials')] [Concept('estate_privileges','privilégiá stavov')|e]\n- [ShowLawName('imperial_examination_law')] [Concept('policy','politika')|e] z [ShowLawName('bureaucracy_law')] [Concept('law','zákona')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ has_neo_confucianism_tt: "Odohrala sa udalosť #Y Vzostup neo-konfucianistov#! [Concept('event','udalosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  variable_tt_kor_has_confucianism_active: "Neokonfuciánske frakcie povstali na dvore" # todo: NEW TRANSLATION
  flavor_kor.15.title: "Prevrat v [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_kor.15.entry: "$flavor_kor.15.title$" # todo: NEW TRANSLATION
  flavor_kor.15.desc: "Režim [old_ruler.GetName] sa ukázal byť rovnako neuspokojivý, keďže obyvateľstvo [ROOT.GetCountry.GetName] samo odmieta [ROOT.GetCountry.GetGovernment.GetRulerTitle] a hľadá [target_character.GetName], sľubného generála, ktorý získal obľubu u [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] aj u [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')].\n\nDnes [target_character.GetShortNameWithNoTooltip] zaútočil, keď jeho armáda podnikla prevrat proti [old_ruler.GetShortNameWithNoTooltip]." # todo: CHANGED
  flavor_kor.15.a: "To je koniec starej dynastie..." # todo: NEW TRANSLATION
  flavor_kor.15.b: "Nemôžeme dovoliť, aby tento zradca zvíťazil!" # todo: NEW TRANSLATION
- flavor_kor.15.b.tt: "Nasledujúce efekty postihnú všetkých [ShowPopTypeName('nobles')] v každom [location|e] s viac ako #Y 75.0%#! lokálnou kultúrnou jednotou:" # todo: NEW TRANSLATION
+ flavor_kor.15.b.tt: "Nasledujúce efekty postihnú všetkých [ShowPopTypeName('nobles')] v každom [Concept('location','lokalite')|e] s viac ako #Y 75.0%#! lokálnou kultúrnou jednotou:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  joseon_pretender: "Pretendentova armáda Yi" # todo: NEW TRANSLATION
  joseon_pretender_scope: "Pretendentova armáda Yi" # todo: NEW TRANSLATION
  variable_tt_had_successful_coup: "Dvorsky prevrat bol úspešný" # todo: NEW TRANSLATION
@@ -225,7 +225,7 @@
  flavor_kor.37.desc: "Jeden z našich učencov spojených s [target_international_organization.GetName] nedávno vytvoril veľké pojednanie, ktoré obsahuje mnohé polemické argumenty proti zásadám [ShowReligionGroupName('buddhist')]. Vydanie 'Rad kritík buddhizmu' znamená zlomový bod, pretože teraz môžeme byť istí, že [ROOT.GetCountry.GetAdjective] spoločnosť sa pomaly prikláňa k vieram [target_international_organization.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_kor.37.a: "Propagovať pojednania čo najširšie." # todo: NEW TRANSLATION
  flavor_kor.37.b: "Uzdenciť dielo." # todo: NEW TRANSLATION
- KOR_increase_favor_of_confucianism: "Služba $sect_favor$ [international_organization_variable|e] [target_international_organization.GetName] sa zvýši o #g +5.0%#!." # todo: NEW TRANSLATION
+ KOR_increase_favor_of_confucianism: "Služba $sect_favor$ [Concept('international_organization_variable','hodnota medzinárodnej organizácie')|e] [target_international_organization.GetName] sa zvýši o #g +5.0%#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_kor.38.title: "Spor princov" # todo: NEW TRANSLATION
  flavor_kor.38.entry: "$flavor_kor.38.title$" # todo: NEW TRANSLATION
  flavor_kor.38.desc: "Nástup [ROOT.GetCountry.GetGovernment.GetRuler.GetName] nie je vôbec istý. Hoci [target_character2.GetName] zostáva nominálne [ROOT.GetCountry.GetGovernment.GetHeirTitle], napätie na [ROOT.GetCountry.GetGovernment.GetCourtTitle] ostáva vysoké. Mnohí ministri považujú [target_character.GetName] za ambicióznejšieho než je jeho príbuzný. Aj keď zatiaľ nevypuklo násilie, títo dvaja sa zaručene dostanú do konfliktu, pokiaľ sa tomu vopred niečo neuloží." # todo: NEW TRANSLATION

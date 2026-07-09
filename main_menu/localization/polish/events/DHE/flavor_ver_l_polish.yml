@@ -1,7 +1,7 @@
 ﻿l_polish:
- VER_benefits_from_winning_the_war: "V [target_war.GetName] bude pre nás dostupná [ShowPeaceTreatyTypeName('scaligeri_victory')] [peace_offer|e]" # todo: NEW TRANSLATION
- ver_remove_antagonism: "[THIS.GetCountry.GetName] bude mať svoj [antagonism|e] z požiadaviek [peace_treaty|e] odstránený voči všetkým [countries|e]" # todo: NEW TRANSLATION
- ver_add_integration_in_every_location: "Každé [owned|e] [location|e] v [ShowScriptedGeographyName('scaligeri_conquests_geography')] získa #G +100.0%#! [integration|e]" # todo: NEW TRANSLATION
+ VER_benefits_from_winning_the_war: "V [target_war.GetName] bude pre nás dostupná [ShowPeaceTreatyTypeName('scaligeri_victory')] [Concept('peace_offer','ponuka mieru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ver_remove_antagonism: "[THIS.GetCountry.GetName] bude mať svoj [Concept('antagonism','antagonizmus')|e] z požiadaviek [Concept('peace_treaty','mierovej dohody')|e] odstránený voči všetkým [Concept('countries','krajine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ver_add_integration_in_every_location: "Každé [Concept('owned','vlastnené')|e] [Concept('location','lokalita')|e] v [ShowScriptedGeographyName('scaligeri_conquests_geography')] získa #G +100.0%#! [Concept('integration','integrácia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCALIGER_WAR_NAME: "Scaligerova vojna" # todo: NEW TRANSLATION
  ver_demands_start: "Požadujeme" # todo: NEW TRANSLATION
  ver_demands_end: "ako súčasť mierovej dohody v [target_war.GetName]" # todo: NEW TRANSLATION
@@ -11,9 +11,9 @@
  ver_demands_VEN_treviso_demand: "$ver_demands_start$ [ShowProvinceDefinitionName('venice_province')] $ver_demands_end$" # todo: NEW TRANSLATION
  ver_demands_MLO_brescia_demand: "$ver_demands_start$ [ShowProvinceDefinitionName('brescia_province')] $ver_demands_end$" # todo: NEW TRANSLATION
  ver_demands_MLO_parma_demand: "$ver_demands_start$ [ShowProvinceDefinitionName('parma_province')] $ver_demands_end$" # todo: NEW TRANSLATION
- ver_effect_depends_on_scope: "Účinky tejto [peace_treaty|e] budú závisieť od voľby v [event|e]" # todo: NEW TRANSLATION
- VER_benefits_for_coalition_members: "Útočníci v [target_war.GetName] dostanú [events|e], aby si uplatnili nároky na rôzne pohraničné územia; obsadzovanie území inými spôsobmi je zakázané" # todo: NEW TRANSLATION
- VER_cannot_take_territory_besides_scripted_peace_deal: "Územie musí byť získané prostredníctvom špeciálnych mierových dohôd, ktoré sa budú sprístupňovať počas Scaligerovej vojny cez [events|e]" # todo: NEW TRANSLATION
+ ver_effect_depends_on_scope: "Účinky tejto [Concept('peace_treaty','mierovej dohode')|e] budú závisieť od voľby v [Concept('event','udalosti')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ VER_benefits_for_coalition_members: "Útočníci v [target_war.GetName] dostanú [Concept('events','udalosti')|e], aby si uplatnili nároky na rôzne pohraničné územia; obsadzovanie území inými spôsobmi je zakázané" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ VER_cannot_take_territory_besides_scripted_peace_deal: "Územie musí byť získané prostredníctvom špeciálnych mierových dohôd, ktoré sa budú sprístupňovať počas Scaligerovej vojny cez [Concept('events','udalosti')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  scaligeri_war_historical_info: "Scaligerova vojna začala v polovici roku 1336 v dôsledku napätia medzi Scaligermi a Benátkami. Počiatkom konfliktu bolo veronské inštalovanie reťazí na vyberanie poplatkov, čo priamo ohrozovalo obchod Tichej republiky. Hoci prebehli rokovania na zmiernenie sporu, benátsky senát zatvrdol svoje stanovisko, zastavil vývoz soli a to viedlo padovských Scaligerov k zriadeniu vlastných soľných dielní. Konflikt sa napokon začal 22. júna, keď Florencia a Benátky podpísali dohodu, podľa ktorej prvá pokryje dve tretiny nákladov na vojnu." # todo: NEW TRANSLATION
  flavor_ver.1.title: "[target_war.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ver.1.desc: "Panstvá [target_dynasty.GetName], vybudované krvou a potom nášho drahého [target_character.GetName], sa v posledných rokoch stali cieľom veľkej koalície malých štátikov zo severného [ShowRegionName('italy_region')]. Pôvodne zložená len z [GetCountry('VEN').GetLongName] a [GetCountry('FLO').GetLongName], naša nedávna snaha o mier bola zrazená našimi rozhodcami, ktorí sa rozhodli postaviť na stranu našich nepriateľov. Nič to — aj oni budú tvrdo potrestaní za svoje prehrešky." # todo: NEW TRANSLATION
@@ -23,8 +23,8 @@
  flavor_ver.2.desc: "Bojujúci rod [target_dynasty.GetName] sa stal terčom veľkej koalície vedenej [anti_scaligeri_leader.GetLongName]. Blížime sa k prelomu v tejto [target_war.GetName], no na úspech potrebujeme pomoc našich nových spojencov. Keď sa [mlo_participant.GetAdjective] [mlo_army.GetName] mobilizuje na hraniciach s [target_ver.GetName], [flo_participant.GetLongName] podporuje vojnu a naše vojsko vedie [target_character.GetName], [target_ver.GetAdjectiveWithNoTooltip] nepriateľ bude čoskoro porazený a [ShowRegionName('italy_region')] sa opäť vráti k pokoju." # todo: NEW TRANSLATION
  flavor_ver.2.historical_info: "$scaligeri_war_historical_info$" # todo: NEW TRANSLATION
  flavor_ver.2.a: "Scaligerov diabol bude vykorenený!" # todo: NEW TRANSLATION
- ver_owner_is_an_defender: "Majiteľ [THIS.GetLocation.GetName] je krajina, ktorá je [defender|e] v [target_war.GetName]" # todo: NEW TRANSLATION
- ver_controller_is_an_attacker: "Kontrolujúcou krajinou [THIS.GetLocation.GetName] je krajina, ktorá je [attacker|e] v [target_war.GetName]" # todo: NEW TRANSLATION
+ ver_owner_is_an_defender: "Majiteľ [THIS.GetLocation.GetName] je krajina, ktorá je [Concept('defender','obranca')|e] v [target_war.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ver_controller_is_an_attacker: "Kontrolujúcou krajinou [THIS.GetLocation.GetName] je krajina, ktorá je [Concept('attacker','útočník')|e] v [target_war.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ver.3.title: "Naše nároky na [target_province.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ver.3.desc: "V [target_war.GetName] proti [target_dynasty.GetName] v [target_country.GetName] postupujeme hladko. Naše sily nedávno dokázali získať kontrolu nad [target_province.GetName], provinciou v sfére vplyvu [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetDynasty.GetName] z [ROOT.GetCountry.GetName]. Možno by sme si mali uplatniť nárok na toto územie, aby naši spojenci v [war_leader.GetName] vedeli, čo od domén [target_dynasty.GetNameWithNoTooltip] požadujeme." # todo: NEW TRANSLATION
  flavor_ver.3.entry: "$MLO_ADJ$ Nároky v Scaligerovej vojne" # todo: NEW TRANSLATION

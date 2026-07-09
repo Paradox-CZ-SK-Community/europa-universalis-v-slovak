@@ -6,9 +6,9 @@
  revolutionary_chaos.1.title: "Chaos v [ROOT.GetCountry.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  revolutionary_chaos.1.desc: "Tí, ktorí si mysleli, že Revolúcia a [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] budú odpoveďou na nestabilitu [ROOT.GetCountry.GetName], sú čoraz viac sklamaní. Neustále sa zvyšujúce nepokoje postihujúce náš národ spôsobujú rozsiahle utrpenie medzi [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] a [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] rovnako.\n\nNadšenci Revolúcie sa stali čoraz horlivejšími, obviňujúc nedostatky nového režimu z „nepriateľov revolúcie“ bez ohľadu na ich skutočné zblíženie s konzervatívnymi myšlienkami. Medzitým protirevolučné hnutie vedené pozostatkami starej [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si kladie za cieľ obnoviť starú [ShowGovernmentTypeName('monarchy')]." # todo: NEW TRANSLATION
  revolutionary_chaos.1.a: "Revolúcia musí zvíťaziť!" # todo: NEW TRANSLATION
- revolutionary_chaos.1.a.tt: "Postavíme sa na stranu #Y $revolution_side$#!, čo umožní [events|e] o boji proti $monarchists_side$" # todo: NEW TRANSLATION
+ revolutionary_chaos.1.a.tt: "Postavíme sa na stranu #Y $revolution_side$#!, čo umožní [Concept('events','udalosti')|e] o boji proti $monarchists_side$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.1.b: "Zaujmime konzervatívnejší prístup k našej situácii." # todo: NEW TRANSLATION
- revolutionary_chaos.1.b.tt: "Postavíme sa na stranu #Y $monarchists_side$#!, čo umožní [events|e] o boji proti $revolution_side$" # todo: NEW TRANSLATION
+ revolutionary_chaos.1.b.tt: "Postavíme sa na stranu #Y $monarchists_side$#!, čo umožní [Concept('events','udalosti')|e] o boji proti $revolution_side$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.2.title: "Náboženská netolerancia" # todo: NEW TRANSLATION
  revolutionary_chaos.2.desc: "S rozširovaním nových ideí sa v našej krajine rozprúdili živé debaty o postavení náboženských menšín v [ROOT.GetCountry.GetName]. Zatiaľ čo zástancovia náboženskej slobody využili príležitosť žiadať reformy na zlepšenie postavenia nasledovníkov viery [target_location.GetDominantReligion.GetAdjective] a iných menšín v krajine, reakcionári tlačia na úplné potlačenie. Násilné stretávania sú pravdepodobné, ak sa záležitosť neokope správne." # todo: NEW TRANSLATION
  revolutionary_chaos.2.a: "Jedna národnosť, jedno vierovyznanie." # todo: NEW TRANSLATION
@@ -16,7 +16,7 @@
  revolutionary_chaos.3.title: "$serfdom_focus$" # todo: NEW TRANSLATION
  revolutionary_chaos.3.desc: "Medzi [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] našej spoločnosti bublajú nepokoje kvôli ťažkej záťaži kladenej na ich plecia. Ich nesúhlas s panstvom, vysokými daňami a nedostatkom potravín vyústil do viacerých povstaní po celej krajine." # todo: NEW TRANSLATION
  revolutionary_chaos.3.a: "Obmedzme $serfdom_focus$." # todo: NEW TRANSLATION
- revolutionary_chaos.3.a.tt: "[ShowPopTypeName('peasants')] a [ShowPopTypeName('laborers')] v [ROOT.GetCountry.GetCapital.GetRegion.GetName] sa pridávajú k [target_rebel.GetName] a strácajú [target_pop_for_loc.MakeScope.ScriptValue('pop_satisfaction_ultimate_penalty')|+2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ revolutionary_chaos.3.a.tt: "[ShowPopTypeName('peasants')] a [ShowPopTypeName('laborers')] v [ROOT.GetCountry.GetCapital.GetRegion.GetName] sa pridávajú k [target_rebel.GetName] a strácajú [target_pop_for_loc.MakeScope.ScriptValue('pop_satisfaction_ultimate_penalty')|+2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.3.b: "Udržme masy v reťaziach." # todo: NEW TRANSLATION
  revolutionary_chaos.4.title: "Sociálna reforma" # todo: NEW TRANSLATION
  revolutionary_chaos.4.desc: "Živé diskusie medzi našimi filozofmi o sociálnych reformách a cnostiach rozumu výrazne ovplyvnili veľkú časť obyvateľstva. [target_character.GetName] sa začína obávať, že niektorí z nich budú príliš ľahko ovplyvniteľní rozvratníkmi a že ich rebélie ešte viac zvýšia nestabilitu krajiny." # todo: NEW TRANSLATION
@@ -29,7 +29,7 @@
  revolutionary_chaos.6.title: "$STATIC_MODIFIER_NAME_the_reign_of_terror$ v [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  revolutionary_chaos.6.desc: "Nie všetci sú spokojní s kurzom, ktorým sa Revolúcia vydala. Reakcionári sú všade a neustále hľadajú príležitosť zraziť [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName]. To priviedlo k moci militantne radikálnu frakciu vedenú istým [target_character.GetName] v Národnom zhromaždení. Agitujú za kampaň na vylúčenie „vnútorného nepriateľa“ cez masové zatýkania údajných kráľovských sympatizantov a liberálne používanie Madam gilotíny." # todo: NEW TRANSLATION
  revolutionary_chaos.6.a: "Popravme nepriateľov Revolúcie!" # todo: NEW TRANSLATION
- reign_of_terror_tt: "Umožníme ďalšie [events|e] o prenasledovaní nepriateľov revolúcie" # todo: NEW TRANSLATION
+ reign_of_terror_tt: "Umožníme ďalšie [Concept('events','udalosti')|e] o prenasledovaní nepriateľov revolúcie" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.6.b: "Prejavme zhovievavosť." # todo: NEW TRANSLATION
  revolutionary_chaos.7.title: "Koniec teroru" # todo: NEW TRANSLATION
  revolutionary_chaos.7.desc: "[ShowModifier('the_reign_of_terror')] zmasakroval nespočetné množstvo ľudí z [ROOT.GetCountry.GetLongName] v mene [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName]. Len čo je jedna hrozba odstránená, ihneď sa identifikuje a očistí ďalšia." # todo: NEW TRANSLATION
@@ -41,7 +41,7 @@
  revolutionary_chaos.8.title: "$STATIC_MODIFIER_NAME_the_counter_revolution$ [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  revolutionary_chaos.8.desc: "Odkedy sme prijali ideály revolúcie, anarchia v [ROOT.GetCountry.GetName] len naberá na intenzite. Aby tomu čelila, naša vláda zvolila konzervatívnejších členov starej spoločnosti, aby previedli krehký [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] cez ťažké časy. Títo protirevolucionári vedení [target_character.GetName] sa teraz zakorenili v Národnom zhromaždení a snažia sa obnoviť poriadok cez liberálne využívanie rôznych metód popráv, aby skrotili bezmyšlienkové masy." # todo: NEW TRANSLATION
  revolutionary_chaos.8.a: "Poriadok musí byť obnovený za každú cenu!" # todo: NEW TRANSLATION
- counter_revolution_tt: "Umožníme ďalšie [events|e] o boji proti horlivcom revolúcie" # todo: NEW TRANSLATION
+ counter_revolution_tt: "Umožníme ďalšie [Concept('events','udalosti')|e] o boji proti horlivcom revolúcie" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.8.b: "Nemôžeme sa vrátiť späť. Revolúcia musí napredovať!" # todo: NEW TRANSLATION
  revolutionary_chaos.9.title: "Koniec $STATIC_MODIFIER_NAME_the_counter_revolution$" # todo: NEW TRANSLATION
  revolutionary_chaos.9.desc: "[ShowModifier('the_counter_revolution')] sa snažil obmedziť anarchiu a ničivé následky spôsobené Revolúciou. Napriek tomu je revolucionárske, antimonarchistické cítenie stále silné a akákoľvek forma poriadku bola nakoniec nahradená neadresnými masovými zatýkaniami a popravami. Protirevolucionári v Národnom zhromaždení hádžu zodpovednosť za tieto zlyhania na [target_character.GetName] a žiadajú okamžité vyhostenie. Iné konzervatívne sily v zhromaždení tvrdia, že metódy [target_character.GetShortNameWithNoTooltip] fungujú a obviňujú zhromaždenie z plných revolucionárov. Táto nejednotnosť môže viesť k zániku protirevolučného úsilia, ak sa s tým rýchlo nič neurobí." # todo: NEW TRANSLATION
@@ -55,10 +55,10 @@
  revolutionary_chaos.102.title.fallback: "Nepriateľ v provincii" # todo: NEW TRANSLATION
  revolutionary_chaos.102.desc: "Nebezpečné, protirevolučné myšlienky sa šíria v [target_province.GetName]! Chýry hovoria, že plánujú zorganizovať povstanie proti slávnej [ROOT.GetCountry.GetLongName] a pokúsiť sa opäť nastoliť #italic ancien régime#!" # todo: NEW TRANSLATION
  revolutionary_chaos.102.a: "Vyneste gilotíny!" # todo: NEW TRANSLATION
- mass_pops_execution_tt: "#R 10%#! z [population|e] v [target_province.GetName] je poprávnených za zradu proti Revolúcii" # todo: NEW TRANSLATION
+ mass_pops_execution_tt: "#R 10%#! z [Concept('population','populácie')|e] v [target_province.GetName] je poprávnených za zradu proti Revolúcii" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  counter_revolutionaries: "Protirevolucionári" # todo: NEW TRANSLATION
  revolutionary_chaos.102.b: "To sú len chýry" # todo: NEW TRANSLATION
- counter_rev_rebellion_might_start_tt: "Môže vypuknúť #R protirevolučné#! [rebellion|e]" # todo: NEW TRANSLATION
+ counter_rev_rebellion_might_start_tt: "Môže vypuknúť #R protirevolučné#! [Concept('rebellion','povstanie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.103.title: "Teror vládne nadradeno" # todo: NEW TRANSLATION
  revolutionary_chaos.103.desc: "Časté čistky nechali nepriateľov Revolúcie skrčených v hrôze. Nikto si netrúfne zdvihnúť hlas proti smeru, ktorý určuje vláda, a krajina je jednotnejšia než kedykoľvek predtým. Všetka chvála [target_character.GetName]!" # todo: NEW TRANSLATION
  revolutionary_chaos.103.a: "Ak nás nemôžu milovať, nech sa nás boja." # todo: NEW TRANSLATION
@@ -73,7 +73,7 @@
  revolutionary_chaos.202.desc: "Revolucionári sa zhromaždili v [target_province.GetName], aby podkúpili našu autoritu. Požadujú korigovanie kursu, alebo hrozia, že prevezmú [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] a obviažu nám hlavy." # todo: NEW TRANSLATION
  revolutionary_chaos.202.a: "Urobme s nimi niekoľko kompromisov." # todo: NEW TRANSLATION
  revolutionary_chaos.202.b: "Nech nechajú povstanie. Zostaneme verní našej veci." # todo: NEW TRANSLATION
- rev_rebellion_might_start_tt: "Všetci [ShowPopTypeName('burghers')] a [ShowPopTypeName('peasants')] v [target_province.GetName] sa pridávajú k [target_rebel.GetName] a strácajú [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ rev_rebellion_might_start_tt: "Všetci [ShowPopTypeName('burghers')] a [ShowPopTypeName('peasants')] v [target_province.GetName] sa pridávajú k [target_rebel.GetName] a strácajú [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_rebels: "Revolučné povstalci" # todo: NEW TRANSLATION
  revolutionary_chaos.203.title: "Vzostup [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]" # todo: NEW TRANSLATION
  revolutionary_chaos.203.desc: "Vďaka kolektívnym snahám Národného zhromaždenia udržať poriadok sa stará sociálna hierarchia začala zotavovať z hrôz Revolúcie. Najmä [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] prisahajú vernosť [target_character.GetName]." # todo: NEW TRANSLATION
@@ -89,13 +89,13 @@
  revolutionary_chaos.1000.title: "Osud vládcu" # todo: NEW TRANSLATION
  revolutionary_chaos.1000.desc: "Od Revolúcie sú [target_character.GetName] a zvyšok vládnucej triedy starého režimu držaní v domácom väzení v paláci, kde sa [target_character.GetSheHe] stala/sa neochotnou bábkou novej vlády. Hoci [target_character.GetSheHe] sľuboval/a zaručiť sociálne pokroky Revolúcie, neskrýval/a svoje opovrhovanie voči veľkej strate moci a namiesto toho konšpiroval/a, aby utiekol/a a našiel/la útočisko u našich nepriateľov v [target_country.GetName], odkiaľ dúfal/a, že by mohol/la byť obnovený/á ako vládca [ROOT.GetCountry.GetName]. Revolučné sily však [target_character.GetHerHis] zachytili skôr, než mohol/la prekročiť hranicu.\n\nTo posilnilo všetkých, ktorí pohŕdajú #italic ancien régime#! a chcú sa navždy zbaviť ich more. Postavili [target_character.GetHerHim] pred Národné zhromaždenie, aby čelil/a súdu za sprisahanie s cudzími mocnosťami a tým bol/a považovaný/á za zradcu. Ak bude uznaný/á vinným/vinnou, bude prinútený/á abdikovať, bude zbavený/á všetkých titulov a čelí poprave gilotínou. Napätie je však vysoké a hlasovanie bude pravdepodobne tesné." # todo: NEW TRANSLATION
  revolutionary_chaos.1000.a: "361 hlasov za a 360 proti poprave." # todo: NEW TRANSLATION
- every_non_revolutionary_monarchy_dislikes_us_tt: "Každý známy [ShowGovernmentTypeName('monarchy')] zmení svoj [opinion|e] o [ROOT.GetCountry.GetName] o [ShowBiasValue('opinion_guelphs_support_imperial_rivals')|-0]" # todo: NEW TRANSLATION
+ every_non_revolutionary_monarchy_dislikes_us_tt: "Každý známy [ShowGovernmentTypeName('monarchy')] zmení svoj [Concept('opinion','názor')|e] o [ROOT.GetCountry.GetName] o [ShowBiasValue('opinion_guelphs_support_imperial_rivals')|-0]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.1000.b: "361 hlasov proti a 360 za popravu." # todo: NEW TRANSLATION
  revolutionary_chaos.1001.title: "Protirevolučné povstanie" # todo: NEW TRANSLATION
  revolutionary_chaos.1001.title.FRA: "Povstanie Chouanov" # todo: NEW TRANSLATION
  revolutionary_chaos.1001.desc: "Nespokojnosť s vývojom Revolúcie vyvrcholila popravením predchádzajúceho vládcu. Mnohí teraz ľutujú zvrhnutie starého režimu, ktorý ponúkal relatívnu stabilitu, ak nie slobodu. Členovia [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] v [target_area.GetName] sa spojili, aby spustili rozsiahle povstanie proti súčasnému režimu v zradnom pláne svrhnúť [ROOT.GetCountry.GetLongName]!" # todo: NEW TRANSLATION
  revolutionary_chaos.1001.a: "Zdrvíme ich." # todo: NEW TRANSLATION
- rev_revolting_area_tt: "Každý nie-[ShowPopTypeName('burghers')] v [target_area.GetName] sa pridáva k [target_rebel.GetName] a stráca [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ rev_revolting_area_tt: "Každý nie-[ShowPopTypeName('burghers')] v [target_area.GetName] sa pridáva k [target_rebel.GetName] a stráca [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.1100.title.specific: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  revolutionary_chaos.1100.title: "Vyzývajúci sa veľký vojenský vodca" # todo: NEW TRANSLATION
  revolutionary_chaos.1100.desc: "Chaos Revolúcie a hrozby cudzej intervencie dali príležitosť ambicióznym mladým dôstojníkom zažiariť - príležitosť, ktorú v oboch rukách uchopil jeden [target_character.GetName], [target_character.GetCulture.GetName] palubicový poručík. [target_character.GetHerHis|U] úspechy v niekoľkých stretnutiach ho/ju povýšili do popredia. Naposledy [target_character.GetSheHe] samostatne potlačil/a monarchistické povstanie v [ROOT.GetCountry.GetCapital.GetName] nasadením ťažkých diel na mestské ulice; úspech tohto rozhodného činu získal [target_character.GetHerHim] obdiv ľudu. Už mnohí vodcovia Revolúcie pozerajú na [target_character.GetHerHim] priaznivo a tlačia, aby bol/a povýšený/á na vysoký úrad. Avšak [target_character.GetSheHe] je ambiciózny/á a nemusí sa uspokojiť len so stavaním generála." # todo: NEW TRANSLATION
@@ -105,7 +105,7 @@
  revolutionary_chaos.1101.a: "Tak nech to bude! Nech [target_character.GetShortNameWithNoTooltip] vládne nad [ROOT.GetCountry.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION
  revolutionary_chaos.1101.b: "Nepotrebujeme ďalšieho Caesara!" # todo: NEW TRANSLATION
  bonaparte_rebels: "Povstalci prevratu" # todo: NEW TRANSLATION
- bonaparte_rebels_rise_up_tt: "Každý [pop|e] v [ROOT.GetCountry.GetCapital.GetArea.GetName] sa pridáva k [target_rebel.GetName] a stráca [ShowNamedValue('pop_satisfaction_radical_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ bonaparte_rebels_rise_up_tt: "Každý [Concept('pop','populácia')|e] v [ROOT.GetCountry.GetCapital.GetArea.GetName] sa pridáva k [target_rebel.GetName] a stráca [ShowNamedValue('pop_satisfaction_radical_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  revolutionary_chaos.1102.title: "Infernálny stroj" # todo: NEW TRANSLATION
  revolutionary_chaos.1102.desc.middle_part: "Royalistickí sprisahanci ukryli svoju bombu v sudoch na voze zaparkovanom blízko miesta, kde mal [target_character.GetShortName] prechádzať na cestu do divadla, aby si užil chvíľu pokoja. Prezývaná „Infernal Machine“, bomba bola naplnená pušným prachom, horľavými materiálmi a guľkami a odpálená použitím dlhého zápalu." # todo: NEW TRANSLATION
  revolutionary_chaos.1102.desc.dead_napoleon: "Náš milovaný [ROOT.GetCountry.GetGovernment.GetRulerTitle] bol zavraždený! $revolutionary_chaos.1102.desc.middle_part$ Výbuch nastal práve keď sa [target_character.GetShortNameWithNoTooltip] priblížil, zabíjajúc ho/ju okamžite." # todo: NEW TRANSLATION

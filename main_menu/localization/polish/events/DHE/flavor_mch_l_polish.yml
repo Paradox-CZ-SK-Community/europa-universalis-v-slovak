@@ -24,8 +24,8 @@
  flavor_mch.5.a: "Vyhlásime Neskorý Jīn." # todo: NEW TRANSLATION
  flavor_mch.5.b: "Sme predovšetkým [ROOT.GetCountry.GetAdjectiveWithNoTooltip] ľud." # todo: CHANGED
  flavor_mch.5.b.entry: "Sme predovšetkým národ." # todo: NEW TRANSLATION
- mch_warring_state_modifier_trigger: "[location|e] patrí [ShowCultureGroupName('chinese_group')] [culture_group|e] a [owner|e] sa podarilo podrobiť [GetCountry('KOR').GetName] prostredníctvom reťazca udalostí $flavor_mch.10.title$ [event|e]." # todo: NEW TRANSLATION
- mch_lifan_yuan_modifier_trigger: "[location|e] má [dominant_culture|e], ktorá nie je ani akceptovaná ani patrí k [ShowCultureGroupName('chinese_group')] alebo [ShowCultureGroupName('jurchen_group')] [culture_group|e]." # todo: NEW TRANSLATION
+ mch_warring_state_modifier_trigger: "[Concept('location','Lokalita')|e] patrí [ShowCultureGroupName('chinese_group')] [Concept('culture_group','kultúrna skupina')|e] a [Concept('owner','majiteľ')|e] sa podarilo podrobiť [GetCountry('KOR').GetName] prostredníctvom reťazca udalostí $flavor_mch.10.title$ [Concept('event','udalosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ mch_lifan_yuan_modifier_trigger: "[Concept('location','Lokalita')|e] má [Concept('dominant_culture','dominantná kultúra')|e], ktorá nie je ani akceptovaná ani patrí k [ShowCultureGroupName('chinese_group')] alebo [ShowCultureGroupName('jurchen_group')] [Concept('culture_group','kultúrna skupina')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  unlocked_warring_state: "Odomknuté $warring_state$" # todo: NEW TRANSLATION
  map_QNG: "$QNG$ žltá" # todo: NEW TRANSLATION
  flavor_mch.6.title: "[ShowLawNameWithNoTooltip('mch_queue_hair')]" # todo: NEW TRANSLATION
@@ -54,7 +54,7 @@
  flavor_mch.10.desc: "[target_country.GetLongName] bol po mnohé stáročia verný poddaný [GetInternationalOrganization('middle_kingdom').GetName]. Avšak zdá sa, že pre [target_country.GetAdjectiveWithNoTooltip] štát má náš nárok na Mandát neba malú váhu, keď odmietajú stať sa verným [ShowSubjectTypeName('tributary')] [ROOT.GetCountry.GetName]. Ak sa nám nepodarí ich skrotiť, náš nárok môže byť spochybnený." # todo: NEW TRANSLATION
  flavor_mch.10.a: "Vyžadujeme poklonu!" # todo: NEW TRANSLATION
  flavor_mch.10.b: "Budú skrotení v pravý čas." # todo: NEW TRANSLATION
- mch_benefits_of_subjugating_korea: "Máme 25 rokov na to, aby sme [target_country.GetName] urobili naším [subject|e]. Ak sa nám to podarí, [ShowGovernmentReformName('warring_state')] nám poskytne ďalšie výhody." # todo: NEW TRANSLATION
+ mch_benefits_of_subjugating_korea: "Máme 25 rokov na to, aby sme [target_country.GetName] urobili naším [Concept('subject','vazalom')|e]. Ak sa nám to podarí, [ShowGovernmentReformName('warring_state')] nám poskytne ďalšie výhody." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_mch.11.success_title: "Pád [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_mch.11.failure_title: "[target_country.GetNameWithNoTooltip] odoláva" # todo: NEW TRANSLATION
  flavor_mch.11.success_desc: "Kampaň na podrobenie [target_country.GetName] bola ohromným úspechom. Ustanovili sme sa ako praví držitelia [GetInternationalOrganization('middle_kingdom').GetName], a pri takomto predvedení sily sa ďalší vzdorovití panovníci sklaniajú pred naším [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
@@ -88,8 +88,8 @@
  flavor_mch.16.a: "Prijmeme tie inštitúcie." # todo: NEW TRANSLATION
  flavor_mch.16.b: "Uprednostnite [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('tribes_estate')]." # todo: NEW TRANSLATION
  flavor_mch.16.b.entry: "Uprednostnite $tribes_estate$." # todo: NEW TRANSLATION
- unlock_chinese_language_reforms: "Tým sa odomkne [ShowGovernmentReformName('three_departments_system')] [government_reform|e]." # todo: NEW TRANSLATION
- MCH_conditional_benefit: "Ak neprijmeme [ShowGovernmentReformName('three_departments_system')] [government_reform|e], [ShowEstatePrivilegeName('mch_tribal_favor')] poskytne dodatočné výhody." # todo: NEW TRANSLATION
+ unlock_chinese_language_reforms: "Tým sa odomkne [ShowGovernmentReformName('three_departments_system')] [Concept('government_reform','reforma vlády')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MCH_conditional_benefit: "Ak neprijmeme [ShowGovernmentReformName('three_departments_system')] [Concept('government_reform','reforma vlády')|e], [ShowEstatePrivilegeName('mch_tribal_favor')] poskytne dodatočné výhody." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_mch.17.title: "Vyhlásenie $QNG$" # todo: NEW TRANSLATION
  flavor_mch.17.entry: "$flavor_mch.17.title$" # todo: NEW TRANSLATION
  flavor_mch.17.desc: "Konečne sa nám podarilo prevziať kontrolu nad Mandátom neba a [GetInternationalOrganization('middle_kingdom').GetName]. Ako je zvykom, zvolíme meno pre novú dynastiu a [target_character.GetName] bude ustanovený ako Syn neba. Čo sa týka mena dynastie, bolo vybrané meno $QNG$, ktoré znamená 'jasný' a 'čistý'. Avšak symbolika zlata s týmto vyhlásením nezmizne, pretože naša vlajka zostane zlatá." # todo: NEW TRANSLATION

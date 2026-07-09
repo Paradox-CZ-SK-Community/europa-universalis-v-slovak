@@ -32,7 +32,7 @@
  random_event.8.desc: "Diplomacia medzi národmi je často ovplyvňovaná náhodnými faktormi na oboch stranách, zapojenými spôsobmi, ktoré presahujú schopnosti diplomatického zboru oboch štátov. Pri stále meniacich sa okolnostiach našich vzťahov so susedmi, ktoré sa menia ešte rýchlejšie ako zvyčajne, majú naši diplomati problém držať krok." # todo: NEW TRANSLATION
  random_event.8.a: "Vymenovať nových diplomatov." # todo: NEW TRANSLATION
  random_event.8.b: "Zlepšiť vzťahy so susednými štátmi." # todo: NEW TRANSLATION
- random_event.8.tt: "Každý sused [country|e] získa [ShowBiasValue('opinion_diplomatic_move')|+=0] [opinion|e] k nám" # todo: NEW TRANSLATION
+ random_event.8.tt: "Každý sused [Concept('country','krajina')|e] získa [ShowBiasValue('opinion_diplomatic_move')|+=0] [Concept('opinion','názor')|e] k nám" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  random_event.9.title: "Vynikajúca diplomacia" # todo: NEW TRANSLATION
  random_event.9.desc: "Zručná práca našich diplomatov a obdivuhodná situácia sily, v ktorej sa náš [ROOT.GetCountry.GetFlavorRank] nachádza, sa ukazujú byť užitočné pre náš status medzi rovesníkmi. Naši diplomati využívajú tieto faktory, aby dosiahli lepšie výsledky v rokovaniach." # todo: NEW TRANSLATION
  random_event.9.a: "Uspokojiť rozmarné stavy." # todo: NEW TRANSLATION
@@ -154,7 +154,7 @@
  random_event.37.desc: "Niektorí miestni členovia [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] v [uppity_peasants.GetName] tak urazili a zle zaobchádzali so svojimi poddanými, že delegácia [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] prišla pred [target_ruler.GetName] žiadať o nápravu. Súhlasiť s tým by bolo populárne u [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')], ale [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] by to vnímali ako zásah do ich autority." # todo: NEW TRANSLATION
  random_event.37.a: "Prijať petíciu." # todo: NEW TRANSLATION
  random_event.37.b: "Zamietnuť petíciu." # todo: NEW TRANSLATION
- random_event.37.b.tt: "Toto spôsobí, že naši [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] v [uppity_peasants.GetName] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
+ random_event.37.b.tt: "Toto spôsobí, že naši [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] v [uppity_peasants.GetName] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  random_event.38.title: "Prestížna rodina žiada pomoc" # todo: NEW TRANSLATION
  random_event.38.desc: "Jedna z najsilnejších rodín [ROOT.GetCountry.GetName] z [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] napriek obrovskému majetku dokázala nahromadiť značné dlhy, ktoré má problém splatiť. Obrátili sa na [target_ruler.GetName] s prosbou o pomoc, dúfajúc, že ich dlhá história vernosti rodine [target_ruler.GetDynasty.GetName] a sľuby večnej podpory presvedčia [target_ruler.GetHerHim], aby im pomohol." # todo: NEW TRANSLATION
  random_event.38.a: "Poskytnúť im pomoc." # todo: NEW TRANSLATION
@@ -283,9 +283,9 @@
  random_event.68.title: "Rast [target_location.GetNameWithNoTooltip] láka [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]" # todo: NEW TRANSLATION
  random_event.68.desc: "Zdá sa, že [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sa sťahujú z údolia [starting_location.GetName] a snažia sa uživiť v [target_location.GetName]. To spôsobuje nepokoje na vidieku [starting_location.GetNameWithNoTooltip], ale [target_location.GetNameWithNoTooltip] môže mať dlhodobo úžitok." # todo: NEW TRANSLATION
  random_event.68.a: "Musíme to akceptovať." # todo: NEW TRANSLATION
- random_event.68.a.tt: "Toto spôsobí, že naše [pop|e] v [starting_location.GetName] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
+ random_event.68.a.tt: "Toto spôsobí, že naše [Concept('pop','populácia')|e] v [starting_location.GetName] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  random_event.68.b: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] patria na svoje územie." # todo: NEW TRANSLATION
- following_happens_because_of_peasants_free_peasantry_tt: "#Y Nasledujúce sa stane, pretože sme udelili našim [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [ShowEstatePrivilegeName('peasants_free_peasantry')] [estate_privilege|e]:#!" # todo: NEW TRANSLATION
+ following_happens_because_of_peasants_free_peasantry_tt: "#Y Nasledujúce sa stane, pretože sme udelili našim [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [ShowEstatePrivilegeName('peasants_free_peasantry')] [Concept('estate_privilege','privilégiám stavu')|e]:#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  random_event.69.title: "Povesť [ROOT.GetCountry.GetGovernment.GetRulerTitle|U] je poškvrnená!" # todo: NEW TRANSLATION
  random_event.69.desc: "V [ROOT.GetCountry.GetGovernment.GetCourtTitle] koluje akýsi propagandistický text, ktorý predstavuje [target_ruler.GetName] ako nemilosrdného vojnového zaťahovača. To môže ovplyvniť naše vzťahy s poddanými a inými krajinami." # todo: NEW TRANSLATION
  random_event.69.a: "Prijať túto povesť!" # todo: NEW TRANSLATION

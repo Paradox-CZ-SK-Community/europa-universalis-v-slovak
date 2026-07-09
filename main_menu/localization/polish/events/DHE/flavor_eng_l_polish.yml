@@ -3,7 +3,7 @@
  flavor_eng.1.entry: "Lollardská herezia" # todo: NEW TRANSLATION
  flavor_eng.1.desc: "V posvätných síňach [target_location.GetName] sa objavilo nové náboženské hnutie, ktoré spochybňuje zavedený poriadok. [john_wycliffe.GetName], vážený filozof, zastáva radikálnu víziu [ShowReligionGroupName('christian')], zameranú na posilnenie [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] a potlačenie skorumpovaného [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] a ich nemorálnej hierarchie.\n\nJeho učenie je výnimočné tým, že žiada preklad Biblie do [ROOT.GetCountry.GetCulture.GetLanguage.GetName], aby ju bežní ľudia mohli čítať a rozumieť jej.\n\nStojíme pred voľbou aktívne potlačiť kacírov, alebo jednoducho ignorovať ich neškodné úvahy." # todo: NEW TRANSLATION
  flavor_eng.1.a: "Zastavte heretikov." # todo: NEW TRANSLATION
- lots_of_lollards: "Mnoho našich [ROOT.GetCountry.GetCulture.GetName] [ShowReligionAdjective('catholic')] [pops|e] v [ShowRegionName('great_britain_region')] prejde na [ShowReligionName('lollardy')]" # todo: NEW TRANSLATION
+ lots_of_lollards: "Mnoho našich [ROOT.GetCountry.GetCulture.GetName] [ShowReligionAdjective('catholic')] [Concept('pops','populácií')|e] v [ShowRegionName('great_britain_region')] prejde na [ShowReligionName('lollardy')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  eng_opposes_lollards: "Proti lollardom" # todo: NEW TRANSLATION
  flavor_eng.1.b: "Nechajme ich byť." # todo: NEW TRANSLATION
  flavor_eng.1.tt2: "Snahy o jeho potlačenie môžu spomaliť prebiehajúce šírenie [ShowReligionName('lollardy')]" # todo: NEW TRANSLATION
@@ -30,7 +30,7 @@
  flavor_eng.4.entry: "$flavor_eng.4.title$" # todo: NEW TRANSLATION
  flavor_eng.4.desc: "Stáva sa čoraz ťažšie nájsť talentovaných mužov na vládne posty, a zaznievajú hlasy, že by sme mali rozšíriť výber o rastúcu strednú triedu, najmä právnikov, okrem členov [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Obe skupiny dychtivo čakajú, či takúto politiku zavedieme a vypočujeme volania po zmene." # todo: NEW TRANSLATION
  flavor_eng.4.a: "Podporte ich." # todo: NEW TRANSLATION
- enable_yorkist_tradition_policy: "Umožní prístup k [ShowPolicyName('yorkist_tradition_policy')] [policy|e]" # todo: NEW TRANSLATION
+ enable_yorkist_tradition_policy: "Umožní prístup k [ShowPolicyName('yorkist_tradition_policy')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.4.b: "Nemajú miesto vo vládnutí." # todo: NEW TRANSLATION
  flavor_eng.4.tt1: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní zo svojho pokračujúceho vylúčenia z vládnutia" # todo: NEW TRANSLATION
  flavor_eng.4.historical_info: "Povýšanie vládnych úradníkov zo strednej triedy, predovšetkým duchovných a právnikov, bolo dlho držanou yorkistickou tradíciou v Anglicku. Pevne to odmietala šľachta a klérus, ktorí to považovali za privilégium výlučné pre mužov vyššieho spoločenského postavenia alebo božského určenia." # todo: NEW TRANSLATION
@@ -38,7 +38,7 @@
  flavor_eng.5.entry: "$flavor_eng.5.title$" # todo: NEW TRANSLATION
  flavor_eng.5.desc: "Spravodlivosť sa v súčasnosti vykonáva v rámci [ShowPolicyName('common_law_policy')] v najlepšej možnej miere. Konania sú však zdĺhavé, pretože sa spoliehajú na precedensy a rozhodnutia sudcov. Niektoré prípady trvajú týždne, ak nie mesiace, kým padne rozsudok. Objavujú sa hlasy za vytvorenie sekundárneho súdneho orgánu s určitým stupňom flexibility v postupoch, umožňujúceho riešiť prípady považované za príliš citlivé alebo zložité pre bežné súdy. Potenciálny, hoci mierny, účinok by mohol byť rozšírenie moci [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] na potláčanie opozície a trestanie nesúhlasu, ak to bude potrebné." # todo: NEW TRANSLATION
  flavor_eng.5.a: "Neodmysliteľný nástroj." # todo: NEW TRANSLATION
- enable_court_of_the_star_chamber_reform: "Umožní prístup k [ShowGovernmentReformName('court_of_the_star_chamber_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ enable_court_of_the_star_chamber_reform: "Umožní prístup k [ShowGovernmentReformName('court_of_the_star_chamber_reform')] [Concept('government_reform','reforme vlády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.5.b: "[ShowPolicyNameWithNoTooltip('common_law_policy')] bude stačiť." # todo: NEW TRANSLATION
  flavor_eng.5.historical_info: "Hviezdna komora vznikla z rokovaní kráľovskej Privy Council a postupne získala na význame počas panovania Henricha VII. Jej názov pochádza zo vzoru hviezd na strope Westminsterského paláca, kde sa schádzala. V roku 1487 bol súd zriadený ako samostatný justičný orgán oddelený od Rady, poverený prerokovaním petícií o nápravu." # todo: NEW TRANSLATION
  flavor_eng.6.title: "Hnutie ohradňovania" # todo: NEW TRANSLATION
@@ -51,8 +51,8 @@
  flavor_eng.7.entry: "$flavor_eng.7.title$" # todo: NEW TRANSLATION
  flavor_eng.7.desc: "Neschopnosť [current_wife.GetName] priviesť na svet mužského dediča zostáva veľkým dôvodom obáv pre [ROOT.GetCountry.GetGovernment.GetRuler.GetName], ktorý sa unavil a pritom sa zaľúbil do neústupčivej [anne_boleyn.GetName]. V snahe získať jej ruku poslal [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] vyslanca k [GetCountry('PAP').GetGovernment.GetRulerTitle] s žiadosťou o dispens na anulovanie [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] súčasného manželstva, ktorý bol okamžite zamietnutý v súlade s kanonickým právom. Nadoštrbený [ROOT.GetCountry.GetGovernment.GetRulerTitle] teraz zvažuje radikálnejšie kroky, vrátane úplného odlúčenia od [GetCountry('PAP').GetAdjective] autority, aby umožnil sobáš." # todo: CHANGED
  flavor_eng.7.a: "Prevziať vedenie Cirkvi." # todo: NEW TRANSLATION
- flavor_eng.7.a.tooltip: "Mnoho [ShowReligionAdjective('catholic')] [pops|e] prejde na [ShowReligionName('anglican')]" # todo: NEW TRANSLATION
- flavor_eng.7.tt1: "Anne Boleyn je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.7.a.tooltip: "Mnoho [ShowReligionAdjective('catholic')] [Concept('pops','populácií')|e] prejde na [ShowReligionName('anglican')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_eng.7.tt1: "Anne Boleyn je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.7.tt2: "Jej asertívna a ambiciózna povaha, rovnako ako jej zapojenie do dvorskej politiky, rozčuľujú [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" # todo: CHANGED
  flavor_eng.7.b: "Prijať vrchnosť [GetCountry('PAP').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_eng.7.b.entry: "Prijmite nadvládu $PAP$." # todo: NEW TRANSLATION
@@ -75,7 +75,7 @@
  flavor_eng.9.b: "Žiadať odstránenie všetkých ohrad." # todo: NEW TRANSLATION
  flavor_eng.9.tt3: "Vlastníci pozemkov z [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] protestujú proti zasahovaniu do ich vlastníckych privilégií" # todo: NEW TRANSLATION
  flavor_eng.9.historical_info: "Kettovo povstanie bolo ľudové povstanie v Norfolku v Anglicku. Povstanie bolo dôsledkom ohradňovania poľnohospodárskej pôdy po celom Anglicku, čo obmedzilo prístup k zemi a viedlo k socio-ekonomickým sťažnostiam. Povstalci úspešne prevzali Norwich, ale nakoniec boli porazení, keď kráľovské sily prerazili mestské hradby." # todo: NEW TRANSLATION
- every_location_norfolk_kett_rebellion_tt: "Každý vlastnený [location|e] v [ShowProvinceDefinitionName('norfolk_province')] získa [ShowModifier('kett_rebellion')] na #W 5 rokov#!" # todo: NEW TRANSLATION
+ every_location_norfolk_kett_rebellion_tt: "Každý vlastnený [Concept('location','lokalita')|e] v [ShowProvinceDefinitionName('norfolk_province')] získa [ShowModifier('kett_rebellion')] na #W 5 rokov#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.10.title: "Vežové apartmány" # todo: NEW TRANSLATION
  flavor_eng.10.entry: "$flavor_eng.10.title$" # todo: NEW TRANSLATION
  flavor_eng.10.desc: "Pulzujúce [target_location.GetRank.GetName] [target_location.GetName] je majákom prosperity a obchodu, ale [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] je uväznený v úzkych priestoroch Westminsteru, obkolesený mocnými [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], ktorí hrabivo držia osobitné práva nad hlavným [target_location.GetRank.GetNameWithNoTooltip] už odpradávna. Títo obchodníci a kupci ovládli ulice a trhy a svojím vplyvom formujú smerovanie rastu a rozvoja [target_location.GetRank.GetNameWithNoTooltip].\n\nAby sme znovu potvrdili autoritu [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] a obnovili poriadok na uliciach, musí sa vymyslieť odvážny plán. Jednou možnosťou je výstavba veľkolepého nabrvého apartmánu pre [target_ruler.GetName] pri nábrežnej časti vedľa ohromujúcej Veže [target_location.GetNameWithNoTooltip]. Z tohto stanoviska môže [ROOT.GetCountry.GetGovernment.GetRulerTitle] pozorne sledovať mesto a ukázať [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')], kto má skutočnú moc." # todo: NEW TRANSLATION
@@ -108,9 +108,9 @@
  flavor_eng.13.a: "Investovať na severe." # todo: NEW TRANSLATION
  flavor_eng.13.b: "Posilniť juh." # todo: NEW TRANSLATION
  flavor_eng.13.c: "Zvoliť strednú cestu." # todo: NEW TRANSLATION
- flavor_eng.13.a.custom: "Každé [location|e] v [ShowAreaName('northumbria_area')] získa [prosperity|e]" # todo: NEW TRANSLATION
- flavor_eng.13.b.custom: "Každé [location|e] v [ShowAreaName('home_counties_area')] získa [prosperity|e]" # todo: NEW TRANSLATION
- flavor_eng.13.c.custom: "Každé [location|e] v [ShowAreaName('midlands_area')] získa [prosperity|e]" # todo: NEW TRANSLATION
+ flavor_eng.13.a.custom: "Každé [Concept('location','lokalita')|e] v [ShowAreaName('northumbria_area')] získa [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_eng.13.b.custom: "Každé [Concept('location','lokalita')|e] v [ShowAreaName('home_counties_area')] získa [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_eng.13.c.custom: "Každé [Concept('location','lokalita')|e] v [ShowAreaName('midlands_area')] získa [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.13.historical_info: "Po stáročia bolo kráľovstvo Northumbria mocným severným útvarom, oddeleným od zvyšku Anglicka kultúrne aj politicky. Hoci kráľovstvo nakoniec padlo, kultúrny rozkol medzi severom a juhom pretrváva dodnes." # todo: NEW TRANSLATION
  flavor_eng.14.title: "Uzavretie cudzích priorátov" # todo: NEW TRANSLATION
  flavor_eng.14.entry: "$flavor_eng.14.title$" # todo: NEW TRANSLATION
@@ -125,7 +125,7 @@
  flavor_eng.15.entry: "Intrigy Jane Grey" # todo: NEW TRANSLATION
  flavor_eng.15.desc: "Keďže je vzdialenou príbuznou [target_ruler.GetName] a bystrou nasledovníčkou [ShowReligionName('anglican')], [jane_grey.GetName] sa múdro presadila s pomocou ambicióznych príbuzných, aby presadila svoj nárok na trón [ROOT.GetCountry.GetAdjective]. Napriek svojej neochote a nedostatku podpory v celej krajine si získala značnú podporu v [ShowProvinceDefinitionName('northumberland_province')], ktorá je ochotná použiť silu, aby Lady zabezpečila korunu." # todo: CHANGED
  flavor_eng.15.a: "Jej nárok nebude uznaný!" # todo: NEW TRANSLATION
- flavor_eng.15.tt1: "Joan Grey je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.15.tt1: "Joan Grey je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  jane_grey_support: "Stúpenci Jane Grey" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_grey_support: "Podpora pre Jane Grey" # todo: NEW TRANSLATION
  jane_grey_support_nobles_joining: "Všetci [ShowReligionAdjective('anglican')] [ShowPopTypeName('nobles')] v [ShowAreaName('northumbria_area')] sa pripoja k [jane_grey_support.GetName]" # todo: NEW TRANSLATION
@@ -148,7 +148,7 @@
  flavor_eng.17.entry: "$flavor_eng.17.title$" # todo: NEW TRANSLATION
  flavor_eng.17.desc: "Námorná expedícia plaviaca sa na severovýchod s cieľom dosiahnuť brehy [ShowContinentName('asia')] sa stala obeťou lode mimo pobrežia [ShowLocationName('arkhangelsk')], kde preživší vedení slávnym objaviteľom [richard_chancellor.GetName] údajne začali obchodovať s miestnymi Slovanmi. Autorizujme obchodnú spoločnosť, aby sme uľahčili obchod s [target_country.GetAdjective] a zabezpečili si podiel na ziskovom obchode s [ShowGoodsName('fur')]." # todo: NEW TRANSLATION
  flavor_eng.17.a: "Skutočná obchodná príležitosť." # todo: NEW TRANSLATION
- flavor_eng.17.tt1: "Richard Chancellor je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.17.tt1: "Richard Chancellor je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.17.b: "Nechajme ich osudu." # todo: NEW TRANSLATION
  flavor_eng.17.tt2: "Osud Richarda Chancellora zostáva neistý" # todo: CHANGED
  flavor_eng.17.historical_info: "V roku 1553 poslala spoločnosť Merchant Adventurers tri lode smerom do Číny cez Severovýchodný priechod. Väčšina lodí sa stratila, ale loď Edward Bonaventure sa dostala do Bieleho mora a zakotvila pri ruskej dedine Archangelsk. Tam objavili ruské bohatstvo a po sánkach sa dopravil posol do Moskvy. Napriek rôznorodým záujmom vznikla Moskovská obchodná spoločnosť, ktorá sa osvedčila v ruskom kožušinovom obchode." # todo: NEW TRANSLATION
@@ -163,7 +163,7 @@
  flavor_eng.19.entry: "$flavor_eng.19.title$" # todo: NEW TRANSLATION
  flavor_eng.19.desc: "Finančný stratég [thomas_gresham.GetName] sa môže pochváliť bohatými skúsenosťami v obchode doma i v zahraničí. Upozorňuje na nebezpečenstvo manipulácie so zložením meny, ako je znehodnocovanie alebo pridávanie lacnejších kovov. Namiesto toho presadzuje štandardizáciu zloženia, hmotnosti a kvality mincí, aby sa zabezpečila ich spoľahlivosť a konzistencia. Musíme nájsť vhodné miesto, kde by sme plne využili jeho majstrovstvo pri udržiavaní integrity mincovníctva a podpore stability." # todo: CHANGED
  flavor_eng.19.a: "Pozvite ho na dvor." # todo: NEW TRANSLATION
- flavor_eng.19.tt1: "Thomas Gresham je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.19.tt1: "Thomas Gresham je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.19.b: "Predlžená ruka zákona." # todo: NEW TRANSLATION
  flavor_eng.19.tt2: "Je poverený presadzovaním zákonov proti falšovaniu a podvodom na trhu s menou, obnovuje verejnú dôveru v menu a podporuje jej stabilitu" # todo: CHANGED
  flavor_eng.19.c: "Náš finančný zástupca v zahraničí." # todo: NEW TRANSLATION
@@ -180,7 +180,7 @@
  flavor_eng.20.c: "Prepustite ich." # todo: NEW TRANSLATION
  flavor_eng.20.tt3: "Prepustenie uväznených [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] upokojí situáciu, ale posilní [ShowReligionAdjectiveWithNoTooltip('catholic')] hnutie na severe" # todo: NEW TRANSLATION
  flavor_eng.20.historical_info: "Kráľovná Alžbeta I. chcela v Anglicku upevniť protestantský anglikanizmus, no stretla sa s problémami, keď Mária, kráľovná Škótska, hľadala útočisko v jej kráľovstve. Mariino katolícke nároky na trón predstavovali hrozbu, preto ju Alžbeta uväznila. Mária potom bola stredobodom spiknutí s cieľom Alžbetu zvrhnúť, vrátane manželského návrhu na Norfolk, jediného vojvodu v Anglicku. Norfolkovo zdržanie viedlo k jeho uväzneniu, no Alžbeta podozrievala aj iných šľachticov, ako grófov z Northumberlandu, Westmorlandu a Cumberlandu. Keď boli predvolaní do Londýna, vzbúrili sa 9. novembra 1569. Povstanie, poháňané hnevom voči Tudorovcom, vyústilo do krutých opatrení zo strany Alžbety, vrátane popráv. Napriek tomu katolicizmus na severe pretrval a nasledovala dekáda prenasledovania." # todo: NEW TRANSLATION
- every_pop_in_province_pop_satisfaction_ultimate_penalty_and_northern_rebellion_tt: "Každý [pop|e] v tejto [province|e], ktorý nasleduje vieru [ShowReligionAdjectiveWithNoTooltip('catholic')] a už nepodporuje iného [rebel|e], stratí [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] a pridá sa k [northern_rebellion.GetName]" # todo: NEW TRANSLATION
+ every_pop_in_province_pop_satisfaction_ultimate_penalty_and_northern_rebellion_tt: "Každý [Concept('pop','populácia')|e] v tejto [Concept('province','provincii')|e], ktorý nasleduje vieru [ShowReligionAdjectiveWithNoTooltip('catholic')] a už nepodporuje iného [Concept('rebel','povstalca')|e], stratí [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e] a pridá sa k [northern_rebellion.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.21.title: "Nemravní špekulanti" # todo: NEW TRANSLATION
  flavor_eng.21.entry: "$flavor_eng.21.title$" # todo: NEW TRANSLATION
  flavor_eng.21.desc: "Obchod s komoditami sa často odohráva v verejných zariadeniach kvôli hluku a občasným bitkám medzi obchodníkmi. Tento trh sa však dramaticky rozrástol a prospešné by bolo jeho centralizovanie, aby [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] dostávala svoj podiel. Zriadme centrum na organizovanie maklérov a uľahčenie obchodu, čím posilníme [ROOT.GetCountry.GetAdjective] obchod a vylúčime nelegálnu činnosť." # todo: NEW TRANSLATION
@@ -199,7 +199,7 @@
  flavor_eng.23.desc: "Pôvodne vychovaný v [ROOT.GetCountry.GetName] a lojálny k [ROOT.GetCountry.GetFlavorRank], [target_character.GetName] slúžil v miestnej [ROOT.GetCountry.GetAdjectiveWithNoTooltip] správe v [ShowRegionName('ireland_region')]. Nedávno sa však stal odporcom, postavil sa proti mnohým našim základným politikám. Povstal, uzavrel aliancie s inými [ShowCultureNameWithNoTooltip('irish')] náčelníkmi a získal zahraničnú podporu proti svojim pánom. Taká miera nevernosti a vnútorných sporov ohrozuje našu stabilitu a celá situácia vážne ohrozuje naše vnútorné uchopenie moci!" # todo: CHANGED
  flavor_eng.23.historical_info: "Hugh O'Neill žil v Anglicku v 1560-tych rokoch, kde slúžil vláde až do svojho povstania v roku 1594. Bol nespokojný s politikou Angličanov, ktorí hrali náčelníkov proti sebe, a nahneval ho aj anglický odmietnutý návrat pozemkov udelených jeho starému otcovi. Nakoniec zjednotil írskych náčelníkov a hľadal pomoc katolíckeho Španielska proti protestantskému Anglicku. Po roku 1595 vytvoril krehké, no účinné spojenectvo a dosiahol niekoľko víťazstiev nad Alžbetinými veliteľmi v Írsku. V roku 1601 však bol porazený pri pokuse spojiť sa so španielskou silou pri Kinsale. S rozptýlenými spojencami sa stiahol na Ulster. V roku 1603 uzavrel mier s Angličanmi, vzdal sa svojich kmeňových právomocí a neskôr ho kráľ Jakub I. udelil amnestiu." # todo: NEW TRANSLATION
  flavor_eng.23.a: "Nie sme pobavení!" # todo: NEW TRANSLATION
- irish_pops_rise_up_tt: "[ShowCultureNameWithNoTooltip('irish')] [pops|e] v každej obsadenej [location|e] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] a podporia [tyrone_rebels.GetName]" # todo: NEW TRANSLATION
+ irish_pops_rise_up_tt: "[ShowCultureNameWithNoTooltip('irish')] [Concept('pops','Populácie')|e] v každej obsadenej [Concept('location','lokalite')|e] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e] a podporia [tyrone_rebels.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  tyrone_rebellion: "Tyroneovo povstanie" # todo: NEW TRANSLATION
  flavor_eng.24.title: "The [ShowGovernmentReformNameWithNoTooltip('petition_of_rights')]" # todo: NEW TRANSLATION
  flavor_eng.24.entry: "Petícia práv" # todo: NEW TRANSLATION
@@ -216,7 +216,7 @@
  flavor_eng.25.b: "Podriadiť sa [ROOT.GetCountry.GetGovernment.GetParliament.GetName]..." # todo: NEW TRANSLATION
  flavor_eng.25.b.entry: "Podriadiť sa nášmu parlamentu..." # todo: NEW TRANSLATION
  parliamentary_rebellion: "Parlamentné povstanie" # todo: NEW TRANSLATION
- flavor_eng25_rebellion_tt: "Približne #Y [ROOT.GetVariable('total_rebel_pops_variable').GetValue|V0]K#! [pops|e] z [ROOT.GetVariable('total_affected_provinces_variable').GetValue] [provinces|e] v [ShowRegionName('great_britain_region')] ako napríklad [target_province.GetName] sa pridá k [target_rebel.GetName]" # todo: NEW TRANSLATION
+ flavor_eng25_rebellion_tt: "Približne #Y [ROOT.GetVariable('total_rebel_pops_variable').GetValue|V0]K#! [Concept('pops','populáciám')|e] z [ROOT.GetVariable('total_affected_provinces_variable').GetValue] [Concept('provinces','provincií')|e] v [ShowRegionName('great_britain_region')] ako napríklad [target_province.GetName] sa pridá k [target_rebel.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.26.title: "The [ShowPolicyNameWithNoTooltip('act_of_navigation')]" # todo: NEW TRANSLATION
  flavor_eng.26.entry: "Navigačný zákon" # todo: NEW TRANSLATION
  flavor_eng.26.desc: "More je životodarnou cestou nášho [ROOT.GetCountry.GetFlavorRank], no zahraniční obchodníci z [target_country.GetName] sa tu nabaľujú na našom obchode, zatiaľ čo naši vlastní obchodníci sú v spoločných trhoch prekonávaní. V miestach ako [ShowLocationName('london')] si chamtiví [target_country.GetAdjectiveWithNoTooltip] obchodníci pevne zabočili pazúry do zisku, ktorý by inak patril nám. Pod pevnou taktovkou [target_character1.GetName] požaduje naše [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] kroky.\n\nNávrh novej politiky, [ShowPolicyName('act_of_navigation')], by posunul naše trhy k merkantilizmu a okamžite uvalil embargo proti obchodníkom [target_character2.GetName]. Avšak rovnováha moci a diplomacie je krehká a musíme túto záležitosť riešiť s najvyššou opatrnosťou." # todo: NEW TRANSLATION
@@ -243,7 +243,7 @@
  flavor_eng.29.historical_info: "Povstanie Jakobitov vedené grófom Marom začalo v roku 1715. Do konca septembra mal pod kontrolou väčšinu Vysočín a jeho armáda čítala približne 5 000 mužov, pričom denne pribúdali ďalší. Všetko sa to však dialo bez toho, aby o tom informovali kráľa, ktorého menovali. Starý nárokovaný kráľ, James III., o situácii ešte nevedel. Správa bola poslaná kráľovi a počet síl naďalej rástol. Gróf potom presunul svoju armádu na Perth a založil tam základňu po dobytí mesta. Medzitým sa na juhu formovala ďalšia jakobitská armáda. Starý nárokovaný kráľ začal pripravovať svoju cestu do Škótska a korunováciu. Začiatkom novembra čítala severná jakobitská armáda okolo 12 000 mužov, prevažne klanových bojovníkov z Vysočín. Gróf sa rozhodol pochodovať na juh, kde sa čoskoro stretol s vojskom vojvodu z Argyllu, jedinými zostávajúcimi vládnymi vojskami v Škótsku. Jakobitské sily boli zle riadené a rozdelené. Južná armáda pochodovala na juh, aby povstala v Lancashiru namiesto toho, aby zasiahla na bok vojvodu z Argyllu, zatiaľ čo oveľa menšia sila vojvodu porazila väčšiu severnú armádu Jakobitov pri Sheriffmuir 13. novembra. Južná armáda bola tiež porazená pri Prestone inými vládnymi silami v Anglicku. Jakobiti sa boli nútení stiahnuť do Perthu, stále čakajúc na svojho vodcu. Starý nárokovaný kráľ dorazil do Škótska 22. decembra z Dunkerque, ale záležitosť už bola rozhodnutá, keď vojvoda z Argyllu získaval posily skúsených vojsk a pripravoval presilu na pochod na sever. Kráľ James III. bol opäť prinútený ustúpiť po trápených šiestich týždňoch v Škótsku." # todo: NEW TRANSLATION
  flavor_eng.29.a: "Rozdrvíme ich!" # todo: NEW TRANSLATION
  jacobite_uprising: "Jakobitské povstanie" # todo: NEW TRANSLATION
- jacobite_uprising_joining: "Všetky [ShowCultureName('highland')] [pops|e] v [ShowAreaName('scottish_highlands_area')] sa pridajú k [jacobite_uprising.GetName]" # todo: NEW TRANSLATION
+ jacobite_uprising_joining: "Všetky [ShowCultureName('highland')] [Concept('pops','populácie')|e] v [ShowAreaName('scottish_highlands_area')] sa pridajú k [jacobite_uprising.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.30.title: "[robert_walpole.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eng.30.entry: "Robert Walpole" # todo: NEW TRANSLATION
  flavor_eng.30.desc: "Štátne umenie je zložitý tanec medzi diplomaciou a mäkkou silou. Tí, ktorí dokážu elegantne manévrovať chodbami moci v [ROOT.GetCountry.GetCapital.GetName] aj po ochutnaní sladkosti moci, často pripravujú pôdu pre veľké politické kariéry. Dozvedeli sme sa o veľmi schopnom členovi nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle], menom [robert_walpole.GetName]. Podľa očitých svedkov preukázal pevné, spravodlivé a diplomatické postoje pri rokovaniach, čím sa ukázal ako hlas rozumu a administratívnej šikovnosti." # todo: CHANGED
@@ -290,9 +290,9 @@
  flavor_eng.37.a: "Potrestať všetkých [ShowReligionAdjectiveWithNoTooltip('catholic')]!" # todo: NEW TRANSLATION
  eng_harsh_punishment_of_catholics: "Prísne tresty pre katolíkov" # todo: NEW TRANSLATION
  flavor_eng.37.b: "Potrestajte len zjavné sprisahancov." # todo: CHANGED
- flavor_eng.37.a.all_cath_pops: "Všetky [ShowReligionAdjective('catholic')] [pops|e] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.37.a.all_cath_pops: "Všetky [ShowReligionAdjective('catholic')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.37.historical_info: "Pušné sprisahanie bolo zlyhaný pokus o zavraždenie kráľa Jakuba I. počas slávnostného otvorenia parlamentu. Plán odpáliť Sněmovňu lordov bol odhalený a prekazený, pričom konšpirátori boli zatknutí a popravení. Udalosť sa dnes pripomína ako Guy Fawkes Night s ohňostrojmi a vatrami." # todo: NEW TRANSLATION
- every_other_catholic_kingdom_or_pap_or_empire_lose_opinion_tt: "[GetCountry('PAP').GetName] a každé [ShowReligionAdjective('catholic')] impérium a kráľovstvo [country|e] stratia [ShowBiasValue('eng_harsh_punishment_of_catholics')|-=0] [opinion|e] voči nám" # todo: NEW TRANSLATION
+ every_other_catholic_kingdom_or_pap_or_empire_lose_opinion_tt: "[GetCountry('PAP').GetName] a každé [ShowReligionAdjective('catholic')] impérium a kráľovstvo [Concept('country','krajina')|e] stratia [ShowBiasValue('eng_harsh_punishment_of_catholics')|-=0] [Concept('opinion','názor')|e] voči nám" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.38.title: "[target_artist.GetLastName] Publikuje [ShowWorkOfArtNameWithNoTooltip('the_leviathan')]" # todo: NEW TRANSLATION
  flavor_eng.38.entry: "Hobbes vydáva Leviatana" # todo: NEW TRANSLATION
  flavor_eng.38.desc: "Útrapy vojny doma i v zahraničí nedávno poslúžili ako veľká motivácia pre [target_artist.GetName] spísať jedno zo svojich najväčších diel, [ShowWorkOfArtName('the_leviathan')]. Stručne, publikácia pojednáva o potrebe silnej centrálnej vlády na zamedzenie násilia a nestability spôsobenej konfliktmi medzi vnútornými frakciami. Také dielo určite posilní našu autoritu a dodá nám dôveryhodnosť pri centralizácii [ROOT.GetCountry.GetFlavorRank]!" # todo: CHANGED
@@ -323,14 +323,14 @@
  flavor_eng.43.historical_info: "Anglický básnik, dramatik a herec William Shakespeare je často nazývaný anglickým národným básnikom a mnohými považovaný za najväčšieho dramatika všetkých čias. Jeho hry napísané koncom 16. a začiatkom 17. storočia pre malé repetičné divadlo sú dnes hrané a čítané častejšie a vo viacerých krajinách než kedykoľvek predtým. Proroctvo jeho veľkého súčasníka, básnika a dramatika Bena Jonsona, že Shakespeare 'nebol človekom svojej doby, ale pre všetky časy', sa naplnilo." # todo: NEW TRANSLATION
  flavor_eng.43.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  flavor_eng.43.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
- flavor_eng.43.tt: "[william_shakespeare.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_eng.43.tt: "[william_shakespeare.GetNameWithNoTooltip] je pridaný ako [Concept('character','postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.43.b: "Netreba zle napísané drámy." # todo: NEW TRANSLATION
  flavor_eng.44.title: "Šľachtickí sympatizanti lollardov" # todo: NEW TRANSLATION
  flavor_eng.44.entry: "$flavor_eng.44.title$" # todo: NEW TRANSLATION
  flavor_eng.44.desc: "Hnutie lollardov získalo v [target_province.GetName] niekoľko podporovateľov medzi [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], pričom niektorí aristokrati ako [target_character.GetName] otvorene obhajujú ich radikálnu správu o sociálnej spravodlivosti a náboženskej reforme.\n\nTíto šľachtickí sympatizanti predstavujú potenciálnu hrozbu pre zavedený poriadok, pretože majú moc a vplyv šíriť lollardské myšlienky a podkopať autoritu koruny a Cirkvi." # todo: NEW TRANSLATION
  flavor_eng.44.a: "Potlačiť šľachtu." # todo: NEW TRANSLATION
  flavor_eng.44.b: "Nechajme pánov robiť, čo chcú." # todo: NEW TRANSLATION
- flavor_eng.44.b.tt: "Mnoho [ShowReligionAdjective('catholic')] [pops|e] v [target_province.GetName] prejde na [ShowReligionName('lollardy')]" # todo: NEW TRANSLATION
+ flavor_eng.44.b.tt: "Mnoho [ShowReligionAdjective('catholic')] [Concept('pops','populácií')|e] v [target_province.GetName] prejde na [ShowReligionName('lollardy')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  STATIC_MODIFIER_NAME_suppressing_heresy: "Potláčanie kacírstva" # todo: NEW TRANSLATION
  flavor_eng.45.title: "Založenie rodu [target_dynasty.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eng.45.entry: "Založenie domu York" # todo: NEW TRANSLATION
@@ -370,7 +370,7 @@
  flavor_eng.51.c: "Vymenovať našich duchovných vodcov." # todo: NEW TRANSLATION
  flavor_eng.51.d: "Podporiť umenie." # todo: NEW TRANSLATION
  flavor_eng.51.e: "Poctiť núdznych veteránov." # todo: NEW TRANSLATION
- flavor_eng.51.order_tt: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] sa pripojí k [ShowChivalricOrderName('order_of_the_garter')] ako zakladajúci člen, čím získa #Y +15#! [dip|e] a #Y +0.05#! mesačnej prestíže. Naše kráľovstvo tiež získa #Y +0.05#! mesačnej prestíže." # todo: NEW TRANSLATION
+ flavor_eng.51.order_tt: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] sa pripojí k [ShowChivalricOrderName('order_of_the_garter')] ako zakladajúci člen, čím získa #Y +15#! [Concept('dip','diplomatická schopnosť')|e] a #Y +0.05#! mesačnej prestíže. Naše kráľovstvo tiež získa #Y +0.05#! mesačnej prestíže." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.52.title: "List [target_character.GetLastNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eng.52.entry: "Fieschiho list" # todo: NEW TRANSLATION
  flavor_eng.52.desc: "[target_character.GetName], [target_country.GetAdjective] notár, tvrdí, že [deadward.GetName] - náš bývalý kráľ, o ktorom sa predpokladalo, že bol brutálne zavraždený hnusnou dynastiou [ShowDynastyName('mortimer_dynasty')] - je v skutočnosti stále nažive. [target_character.GetLastName] tvrdí, že [deadward.GetHeSheFormal] úspešne unikol z väzenia a uchýlil sa do pustovne blízko [target_location.GetName], kde žije ako mních.\n\nList pôsobí autenticky, ale nemôžeme si byť istí pravdivosťou tvrdení. [deadward.GetShortNameWithNoTooltip] bol všeobecne považovaný za neschopného panovníka, no mal mocných podporovateľov. Ak by sa tieto tvrdenia ukázali ako pravdivé, mohli by byť zničujúce pre súčasný poriadok." # todo: CHANGED
@@ -389,7 +389,7 @@
  flavor_eng.54.a: "To sa nás netýka." # todo: NEW TRANSLATION
  flavor_eng.54.b: "To sa nás netýka." # todo: NEW TRANSLATION
  flavor_eng.54.c: "Urobte ústupky." # todo: NEW TRANSLATION
- flavor_eng.54.tt: "[wat_tyler.GetNameWithNoTooltip] je pridaný ako [character|e]" # todo: NEW TRANSLATION
+ flavor_eng.54.tt: "[wat_tyler.GetNameWithNoTooltip] je pridaný ako [Concept('character','postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  wat_tyler_rebellion: "Wat Tyler's Rebellion" # todo: NEW TRANSLATION
  flavor_eng.54.historical_info: "Sedliacka vzbura bola veľké ľudové povstanie a považuje sa za jedno z najvýznamnejších a najrozsiahlejších povstaní v anglickej histórii. Široká chudoba, vysoké dane a následky Čiernej smrti boli faktory, ktoré život sedliakov urobili neznesiteľným, pričom už trpeli pod prísnym feudálnym systémom. Povstanie bolo nakoniec potlačené a mnohí vodcovia povstania boli zajatí a popravení." # todo: NEW TRANSLATION
  flavor_eng.55.title: "[simon_sudbury.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -436,7 +436,7 @@
  flavor_eng.64.entry: "Henry Yevele" # todo: NEW TRANSLATION
  flavor_eng.64.desc: "Nedávno u nás podpísaný majster murár [henry_yevele.GetName] upútal našu pozornosť vďaka vynikajúcej kvalite svojej práce. Taký zručný remeselník by sa určite dal dobre využiť na zvýšenie slávy a impozantnosti našich palácov." # todo: CHANGED
  flavor_eng.64.a: "Predstavte ho elitám." # todo: CHANGED
- flavor_eng.64.tt1: "Henry Yevele je pridaný ako [character|e] a stane sa presláveným vďaka svojim dielam" # todo: CHANGED
+ flavor_eng.64.tt1: "Henry Yevele je pridaný ako [Concept('character','postava')|e] a stane sa presláveným vďaka svojim dielam" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.64.b: "Nech si nájde vlastnú cestu." # todo: CHANGED
  flavor_eng.64.tt2: "Henry Yevele hľadá zamestnanie inde" # todo: CHANGED
  flavor_eng.64.historical_info: "Henry Yevele bol anglický architekt, ktorý sa podieľal na výstavbe a renovácii niekoľkých významných stavieb v neskorom stredoveku. Bol menovaný za 'kráľovského murára', čo mu umožnilo realizovať významné architektonické projekty. Medzi jeho najslávnejšie diela patria Katedrála v Canterbury a vonkajšia hradba a veže Tower of London." # todo: NEW TRANSLATION
@@ -451,7 +451,7 @@
  flavor_eng.66.entry: "$flavor_eng.66.title$" # todo: NEW TRANSLATION
  flavor_eng.66.desc: "Ako sa uvádza, baníci z [cornwall.GetName] a [devon.GetName] začali zriaďovať vlastné nezávislé [ShowBuildingTypeName('stannary_court')] na účel vynucovania stannary práva. Pravdepodobne ostanú v platnosti až do chvíle, keď prestanú byť potrebné." # todo: NEW TRANSLATION
  flavor_eng.66.a: "Súhlasí sa." # todo: NEW TRANSLATION
- flavor_eng.66.a.custom: "A [ShowBuildingTypeName('stannary_court')] je tiež postavený v každom inom [location|e] v celom [ShowProvinceDefinitionName('cornwall_province')] a [ShowProvinceDefinitionName('devon_province')]" # todo: NEW TRANSLATION
+ flavor_eng.66.a.custom: "A [ShowBuildingTypeName('stannary_court')] je tiež postavený v každom inom [Concept('location','lokalite')|e] v celom [ShowProvinceDefinitionName('cornwall_province')] a [ShowProvinceDefinitionName('devon_province')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.66.historical_info: "Stannary súdy boli právne a administratívne inštitúcie v Cornwalle a Devone, ktoré mali bohaté zásoby cínu a veľký priemysel ťaženia. Súdy získali osobitné privilégiá, ktoré im dávali jurisdikciu nad rôznymi aspektmi týkajúcimi sa ťaženia cínu. To zahŕňalo reguláciu, zdanenie a právne záležitosti." # todo: NEW TRANSLATION
  flavor_eng.67.title: "Komercializácia ťažby cínu"
  flavor_eng.67.entry: "$flavor_eng.67.title$" # todo: NEW TRANSLATION
@@ -469,7 +469,7 @@
  flavor_eng.69.entry: "$flavor_eng.69.title$" # todo: NEW TRANSLATION
  flavor_eng.69.desc: "Kontroverzný filozof a teológ [william_ockham.GetName] sa momentálne venuje filologickým štúdiám pod patronátom [william_patron.GetName]. Vyvinul nový princíp riešenia problémov, ktorý zdôrazňuje hľadanie „vysvetlení konštruovaných s čo najmenším možným množstvom prvkov”.\n\nJe veľmi nepopulárny u [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] kvôli svojmu odporu voči určitej cirkevnej doktríne a obhajobe oddelenia cirkvi od štátu. Napriek tomu by jeho príspevky boli užitočné pre našich veľkých mysliteľov." # todo: CHANGED
  flavor_eng.69.a: "Podporiť jeho uplatnenie." # todo: NEW TRANSLATION
- flavor_eng.69.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú pobúrení heretickými učením, sentiment zosilnený politikou [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.69.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú pobúrení heretickými učením, sentiment zosilnený politikou [ShowPolicyName('strict_censorship')] [Concept('policy','politikou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.69.b: "Označiť jeho učenie za heretické." # todo: NEW TRANSLATION
  flavor_eng.69.historical_info: "Occamova britva je princíp riešenia problémov a uvažovania. Považuje sa za filozofický koncept používaný pri rozhodovaní, vysvetľujúci, že najjednoduchšie riešenie je najpravdepodobnejšie. Princíp je pripisovaný Williamovi z Ockhamu, filozofovi a františkánskemu mníchovi, ktorý žil v Anglicku počas 14. storočia." # todo: NEW TRANSLATION
  flavor_eng.70.title: "Úpadok [ShowBuildingTypeName('cinque_port')]" # todo: RETRANSLATED ENGLISH
@@ -616,9 +616,9 @@
  flavor_eng.94.entry: "John Capgrave" # todo: NEW TRANSLATION
  flavor_eng.94.desc: "Výnimočný lektor a uznávaný teológ, diela [john_capgrave.GetName] zahŕňajú zbierku životov [ROOT.GetCountry.GetAdjective] svätých. Zvyčajne sa sústreďuje na rôzne aspekty náboženského života, nedávno začal zostavovať rámec svetových dejín používajúc augustiniánske východisko ako referenčný bod. V týchto spisoch tiež moralizuje historické udalosti a popisy, snažiac sa poskytnúť duchovné a morálne vodítko.\n\nAko veľmi aktívna osoba v mnohých vzdelávacích kruhoch a široko uznávaná v nich by mohli byť jeho talenty využité na inšpirovanie niektorých z našich najväčších mysliteľov." # todo: NEW TRANSLATION
  flavor_eng.94.a: "Vítaný prírastok na dvore." # todo: NEW TRANSLATION
- flavor_eng.94.tt1: "John Capgrave je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.94.tt1: "John Capgrave je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.94.b: "Nech učí svoje interpretácie slobodne." # todo: NEW TRANSLATION
- flavor_eng.94.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadria nespokojnosť s tým, že sa postavil proti [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.94.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadria nespokojnosť s tým, že sa postavil proti [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.94.c: "Spáliť ho za kacírstvo." # todo: NEW TRANSLATION
  flavor_eng.94.tt3: "[ShowPolicyName('de_heretico_comburendo')] ustanovuje, že kacíri musia byť upálení" # todo: NEW TRANSLATION
  flavor_eng.94.historical_info: "John Capgrave bol historik, teológ a spisovateľ. Je známy svojimi historickými dielami a teologickými traktátmi, predovšetkým #italic Chronicle of England#!, prepracovaním dejín Anglicka od jeho legendárnych počiatkov až po rok vydania. Jeho príspevky do stredovekej literatúry a histórie sú neoceniteľné pre historikov a poskytujú jedinečný vhľad do každodenného života 15. storočia." # todo: NEW TRANSLATION
@@ -642,7 +642,7 @@
  flavor_eng.96.entry: "John Thornton" # todo: NEW TRANSLATION
  flavor_eng.96.desc: "Deán [target_location.GetName] nedávno zadal zasklenie [target_location.GetNameWithNoTooltip] [ShowBuildingTypeName('cathedral')] a práce má vykonať vysoko odporúčaný sklár a vitrážový umelec [john_thornton.GetName]. Je vysoko odporúčaný vďaka výrobe jedného z najlepších skiel v krajine a jeho príspevky k gotickému architektonickému štýlu neostali nepovšimnuté." # todo: CHANGED
  flavor_eng.96.a: "Rozšírte správu o jeho výnimočnom talente." # todo: CHANGED
- flavor_eng.96.tt1: "John Thornton je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.96.tt1: "John Thornton je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.96.b: "Náš hrad v [windsor.GetNameWithNoTooltip] by si zaslúžil úpravu." # todo: CHANGED
  flavor_eng.96.b.entry: "Náš hrad v [ShowLocationNameWithNoTooltip('windsor')] by potreboval renováciu." # todo: NEW TRANSLATION
  flavor_eng.96.c: "Nechajte ho byť." # todo: CHANGED
@@ -655,7 +655,7 @@
  flavor_eng.97.a.custom: "Preložená kópia je vydaná na počesť [john_wycliffe.GetName]" # todo: NEW TRANSLATION
  flavor_eng.97.a.custom2: "Publikovanie preloženej kópie Biblie je zabránené" # todo: NEW TRANSLATION
  flavor_eng.97.tt1: "Politika #italic De Heretico Comburendo#! zakazuje túto publikáciu a pokusy o ňu vyvolajú pobúrenie" # todo: NEW TRANSLATION
- flavor_eng.97.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní s touto publikáciou kvôli [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.97.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní s touto publikáciou kvôli [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.97.b: "Vystopovať podnecovateľov." # todo: NEW TRANSLATION
  flavor_eng.97.tt3: "Politika #italic De Heretico Comburendo#! povoľuje [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] upáliť vinníkov stojacich za touto akciou" # todo: NEW TRANSLATION
  flavor_eng.97.c: "Postaviť sa proti tomu." # todo: NEW TRANSLATION
@@ -710,7 +710,7 @@
  flavor_eng.102.desc: "Keďže pôsobil v niekoľkých vojenských kampaniach, ako mierový sudca a vysoký šerif vo svojom rodnom hrabstve [ShowProvinceDefinitionName('herefordshire_province')], [john_oldcastle.GetName] má k dispozícii rozsiahlu škálu schopností a skúseností.\n\nMali by sme ho poveriť vedením našich ozbrojených síl, napriek jeho kacírskym presvedčeniam." # todo: NEW TRANSLATION
  flavor_eng.102.desc_lollard: "Po službe v niekoľkých vojenských kampaniach, ako mierový sudca a vrchný šerif vo svojom domovskom grófstve [ShowProvinceDefinitionName('herefordshire_province')], [john_oldcastle.GetName] má k dispozícii rozsiahly súbor zručností a skúseností.\n\nKeďže je stúpencom našej viery, mali by sme ho naverbovať, aby viedol naše ozbrojené sily." # todo: NEW TRANSLATION
  flavor_eng.102.a: "Využiť jeho schopnosti." # todo: NEW TRANSLATION
- flavor_eng.102.tt1: "John Oldcastle je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.102.tt1: "John Oldcastle je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.102.b: "Je zblúdený a nie je vítaný." # todo: NEW TRANSLATION
  flavor_eng.102.tt2: "John Oldcastle hľadá zamestnanie inde" # todo: CHANGED
  flavor_eng.102.c: "Nech slúži v inom postavení." # todo: CHANGED
@@ -719,21 +719,21 @@
  flavor_eng.103.entry: "$flavor_eng.103.title$" # todo: NEW TRANSLATION
  flavor_eng.103.desc: "Absolvent [ShowLocationName('oxford')] a blízky priateľ [john_wycliffe.GetName], [nicholas_of_hereford.GetShortName] z [ShowLocationName('hereford')] otvorene kritizuje vnímaný luxus Cirkvi a je silným zástancom 'práva každého kresťana dosiahnuť vlastnú vieru' čítaním Biblie.\n\nNedávno sa predpokladá, že spolupracuje na preklade našej svätej knihy, aby ju sprístupnil obyčajným ľuďom." # todo: NEW TRANSLATION
  flavor_eng.103.a: "Pozvať ho na dvor." # todo: NEW TRANSLATION
- flavor_eng.103.tt1: "Nicholas je pridaný ako [character|e]" # todo: CHANGED
- flavor_eng.103.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú rozhorčení, že na dvore slúži kacír, kvôli [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.103.tt1: "Nicholas je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ flavor_eng.103.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú rozhorčení, že na dvore slúži kacír, kvôli [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.103.b: "Upáľte ho za kacírstvo." # todo: NEW TRANSLATION
  flavor_eng.103.tt3: "Politika [ShowPolicyName('de_heretico_comburendo')] stanovuje, že heretici musia byť upálení" # todo: RETRANSLATED ENGLISH
  flavor_eng.103.c: "Dovoľte mu prekladať inde." # todo: NEW TRANSLATION
- flavor_eng.103.tt4: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť z toho, že sa postavil proti [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.103.tt4: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť z toho, že sa postavil proti [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.103.historical_info: "Nikolas z Herefordu bol teológ a učenec, najviac známy svojím spojením s vplyvným anglickým filozofom a teológom Johnom Wycliffom. Zostal poprednou postavou wyklifitského hnutia, ktorého cieľom bolo priniesť náboženské a teologické reformy v rámci Katolíckej cirkvi." # todo: NEW TRANSLATION
  flavor_eng.104.title: "[margaret_beaufort.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eng.104.entry: "Margaret Beaufort" # todo: NEW TRANSLATION
  flavor_eng.104.desc: "Prišiel čas vybrať nevestu pre [brother.GetName], brata [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Potomok [henry_iii.GetName], [margaret_beaufort.GetName] je prefíkaná a bystrá a posílila by nárok rodu [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] v prípade, že [ROOT.GetCountry.GetGovernment.GetRuler.GetName] nezanechá legitímnych potomkov po svojom odchode.\n\nTvrdí, že koná podľa božského vedenia, nie je však obľúbená u [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], ktorí určite záporia proti tomuto zväzku." # todo: CHANGED
  flavor_eng.104.a: "Nech zaznejú svadobné zvony po celom [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." # todo: CHANGED
  flavor_eng.104.a.entry: "Nech sa svadobné zvony ozývajú po celom hlavnom meste." # todo: NEW TRANSLATION
- flavor_eng.104.tt1: "Margaret Beaufort je pridaná ako [character|e] a porodí Henryho Tudora" # todo: CHANGED
+ flavor_eng.104.tt1: "Margaret Beaufort je pridaná ako [Concept('character','postava')|e] a porodí Henryho Tudora" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.104.b: "Tá jedna je smolná." # todo: CHANGED
- flavor_eng.104.tt2: "Margaret Beaufort je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.104.tt2: "Margaret Beaufort je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.104.historical_info: "Margaret Beaufort bola matkou Henricha VII., ktorého porodila, keď mala len 13 rokov. Zohrala významnú úlohu v jeho snahách uchopiť anglický trón a aktívne sa podieľala na sprisahaniach a plánoch, ktoré tomu napomohli. Je tiež známa svojimi silnými náboženskými presvedčeniami a oddanosťou a za založenie Christ's College a St. John's College na Univerzite v Cambridge." # todo: NEW TRANSLATION
  variable_supports_house_of_lancaster_tt: "Dvor podporuje [ShowDynastyName('lancaster_dynasty')]" # todo: NEW TRANSLATION
  variable_supports_house_of_york_tt: "Dvor podporuje [ShowDynastyName('york_dynasty')]" # todo: NEW TRANSLATION
@@ -754,10 +754,10 @@
  flavor_eng.106.desc: "[william_caxton.GetName] – priekopnícky obchodník a spisovateľ – sa obrátil na miestne úrady v [target_location.GetName] s požiadavkou založiť akýsi tlačiarenský lis, ktorý by umožnil rýchle rozmnožovanie kníh. Táto mašina sa už používa v Nizozemsku a predstavovala by inováciu pre [ROOT.GetCountry.GetAdjective] tlačiarenský priemysel." # todo: NEW TRANSLATION
  flavor_eng.106.a: "Nech si otvorí dielňu v [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." # todo: CHANGED
  flavor_eng.106.a.entry: "Nech si otvorí dielňu v hlavnom meste." # todo: NEW TRANSLATION
- flavor_eng.106.tt1: "William Caxton je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.106.tt1: "William Caxton je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.106.tt2: "Zriaďuje tlačiareň a začína prekladať početné diela z kontinentu" # todo: CHANGED
  flavor_eng.106.tt3: "Jeho slabé prekladateľské schopnosti zvyšujú počet zahraničných slov zavedených do jazyka [english.GetName]" # todo: CHANGED
- flavor_eng.106.tt4: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní, pretože to odporuje [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.106.tt4: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní, pretože to odporuje [ShowPolicyName('strict_censorship')] [Concept('policy','politika')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.106.b: "Odmietnuť jeho žiadosť." # todo: NEW TRANSLATION
  flavor_eng.106.tt5: "William Caxton hľadá príležitosti inde" # todo: CHANGED
  flavor_eng.106.historical_info: "William Caxton bol prvým Angličanom, ktorý založil tlačiarenský lis v Anglicku a vytlačil prvú knihu v anglickom jazyku. Jeho vydania pomohli štandardizovať angličtinu a prispeli k šíreniu poznania. Jeho prácu väčšinou financovala šľachta, vrátane kráľovej matky Margaret Beaufort." # todo: NEW TRANSLATION
@@ -767,7 +767,7 @@
  flavor_eng.107.desc: "Vďaka výbornému riadeniu krajiny, [ROOT.GetCountry.GetGovernment.GetRuler.GetName] $flavor_eng.107.desc_common$" # todo: NEW TRANSLATION
  flavor_eng.107.desc_henry: "[henry_tudor.GetName] $flavor_eng.107.desc_common$\n\nAko mimoriadne zručný diplomata, [henry_tudor.GetShortNameWithNoTooltip] dokáže uspokojiť stavy a zároveň zavádzať nové dane." # todo: NEW TRANSLATION
  flavor_eng.107.a: "Mier a ekonomická prosperita." # todo: NEW TRANSLATION
- flavor_eng.107.a.custom: "Umožní prístup k [ShowGovernmentReformName('benevolence_tax_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ flavor_eng.107.a.custom: "Umožní prístup k [ShowGovernmentReformName('benevolence_tax_reform')] [Concept('government_reform','reforme vlády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.107.b: "To zabezpečí náš blahobyt." # todo: NEW TRANSLATION
  flavor_eng.107.c: "Užívajme si stabilitu, ktorú sme vytvorili." # todo: NEW TRANSLATION
  flavor_eng.107.historical_info: "Panovanie Henricha VII. pomohlo stabilizovať kráľovské financie a upevniť moc monarchie. S pomocou svojho kancelára Johna Mortona kráľ zaviedol platenie benevolenčnej dane s argumentom, že ten, kto žije skromne, musí šetriť a teda si ju môže dovoliť, zatiaľ čo ten, kto žije rozhadzujúco, je zjavne bohatý a tiež ju môže zaplatiť." # todo: NEW TRANSLATION
@@ -782,7 +782,7 @@
  flavor_eng.110.entry: "Elizabeth Woodville" # todo: NEW TRANSLATION
  flavor_eng.110.desc: "[ROOT.GetCountry.GetGovernment.GetRulerTitle] sa zamiloval do mladej dámy [elizabeth_woodville.GetName], menšej šľachtičnej a poddané koruny. Tento zväzok pravdepodobne spôsobí #italic cause célèbre#!, čo vyvolá nepriateľstvo u [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a poskytne pôdu pre klebety u [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')].\n\nNapriek tomu už má dve deti z predchádzajúceho manželstva a očakáva sa, že porodí niekoľko dedičov pre [ROOT.GetCountry.GetGovernment.GetRuler.GetName]." # todo: NEW TRANSLATION
  flavor_eng.110.a: "Potajme sa s ňou zosobášiť." # todo: NEW TRANSLATION
- flavor_eng.110.tt1: "Elizabeth Woodville je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.110.tt1: "Elizabeth Woodville je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.110.tt2: "Vplyv Elizabeth Woodville pomáha [target_root_country.GetGovernment.GetRulerTitle] v záležitostiach diplomacie" # todo: CHANGED
  flavor_eng.110.b: "Zrušiť to." # todo: NEW TRANSLATION
  flavor_eng.110.tt3: "[target_root_country.GetGovernment.GetRulerTitle] so zlomeným srdcom vidí zníženú schopnosť vládnuť" # todo: NEW TRANSLATION
@@ -793,11 +793,11 @@
  flavor_eng.111.desc_indebted: "Čeliac finančným ťažkostiam, $flavor_eng.111.desc_common$" # todo: NEW TRANSLATION
  flavor_eng.111.desc: "Čeliac finančným problémom a prebiehajúcej vojne, $flavor_eng.111.desc_common$" # todo: NEW TRANSLATION
  flavor_eng.111.a: "Uvaliť špeciálnu daň a nútené pôžičky." # todo: NEW TRANSLATION
- flavor_eng.111.a.custom1: "The [ShowPopTypeName('peasants')] and [ShowPopTypeName('burghers')] in [ShowProvinceDefinitionName('cornwall_province')] and [ShowProvinceDefinitionName('devon_province')] lose #R 90.00%#! [pop_satisfaction|e]" # todo: CHANGED
- flavor_eng.111.a.custom2: "[prosperity|e] decreases by #R 50.00%#! in every owned [location|e] in [ShowProvinceDefinitionName('cornwall_province')] and [ShowProvinceDefinitionName('devon_province')]." # todo: CHANGED
+ flavor_eng.111.a.custom1: "The [ShowPopTypeName('peasants')] and [ShowPopTypeName('burghers')] in [ShowProvinceDefinitionName('cornwall_province')] and [ShowProvinceDefinitionName('devon_province')] lose #R 90.00%#! [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ flavor_eng.111.a.custom2: "[Concept('prosperity','Prosperita')|e] decreases by #R 50.00%#! in every owned [Concept('location','lokalita')|e] in [ShowProvinceDefinitionName('cornwall_province')] and [ShowProvinceDefinitionName('devon_province')]." # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.111.tt1: "Baníci cínu môžu konať zo zúfalstva" # todo: NEW TRANSLATION
  flavor_eng.111.b: "Dočasne odobrať špeciálne privilégiá." # todo: NEW TRANSLATION
- flavor_eng.111.b.custom: "Každé vlastnené [location|e] v [ShowProvinceDefinitionName('cornwall_province')] a [ShowProvinceDefinitionName('devon_province')] získa [ShowModifier('tin_mining_reduced')] a [ShowModifier('privileges_revoked')] na #W 4 years#!" # todo: NEW TRANSLATION
+ flavor_eng.111.b.custom: "Každé vlastnené [Concept('location','lokalita')|e] v [ShowProvinceDefinitionName('cornwall_province')] a [ShowProvinceDefinitionName('devon_province')] získa [ShowModifier('tin_mining_reduced')] a [ShowModifier('privileges_revoked')] na #W 4 years#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.111.tt2: "Baníci cínu sú nespokojní a menej produktívni" # todo: NEW TRANSLATION
  flavor_eng.111.c: "$common_string_leave_them_be$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_tin_mining_reduced: "Ťažba cínu znížená" # todo: NEW TRANSLATION
@@ -817,11 +817,11 @@
  flavor_eng.114.entry: "Thomas Wolsey" # todo: NEW TRANSLATION
  flavor_eng.114.desc: "Známy kaplán zo skromných pomerov si vybudoval významnú kariéru, čo bezpochyby svedčí o jeho výnimočnom intelekte. S preukázaným talentom pre diplomaciu, administratívnymi schopnosťami a reputáciou človeka, ktorý prijíma aj tie najnudnejšie úlohy, by [thomas_wolsey.GetName] mohol byť veľkým prínosom pre [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
  flavor_eng.114.a: "Vítaný prírastok na dvore." # todo: NEW TRANSLATION
- flavor_eng.114.tt1: "Thomas Wolsey je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.114.tt1: "Thomas Wolsey je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.114.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sú rozhorčení z toho, že na dvore slúži človek nízkeho pôvodu" # todo: NEW TRANSLATION
  flavor_eng.114.tt3: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú potešení, že muž duchovenstva má vplyv na dvore" # todo: NEW TRANSLATION
  flavor_eng.114.b: "Nechať ho slúžiť v poradnej funkcii." # todo: NEW TRANSLATION
- flavor_eng.114.tt4: "Thomas Wolsey je pridaný ako [character|e] ale nemôže slúžiť na dvore" # todo: CHANGED
+ flavor_eng.114.tt4: "Thomas Wolsey je pridaný ako [Concept('character','postava')|e] ale nemôže slúžiť na dvore" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.114.tt5: "Pokračuje v službe Cirkvi a zároveň radí [target_root_country.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  flavor_eng.114.c: "Pošlite ho, aby nás zastupoval v [rome.GetNameWithNoTooltip]." # todo: CHANGED
  flavor_eng.114.c.entry: "Nech nás zastupuje v [ShowLocationNameWithNoTooltip('rome')]." # todo: NEW TRANSLATION
@@ -840,11 +840,11 @@
  flavor_eng.116.a: "Pozvať ho na dvor." # todo: NEW TRANSLATION
  flavor_eng.116.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú potešení, že muž duchovenstva má vplyv na dvore" # todo: NEW TRANSLATION
  flavor_eng.116.tt2: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní, že kacír slúži na dvore" # todo: NEW TRANSLATION
- flavor_eng.116.tt3: "Thomas More je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.116.tt3: "Thomas More je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.116.b: "Dovoliť mu slobodne debatovať s jeho oponentmi." # todo: NEW TRANSLATION
- flavor_eng.116.tt4: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť za to, že sa postavil proti [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.116.tt4: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť za to, že sa postavil proti [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.116.c: "Upáliť ho za kacírstvo." # todo: NEW TRANSLATION
- flavor_eng.116.tt5: "Thomas More je pridaný ako [character|e] ale nemôže slúžiť na dvore" # todo: CHANGED
+ flavor_eng.116.tt5: "Thomas More je pridaný ako [Concept('character','postava')|e] ale nemôže slúžiť na dvore" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.116.tt6: "Politika [ShowPolicyName('de_heretico_comburendo')] stanovuje, že heretici musia byť upálení" # todo: RETRANSLATED ENGLISH
  flavor_eng.116.historical_info: "Thomas More bol právnik, štátnik a filozof počas Tudorovského obdobia. Blízky priateľ kráľa, vystúpil v politike po páde kardinála Wolseyho, no nakoniec padol zo svojej milosti kvôli náboženským nezhodám. Bol oddaným rímskokatolíkom a odporoval protestantskej reformácii, preto odmietol prijať odluku kráľa Henricha VIII. od Rímskej cirkvi." # todo: CHANGED
  flavor_eng.117.title: "Prísaha nadradenosti" # todo: NEW TRANSLATION
@@ -871,7 +871,7 @@
  flavor_eng.121.entry: "$flavor_eng.121.title$" # todo: NEW TRANSLATION
  flavor_eng.121.desc_dissolution_of_monasteries: "V [ShowProvinceDefinitionName('northumberland_province')] sa črtá povstanie ako priamy dôsledok pokračujúceho rušenia kláštorov. Hrozí nám ozbrojené povstanie, ak nebudú podniknuté kroky na upokojenie davov.\n\nVôdca povstalcov [robert_aske.GetName] predložil zoznam požiadaviek nazývaný 'Petícia obyčajných', ktorý požaduje zničenie heretických diel, zatratenie ich nasledovníkov a okamžité zastavenie ničenia kláštorov." # todo: NEW TRANSLATION
  flavor_eng.121.desc: "Nespokojnosť medzi našimi [ShowReligionAdjective('catholic')] poddanými v [ShowProvinceDefinitionName('northumberland_province')] rastie a hrozí nám ozbrojené povstanie, ak nebudú podniknuté kroky na upokojenie davov.\n\nVôdca povstalcov [robert_aske.GetName] predložil zoznam požiadaviek nazývaný 'Petícia obyčajných', ktorá žiada zničenie heretických diel, zatratenie ich nasledovníkov a okamžité zastavenie ničenia kláštorov." # todo: NEW TRANSLATION
- flavor_eng.121.custom: "[ShowReligionAdjectiveWithNoTooltip('catholic')] [ShowPopTypeName('peasants')] v [ShowProvinceDefinitionName('northumberland_province')] strácajú [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.121.custom: "[ShowReligionAdjectiveWithNoTooltip('catholic')] [ShowPopTypeName('peasants')] v [ShowProvinceDefinitionName('northumberland_province')] strácajú [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.121.a: "Urobiť falošný sľub." # todo: NEW TRANSLATION
  flavor_eng.121.tt1: "Povstalci sa rozpustia a budú postavení za príklad" # todo: NEW TRANSLATION
  flavor_eng.121.b: "Súhlasiť s ich podmienkami." # todo: NEW TRANSLATION
@@ -890,7 +890,7 @@
  flavor_eng.122.entry: "Thomas Cromwell" # todo: NEW TRANSLATION
  flavor_eng.122.desc: "Úspešný právnik a nedávno vymenovaný parlamentár sa zdá, že si získava priazeň [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Je silným zástancom prebiehajúcej reformácie a silne zapojený do legislatívy obmedzujúcej moc [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] a na pokračujúcom rušení moci Ríma v [ROOT.GetCountry.GetName].\n\nJeho nedávny návrh zahŕňa zvýšenie pravidelných príjmov Koruny presunom bohatstva z kláštorov do pokladnice." # todo: NEW TRANSLATION
  flavor_eng.122.a: "Vítané doplnenie pri dvore." # todo: NEW TRANSLATION
- flavor_eng.122.tt1: "Thomas Cromwell je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.122.tt1: "Thomas Cromwell je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.122.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sú pobúrení, že na dvore slúži človek nízkeho pôvodu" # todo: NEW TRANSLATION
  flavor_eng.122.tt3: "[ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] sú potešení, že človek z obchodníctva má vplyv na dvore" # todo: NEW TRANSLATION
  flavor_eng.122.b: "Nech zostane parlamentárom." # todo: NEW TRANSLATION
@@ -901,10 +901,10 @@
  flavor_eng.123.entry: "$flavor_eng.123.title$" # todo: NEW TRANSLATION
  flavor_eng.123.desc: "Nadmerné bohatstvo náboženských rádov v [ROOT.GetCountry.GetName] už dlho štve reformátorov. Nespokojnosť medzi [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] voči mocným cirkevným inštitúciám je ďalším faktorom hľadajúcim zmenu.\n\nMôžeme sa pokúsiť reformovať tieto praktiky a vrátiť náboženské rády k asketickému a kláštornému ideálu.\n\nV záznamoch po návštevách sa nachádza celkom #Y [ROOT.GetVariable('num_of_monasteries').GetValue]#! kláštorov." # todo: NEW TRANSLATION
  flavor_eng.123.a: "$common_string_leave_them_be$" # todo: NEW TRANSLATION
- flavor_eng.123.a.custom: "[ShowPopTypeName('clergy')] v kláštorných rádoch získavajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.123.a.custom: "[ShowPopTypeName('clergy')] v kláštorných rádoch získavajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.123.b: "Reformovať." # todo: NEW TRANSLATION
  flavor_eng.123.b.custom: "Kláštorné rády zaznamenajú exodus členov, ktorí sa opätovne pridávajú k [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]" # todo: NEW TRANSLATION
- flavor_eng.123.tt: "Nebude možné zrušiť kláštory, pokiaľ toto [privilege|e] nebude odvolané" # todo: NEW TRANSLATION
+ flavor_eng.123.tt: "Nebude možné zrušiť kláštory, pokiaľ toto [Concept('privilege','privilégium')|e] nebude odvolané" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.123.historical_info: "Reformácia alebo rušenie kláštorov bolo veľkou udalosťou 16. storočia po anglickom prijatí reformácie. Thomas Cromwell, kráľov hlavný minister, najprv chcel rozobrať monastický systém, ktorý bol vnímaný ako predĺženie Rímskokatolíckej cirkvi. Udalosť vyvrcholila zatvorením náboženských domov vrátane kláštorov, opátstiev a konventov po celej Anglicku." # todo: NEW TRANSLATION
  flavor_eng.124.title: "Osud [anne_boleyn.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eng.124.entry: "Osud Anny Boleynovej" # todo: NEW TRANSLATION
@@ -925,8 +925,8 @@
  flavor_eng.126.entry: "Hans Holbein mladší" # todo: NEW TRANSLATION
  flavor_eng.126.desc: "Brilantný maliar a grafik [hans_holbein.GetName], známy svojimi realistickými zobrazeniami, pricestoval do [ROOT.GetCountry.GetName] na pozvanie [thomas_more.GetName]. Momentálne hľadá nového patróna, ktorý by podporoval jeho ďalšiu tvorbu, kde môže byť jeho všestranné umenie využité.\n\nAko reformátor vydal aj niekoľko náboženských pamfletov na podporu reformistickej veci." # todo: NEW TRANSLATION
  flavor_eng.126.a: "Pozvať ho na dvor." # todo: NEW TRANSLATION
- flavor_eng.126.tt1: "John Holbein je pridaný ako [character|e]" # todo: CHANGED
- flavor_eng.126.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú menej nadšení, že je heretikovi dovolené maľovať na dvore kvôli [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.126.tt1: "John Holbein je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ flavor_eng.126.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú menej nadšení, že je heretikovi dovolené maľovať na dvore kvôli [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.126.b: "Upáliť ho za kacírstvo." # todo: NEW TRANSLATION
  flavor_eng.126.tt3: "John Holbein je chránenec Thomasa Mora a je teda chránený pred prenasledovaním" # todo: CHANGED
  flavor_eng.126.tt4: "[ShowPolicyName('de_heretico_comburendo')] nariaďuje, že kacieri musia byť upálení" # todo: NEW TRANSLATION
@@ -946,7 +946,7 @@
  flavor_eng.128.entry: "John Cabot" # todo: NEW TRANSLATION
  flavor_eng.128.desc: "Navigátor a prieskumník z [target_location.GetName] pricestoval do [ROOT.GetCountry.GetName] hľadajúc finančných sponzorov pre atlantickú expedíciu vyplávajúcu z prístavu [bristol.GetName], s preferenciou nájsť severnú cestu do Ázie.\n\nMôžeme ho zamestnať, aby plával pod našou zástavou a využil svoje schopnosti pri hľadaní strateného ostrova Hy-Brazil." # todo: NEW TRANSLATION
  flavor_eng.128.a: "More ho čaká." # todo: NEW TRANSLATION
- flavor_eng.128.tt: "[john_cabot.GetNameWithNoTooltip] je pridaný ako [explorer|e]" # todo: NEW TRANSLATION
+ flavor_eng.128.tt: "[john_cabot.GetNameWithNoTooltip] je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.128.b: "Teraz nie je čas." # todo: NEW TRANSLATION
  flavor_eng.128.historical_info: "John Cabot, narodený ako Giovanni Caboto v Kráľovstve Neapol, bol taliansky navigátor a prieskumník, ktorý bol na konci 15. storočia v službách anglickej koruny. Pripisuje sa mu objavenie častí Severnej Ameriky, pravdepodobne vylodenie na Newfoundlande, čím sa stal jedným z prvých Európanov, ktorí od príchodu Vikingov preskúmali kontinent. Jeho plavby umožnili Anglicku uplatniť nároky v Novom svete a pripravili cestu pre budúce expedície a kolonizáciu." # todo: NEW TRANSLATION
  flavor_eng.129.title: "Námorná rada" # todo: NEW TRANSLATION
@@ -956,14 +956,14 @@
  flavor_eng.129.desc: "Bolo uznané, že naše hranice sú do istej miery zraniteľné voči zahraničnej invázii. Na ochranu budúcnosti [ROOT.GetCountry.GetName], $flavor_eng.129.desc_common1$\n\n$flavor_eng.129.desc_common2$, môžeme posilniť snahy o stavbu lodí a podporiť väčšie námorníctvo pri znížených nákladoch." # todo: NEW TRANSLATION
  flavor_eng.129.desc_tudor: "[tudor_dynasty.GetName] [ROOT.GetCountry.GetGovernment.GetRulerTitle], ostražitý voči zahraničnej invázii, verí $flavor_eng.129.desc_common1$ To by sa dalo dosiahnuť $flavor_eng.129.desc_common2$, aby sa posilnili snahy o stavbu lodí a podporilo väčšie námorníctvo pri znížených nákladoch.\n\nNa osobnej úrovni [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] takisto prejavil talent pre konštrukciu lodí a naďalej prispieva k modernizácii našej flotily." # todo: NEW TRANSLATION
  flavor_eng.129.a: "Uskutočnite potrebné zmeny." # todo: NEW TRANSLATION
- enable_navy_board_reform: "Umožní prístup k [ShowGovernmentReformName('navy_board_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ enable_navy_board_reform: "Umožní prístup k [ShowGovernmentReformName('navy_board_reform')] [Concept('government_reform','reforme vlády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.129.b: "Dôležitá je armáda." # todo: NEW TRANSLATION
  flavor_eng.129.historical_info: "V 16. storočí za vlády kráľa Henricha VIII bola zriadená Námorná rada na dohľad nad námornými záležitosťami, vrátane stavby lodí a správy logistiky. Pod vedením Henricha VIII Námorná rada uľahčila rozšírenie anglickej flotily s cieľom premeniť ju na silu, s ktorou sa musí počítať, a zabezpečiť Anglicko pred zahraničnými inváziami." # todo: NEW TRANSLATION
  flavor_eng.131.title: "Palác Whitehall" # todo: NEW TRANSLATION
  flavor_eng.131.entry: "$flavor_eng.131.title$" # todo: NEW TRANSLATION
  flavor_eng.131.desc: "Súčasné sídlo monarchie bolo považované za nedostatočné pre [ROOT.GetCountry.GetGovernment.GetRuler.GetName] a prebiehajú plány na jeho rozšírenie.\n\nRenomovaný topografický umelec [anton_van_den_wyngaerde.GetName] poskytol niekoľko konceptuálnych skíc a práce by mohli začať okamžite, ak budú zabezpečené prostriedky." # todo: NEW TRANSLATION
  flavor_eng.131.a: "Ideálne pre saunu, bazén a izbu pre poníka." # todo: NEW TRANSLATION
- flavor_eng.131.tt1: "Antonius Van den Wyngaerde je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.131.tt1: "Antonius Van den Wyngaerde je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.131.b: "Stačí pár skíc." # todo: NEW TRANSLATION
  flavor_eng.131.tt2: "Antonius Van den Wyngaerde inšpiruje iných umelcov svojimi precíznymi kresbami" # todo: CHANGED
  flavor_eng.131.tt3: "Antonius Van den Wyngaerde sa presídlí po dokončení svojej práce" # todo: CHANGED
@@ -972,7 +972,7 @@
  flavor_eng.132.entry: "Charles Brandon" # todo: NEW TRANSLATION
  flavor_eng.132.desc: "Detský priateľ [ROOT.GetCountry.GetGovernment.GetRulerTitle], [charles_brandon.GetName] túži vstúpiť do života na dvore a slúžiť krajine. Preukázal pozoruhodné schopnosti v oboch oblastiach — vojenských aj štátnych záležitostiach, avšak jeho obsadenie úradov v kráľovskom dome bude pravdepodobne stretávať odpor zo strany [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]." # todo: NEW TRANSLATION
  flavor_eng.132.a: "Môže vynikajúco slúžiť armáde." # todo: NEW TRANSLATION
- flavor_eng.132.tt1: "Charles Brandon je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.132.tt1: "Charles Brandon je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.132.tt2: "Nedokáže slúžiť na dvore" # todo: NEW TRANSLATION
  flavor_eng.132.b: "Nesmysel. Bude to [ROOT.GetCountry.GetGovernment.GetAdjective] poradca." # todo: NEW TRANSLATION
  flavor_eng.132.b.entry: "Nesmysel. Je to kráľovský poradca." # todo: NEW TRANSLATION
@@ -1003,10 +1003,10 @@
  flavor_eng.136.entry: "Francis Drake" # todo: NEW TRANSLATION
  flavor_eng.136.desc: "Berytý, notoricky známy súkromník a námorný expert [francis_drake.GetName] vyjadril túžbu plaviť sa pod našou zástavou a pomôcť upevniť postavenie [ROOT.GetCountry.GetName] ako svetovej námornej veľmoci. Hovorí sa o ňom, že je univerzálny odborník a je známy svojimi súkromníckymi aktivitami, pri ktorých zajíma nepriateľské lode a plenia ich náklad. Vyjadril aj záujem preskúmovať svet, hoci môžeme mať pre jeho služby iné využitie." # todo: NEW TRANSLATION
  flavor_eng.136.a: "Priveď nám svet." # todo: NEW TRANSLATION
- flavor_eng.136.tt1: "Francis Drake je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.136.tt1: "Francis Drake je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.136.tt2: "Má talent na útoky na zámožné kolónie a môže sa o to pokúsiť, ak mu bude pridelené preskúmavanie Nového sveta" # todo: CHANGED
  flavor_eng.136.b: "Námorníctvo žiada, aby slúžil." # todo: CHANGED
- flavor_eng.136.tt3: "Francis Drake je pridaný ako [admiral|e]" # todo: CHANGED
+ flavor_eng.136.tt3: "Francis Drake je pridaný ako [Concept('admiral','admirál')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.136.c: "Beznádejný otrokár a pirát." # todo: NEW TRANSLATION
  flavor_eng.136.historical_info: "Francis Drake je najznámejší pre svoje smelé činy ako námorný veliteľ za vlády Alžbety I. Obeplával svet, útočil na viaceré kolónie pozdĺž Španielskeho hlavného pobrežia a zajal niekoľko pokladových lodí smerujúcich do Európy naložených zlatom a striebrom, čo prispelo k oslabeniu španielskej hegemonie v Novom svete. Hral kľúčovú úlohu pri obrane Anglicka pred španielskou Armada v roku 1588." # todo: NEW TRANSLATION
  flavor_eng.137.title: "[francis_drake.GetNameWithNoTooltip] raids [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1031,9 +1031,9 @@
  flavor_eng.139.entry: "Christopher Marlowe" # todo: NEW TRANSLATION
  flavor_eng.139.desc: "Odvážny a nápaditý dramatik hľadá nového patrónu, aby mohol pokračovať vo svojom príspevku k dramatickému umeniu. [christopher_marlowe.GetName] je často chválený svojimi kolegami za to, že je priekopníkom a zdrojom inšpirácie, a je známy tým, že má rozmanité schopnosti." # todo: CHANGED
  flavor_eng.139.a: "Spisovateľ má písať a slobodne." # todo: NEW TRANSLATION
- flavor_eng.139.tt1: "Christopher Marlowe je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.139.tt1: "Christopher Marlowe je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.139.tt2: "Venuje sa písaniu a pravdepodobne vytvorí množstvo hier, ktoré budú potešením" # todo: CHANGED
- flavor_eng.139.tt3: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní, pretože sa stavajú proti politike [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.139.tt3: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní, pretože sa stavajú proti politike [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.139.b: "Nech pre nás špehuje." # todo: NEW TRANSLATION
  flavor_eng.139.tt4: "Christopher Marlowe je zamestnaný šéfom špionáže Francisom Walsinghamom" # todo: CHANGED
  flavor_eng.139.c: "Nie je potrebné. Preferujeme bábkové predstavenia." # todo: NEW TRANSLATION
@@ -1042,15 +1042,15 @@
  flavor_eng.140.entry: "Walter Raleigh" # todo: NEW TRANSLATION
  flavor_eng.140.desc: "Ako niekto, kto potláča vzbury a je obľúbencom dvora, [walter_raleigh.GetName] premýšľa o ďalšom smere pôsobenia po návrate z nebezpečnej cesty, z ktorej priviezol zvláštne jedlé rastliny a omamnú látku na fajčenie.\n\nObrátil sa na [ROOT.GetCountry.GetGovernment.GetRuler.GetName] s úmyslom túto záležitosť prerokovať. [walter_raleigh.GetShortNameWithNoTooltip] nedokáže skryť spokojnosť, keď sa spomínajú jeho cesty, avšak zostáva v moci [ROOT.GetCountry.GetGovernment.GetRulerTitle] a môže byť užitočný v iných oblastiach." # todo: CHANGED
  flavor_eng.140.a: "Naše zámoorské ambície čakajú na jeho vedenie." # todo: CHANGED
- flavor_eng.140.tt1: "Walter Raleigh je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.140.tt1: "Walter Raleigh je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.140.tt2: "Môže zásobovať akékoľvek kolónie v [ShowAreaName('southern_new_england_area')] ak je pridelený na objavovanie Nového sveta" # todo: NEW TRANSLATION
  flavor_eng.140.b: "Írsko vyžaduje pevnú ruku." # todo: NEW TRANSLATION
- flavor_eng.140.custom: "Každé vlastnené alebo poddané [location|e] v [ShowRegionName('ireland_region')] získa [ShowModifier('raleigh_firm_hand')]" # todo: NEW TRANSLATION
- flavor_eng.140.tt3: "Walter Raleigh je pridaný ako [general|e]" # todo: CHANGED
+ flavor_eng.140.custom: "Každé vlastnené alebo poddané [Concept('location','lokalita')|e] v [ShowRegionName('ireland_region')] získa [ShowModifier('raleigh_firm_hand')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_eng.140.tt3: "Walter Raleigh je pridaný ako [Concept('general','generál')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.140.tt4: "Jeho povesť pri zvládaní povstaní v [ShowRegionName('ireland_region')] znižuje pravdepodobnosť budúcich povstaní" # todo: CHANGED
  STATIC_MODIFIER_NAME_raleigh_firm_hand: "Raleighova pevná ruka" # todo: NEW TRANSLATION
  flavor_eng.140.c: "Záležitosti štátu mu svedčia." # todo: CHANGED
- flavor_eng.140.tt5: "Walter Raleigh je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.140.tt5: "Walter Raleigh je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.140.tt6: "Jeho prítomnosť na dvore očarí zaľúbeného [target_root_country.GetGovernment.GetRuler.GetName]" # todo: CHANGED
  flavor_eng.140.d: "Naše osudy nie sú prepletené." # todo: NEW TRANSLATION
  flavor_eng.140.tt7: "Walterovi Raleighovi a jeho tajomným plodinám je odmietnuté prijatie" # todo: CHANGED
@@ -1062,8 +1062,8 @@
  flavor_eng.141.desc: "Vysoce zručný skladateľ, ktorý pracoval na širokom spektre sakrálnej hudby, hľadá nového patróna, aby mohol pokračovať vo svojich príspevkoch k zborovým dielam.\n\n$flavor_eng.141.desc_common$" # todo: NEW TRANSLATION
  flavor_eng.141.desc_dissolution_of_monasteries: "Po zrušení kláštorov mali umelci, ako [thomas_tallis.GetName], ktorí boli prevažne aktívni v náboženských kruhoch, problém nájsť zamestnanie. Keďže je mimoriadne zručný skladateľ, teraz skúša šťastie na dvore, kde hľadá patronát, aby mohol pokračovať vo svojich príspevkoch k hudbe.\n\n$flavor_eng.141.desc_common$" # todo: NEW TRANSLATION
  flavor_eng.141.a: "Kráľovská kaplnka ho očakáva." # todo: NEW TRANSLATION
- flavor_eng.141.tt1: "Thomas Tallis je pridaný ako [character|e]" # todo: CHANGED
- flavor_eng.141.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] nie sú práve nadšení, že heretikovi je povolené slobodne komponovať kvôli politike [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.141.tt1: "Thomas Tallis je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ flavor_eng.141.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] nie sú práve nadšení, že heretikovi je povolené slobodne komponovať kvôli politike [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.141.tt3: "Kompozície Thomasa Tallisa inšpirujú iných skladateľov" # todo: CHANGED
  flavor_eng.141.b: "Spáľte ho za kacierstvo." # todo: NEW TRANSLATION
  flavor_eng.141.tt4: "Politika [ShowPolicyName('de_heretico_comburendo')] nariaďuje, že heretici musia byť upálení" # todo: NEW TRANSLATION
@@ -1134,10 +1134,10 @@
  flavor_eng.151.entry: "William Cecil" # todo: NEW TRANSLATION
  flavor_eng.151.desc: "Sebavedomý a rozhodný [william_cecil.GetName] vstupuje na dvor. Závažnosť zodpovednosti mu zjavne svedčí a vníma sa ako muž pripravený ponúknuť radu a odborné znalosti tým, ktorí majú moc. Disponuje bohatstvom vedomostí a bystrou strategickou mysľou a mohol by byť prirodzeným adeptom do štátnych záležitostí." # todo: CHANGED
  flavor_eng.151.a: "Prinášač prosperity." # todo: NEW TRANSLATION
- flavor_eng.151.tt1: "William Cecil je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.151.tt1: "William Cecil je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.151.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú potešení, že v moci je zástanca viery [target_root_country.GetReligion.GetName]" # todo: NEW TRANSLATION
  flavor_eng.151.b: "Nech slúži ako parlamentár." # todo: CHANGED
- flavor_eng.151.tt4: "William Cecil je pridaný ako [character|e] ale nemôže slúžiť na dvore" # todo: CHANGED
+ flavor_eng.151.tt4: "William Cecil je pridaný ako [Concept('character','postava')|e] ale nemôže slúžiť na dvore" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.151.tt5: "Pokračuje v sedení v parlamente, aby presadzoval agendu [target_root_country.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  flavor_eng.151.c: "Nepotrebujeme ďalšie rady." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_working_from_within: "Pôsobenie zvnútra" # todo: NEW TRANSLATION
@@ -1146,7 +1146,7 @@
  flavor_eng.152.entry: "Dobrodružstvá Johna Hawkinsa" # todo: NEW TRANSLATION
  flavor_eng.152.desc: "Námorník a námorný veliteľ [john_hawkins.GetName] navrhuje cestu do [ShowRegionName('guinea_region')] s cieľom získať otrokov z Afriky a vytvoriť regiónnu prítomnosť pre našich obchodníkov. [ShowPopTypeName('slaves')] by potom boli prepravení do kolónií [slave_selling_location.GetOwner.GetName] v Amerike, kde by ich bolo možné predať so ziskom." # todo: NEW TRANSLATION
  flavor_eng.152.a: "Chceme sa zapojiť." # todo: NEW TRANSLATION
- flavor_eng.152.tt1: "John Hawkins je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.152.tt1: "John Hawkins je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.152.tt2: "Najme loď od [target_root_country.GetGovernment.GetRuler.GetName] za značné náklady" # todo: NEW TRANSLATION
  flavor_eng.152.tt3: "Nezákonne preváža otrokov do [slave_selling_location.GetName], čím rozhnevá [slave_selling_location.GetOwner.GetName]" # todo: NEW TRANSLATION
  flavor_eng.152.b: "Nechceme s tým mať nič spoločné." # todo: NEW TRANSLATION
@@ -1155,10 +1155,10 @@
  flavor_eng.153.entry: "$flavor_eng.153.title$" # todo: NEW TRANSLATION
  flavor_eng.153.desc: "Skupina hercov chce inscenovať svoje predstavenia pod patronátom [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Predstavenia by prispeli k rozvoju drámy a literatúry a zároveň by poskytli zábavu pre [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. Hry by sa pohybovali od komédií po tragédie a historické drámy." # todo: NEW TRANSLATION
  flavor_eng.153.a: "Scéna je vaša." # todo: NEW TRANSLATION
- flavor_eng.153.a.custom: "Všetky [locations|e] v [ShowRegionName('great_britain_region')] s [ShowBuildingTypeName('theater')] získajú [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [ShowPopTypeName('peasants')] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.153.a.custom: "Všetky [Concept('locations','lokality')|e] v [ShowRegionName('great_britain_region')] s [ShowBuildingTypeName('theater')] získajú [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [ShowPopTypeName('peasants')] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.153.tt1: "Divadelná spoločnosť vystupuje len v divadlách" # todo: NEW TRANSLATION
  flavor_eng.153.b: "Zriadiť provizórne javiská." # todo: NEW TRANSLATION
- flavor_eng.153.b.custom: "Každé mesto a [locations|e] v [ShowRegionName('great_britain_region')] s [ShowBuildingTypeName('theater')] získajú [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [ShowPopTypeName('peasants')] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.153.b.custom: "Každé mesto a [Concept('locations','lokality')|e] v [ShowRegionName('great_britain_region')] s [ShowBuildingTypeName('theater')] získajú [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [ShowPopTypeName('peasants')] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.153.tt2: "Divadelná spoločnosť vystupuje po hlavných mestách a divadlách" # todo: NEW TRANSLATION
  flavor_eng.153.tt3: "Záväzok [target_root_country.GetGovernment.GetRulerTitle] zabávať verejnosť zvyšuje [target_root_country.GetGovernment.GetRuler.GetHisHer] popularitu" # todo: NEW TRANSLATION
  flavor_eng.153.c: "Sú aj iné priority." # todo: NEW TRANSLATION
@@ -1173,7 +1173,7 @@
  flavor_eng.155.entry: "James Lancaster" # todo: NEW TRANSLATION
  flavor_eng.155.desc: "Súkromník a obchodník dobre oboznámený s námornej problematikou prišiel s návrhom plavby do Východnej Indie. [james_lancaster.GetName] tvrdí, že [ROOT.GetCountry.GetName] by mala zabezpečiť postavenie pri Ostrovoch korenia, aby mohla ťažiť z výnosného obchodu v [ShowRegionName('indonesia_region')].\n\nĎalej predkladá zistenia zo svojho nedávneho prieskumu, ktoré dokazujú, že konzumácia vybraného [ShowGoodsName('fruit')] zlepšuje zdravie našich námorníkov a znižuje výskyt takzvanej 'námornej choroby'. Správy o tom sa už rozšírili a pravdepodobne zvýšia dopyt po takomto tovare." # todo: NEW TRANSLATION
  flavor_eng.155.a: "Potrebujeme tieto koreniny." # todo: NEW TRANSLATION
- flavor_eng.155.tt1: "James Lancaster je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.155.tt1: "James Lancaster je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.155.tt2: "Ak bude pridelený na objavovanie Východnej Indie, môže založiť [ShowBuildingTypeName('overseas_trading_post')] v [ShowRegionName('indonesia_region')]" # todo: NEW TRANSLATION
  flavor_eng.155.b: "Pošlite ho na expedíciu za [ShowGoodsNameWithNoTooltip('fruit')]." # todo: NEW TRANSLATION
  flavor_eng.155.tt3: "Zriadí [ShowBuildingTypeName('overseas_trading_post')] na ostrove [ShowRegionName('madagascar_region')] na zabezpečenie zásob [ShowGoodsNameWithNoTooltip('fruit')]" # todo: CHANGED
@@ -1191,8 +1191,8 @@
  flavor_eng.157.entry: "$flavor_eng.157.title$" # todo: NEW TRANSLATION
  flavor_eng.157.desc: "Osvietený filozof a fyzik [william_gilbert.GetName] sa momentálne venuje vedeckým experimentom týkajúcim sa magnetizmu na [target_location.GetName] [ShowBuildingTypeName('university')]. Pomocou prirodzene magnetizovaných minerálov dospel k názoru, že Zem sama je obrovský magnet, čo by vysvetľovalo stály obežný pohyb Mesiaca.\n\nSvoje zistenia zhrnul v knihe s názvom #italic De Magnete, Magneticisque Corporibus, et de Magno Magnete Tellure#!, ktorú je ochotný dať vytlačiť. Jeho myšlienky sú však u [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] veľmi nepopulárne, no jeho príspevky by boli veľkým prínosom pre našu vedeckú obec." # todo: CHANGED
  flavor_eng.157.a: "Dajte to vytlačiť." # todo: NEW TRANSLATION
- flavor_eng.157.tt1: "William Gilbert je pridaný ako [character|e]" # todo: CHANGED
- flavor_eng.157.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú rozhorčení z vydania knihy kvôli [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.157.tt1: "William Gilbert je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ flavor_eng.157.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú rozhorčení z vydania knihy kvôli [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.157.b: "Spáľte ho a jeho knihu." # todo: NEW TRANSLATION
  flavor_eng.157.tt3: "[ShowPolicyName('de_heretico_comburendo')] nariaďuje, že kacíri musia byť upálení" # todo: NEW TRANSLATION
  flavor_eng.157.c: "Zabrániť vydaniu." # todo: NEW TRANSLATION
@@ -1231,7 +1231,7 @@
  flavor_eng.160.tt2: "[ShowPolicyName('de_heretico_comburendo')] nariaďuje, že kacíri musia byť upálení" # todo: NEW TRANSLATION
  flavor_eng.160.tt3: "[GetCountry('SPA').GetName] je pobúrené vykonaním trestu na jednej zo svojich štátnych príslušníčok" # todo: NEW TRANSLATION
  flavor_eng.160.c: "Trocha charity ešte nikoho neublížilo." # todo: NEW TRANSLATION
- flavor_eng.160.tt4: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadruje nespokojnosť za odporovanie [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.160.tt4: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadruje nespokojnosť za odporovanie [ShowPolicyName('strict_censorship')] [Concept('policy','politika')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.160.tt5: "Louise Carvajal úspešne konvertuje niektorých svojich stúpencov na [ShowReligionAdjective('catholic')] vieru" # todo: CHANGED
  flavor_eng.160.historical_info: "Luisa Carvajal y Mendoza bola španielska šľachtičná a oddaná katolíčka koncom 16. a začiatkom 17. storočia. Presťahovala sa do Anglicka s jediným cieľom konvertovať anglikánov na katolícku vieru, za čo bola ochotná zomrieť. Jej otvorená obrana katolicizmu viedla k opakovaným väzneniam a nakoniec ochorela a krátko po rozhodnutí o jej deportácii do Španielska jej stav sa zhoršil." # todo: NEW TRANSLATION
  flavor_eng.161.title: "Útek grófov" # todo: NEW TRANSLATION
@@ -1274,7 +1274,7 @@
  flavor_eng.165.entry: "Thomas Harriot" # todo: NEW TRANSLATION
  flavor_eng.165.desc: "Vynikajúci astronóm a matematik [thomas_harriot.GetName] momentálne študuje na [ShowLocationName('oxford')] [ShowBuildingTypeName('university')]. Pomocou prístrojov, ako sú astroláb a sextant, čoraz viac prejavuje záujem o navigáciu a preskúmavanie Nového sveta.\n\nMá možnosť buď sa tejto vášni venovať naplno, alebo byť zamestnaný na pokračovanie svojich prác v oblastiach, ktoré pokrýva jeho bakalárske vzdelanie." # todo: CHANGED
  flavor_eng.165.a: "Nezastupiteľný pre našu ďalšiu expedíciu." # todo: NEW TRANSLATION
- flavor_eng.165.tt1: "Thomas Harriot je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.165.tt1: "Thomas Harriot je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.165.tt2: "Jeho prekladateľské schopnosti výrazne zlepšujú rýchlosť a úspešnosť expedícií" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_wonder_translator: "Zázračný prekladateľ" # todo: NEW TRANSLATION
  flavor_eng.165.b: "Nech zostane matematikom a astronómom." # todo: NEW TRANSLATION
@@ -1298,7 +1298,7 @@
  flavor_eng.167.desc_colonial_nation: "$flavor_eng.167.desc_common$\n\nNaša kolónia [target_colony.GetName] má záujem na jeho bezpečnom návrate a nalieha na začatie pátrania a záchrannej akcie, aby sa ho pokúsili nájsť." # todo: CHANGED
  flavor_eng.167.a: "Stojí za každú mincu." # todo: NEW TRANSLATION
  flavor_eng.167.tt1: "Henry Hudson nikdy nie je nájdený" # todo: CHANGED
- flavor_eng.167.tt2: "Henry Hudson, ak bude nájdený, je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.167.tt2: "Henry Hudson, ak bude nájdený, je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.167.tt3: "Expedícia by počas hľadania strateného prieskumníka rozsiahle zmapovala [ShowAreaName('hudson_bay_sea_zones_area')]" # todo: NEW TRANSLATION
  flavor_eng.167.b: "Prajeme mu všetko dobré." # todo: CHANGED
  flavor_eng.167.tt4: "Henry Hudson je vyhlásený za strateného na mori" # todo: CHANGED
@@ -1319,10 +1319,10 @@
  flavor_eng.169.entry: "Inigo Jones" # todo: NEW TRANSLATION
  flavor_eng.169.desc: "Priekopnícky architekt a producent masiek na dvore [inigo_jones.GetName] má blízky vzťah s dvorom a nedávno sa vrátil zo štúdií v [ShowRegionName('italy_region')]. Predovšetkým sa venuje organizovaniu honosných masiek, no prejavil tiež záujem o nový architektonický štýl s vplyvmi grécko-rímskej kultúry." # todo: CHANGED
  flavor_eng.169.a: "Zamestnajte ho ako hlavného geodéta." # todo: CHANGED
- flavor_eng.169.tt1: "Inigo Jones je pridaný ako [character|e]" # todo: CHANGED
- enable_inigo_architecture_advance: "Umožní prístup k [ShowAdvanceName('inigo_architecture')] [advance|e]" # todo: NEW TRANSLATION
+ flavor_eng.169.tt1: "Inigo Jones je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ enable_inigo_architecture_advance: "Umožní prístup k [ShowAdvanceName('inigo_architecture')] [Concept('advance','pokroku')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.169.b: "Javisko ho potrebuje." # todo: CHANGED
- flavor_eng.169.tt2: "Inigo Jones je pridaný ako [character|e] ale sústredí sa úplne na javisko" # todo: CHANGED
+ flavor_eng.169.tt2: "Inigo Jones je pridaný ako [Concept('character','postava')|e] ale sústredí sa úplne na javisko" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.169.c: "Nech si zvolí vlastnú cestu." # todo: CHANGED
  flavor_eng.169.historical_info: "Inigo Jones bol anglický architekt, scénograf a maliar, považovaný za významného ovplyvňovateľa vývoja anglickej architektúry. Zaveštnil klasickú architektúru do Anglicka a navrhol budovy ako Banqueting House, Queen's House a návrh námestia Covent Garden. Je tiež známy svojimi inovatívnymi návrhmi pre divadelné predstavenia, zavádzajúc scénické pozadia a zložité mechanické zariadenia." # todo: NEW TRANSLATION
  flavor_eng.172.title: "Tonnage a Poundage" # todo: NEW TRANSLATION
@@ -1350,7 +1350,7 @@
  flavor_eng.174.entry: "Christopher Wren" # todo: NEW TRANSLATION
  flavor_eng.174.desc: "Všestranný architekt, astronóm, matematik a fyzik [christopher_wren.GetName] nadšene vyučuje na [ShowLocationName('oxford')] [ShowBuildingTypeName('university')] a zároveň sa zúčastňuje týždenných stretnutí v [ShowLocationName('london')] s ďalšími intelektuálmi. Hovorí sa, že by ho možno bolo možné presvedčiť, aby prijal kráľovské vymenovanie a pomohol formovať architektonickú víziu [ROOT.GetCountry.GetName], alebo aby venuje svoje úsilie podporeniu prvotriedneho telesa pre vedeckú komunitu." # todo: NEW TRANSLATION
  flavor_eng.174.a: "Zamestnať ho ako Surveyor of Works." # todo: NEW TRANSLATION
- flavor_eng.174.tt1: "Christopher Wren je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.174.tt1: "Christopher Wren je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.174.tt2: "Jeho postavenie na dvore mu môže umožniť vytvárať významné stavebné diela" # todo: CHANGED
  flavor_eng.174.b: "Jeho prínosy patria vedeckej komunite." # todo: NEW TRANSLATION
  flavor_eng.174.tt3: "Christopher Wren sústredí svoje úsilie na vedeckú prácu v niekoľkých oblastiach" # todo: CHANGED
@@ -1362,7 +1362,7 @@
  flavor_eng.175.desc: "Slávu [ShowLocationName('london')] by mala reprezentovať výstavba veľkolepej katedrály. $flavor_eng.175.desc_common$" # todo: NEW TRANSLATION
  flavor_eng.175.desc_great_fire: "Pustošenie spôsobené Veľkým požiarom zanechalo Londýnčanov bez významného miesta bohoslužieb. Pôvodná katedrála na tomto mieste zohrávala veľkú úlohu v rituáloch siahajúcich až k jej založeniu v roku 606 n. l. Mali by sme obnoviť slávu [ShowLocationName('london')] výstavbou veľkolepej katedrály. $flavor_eng.175.desc_common$" # todo: NEW TRANSLATION
  flavor_eng.175.a: "Začať výstavbu okamžite." # todo: NEW TRANSLATION
- flavor_eng.175.tt1: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nadšení z vyhliadky na veľké náboženské [building|e] dielo" # todo: NEW TRANSLATION
+ flavor_eng.175.tt1: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nadšení z vyhliadky na veľké náboženské [Concept('building','budovu')|e] dielo" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.175.b: "Pre teraz postačia miestne fary." # todo: NEW TRANSLATION
  flavor_eng.175.tt2: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú nespokojní s nedostatkom nadšenia pre novú katedrálu" # todo: NEW TRANSLATION
  st_pauls_construction: "Výstavba katedrály sv. Pavla" # todo: NEW TRANSLATION
@@ -1384,7 +1384,7 @@
  flavor_eng.177.a: "Predstavte ju bohatým investorom." # todo: CHANGED
  flavor_eng.177.tt1: "Popularita Rolfe stimuluje zvýšené investície a podporuje emigráciu do kolónií" # todo: CHANGED
  flavor_eng.177.b: "Nech zostane na dvore." # todo: CHANGED
- flavor_eng.177.tt2: "Rolfe je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.177.tt2: "Rolfe je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.177.tt3: "Jej pokračujúca prítomnosť stále zabáva [ShowPopTypeName('nobles')]" # todo: CHANGED
  flavor_eng.177.c: "Dôkladne zdokumentujte jej príbeh." # todo: CHANGED
  flavor_eng.177.tt4: "Rozprávanie o Rolfe sa vyvinie do vzácneho kultúrneho dedičstva" # todo: CHANGED
@@ -1393,7 +1393,7 @@
  flavor_eng.178.entry: "$flavor_eng.178.title$" # todo: NEW TRANSLATION
  flavor_eng.178.desc: "Módny [flemish.GetName] maliar [anton_van_dyck.GetName] prišiel z [ShowLocationName('antwerp')] na žiadosť [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Je známy svojím majstrovstvom štetca a má zaujať funkciu dvorného maliara, no jeho výrazné fúzy sa stali predmetom diskusií a obdivu mnohých ešte predtým, než oficiálne nastúpi do úradu." # todo: CHANGED
  flavor_eng.178.a: "Trvajte na tom, aby zostal, a povolajte kráľovského holiča." # todo: CHANGED
- flavor_eng.178.tt1: "Antonius van Dyck je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.178.tt1: "Antonius van Dyck je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.178.tt2: "Antonius van Dyck sa presťahuje po dokončení svojej práce" # todo: CHANGED
  flavor_eng.178.tt3: "Jeho štýl fúzov inšpiruje iných džentlmenov, aby prijali podobnú módu, čo narúša prevládajúci doholený vzhľad doby" # todo: CHANGED
  flavor_eng.178.b: "Nazvime to 'mužskou' bradou." # todo: CHANGED
@@ -1405,17 +1405,17 @@
  flavor_eng.179.desc: "Chyba pri korektúre spôsobila, že kráľovskí tlačiari vydali sériu chybne vytlačených biblí. Slovo 'not' bolo vynechané, v dôsledku čoho desatoro znie 'Nebudeš sa cudzoložiť' (v origináli 'Thou shalt commit adultery'). Tento zjavný a škandálny omyl vyvolal okamžitý rozruch verejnosti aj náboženských autorít, ktoré požadujú stiahnutie a opravu chybných výtlačkov." # todo: NEW TRANSLATION
  flavor_eng.179.a: "Zrušte im licenciu a uložte pokutu." # todo: NEW TRANSLATION
  flavor_eng.179.b: "Úprimná chyba." # todo: NEW TRANSLATION
- flavor_eng.179.tt1: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť a odporujú [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.179.tt1: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť a odporujú [ShowPolicyName('strict_censorship')] [Concept('policy','politika')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.179.tt2: "Vypuknú nepokoje, ktoré zničia zodpovednú [ShowBuildingTypeName('printing_press_shop')]" # todo: NEW TRANSLATION
  flavor_eng.179.historical_info: "The Wicked Bible je zriedkavé vydanie publikované v roku 1631. Je to najznámejší príklad biblickej tlačovej chyby, pričom takéto výtlačky často boli zničované alebo potláčané, pretože ich obsah považovali za heretický. Vydavatelia boli prísne pokutovaní Starou komorou a arcibiskup Canterbury nariadil, aby boli chybné výtlačky stiahnuté a opravené." # todo: NEW TRANSLATION
  flavor_eng.180.title: "[john_milton.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eng.180.entry: "John Milton" # todo: NEW TRANSLATION
  flavor_eng.180.desc: "Výnimočný básnik a politický aktivista [john_milton.GetName] bol dlhodobo hlasným zástancom zmien, čo ho postavilo do sporu s vládnymi autoritami. Napísal reč známu ako #italic Areopagitica#!, v ktorej odsudzuje cenzúru pred publikovaním a obhajuje slobodu slova a tlače." # todo: CHANGED
  flavor_eng.180.a: "Prijmite jeho slová." # todo: CHANGED
- flavor_eng.180.tt1: "John Milton je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.180.tt1: "John Milton je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.180.tt2: "Vplyv Johna Miltona inšpiruje zásadné zmeny v slobode slova a tlače" # todo: CHANGED
  flavor_eng.180.b: "Nech hovorí, ale zmeny nie sú potrebné." # todo: NEW TRANSLATION
- flavor_eng.180.tt3: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť a odporujú [ShowPolicyName('strict_censorship')] [policy|e]." # todo: NEW TRANSLATION
+ flavor_eng.180.tt3: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť a odporujú [ShowPolicyName('strict_censorship')] [Concept('policy','politika')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.180.tt4: "Niekoľko poslancov parlamentu je ovplyvnených slovami Johna Miltona" # todo: CHANGED
  flavor_eng.180.c: "Upáľte ho za kacírstvo." # todo: CHANGED
  flavor_eng.180.tt5: "Časy sa menia. Slová Johna Miltona zjednocujú poslancov parlamentu, ktorí sa postavia proti tomuto postupu" # todo: CHANGED
@@ -1450,13 +1450,13 @@
  flavor_eng.183.a: "Vypracujte starostlivo formulované odmietnutie." # todo: NEW TRANSLATION
  flavor_eng.183.tt1: "Parlament môže reagovať nepriateľsky a pokúsiť sa obmedziť kráľovské právomoci za každú cenu" # todo: NEW TRANSLATION
  flavor_eng.183.b: "Súhlasiť s podmienkami." # todo: NEW TRANSLATION
- flavor_eng.183.b.custom: "The [ShowGovernmentReformName('grand_remonstrance_reform')] [government_reform|e] je zavedený" # todo: NEW TRANSLATION
+ flavor_eng.183.b.custom: "The [ShowGovernmentReformName('grand_remonstrance_reform')] [Concept('government_reform','reforma vlády')|e] je zavedený" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.183.c: "Pokúsiť sa dosiahnuť kompromis." # todo: NEW TRANSLATION
  flavor_eng.183.c.custom1: "Nízke diplomatické schopnosti [target_root_country.GetGovernment.GetRuler.GetName] znižujú pravdepodobnosť úspechu" # todo: NEW TRANSLATION
  flavor_eng.183.c.custom2: "Diplomatické schopnosti [target_root_country.GetGovernment.GetRuler.GetName] môžu presvedčiť dostatok členov parlamentu" # todo: NEW TRANSLATION
  flavor_eng.183.tt2: "Kompromis nemusí mať priaznivý výsledok" # todo: NEW TRANSLATION
  flavor_eng.183.d: "Slová sú moje najostrejšie zbrane." # todo: NEW TRANSLATION
- flavor_eng.183.tt3: " 'Strieborný jazyk' [trait|e] [target_root_country.GetGovernment.GetRuler.GetName] odzbrojí opozíciu" # todo: NEW TRANSLATION
+ flavor_eng.183.tt3: " 'Strieborný jazyk' [Concept('trait','vlastnosť')|e] [target_root_country.GetGovernment.GetRuler.GetName] odzbrojí opozíciu" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  STATIC_MODIFIER_NAME_grand_remonstrance_refused: "Veľká remonstrácia odmietnutá" # todo: NEW TRANSLATION
  flavor_eng.183.historical_info: "Veľká remonstrácia bola politický dokument predložený kráľovi Karolovi I. v roku 1641 parlamentom. Vyjadrovala ich frustráciu z kráľa a navrhovala rozsiahle zmeny s cieľom obmedziť jeho schopnosť zasahovať do parlamentných záležitostí. Dokument tiež poukazoval na obavy z katolicizmu a vplyvu kráľových poradcov. Krátko po tom, čo bola remonstrácia predložená, sa napätie medzi parlamentom a kráľom zvýšilo, čo vyvrcholilo začiatkom anglickej občianskej vojny." # todo: NEW TRANSLATION
  flavor_eng.184.title: "Veľký kompromis" # todo: NEW TRANSLATION
@@ -1473,8 +1473,8 @@
  flavor_eng.185.tt1: "Toto opatrenie puritánov odcudzuje a môže ich prinútiť uvažovať o svojich možnostiach" # todo: NEW TRANSLATION
  flavor_eng.185.tt2: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú spokojní s opatreniami prijatými na potlačenie akejkoľvek nejednoty" # todo: NEW TRANSLATION
  flavor_eng.185.b: "Nepodniknúť ďalšie kroky." # todo: NEW TRANSLATION
- flavor_eng.185.b.custom1: "All [ShowReligionName('catholic')] and [ShowReligionName('anglican')] [pops|e] lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
- flavor_eng.185.b.custom2: "All [ShowReligionName('calvinist')] [pops|e] gain [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.185.b.custom1: "All [ShowReligionName('catholic')] and [ShowReligionName('anglican')] [Concept('pops','populácie')|e] lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_eng.185.b.custom2: "All [ShowReligionName('calvinist')] [Concept('pops','populácie')|e] gain [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.185.tt3: " [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] nie sú spokojní s tolerovaním ďalšej nejednoty" # todo: NEW TRANSLATION
  flavor_eng.185.historical_info: "Hampton Court konferencia bola významnou udalosťou v anglickej histórii, ktorá sa konala v januári 1604 počas vlády kráľa Jakuba I. Konferencia bola zvolaná v paláci Hampton Court, kde sa kráľ Jakub I. snažil vyriešiť náboženské otázky a zmierniť určité kontroverzie v Cirkvi Anglickej. Na konferencii sa rozhodlo o autorizácii King James Version Biblie, no zároveň sa posilnila autorita Cirkvi Anglickej požadovaním, aby puritáni dodržiavali Tridsaťdeväť článkov, dohodnuté doktríny a praktiky Cirkvi. Konferencia taktiež neuspokojila všetky požiadavky puritánov na reformu." # todo: NEW TRANSLATION
  flavor_eng.186.title: "Veľká migrácia" # todo: NEW TRANSLATION
@@ -1492,10 +1492,10 @@
  flavor_eng.187.entry: "Robert Blake" # todo: NEW TRANSLATION
  flavor_eng.187.desc: "Vojenský stratég a skúsený námorník [robert_blake.GetName] nedávno zostavil prvý súbor pravidiel a predpisov pre námorníctvo a teraz sa pustil do veľkolepého úlohy prepracovať námorné taktiky využívané Kráľovským námorníctvom. Hoci sú jeho taktiky pomerne nekonvenčné, očakáva sa, že zrevolucionizujú spôsob, akým sa bojuje na mori." # todo: CHANGED
  flavor_eng.187.a: "Tak do toho." # todo: NEW TRANSLATION
- flavor_eng.187.tt1: "Robert Blake je pridaný ako [character|e]" # todo: CHANGED
- enable_sailing_and_fighting_instructions_advance: "Umožní prístup k [ShowAdvanceName('sailing_and_fighting_instructions')] [advance|e]" # todo: NEW TRANSLATION
+ flavor_eng.187.tt1: "Robert Blake je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ enable_sailing_and_fighting_instructions_advance: "Umožní prístup k [ShowAdvanceName('sailing_and_fighting_instructions')] [Concept('advance','pokroku')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.187.b: "Námorníctvo ho potrebuje inde." # todo: CHANGED
- flavor_eng.187.tt2: "Robert Blake je pridaný ako [admiral|e]" # todo: CHANGED
+ flavor_eng.187.tt2: "Robert Blake je pridaný ako [Concept('admiral','admirál')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.187.c: "Naše súčasné taktiky sú rozumné a pevné." # todo: NEW TRANSLATION
  flavor_eng.187.tt3: "Robert Blake hľadá príležitosti inde" # todo: CHANGED
  flavor_eng.187.historical_info: "Robert Blake bol anglický vojenský vodca, ktorý slúžil počas anglickej občianskej vojny a obdobia Interregnum. Jeho najdôležitejšie príspevky prišli v úlohe admirála, kedy sa podieľal na veľkom rozšírení flotily a vyvinul niekoľko nových techník, ktoré vytvorili základy námorných taktík používaných v Age of Sail, ako aj výstavby a údržby najväčšieho námorníctva, aké krajina kedy poznala." # todo: NEW TRANSLATION
@@ -1531,8 +1531,8 @@
  flavor_eng.192.desc: "Správca námorníctva prejavuje veľký potenciál napriek nedostatku námornej skúsenosti. Vplyv, svedomitosť a talent [samuel_pepys.GetName] by mohli pomôcť reformovať Námorný úrad a prispieť k profesionalizácii Kráľovského námorníctva." # todo: NEW TRANSLATION
  flavor_eng.192.desc_navy_board: "$flavor_eng.192.desc$\n\nZískal pozíciu zapisovateľa aktov v Rade námorníctva, kde sa ukazuje byť schopnejším a efektívnejším pracovníkom než kolegovia na vyšších pozíciách." # todo: CHANGED
  flavor_eng.192.a: "Vymenujte ho za tajomníka rady." # todo: CHANGED
- flavor_eng.192.tt1: "Samuel Pepys je pridaný ako [character|e]" # todo: CHANGED
- enable_overhauled_admiralty_reform: "Umožní prístup k [ShowGovernmentReformName('overhauled_admiralty_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ flavor_eng.192.tt1: "Samuel Pepys je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ enable_overhauled_admiralty_reform: "Umožní prístup k [ShowGovernmentReformName('overhauled_admiralty_reform')] [Concept('government_reform','reforme vlády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.192.b: "Profitujte z jeho prebiehajúcej práce." # todo: CHANGED
  flavor_eng.192.tt2: "Samuel Pepys zostáva na svojej súčasnej pozícii" # todo: CHANGED
  flavor_eng.192.tt3: "Jeho práca v Rade námorníctva zefektívňuje operačné schopnosti námorníctva" # todo: CHANGED
@@ -1569,8 +1569,8 @@
  flavor_eng.197.entry: "Aphra Behn" # todo: NEW TRANSLATION
  flavor_eng.197.desc: "Hľadajúc zamestnanie a snažiac sa presadiť počas rozmachu obnovenej komédie, dramatik [aphra_behn.GetName] sa obrátila na King's Company, prominentnú divadelnú skupinu špecializujúcu sa na vystúpenia. Je zadlžená a má problémy dosiahnuť úspech, no komédia sa zdá byť jej doménou." # todo: CHANGED
  flavor_eng.197.a: "Literárny vzor pre neskoršie generácie." # todo: NEW TRANSLATION
- flavor_eng.197.tt1: "Behn je pridaná ako [character|e]" # todo: CHANGED
- flavor_eng.197.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť s odporom voči [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.197.tt1: "Behn je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ flavor_eng.197.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú nespokojnosť s odporom voči [ShowPolicyName('strict_censorship')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.197.b: "Morálka jej hier je sporná." # todo: NEW TRANSLATION
  flavor_eng.197.tt3: "Je prinútená verejne sa brániť, čo jej prinesie meno a väčšie uznanie" # todo: CHANGED
  flavor_eng.197.c: "To sú neúprosné časy." # todo: NEW TRANSLATION
@@ -1633,7 +1633,7 @@
  flavor_eng.205.entry: "Robert Boyle" # todo: NEW TRANSLATION
  flavor_eng.205.desc: "Írsko-rodený filozof, chemik a fyzik [robert_boyle.GetName] nadšene vykonáva experimentálnu vedu vo svojej rezidencii v [ShowLocationName('oxford')]. Vypracoval priekopnícku teóriu o inverznom vzťahu medzi tlakom a objemom plynu pri konštantnej teplote. Ako oddaný [ShowReligionName('anglican')] verí, že štúdium vedy a prírodného sveta môže zvýšiť pochopenie Božieho stvorenia, o čom rozsiahle píše medzi experimentami." # todo: CHANGED
  flavor_eng.205.a: "Oceňujeme jeho snahy." # todo: CHANGED
- flavor_eng.205.tt1: "Robert Boyle je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.205.tt1: "Robert Boyle je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.205.tt2: "Často navštevuje stretnutia s inými intelektuálmi a môže zohrávať úlohu pri podpore poprednej vedeckej spoločnosti" # todo: CHANGED
  flavor_eng.205.b: "Podporte ho, aby zdieľal svoje zistenia." # todo: CHANGED
  flavor_eng.205.c: "Šialenec a kacír v jednom." # todo: NEW TRANSLATION
@@ -1642,13 +1642,13 @@
  flavor_eng.206.entry: "$flavor_eng.206.title$" # todo: NEW TRANSLATION
  flavor_eng.206.desc: "Charizmatická a príťažlivá herečka schopná očariť a zaujať publikum sa objavila v miestnych divadlách. Napriek skromným začiatkom sa vypracovala a upútala pozornosť [target_root_country.GetGovernment.GetRulerTitle], ktorý sa javí ochotný jej ponúknuť príležitosť zabezpečiť kráľovskú zábavu." # todo: CHANGED
  flavor_eng.206.a: "Veľmi vhodná milenka." # todo: NEW TRANSLATION
- flavor_eng.206.tt1: "Eleanor Gwyn je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.206.tt1: "Eleanor Gwyn je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.206.tt2: "Porodí dieťa [target_root_country.GetGovernment.GetRuler.GetName]" # todo: CHANGED
  flavor_eng.206.tt3: "Využije svoj vplyv u [target_root_country.GetGovernment.GetRulerTitle], aby podporila záujmy hercov a dramatikov" # todo: CHANGED
  flavor_eng.206.tt4: "Sociálne normy sa stávajú uvoľnenejšími voči osobnému správaniu, keď [target_root_country.GetGovernment.GetRulerTitle] verejne prijme milenku z nižšej vrstvy" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_influential_figurine: "Vplyvná osobnosť" # todo: NEW TRANSLATION
  flavor_eng.206.b: "Zrodená len na pobavenie." # todo: NEW TRANSLATION
- flavor_eng.206.b.custom: "Všetci [ShowPopTypeName('nobles')], [ShowPopTypeName('burghers')] a [ShowPopTypeName('peasants')] v [ShowLocationName('london')] získavajú [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.206.b.custom: "Všetci [ShowPopTypeName('nobles')], [ShowPopTypeName('burghers')] a [ShowPopTypeName('peasants')] v [ShowLocationName('london')] získavajú [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.206.c: "Nevýrazná divadelná prítomnosť." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_absense_of_influential_figurine: "Absencia vplyvnej osobnosti" # todo: NEW TRANSLATION
  flavor_eng.206.tt5: "Práva umelcov sa zhoršujú bez výrazného zástancu, ktorý by presadzoval ich záujmy" # todo: NEW TRANSLATION
@@ -1657,7 +1657,7 @@
  flavor_eng.207.entry: "$flavor_eng.207.title$" # todo: NEW TRANSLATION
  flavor_eng.207.desc: "Kúzelník s prístrojmi a vynálezca [cornelius_debbel.GetName] sa usadil v [ROOT.GetCountry.GetName] na pozvanie [ROOT.GetCountry.GetGovernment.GetRulerTitle] a chystá sa predstaviť svoje najnovšie zariadenie zhromaždeným davom.\n\nZvláštny druh ponorky bol premiestnený do Temže s tvrdeniami o jej schopnosti plaviť sa plne ponorená v hĺbke dvoch až troch sáh. Skúšobná jazda je naplánovaná medzi Westminsterom a Greenwichom, pričom osobné pozvanie bolo zaslané [ROOT.GetCountry.GetGovernment.GetRuler.GetName], aby sa zúčastnil ako pasažier a bol svedkom tohto jedinečného úkazu." # todo: CHANGED
  flavor_eng.207.a: "Prijať pozvanie." # todo: NEW TRANSLATION
- flavor_eng.207.tt1: "Cornelius Drebbel je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.207.tt1: "Cornelius Drebbel je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.207.a.custom: "[target_root_country.GetGovernment.GetRuler.GetNameWithNoTooltip] sa pridáva k [cornelius_debbel.GetNameWithNoTooltip] na palube improvizovanej ponorky pre pomerne rizikový skúšobný ponor" # todo: NEW TRANSLATION
  flavor_eng.207.tt2: "Diváci sú ohromení predvedenou odvahou [target_root_country.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  flavor_eng.207.b: "Pozorovať predstavenie z brehu." # todo: NEW TRANSLATION
@@ -1681,7 +1681,7 @@
  flavor_eng.211.entry: "$flavor_eng.211.title$" # todo: NEW TRANSLATION
  flavor_eng.211.desc: "Vynálezca [thomas_savery.GetName] podal patent na parný prístroj určený na komerčné použitie. Zariadenie slúži ako pumpa a predstavuje revolučnú metódu čerpania vody, ktorú by bolo možné využiť na zlepšenie odvodňovania baní a zavedenie rozsiahleho verejného zásobovania vodou." # todo: NEW TRANSLATION
  flavor_eng.211.a: "Uprednostniť zásobovanie vodou." # todo: NEW TRANSLATION
- flavor_eng.211.tt1: "Thomas Savery je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.211.tt1: "Thomas Savery je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.211.b: "Bane sú naším živobytím." # todo: NEW TRANSLATION
  flavor_eng.211.c: "Použiť to ako prototyp pre ďalší pokrok." # todo: NEW TRANSLATION
  flavor_eng.211.tt2: "Thomas Savery nastúpi do pozície v [ShowBuildingTypeName('royal_society')]" # todo: CHANGED
@@ -1700,7 +1700,7 @@
  flavor_eng.214.entry: "$flavor_eng.214.title$" # todo: NEW TRANSLATION
  flavor_eng.214.desc: "Nedávno zachránený námorník, ktorý sa potopil pri západnom pobreží neobývanej ostrova Mas a Tierra, inšpiroval napísanie akéhosi autobiografického diela, ktoré sleduje putovanie 'Robinsona Crusoe', stroskotanca, ktorý strávil 28 rokov na vzdialenom tropickom púštnom ostrove. Počiatočné kritiky sú výrazne pozitívne a toto dielo sa javí ako začiatok realistickej fikcie ako literárneho žánru.\n\nAutorom tohto románu nie je nik iný ako [daniel_defoe.GetName], všestranný spisovateľ, obchodník a politický stratég, a očakáva sa, že vydanie sa stane veľkým domáce aj zahraničným hitom." # todo: NEW TRANSLATION
  flavor_eng.214.a: "Pero je jeho najväčším spojencom." # todo: CHANGED
- flavor_eng.214.tt1: "Daniel Defoe je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.214.tt1: "Daniel Defoe je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.214.b: "Lepšie sa hodí v poradnej úlohe." # todo: NEW TRANSLATION
  flavor_eng.214.tt2: "Daniel Defoe napíše niekoľko plodných textov podporujúcich plány ekonomickej a sociálnej obnovy, vrátane skorého návrhu národného poistenia" # todo: CHANGED
  flavor_eng.214.historical_info: "Robinson Crusoe je román od Daniela Defoea, ktorý sleduje protagonistu, ako bojuje o prežitie, snaží sa prispôsobiť novému prostrediu a nakoniec sa mení na vynaliezavú a sebestačnú osobu. Román sa uvádza ako druhý najprekladanější text po Biblii." # todo: NEW TRANSLATION
@@ -1733,11 +1733,11 @@
  flavor_eng.217.desc: "Spotreba ginu sa v krajine neustále zvyšuje, čo spôsobuje extrémnu chudobu, verejnú opitosť, rozpad rodín a kriminalitu. Bolo otvorených niekoľko ginových obchodov, čo problém ešte zhoršilo.\n\nVláda by mala konať a uložiť prísne opatrenia skôr, než sa situácia ešte viac zhorší." # todo: NEW TRANSLATION
  flavor_eng.217.a: "Schváliť dočasné zákony." # todo: NEW TRANSLATION
  flavor_eng.217.b: "Nech parlament schváli 'The Gin Act'." # todo: CHANGED
- flavor_eng.217.b.custom: "Niekoľko [locations|e] naprieč [target_root_country.GetName] získa [ShowNamedValue('control_severe_bonus')|+=2%] [control|e] v dôsledku zníženia miery kriminality." # todo: NEW TRANSLATION
+ flavor_eng.217.b.custom: "Niekoľko [Concept('locations','lokalít')|e] naprieč [target_root_country.GetName] získa [ShowNamedValue('control_severe_bonus')|+=2%] [Concept('control','kontrola')|e] v dôsledku zníženia miery kriminality." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.217.tt1: "Výroba ginu je regulovaná a sú zavedené licenčné poplatky" # todo: NEW TRANSLATION
  flavor_eng.217.tt2: "Dovoz lihovín je dočasne zakázaný" # todo: NEW TRANSLATION
  flavor_eng.217.c: "Nech si pijú svoje nápoje." # todo: NEW TRANSLATION
- flavor_eng.217.c.custom: "Niekoľko [locations|e] naprieč [target_root_country.GetName] stratí [ShowNamedValue('control_severe_penalty')|+=2%] [control|e] v dôsledku rastúcej kriminality." # todo: NEW TRANSLATION
+ flavor_eng.217.c.custom: "Niekoľko [Concept('locations','lokalít')|e] naprieč [target_root_country.GetName] stratí [ShowNamedValue('control_severe_penalty')|+=2%] [Concept('control','kontrola')|e] v dôsledku rastúcej kriminality." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.217.tt3: "Sociálne problémy pokračujú s celkovým nárastom závislostí, duševných chorôb a fyzického zhoršenia" # todo: NEW TRANSLATION
  reduced_gin_consumption: "Znížená spotreba ginu" # todo: NEW TRANSLATION
  excessive_gin_consumption: "Nadmerná spotreba ginu" # todo: NEW TRANSLATION
@@ -1749,7 +1749,7 @@
  flavor_eng.218.desc: "Popredný maliar štýlu [joshua_reynolds.GetName] založil spolu so svojím mentorom [random_artist.GetName] večerný klub pre podobne zmýšľajúcich a pre tých patričného postavenia. Jeho účelom je spojiť niektoré z najvýznamnejších literárnych a intelektuálnych osobností na diskusie o literatúre, politike, umení a ďalších intelektuálnych témach, kde sú bystrý humor a múdrosť ústredné pre charakter klubu.\n\nZamýšľajú sa stretávať týždenne v rôznych krčmách a kaviarňach po [ShowLocationName('london')] na živé diskusie." # todo: CHANGED
  flavor_eng.218.a: "Skvelá príležitosť." # todo: NEW TRANSLATION
  flavor_eng.218.tt1: "Joshua Reynolds je pridaný ako postava" # todo: CHANGED
- flavor_eng.218.tt2: "Pozvanie je zaslané [artists|e] z oblasti literatúry" # todo: NEW TRANSLATION
+ flavor_eng.218.tt2: "Pozvanie je zaslané [Concept('artists','umelci')|e] z oblasti literatúry" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.218.b: "Zabezpečiť zapojenie politikov." # todo: NEW TRANSLATION
  flavor_eng.218.c: "Pompézne predstavenie s malým významom." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_the_dining_club: "Jedálny klub" # todo: NEW TRANSLATION
@@ -1767,9 +1767,9 @@
  flavor_eng.220.entry: "$flavor_eng.220.title$" # todo: NEW TRANSLATION
  flavor_eng.220.desc: "Majitelia tovární a pôdy podávajú Petíciu Parlamentu, aby umožnil ďalšiu privatizáciu spoločných pozemkov a urýchlil presun pracovnej sily z vidieckych oblastí do miest. Hoci to pravdepodobne spôsobí významné sociálne presuny, zabezpečí aj dostatočnú dostupnosť pracovnej sily a zvýši celkovú poľnohospodársku produkciu." # todo: NEW TRANSLATION
  flavor_eng.220.a: "Vysídlený pracovník je produktívny pracovník." # todo: NEW TRANSLATION
- enable_enclosure_act_policy: "Umožní prístup k [ShowPolicyName('enclosure_act')] [policy|e]" # todo: NEW TRANSLATION
+ enable_enclosure_act_policy: "Umožní prístup k [ShowPolicyName('enclosure_act')] [Concept('policy','politike')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.220.b: "Sociálne dôsledky sú príliš vážne." # todo: NEW TRANSLATION
- flavor_eng.220.a.custom: "Rozhorčení [ShowPopTypeName('peasants')] vypuknú v nepokoje a 10 vidieckych [locations|e] stratí [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [prosperity|e]" # todo: NEW TRANSLATION
+ flavor_eng.220.a.custom: "Rozhorčení [ShowPopTypeName('peasants')] vypuknú v nepokoje a 10 vidieckych [Concept('locations','lokalít')|e] stratí [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.220.tt: "Zákon urýchli proces urbanizácie a povzbudí ďalšiu industrializáciu na úkor [ShowEstateTypeName('peasants_estate')]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_obstructing_industrialization: "Bránenie industrializácii" # todo: NEW TRANSLATION
  enclosure_riots: "Nepokoje pri oplotení" # todo: NEW TRANSLATION
@@ -1786,12 +1786,12 @@
  flavor_eng.222.entry: "$flavor_eng.222.title$" # todo: NEW TRANSLATION
  flavor_eng.222.desc: "V niekoľkých mestách vypukli nepokoje, pričom útočníci cielili na dielne s [ShowBuildingTypeName('cloth_guild')], ničili alebo poškodili stroje, ako je stocking frame, ktoré sa obávajú, že povedú k nezamestnanosti a nižším mzdám. Výroba [ShowGoodsName('cloth')] už klesla v dôsledku spôsobených škôd a pravdepodobne bude pokračovať v poklese, pokiaľ sa situácia neadresuje." # todo: NEW TRANSLATION
  flavor_eng.222.a: "Silou sa odpovie silou." # todo: NEW TRANSLATION
- flavor_eng.222.a.custom: "Všetci [ShowPopTypeName('peasants')] v [ShowRegionName('great_britain_region')] [locations|e] s [ShowBuildingTypeName('cloth_guild')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.222.a.custom: "Všetci [ShowPopTypeName('peasants')] v [ShowRegionName('great_britain_region')] [Concept('locations','lokalitách')|e] s [ShowBuildingTypeName('cloth_guild')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.222.tt1: "Prijíma sa zákon, ktorý zakazuje ničiť stroje" # todo: NEW TRANSLATION
  flavor_eng.222.tt2: "Vojská sú nasadené a niekoľko vzbúrencov je zatknutých a popravených" # todo: NEW TRANSLATION
  flavor_eng.222.tt3: "[ShowBuildingTypeName('cloth_guild')] naprieč [target_root_country.GetName] sú ovplyvnené [ShowModifier('jenny_spinner_riots')]" # todo: NEW TRANSLATION
  flavor_eng.222.b: "Zaviesť lepšie podmienky." # todo: NEW TRANSLATION
- flavor_eng.222.b.custom: "Všetci [ShowPopTypeName('peasants')] v [ShowRegionName('great_britain_region')] [locations|e] s [ShowBuildingTypeName('cloth_guild')] získajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ flavor_eng.222.b.custom: "Všetci [ShowPopTypeName('peasants')] v [ShowRegionName('great_britain_region')] [Concept('locations','lokalitách')|e] s [ShowBuildingTypeName('cloth_guild')] získajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.222.tt4: "Žiadny pracovník nie je prepustený pri zavádzaní strojov do výroby, čo brzdí produktivitu" # todo: NEW TRANSLATION
  flavor_eng.222.c: "Dávať falošné sľuby." # todo: NEW TRANSLATION
  flavor_eng.222.tt5: "Textilní pracovníci prestávajú so sabotážou a obnovujú svoju prácu" # todo: NEW TRANSLATION
@@ -1802,9 +1802,9 @@
  flavor_eng.223.entry: "Horatio Nelson" # todo: NEW TRANSLATION
  flavor_eng.223.desc: "Neochvejný a inšpiratívny námorný dôstojník získal významnú podporu v Rade admirality a pomohol zabezpečiť niekoľko víťazstiev pre [ROOT.GetCountry.GetGovernment.GetAdjective|U] námorníctvo. Je nevyhnutné, aby [horatio_nelson.GetName] dostal vlastné velenie, aby mohol naplno využiť svoje výnimočné schopnosti." # todo: CHANGED
  flavor_eng.223.a: "Námorníctvo je jeho miesto." # todo: CHANGED
- flavor_eng.223.tt1: "Horatio Nelson je pridaný ako [admiral|e]" # todo: CHANGED
+ flavor_eng.223.tt1: "Horatio Nelson je pridaný ako [Concept('admiral','admirál')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.223.b: "Sú aj iné spôsoby, ako slúžiť." # todo: NEW TRANSLATION
- flavor_eng.223.tt2: "Horatio Nelson je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.223.tt2: "Horatio Nelson je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.223.c: "Kapitán príliš horlivý pri strieľaní." # todo: NEW TRANSLATION
  flavor_eng.223.historical_info: "Horatio Nelson bol britský námorný dôstojník. Do kráľovského námorníctva vstúpil v mladom veku a rýchlo postupoval v hodnostiach. Jeho výnimočné taktiky a stratégie v námořných bitkách pomohli zabezpečiť britské víťazstvo pri bitke pri Trafalgare a položili základy britskej nadvlády na moriach a stali sa kľúčovým faktorom pri vzostupe Británie ako globálnej veľmoci." # todo: NEW TRANSLATION
  flavor_eng.224.title: "Zdravý rozum [thomas_paine.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1823,19 +1823,19 @@
  flavor_eng.225.desc: "Radikálny influencér [thomas_paine.GetName] zverejnil ďalší zo svojich podnecovacích pamfletov, v ktorom obhajuje zrušenie monarchie a zavedenie zástupcovského parlamentu. [thomas_paine.GetHisHer|U] slová predstavujú výzvu pre spoločenskú stabilitu [target_root_country.GetName] a už našli vnímavé publikum medzi tými, ktorí presadzujú politické a sociálne reformy." # todo: NEW TRANSLATION
  flavor_eng.225.a: "Postaviť sa proti akýmkoľvek zmenám stavu vecí." # todo: NEW TRANSLATION
  flavor_eng.225.tt1: "Thomas Paine uteká z [target_root_country.GetName], keď je obvinený zo vzbury" # todo: CHANGED
- flavor_eng.225.a.custom: "The [ShowPopTypeName('peasants')] in [ShowRegionName('great_britain_region')] lose #R 50.00%#! [pop_satisfaction|e]" # todo: CHANGED
+ flavor_eng.225.a.custom: "The [ShowPopTypeName('peasants')] in [ShowRegionName('great_britain_region')] lose #R 50.00%#! [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.225.b: "Zaviesť parlamentnú reformu." # todo: NEW TRANSLATION
  flavor_eng.225.tt2: "[ShowPopTypeName('burghers')] a [ShowPopTypeName('nobles')] sú pobúrení pokusom o oslabenie ich spoločenských privilégií" # todo: NEW TRANSLATION
- enable_representative_parliament_reform: "Udeľuje prístup k [ShowGovernmentReformName('representative_parliament_reform')] [government_reform|e]" # todo: NEW TRANSLATION
+ enable_representative_parliament_reform: "Udeľuje prístup k [ShowGovernmentReformName('representative_parliament_reform')] [Concept('government_reform','reforme vlády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.225.historical_info: "#italic Práva človeka#! bol kontroverzný pamflet, ktorý koncom 18. storočia vydal Thomas Paine. Jeho popularita znepokojila britskú vládu, ktorá podnikla kroky na potlačenie nesúhlasu a opozície voči stavu vecí. Považuje sa za východiskový bod diskusií o politických reformách a právach občanov a prispel k zvýšeniu verejného povedomia o otázkach súvisiacich s demokraciou a dôležitosťou rovnomerného zastúpenia." # todo: NEW TRANSLATION
  flavor_eng.226.title: "[james_cook.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eng.226.entry: "James Cook" # todo: NEW TRANSLATION
  flavor_eng.226.desc: "Odhodlaný a výnimočný navigátor [james_cook.GetName] prejavil nenasýtenú túžbu po prieskume a navrhol sériu expedícií do Pacifiku v nádeji objaviť a zaberať nové územia. Vyjadril tiež záujem vykonávať astronomické pozorovania a poskytnúť presnejšie mapy pre Kráľovské námorníctvo. Preukázal rešpektujúci a diplomatický prístup a pravdepodobne je vhodným kandidátom pre nadviazanie mierových vzťahov s miestnymi kmeňmi." # todo: CHANGED
  flavor_eng.226.a: "Pozoruhodná iniciatíva." # todo: NEW TRANSLATION
- flavor_eng.226.tt1: "James Cook je pridaný ako [explorer|e]" # todo: CHANGED
+ flavor_eng.226.tt1: "James Cook je pridaný ako [Concept('explorer','prieskumník')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.226.tt2: "Môže realizovať vedecký výskum ako súčasť misie, ak mu bude zverené preskúmavanie Tichého oceána" # todo: CHANGED
  flavor_eng.226.b: "Udeľte mu stály velenie." # todo: CHANGED
- flavor_eng.226.tt3: "James Cook je pridaný ako [admiral|e]" # todo: CHANGED
+ flavor_eng.226.tt3: "James Cook je pridaný ako [Concept('admiral','admirál')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.226.c: "Astronomické pozorovania? Čistá pošetilosť." # todo: NEW TRANSLATION
  flavor_eng.226.historical_info: "Cesty Jamesa Cooka položili základy pre neskoršie objavy a kolonizáciu v Tichom oceáne a ďalej, rozšírili vedecké poznatky a otvorili nové obchodné trasy. Jeho rozsiahle mapovanie Nového Zélandu a Austrálie viedlo k nároku na obe územia Britániou a následnej kolonizácii." # todo: NEW TRANSLATION
  flavor_eng.227.title: "Prieskumy [james_cook.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1856,7 +1856,7 @@
  flavor_eng.228.b: "Colné poplatky a spotrebné dane nás udržia." # todo: NEW TRANSLATION
  flavor_eng.228.c: "Politický horúci zemiak." # todo: NEW TRANSLATION
  flavor_eng.228.tt: "Parlament je nespokojný s ignorovaním krehkého finančného stavu [target_root_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_eng.228.custom: "Udeľuje prístup k [ShowLawName('eng_taxation_law')] [law|e]" # todo: NEW TRANSLATION
+ flavor_eng.228.custom: "Udeľuje prístup k [ShowLawName('eng_taxation_law')] [Concept('law','zákonu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.228.historical_info: "Daň z príjmov zavedol britský premiér William Pitt mladší na riešenie finančného zaťaženia spôsobeného prebiehajúcimi napoleonskými vojnami. Pittova daň z príjmov bola navrhnutá ako progresívna daň, čo znamenalo, že jednotlivci s vyššími príjmami platili vyššie percento zo svojho príjmu. Stretnula sa s odporom zo strany vysokopríjmových osôb a nakoniec bola zrušená po skončení vojny." # todo: NEW TRANSLATION
  flavor_eng.229.title: "Denník Samuela Pepysa" # todo: NEW TRANSLATION
  flavor_eng.229.entry: "$flavor_eng.229.title$" # todo: NEW TRANSLATION
@@ -1872,7 +1872,7 @@
  flavor_eng.230.entry: "$flavor_eng.230.title$" # todo: NEW TRANSLATION
  flavor_eng.230.desc: "Reformátori presadzujú zlepšenie pracovných práv pre robotníkov v továrňach, ktorí sú často vystavení bezbrehej exploatácii, nedostatočnej ochrane a nízkym mzdám. Akýkoľvek pokus zmeniť súčasný stav očakáva odpor a potenciálne negatívne dôsledky na ekonomický rast a produktivitu. Napriek tomu hrozí odliv pracovnej sily, ak sa situácia nezlepší." # todo: NEW TRANSLATION
  flavor_eng.230.a: "Tí biedni potrebujú úľavu." # todo: NEW TRANSLATION
- flavor_eng.230.custom: "Udeľuje prístup k [ShowLawName('factory_working_conditions_law')] [law|e]" # todo: NEW TRANSLATION
+ flavor_eng.230.custom: "Udeľuje prístup k [ShowLawName('factory_working_conditions_law')] [Concept('law','zákonu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.230.b: "Robotníci poháňajú ekonomický stroj." # todo: NEW TRANSLATION
  flavor_eng.230.c: "Tí nevděční by mohli prejaviť trochu vďaky." # todo: NEW TRANSLATION
  flavor_eng.230.historical_info: "Zákon o továrňach bol významným legislatívnym aktom v Británii a predstavoval zlom v snahe zlepšiť pracovné podmienky a chrániť práva továrenských robotníkov, najmä detí, ktoré by inak pracovali väčšinu dňa za minimálny plat. Zákon zaviedol vekové obmedzenia, požiadavky na vzdelávanie a továrenské inšpekcie, a prinútil majiteľov tovární zlepšiť všeobecnú bezpečnosť a viesť evidenciu zamestnancov." # todo: NEW TRANSLATION
@@ -1880,19 +1880,19 @@
  flavor_eng.231.entry: "Richard Arkwright" # todo: NEW TRANSLATION
  flavor_eng.231.desc: "Podnikateľ a vynálezca so zmyslom pre obchod [richard_arkwright.GetName] podal žiadosť o patent na nový typ výrobných strojov poháňaných vodnou silou, ktorý používa sériu valcov na kontinuálnu výrobu bavlnenej nite. To výrazne zvyšuje efektivitu a výstup. Čelí však právnym problémom ohľadom pôvodnosti vynálezu, čo môže spomaliť jeho zavádzanie." # todo: CHANGED
  flavor_eng.231.a: "Udeľte výhradný patent." # todo: NEW TRANSLATION
- flavor_eng.231.tt1: "Richard Arkwright je pridaný ako [character|e]" # todo: CHANGED
- enable_water_frame_advance: "Udeľuje prístup k [ShowAdvanceName('water_frame')] [advance|e]" # todo: NEW TRANSLATION
+ flavor_eng.231.tt1: "Richard Arkwright je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ enable_water_frame_advance: "Udeľuje prístup k [ShowAdvanceName('water_frame')] [Concept('advance','pokroku')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.231.b: "Je namieste ďalšie prešetrenie." # todo: NEW TRANSLATION
  flavor_eng.231.tt2: "Právny spor sa skončí spoločným patentom" # todo: NEW TRANSLATION
  flavor_eng.231.historical_info: "Richard Arkwright bol anglický vynálezca, ktorý uskutočnil niekoľko inovácií v textilnom priemysle na počiatku industrializácie. Jeho najdôležitejšie príspevky zahŕňali kolovrátok a vodný pohon, ktoré zrevolucionalizovali výrobu bavlnenej priadze a pripravili cestu pre prechod z domácich výrobných systémov na továrenský systém." # todo: NEW TRANSLATION
- unlocked_advance_coke_smelting_tt: "Prebehol $flavor_eng.232.title$ [dynamic_historical_event|e]" # todo: CHANGED
+ unlocked_advance_coke_smelting_tt: "Prebehol $flavor_eng.232.title$ [Concept('dynamic_historical_event','dynamická historická udalosť')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.232.title: "Príspevky rodiny Darby" # todo: NEW TRANSLATION
  flavor_eng.232.entry: "$flavor_eng.232.title$" # todo: NEW TRANSLATION
  flavor_eng.232.desc: "Priekopnícky železiar [abraham_darby.GetName] vyvinul nový zdroj paliva pre vysoke pece. Toto palivo, známe jednoducho ako 'koks', sa považuje za menej nestále a schopné generovať konzistentnejšie vyššie teplo v porovnaní s dovtedajšou preferenciou, dreveným uhlím. [abraham_darby.GetNameWithNoTooltip] teraz vykonáva skúšobnú implementáciu vo svojej rodinnej [ShowBuildingTypeName('iron_foundry')], s nádejnými výsledkami." # todo: CHANGED
  flavor_eng.232.a: "Urobiť z toho štandard v priemysle." # todo: NEW TRANSLATION
- enable_coke_smelting_advance: "Udeľuje prístup k [ShowAdvanceName('coke_smelting')] [advance|e]" # todo: NEW TRANSLATION
+ enable_coke_smelting_advance: "Udeľuje prístup k [ShowAdvanceName('coke_smelting')] [Concept('advance','pokroku')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.232.b: "Súčasný proces je dostatočne efektívny." # todo: NEW TRANSLATION
- flavor_eng.232.tt1: "Abraham Darby je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.232.tt1: "Abraham Darby je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.232.tt2: "Nový zdroj spracovaného paliva vyžaduje väčšie množstvá [ShowGoodsName('coal')]" # todo: NEW TRANSLATION
  flavor_eng.232.historical_info: "Koksovacia metóda tavenia železa vynájdená Abrahamom Darbyom I sa považuje za významný katalyzátor, ktorý výrazne posunul priemyselnú revolúciu. Jej okamžité dôsledky zahŕňali zásadnú transformáciu techník výroby železa, čo umožnilo široké prijatie železa a ocele v rôznych odvetviach. Položila tiež základy pre hromadnú výrobu liateho železa, ktorá bola kľúčová pre priemyselnú revolúciu." # todo: NEW TRANSLATION
  flavor_eng.233.title: "Zákon o čaji" # todo: NEW TRANSLATION
@@ -1909,7 +1909,7 @@
  flavor_eng.234.a: "Kulinárska perla." # todo: NEW TRANSLATION
  the_experienced_english_housekeeper: "Skúsená anglická gazdinka" # todo: NEW TRANSLATION
  flavor_eng.234.b: "Zručná domáca gazdinka nepotrebuje rady." # todo: NEW TRANSLATION
- flavor_eng.234.tt1: "Elizabeth Raffald je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.234.tt1: "Elizabeth Raffald je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.234.tt2: "Kniha sa stane populárnym a vplyvným dielom, nielen v [target_root_country.GetName], ale aj v amerických kolóniách" # todo: NEW TRANSLATION
  flavor_eng.234.historical_info: "#italic The Experienced English Housekeeper#! napísala Elizabeth Raffald, ktorá predstavila inovatívne a praktické recepty, z ktorých niektoré sa udržali dodnes. Obsahovala recepty na rôzne jedlá, od polievok a pečení až po dezerty, vrátane prvej známej receptúry na crumpet. Kniha zdôrazňovala presnosť pri varení, napríklad používanie štandardizovaných mier, čo bolo v tom období zriedkavé." # todo: NEW TRANSLATION
  flavor_eng.235.title: "Bostonský masaker" # todo: NEW TRANSLATION
@@ -1943,7 +1943,7 @@
  flavor_eng.238.entry: "$flavor_eng.238.title$" # todo: NEW TRANSLATION
  flavor_eng.238.desc: "Hrozné podmienky továrenských robotníkov boli dlhodobo považované za nevyhnutné zlo umožňujúce rýchly rozvoj našej výroby. Nedávno sa robotníci, unavení tým, čo považujú za neľudské zaobchádzanie, snažia spojiť a kolektívne vyjednávať o lepších platoch, zlepšenej bezpečnosti a kratšom pracovnom čase.\n\nMôžu byť potrebné represívne opatrenia na potlačenie tohto správania, inak riskujeme narušenie rýchlej industrializácie prebiehajúcej v celej krajine." # todo: NEW TRANSLATION
  flavor_eng.238.a: "Toto nezmyselné správanie musí skončiť." # todo: NEW TRANSLATION
- flavor_eng.238.custom: "Udeľuje prístup k [ShowLawName('trade_unions_law')] [law|e]" # todo: NEW TRANSLATION
+ flavor_eng.238.custom: "Udeľuje prístup k [ShowLawName('trade_unions_law')] [Concept('law','zákonu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_eng.238.a.custom: "Pobúrení [ShowPopTypeName('peasants')] sa môžu spojiť a protestovať proti porušovaniu základných pracovných práv" # todo: NEW TRANSLATION
  flavor_eng.238.b: "Sú to predsa ľudia." # todo: NEW TRANSLATION
  disgruntled_factory_workers: "Nespokojní továrenskí robotníci" # todo: NEW TRANSLATION
@@ -1962,7 +1962,7 @@
  flavor_eng.240.desc_industrial_region: "$flavor_eng.240.desc_common$\n\nNávrh odporúča jeho výstavbu v priemyselnej provincii [ShowProvinceDefinitionName('shropshire_province')]. Táto strategická poloha nielen rieši okamžitú potrebu zlepšiť dopravu, ale tiež podčiarkuje význam regiónu ako centra priemyselnej činnosti. To z nej robí ideálne miesto na predvedenie pionierskeho dizajnu mosta a jeho potenciálu revolucionalizovať infraštruktúru." # todo: NEW TRANSLATION
  flavor_eng.240.desc: "$flavor_eng.240.desc_common$\n\nNávrh navrhuje jeho výstavbu v provincii [ShowProvinceDefinitionName('shropshire_province')], pretože v tejto provincii momentálne chýba priechod cez rieku, čo by posilnilo miestnu ekonomiku a slúžilo ako symbol pokroku." # todo: NEW TRANSLATION
  flavor_eng.240.a: "Začať výstavbu okamžite." # todo: NEW TRANSLATION
- flavor_eng.240.tt1: "Thomas Pritchard je pridaný ako [character|e]" # todo: CHANGED
+ flavor_eng.240.tt1: "Thomas Pritchard je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.240.b: "Lepšie investovať do modernizácie textilnej výroby." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_invested_in_textile_production: "Modernizovaná textilná výroba" # todo: NEW TRANSLATION
  flavor_eng.240.c: "Namiesto toho by sa mohla posilniť potravinová výroba." # todo: NEW TRANSLATION
@@ -2002,7 +2002,7 @@
  flavor_eng.243.entry: "Elizabeth Montagu" # todo: NEW TRANSLATION
  flavor_eng.243.desc: "Vplyvná spisovateľka a literárna kritička [elizabeth_montagu.GetName] sa vydala za prominentného štátníka, ktorý ju uviedol do vyšších kruhov spoločnosti. Dúfa, že pretvorí svoje sídlo na centrum literárnych a intelektuálnych stretnutí, ktoré spoja spisovateľov, umelcov, učencov a zástancov spoločenských reforiem." # todo: CHANGED
  flavor_eng.243.a: "Skutočne nezávislá žena." # todo: NEW TRANSLATION
- flavor_eng.243.tt1: "Elizabeth Montagu je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.243.tt1: "Elizabeth Montagu je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.243.b: "Jej rebelujúca povaha je znepokojujúca." # todo: CHANGED
  flavor_eng.243.historical_info: "Elizabeth Montagu bola významnou osobnosťou v intelektuálnych a literárnych kruhoch v Anglicku. Zohrala kľúčovú úlohu pri organizovaní a vedení Spoločnosti Modrých pančúch, neformálneho ženského spoločenského a vzdelávacieho hnutia. Medzi jej publikované práce patrí satira a 'Dialogues of the Dead', séria rozhovorov medzi živými a významnými mŕtvymi, ktoré slúžili ako kritika spoločnosti 18. storočia." # todo: NEW TRANSLATION
  variable_restoration_comedy_allowed_tt: "Komédie z obdobia Restorácie sú povolené" # todo: NEW TRANSLATION
@@ -2027,7 +2027,7 @@
  flavor_eng.246.entry: "$flavor_eng.246.title$" # todo: NEW TRANSLATION
  flavor_eng.246.desc: "Anonymná autorka začala publikovať svoje diela pod pseudonymom 'A Lady'. Knihy si zatiaľ nezískali veľkú popularitu, no považujú sa za vtipné a ironické, napriek obmedzenému formálnemu vzdelaniu, ktoré ženám v tom čase vyplývalo. Zároveň rozpracúvajú obmedzenia kladené na ženy, kritizujú trh s manželstvami, problémy, s ktorými sa ženy tej doby potýkajú, a triedne rozdiely v spoločnosti." # todo: NEW TRANSLATION
  flavor_eng.246.a: "Život je pochmúrny bez štipky humoru." # todo: NEW TRANSLATION
- flavor_eng.246.tt1: "Joan Austen je pridaná ako [character|e]" # todo: CHANGED
+ flavor_eng.246.tt1: "Joan Austen je pridaná ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_eng.246.b: "To nie je vhodné pre dámu." # todo: NEW TRANSLATION
  flavor_eng.246.historical_info: "Jane Austen bola románopisateľka známa dielami romantickej beletrie. Je jednou z najuznávanejších autoriek v dejinách anglickej literatúry a je predovšetkým známa svojimi šiestimi dokončenými románmi. Bola samoukom, keďže vzdelávacie príležitosti pre ženy boli obmedzené, a svoje ranné roky trávila štúdiom v rozsiahlej otcovej knižnici." # todo: NEW TRANSLATION
  flavor_eng.247.title: "Pýcha a predsudok" # todo: NEW TRANSLATION
@@ -2048,8 +2048,8 @@
  flavor_eng.249.entry: "$flavor_eng.249.title$" # todo: NEW TRANSLATION
  flavor_eng.249.desc: "Cestujúci portrétista [godfrey_kneller.GetName] hľadá patronát v [ROOT.GetCountry.GetName], aby založil akadémiu maľby portrétov, ktorá by revolučne zrýchlila výrobu portrétov podľa modelu. Okrem výučby budúcich umelcov sľubuje klientom rýchle dodanie bez kompromisov na kvalite." # todo: CHANGED
  flavor_eng.249.a: "Chvályhodná iniciatíva." # todo: NEW TRANSLATION
- flavor_eng.249.tt1: "Geoffrey Kneller je pridaný ako [character|e]" # todo: CHANGED
- flavor_eng.249.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú svoje znepokojenie nad predstavou, že heretik bude maľovať vedúcich členov spoločnosti v dôsledku politiky [ShowPolicyName('strict_censorship')] [policy|e]" # todo: NEW TRANSLATION
+ flavor_eng.249.tt1: "Geoffrey Kneller je pridaný ako [Concept('character','postava')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ flavor_eng.249.tt2: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vyjadrujú svoje znepokojenie nad predstavou, že heretik bude maľovať vedúcich členov spoločnosti v dôsledku politiky [ShowPolicyName('strict_censorship')] [Concept('policy','politiky')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  STATIC_MODIFIER_NAME_industrial_painter: "Priemyselný portrétista" # todo: NEW TRANSLATION
  flavor_eng.249.b: "Spáľte ho za kacírstvo." # todo: NEW TRANSLATION
  flavor_eng.249.tt3: "Politika [ShowPolicyName('de_heretico_comburendo')] prikazuje upáliť heretikov" # todo: NEW TRANSLATION
