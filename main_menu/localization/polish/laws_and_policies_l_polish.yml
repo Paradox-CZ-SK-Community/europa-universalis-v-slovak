@@ -1,5 +1,5 @@
 ﻿l_polish:
- ASSIGN_LAW_POLICY_TITLE: "Priradiť zákonovú politiku $STRING$" # todo: NEW TRANSLATION
+ ASSIGN_LAW_POLICY_TITLE: "Priradiť politiku pre $STRING$" # todo: CHANGED
  forbids_no_policy: "Musí mať nejakú politiku" # todo: NEW TRANSLATION
  no_ai_propose_cd: "Môže byť navrhnuté bez postihu za dobu obnovy" # todo: NEW TRANSLATION
  feudal_de_jure_law: "Feudálne 'De Jure' zákony" # todo: NEW TRANSLATION
@@ -44,6 +44,7 @@
  harem_policy_desc: "Veľa života na dvore je izolovaného a rozdeleného podľa pohlavia, sústreďuje sa okolo háremu, kde otročené služobnice a konkubíny súperia o vplyv nad vládcom." # todo: NEW TRANSLATION
  harem_law: "Zákony háremu" # todo: NEW TRANSLATION
  harem_law_desc: "Hárem je významná inštitúcia v rámci kráľovskej domácnosti, ktorá zabezpečuje zrodenie dedičov pre nástupníctvo." # todo: NEW TRANSLATION
+ unlocks_harem_law_tt: "Odomkne [law|e] [ShowLawName('harem_law')]" # todo: NEW TRANSLATION
  secluded_harem_policy: "Uzavretý hárem" # todo: NEW TRANSLATION
  secluded_harem_policy_desc: "Náš harém nie je určený očiam mas mimo kráľovského dvora. Z tohto dôvodu zohráva v domácnosti uzavretejšiu úlohu a priamo zasahovať do záležitostí panovníka je prísne zakázané." # todo: CHANGED
  public_harem_policy: "Verejný hárem" # todo: NEW TRANSLATION
@@ -271,6 +272,7 @@
  heir_religion_law: "Náboženstvo dediča" # todo: NEW TRANSLATION
  heir_religion_law_desc: "Schopnosť rozhodovať o náboženstve [heir|e] má významný dopad na otázky nasledovníctva a vlády. Umožňuje panovníkom a vládnym orgánom udržiavať náboženskú stabilitu a zabezpečiť, aby presvedčenia a praktiky panovníka korešpondovali s väčšinou poddaných. Moc určovať náboženstvo dediča predstavuje dôležitý prvok jemnej rovnováhy medzi náboženskou slobodou, vládou a spoločenskou harmóniou." # todo: NEW TRANSLATION
  act_of_settlement_tt: "Odblokované prostredníctvom [dynamic_historical_event|e]" # todo: NEW TRANSLATION
+ recently_negotiated_succession_law_locked_tt: "Náš [union_partner|e] nedávno uplatnil zmenu tohto zákona" # todo: NEW TRANSLATION
  heir_special_succession: "Špeciálne následníctvo" # todo: NEW TRANSLATION
  heir_special_succession_desc: "Náboženstvo [heir|e] nie je určené zákonmi, ale samotným [heir_selection|e]." # todo: NEW TRANSLATION
  heir_same_religion: "Rovnaké náboženstvo" # todo: NEW TRANSLATION
@@ -587,6 +589,8 @@
  chi_ming_dynasty_code_policy_desc: "$chi_ming_dynasty_code_policy$ bude vytvorený, aby riešil všetky kritické problémy, ktorým naša dynastia čelí, ako aj tie, ktorým čelili naši predchodcovia. Zabezpečí, že nespadneme do korupcie a zneužívania moci ministerstvami!" # todo: NEW TRANSLATION
  scottish_civil_law: "Škótske občianske právo" # todo: NEW TRANSLATION
  scottish_civil_law_desc: "Kolegiálny súd (College of Justice) zreformoval naše občianske právo smerom k novému štandardu. Táto inštitúcia pozostáva z dobre vzdelaných členov našej krajiny, ktorí budú rozhodovať o každej dôležitej otázke týkajúcej sa #ITALIC Scots Law#!." # todo: NEW TRANSLATION
+ carta_de_logu_policy: "Carta de Logu" # todo: NEW TRANSLATION
+ carta_de_logu_policy_desc: "Vychádzajúc z Giudicata z Arboree je toto jeden z prvých komplexných právnych kódexov v Európe napísaných v románskom hovorovom jazyku (sardínskom). Zavádza kultúru 'právneho štátu', ktorá chráni práva obyčajných ľudí a reguluje pastierstvo a užívanie pôdy. Táto právna vyspelosť umožňuje Sardiňanom udržať jednotnú spoločenskú tkaninu. Podporuje kultúrnu identitu definovanú občianskymi právami a hlbokým rešpektom k kolektívnemu vlastníctvu #italic Logu#!." # todo: NEW TRANSLATION
  naval_doctrine_law: "Námorná doktrína" # todo: NEW TRANSLATION
  naval_doctrine_law_desc: "Námorné doktríny predstavujú súbory zručností, v ktorých sa naše [navy|e] môže špecializovať. Čím dlhšie pracujeme na doktrínach, tým hlbšie sa zakorenia v našich flotilách a tým lepší v nich budeme. V priebehu času to môže viesť k silným bonusom pre naše slávne loďstvo." # todo: NEW TRANSLATION
  economical_policies_law: "Hospodárska politika" # todo: NEW TRANSLATION
@@ -677,6 +681,7 @@
  pte_clergy_estate_cannot_marry: "@clergy_estate_cannot_marry_negative! $MODIFIER_TYPE_NAME_clergy_estate_cannot_marry$: #R Áno#!" # todo: NEW TRANSLATION
  pte_no_imperial_armory: "Môže stavať akékoľvek nové [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #R Nie#!" # todo: NEW TRANSLATION
  pte_yes_imperial_armory: "Môže stavať akékoľvek nové [ShowBuildingTypeName('hre_imperial_armory_foreign')]: #G Áno#!" # todo: NEW TRANSLATION
+ pte_no_imperial_circles: "Ríšske kruhy založené: #R Nie#!" # todo: NEW TRANSLATION
  fleet_in_being: "Flotila v pohotovosti" # todo: NEW TRANSLATION
  fleet_in_being_desc: "Náš námorný vplyv bude cítiť bez nutnosti, aby naša flotila opúšťala prístav okrem tých najvýhodnejších podmienok." # todo: NEW TRANSLATION
  free_oarsmen: "Slobodní veslári" # todo: NEW TRANSLATION
@@ -1057,6 +1062,7 @@
  princely_bishopric_electorate_policy_desc: "Elektorát [GetUniqueInternationalOrganization('hre').GetName] zostáva rozdelený medzi [ShowSpecialStatusNamePlural('elector')] a [ShowSpecialStatusNamePlural('archbishop_elector')]." # todo: NEW TRANSLATION
  secularized_electors_policy: "Sekularizovaný Elektorát" # todo: NEW TRANSLATION
  secularized_electors_policy_desc: "Predchádzajúce pozície [ShowSpecialStatusNamePlural('archbishop_elector')] boli úplne sekularizované." # todo: NEW TRANSLATION
+ ELECTORATE_ORG_COUNT_PREVIEW: "Po tejto reforme bude až #Y $PRINCE_MAX$#! $PRINCE_NAME$ (momentálne #Y $PRINCE_NOW$#!) a až #Y $ARCH_MAX$#! $ARCH_NAME$ (momentálne #Y $ARCH_NOW$#!)." # todo: NEW TRANSLATION
  electorate_religion_law: "Náboženský zákon elektorátu" # todo: NEW TRANSLATION
  electorate_religion_law_desc: "Náboženstvo je hlavným pilierom [GetUniqueInternationalOrganization('hre').GetName] pre cisárov aj elektorov." # todo: NEW TRANSLATION
  only_imperial_religion_policy: "Iba cisárske náboženstvo" # todo: NEW TRANSLATION
@@ -1304,19 +1310,33 @@
  order_of_chivalry_law_desc: "Zakotvený v zmesi náboženských a dvorových tradícií, tento zákon nesie dedičstvo rytierov oddaných [ShowReligionGroupAdjective('christian')] ideálom a charitatívnym misiám. Pôvodne založené na ochranu pútnikov do Svätej zeme a udržiavanie prísah chudoby, poslušnosti a čistoty, tieto rády sa časom premenili, oceňujúc vynikajúcich jednotlivcov a stávajúc sa symbolom prestíže." # todo: NEW TRANSLATION
  has_not_assumed_chivalric_order_in_last_25_years_tt: "Nezriadili sme #Y $order_of_chivalry_law$#! v posledných #Y 25 rokoch#!" # todo: NEW TRANSLATION
  order_of_saint_george_policy: "Rád svätého Juraja" # todo: NEW TRANSLATION
- order_of_saint_george_policy_desc: "Rád svätého Juraja: Založený kráľom Karolom I. Uhorska v roku 1326, táto vládna reforma, známa ako 'Chivalric Society of Saint George', stelesňuje záväzok k ideálom šľachty a cti, ktoré podporuje cez rytiernické turnaje a slávnosti." # todo: NEW TRANSLATION
+ order_of_saint_george_policy_desc: "$order_of_saint_george_desc$" # todo: CHANGED
  order_of_the_ermine_policy: "Rád Hermelína" # todo: NEW TRANSLATION
- order_of_the_ermine_policy_desc: "Rád Hermelína čerpá inšpiráciu z Rádu Garter, ktorý bol predtým založený v Anglicku. S hermelínom ako symbolom neotrasiteľnej osobnej cti, rád oceňuje mužov i ženy, bez ohľadu na spoločenské postavenie, za výnimočné služby vévodstvu Bretónska." # todo: NEW TRANSLATION
+ order_of_the_ermine_policy_desc: "$order_of_the_ermine_desc$" # todo: CHANGED
  order_of_the_dragon_policy: "Rád Draka" # todo: NEW TRANSLATION
- order_of_the_dragon_policy_desc: "Tiež známy ako '#italic Societas Draconica#!', bol tento rád zasvätený obrane [GetCountry('HUN').GetAdjective] monarchie, [ShowReligionAdjective('catholic')] Cirkvi a [ShowReligionGroupName('christian')] proti hrozbe [GetCountry('TUR').GetLongName], heretikov a pohanov. Modelovaný podľa Rádu sv. Juraja a inšpirovaný križiackym duchom doby, zjednocuje [ShowEstateTypeName('nobles_estate')] a [ShowEstateTypeName('crown_estate')] pod symbolmi ouroborosu a červeného kríža, podporujúc kolektívnu obranu proti zahraničným i domácim hrozbám a zároveň ponúkajúc šľachte $nobles_estate$ kráľovskú ochranu a pocty výmenou za ich vernosť." # todo: CHANGED
+ order_of_the_dragon_policy_desc: "$order_of_the_dragon_desc$" # todo: CHANGED
  order_of_the_band_policy: "Rád Pásu" # todo: NEW TRANSLATION
- order_of_the_band_policy_desc: "Rád Pásu sa skladá z najvznešenejších rytierov, ktorí skladajú prísahu vernosti a poslušnosti kráľovi Kastýlie. Ich povinnosťami sú starostlivé a bezchybné dvorové správanie, účasť na kladivových súbojoch, podpora a predovšetkým vernosť svojmu vládcovi." # todo: NEW TRANSLATION
+ order_of_the_band_policy_desc: "$order_of_the_band_desc$" # todo: CHANGED
  order_of_the_swan_policy: "Rád Labute" # todo: NEW TRANSLATION
- order_of_the_swan_policy_desc: "Rád Labute je zasvätený prehlbovaniu zbožnosti a šíreniu kultu Panny Márie. Členmi rádu sú mnohí princovia z vládnucej dynastie aj mnohí šľachtici z krajiny, všetci zjednotení v vytrvalosti." # todo: NEW TRANSLATION
+ order_of_the_swan_policy_desc: "$order_of_the_swan_desc$" # todo: CHANGED
  order_of_the_black_eagle_policy: "Rád Čierneho Orla" # todo: NEW TRANSLATION
- order_of_the_black_eagle_policy_desc: "Svetský Rád Čierneho Orla je skôr vojenským rádom než duchovným. Členmi rádu bývajú príslušníci kráľovskej rodiny, návštevní zahraniční panovníci a mnohí vynikajúci generáli, ktorým boli udelené pocty za ich zásluhy." # todo: NEW TRANSLATION
+ order_of_the_black_eagle_policy_desc: "$order_of_the_black_eagle_desc$" # todo: CHANGED
  order_of_the_white_eagle_policy: "Rád Bieleho Orla" # todo: NEW TRANSLATION
- order_of_the_white_eagle_policy_desc: "Vojenský $order_of_the_white_eagle_policy$ sa udeľuje najbližším podporovateľom štátu a najvýnimočnejším občanom ako odmena za ich službu krajine. Okrem toho sa udeľuje aj vysokopostaveným návštevníkom, ktorí nás poctili svojou prítomnosťou." # todo: NEW TRANSLATION
+ order_of_the_white_eagle_policy_desc: "$order_of_the_white_eagle_desc$" # todo: CHANGED
+ order_of_saint_george: "Rád svätého Juraja" # todo: NEW TRANSLATION
+ order_of_saint_george_desc: "Tento rád, známy ako 'Rytierstvo svätého Juraja', zasväcuje svoje členy ideálom rytierstva a cti a tieto hodnoty šíri prostredníctvom turnajov a sviatkov." # todo: NEW TRANSLATION
+ order_of_the_ermine: "Rád hermelína" # todo: NEW TRANSLATION
+ order_of_the_ermine_desc: "Rád hermelína čerpá inšpiráciu z [GetCountry('ENG').GetAdjective] Rádu Podväzku. Hermelín ako jeho symbol predstavuje neochvejnú osobnú česť; rád oceňuje mužov i ženy, bez ohľadu na spoločenské postavenie, za výnimočné služby kniežatstvu [ShowAreaName('brittany_area')]." # todo: NEW TRANSLATION
+ order_of_the_dragon: "Rád Draka" # todo: NEW TRANSLATION
+ order_of_the_dragon_desc: "Tiež známy ako '#italic Societas Draconica#!', tento rád bol zasvätený obrane [GetCountry('HUN').GetAdjective] monarchie, [ShowReligionAdjective('catholic')] cirkvi a [ShowReligionGroupName('christian')] proti hrozbám od [GetCountry('TUR').GetLongName], heretikov a pohanov. Vzorovaný po Ráde sv. Juraja a inšpirovaný križiackym duchom doby spája [ShowEstateTypeName('nobles_estate')] a [ShowEstateTypeName('crown_estate')] pod symbolmi ouroborosu a červeného kríža, podporujúc spoločnú obranu proti vonkajším i vnútorným hrozbám a zároveň ponúkajúc $nobles_estate$ kráľovskú ochranu a pocty výmenou za ich vernosť." # todo: NEW TRANSLATION
+ order_of_the_band: "Rád Pásu" # todo: NEW TRANSLATION
+ order_of_the_band_desc: "Rád Pásu je zložený z najvynikajúcejších rytierov, ktorí prísahajú vernosť a poslušnosť vládcovi [GetCountry('CAS').GetName]. Jeho členovia sú viazaní vysokými normami bezúhonného a bezchybného dvorového správania, pravidelne sa zúčastňujú turnajov a nadovšetko musia podporovať a byť verní svojmu vládcovi." # todo: NEW TRANSLATION
+ order_of_the_swan: "Rád Labute" # todo: NEW TRANSLATION
+ order_of_the_swan_desc: "Rád Labute je zasvätený podpore zbožnosti a šíreniu kultu Panny Márie. Členmi tohto rádu je mnoho princov z vládnucej dynastie i [ShowEstateTypeName('nobles_estate')], všetci zjednotení v vytrvalosti." # todo: NEW TRANSLATION
+ order_of_the_black_eagle: "Rád Čierneho orla" # todo: NEW TRANSLATION
+ order_of_the_black_eagle_desc: "Svetský Rád Čierneho orla je skôr vojenským rádom než duchovným. Členmi tohto rádu sú často príslušníci kráľovskej rodiny, hostia z cudzích panstiev a vynikajúci generáli, ktorí boli odmenení za svoje zásluhy." # todo: NEW TRANSLATION
+ order_of_the_white_eagle: "Rád Bieleho orla" # todo: NEW TRANSLATION
+ order_of_the_white_eagle_desc: "Vojenský $order_of_the_white_eagle_policy$ sa udeľuje najbližším podporovateľom štátu a najvynikajúcejším občanom ako odmena za ich služby krajine. Udeľuje sa tiež významným návštevníkom najvyššieho rangu, ktorí nás poctili svojou prítomnosťou." # todo: NEW TRANSLATION
  society_with_the_donkey: "$noble_society_baden_palatine$" # todo: NEW TRANSLATION
  society_with_the_donkey_desc: "$noble_society_baden_palatine_desc$" # todo: NEW TRANSLATION
  society_lion_nassau: "$noble_society_nassau$" # todo: NEW TRANSLATION
@@ -1335,8 +1355,10 @@
  chi_grand_chancellorship_desc: "$six_ministries$ budú podávať správy Kancelárii zastúpenej Ľavým a Pravým kancelárom, z ktorých prvý zastáva vyššie postavenia." # todo: NEW TRANSLATION
  chi_grand_secretariat: "Veľké sekretariát" # todo: NEW TRANSLATION
  chi_grand_secretariat_desc: "$six_ministries$ budú predkladať svoje dokumenty $chi_grand_secretariat$, ktorý vykoná analýzu a pripraví ich na ďalšie predloženie monarchovi." # todo: NEW TRANSLATION
+ six_boards_grand_secretariat_oversight_tt: "Zvyšuje pozitívny efekt [ShowBureaucracyTypeName('six_boards_bureaucracy')] [bureaucracy|e] o #G 20%#!" # todo: NEW TRANSLATION
  chi_direct_report: "Priame hlásenia" # todo: NEW TRANSLATION
  chi_direct_report_desc: "Práca $six_ministries$ bude hlásená priamo monarchovi. To posilňuje autoritu panovníka, ale môže zároveň znížiť efektivitu vlády." # todo: NEW TRANSLATION
+ six_boards_direct_report_oversight_tt: "Zvyšuje pozitívny efekt [ShowBureaucracyTypeName('six_boards_bureaucracy')] [bureaucracy|e] o #G 10%#!" # todo: NEW TRANSLATION
  ashta_pradhan_council_law: "Rada Ashta Pradhan" # todo: NEW TRANSLATION
  ashta_pradhan_council_law_desc: "$mhr_ashta_pradhan_desc$" # todo: NEW TRANSLATION
  apc_peshwa_focus_policy: "Zameranie Peshwu" # todo: NEW TRANSLATION
@@ -1503,6 +1525,8 @@
  byz_varangian_guard_policy_desc: "Varjagská garda, zostavená z Norov, [ShowCultureName('english')] a ďalších severných národov, viazaná osobným sľubom cisárovi, slúži ako cisárska osobná stráž a úderná sila paláca. Ich lojalita je kúpená, nie dedičná, čo ich robí odolnými voči frakčným intrigám, ktoré sužujú [ShowCultureName('greek_culture')] šľachtické dôstojníky. Ich sekery bránili trón po celé generácie a ich tvrdá disciplína je vzorom pre celé vojsko." # todo: NEW TRANSLATION
  byz_megas_domestikos_policy: "Veliteľstvo Mégas Doméstikos" # todo: NEW TRANSLATION
  byz_megas_domestikos_policy_desc: "Úrad #italic $byz_megas_domestikos_policy$#! ukladá vrchné polné velenie všetkých cisárskych armád do rúk jedného vymenovaného veliteľa. Namiesto rozptyľovania vojenskej autority medzi konkurenčných dôstojníkov tagmat koordinuje Mégas Doméstikos stratégiu naprieč celým divadlom vojny. Prestíž úradu priťahuje najlepších [ShowPopTypeName('nobles')] k službe pod jeho zástavou a bitky vyhrané pod jeho velením formujú našu armádu dvakrát rýchlejšie než bežné ťaženia." # todo: NEW TRANSLATION
+ byz_tagmata_policy_upgraded: "Reformované Tágmata" # todo: NEW TRANSLATION
+ byz_tagmata_policy_upgraded_desc: "Vďaka rozsiahlym reformám vyvolaným krízou boli Tágmata preformované bližšie k hrozným profesionálnym vojakom starých čias. Prísnejší výcvik, obnovené cisárske financovanie a nový zmysel pre účel pozdvihli tieto pluky nad ústupkovú silu, ktorou sa kedysi stali. Títo vojaci sa odlišujú od feudálnych levies nielen menom, ale disciplínou, súdržnosťou a bojovou efektivitou." # todo: NEW TRANSLATION
  new_corpus_juris_civilis: "Corpus Juris Civilis" # todo: NEW TRANSLATION
  new_corpus_juris_civilis_desc: "Veľké zhrnutie rímskeho práva, nariadené cisárom Justiniánom, zhromaždilo storočia rozhodnutí, ediktov a múdrosti do jedného celku. Codex, Digest, Institutes a Novellae sa opäť stali chrbticou správy a spravodlivosti, zabezpečujúc našu autoritu, právnu konzistenciu a riadne vedenie vlády." # todo: NEW TRANSLATION
  council_of_three_lands_policy: "Rada troch krajín" # todo: NEW TRANSLATION
@@ -1867,6 +1891,7 @@
  mutual_offense_law_desc: "Zásady upravujúce, ako si budú členovia navzájom pomáhať v prípade, že vyhlásia vojnu inej krajine." # todo: NEW TRANSLATION
  assured_offense_policy: "Zaručený útok" # todo: NEW TRANSLATION
  assured_offense_policy_desc: "Členovia sa automaticky zapoja do útočných vojen vyhlásených inými členmi." # todo: NEW TRANSLATION
+ SPONSOR_EXEMPT_FROM_OFFENSIVE_WARS: "Nie je [ShowSpecialStatusName('italian_league_sponsor')] tejto ligy" # todo: NEW TRANSLATION
  automatic_offense_policy: "Automatický útok" # todo: NEW TRANSLATION
  automatic_offense_policy_desc: "Členovia budú automaticky povolaní do útočných vojen vyhlásených inými členmi, ale nemusia ich prijať." # todo: NEW TRANSLATION
  possible_offense_policy: "Možný útok" # todo: NEW TRANSLATION
@@ -2086,3 +2111,26 @@
  act_of_navigation_desc: "Dominancia našich nepriateľov musí byť spochybnená na všetkých našich trhoch. Prostredníctvom silných ústredných nariadení a preferenčných merkantilistických praktík sa pokúsime dať našim kupcom jasnú výhodu oproti kupcom našich nepriateľov a rivalov." # todo: NEW TRANSLATION
  lit_casimir_code_policy: "Sudebnik Litvy" # todo: NEW TRANSLATION
  lit_casimir_code_policy_desc: "Aby sa bojovalo s nedostatkom zákonníka v národe, ako aj s trestnou činnosťou vykonávanou tými z vyšších vrstiev, bol $lit_casimir_code_policy$ napísaný, aby správne zkrotil chaos a zároveň dal viac moci [GetEstateName('crown_estate')]." # todo: NEW TRANSLATION
+ imperial_circles_law: "Ríšske kruhy" # todo: NEW TRANSLATION
+ imperial_circles_law_desc: "$imperial_circles_law$ rozdeľuje [GetUniqueInternationalOrganization('hre').GetName] do geografických administratívnych regiónov, z ktorých každý vedie určený [circle_leader|e]." # todo: NEW TRANSLATION
+ no_imperial_circles: "Žiadne ríšske kruhy" # todo: NEW TRANSLATION
+ no_imperial_circles_desc: "[GetUniqueInternationalOrganization('hre').GetName] nemá formálne geografické členenie." # todo: NEW TRANSLATION
+ imperial_circles_established: "Založené ríšske kruhy" # todo: NEW TRANSLATION
+ imperial_circles_established_desc: "[GetUniqueInternationalOrganization('hre').GetName] je rozdelená na ríšske kruhy, z ktorých každý spravuje určený [circle_leader|e], ktorý koordinuje záležitosti svojho regiónu." # todo: NEW TRANSLATION
+ administration_of_italian_lands_law: "Správa talianskych území" # todo: NEW TRANSLATION
+ administration_of_italian_lands_law_desc: "Definuje, ako koruna spravuje svoje talianske územia v dôsledku Talianskych vojen." # todo: NEW TRANSLATION
+ locations_in_italy_gain_tt: "[locations|e], ktoré vlastníme v [ShowRegionName('italy_region')], získajú:" # todo: NEW TRANSLATION
+ italian_direct_rule_policy: "Priama správa" # todo: NEW TRANSLATION
+ italian_direct_rule_policy_desc: "Korunou vymenovaní guvernéri sú nasadení v našich talianskych panstvách, pevne kontrolujú mestá na polostrove a nenechávajú priestor pre miestny odpor." # todo: NEW TRANSLATION
+ italian_local_autonomy_policy: "Miestna autonómia" # todo: NEW TRANSLATION
+ italian_local_autonomy_policy_desc: "Talianske komúny a šľachtici sú ponechaní riadiť svoje záležitosti. Oslobodené od centrálneho dohľadu mestá investujú do seba a v procese bohatnú." # todo: NEW TRANSLATION
+ italian_tribute_system_policy: "Tributárny systém" # todo: NEW TRANSLATION
+ italian_tribute_system_policy_desc: "Talianske územia sú uvedené do služby koruny. Ich dielne pracujú naplno a ich odvody sú vyberané častejšie, smerujúc výnosy polostrova do našich pokladníc a armád." # todo: NEW TRANSLATION
+ italian_catepanate_policy: "Katepanát Talianska" # todo: NEW TRANSLATION
+ italian_catepanate_policy_desc: "Guvernéri z Východu sú inštalovaní v talianskych krajinách, opätovne potvrdzujúc prítomnosť cudzej moci na polostrove a postupne priťahujúc jeho obyvateľov do záberu panstva." # todo: NEW TRANSLATION
+ italian_ordonnances_royales_policy: "Ordonnances Royales" # todo: NEW TRANSLATION
+ italian_ordonnances_royales_policy_desc: "Koruna rozširuje svoju administratívnu moc vydávaním nových nariadení pre svoje talianske državy, vytvára úrady na rozšírenie kráľovskej autority a utužuje kráľovskú kontrolu nad územím." # todo: NEW TRANSLATION
+ italian_adelantamiento_policy: "Adelantamiento of Italy" # todo: NEW TRANSLATION
+ italian_adelantamiento_policy_desc: "Adelantados spravujú talianske mestá v mene koruny, zapájajú ich do iberských obchodných sietí a pritláčajú ich bližšie do sféry panstva." # todo: NEW TRANSLATION
+ italian_imperial_fiefs_policy: "Talianske cisárske léna" # todo: NEW TRANSLATION
+ italian_imperial_fiefs_policy_desc: "Talianske územia sú začlenené ako cisárske léna, ich obyvateľstvo zviazané feudálnymi povinnosťami. Prítomnosť cisára utišuje miestne nepokoje a zároveň zvyšuje počty cisárskych odvodov." # todo: NEW TRANSLATION

@@ -109,7 +109,7 @@
  STATIC_MODIFIER_NAME_kingdom_of_god_slot_modifier: "$kingdom_of_god_reform$" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_kingdom_of_god_slot_modifier: "Náboženská sila $kingdom_of_god_reform$ dokáže prinútiť aj zhrdzavené ozubené kolieska byrokracie kľaknúť pred ňou." # todo: NEW TRANSLATION
  flavor_pap.21.title: "[GetCountry('PAP').GetGovernment.GetRulerTitle] obvinený zo splodenia detí" # todo: NEW TRANSLATION
- flavor_pap.21.entry: "Pápež obvinený z otcovstva detí" # todo: NEW TRANSLATION
+ flavor_pap.21.entry: "Pápež obvinený z otcovstva" # todo: CHANGED
  flavor_pap.21.desc: "Po celej krajine sa šíria povesti, že [GetCountry('PAP').GetGovernment.GetRulerTitle], napriek tomu, že prijal svätenie, potajomky splodil deti. Niektorí tvrdia, že sú to zlomyselné pokusy podkopať autoritu [GetUniqueInternationalOrganization('catholic_church').GetName], iní zase hovoria, že na povestiach môže byť niečo pravdy, s chýbajúcimi názvami a dôkazmi. Kardináli a zvyšok [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú rozpoltení, či by sa tieto obvinenia mali vyšetriť alebo ticho zamietnuť, aby sme chránili našu povesť." # todo: NEW TRANSLATION
  flavor_pap.21.a: "Snažme sa ich zamietnuť." # todo: NEW TRANSLATION
  flavor_pap.21.b: "Je príliš neskoro, aby sme ich zastavili v šírení." # todo: NEW TRANSLATION
@@ -135,6 +135,7 @@
  flavor_pap.24.a: "Obnoviť palác." # todo: NEW TRANSLATION
  flavor_pap.24.b: "Namiesto toho zlepšiť širšiu infraštruktúru [ShowLocationNameWithNoTooltip('rome')]." # todo: NEW TRANSLATION
  flavor_pap.24.historical_info: "Koncom 16. storočia pápež Sixtus V. poveril známeho architekta Domenica Fontanu obnovou Lateránskeho paláca, ktorý bol po stáročiach požiarov a zanedbania v dezolátnom stave. Fontana premenil starú stavbu, modernizoval ju a pridal nové krídla, dvory a veľké sály, aby obnovil jej význam ako symbol pápežskej autority." # todo: NEW TRANSLATION
+ variable_pap_can_rebuild_lateran_tt: "Lateránsky palác môže byť znovu postavený" # todo: NEW TRANSLATION
  flavor_pap.25.title: "Posilnenie [ShowBuildingTypeNameWithNoTooltip('castel_sant_angelo')]" # todo: NEW TRANSLATION
  flavor_pap.25.entry: "Opevňovanie Castel Sant'Angelo" # todo: NEW TRANSLATION
  flavor_pap.25.desc: "Hadriánov mauzóleum, dnes lepšie známe ako [ShowBuildingTypeName('castel_sant_angelo')], bolo našimi predchodcami postupne premenené na opevnenú baštu, poskytujúcu dôležitú obrannú líniu pre [ShowLocationName('rome')]. Vzhľadom na turbulentnú povahu našich čias nás mnohí poradcovia teraz nabádajú dokončiť jeho premenenie na mohutný hrad schopný chrániť [ShowLocationNameWithNoTooltip('rome')] pred akoukoľvek hrozbou." # todo: NEW TRANSLATION
@@ -167,6 +168,7 @@
  flavor_pap.29.desc: "Po veľkom úsilí a spolupráci najväčších myslí [GetUniqueInternationalOrganization('catholic_church').GetName] sme dosiahli prelom v reforme kalendára. [target_ruler.GetName] vydal pápežskú bulu #italic Inter Gravissimas#!, oznamujúcu vytvorenie nového kalendára na náhradu chybného Juliánskeho systému. Tento nový kalendár opravuje sezónny posun a presne predpovedá dátumy ako Veľkú noc. Bude okamžite prijatý a zosúladí naše posvätné oslavy a každodenný život s prirodzeným slnečným rokom." # todo: NEW TRANSLATION
  flavor_pap.29.a: "Monumentálny úspech!" # todo: NEW TRANSLATION
  flavor_pap.29.historical_info: "Pápež Gregor XIII. predstavil Gregoriánsky kalendár v roku 1582, ktorý vyriešil problémy spôsobené odchýlkou Juliánskeho kalendára. Odstránil všetky nadbytočné dni, ktoré sa nahromadili počas storočí, a zaviedol presnejší systém priestupných rokov, ktorý má zabrániť opakovaniu tejto chyby." # todo: NEW TRANSLATION
+ variable_pap_reformed_calendar_tt: "Kalendár bol zreformovaný" # todo: NEW TRANSLATION
  flavor_pap.30.title: "Constitutiones Sanctæ Matris Ecclesiæ" # todo: NEW TRANSLATION
  flavor_pap.30.entry: "$flavor_pap.30.title$" # todo: NEW TRANSLATION
  flavor_pap.30.desc: "V posledných rokoch mnohí v [GetUniqueInternationalOrganization('catholic_church').GetName] vyjadrujú obavy ohľadom disciplíny, vzdelania a klerikálnej integrity. Narastá výzva vypracovať komplexný dokument, ktorý by riešil tieto dlhodobo pretrvávajúce problémy. Takýto dekrét by vynucoval prísnejšie normy klerikálneho správania, zlepšil vzdelanie kňazov a zabezpečil disciplínu na všetkých úrovniach Cirkvi." # todo: NEW TRANSLATION
@@ -186,7 +188,7 @@
  flavor_pap.32.a: "Posilniť ortodoxné učenie a dištancovať sa od humanizmu." # todo: NEW TRANSLATION
  flavor_pap.32.b: "Humanizmus musí zostať súčasťou nášho učenia!" # todo: NEW TRANSLATION
  flavor_pap.101.title: "Archívy [ROOT.GetCountry.GetAdjectiveWithNoTooltip] z [from_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_pap.101.entry: "Archívy $PAP_ADJ$ lokality" # todo: NEW TRANSLATION
+ flavor_pap.101.entry: "Archívy $PAP_ADJ$ v $assisi$" # todo: CHANGED
  flavor_pap.101.desc: "História vlády [ROOT.GetCountry.GetAdjective] je stará a veľmi dobre zdokumentovaná. Mnohé udalosti a rozhodnutia týkajúce sa záležitostí [ROOT.GetCountry.GetFlavorRank] a [ROOT.GetCountry.GetReligion.GetName] sú uložené a zhromaždené v [ShowBuildingTypeName('papal_archives')] v [from_location.GetName].\n\nPrístup k týmto archívom sa však stal veľmi obmedzeným v dôsledku našich záležitostí v [ShowRegionName('france_region')], našom hlavnom meste; samotné sídlo [ROOT.GetCountry.GetReligion.GetNameWithNoTooltip] bolo presunuté do [target_location.GetName]. Náš vplyv nad našimi majetkami v [ShowRegionName('italy_region')] sa tak stáva čoraz obmedzenejší.\n\nPoradcovia [ruler_scope.GetName] navrhujú presunúť archívy do [target_location.GetNameWithNoTooltip], aby sa obmedzenia uvoľnili." # todo: NEW TRANSLATION
  flavor_pap.101.a: "Presuňte archívy." # todo: NEW TRANSLATION
  flavor_pap.101.b: "Nestojí to za náklady." # todo: NEW TRANSLATION

@@ -27,7 +27,6 @@
  ask_join_war_for_favors_effect_text: "[SCOPE.sCountry('actor').GetName] získa [SCOPE.sCountry('recipient').GetName], aby sa pripojil k [SCOPE.sWar('war').GetName]." # todo: NEW TRANSLATION
  ask_join_war_for_favors_effect_text_past: "[SCOPE.sCountry('actor').GetName] získal [SCOPE.sCountry('recipient').GetName], aby sa pripojil k [SCOPE.sWar('war').GetName]." # todo: NEW TRANSLATION
  PROPOSE_ask_join_war_for_favors: "Chceme získať $RECIPIENT$, aby sa k nám pridal v [SCOPE.sWar('war').GetName] výmenou za priaznivosti?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_ask_join_war_for_favors: "Žiadosť o vstup do vojny" # todo: NEW TRANSLATION
  INCOMING_OFFER_ask_join_war_for_favors: "$ACTOR$ vás požiadali, aby ste im pomohli v [SCOPE.sWar('war').GetName]. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  ask_join_war_for_favors_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
  ask_join_war_for_favors_reject_effect_text_past: "$generic_reject_effect_string_past$" # todo: NEW TRANSLATION
@@ -57,7 +56,6 @@
  force_embargo_effect_text_past: "[SCOPE.sCountry('actor').GetName] donútil [SCOPE.sCountry('recipient').GetName] uvaliť embargo na [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
  force_embargo_select_title: "Vyberte krajinu, na ktorú má [SCOPE.sCountry('recipient').GetName] uvaliť embargo" # todo: NEW TRANSLATION
  PROPOSE_force_embargo: "Chceme požadovať, aby [SCOPE.sCountry('recipient').GetName] uvalil embargo na [SCOPE.sCountry('target').GetName]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_force_embargo: "Požiadavka na embargo" # todo: NEW TRANSLATION
  INCOMING_OFFER_force_embargo: "$ACTOR$ od nás žiada, aby sme uvalili embargo na jedného z ich nepriateľov. Chceme vyhovieť?\n\n$INFO$" # todo: NEW TRANSLATION
  force_embargo_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  force_embargo_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
@@ -68,10 +66,21 @@
  violate_sovereignty_effect_text: "[SCOPE.sCountry('actor').GetName] prinúti [SCOPE.sCountry('recipient').GetName] udeliť im [military_access|e] a [food_access|e]" # todo: NEW TRANSLATION
  violate_sovereignty_effect_text_past: "[SCOPE.sCountry('actor').GetName] prinútil [SCOPE.sCountry('recipient').GetName] udeliť im [military_access|e] a [food_access|e]" # todo: NEW TRANSLATION
  PROPOSE_violate_sovereignty: "Chceme požadovať, aby [SCOPE.sCountry('recipient').GetName] poskytol nám [military_access|e] a [food_access|e]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_violate_sovereignty: "Požiadavka na vojenský prístup" # todo: NEW TRANSLATION
  INCOMING_OFFER_violate_sovereignty: "$ACTOR$ požaduje od nás [military_access|e]. Chceme vyhovieť?\n\n$INFO$" # todo: NEW TRANSLATION
  violate_sovereignty_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  violate_sovereignty_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
+ ask_for_access_for_war_side: "Požiadať o vojenský prístup pre vojnovú stranu" # todo: NEW TRANSLATION
+ dip_ask_for_access_for_war_side_CATEGORY: "CATEGORY_ACCESS_ACTIONS" # todo: NEW TRANSLATION
+ ask_for_access_for_war_side_act: "Požiadať [SCOPE.sCountry('recipient').GetName], aby nám a našim vojnovým spojencom poskytol [military_access|e]" # todo: NEW TRANSLATION
+ ask_for_access_for_war_side_desc: "Požiadame ich, aby nám a našim vojnovým spojencom poskytli [military_access|e]." # todo: NEW TRANSLATION
+ ask_for_access_for_war_side_effect_text: "[SCOPE.sCountry('actor').GetName] požiada [SCOPE.sCountry('recipient').GetName], aby im a ich spojencom poskytol [military_access|e]" # todo: NEW TRANSLATION
+ ask_for_access_for_war_side_effect_text_past: "[SCOPE.sCountry('actor').GetName] požiadal [SCOPE.sCountry('recipient').GetName], aby im a ich spojencom poskytol [military_access|e]" # todo: NEW TRANSLATION
+ PROPOSE_ask_for_access_for_war_side: "Chceme požiadať, aby [SCOPE.sCountry('recipient').GetName] poskytol nám a našim spojencom [military_access|e]?\n\n$INFO$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_ask_for_access_for_war_side: "$ACTOR$ a ich spojenci nás žiadajú o [military_access|e]. Súhlasíme?\n\n$INFO$" # todo: NEW TRANSLATION
+ ask_for_access_for_war_side_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
+ ask_for_access_for_war_side_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_ask_for_access_for_war_side: "Žiadosť o vojenský prístup pre vojnovú stranu" # todo: NEW TRANSLATION
+ add_access_for_our_side_in_recipient: "[SCOPE.sCountry('actor').GetAdjective] strana vo vojne získa v [SCOPE.sCountry('recipient').GetName] [military_access|e]" # todo: NEW TRANSLATION
  force_change_court_language: "Vynútiť zmenu dvorského jazyka" # todo: NEW TRANSLATION
  dip_force_change_court_language_CATEGORY: "CATEGORY_INFLUENCE_ACTIONS" # todo: NEW TRANSLATION
  force_change_court_language_act: "Prinútiť [SCOPE.sCountry('recipient').GetName] používať náš [court_language|e]" # todo: NEW TRANSLATION
@@ -79,7 +88,6 @@
  force_change_court_language_effect_text: "[SCOPE.sCountry('actor').GetName] prinúti [SCOPE.sCountry('recipient').GetName] používať [SCOPE.sCountry('actor').GetCourtDialect.GetName] ako ich [court_language|e]" # todo: NEW TRANSLATION
  force_change_court_language_effect_text_past: "[SCOPE.sCountry('actor').GetName] prinútil [SCOPE.sCountry('recipient').GetName] používať [SCOPE.sCountry('actor').GetCourtDialect.GetName] ako ich [court_language|e]" # todo: NEW TRANSLATION
  PROPOSE_force_change_court_language: "Chceme požadovať, aby [SCOPE.sCountry('recipient').GetName] zmenil svoj [court_language|e] na [SCOPE.sCountry('actor').GetCourtDialect.GetName]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_force_change_court_language: "Žiadosť o zmenu jazyka dvora" # todo: NEW TRANSLATION
  INCOMING_OFFER_force_change_court_language: "$ACTOR$ požaduje, aby sme zmenili náš [court_language|e] na ich. Chceme vyhovieť?\n\n$INFO$" # todo: NEW TRANSLATION
  force_change_court_language_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  force_change_court_language_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
@@ -99,7 +107,6 @@
  ask_reject_curia_proposal_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  ask_reject_curia_proposal_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_ask_reject_curia_proposal: "Chceme požiadať $RECIPIENT$, aby odmietol súčasný návrh Kúrie?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_ask_reject_curia_proposal: "Žiadosť o odmietnutie návrhu kúrie" # todo: NEW TRANSLATION
  INCOMING_OFFER_ask_reject_curia_proposal: "$ACTOR$ nás požiadali, aby sme odmietli súčasný návrh Kúrie. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  ask_support_curia_proposal: "Požiadať o podporu návrhu Kúrie" # todo: NEW TRANSLATION
  ask_curia_proposal_select_resolution: "Vyberte rezolúciu:" # todo: NEW TRANSLATION
@@ -111,7 +118,6 @@
  ask_support_curia_proposal_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  ask_support_curia_proposal_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_ask_support_curia_proposal: "Chceme požiadať $RECIPIENT$, aby podporil súčasný návrh Kúrie?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_ask_support_curia_proposal: "Žiadosť o podporu návrhu kúrie" # todo: NEW TRANSLATION
  INCOMING_OFFER_ask_support_curia_proposal: "$ACTOR$ nás požiadali, aby sme podporili súčasný návrh Kúrie. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  ask_to_vote_for_me_as_emperor: "Požiadať o podporu vo voľbách" # todo: NEW TRANSLATION
  dip_ask_to_vote_for_me_as_emperor_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
@@ -122,7 +128,6 @@
  ask_to_vote_for_me_as_emperor_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  ask_to_vote_for_me_as_emperor_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_ask_to_vote_for_me_as_emperor: "Chceme požiadať $RECIPIENT$, aby za nás hlasoval pri voľbe nového cisára?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_ask_to_vote_for_me_as_emperor: "Žiadosť o podporu kandidáta pri voľbe" # todo: NEW TRANSLATION
  INCOMING_OFFER_ask_to_vote_for_me_as_emperor: "$ACTOR$ nás požiadali, aby sme za nich pri voľbe cisára hlasovali. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  bribe_elector_to_vote_for_candidate: "Požiadať elektora, aby hlasoval za kandidáta" # todo: NEW TRANSLATION
  dip_bribe_elector_to_vote_for_candidate_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
@@ -133,7 +138,6 @@
  bribe_elector_to_vote_for_candidate_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  bribe_elector_to_vote_for_candidate_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_bribe_elector_to_vote_for_candidate: "Chceme požiadať $RECIPIENT$, aby pri voľbe nového cisára hlasoval za [SCOPE.sCountry('target').GetName]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_bribe_elector_to_vote_for_candidate: "Žiadosť o hlasovanie za kandidáta na cisára" # todo: NEW TRANSLATION
  INCOMING_OFFER_bribe_elector_to_vote_for_candidate: "$ACTOR$ nás požiadali, aby sme pri voľbe nového cisára hlasovali za [SCOPE.sCountry('target').GetName]. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  break_others_alliance: "Izolovať od spojencov" # todo: NEW TRANSLATION
  dip_break_others_alliance_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
@@ -227,7 +231,6 @@
  bestow_free_city_status_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  bestow_free_city_status_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_bestow_free_city_status: "Chceme urobiť z $RECIPIENT$ [ShowSpecialStatusName('free_city')]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_bestow_free_city_status: "Udelenie statusu slobodného mesta" # todo: NEW TRANSLATION
  INCOMING_OFFER_bestow_free_city_status: "$ACTOR$ nám ponúkli urobiť našu krajinu [ShowSpecialStatusName('free_city')] v Ríši. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  request_free_city_status: "Požiadať o štatút slobodného mesta" # todo: NEW TRANSLATION
  dip_request_free_city_status_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
@@ -264,16 +267,19 @@
  request_county_privileges_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  request_county_privileges_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_request_county_privileges: "Chceme požiadať $RECIPIENT$ o $county_privileges$?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_request_county_privileges: "Žiadosť o $county_privileges$" # todo: NEW TRANSLATION
  INCOMING_OFFER_request_county_privileges: "$ACTOR$ nás požiadal o $county_privileges$. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  enforce_landfriede: "Vynútiť Landfriede" # todo: NEW TRANSLATION
  enforce_landfriede_select_title: "Vyberte vojnu, ktorú má [SCOPE.sCountry('recipient').GetName] opustiť" # todo: NEW TRANSLATION
  dip_enforce_landfriede_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
  enforce_landfriede_act: "Vynútime Landfriede na [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
- enforce_landfriede_desc: "Vynútíme Landfriede v [GetUniqueInternationalOrganization('hre').GetName], čím ukončíme vnútorné vojny." # todo: NEW TRANSLATION
+ enforce_landfriede_desc: "Vynútíme Landfriede v rámci [GetUniqueInternationalOrganization('hre').GetName], čím zároveň ukončíme vnútorné vojny.\n#R Budeme proti nim povolaní do vojny, ak odmietnu!#!" # todo: CHANGED
  enforce_landfriede_effect_text: "[SCOPE.sCountry('actor').GetName] vynúti Landfriede na [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  enforce_landfriede_effect_text_past: "[SCOPE.sCountry('actor').GetName] vynútil Landfriede na [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  PROPOSE_enforce_landfriede: "Chceme vynútiť Landfriede na $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_enforce_landfriede: "$ACTOR$ žiada ukončiť našu vojnu, inak riskujeme, že sa pridajú proti nám. Splníme ich požiadavku?\n\n$INFO$\n\n#R $ACTOR$ sa pridá proti nám v našej vojne, ak odmietneme!#!" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_enforce_landfriede: "$enforce_landfriede$" # todo: NEW TRANSLATION
+ enforce_landfriede_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
+ enforce_landfriede_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
  kingdom_title: "Kráľovský titul" # todo: NEW TRANSLATION
  kingdom_title_available_titles: "Dostupné sú len tituly [ShowFormableCountryName('BOH_f')], [ShowFormableCountryName('BGP_f')], [ShowFormableCountryName('LOT_f')] a [ShowFormableCountryName('ITA_f')]." # todo: NEW TRANSLATION
  bestow_kingdom_title: "Udeľte $kingdom_title$" # todo: NEW TRANSLATION
@@ -295,7 +301,6 @@
  request_kingdom_title_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  request_kingdom_title_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_request_kingdom_title: "Chceme požiadať $RECIPIENT$ o $kingdom_title$?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_request_kingdom_title: "Žiadosť o $kingdom_title$" # todo: NEW TRANSLATION
  INCOMING_OFFER_request_kingdom_title: "$ACTOR$ požiadal o $kingdom_title$. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  ask_for_dukedom: "Požiadať o vojvodské práva" # todo: NEW TRANSLATION
  dip_ask_for_dukedom_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
@@ -306,7 +311,8 @@
  ask_for_dukedom_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  ask_for_dukedom_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_ask_for_dukedom: "Chceme požiadať $RECIPIENT$ o hodnosť [ShowCountryRankName('rank_duchy')]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_ask_for_dukedom: "Žiadosť o vojvodské práva" # todo: NEW TRANSLATION
+ PROPOSE_ask_for_dukedom_title: "$ask_for_dukedom$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_ask_for_dukedom_title: "$ask_for_dukedom$" # todo: NEW TRANSLATION
  INCOMING_OFFER_ask_for_dukedom: "$ACTOR$ požiadal o povýšenie ich [country_rank|e] na [ShowCountryRankName('rank_duchy')]. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  elevate_county: "Povýšiť grófstvo" # todo: NEW TRANSLATION
  dip_elevate_county_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
@@ -324,9 +330,9 @@
  enforce_religious_unity_reject_effect_text: "[SCOPE.sCountry('actor').GetName] získa [ShowCasusBelliName('cb_religious_conformance')] [casus_belli|e] proti [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  enforce_religious_unity_reject_effect_text_past: "[SCOPE.sCountry('actor').GetName] získal [ShowCasusBelliName('cb_religious_conformance')] [casus_belli|e] proti [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  PROPOSE_enforce_religious_unity: "Chceme požadovať, aby sa $RECIPIENT$ konvertoval na [imperial_religion|e]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_enforce_religious_unity: "Žiadosť o konverziu" # todo: NEW TRANSLATION
  INCOMING_OFFER_enforce_religious_unity: "$ACTOR$ nás požiadal, aby sme konvertovali na [imperial_religion|e]. Podriadime sa?\n\n$INFO$" # todo: NEW TRANSLATION
  HUSSITE_WARS_UNRESOLVED: "[GetSituationByKey('hussite_wars').GetName] zostávajú nevyriešené" # todo: NEW TRANSLATION
+ HUSSITES_WON_HUSSITE_WARS: "$hussite_ADJ$ štáty vyhrali v [GetSituationByKey('hussite_wars').GetName]" # todo: NEW TRANSLATION
  demand_unlawful_territory: "Požadovať nezákonné územie" # todo: NEW TRANSLATION
  dip_demand_unlawful_territory_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
  demand_unlawful_territory_no_hre_province: "@trigger_no! [SCOPE.sCountry('recipient').GetName] nevlastní žiadne [conquered|e] [location|e] v [GetUniqueInternationalOrganization('hre').GetName]" # todo: CHANGED
@@ -337,7 +343,6 @@
  demand_unlawful_territory_reject_effect_text: "[SCOPE.sCountry('actor').GetName] získa [ShowCasusBelliName('cb_following_through_on_threat')] [casus_belli|e] proti [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  demand_unlawful_territory_reject_effect_text_past: "[SCOPE.sCountry('actor').GetName] získal [ShowCasusBelliName('cb_following_through_on_threat')] [casus_belli|e] proti [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  PROPOSE_demand_unlawful_territory: "Chceme požadovať, aby $RECIPIENT$ vrátil nezákonné územie?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_demand_unlawful_territory: "Požiadavka na vrátenie nezákonného územia" # todo: NEW TRANSLATION
  INCOMING_OFFER_demand_unlawful_territory: "$ACTOR$ nás požiadal, aby sme vrátili nezákonné územie jeho pôvodnému vlastníkovi. Podriadime sa?\n\n$INFO$" # todo: NEW TRANSLATION
  bolster_imperial_army: "Posilniť cisársku armádu" # todo: NEW TRANSLATION
  dip_bolster_imperial_army_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
@@ -350,7 +355,6 @@
  bolster_imperial_army_select_title: "Vyberte [war|e], ku ktorej sa má [SCOPE.sCountry('recipient').GetName] pripojiť" # todo: NEW TRANSLATION
  bolster_imperial_army_no_wars: "@trigger_no! Neexistujú žiadne vhodné [wars|e], ku ktorým by sa mohli pripojiť" # todo: NEW TRANSLATION
  PROPOSE_bolster_imperial_army: "Chceme požiadať $RECIPIENT$, aby sa pripojil k našej vojne?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_bolster_imperial_army: "Žiadosť o posilnenie cisárskej armády" # todo: NEW TRANSLATION
  INCOMING_OFFER_bolster_imperial_army: "$ACTOR$ nás požiadal, aby sme sa pripojili k ich vojne a posilnili cisársku armádu. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  no_defender_union_with_recipient_tt: "Žiadny obranca nie je v [union|e] s [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
  no_attacker_union_with_recipient_tt: "Žiadny útočník nie je v [union|e] s [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
@@ -363,7 +367,6 @@
  bestow_legatus_natus_status_effect_text: "[SCOPE.sCountry('actor').GetName] sa stane [ShowSpecialStatusName('legatus_natus')] v [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  bestow_legatus_natus_status_effect_text_past: "[SCOPE.sCountry('actor').GetName] sa stal [ShowSpecialStatusName('legatus_natus')] v [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  PROPOSE_bestow_legatus_natus_status: "Chceme urobiť z $RECIPIENT$ [ShowSpecialStatusName('legatus_natus')]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_bestow_legatus_natus_status: "Ponuka udelenia statusu Legatus Natus" # todo: NEW TRANSLATION
  INCOMING_OFFER_bestow_legatus_natus_status: "$ACTOR$ nám ponúkli udelenie [ShowSpecialStatusName('legatus_natus')] v Ríši. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  rescind_legatus_natus_status: "Odobratie statusu Legatus Natus" # todo: NEW TRANSLATION
  rescind_legatus_natus_status_desc: "Odobrať status [ShowSpecialStatusName('legatus_natus')] krajine [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
@@ -392,7 +395,6 @@
  bestow_primas_germaniae_status_effect_text: "[SCOPE.sCountry('actor').GetName] sa stane [ShowSpecialStatusName('primas_germaniae')] v [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  bestow_primas_germaniae_status_effect_text_past: "[SCOPE.sCountry('actor').GetName] sa stal [ShowSpecialStatusName('primas_germaniae')] v [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  PROPOSE_bestow_primas_germaniae_status: "Chceme urobiť z $RECIPIENT$ [ShowSpecialStatusName('primas_germaniae')]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_bestow_primas_germaniae_status: "Ponuka udelenia statusu Primas Germaniae" # todo: NEW TRANSLATION
  INCOMING_OFFER_bestow_primas_germaniae_status: "$ACTOR$ nám ponúkli udelenie [ShowSpecialStatusName('primas_germaniae')] v Ríši. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  rescind_primas_germaniae_status: "Odobratie statusu Primas Germaniae" # todo: NEW TRANSLATION
  rescind_primas_germaniae_status_desc: "Odobrať status [ShowSpecialStatusName('primas_germaniae')] krajine [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
@@ -421,7 +423,6 @@
  lordship_of_ireland_bestow_lieutenant_status_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  lordship_of_ireland_bestow_lieutenant_status_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_lordship_of_ireland_bestow_lieutenant_status: "Chceme urobiť z $RECIPIENT$ [ShowSpecialStatusName('lieutenant')]?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_lordship_of_ireland_bestow_lieutenant_status: "Udelenie statusu zástupcu" # todo: NEW TRANSLATION
  INCOMING_OFFER_lordship_of_ireland_bestow_lieutenant_status: "$ACTOR$ sa nás opýtal, či chceme byť [ShowSpecialStatusName('lieutenant')] v [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  dip_lordship_of_ireland_rescind_lieutenant_status_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  lordship_of_ireland_rescind_lieutenant_status: "Odobrať status [ShowSpecialStatusNameWithNoTooltip('lieutenant')]" # todo: NEW TRANSLATION
@@ -455,7 +456,6 @@
  lordship_of_ireland_surrender_and_regrant_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  lordship_of_ireland_surrender_and_regrant_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_lordship_of_ireland_surrender_and_regrant: "Chceme ponúknuť $RECIPIENT$ poddanie sa a opätovné udelenie?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_lordship_of_ireland_surrender_and_regrant: "Ponuka odovzdania a opätovného udelenia" # todo: NEW TRANSLATION
  INCOMING_OFFER_lordship_of_ireland_surrender_and_regrant: "$ACTOR$ nám ponúkol poddanie sa a opätovné udelenie. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  give_subject_location_to_other_subject: "Previesť územie inému podriadenému štátu" # todo: NEW TRANSLATION
  give_subject_location_to_other_subject_act: "Previesť územie od [SCOPE.sCountry('recipient').GetName] na iného [subject|e]" # todo: NEW TRANSLATION
@@ -488,7 +488,6 @@
  improve_cultural_view_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  improve_cultural_view_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_improve_cultural_view: "Chceme požiadať $RECIPIENT$, aby zlepšil ich kultúrny postoj k nám?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_improve_cultural_view: "Žiadosť o zlepšenie vnímania kultúry" # todo: NEW TRANSLATION
  INCOMING_OFFER_improve_cultural_view: "$ACTOR$ nás požiadal, aby sme zlepšili náš kultúrny postoj k nim. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  improve_cultural_view_subject: "Požiadať o zlepšenie kultúrneho postoja" # todo: NEW TRANSLATION
  improve_cultural_view_subject_act: "Požiadať [SCOPE.sCountry('recipient').GetName], aby zlepšili postoj svojej [culture|e] k nám" # todo: NEW TRANSLATION
@@ -506,7 +505,6 @@
  invite_settlers_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_invite_settlers: "Pozvať osadníkov z $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
  invite_settlers_select_destination: "Vyberte [province|e], kam pozvať osadníkov" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_invite_settlers: "Pozvanie osadníkov" # todo: NEW TRANSLATION
  INCOMING_OFFER_invite_settlers: "$ACTOR$ pozvali našich obyvateľov, aby sa usadili v ich krajinách. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  invite_artist: "Pozvať umelca" # todo: NEW TRANSLATION
  dip_invite_artist_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
@@ -540,7 +538,6 @@
  merge_tribe_iroquois_reject_effect_text: "[SCOPE.sCountry('actor').GetName] odmietol spojenie svojho kmene s [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  merge_tribe_iroquois_reject_effect_text_past: "[SCOPE.sCountry('actor').GetName] odmietol spojenie svojho kmene s [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
  PROPOSE_merge_tribe_iroquois: "Spojiť náš kmeň s $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_merge_tribe_iroquois: "Žiadosť o zlúčenie kmeňov" # todo: NEW TRANSLATION
  INCOMING_OFFER_merge_tribe_iroquois: "$ACTOR$ nás požiadal, aby sme spojili náš [country|e] s ich kmeňom. Chceme prijať? (To povedie k ukončeniu hry)\n\n$INFO$" # todo: NEW TRANSLATION
  assassinate_character: "Zavraždiť postavu" # todo: NEW TRANSLATION
  dip_assassinate_character_CATEGORY: "CATEGORY_COVERT_ACTIONS" # todo: NEW TRANSLATION
@@ -562,7 +559,6 @@
  invite_prince_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  invite_prince_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_invite_prince: "Chceme pozvať princa z $RECIPIENT$, aby sa stal naším vládcom?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_invite_prince: "Žiadosť o princa" # todo: NEW TRANSLATION
  INCOMING_OFFER_invite_prince: "$ACTOR$ sa nás opýtali, či by sa niektorý z našich princov mohol stať ich vládcou. Chceme to prijať?\n\n$INFO$" # todo: CHANGED
  invite_prince_SELECT_TITLE: "Vyberte [character|e], ktorého pozveme a ktorý sa stane novým vládcou" # todo: NEW TRANSLATION
  veche_has_not_been_dismissed_tt: "V minulosti nebolo #R odvolané#! [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
@@ -574,7 +570,6 @@
  invite_royal_family_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  invite_royal_family_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_invite_royal_family: "Chceme pozvať príbuzného nášho vládcu z $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_invite_royal_family: "Požadovaný dvoran" # todo: NEW TRANSLATION
  INCOMING_OFFER_invite_royal_family: "$ACTOR$ sa nás opýtali, či by sa príbuzný ich vládcu mohol opustiť dvor a pridať sa k nim. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  invite_royal_family_SELECT_TITLE: "Vyberte [character|e], ktorého pozveme na náš dvor" # todo: NEW TRANSLATION
  pay_off_debt: "Splatiť dlh" # todo: NEW TRANSLATION
@@ -591,7 +586,6 @@
  place_relative_on_throne_SELECT_TITLE: "Vyberte [character|e], ktorého dosadíme na ich trón" # todo: CHANGED
  place_relative_on_throne_no_characters: "@trigger_no! Neexistuje žiadny príbuzný nášho [ruler|e], ktorý by bol oprávnený byť umiestnený na ich trón" # todo: NEW TRANSLATION
  PROPOSE_place_relative_on_throne: "Chceme umiestniť príbuzného nášho vládcu na trón $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_place_relative_on_throne: "Žiadosť o dosadenie príbuzného na trón" # todo: NEW TRANSLATION
  INCOMING_OFFER_place_relative_on_throne: "$ACTOR$ si želajú dosadiť jedného zo svojich príbuzných na náš trón ako náhradu za nášho vládcu. Chceme to prijať?\n\n$INFO$" # todo: CHANGED
  place_relative_on_throne_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  place_relative_on_throne_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
@@ -612,7 +606,6 @@
  propose_ruler_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  propose_ruler_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_propose_ruler: "Chceme ponúknuť $RECIPIENT$ člena našej dynastie, aby sa stal ich vládcom?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_propose_ruler: "Navrhnutý panovník" # todo: NEW TRANSLATION
  INCOMING_OFFER_propose_ruler: "$ACTOR$ navrhli člena svojej dynastie ako nášho vládcu. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  propose_ruler_SELECT_TITLE: "Vyberte postavu, ktorá sa stane ich vládcou" # todo: NEW TRANSLATION
  request_fondaco_rights_act: "Požiadať [SCOPE.sCountry('recipient').GetName] o právo stavať Fondacos" # todo: NEW TRANSLATION
@@ -638,7 +631,6 @@
  union_enforce_peace_desc: "Požiadame, aby opustili vojnu" # todo: NEW TRANSLATION
  union_enforce_peace_effect_text: "[SCOPE.sCountry('actor').GetName] prinúti [SCOPE.sCountry('recipient').GetName] opustiť [SCOPE.sWar('target').GetName]" # todo: NEW TRANSLATION
  union_enforce_peace_effect_text_past: "[SCOPE.sCountry('actor').GetName] prinútil [SCOPE.sCountry('recipient').GetName] opustiť [SCOPE.sWar('target').GetName]" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_union_enforce_peace: "Požiadavka na vynútenie mieru" # todo: NEW TRANSLATION
  INCOMING_OFFER_union_enforce_peace: "$ACTOR$ nás žiadajú, aby sme opustili vojnu. Chceme vyhovieť?\n\n$INFO$" # todo: NEW TRANSLATION
  union_enforce_peace_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  union_enforce_peace_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
@@ -657,7 +649,6 @@
  call_appanage_to_war_effect_text: "[SCOPE.sCountry('actor').GetName] povolá svoju apanáž [SCOPE.sCountry('recipient').GetName] do svojej vojny." # todo: NEW TRANSLATION
  call_appanage_to_war_effect_text_past: "[SCOPE.sCountry('actor').GetName] povolal svoju apanáž [SCOPE.sCountry('recipient').GetName] do svojej vojny" # todo: NEW TRANSLATION
  PROPOSE_call_appanage_to_war: "Povolať $RECIPIENT$ do zbraní v našej vojne?\n$INFO$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_call_appanage_to_war: "Výzva k vojne" # todo: NEW TRANSLATION
  INCOMING_OFFER_call_appanage_to_war: "$ACTOR$ nás požiadali, aby sme im pomohli v ich vojne. Chceme prijať?" # todo: NEW TRANSLATION
  call_appanage_to_war_title: "Vyberte [enemy|e] krajinu" # todo: NEW TRANSLATION
  call_appanage_to_war_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
@@ -687,7 +678,6 @@
  call_order_to_crusade_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  call_order_to_crusade_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_call_order_to_crusade: "Povolať $RECIPIENT$ do zbraní v našej vojne?\n$INFO$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_call_order_to_crusade: "Žiadosť o povolanie vojenského rádu" # todo: NEW TRANSLATION
  INCOMING_OFFER_call_order_to_crusade: "$ACTOR$ nás požiadali, aby sme im pomohli v ich križiackej výprave. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  call_order_to_crusade_select_title: "Vyberte [heathen|e] nepriateľskú krajinu" # todo: NEW TRANSLATION
  mil_order_request_funds: "Požiadať o prostriedky" # todo: NEW TRANSLATION
@@ -699,7 +689,6 @@
  mil_order_request_funds_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  mil_order_request_funds_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_mil_order_request_funds: "Chceme požiadať $RECIPIENT$ o prostriedky?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_mil_order_request_funds: "Žiadosť o finančné prostriedky" # todo: NEW TRANSLATION
  INCOMING_OFFER_mil_order_request_funds: "$ACTOR$ nás požiadali o prostriedky ako súčasť dohody s vojenským rádom. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  mil_order_request_men: "Požiadať o vojakov" # todo: NEW TRANSLATION
  dip_mil_order_request_men_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
@@ -710,7 +699,6 @@
  mil_order_request_men_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  mil_order_request_men_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_mil_order_request_men: "Chceme požiadať $RECIPIENT$ o vojakov?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_mil_order_request_men: "Žiadosť o vojakov" # todo: NEW TRANSLATION
  INCOMING_OFFER_mil_order_request_men: "$ACTOR$ nás požiadali o ľudskú silu ako súčasť dohody s vojenským rádom. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  send_to_prussian_crusade: "Poslať postavu na Pruskú križiacku výpravu" # todo: NEW TRANSLATION
  dip_send_to_prussian_crusade_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
@@ -721,7 +709,6 @@
  send_to_prussian_crusade_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  send_to_prussian_crusade_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_send_to_prussian_crusade: "Chceme poslať [character|e] na #Y Pruskú križiacku výpravu#! v $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_send_to_prussian_crusade: "Ponuka poslať postavu na krížovú výpravu" # todo: NEW TRANSLATION
  INCOMING_OFFER_send_to_prussian_crusade: "$ACTOR$ ponúkli, že nám pošlú postavu, ktorá sa pridá k #Y Pruskej križiackej výprave#!. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  send_to_prussian_crusade_SELECT_TITLE: "Vyberte [character|e], ktorý sa vydá na Pruskú križiacku výpravu" # todo: NEW TRANSLATION
  invite_to_prussian_crusade: "Pozvať na Pruskú križiacku výpravu" # todo: NEW TRANSLATION
@@ -733,9 +720,19 @@
  invite_to_prussian_crusade_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  invite_to_prussian_crusade_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_invite_to_prussian_crusade: "Chceme pozvať [character|e] z $RECIPIENT$ na #Y Pruskú križiacku výpravu#!?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_invite_to_prussian_crusade: "Žiadosť o poslanie postavy na pruskú krížovú výpravu" # todo: NEW TRANSLATION
  INCOMING_OFFER_invite_to_prussian_crusade: "$ACTOR$ nás požiadali o postavu, ktorá sa pridá k #Y Pruskej križiackej výprave#!. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  invite_to_prussian_crusade_SELECT_TITLE: "Vyberte [character|e], ktorý sa vydá na Pruskú križiacku výpravu" # todo: NEW TRANSLATION
+ mfa_join_against_byz: "Pozvať do kampane proti [GetCountry('BYZ').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ mfa_join_against_byz_desc: "Pozvať [recipient.GetName] do pripravovanej kampane proti [GetCountry('BYZ').GetLongName]." # todo: NEW TRANSLATION
+ dip_mfa_join_against_byz_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
+ PROPOSE_mfa_join_against_byz: "Požiadajme [recipient.GetName], aby sa pridal k našej pripravovanej vojne proti [GetCountry('BYZ').GetLongName]." # todo: NEW TRANSLATION
+ INCOMING_OFFER_mfa_join_against_byz: "[actor.GetName] nás pozýva, aby sme sa pripojili k ich pripravovanej kampani proti [GetCountry('BYZ').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_mfa_join_against_byz: "Ponuka pripojiť sa ku kampani proti [GetCountry('BYZ').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ mfa_join_against_byz_reject_effect_text: "[recipient.GetName] odmietol pozvanie od [actor.GetName], aby sa pridal k ich kampani proti [GetCountry('BYZ').GetName]" # todo: NEW TRANSLATION
+ mfa_join_against_byz_reject_effect_text_past: "[recipient.GetName] odmietol pozvanie od [actor.GetName], aby sa pridal k ich kampani proti [GetCountry('BYZ').GetName]" # todo: NEW TRANSLATION
+ mfa_join_against_byz_act: "$mfa_join_against_byz$" # todo: NEW TRANSLATION
+ mfa_join_against_byz_effect_text: "[actor.GetName] pozýva [recipient.GetName], aby sa pridal k ich pripravovanej kampani proti [GetCountry('BYZ').GetName]" # todo: NEW TRANSLATION
+ mfa_join_against_byz_effect_text_past: "[actor.GetName] pozval [recipient.GetName], aby sa pridal k ich kampani proti [GetCountry('BYZ').GetName]" # todo: NEW TRANSLATION
  sabotage_reputation: "Sabotovať reputáciu" # todo: NEW TRANSLATION
  dip_sabotage_reputation_CATEGORY: "CATEGORY_COVERT_ACTIONS" # todo: NEW TRANSLATION
  sabotage_reputation_act: "Sabotovať reputáciu [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
@@ -778,7 +775,6 @@
  move_subject_capital_select_location: "Vyberte [location|e], ktoré sa stane novým [capital|e]" # todo: NEW TRANSLATION
  move_subject_capital_select_location_tt: "Kliknite pre výber [location|e], ktoré sa stane novým [capital|e] nášho [subject|e]" # todo: NEW TRANSLATION
  PROPOSE_move_subject_capital: "Presunúť hlavné mesto $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_move_subject_capital: "Rozkaz na presun hlavného mesta" # todo: NEW TRANSLATION
  INCOMING_OFFER_move_subject_capital: "$ACTOR$ nám nariadili presunúť naše [capital|e] na nové [location|e]. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  move_subject_capital_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
  move_subject_capital_reject_effect_text_past: "$generic_reject_effect_string_past$" # todo: NEW TRANSLATION
@@ -788,7 +784,6 @@
  upgrade_to_maha_samanta_effect_text: "[SCOPE.sCountry('actor').GetName] povýši [SCOPE.sCountry('recipient').GetName] z [ShowSubjectTypeName('samanta')] na [ShowSubjectTypeName('maha_samanta')]" # todo: NEW TRANSLATION
  upgrade_to_maha_samanta_effect_text_past: "[SCOPE.sCountry('actor').GetName] povýšil [SCOPE.sCountry('recipient').GetName] z [ShowSubjectTypeName('samanta')] na [ShowSubjectTypeName('maha_samanta')]" # todo: NEW TRANSLATION
  PROPOSE_upgrade_to_maha_samanta: "Povýšiť $RECIPIENT$ na $maha_samanta$\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_upgrade_to_maha_samanta: "Žiadosť o povýšenie statusu" # todo: NEW TRANSLATION
  INCOMING_OFFER_upgrade_to_maha_samanta: "$ACTOR$ nás požiadali, aby sme zmenili postavenie nášho vazala z [ShowSubjectTypeName('samanta')] na [ShowSubjectTypeName('maha_samanta')]. Chceme prijať?" # todo: NEW TRANSLATION
  upgrade_to_maha_samanta_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
  upgrade_to_maha_samanta_reject_effect_text_past: "$generic_reject_effect_string_past$" # todo: NEW TRANSLATION
@@ -798,7 +793,6 @@
  upgrade_to_pradhana_maha_samanta_effect_text: "[SCOPE.sCountry('actor').GetName] povýši [SCOPE.sCountry('recipient').GetName] z [ShowSubjectTypeName('maha_samanta')] na [ShowSubjectTypeName('pradhana_maha_samanta')]" # todo: NEW TRANSLATION
  upgrade_to_pradhana_maha_samanta_effect_text_past: "[SCOPE.sCountry('actor').GetName] povýšil [SCOPE.sCountry('recipient').GetName] z [ShowSubjectTypeName('maha_samanta')] na [ShowSubjectTypeName('pradhana_maha_samanta')]" # todo: NEW TRANSLATION
  PROPOSE_upgrade_to_pradhana_maha_samanta: "Povýšiť $RECIPIENT$ na $pradhana_maha_samanta$\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_upgrade_to_pradhana_maha_samanta: "Žiadosť o povýšenie statusu" # todo: NEW TRANSLATION
  INCOMING_OFFER_upgrade_to_pradhana_maha_samanta: "$ACTOR$ nás požiadali, aby sme zmenili postavenie nášho vazala z [ShowSubjectTypeName('maha_samanta')] na [ShowSubjectTypeName('pradhana_maha_samanta')]. Chceme prijať?" # todo: NEW TRANSLATION
  upgrade_to_pradhana_maha_samanta_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
  upgrade_to_pradhana_maha_samanta_reject_effect_text_past: "$generic_reject_effect_string_past$" # todo: NEW TRANSLATION
@@ -806,12 +800,12 @@
  dip_sell_icon_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
  sell_icon_act: "Požiadať [SCOPE.sCountry('recipient').GetName], aby kúpili náboženskú ikonu" # todo: NEW TRANSLATION
  sell_icon_desc: "Pokúsime sa im predať náboženskú ikonu." # todo: NEW TRANSLATION
+ sell_icon_move_art_tt: "Vybraný [work_of_art|e] sa presunie do [SCOPE.sCountry('recipient').GetCapital.GetName]" # todo: NEW TRANSLATION
  sell_icon_effect_text: "[SCOPE.sCountry('actor').GetName] presvedčí [SCOPE.sCountry('recipient').GetName], aby kúpili náboženskú ikonu" # todo: NEW TRANSLATION
  sell_icon_effect_text_past: "[SCOPE.sCountry('actor').GetName] presvedčil [SCOPE.sCountry('recipient').GetName], aby kúpili náboženskú ikonu" # todo: NEW TRANSLATION
  sell_icon_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  sell_icon_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_sell_icon: "Chceme predať $RECIPIENT$ náboženskú ikonu?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_sell_icon: "Ponuka ikony" # todo: NEW TRANSLATION
  INCOMING_OFFER_sell_icon: "$ACTOR$ ponúkli, že nám predajú náboženskú ikonu. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  select_an_icon_to_sell: "Vyberte ikonu na predaj" # todo: NEW TRANSLATION
  siphon_income: "Odčerpať príjmy" # todo: NEW TRANSLATION
@@ -836,7 +830,6 @@
  share_maps_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  share_maps_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_share_maps: "Poskytnúť mapy $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_share_maps: "Ponuka zdieľať mapy" # todo: NEW TRANSLATION
  INCOMING_OFFER_share_maps: "$ACTOR$ nám ponúkli zdieľať mapy. Chceme prijať?" # todo: NEW TRANSLATION
  share_maps_select_title: "Vyberte [area|e], ktorej mapu chcete poskytnúť:" # todo: NEW TRANSLATION
  transfer_occupation: "$TRANSFER_OCCUPATION$s" # todo: NEW TRANSLATION
@@ -856,6 +849,15 @@
  steal_maps_effect_text_past: "[SCOPE.sCountry('actor').GetName] ukradol mapy od [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
  PROPOSE_steal_maps: "Ukradnúť mapy od $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
  steal_maps_select_title: "Vyberte [area|e], ktorej mapu chcete ukradnúť:" # todo: NEW TRANSLATION
+ annul_casus_belli: "Zrušiť casus belli" # todo: NEW TRANSLATION
+ dip_annul_casus_belli_CATEGORY: "CATEGORY_COVERT_ACTIONS" # todo: NEW TRANSLATION
+ annul_casus_belli_act: "Zrušiť casus belli od [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
+ annul_casus_belli_desc: "Týmto budeme môcť odstrániť casus belli, ktorý majú proti nám." # todo: NEW TRANSLATION
+ annul_casus_belli_effect_text: "[SCOPE.sCountry('actor').GetName] zruší casus belli od [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
+ annul_casus_belli_effect_text_past: "[SCOPE.sCountry('actor').GetName] zrušil casus belli od [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
+ PROPOSE_annul_casus_belli: "Zrušiť casus belli od $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
+ annul_casus_belli_select_title: "Vyberte [casus_belli|e], ktorý chcete zrušiť od:" # todo: NEW TRANSLATION
+ annul_casus_belli_no_casus_belli: "@trigger_no! Žiadne platné [casus_belli|e] k dispozícii" # todo: NEW TRANSLATION
  steal_technology: "Ukradnúť technológiu" # todo: NEW TRANSLATION
  dip_steal_technology_CATEGORY: "CATEGORY_COVERT_ACTIONS" # todo: NEW TRANSLATION
  steal_technology_act: "Ukradnúť technológiu od [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
@@ -872,7 +874,6 @@
  transfer_subject_effect_text_past: "[SCOPE.sCountry('actor').GetName] previedol [SCOPE.sCountry('target').GetName] na [SCOPE.sCountry('recipient').GetName]" # todo: CHANGED
  PROPOSE_transfer_subject: "Požiadať $RECIPIENT$, aby kúpili [SCOPE.sCountry('target').GetName]?\n$INFO$." # todo: CHANGED
  dip_transfer_subject_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_transfer_subject: "Ponuka na prevod podriadeného štátu" # todo: NEW TRANSLATION
  INCOMING_OFFER_transfer_subject: "$ACTOR$ chce previesť [SCOPE.sCountry('target').GetName] na nás za [SCOPE.GetValue('sale_price')|2][gold_i]. Chceme to prijať?\n\n$INFO$" # todo: CHANGED
  transfer_subject_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  transfer_subject_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
@@ -893,7 +894,6 @@
  subject_enforce_peace_desc: "Požiadame ich, aby opustili vojnu." # todo: NEW TRANSLATION
  subject_enforce_peace_effect_text: "[SCOPE.sCountry('actor').GetName] prinúti [SCOPE.sCountry('recipient').GetName] opustiť [SCOPE.sWar('target').GetName]" # todo: NEW TRANSLATION
  subject_enforce_peace_effect_text_past: "[SCOPE.sCountry('actor').GetName] prinútil [SCOPE.sCountry('recipient').GetName] opustiť [SCOPE.sWar('target').GetName]" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_subject_enforce_peace: "Požiadavka na vynútenie mieru" # todo: NEW TRANSLATION
  INCOMING_OFFER_subject_enforce_peace: "$ACTOR$ od nás požadujú, aby sme opustili vojnu. Chceme vyhovieť?\n\n$INFO$" # todo: NEW TRANSLATION
  subject_enforce_peace_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  subject_enforce_peace_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
@@ -915,7 +915,6 @@
  take_colony_for_debt_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  take_colony_for_debt_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_take_colony_for_debt: "Chceme, aby $RECIPIENT$ postúpil koloniálnu chártu?\n\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_take_colony_for_debt: "Ponuka prevziať koloniálnu chartu" # todo: NEW TRANSLATION
  INCOMING_OFFER_take_colony_for_debt: "$ACTOR$ nám ponúkli prevziať koloniálnu chártu výmenou za odpustenie dlhu. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  take_colony_for_debt_SELECT_LOAN_TITLE: "Vyberte [loan|e], ktorý sa má zrušiť:" # todo: NEW TRANSLATION
  take_colony_for_debt_SELECT_CHARTER_TITLE: "Vyberte [colonial_charter|e], ktorú prevezmeme výmenou:" # todo: NEW TRANSLATION
@@ -945,14 +944,13 @@
  request_divorce: "Požiadať o rozvod" # todo: NEW TRANSLATION
  request_divorce_concept: "[divorce|e]" # todo: NEW TRANSLATION
  dip_request_divorce_CATEGORY: "CATEGORY_PAPAL_ACTIONS" # todo: NEW TRANSLATION
- request_divorce_act: "Požiadať [SCOPE.sCountry('recipient').GetName] o povolenie na rozvod" # todo: NEW TRANSLATION
+ request_divorce_act: "Požiadajte [SCOPE.sCountry('recipient').GetName] o udelenie [divorce|e] [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName]" # todo: CHANGED
  request_divorce_desc: "Týmto ich požiadame o povolenie, aby sa náš [ruler|e] rozviedol s [spouse|e]." # todo: NEW TRANSLATION
  request_divorce_effect_text: "[SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] požiadal [SCOPE.sCountry('recipient').GetName] o povolenie rozviesť sa s [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetHisHer] [spouse|e]." # todo: NEW TRANSLATION
  request_divorce_effect_text_past: "[SCOPE.sCountry('recipient').GetName] povolil [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] z [SCOPE.sCountry('actor').GetFlavorRank] rozvod s [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetHisHer] [spouse|e]." # todo: NEW TRANSLATION
  request_divorce_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  request_divorce_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_request_divorce: "Ak $RECIPIENT$ žiadosť schváli, nastane nasledujúci efekt:\n$INFO$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_request_divorce: "Žiadosť o rozvod" # todo: NEW TRANSLATION
  INCOMING_OFFER_request_divorce: "[SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] požiadal [SCOPE.sCountry('recipient').GetName] o povolenie rozviesť sa s [SCOPE.sCountry('actor').GetGovernment.GetRuler.GetHisHer] [spouse|e].\nChceme to prijať?:\n$INFO$" # todo: NEW TRANSLATION
  excommunicate: "Exkomunikovať" # todo: NEW TRANSLATION
  dip_excommunicate_CATEGORY: "CATEGORY_PAPAL_ACTIONS" # todo: NEW TRANSLATION
@@ -978,13 +976,11 @@
  ask_to_lift_excommunication_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  ask_to_lift_excommunication_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_ask_to_lift_excommunication: "Požiadať o zrušenie [excommunication|e]? $generic_propose_effect_string$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_ask_to_lift_excommunication: "Žiadosť o zrušenie exkomunikácie" # todo: NEW TRANSLATION
  INCOMING_OFFER_ask_to_lift_excommunication: "$ACTOR$ nás požiadali, aby sme zrušili ich [excommunication|e]. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  request_loan: "Žiadosť o pôžičku" # todo: NEW TRANSLATION
- request_loan_desc: "Týmto sa [SCOPE.sCountry('actor').GetLongNameWithNoTooltip] dostane do [debt|e] u nich." # todo: NEW TRANSLATION
+ request_loan_desc: "Zoberte si pôžičku od iného [country|e]. [SCOPE.sCountry('actor').GetLongNameWithNoTooltip] bude im potom v [debt|e]." # todo: CHANGED
  dip_request_loan_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
  PROPOSE_request_loan: "Chceme požiadať [SCOPE.sCountry('recipient').GetLongName] o pôžičku?" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_request_loan: "Žiadosť o pôžičku" # todo: NEW TRANSLATION
  INCOMING_OFFER_request_loan: "$ACTOR$ nás požiadali o pôžičku. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  request_loan_act: "Požiadať o pôžičku od [SCOPE.sCountry('recipient').GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  request_loan_effect_text: "[SCOPE.sCountry('recipient').GetLongNameWithNoTooltip] požičia zlato [SCOPE.sCountry('actor').GetLongNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -1014,7 +1010,6 @@
  ask_to_lift_interdict_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  ask_to_lift_interdict_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_ask_to_lift_interdict: "Požiadame o zrušenie #Y Interdict#!? $generic_propose_effect_string$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_ask_to_lift_interdict: "Žiadosť o zrušenie interdiktu" # todo: NEW TRANSLATION
  INCOMING_OFFER_ask_to_lift_interdict: "$ACTOR$ nás požiadali, aby sme zrušili ich #Y Interdict#!. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  sell_corsica: "Predať Korziku" # todo: NEW TRANSLATION
  sell_corsica_act: "Predať Korziku [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
@@ -1026,7 +1021,6 @@
  dip_sell_corsica_NEWDESC: "Predáme im preklitý ostrov Korzika. Výmenou získame #G 3 roky#! ich príjmov." # todo: NEW TRANSLATION
  dip_sell_corsica_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
  PROPOSE_sell_corsica: "Predať Korziku $RECIPIENT$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_sell_corsica: "Ponuka predať Korziku" # todo: NEW TRANSLATION
  INCOMING_OFFER_sell_corsica: "$ACTOR$ nám ponúkli predať Korziku. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  sell_corsica_tt: "Predáme im preklitý ostrov Korzika. Výmenou získame #G 3 roky#! ich príjmov." # todo: NEW TRANSLATION
  nusta_marriage: "Ñusta manželstvo" # todo: NEW TRANSLATION
@@ -1039,7 +1033,6 @@
  nusta_marriage_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  nusta_marriage_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_nusta_marriage: "Navrhnúť Ñusta manželstvo u $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_nusta_marriage: "Ponuka manželstva Ñusta" # todo: NEW TRANSLATION
  INCOMING_OFFER_nusta_marriage: "$ACTOR$ navrhol Ñusta manželstvo. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  demand_silver_tribute: "Požiadať o striebornú daň" # todo: NEW TRANSLATION
  demand_silver_tribute_desc: "Politika [ShowPolicyName('single_whip_policy')] nám teraz umožňuje vyberať vyšší poplatok zo [ShowGoodsName('silver')] od našich poddaných." # todo: NEW TRANSLATION
@@ -1073,7 +1066,6 @@
  demand_conversion_to_islam_reject_effect_text: "$generic_reject_demand_effect_string$" # todo: NEW TRANSLATION
  demand_conversion_to_islam_reject_effect_text_past: "$generic_reject_demand_effect_string_past$" # todo: NEW TRANSLATION
  PROPOSE_demand_conversion_to_islam: "Chceme požadovať konverziu od $RECIPIENT$?\n$INFO$." # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_demand_conversion_to_islam: "Žiadosť o konverziu na islam" # todo: NEW TRANSLATION
  INCOMING_OFFER_demand_conversion_to_islam: "$ACTOR$ nás žiadajú, aby sme prešli na islam. Chceme to prijať?\n\n$INFO$" # todo: CHANGED
  bribe_voter_short: "Úplatok" # todo: NEW TRANSLATION
  bribe_voter_for_policy: "Uplatiť voliča" # todo: NEW TRANSLATION
@@ -1090,7 +1082,6 @@
  bribe_voter_for_policy_act: "Podplatiť [SCOPE.sCountry('recipient').GetName], aby hlasoval za [SCOPE.sPolicy('policy').GetName]" # todo: CHANGED
  bribe_voter_for_policy_effect_text: "[SCOPE.sCountry('recipient').GetName] dostane ponuku [gold|e], aby hlasoval za [SCOPE.sPolicy('policy').GetName]." # todo: CHANGED
  bribe_voter_for_policy_effect_text_past: "[SCOPE.sCountry('recipient').GetName] dostal ponuku [gold|e], aby hlasoval za [SCOPE.sPolicy('policy').GetName]." # todo: CHANGED
- INCOMING_OFFER_TITLE_bribe_voter_for_policy: "Ponuka úplatku" # todo: NEW TRANSLATION
  INCOMING_OFFER_bribe_voter_for_policy: "$ACTOR$ nám ponúka zlato výmenou za zmenu postoja v aktuálnom hlasovaní. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  bribe_voter_for_policy_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  bribe_voter_for_policy_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
@@ -1098,7 +1089,6 @@
  request_crown_character: "Žiadosť o postavu z kráľovského dvora" # todo: NEW TRANSLATION
  request_crown_character_desc: "Niektorí členovia kráľovských rodín sú potrební na našom dvore. Môžeme ich požiadať z vládneho sídla nášho panovníka." # todo: NEW TRANSLATION
  PROPOSE_request_crown_character: "Požiadať $RECIPIENT$ o [ShowEstateTypeName('crown_estate')] [character|e]?" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_request_crown_character: "Žiadosť o poslanie člena kráľovského rodu" # todo: NEW TRANSLATION
  INCOMING_OFFER_request_crown_character: "$ACTOR$ nás žiada o [ShowEstateTypeName('crown_estate')] [character|e]. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  request_crown_character_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  request_crown_character_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
@@ -1111,12 +1101,12 @@
  negotiate_succession_law_desc: "Ich zákon o dedení je nestály a môže viesť k rozpadu únie. Vládnuca trieda musí byť presvedčená, aby prijala naše zákony pre bezpečné dedenie." # todo: NEW TRANSLATION
  negotiate_succession_law_at: "[SCOPE.sCountry('recipient').GetName] má iný [succession_law|e] než [SCOPE.sCountry('actor').GetGovernment.GetHeirSelection.GetName] a môže naň prejsť" # todo: NEW TRANSLATION
  negotiate_succession_law_ct: "[SCOPE.sCountry('recipient').GetName] nemá kompatibilnú [policy|e] pre [ShowLawName('heir_religion_law')], ktorá by umožnila, aby bol [SCOPE.sCountry('actor').GetReligion.GetName] [heir|e] pre nich oprávnený, a môže zmeniť svoje zákony" # todo: NEW TRANSLATION
+ recently_negotiated_succession_law_cooldown_tt: "V poslednej dobe sme nevyjednávali [succession_law|e] [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
  negotiate_succession_law_tt: "Zmeniť [heir_selection|e] cieľovej [country|e] na [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
  negotiate_succession_law_bt: "Tiež zmeňte [ShowLawName('heir_religion_law')] cieľovej krajiny na [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName] ak jej politika NIE JE uzamknutá"
  negotiate_succession_law_dt: "@trigger_no! #Y [SCOPE.sCountry('actor').GetGovernment.GetHeirSelection.GetName] nemožno použiť na [SCOPE.sCountry('recipient').GetName]#!" # todo: NEW TRANSLATION
  negotiate_succession_law_et: "@trigger_no! #Y [SCOPE.sCountry('actor').GetGovernment.GetImplementedPolicyForLawFromKey('heir_religion_law').GetName] nemožno použiť na [SCOPE.sCountry('recipient').GetName]#!" # todo: NEW TRANSLATION
  PROPOSE_negotiate_succession_law: "Chceli by sme vyjednávať s $RECIPIENT$ o prijatí nášho [heir_selection|e] a prípadne aj [ShowLawName('heir_religion_law')]?" # todo: CHANGED
- INCOMING_OFFER_TITLE_negotiate_succession_law: "Žiadosť o prijatie zákona o nástupníctve" # todo: NEW TRANSLATION
  INCOMING_OFFER_negotiate_succession_law: "$ACTOR$ chce, aby sme prijali ich [heir_selection|e]. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  negotiate_succession_law_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  negotiate_succession_law_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
@@ -1128,7 +1118,6 @@
  rtr_demand_annexation_tt: "Cieľová [country|e] bude [annexed|e]" # todo: CHANGED
  dip_rtr_demand_annexation_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  PROPOSE_rtr_demand_annexation: "Vyjednať s $RECIPIENT$, aby sme požadovali, aby boli [annexed|e] nami?" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_rtr_demand_annexation: "Požiadavka na anexiu" # todo: NEW TRANSLATION
  INCOMING_OFFER_rtr_demand_annexation: "$ACTOR$ požaduje našu [annexation|e]. Chceme to prijať?\n\n$INFO$" # todo: NEW TRANSLATION
  rtr_demand_annexation_reject_effect_text: "$generic_reject_request_effect_string$" # todo: NEW TRANSLATION
  rtr_demand_annexation_reject_effect_text_past: "$generic_reject_request_effect_string_past$" # todo: NEW TRANSLATION
@@ -1145,7 +1134,6 @@
  PROPOSE_union_enforce_religion: "$PROPOSE_enforce_religion$" # todo: NEW TRANSLATION
  union_enforce_religion_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  union_enforce_religion_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_union_enforce_religion: "Žiadosť o prijatie náboženstva" # todo: NEW TRANSLATION
  INCOMING_OFFER_union_enforce_religion: "$ACTOR$ sa nás snažia donútiť prijať ich [religion|e]. Dovolíme im to?\n\n$INFO$" # todo: CHANGED
  union_enforce_culture: "$enforce_culture$" # todo: NEW TRANSLATION
  union_enforce_culture_act: "$enforce_culture_act$" # todo: NEW TRANSLATION
@@ -1155,5 +1143,221 @@
  PROPOSE_union_enforce_culture: "$PROPOSE_enforce_culture$" # todo: NEW TRANSLATION
  union_enforce_culture_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
  union_enforce_culture_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
- INCOMING_OFFER_TITLE_union_enforce_culture: "Žiadosť o prijatie kultúry" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_call_appanage_to_war: "$call_appanage_to_war$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_ask_join_war_for_favors: "$ask_join_war_for_favors$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_ask_reject_curia_proposal: "$ask_reject_curia_proposal$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_ask_support_curia_proposal: "$ask_support_curia_proposal$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_bribe_voter_for_policy: "$bribe_voter_for_policy$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_request_divorce: "$request_divorce$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_ask_to_lift_excommunication: "$ask_to_lift_excommunication$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_ask_to_lift_interdict: "$ask_to_lift_interdict$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_demand_conversion_to_islam: "$demand_conversion_to_islam$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_force_change_court_language: "$force_change_court_language$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_force_embargo: "$force_embargo$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_bestow_free_city_status: "$bestow_free_city_status$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_request_kingdom_title: "$request_kingdom_title$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_ask_for_dukedom: "$ask_for_dukedom$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_request_county_privileges: "$request_county_privileges$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_enforce_religious_unity: "$enforce_religious_unity$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_demand_unlawful_territory: "$demand_unlawful_territory$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_ask_to_vote_for_me_as_emperor: "$ask_to_vote_for_me_as_emperor$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_bribe_elector_to_vote_for_candidate: "$bribe_elector_to_vote_for_candidate$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_bolster_imperial_army: "$bolster_imperial_army$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_bestow_legatus_natus_status: "$bestow_legatus_natus_status$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_bestow_primas_germaniae_status: "$bestow_primas_germaniae_status$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_improve_cultural_view: "$improve_cultural_view$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_invite_prince: "$invite_prince$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_invite_royal_family: "$invite_royal_family$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_invite_settlers: "$invite_settlers$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_lordship_of_ireland_bestow_lieutenant_status: "$lordship_of_ireland_bestow_lieutenant_status$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_lordship_of_ireland_surrender_and_regrant: "$lordship_of_ireland_surrender_and_regrant$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_merge_tribe_iroquois: "$merge_tribe_iroquois$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_call_order_to_crusade: "$call_order_to_crusade$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_mil_order_request_funds: "$mil_order_request_funds$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_mil_order_request_men: "$mil_order_request_men$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_move_subject_capital: "$move_subject_capital$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_negotiate_succession_law: "$negotiate_succession_law$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_nusta_marriage: "$nusta_marriage$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_place_relative_on_throne: "$place_relative_on_throne$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_propose_ruler: "$propose_ruler$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_send_to_prussian_crusade: "$send_to_prussian_crusade$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_invite_to_prussian_crusade: "$invite_to_prussian_crusade$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_request_crown_character: "$request_crown_character$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_request_loan: "$request_loan$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_rtr_demand_annexation: "$rtr_demand_annexation$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_upgrade_to_maha_samanta: "$upgrade_to_maha_samanta$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_upgrade_to_pradhana_maha_samanta: "$upgrade_to_pradhana_maha_samanta$" # todo: CHANGED
  INCOMING_OFFER_union_enforce_culture: "$ACTOR$ sa nás snažia donútiť prijať ich [primary_culture|e]. Dovolíme im to?\n\n$INFO$" # todo: CHANGED
+ sell_work_of_art: "Predať umelecké dielo" # todo: NEW TRANSLATION
+ sell_work_of_art_desc: "Ponúknuť [work_of_art|e] z našej zbierky inému [country|e] výmenou za [gold|e]." # todo: NEW TRANSLATION
+ sell_work_of_art_desc_specific: "Predať [SCOPE.sWorkOfArt('target').GetName] [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ sell_work_of_art_select_art: "Vyberte umelecké dielo" # todo: NEW TRANSLATION
+ sell_work_of_art_no_art: "@trigger_no! Žiadne umelecké diela na predaj." # todo: NEW TRANSLATION
+ request_work_of_art_purchase: "Kúpiť umelecké dielo" # todo: NEW TRANSLATION
+ request_work_of_art_purchase_desc: "Kúpiť [work_of_art|e] zo zbierky iného [country|e]." # todo: NEW TRANSLATION
+ request_work_of_art_purchase_desc_specific: "Kúpiť [SCOPE.sWorkOfArt('target').GetName] od [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ request_woa_purchase_select_art: "Vyberte umelecké dielo" # todo: NEW TRANSLATION
+ request_woa_purchase_no_art: "@trigger_no! Žiadne umelecké diela dostupné." # todo: NEW TRANSLATION
+ request_work_of_art_purchase_move_art_tt: "Vybrané [work_of_art|e] sa presunie do [SCOPE.sCountry('actor').GetCapital.GetName]" # todo: NEW TRANSLATION
+ sell_work_of_art_to_estates: "Predať umelecké dielo stavom" # todo: NEW TRANSLATION
+ sell_work_of_art_to_estates_desc: "Predať [work_of_art|e] našim [estate|e] za zníženú cenu. Dielo bude absorbované a odstránené z našej zbierky." # todo: NEW TRANSLATION
+ sell_work_of_art_to_estates_desc_specific: "Predať [SCOPE.sWorkOfArt('target').GetName] našim [estate|e]." # todo: NEW TRANSLATION
+ sell_woa_to_estates_select_art: "Vyberte umelecké dielo" # todo: NEW TRANSLATION
+ sell_woa_to_estates_no_art: "@trigger_no! Žiadne umelecké diela na predaj." # todo: NEW TRANSLATION
+ bribe_foreign_artist: "Podplatiť zahraničného umelca" # todo: NEW TRANSLATION
+ bribe_foreign_artist_desc: "Použiť našu [spy_network|e] a zlato na prilákanie zahraničného [artist|e] na náš dvor." # todo: NEW TRANSLATION
+ bribe_foreign_artist_desc_specific: "Minúť zlato a [spy_network|e], aby sme presvedčili [SCOPE.sCharacter('target').GetName] opustiť [SCOPE.sCountry('recipient').GetName] a pridať sa k nášmu dvoru." # todo: NEW TRANSLATION
+ bribe_foreign_artist_select_artist: "Vyberte umelca" # todo: NEW TRANSLATION
+ bribe_foreign_artist_no_artists: "@trigger_no! Žiadni umelci na podplatenie." # todo: NEW TRANSLATION
+ dip_sell_work_of_art_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
+ sell_work_of_art_act: "Ponúknuť [SCOPE.sWorkOfArt('target').GetName] [SCOPE.sCountry('recipient').GetName] za zlato" # todo: NEW TRANSLATION
+ sell_work_of_art_move_art_tt: "Vybraný [work_of_art|e] sa presunie do [SCOPE.sCountry('recipient').GetCapital.GetName]" # todo: NEW TRANSLATION
+ PROPOSE_sell_work_of_art: "Chceme ponúknuť $RECIPIENT$ [work_of_art|e] z našej zbierky?\n\n$INFO$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_sell_work_of_art: "$ACTOR$ nám ponúkol na predaj [work_of_art|e]. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_sell_work_of_art: "Umelecké dielo na predaj" # todo: NEW TRANSLATION
+ sell_work_of_art_effect_text: "[SCOPE.sCountry('actor').GetName] predal [SCOPE.sWorkOfArt('target').GetName] [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ sell_work_of_art_effect_text_past: "[SCOPE.sCountry('actor').GetName] predal [SCOPE.sWorkOfArt('target').GetName] [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ sell_work_of_art_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmietol kúpiť [SCOPE.sWorkOfArt('target').GetName]." # todo: NEW TRANSLATION
+ sell_work_of_art_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol kúpiť [SCOPE.sWorkOfArt('target').GetName]." # todo: NEW TRANSLATION
+ dip_request_work_of_art_purchase_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
+ request_work_of_art_purchase_act: "Požiadať o kúpu [SCOPE.sWorkOfArt('target').GetName] od [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
+ PROPOSE_request_work_of_art_purchase: "Chceme požiadať o kúpu [work_of_art|e] od $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_request_work_of_art_purchase: "$ACTOR$ si želá kúpiť [work_of_art|e] z našej zbierky. Súhlasíme?\n\n$INFO$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_request_work_of_art_purchase: "Žiadosť o kúpu umeleckého diela" # todo: NEW TRANSLATION
+ request_work_of_art_purchase_effect_text: "[SCOPE.sCountry('actor').GetName] požiadal o kúpu [SCOPE.sWorkOfArt('target').GetName] od [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ request_work_of_art_purchase_effect_text_past: "[SCOPE.sCountry('actor').GetName] požiadal o kúpu [SCOPE.sWorkOfArt('target').GetName] od [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ request_work_of_art_purchase_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmietol predať [SCOPE.sWorkOfArt('target').GetName]." # todo: NEW TRANSLATION
+ request_work_of_art_purchase_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol predať [SCOPE.sWorkOfArt('target').GetName]." # todo: NEW TRANSLATION
+ dip_sell_work_of_art_to_estates_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
+ sell_work_of_art_to_estates_act: "Predať [SCOPE.sWorkOfArt('target').GetName] stavom" # todo: NEW TRANSLATION
+ dip_bribe_foreign_artist_CATEGORY: "CATEGORY_ESPIONAGE_ACTIONS" # todo: NEW TRANSLATION
+ bribe_foreign_artist_act: "Podplatiť [SCOPE.sCharacter('target').GetName], aby odišiel z [SCOPE.sCountry('recipient').GetName]" # todo: NEW TRANSLATION
+ PROPOSE_bribe_foreign_artist: "Chceme podplatiť [artist|e] od $RECIPIENT$, aby sa pridal k nášmu dvoru?\n\n$INFO$" # todo: NEW TRANSLATION
+ bribe_foreign_artist_effect_text: "[SCOPE.sCountry('actor').GetName] podplatil [SCOPE.sCharacter('target').GetName], aby odišiel z [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ bribe_foreign_artist_effect_text_past: "[SCOPE.sCountry('actor').GetName] podplatil [SCOPE.sCharacter('target').GetName], aby odišiel z [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ dip_lend_unit_to_ally_CATEGORY: "CATEGORY_MILITARY_ACTIONS" # todo: NEW TRANSLATION
+ lend_unit_to_ally: "Požičať jednotku spojencovi" # todo: NEW TRANSLATION
+ lend_unit_to_ally_act: "Požičať jednu z našich armádnych jednotiek [SCOPE.sCountry('recipient').GetName] na dobu trvania našej spoločnej vojny." # todo: NEW TRANSLATION
+ lend_unit_to_ally_desc: "Dočasne odovzdať velenie jednej z našich armádnych jednotiek vojnovému spojencovi. Jednotka sa vráti, keď už nebudeme mať spoločnú aktívnu vojnu." # todo: NEW TRANSLATION
+ lend_unit_to_ally_choose_unit: "Vyberte jednotku na požičanie" # todo: NEW TRANSLATION
+ lend_unit_to_ally_no_units: "@trigger_no! Žiadne vhodné jednotky na požičanie." # todo: NEW TRANSLATION
+ lend_unit_to_ally_effect_text: "[SCOPE.sCountry('actor').GetName] požičal jednotku [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ lend_unit_to_ally_effect_text_past: "[SCOPE.sCountry('actor').GetName] požičal jednotku [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ lend_unit_to_ally_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
+ lend_unit_to_ally_reject_effect_text_past: "$generic_reject_effect_string_past$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_lend_unit_to_ally: "Ponuka požičať jednotku" # todo: NEW TRANSLATION
+ INCOMING_OFFER_lend_unit_to_ally: "$ACTOR$ nám ponúkol požičať jednu zo svojich armádnych jednotiek na dobu trvania našej spoločnej vojny. Chceme prijať?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_lend_unit_to_ally: "Chceme požičať jednotku $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
+ dip_recall_lent_unit_CATEGORY: "CATEGORY_MILITARY_ACTIONS" # todo: NEW TRANSLATION
+ recall_lent_unit: "Odvolať požičanú jednotku" # todo: NEW TRANSLATION
+ recall_lent_unit_act: "Privolať požičanú jednotku späť pod naše velenie." # todo: NEW TRANSLATION
+ recall_lent_unit_desc: "Vrátiť požičanú jednotku pod naše velenie. Odvolanie počas spoločnej aktívnej vojny naštve spojenca, ktorý sa spoliehal na naše jednotky." # todo: NEW TRANSLATION
+ recall_lent_unit_choose_unit: "Vyberte požičanú jednotku na odvolanie" # todo: NEW TRANSLATION
+ recall_lent_unit_no_units: "@trigger_no! Momentálne nemáme žiadne jednotky požičané spojencom." # todo: NEW TRANSLATION
+ DIPLOREASON_LOSING_WAR: "Prehrávame vojnu" # todo: NEW TRANSLATION
+ DIPLOREASON_SUFFICIENT_ARMY: "Nepotrebuje ďalšie jednotky" # todo: NEW TRANSLATION
+ opinion_lent_unit: "Požičaná vojenská jednotka" # todo: NEW TRANSLATION
+ opinion_recalled_lent_unit: "Predčasné odvolanie požičanej jednotky" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_sell_corsica: "$sell_corsica$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_sell_icon: "$sell_icon$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_share_maps: "$share_maps$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_subject_enforce_peace: "$subject_enforce_peace$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_take_colony_for_debt: "$take_colony_for_debt$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_transfer_subject: "$transfer_subject$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_union_enforce_peace: "$union_enforce_peace$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_union_enforce_religion: "$union_enforce_religion$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_union_enforce_culture: "$union_enforce_culture$" # todo: CHANGED
+ INCOMING_OFFER_TITLE_violate_sovereignty: "$violate_sovereignty$" # todo: CHANGED
+ PROPOSE_join_an_imperial_circle: "Chceme vstúpiť do impériálneho kruhu?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_call_imperial_circle_to_war: "Chceme povolať kruh [SCOPE.sCountry('recipient').GetName] na podporu našej vojny?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_appoint_imperial_circle_leader: "Chceme vymenovať [SCOPE.sCountry('recipient').GetName] za vodcu kruhu?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_petition_imperial_diet: "Chceme požiadať Impériálny snem?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_request_circle_privilege: "Chceme požiadať cisára o privilégiá kruhu?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_challenge_circle_leadership: "Chceme spochybniť vedenie kruhu [SCOPE.sCountry('recipient').GetName]?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_appeal_to_emperor: "Chceme sa obrátiť na cisára, aby zasiahol do sporu o vedenie nášho kruhu?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_appeal_to_circle_diet: "Chceme požiadať diétu kruhu o finančnú pomoc?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_request_circle_infrastructure_expansion: "Chceme požiadať o rozšírenie vojenskej infraštruktúry?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_request_new_circle_titles: "Chceme zvýšiť náš status v rámci kruhu?\n\n$INFO$" # todo: NEW TRANSLATION
+ dip_join_an_imperial_circle_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_call_imperial_circle_to_war_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_appoint_imperial_circle_leader_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_petition_imperial_diet_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_request_circle_privilege_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_challenge_circle_leadership_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_appeal_to_emperor_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_appeal_to_circle_diet_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_request_circle_infrastructure_expansion_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ dip_request_new_circle_titles_CATEGORY: "CATEGORY_HRE_ACTIONS" # todo: NEW TRANSLATION
+ PROPOSE_merge_colonies: "Chceme nariadiť [SCOPE.sCountry('colony_absorber').GetName], aby pohltil [SCOPE.sCountry('recipient').GetName]?\n\n$INFO$" # todo: NEW TRANSLATION
+ merge_colonies: "Zlúčiť kolónie" # todo: NEW TRANSLATION
+ merge_colonies_act: "Zlúčiť [SCOPE.sCountry('colony_absorber').GetName] s [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ merge_colonies_desc: "Nariadiť dvom našim kolóniám, aby sa spojili do jednej silnejšej kolónie." # todo: NEW TRANSLATION
+ merge_colonies_effect_text: "[SCOPE.sCountry('colony_absorber').GetName] pohltil [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ merge_colonies_effect_text_past: "[SCOPE.sCountry('colony_absorber').GetName] pohltil [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ merge_colonies_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
+ merge_colonies_reject_effect_text_past: "$generic_reject_effect_string_past$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_merge_colonies: "Koloniálne zlúčenie" # todo: NEW TRANSLATION
+ INCOMING_OFFER_merge_colonies: "$ACTOR$ nám nariaďuje zlúčiť sa s [SCOPE.sCountry('colony_absorber').GetName]. Súhlasíme?\n\n$INFO$" # todo: NEW TRANSLATION
+ merge_colonies_select_absorber: "Vyberte kolóniu, ktorá absorbuje druhú:" # todo: NEW TRANSLATION
+ merge_colonies_select_absorbed: "Vyberte kolóniu, ktorá bude pohltená:" # todo: NEW TRANSLATION
+ merge_colonies_no_colonies: "@trigger_no! Žiadne koloniálne subjekty k dispozícii." # todo: NEW TRANSLATION
+ merge_colonies_select_both_tt: "Musí byť vybraná zdrojová aj cieľová kolónia." # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_grant_italian_league_sponsor: "Žiadosť o sponzorstvo Ligy" # todo: NEW TRANSLATION
+ INCOMING_OFFER_grant_italian_league_sponsor: "$ACTOR$ nás pozýva sponzorovať ich taliansku Ligu. Súhlasíme?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_grant_italian_league_sponsor: "Požiadať o sponzorstvo Ligy od $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_revoke_italian_league_sponsor: "Odvolať sponzorstvo Ligy od $RECIPIENT$?\n\n$INFO$" # todo: NEW TRANSLATION
+ PROPOSE_cancel_italian_league_sponsor: "Stiahnuť naše sponzorstvo Ligy?\n\n$INFO$" # todo: NEW TRANSLATION
+ grant_italian_league_sponsor: "Požiadať o sponzorstvo Ligy" # todo: NEW TRANSLATION
+ dip_grant_italian_league_sponsor_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
+ grant_italian_league_sponsor_act: "Požiadať o sponzorstvo Ligy od [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ grant_italian_league_sponsor_desc: "Pozvať ich, aby sponzorovali našu Ligu, čím sa stanú patrónmi, ktorí nám každý mesiac poskytujú zlato a ľudskú silu." # todo: NEW TRANSLATION
+ grant_italian_league_sponsor_effect_text: "[SCOPE.sCountry('actor').GetName] požiadal [SCOPE.sCountry('recipient').GetName] o sponzorstvo Ligy." # todo: NEW TRANSLATION
+ grant_italian_league_sponsor_effect_text_past: "[SCOPE.sCountry('actor').GetName] požiadal [SCOPE.sCountry('recipient').GetName] o sponzorstvo Ligy." # todo: NEW TRANSLATION
+ grant_italian_league_sponsor_reject_effect_text: "$generic_reject_effect_string$" # todo: NEW TRANSLATION
+ grant_italian_league_sponsor_reject_effect_text_past: "$generic_reject_effect_string_past$" # todo: NEW TRANSLATION
+ revoke_italian_league_sponsor: "Odvolať sponzorstvo Ligy" # todo: NEW TRANSLATION
+ dip_revoke_italian_league_sponsor_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
+ revoke_italian_league_sponsor_act: "Odvolať sponzorstvo Ligy od [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ revoke_italian_league_sponsor_desc: "Odobrať im status sponzora a vylúčiť ich z Ligy." # todo: NEW TRANSLATION
+ revoke_italian_league_sponsor_effect_text: "[SCOPE.sCountry('actor').GetName] odvolal sponzorstvo Ligy od [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ revoke_italian_league_sponsor_effect_text_past: "[SCOPE.sCountry('actor').GetName] odvolal sponzorstvo Ligy od [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ cancel_italian_league_sponsor: "Zrušiť sponzorstvo Ligy" # todo: NEW TRANSLATION
+ dip_cancel_italian_league_sponsor_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
+ cancel_italian_league_sponsor_act: "Stiahnuť naše sponzorstvo z Ligy [SCOPE.sCountry('recipient').GetName]." # todo: NEW TRANSLATION
+ cancel_italian_league_sponsor_desc: "Ukončiť naše sponzorstvo a opustiť Ligu." # todo: NEW TRANSLATION
+ cancel_italian_league_sponsor_effect_text: "[SCOPE.sCountry('actor').GetName] stiahol svoje sponzorstvo Ligy." # todo: NEW TRANSLATION
+ cancel_italian_league_sponsor_effect_text_past: "[SCOPE.sCountry('actor').GetName] stiahol svoje sponzorstvo Ligy." # todo: NEW TRANSLATION
+ RIVAL_OR_ENEMY_OF_FOREIGN_LEAGUE_FRANCE: "Rival alebo nepriateľ Francúzskej Ligy" # todo: NEW TRANSLATION
+ RIVAL_OR_ENEMY_OF_FOREIGN_LEAGUE_HRE: "Rival alebo nepriateľ Impériálnej Ligy" # todo: NEW TRANSLATION
+ RIVAL_OR_ENEMY_OF_FOREIGN_LEAGUE_IBERIA: "Rival alebo nepriateľ Iberskej Ligy" # todo: NEW TRANSLATION
+ RIVAL_OR_ENEMY_OF_FOREIGN_LEAGUE_BALKAN: "Rival alebo nepriateľ Balkánskej Ligy" # todo: NEW TRANSLATION
+ COMFORTABLE_MONTHLY_BALANCE: "Pohodlný mesačný príjem" # todo: NEW TRANSLATION
+ COMFORTABLE_MANPOWER: "Bohaté rezervy ľudských síl" # todo: NEW TRANSLATION
+ violate_italian_sovereignty: "Porušiť taliansku suverenitu" # todo: NEW TRANSLATION
+ violate_italian_sovereignty_desc: "Ponúknuť [gold|e] talianskému štátu alebo členovi Ligy, aby prešli do našej Ligy, bez ohľadu na ich súčasnú vernosť." # todo: NEW TRANSLATION
+ dip_violate_italian_sovereignty_CATEGORY: "CATEGORY_ACCESS_ACTIONS" # todo: NEW TRANSLATION
+ violate_italian_sovereignty_select_country: "Koho chceme vylákať do našej Ligy?" # todo: NEW TRANSLATION
+ violate_italian_sovereignty_no_countries: "@trigger_no! Žiadne vhodné ciele k dispozícii." # todo: NEW TRANSLATION
+ violate_italian_sovereignty_not_already_full_access_tt: "Už od nich nedostávame súčasne [military_access|e] a [food_access|e]" # todo: NEW TRANSLATION
+ violate_italian_sovereignty_act: "Podplatiť [SCOPE.sCountry('recipient').GetName], aby sa pripojili k našej Lige." # todo: NEW TRANSLATION
+ violate_italian_sovereignty_effect_text: "[SCOPE.sCountry('actor').GetName] ponúkol [gold|e] [SCOPE.sCountry('recipient').GetName], aby sa pripojili k ich Lige." # todo: NEW TRANSLATION
+ violate_italian_sovereignty_effect_text_past: "[SCOPE.sCountry('actor').GetName] ponúkol [gold|e] [SCOPE.sCountry('recipient').GetName], aby sa pripojili k ich Lige." # todo: NEW TRANSLATION
+ violate_italian_sovereignty_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
+ violate_italian_sovereignty_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION
+ PROPOSE_violate_italian_sovereignty: "Porušiť územnú suverenitu $RECIPIENT$?\n\nTýmto získame [military_access|e] a [food_access|e] na ich území na 5 rokov" # todo: NEW TRANSLATION
+ italian_wars_bribe_country: "Podplatiť do Ligy" # todo: NEW TRANSLATION
+ italian_wars_bribe_country_desc: "Ponúknuť [gold|e] talianskemu štátu, ktorý ešte nie je v žiadnej Lige, aby sa pridal k našej." # todo: NEW TRANSLATION
+ size_of_our_league_tt: "Veľkosť našej Ligy" # todo: NEW TRANSLATION
+ recipient_wont_be_able_to_join_another_league_tt: "[recipient.GetName] nebude môcť vstúpiť do žiadnej inej Ligy počas nasledujúcich #Y 2#! rokov" # todo: NEW TRANSLATION
+ dip_italian_wars_bribe_country_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
+ italian_wars_bribe_country_select_country: "Koho chceme podplatiť, aby vstúpil do Ligy?" # todo: NEW TRANSLATION
+ italian_wars_bribe_country_no_countries: "@trigger_no! Žiadne vhodné talianske štáty na podplatenie." # todo: NEW TRANSLATION
+ italian_wars_bribe_country_select_gold_amount: "Koľko [gold|e] ponúkame?" # todo: NEW TRANSLATION
+ PROPOSE_italian_wars_bribe_country: "Podplatiť $RECIPIENT$ aby sa pridal k našej Lige?\n\n$INFO$" # todo: NEW TRANSLATION
+ INCOMING_OFFER_TITLE_italian_wars_bribe_country: "Úplatok za vstup do Ligy" # todo: NEW TRANSLATION
+ INCOMING_OFFER_italian_wars_bribe_country: "$ACTOR$ nám ponúka [gold|e], aby sme sa pridali k ich Lige. Súhlasíme?\n\n$INFO$" # todo: NEW TRANSLATION
+ italian_wars_bribe_country_act: "Podplatiť [SCOPE.sCountry('recipient').GetName], aby sa pripojili k našej Lige." # todo: NEW TRANSLATION
+ italian_wars_bribe_country_effect_text: "[SCOPE.sCountry('actor').GetName] ponúkol [gold|e] [SCOPE.sCountry('recipient').GetName], aby sa pripojili k ich Lige." # todo: NEW TRANSLATION
+ italian_wars_bribe_country_effect_text_past: "[SCOPE.sCountry('actor').GetName] ponúkol [gold|e] [SCOPE.sCountry('recipient').GetName], aby sa pripojili k ich Lige." # todo: NEW TRANSLATION
+ italian_wars_bribe_country_reject_effect_text: "$generic_reject_offer_effect_string$" # todo: NEW TRANSLATION
+ italian_wars_bribe_country_reject_effect_text_past: "$generic_reject_offer_effect_string_past$" # todo: NEW TRANSLATION

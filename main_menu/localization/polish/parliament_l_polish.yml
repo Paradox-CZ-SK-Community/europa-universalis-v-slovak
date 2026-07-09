@@ -23,6 +23,7 @@
  PARLIAMENT_IF_FAIL_TT: "Ak debata #R zlyhá#!" # todo: NEW TRANSLATION
  PARLIAMENT_CURRENT_SUPPORT: "Aktuálna podpora v parlamente: $SUPPORT$%" # todo: NEW TRANSLATION
  NO_POSSIBLE_AGENDAS: "@trigger_no! Neostali žiadne možné [parliament_agendas|e]." # todo: NEW TRANSLATION
+ PARLIAMENT_TYPE_ALREADY_SELECTED: "@trigger_no! Toto je už náš súčasný [parliament_type|e]." # todo: NEW TRANSLATION
  LAWS_THAT_CAN_BE_DEBATED: "Politiky, o ktorých možno diskutovať" # todo: NEW TRANSLATION
  IO_PARLIAMENT_NO_LAWS_CALL_DIET: "@trigger_no! Žiadne [laws|e] dostupné na diskusiu. Pre zobrazenie všetkých zákonov skontrolujte Imperiálnu ústavu." # todo: NEW TRANSLATION
  ACTIVE_PARLIAMENT_SUPPORT_POWER: "Základ je $VAL|2G$ [estate_power|e] upravený nasledovným:" # todo: NEW TRANSLATION
@@ -45,7 +46,7 @@
  IO_LAW_DEBATE_POLICY_KEPT: "[policy|e] zostáva" # todo: NEW TRANSLATION
  IO_LAW_DEBATE_POLICY_SET: "[policy|e] je ustanovená" # todo: NEW TRANSLATION
  call_parliament: "Zvolať parlament" # todo: NEW TRANSLATION
- call_parliament_desc: "Týmto zvoláme parlament, aby sme získali podporu na vyriešenie [parliament_issue|e], zmenu [policies|e] v našich [laws|e], vytvorenie [casus_belli|e], zvýšenie [taxes|e] alebo väčšie [army_levies|e] a [navy_levies|e].\n\nPočas tohto zasadnutia získame nasledujúce efekty: [ShowModifier('parliament_in_session')], [ShowModifier('parliament_location')]; a buď [ShowModifier('parliament_in_capital')] alebo [ShowModifier('parliament_outside_capital')] v závislosti od vybranej [location|e]." # todo: CHANGED
+ call_parliament_desc: "Týmto zvoláme parlament v snahe získať podporu na vyriešenie [parliament_issue|e], zmenu [policies|e] v našich [laws|e], vytvorenie [casus_belli|e], zvýšenie [taxes|e] alebo väčšie [army_levies|e] a [navy_levies|e].\n\nPočas tejto schôdze získame nasledujúce efekty\n[ShowModifier('parliament_in_session')],\n[ShowModifier('parliament_location')];\na buď [ShowModifier('parliament_in_capital')] alebo [ShowModifier('parliament_outside_capital')] v závislosti od zvolenej [location|e]." # todo: CHANGED
  request_more_taxes: "Požiadať o dodatočné dane" # todo: NEW TRANSLATION
  request_more_taxes_desc: "Požiadať [Player.GetGovernment.GetParliament.GetName] , aby nám umožnil vyberať viac [tax|e] od [estates|e]." # todo: NEW TRANSLATION
  ask_for_larger_levies: "Požiadať o väčšie odvody" # todo: NEW TRANSLATION
@@ -54,6 +55,8 @@
  ask_for_law_changes_desc: "Požiadať [estates|e], aby schválili zmenu určitej [policy|e] v našich [laws|e]." # todo: NEW TRANSLATION
  ask_for_law_changes_select_law_title: "Vyberte [law|e], ktorú náš [Player.GetGovernment.GetParliament.GetName] schváli zmeniť." # todo: NEW TRANSLATION
  ask_for_law_changes_select_policies_title: "Vyberte [policy|e], ktorú náš [Player.GetGovernment.GetParliament.GetName] schváli zmeniť." # todo: NEW TRANSLATION
+ declare_holidays_request: "Vyhlásiť sviatky" # todo: NEW TRANSLATION
+ declare_holidays_request_desc: "Vyhlásenie najbližšieho dňa za sviatok pre všetkých našich ľudí nám získa podporu obyvateľstva a tiež pomôže stabilizovať naše záležitosti." # todo: NEW TRANSLATION
  prepare_for_war_select_title: "Vyberte [country|e], proti ktorému získať [casus_belli|e]" # todo: NEW TRANSLATION
  prepare_for_war_select_province_title: "Vyberte [province|e], ktorý bude stanovený ako [war_goal|e]" # todo: NEW TRANSLATION
  select_a_country_to_get_casus_belli_on: "Vyberte [country|e], na ktorý nám náš [Player.GetGovernment.GetParliament.GetName] udelí [casus_belli|e]." # todo: NEW TRANSLATION
@@ -848,3 +851,26 @@
  STATIC_MODIFIER_NAME_parl_parish_waypoints_mod: "Farské zastávky" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_parl_coastal_posts_mod: "Pobrežné obchodné stanice" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_parl_road_corvee_mod: "Corvée na údržbu ciest" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_standing_regiments_mod: "Stále pluky" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_wartime_conscription_mod: "Vojnový odvod" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_industrial_workshops_mod: "Priemyselné dielne" # todo: NEW TRANSLATION
+ STATIC_MODIFIER_NAME_parl_wartime_officer_corps_mod: "Posilnený dôstojnícky zbor" # todo: NEW TRANSLATION
+ establish_standing_regiments: "Zriadiť stále pluky" # todo: NEW TRANSLATION
+ establish_standing_regiments_desc: "Doba zvolávania verných pomocníkov podľa potreby už pominula. Namiesto toho by naše šľachtické rody mali dodávať vycvičených dôstojníkov, ktorí povedú pluky trvalo slúžiace v kráľovskej službe — bojovú silu, ktorá je svojou disciplínou zaviazaná korune skôr než svojmu pánovi." # todo: NEW TRANSLATION
+ mandate_wartime_conscription: "Nariadiť vojnový odvod" # todo: NEW TRANSLATION
+ mandate_wartime_conscription_desc: "Naši nepriatelia postavili armády z odvedencov, a my musíme urobiť to isté. Povolávaním záloh a brancov cez farské zoznamy sa naše sily v tejto hodine núdze rozšíria." # todo: NEW TRANSLATION
+ promote_industrial_workshops: "Podporiť priemyselné dielne" # todo: NEW TRANSLATION
+ promote_industrial_workshops_desc: "Remeselnícke bratstvá, ktoré kedysi udržiavali naše mestá, už nedokážu dosiahnuť produkciu, akú si vyžaduje náš vek. Mali by sme investovať do nových manufaktúr a mechanizovaných dielní, ktoré vyrábajú oveľa viac a oveľa rýchlejšie, aby naše remeslá držali krok s dobou." # todo: NEW TRANSLATION
+ wartime_officer_corps: "Posilniť dôstojnícky zbor" # todo: NEW TRANSLATION
+ wartime_officer_corps_desc: "Nápor jazdy už nerozhoduje deň. To, čo dnes rozhoduje bitku, je zručnosť tých, ktorí velia, a parlament by mal armáde umožniť vybrať si našich najlepších dôstojníkov, vycvičených a nasadených pred začiatkom kampane." # todo: NEW TRANSLATION
+ pa_accept_estate_culture: "Prijať kultúru stavu" # todo: NEW TRANSLATION
+ pa_accept_estate_culture_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_accept_estate_culture_desc: "Stav požaduje, aby dominantná [culture|e] jeho ľudu získala oficiálne uznanie." # todo: NEW TRANSLATION
+ pa_convert_to_estate_religion: "Prejsť na náboženstvo stavu" # todo: NEW TRANSLATION
+ pa_convert_to_estate_religion_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_convert_to_estate_religion_desc: "Stav požaduje, aby krajina prešla na [religion|e] svojich ľudí." # todo: NEW TRANSLATION
+ pa_change_court_language_to_estate_language: "Zmeniť dvorný jazyk" # todo: NEW TRANSLATION
+ pa_change_court_language_to_estate_language_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_change_court_language_to_estate_language_desc: "Stav požaduje, aby sa [court_language|e] zmenil na taký, ktorý lepšie odráža jeho identitu." # todo: NEW TRANSLATION
+ iw_militarize_country: "Militarizovať krajinu" # todo: NEW TRANSLATION
+ iw_militarize_country_desc: "Požiadať [parliament|e] o podporu mimoriadnej vojenskej mobilizácie, ktorá poskytne [army_tradition|e] a posilní naše najskúsenejšie [army|e]." # todo: NEW TRANSLATION

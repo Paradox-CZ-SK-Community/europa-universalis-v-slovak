@@ -58,6 +58,8 @@
  ALERT_ARMIES_ON_ICE: "Nasledujúce [armies|e] sú na [frozen|e] vode a mali by sa vrátiť na suchú zem skôr, než sa ľad roztopí:" # todo: CHANGED
  ALERT_NAVIES_STUCK_IN_ICE_TITLE: "Flotily uviaznuté v ľade" # todo: NEW TRANSLATION
  ALERT_NAVIES_STUCK_IN_ICE: "Nasledujúce [navies|e] sú uviaznuté v [frozen|e] vode, trpia postupným [attrition|e] a nemôžu sa pohnúť, kým ľad neroztopí:" # todo: CHANGED
+ ALERT_MERCENARIES_IN_TROUBLE_TITLE: "Žoldnieri v problémoch" # todo: NEW TRANSLATION
+ ALERT_MERCENARIES_IN_TROUBLE: "Nasledujúce [units|e] majú vysoké [attrition|e] a [mercenaries|e] zvažujú opustenie svojich zmlúv:" # todo: NEW TRANSLATION
  ALERT_NAVY_ATTRITION_TITLE: "Flotily trpiace opotrebovaním" # todo: NEW TRANSLATION
  ALERT_NAVY_ATTRITION: "Nasledujúce [navies|e] majú nejaké [attrition|e]:" # todo: CHANGED
  ALERT_OBJECTIVE_GROUP_MISSING_TRANSPORT_NAVY_TITLE: "Jednotky pridelené k cieľu potrebujú transportné lode" # todo: NEW TRANSLATION
@@ -115,7 +117,7 @@
  ALERT_UNPROFITABLE_TRADE: "Nevýnosný obchod" # todo: CHANGED
  ALERT_TRADE_ENTRY: "[TRADE.GetName]: [TRADE.GetProfit|+=2][gold_i]" # todo: NEW TRANSLATION
  ALERT_TRADE_EXTRA_NUM: "... a ďalších $VAL|V$ [trades|e]." # todo: NEW TRANSLATION
- ALERT_NO_SUPPLIES_TRADE: "Obchod vyčerpal zásoby" # todo: CHANGED
+ ALERT_NO_SUPPLIES_TRADE: "Manuálny obchod vyčerpal zásoby" # todo: CHANGED
  ALERT_NO_SUPPLIES_ENTRY_SELF: "[TRADE.GetName] vyčerpal zásoby, pretože už používame všetko dostupné na iné [exports|e]." # todo: NEW TRANSLATION
  ALERT_NO_SUPPLIES_ENTRY_DEFAULT: "[TRADE.GetName] vyčerpal zásoby, pretože nie je nič dostupné na [export|e]." # todo: NEW TRANSLATION
  ALERT_NO_SUPPLIES_ENTRY: "[TRADE.GetName] je prekonávaný $WHO$, ktorý má vyššiu [merchant_power|e] v [TRADE.GetFromMarket.GetName]." # todo: NEW TRANSLATION
@@ -159,7 +161,7 @@
  ALERT_PARLIAMENT_IN_SESSION_TITLE: "Parlament v zasadnutí" # todo: NEW TRANSLATION
  ALERT_PARLIAMENT_IN_SESSION: "Váš [parliament|e] je v zhromaždení a zostáva mu [COUNTRY.GetGovernment.GetParliament.GetRemainingParliamentDuration] dní." # todo: CHANGED
  ALERT_IMPERIAL_DIET_IN_SESSION_TITLE: "Ríšsky snem v zasadnutí" # todo: NEW TRANSLATION
- ALERT_IMPERIAL_DIET_IN_SESSION: "Momentálne prerokúvame [INTERNATIONAL_ORGANIZATION.GetParliament.GetCurrentDebateName]. Máme podporu [INTERNATIONAL_ORGANIZATION.GetParliament.GetParliamentIssueSupport|2%G] z [INTERNATIONAL_ORGANIZATION.GetParliament.GetName]." # todo: NEW TRANSLATION
+ ALERT_IMPERIAL_DIET_IN_SESSION: "[INTERNATIONAL_ORGANIZATION.GetName] momentálne prerokúva [INTERNATIONAL_ORGANIZATION.GetParliament.GetCurrentDebateName]. Súčasné hlasovanie je [INTERNATIONAL_ORGANIZATION.GetParliament.GetParliamentIssueSupport|2%G] v prospech." # todo: CHANGED
  ALERT_PARLIAMENT_ISSUE: "Momentálne debatujú o [COUNTRY.GetGovernment.GetParliament.GetCurrentDebateName]. Podpora je [COUNTRY.GetGovernment.GetParliament.GetParliamentIssueSupport|%Y]." # todo: CHANGED
  ALERT_PARLIAMENT_NO_ISSUE: "Momentálne sa nič neprejednáva." # todo: NEW TRANSLATION
  ALERT_UNPROFITABLE_BUILDINGS: "Nevýnosné budovy" # todo: CHANGED
@@ -230,6 +232,20 @@
  ALERT_REBEL_ESTATES_TITLE: "Vzbúrivé stavy" # todo: NEW TRANSLATION
  ALERT_REBEL_ESTATES_TT: "Nasledujúce [estates|e] majú príliš nízke [estate_satisfaction|e] a pridávajú sa k [rebels|e]:" # todo: CHANGED
  ALERT_REBEL_ESTATE_ENTRY: "$BULLET_WITH_TAB$[ESTATE.GetName]: [ESTATE.GetSatisfaction|V2%]([ESTATE.GetMonthlySatisfactionChange|<+2%=]@satisfaction!)" # todo: NEW TRANSLATION
+ ALERT_DISCRIMINATED_CULTURE_ESTATES_TITLE: "Stavy s diskriminovanou kultúrou" # todo: NEW TRANSLATION
+ ALERT_DISCRIMINATED_CULTURE_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_culture|e] je [non_accepted_culture_short|e]:" # todo: NEW TRANSLATION
+ ALERT_DISCRIMINATED_CULTURE_ESTATE_ENTRY: "[ESTATE.GetName] ($POWER|V2%$): [ESTATE.GetCulture.GetName]" # todo: NEW TRANSLATION
+ ALERT_DISCRIMINATED_CULTURE_PENALTY_INFO: "[estate_satisfaction|e]: [GetDefine('NEstate','ESTATE_CULTURE_DISCRIMINATED_SATISFACTION')|R2%]\n[estate_power|e]: [GetDefine('NEstate','ESTATE_CULTURE_DISCRIMINATED_POWER')|-=2%]" # todo: NEW TRANSLATION
+ ALERT_TOLERATED_CULTURE_ESTATES_TITLE: "Stavy s tolerovanou kultúrou" # todo: NEW TRANSLATION
+ ALERT_TOLERATED_CULTURE_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_TOLERATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_culture|e] je len [tolerated_culture_short|e]:" # todo: NEW TRANSLATION
+ ALERT_TOLERATED_CULTURE_ESTATE_ENTRY: "[ESTATE.GetName] ($POWER|V2%$): [ESTATE.GetCulture.GetName]" # todo: NEW TRANSLATION
+ ALERT_TOLERATED_CULTURE_PENALTY_INFO: "[estate_satisfaction|e]: [GetDefine('NEstate','ESTATE_CULTURE_TOLERATED_SATISFACTION')|R2%]\n[estate_power|e]: [GetDefine('NEstate','ESTATE_CULTURE_TOLERATED_POWER')|-=2%]" # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_ESTATES_TITLE: "Stavy s iným než primárnym náboženstvom" # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_HERETIC_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_religion|e] je [heretic|e] náboženstvo:" # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_HEATHEN_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_religion|e] je [heathen|e] náboženstvo:" # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_ESTATE_ENTRY: "[ESTATE.GetName] ($POWER|V2%$): [ESTATE.GetReligion.GetName]" # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_HERETIC_PENALTY_INFO: "Tolerovanie týchto náboženstiev robí [estates|e] spokojnejšími a mocnejšími; intolerancia ich robí menej spokojnými a slabšími." # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_HEATHEN_PENALTY_INFO: "Tolerovanie týchto náboženstiev robí [estates|e] spokojnejšími a mocnejšími; intolerancia ich robí menej spokojnými a slabšími." # todo: NEW TRANSLATION
  ALERT_POSSIBLE_FORMABLE_COUNTRIES_TITLE: "Možné formovateľné krajiny" # todo: NEW TRANSLATION
  ALERT_POSSIBLE_FORMABLE_COUNTRIES: "Nasledujúce [formable_countries|e] sú nám dostupné:" # todo: CHANGED
  ALERT_POSSIBLE_FORMABLE_COUNTRY_ENTRY: "[FORMABLE_COUNTRY.GetTag]: [FORMABLE_COUNTRY.GetName|Y] (Tier [FORMABLE_COUNTRY.GetRankNum|W0])" # todo: NEW TRANSLATION
@@ -248,6 +264,8 @@
  ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "Naše [estates|e] sú nespokojné, pretože uplynulo $VAL|0Y$ mesiacov odvtedy, čo bol [parliament|e] naposledy zvolaný. Momentálne to má nasledujúce účinky:\n$HOW$" # todo: CHANGED
  ALERT_HAS_DISLOYAL_SUBJECTS: "Niektorí z našich [subjects|e] majú nízke [subject_loyalty|e] a nebudú pomáhať v našich [wars|e]:" # todo: CHANGED
  ALERT_HAS_REBELLIOUS_SUBJECTS: "Niektorí z našich [subjects|e] majú veľmi nízke [subject_loyalty|e] a nebudú pomáhať v našich [wars|e]:\n" # todo: CHANGED
+ ALERT_HAS_IMMINENT_INDEPENDENCE_WAR_TITLE: "Blížiaca sa vojna za nezávislosť" # todo: NEW TRANSLATION
+ ALERT_HAS_IMMINENT_INDEPENDENCE_WAR: "Nasledujúce [subjects|e] vedú hnutia za nezávislosť dosť silné na to, aby mohli kedykoľvek vyhlásiť [war|e] proti nám\n" # todo: NEW TRANSLATION
  ALERT_DISLOYAL_SUBJECTS_ENTRY: "$BULLET_WITH_TAB$[COUNTRY.GetName]: $LOYALTY$" # todo: NEW TRANSLATION
  ALERT_DISLOYAL_SUBJECTS_EXTRA_NUM: " a ďalších $VAL|V$ [subjects|e]..." # todo: NEW TRANSLATION
  ALERT_HAS_UNRAISED_LEVIES_TITLE: "Nezodvihnuté levies" # todo: NEW TRANSLATION
@@ -262,11 +280,11 @@
  ALERT_BEING_ANNEXED_DISLOYAL: "#T Prebieha anektovanie#!\nNáš [overlord|e] $OVERLORD$ začal nás [annex|e].\n\nAvšak, kým zostávame [disloyal_subject|e], oni nepokračujú. Ak uspejú, je to koniec hry!\n\nMôžeme im vyhlásiť [war|e] s naším [ShowCasusBelliName('cb_resist_annexation')] [casus_belli|e]!\n\n" # todo: NEW TRANSLATION
  ALERT_ANNEXING_DISLOYAL_SUBJECT_TITLE: "Anexia nelojakálneho podriadeného" # todo: NEW TRANSLATION
  ALERT_ANNEXING_DISLOYAL_SUBJECT: "Snažíme sa [annex|e] [subject|e], ale pokiaľ zostávajú [disloyal_subject|e], nedosiahneme pokrok. Je to tragická strata zdrojov.\n$SUBJECTS$\n\n" # todo: CHANGED
- ALERT_ANNEXING_STALLED_LOW_OPINION_TITLE: "Anexia zastavená: nízka priazeň" # todo: NEW TRANSLATION
- ALERT_ANNEXING_STALLED_LOW_OPINION: "Nasledujúci [subjects|e] majú príliš nízku [opinion|e], aby sa [annexation|e] mohla posunúť vpred:\n$SUBJECTS$\n\n" # todo: NEW TRANSLATION
+ ALERT_ANNEXING_STALLED_LOW_OPINION_TITLE: "Anexovanie krajín, ktoré majú na nás nízky názor" # todo: CHANGED
+ ALERT_ANNEXING_STALLED_LOW_OPINION: "Snažíme sa [annex|e] [country|e], ale pokiaľ majú nedostatočný názor na nás, neurobíme pokrok. Je to tragická strata zdrojov.\n$COUNTRIES$\n\n" # todo: CHANGED
  ALERT_HAS_BAD_ACTORS_TITLE: "Zlomyselné aktivity" # todo: NEW TRANSLATION
- ALERT_HAS_BAD_ACTORS: "Sme momentálne cieľom nejakých zlovestných aktivít. Mali by sme použiť kontrarozviedku na ich odhalenie!\n$INFO$\n\n" # todo: CHANGED
- ALERT_HAS_BAD_ACTORS_ENTRY: "$WHAT|Y$: $HOW_MANY|Y$ škodlivých aktérov" # todo: NEW TRANSLATION
+ ALERT_HAS_BAD_ACTORS: "Sme momentálne cieľom nekalých aktivít. Použite [counterespionage|E] na vypátranie týchto skrytých akcií.\n\n$INFO$" # todo: CHANGED
+ ALERT_HAS_BAD_ACTORS_ENTRY: "$WHO$ útočí na nás pomocou $WHAT|Y$" # todo: CHANGED
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_TITLE: "Trhy s nízkymi zásobami potravín" # todo: NEW TRANSLATION
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "[food_stockpile|e] sa minie v priebehu nasledujúcich [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] mesiacov v nasledujúcich [markets|e]:\n" # todo: CHANGED
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_ENTRY: "@market! [Market.GetName]: [Market.GetFoodStockpile|2Y]@food! ([Market.GetMonthlyFoodWithLabel])" # todo: NEW TRANSLATION
@@ -292,6 +310,9 @@
  ALERT_HAS_UNMARRIED_CHILDREN: "[COUNTRY.GetGovernment.GetFullRulerName] má nezadané deti:\n" # todo: CHANGED
  ALERT_HAS_UNMARRIED_CHILDREN_ENTRY: "[CHARACTER.GetName] ([CHARACTER.GetAgeInYears])" # todo: NEW TRANSLATION
  ALERT_HAS_UNMARRIED_CHILDREN_LEFT_CLICK: "Otvoriť vyhľadávač manželstiev" # todo: NEW TRANSLATION
+ ALERT_CAN_ARRANGE_INTERNATIONAL_MARRIAGE_TITLE: "Možnosť medzinárodného manželstva" # todo: NEW TRANSLATION
+ ALERT_CAN_ARRANGE_INTERNATIONAL_MARRIAGE: "Pre nižšieho člena kráľovskej rodiny je možné dojednať [royal_marriage|e]:" # todo: NEW TRANSLATION
+ ALERT_CAN_ARRANGE_INTERNATIONAL_MARRIAGE_ENTRY: "[CHARACTER.GetName] ([CHARACTER.GetAgeInYears])" # todo: NEW TRANSLATION
  ALERT_CAN_REQUEST_AID_TITLE: "Možnosť požiadať o pomoc" # todo: NEW TRANSLATION
  ALERT_CAN_REQUEST_AID: "Môžeme požiadať o pomoc [pope|e]." # todo: CHANGED
  ALERT_HAS_MEMBER_LEAVING_UNION_TITLE: "Člen opúšťa úniu" # todo: NEW TRANSLATION
@@ -300,7 +321,7 @@
  ALERT_HAS_MEMBER_LEAVING_ENTRY: "[COUNTRY.GetNameWithFlag] odchádza z dôvodu" # todo: CHANGED
  ALERT_HAS_MEMBER_LEAVING_ENTRY_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [modifiers|e]: $MODIFIER$" # todo: NEW TRANSLATION
  ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [heir_selection|e], [COUNTRY.GetGovernment.GetHeirSelection.GetName]" # todo: CHANGED
- ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION_AND_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [heir_selection|e]: [COUNTRY.GetGovernment.GetHeirSelection.GetName] a ich [modifiers|e]: $MODIFIER$" # todo: NEW TRANSLATION
+ ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION_AND_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [heir_selection|e]: [COUNTRY.GetGovernment.GetHeirSelection.GetName]\nIch [modifiers|e]: $MODIFIER$" # todo: CHANGED
  ALERT_HAS_MEMBER_LEAVING_ENTRY_FALLBACK: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ [COUNTRY.GetGovernment.GetHeir.GetName] bol určený ako [heir|e] silami nad zákonom" # todo: NEW TRANSLATION
  ALERT_HAS_MEMBER_LEAVING_LEFT_CLICK: "Otvoriť zobrazenie [union|e]" # todo: NEW TRANSLATION
  ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION_TITLE: "Následník môže mať lepšie vzdelanie" # todo: NEW TRANSLATION
@@ -339,7 +360,7 @@
  ALERT_CAN_USE_RELIGIOUS_ACTION: "Môžeme použiť nasledovné náboženské [actions|e]:" # todo: CHANGED
  ALERT_CAN_USE_RELIGIOUS_ACTION_ENTRY: "$BULLET_WITH_TAB$$ACTION_NAME$" # todo: NEW TRANSLATION
  ALERT_HAS_LESS_POWER_IN_UNION: "[Localize('senior_partner')] Stav ohrozený" # todo: CHANGED
- ALERT_HAS_LESS_POWER_IN_UNION_TEXT: "Môžeme stratiť naše [senior_partner|e] postavenie v [AlertHasLessPowerInUnion.GetUnion.GetName]. Nasledujúci [members|e] majú vyšší [great_power_score|e] ako my:" # todo: NEW TRANSLATION
+ ALERT_HAS_LESS_POWER_IN_UNION_TEXT: "Môžeme stratiť naše postavenie [senior_partner|e] v [AlertHasLessPowerInUnion.GetUnion.GetName]. Nasledujúce [members|e] majú dostatočne vysokú [economical_base|e], aby prevzali senioritu:" # todo: CHANGED
  ALERT_HAS_LESS_POWER_IN_UNION_LEFT_CLICK: "Otvoriť zobrazenie [union|e]"
  ALERT_CTA_CYCLE_LOCATIONS_LEFT_CLICK: "Prechádzať medzi [locations|e]" # todo: NEW TRANSLATION
  ALERT_HAS_DEVASTATED_LOCATIONS: "Zdevastované [Localize('Locations')]" # todo: CHANGED
@@ -378,6 +399,9 @@
  ALERT_UPGRADEABLE_BUILDINGS_TOOLTIP: "#T Budovy na vylepšenie v [MarketUpgradeableBuildings.GetMarket.GetName]#!" # todo: NEW TRANSLATION
  ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TITLE: "Dôležité budovy postrádajú vstupy" # todo: NEW TRANSLATION
  ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TEXT: "Dôležité [buildings|e] postrádajú vstupné [goods|e] v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
+ ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_MARKET: "[MARKET.GetName]:" # todo: NEW TRANSLATION
+ ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_GOODS: "  @[GOODS.GetKey]![GOODS.GetName]:" # todo: NEW TRANSLATION
+ ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_BUILDING: "$BULLET_WITH_TAB$ $GOODS_AMOUNT$ chýba pre $BUILDING_AMOUNT|0$ $BUILDING_NAME$" # todo: NEW TRANSLATION
  ALERT_HIGH_COMPLACENCY_TITLE: "Vysoká spokojnosť" # todo: NEW TRANSLATION
  ALERT_HIGH_COMPLACENCY_TEXT: "Máme [complacency|e] vo výške $VAL|2R$ a mení sa o $CHANGE|=R$ každý mesiac." # todo: NEW TRANSLATION
  ALERTS_SETTINGS_TOGGLE: "Prepínať menu upozornení" # todo: NEW TRANSLATION

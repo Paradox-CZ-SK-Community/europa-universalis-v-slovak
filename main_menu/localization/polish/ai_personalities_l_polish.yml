@@ -1,4 +1,5 @@
 ﻿l_polish:
+ ai_balanced: "Vyvážené" # todo: NEW TRANSLATION
  ai_aggressive: "Agresívny" # todo: NEW TRANSLATION
  ai_expansionist: "Expanzionistický" # todo: NEW TRANSLATION
  ai_defensive: "Obranný" # todo: NEW TRANSLATION
@@ -6,6 +7,7 @@
  ai_opportunistic: "Opportunistický" # todo: NEW TRANSLATION
  ai_isolationist: "Izolacionistický" # todo: NEW TRANSLATION
  ai_friendly: "Priateľský" # todo: NEW TRANSLATION
+ ai_balanced_desc: "Táto krajina nemá výrazné predpoklady. Jej činy sú formované predovšetkým temperovaním jej vládcov, hodnotami spoločnosti a okolnosťami, v ktorých sa nachádza." # todo: NEW TRANSLATION
  ai_aggressive_desc: "Tento štát usiluje o moc silou. Rýchlo vyvoláva vojny, požaduje tvrdé mierové podmienky a považuje susedné veľmoci za prekážky, ktoré treba zdolať, skôr než za partnerov, s ktorými je potrebné nadväzovať vzťahy." # todo: NEW TRANSLATION
  ai_expansionist_desc: "Tento štát sa snaží rozširovať svoje hranice a vplyv. Uprednostňuje teritoriálny rast, aktívne uplatňuje nároky a pri príležitosti skôr inklinuje k podrobeniu než priamej anektácii." # todo: NEW TRANSLATION
  ai_defensive_desc: "Tento štát sa primárne stará o ochranu toho, čo má. Radšej sa vyhýba zbytočným konfliktom, buduje silu doma a reaguje na hrozby namiesto ich vytvárania." # todo: NEW TRANSLATION
@@ -18,22 +20,27 @@
  AI_DISPOSITION_ALARMED: "Znepokojený" # todo: NEW TRANSLATION
  AI_DISPOSITION_WARY: "Ostražitý" # todo: NEW TRANSLATION
  AI_DISPOSITION_PLANNING_WAR: "Plánuje vojnu" # todo: NEW TRANSLATION
- AI_DISPOSITION_COVETS: "Dychtí po vašom území" # todo: NEW TRANSLATION
+ AI_DISPOSITION_COVETS: "Túži po území" # todo: CHANGED
+ AI_DISPOSITION_DOMINEERING: "Panovačný" # todo: NEW TRANSLATION
  AI_DISPOSITION_RIVALS: "Rivali" # todo: NEW TRANSLATION
  AI_DISPOSITION_INDIFFERENT: "Lhostejný" # todo: NEW TRANSLATION
- AI_DISPOSITION_ALARMED_DESC: "Tento [country_disposition|e] znamená, že vás považujú za existenčné ohrozenie a pravdepodobne budú hľadať obranné spojenectvá alebo podniknú predbežné kroky proti vám." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FRIENDLY: "Priateľský" # todo: NEW TRANSLATION
+ AI_DISPOSITION_SELF: "Vaša krajina" # todo: NEW TRANSLATION
+ AI_DISPOSITION_ALARMED_DESC: "Tento [country_disposition|e] znamená, že vás považujú za existenčnú hrozbu a pravdepodobne budú hľadať obranné aliancie alebo podniknú predbežné kroky proti vám." # todo: CHANGED
  AI_DISPOSITION_WARY_DESC: "Tento [country_disposition|e] znamená, že sú k vám ostražití a budú neochotní robiť ústupky alebo znižovať ostražitosť." # todo: NEW TRANSLATION
  AI_DISPOSITION_PLANNING_WAR_DESC: "Tento [country_disposition|e] znamená, že majú aktívny nárok alebo sťažnosť a pripravujú sa ho uplatniť silou." # todo: NEW TRANSLATION
  AI_DISPOSITION_COVETS_DESC: "Tento [country_disposition|e] znamená, že vaše územia považujú za atraktívny cieľ a môžu sa pokúsiť vás dobyť alebo podrobiť, keď sa naskytne príležitosť." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DOMINEERING_DESC: "Tento [country_disposition|e] znamená, že vás svojou mocou prevyšujú a usilujú sa vás podriadiť prostredníctvom podrobenia alebo vazalizácie, hoci nepotrebujú žiadnu konkrétnu vašu provinciu." # todo: NEW TRANSLATION
  AI_DISPOSITION_RIVALS_DESC: "Tento [country_disposition|e] znamená, že vás vnímajú ako rivala a budú sa proti vám postaviť všade, kde môžu, vrátane podpory vašich nepriateľov." # todo: NEW TRANSLATION
  AI_DISPOSITION_INDIFFERENT_DESC: "Tento [country_disposition|e] naznačuje, že k vám momentálne nemajú silné city." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FRIENDLY_DESC: "Tento [country_disposition|e] znamená, že vás považujú za priateľa, či už vzhľadom na trvalú obrannú alianciu, alebo jednoducho priaznivé vzťahy, a majú sklon s vami spolupracovať." # todo: NEW TRANSLATION
  AI_ATTITUDE_TOOLTIP_TITLE: "Nálada a postoj" # todo: NEW TRANSLATION
- AI_SEES_YOU_AS: "Vníma vás ako:" # todo: NEW TRANSLATION
- OBJECTIVES_HEADER: "Ciele:" # todo: NEW TRANSLATION
+ AI_SEES_YOU_AS: "Vníma vás ako" # todo: CHANGED
+ OBJECTIVES_HEADER: "Ciele" # todo: CHANGED
  OBJECTIVES_SPY_NETWORK_REQUIRED: "Vybudujte [spy_network|e] nad #G 25#!, aby ste odhalili ich strategické ciele." # todo: NEW TRANSLATION
- OBJECTIVE_EXPAND_AGAINST: "• Chce dobyť [COUNTRY.GetLongName]" # todo: NEW TRANSLATION
- OBJECTIVE_EXPAND_AGAINST_CB: "• Chce dobyť [COUNTRY.GetLongName] a má [casus_belli|e]" # todo: NEW TRANSLATION
- OBJECTIVE_SUBJUGATE_TARGET: "• Usiluje sa urobiť z [COUNTRY.GetLongName] vazala" # todo: NEW TRANSLATION
+ OBJECTIVE_EXPAND_AGAINST: "• Usiluje sa dobyť [COUNTRY.GetLongName]" # todo: CHANGED
+ OBJECTIVE_EXPAND_AGAINST_CB: "• Usiluje sa dobyť [COUNTRY.GetLongName], má [casus_belli|e]" # todo: CHANGED
+ OBJECTIVE_SUBJUGATE_TARGET: "• Usiluje sa spraviť z [COUNTRY.GetLongName] vazala" # todo: CHANGED
  OBJECTIVE_DEFEND_AGAINST: "• Snaží sa obmedziť [COUNTRY.GetLongName]" # todo: NEW TRANSLATION
  OBJECTIVE_BUILD_OPINION: "• Buduje priateľstvo s [COUNTRY.GetLongName]" # todo: NEW TRANSLATION
  CURRENTLY_NO_DIPLOMATIC_OBJECTIVES: "Momentálne nemajú žiadne diplomatické ciele." # todo: NEW TRANSLATION
@@ -41,26 +48,102 @@
  wary: "Ostražitý" # todo: NEW TRANSLATION
  planning_war: "Plánuje vojnu" # todo: NEW TRANSLATION
  covets: "Dychtí" # todo: NEW TRANSLATION
+ domineering: "Panovačný" # todo: NEW TRANSLATION
  rivals: "Rivali" # todo: NEW TRANSLATION
  indifferent: "Lhostejný" # todo: NEW TRANSLATION
+ friendly: "Priateľský" # todo: NEW TRANSLATION
  AI_PERSONALITY_MAPMODE_TITLE: "[COUNTRY.GetLongNameWithNoTooltip] je $PERSONALITY$" # todo: NEW TRANSLATION
+ AI_PERSONALITY_PLAYER_MAPMODE_TITLE: "[COUNTRY.GetLongNameWithNoTooltip] je ovládaná hráčom" # todo: NEW TRANSLATION
+ AI_PERSONALITY_PLAYER_MAPMODE_DESC: "Túto krajinu ovláda hráč. Kto vie, akú má osobnosť?" # todo: NEW TRANSLATION
  AI_DISPOSITION_ALARMED_MAPMODE_TITLE: "[COUNTRY.GetName] je znepokojený" # todo: NEW TRANSLATION
  AI_DISPOSITION_WARY_MAPMODE_TITLE: "[COUNTRY.GetName] je ostražitý" # todo: NEW TRANSLATION
  AI_DISPOSITION_PLANNING_WAR_MAPMODE_TITLE: "[COUNTRY.GetName] plánuje vojnu" # todo: NEW TRANSLATION
  AI_DISPOSITION_COVETS_MAPMODE_TITLE: "[COUNTRY.GetName] dychtí po vašom území" # todo: NEW TRANSLATION
+ AI_DISPOSITION_DOMINEERING_MAPMODE_TITLE: "[COUNTRY.GetName] sa snaží vás ovládnuť" # todo: NEW TRANSLATION
  AI_DISPOSITION_RIVALS_MAPMODE_TITLE: "[COUNTRY.GetName] vás vníma ako rivala" # todo: NEW TRANSLATION
  AI_DISPOSITION_INDIFFERENT_MAPMODE_TITLE: "[COUNTRY.GetName] je lhostejný" # todo: NEW TRANSLATION
+ AI_DISPOSITION_FRIENDLY_MAPMODE_TITLE: "[COUNTRY.GetName] je k vám priateľský" # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_ECO: "Vaša ekonomika ich výrazne prevyšuje." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_MILITARY: "Vaša vojenská sila ich výrazne prevyšuje." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_COVETS_COUNT: "Požadujú $COUNT|Y$ vašich území." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_DOMINEERING: "Vaša ríša je oveľa slabšia než ich, čo vyvoláva snahy o podrobenie." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_SUBJUGATION: "Majú v pláne urobiť z vás svojho vazala." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_RIVALS_FORMAL: "Boli ste formálne označení za rivalov." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_RIVALS_CB: "Majú proti vám casus belli." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_RIVALS_ANTAGONISM: "Medzi vašimi národmi panuje silná nepriateľnosť." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_ALLIED: "Stojíte spolu v obrannej aliancii." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_FAVORABLE: "Majú o vás priaznivý názor." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_MILITARY_THIRD_PARTY: "Vojenská sila [TARGET_COUNTRY.GetName] výrazne prevyšuje silu [COUNTRY.GetName]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_ECO_THIRD_PARTY: "Ekonomika [TARGET_COUNTRY.GetName] výrazne prevyšuje ekonomiku [COUNTRY.GetName]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_COVETS_COUNT_THIRD_PARTY: "[COUNTRY.GetName] túži po $COUNT|Y$ územiach [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_DOMINEERING_THIRD_PARTY: "Ríša [TARGET_COUNTRY.GetName] je oveľa slabšia než ríša [COUNTRY.GetName], čo pozýva k podrobeniu." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_SUBJUGATION_THIRD_PARTY: "[COUNTRY.GetName] má v pláne urobiť z [TARGET_COUNTRY.GetName] svojho vazala." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_RIVALS_FORMAL_THIRD_PARTY: "[COUNTRY.GetName] a [TARGET_COUNTRY.GetName] sú formálnymi rivalmi." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_RIVALS_CB_THIRD_PARTY: "[COUNTRY.GetName] má casus belli proti [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_RIVALS_ANTAGONISM_THIRD_PARTY: "Medzi [COUNTRY.GetName] a [TARGET_COUNTRY.GetName] panuje silná antagonizácia." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_ALLIED_THIRD_PARTY: "[COUNTRY.GetName] a [TARGET_COUNTRY.GetName] stoja spolu v obrannej aliancii." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_FAVORABLE_THIRD_PARTY: "[COUNTRY.GetName] má k [TARGET_COUNTRY.GetName] priaznivý postoj." # todo: NEW TRANSLATION
+ AI_DISPOSITION_WHY_HEADER: "Prečo to tak cítia" # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_COVETED_LOCATION: "[LOCATION.GetName]: $SCORE|2Y$" # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_COVETED_MORE: "a ďalších $COUNT|Y$ vašich území" # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_ACTIVE_CB: "Majú proti vám casus belli." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_ECO_DISPARITY: "Vaša ekonomika zaostáva za ich o $VAL|%$" # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_SUBJUGATION_OBJECTIVE: "Aktívne sa snažia spraviť z vás svojho vazala." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_ACTIVE_CB_THIRD_PARTY: "[COUNTRY.GetName] má casus belli proti [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_ECO_DISPARITY_THIRD_PARTY: "Ekonomika [TARGET_COUNTRY.GetName] je oproti [COUNTRY.GetName] o $VAL|%$ slabšia." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_SUBJUGATION_OBJECTIVE_THIRD_PARTY: "[COUNTRY.GetName] sa aktívne snaží spraviť z [TARGET_COUNTRY.GetName] svojho vazala." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_ALLIANCE: "Ste viazaní obrannou alianciou." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_ALLIANCE_THIRD_PARTY: "[COUNTRY.GetName] a [TARGET_COUNTRY.GetName] sú viazaní obrannou alianciou." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_OPINION: "Ich [opinion|e] o vás je $VAL|0$" # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_TRUST: "Ich [trust|e] k vám je $VAL|0$" # todo: NEW TRANSLATION
+ AI_DISPOSITION_EXPECT_ALARMED: "Očakávajte obranné zmluvy, budovanie koalícií a neochotu uzavrieť s vami spojenectvo." # todo: NEW TRANSLATION
+ AI_DISPOSITION_EXPECT_WARY: "Očakávajte opatrnosť, málo ústupkov a pomalé budovanie dôvery." # todo: NEW TRANSLATION
+ AI_DISPOSITION_EXPECT_PLANNING_WAR: "Očakávajte nárast vojenských síl, hľadanie spojencov a vyhlásenie vojny, keď budú pripravení." # todo: NEW TRANSLATION
+ AI_DISPOSITION_EXPECT_COVETS: "Očakávajte oportunistické nároky, vymyslené zámienky a agresiu, keď získajú výhodu." # todo: NEW TRANSLATION
+ AI_DISPOSITION_EXPECT_DOMINEERING: "Očakávajte požiadavky na podrobenie, pokusy o vasalizáciu a tlak, keď získajú prevahu." # todo: NEW TRANSLATION
+ AI_DISPOSITION_EXPECT_RIVALS: "Očakávajte podporu vašich nepriateľov, blokovanie iniciatív a trvalý odpor." # todo: NEW TRANSLATION
+ AI_DISPOSITION_EXPECT_FRIENDLY: "Očakávajte spoluprácu, podporu v vašich vojnách a otvorenosť bližším väzbám." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_ALARMED: "$ACTORS$ sú teraz znepokojení našou mocou." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_PLANNING_WAR: "$ACTORS$ sa teraz pripravujú na [war|e] proti nám." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_COVETS: "$ACTORS$ teraz dychtia po našom území a môžu uplatniť [casus_belli|e]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_DOMINEERING: "$ACTORS$ sa teraz usilujú spraviť z nás [subject|e]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_RIVALS: "$ACTORS$ nás teraz považujú za [rival|e]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_INDIFFERENT: "$ACTORS$ sú k nám teraz ľahostajní." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_WARY: "$ACTORS$ sú k nám teraz opatrní." # todo: NEW TRANSLATION
+ AI_DISPOSITION_DIGEST_FRIENDLY: "$ACTORS$ nás teraz vnímajú priateľsky." # todo: NEW TRANSLATION
+ AI_DISPOSITION_MAP_STALENESS_NOTE: "#italic Postoje vzdialených mocností môžu byť niekoľko mesiacov staré.#!" # todo: NEW TRANSLATION
+ AI_NOTABLE_DISPOSITIONS_HEADER: "#T Pozoruhodné postoje#!" # todo: NEW TRANSLATION
+ AI_NOTABLE_DISPOSITION_LINE: "$BULLET$$DISPOSITION$ voči [COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ AI_NOTABLE_DISPOSITION_LINE_YOU: "$BULLET$$DISPOSITION$ voči #R vám#!" # todo: NEW TRANSLATION
+ NOTABLE_STANCES_HEADER_TOOLTIP: "#T Pozoruhodné postoje#!\nToto sú najvýznamnejšie postoje [Country.GetNameWithFlagWithNoTooltip] voči ostatným krajinám." # todo: NEW TRANSLATION
+ AI_DISPOSITION_PAIR_TITLE: "$DISPOSITION$ voči [TARGET_COUNTRY.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  AI_CONQUER_DESIRE_NO_SELECTION: "Vyberte krajinu, aby ste videli jej strategické ciele." # todo: NEW TRANSLATION
  AI_CONQUER_DESIRE_LOCATION_OWNED: "[COUNTRY.GetLongName] už vlastní túto lokalitu." # todo: NEW TRANSLATION
  AI_CONQUER_DESIRE_LOCATION_NONE: "[COUNTRY.GetLongName] nemá záujem o dobytie tejto lokality." # todo: NEW TRANSLATION
- AI_CONQUER_DESIRE_LOCATION_SCORE: "[COUNTRY.GetLongName] má $SCORE|2/%G$ záujem o túto lokalitu!" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_LOCATION_SCORE: "[COUNTRY.GetLongName] po tomto mieste túži na $SCORE|2/%G$!" # todo: CHANGED
+ AI_CONQUER_DESIRE_BREAKDOWN_RANK_HEADER: "Skóre založené na tom, že ste [COUNTRY.GetRank.GetName]" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_SAME_CULTURE: "[dominant_culture|e] je našou [primary_culture|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_ACCEPTED_CULTURE: "[dominant_culture|e] je našou [accepted_culture|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_COMMON_LANGUAGE: "[common_language|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_CAPITAL_REGION: "Rovnaký [region|e] ako [capital|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_BASE: "Základ: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_CITY: "[urban_location|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_COASTAL_BONUS: "Získali by sme [coast|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_POPULATION: "[population|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_TAX_BASE: "[tax_base|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_CORE: "[core|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_HAS_CB: "Majú [casus_belli|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_EXCLAVED: "Exkláva vnútri našej krajiny: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_HERETIC: "[heretic|e] [religion|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_HEATHEN: "[heathen|e] [religion|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_AREA_COMPLETION: "Dokončenie [area|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_REGION_COMPLETION: "Dokončenie [region|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_PREF_ENTRY: "$NAME$: ×$VAL|2G$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_DISTANCE: "Vzdialenosť od [capital|e]: ×$VAL|2V$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_THREAT: "Bilancia hrozby: ×$VAL|V2$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_DYNASTIC: "Dynastická alternatíva: ×$VAL|V2$" # todo: NEW TRANSLATION
+ AI_CONQUER_DESIRE_BREAKDOWN_AI_TARGETS: "Ciele AI: $VAL|V2$" # todo: NEW TRANSLATION
  ai_personality_mapmode: "Osobnosti krajín" # todo: NEW TRANSLATION
- ai_personality_mapmode_desc: "Farbí každú krajinu podľa jej osobnosti — základného charakteru, ktorý riadi jej diplomatické a vojenské správanie." # todo: NEW TRANSLATION
+ ai_personality_mapmode_desc: "Farbí každú krajinu podľa jej osobnosti, základnej povahy, ktorá riadi jej diplomatické a vojenské správanie." # todo: CHANGED
  ai_disposition_mapmode: "Postoj krajín" # todo: NEW TRANSLATION
- ai_disposition_mapmode_desc: "Farbí každú krajinu podľa toho, ako vás vníma — od znepokojených a ostražitých až po túžiace po vašom území alebo aktívne plánujúce vojnu." # todo: NEW TRANSLATION
+ ai_disposition_mapmode_desc: "Farbí každú krajinu podľa toho, ako vás vníma — od znepokojenej a ostražitej, cez túžiacu po vašom území a snažiacu sa vás dominovať, až po tú, ktorá aktívne plánuje vojnu." # todo: CHANGED
