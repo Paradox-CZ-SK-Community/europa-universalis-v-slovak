@@ -120,8 +120,8 @@
  SCRIPTED_RELATION_MERCHANTS_PERCENT: "$EFFECT_LIST_BULLET$[COUNTRY.GetName] stratí $VAL|-2%$ [Concept('merchant_power','obchodná výhoda')|e] a [Concept('merchant_capacity','obchodná kapacita')|e] v prospech [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCRIPTED_RELATION_LIFTS_TRADE_PROTECTION: "$EFFECT_LIST_BULLET$Ruší [Concept('trade_protection','trhová ochrana')|e] medzi [Concept('countries','krajinou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCRIPTED_RELATION_ALLOWS_MAP_SHARING: "$EFFECT_LIST_BULLET$Umožňuje zdieľanie máp medzi [Concept('countries','krajinou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SCRIPTED_RELATION_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$[COUNTRY.GetName] rozšíri $VAL|+=2$ [Concept('embraced','prijaté')|e] [Concept('institutions','inštitúcie')|e] do [TARGET_COUNTRY.GetCapital.GetName]." # todo: CHANGED # todo: CONCEPT CASE
- SCRIPTED_RELATION_INSTITUTION_SPREAD_UNKNOWN: "$EFFECT_LIST_BULLET$[COUNTRY.GetName] rozšíri $VAL|+=2$ [Concept('embraced','prijaté')|e] [Concept('institutions','inštitúcie')|e] do hlavného mesta cieľovej krajiny." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SCRIPTED_RELATION_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$[COUNTRY.GetName] rozšíri $VAL|+=2$ [Concept('embraced','prijaté')|e] [Concept('institutions','inštitúcií')|e] do [TARGET_COUNTRY.GetCapital.GetName]." # todo: CHANGED # todo: CONCEPT CASE
+ SCRIPTED_RELATION_INSTITUTION_SPREAD_UNKNOWN: "$EFFECT_LIST_BULLET$[COUNTRY.GetName] rozšíri $VAL|+=2$ [Concept('embraced','prijaté')|e] [Concept('institutions','inštitúcií')|e] do hlavného mesta cieľovej krajiny." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCRIPTED_RELATION_FAVORS: "$EFFECT_LIST_BULLET$[COUNTRY.GetName] získa $VAL|+=2$ [Concept('favors','láskavosti')|e] od [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCRIPTED_RELATION_FAVORS_UNKNOWN: "$EFFECT_LIST_BULLET$[COUNTRY.GetName] získa $VAL|+=2$ [Concept('favors','láskavosti')|e] od cieľovej krajiny." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCRIPTED_RELATION_EMBARGO: "$EFFECT_LIST_BULLET$[TARGET_COUNTRY.GetName] blokuje [Concept('merchants','obchodníci')|E] [COUNTRY.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -496,7 +496,7 @@
  ENFORCE_PEACE_REQUEST_DESCRIPTION: "Vynútiť mier na [TARGET_COUNTRY.GetName] na ochranu [COUNTRY.GetName]?" # todo: NEW TRANSLATION
  ENFORCE_PEACE_FLAVOR: "Mocnosť primeraného postavenia môže vynútiť mier v [Concept('war','vojne')|e], ktorá nezahŕňa inú mocnú krajinu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THREATEN_WAR_TOOLTIP_HEADER: "Vyhrážanie sa [TARGET_COUNTRY.GetName] [Concept('war','vojnu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THREATEN_WAR_TOOLTIP_HEADER_NO_TARGET: "Vyhrážanie sa [Concept('country','krajinu')|e] [Concept('war','vojnu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THREATEN_WAR_TOOLTIP_HEADER_NO_TARGET: "Vyhrážanie sa [Concept('country','krajinu')|e] [Concept('war','vojny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THREATEN_WAR_FLAVOR: "Hrozba [Concept('war','vojna')|e] umožňuje krajine zobrať územie od inej bez vedenia [Concept('war','vojny')|e] proti nej. Ak bude akceptovaná, vybrané územie bude prevedené výmenou za antagonizmus." # todo: CHANGED # todo: CONCEPT CASE
  FORCED_MILITARY_ACCESS: "Vynútený vojenský prístup, ktorý nemožno zrušiť, kým máme prímerie." # todo: NEW TRANSLATION
  FORCED_FLEET_BASING_RIGHTS: "Vynútené [Concept('fleet_basing_rights','práva kotvenia flotily')|E], ktoré nemožno zrušiť, kým máme prímerie." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -695,7 +695,7 @@
  DIPLOREASON_RECEIVING_DEFENSIVE_SUPPORT: "Prídu nám na pomoc, ak budeme napadnutí" # todo: NEW TRANSLATION
  DIPLOREASON_BASE: "Základ" # todo: NEW TRANSLATION
  DIPLOREASON_ECONOMICAL_BASE_DIFFERENCE: "Rozdiel v [Concept('economical_base','ekonomickej základni')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DIPLOREASON_OCCUPATION_VALUE: "Hodnota [Concept('occupied','okupované')|e] [Concept('locations','lokality')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ DIPLOREASON_OCCUPATION_VALUE: "Hodnota [Concept('occupied','okupované')|e] [Concept('locations','lokalít')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_IS_NOT_LEADER_COUNTRY: "Nie je vodcom [SCOPE.sInternationalOrganization('recipient').GetName]" # todo: NEW TRANSLATION
  DIPLOREASON_TARGET_CHARACTER_TOTAL_ABILITIES: "Celkové schopnosti [SCOPE.sCharacter('target').GetName]" # todo: NEW TRANSLATION
  DIPLOREASON_TARGET_CHARACTER_AGE: "[SCOPE.sCharacter('target').GetName] — vek" # todo: NEW TRANSLATION
@@ -771,7 +771,7 @@
  DIPLOREASON_OUR_SUBJECT: "Nemajú slovo v tejto záležitosti" # todo: NEW TRANSLATION
  DIPLOREASON_DEFENSIVE_WAR: "[SCOPE.sWar('target').GetName] je obranná vojna" # todo: NEW TRANSLATION
  DIPLOREASON_WAR_LEADER: "Je vodcom vojny" # todo: NEW TRANSLATION
- DIPLOREASON_AVERAGE_UPPER_CLASS_ESTATE_SATISFACTION: "Priemerné [Concept('upper_class','vyššia trieda')|e] [Concept('estate_satisfaction','spokojnosť stavu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ DIPLOREASON_AVERAGE_UPPER_CLASS_ESTATE_SATISFACTION: "Priemerné [Concept('upper_class','vyššia trieda')|e] [Concept('estate_satisfaction','spokojnosti stavu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_AVERAGE_ESTATE_SATISFACTION: "Priemerné [Concept('estate_satisfaction','spokojnosť stavu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_MY_PROPOSAL: "Náš návrh" # todo: NEW TRANSLATION
  DIPLOREASON_HEIR: "Týka sa dediča" # todo: NEW TRANSLATION
@@ -1427,7 +1427,7 @@
  SUBJECT_MONTHLY_TT: "Mesačné efekty" # todo: NEW TRANSLATION
  SUBJECT_DIPLOMATIC_TT: "Diplomatické pravidlá" # todo: NEW TRANSLATION
  SUBJECT_OF_HEADER_TT: "[Country.GetNameWithNoTooltip] je [SubjectType.GetNameWithNoTooltip] [Country.GetDiplomacy.GetOverlord.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- SUBJECT_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$$NAME$ rozšíri $VAL|+=2$ [Concept('embraced','prijaté')|e] [Concept('institutions','inštitúcie')|e] do $CAPITAL$." # todo: CHANGED # todo: CONCEPT CASE
+ SUBJECT_INSTITUTION_SPREAD: "$EFFECT_LIST_BULLET$$NAME$ rozšíri $VAL|+=2$ [Concept('embraced','prijaté')|e] [Concept('institutions','inštitúcií')|e] do $CAPITAL$." # todo: CHANGED # todo: CONCEPT CASE
  SUBJECT_TYPE_SHARES_EXPLORATION: "$EFFECT_LIST_BULLET$$SUBJECT$ zdieľa všetky objavy mapy s $OVERLORD$." # todo: NEW TRANSLATION
  SUBJECT_TYPE_GIVES_MERCHANT: "$EFFECT_LIST_BULLET$$SUBJECT$ dáva $VALUE|2%$ svojich [Concept('merchants','obchodníkov')|e] $OVERLORD$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_TYPE_SUBJECT_PAYS: "$EFFECT_LIST_BULLET$$SUBJECT$ platí $CASH$ $OVERLORD$ každý mesiac." # todo: NEW TRANSLATION
@@ -1478,7 +1478,7 @@
  CANCEL_vassal_TOOLTIP_HEADER: "Zrušiť vazalstvo [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  CANCEL_vassal_TOOLTIP_HEADER_NO_TARGET: "Zrušiť vazalstvo [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BREAK_vassal_TOOLTIP_HEADER: "Odmietnuť byť [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BREAK_vassal_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BREAK_vassal_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_vassalTITLE: "Žiadosť, aby sa stali naším vazalom" # todo: CHANGED
  OFFER_vassal_FLAVOR: "Vyberte [Concept('country','krajina')|e], ktorému požiadate status [ShowSubjectTypeName('vassal')]" # todo: CHANGED # todo: CONCEPT CASE
  REQUEST_vassalTITLE: "Ponuka stať sa ich vazalom" # todo: CHANGED
@@ -1522,7 +1522,7 @@
  CANCEL_march_TOOLTIP_HEADER: "Zrušiť marku [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  CANCEL_march_TOOLTIP_HEADER_NO_TARGET: "Zrušiť marku [Concept('country','krajinu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BREAK_march_TOOLTIP_HEADER: "Odmietnuť byť [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BREAK_march_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BREAK_march_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_marchTITLE: "Žiadosť, aby sa stali našou Markou" # todo: CHANGED
  OFFER_march_FLAVOR: "Vyberte [Concept('country','krajina')|e], ktorému ponúknete status [ShowSubjectTypeName('march')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REQUEST_marchTITLE: "Ponuka stať sa ich Markou" # todo: CHANGED
@@ -1580,7 +1580,7 @@
  CANCEL_dominion_TOOLTIP_HEADER: "Zrušiť dominion [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  CANCEL_dominion_TOOLTIP_HEADER_NO_TARGET: "Zrušiť dominion [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BREAK_dominion_TOOLTIP_HEADER: "Odmietnuť byť [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BREAK_dominion_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BREAK_dominion_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_dominionTITLE: "Žiadosť, aby sa stali naším Dominionom" # todo: CHANGED
  OFFER_dominion_FLAVOR: "Vyberte [Concept('country','krajina')|e], ktorému požiadate status [ShowSubjectTypeName('dominion')]" # todo: CHANGED # todo: CONCEPT CASE
  REQUEST_dominionTITLE: "Ponuka stať sa ich Dominionom" # todo: CHANGED
@@ -1623,7 +1623,7 @@
  CANCEL_fiefdom_TOOLTIP_HEADER: "Zrušiť fiefdom [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  CANCEL_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Zrušiť fiefdom [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BREAK_fiefdom_TOOLTIP_HEADER: "Odmietnuť byť [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BREAK_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BREAK_fiefdom_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_fiefdomTITLE: "Žiadosť, aby sa stali naším Fiefdomom" # todo: CHANGED
  OFFER_fiefdom_FLAVOR: "Vyberte [Concept('country','krajina')|e], ktorému požiadate status [ShowSubjectTypeName('fiefdom')]" # todo: CHANGED # todo: CONCEPT CASE
  REQUEST_fiefdomTITLE: "Ponuka stať sa ich Fiefdomom" # todo: CHANGED
@@ -1782,7 +1782,7 @@
  CANCEL_appanage_TOOLTIP_HEADER: "Zrušiť apanáž [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  CANCEL_appanage_TOOLTIP_HEADER_NO_TARGET: "Zrušiť apanáž [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BREAK_appanage_TOOLTIP_HEADER: "Odmietnuť byť [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BREAK_appanage_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BREAK_appanage_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_appanageTITLE: "Žiadosť, aby sa stali našou apanážou" # todo: CHANGED
  REQUEST_appanageTITLE: "Ponuka stať sa ich apanážou" # todo: CHANGED
  CANCEL_appanageTITLE: "Zrušiť apanáž" # todo: NEW TRANSLATION
@@ -2116,7 +2116,7 @@
  OFFER_LOAN_INTEREST: "Úrok (%)" # todo: NEW TRANSLATION
  OFFER_LOAN_DURATION: "Trvanie" # todo: CHANGED
  OFFER_LOAN_TOOLTIP_HEADER: "Ponúknuť [Concept('loan','pôžička')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OFFER_LOAN_TOOLTIP_HEADER_NO_TARGET: "Ponúknuť [Concept('loan','pôžička')|e] [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OFFER_LOAN_TOOLTIP_HEADER_NO_TARGET: "Ponúknuť [Concept('loan','pôžička')|e] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_LOAN_FLAVOR: "Ponúknuť [Concept('loan','pôžička')|e] inému štátu, ktorý ho bude musieť splatiť s úrokom." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_LOAN_DURATION_YEAR: "$NUM$ Rok" # todo: NEW TRANSLATION
  OFFER_LOAN_DURATION_YEARS: "$NUM$ Rokov" # todo: NEW TRANSLATION
@@ -2133,7 +2133,7 @@
  SENDGIFTNEWDESC: "Chceme poslať dar krajine $COUNTRY$? Toto nás bude stáť $COST$ a zlepší naše vzťahy až o $VAL|G$. A spôsobí to, že nám $COUNTRY$ bude dlžné $FAVORS|G$ láskavosťami." # todo: NEW TRANSLATION
  SENDGIFTDESC: "Tým sa náš vzťah zlepší až o $AMOUNT|G$. Maximálne môžeme získať $MAX|G$ zvýšenie názoru posielaním darov. Tiež nám tým budú dlžní $FAVORS|G$ priaznivostí." # todo: CHANGED
  SENDGIFT_TOOLTIP_HEADER: "Poslať dar v hodnote [gold_i] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- SENDGIFT_TOOLTIP_HEADER_NO_TARGET: "Poslať dar v hodnote [gold_i] [Concept('country','krajine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SENDGIFT_TOOLTIP_HEADER_NO_TARGET: "Poslať dar v hodnote [gold_i] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SENDGIFT_FLAVOR: "Dar okamžite zvýši názor krajiny na nás výmenou za peniaze, čím budú ochotnejší akceptovať ďalšie diplomatické kroky. Veľkosť daru sa prispôsobuje bohatstvu prijímajúcej krajiny." # todo: NEW TRANSLATION
  SEND_GIFT_SCALE_REASON: "Úroveň štedrosti" # todo: NEW TRANSLATION
  ALREADY_CALLED_ALLY: "@trigger_no! Už sme vo [Concept('war','vojne')|e] s tými istými nepriateľmi" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2885,7 +2885,7 @@
  CANCEL_uc_bey_TOOLTIP_HEADER: "Zrušiť $uc_bey$ [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  CANCEL_uc_bey_TOOLTIP_HEADER_NO_TARGET: "Zrušiť $uc_bey$ [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BREAK_uc_bey_TOOLTIP_HEADER: "Odmietnuť byť [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BREAK_uc_bey_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BREAK_uc_bey_TOOLTIP_HEADER_NO_TARGET: "Odmietnuť byť [Concept('subject','vazal')|e] [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_uc_beyTITLE: "Žiadosť, aby sa stali naším $uc_bey$" # todo: CHANGED
  REQUEST_uc_beyTITLE: "Ponuka stať sa ich $uc_bey$" # todo: CHANGED
  CANCEL_uc_beyTITLE: "Zrušiť $uc_bey$ status" # todo: NEW TRANSLATION
