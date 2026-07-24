@@ -13,27 +13,27 @@
  ALERT_TRIGGER_YES: "@trigger_yes!" # todo: NEW TRANSLATION
  ALERT_TRIGGER_NO: "@trigger_no!" # todo: NEW TRANSLATION
  ALERT_WAR_EXHAUSTION_TITLE: "Vysoká vojnová únava" # todo: NEW TRANSLATION
- ALERT_WAR_EXHAUSTION: "Máme [war_exhaustion|e] vo výške $VAL|2R$. To bude mať vážny dopad na naše možnosti viesť [wars|e], a ak dosiahne [COUNTRY.GetModifierValue('max_war_exhaustion')], stratíme všetky [war_score|e] a budeme nútení kapitulovať." # todo: CHANGED
+ ALERT_WAR_EXHAUSTION: "Máme [Concept('war_exhaustion','vojnová vyčerpanosť')|e] vo výške $VAL|2R$. To bude mať vážny dopad na naše možnosti viesť [Concept('wars','vojny')|e], a ak dosiahne [COUNTRY.GetModifierValue('max_war_exhaustion')], stratíme všetky [Concept('war_score','vojnové skóre')|e] a budeme nútení kapitulovať." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_DOOM_TITLE: "Vysoká skaza" # todo: NEW TRANSLATION
- ALERT_DOOM: "Máme [doom|e] vo výške $VAL|2R$. Dosiahnutie [doom|e] 100 prinesie katastrofálne následky pre krajinu a jej vládnucu rodinu." # todo: CHANGED
+ ALERT_DOOM: "Máme [Concept('doom','záhuba')|e] vo výške $VAL|2R$. Dosiahnutie [Concept('doom','záhuba')|e] 100 prinesie katastrofálne následky pre krajinu a jej vládnucu rodinu." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_DOOM_TITLE: "Má skazu" # todo: NEW TRANSLATION
- ALERT_HAS_DOOM: "Máme [doom|e] vo výške $VAL|2R$. Dosiahnutie [doom|e] 100 prinesie katastrofálne následky pre krajinu a jej vládnucu rodinu." # todo: CHANGED
- ALERT_AT_WAR_WITH: "#T Vojna#!\nMomentálne sme vo [war|e] s $DATA$." # todo: NEW TRANSLATION
+ ALERT_HAS_DOOM: "Máme [Concept('doom','záhuba')|e] vo výške $VAL|2R$. Dosiahnutie [Concept('doom','záhuba')|e] 100 prinesie katastrofálne následky pre krajinu a jej vládnucu rodinu." # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_AT_WAR_WITH: "#T Vojna#!\nMomentálne sme vo [Concept('war','vojne')|e] s $DATA$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CIVIL_WAR: "#T Občianska vojna#!\nMomentálne bojujeme v [civil_war|e]. Každé obsadené územie sa automaticky stane súčasťou druhej strany!" # todo: NEW TRANSLATION
- ALERT_CALL_ALLY: "#T Privolať spojencov#!\nMôžeme privolať $DATA$ do našich [wars|e]." # todo: NEW TRANSLATION
+ ALERT_CALL_ALLY: "#T Privolať spojencov#!\nMôžeme privolať $DATA$ do našich [Concept('wars','vojen')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_BREAKING_IO_TITLE: "Ohrozenie medzinárodnej organizácie" # todo: NEW TRANSLATION
- ALERT_BREAKING_IO: "Nasledujúce [international_organizations|e] sú v ohrození rozpadu, keď sa v nich zhoršujú vzťahy:" # todo: CHANGED
+ ALERT_BREAKING_IO: "Nasledujúce [Concept('international_organizations','medzinárodné organizácie')|e] sú v ohrození rozpadu, keď sa v nich zhoršujú vzťahy:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_NO_LEADER_TITLE: "Chýba veliteľ" # todo: NEW TRANSLATION
- ALERT_NO_LEADER: "Nasledujúce [units|e] nemajú [commander|e]:" # todo: CHANGED
+ ALERT_NO_LEADER: "Nasledujúce [Concept('units','jednotky')|e] nemajú [Concept('commander','veliteľ')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_RELATION_ABOUT_TO_BE_BROKEN_TITLE: "Hrozba prerušenia vzťahov" # todo: NEW TRANSLATION
  ALERT_RELATION_ABOUT_TO_BE_BROKEN: "Nasledujúce naše vzťahy sa chystajú byť prerušené inými krajinami:" # todo: CHANGED
  ALERT_RELATION_ABOUT_TO_BE_BROKEN_ENTRY: "[COUNTRY.GetName] prerušuje [RELATION_TYPE.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+2$#!" # todo: NEW TRANSLATION
  ALERT_VERY_LOW_FOOD_TITLE: "Kritický nedostatok jedla" # todo: NEW TRANSLATION
- ALERT_VERY_LOW_FOOD: "Nasledujúce [armies|e] nemajú [food|e] a ich zásoba potravín je kritická, začnú trpieť [attrition|e]:" # todo: CHANGED
+ ALERT_VERY_LOW_FOOD: "Nasledujúce [Concept('armies','armády')|e] nemajú [Concept('food','potraviny')|e] a ich zásoba potravín je kritická, začnú trpieť [Concept('attrition','vyčerpanie')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_LOW_FOOD_TITLE: "Nedostatok jedla" # todo: NEW TRANSLATION
- ALERT_LOW_FOOD: "Nasledujúce [armies|e] nemajú [food|e] a ich zásoba potravín ubúda, čoskoro môžu začať trpieť [attrition|e]:" # todo: CHANGED
+ ALERT_LOW_FOOD: "Nasledujúce [Concept('armies','armády')|e] nemajú [Concept('food','potraviny')|e] a ich zásoba potravín ubúda, čoskoro môžu začať trpieť [Concept('attrition','vyčerpanie')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CBS_TITLE: "Neuplatnený casus belli" # todo: NEW TRANSLATION
- ALERT_CBS: "Nasledujúce [casus_bellis|e] neboli uplatnené:" # todo: CHANGED
+ ALERT_CBS: "Nasledujúce [Concept('casus_bellis','casus Belli')|e] neboli uplatnené:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CB_ENTRY: "$CB$ proti [COUNTRY.GetName] (vyprší $EXPIRATION_DATE|Y$)" # todo: CHANGED
  ALERT_CB_ENTRY_NO_EXPIRE: "$CB$ proti [COUNTRY.GetName]" # todo: CHANGED
  ALERT_SUBJECT_CB_ENTRY: "$CB$ proti [COUNTRY.GetName] v mene [subject_icon]$SUBJECT$ (vyprší $EXPIRATION_DATE|Y$) " # todo: CHANGED
@@ -41,72 +41,72 @@
  ALERT_OUTSIDE_OF_NAVAL_RANGE_TITLE: "Mimo námornej dosahu" # todo: NEW TRANSLATION
  ALERT_OUTSIDE_OF_NAVAL_RANGE: "Nasledujúce jednotky sú mimo námornej dosahu:" # todo: CHANGED
  ALERT_DEFICIT: "Riziko bankrotu" # todo: CHANGED
- DEFICIT_WHEN: "Pri súčasných výdavkoch budeme približne $WHEN|V$ [bankrupt|e]." # todo: NEW TRANSLATION
- ALERT_STARVING_POPS: "#T Hladujúce populácie#!\nV nasledujúcich územiach hynú [pops|e]:\n" # todo: NEW TRANSLATION
+ DEFICIT_WHEN: "Pri súčasných výdavkoch budeme približne $WHEN|V$ [Concept('bankrupt','bankrot')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_STARVING_POPS: "#T Hladujúce populácie#!\nV nasledujúcich územiach hynú [Concept('pops','populácie')|e]:\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_OVER_RELATIONS_TITLE: "Príliš veľa vzťahov" # todo: NEW TRANSLATION
  ALERT_OVER_RELATIONS: "[COUNTRY.GetDiplomacy.GetActiveRelationsInfo]" # todo: CHANGED
  HAS_OVER_ACCEPTED_CULTURE_LIMIT_TITLE: "Nad limitom kultúrnej kapacity" # todo: CHANGED
  ALERT_BLOCKADED_PORTS_TITLE: "Zablokované prístavy" # todo: NEW TRANSLATION
- ALERT_BLOCKADED_PORTS: "Nasledujúce prístavy sú [blockaded|e]:\n" # todo: CHANGED
+ ALERT_BLOCKADED_PORTS: "Nasledujúce prístavy sú [Concept('blockaded','zablokované')|e]:\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_LOW_ARMY_MAINTENANCE_TITLE: "Nízka údržba armády" # todo: NEW TRANSLATION
- ALERT_LOW_ARMY_MAINTENANCE: "Momentálne máte veľmi nízke [army_maintenance|e] počas [war|e]! Toto sa neodporúča, ak chcete vyhrávať vojny." # todo: CHANGED
+ ALERT_LOW_ARMY_MAINTENANCE: "Momentálne máte veľmi nízke [Concept('army_maintenance','údržba armády')|e] počas [Concept('war','vojny')|e]! Toto sa neodporúča, ak chcete vyhrávať vojny." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_LOW_NAVY_MAINTENANCE_TITLE: "Nízka údržba námorníctva" # todo: NEW TRANSLATION
- ALERT_LOW_NAVY_MAINTENANCE: "Momentálne máte veľmi nízke [navy_maintenance|e] počas [war|e]! Toto sa neodporúča, ak chcete vyhrávať vojny." # todo: CHANGED
+ ALERT_LOW_NAVY_MAINTENANCE: "Momentálne máte veľmi nízke [Concept('navy_maintenance','údržba námorníctva')|e] počas [Concept('war','vojny')|e]! Toto sa neodporúča, ak chcete vyhrávať vojny." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_EXILED_UNITS_TITLE: "Exilované armády" # todo: NEW TRANSLATION
- ALERT_EXILED_UNITS: "Nasledujúce [armies|e] sú [exiled|e] v cudzom území a musia sa vrátiť domov, kým opäť nebudú môcť bojovať:" # todo: CHANGED
+ ALERT_EXILED_UNITS: "Nasledujúce [Concept('armies','armády')|e] sú [Concept('exiled','vyhnaný')|e] v cudzom území a musia sa vrátiť domov, kým opäť nebudú môcť bojovať:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_ARMIES_ON_ICE_TITLE: "Armády na ľade" # todo: NEW TRANSLATION
- ALERT_ARMIES_ON_ICE: "Nasledujúce [armies|e] sú na [frozen|e] vode a mali by sa vrátiť na suchú zem skôr, než sa ľad roztopí:" # todo: CHANGED
+ ALERT_ARMIES_ON_ICE: "Nasledujúce [Concept('armies','armády')|e] sú na [Concept('frozen','zamrznuté')|e] vode a mali by sa vrátiť na suchú zem skôr, než sa ľad roztopí:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_NAVIES_STUCK_IN_ICE_TITLE: "Flotily uviaznuté v ľade" # todo: NEW TRANSLATION
- ALERT_NAVIES_STUCK_IN_ICE: "Nasledujúce [navies|e] sú uviaznuté v [frozen|e] vode, trpia postupným [attrition|e] a nemôžu sa pohnúť, kým ľad neroztopí:" # todo: CHANGED
+ ALERT_NAVIES_STUCK_IN_ICE: "Nasledujúce [Concept('navies','námorné sily')|e] sú uviaznuté v [Concept('frozen','zamrznuté')|e] vode, trpia postupným [Concept('attrition','vyčerpaniu')|e] a nemôžu sa pohnúť, kým ľad neroztopí:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_MERCENARIES_IN_TROUBLE_TITLE: "Žoldnieri v problémoch" # todo: NEW TRANSLATION
- ALERT_MERCENARIES_IN_TROUBLE: "Nasledujúce [units|e] majú vysoké [attrition|e] a [mercenaries|e] zvažujú opustenie svojich zmlúv:" # todo: NEW TRANSLATION
+ ALERT_MERCENARIES_IN_TROUBLE: "Nasledujúce [Concept('units','jednotky')|e] majú vysoké [Concept('attrition','vyčerpania')|e] a [Concept('mercenaries','žoldnieri')|e] zvažujú opustenie svojich zmlúv:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_NAVY_ATTRITION_TITLE: "Flotily trpiace opotrebovaním" # todo: NEW TRANSLATION
- ALERT_NAVY_ATTRITION: "Nasledujúce [navies|e] majú nejaké [attrition|e]:" # todo: CHANGED
+ ALERT_NAVY_ATTRITION: "Nasledujúce [Concept('navies','námorné sily')|e] majú nejaké [Concept('attrition','vyčerpania')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_OBJECTIVE_GROUP_MISSING_TRANSPORT_NAVY_TITLE: "Jednotky pridelené k cieľu potrebujú transportné lode" # todo: NEW TRANSLATION
- ALERT_OBJECTIVE_GROUP_MISSING_TRANSPORT_NAVY: "Nasledujúce [military_objectives|e] vyžadujú [ShowUnitCategoryName('navy_transport')] [ships|e], ale nemajú pridelené žiadne:" # todo: NEW TRANSLATION
+ ALERT_OBJECTIVE_GROUP_MISSING_TRANSPORT_NAVY: "Nasledujúce [Concept('military_objectives','vojenské ciele')|e] vyžadujú [ShowUnitCategoryName('navy_transport')] [Concept('ships','lode')|e], ale nemajú pridelené žiadne:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_WE_CAN_ENFORCE_PEACE_TITLE: "Cieľ vojny možno vynútiť" # todo: CHANGED
- ALERT_WE_CAN_ENFORCE_PEACE: "Udržali sme [war_goal_with_icon|e] dostatočne dlho, takže ho môžeme vynútiť v [peace_treaty_with_icon|e], ak chceme ukončiť [war|e]." # todo: CHANGED
+ ALERT_WE_CAN_ENFORCE_PEACE: "Udržali sme [war_goal_with_icon|e] dostatočne dlho, takže ho môžeme vynútiť v [peace_treaty_with_icon|e], ak chceme ukončiť [Concept('war','vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_THEY_CAN_ENFORCE_PEACE_TITLE: "Cieľ vojny možno vynútiť" # todo: CHANGED
  ALERT_THEY_CAN_ENFORCE_PEACE: "Nepriateľ udržal [war_goal_with_icon|e] príliš dlho. Môže sa rozhodnúť požadovať ho v nútenej [peace_treaty_with_icon|e]." # todo: CHANGED
  ALERT_CAN_WHITE_PEACE_TITLE: "Biely mier možno vynútiť" # todo: CHANGED
- ALERT_WE_CAN_WHITE_PEACE: "Udržali sme [war_goal_with_icon|e] dostatočne dlho. Teraz môžeme vynútiť [white_peace_with_icon|e], ak chceme ukončiť [war|e]." # todo: CHANGED
- ALERT_THEY_CAN_WHITE_PEACE: "Nepriateľ úspešne bránil [war_goal_with_icon|e] príliš dlho. Teraz nám môže vynútiť [white_peace_with_icon|e], ak chce ukončiť [war|e]." # todo: CHANGED
+ ALERT_WE_CAN_WHITE_PEACE: "Udržali sme [war_goal_with_icon|e] dostatočne dlho. Teraz môžeme vynútiť [white_peace_with_icon|e], ak chceme ukončiť [Concept('war','vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_THEY_CAN_WHITE_PEACE: "Nepriateľ úspešne bránil [war_goal_with_icon|e] príliš dlho. Teraz nám môže vynútiť [white_peace_with_icon|e], ak chce ukončiť [Concept('war','vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_WE_CAN_WHITE_PEACE_STALLED: "[war_goal_with_icon|e] zostáva nekontestovaný. Čoskoro budeme môcť vynútiť [white_peace_with_icon|e] v nasledujúcich zaseknutých [wars]:" # todo: CHANGED
  ALERT_THEY_CAN_WHITE_PEACE_STALLED: "[war_goal_with_icon|e] zostáva nekontestovaný. Nepriateľ môže čoskoro vynútiť [white_peace_with_icon|e] v nasledujúcich zaseknutých [wars]:" # todo: CHANGED
  STALLED_WAR_ENTRY_ALERT: "$BULLET_WITH_TAB$$NAME|Y$ $ICON$ (od $DATE|Y$)" # todo: NEW TRANSLATION
  ALERT_CALL_FOR_PEACE_TITLE: "Výzva na mier" # todo: NEW TRANSLATION
- ALERT_CALL_FOR_PEACE: "Ak [war|e] trvá dlhšie než $VAL|Y$ mesiacov a vyhrávame ho; alebo ak nepriateľ [unconditionally_surrender|e]; ľudia budú chcieť, aby [war|e] bol ukončený víťazstvom. Nasledujúce vojny sa nám daria takto:\n$WHY$\nÚčinky sa budú len zvyšovať až do podpísania mieru, a naše volanie po mieri momentálne má nasledujúci efekt.\n$HOW$" # todo: CHANGED
+ ALERT_CALL_FOR_PEACE: "Ak [Concept('war','vojna')|e] trvá dlhšie než $VAL|Y$ mesiacov a vyhrávame ho; alebo ak nepriateľ [Concept('unconditionally_surrender','bezpodmienečne kapitulovať')|e]; ľudia budú chcieť, aby [Concept('war','vojna')|e] bol ukončený víťazstvom. Nasledujúce vojny sa nám daria takto:\n$WHY$\nÚčinky sa budú len zvyšovať až do podpísania mieru, a naše volanie po mieri momentálne má nasledujúci efekt.\n$HOW$" # todo: CHANGED # todo: CONCEPT CASE
  LIST_OF_POTENTIAL_COALITION_COUNTRIES_TT: "Nasledujúce krajiny by sa mohli pridať k [GetInternationalOrganizationType('coalition').GetName] proti nám:" # todo: NEW TRANSLATION
- POTENTIAL_COALITION_COUNTRIES_EXTRA_NUM: " a ďalších $VAL|V$ [members|e]..." # todo: NEW TRANSLATION
+ POTENTIAL_COALITION_COUNTRIES_EXTRA_NUM: " a ďalších $VAL|V$ [Concept('members','členovia')|e]..." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_ENTRY_ALERT: "\n$BULLET_WITH_TAB$$NAME|Y$ $ICON$\n$WHY$" # todo: NEW TRANSLATION
  ALERT_WAR_CALL_PEACE_ENTRY: "[WAR.GetName]: $WARSCORE|Y$\n" # todo: NEW TRANSLATION
  ALERT_WAR_CALL_PEACE_ENTRY_UNCONDITIONAL_SURRENDER: "[WAR.GetName] s bezpodmienečnou kapituláciou: $WARSCORE|Y$\n" # todo: NEW TRANSLATION
  UNIT_NO_FOOD_ALERT_ENTRY: "[UNIT.GetName]: [UNIT.GetFoodPercentage|Y%/2]" # todo: NEW TRANSLATION
  ALERT_WEATHER_SYSTEM_TITLE: "Rozmárne počasie" # todo: NEW TRANSLATION
- ALERT_WEATHER_SYSTEM: "[weather_systems|e] momentálne ovplyvňujú našu [country|e]." # todo: CHANGED
+ ALERT_WEATHER_SYSTEM: "[Concept('weather_systems','Poveternostné podmienky')|e] momentálne ovplyvňujú našu [Concept('country','krajinu')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_WEATHER_SYSTEM_ENTRY: "$VAL$:" # todo: NEW TRANSLATION
- ALERT_RAISED_REBELS: "#T Povstanie rebelov#!\nV našej [country|e] sa vzbúrali niektorí [rebels|e]:" # todo: NEW TRANSLATION
- ALERT_RAISED_REBELS_ENTRY: "$VAL$ [rebels|e] v [LOCATION.GetName]" # todo: NEW TRANSLATION
+ ALERT_RAISED_REBELS: "#T Povstanie rebelov#!\nV našej [Concept('country','krajine')|e] sa vzbúrali niektorí [Concept('rebels','povstalci')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_RAISED_REBELS_ENTRY: "$VAL$ [Concept('rebels','Povstalci')|e] v [LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_POSSIBLE_REVOLTS_TITLE: "Povstania" # todo: NEW TRANSLATION
- ALERT_POSSIBLE_REVOLTS: "V našej [country|e] sú [rebels|e]." # todo: CHANGED
+ ALERT_POSSIBLE_REVOLTS: "V našej [Concept('country','krajine')|e] sú [Concept('rebels','povstalci')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_REVOLT_ENTRY: "[REBEL.GetTextIcon] [REBEL.GetName]: [REBEL.GetProgress|2Y%] ([REBEL.GetMonthlyChange|<-=2%])" # todo: NEW TRANSLATION
  ALERT_RESOLUTION_TITLE: "Rezolúcie na hlasovanie" # todo: CHANGED
  ALERT_RESOLUTION_VOTE: "[RESOLUTION.GetName] sa prejednáva:" # todo: NEW TRANSLATION
  ALERT_RESOLUTION_VOTE_WITH_TARGET: "[RESOLUTION.GetName] ([COUNTRY.GetNameWithFlag]) sa prerokúva:" # todo: NEW TRANSLATION
  ALERT_RESOLUTION_VOTE_ENTRY: "$EFFECT_LIST_BULLET$ $NUM$ hlasuje za $VOTE$" # todo: NEW TRANSLATION
  ALERT_RULER_INCOMPETENT_TITLE: "Necompetentný vládca" # todo: NEW TRANSLATION
- ALERT_RULER_INCOMPETENT: "Náš súčasný [ruler|e] [CHARACTER.GetName] má pozoruhodne nízke [ability|e]:\n[Character.GetTotalAbility]." # todo: CHANGED
+ ALERT_RULER_INCOMPETENT: "Náš súčasný [Concept('ruler','panovník')|e] [CHARACTER.GetName] má pozoruhodne nízke [Concept('ability','schopnosť')|e]:\n[Character.GetTotalAbility]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HEIR_INCOMPETENT_TITLE: "Necompetentný následník" # todo: NEW TRANSLATION
- ALERT_HEIR_INCOMPETENT: "Náš súčasný [heir|e] [CHARACTER.GetName] má pozoruhodne nízke [ability|e]:\n[Character.GetTotalAbility]." # todo: CHANGED
+ ALERT_HEIR_INCOMPETENT: "Náš súčasný [Concept('heir','dedič')|e] [CHARACTER.GetName] má pozoruhodne nízke [Concept('ability','schopnosť')|e]:\n[Character.GetTotalAbility]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HEIR_UNDERAGE_TITLE: "Mladý následník" # todo: NEW TRANSLATION
- ALERT_HEIR_UNDERAGE: "Náš súčasný [heir|e] [CHARACTER.GetName] je len [child|e] vo veku [CHARACTER.GetAgeInYears], ale [CHARACTER.GetHeSheFormal] sa nemôže stať [ruler|e], kým [CHARACTER.GetSheHe] nie je [adult|e]. Môže nám vládnuť [regency|e] do tej doby." # todo: CHANGED
+ ALERT_HEIR_UNDERAGE: "Náš súčasný [Concept('heir','dedič')|e] [CHARACTER.GetName] je len [Concept('child','dieťa')|e] vo veku [CHARACTER.GetAgeInYears], ale [CHARACTER.GetHeSheFormal] sa nemôže stať [Concept('ruler','panovníka')|e], kým [CHARACTER.GetSheHe] nie je [Concept('adult','dospelý')|e]. Môže nám vládnuť [Concept('regency','regentstvo')|e] do tej doby." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CHILD_UNEDUCATED: "Nevzdelané dieťa" # todo: NEW TRANSLATION
  ALERT_CHILD_UNEDUCATED_PLURAL: "Nevzdelané deti" # todo: NEW TRANSLATION
- ALERT_CHILD_UNEDUCATED_TEXT: "Jedno alebo viac detí v našej krajine momentálne nie je vzdelávaných. To bude brániť ich rozvoju a spôsobí, že ich [adm|e], [dip|e] a [mil|e] schopnosti budú nižšie, než by mohli byť." # todo: NEW TRANSLATION
+ ALERT_CHILD_UNEDUCATED_TEXT: "Jedno alebo viac detí v našej krajine momentálne nie je vzdelávaných. To bude brániť ich rozvoju a spôsobí, že ich [Concept('adm','administratívna schopnosť')|e], [Concept('dip','diplomatická schopnosť')|e] a [Concept('mil','vojenská schopnosť')|e] schopnosti budú nižšie, než by mohli byť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HEIR_UNMARRIED_TITLE: "Nesobášny dospelý následník" # todo: NEW TRANSLATION
- ALERT_HEIR_UNMARRIED: "Súčasný [heir|e] [CHARACTER.GetName] je [adult|e] a nie je [married|e]. Je načase, aby sa [CHARACTER.GetHimHerFormal] oženil/vydala. Môžeme zorganizovať [royal_marriage|e] s inou [country|e], alebo zaarrangovať sobáš s šľachticom alebo [lowborn|e] z našej vlastnej krajiny." # todo: CHANGED
+ ALERT_HEIR_UNMARRIED: "Súčasný [Concept('heir','dedič')|e] [CHARACTER.GetName] je [Concept('adult','dospelý')|e] a nie je [Concept('married','V sňatku')|e]. Je načase, aby sa [CHARACTER.GetHimHerFormal] oženil/vydala. Môžeme zorganizovať [Concept('royal_marriage','kráľovský sňatok')|e] s inou [Concept('country','krajinou')|e], alebo zaarrangovať sobáš s šľachticom alebo [Concept('lowborn','neurodzený')|e] z našej vlastnej krajiny." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_RULER_UNMARRIED_TITLE: "Nesobášny [Player.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
- ALERT_RULER_UNMARRIED: "[COUNTRY.GetGovernment.GetFullRulerName] je momentálne [adult|e] a nie je [married|e]. Je načase, aby sa [CHARACTER.GetHimHerFormal] oženil/vydala. Môžeme zorganizovať [royal_marriage|e] s inou [country|e], alebo zaarrangovať sobáš s šľachticom alebo [lowborn|e] z našej vlastnej krajiny." # todo: CHANGED
+ ALERT_RULER_UNMARRIED: "[COUNTRY.GetGovernment.GetFullRulerName] je momentálne [Concept('adult','dospelý')|e] a nie je [Concept('married','V sňatku')|e]. Je načase, aby sa [CHARACTER.GetHimHerFormal] oženil/vydala. Môžeme zorganizovať [Concept('royal_marriage','kráľovský sňatok')|e] s inou [Concept('country','krajinou')|e], alebo zaarrangovať sobáš s šľachticom alebo [Concept('lowborn','neurodzený')|e] z našej vlastnej krajiny." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_MERCENARY_ENTRY: "[MERCENARY.GetName] zmluva vyprší za $MONTHS|Y$ mesiacov." # todo: NEW TRANSLATION
  ALERT_CONTRACTS: "Vypršanie kontraktov žoldnierov" # todo: CHANGED
  ALERT_CAN_POTENTIALLY_BE_TARGET_OF_IO: "Blízko toho, aby sme sa stali cieľom medzinárodnej organizácie" # todo: CHANGED
@@ -116,66 +116,66 @@
  ALERT_CAN_JOIN_TARGETTED_IO_ENTRY: "[INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  ALERT_UNPROFITABLE_TRADE: "Nevýnosný obchod" # todo: CHANGED
  ALERT_TRADE_ENTRY: "[TRADE.GetName]: [TRADE.GetProfit|+=2][gold_i]" # todo: NEW TRANSLATION
- ALERT_TRADE_EXTRA_NUM: "... a ďalších $VAL|V$ [trades|e]." # todo: NEW TRANSLATION
+ ALERT_TRADE_EXTRA_NUM: "... a ďalších $VAL|V$ [Concept('trades','obchody')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_NO_SUPPLIES_TRADE: "Manuálny obchod vyčerpal zásoby" # todo: CHANGED
- ALERT_NO_SUPPLIES_ENTRY_SELF: "[TRADE.GetName] vyčerpal zásoby, pretože už používame všetko dostupné na iné [exports|e]." # todo: NEW TRANSLATION
- ALERT_NO_SUPPLIES_ENTRY_DEFAULT: "[TRADE.GetName] vyčerpal zásoby, pretože nie je nič dostupné na [export|e]." # todo: NEW TRANSLATION
- ALERT_NO_SUPPLIES_ENTRY: "[TRADE.GetName] je prekonávaný $WHO$, ktorý má vyššiu [merchant_power|e] v [TRADE.GetFromMarket.GetName]." # todo: NEW TRANSLATION
+ ALERT_NO_SUPPLIES_ENTRY_SELF: "[TRADE.GetName] vyčerpal zásoby, pretože už používame všetko dostupné na iné [Concept('exports','vývozy')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_NO_SUPPLIES_ENTRY_DEFAULT: "[TRADE.GetName] vyčerpal zásoby, pretože nie je nič dostupné na [Concept('export','vývoz')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_NO_SUPPLIES_ENTRY: "[TRADE.GetName] je prekonávaný $WHO$, ktorý má vyššiu [Concept('merchant_power','neobchodnú výhodu')|e] v [TRADE.GetFromMarket.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_HAVE_MORE_REFORMS_TITLE: "Možné reformy" # todo: NEW TRANSLATION
- ALERT_CAN_HAVE_MORE_REFORMS: "Môžete pridať ešte $VAL|Y$ [government_reforms|e]." # todo: CHANGED
+ ALERT_CAN_HAVE_MORE_REFORMS: "Môžete pridať ešte $VAL|Y$ [Concept('government_reforms','vládne reformy')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CAN_UPGRADE_COUNTRY_RANK_TITLE: "Môžeme povýšiť stupeň štátu" # todo: NEW TRANSLATION
- ALERT_CAN_UPGRADE_COUNTRY_RANK: "Nasledujúce vylepšenia [country_rank|e] sú dostupné:\n\n$RANKS$" # todo: CHANGED
+ ALERT_CAN_UPGRADE_COUNTRY_RANK: "Nasledujúce vylepšenia [Concept('country_rank','rangu krajiny')|e] sú dostupné:\n\n$RANKS$" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CAN_UPGRADE_COUNTRY_RANK_ENTRY: "[COUNTRY_RANK.GetIcon] [COUNTRY_RANK.GetNameWithNoTooltip]" # todo: CHANGED
  ALERT_POSSIBLE_LAWS_TITLE: "Zákony nie sú kodifikované" # todo: NEW TRANSLATION
- ALERT_POSSIBLE_LAWS: "Nasledujúce [laws|e] neboli prijaté:" # todo: CHANGED
+ ALERT_POSSIBLE_LAWS: "Nasledujúce [Concept('laws','zákony')|e] neboli prijaté:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_LAW_ENTRY: "$BULLET_WITH_TAB$[LAW.GetName]" # todo: NEW TRANSLATION
  ALERT_POSSIBLE_GOV_ACTION_TITLE: "Možné kroky vlády" # todo: NEW TRANSLATION
- ALERT_POSSIBLE_GOV_ACTION: "Momentálne máme kapacitu požiadať náš [cabinet|e] o ďalšie [cabinet_actions|e]." # todo: CHANGED
+ ALERT_POSSIBLE_GOV_ACTION: "Momentálne máme kapacitu požiadať náš [Concept('cabinet','kabinet')|e] o ďalšie [Concept('cabinet_actions','akcie kabinetu')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_MAX_DIPLOMATS_AVAILABLE_TITLE: "Možné diplomatické kroky" # todo: NEW TRANSLATION
- ALERT_MAX_DIPLOMATS_AVAILABLE: "Momentálne sme na maximálnej kapacite [diplomats|e], ktorých môžeme použiť na [diplomatic_actions|e]." # todo: CHANGED
+ ALERT_MAX_DIPLOMATS_AVAILABLE: "Momentálne sme na maximálnej kapacite [Concept('diplomats','diplomatom')|e], ktorých môžeme použiť na [Concept('diplomatic_actions','diplomatické akcie')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_RELIGIOUS_ASPECT_AVAILABLE_TITLE: "Možný náboženský aspekt" # todo: NEW TRANSLATION
- ALERT_RELIGIOUS_ASPECT_AVAILABLE: "Momentálne máme možnosť pridať nový [religious_aspect|e]." # todo: CHANGED
+ ALERT_RELIGIOUS_ASPECT_AVAILABLE: "Momentálne máme možnosť pridať nový [Concept('religious_aspect','náboženský aspekt')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_RELIGIOUS_FOCUS_AVAILABLE_TITLE: "Možný náboženský fokus" # todo: NEW TRANSLATION
- ALERT_RELIGIOUS_FOCUS_AVAILABLE: "Môžeme pridať nový [religious_focus|e] do výskumnej fronty." # todo: CHANGED
+ ALERT_RELIGIOUS_FOCUS_AVAILABLE: "Môžeme pridať nové [Concept('religious_focus','náboženské zameranie')|e] do výskumnej fronty." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE_TITLE: "Možné [Localize('game_concept_religious_influence')] [Localize('game_concept_actions')]" # todo: NEW TRANSLATION
- ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE: "Naše [religious_influence|e] môžeme minúť na nasledujúce [actions|e]:" # todo: CHANGED
+ ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE: "Naše [Concept('religious_influence','náboženský vplyv')|e] môžeme minúť na nasledujúce [Concept('actions','akcie')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CAN_SPEND_RELIGIOUS_INFLUENCE_ENTRY: "$BULLET_WITH_TAB$$ACTION_NAME$" # todo: NEW TRANSLATION
  ALERT_INTERVENE_RIVAL_WAR_AVAILABLE_TITLE: "Zasiahnuť do vojny rivala" # todo: NEW TRANSLATION
- ALERT_INTERVENE_RIVAL_WAR_AVAILABLE: "Môžeme zasiahnuť do vojny proti jednému z našich [rivals|e]." # todo: CHANGED
+ ALERT_INTERVENE_RIVAL_WAR_AVAILABLE: "Môžeme zasiahnuť do vojny proti jednému z našich [Concept('rivals','rivalov')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_INTERVENE_RIVAL_WAR_ENTRY: "[WAR.GetName]: Zasiahnuť proti [COUNTRY.GetName]." # todo: NEW TRANSLATION
  ALERT_ACTION_LACK_CHAR_TITLE: "Kabinet postráda člena" # todo: NEW TRANSLATION
- ALERT_ACTION_LACK_CHAR: "Nasledujúcim [cabinet_actions|e] chýba [character|e], ktorý by ich viedol:" # todo: CHANGED
+ ALERT_ACTION_LACK_CHAR: "Nasledujúcim [Concept('cabinet_actions','akciám kabinetu')|e] chýba [Concept('character','postava')|e], ktorý by ich viedol:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CABINET_ENTRY: "$BULLET_WITH_TAB$[CABINET.GetName]" # todo: NEW TRANSLATION
  ALERT_NON_CROWN_ESTATE_IN_CABINET_TITLE: "Člen kabinetu z iného stavu" # todo: NEW TRANSLATION
- ALERT_NON_CROWN_ESTATE_IN_CABINET: "Nasledujúci [characters|e] sú do kabinetu vymenovaní z iných než [ShowEstateTypeName('crown_estate')] [estates|e]:" # todo: NEW TRANSLATION
+ ALERT_NON_CROWN_ESTATE_IN_CABINET: "Nasledujúci [Concept('characters','postavy')|e] sú do kabinetu vymenovaní z iných než [ShowEstateTypeName('crown_estate')] [Concept('estates','stavy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CABINET_MEMBER_ENTRY: "$BULLET_WITH_TAB$[CHARACTER.GetName]" # todo: NEW TRANSLATION
  ALERT_NO_CURRENT_RESEARCH_TITLE: "Žiadny prebiehajúci výskum" # todo: NEW TRANSLATION
- ALERT_NO_CURRENT_RESEARCH: "Momentálne neskúmame žiadne [advances|e]." # todo: CHANGED
+ ALERT_NO_CURRENT_RESEARCH: "Momentálne neskúmame žiadne [Concept('advances','pokroky')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS_TITLE: "Dosahovanie kapacity výskumu" # todo: NEW TRANSLATION
- ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS: "Momentálne máme $AMOUNT|2Y$ [stored_research|e] z možného maxima $MAX|2Y$. Akýkoľvek prebytočný výskumný pokrok nad maximum sa stratí, zvážte vynaloženie uloženého výskumu na skúmanie [advance|e]." # todo: CHANGED
+ ALERT_NEARLY_MAXED_OUT_STORED_RESEARCH_PROGRESS: "Momentálne máme $AMOUNT|2Y$ [Concept('stored_research','uloženého pokroku výskumu')|e] z možného maxima $MAX|2Y$. Akýkoľvek prebytočný výskumný pokrok nad maximum sa stratí, zvážte vynaloženie uloženého výskumu na skúmanie [Concept('advance','pokrok')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS_TITLE: "Kapacita výskumu dosiahnutá" # todo: NEW TRANSLATION
- ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS: "Momentálne máme $AMOUNT|2Y$ [stored_research|e] a nemôžeme uložiť viac. Akýkoľvek výskumný pokrok sa stratí, zvážte vynaloženie uloženého výskumu na skúmanie [advance|e]." # todo: CHANGED
+ ALERT_MAXED_OUT_STORED_RESEARCH_PROGRESS: "Momentálne máme $AMOUNT|2Y$ [Concept('stored_research','uloženého pokroku výskumu')|e] a nemôžeme uložiť viac. Akýkoľvek výskumný pokrok sa stratí, zvážte vynaloženie uloženého výskumu na skúmanie [Concept('advance','pokrok')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_EMBRACE_INST_TITLE: "Možné inštitúcie" # todo: NEW TRANSLATION
- ALERT_EMBRACE_INST: "Môžeme [embrace|e] nasledujúce [institutions|e]:" # todo: CHANGED
+ ALERT_EMBRACE_INST: "Môžeme [Concept('embrace','prijať')|e] nasledujúce [Concept('institutions','inštitúcie')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_INSTITUTION_ENTRY: "$BULLET_WITH_TAB$[INSTITUTION.GetName]: $PRICE$ (z $VAL|2%$ rozdielu)" # todo: NEW TRANSLATION
  ALERT_PARLIAMENT_IN_SESSION_TITLE: "Parlament v zasadnutí" # todo: NEW TRANSLATION
- ALERT_PARLIAMENT_IN_SESSION: "Váš [parliament|e] je v zhromaždení a zostáva mu [COUNTRY.GetGovernment.GetParliament.GetRemainingParliamentDuration] dní." # todo: CHANGED
+ ALERT_PARLIAMENT_IN_SESSION: "Váš [Concept('parliament','parlament')|e] je v zhromaždení a zostáva mu [COUNTRY.GetGovernment.GetParliament.GetRemainingParliamentDuration] dní." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_IMPERIAL_DIET_IN_SESSION_TITLE: "Ríšsky snem v zasadnutí" # todo: NEW TRANSLATION
  ALERT_IMPERIAL_DIET_IN_SESSION: "[INTERNATIONAL_ORGANIZATION.GetName] momentálne prerokúva [INTERNATIONAL_ORGANIZATION.GetParliament.GetCurrentDebateName]. Súčasné hlasovanie je [INTERNATIONAL_ORGANIZATION.GetParliament.GetParliamentIssueSupport|2%G] v prospech." # todo: CHANGED
  ALERT_PARLIAMENT_ISSUE: "Momentálne debatujú o [COUNTRY.GetGovernment.GetParliament.GetCurrentDebateName]. Podpora je [COUNTRY.GetGovernment.GetParliament.GetParliamentIssueSupport|%Y]." # todo: CHANGED
  ALERT_PARLIAMENT_NO_ISSUE: "Momentálne sa nič neprejednáva." # todo: NEW TRANSLATION
  ALERT_UNPROFITABLE_BUILDINGS: "Nevýnosné budovy" # todo: CHANGED
- ALERT_UNPROFITABLE_BUILDINGS_TEXT: "[buildings|e] sú neziskové v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
+ ALERT_UNPROFITABLE_BUILDINGS_TEXT: "[Concept('buildings','Budovy')|e] sú neziskové v nasledujúcich [Concept('markets','trhy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_UNPROFITABLE_BUILDINGS_ENTRY: "[BUILDING.GetName] v [BUILDING.GetLocation.GetName] : [BUILDING.GetTaxBaseValuePerLevel|+=2][gold_i]" # todo: CHANGED
  ALERT_UNPROFITABLE_BUILDINGS_TOOLTIP: "#T Neziskové budovy v [UnprofitableBuildingsEntry.GetMarket.GetName]#!" # todo: NEW TRANSLATION
- ALERT_UNPROFITABLE_BUILDINGS_TOOLTIP_TEXT: "Nasledujúce [buildings|e] sú neziskové:" # todo: NEW TRANSLATION
+ ALERT_UNPROFITABLE_BUILDINGS_TOOLTIP_TEXT: "Nasledujúce [Concept('buildings','budovy')|e] sú neziskové:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_BUILDINGS_MISSING_INPUT: "Budovám chýbajú vstupy" # todo: CHANGED
- ALERT_BUILDINGS_MISSING_INPUT_TEXT: "[buildings|e] postrádajú vstupné [goods|e] v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
+ ALERT_BUILDINGS_MISSING_INPUT_TEXT: "[Concept('buildings','Budovy')|e] postrádajú vstupné [Concept('goods','tovary')|e] v nasledujúcich [Concept('markets','trhy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_BUILDINGS_MISSING_INPUT_MARKET: "[MARKET.GetName]:" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_INPUT_GOODS: "  @[GOODS.GetKey]![GOODS.GetName]:" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_INPUT_BUILDING: "$BULLET_WITH_TAB$ chýba $GOODS_AMOUNT$ pre $BUILDING_AMOUNT|0$ $BUILDING_NAME$" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_EMPLOYEES_TT: "Budovy postrádajú zamestnancov" # todo: CHANGED
- ALERT_BUILDINGS_MISSING_EMPLOYEES: "Niektorým našim [buildings|e] chýbajú zamestnanci. Počkajte, kým sa neobsadia, predtým než postavíte ďalšie v tejto [location]." # todo: CHANGED
+ ALERT_BUILDINGS_MISSING_EMPLOYEES: "Niektorým našim [Concept('buildings','budovám')|e] chýbajú zamestnanci. Počkajte, kým sa neobsadia, predtým než postavíte ďalšie v tejto [location]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_BUILDINGS_MISSING_EMPLOYEES_LOCATION: "[LOCATION.GetName] (Rýchlosť povýšenia [LOCATION.GetPromote]):" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_EMPLOYEES_POP_TYPE: "  [POP_TYPE.GetName]:" # todo: NEW TRANSLATION
  ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING: "[SBuildingWithMissingEmployees.GetMissingEmployees] [SBuildingWithMissingEmployees.GetBuilding.GetType.GetPopType.GetIcon] pre [SBuildingWithMissingEmployees.GetBuilding.GetType.GetName] v [SBuildingWithMissingEmployees.GetBuilding.GetLocation.GetName]:" # todo: CHANGED
@@ -186,7 +186,7 @@
  ALERT_PROMOTE_BREAKDOWN_DESC: "Každý mesiac bude povýšených $PROMOTION_VALUE$ [POP_TYPE.GetIcon] z dôvodu:" # todo: NEW TRANSLATION
  ALERT_PROMOTE_BREAKDOWN_DETAILS: "[LOCATION.GetPromoteInfo]" # todo: NEW TRANSLATION
  ALERT_PROMOTE_BREAKDOWN_DETAIL_FOR_POP_HEADER: "Toto je ďalej upravené podľa:" # todo: NEW TRANSLATION
- ALERT_PROMOTE_BREAKDOWN_DETAIL_FOR_POP: "[POP_TYPE.GetName] [promote|e] rýchlosť: $VALUE|%+=$" # todo: NEW TRANSLATION
+ ALERT_PROMOTE_BREAKDOWN_DETAIL_FOR_POP: "[POP_TYPE.GetName] [Concept('promote','Povýšiť')|e] rýchlosť: $VALUE|%+=$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_RGO_MISSING_EMPLOYEES_TT: "RGOs bez zamestnancov" # todo: CHANGED
  ALERT_RGO_MISSING_EMPLOYEES: "Niektorým našim [rgo|e] chýbajú zamestnanci. Počkajte, kým sa neobsadia, než postavíte viac v tejto [location]." # todo: CHANGED
  ALERT_RGO_MISSING_EMPLOYEES_LOCATION: "[SBuildingWithMissingEmployees.GetMissingEmployees] pre [SBuildingWithMissingEmployees.GetLocation.GetRawMaterial.GetIcon] v [SBuildingWithMissingEmployees.GetLocation.GetName]:" # todo: CHANGED
@@ -197,11 +197,11 @@
  ALERT_HIGH_INFLATION_STEADY: "Naša inflácia je vysoká: $INFLATION|V2%R$, hoci nerastie!" # todo: CHANGED
  ALERT_HIGH_INFLATION_FALLING: "Naša inflácia je vysoká: $INFLATION|V2%R$, hoci klesá o $CHANGE|<V2%G$ mesačne." # todo: CHANGED
  ALERT_CONSTRUCTIONS_MISSING_INPUT: "Stavbám chýbajú vstupy" # todo: CHANGED
- ALERT_CONSTRUCTIONS_MISSING_INPUT_TEXT: "[constructions|e] postrádajú [goods|e] v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
+ ALERT_CONSTRUCTIONS_MISSING_INPUT_TEXT: "[Concept('constructions','Výstavby')|e] postrádajú [Concept('goods','tovary')|e] v nasledujúcich [Concept('markets','trhy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_STARVING_PROVINCES_TITLE: "Hladujúce provincie" # todo: NEW TRANSLATION
- ALERT_STARVING_PROVINCES: "Nasledujúce [provinces|e] sú [starving|e]" # todo: CHANGED
+ ALERT_STARVING_PROVINCES: "Nasledujúce [Concept('provinces','provincie')|e] sú [Concept('starving','hladujúci')|e]" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_RISK_STARVING_PROVINCES_TITLE: "Riziko hladovania provincíí" # todo: NEW TRANSLATION
- ALERT_RISK_STARVING_PROVINCES: "Nasledujúce [provinces|e] sú ohrozené [starving|e]" # todo: CHANGED
+ ALERT_RISK_STARVING_PROVINCES: "Nasledujúce [Concept('provinces','provincie')|e] sú ohrozené [Concept('starving','hladujúci')|e]" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_BUILDING_ENTRY: "[BUILDING.GetName] in [LOCATION.GetName]: [BUILDING.GetProfitLabel]" # todo: NEW TRANSLATION
  ALERT_BUILDING_LARGE: "Z ďalších $NUM$ budov: $VAL|+=2$[gold_i]" # todo: NEW TRANSLATION
  ALERT_CONSTRUCTION_ENTRY: "[CONSTRUCTION.GetName]: [CONSTRUCTION.GetMissingGoodsInfo]" # todo: NEW TRANSLATION
@@ -209,201 +209,201 @@
  ALERT_STARVING_PROVINCES_MARKET_ENTRY: "$BULLET_WITH_TAB$[MARKET.GetName]: $PROVINCES_LIST$" # todo: NEW TRANSLATION
  ALERT_RISK_STARVING_PROVINCES_MARKET_ENTRY: "$BULLET_WITH_TAB$[MARKET.GetName]: $PROVINCES_LIST$" # todo: NEW TRANSLATION
  ALERT_UNINTEGRATED_PROVINCES_TITLE: "Neintegrované provincie" # todo: NEW TRANSLATION
- ALERT_UNINTEGRATED_PROVINCES: "Nasledujúce [provinces|e] nie sú [integrated|e]:" # todo: CHANGED
+ ALERT_UNINTEGRATED_PROVINCES: "Nasledujúce [Concept('provinces','provincie')|e] nie sú [Concept('integrated','integrované')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_UNINTEGRATED_PROVINCE_ENTRY: "@province! [PROVINCE.GetName]" # todo: NEW TRANSLATION
  ALERT_PRIVATEERS_TITLE: "Hostilní súkromníci" # todo: NEW TRANSLATION
- ALERT_PRIVATEERS: "V nasledujúcich [locations|e] sú nepriateľskí [privateers|e] a/alebo [pirates|e]." # todo: CHANGED
- ALERT_PRIVATEERS_COLUMN: "[privateers|e] sila" # todo: NEW TRANSLATION
- ALERT_PIRATES_COLUMN: "[pirates|e] sila" # todo: NEW TRANSLATION
+ ALERT_PRIVATEERS: "V nasledujúcich [Concept('locations','lokality')|e] sú nepriateľskí [Concept('privateers','korzári')|e] a/alebo [Concept('pirates','piráti')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_PRIVATEERS_COLUMN: "[Concept('privateers','Korzári')|e] sila" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_PIRATES_COLUMN: "[Concept('pirates','Piráti')|e] sila" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_DISEASE_OUTBREAK_TITLE: "Choroba postihujúca našu krajinu" # todo: NEW TRANSLATION
- ALERT_DISEASE_OUTBREAK: "Tieto [diseases|e] ovplyvňujú našu krajinu: $INFO$." # todo: CHANGED
+ ALERT_DISEASE_OUTBREAK: "Tieto [Concept('diseases','choroby')|e] ovplyvňujú našu krajinu: $INFO$." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_MOVEMENT_OUTBREAK_TITLE: "Hnutia ovplyvňujúce našu krajinu" # todo: NEW TRANSLATION
- ALERT_MOVEMENT_OUTBREAK: "V našej [country|e] sú [movements|e]." # todo: NEW TRANSLATION
- ALERT_MOVEMENT_ENTRY_CULTURE: "[MOVEMENT.GetName]: $AMOUNT$ [population|e] ($PERCENTAGE|%2$ $TARGET$)" # todo: NEW TRANSLATION
- ALERT_MOVEMENT_ENTRY_RELIGION: "[MOVEMENT.GetName]: $AMOUNT$ [population|e] ($PERCENTAGE|%2$ $TARGET$)" # todo: NEW TRANSLATION
+ ALERT_MOVEMENT_OUTBREAK: "V našej [Concept('country','krajine')|e] sú [Concept('movements','hnutia')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_MOVEMENT_ENTRY_CULTURE: "[MOVEMENT.GetName]: $AMOUNT$ [Concept('population','populácia')|e] ($PERCENTAGE|%2$ $TARGET$)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_MOVEMENT_ENTRY_RELIGION: "[MOVEMENT.GetName]: $AMOUNT$ [Concept('population','populácia')|e] ($PERCENTAGE|%2$ $TARGET$)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_AVAILABLE_MARKETS_TITLE: "Nevyužitá obchodná kapacita" # todo: NEW TRANSLATION
- ALERT_AVAILABLE_MARKETS: "Máme nevyužitú [merchant_capacity|e] v nasledujúcich [markets|e]:" # todo: CHANGED
+ ALERT_AVAILABLE_MARKETS: "Máme nevyužitú [Concept('merchant_capacity','obchodná kapacita')|e] v nasledujúcich [Concept('markets','trhy')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_MARKET_ENTRY: "@market! [MARKET.GetName] : $VAL|2+=$ @trade_capacity!" # todo: NEW TRANSLATION
  ALERT_POSSIBLE_RIVALS_TITLE: "Možní rivali" # todo: NEW TRANSLATION
- ALERT_POSSIBLE_RIVALS: "Môžeme mať ešte $NUM|Y$ [countries|e] ako našich [rival|e].\nTo má momentálne nasledujúci dopad:\n$EFFECT$" # todo: CHANGED
+ ALERT_POSSIBLE_RIVALS: "Môžeme mať ešte $NUM|Y$ [Concept('countries','krajiny')|e] ako našich [Concept('rival','rivala')|e].\nTo má momentálne nasledujúci dopad:\n$EFFECT$" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_UNHAPPY_ESTATES_TITLE: "Nespokojné stavy" # todo: NEW TRANSLATION
- ALERT_UNHAPPY_ESTATES_TT: "Nasledujúce [estates|e] sú nespokojné; je to na ujmu našej [country|e]:" # todo: CHANGED
+ ALERT_UNHAPPY_ESTATES_TT: "Nasledujúce [Concept('estates','stavy')|e] sú nespokojné; je to na ujmu našej [Concept('country','krajiny')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_UNHAPPY_ESTATE_ENTRY: "$BULLET_WITH_TAB$[ESTATE.GetName]: [ESTATE.GetSatisfaction|V2%]([ESTATE.GetMonthlySatisfactionChange|<+2%=])" # todo: NEW TRANSLATION
  ALERT_REBEL_ESTATES_TITLE: "Vzbúrivé stavy" # todo: NEW TRANSLATION
- ALERT_REBEL_ESTATES_TT: "Nasledujúce [estates|e] majú príliš nízke [estate_satisfaction|e] a pridávajú sa k [rebels|e]:" # todo: CHANGED
+ ALERT_REBEL_ESTATES_TT: "Nasledujúce [Concept('estates','stavy')|e] majú príliš nízke [Concept('estate_satisfaction','spokojnosť stavu')|e] a pridávajú sa k [Concept('rebels','povstalcom')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_REBEL_ESTATE_ENTRY: "$BULLET_WITH_TAB$[ESTATE.GetName]: [ESTATE.GetSatisfaction|V2%]([ESTATE.GetMonthlySatisfactionChange|<+2%=]@satisfaction!)" # todo: NEW TRANSLATION
  ALERT_DISCRIMINATED_CULTURE_ESTATES_TITLE: "Stavy s diskriminovanou kultúrou" # todo: NEW TRANSLATION
- ALERT_DISCRIMINATED_CULTURE_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_culture|e] je [non_accepted_culture_short|e]:" # todo: NEW TRANSLATION
+ ALERT_DISCRIMINATED_CULTURE_ESTATES_TT: "Nasledujúce [Concept('estates','stavy')|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [Concept('estate_power','sila stavu')|e], ale ich [Concept('estate_culture','kultúra stavu')|e] je [Concept('non_accepted_culture_short','diskriminovaná')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_DISCRIMINATED_CULTURE_ESTATE_ENTRY: "[ESTATE.GetName] ($POWER|V2%$): [ESTATE.GetCulture.GetName]" # todo: NEW TRANSLATION
- ALERT_DISCRIMINATED_CULTURE_PENALTY_INFO: "[estate_satisfaction|e]: [GetDefine('NEstate','ESTATE_CULTURE_DISCRIMINATED_SATISFACTION')|R2%]\n[estate_power|e]: [GetDefine('NEstate','ESTATE_CULTURE_DISCRIMINATED_POWER')|-=2%]" # todo: NEW TRANSLATION
+ ALERT_DISCRIMINATED_CULTURE_PENALTY_INFO: "[Concept('estate_satisfaction','Spokojnosť stavu')|e]: [GetDefine('NEstate','ESTATE_CULTURE_DISCRIMINATED_SATISFACTION')|R2%]\n[Concept('estate_power','Sila stavu')|e]: [GetDefine('NEstate','ESTATE_CULTURE_DISCRIMINATED_POWER')|-=2%]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_TOLERATED_CULTURE_ESTATES_TITLE: "Stavy s tolerovanou kultúrou" # todo: NEW TRANSLATION
- ALERT_TOLERATED_CULTURE_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_TOLERATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_culture|e] je len [tolerated_culture_short|e]:" # todo: NEW TRANSLATION
+ ALERT_TOLERATED_CULTURE_ESTATES_TT: "Nasledujúce [Concept('estates','stavy')|e] majú viac než [GetDefine('NEstate','ESTATE_TOLERATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [Concept('estate_power','sila stavu')|e], ale ich [Concept('estate_culture','kultúra stavu')|e] je len [Concept('tolerated_culture_short','tolerovaná')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_TOLERATED_CULTURE_ESTATE_ENTRY: "[ESTATE.GetName] ($POWER|V2%$): [ESTATE.GetCulture.GetName]" # todo: NEW TRANSLATION
- ALERT_TOLERATED_CULTURE_PENALTY_INFO: "[estate_satisfaction|e]: [GetDefine('NEstate','ESTATE_CULTURE_TOLERATED_SATISFACTION')|R2%]\n[estate_power|e]: [GetDefine('NEstate','ESTATE_CULTURE_TOLERATED_POWER')|-=2%]" # todo: NEW TRANSLATION
+ ALERT_TOLERATED_CULTURE_PENALTY_INFO: "[Concept('estate_satisfaction','Spokojnosť stavu')|e]: [GetDefine('NEstate','ESTATE_CULTURE_TOLERATED_SATISFACTION')|R2%]\n[Concept('estate_power','Sila stavu')|e]: [GetDefine('NEstate','ESTATE_CULTURE_TOLERATED_POWER')|-=2%]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_NONPRIMARY_RELIGION_ESTATES_TITLE: "Stavy s iným než primárnym náboženstvom" # todo: NEW TRANSLATION
- ALERT_NONPRIMARY_RELIGION_HERETIC_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_religion|e] je [heretic|e] náboženstvo:" # todo: NEW TRANSLATION
- ALERT_NONPRIMARY_RELIGION_HEATHEN_ESTATES_TT: "Nasledujúce [estates|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [estate_power|e], ale ich [estate_religion|e] je [heathen|e] náboženstvo:" # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_HERETIC_ESTATES_TT: "Nasledujúce [Concept('estates','stavy')|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [Concept('estate_power','sila stavu')|e], ale ich [Concept('estate_religion','náboženstvo stavu')|e] je [Concept('heretic','kacír')|e] náboženstvo:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_NONPRIMARY_RELIGION_HEATHEN_ESTATES_TT: "Nasledujúce [Concept('estates','stavy')|e] majú viac než [GetDefine('NEstate','ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD')|V2%] [Concept('estate_power','sila stavu')|e], ale ich [Concept('estate_religion','náboženstvo stavu')|e] je [Concept('heathen','neznaboh')|e] náboženstvo:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_NONPRIMARY_RELIGION_ESTATE_ENTRY: "[ESTATE.GetName] ($POWER|V2%$): [ESTATE.GetReligion.GetName]" # todo: NEW TRANSLATION
- ALERT_NONPRIMARY_RELIGION_HERETIC_PENALTY_INFO: "Tolerovanie týchto náboženstiev robí [estates|e] spokojnejšími a mocnejšími; intolerancia ich robí menej spokojnými a slabšími." # todo: NEW TRANSLATION
- ALERT_NONPRIMARY_RELIGION_HEATHEN_PENALTY_INFO: "Tolerovanie týchto náboženstiev robí [estates|e] spokojnejšími a mocnejšími; intolerancia ich robí menej spokojnými a slabšími." # todo: NEW TRANSLATION
+ ALERT_NONPRIMARY_RELIGION_HERETIC_PENALTY_INFO: "Tolerovanie týchto náboženstiev robí [Concept('estates','stavy')|e] spokojnejšími a mocnejšími; intolerancia ich robí menej spokojnými a slabšími." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_NONPRIMARY_RELIGION_HEATHEN_PENALTY_INFO: "Tolerovanie týchto náboženstiev robí [Concept('estates','stavy')|e] spokojnejšími a mocnejšími; intolerancia ich robí menej spokojnými a slabšími." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_POSSIBLE_FORMABLE_COUNTRIES_TITLE: "Možné formovateľné krajiny" # todo: NEW TRANSLATION
- ALERT_POSSIBLE_FORMABLE_COUNTRIES: "Nasledujúce [formable_countries|e] sú nám dostupné:" # todo: CHANGED
+ ALERT_POSSIBLE_FORMABLE_COUNTRIES: "Nasledujúce [Concept('formable_countries','krajiny na sformovanie')|e] sú nám dostupné:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_POSSIBLE_FORMABLE_COUNTRY_ENTRY: "[FORMABLE_COUNTRY.GetTag]: [FORMABLE_COUNTRY.GetName|Y] (Tier [FORMABLE_COUNTRY.GetRankNum|W0])" # todo: NEW TRANSLATION
  ALERT_HELP_INFORMATION_TITLE: "Vitajte v Europa Universalis V" # todo: NEW TRANSLATION
- ALERT_HELP_INFORMATION: "Odporúčame pozrieť si @agenda! #high Agenda#! pred začatím kampane. Uvidíte historický kontext a tipy prispôsobené počiatočnej situácii vašej [country|e].\n\nMôžete si tiež pozrieť [Link('hints', '', '@hint! Hint Panel')] na zobrazenie celého zoznamu tipov." # todo: CHANGED
+ ALERT_HELP_INFORMATION: "Odporúčame pozrieť si @agenda! #high Agenda#! pred začatím kampane. Uvidíte historický kontext a tipy prispôsobené počiatočnej situácii vašej [Concept('country','krajiny')|e].\n\nMôžete si tiež pozrieť [Link('hints', '', '@hint! Hint Panel')] na zobrazenie celého zoznamu tipov." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_NON_EXPERT_WELCOME_TITLE: "Začiatočné rady pre [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ALERT_NON_EXPERT_WELCOME: "Ak chcete vedieť, ako začať s vašou krajinou, odporúčame prečítať si počiatočný tip." # todo: CHANGED
  ALERT_POPS_WITH_NEEDS: "Pops s potrebami" # todo: NEW TRANSLATION
- ALERT_POPS_WITH_NEEDS_TEXT: "[pops|e] postrádajú [goods|e] v niektorých našich [markets|e], čo znižuje ich [pop_satisfaction|e]. Nemalo by nás to príliš znepokojovať, pokiaľ sa nezačnú [rebel|e]." # todo: CHANGED
+ ALERT_POPS_WITH_NEEDS_TEXT: "[Concept('pops','Populácie')|e] postrádajú [Concept('goods','tovary')|e] v niektorých našich [Concept('markets','trhov')|e], čo znižuje ich [Concept('pop_satisfaction','spokojnosť populácie')|e]. Nemalo by nás to príliš znepokojovať, pokiaľ sa nezačnú [Concept('rebel','povstalec')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_POPS_WITH_NEEDS_ENTRY: "$BULLET_WITH_TAB$Chýba $MISSINGGOODS$ v [MARKET.GetName]" # todo: NEW TRANSLATION
  CONTROL_GROUPS_ALERT_ADVICE_TITLE: "Možné skupiny ovládania" # todo: NEW TRANSLATION
- CONTROL_GROUPS_ALERT_ADVICE: "Môžete vytvoriť skratky k niektorým entitám stlačením Ctrl+číslo s označenou entitou:\n$BULLET$[markets|e]\n$BULLET$[locations|e]\n$BULLET$[units|e]\n$BULLET$[characters|e]\n$BULLET$[goods|e]\n$BULLET$[international_organizations|e]\n$BULLET$[countries|e]" # todo: CHANGED
+ CONTROL_GROUPS_ALERT_ADVICE: "Môžete vytvoriť skratky k niektorým entitám stlačením Ctrl+číslo s označenou entitou:\n$BULLET$[Concept('markets','Trhy')|e]\n$BULLET$[Concept('locations','Lokality')|e]\n$BULLET$[Concept('units','Jednotky')|e]\n$BULLET$[Concept('characters','Postavy')|e]\n$BULLET$[Concept('goods','Tovary')|e]\n$BULLET$[Concept('international_organizations','Medzinárodné organizácie')|e]\n$BULLET$[Concept('countries','Krajiny')|e]" # todo: CHANGED # todo: CONCEPT CASE
  CALL_PARLIAMENT_ALERT_TITLE: "[Player.GetGovernment.GetParliament.GetName] možné" # todo: NEW TRANSLATION
- CALL_PARLIAMENT_ALERT: "Teraz môžeme povolať naše [estates|e] do [Player.GetGovernment.GetParliament.GetName], aby vyriešili prípadné [parliament_issue|e], a zároveň dať príležitosť vytvoriť [casus_belli|e], zvýšiť [taxes|e] alebo získať väčšie [army_levies|e] a [navy_levies|e]." # todo: CHANGED
+ CALL_PARLIAMENT_ALERT: "Teraz môžeme povolať naše [Concept('estates','stavy')|e] do [Player.GetGovernment.GetParliament.GetName], aby vyriešili prípadné [Concept('parliament_issue','parlamentná záležitosť')|e], a zároveň dať príležitosť vytvoriť [Concept('casus_belli','casus Belli')|e], zvýšiť [Concept('taxes','dane')|e] alebo získať väčšie [Concept('army_levies','armádny branci')|e] a [Concept('navy_levies','povolané loďstvo')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT_TITLE: "[Player.GetGovernment.GetParliament.GetName] požadovaný" # todo: NEW TRANSLATION
- ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "Naše [estates|e] sú nespokojné, pretože uplynulo $VAL|0Y$ mesiacov odvtedy, čo bol [parliament|e] naposledy zvolaný. Momentálne to má nasledujúce účinky:\n$HOW$" # todo: CHANGED
- ALERT_HAS_DISLOYAL_SUBJECTS: "Niektorí z našich [subjects|e] majú nízke [subject_loyalty|e] a nebudú pomáhať v našich [wars|e]:" # todo: CHANGED
- ALERT_HAS_REBELLIOUS_SUBJECTS: "Niektorí z našich [subjects|e] majú veľmi nízke [subject_loyalty|e] a nebudú pomáhať v našich [wars|e]:\n" # todo: CHANGED
+ ESTATE_UNHAPPY_WITH_LACK_OF_PARLIAMENT_ALERT: "Naše [Concept('estates','stavy')|e] sú nespokojné, pretože uplynulo $VAL|0Y$ mesiacov odvtedy, čo bol [Concept('parliament','parlament')|e] naposledy zvolaný. Momentálne to má nasledujúce účinky:\n$HOW$" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_HAS_DISLOYAL_SUBJECTS: "Niektorí z našich [Concept('subjects','vazalov')|e] majú nízke [Concept('subject_loyalty','vernosť vazala')|e] a nebudú pomáhať v našich [Concept('wars','vojen')|e]:" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_HAS_REBELLIOUS_SUBJECTS: "Niektorí z našich [Concept('subjects','vazalov')|e] majú veľmi nízke [Concept('subject_loyalty','vernosť vazala')|e] a nebudú pomáhať v našich [Concept('wars','vojen')|e]:\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_IMMINENT_INDEPENDENCE_WAR_TITLE: "Blížiaca sa vojna za nezávislosť" # todo: NEW TRANSLATION
- ALERT_HAS_IMMINENT_INDEPENDENCE_WAR: "Nasledujúce [subjects|e] vedú hnutia za nezávislosť dosť silné na to, aby mohli kedykoľvek vyhlásiť [war|e] proti nám\n" # todo: NEW TRANSLATION
+ ALERT_HAS_IMMINENT_INDEPENDENCE_WAR: "Nasledujúce [Concept('subjects','vazali')|e] vedú hnutia za nezávislosť dosť silné na to, aby mohli kedykoľvek vyhlásiť [Concept('war','vojna')|e] proti nám\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_DISLOYAL_SUBJECTS_ENTRY: "$BULLET_WITH_TAB$[COUNTRY.GetName]: $LOYALTY$" # todo: NEW TRANSLATION
- ALERT_DISLOYAL_SUBJECTS_EXTRA_NUM: " a ďalších $VAL|V$ [subjects|e]..." # todo: NEW TRANSLATION
+ ALERT_DISLOYAL_SUBJECTS_EXTRA_NUM: " a ďalších $VAL|V$ [Concept('subjects','vazali')|e]..." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HAS_UNRAISED_LEVIES_TITLE: "Nezodvihnuté levies" # todo: NEW TRANSLATION
- ALERT_HAS_UNRAISED_LEVIES: "Môžeme povolať [levies|e] na boj v našich [wars|e].\n\n" # todo: CHANGED
- ALERT_HAS_UNRAISED_ARMY_LEVIES: "Môžeme povolať [army_levies|e] na boj v našich [wars|e].\n\n" # todo: CHANGED
- ALERT_HAS_UNRAISED_NAVY_LEVIES: "Môžeme povolať [navy_levies|e] na boj v našich [wars|e].\n\n" # todo: CHANGED
+ ALERT_HAS_UNRAISED_LEVIES: "Môžeme povolať [Concept('levies','branci')|e] na boj v našich [Concept('wars','vojen')|e].\n\n" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_HAS_UNRAISED_ARMY_LEVIES: "Môžeme povolať [Concept('army_levies','armádny branci')|e] na boj v našich [Concept('wars','vojen')|e].\n\n" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_HAS_UNRAISED_NAVY_LEVIES: "Môžeme povolať [Concept('navy_levies','povolané loďstvo')|e] na boj v našich [Concept('wars','vojen')|e].\n\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE_TITLE: "Zdvihnuté armádne levy v čase mieru" # todo: NEW TRANSLATION
- ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE: "Povolali sme armádne [levies|e] počas [peace|e]!\n\n" # todo: CHANGED
+ ALERT_HAS_RAISED_ARMY_LEVIES_IN_PEACE: "Povolali sme armádne [Concept('levies','branci')|e] počas [Concept('peace','mieru')|e]!\n\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE_TITLE: "Zdvihnuté námorné levy v čase mieru" # todo: NEW TRANSLATION
- ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE: "Povolali sme námorné [levies|e] počas [peace|e]!\n\n" # todo: CHANGED
- ALERT_BEING_ANNEXED_LOYAL: "#T Prebieha anektovanie#!\nNáš [overlord|e] $OVERLORD$ začal nás diplomaticky [annex|e].\n\nKeďže nie sme [disloyal_subject|e], oni budú postupovať každý mesiac. Nakoniec uspejú za približne $TIME$.\n\nAk budeme [annexed], je to koniec hry!\n\nMôžeme pokojne spomaliť ich postup pomocou [ShowCabinetActionName('frustrate_annexation')] a [ShowCabinetActionName('sow_disloyalty')] [cabinet_actions|e], alebo im vyhlásiť [war|e] s naším [ShowCasusBelliName('cb_resist_annexation')] [casus_belli|e]!\n\n" # todo: NEW TRANSLATION
- ALERT_BEING_ANNEXED_DISLOYAL: "#T Prebieha anektovanie#!\nNáš [overlord|e] $OVERLORD$ začal nás [annex|e].\n\nAvšak, kým zostávame [disloyal_subject|e], oni nepokračujú. Ak uspejú, je to koniec hry!\n\nMôžeme im vyhlásiť [war|e] s naším [ShowCasusBelliName('cb_resist_annexation')] [casus_belli|e]!\n\n" # todo: NEW TRANSLATION
+ ALERT_HAS_RAISED_NAVY_LEVIES_IN_PEACE: "Povolali sme námorné [Concept('levies','brancov')|e] počas [Concept('peace','mieru')|e]!\n\n" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_BEING_ANNEXED_LOYAL: "#T Prebieha anektovanie#!\nNáš [Concept('overlord','suzerén')|e] $OVERLORD$ začal nás diplomaticky [Concept('annex','anektovať')|e].\n\nKeďže nie sme [Concept('disloyal_subject','nelojálny vazal')|e], oni budú postupovať každý mesiac. Nakoniec uspejú za približne $TIME$.\n\nAk budeme [annexed], je to koniec hry!\n\nMôžeme pokojne spomaliť ich postup pomocou [ShowCabinetActionName('frustrate_annexation')] a [ShowCabinetActionName('sow_disloyalty')] [Concept('cabinet_actions','akcie kabinetu')|e], alebo im vyhlásiť [Concept('war','vojna')|e] s naším [ShowCasusBelliName('cb_resist_annexation')] [casus_belli|e]!\n\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_BEING_ANNEXED_DISLOYAL: "#T Prebieha anektovanie#!\nNáš [Concept('overlord','suzerén')|e] $OVERLORD$ začal nás [Concept('annex','anektovať')|e].\n\nAvšak, kým zostávame [Concept('disloyal_subject','nelojálny vazal')|e], oni nepokračujú. Ak uspejú, je to koniec hry!\n\nMôžeme im vyhlásiť [Concept('war','vojna')|e] s naším [ShowCasusBelliName('cb_resist_annexation')] [casus_belli|e]!\n\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_ANNEXING_DISLOYAL_SUBJECT_TITLE: "Anexia nelojakálneho podriadeného" # todo: NEW TRANSLATION
- ALERT_ANNEXING_DISLOYAL_SUBJECT: "Snažíme sa [annex|e] [subject|e], ale pokiaľ zostávajú [disloyal_subject|e], nedosiahneme pokrok. Je to tragická strata zdrojov.\n$SUBJECTS$\n\n" # todo: CHANGED
+ ALERT_ANNEXING_DISLOYAL_SUBJECT: "Snažíme sa [Concept('annex','anektovať')|e] [Concept('subject','vazala')|e], ale pokiaľ zostávajú [Concept('disloyal_subject','nelojálny vazal')|e], nedosiahneme pokrok. Je to tragická strata zdrojov.\n$SUBJECTS$\n\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_ANNEXING_STALLED_LOW_OPINION_TITLE: "Anexovanie krajín, ktoré majú na nás nízky názor" # todo: CHANGED
- ALERT_ANNEXING_STALLED_LOW_OPINION: "Snažíme sa [annex|e] [country|e], ale pokiaľ majú nedostatočný názor na nás, neurobíme pokrok. Je to tragická strata zdrojov.\n$COUNTRIES$\n\n" # todo: CHANGED
+ ALERT_ANNEXING_STALLED_LOW_OPINION: "Snažíme sa [Concept('annex','anektovať')|e] [Concept('country','krajiny')|e], ale pokiaľ majú nedostatočný názor na nás, neurobíme pokrok. Je to tragická strata zdrojov.\n$COUNTRIES$\n\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_BAD_ACTORS_TITLE: "Zlomyselné aktivity" # todo: NEW TRANSLATION
- ALERT_HAS_BAD_ACTORS: "Sme momentálne cieľom nekalých aktivít. Použite [counterespionage|E] na vypátranie týchto skrytých akcií.\n\n$INFO$" # todo: CHANGED
+ ALERT_HAS_BAD_ACTORS: "Sme momentálne cieľom nekalých aktivít. Použite [Concept('counterespionage','kontrašpionáž')|E] na vypátranie týchto skrytých akcií.\n\n$INFO$" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_BAD_ACTORS_ENTRY: "$WHO$ útočí na nás pomocou $WHAT|Y$" # todo: CHANGED
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_TITLE: "Trhy s nízkymi zásobami potravín" # todo: NEW TRANSLATION
- ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "[food_stockpile|e] sa minie v priebehu nasledujúcich [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] mesiacov v nasledujúcich [markets|e]:\n" # todo: CHANGED
+ ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET: "[Concept('food_stockpile','Zásoby potravín')|e] sa minie v priebehu nasledujúcich [GetDefine('NMarket','MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS')] mesiacov v nasledujúcich [Concept('markets','trhy')|e]:\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_LOW_FOOD_STOCKPILE_MARKET_ENTRY: "@market! [Market.GetName]: [Market.GetFoodStockpile|2Y]@food! ([Market.GetMonthlyFoodWithLabel])" # todo: NEW TRANSLATION
  ALERT_NO_PARLIAMENT_DEBATE_TITLE: "Žiadna debata v parlamente" # todo: NEW TRANSLATION
- ALERT_NO_PARLIAMENT_DEBATE: "[COUNTRY.GetGovernment.GetParliament.GetName] je aktívny, ale momentálne nerieši žiadne [parliament_issues|e].\n\nRadšej by sme im mali dať niečo na riešenie!\n\n" # todo: CHANGED
+ ALERT_NO_PARLIAMENT_DEBATE: "[COUNTRY.GetGovernment.GetParliament.GetName] je aktívny, ale momentálne nerieši žiadne [Concept('parliament_issues','parlamentné záležitosti')|e].\n\nRadšej by sme im mali dať niečo na riešenie!\n\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_DEPOPULATING_LOCATIONS_TT: "Vylidňovanie lokalít" # todo: CHANGED
- ALERT_DEPOPULATING_LOCATIONS: "Niektoré [locations|e] rýchlo strácajú svoju [population|e]!" # todo: CHANGED
+ ALERT_DEPOPULATING_LOCATIONS: "Niektoré [Concept('locations','lokality')|e] rýchlo strácajú svoju [Concept('population','populáciu')|e]!" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_DEPOPULATING_LOCATIONS_ENTRY: "@location! [LOCATION.GetName]: [LOCATION.GetPopulationChangeLabel]@population!" # todo: NEW TRANSLATION
  ALERT_DEPOPULATING_LOCATIONS_LARGE: "Z ďalších $NUM$ lokalít: $VAL$@population!" # todo: NEW TRANSLATION
  ALERT_TRUCE_EXPIRES_TITLE: "Náš prímerie čoskoro vyprší" # todo: NEW TRANSLATION
- ALERT_TRUCE_EXPIRES: "Keď [truce|e] skončí, vojna môže byť opäť vyhlásená!\n$COUNTRIES$\n\n" # todo: CHANGED
+ ALERT_TRUCE_EXPIRES: "Keď [Concept('truce','prímerie')|e] skončí, vojna môže byť opäť vyhlásená!\n$COUNTRIES$\n\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_TRUCE_EXPIRES_ENTRY_DATE: "$COUNTRY$: $WHEN$" # todo: NEW TRANSLATION
  ALERT_TRUCE_EXPIRES_ENTRY_SPAN: "$COUNTRY$: vyprší o $EXPIRES_IN$ deň(ov)" # todo: NEW TRANSLATION
  ALERT_CAN_CALL_ALLY_SPECIFIC: "#T Môžeme povolať spojenca#!\nMôžeme povolať našich spojencov [COUNTRY.GetName], aby nám pomohli v [WAR.GetName]" # todo: NEW TRANSLATION
- EMBRACE_ALL_INSTITUTIONS: "Prijať všetky dostupné [institutions|e]" # todo: NEW TRANSLATION
- ALERT_IO_NO_ACTIVE_POLICY: "#T Žiadna aktívna politika#!\n$LAW$ [law|e] v $INTERNATIONAL_ORGANIZATION$ nemá žiadnu aktívnu [policy|e]!\n" # todo: NEW TRANSLATION
+ EMBRACE_ALL_INSTITUTIONS: "Prijať všetky dostupné [Concept('institutions','inštitúcie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_IO_NO_ACTIVE_POLICY: "#T Žiadna aktívna politika#!\n$LAW$ [Concept('law','Zákon')|e] v $INTERNATIONAL_ORGANIZATION$ nemá žiadnu aktívnu [Concept('policy','politiku')|e]!\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_MISSING_EXPLORER_TITLE: "Chýba prieskumník" # todo: NEW TRANSLATION
- ALERT_MISSING_EXPLORER: "[explorations|e] postrádajú [explorer|e] v nasledujúcich [areas|e]:\n" # todo: CHANGED
+ ALERT_MISSING_EXPLORER: "[Concept('explorations','Prieskumy')|e] postrádajú [Concept('explorer','prieskumník')|e] v nasledujúcich [Concept('areas','oblasti')|e]:\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CONSTRUCTION_MISSING_EXPLORER_ENTRY: "[CONSTRUCTION.GetExplorationArea.GetName]" # todo: NEW TRANSLATION
  ALERT_EXPLORATION_MISSING_EXPLORER_ENTRY: "[EXPLORATION.GetArea.GetName]" # todo: NEW TRANSLATION
- ALERT_MISSING_EXPLORER_LEFT_CLICK: "Otvoriť kartu [exploration|e]" # todo: NEW TRANSLATION
+ ALERT_MISSING_EXPLORER_LEFT_CLICK: "Otvoriť kartu [Concept('exploration','prieskum')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HAS_UNMARRIED_CHILDREN_TITLE: "Nesobášne deti" # todo: NEW TRANSLATION
  ALERT_HAS_UNMARRIED_CHILDREN: "[COUNTRY.GetGovernment.GetFullRulerName] má nezadané deti:\n" # todo: CHANGED
  ALERT_HAS_UNMARRIED_CHILDREN_ENTRY: "[CHARACTER.GetName] ([CHARACTER.GetAgeInYears])" # todo: NEW TRANSLATION
  ALERT_HAS_UNMARRIED_CHILDREN_LEFT_CLICK: "Otvoriť vyhľadávač manželstiev" # todo: NEW TRANSLATION
  ALERT_CAN_ARRANGE_INTERNATIONAL_MARRIAGE_TITLE: "Možnosť medzinárodného manželstva" # todo: NEW TRANSLATION
- ALERT_CAN_ARRANGE_INTERNATIONAL_MARRIAGE: "Pre nižšieho člena kráľovskej rodiny je možné dojednať [royal_marriage|e]:" # todo: NEW TRANSLATION
+ ALERT_CAN_ARRANGE_INTERNATIONAL_MARRIAGE: "Pre nižšieho člena kráľovskej rodiny je možné dojednať [Concept('royal_marriage','kráľovský sňatok')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_ARRANGE_INTERNATIONAL_MARRIAGE_ENTRY: "[CHARACTER.GetName] ([CHARACTER.GetAgeInYears])" # todo: NEW TRANSLATION
  ALERT_CAN_REQUEST_AID_TITLE: "Možnosť požiadať o pomoc" # todo: NEW TRANSLATION
- ALERT_CAN_REQUEST_AID: "Môžeme požiadať o pomoc [pope|e]." # todo: CHANGED
+ ALERT_CAN_REQUEST_AID: "Môžeme požiadať o pomoc [Concept('pope','pápeža')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_MEMBER_LEAVING_UNION_TITLE: "Člen opúšťa úniu" # todo: NEW TRANSLATION
- ALERT_HAS_MEMBER_LEAVING_UNION: "Nasledujúci [members|e] opustia [INTERNATIONAL_ORGANIZATION.GetName] po smrti [INTERNATIONAL_ORGANIZATION.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetName]:" # todo: CHANGED
+ ALERT_HAS_MEMBER_LEAVING_UNION: "Nasledujúci [Concept('members','členovia')|e] opustia [INTERNATIONAL_ORGANIZATION.GetName] po smrti [INTERNATIONAL_ORGANIZATION.GetLeaderScopeObjectAtIndex('(int32)0').GetCharacter.GetName]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_HAS_MEMBER_LEAVING_UNION_TEXT: "Zvolanie [parliament_with_icon|e] Únie by mohlo ponúknuť spôsob, ako túto situáciu riešiť!" # todo: NEW TRANSLATION
  ALERT_HAS_MEMBER_LEAVING_ENTRY: "[COUNTRY.GetNameWithFlag] odchádza z dôvodu" # todo: CHANGED
- ALERT_HAS_MEMBER_LEAVING_ENTRY_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [modifiers|e]: $MODIFIER$" # todo: NEW TRANSLATION
- ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [heir_selection|e], [COUNTRY.GetGovernment.GetHeirSelection.GetName]" # todo: CHANGED
- ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION_AND_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [heir_selection|e]: [COUNTRY.GetGovernment.GetHeirSelection.GetName]\nIch [modifiers|e]: $MODIFIER$" # todo: CHANGED
- ALERT_HAS_MEMBER_LEAVING_ENTRY_FALLBACK: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ [COUNTRY.GetGovernment.GetHeir.GetName] bol určený ako [heir|e] silami nad zákonom" # todo: NEW TRANSLATION
- ALERT_HAS_MEMBER_LEAVING_LEFT_CLICK: "Otvoriť zobrazenie [union|e]" # todo: NEW TRANSLATION
+ ALERT_HAS_MEMBER_LEAVING_ENTRY_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [Concept('modifiers','modifikátory')|e]: $MODIFIER$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [Concept('heir_selection','nástupnícke právo')|e], [COUNTRY.GetGovernment.GetHeirSelection.GetName]" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_HAS_MEMBER_LEAVING_ENTRY_HEIR_SELECTION_AND_MODIFIER: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ ich [Concept('heir_selection','nástupnícke právo')|e]: [COUNTRY.GetGovernment.GetHeirSelection.GetName]\nIch [Concept('modifiers','modifikátory')|e]: $MODIFIER$" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_HAS_MEMBER_LEAVING_ENTRY_FALLBACK: "$ALERT_HAS_MEMBER_LEAVING_ENTRY$ [COUNTRY.GetGovernment.GetHeir.GetName] bol určený ako [Concept('heir','dedič')|e] silami nad zákonom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_HAS_MEMBER_LEAVING_LEFT_CLICK: "Otvoriť zobrazenie [Concept('union','únia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION_TITLE: "Následník môže mať lepšie vzdelanie" # todo: NEW TRANSLATION
- ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION: "Náš súčasný [heir|e] momentálne sleduje $EDUCATION$. Môžeme vybrať lepšie [education|e], aby sme ďalej zlepšili ich zručnosti." # todo: CHANGED
+ ALERT_HEIR_CAN_HAVE_BETTER_EDUCATION: "Náš súčasný [Concept('heir','dedič')|e] momentálne sleduje $EDUCATION$. Môžeme vybrať lepšie [Concept('education','vzdelanie')|e], aby sme ďalej zlepšili ich zručnosti." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_INEFFICIENT_MINTING_TITLE: "Neefektívna razba" # todo: NEW TRANSLATION
  ALERT_INEFFICIENT_MINTING: "Naša efektivita razenia je len $EFFICIENCY|V2%R$ kvôli nedostupnosti potrebných tovarov, a znižuje množstvo peňazí, ktoré získavame razením." # todo: CHANGED
  ALERT_CLAN_CAN_SETTLE_TITLE: "Kmeň sa môže usadiť" # todo: NEW TRANSLATION
- ALERT_CLAN_CAN_SETTLE: "Nasledujúci [members|e] sa môžu stať [settled|e], čím prevezmú kontrolu nad našimi [locations|e]:\n[building_based|e] : [opinion|e]\n" # todo: CHANGED
+ ALERT_CLAN_CAN_SETTLE: "Nasledujúci [Concept('members','členovia')|e] sa môžu stať [Concept('settled','osídlený')|e], čím prevezmú kontrolu nad našimi [Concept('locations','lokalitami')|e]:\n[Concept('building_based','Krajina založená na budovách')|e] : [Concept('opinion','názorom')|e]\n" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CLAN_CAN_SETTLE_ENTRY: "[COUNTRY.GetName] : $OPINION|+=$" # todo: NEW TRANSLATION
- ALERT_CLAN_CAN_SETTLE_LEFT_CLICK: "Prepnúť medzi [countries|e]" # todo: NEW TRANSLATION
+ ALERT_CLAN_CAN_SETTLE_LEFT_CLICK: "Prepnúť medzi [Concept('countries','krajinou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HAS_LOW_PURITY: "Nízka čistota" # todo: CHANGED
- ALERT_HAS_LOW_PURITY_TEXT: "Máme [purity|e] pod [GetDefine('NEconomy','LOW_PURITY_THRESHOLD')|w], čo nám prináša nasledujúce efekty:" # todo: NEW TRANSLATION
+ ALERT_HAS_LOW_PURITY_TEXT: "Máme [Concept('purity','čistota')|e] pod [GetDefine('NEconomy','LOW_PURITY_THRESHOLD')|w], čo nám prináša nasledujúce efekty:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_JOIN_SECT_TITLE: "Možnosť pripojiť sa k sektu" # todo: NEW TRANSLATION
- ALERT_CAN_JOIN_SECT: "Môžeme sa pridať k [sect|e]." # todo: CHANGED
- ALERT_CAN_ACTIVATE_AVATAR: "#T Môžeme aktivovať avatara#!\nMôžeme aktivovať [avatar|e]." # todo: NEW TRANSLATION
+ ALERT_CAN_JOIN_SECT: "Môžeme sa pridať k [Concept('sect','sekte')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_CAN_ACTIVATE_AVATAR: "#T Môžeme aktivovať avatara#!\nMôžeme aktivovať [Concept('avatar','avatár')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_INVITE_RELIGIOUS_FIGURE_TITLE: "Možnosť pozvať náboženskú osobnosť" # todo: NEW TRANSLATION
- ALERT_CAN_INVITE_RELIGIOUS_FIGURE: "Môžeme pozvať [religious_figure|e]." # todo: CHANGED
+ ALERT_CAN_INVITE_RELIGIOUS_FIGURE: "Môžeme pozvať [Concept('religious_figure','náboženský predstaviteľ')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ALERT_LACK_SOCIETAL_VALUE_REQUIREMENTS_FOR_GOVERNMENT_REFORM: "Vládna reforma sa chystá vypršať" # todo: CHANGED
  ALERT_LACK_SOCIETAL_VALUE_REQUIREMENTS_FOR_GOVERNMENT_REFORM_ENTRY: "$BULLET_WITH_TAB$$REFORM$ bude odstránená o $MONTHS|w$ mesiace kvôli tomu, že $SOCIETAL_VALUE$ klesla pod $THRESHOLD|w$ ($VALUE|r$/mesiac)." # todo: NEW TRANSLATION
  ALERT_HAS_NOT_ENOUGH_GOODS_FOR_ANY_SHIP_REPAIRS: "Lode sa neopravujú" # todo: CHANGED
- ALERT_HAS_NOT_ENOUGH_GOODS_FOR_ANY_SHIP_REPAIRS_TEXT: "[ships|e] sa neopravujú kvôli nedostatku [goods|e] na nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
+ ALERT_HAS_NOT_ENOUGH_GOODS_FOR_ANY_SHIP_REPAIRS_TEXT: "[Concept('ships','Lode')|e] sa neopravujú kvôli nedostatku [Concept('goods','tovarom')|e] na nasledujúcich [Concept('markets','trhy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS: "Lode sa opravujú pomaly" # todo: CHANGED
  ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_ENTRY: "[GOODS.GetName] : $AMOUNT$" # todo: NEW TRANSLATION
- ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TEXT: "[ships|e] sa opravujú pomaly kvôli nedostatku [goods|e] na nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
- ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TOOLTIP: "#T Chýbajú [goods|e] potrebné na opravu v [LackingGoodsForRepairEntry.GetMarket.GetName]#!" # todo: NEW TRANSLATION
- ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TOOLTIP_TEXT: "Nasledujúce [goods|e] sú potrebné na opravu [ships|e]:" # todo: NEW TRANSLATION
+ ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TEXT: "[Concept('ships','Lode')|e] sa opravujú pomaly kvôli nedostatku [Concept('goods','tovarom')|e] na nasledujúcich [Concept('markets','trhy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TOOLTIP: "#T Chýbajú [Concept('goods','tovary')|e] potrebné na opravu v [LackingGoodsForRepairEntry.GetMarket.GetName]#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_HAS_NOT_ENOUGH_GOODS_FOR_SHIP_REPAIRS_TOOLTIP_TEXT: "Nasledujúce [Concept('goods','tovary')|e] sú potrebné na opravu [Concept('ships','lode')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_IS_AT_FORT_LIMIT_TITLE: "Dosiahnutý limit pevností" # todo: NEW TRANSLATION
- ALERT_IS_AT_FORT_LIMIT: "Sme na limite nášho skóre [fortification|e] [buildings|e] $LIMIT|w$. Dokončenie výstavby nasledujúcich budov bude mať za následok $VALUE|-=2%$ [fort_maintenance|e]:" # todo: CHANGED
+ ALERT_IS_AT_FORT_LIMIT: "Sme na limite nášho skóre [Concept('fortification','opevnenie')|e] [Concept('buildings','budov')|e] $LIMIT|w$. Dokončenie výstavby nasledujúcich budov bude mať za následok $VALUE|-=2%$ [Concept('fort_maintenance','údržba pevností')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_IS_AT_FORT_LIMIT_ENTRY: "$BULLET_WITH_TAB$[BUILDING_TYPE.GetName] v [LOCATION.GetName]" # todo: NEW TRANSLATION
  ALERT_IS_OVER_FORT_LIMIT_TITLE: "Nad limitom pevností" # todo: NEW TRANSLATION
  ALERT_IS_OVER_FORT_LIMIT: "Sme o $OVER_LIMIT|w$ nad naším skóre [fort_limit_with_icon|e] $LIMIT|w a dostávame $VALUE|-=2%$ zvýšené [fort_maintenance_with_icon|e]." # todo: CHANGED
  ALERT_HINT_TITLE: "Ako to vyriešiť?" # todo: NEW TRANSLATION
- ALERT_ENTRY_INC_ESTATE_TAX: "$BULLET$Mohli by sme znížiť [tax|e] pre [ESTATE.GetName]." # todo: NEW TRANSLATION
- ALERT_ENTRY_INC_ESTATE_PRIV: "$BULLET$Mohli by sme udeliť [ESTATE.GetName] [estate_privilege|e], napríklad $INFO$." # todo: NEW TRANSLATION
+ ALERT_ENTRY_INC_ESTATE_TAX: "$BULLET$Mohli by sme znížiť [Concept('tax','daň')|e] pre [ESTATE.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_ENTRY_INC_ESTATE_PRIV: "$BULLET$Mohli by sme udeliť [ESTATE.GetName] [Concept('estate_privilege','privilégiá stavu')|e], napríklad $INFO$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_USE_RELIGIOUS_ACTION_TITLE: "Možné náboženské [Localize('game_concept_actions')]" # todo: NEW TRANSLATION
- ALERT_CAN_USE_RELIGIOUS_ACTION: "Môžeme použiť nasledovné náboženské [actions|e]:" # todo: CHANGED
+ ALERT_CAN_USE_RELIGIOUS_ACTION: "Môžeme použiť nasledovné náboženské [Concept('actions','akcie')|e]:" # todo: CHANGED # todo: CONCEPT CASE
  ALERT_CAN_USE_RELIGIOUS_ACTION_ENTRY: "$BULLET_WITH_TAB$$ACTION_NAME$" # todo: NEW TRANSLATION
  ALERT_HAS_LESS_POWER_IN_UNION: "[Localize('senior_partner')] Stav ohrozený" # todo: CHANGED
- ALERT_HAS_LESS_POWER_IN_UNION_TEXT: "Môžeme stratiť naše postavenie [senior_partner|e] v [AlertHasLessPowerInUnion.GetUnion.GetName]. Nasledujúce [members|e] majú dostatočne vysokú [economical_base|e], aby prevzali senioritu:" # todo: CHANGED
- ALERT_HAS_LESS_POWER_IN_UNION_LEFT_CLICK: "Otvoriť zobrazenie [union|e]"
- ALERT_CTA_CYCLE_LOCATIONS_LEFT_CLICK: "Prechádzať medzi [locations|e]" # todo: NEW TRANSLATION
+ ALERT_HAS_LESS_POWER_IN_UNION_TEXT: "Môžeme stratiť naše postavenie [Concept('senior_partner','hlavného partnera')|e] v [AlertHasLessPowerInUnion.GetUnion.GetName]. Nasledujúce [Concept('members','členovia')|e] majú dostatočne vysokú [Concept('economical_base','ekonomickú základňu')|e], aby prevzali senioritu:" # todo: CHANGED # todo: CONCEPT CASE
+ ALERT_HAS_LESS_POWER_IN_UNION_LEFT_CLICK: "Otvoriť zobrazenie [Concept('union','únia')|e]" # todo: CONCEPT CASE
+ ALERT_CTA_CYCLE_LOCATIONS_LEFT_CLICK: "Prechádzať medzi [Concept('locations','lokalitami')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HAS_DEVASTATED_LOCATIONS: "Zdevastované [Localize('Locations')]" # todo: CHANGED
- ALERT_HAS_DEVASTATED_LOCATIONS_TEXT: "Nasledujúcich [GetDataModelSize(AlertHasDevastatedLocations.GetDevastatedLocations)|w] [locations|e] sú spustošené:" # todo: NEW TRANSLATION
- ALERT_CTA_CYCLE_POLICIES_LEFT_CLICK: "Prechádzať medzi [policies|e]" # todo: NEW TRANSLATION
+ ALERT_HAS_DEVASTATED_LOCATIONS_TEXT: "Nasledujúcich [GetDataModelSize(AlertHasDevastatedLocations.GetDevastatedLocations)|w] [Concept('locations','lokality')|e] sú spustošené:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_CTA_CYCLE_POLICIES_LEFT_CLICK: "Prechádzať medzi [Concept('policies','politikou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_CODIFY_NEW_POLICIES: "Nové [Localize('Policies')] sú dostupné" # todo: CHANGED
- ALERT_CAN_CODIFY_NEW_POLICIES_TEXT: "Nasledujúce [laws|e] je možné kodifikovať pomocou nových [policies|e]:" # todo: NEW TRANSLATION
+ ALERT_CAN_CODIFY_NEW_POLICIES_TEXT: "Nasledujúce [Concept('laws','zákony')|e] je možné kodifikovať pomocou nové [Concept('policies','politiky')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_USE_COUNTRY_ACTION_TITLE: "Krajinná [Localize('game_concept_action')] je znovu dostupná" # todo: NEW TRANSLATION
  ALERT_CAN_USE_HRE_EMPEROR_ACTION_TITLE: "Akcia cisára [Localize('game_concept_action')] je dostupná" # todo: NEW TRANSLATION
  ALERT_CAN_USE_HRE_EMPEROR_ACTIONS: "Nasledujúce cisárske akcie môžu byť použité" # todo: NEW TRANSLATION
  ALERT_CAN_USE_HRE_EMPEROR_ACTIONS_ENTRY: "$BULLET_WITH_TAB$$NAME$" # todo: NEW TRANSLATION
  ALERT_CTA_CYCLE_ACTIONS_LEFT_CLICK: "Prechádzať akcie" # todo: NEW TRANSLATION
- ALERT_CAN_USE_COUNTRY_ACTION: "#T Štátna [Localize('game_concept_action')] je opäť pripravená #!\nKrajinská [action|e] $ACTION_NAME$ môže byť opäť použitá." # todo: NEW TRANSLATION
+ ALERT_CAN_USE_COUNTRY_ACTION: "#T Štátna [Localize('game_concept_action')] je opäť pripravená #!\nKrajinská [Concept('action','akcia')|e] $ACTION_NAME$ môže byť opäť použitá." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_CAN_USE_CHARACTER_ACTION_TITLE: "Akcia postavy [Localize('game_concept_action')] je dostupná" # todo: NEW TRANSLATION
- ALERT_CAN_USE_CHARACTER_ACTION: "$ACTION_NAME$ [character_interaction|e] je teraz dostupná pre použitie naším [ruler|e]." # todo: NEW TRANSLATION
- ALERT_COUNTRY_ACTION_COMING_OFF_COOLDOWN: "#T Krajinná [Localize('game_concept_action')] čoskoro dostupná#!\nKrajinné $ACTION_NAME$ [action|e] bude možné použiť za $MONTHS|W$ mesiacov." # todo: NEW TRANSLATION
- ALERT_ASK_FOR_MONEY_HINT: "Táto akcia si vyžaduje $FAVORS_AMOUNT|0W$@favors! na vykonanie. Predplňte si [favors|e] vopred u jedného alebo viacerých [countries|e]." # todo: NEW TRANSLATION
- ALERT_ASK_FOR_MONEY_HINT_OFF_COOLDOWN: "Táto akcia vyžaduje $FAVORS_AMOUNT|0W$@favors! na vykonanie. Akcia nemusí mať platné [countries|e], na ktoré ju použiť, ak nie je nahromadené dosť @favors!." # todo: NEW TRANSLATION
+ ALERT_CAN_USE_CHARACTER_ACTION: "$ACTION_NAME$ [Concept('character_interaction','Interakcia postáv')|e] je teraz dostupná pre použitie naším [Concept('ruler','panovníkom')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_COUNTRY_ACTION_COMING_OFF_COOLDOWN: "#T Krajinná [Localize('game_concept_action')] čoskoro dostupná#!\nKrajinné $ACTION_NAME$ [Concept('action','akcia')|e] bude možné použiť za $MONTHS|W$ mesiacov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_ASK_FOR_MONEY_HINT: "Táto akcia si vyžaduje $FAVORS_AMOUNT|0W$@favors! na vykonanie. Predplňte si [Concept('favors','láskavostiam')|e] vopred u jedného alebo viacerých [Concept('countries','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_ASK_FOR_MONEY_HINT_OFF_COOLDOWN: "Táto akcia vyžaduje $FAVORS_AMOUNT|0W$@favors! na vykonanie. Akcia nemusí mať platné [Concept('countries','krajiny')|e], na ktoré ju použiť, ak nie je nahromadené dosť @favors!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_STATIC_MODIFIER_TITLE: "Aktívne sankcie" # todo: NEW TRANSLATION
  ALERT_STATIC_MODIFIER: "Nasledujúce modifikátory na nás vplývajú:" # todo: NEW TRANSLATION
  ALERT_STATIC_MODIFIER_ALWAYS_ACTIVE: "vždy aktívne" # todo: NEW TRANSLATION
  ALERT_STATIC_MODIFIER_ENTRY: "$STATIC_MODIFIER$ dáva nasledujúce efekty:\n$STATIC_MODIFIER_EFFECTS$\n\nModifikátor je aktívny z dôvodu:\n$STATIC_MODIFIER_TRIGGERS$" # todo: NEW TRANSLATION
  ALERT_ABOUT_TO_LOSE_GREAT_POWER_STATUS_TITLE: "Ohrozenie statusu veľkej mocnosti" # todo: NEW TRANSLATION
- ALERT_ABOUT_TO_LOSE_GREAT_POWER_STATUS: "Sme blízko strateniu statusu [great_power|e] na #Y $EXPIRATION_DATE$#!!" # todo: NEW TRANSLATION
+ ALERT_ABOUT_TO_LOSE_GREAT_POWER_STATUS: "Sme blízko strateniu statusu [Concept('great_power','veľmoci')|e] na #Y $EXPIRATION_DATE$#!!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_ABOUT_TO_LOSE_HEGEMONY_TITLE: "Ohrozenie hegemónie" # todo: NEW TRANSLATION
- ALERT_ABOUT_TO_LOSE_HEGEMONY: "[hegemonies|e] je v ohrození straty:" # todo: NEW TRANSLATION
+ ALERT_ABOUT_TO_LOSE_HEGEMONY: "[Concept('hegemonies','Hegemónie')|e] je v ohrození straty:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_ABOUT_TO_LOSE_HEGEMONY_ALWAYS_ACTIVE: "vždy aktívne" # todo: NEW TRANSLATION
  ALERT_ABOUT_TO_LOSE_HEGEMONY_ENTRY: "$HEGEMONY$ na #Y $EXPIRATION_DATE$#! kvôli\n$HEGEMONY_TRIGGERS$" # todo: NEW TRANSLATION
- ALERT_ABOUT_TO_LOSE_HEGEMONY_REPLACED_ENTRY: "Ostatné [great_powers|e] budú schopné prevziať $HEGEMONY$ od nás od #Y $EXPIRATION_DATE$#! ďalej. Sme ohrození kvôli\n$HEGEMONY_TRIGGERS$" # todo: NEW TRANSLATION
+ ALERT_ABOUT_TO_LOSE_HEGEMONY_REPLACED_ENTRY: "Ostatné [Concept('great_powers','veľmoci')|e] budú schopné prevziať $HEGEMONY$ od nás od #Y $EXPIRATION_DATE$#! ďalej. Sme ohrození kvôli\n$HEGEMONY_TRIGGERS$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HAS_UPGRADEABLE_BUILDINGS_TITLE: "Budovy možno vylepšiť" # todo: NEW TRANSLATION
- ALERT_UPGRADEABLE_BUILDINGS_TEXT: "[buildings|e] je možné vylepšiť v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
- ALERT_HAS_FEWER_BUREAUCRACIES_TITLE: "Voľné miesta [bureaucracy|e]" # todo: NEW TRANSLATION
+ ALERT_UPGRADEABLE_BUILDINGS_TEXT: "[Concept('buildings','Budovy')|e] je možné vylepšiť v nasledujúcich [Concept('markets','trhy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ALERT_HAS_FEWER_BUREAUCRACIES_TITLE: "Voľné miesta [Concept('bureaucracy','bureaukracia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_HAS_FEWER_BUREAUCRACIES: "Máme $VAL|Y$ voľných [bureaucracy|e] miest, ktoré by mohli byť obsadené." # todo: NEW TRANSLATION
  ALERT_IS_OVER_BUREAUCRACIES_LIMIT_TITLE: "Nad limitom [bureaucracy|e]" # todo: NEW TRANSLATION
- ALERT_IS_OVER_BUREAUCRACIES_LIMIT: "Máme o $VAL|Y$ viac [bureaucracies|e], než náš aktuálny limit povoľuje. Mať viac než limit nám prináša nasledujúce účinky:" # todo: NEW TRANSLATION
+ ALERT_IS_OVER_BUREAUCRACIES_LIMIT: "Máme o $VAL|Y$ viac [Concept('bureaucracies','bureaukracie')|e], než náš aktuálny limit povoľuje. Mať viac než limit nám prináša nasledujúce účinky:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_UPGRADEABLE_BUILDINGS_TOOLTIP: "#T Budovy na vylepšenie v [MarketUpgradeableBuildings.GetMarket.GetName]#!" # todo: NEW TRANSLATION
  ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TITLE: "Dôležité budovy postrádajú vstupy" # todo: NEW TRANSLATION
- ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TEXT: "Dôležité [buildings|e] postrádajú vstupné [goods|e] v nasledujúcich [markets|e]:" # todo: NEW TRANSLATION
+ ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_TEXT: "Dôležité [Concept('buildings','budovy')|e] postrádajú vstupné [Concept('goods','tovary')|e] v nasledujúcich [Concept('markets','trhy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_MARKET: "[MARKET.GetName]:" # todo: NEW TRANSLATION
  ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_GOODS: "  @[GOODS.GetKey]![GOODS.GetName]:" # todo: NEW TRANSLATION
  ALERT_IMPORTANT_BUILDINGS_MISSING_INPUT_BUILDING: "$BULLET_WITH_TAB$ $GOODS_AMOUNT$ chýba pre $BUILDING_AMOUNT|0$ $BUILDING_NAME$" # todo: NEW TRANSLATION
  ALERT_HIGH_COMPLACENCY_TITLE: "Vysoká spokojnosť" # todo: NEW TRANSLATION
- ALERT_HIGH_COMPLACENCY_TEXT: "Máme [complacency|e] vo výške $VAL|2R$ a mení sa o $CHANGE|=R$ každý mesiac." # todo: NEW TRANSLATION
+ ALERT_HIGH_COMPLACENCY_TEXT: "Máme [Concept('complacency','bezstarostnosť')|e] vo výške $VAL|2R$ a mení sa o $CHANGE|=R$ každý mesiac." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALERTS_SETTINGS_TOGGLE: "Prepínať menu upozornení" # todo: NEW TRANSLATION
  ALERTS_SETTINGS_TITLE: "Menu upozornení" # todo: NEW TRANSLATION
  DISCARDED_ALERTS: "Vynechané upozornenia" # todo: NEW TRANSLATION

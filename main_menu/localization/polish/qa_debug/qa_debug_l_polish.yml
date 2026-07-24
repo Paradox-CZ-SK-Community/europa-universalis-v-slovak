@@ -3,10 +3,10 @@
  qa_debug.1.desc: "Aké chaotické počasie chcete?" # todo: NEW TRANSLATION
  qa_debug.2.title: "Vojenské menu" # todo: NEW TRANSLATION
  qa_debug.2.desc: "Vyberte vojenské zdroje, ktoré chcete." # todo: NEW TRANSLATION
- qa_debug.2.a: "[manpower|e]" # todo: NEW TRANSLATION
- qa_debug.2.b: "[sailors|e]" # todo: NEW TRANSLATION
- qa_debug.2.c: "[army_tradition|e]" # todo: NEW TRANSLATION
- qa_debug.2.d: "[navy_tradition|e]" # todo: NEW TRANSLATION
+ qa_debug.2.a: "[Concept('manpower','Živá sila')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ qa_debug.2.b: "[Concept('sailors','Námorníci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ qa_debug.2.c: "[Concept('army_tradition','Armádna tradícia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ qa_debug.2.d: "[Concept('navy_tradition','Námorná tradícia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.3.title: "Náboženské menu" # todo: NEW TRANSLATION
  qa_debug.3.desc: "Vyberte náboženskú skupinu, na ktorú sa chcete konvertovať." # todo: NEW TRANSLATION
  qa_debug.3.a: "[ShowReligionGroupName('christian')]" # todo: NEW TRANSLATION
@@ -81,9 +81,9 @@
  qa_debug.5.title: "Menu čistenia" # todo: NEW TRANSLATION
  qa_debug.5.desc: "Vyberte, ktorá časť vašej spoločnosti má byť prečistená." # todo: NEW TRANSLATION
  qa_debug.5.a: "Vyvraždiť postavy z môjho zoznamu." # todo: NEW TRANSLATION
- qa_debug.5.a.tt: "Zabiť VŠETKY [characters|E] v [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ qa_debug.5.a.tt: "Zabiť VŠETKY [Concept('characters','postavy')|E] v [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.5.b: "Tento celý štát musí byť prečistený." # todo: NEW TRANSLATION
- qa_debug.5.b.tt: "Zabiť VŠETKY [pops|E] v [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ qa_debug.5.b.tt: "Zabiť VŠETKY [Concept('pops','populácie')|E] v [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.5.zzz: "Odstrániť všetky modifikátory." # todo: NEW TRANSLATION
  qa_debug.6.title: "Menu typu vlády" # todo: NEW TRANSLATION
  qa_debug.6.desc: "Vyberte typ vlády, ktorým chcete byť." # todo: NEW TRANSLATION
@@ -100,15 +100,15 @@
  qa_debug.8.title: "Menu anektovania" # todo: NEW TRANSLATION
  qa_debug.8.desc: "Rozhodnite, či chcete plne kolonizovať / anektovať svoju domovskú oblasť / región / podkontinent / kontinent.\nVAROVANIE: Kolonizovanie celého kontinentu môže spomaliť hru." # todo: NEW TRANSLATION
  qa_debug.8.a: "Stačí mi provincia." # todo: NEW TRANSLATION
- qa_debug_annex_province_tt: "Kolonizovať celý [capital_location.GetProvinceDefinition.GetName] [province_definition|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION
+ qa_debug_annex_province_tt: "Kolonizovať celý [capital_location.GetProvinceDefinition.GetName] [Concept('province_definition','definícia provincie')|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.8.b: "Oblasť postačí." # todo: NEW TRANSLATION
- qa_debug_annex_area_tt: "Kolonizovať celú [capital_location.GetArea.GetName] [area|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION
+ qa_debug_annex_area_tt: "Kolonizovať celú [capital_location.GetArea.GetName] [Concept('area','oblasť')|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.8.c: "Chcem len, aby moja domovská oblasť bola pod mojou kontrolou." # todo: NEW TRANSLATION
- qa_debug_annex_region_tt: "Kolonizovať celý [capital_location.GetRegion.GetName] [region|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION
+ qa_debug_annex_region_tt: "Kolonizovať celý [capital_location.GetRegion.GetName] [Concept('region','región')|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.8.d: "Vziať celý podkontinent." # todo: NEW TRANSLATION
- qa_debug_annex_sub_continent_tt: "Kolonizovať celý [capital_location.GetRegion.GetSubContinent.GetName] [sub_continent|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION
+ qa_debug_annex_sub_continent_tt: "Kolonizovať celý [capital_location.GetRegion.GetSubContinent.GetName] [Concept('sub_continent','subkontinent')|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt môže spôsobiť desync hry" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.8.e: "Dajte mi celý kontinent!" # todo: NEW TRANSLATION
- qa_debug_annex_continent_tt: "Kolonizovať celý [capital_location.GetRegion.GetSubContinent.GetContinent.GetName] [continent|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt SPÔSOBÍ zasekávanie hry" # todo: NEW TRANSLATION
+ qa_debug_annex_continent_tt: "Kolonizovať celý [capital_location.GetRegion.GetSubContinent.GetContinent.GetName] [Concept('continent','kontinent')|e]. Hráčske krajiny tým nebudú ovplyvnené.\nVAROVANIE: Tento efekt SPÔSOBÍ zasekávanie hry" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.9.title: "Menu rozvoja" # todo: NEW TRANSLATION
  qa_debug.9.desc: "Aký druh rozvoja sa má pridať do vašich provincií?" # todo: NEW TRANSLATION
  qa_debug.9.a: "Všetky moje lokality sú metropoly!" # todo: NEW TRANSLATION
@@ -176,61 +176,61 @@
  qa_debug.12.title: "Menu lokality" # todo: NEW TRANSLATION
  qa_debug.12.desc: "Vyberte úpravu vašich lokalít a provincií." # todo: NEW TRANSLATION
  qa_debug.12.a: "Odstrániť všetku autonómiu v mojich provinciách." # todo: NEW TRANSLATION
- qa_add_control_to_all_owned_locations_tt: "Každá vlastnená lokalita získa [ShowNamedValue('control_radical_bonus')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ qa_add_control_to_all_owned_locations_tt: "Každá vlastnená lokalita získa [ShowNamedValue('control_radical_bonus')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.b: "Prineste prosperitu mojej ríši!" # todo: NEW TRANSLATION
- qa_add_prosperity_to_all_owned_locations_tt: "Každá vlastnená lokalita získa [ShowNamedValue('prosperity_radical_bonus')|+=2%] [prosperity|e]" # todo: NEW TRANSLATION
+ qa_add_prosperity_to_all_owned_locations_tt: "Každá vlastnená lokalita získa [ShowNamedValue('prosperity_radical_bonus')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.c: "Rozvíjajte moju krajinu!" # todo: NEW TRANSLATION
- qa_add_development_to_all_owned_locations_tt: "Každá vlastnená lokalita získa [ShowNamedValue('development_weak_bonus')|+=] [development|e]" # todo: NEW TRANSLATION
+ qa_add_development_to_all_owned_locations_tt: "Každá vlastnená lokalita získa [ShowNamedValue('development_weak_bonus')|+=] [Concept('development','rozvoj')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.d: "Koláč! Každý dostane koláč!" # todo: NEW TRANSLATION
- qa_add_food_to_all_owned_provinces_tt: "Každá vlastnená provincia získa #G +100#! [food|e]" # todo: NEW TRANSLATION
+ qa_add_food_to_all_owned_provinces_tt: "Každá vlastnená provincia získa #G +100#! [Concept('food','potraviny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.e: "Autonómia pre každého!" # todo: NEW TRANSLATION
- qa_remove_control_to_all_owned_locations_tt: "Každá vlastnená lokalita stratí [ShowNamedValue('control_radical_penalty')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ qa_remove_control_to_all_owned_locations_tt: "Každá vlastnená lokalita stratí [ShowNamedValue('control_radical_penalty')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.f: "Zdrvujúce spustošenie nad všetkými!" # todo: NEW TRANSLATION
- qa_remove_prosperity_to_all_owned_locations_tt: "Každá vlastnená lokalita stratí [ShowNamedValue('prosperity_radical_penalty')|+=2%] [prosperity|e]" # todo: NEW TRANSLATION
+ qa_remove_prosperity_to_all_owned_locations_tt: "Každá vlastnená lokalita stratí [ShowNamedValue('prosperity_radical_penalty')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.g: "Zrútiť tieto domy!" # todo: NEW TRANSLATION
- qa_remove_development_to_all_owned_locations_tt: "Každá vlastnená lokalita stratí [ShowNamedValue('development_weak_penalty')|+=] [development|e]" # todo: NEW TRANSLATION
+ qa_remove_development_to_all_owned_locations_tt: "Každá vlastnená lokalita stratí [ShowNamedValue('development_weak_penalty')|+=] [Concept('development','rozvoj')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.h: "Dovoľte mi pripraviť jedlo pre všetkých." # todo: NEW TRANSLATION
- qa_remove_food_to_all_owned_provinces_tt: "Každá vlastnená provincia stratí #R 100#! [food|e]" # todo: NEW TRANSLATION
+ qa_remove_food_to_all_owned_provinces_tt: "Každá vlastnená provincia stratí #R 100#! [Concept('food','potraviny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.12.i: "Všetky cesty vedú do mojej kapitály." # todo: NEW TRANSLATION
- qa_build_roads_to_capital_tt: "Každá vlastnená lokalita získa [road|e] do [ROOT.GetCountry.GetCapital.GetName]" # todo: NEW TRANSLATION
+ qa_build_roads_to_capital_tt: "Každá vlastnená lokalita získa [Concept('road','cesta')|e] do [ROOT.GetCountry.GetCapital.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.title: "Menu inštitúcií" # todo: NEW TRANSLATION
  qa_debug.13.desc: "Ktorú inštitúciu chcete rozšíriť vo vašej krajine?" # todo: NEW TRANSLATION
  qa_debug.13.feudalism: "[ShowInstitutionName('feudalism')]" # todo: NEW TRANSLATION
- qa_debug.13.feudalism_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('feudalism')]" # todo: NEW TRANSLATION
+ qa_debug.13.feudalism_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('feudalism')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.legalism: "[ShowInstitutionName('legalism')]" # todo: NEW TRANSLATION
- qa_debug.13.legalism_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('legalism')]" # todo: NEW TRANSLATION
+ qa_debug.13.legalism_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('legalism')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.meritocracy: "[ShowInstitutionName('meritocracy')]" # todo: NEW TRANSLATION
- qa_debug.13.meritocracy_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('meritocracy')]" # todo: NEW TRANSLATION
+ qa_debug.13.meritocracy_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('meritocracy')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.renaissance: "[ShowInstitutionName('renaissance')]" # todo: NEW TRANSLATION
- qa_debug.13.renaissance_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('renaissance')]" # todo: NEW TRANSLATION
+ qa_debug.13.renaissance_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('renaissance')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.banking: "[ShowInstitutionName('banking')]" # todo: NEW TRANSLATION
- qa_debug.13.banking_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('banking')]" # todo: NEW TRANSLATION
+ qa_debug.13.banking_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('banking')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.professional_armies: "[ShowInstitutionName('professional_armies')]" # todo: NEW TRANSLATION
- qa_debug.13.professional_armies_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('professional_armies')]" # todo: NEW TRANSLATION
+ qa_debug.13.professional_armies_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('professional_armies')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.new_world: "[ShowInstitutionName('new_world')]" # todo: NEW TRANSLATION
- qa_debug.13.new_world_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('new_world')]" # todo: NEW TRANSLATION
+ qa_debug.13.new_world_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('new_world')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.printing_press: "[ShowInstitutionName('printing_press')]" # todo: NEW TRANSLATION
- qa_debug.13.printing_press_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('printing_press')]" # todo: NEW TRANSLATION
+ qa_debug.13.printing_press_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('printing_press')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.pike_and_shot: "[ShowInstitutionName('pike_and_shot')]" # todo: NEW TRANSLATION
- qa_debug.13.pike_and_shot_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('pike_and_shot')]" # todo: NEW TRANSLATION
+ qa_debug.13.pike_and_shot_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('pike_and_shot')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.confessionalism: "[ShowInstitutionName('confessionalism')]" # todo: NEW TRANSLATION
- qa_debug.13.confessionalism_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('confessionalism')]" # todo: NEW TRANSLATION
+ qa_debug.13.confessionalism_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('confessionalism')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.global_trade: "[ShowInstitutionName('global_trade')]" # todo: NEW TRANSLATION
- qa_debug.13.global_trade_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('global_trade')]" # todo: NEW TRANSLATION
+ qa_debug.13.global_trade_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('global_trade')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.artillery_institution: "[ShowInstitutionName('artillery_institution')]" # todo: NEW TRANSLATION
- qa_debug.13.artillery_institution_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('artillery_institution')]" # todo: NEW TRANSLATION
+ qa_debug.13.artillery_institution_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('artillery_institution')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.manufactories: "[ShowInstitutionName('manufactories')]" # todo: NEW TRANSLATION
- qa_debug.13.manufactories_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('manufactories')]" # todo: NEW TRANSLATION
+ qa_debug.13.manufactories_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('manufactories')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.scientific_revolution: "[ShowInstitutionName('scientific_revolution')]" # todo: NEW TRANSLATION
- qa_debug.13.scientific_revolution_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('scientific_revolution')]" # todo: NEW TRANSLATION
+ qa_debug.13.scientific_revolution_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('scientific_revolution')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.military_revolution: "[ShowInstitutionName('military_revolution')]" # todo: NEW TRANSLATION
- qa_debug.13.military_revolution_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('military_revolution')]" # todo: NEW TRANSLATION
+ qa_debug.13.military_revolution_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('military_revolution')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.enlightenment: "[ShowInstitutionName('enlightenment')]" # todo: NEW TRANSLATION
- qa_debug.13.enlightenment_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('enlightenment')]" # todo: NEW TRANSLATION
+ qa_debug.13.enlightenment_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('enlightenment')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.industrialization: "[ShowInstitutionName('industrialization')]" # todo: NEW TRANSLATION
- qa_debug.13.industrialization_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('industrialization')]" # todo: NEW TRANSLATION
+ qa_debug.13.industrialization_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('industrialization')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.13.levee_en_masse: "[ShowInstitutionName('levee_en_masse')]" # todo: NEW TRANSLATION
- qa_debug.13.levee_en_masse_tt: "Každá vlastnená [location|e] prijme [ShowInstitutionName('levee_en_masse')]" # todo: NEW TRANSLATION
+ qa_debug.13.levee_en_masse_tt: "Každá vlastnená [Concept('location','lokalita')|e] prijme [ShowInstitutionName('levee_en_masse')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.14.title: "Menu exkomunikácie" # todo: NEW TRANSLATION
  qa_debug.14.desc: "Kacírske myšlienky vyvolajú exkomunikáciu." # todo: NEW TRANSLATION
  qa_debug.14.a: "Pápež mi nemôže zakázať, čo si o ňom myslím!" # todo: NEW TRANSLATION
@@ -252,13 +252,13 @@
  qa_debug.18.title: "Menu vojny" # todo: NEW TRANSLATION
  qa_debug.18.desc: "Vojna. Vojna sa nikdy nemení. Čo sa má stať s vašou krajinou?" # todo: NEW TRANSLATION
  qa_debug.18.a: "Obsadiť všetky lokality mojich nepriateľov!" # todo: NEW TRANSLATION
- qa_debug_occupy_all_enemy_locations_tt: "Každá nepriateľská [location|e] bude obsadená [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ qa_debug_occupy_all_enemy_locations_tt: "Každá nepriateľská [Concept('location','lokalita')|e] bude obsadená [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.18.b: "Vlastne, nechcem žiadne vojny nasledujúcich päť rokov." # todo: NEW TRANSLATION
- qa_debug_create_truce_with_everyone_to_you_tt: "Vytvoriť prímerie so všetkými susednými [country|e]" # todo: NEW TRANSLATION
+ qa_debug_create_truce_with_everyone_to_you_tt: "Vytvoriť prímerie so všetkými susednými [Concept('country','krajinami')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.18.c: "Premeniť ich kosti na prach!" # todo: NEW TRANSLATION
  qa_debug.18.d: "Ich vzácne lokality sú teraz naše!" # todo: NEW TRANSLATION
- qa_debug_seize_all_non_capital_locations_tt: "Všetky nepriateľské [locations|e], ktoré nie sú [capital|e], budú zabrané [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
- qa_debug_kill_all_enemy_units: "Každá nepriateľská [unit|e] bude zničená" # todo: NEW TRANSLATION
+ qa_debug_seize_all_non_capital_locations_tt: "Všetky nepriateľské [Concept('locations','lokality')|e], ktoré nie sú [Concept('capital','hlavné mesto')|e], budú zabrané [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ qa_debug_kill_all_enemy_units: "Každá nepriateľská [Concept('unit','jednotka')|e] bude zničená" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.19.title: "Menu medzinárodnej organizácie" # todo: NEW TRANSLATION
  qa_debug.19.desc: "Vyberte medzinárodnú organizáciu, ktorú chcete manipulovať." # todo: NEW TRANSLATION
  qa_debug.19.a: "Vybrať [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
@@ -287,7 +287,7 @@
  qa_debug.21.h: "Podmaniť [target_8.GetName]" # todo: NEW TRANSLATION
  qa_debug.21.i: "Podmaniť [target_9.GetName]" # todo: NEW TRANSLATION
  qa_debug.21.zzz: "Podmaniť všetkých našich susedov" # todo: NEW TRANSLATION
- qa_debug.vasssalize_all_neighbors: "Všetky susedné [countries|e] sa stanú [ShowSubjectTypeName('vassal')] [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ qa_debug.vasssalize_all_neighbors: "Všetky susedné [Concept('countries','krajiny')|e] sa stanú [ShowSubjectTypeName('vassal')] [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.22.title: "Menu revolúcie" # todo: NEW TRANSLATION
  qa_debug.22.desc: "Nech žije revolúcia!" # todo: NEW TRANSLATION
  qa_debug.22.a: "Prijať revolúciu!" # todo: NEW TRANSLATION
@@ -317,27 +317,27 @@
  qa_debug.26.title: "Menu generátora populácií" # todo: NEW TRANSLATION
  qa_debug.26.desc: "Aké populácie sa majú vytvoriť vo veľkom?" # todo: NEW TRANSLATION
  qa_debug.26.a: "Rozmiestniť VŠETKÝCH ľudí" # todo: NEW TRANSLATION
- qa_debug.26.a.tt: "Každá vlastnená [location|e] získa #G +100%#! dodatočných [pops|e]" # todo: NEW TRANSLATION
+ qa_debug.26.a.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #G +100%#! dodatočných [Concept('pops','populácií')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.26.nobles: "Vytvoriť viac $nobles$" # todo: NEW TRANSLATION
- qa_debug.26.nobles.tt: "Každá vlastnená [location|e] získa #G +100%#! dodatočných [ShowPopTypeName('nobles')]" # todo: NEW TRANSLATION
+ qa_debug.26.nobles.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #G +100%#! dodatočných [ShowPopTypeName('nobles')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.26.clergy: "Vytvoriť viac $clergy$" # todo: NEW TRANSLATION
- qa_debug.26.clergy.tt: "Každá vlastnená [location|e] získa #G +100%#! dodatočných [ShowPopTypeName('clergy')]" # todo: NEW TRANSLATION
+ qa_debug.26.clergy.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #G +100%#! dodatočných [ShowPopTypeName('clergy')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.26.burghers: "Vytvoriť viac $burghers$" # todo: NEW TRANSLATION
- qa_debug.26.burghers.tt: "Každá vlastnená [location|e] získa #G +100%#! dodatočných [ShowPopTypeName('burghers')]" # todo: NEW TRANSLATION
+ qa_debug.26.burghers.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #G +100%#! dodatočných [ShowPopTypeName('burghers')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.26.peasants: "Vytvoriť viac $peasants$" # todo: NEW TRANSLATION
- qa_debug.26.peasants.tt: "Každá vlastnená [location|e] získa #G +100%#! dodatočných [ShowPopTypeName('peasants')]" # todo: NEW TRANSLATION
+ qa_debug.26.peasants.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #G +100%#! dodatočných [ShowPopTypeName('peasants')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.26.tribesmen: "Vytvoriť viac $tribesmen$" # todo: NEW TRANSLATION
- qa_debug.26.tribesmen.tt: "Každá vlastnená [location|e] získa #G +100%#! dodatočných [ShowPopTypeName('tribesmen')]" # todo: NEW TRANSLATION
+ qa_debug.26.tribesmen.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #G +100%#! dodatočných [ShowPopTypeName('tribesmen')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.26.slaves: "Vytvoriť viac $slaves$" # todo: NEW TRANSLATION
- qa_debug.26.slaves.tt: "Každá vlastnená [location|e] získa #G +100%#! dodatočných [ShowPopTypeName('slaves')]" # todo: NEW TRANSLATION
+ qa_debug.26.slaves.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #G +100%#! dodatočných [ShowPopTypeName('slaves')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.27.title: "Menu integrácie lokácií" # todo: NEW TRANSLATION
  qa_debug.27.desc: "Urobiť core alebo integrovať všetky vlastnené lokality." # todo: NEW TRANSLATION
  qa_debug.27.a: "Svet je moje core." # todo: NEW TRANSLATION
- qa_debug.27.a.tt: "Každá vlastnená [location|e] sa stane [core|e]" # todo: NEW TRANSLATION
+ qa_debug.27.a.tt: "Každá vlastnená [Concept('location','lokalita')|e] sa stane [Concept('core','jadro')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.27.b: "Tu vykonáme matematickú integráciu." # todo: NEW TRANSLATION
- qa_debug.27.b.tt: "Každá vlastnená [location|e] získa #Y integrated#!" # todo: NEW TRANSLATION
+ qa_debug.27.b.tt: "Každá vlastnená [Concept('location','lokalita')|e] získa #Y integrated#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.28.title: "Menu špeciálnych jednotiek" # todo: NEW TRANSLATION
- qa_debug.28.desc: "Vyberte, aké špeciálne jednotky chcete vyrenderovať výberom mena [country|e], aby ste získali zoznam ich potenciálnych jednotiek na vytvorenie.\nPosledná možnosť vám umožňuje nastaviť, koľko z nich sa objaví." # todo: NEW TRANSLATION
+ qa_debug.28.desc: "Vyberte, aké špeciálne jednotky chcete vyrenderovať výberom mena [Concept('country','krajina')|e], aby ste získali zoznam ich potenciálnych jednotiek na vytvorenie.\nPosledná možnosť vám umožňuje nastaviť, koľko z nich sa objaví." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  qa_debug.28.tt: "Táto možnosť má prístup k nasledujúcim špeciálnym jednotkám:" # todo: NEW TRANSLATION
  qa_debug.28.b: "Vyberte, koľko jednotiek sa má vytvoriť." # todo: NEW TRANSLATION
  qa_debug.28.b.tt: "Získajte výber pevných hodnôt počtu jednotiek, ktoré môžete vytvoriť" # todo: NEW TRANSLATION

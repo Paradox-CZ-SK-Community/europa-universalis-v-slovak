@@ -11,7 +11,7 @@
  CIRCLE_MEMBER: "Člen kruhu" # todo: NEW TRANSLATION
  CIRCLE_SATISFACTION: "Spokojnosť kruhu" # todo: NEW TRANSLATION
  circle_satisfaction: "Spokojnosť kruhu" # todo: NEW TRANSLATION
- HRE_CIRCLE_LEADER_MODIFIER_HEADER: "Bonus vodcu pri $VALUE|0$ [circle_satisfaction|e]" # todo: NEW TRANSLATION
+ HRE_CIRCLE_LEADER_MODIFIER_HEADER: "Bonus vodcu pri $VALUE|0$ [Concept('circle_satisfaction','spokojnosti okruhu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CIRCLE_DORMANT: "Neaktívny" # todo: NEW TRANSLATION
  CIRCLE_CONTESTED: "Sporný" # todo: NEW TRANSLATION
  CIRCLE_UNCIRCLED_MEMBER: "Nie je súčasťou žiadneho cisárskeho kruhu" # todo: NEW TRANSLATION
@@ -21,7 +21,7 @@
  HRE_CIRCLE_TOGGLE_MEMBERS: "Prepnúť zobrazenie členov kruhu" # todo: NEW TRANSLATION
  HRE_CIRCLE_TOTAL_VOTE_POWER: "Kombinovaná volebná sila tohto kruhu v Ríšskom sneme je #G +[InternationalOrganizationsView.GetCircleTotalParliamentVotes(Country.Self)|0]#!" # todo: NEW TRANSLATION
  HRE_CIRCLE_SATISFACTION_TT_VALUE: "Aktuálna spokojnosť — [ImperialCircle.GetSatisfaction|0]" # todo: NEW TRANSLATION
- HRE_CIRCLE_SATISFACTION_TT_IMPACT: "Vyššia spokojnosť zlepšuje [prestige|e] a [diplomatic_reputation|e] vodcu kruhu.\n#Y < 30#! — Členovia kruhu sú nespokojní. Vodca kruhu môže čeliť výzvam.\n#R < 15#! — Členovia kruhu môžu otvorene spochybniť autoritu vodcu." # todo: NEW TRANSLATION
+ HRE_CIRCLE_SATISFACTION_TT_IMPACT: "Vyššia spokojnosť zlepšuje [Concept('prestige','prestíž')|e] a [Concept('diplomatic_reputation','diplomatická reputácia')|e] vodcu kruhu.\n#Y < 30#! — Členovia kruhu sú nespokojní. Vodca kruhu môže čeliť výzvam.\n#R < 15#! — Členovia kruhu môžu otvorene spochybniť autoritu vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CIRCLE_WAR_CALL_DEFENSIVE_WAR: "Kruh sa bráni proti agresorovi mimo Ríše" # todo: NEW TRANSLATION
  CIRCLE_LOW_SATISFACTION_GRIEVANCE: "Spokojnosť kruhu je nízka — existuje sťažnosť" # todo: NEW TRANSLATION
  join_an_imperial_circle: "Pripojiť sa ku cisárskemu kruhu" # todo: NEW TRANSLATION
@@ -34,20 +34,20 @@
  bribe_imperial_circle_act: "Podplatiť [SCOPE.sCountry('target').GetName], aby podporil náš návrh v sneme." # todo: NEW TRANSLATION
  bribe_imperial_circle_effect_text: "[SCOPE.sCountry('actor').GetName] podplatí kruh [SCOPE.sCountry('target').GetName], aby podporil cisársky návrh." # todo: NEW TRANSLATION
  bribe_imperial_circle_effect_text_past: "[SCOPE.sCountry('actor').GetName] podplatil kruh [SCOPE.sCountry('target').GetName], aby podporil cisársky návrh." # todo: NEW TRANSLATION
- bribe_imperial_circle_members_tt: "Každý ďalší člen kruhu [SCOPE.sCountry('target').GetName] dostane [SCOPE.GetValue('bribe_member_share')|0V]@gold! a jeho [vote|e] v aktuálnom návrhu Ríšskeho snemu je zablokované podľa voľby cisára." # todo: NEW TRANSLATION
- BRIBE_IMPERIAL_CIRCLE_CTRL_HINT: "Podplatiť celý [imperial_circle|E]" # todo: NEW TRANSLATION
+ bribe_imperial_circle_members_tt: "Každý ďalší člen kruhu [SCOPE.sCountry('target').GetName] dostane [SCOPE.GetValue('bribe_member_share')|0V]@gold! a jeho [Concept('vote','hlasu')|e] v aktuálnom návrhu Ríšskeho snemu je zablokované podľa voľby cisára." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BRIBE_IMPERIAL_CIRCLE_CTRL_HINT: "Podplatiť celý [Concept('imperial_circle','cisársky okruh')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  approve_imperial_circle_proposal: "Schváliť návrh" # todo: NEW TRANSLATION
  approve_imperial_circle_proposal_desc: "Ako vedúci kruhu zablokujte každého člena tohto kruhu (vrátane nás) tak, aby hlasovali za návrh predložený Ríšskemu snemu. Nie je nutné žiadne platenie, ale blokovanie platí do uzavretia rozhodnutia." # todo: NEW TRANSLATION
  approve_imperial_circle_proposal_act: "Donútiť [SCOPE.sImperialCircle('target').GetName] hlasovať za návrh." # todo: NEW TRANSLATION
  approve_imperial_circle_proposal_effect_text: "[SCOPE.sCountry('actor').GetName] donúti [SCOPE.sImperialCircle('target').GetName] hlasovať za cisársky návrh." # todo: NEW TRANSLATION
  approve_imperial_circle_proposal_effect_text_past: "[SCOPE.sCountry('actor').GetName] donútil [SCOPE.sImperialCircle('target').GetName] hlasovať za cisársky návrh." # todo: NEW TRANSLATION
- approve_imperial_circle_proposal_members_tt: "Každý člen [SCOPE.sImperialCircle('target').GetName] má svoj [vote|e] v aktívnom návrhu Ríšskeho snemu zablokovaný na navrhovanej politike." # todo: NEW TRANSLATION
+ approve_imperial_circle_proposal_members_tt: "Každý člen [SCOPE.sImperialCircle('target').GetName] má svoj [Concept('vote','hlas')|e] v aktívnom návrhu Ríšskeho snemu zablokovaný na navrhovanej politike." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  oppose_imperial_circle_proposal: "Oponovať návrhu" # todo: NEW TRANSLATION
  oppose_imperial_circle_proposal_desc: "Ako vedúci kruhu zablokujte každého člena tohto kruhu (vrátane nás) tak, aby hlasovali proti návrhu predloženému Ríšskemu snemu. Hlasy sú zablokované pri súčasnej politike, ak je zaznamenaná, inak kruh zdržuje hlasovania." # todo: NEW TRANSLATION
  oppose_imperial_circle_proposal_act: "Donútiť [SCOPE.sImperialCircle('target').GetName] hlasovať proti návrhu." # todo: NEW TRANSLATION
  oppose_imperial_circle_proposal_effect_text: "[SCOPE.sCountry('actor').GetName] donúti [SCOPE.sImperialCircle('target').GetName] hlasovať proti cisárskemu návrhu." # todo: NEW TRANSLATION
  oppose_imperial_circle_proposal_effect_text_past: "[SCOPE.sCountry('actor').GetName] donútil [SCOPE.sImperialCircle('target').GetName] hlasovať proti cisárskemu návrhu." # todo: NEW TRANSLATION
- oppose_imperial_circle_proposal_members_tt: "Každý člen [SCOPE.sImperialCircle('target').GetName] má svoj [vote|e] v aktívnom návrhu Ríšskeho snemu zablokovaný na súčasnej politike, alebo na zdržaní sa hlasovania, ak nie je žiadna politika zaznamenaná." # todo: NEW TRANSLATION
+ oppose_imperial_circle_proposal_members_tt: "Každý člen [SCOPE.sImperialCircle('target').GetName] má svoj [Concept('vote','hlas')|e] v aktívnom návrhu Ríšskeho snemu zablokovaný na súčasnej politike, alebo na zdržaní sa hlasovania, ak nie je žiadna politika zaznamenaná." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  call_imperial_circle_to_war: "Privolať kruh do vojny" # todo: NEW TRANSLATION
  call_imperial_circle_to_war_desc: "Požiadajte vedúceho kruhu, aby poskytol vojenskú podporu svojho kruhu v našej aktuálnej vojne." # todo: NEW TRANSLATION
  call_imperial_circle_to_war_act: "Privolať kruh [SCOPE.sCountry('recipient').GetName], aby sa zapojil do vojny." # todo: NEW TRANSLATION
@@ -82,29 +82,29 @@
  INCOMING_OFFER_TITLE_request_circle_privilege: "Žiadosť o privilégium kruhu" # todo: NEW TRANSLATION
  request_circle_privilege_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] zamieta žiadosť [SCOPE.sCountry('actor').GetName] o privilégium kruhu." # todo: NEW TRANSLATION
  request_circle_privilege_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] zamietol žiadosť [SCOPE.sCountry('actor').GetName] o privilégium kruhu." # todo: NEW TRANSLATION
- request_circle_privilege_members_tt: "Každý člen nášho [imperial_circle|e] získa [ShowModifier('granted_circle_privilege')] na 5 rokov." # todo: NEW TRANSLATION
+ request_circle_privilege_members_tt: "Každý člen nášho [Concept('imperial_circle','cisárskeho okruhu')|e] získa [ShowModifier('granted_circle_privilege')] na 5 rokov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  distribute_imperial_grant: "Rozdeliť cisársku dotáciu" # todo: NEW TRANSLATION
  distribute_imperial_grant_desc: "Rozdeľte zlato z pokladnice medzi členov kruhu, čím zlepšíte vzťahy a spokojnosť kruhu." # todo: NEW TRANSLATION
  distribute_imperial_grant_act: "Rozdeliť zlato členom kruhu." # todo: NEW TRANSLATION
- distribute_imperial_grant_tt: "Vydáme [SCOPE.GetValue('total_grant')|2V]@gold! (20 % nášho [economical_base|e]), rozdelené rovnako medzi členov nášho [imperial_circle|e] okrem vodcu. Každý príjemca získa [ShowModifier('received_imperial_circle_grant')] na 2 roky a [ShowBiasValue('opinion_received_imperial_grant')|+=2] [opinion|e] k nám." # todo: NEW TRANSLATION
+ distribute_imperial_grant_tt: "Vydáme [SCOPE.GetValue('total_grant')|2V]@gold! (20 % nášho [Concept('economical_base','ekonomickej základne')|e]), rozdelené rovnako medzi členov nášho [Concept('imperial_circle','cisárskeho okruhu')|e] okrem vodcu. Každý príjemca získa [ShowModifier('received_imperial_circle_grant')] na 2 roky a [ShowBiasValue('opinion_received_imperial_grant')|+=2] [Concept('opinion','názor')|e] k nám." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  distribute_imperial_grant_effect_text: "[SCOPE.sCountry('actor').GetName] rozdelí cisársku dotáciu svojmu kruhu." # todo: NEW TRANSLATION
  distribute_imperial_grant_effect_text_past: "[SCOPE.sCountry('actor').GetName] rozdelil cisársku dotáciu svojmu kruhu." # todo: NEW TRANSLATION
  demand_circle_loyalty: "Požadovať lojalitu kruhu" # todo: NEW TRANSLATION
  demand_circle_loyalty_desc: "Uplatnite svoju autoritu nad členmi kruhu. Získame prestíž a diplomatické postavenie na 3 roky, ale členovia nebudú spokojní s týmto nátlakom a spokojnosť kruhu sa zníži." # todo: NEW TRANSLATION
  demand_circle_loyalty_act: "Uplatniť svoju autoritu nad členmi kruhu." # todo: NEW TRANSLATION
- demand_circle_loyalty_tt: "Získame [ShowModifier('imposed_circle_authority')] na 3 roky. Každý člen nášho [imperial_circle|e] okrem vodcu získa [ShowModifier('pressured_circle_loyalty')] na 3 roky a [ShowBiasValue('opinion_demanded_loyalty')|+=2] [opinion|e] k nám. Spokojnosť kruhu klesne o 5." # todo: NEW TRANSLATION
+ demand_circle_loyalty_tt: "Získame [ShowModifier('imposed_circle_authority')] na 3 roky. Každý člen nášho [Concept('imperial_circle','cisárskeho okruhu')|e] okrem vodcu získa [ShowModifier('pressured_circle_loyalty')] na 3 roky a [ShowBiasValue('opinion_demanded_loyalty')|+=2] [Concept('opinion','názor')|e] k nám. Spokojnosť kruhu klesne o 5." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  demand_circle_loyalty_effect_text: "[SCOPE.sCountry('actor').GetName] požaduje lojalitu od svojho kruhu." # todo: NEW TRANSLATION
  demand_circle_loyalty_effect_text_past: "[SCOPE.sCountry('actor').GetName] požadoval lojalitu od svojho kruhu." # todo: NEW TRANSLATION
  reform_coinage_in_circle: "Reforma mincovníctva kruhu" # todo: NEW TRANSLATION
  reform_coinage_in_circle_desc: "Impérium udelilo právomoc nad regionálnym mincovníctvom nám. Zavedenie reformy našej meny a jej používania by zlepšilo ekonomický tok každého člena v kruhu a zároveň zvýšilo naše postavenie v kruhu. Bohužiaľ by to znížilo schopnosti našej vlastnej mincovne." # todo: NEW TRANSLATION
  reform_coinage_in_circle_act: "Reformovať mincovníctvo v našom kruhu." # todo: NEW TRANSLATION
- reform_coinage_in_circle_tt: "Získame [ShowModifier('reformed_circle_coinage_leader')], zatiaľ čo každý člen nášho kruhu získa [ShowModifier('reformed_circle_coinage_member')] na 5 rokov. Každý člen kruhu získa [ShowBiasValue('opinion_reformed_circle_coinage')|+=2] [opinion|e] k nám a zvýšime spokojnosť kruhu o 5." # todo: NEW TRANSLATION
+ reform_coinage_in_circle_tt: "Získame [ShowModifier('reformed_circle_coinage_leader')], zatiaľ čo každý člen nášho kruhu získa [ShowModifier('reformed_circle_coinage_member')] na 5 rokov. Každý člen kruhu získa [ShowBiasValue('opinion_reformed_circle_coinage')|+=2] [Concept('opinion','názor')|e] k nám a zvýšime spokojnosť kruhu o 5." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  reform_coinage_in_circle_effect_text: "[SCOPE.sCountry('actor').GetName] reformuje mincovníctvo svojho kruhu." # todo: NEW TRANSLATION
  reform_coinage_in_circle_text_past: "[SCOPE.sCountry('actor').GetName] reformoval mincovníctvo svojho kruhu." # todo: NEW TRANSLATION
  reduction_of_circle_titles: "Zníženie počtu titulov v kruhu" # todo: NEW TRANSLATION
  reduction_of_circle_titles_desc: "Náš kruh sa stal neefektívnym a zapleteným v tituloch a administratívnych pozíciách, ktoré sa navzájom môžu blokovať. Zredukovať tituly by nielen zabezpečilo efektivitu kruhu, ale aj upevnilo naše postavenie vodcu. Takáto centralizácia titulov by však nebola vítaná členmi kruhu a znížila by ich spokojnosť." # todo: NEW TRANSLATION
  reduction_of_circle_titles_act: "Vykonať zníženie titulov kruhu" # todo: NEW TRANSLATION
- reduction_of_circle_titles_tt: "Získame [ShowModifier('reduction_of_circle_titles')], zatiaľ čo každý člen kruhu získa [ShowBiasValue('opinion_reduction_of_circle_titles')|+=2] [opinion|e] k nám. Spokojnosť kruhu sa zníži o 5." # todo: NEW TRANSLATION
+ reduction_of_circle_titles_tt: "Získame [ShowModifier('reduction_of_circle_titles')], zatiaľ čo každý člen kruhu získa [ShowBiasValue('opinion_reduction_of_circle_titles')|+=2] [Concept('opinion','názor')|e] k nám. Spokojnosť kruhu sa zníži o 5." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  reduction_of_circle_titles_effect_text: "[SCOPE.sCountry('actor').GetName] vykoná zníženie titulov kruhu" # todo: NEW TRANSLATION
  reduction_of_circle_titles_text_past: "[SCOPE.sCountry('actor').GetName] vykonal zníženie titulov kruhu" # todo: NEW TRANSLATION
  challenge_circle_leadership: "Vyvolať súboj o vedenie kruhu" # todo: NEW TRANSLATION
@@ -131,7 +131,7 @@
  appeal_to_circle_diet_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol žiadosti [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
  INCOMING_OFFER_appeal_to_circle_diet: "[SCOPE.sCountry('actor').GetName] žiada o poskytnutie finančnej pomoci. Ak prijmeme, dostanú pätinu našich ročných príjmov a ich legitímnosť sa zvýši. Odmietnutie tejto žiadosti zníži spokojnosť nášho kruhu.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_appeal_to_circle_diet: "$appeal_to_circle_diet$" # todo: NEW TRANSLATION
- appeal_to_circle_diet_timeout_tt: "No country has used the  $appeal_to_circle_diet$ [diplomatic_action|e] in the last 2 years" # todo: NEW TRANSLATION
+ appeal_to_circle_diet_timeout_tt: "No country has used the  $appeal_to_circle_diet$ [Concept('diplomatic_action','diplomatickú akciu')|e] in the last 2 years" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  request_circle_infrastructure_expansion: "Požiadať o rozšírenie vojenskej infraštruktúry" # todo: NEW TRANSLATION
  request_circle_infrastructure_expansion_desc: "Požiadajte vedúceho kruhu o dotáciu, aby sme mohli použiť naše rezervy ako dodatočnú pracovnú silu pri rozširovaní infraštruktúry." # todo: NEW TRANSLATION
  request_circle_infrastructure_expansion_act: "$request_circle_infrastructure_expansion_desc$" # todo: NEW TRANSLATION
@@ -141,7 +141,7 @@
  request_circle_infrastructure_expansion_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol rozšírenie vojenskej infraštruktúry [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
  INCOMING_OFFER_request_circle_infrastructure_expansion: "[SCOPE.sCountry('actor').GetName] žiada rozšírenie svojich ozbrojených síl. Ak prijmeme, umožní im to sústrediť sa na posilnenie ciest a stavebných prác, pričom ich vojenské schopnosti sa znížia na nasledujúcich 10 rokov.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_request_circle_infrastructure_expansion: "$request_circle_infrastructure_expansion$" # todo: NEW TRANSLATION
- request_circle_infrastructure_expansion_timeout_tt: "No country has used the  $request_circle_infrastructure_expansion$ [diplomatic_action|e] in the last 2 years" # todo: NEW TRANSLATION
+ request_circle_infrastructure_expansion_timeout_tt: "No country has used the  $request_circle_infrastructure_expansion$ [Concept('diplomatic_action','diplomatická akcia')|e] in the last 2 years" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  request_new_circle_titles: "Povýšiť krajinu v kruhu" # todo: NEW TRANSLATION
  request_new_circle_titles_desc: "Požiadať o povýšenie našej krajiny v rámci cisárskeho kruhu." # todo: NEW TRANSLATION
  request_new_circle_titles_act: "$request_new_circle_titles_desc$" # todo: NEW TRANSLATION
@@ -151,8 +151,9 @@
  request_new_circle_titles_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol povýšenie [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
  INCOMING_OFFER_request_new_circle_titles: "[SCOPE.sCountry('actor').GetName] žiada povýšenie svojej krajiny v našom kruhu. Ak prijmeme, uspokojí to ich šľachtu a dá im prestížnejšie postavenie.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_request_new_circle_titles: "$request_new_circle_titles$" # todo: NEW TRANSLATION
- request_new_circle_titles_timeout_tt: "No country has used the  $request_new_circle_titles$ [diplomatic_action|e] in the last 2 years" # todo: NEW TRANSLATION
+ request_new_circle_titles_timeout_tt: "No country has used the  $request_new_circle_titles$ [Concept('diplomatic_action','diplomatickej akcie')|e] in the last 2 years" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  hre_circle_levy_request: "Požiadať o odvody kruhu" # todo: NEW TRANSLATION
+ hre_circle_levy_request_desc: "Požiadajte cisárske kruhy, aby povolali milície pre Ríšu. Vodcovia kruhov sú za svoju spoluprácu odmenení." # todo: NEW TRANSLATION
  hre_enforce_circle_landfriede: "Uplatniť ríšsky mier v kruhu" # todo: NEW TRANSLATION
  hre_enforce_circle_landfriede_desc: "Umožniť vedúcim kruhov vymáhať ríšsky mier na svojich územiach." # todo: NEW TRANSLATION
  HRE_CIRCLE_LEVY_CIRCLES_ACTIVE: "Cisárske kruhy sú aktívne" # todo: NEW TRANSLATION
@@ -173,7 +174,7 @@
  imperial_circles.12.desc: "Frustrácia v kruhu dosiahla bod zlomu. Naši členovia otvorene spochybňujú naše vedenie. Voľba môže byť neodvratná." # todo: NEW TRANSLATION
  imperial_circles.12.a: "Musíme konať skôr, než bude neskoro." # todo: NEW TRANSLATION
  imperial_circles.20.title: "Náš hlas bol kúpený" # todo: NEW TRANSLATION
- imperial_circles.20.desc: "[SCOPE.sCountry('actor').GetName] zaplatil vedúcemu nášho cisárskeho kruhu, [SCOPE.sCountry('target').GetName], aby podporil návrh predložený Ríšskemu snemu. Dostali sme [SCOPE.GetValue('received_bribe')|0V]@gold! ako našu časť a náš [vote|e] v aktuálnom rozhodnutí je teraz zablokovaný podľa voľby cisára až do jeho uzavretia." # todo: NEW TRANSLATION
+ imperial_circles.20.desc: "[SCOPE.sCountry('actor').GetName] zaplatil vedúcemu nášho cisárskeho kruhu, [SCOPE.sCountry('target').GetName], aby podporil návrh predložený Ríšskemu snemu. Dostali sme [SCOPE.GetValue('received_bribe')|0V]@gold! ako našu časť a náš [Concept('vote','hlas')|e] v aktuálnom rozhodnutí je teraz zablokovaný podľa voľby cisára až do jeho uzavretia." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  imperial_circles.20.a: "Zlato nebude odmietnuté." # todo: NEW TRANSLATION
  imperial_circles.50.title: "Súboj o vedenie kruhu" # todo: NEW TRANSLATION
  imperial_circles.50.desc: "Postavili sme sa, aby sme vyzvali [recipient.GetName] o vedenie nášho cisárskeho kruhu.\n\nIch slabosť a nedbanlivosť už nemožno tolerovať, a mnoho by nás určite podporilo v našich sťažnostiach. Ak sa nám podarí ukázať sa ako jasne lepší a silnejší vodca, podriadia sa našim požiadavkám, ale ak zlyháme, určite to poškodí naše vnímanie nielen medzi zahraničnými krajinami, ale aj medzi naším ľudom." # todo: NEW TRANSLATION

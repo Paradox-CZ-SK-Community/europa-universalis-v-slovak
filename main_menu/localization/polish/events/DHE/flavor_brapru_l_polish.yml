@@ -153,7 +153,7 @@
  flavor_brapru.27.a.entry: "Podporte verných osadníkov, aby sa usadili v [ShowAreaNameWithNoTooltip('silesia_area')]." # todo: NEW TRANSLATION
  flavor_brapru.27.b: "Nech sa sami zotavia." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_PRU_settlers_in_silesia: "Noví protestantskí osadníci" # todo: NEW TRANSLATION
- BRA_move_away_from_prosperity_silesia_tt: "Každé [owned|e] [location|e] v [ShowAreaName('silesia_area')] stráca #r -25.0%#! z [prosperity|e]." # todo: NEW TRANSLATION
+ BRA_move_away_from_prosperity_silesia_tt: "Každé [Concept('owned','vlastnené')|e] [Concept('location','lokality')|e] v [ShowAreaName('silesia_area')] stráca #r -25.0%#! z [Concept('prosperity','prosperity')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_brapru.28.title: "Nárok na kráľovské [ShowAreaNameWithNoTooltip('prussia_area')|U]" # todo: NEW TRANSLATION
  flavor_brapru.28.entry: "Uplatnenie nároku na územie Kráľovského Pruska" # todo: NEW TRANSLATION
  flavor_brapru.28.desc: "Koridor medzi [ROOT.GetCountry.GetAdjective] [ShowAreaName('pomerania_area')] a [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ShowAreaName('prussia_area')] by tvoril nevyhnutnú súčasť nášho štátu, keby bol v našich rukách. Aby naše územia medzi sebou komunikovali, musia komunikovať cez cudzie hranice alebo loďami. Tieto faktory robia náš dosah nad [ShowAreaNameWithNoTooltip('prussia_area')] najlepšie povedané slabým." # todo: NEW TRANSLATION
@@ -180,8 +180,8 @@
  flavor_brapru.31.a: "Nech sa stretnú." # todo: NEW TRANSLATION
  flavor_brapru.31.b: "[ROOT.GetCountry.GetReligion.GetNameWithNoTooltip] je jediná pravá viera." # todo: NEW TRANSLATION
  flavor_brapru.31.b.entry: "Naša viera je jediná pravá." # todo: NEW TRANSLATION
- PRU_may_push_toleranzedikt_in_the_future_with_following_effects: "S týmto [event|e] budeme môcť v budúcnosti presadiť Tolerančný edikt:" # todo: NEW TRANSLATION
- PRU_every_pop_of_other_protestant_denomination: "Každý [pop|e] vyznania [opposing_religion.GetAdjective] získa [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
+ PRU_may_push_toleranzedikt_in_the_future_with_following_effects: "S týmto [Concept('event','udalosťou')|e] budeme môcť v budúcnosti presadiť Tolerančný edikt:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PRU_every_pop_of_other_protestant_denomination: "Každý [Concept('pop','populácia')|e] vyznania [opposing_religion.GetAdjective] získa [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_brapru.32.title: "Tolerančný edikt" # todo: NEW TRANSLATION
  flavor_brapru.32.entry: "$flavor_brapru.32.title$" # todo: NEW TRANSLATION
  flavor_brapru.32.desc: "Ekumenické rozhovory medzi vierami [ShowReligionAdjective('lutheran')] a [ShowReligionAdjective('calvinist')] boli čiastočne úspešné. Hoci nepochybne viedli k väčšiemu pocitu jednoty v protestantskom svete, veľká časť našich [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] zostáva netolerantná a odporuje tejto myšlienke. V takom prípade prívrženci [opposing_religion.GetAdjectiveWithNoTooltip] začali žiadať vydanie tolerančného ediktu, ktorý by vynútil toleranciu ich viery v [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
@@ -380,7 +380,7 @@
  flavor_brapru.1801.entry: "Člen dynastie na pruskom tróne" # todo: NEW TRANSLATION
  flavor_brapru.1801.desc: "Jeden z členov dynastie [target_character.GetDynasty.GetName] sa ocitol na tróne [target_character.GetHerselfHimself] v [pru_from.GetName]. Môžeme z toho v budúcnosti profitovať, vzhľadom na pozitívne vzťahy medzi našimi príbuznými." # todo: NEW TRANSLATION
  flavor_brapru.1801.a: "Naozaj zaujímavé." # todo: NEW TRANSLATION
- PRU_information_about_event_chain: "V budúcnosti môžeme vytvoriť [union|e] s [pru_from.GetName]." # todo: NEW TRANSLATION
+ PRU_information_about_event_chain: "V budúcnosti môžeme vytvoriť [Concept('union','únia')|e] s [pru_from.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_brapru.1802.title: "Duševný úpadok [insane_individual.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_brapru.1802.entry: "Duševný úpadok šialenej osoby" # todo: NEW TRANSLATION
  flavor_brapru.1802.desc: "Výzvy vládnutia štátu nie sú malé. Kým väčšina je pripravená čeliť takýmto ťažkým úlohám, niektorí nezvládnu tlak. Zjavne jedným z takýchto ľudí bol [insane_individual.GetName], pretože [insane_individual.GetSheHe] začal vykazovať známky duševného úpadku. Väčšina členov [ROOT.GetCountry.GetGovernment.GetCourtTitle] a stavov ho vyhlásila za nespôsobilého vládnuť." # todo: NEW TRANSLATION
@@ -396,11 +396,11 @@
  flavor_brapru.1804.desc: "[proposed_regent.GetName] bezpečne dorazil do [pru_from.GetCapital.GetName], hlavného mesta [pru_from.GetName], a bola vykonaná slávnosť, ktorá z [proposed_regent.GetHimHer] urobila regenta štátu a v praxi vytvorila osobnú úniu medzi [ROOT.GetCountry.GetName] a [pru_from.GetNameWithNoTooltip]. To však znamená, že [proposed_regent.GetNameWithNoTooltip] teraz musí zložiť prísahu [pru_from.GetDiplomacy.GetOverlord.GetLongName] za svoje novo získané územia." # todo: NEW TRANSLATION
  flavor_brapru.1804.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  flavor_brapru.1804.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
- PRU_we_have_formed_personal_union_with_PRU_subject: "Vytvorili sme [union|e] s [pru_from.GetName]." # todo: NEW TRANSLATION
+ PRU_we_have_formed_personal_union_with_PRU_subject: "Vytvorili sme [Concept('union','únia')|e] s [pru_from.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_brapru.1805.title: "[intervening_tag.GetAdjectiveWithNoTooltip] zásah" # todo: NEW TRANSLATION
  flavor_brapru.1805.desc: "Naši vrchní páni v [intervening_tag.GetName] zbadali naše problémy a naše pozvanie [proposed_regent.GetName]. Keď usúdili, že je ich právomocou vymenovať regenta, poslali [proposed_regent_of_poland.GetShortName], ktorého sme boli nútení prijať ako nového [ROOT.GetCountry.GetGovernment.GetRulerTitle] [ROOT.GetCountry.GetLongName]." # todo: NEW TRANSLATION
  flavor_brapru.1805.a: "Aká pohroma!" # todo: NEW TRANSLATION
- PRU_poland_enforced_regent: "[intervening_tag.GetName] vnucil svojho regenta [pru_from.GetName]. [union|e] s [pru_from.GetName] nevznikne." # todo: NEW TRANSLATION
+ PRU_poland_enforced_regent: "[intervening_tag.GetName] vnucil svojho regenta [pru_from.GetName]. [Concept('union','Únia')|e] s [pru_from.GetName] nevznikne." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_brapru.1806.title: "$flavor_brapru.1805.title$" # todo: NEW TRANSLATION
  flavor_brapru.1806.entry: "$flavor_brapru.1806.title$" # todo: NEW TRANSLATION
  flavor_brapru.1806.desc: "[pru_from.GetAdjective] vrchnosť v [intervening_tag.GetName] zbadala ich problémy a ich pozvanie [proposed_regent.GetName]. Keď usúdili, že je ich právomocou vymenovať regenta, poslali [proposed_regent_of_poland.GetShortName], ktorý sa stal novým [pru_from.GetGovernment.GetRulerTitle]. V podstate nám bolo znemožnené získať východnú [pru_from.GetFlavorRank]. Pochopia našu hnev!" # todo: NEW TRANSLATION
@@ -432,7 +432,7 @@
  flavor_brapru.1810.desc: "Duševný úpadok [pru_from.GetAdjective] [insane_individual.GetName] spôsobil, že [pru_from.GetAdjectiveWithNoTooltip] [pru_from.GetGovernment.GetCourtTitle] zápasí s nájdením regenta, ktorý by vládol štátu namiesto neho. Ak zlyhajú, hrozí im chaos a bezprávie. Preto vybrali jediného rozumného kandidáta na regentstvo, príbuzného [insane_individual.GetHerHis], [proposed_regent.GetName]. Nevidíme veľa dôvodov túto ponuku odmietnuť, hoci by nás to mohlo vystaviť riziku vojny s ich vrchnými pánmi v [pru_from.GetDiplomacy.GetOverlord.GetName]." # todo: NEW TRANSLATION
  flavor_brapru.1810.a: "Skutočne, môžeme to urobiť." # todo: NEW TRANSLATION
  flavor_brapru.1810.b: "Toto by nás mohlo dostať do zbytočného konfliktu." # todo: NEW TRANSLATION
- PRU_our_chance_to_get_union: "Toto povedie k [union|e] medzi oboma národmi." # todo: NEW TRANSLATION
+ PRU_our_chance_to_get_union: "Toto povedie k [Concept('union','únii')|e] medzi oboma národmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_brapru.1811.title: "Sekularizácia [ROOT.GetCountry.GetFlavorRank]" # todo: NEW TRANSLATION
  flavor_brapru.1811.entry: "$flavor_brapru.1811.title$" # todo: NEW TRANSLATION
  flavor_brapru.1811.desc: "S reformáciou v plnom prúde sme sa rozhodli odvrátiť od [ShowReligionName('catholic')] k [ROOT.GetCountry.GetReligion.GetName]. Odvtedy nám ostáva viac otázok než odpovedí. Nikto, ani jediná duša, sa zdá nevedieť, kto je náš skutočný vrchný pán, akú misiu sledujeme a aké sú vlastne aspekty našej viery. Má existencia [ROOT.GetCountry.GetLongName] ešte zmysel?" # todo: NEW TRANSLATION

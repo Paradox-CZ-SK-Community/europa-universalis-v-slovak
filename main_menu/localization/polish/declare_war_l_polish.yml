@@ -10,7 +10,7 @@
  DECLARE_WAR_ENEMY_TRIBUTARY_JOIN: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName] sa pripojí do [Concept('war','vojny')|e], pretože sú vazalom @[DEFENDER.GetFlag]! [DEFENDER.GetName]"
  DECLARE_WAR_ENEMY_INTERNATIONAL_ORGANIZATION_JOIN: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName] sa pripojí do [Concept('war','vojny')|e], pretože sú v $TYPE$ s @[DEFENDER.GetFlag]! [DEFENDER.GetName|Y]"
  DECLARE_WAR_ENEMY_ALLY_JOIN: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] sa pripojí do [Concept('war','vojny')|e], pretože majú zmluvu o obrane @[DEFENDER.GetFlag]! [DEFENDER.GetName|Y]."
- DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER: "A oni prevezmú velenie ako [war_leader|e], pretože sa považujú za silnejších ako @[DEFENDER.GetFlag]! [DEFENDER.GetName|Y]" # todo: CHANGED
+ DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER: "A oni prevezmú velenie ako [Concept('war_leader','vodca vojny')|e], pretože sa považujú za silnejších ako @[DEFENDER.GetFlag]! [DEFENDER.GetName|Y]" # todo: CHANGED # todo: CONCEPT CASE
  DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER_ALLIES: "Možní obrancovia, ktorí sa pripoja k @[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y]:"
  DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER_NO_ALLIES: "@trigger_no! Žiadni ďalší obrancovia sa nepripoja k @[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y]."
  DECLARE_WAR_ENEMY_TAKE_OVER_WAR_LEADER_ALLY: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] "
@@ -23,10 +23,10 @@
  INTERVENE_WAR_UNION_MEMBER_WARNING_DESC: "@[COUNTRY.GetFlag]! [COUNTRY.GetLongName|Y] je členom vašej únie a bude na opačnej strane tejto vojny. Zasahnutie rozbije úniu! Ste si istí, že chcete zasiahnuť?" # todo: NEW TRANSLATION
  INTERVENE_IN_WAR_CONFIRM_ACCEPT: "Zasiahnuť aj tak" # todo: NEW TRANSLATION
  DECLARE_WAR_COST: "Náklady na vyhlásenie vojny"
- DECLARE_WAR_NO_CASUS_BELLI_SELECTED: "Nebolo vybraté žiadne [casus_belli|e]."
+ DECLARE_WAR_NO_CASUS_BELLI_SELECTED: "Nebolo vybraté žiadne [Concept('casus_belli','casus Belli')|e]." # todo: CONCEPT CASE
  CANNOT_DECLARE_WAR_NO_WAR_GOAL: "@trigger_no! Musíme vybrať cieľ vojny."
- CANNOT_DECLARE_WAR_NO_CASSUS_BELLI: "@trigger_no! Nemáme žiadne [casus_belli|e]"
- BREAKING_COBELLIGERENT_TRUCE: "Zvolenie tejto [Concept('country','krajiny')|e] ako [Concept('cobelligerent','spolubojovníka')|e] počas [Concept('truce','prímeria')|e] bude mať za následok stratu [Concept('stability','stability')|e]!"
- CANT_BREAK_COBELLIGERENT_TRUCE: "[country|e] sa nedá povolať, pokiaľ má [truce|e] s nepriateľom" # todo: NEW TRANSLATION
- WILL_ACCEPT_PROMISE_LAND: "[Country.GetName] prijme [call_to_arms|el], ak mu sľúbite, že mu dáte územie v [Concept('peace_treaty','mierovej zmluve')|e]."
- PRICE_ON_WAR_TRUST: "Vyhlásenie vojny okamžite zníži našu [trust|e] s obrancami o [GetDefine('NDiplomacy', 'TRUST_CHANGE_DECLARE_WAR')|R] a navyše o [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_DEFENDER')|R], ak porušujeme s nimi [truce|e]. Porušenie [truce|e] zníži našu [trust|e] u každej inej krajiny v dosahu o [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_IN_RANGE')|R]." # todo: NEW TRANSLATION
+ CANNOT_DECLARE_WAR_NO_CASSUS_BELLI: "@trigger_no! Nemáme žiadne [Concept('casus_belli','casus Belli')|e]" # todo: CONCEPT CASE
+ BREAKING_COBELLIGERENT_TRUCE: "Zvolenie tejto [Concept('country','krajine')|e] ako [Concept('cobelligerent','spolubojovníka')|e] počas [Concept('truce','prímeria')|e] bude mať za následok stratu [Concept('stability','stabilitu')|e]!" # todo: CONCEPT CASE
+ CANT_BREAK_COBELLIGERENT_TRUCE: "[Concept('country','Krajina')|e] sa nedá povolať, pokiaľ má [Concept('truce','prímerie')|e] s nepriateľom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WILL_ACCEPT_PROMISE_LAND: "[Country.GetName] prijme [Concept('call_to_arms','volanie do zbrane')|el], ak mu sľúbite, že mu dáte územie v [Concept('peace_treaty','mierovej zmluve')|e]." # todo: CONCEPT CASE
+ PRICE_ON_WAR_TRUST: "Vyhlásenie vojny okamžite zníži našu [Concept('trust','dôveru')|e] s obrancami o [GetDefine('NDiplomacy', 'TRUST_CHANGE_DECLARE_WAR')|R] a navyše o [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_DEFENDER')|R], ak porušujeme s nimi [Concept('truce','prímerím')|e]. Porušenie [Concept('truce','prímerie')|e] zníži našu [Concept('trust','dôveru')|e] u každej inej krajiny v dosahu o [GetDefine('NDiplomacy', 'TRUST_CHANGE_BREAK_TRUCE_IN_RANGE')|R]." # todo: NEW TRANSLATION # todo: CONCEPT CASE

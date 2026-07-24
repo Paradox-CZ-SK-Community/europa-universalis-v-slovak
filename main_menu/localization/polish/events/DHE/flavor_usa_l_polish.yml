@@ -9,9 +9,9 @@
  flavor_usa.3.title: "Severozápadné nariadenie" # todo: NEW TRANSLATION
  flavor_usa.3.desc: "Územia medzi riekou Mississippi, [ShowAreaName('great_lakes_sea_zones_area')] a riekou Ohio, známe tiež ako Severozápadné nariadenie, sa už istý čas nachádzajú na periférii našej krajiny. Otázkou zostáva ich administratívne postavenie v našom území: či budú spravované z nášho hlavného mesta, alebo sa stanú novými štátmi v rámci [ROOT.GetCountry.GetName]. Tento konflikt by sme mali vyriešiť teraz, aby mohla začať stabilná správa týchto krajín." # todo: NEW TRANSLATION
  flavor_usa.3.a: "Budú to samostatné štáty." # todo: NEW TRANSLATION
- flavor_usa.3.a.tt: "Každá vlastnená [location|e] v Severozápadnom nariadení získa [ShowNamedValue('development_weak_bonus')|+=] [development|e] a stratí [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ flavor_usa.3.a.tt: "Každá vlastnená [Concept('location','lokalita')|e] v Severozápadnom nariadení získa [ShowNamedValue('development_weak_bonus')|+=] [Concept('development','rozvoj')|e] a stratí [ShowNamedValue('control_mild_penalty')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.3.b: "Uplatniť našu vládu nad týmito provinciami." # todo: NEW TRANSLATION
- flavor_usa.3.b.tt: "Každá vlastnená [location|e] v Severozápadnom nariadení stratí [ShowNamedValue('development_weak_penalty')|+=] [development|e] a získa [ShowNamedValue('control_mild_bonus')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ flavor_usa.3.b.tt: "Každá vlastnená [Concept('location','lokalita')|e] v Severozápadnom nariadení stratí [ShowNamedValue('development_weak_penalty')|+=] [Concept('development','rozvoji')|e] a získa [ShowNamedValue('control_mild_bonus')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.4.title: "Deklarácia nezávislosti" # todo: NEW TRANSLATION
  flavor_usa.4.desc: "Viaceré hlasy v našej krajine, najmä tí, ktorí predtým presadzovali našu nezávislosť, volajú po oficiálnom čine, ktorý by upevnil [ROOT.GetCountry.GetLongName] ako legitímny štát. Tvrdia, že bez Deklarácie nezávislosti by nás štáty [ShowContinentName('europe')] považovali za mimo zákon, povstalcov proti legitímnemu panovníkovi a vláde. Aby sme sa stali legitímnym národom, potrebujeme medzinárodné uznanie našej veci a zahraničných spojencov, ktorí nás podporia." # todo: NEW TRANSLATION
  flavor_usa.4.a: "Podpísať Deklaráciu nezávislosti." # todo: CHANGED
@@ -34,9 +34,9 @@
  flavor_usa.9.title: "Nespravodlivé zdanenie" # todo: NEW TRANSLATION
  flavor_usa.9.desc: "Ťažké dane, ktoré uvalujeme na [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], vyvolali nepokoje v [unrest_location.GetName]. Nielen samotní [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] sú rozhorčení touto nespravodlivosťou, ale aj väčšina ich krajanov v [unrest_location.GetProvince.GetName]. Ak sa nezaoberáme ich obavami, môže to prerásť do väčšieho problému." # todo: NEW TRANSLATION
  flavor_usa.9.a: "Čo vedia o spravodlivých daniach?" # todo: NEW TRANSLATION
- flavor_usa.9.a.tt: "Všetky [pops|e] v provincii [unrest_location.GetProvince.GetName] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e], ale lokality zároveň získajú [ShowNamedValue('control_weak_bonus')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ flavor_usa.9.a.tt: "Všetky [Concept('pops','populácie')|e] v provincii [unrest_location.GetProvince.GetName] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e], ale lokality zároveň získajú [ShowNamedValue('control_weak_bonus')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.9.b: "Dajte im viac autonómie." # todo: NEW TRANSLATION
- flavor_usa.9.b.tt: "Všetky [pops|e] v provincii [unrest_location.GetProvince.GetName] získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e], ale lokality zároveň stratia [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ flavor_usa.9.b.tt: "Všetky [Concept('pops','populácie')|e] v provincii [unrest_location.GetProvince.GetName] získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e], ale lokality zároveň stratia [ShowNamedValue('control_mild_penalty')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.10.title: "[unrest_location.GetNameWithNoTooltip] poštová cesta" # todo: NEW TRANSLATION
  flavor_usa.10.desc: "Vidiek [ROOT.GetCountry.GetName] je slabo prepojený s našimi mestskými centrami a investície do cestnej siete boli žiadané viackrát. Lepšie cesty by nielen prospeli našim ľuďom, ale aj skracovali čas, potrebný na to, aby naša armáda zareagovala na akúkoľvek cudziu agresiu, takže investícia sa zdá rozumná." # todo: NEW TRANSLATION
  flavor_usa.10.a: "Správa by to mala zorganizovať." # todo: NEW TRANSLATION
@@ -45,9 +45,9 @@
  flavor_usa.11.a: "Znie to impozantne, poďme to sponzorovať!" # todo: NEW TRANSLATION
  flavor_usa.12.title: "Veľký požiar v [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_usa.12.desc: " [target_location.GetRank.GetName] v [target_location.GetName] chytila požiar!\n\nZatiaľ čo hladné plamene stále pohlcujú domy, niektorí zástupcovia z [target_location.GetNameWithNoTooltip] už začali organizovať plán pomoci a prestavby pre [target_location.GetRank.GetNameWithNoTooltip]. Bolo by to nákladné podujatie, ale mohlo by sa ukázať ako dobrá dlhodobá investícia pre cenný kus pôdy." # todo: NEW TRANSLATION
- flavor_usa.12.a.tt: "[target_location.GetName] stratí [prosperity|e], stratí [pops|e] a niektoré [buildings|e] budú zasiahnuté požiarom" # todo: NEW TRANSLATION
+ flavor_usa.12.a.tt: "[target_location.GetName] stratí [Concept('prosperity','prosperita')|e], stratí [Concept('pops','populácie')|e] a niektoré [Concept('buildings','budovy')|e] budú zasiahnuté požiarom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.12.a: "Realizovať ambiciózny plán!" # todo: NEW TRANSLATION
- flavor_usa.12.b.tt: "[target_location.GetName] stratí [prosperity|e], stratí [development|e], stratí [pops|e] a niektoré [buildings|e] budú zasiahnuté požiarom" # todo: NEW TRANSLATION
+ flavor_usa.12.b.tt: "[target_location.GetName] stratí [Concept('prosperity','prosperita')|e], stratí [Concept('development','rozvoj')|e], stratí [Concept('pops','populácie')|e] a niektoré [Concept('buildings','budovy')|e] budú zasiahnuté požiarom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.12.b: "Urobiť len to, čo je nutné!" # todo: NEW TRANSLATION
  flavor_usa.13.title: "Výprava [target_character.GetNameWithNoTooltip] a [target_character_2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_usa.13.desc: "[target_character.GetName] a jeho blízky priateľ [target_character_2.GetName] navrhujú expedíciu [ROOT.GetCountry.GetAdjective] ľudu prekročiť západnú časť [ShowSubContinent('north_america')], aby našli najpriamejšiu a najpraktickejšiu vodnú spojnicu cez kontinent. Spolu s malou skupinou dobrovoľníkov obaja prekročia kontinent a preskúmajú rieku Missouri, aby zistili, či niektorá rieka neposkytuje vodnú cestu cez tento kontinent za účelom obchodu." # todo: CHANGED
@@ -61,7 +61,7 @@
  flavor_usa.15.title: "Vynález [ShowModifierWithNoTooltip('cotton_gin')]" # todo: NEW TRANSLATION
  flavor_usa.15.desc: "Je vyvíjaný nový stroj, ktorý rýchlo a jednoducho oddeľuje vlákna [ShowGoodsName('cotton')] od ich semien a mohol by výrazne zlepšiť výnos našej [ShowGoodsNameWithNoTooltip('cotton')] produkcie. Stroj je drevený valec s malými drôtenými háčikmi, ktoré pretiahnu vlákna [ShowGoodsNameWithNoTooltip('cotton')] cez sieťku, aby oddelili semená od zvyšku rastliny, zatiaľ čo kefy odstraňujú voľnú vatu, aby zabránili zasekávaniu." # todo: NEW TRANSLATION
  flavor_usa.15.a: "Budeme potrebovať tento stroj!" # todo: NEW TRANSLATION
- flavor_usa.15.a.tt: "Každá [location|e] s [ShowGoodsNameWithNoTooltip('cotton')] [raw_material|e] získa [ShowModifier('cotton_gin')]." # todo: NEW TRANSLATION
+ flavor_usa.15.a.tt: "Každá [Concept('location','lokalita')|e] s [ShowGoodsNameWithNoTooltip('cotton')] [Concept('raw_material','surovinou')|e] získa [ShowModifier('cotton_gin')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.15.b: "Staré spôsoby sú v poriadku." # todo: NEW TRANSLATION
  flavor_usa.16.title: "[ShowBuildingTypeNameWithNoTooltip('usa_national_mint')]" # todo: NEW TRANSLATION
  flavor_usa.16.desc: "Naša mena, žiaľ, nedosahuje štandard stanovený cudzími mocnosťami kvôli nedostatku raziarne pod kontrolou našej vlády. $flavor_usa.14.desc_generic$" # todo: NEW TRANSLATION
@@ -93,7 +93,7 @@
  flavor_usa.1002.desc: "Po vyriešení otázok zákonov menšina delegátov teraz tlačí na diskusiu o otázke otroctva. Hoci iní označujú inštitúciu za neľudskú, mnohí členovia [target_io.GetName] silne závisia na práci [ShowPopTypeName('slaves')] na svojich plantážach. Zákaz tejto praxe pre všetkých členov by nás mohol výrazne destabilizovať a spôsobiť vážne poškodenie vzťahov s niektorými štátmi a riziko, že opustia Ústavodarnú konvenciu." # todo: NEW TRANSLATION
  flavor_usa.1002.a: "Nech každý člen rozhodne sám za seba." # todo: NEW TRANSLATION
  flavor_usa.1002.b: "Zrušiť otroctvo pre všetkých." # todo: NEW TRANSLATION
- flavor_usa.1002.b.tt: "Všetky [ShowPopTypeName('peasants')] a bývalé [ShowPopTypeName('slaves')] [pops|e] v našej krajine získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]." # todo: NEW TRANSLATION
+ flavor_usa.1002.b.tt: "Všetky [ShowPopTypeName('peasants')] a bývalé [ShowPopTypeName('slaves')] [Concept('pops','populácie')|e] v našej krajine získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_usa.1003.title: "Dôvody na obžalobu" # todo: NEW TRANSLATION
  flavor_usa.1003.desc: "Po udržaní Konvencie nad otázkou otroctva môžeme teraz pokračovať v diskusii o konkrétnom [ShowLawName('legal_code_law')], ktorému by sme mali dať prednosť. Nielenže musíme rozhodnúť, či všetky štáty [target_io.GetName] majú nasledovať rovnaký [ShowLawNameWithNoTooltip('legal_code_law')], ale aj na ktorom právnom kóde by mal byť založený." # todo: NEW TRANSLATION
  flavor_usa.1003.a: "Prijať [ShowPolicyNameWithNoTooltip('civil_law_policy')]." # todo: NEW TRANSLATION

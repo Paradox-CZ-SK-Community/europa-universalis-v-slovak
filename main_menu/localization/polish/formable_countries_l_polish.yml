@@ -9,12 +9,12 @@
  DRD_f_desc: "Ľudia hovoriaci [ShowLanguageName('gaelic_language')] na pobreží okolo [ShowAreaName('hebrides_area')] sa dávno zjednotili a vytvorili kráľovstvo preslávené kultúrou zameranou na moreplavbu a silu svojej flotily. My si nárokujeme toto prastaré dedičstvo a oživíme kráľovstvo." # todo: NEW TRANSLATION
  GBR_f: "Veľká Británia" # todo: NEW TRANSLATION
  GBR_f_desc: "Zjednotením našej domácej politickej trajektórie a rozšírením vplyvu za hranicami posilníme svoju pozíciu vo svete a premeníme sa na jednu z popredných európskych veľmocí, Britské impérium." # todo: NEW TRANSLATION
- GBR_f_trigger_eng: "Musíme buď zničiť [GetCountry('ENG').GetNameWithFlag] alebo urobiť z nich našich [subject|e]!" # todo: NEW TRANSLATION
- GBR_f_trigger_sco: "Musíme buď zničiť [GetCountry('SCO').GetNameWithFlag] alebo urobiť z nich našich [subject|e]!" # todo: NEW TRANSLATION
- GBR_f_trigger_wls: "Musíme buď zničiť [GetCountry('WLS').GetNameWithFlag] alebo urobiť z nich našich [subject|e]!" # todo: NEW TRANSLATION
- GBR_f_trigger_sbl: "Musíme buď zničiť [GetCountry('SBL').GetNameWithFlag] alebo urobiť z nich našich [subject|e]!" # todo: NEW TRANSLATION
- SPA_f_not_christian: "Každé [location|e] v [ShowRegionName('iberia_region')] musí byť [owned|e] [ShowReligionGroupAdjective('christian')] [country|e] alebo jedným z našich [subjects|e]!" # todo: NEW TRANSLATION
- ADU_f_not_muslim: "Každé [location|e] v [ShowRegionName('iberia_region')] musí byť [owned|e] [ShowReligionGroupAdjective('muslim')] [country|e] alebo jedným z našich [subjects|e]!" # todo: NEW TRANSLATION
+ GBR_f_trigger_eng: "Musíme buď zničiť [GetCountry('ENG').GetNameWithFlag] alebo urobiť z nich našich [Concept('subject','vazala')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GBR_f_trigger_sco: "Musíme buď zničiť [GetCountry('SCO').GetNameWithFlag] alebo urobiť z nich našich [Concept('subject','vazala')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GBR_f_trigger_wls: "Musíme buď zničiť [GetCountry('WLS').GetNameWithFlag] alebo urobiť z nich našich [Concept('subject','vazala')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GBR_f_trigger_sbl: "Musíme buď zničiť [GetCountry('SBL').GetNameWithFlag] alebo urobiť z nich našich [Concept('subject','vazala')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SPA_f_not_christian: "Každé [Concept('location','lokalita')|e] v [ShowRegionName('iberia_region')] musí byť [Concept('owned','vlastnené')|e] [ShowReligionGroupAdjective('christian')] [Concept('country','krajina')|e] alebo jedným z našich [Concept('subjects','vazalov')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ADU_f_not_muslim: "Každé [Concept('location','lokalita')|e] v [ShowRegionName('iberia_region')] musí byť [Concept('owned','vlastnené')|e] [ShowReligionGroupAdjective('muslim')] [Concept('country','krajina')|e] alebo jedným z našich [Concept('subjects','vazalov')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ENG_f: "$ENG$" # todo: NEW TRANSLATION
  ENG_f_desc: "Obchod je už dlhodobo základom anglickej národnej politiky. Rozširovaním nášho vplyvu za hranice a ovplyvňovaním politického vývoja doma sme sa stali jednou z popredných európskych veľmocí. Naša koloniálna expanzia sa stáva hlavným faktorom rastu našej ekonomiky a posilňuje našu pozíciu vo svetových záležitostiach." # todo: NEW TRANSLATION
  WLS_f: "$WLS$" # todo: NEW TRANSLATION
@@ -69,7 +69,7 @@
  GER_f_desc: "Napriek absencii silnej centrálnej autority náš národ prosperuje. Hanzová liga, vytvorená stovkami miest v severnom Nemecku, prispela k blahobytu národa. Intelektuálny rast v kombinácii s námorným a pozemným obchodom tiež podporil rozvoj a premieňa našu krajinu na bohaté priemyselné centrum." # todo: NEW TRANSLATION
  HRE_f: "Sväto-rímska ríša" # todo: NEW TRANSLATION
  HRE_f_desc: "$hre_desc$" # todo: NEW TRANSLATION
- HRE_f_tt: "$HRE_f$ sa dá vytvoriť len prostredníctvom [ShowPolicyName('renovatio_policy')] [policy|e] [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
+ HRE_f_tt: "$HRE_f$ sa dá vytvoriť len prostredníctvom [ShowPolicyName('renovatio_policy')] [Concept('policy','politiky')|e] [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LAT_f: "Latinská ríša" # todo: NEW TRANSLATION
  LAT_f_desc: "Starý $ROM_f$ prežil sústreďujúc sa okolo [ShowLocationName('constantinople')], hoci nasledoval [ShowReligionName('orthodox')] namiesto správnej [ShowReligionAdjective('catholic')] viery [ShowLocationName('rome')]. Preto je našou posvätnou povinnosťou nahradiť ich ako $BYZ_eastern_rome$ a zriadiť [ShowReligionAdjectiveWithNoTooltip('catholic')] cisára v [ShowLocationNameWithNoTooltip('constantinople')]." # todo: CHANGED
  LAT_REDUCED_REQUIREMENTS_f: "$LAT_f$" # todo: NEW TRANSLATION
@@ -100,8 +100,8 @@
  POL_f_desc: "Kráľovstvo, ktoré sa Piastovci kedysi snažili tak veľmi zjednotiť, je teraz rozdelené a bez kráľa. Musíme sa usilovať zjednotiť poľský ľud a vytvoriť poľský národ, ktorý zaujme miesto bývalého kráľovstva." # todo: NEW TRANSLATION
  PLC_f: "Spoločný štát" # todo: NEW TRANSLATION
  PLC_f_desc: "Zjednotením korun Litvy a Poľska pod jedným praporom sa staneme majákom východnej Európy, prinášajúc naše svetlo na močiare a lesy, ktoré pokrývajú krajinu." # todo: NEW TRANSLATION
- PLC_f_trigger_pol: "Musíme buď zničiť [GetCountry('POL').GetNameWithFlag], urobiť z nich nášho [subject|e], alebo vstúpiť s nimi do [union|e]" # todo: CHANGED
- PLC_f_trigger_lit: "Musíme buď zničiť [GetCountry('LIT').GetNameWithFlag], urobiť z nich nášho [subject|e], alebo vstúpiť s nimi do [union|e]" # todo: CHANGED
+ PLC_f_trigger_pol: "Musíme buď zničiť [GetCountry('POL').GetNameWithFlag], urobiť z nich nášho [Concept('subject','vazala')|e], alebo vstúpiť s nimi do [Concept('union','únie')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ PLC_f_trigger_lit: "Musíme buď zničiť [GetCountry('LIT').GetNameWithFlag], urobiť z nich nášho [Concept('subject','vazala')|e], alebo vstúpiť s nimi do [Concept('union','únie')|e]" # todo: CHANGED # todo: CONCEPT CASE
  UKR_f: "Rutenia" # todo: NEW TRANSLATION
  UKR_f_desc: "Storočia dozadu bola zem Rus' zjednotená pod jedným praporom a vládla sa z legendárneho mesta Kyjev. Potom však prišli mongolské hordy, postupovali z veľkej stepi, pustošili a pálili. Zničili naše kremliny a mestá padali jedno po druhom, dokonca aj Kyjev nemohol uniknúť tomuto osudu. V hrôze náš ľud utiekol z rovín Rus' a šiel na sever. Do lesov a pustatín krajiny, ktorú dnes voláme Rusko.\nTeraz sa zdvíha nové a arogantné mesto na severe. Priťahuje malé štátiky okolo seba a jeho vládca si predstavuje novú Rus'. Rus' sústredenú v Moskve a nie v Kyjeve.\nAvšak my Rutenia nezmizneme na stránkach histórie. Nedovolíme príslušníkom a nástupcom privlastniť si dedičstvo našich predkov. Kyjev opäť povstane a my ho obnovíme do jeho bývalej slávy a nádheru. Rovnako tak aj celá Rus'." # todo: NEW TRANSLATION
  ROM_f: "Rímska ríša" # todo: NEW TRANSLATION
@@ -226,7 +226,7 @@
  ARM_f_desc: "Ľud [ShowCultureName('armenian_culture')] je starobylý, siaha až pred časy Rimanov. Prežili sme až doteraz a budeme v tom pokračovať, zjednotení opäť pod $ARM_ADJ$ zástavou" # todo: NEW TRANSLATION
  SWI_f: "$SWI$" # todo: NEW TRANSLATION
  SWI_f_desc: "[GetUniqueInternationalOrganization('swiss_confederation').GetName] bola len spojenectvom rôznych kantónov. Aby sa skutočne zjednotila [ShowCultureGroupName('swiss_group')], suverénna moc musí nastoliť dominanciu na Švajčiarskej plošine." # todo: NEW TRANSLATION
- SWI_f_tt: "[GetUniqueInternationalOrganization('swiss_confederation').GetName] existuje\n[international_organization|e] môže namiesto toho vykonať [ShowLawName('sc_unification')], aby vytvoril tento štát" # todo: NEW TRANSLATION
+ SWI_f_tt: "[GetUniqueInternationalOrganization('swiss_confederation').GetName] existuje\n[Concept('international_organization','Medzinárodná organizácia')|e] môže namiesto toho vykonať [ShowLawName('sc_unification')], aby vytvoril tento štát" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AYU_f: "$AYU$" # todo: NEW TRANSLATION
  AYU_f_desc: "Mesto $ayutthaya$ bude slúžiť ako nový zdroj moci pre [ShowCultureName('thai_culture')], odtiaľ sa rozšíria k väčšej sláve." # todo: NEW TRANSLATION
  ALB_f: "$ALB$" # todo: NEW TRANSLATION

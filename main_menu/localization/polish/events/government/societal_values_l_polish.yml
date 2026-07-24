@@ -17,7 +17,7 @@
  societal_values.104.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  societal_values.105.title: "Veľké povstanie" # todo: NEW TRANSLATION
  societal_values.105.desc: "Naši [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sú hlboko rozrušení správou, že ich sloboda pohybu má byť ďalej obmedzená. V skutočnosti kvôli tomu prepukli po celej krajine masívne povstania... Možno keby venovali viac času osobnej hygiene, neboli by tak odpudiví?" # todo: NEW TRANSLATION
- societal_values.105.a.tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [pops|e] v niekoľkých [rural|e] [locations|e] ako [target_location.GetName] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ societal_values.105.a.tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [Concept('pops','Populácie')|e] v niekoľkých [Concept('rural','vidiecky')|e] [Concept('locations','lokalitách')|e] ako [target_location.GetName] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.105.a: "Sedliaci sa búria!" # todo: NEW TRANSLATION
  societal_values.106.title: "Nevoľníci správne vykořisťovaní" # todo: NEW TRANSLATION
  societal_values.106.desc: "Naša politika nevoľníctva priniesla svoje ovocie, keď naši zemepáni nedávno vyvinuli mimoriadne úsilie pri vykorisťovaní svojich nevoľníkov." # todo: NEW TRANSLATION
@@ -419,7 +419,7 @@
  societal_values.900.desc: "Vďaka našim obratným obchodným praktikám sú obchodníci priťahovaní do našej ríše a z nášho obchodu získavame viac výhod než kedykoľvek predtým." # todo: NEW TRANSLATION
  societal_values.900.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_business_booming: "$societal_values.900.title$" # todo: NEW TRANSLATION
- STATIC_MODIFIER_DESC_business_booming: "Vďaka našim šikovným obchodným praktikám sa do nášho panstva prilákavajú obchodníci a naša [selling_efficiency|e] sa v dôsledku toho zvýšila." # todo: CHANGED
+ STATIC_MODIFIER_DESC_business_booming: "Vďaka našim šikovným obchodným praktikám sa do nášho panstva prilákavajú obchodníci a naša [Concept('selling_efficiency','efektivita predaja')|e] sa v dôsledku toho zvýšila." # todo: CHANGED # todo: CONCEPT CASE
  societal_values.901.title: "Obchodná sebauspokojenosť" # todo: NEW TRANSLATION
  societal_values.901.desc: "Hoci sme ako národ známi svojimi obratnými obchodnými praktikami, momentálne sú naši obchodníci trochu sebauspokojní." # todo: NEW TRANSLATION
  societal_values.901.a: "Naši obchodníci už toľko nekonkurujú." # todo: NEW TRANSLATION
@@ -671,7 +671,7 @@
  societal_values.1601.title: "Provinciám prekáža nedostatok autonómie" # todo: NEW TRANSLATION
  societal_values.1601.desc: "Naše centralizačné politiky viedli k tomu, že mnohí v provinciách cítia, že prišli o veľkú časť autonómie. Vo vzduchu sa šepká o povstaní." # todo: NEW TRANSLATION
  societal_values.1601.a: "$common_string_let_them_revolt$" # todo: NEW TRANSLATION
- societal_values.1601.a.tt: "Až #Y [ROOT.GetVariable('province_count').GetValue]#! [locations|e] stratia [ShowNamedValue('prosperity_weak_penalty')|+=2%] [prosperity|e]" # todo: NEW TRANSLATION
+ societal_values.1601.a.tt: "Až #Y [ROOT.GetVariable('province_count').GetValue]#! [Concept('locations','lokality')|e] stratia [ShowNamedValue('prosperity_weak_penalty')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.1601.b: "Udeľme ústupky." # todo: NEW TRANSLATION
  societal_values.1602.title: "Provinciám sa žiada ešte väčšia autonómia" # todo: NEW TRANSLATION
  societal_values.1602.desc: "Jeden z našich provinciálnych guvernérov zistil, že za našich súčasných decentralizovaných politík by si mohol založiť vlastný biznis. Fakt, že armáda, ktorú sa mu podarilo získať, je príliš malá na to, aby také nároky podporila, ho zjavne veľmi netrápi." # todo: NEW TRANSLATION
@@ -1015,7 +1015,7 @@
  societal_values.2037.desc: "Spoločenské ovzdušie v našom regióne, v spojení s humanistickými hodnotami nášho ľudu, spôsobili diplomatický prelom.\n\nSusedné národy sa dohodli, že každý suverénny štát by mal mať právo rozhodovať o svojej viere, nech je akokoľvek nesprávna alebo heretická. To uľahčilo diplomatické vzťahy s našimi susedmi a položilo základy pre ďalšie diplomatické kroky." # todo: NEW TRANSLATION
  societal_values.2037.a: "Každému svoje." # todo: NEW TRANSLATION
  societal_values.2037.b: "Nezmysel! Naši susedia sú všetci heretici!" # todo: NEW TRANSLATION
- every_neighbor_country_gets_opinion_diplomatic_move_on_us: "Každý susedný [country|e] získa [ShowBiasValue('opinion_diplomatic_move')|+=0] postoj k [ROOT.GetCountry.GetLongName]." # todo: NEW TRANSLATION
+ every_neighbor_country_gets_opinion_diplomatic_move_on_us: "Každý susedný [Concept('country','krajina')|e] získa [ShowBiasValue('opinion_diplomatic_move')|+=0] postoj k [ROOT.GetCountry.GetLongName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2038.t: "Vedecké spoločnosti" # todo: NEW TRANSLATION
  societal_values.2038.desc: "Naše humanistické hodnoty viedli mnohých gramotných ľudí k zakladaniu malých vedeckých spoločností, kde diskutujú o rôznych praktických aj nepraktických konceptoch a témach.\n\nIndividuálne nie sú nijak dôležité, no ako celok môže tento trend viesť k vedeckému výskumu, z ktorého môže štát profitovať." # todo: NEW TRANSLATION
  societal_values.2038.a: "Nech nám poslúžia." # todo: NEW TRANSLATION
@@ -1045,7 +1045,7 @@
  societal_values.2105.title: "Protest stavov" # todo: NEW TRANSLATION
  societal_values.2105.desc: "Naše snahy o dosiahnutie absolutistického štátu nezostali bez povšimnutia stavov našej krajiny, a požadujú, aby sme upustili od týchto myšlienok absolutistického vládnutia v prospech liberálnejšieho prístupu." # todo: NEW TRANSLATION
  societal_values.2105.a: "Musíme pritlačiť." # todo: NEW TRANSLATION
- societal_values.2105.a.tt: "Všetky naše [upper_class|e] [pops|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ societal_values.2105.a.tt: "Všetky naše [Concept('upper_class','vyššia trieda')|e] [Concept('pops','populácií')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2105.b: "Ustúpiť ich požiadavkám." # todo: NEW TRANSLATION
  societal_values.2106.title: "Nepopulárni výbercovia daní" # todo: NEW TRANSLATION
  societal_values.2106.desc: "Odchýlili sme sa od postupov predchádzajúcich storočí a začali sme vyberať dane prostredníctvom štátnych úradníkov namiesto toho, aby sme to ponechali na miestnych orgánoch. Hoci to zvýšilo našu efektivitu pri hľadaní predmetov podliehajúcich zdaneniu a presnom uvalení daní, nie je to populárne rozhodnutie medzi stavmi, ktoré musia tieto dane platiť." # todo: NEW TRANSLATION
@@ -1077,7 +1077,7 @@
  societal_values.2113.title: "Zneužívania ľudu" # todo: NEW TRANSLATION
  societal_values.2113.desc: "Veľká časť našej populácie nie je zastúpená v našom absolutistickom štáte a interakcie s našimi výbercami daní sú čoraz viac nepriateľské. Spomínajú zneužívania a neprimerane vysoké dane ukladané našimi úradníkmi a požadujú vyššie postavenie v našej vláde, aby sa ochránili pred takýmito excesmi." # todo: NEW TRANSLATION
  societal_values.2113.a: "Odmietnuť to, čo s tým urobia?" # todo: NEW TRANSLATION
- societal_values.2113.a.tt: "Všetky naše [ShowPopTypeName('peasants')] a [ShowPopTypeName('burghers')] [pops|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ societal_values.2113.a.tt: "Všetky naše [ShowPopTypeName('peasants')] a [ShowPopTypeName('burghers')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2113.b: "Ustúpiť ich požiadavkám." # todo: NEW TRANSLATION
  societal_values.2114.title: "Nevhodný [ROOT.GetCountry.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  societal_values.2114.desc: "Absolútny [ROOT.GetCountry.GetGovernment.GetRulerTitle] musí byť neomylný a mal by byť výborným príkladom vodcovstva. Bohužiaľ [target_ruler.GetName] nespĺňa tieto očakávania kvôli [target_ruler.GetHerHis] nedostatku schopností vládnuť, inšpirovať a viesť ľud [ROOT.GetCountry.GetName]. To prinútilo našich poddaných spochybňovať [target_ruler.GetHerHis] mandát vládnuť." # todo: NEW TRANSLATION
@@ -1106,7 +1106,7 @@
  societal_values.2207.title: "Sloboda na papieri" # todo: NEW TRANSLATION
  societal_values.2207.desc: "Hoci garantujeme určité práva našej populácii, vrátane nižších vrstiev, krajinu stále sužujú zneužívania moci zo strany vyšších vrstiev voči tým, ktorých považujú za nižších. Vysoké dane len zvýšili bremeno [ShowPopTypeName('peasants')] a sťažností na našu nečinnosť rýchlo pribudlo." # todo: NEW TRANSLATION
  societal_values.2207.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
- societal_values.2207.a.tt: "Všetky naše [ShowPopTypeName('peasants')] [pops|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ societal_values.2207.a.tt: "Všetky naše [ShowPopTypeName('peasants')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2208.title: "Túžba po minulosti" # todo: NEW TRANSLATION
  societal_values.2208.desc: "S prebiehajúcou liberalizáciou ekonomiky viac [ShowPopTypeName('burghers')] nadobudlo pôdu a teraz zamestnávajú [ShowPopTypeName('peasants')] na tých istých pozemkoch. Náš [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] sú proti týmto novým zemepánom, tvrdiac, že za predchádzajúcich usporiadaní žili lepšie. Niektorí z nich sa už presťahovali z týchto pozemkov v [target_province.GetName], kde polia a lesy ležia nevyužité." # todo: NEW TRANSLATION
  societal_values.2208.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
@@ -1138,10 +1138,10 @@
  societal_values.2300.a: "Vyhostiť [target_character.GetHerHim]!" # todo: NEW TRANSLATION
  societal_values.2300.b: "[target_character.GetSheHe|U] sa stane [target_culture.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION
  societal_values.2300.c: "Nezasiahneme." # todo: NEW TRANSLATION
- scale_with_sinicized_unsinicized_key: "bude sa prispôsobovať na základe našich [ShowSocietyDirectionName('sinicized')] a [ShowSocietyDirectionName('unsinicized')] [societal_values|e]" # todo: NEW TRANSLATION
- stability_cost_scales_with_sinicized_vs_unsinicized_tt: "Náklady na [stability|e] $scale_with_sinicized_unsinicized_key$" # todo: NEW TRANSLATION
- legitimacy_cost_scales_with_sinicized_vs_unsinicized_tt: "Náklady na [government_power|e] $scale_with_sinicized_unsinicized_key$" # todo: NEW TRANSLATION
- between_3_5_become_chinese_tt: "Niektorí z našich [pops|e] v [target_province.GetName] prijmú [target_culture.GetName] [culture|e]" # todo: NEW TRANSLATION
+ scale_with_sinicized_unsinicized_key: "bude sa prispôsobovať na základe našich [ShowSocietyDirectionName('sinicized')] a [ShowSocietyDirectionName('unsinicized')] [Concept('societal_values','sociálne hodnoty')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ stability_cost_scales_with_sinicized_vs_unsinicized_tt: "Náklady na [Concept('stability','stabilitu')|e] $scale_with_sinicized_unsinicized_key$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ legitimacy_cost_scales_with_sinicized_vs_unsinicized_tt: "Náklady na [Concept('government_power','vládnu moc')|e] $scale_with_sinicized_unsinicized_key$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ between_3_5_become_chinese_tt: "Niektorí z našich [Concept('pops','populácií')|e] v [target_province.GetName] prijmú [target_culture.GetName] [Concept('culture','kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2301.title: "Vlna sinicizácie" # todo: NEW TRANSLATION
  societal_values.2301.desc: "Naša prítomnosť v sfére vplyvu [GetInternationalOrganization('middle_kingdom').GetName] je komplikovaný vzťah medzi [target_character1.GetName] a [target_character2.GetName]. Kontakty medzi našimi dvoma ríšami vyvolali iskry sinicizácie. Skutočne, [target_sinicized_pop_scope.GetName] nedávno začali prejavovať prvky vplyvu kultúry [target_culture.GetName], v rozpore s našimi normami." # todo: NEW TRANSLATION
  societal_values.2301.a: "Z toho nevznikne nič zlé." # todo: NEW TRANSLATION
@@ -1172,7 +1172,7 @@
  societal_values.2309.desc: "Náš obnovený tlak prispôsobiť našu administráciu normám [ShowSocietyDirectionName('sinicized')] narazil na silný odpor v [target_province.GetName]. Starší cechov, správcovia svätýň a miestne osobnosti odsudzujú cudzie obrady a písma a varujú, že ďalší tlak roztrhá spoločenské väzby. Niektorí žiadajú o zhovievavosť, iní hrozia tichým odporom a zmiešané komunity provincie sú podozrievavé ohľadom našich zámerov." # todo: NEW TRANSLATION
  societal_values.2309.a: "Ich sťažnosti sú bezdôvodné." # todo: NEW TRANSLATION
  societal_values.2309.b: "Vypočujme ich obavy!" # todo: NEW TRANSLATION
- pops_in_target_province_resist_sinicization_tt: "Naše [pops|e] v [target_province.GetName] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e], keď sa budú snažiť odolať našim politikám [ShowSocietyDirectionName('sinicized')]" # todo: NEW TRANSLATION
+ pops_in_target_province_resist_sinicization_tt: "Naše [Concept('pops','populácie')|e] v [target_province.GetName] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e], keď sa budú snažiť odolať našim politikám [ShowSocietyDirectionName('sinicized')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2310.title: "[target_estate.GetNameWithNoTooltip] odporuje politikám [ShowSocietyDirectionNameWithNoTooltip('unsinicized')]" # todo: NEW TRANSLATION
  societal_values.2310.desc: "Náš odklon od sinicizovaných noriem neunikol pozornosti v [ROOT.GetCountry.GetGovernment.GetCourtTitle] v [ROOT.GetCountry.GetCapital.GetName]. [target_estate.GetName] tvrdia, že odmietnutie ustálenej etikety oslabí naše postavenie a podkope prestíž nášho [ROOT.GetCountry.GetFlavorRank]. Trvajú na tom, aby sme prehodnotili svoj kurz skôr, než sa stratí ich vplyv a lojalita." # todo: NEW TRANSLATION
  societal_values.2310.a: "[target_estate.GetNameWithNoTooltip] nám neriadi naše politiky!" # todo: NEW TRANSLATION
@@ -1190,7 +1190,7 @@
  societal_values.2314.title: "Domáce inšpirácie" # todo: NEW TRANSLATION
  societal_values.2314.desc: "Slávny majster [target_character.GetName] predstavuje ambiciózne dielo čerpané z našich vlastných príbehov, motívov a rituálov. Dvorania i obyčajní ľudia sú uchvátení a mecenáši sa predbiehajú, aby ho videli dokončené — dôkaz, že naše dedičstvo žiari bez potreby prejavovať sa v cudzích formách." # todo: NEW TRANSLATION
  societal_values.2314.a: "Umenie oslovuje našu dušu." # todo: NEW TRANSLATION
- gains_depend_on_scope_target_character_total_abilities: "Prínosy pre našu [culture|e] budú závisieť od [total_ability|e] [target_character.GetName]" # todo: NEW TRANSLATION
+ gains_depend_on_scope_target_character_total_abilities: "Prínosy pre našu [Concept('culture','kultúru')|e] budú závisieť od [Concept('total_ability','celkovej schopnosti')|e] [target_character.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2315.title: "Migranti prichádzajú z [target_province_origin.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  societal_values.2315.desc: "Skupiny rodín začali opúšťať [target_province_origin.GetName] a prekračovať hranice do našich krajín z [target_country.GetName]. Priťahovaní novými príležitosťami alebo nespokojní s miestnou správou, títo migranti sa teraz usadzujú v [target_province_destination.GetName], prinášajúc so sebou zvyky a zručnosti, ktoré môžu zmeniť rovnováhu našej spoločnosti a posunúť nás bližšie k [GetInternationalOrganization('middle_kingdom').GetName]." # todo: NEW TRANSLATION
  societal_values.2316.title: "Mnohé ruky [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1201,7 +1201,7 @@
  societal_values.2317.desc: "[target_culture.GetName] migranti sa usadili v [target_province.GetName] a ich rastúca prítomnosť teraz vyvoláva ťažké otázky. Niektorí členovia [ROOT.GetCountry.GetGovernment.GetCourtTitle] nás nabádajú uložiť prísnejšie obmedzenia ich práv, obávajúc sa nevernosi a narušenia kultúrnej identity, zatiaľ čo iní tvrdia, že prejavenie tolerancie by posilnilo našu prestíž a získalo vernosť týchto nových poddaných." # todo: NEW TRANSLATION
  societal_values.2317.a: "Obmedziť ich práva." # todo: NEW TRANSLATION
  societal_values.2317.b: "Toto je hranica, ktorú neprekročíme." # todo: NEW TRANSLATION
- every_location_in_target_province_cracked_down_on_minorities_modifier: "Naše [locations|e] v [target_province.GetName] získajú [ShowModifier('cracked_down_on_minorities_modifier')] na #Y 10#! rokov" # todo: NEW TRANSLATION
+ every_location_in_target_province_cracked_down_on_minorities_modifier: "Naše [Concept('locations','lokality')|e] v [target_province.GetName] získajú [ShowModifier('cracked_down_on_minorities_modifier')] na #Y 10#! rokov" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2318.title: "[target_country.GetAdjectiveWithNoTooltip] [ShowPopTypeNameWithNoTooltip('burghers')] osídľujú [target_location_destination.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  societal_values.2318.desc: "[ShowPopTypeName('burghers')] z [target_country.GetName] začali zakladať svoje komunity okolo [target_location_destination.GetName], budujúc siete, ktoré viac prepoja náš obchod s [GetInternationalOrganization('middle_kingdom').GetName]. Ich prítomnosť sľubuje nové tovary a prosperitu, no niektorí varujú, že to dá zahraničným obchodníkom neprimeraný vplyv na našu ekonomiku." # todo: NEW TRANSLATION
  societal_values.2318.a: "Prílev [ShowPopTypeNameWithNoTooltip('burghers')] je predsa dobrá vec, však?" # todo: NEW TRANSLATION
@@ -1209,12 +1209,12 @@
  societal_values.2319.desc: "Naša blízkosť k [target_country.GetName] výrazne prospela nášmu [ROOT.GetCountry.GetFlavorRank]. Nedávno tento vzťah priniesol nový vývoj. [target_country.GetAdjectiveWithNoTooltip] priniesli svoju vieru [target_religion.GetName] do [target_province.GetName], kde si teraz začína nájsť veriacich medzi obyvateľstvom. Niektorí to považujú za nebezpečný zásah, ktorý podkopáva naše tradície, zatiaľ čo iní tvrdia, že by to mohlo posilniť väzby s [GetInternationalOrganization('middle_kingdom').GetName]." # todo: NEW TRANSLATION
  societal_values.2319.a: "Tolerovať ich uctievanie." # todo: NEW TRANSLATION
  societal_values.2319.b: "Potlačiť toto kacírstvo." # todo: NEW TRANSLATION
- approximately_10_percent_pop_target_province_convert_target_religion_tt: "Približne #Y 10%#! našich [pops|e], ktorí vyznávajú [our_religion_scope.GetName] v [target_province.GetName], prejde na [target_religion.GetName]" # todo: NEW TRANSLATION
+ approximately_10_percent_pop_target_province_convert_target_religion_tt: "Približne #Y 10%#! našich [Concept('pops','populácií')|e], ktorí vyznávajú [our_religion_scope.GetName] v [target_province.GetName], prejde na [target_religion.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2320.title: "Zdieľanie poznatkov v sfére [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  societal_values.2320.desc: "Ako vodca [GetInternationalOrganization('middle_kingdom').GetName], [target_country.GetName] už prijal inštitúcie, ktoré chýbajú v našom [ROOT.GetCountry.GetFlavorRank]. Ich učenci a vyslanci ponúkajú zdieľať metódy, technológie a postupy s nami, sľubujúc zúženie priepasťi medzi našimi štátmi — hoci niektorí varujú, že takéto dary stoja za cenu hlbšej závislosti." # todo: NEW TRANSLATION
  societal_values.2320.a: "Investícia do poznania prináša najlepšie výnosy." # todo: NEW TRANSLATION
  societal_values.2320.b: "Nechceme žiadne cudzie zasahovanie." # todo: NEW TRANSLATION
- gain_in_institutions_depends_on_monthly_towards_sinicized_tt: "Postup v [institution|e], ako aj počet postihnutých [locations|e], bude závisieť od nášho [ShowModifierTypeName('monthly_towards_sinicized')]" # todo: NEW TRANSLATION
+ gain_in_institutions_depends_on_monthly_towards_sinicized_tt: "Postup v [Concept('institution','inštitúcii')|e], ako aj počet postihnutých [Concept('locations','lokality')|e], bude závisieť od nášho [ShowModifierTypeName('monthly_towards_sinicized')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  societal_values.2321.title: "Architektúra [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  societal_values.2321.desc: "Od veľkolepých palácov [target_country.GetLongName] po jeho chrámy a záhrady, [target_country.GetAdjectiveWithNoTooltip] architekti zdokonalili štýl, ktorý spája majestát s harmóniou. Delegáti a stavitelia zďaleka teraz prinášajú poznatky o týchto návrhoch do nášho [ROOT.GetCountry.GetFlavorRank]. Musíme sa rozhodnúť, či osvojiť si ich lekcie alebo povýšiť naše domáce tradície." # todo: NEW TRANSLATION
  societal_values.2321.a: "Učiť sa od ich inžinierov." # todo: NEW TRANSLATION

@@ -3,12 +3,12 @@
  war_of_the_roses.1.desc: "Dve mladšie vetvy rodu [ShowDynastyName('plantagenet_dynasty')], rod [ShowDynastyName('lancaster_dynasty')] a rod [ShowDynastyName('york_dynasty')], obe sa hlásia za právoplatného nástupcu na trón [ROOT.GetCountry.GetName]. V niekoľkých provinciách po celej krajine už prepukli sporadické boje medzi ich stúpencami.\n\nIch heraldické symboly, červená ruža a biela ruža, sa už stali synonymom konfliktu, bežne nazývaného [ShowDisasterName('war_of_the_roses')]." # todo: CHANGED
  war_of_the_roses.1.desc.lancaster_ruler: "Dom [ShowDynastyName('york_dynasty')], mladšia vetva Domu [ShowDynastyName('plantagenet_dynasty')], už dlhú dobu spochybňuje právo vládnuceho domu [ShowDynastyName('lancaster_dynasty')] na trón [ROOT.GetCountry.GetName]. Teraz ich stúpenci vzali zbrane do rúk a dokonca aj v rámci Domu [ShowDynastyNameWithNoTooltip('lancaster_dynasty')] sa objavil riválny uchádzač, ktorý spochybňuje [ROOT.GetGovernment.GetRuler.GetName].\n\nErbové symboly týchto dvoch mladších vetiev, červená ruža a biela ruža, sa už stali synonymom konfliktu, ktorý je dnes bežne známy ako [ShowDisasterName('war_of_the_roses')]." # todo: NEW TRANSLATION
  war_of_the_roses.1.a: "Podporte rod [ShowDynastyNameWithNoTooltip('lancaster_dynasty')]." # todo: CHANGED
- york_rebels_joining: "Všetci [pops|e] v [ShowProvinceDefinitionName('north_riding_province')] a [ShowProvinceDefinitionName('west_riding_province')] sa pridajú k povstaniu [target_york_head.GetName]" # todo: CHANGED
+ york_rebels_joining: "Všetci [Concept('pops','populácie')|e] v [ShowProvinceDefinitionName('north_riding_province')] a [ShowProvinceDefinitionName('west_riding_province')] sa pridajú k povstaniu [target_york_head.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  war_of_the_roses.1.b: "Podporte rod [ShowDynastyNameWithNoTooltip('york_dynasty')]." # todo: CHANGED
  york_rebel_name: "Pretendenti z Yorku" # todo: NEW TRANSLATION
  lancaster_rebel_name: "Pretendenti z Lancasteru" # todo: NEW TRANSLATION
- lancaster_rebels_joining: "Všetci [pops|e] v [ShowProvinceDefinitionName('lancashire_province')] a [ShowProvinceDefinitionName('cheshire_province')] sa pridajú k povstaniu [target_lancaster_head.GetName]" # todo: CHANGED
- ensuing_chaos_distabilizes_peasants_estate_tt: "Šíriaci sa chaos poškodzuje [estate_satisfaction|e] našej [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]" # todo: NEW TRANSLATION
+ lancaster_rebels_joining: "Všetci [Concept('pops','populácie')|e] v [ShowProvinceDefinitionName('lancashire_province')] a [ShowProvinceDefinitionName('cheshire_province')] sa pridajú k povstaniu [target_lancaster_head.GetName]" # todo: CHANGED # todo: CONCEPT CASE
+ ensuing_chaos_distabilizes_peasants_estate_tt: "Šíriaci sa chaos poškodzuje [Concept('estate_satisfaction','spokojnosť stavu')|e] našej [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  war_of_the_roses.2.title: "Podpora koruny" # todo: NEW TRANSLATION
  war_of_the_roses.2.desc: "Miestna podpora koruny počas Vojny ruží stále rastie, pretože sa [target_pop.GetName] zhromažďujú pod našou zástavou!" # todo: NEW TRANSLATION
  war_of_the_roses.2.a: "To je veľmi vítané." # todo: NEW TRANSLATION
@@ -35,7 +35,7 @@
  war_of_the_roses.9.desc: "Mnohí z tých, ktorí boli počas Vojny ruží nútení utiecť zo krajiny, našli útočisko na kontinente, a miestne úrady hlásia povesti, že ozbrojené povstanie môže byť na obzore. Ak tomu nezabránime, dokážu tam vybudovať oporný bod, ktorý môže podporovať ďalšie povstania." # todo: NEW TRANSLATION
  war_of_the_roses.9.a: "Pošleme peniaze na pomoc miestnym úradom." # todo: NEW TRANSLATION
  war_of_the_roses.9.b: "Tých peňazí je potrebnejšie použiť bližšie k domovu." # todo: NEW TRANSLATION
- wotr_foreign_power_intervenes: "Cudzie [country|e] zasahuje" # todo: NEW TRANSLATION
+ wotr_foreign_power_intervenes: "Cudzie [Concept('country','krajina')|e] zasahuje" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  wotr_lan_rebels_will_progress: "[lancaster_rebel.GetName] získa [ShowNamedValue('rebel_progress_weak_bonus')|-=2%] pokroku" # todo: NEW TRANSLATION
  wotr_yor_rebels_will_progress: "[york_rebel.GetName] získa [ShowNamedValue('rebel_progress_weak_bonus')|-=2%] pokroku" # todo: NEW TRANSLATION
  war_of_the_roses.12.title: "Podpora rodu Lancaster" # todo: NEW TRANSLATION
@@ -66,7 +66,7 @@
  war_of_the_roses.18.title: "Konflikt [ShowDisasterNameWithNoTooltip('war_of_the_roses')]" # todo: NEW TRANSLATION
  war_of_the_roses.18.desc: "Pretendenti už nejaký čas zbierajú podporu v nelojálnych provinciách po celom [ROOT.GetCountry.GetFlavorRank]. Bohužiaľ sa teraz otvorene vzbúrili proti našej autorite, spochybňujúc legitimitu [target_character.GetName] a ohrozujúc rodovú líniu [target_dynasty.GetName]." # todo: NEW TRANSLATION
  war_of_the_roses.18.a: "Zničte ich!" # todo: NEW TRANSLATION
- wotr_explain_action_tt: "Počas fázy [civil_war|e] [ShowDisasterName('war_of_the_roses')], získame prístup k [ShowGenericActionName('wotr_bribe_garrison')] [disaster|e] [action|e]" # todo: NEW TRANSLATION
+ wotr_explain_action_tt: "Počas fázy [Concept('civil_war','občianska vojna')|e] [ShowDisasterName('war_of_the_roses')], získame prístup k [ShowGenericActionName('wotr_bribe_garrison')] [Concept('disaster','katastrofe')|e] [Concept('action','akcii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  war_of_the_roses.100.title: "Koniec Vojny ruží" # todo: NEW TRANSLATION
  war_of_the_roses.100.desc: "Ozbrojený konflikt o následníctvo anglického trónu je konečne u konca, keď [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] porazil protivníkov!" # todo: NEW TRANSLATION
  war_of_the_roses.100.a: "Poriadok je konečne obnovený." # todo: NEW TRANSLATION

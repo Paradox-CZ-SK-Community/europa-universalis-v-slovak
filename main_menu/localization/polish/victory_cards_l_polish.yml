@@ -3,49 +3,49 @@
  dip_score: "Diplomatické"
  mil_score: "Vojenské"
  SCORE_INFO_TITLE: "#T Skóre#!"
- SCORE_GAIN: "$NAME$ získava $VAL|+=$ [score|e] každý mesiac vďaka:"
+ SCORE_GAIN: "$NAME$ získava $VAL|+=$ [Concept('score','skóre')|e] každý mesiac vďaka:" # todo: CONCEPT CASE
  RANK_SCORE_INFO: "$TYPE$ poradie ($RANK|Y$): $VAL|+=2$"
- SCORE_NOT_RANKED: "[country|e] musí byť medzi $RANK|V$ najlepšími krajinami v jednej z troch kategórií."
- SCORE_DETAILS: "[score|e] je určené podľa toho, ako dobre si národ vedie.\nZisky skóre sa zvyšujú, ako hra postupuje do neskorších období.\nMomentálne sa skóre pre $NAME$ získava rýchlosťou $VAL|+=%$."
- SCORE_HEGEMONY: "Konečné [score|el] sa vynásobí $VAL|+=%$, pretože bytie [Concept('hegemon','hegemónom')|e] ho zvyšuje, zatiaľ čo byť s ním v spojenectve ho znižuje."
+ SCORE_NOT_RANKED: "[Concept('country','Krajina')|e] musí byť medzi $RANK|V$ najlepšími krajinami v jednej z troch kategórií." # todo: CONCEPT CASE
+ SCORE_DETAILS: "[Concept('score','Skóre')|e] je určené podľa toho, ako dobre si národ vedie.\nZisky skóre sa zvyšujú, ako hra postupuje do neskorších období.\nMomentálne sa skóre pre $NAME$ získava rýchlosťou $VAL|+=%$." # todo: CONCEPT CASE
+ SCORE_HEGEMONY: "Konečné [Concept('score','skóre')|el] sa vynásobí $VAL|+=%$, pretože bytie [Concept('hegemon','hegemónom')|e] ho zvyšuje, zatiaľ čo byť s ním v spojenectve ho znižuje." # todo: CONCEPT CASE
  SCORE_EXTRA_DRO: "V knihe záznamov je podrobný prehľad, kde môžete vidieť, ako sa pre každú krajinu vypočítava poradie."
  OPEN_LEDGER: "Otvoriť knihu záznamov"
- SCORE_ACCUM: "Zhromaždené [score|el]: $VAL|0V$"
- SCORE_ACCUM_VC: "Zhromaždené z držených [victory_cards|e]: $VAL|+=0$"
+ SCORE_ACCUM: "Zhromaždené [Concept('score','skóre')|el]: $VAL|0V$" # todo: CONCEPT CASE
+ SCORE_ACCUM_VC: "Zhromaždené z držených [Concept('victory_cards','víťazných kariet')|e]: $VAL|+=0$" # todo: CONCEPT CASE
  VC_LIST_TITLE: "Máme nasledujúce [Concept('victory_cards','víťazné karty')|e]:"
  HOSTILE_VC_TITLE: "Ostatné krajiny majú na nás nasledujúce karty, ktoré znižujú naše skóre."
  VC_CARD_ENTRY: "$NAME$: $VAL|+=2$"
  VICTORY_CARD_DESC_F: "[COUNTRY.GetAltAdjectiveWithFlag('aa')] kontrola nad [AREA.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $SCORE|G$#!"
  VICTORY_CARD_DESC: "[COUNTRY.GetAltAdjectiveWithFlag('aa')] kontrola nad [AREA.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $SCORE|V$#!"
- VICTORY_CARD_DETAIL_F: "[COUNTRY.GetLongNameWithFlagWithNoTooltip] musí [Concept('own','vlastniť')|e], [Concept('control','ovládať')|e] a mať [cored|el] všetkých $NUM$ provincií oblasti [AREA.GetNameWithNoTooltip], aby získal a udržal skóre. Momentálne má $CURRENT|G$."
- VICTORY_CARD_DETAIL: "[COUNTRY.GetLongNameWithFlagWithNoTooltip] musí [Concept('own','vlastniť')|e], [Concept('control','ovládať')|e] a mať [cored|el] všetkých $NUM$ provincií oblasti [AREA.GetNameWithNoTooltip], aby získal a udržal skóre. Momentálne má $CURRENT|R$."
+ VICTORY_CARD_DETAIL_F: "[COUNTRY.GetLongNameWithFlagWithNoTooltip] musí [Concept('own','vlastniť')|e], [Concept('control','ovládať')|e] a mať [Concept('cored','S jadrom')|el] všetkých $NUM$ provincií oblasti [AREA.GetNameWithNoTooltip], aby získal a udržal skóre. Momentálne má $CURRENT|G$." # todo: CONCEPT CASE
+ VICTORY_CARD_DETAIL: "[COUNTRY.GetLongNameWithFlagWithNoTooltip] musí [Concept('own','vlastniť')|e], [Concept('control','ovládať')|e] a mať [Concept('cored','S jadrom')|el] všetkých $NUM$ provincií oblasti [AREA.GetNameWithNoTooltip], aby získal a udržal skóre. Momentálne má $CURRENT|R$." # todo: CONCEPT CASE
  HOSTILE_VICTORY_CARD_DESC: "[COUNTRY.GetAltAdjectiveWithFlag('aa')] kontrola nad [AREA.GetName]: $SCORE|+=0$$MAX$"
  HOSTILE_VICTORY_CARD_DESC_FAIL: "[COUNTRY.GetAdjectiveWithFlag] kontrola nad [AREA.GetName]: $SCORE|-=0$$MAX$"
  VICTORY_CARDS_IN_LOC: "Karty víťazstva pre [Location.GetArea.GetNameWithNoTooltip]"
  SCORE_PEACE_OFFER: "$NAME$: $VAL|+=2$"
  NO_VC_HERE: "V tejto [Concept('area','oblasti')|e] nie sú žiadne [Concept('victory_cards','víťazné karty')|e]."
- SCORE_GREATPOWER: "[great_power|e]: $VAL|+=2$"
- ADM_SCORE_TAX_BASE: "[tax_base|e]: $VAL|+=2$" # todo: NEW TRANSLATION
- ADM_SCORE_TECH: "[advances|e]: $VAL|+=2$"
- ADM_SCORE_OCCUPATION: "[occupation|e]: $VAL|+=2$"
- ADM_SCORE_STABILITY: "[stability|e]: $VAL|+=2$"
- ADM_SCORE_PRESTIGE: "[prestige|e]: $VAL|+=2$"
- ADM_SCORE_BANKRUPTCY: "[bankrupt|e]: $VAL|+=2$"
- ADM_SCORE_LOANS: "[loans|e]: $VAL|+=2$"
- ADM_SCORE_GOV_POWER: "[government_power|e]: $VAL|+=2$"
- ADM_SCORE_POP: "[population|e]: $VAL|+=2$"
- DIP_SCORE_MARKETS: "[markets|e]: $VAL|+=2$"
- DIP_SCORE_MERCHANTS: "[merchants|e]: $VAL|+=2$"
- DIP_SCORE_FLEET: "[navy|e]: $VAL|+=2$"
- DIP_SCORE_SUBJECTS: "[subjects|e]: $VAL|+=2$"
- DIP_SCORE_ALLIES: "[allies|e]: $VAL|+=2$"
- MIL_SCORE_ARMY: "Pravidelná [army|e]: $VAL|+=2$" # todo: CHANGED
- MIL_SCORE_LEVY: "[levies|e]: $VAL|+=2$" # todo: NEW TRANSLATION
- MIL_SCORE_DISCIPLINE: "[discipline|e]: $VAL|+=2$"
- MIL_SCORE_MIL_TACTICS: "[military_tactics|e]: $VAL|+=2$" # todo: NEW TRANSLATION
- MIL_SCORE_EXHAUSTION: "[war_exhaustion|e]: $VAL|+=2$"
- ENDGAME_SCORE: "Naše konečné [score|el] bolo [Player.GetScore.GetScore|2]"
- SORT_BY_RANK_TT: "Zoradiť podľa poradia [score|el]"
+ SCORE_GREATPOWER: "[Concept('great_power','Veľmoc')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_TAX_BASE: "[Concept('tax_base','Daňový základ')|e]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ADM_SCORE_TECH: "[Concept('advances','Pokroky')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_OCCUPATION: "[Concept('occupation','Okupácia')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_STABILITY: "[Concept('stability','Stabilita')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_PRESTIGE: "[Concept('prestige','Prestíž')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_BANKRUPTCY: "[Concept('bankrupt','Bankrot')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_LOANS: "[Concept('loans','Pôžičky')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_GOV_POWER: "[Concept('government_power','Vládna moc')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ADM_SCORE_POP: "[Concept('population','Populácia')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ DIP_SCORE_MARKETS: "[Concept('markets','Trhy')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ DIP_SCORE_MERCHANTS: "[Concept('merchants','Obchodníci')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ DIP_SCORE_FLEET: "[Concept('navy','Námorníctvo')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ DIP_SCORE_SUBJECTS: "[Concept('subjects','Vazali')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ DIP_SCORE_ALLIES: "[Concept('allies','Spojenci')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ MIL_SCORE_ARMY: "Pravidelná [Concept('army','armáda')|e]: $VAL|+=2$" # todo: CHANGED # todo: CONCEPT CASE
+ MIL_SCORE_LEVY: "[Concept('levies','Branci')|e]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MIL_SCORE_DISCIPLINE: "[Concept('discipline','Disciplína')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ MIL_SCORE_MIL_TACTICS: "[Concept('military_tactics','Vojenské taktiky')|e]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MIL_SCORE_EXHAUSTION: "[Concept('war_exhaustion','Vojnová vyčerpanosť')|e]: $VAL|+=2$" # todo: CONCEPT CASE
+ ENDGAME_SCORE: "Naše konečné [Concept('score','skóre')|el] bolo [Player.GetScore.GetScore|2]" # todo: CONCEPT CASE
+ SORT_BY_RANK_TT: "Zoradiť podľa poradia [Concept('score','skóre')|el]" # todo: CONCEPT CASE
  SORT_SCORE_RANK: "Poradie"
  SORT_SCORE_NAME: "Krajina"
  SORT_BY_ADM_TT: "Zoradiť podľa hodnotenia [Concept('adm','administratívnej schopnosti')|e] pre [score|el] v nasledujúcich mesiacoch."

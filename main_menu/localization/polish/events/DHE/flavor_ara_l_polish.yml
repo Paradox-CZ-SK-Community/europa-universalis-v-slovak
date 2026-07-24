@@ -4,7 +4,7 @@
  flavor_ara.1.desc: "Náš nový kvázi-súdny orgán, ktorý bude spravovať námorné a obchodné právo, sa nazýva Konzulát mora. Umožňuje našim obchodníkom riešiť svoje obchodné spory bez zásahov kráľovských súdov a výmenou my, [GetCountry('ARA').GetLongName], dostaneme finančnú podporu."
  flavor_ara.1.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  flavor_ara.1.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
- flavor_ara.1.tt: "[policy|e] [ShowPolicyName('ara_consulate_sea')] v [ShowLawName('maritime_law')] bude pre nás dostupná"
+ flavor_ara.1.tt: "[Concept('policy','Politika')|e] [ShowPolicyName('ara_consulate_sea')] v [ShowLawName('maritime_law')] bude pre nás dostupná" # todo: CONCEPT CASE
  flavor_ara.2.title: "Kniha Konzulátu mora"
  flavor_ara.2.entry: "$flavor_ara.2.title$" # todo: NEW TRANSLATION
  flavor_ara.2.desc: "#italic Llibre del Consolat de Mar#!, najznámejšia ako #italic Kniha Konzulátu mora#!, je zbierka starobylých námorných zvykov a súbor pravidiel pre správu vojených krížnikov. Zvažuje sa financovanie nového vydania knihy, ktorá bude obsahovať kódex na usmernenie činnosti súdov Konzulátu mora a ich sudcov poverených ochranou námorného práva."
@@ -111,7 +111,7 @@
  flavor_ara.18.desc: "Snaha [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] konsolidovať moc a centralizovať [ROOT.GetCountry.GetFlavorRank] narazila na ostrý odpor v [ShowAreaName('aragon_area')]. Starobylé privilégiá regiónu, rovnako ako mocný úrad [ShowEstatePrivilegeName('justicia_de_aragon')], sa stali významnými prekážkami [ROOT.GetCountry.GetGovernment.GetAdjective] moci. Tieto dlhodobé tradície viažu monarchiu k rešpektovaniu [ShowCultureName('aragonese')] slobôd, obmedzujúc schopnosť [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] úplne integrovať kráľovstvo do jednotnej správy. Frustrovaní pomalým postupom centralizácie, poradcovia [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] navrhujú zrušenie týchto archaických inštitúcií."
  flavor_ara.18.a: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] musí mať najvyššiu moc!"
  flavor_ara.18.a.entry: "Nech $crown_estate$ vládne nadradene!" # todo: NEW TRANSLATION
- flavor_ara.18.a.tt: "Všetky [ShowPopTypeName('nobles')] [Concept('pops','populácie')|e] v [ShowAreaName('aragon_area')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|el] a pripoja sa k [target_rebels.GetName]"
+ flavor_ara.18.a.tt: "Všetky [ShowPopTypeName('nobles')] [Concept('pops','populácie')|e] v [ShowAreaName('aragon_area')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|el] a pripoja sa k [target_rebels.GetName]" # todo: CONCEPT CASE
  aragonese_loyalist_rebels: "Aragonskí lojalisti"
  flavor_ara.18.b: "Fueros musia byť rešpektované."
  flavor_ara.18.historical_info: "Alterácie Aragónu boli sériou politických konfliktov na konci 16. storočia, vyvolaných snahami o centralizáciu kráľovskej moci po Španielsku. Aragón sa týmto opatreniam pevne bránil, pretože jeho inštitúcie chránili regionálnu autonómiu a obmedzovali kráľovu moc. Napätie vyvrcholilo do ozbrojeného povstania v roku 1591, keď kráľovské zasahovanie do miestnej správy vyvolalo rozsiahle nepokoje, ktoré napokon boli potlačené silami Filipa II., čo viedlo k významnému úpadku tradičných autonómnych privilégií Aragónu."
@@ -119,9 +119,9 @@
  flavor_ara.19.entry: "Juan de Lanuza y Urrea" # todo: NEW TRANSLATION
  flavor_ara.19.desc: "Hoci sa nám podarilo obmedziť autonómiu a miestne inštitúcie [ShowAreaName('aragon_area')], stále existuje mnoho tých, ktorí ostro vystúpili proti našim krokom počas $flavor_ara.18.title$, najmä [target_character.GetName], ktorý zastával úrad [ShowEstatePrivilegeName('justicia_de_aragon')], pozíciu, ktorá ho robila hlavným ochrancom tradičných zákonov a privilégií [ShowAreaNameWithNoTooltip('aragon_area')]. Bol jedným z vedúcich postáv povstania, ktoré považovalo naše opatrenia za ilegálny pokus podkopať autonómiu regiónu. Našťastie naše jednotky ho zatkli a jeho osud je teraz úplne v našich rukách." # todo: CHANGED
  flavor_ara.19.a: "Toto je cena jednoty."
- flavor_ara.19.a.tt: "Všetky [pops|el] v [ShowAreaName('aragon_area')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|el]"
+ flavor_ara.19.a.tt: "Všetky [Concept('pops','populácie')|el] v [ShowAreaName('aragon_area')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|el]" # todo: CONCEPT CASE
  flavor_ara.19.b: "Ušetrite ho, aby sa zmiernili napätia." # todo: CHANGED
- flavor_ara.19.b.tt: "Všetky [pops|el] v [ShowAreaName('aragon_area')] získajú [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|el]"
+ flavor_ara.19.b.tt: "Všetky [Concept('pops','populácie')|el] v [ShowAreaName('aragon_area')] získajú [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|el]" # todo: CONCEPT CASE
  flavor_ara.19.historical_info: "V roku 1591, za vlády Filipa II., sa Juan de Lanuza stal vodcom povstania proti kráľovským snahám centralizovať moc a obchádzať starodávne zákony a inštitúcie regiónu. V rýchlej kampani kráľovské sily potlačili odpor a Lanuzu zajali. Bez predchádzajúceho súdu bol na osobný rozkaz Filipa II. sťatý. Jeho smrť znamenala koniec posledného významného pokusu brániť tradičný právny systém Aragónu a jeho autonómiu pred kráľovským absolutizmom."
  flavor_ara.20.title: "[target_character.GetNameWithNoTooltip]"
  flavor_ara.20.entry: "Juan Fernández de Heredia" # todo: NEW TRANSLATION
@@ -133,7 +133,7 @@
  flavor_ara.21.entry: "$flavor_ara.21.title$" # todo: NEW TRANSLATION
  flavor_ara.21.desc: "Napätie medzi triedami v [ShowAreaName('valencia_area')] vyvrcholilo v otvorené povstanie. Frustrované vysokým zdanením, zneužívaním moci [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a neschopnosťou [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] chrániť ich pred nájazdmi berberských pirátov, miestne bratstvá známe ako Germanies vzali zbrane do rúk. To, čo sa začalo ako hnutie na obranu komunít, sa premenilo na širší požiadavok reforiem. Hoci tvrdia, že konajú v mene [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')], ich útoky na [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] a rastúci radikalizmus nemožno ignorovať."
  flavor_ara.21.a: "Ignorovať ich."
- flavor_ara.21.a.tt: "Všetky [ShowPopTypeName('burghers')] [pops|el] v [ShowAreaName('valencia_area')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|el] a pripoja sa k [target_rebels.GetName]"
+ flavor_ara.21.a.tt: "Všetky [ShowPopTypeName('burghers')] [Concept('pops','populácie')|el] v [ShowAreaName('valencia_area')] stratia [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|el] a pripoja sa k [target_rebels.GetName]" # todo: CONCEPT CASE
  flavor_ara.21.b: "Uznajme ich problémy a ponúknime odškodnenie."
  flavor_ara.21.c: "Potlačiť povstanie."
  germanies_revolt: "Povstanie Germanies"
@@ -185,7 +185,7 @@
  flavor_ara.109.desc: "Slepý pútnik v kláštore Santa Maria de Montserrat, tvrdí, že ho Panna z Montserratu uzdravila z jeho slepoty; nazývaná #italic La Moreneta#! (Čierna Madona).\n\nTáto malá soška, ktorú pred storočiami objavili pastierčatá, získala prezývku preto, že jej pôvodne bledá pokožka stmavla, pravdepodobne v dôsledku dymu sviečok."
  flavor_ara.109.a: "Oslávme tento dar od Panny Márie!"
  flavor_ara.109.b: "Zázraky, hovoríte?"
- flavor_ara.109.b.tt: "Stav [pop_satisfaction|el] našej [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sa zníži"
+ flavor_ara.109.b.tt: "Stav [Concept('pop_satisfaction','spokojnosť populácie')|el] našej [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sa zníži" # todo: CONCEPT CASE
  flavor_ara.110.title: "Katedrála v Palme"
  flavor_ara.110.desc: "Po dobytí Malorky [target_character.GetName] začal stavať $palma_cathedral$ na mieste bývalej mešity. Jej majestátna loď vystupuje do výšky 44 metrov, len o 4 metre nižšie ako katedrála Saint-Pierre de Beauvais. Postavená v očarujúcom katalánskom gotickom štýle s vplyvmi zo severu, výstavba začala v roku 1229. Napriek svojej konsekrácii ju niektorí stále považovali za neúplnú."
  flavor_ara.110.a: "Je našou povinnosťou pokračovať v tejto svätej práci."

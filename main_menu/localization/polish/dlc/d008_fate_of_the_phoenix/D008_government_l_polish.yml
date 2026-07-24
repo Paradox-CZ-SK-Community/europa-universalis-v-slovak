@@ -5,16 +5,16 @@
  spread_philhellenism_active: "Šírenie filhelénskej politiky" # todo: NEW TRANSLATION
  spread_philhellenism_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')]" # todo: NEW TRANSLATION
  spread_philhellenism_action_progress_wordier: "[SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')]" # todo: NEW TRANSLATION
- spread_philhellenism_action_progress_tooltip: "[research_progress|e]: [SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')] \n\n[cultural_influence|e]: [SCOPE.sCountry('actor').GetModifierValue('cultural_influence_modifier')]" # todo: NEW TRANSLATION
+ spread_philhellenism_action_progress_tooltip: "[Concept('research_progress','Pokrok výskumu')|e]: [SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')] \n\n[Concept('cultural_influence','Kultúrny vplyv')|e]: [SCOPE.sCountry('actor').GetModifierValue('cultural_influence_modifier')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  spread_philhellenism_action_progress_long_wordier: "@research_progress! [SCOPE.sCountry('actor').GetModifierValue('research_speed_modifier')] \n\n@cultural_influence! [SCOPE.sCountry('actor').GetModifierValue('cultural_influence_modifier')]" # todo: NEW TRANSLATION
  encourage_latin_militarism: "Podporiť [ShowLanguageNameWithNoTooltip('latin_language')] militarizmus" # todo: NEW TRANSLATION
  encourage_latin_militarism_desc: "Zaviažeme náš štát k [ShowLanguageName('latin_language')] ideálu usporiadaného vedenia vojny: dodržiavanie zmlúv, štandardizované cvičenia a bremeno zbraní sa stane rutinou. Takáto disciplína určite zníži náklady na udržanie vojakov v teréne a podporí profesionálnu tradíciu služby." # todo: NEW TRANSLATION
  encourage_latin_militarism_action: "Podporiť latinský militarizmus" # todo: NEW TRANSLATION
  encourage_latin_militarism_active: "Podpora latinského militarizmu" # todo: NEW TRANSLATION
  encourage_latin_militarism_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')]" # todo: NEW TRANSLATION
- encourage_latin_militarism_action_progress_wordier: "[army_maintenance|e]: [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')]" # todo: NEW TRANSLATION
+ encourage_latin_militarism_action_progress_wordier: "[Concept('army_maintenance','Údržba armády')|e]: [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  encourage_latin_militarism_action_progress_long_wordier: "@army_maintenance! [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')] \n\n@army_tradition! [SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')]" # todo: NEW TRANSLATION
- encourage_latin_militarism_action_progress_tooltip: "[army_maintenance|e]: [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')] \n\n[army_tradition|e]: [SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')]" # todo: NEW TRANSLATION
+ encourage_latin_militarism_action_progress_tooltip: "[Concept('army_maintenance','Údržba armády')|e]: [SCOPE.sCountry('actor').GetModifierValue('army_maintenance_efficiency')] \n\n[Concept('army_tradition','Armádna tradícia')|e]: [SCOPE.sCountry('actor').GetModifierValue('monthly_army_tradition')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AUTO_MODIFIER_NAME_bureaucracy_nomos_empsychos_high_legitimacy: "$nomos_empsychos_bureaucracy$" # todo: NEW TRANSLATION
  AUTO_MODIFIER_NAME_bureaucracy_nomos_empsychos_low_legitimacy: "$nomos_empsychos_bureaucracy$" # todo: NEW TRANSLATION
  cb_restore_roman_borders: "Obnoviť $ROM_ADJ$ hranice" # todo: NEW TRANSLATION
@@ -33,23 +33,23 @@
  sixty_books_of_the_basilika_bureaucracy: "Knihy Basiliká" # todo: NEW TRANSLATION
  HAS_SIXTY_BOOKS_OF_THE_BASILIKA_TRIGGER: "Má $sixty_books_of_the_basilika_bureaucracy$" # todo: NEW TRANSLATION
  THIRD_HAS_SIXTY_BOOKS_OF_THE_BASILIKA_TRIGGER: "Má $sixty_books_of_the_basilika_bureaucracy$" # todo: NEW TRANSLATION
- FATE_OF_THE_PHOENIX_DISASTER_ACTIVE_TRIGGER: "The $fate_of_the_phoenix$ [disaster|e] is active" # todo: NEW TRANSLATION
- THIRD_FATE_OF_THE_PHOENIX_DISASTER_ACTIVE_TRIGGER: "The $fate_of_the_phoenix$ [disaster|e] is active" # todo: NEW TRANSLATION
- sixty_books_basilika_satisfaction_scale_tt: "Sankcia pre [estate_satisfaction|e] roľníkov sa mení podľa posúvača údržby $sixty_books_of_the_basilika_bureaucracy$. (#R -5%#! pri plnej údržbe a #R -20%#! pri žiadnej údržbe)" # todo: NEW TRANSLATION
+ FATE_OF_THE_PHOENIX_DISASTER_ACTIVE_TRIGGER: "The $fate_of_the_phoenix$ [Concept('disaster','katastrofu')|e] is active" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_FATE_OF_THE_PHOENIX_DISASTER_ACTIVE_TRIGGER: "The $fate_of_the_phoenix$ [Concept('disaster','katastrofu')|e] is active" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ sixty_books_basilika_satisfaction_scale_tt: "Sankcia pre [Concept('estate_satisfaction','spokojnosť stavu')|e] roľníkov sa mení podľa posúvača údržby $sixty_books_of_the_basilika_bureaucracy$. (#R -5%#! pri plnej údržbe a #R -20%#! pri žiadnej údržbe)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  sixty_books_of_the_basilika_bureaucracy_desc: "Stavajúc na Justinianovom #italic Corpus Juris Civilis#!, $sixty_books_of_the_basilika_bureaucracy$ reorganizujú rímske právo do koherentného [ShowLanguageName('greek_language')] právneho korpusu. Zjednocovaním, štandardizáciou a harmonizáciou storočí jurisprudencie robia cisárovo právo nepochybným, autoritatívnym a univerzálnym." # todo: NEW TRANSLATION
  variable_tt_reformed_imperial_code_flag_via_flavor_byz_52: "$flavor_byz.52.title$" # todo: NEW TRANSLATION
- basilika_bigger_positive_tt: "Táto [ShowBureaucracyTypeName('sixty_books_of_the_basilika_bureaucracy')] [bureaucracy|e] zdvojnásobí svoj #G pozitívny#! modifikátor" # todo: NEW TRANSLATION
+ basilika_bigger_positive_tt: "Táto [ShowBureaucracyTypeName('sixty_books_of_the_basilika_bureaucracy')] [Concept('bureaucracy','bureaukracia')|e] zdvojnásobí svoj #G pozitívny#! modifikátor" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  romanitas_bureaucracy: "Romanitas" # todo: NEW TRANSLATION
  romanitas_bureaucracy_desc: "$romanitas_bureaucracy$ potvrdzuje nepretržitú rímsku štátnosť. Cisár vládne nie dobývaním či etnicitou, ale ako zákonný dedič autority, práva a tradície siahajúcej viac než tisícročie. Táto identita spája impérium a vieru, prezentujúc rímsku vládu ako božsky ospravedlnenú a morálne nadradenú." # todo: NEW TRANSLATION
  imperial_senate_bureaucracy: "Impériálny senát" # todo: NEW TRANSLATION
  imperial_senate_bureaucracy_desc: "Zložený zo starších dôstojníkov vymenovaných cisárskou mocou, senát slúži ako telo aklamácie a rady. Jeho súhlas legitimizuje panovania, nástupníctva a významné akty, zachovávajúc rímsku kontinuitu a zároveň zabezpečujúc, že suverenita zostáva pevne cisárska." # todo: NEW TRANSLATION
  kephalai_bureaucracy: "Kephalai" # todo: NEW TRANSLATION
  kephalai_bureaucracy_desc: "#italic Kephalai#! sú administratívne a právne kompendiá navrhnuté tak, aby správa impéria bola praktická. Nahrádzajúc staršie regionálne usporiadania ako #italic Katepaníkion#!, zhusťujú zákon, dane a vojenské povinnosti do štandardizovaných smerníc, zabezpečujúc jednotnú vládu naprieč provinciami." # todo: NEW TRANSLATION
- won_fate_of_the_phoenix_disaster_tt: "Prostredníctvom [ShowDisasterName('fate_of_the_phoenix')] [disaster|e] sme vyšli víťazne" # todo: NEW TRANSLATION
+ won_fate_of_the_phoenix_disaster_tt: "Prostredníctvom [ShowDisasterName('fate_of_the_phoenix')] [Concept('disaster','katastrofy')|e] sme vyšli víťazne" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  fop_renaissance_latin_merchants_tt: "Udelili sme privilégiá obchodníkom [ShowCultureGroupName('latin_group')]" # todo: NEW TRANSLATION
  magister_militum_bureaucracy: "Strategarchia" # todo: NEW TRANSLATION
  magister_militum_bureaucracy_desc: "#italic Strategarchia#! zosobňuje inštitucionálne velenie cisárskej armády. Generáli sú menovaní, rotovaní a obmedzovaní byrokraciou, čím sa zabezpečuje, že vojenská sila slúži štátu, nie osobným ambíciám. Vojna sa tak stáva administratívnou funkciou riadenou hierarchiou namiesto vernosti, pričom zaručuje, že len najlepší vystúpia na vrchol." # todo: NEW TRANSLATION
- has_unlocked_bureaucracy_via_flavor_byz_31_tt: "Odblokovali sme túto [bureaucracy|e] prostredníctvom $flavor_byz.31.title$ [event|e], ktorý môže nastať po roku #Y 1400#!" # todo: NEW TRANSLATION
+ has_unlocked_bureaucracy_via_flavor_byz_31_tt: "Odblokovali sme túto [bureaucracy|e] prostredníctvom $flavor_byz.31.title$ [Concept('event','udalosti')|e], ktorý môže nastať po roku #Y 1400#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  themata_bureaucracy: "Thémata" # todo: NEW TRANSLATION
  themata_bureaucracy_desc: "Vzniknuté v reakcii na existenčné hrozby, #italic Thémata#! rozdeľujú impérium na provinčné vojensko-administratívne okresy. Každá z týchto divízií je spravovaná #italic Strategós#!, ktorý spája civilnú a vojenskú moc, umožňujúc rýchlu miestnu obranu pričom zostáva formálne podriadený imperiálnej hierarchii." # todo: NEW TRANSLATION
  allelengyon_bureaucracy: "Allelengyon" # todo: NEW TRANSLATION
@@ -58,4 +58,4 @@
  katepanata_desc: "Odpoveďou na vojnových susedov je konsolidácia novo dobitých území prostredníctvom rozhodného vojenského velenia. Pochádzajúce zo slova #italic katepánō#! — toho, kto je postavený na vrchu — $katepanata$ stoja nad bežnými témami, zoskupujúc provincie pod jedným veliteľom obdareným civilnou aj vojenskou mocou. Prvýkrát použité s významom v 10. a 11. storočí, od [ShowRegionName('italy_region')] so sídlom v [ShowLocationName('bari')] až po nestále pohraničia [ShowAreaNameWithNoTooltip('armenia_area')] za cisárov ako Basil II, tieto veľké okresy zabezpečili, že vzdialené a sporné krajiny neostali ponechané rozdrobenému vládnutiu. Nech tieto bašty našej vôle slúžia ako zástava proti všetkým, ktorí sa snažia obrať nás o korunu!" # todo: NEW TRANSLATION
  mos_maiorum: "Mōs Maiōrum" # todo: NEW TRANSLATION
  mos_maiorum_desc: "Rím nikdy nebol výlučne [ShowLanguageName('greek_language')]. Naše tituly, naše zákony a spomienka na Večné Mesto pochádzajú z [ShowLanguageName('latin_language')] tradície staršej než náš súčasný jazyk. $mos_maiorum$ formalizuje toto dedičstvo: dvorné úrady sa preusporiadajú podľa starorímskeho vzoru, jazyk dvora sa presunie na [ShowLanguageName('latin_language')], a naši diplomati budú mať nižšie náklady na svoju činnosť." # todo: NEW TRANSLATION
- has_completed_fate_of_the_phoenix_disaster: "Úspešne sme dokončili [ShowDisasterName('fate_of_the_phoenix')] [disaster|e]" # todo: NEW TRANSLATION
+ has_completed_fate_of_the_phoenix_disaster: "Úspešne sme dokončili [ShowDisasterName('fate_of_the_phoenix')] [Concept('disaster','katastrofa')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE

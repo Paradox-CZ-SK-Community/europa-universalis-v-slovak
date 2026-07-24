@@ -131,21 +131,21 @@
  art_quality_very_good: "Regionálne preslávený" # todo: NEW TRANSLATION
  art_quality_great: "Majstrovské dielo" # todo: NEW TRANSLATION
  art_quality_best: "Magnum Opus" # todo: NEW TRANSLATION
- ART_WAS_DESTROYED: "Nasledujúce [works_of_art|e] boli zničené: $LIST$." # todo: CHANGED
- ART_WAS_CAPTURED: "Nasledujúce [works_of_art|e] boli zajaté a odvezené do [COUNTRY.GetCapital.GetName]: $LIST$." # todo: CHANGED
- WORK_OF_ART_DATA: "[art_quality|e]: [WORK_OF_ART.GetQualityName|V] ([WORK_OF_ART.GetQuality|Y]%)\nType: [WORK_OF_ART.GetDefinition.GetName]\nCreated: [WORK_OF_ART.GetCreationDate]\nOrigin: [WORK_OF_ART.GetOrigin.GetName]" # todo: NEW TRANSLATION
+ ART_WAS_DESTROYED: "Nasledujúce [Concept('works_of_art','umelecké diela')|e] boli zničené: $LIST$." # todo: CHANGED # todo: CONCEPT CASE
+ ART_WAS_CAPTURED: "Nasledujúce [Concept('works_of_art','umelecké diela')|e] boli zajaté a odvezené do [COUNTRY.GetCapital.GetName]: $LIST$." # todo: CHANGED # todo: CONCEPT CASE
+ WORK_OF_ART_DATA: "[Concept('art_quality','Kvalita umenia')|e]: [WORK_OF_ART.GetQualityName|V] ([WORK_OF_ART.GetQuality|Y]%)\nType: [WORK_OF_ART.GetDefinition.GetName]\nCreated: [WORK_OF_ART.GetCreationDate]\nOrigin: [WORK_OF_ART.GetOrigin.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WORK_OF_ART_CREATOR: "[WORK_OF_ART.GetCreator.GetArtistType.GetName]: [WORK_OF_ART.GetCreatorName]" # todo: NEW TRANSLATION
  WORK_OF_ART_DESTROYED: "Bolo to smutne zničené a stratené dňa [WORK_OF_ART.GetDestructionDate]." # todo: NEW TRANSLATION
- WORK_OF_ART_LOCATION: "[owner|e]: [WORK_OF_ART.GetLocation.GetOwner.GetName]\n[location|e]: [WORK_OF_ART.GetLocation.GetName]" # todo: NEW TRANSLATION
+ WORK_OF_ART_LOCATION: "[Concept('owner','Majiteľ')|e]: [WORK_OF_ART.GetLocation.GetOwner.GetName]\n[Concept('location','Lokalita')|e]: [WORK_OF_ART.GetLocation.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WORK_OF_ART_NAME: "[WORK_OF_ART.GetCreator.GetArtistType.GetBasicWorkName] " # todo: NEW TRANSLATION
  WORK_OF_ART_COUNTRY_MODS: "Modifikátory aplikované na krajinu za vlastníctvo umenia tohto typu:" # todo: NEW TRANSLATION
- WORK_OF_ART_LOCATION_MODS: "V každom [location|e], ak je toto najlepšie [work_of_art|e] prítomné, nasleduje:" # todo: NEW TRANSLATION
+ WORK_OF_ART_LOCATION_MODS: "V každom [Concept('location','lokalite')|e], ak je toto najlepšie [Concept('work_of_art','umelecké dielo')|e] prítomné, nasleduje:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WORK_OF_ART_MODIFIER_SCALE: "Všetky modifikátory sú škálované o $VAL|%+=Y$:" # todo: NEW TRANSLATION
- WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Z [art_quality|e]: $VAL|%+=Y$" # todo: NEW TRANSLATION
+ WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Z [Concept('art_quality','kvality umenia')|e]: $VAL|%+=Y$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WORK_OF_ART_MODIFIER_SCALE_DESC: "Prínosy, ktoré poskytuje [WORK_OF_ART_TYPE.GetName], sú ovplyvnené týmito modifikátormi:" # todo: NEW TRANSLATION
- WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Z [country|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!" # todo: NEW TRANSLATION
- CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] pracuje na novej [CHARACTER.GetArtInProgress.GetName] a práce sú hotové približne na [CHARACTER.GetArtProgress|%0Y].\nPokrok [work_of_art|e] závisí od úrovne [court_maintenance|e]." # todo: CHANGED
- CHAR_WORK_OF_ART_HEADER: "[works_of_art|e]" # todo: NEW TRANSLATION
+ WORK_OF_ART_COUNTRY_RELIGION_SCALE_MODIFIER: "$BULLET_WITH_TAB$Z [Concept('country','krajiny')|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|%+=Y$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CHAR_WORKING_ON: "[CHARACTER.GetSheHe|U] pracuje na novej [CHARACTER.GetArtInProgress.GetName] a práce sú hotové približne na [CHARACTER.GetArtProgress|%0Y].\nPokrok [Concept('work_of_art','umelecké dielo')|e] závisí od úrovne [Concept('court_maintenance','náklady dvora')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ CHAR_WORK_OF_ART_HEADER: "[Concept('works_of_art','Umelecké diela')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CHAR_WORK_OF_ART_HEADER_S: "Vytvoril umelecké dielo s názvom" # todo: NEW TRANSLATION
  CHAR_WORK_OF_ART_HEADER_P: "Vytvoril nasledujúce umelecké diela" # todo: NEW TRANSLATION
  CHAR_WORK_OF_ART_ENTRY: "• [WORK_OF_ART.GetName]" # todo: NEW TRANSLATION

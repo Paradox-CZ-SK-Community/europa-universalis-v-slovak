@@ -10,12 +10,12 @@
  COUNTRY_TRUST_OF_TT: "Dôvera ($TRUST|+=$) je spôsobená:" # todo: NEW TRANSLATION
  COUNTRY_ANTAGONISM_TOWARDS_SELF: "#T [COUNTRY.GetAdjective] Antagonizmus#!\nZrejme [TARGET_COUNTRY.GetName] necítia žiaden antagonizmus voči sebe." # todo: NEW TRANSLATION
  COUNTRY_ANTAGONISM_TOWARDS_SELF_PLAYER: "#T Antagonizmus voči [TARGET_COUNTRY.GetName]#!\n[TARGET_COUNTRY.GetName] je naša vlastná krajina!" # todo: NEW TRANSLATION
- COUNTRY_ANTAGONISM_TOWARDS: " [COUNTRY.GetAdjective] [antagonism|e] voči [TARGET_COUNTRY.GetName] ($ANTAGONISM|-=$) je spôsobený nasledujúcimi faktormi:" # todo: NEW TRANSLATION
- COUNTRY_NO_ANTAGONISM_TOWARDS: "[COUNTRY.GetAdjective] necítia žiaden [antagonism|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- COUNTRY_FAVORS_OF_TT: " $WHO|Y$ [favors|e] voči $TARGET|Y$ ($FAVORS|+=$) sú spôsobené nasledujúcimi faktormi:" # todo: NEW TRANSLATION
+ COUNTRY_ANTAGONISM_TOWARDS: " [COUNTRY.GetAdjective] [Concept('antagonism','Antagonizmus')|e] voči [TARGET_COUNTRY.GetName] ($ANTAGONISM|-=$) je spôsobený nasledujúcimi faktormi:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COUNTRY_NO_ANTAGONISM_TOWARDS: "[COUNTRY.GetAdjective] necítia žiaden [Concept('antagonism','antagonizmus')|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COUNTRY_FAVORS_OF_TT: " $WHO|Y$ [Concept('favors','Láskavosti')|e] voči $TARGET|Y$ ($FAVORS|+=$) sú spôsobené nasledujúcimi faktormi:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNTRY_LOYALTY_OF_SELF: "#T $WHO$ Vernosť#!\nZrejme $TARGET|Y$ sú verní sami sebe." # todo: NEW TRANSLATION
  COUNTRY_LOYALTY_OF_SELF_PLAYER: "#T $WHO$ Vernosť#!\n$TARGET|Y$ je naša vlastná krajina!" # todo: NEW TRANSLATION
- COUNTRY_LOYALTY_OF: "#T $WHO$ Vernosť#!\n$WHO|Y$ [subject_loyalty|e] $TARGET|Y$ ($LOYALTY|2+=$) je spôsobená nasledujúcimi faktormi:" # todo: NEW TRANSLATION
+ COUNTRY_LOYALTY_OF: "#T $WHO$ Vernosť#!\n$WHO|Y$ [Concept('subject_loyalty','Vernosť vazala')|e] $TARGET|Y$ ($LOYALTY|2+=$) je spôsobená nasledujúcimi faktormi:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNTRY_VOTING_BIAS_OF_SELF: "#T $WHO$ Skreslenie hlasovania#!\nJe zrejmé, že $TARGET|Y$ bude hlasovať za seba, ak to bude možnosť." # todo: CHANGED
  COUNTRY_VOTING_BIAS_OF_SELF_PLAYER: "#T Preferencia hlasovania voči $TARGET$#!\n$TARGET|Y$ je naša vlastná krajina!" # todo: NEW TRANSLATION
  COUNTRY_VOTING_BIAS_OF: "#T Preferencia hlasovania voči $TARGET$#!\n$WHO|Y$ preferencia hlasovania voči $TARGET|Y$ ($VOTINGBIAS|+=$) je spôsobená nasledujúcimi faktormi:" # todo: NEW TRANSLATION
@@ -26,17 +26,17 @@
  OPINION_TIMED_ENTRY_CHANGE: "$NAME$ $SUFFIX$: $VAL|0=+$ ($CHANGE|2=+$ yearly)\n" # todo: NEW TRANSLATION
  BIAS_TEMPORAL_EXPIRES: " #flavor (vyprší $DATE$)#!" # todo: NEW TRANSLATION
  BIAS_TEMPORAL_FADING: " #flavor (vyprcháva okolo ~$YEAR$)#!" # todo: NEW TRANSLATION
- OPINION_BASE_FROM_ANTAGONISM: "#T Dopad antagonizmu#!\nKaždý antagonizmus dáva $EACH|+=$ [opinion|e]\nZo $BASE|R0$ [antagonism|e]: $VAL|+$" # todo: NEW TRANSLATION
+ OPINION_BASE_FROM_ANTAGONISM: "#T Dopad antagonizmu#!\nKaždý antagonizmus dáva $EACH|+=$ [Concept('opinion','názor')|e]\nZo $BASE|R0$ [Concept('antagonism','antagonizmus')|e]: $VAL|+$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OPINION_MODIFIED_BY_TITLE: "Toto je následne ďalej upravené (najmenej na 5%):" # todo: NEW TRANSLATION
  OPINION_MODIFIED_BY_NEIGHBOUR: "Sused: $VAL|-%$" # todo: NEW TRANSLATION
- OPINION_MODIFIED_BY_OUT_OF_RANGE: "Mimo [diplomatic_range|e]: $VAL|-%$" # todo: NEW TRANSLATION
- OPINION_MODIFIED_BY_SPY_NETWORK: "[spy_network|e] v [COUNTRY.GetNameWithNoTooltip]: $VAL|-%$" # todo: NEW TRANSLATION
- OPINION_MODIFIED_BY_DEPENDENCY: "[subject|e]: $VAL|-%$" # todo: NEW TRANSLATION
- OPINION_MODIFIED_BY_UNION: "[union|e]: $VAL|-%$" # todo: NEW TRANSLATION
- OPINION_MODIFIED_BY_SAME_SIDE_IN_WAR: "Spoločne bojujú v [war|e]: $VAL|-%$" # todo: NEW TRANSLATION
+ OPINION_MODIFIED_BY_OUT_OF_RANGE: "Mimo [Concept('diplomatic_range','diplomatického dosahu')|e]: $VAL|-%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OPINION_MODIFIED_BY_SPY_NETWORK: "[Concept('spy_network','Špionážna sieť')|e] v [COUNTRY.GetNameWithNoTooltip]: $VAL|-%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OPINION_MODIFIED_BY_DEPENDENCY: "[Concept('subject','Vazal')|e]: $VAL|-%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OPINION_MODIFIED_BY_UNION: "[Concept('union','Únia')|e]: $VAL|-%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OPINION_MODIFIED_BY_SAME_SIDE_IN_WAR: "Spoločne bojujú v [Concept('war','vojne')|e]: $VAL|-%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OPINION_MODIFIED_BY_DEFENSIVE_SUPPORT: "Prijíma obrannú podporu: $VAL|-%$" # todo: NEW TRANSLATION
- OPINION_MODIFIED_BY_ROYAL_MARRIAGE: "[royal_marriage|e]: $VAL|-%$" # todo: NEW TRANSLATION
- OPINION_MODIFIED_BY_IO: "Zdieľajú [international_organization|e]: $VAL|-%$" # todo: NEW TRANSLATION
+ OPINION_MODIFIED_BY_ROYAL_MARRIAGE: "[Concept('royal_marriage','Kráľovský sňatok')|e]: $VAL|-%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OPINION_MODIFIED_BY_IO: "Zdieľajú [Concept('international_organization','medzinárodná organizácia')|e]: $VAL|-%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRUST_ENTRY: "$NAME$: $VAL|=+0$" # todo: CHANGED NUMBER
  TRUST_ENTRY_CHANGE: "$NAME$: $VAL|0=+$ ($CHANGE|2=+$ yearly)" # todo: CHANGED NUMBER
  ANTAGONISM_ENTRY_FOR_COUNTRY_WITH_BREAKDOWN: "[COUNTRY.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-V2$#!" # todo: NEW TRANSLATION
@@ -47,21 +47,21 @@
  ANTAGONISM_YEARLY_CHANGE_BASE: "Prirodzený úbytok: $VAL|2=-$ ročne" # todo: NEW TRANSLATION
  ANTAGONISM_YEARLY_CHANGE_MODIFIER: "[COUNTRY.GetName] $MODIFIER$: $VAL|2=-$ ročne" # todo: NEW TRANSLATION
  ANTAGONISM_YEARLY_CHANGE_OPINION_IMPROVEMENT: "Zlepšenie náklonnosti: $VAL|2=-$ ročne" # todo: NEW TRANSLATION
- OPINION_SAME_CULTURE_ENTRY: "Obidvaja majú [CULTURE.GetName] [primary_culture|e]: $VAL|0=+$\n" # todo: NEW TRANSLATION
+ OPINION_SAME_CULTURE_ENTRY: "Obidvaja majú [CULTURE.GetName] [Concept('primary_culture','hlavnú kultúru')|e]: $VAL|0=+$\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OPINION_CULTURE_ENTRY: "[CULTURE.GetName] názor na [TARGET_CULTURE.GetName]: $VAL|0=+$\n" # todo: NEW TRANSLATION
- OPINION_SHARED_CULTURE_GROUPS: "$NUM$ z $TOTAL$ zdieľaných [culture_groups|e]: $VAL|=+$\n" # todo: NEW TRANSLATION
- OPINION_RELIGIOUS_TOLERANCE_ENTRY: "#T Dôvody tolerancie#!\n[COUNTRY.GetAdjective] náboženská [tolerance|e] voči [TARGET_RELIGION.GetName]: $VAL|0=+$\n" # todo: NEW TRANSLATION
+ OPINION_SHARED_CULTURE_GROUPS: "$NUM$ z $TOTAL$ zdieľaných [Concept('culture_groups','kultúrnych skupín')|e]: $VAL|=+$\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OPINION_RELIGIOUS_TOLERANCE_ENTRY: "#T Dôvody tolerancie#!\n[COUNTRY.GetAdjective] náboženská [Concept('tolerance','tolerancia')|e] voči [TARGET_RELIGION.GetName]: $VAL|0=+$\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OPINION_RELIGION_GENERAL_VIEW_ENTRY: "[RELIGION.GetAdjective] pohľad na [TARGET_RELIGION.GetName]: $VAL|0=+$\n" # todo: NEW TRANSLATION
  OPINION_RELIGION_ENTRY: "[COUNTRY.GetAdjective] pohľad na krajiny [TARGET_RELIGION.GetAdjective]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L0=+$#!\n" # todo: NEW TRANSLATION
  OPINION_EXCOMMUNICATED: "[CHARACTER.GetName] je exkomunikovaný" # todo: NEW TRANSLATION
- CULTURE_BREAKDOWN_TOOLTIP: "#T Rozloženie [CULTURE.GetNameWithNoTooltip]#!\n[CULTURE.GetName] [pops|e] sú rozšírené medzi nasledujúcimi [provinces|e]:" # todo: NEW TRANSLATION
+ CULTURE_BREAKDOWN_TOOLTIP: "#T Rozloženie [CULTURE.GetNameWithNoTooltip]#!\n[CULTURE.GetName] [Concept('pops','Populácie')|e] sú rozšírené medzi nasledujúcimi [Concept('provinces','provinciami')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_BREAKDOWN_TOOLTIP_ENTRY: "@provincia! [PROVINCE.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $POP_SIZE|L$#!" # todo: CHANGED
  ICI_HEADER: "[CULTURE.GetNameWithNoTooltip] v [PROVINCE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ICI_POP_ENTRY: "[POP.GetName]: [POP.GetSize] [POP.GetType.GetIcon]" # todo: CHANGED
  OPINION_CULTURE_TOOLTIP: "#T [CULTURE.GetNameWithNoTooltip] pohľad na [TARGET_CULTURE.GetNameWithNoTooltip]#!\n$TITLE$ názor poskytuje nasledovné:\nNázor krajín [CULTURE.GetName] na krajiny [TARGET_CULTURE.GetName]: $VAL|0=+$" # todo: NEW TRANSLATION
- OPINION_CULTURE_POP_TOOLTIP: "[pop_satisfaction|e] [CULTURE.GetNameWithNoTooltip] [pops|e]: $VAL|=+2%$" # todo: NEW TRANSLATION
- OPINION_CULTURE_ASSIMILATION_TOOLTIP: "[assimilation|e] z [TARGET_CULTURE.GetName] [pops|e]: $VAL|=+2%$" # todo: NEW TRANSLATION
- RELIGION_BREAKDOWN_TOOLTIP: "#T Rozloženie [RELIGION.GetNameWithNoTooltip]#!\n[RELIGION.GetName] [pops|e] sú rozšírené medzi nasledujúcimi [provinces|e]:" # todo: NEW TRANSLATION
+ OPINION_CULTURE_POP_TOOLTIP: "[Concept('pop_satisfaction','Spokojnosť populácie')|e] [CULTURE.GetNameWithNoTooltip] [Concept('pops','Populácie')|e]: $VAL|=+2%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OPINION_CULTURE_ASSIMILATION_TOOLTIP: "[Concept('assimilation','Asimilácia')|e] z [TARGET_CULTURE.GetName] [Concept('pops','populácií')|e]: $VAL|=+2%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ RELIGION_BREAKDOWN_TOOLTIP: "#T Rozloženie [RELIGION.GetNameWithNoTooltip]#!\n[RELIGION.GetName] [Concept('pops','Populácie')|e] sú rozšírené medzi nasledujúcimi [Concept('provinces','provinciami')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELIGION_BREAKDOWN_TOOLTIP_ENTRY: "@provincia! [PROVINCE.GetName]: $POP_SIZE$ [population_icon]" # todo: CHANGED
  OPINION_RELIGION_TOOLTIP: "#T [RELIGION.GetNameWithNoTooltip] pohľad na [TARGET_RELIGION.GetNameWithNoTooltip] #!\n$TITLE$ názor poskytuje nasledovné:\nNázor [RELIGION.GetAdjective] krajín na [TARGET_RELIGION.GetAdjective] krajiny: $VAL|0=+$" # todo: NEW TRANSLATION
  OPINION_ENTRY_CHANGE: "$NAME$: $VAL|0=+$ ($CHANGE|2=+$ yearly)\n" # todo: NEW TRANSLATION
@@ -69,24 +69,24 @@
  OVERLORD_POLICIES: "$WHO$ #TOOLTIP:$BREAKDOWN_TAG$ #L Modifikátory názoru podriadených#!#!" # todo: NEW TRANSLATION
  NATIVE_POLICIES: "$WHO$ Politiky" # todo: NEW TRANSLATION
  opinion_dummy: "(cheat konzoly)" # todo: NEW TRANSLATION
- opinion_war: "V [war|e]" # todo: NEW TRANSLATION
- opinion_different_culture: "Iná [primary_culture|e]" # todo: NEW TRANSLATION
- opinion_shared_culture_group: "Zdieľaná [culture_group|e]" # todo: NEW TRANSLATION
- opinion_we_accept_their_culture: "My [accept|e] ich [culture|e]" # todo: NEW TRANSLATION
- opinion_they_accept_our_culture: "Oni [accept|e] našu [culture|e]" # todo: NEW TRANSLATION
- opinion_we_tolerate_their_culture: "My [tolerate|e] ich [culture|e]" # todo: NEW TRANSLATION
- opinion_they_tolerate_our_culture: "Oni [tolerate|e] našu [culture|e]" # todo: NEW TRANSLATION
- opinion_same_court_language: "Rovnaký [court_language|e]" # todo: NEW TRANSLATION
- opinion_same_court_language_family: "[court_language|e] v rovnakej [language_family_short|e]" # todo: NEW TRANSLATION
- opinion_same_common_language: "Rovnaký [common_language|e]" # todo: NEW TRANSLATION
- opinion_same_common_language_family: "[common_language|e] v rovnakej [language_family_short|e]" # todo: NEW TRANSLATION
+ opinion_war: "V [Concept('war','vojne')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_different_culture: "Iná [Concept('primary_culture','hlavná kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_shared_culture_group: "Zdieľaná [Concept('culture_group','kultúrna skupina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_we_accept_their_culture: "My [Concept('accept','akceptovať')|e] ich [Concept('culture','kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_they_accept_our_culture: "Oni [Concept('accept','akceptovať')|e] našu [Concept('culture','kultúru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_we_tolerate_their_culture: "My [Concept('tolerate','tolerovať')|e] ich [Concept('culture','kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_they_tolerate_our_culture: "Oni [Concept('tolerate','tolerovať')|e] našu [Concept('culture','kultúru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_same_court_language: "Rovnaký [Concept('court_language','jazyk dvora')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_same_court_language_family: "[Concept('court_language','Jazyk dvora')|e] v rovnakej [Concept('language_family_short','rodine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_same_common_language: "Rovnaký [Concept('common_language','bežný jazyk')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_same_common_language_family: "[Concept('common_language','Bežný jazyk')|e] v rovnakej [Concept('language_family_short','rodine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_enforced_peace: "Vynútený mier" # todo: NEW TRANSLATION
  opinion_enforced_peace_when_losing: "Vynútený mier pri prehre vojny" # todo: NEW TRANSLATION
  opinion_royal_marriage: "Kráľovské manželstvo" # todo: NEW TRANSLATION
- opinion_same_dynasty: "Rovnaká [dynasty|e]" # todo: NEW TRANSLATION
+ opinion_same_dynasty: "Rovnaká [Concept('dynasty','dynastia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_promised_land_unfulfilled: "Nesplnil sľub o území" # todo: CHANGED
- opinion_positive_societal_values: "Zdieľané [societal_values|e]" # todo: NEW TRANSLATION
- opinion_negative_societal_values: "Iné [societal_values|e]" # todo: NEW TRANSLATION
+ opinion_positive_societal_values: "Zdieľané [Concept('societal_values','sociálne hodnoty')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_negative_societal_values: "Iné [Concept('societal_values','sociálne hodnoty')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_border_percentage: "Spoločná hranica" # todo: NEW TRANSLATION
  opinion_union: "Únia" # todo: NEW TRANSLATION
  opinion_alliance: "V aliancii" # todo: NEW TRANSLATION
@@ -108,9 +108,9 @@
  opinion_religious_tolerance: "Náboženská tolerancia" # todo: NEW TRANSLATION
  opinion_positive_religious_tolerance: "$opinion_religious_tolerance$" # todo: NEW TRANSLATION
  opinion_negative_religious_tolerance: "$opinion_religious_tolerance$" # todo: NEW TRANSLATION
- opinion_liked_religious_school: "Páčilo sa im [religious_school|e]" # todo: NEW TRANSLATION
- opinion_disliked_religious_school: "Nepáčilo sa im [religious_school|e]" # todo: NEW TRANSLATION
- opinion_religious_aspect: "[religious_aspect|e]" # todo: NEW TRANSLATION
+ opinion_liked_religious_school: "Páčilo sa im [Concept('religious_school','náboženskej škole')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_disliked_religious_school: "Nepáčilo sa im [Concept('religious_school','náboženskej škole')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_religious_aspect: "[Concept('religious_aspect','Náboženský aspekt')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_declared_war: "Nedávno vyhlásil vojnu" # todo: NEW TRANSLATION
  opinion_client_state_created: "Vytvorený klientský štát" # todo: NEW TRANSLATION
  opinion_cant_afford_tribute: "Nedokáže zaplatiť tribut" # todo: NEW TRANSLATION
@@ -136,16 +136,16 @@
  io_opinion_coalition: "Spolu v koalícii" # todo: NEW TRANSLATION
  io_opinion_independence_movement: "Spoločne podporujú hnutie za nezávislosť" # todo: NEW TRANSLATION
  io_opinion_defensive_league: "Spoločne v obrannom zväze" # todo: NEW TRANSLATION
- io_opinion_hre: "Spolu [member|e] Ríše" # todo: NEW TRANSLATION
- io_opinion_high_kingship: "[member|e] toho istého High Kingship" # todo: NEW TRANSLATION
+ io_opinion_hre: "Spolu [Concept('member','člen')|e] Ríše" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ io_opinion_high_kingship: "[Concept('member','Člen')|e] toho istého High Kingship" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  io_opinion_high_king: "Náš Veľký kráľ" # todo: NEW TRANSLATION
  opinion_voted_for_high_king: "Podporili sme ich za Vysokého kráľa" # todo: NEW TRANSLATION
- io_opinion_lordship_of_ireland: "[member|e] Lordstva Írska" # todo: NEW TRANSLATION
+ io_opinion_lordship_of_ireland: "[Concept('member','Člen')|e] Lordstva Írska" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  io_opinion_lord_of_ireland: "Pán Írska" # todo: NEW TRANSLATION
  io_opinion_autocephalous_patriarchate: "V rovnakom autocefalnom patriarcháte" # todo: NEW TRANSLATION
  io_opinion_sect: "V tej istej sekte" # todo: NEW TRANSLATION
  io_opinion_hindu_branch: "Nasledujú rovnakú vetvu hinduizmu" # todo: NEW TRANSLATION
- io_opinion_catholic_church: "Spolu [members|e] Katolíckej cirkvi" # todo: NEW TRANSLATION
+ io_opinion_catholic_church: "Spolu [Concept('members','členovia')|e] Katolíckej cirkvi" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  io_opinion_shinto: "Spolu Shintō" # todo: NEW TRANSLATION
  io_opinion_sikhism: "Spolu Sikh" # todo: NEW TRANSLATION
  io_opinion_tatar_yoke: "V tom istom tatárskom jhu" # todo: NEW TRANSLATION
@@ -186,20 +186,20 @@
  opinion_executed_our_ruler: "Popravil nášho vládcu" # todo: NEW TRANSLATION
  trust_dummy: "(cheat konzoly)" # todo: NEW TRANSLATION
  trust_diplomatic_reputation: "Diplomatická reputácia" # todo: NEW TRANSLATION
- trust_war: "V [war|e]" # todo: NEW TRANSLATION
- trust_they_have_casus_belli: "Má [casus_belli|e]" # todo: NEW TRANSLATION
- trust_different_culture: "Iná [primary_culture|e]" # todo: NEW TRANSLATION
+ trust_war: "V [Concept('war','vojne')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ trust_they_have_casus_belli: "Má [Concept('casus_belli','casus Belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ trust_different_culture: "Iná [Concept('primary_culture','hlavná kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  io_trust_union: "Únia" # todo: NEW TRANSLATION
  trust_same_dynasty: "Rovnaká dynastia" # todo: NEW TRANSLATION
  trust_royal_marriage: "Kráľovské manželstvo" # todo: NEW TRANSLATION
- trust_different_language: "Iný [court_language|e]" # todo: NEW TRANSLATION
- trust_different_religion_group: "Iná [religion_group|e]" # todo: NEW TRANSLATION
- trust_same_religion: "Rovnaké [religion|e]" # todo: NEW TRANSLATION
+ trust_different_language: "Iný [Concept('court_language','jazyk dvora')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ trust_different_religion_group: "Iná [Concept('religion_group','náboženská skupina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ trust_same_religion: "Rovnaké [Concept('religion','náboženstvo')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  trust_no_land_in_peace_deal: "Nedal územie v mierovej dohode" # todo: NEW TRANSLATION
- trust_same_religious_school: "Rovnaká [religious_school|e]" # todo: NEW TRANSLATION
- trust_different_religion: "Iné [religion|e]" # todo: NEW TRANSLATION
- trust_they_rival_us: "[rival|e]" # todo: NEW TRANSLATION
- trust_mutual_rival: "Vzájomný [rival|e]" # todo: NEW TRANSLATION
+ trust_same_religious_school: "Rovnaká [Concept('religious_school','náboženská škola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ trust_different_religion: "Iné [Concept('religion','náboženstvo')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ trust_they_rival_us: "[Concept('rival','Rival')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ trust_mutual_rival: "Vzájomný [Concept('rival','rival')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  trust_supporting_rival: "Podporuje rivala" # todo: NEW TRANSLATION
  trust_receiving_guarantee: "Záruka" # todo: CHANGED
  trust_alliance: "Aliancia" # todo: CHANGED
@@ -219,26 +219,26 @@
  opinion_historical_friend_POL_LIT: "Historické poľsko-litovské priateľstvo" # todo: NEW TRANSLATION
  opinion_historical_friend_TEU_LIV: "Teutónsky štát" # todo: NEW TRANSLATION
  secessionists_overlord_opinion: "Secessionisti, ktorí sa chcú k nám pripojiť" # todo: NEW TRANSLATION
- secessionists_subject_opinion: "Chceme sa pripojiť k ich [country|e]" # todo: NEW TRANSLATION
+ secessionists_subject_opinion: "Chceme sa pripojiť k ich [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  vassal_subject_opinion: "Náš panovník" # todo: NEW TRANSLATION
  vassal_overlord_opinion: "Náš vazal" # todo: NEW TRANSLATION
- dominion_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ dominion_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  dominion_overlord_opinion: "Naša domínia" # todo: NEW TRANSLATION
- fiefdom_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ fiefdom_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  fiefdom_overlord_opinion: "Naše feudo" # todo: NEW TRANSLATION
- uc_bey_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ uc_bey_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  uc_bey_overlord_opinion: "Náš $uc_bey$" # todo: NEW TRANSLATION
- conquistador_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ conquistador_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  conquistador_overlord_opinion: "Náš dobyvateľ" # todo: NEW TRANSLATION
- colonial_nation_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ colonial_nation_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  colonial_nation_overlord_opinion: "Naša koloniálna krajina" # todo: NEW TRANSLATION
- tributary_subject_opinion: "Náš tributárny [overlord|e]" # todo: NEW TRANSLATION
+ tributary_subject_opinion: "Náš tributárny [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  tributary_overlord_opinion: "Náš tributár" # todo: NEW TRANSLATION
- samanta_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ samanta_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  samanta_overlord_opinion: "Náš $samanta$" # todo: NEW TRANSLATION
- maha_samanta_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ maha_samanta_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  maha_samanta_overlord_opinion: "Náš $maha_samanta$" # todo: NEW TRANSLATION
- pradhana_maha_samanta_subject_opinion: "Náš [overlord|e]" # todo: NEW TRANSLATION
+ pradhana_maha_samanta_subject_opinion: "Náš [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pradhana_maha_samanta_overlord_opinion: "Náš $pradhana_maha_samanta$" # todo: NEW TRANSLATION
  opinion_have_food_access: "Majú prístup k potravinám" # todo: NEW TRANSLATION
  opinion_influence_nation: "Prijali vplyv krajiny" # todo: NEW TRANSLATION
@@ -485,14 +485,14 @@
  hre_emperor_defends_empire: "Cisárska obrana" # todo: NEW TRANSLATION
  opinion_added_land_to_hre: "Pridal územie do [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
  opinion_removed_land_from_hre: "Odňal územie z [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
- opinion_hre_passed_prince_very_friendly_law: "Schválil pre členov veľmi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
- opinion_hre_passed_prince_friendly_law: "Schválil pre členov priaznivý [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
- opinion_hre_passed_mild_prince_friendly_law: "Schválil mierne pre členov priaznivý [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
- opinion_hre_passed_uncontroversial_law: "Schválil nesporný [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
- opinion_hre_passed_standard_law: "Schválil bežný [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
- opinion_hre_passed_controversial_law: "Schválil čiastočne cisárovi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
- opinion_hre_passed_opposed_law: "Schválil cisárovi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
- opinion_hre_passed_rebellious_law: "Schválil veľmi cisárovi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [law|e]" # todo: NEW TRANSLATION
+ opinion_hre_passed_prince_very_friendly_law: "Schválil pre členov veľmi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hre_passed_prince_friendly_law: "Schválil pre členov priaznivý [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hre_passed_mild_prince_friendly_law: "Schválil mierne pre členov priaznivý [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hre_passed_uncontroversial_law: "Schválil nesporný [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hre_passed_standard_law: "Schválil bežný [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hre_passed_controversial_law: "Schválil čiastočne cisárovi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hre_passed_opposed_law: "Schválil cisárovi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hre_passed_rebellious_law: "Schválil veľmi cisárovi priaznivý [GetUniqueInternationalOrganization('hre').GetName] [Concept('law','zákon')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_decline_ask_to_vote_for_me_as_emperor: "Odmietol udeliť hlas pre moju voľbu cisára" # todo: NEW TRANSLATION
  opinion_gave_away_our_lands: "Odovzdal naše územia" # todo: NEW TRANSLATION
  opinion_forced_landfriede_upon: "Uvalil na nás Landfriede" # todo: NEW TRANSLATION
@@ -508,20 +508,20 @@
  opinion_marriage_between_beyliks: "Dynastické manželstvo" # todo: NEW TRANSLATION
  belligerent_diplomacy: "Bojovná diplomacia" # todo: NEW TRANSLATION
  trust_beylik_marriage: "Manželská dôvera" # todo: NEW TRANSLATION
- io_opinion_ilkhanate: "[member|e] z [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION
+ io_opinion_ilkhanate: "[Concept('member','Člen')|e] z [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_historical_rival: "Historický rival" # todo: NEW TRANSLATION
  opinion_historical_enemy: "Historický nepriateľ" # todo: NEW TRANSLATION
- io_opinion_swiss_confederation: "[member|e] z [GetUniqueInternationalOrganization('swiss_confederation').GetName]" # todo: NEW TRANSLATION
+ io_opinion_swiss_confederation: "[Concept('member','Člen')|e] z [GetUniqueInternationalOrganization('swiss_confederation').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_removed_member_from_union: "Vylúčil člena z [GetInternationalOrganizationType('union').GetName]" # todo: NEW TRANSLATION
  opinion_displeased: "Nespokojný" # todo: NEW TRANSLATION
- io_opinion_protestant_union: "[member|e] z [GetUniqueInternationalOrganization('protestant_union').GetName]" # todo: NEW TRANSLATION
- io_opinion_catholic_league: "[member|e] z [GetUniqueInternationalOrganization('catholic_league').GetName]" # todo: NEW TRANSLATION
+ io_opinion_protestant_union: "[Concept('member','Člen')|e] z [GetUniqueInternationalOrganization('protestant_union').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ io_opinion_catholic_league: "[Concept('member','Člen')|e] z [GetUniqueInternationalOrganization('catholic_league').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_too_tolerate: "Toleruje iné vierovyznania" # todo: NEW TRANSLATION
  opinion_executed_monarch: "Popravil panovníka" # todo: NEW TRANSLATION
  opinion_friendliness: "Ponúkol priateľstvo" # todo: NEW TRANSLATION
  opinion_improve_relations_member: "Zlepšil vzťahy s členom" # todo: NEW TRANSLATION
- opinion_mutual_great_powers: "Súperi [great_power|e]" # todo: NEW TRANSLATION
- opinion_hegemons: "Je [hegemon|e]" # todo: NEW TRANSLATION
+ opinion_mutual_great_powers: "Súperi [Concept('great_power','veľmoc')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ opinion_hegemons: "Je [Concept('hegemon','hegemón')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opinion_demanded_additional_tribute: "Požadoval dodatočný tribut" # todo: NEW TRANSLATION
  opinion_formed_closer_bonds_iro: "Nadviazal bližšie väzby" # todo: NEW TRANSLATION
  opinion_ruler_culture: "Vládca opustil kultúru" # todo: NEW TRANSLATION
@@ -674,42 +674,42 @@
  antagonism_threatened_war: "Hrozil vojnou" # todo: NEW TRANSLATION
  antagonism_breaking_truce: "Porušil prímerie" # todo: NEW TRANSLATION
  antagonism_breaking_truce_with_guarantor: "Porušil prímerie s garantom" # todo: NEW TRANSLATION
- antagonism_declared_war_no_cb: "Vyhlásil [war|e] bez [casus_belli|e]" # todo: NEW TRANSLATION
- antagonism_declared_war_on_subject: "Vyhlásil [war|e] na vlastného [subject|e]" # todo: NEW TRANSLATION
- antagonism_released_nation_in_peace: "Prepustil [country|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_released_nation_in_peace_scope: "Prepúšťanie [ROOT.GetLocation.GetOwner.GetName] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_gave_up_locations_in_peace: "Postúpil [locations|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_gave_up_locations_in_peace_scope: "Postúpil [locations|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
+ antagonism_declared_war_no_cb: "Vyhlásil [Concept('war','vojna')|e] bez [casus_belli|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_declared_war_on_subject: "Vyhlásil [Concept('war','vojna')|e] na vlastného [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_released_nation_in_peace: "Prepustil [Concept('country','krajina')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_released_nation_in_peace_scope: "Prepúšťanie [ROOT.GetLocation.GetOwner.GetName] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_gave_up_locations_in_peace: "Postúpil [Concept('locations','lokality')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_gave_up_locations_in_peace_scope: "Postúpil [Concept('locations','lokality')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_peace_treaty_demands: "Požiadavky mierovej zmluvy" # todo: NEW TRANSLATION
- antagonism_taking_land: "Zobral [locations|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_taking_land_scope: "Zaberanie [ROOT.GetLocation.GetName] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_subjugated_nation: "Podmanil [country|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_subjugated_nation_scope: "Podmaňovanie [ROOT.GetLocation.GetOwner.GetName] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_took_subjugated_nation: "Získal už podrobenú [country|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_took_subjugated_nation_scope: "Prevzal vazala [ROOT.GetLocation.GetOwner.GetName] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_forced_ruler_change: "Prinútili zmenu [ruler|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_forced_ruler_change_scope: "Prinútili [ROOT.GetLocation.GetOwner.GetName] k zmene [ruler|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
+ antagonism_taking_land: "Zobral [Concept('locations','lokality')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_taking_land_scope: "Zaberanie [ROOT.GetLocation.GetName] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_subjugated_nation: "Podmanil [Concept('country','krajina')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_subjugated_nation_scope: "Podmaňovanie [ROOT.GetLocation.GetOwner.GetName] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_took_subjugated_nation: "Získal už podrobenú [Concept('country','krajinu')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_took_subjugated_nation_scope: "Prevzal vazala [ROOT.GetLocation.GetOwner.GetName] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_forced_ruler_change: "Prinútili zmenu [Concept('ruler','panovníka')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_forced_ruler_change_scope: "Prinútili [ROOT.GetLocation.GetOwner.GetName] k zmene [Concept('ruler','panovníkovi')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_violate_treaty_of_tordesillas: "Rozhodol sa ignorovať $treaty_of_tordesillas$" # todo: NEW TRANSLATION
- antagonism_abandon_colonial_claim: "Prinútil [country|e] vzdať sa koloniálneho nároku v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_abandon_colonies: "Prinútil [country|e] opustiť kolónie v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_assume_union_senority: "Prevzal senioritu v [union|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_peace_claim_delhi: "Uplatnil nárok na Delhi v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_disband_kontor: "Žiadal rozpustiť kontory v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_dismantle_fortifications: "Žiadal rozobrať [forts|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_execute_ruler: "Žiadal popraviť [ruler|e] [country|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_peace_expand_clan_influence: "Rozšíril vplyv nášho klanu v [peace_treaty|e]" # todo: NEW TRANSLATION
+ antagonism_abandon_colonial_claim: "Prinútil [Concept('country','krajina')|e] vzdať sa koloniálneho nároku v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_abandon_colonies: "Prinútil [Concept('country','krajina')|e] opustiť kolónie v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_assume_union_senority: "Prevzal senioritu v [Concept('union','únii')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_peace_claim_delhi: "Uplatnil nárok na Delhi v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_disband_kontor: "Žiadal rozpustiť kontory v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_dismantle_fortifications: "Žiadal rozobrať [Concept('forts','pevnosti')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_execute_ruler: "Žiadal popraviť [Concept('ruler','panovník')|e] [Concept('country','krajiny')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_peace_expand_clan_influence: "Rozšíril vplyv nášho klanu v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_peace_nanbokuchou_force_imperial_abdication: "Vynútená cisárska abdikácia" # todo: NEW TRANSLATION
- antagonism_force_convert: "Nútil [country|e] k prechodu na [religion|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_force_tributary: "Nútil [country|e] stať sa [ShowSubjectTypeNameWithNoTooltip('tributary')] v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_high_kingship_overthrow: "Zvrhol Najvyššieho kráľa v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_steal_pops: "Ukradol [pops|e] v [peace_treaty|e]" # todo: NEW TRANSLATION
+ antagonism_force_convert: "Nútil [Concept('country','krajina')|e] k prechodu na [Concept('religion','náboženstvo')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_force_tributary: "Nútil [Concept('country','krajina')|e] stať sa [ShowSubjectTypeNameWithNoTooltip('tributary')] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_high_kingship_overthrow: "Zvrhol Najvyššieho kráľa v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_steal_pops: "Ukradol [Concept('pops','populácie')|e] v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_jurchen_confederation_aggression: "$jurchen_confederation$ agresia" # todo: NEW TRANSLATION
- antagonism_subjugate_natives: "Podmanil domorodcov v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_subjugate_neighbor_native: "Podmanil susedných domorodcov v [peace_treaty|e]" # todo: NEW TRANSLATION
- antagonism_forced_migrate: "Prinútil [country|e] [migrate|e]" # todo: NEW TRANSLATION
- antagonism_forced_migrate_scope: "Prinútil [ROOT.GetLocation.GetOwner.GetName] k [migrate|e]" # todo: NEW TRANSLATION
- antagonism_horde_taking_land: "Horda získala [locations|e]" # todo: NEW TRANSLATION
- antagonism_horde_losing_land: "Horda stratila [locations|e]" # todo: NEW TRANSLATION
+ antagonism_subjugate_natives: "Podmanil domorodcov v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_subjugate_neighbor_native: "Podmanil susedných domorodcov v [Concept('peace_treaty','mierovej dohode')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_forced_migrate: "Prinútil [Concept('country','krajina')|e] [Concept('migrate','migrovať')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_forced_migrate_scope: "Prinútil [ROOT.GetLocation.GetOwner.GetName] k [Concept('migrate','migrovať')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_horde_taking_land: "Horda získala [Concept('locations','lokality')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_horde_losing_land: "Horda stratila [Concept('locations','lokality')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_indulged_in_bloodbath: "Dopustil sa masakru" # todo: NEW TRANSLATION
  antagonism_established_dominance_in_middle_kingdom: "Ustanovil nadvládu v [GetInternationalOrganization('middle_kingdom').GetName]" # todo: NEW TRANSLATION
  antagonism_opened_war_path: "Otvoril cestu k vojne" # todo: NEW TRANSLATION
@@ -718,21 +718,21 @@
  antagonism_refused_to_end_war: "Odmietol ukončiť vojnu" # todo: NEW TRANSLATION
  antagonism_pushed_towards_belligerent: "Posunul smerom k agresii" # todo: NEW TRANSLATION
  antagonism_pushed_away_from_belligerent: "Posunul ďalej od agresivity" # todo: NEW TRANSLATION
- antagonism_improved_subject_relations: "Zlepšil vzťahy so [subject|e]" # todo: NEW TRANSLATION
+ antagonism_improved_subject_relations: "Zlepšil vzťahy so [Concept('subject','vazalom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_forced_integration_progress: "Pokrok v nútenej integrácii" # todo: NEW TRANSLATION
  antagonism_expanded_diplomatic_corps_minors: "Posilnil väzby so susedmi" # todo: NEW TRANSLATION
- antagonism_ransomed_prisoners: "Vyplatil [prisoners|e]" # todo: NEW TRANSLATION
- antagonism_executed_prisoners: "Popravil [prisoners|e]" # todo: NEW TRANSLATION
- antagonism_embraced_antagonism: "Prijal [antagonism|e]" # todo: NEW TRANSLATION
- antagonism_bought_relief: "Kúpil úľavu od [antagonism|e]" # todo: NEW TRANSLATION
- antagonism_attempt_to_justify_backfired: "Pokus ospravedlniť [antagonism|e] sa obrátil proti nám" # todo: NEW TRANSLATION
+ antagonism_ransomed_prisoners: "Vyplatil [Concept('prisoners','väzni')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_executed_prisoners: "Popravil [Concept('prisoners','väzni')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_embraced_antagonism: "Prijal [Concept('antagonism','antagonizmus')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_bought_relief: "Kúpil úľavu od [Concept('antagonism','antagonizmu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_attempt_to_justify_backfired: "Pokus ospravedlniť [Concept('antagonism','antagonizmus')|e] sa obrátil proti nám" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_tzompantli_further_aggression: "Predpokladaná ďalšia agresia po Tzompantli" # todo: NEW TRANSLATION
  antagonism_maintained_subjugation: "Udržal podmanenie [GetCountry('LUX').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  antagonism_defused_border_disputes: "Urovnal pohraničné spory" # todo: NEW TRANSLATION
  antagonism_fortifying: "Opevňovanie našich území" # todo: NEW TRANSLATION
  antagonism_heretic_segregation: "Segregácia heretikov" # todo: NEW TRANSLATION
  antagonism_declaring_independence: "Vyhlásenie nezávislosti" # todo: NEW TRANSLATION
- antagonism_forcing_ourselves_on_brittany: "Prinútil našu [dynasty|e] na [GetCountry('BRI').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ antagonism_forcing_ourselves_on_brittany: "Prinútil našu [Concept('dynasty','dynastiu')|e] na [GetCountry('BRI').GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_more_absolutism: "Postupný absolutizmus" # todo: NEW TRANSLATION
  antagonism_pressed_claim: "Uplatnil nárok" # todo: NEW TRANSLATION
  antagonism_renounced_claim: "Zriekol sa nároku" # todo: NEW TRANSLATION
@@ -755,8 +755,8 @@
  antagonism_peace_rtr_demand_all_occupied_territories: "Požadovať všetky obsadené územia" # todo: NEW TRANSLATION
  antagonism_peace_rtr_demand_all_chinese_territories: "Požadovať všetky čínske územia" # todo: NEW TRANSLATION
  antagonism_anti_scaligeri_league: "Proti-Scaligeri liga" # todo: NEW TRANSLATION
- antagonism_ordered_me_to_annul_treaties: "Nariadil nám zrušiť zmluvy s iným [country|e]" # todo: NEW TRANSLATION
- antagonism_ordered_someone_to_annul_treaties_with_us: "Nariadil inému [country|e] zrušiť zmluvy s nami" # todo: NEW TRANSLATION
+ antagonism_ordered_me_to_annul_treaties: "Nariadil nám zrušiť zmluvy s iným [Concept('country','krajinou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ antagonism_ordered_someone_to_annul_treaties_with_us: "Nariadil inému [Concept('country','krajine')|e] zrušiť zmluvy s nami" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antagonism_maritime_aggression: "Námorná agresia" # todo: NEW TRANSLATION
  antagonism_seized_papal_capital: "Obsadili pápežské hlavné mesto" # todo: NEW TRANSLATION
  antagonism_infidel_holds_rome: "Neveriaci ovládajú [ShowLocationNameWithNoTooltip('rome')]" # todo: NEW TRANSLATION

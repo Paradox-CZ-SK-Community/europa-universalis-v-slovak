@@ -1,16 +1,16 @@
 ﻿l_polish:
  WAR_LATERALVIEW_SUE_FOR_PEACE: "Požiadať o mier"
  WAR_LATERALVIEW_SUE_FOR_PEACE_TOOLTIP: "Požiadať o mier"
- WAR_LATERALVIEW_CIVIL_WAR: "@trigger_no!Nemôžeme žiadať o [peace|el] počas [Concept('civil_war','občianskej vojny')|e]"
- WAR_LATERALVIEW_SUBJECT: "@trigger_no!Nemôžeme žiadať o [peace|el], keď sme [Concept('subject','vazalom')|e] nášho vojnového vodcu"
+ WAR_LATERALVIEW_CIVIL_WAR: "@trigger_no!Nemôžeme žiadať o [Concept('peace','mier')|el] počas [Concept('civil_war','občianskej vojny')|e]" # todo: CONCEPT CASE
+ WAR_LATERALVIEW_SUBJECT: "@trigger_no!Nemôžeme žiadať o [Concept('peace','mier')|el], keď sme [Concept('subject','vazalom')|e] nášho vojnového vodcu" # todo: CONCEPT CASE
  WARGOAL_IS_CONQUEST: "#T Vynútený cieľ vojny#!\n"
  WARGOAL_IS_SAFE: "#T Chránený cieľ vojny#!\n"
  WAR_LATERALVIEW_ANNEX_REVOLTER: "Anektovať vzbúrenca"
  WAR_LATERALVIEW_ANNEX_ALL_REVOLTERS: "Pripojiť všetkých povstalcov" # todo: NEW TRANSLATION
  WAR_LATERALVIEW_GRANT_INDEPENDENCE: "Udeliť nezávislosť"
  WAR_LATERALVIEW_REIN_IN_SUBJECT: "Udržať podriadeného" # todo: NEW TRANSLATION
- WAR_LATERALVIEW_REIN_IN_SUBJECT_TOOLTIP: "Otvorte mierové rokovania, aby ste ukončili túto vojnu o nezávislosť a zároveň si ponechali [COUNTRY.GetName] ako svojho vazala.\n\nAk uzavriete mier bez udelenia nezávislosti, [COUNTRY.GetName] sa vráti do svojho stavu [subject|e]. Môžete tiež jednoducho dohodnúť [white_peace|e], aby sa vojna skončila bez územných zmien.\n\n#S Máte dostatočné [war_score|e], aby ste prinútili [COUNTRY.GetName] prijať mier.#!" # todo: CHANGED
- WAR_LATERALVIEW_GRANT_INDEPENDENCE_THIRD_OUTCOME_HINT: "#S Tip: Toto nie je vaša jediná možnosť. Ak vyjednáte mier bez udelenia nezávislosti — alebo jednoducho vyhráte túto vojnu — [COUNTRY.GetName] sa opäť stane vaším [subject|e].#!" # todo: NEW TRANSLATION
+ WAR_LATERALVIEW_REIN_IN_SUBJECT_TOOLTIP: "Otvorte mierové rokovania, aby ste ukončili túto vojnu o nezávislosť a zároveň si ponechali [COUNTRY.GetName] ako svojho vazala.\n\nAk uzavriete mier bez udelenia nezávislosti, [COUNTRY.GetName] sa vráti do svojho stavu [Concept('subject','vazala')|e]. Môžete tiež jednoducho dohodnúť [Concept('white_peace','status quo ante bellum')|e], aby sa vojna skončila bez územných zmien.\n\n#S Máte dostatočné [war_score|e], aby ste prinútili [COUNTRY.GetName] prijať mier.#!" # todo: CHANGED # todo: CONCEPT CASE
+ WAR_LATERALVIEW_GRANT_INDEPENDENCE_THIRD_OUTCOME_HINT: "#S Tip: Toto nie je vaša jediná možnosť. Ak vyjednáte mier bez udelenia nezávislosti — alebo jednoducho vyhráte túto vojnu — [COUNTRY.GetName] sa opäť stane vaším [Concept('subject','vazalom')|e].#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WARGOAL_IS_CONTESTED: "@trigger_no!Cieľ vojny je stále sporný."
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS_PEACE: "Keď uplynie $NEED|Y$ dní bez sporu o cieľ vojny, môže byť podpísané status quo ante bellum a $WHO|Y$ si ponechá $NAME|Y$!\nAktuálne uplynulo $DAYS|G$ dní."
  WARGOAL_TICKED_ENOUGH_DAYS_PEACE: "Ubehlo viac než $NEED|Y$ dní, počas ktorých bol $NAME|Y$ plne obránený, $WHO|Y$ teraz môže vynútiť status quo ante bellum!"
@@ -22,10 +22,10 @@
  WARGOAL_NOT_FULLY_SAFE: "@trigger_no!Cieľ vojny $NAME|Y$ je úplne ovládaný útočníkmi!"
  WARGOAL_NOT_TICKED_FUL: "@trigger_no!Cieľ vojny ešte nebol ovládaný dostatočne dlho a poskytuje útočníkom len bonus $VAL|+=2$, keď potrebujú $NEED|+=0$."
  WARGOAL_NOT_TICKED_FUL_SAFE: "@trigger_no!Cieľ vojny nebol dostatočne dlho udržiavaný v bezpečí a poskytuje obranným silám len bonus $VAL|+=2$, keď potrebujú $NEED|+=0$."
- WAR_FORBIDS_WHITE_PEACE_TOOLTIP: "#R [CASUS_BELLI.GetName] zakazuje [white_peace|e]!#!" # todo: NEW TRANSLATION
- WAR_REQUIRES_PEACE_TREATIES_TOOLTIP: "Nasledujúce [peace_treaties|e] musia byť vynútené, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION
- WAR_REQUIRES_ATTACKER_PEACE_TREATIES_TOOLTIP: "Nasledujúce [peace_treaties|e] musia byť vynútené útočníkom, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION
- WAR_REQUIRES_DEFENDER_PEACE_TREATIES_TOOLTIP: "Nasledujúce [peace_treaties|e] musia byť vynútené obrancom, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION
+ WAR_FORBIDS_WHITE_PEACE_TOOLTIP: "#R [CASUS_BELLI.GetName] zakazuje [Concept('white_peace','status quo ante bellum')|e]!#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_REQUIRES_PEACE_TREATIES_TOOLTIP: "Nasledujúce [Concept('peace_treaties','mierové dohody')|e] musia byť vynútené, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_REQUIRES_ATTACKER_PEACE_TREATIES_TOOLTIP: "Nasledujúce [Concept('peace_treaties','mierové dohody')|e] musia byť vynútené útočníkom, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_REQUIRES_DEFENDER_PEACE_TREATIES_TOOLTIP: "Nasledujúce [Concept('peace_treaties','mierové dohody')|e] musia byť vynútené obrancom, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_LATERALVIEW_DATE_TOOLTIP: "Vojna začala [WarLateralView.GetWar.GetStartDate]"
  WAR_LATERALVIEW_WAR_GOAL_TOOLTIP: "Túto vojnu začal [WarLateralView.GetWar.GetOriginalAttacker.GetName] proti [WarLateralView.GetWar.GetOriginalDefendersList].\n[WarLateralView.GetWar.GetWarGoal.GetDescription]"
  WAR_OVERVIEW_WINLOSE_VS: "@[COUNTRY.GetFlag]! $NUM$ proti @[TARGET_COUNTRY.GetFlag]! $TARGET_NUM$"
@@ -40,9 +40,9 @@
  WAR_OVERVIEW_NAVAL_BATTLES_LOST: "Prehrané námorné bitky"
  WAR_OVERVIEW_LOSSES_TOOLTIP_LINE: "#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!: [BATTLE_SIDE.GetLosses|Y]@army_strength!"
  WAR_OVERVIEW_LOSSES_TOOLTIP_LINE_NAVAL: "#TOOLTIP:$BREAKDOWN_TAG$ $NAME|L$#!: [BATTLE_SIDE.GetNavalLosses|Y]@navy_strength!"
- WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_ARMY: "Celkové [attrition|e] straty doteraz: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@army_strength!" # todo: NEW TRANSLATION
- WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_NAVAL: "Celkové [attrition|e] straty doteraz: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@navy_strength!" # todo: NEW TRANSLATION
- WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER: "Rozpis [attrition|e] strát" # todo: NEW TRANSLATION
+ WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_ARMY: "Celkové [Concept('attrition','vyčerpanie')|e] straty doteraz: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@army_strength!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_OVERVIEW_ATTRITION_LOSSES_TOOLTIP_NAVAL: "Celkové [Concept('attrition','vyčerpanie')|e] straty doteraz: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|V2$#!@navy_strength!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER: "Rozpis [Concept('attrition','vyčerpanie')|e] strát" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_OVER_VIEW_ATTRITION_BREAKDOWN_HEADER_ENTRY: "[COUNTRY.GetNameWithFlag]: $VAL|V$" # todo: NEW TRANSLATION
  WAR_OVERVIEW_ATTACKERS_LEADER: "Vodca útočníkov"
  WAR_OVERVIEW_DEFENDERS_LEADER: "Vodca obrancov"
@@ -50,28 +50,28 @@
  WAR_ENTHUSIASM_TT_TITLE: "Nadšenie k vojne: $VAL|2%$ z dôvodu:"
  WAR_ENTHUSIASM_BASE: "Základ: $VAL|+=2%$"
  WAR_ENTHUSIASM_CALL_FOR_PEACE: "Výzva na mier: $VAL|+=2%$"
- WAR_ENTHUSIASM_WAR_EXHAUSTION: "[war_exhaustion|e]: $VAL|+=2%$"
+ WAR_ENTHUSIASM_WAR_EXHAUSTION: "[Concept('war_exhaustion','Vojnová vyčerpanosť')|e]: $VAL|+=2%$" # todo: CONCEPT CASE
  WAR_ENTHUSIASM_UNIT_BALANCE: "Vojenská bilancia: $VAL|+=2%$"
  WAR_ENTHUSIASM_REBEL_THREAT: "Hrozba povstania: $VAL|+=2%$"
- WAR_ENTHUSIASM_CB_FACTOR: "[casus_belli|e]: $VAL|+=2%$"
+ WAR_ENTHUSIASM_CB_FACTOR: "[Concept('casus_belli','Casus Belli')|e]: $VAL|+=2%$" # todo: CONCEPT CASE
  WAR_ENTHUSIASM_ONGOING_SIEGES: "Prebiehajúce [Concept('sieges','obliehania')|e]: $VAL|+=2%$"
  WAR_ENTHUSIASM_UNDER_SIEGE: "Pod [Concept('siege','obliehaním')|e]: $VAL|+=2%$"
  WAR_ENTHUSIASM_ONGOING_BATTLES: "Prebiehajúce bitky: $VAL|+=2%$"
  WAR_ENTHUSIASM_CAPITAL: "[LOCATION.GetName] nie je [Concept('occupied','okupovanou')|e] lokalitou: $VAL|+=2%$"
- WAR_ENTHUSIASM_WAR_GOAL: "[war_goal|e] dosiahnutý: $VAL|+=2%$"
+ WAR_ENTHUSIASM_WAR_GOAL: "[Concept('war_goal','Vojnový cieľ')|e] dosiahnutý: $VAL|+=2%$" # todo: CONCEPT CASE
  WAR_ENTHUSIASM_INDEPENDENCE: "Usilovanie o nezávislosť: $VAL|+=2%$"
  WAR_ENTHUSIASM_TIME: "Dĺžka vojny: $VAL|+=2%$"
  WAR_ENTHUSIASM_WAR_DIRECTION: "[COUNTRY.GetName] dosahuje zisky: $VAL|+=2%$"
  WAR_ENTHUSIASM_MILITARY_STRENGTH: "[COUNTRY.GetAltAdjective('aa')] vojenská sila: $VAL|+=2%$"
- WAR_ENTHUSIASM_ALLY_IN_WAR: "[ally|e] vo vojne: $VAL|+=2%$"
+ WAR_ENTHUSIASM_ALLY_IN_WAR: "[Concept('ally','Spojenec')|e] vo vojne: $VAL|+=2%$" # todo: CONCEPT CASE
  WAR_ENTHUSIASM_COALITION_WAR: "Koaličná vojna: $VAL|+=2%$"
- WAR_ENTHUSIASM_ALLIANCE_WINNING_WAR: "[war_score|e] aliancie: $VAL|+=2%$"
- WAR_ENTHUSIASM_DESPERATION: "[Concept('occupied','Okupované')|e] a [Concept('besieged','obliehané')|e] [Concept('locations','lokality')|e]: $VAL|+=2%$"
- WAR_ENTHUSIASM_OCCUPIED_LOCATIONS: "[Concept('occupied','Okupované')|e] a [Concept('besieged','obliehané')|e] [Concept('locations','lokality')|e]: $VAL|+=2%$"
+ WAR_ENTHUSIASM_ALLIANCE_WINNING_WAR: "[Concept('war_score','Vojnové skóre')|e] aliancie: $VAL|+=2%$" # todo: CONCEPT CASE
+ WAR_ENTHUSIASM_DESPERATION: "[Concept('occupied','Okupované')|e] a [Concept('besieged','obliehané')|e] [Concept('locations','lokalít')|e]: $VAL|+=2%$" # todo: CONCEPT CASE
+ WAR_ENTHUSIASM_OCCUPIED_LOCATIONS: "[Concept('occupied','Okupované')|e] a [Concept('besieged','obliehané')|e] [Concept('locations','lokalít')|e]: $VAL|+=2%$" # todo: CONCEPT CASE
  WAR_ENTHUSIASM_MEN_LOSSES: "Straty mužstva: $VAL|+=2%$"
  WAR_ENTHUSIASM_SHIP_LOSSES: "Straty lodí: $VAL|+=2%$"
  WAR_ONGOING_BATTLES: "Prebiehajúce [Concept('battles','bitky')|e]"
- WAR_WARSCORE_TT: "[war_score|e]: [WarLateralView.GetWarScore|2+=/%]\n\n"
+ WAR_WARSCORE_TT: "[Concept('war_score','Vojnové skóre')|e]: [WarLateralView.GetWarScore|2+=/%]\n\n" # todo: CONCEPT CASE
  WAR_SORT_LEAD_TT: "Zoradiť podľa vedenia vo [Concept('war','vojne')|e]"
  WAR_SORT_STABILITY_TT: "Zoradiť podľa [Concept('stability','stability')|e]"
  WAR_SORT_WAR_ENTHUSIASM_TT: "Zoradiť podľa [Concept('war_enthusiasm','vojnového nadšenia')|e]"
@@ -82,13 +82,13 @@
  WAR_SORT_EXHAUSTION_TT: "Zoradiť podľa [Concept('war_exhaustion','vojnovej vyčerpanosti')|e]"
  WAR_SORT_BLOCKADE_TT: "Zoradiť podľa [Concept('blockaded','zablokovaných')|e] [Concept('ports','prístavov')|e]"
  WAR_SCROLL_LIST_EMPTY: "Žiadne krajiny nespĺňajú tieto kritériá vyhľadávania"
- WAR_PLAYER_WARSCORE_TT: "[Player.GetName] [war_score|el] proti [WarLateralViewParticipant.GetCountry.GetName]: [WarLateralViewParticipant.GetPlayerWarScore|+=2%/]"
- WAR_EXHAUSTION_TT: "[WarLateralViewParticipant.GetCountry.GetName] [war_exhaustion|el]: [WarLateralViewParticipant.GetCountry.GetFixedPointCurrencyValue('war_exhaustion')|+]\nMaximálne: [WarLateralViewParticipant.GetCountry.GetModifierValue('max_war_exhaustion')]"
+ WAR_PLAYER_WARSCORE_TT: "[Player.GetName] [Concept('war_score','Vojnové skóre')|el] proti [WarLateralViewParticipant.GetCountry.GetName]: [WarLateralViewParticipant.GetPlayerWarScore|+=2%/]" # todo: CONCEPT CASE
+ WAR_EXHAUSTION_TT: "[WarLateralViewParticipant.GetCountry.GetName] [Concept('war_exhaustion','Vojnová vyčerpanosť')|el]: [WarLateralViewParticipant.GetCountry.GetFixedPointCurrencyValue('war_exhaustion')|+]\nMaximálne: [WarLateralViewParticipant.GetCountry.GetModifierValue('max_war_exhaustion')]" # todo: CONCEPT CASE
  WAR_BLOCKADE_TT: "[WarLateralViewParticipant.GetCountry.GetBlockadedPercent|2%] z prístavov [WarLateralViewParticipant.GetCountry.GetAdjectiveWithNoTooltip] sú zablokované"
- WAR_PARTICIPATION_TT: "[WarLateralViewParticipant.GetCountry.GetName] [war_participation|el]: [WarLateralViewParticipant.GetWarParticipation|0%]"
+ WAR_PARTICIPATION_TT: "[WarLateralViewParticipant.GetCountry.GetName] [Concept('war_participation','Účasť vo vojne')|el]: [WarLateralViewParticipant.GetWarParticipation|0%]" # todo: CONCEPT CASE
  WAR_ARMY_LOSSES_TT: "Straty armády"
  WAR_NAVAL_LOSSES_TT: "Straty námorníctva"
- WAR_PARTICIPATION_LABEL: "[war_participation|e]"
+ WAR_PARTICIPATION_LABEL: "[Concept('war_participation','Účasť vo vojne')|e]" # todo: CONCEPT CASE
  WAR_SELECT_COUNTRY: "Vyberte túto krajinu na predloženie mierovej ponuky.\nVýber vodcu vojny zahrnie všetkých jeho spojencov." # todo: CHANGED
  WAR_FR_L_A_D: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalStrength]@army_strength!"
  WAR_FR_N_A_D: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalShips]@navy_strength!"
@@ -104,7 +104,7 @@
  WAR_GO_TO: "Prejsť do bitky"
  GO_TO: "Prejsť na"
  CANNOT_INTERVENE_WAR_ALLY: "$COUNTRY|Y$ nemôže zasiahnuť do tejto vojny, pretože $SUBJECT|Y$ sa postavil proti $DEFENDER|Y$ v tejto vojne a $COUNTRY|Y$ je spojenec $SUBJECT|Y$ v inej vojne."
- CANNOT_INTERVENE_WAR_UNION_PARTNER: "@trigger_no! $COUNTRY|Y$ nemôže zasiahnuť do tejto vojny, pretože $SUBJECT|Y$ je v [union|e] s $COUNTRY|Y$." # todo: CHANGED
+ CANNOT_INTERVENE_WAR_UNION_PARTNER: "@trigger_no! $COUNTRY|Y$ nemôže zasiahnuť do tejto vojny, pretože $SUBJECT|Y$ je v [Concept('union','únii')|e] s $COUNTRY|Y$." # todo: CHANGED # todo: CONCEPT CASE
  CANNOT_INTERVENE_WAR_ENEMY_IN_OTHER_WAR: "[COUNTRY.GetName] nemôže zasiahnuť do tejto vojny, pretože je nepriateľom [TARGET_COUNTRY.GetAltAdjective('G')] v inej vojne"
  CANNOT_INTERVENE_WAR_ENEMY: "$COUNTRY|Y$ nemôže zasiahnuť do tejto vojny, pretože $SUBJECT|Y$ sa postavil na stranu $DEFENDER|Y$ v tejto vojne a $COUNTRY|Y$ už s $SUBJECT|Y$ bojuje."
  ALLIED_TO_ENEMY: "Sú spojencami nepriateľa."
@@ -115,10 +115,10 @@
  JOIN_WAR_REASON_Target: "Pôvodný cieľ"
  JOIN_WAR_REASON_DESC_Target: "[COUNTRY.GetName] je krajina, na ktorú bola [Concept('war','vojna')|e] vyhlásená."
  JOIN_WAR_REASON_CoBelligerent: "Spolubojovník"
- JOIN_WAR_REASON_DESC_CoBelligerent: "[COUNTRY.GetName] boli vyhlásení za [cobelligerent|el]."
+ JOIN_WAR_REASON_DESC_CoBelligerent: "[COUNTRY.GetName] boli vyhlásení za [Concept('cobelligerent','spolubojovníka')|el]." # todo: CONCEPT CASE
  JOIN_WAR_REASON_Subject: "Poddaný [TARGET_COUNTRY.GetAltAdjective('G')]"
  JOIN_WAR_REASON_DESC_Subject: "[COUNTRY.GetName] je poddaný [TARGET_COUNTRY.GetAltAdjective('G')]."
- JOIN_WAR_CAVEAT_SUBJECT_LOYALTY: "Hoci sú povinní vstúpiť do vojny, ich nedostatok [subject_loyalty|e] ($LOYALTY|2+=$) znamená, že tomu nemusia dať všetko."
+ JOIN_WAR_CAVEAT_SUBJECT_LOYALTY: "Hoci sú povinní vstúpiť do vojny, ich nedostatok [Concept('subject_loyalty','vernosť vazala')|e] ($LOYALTY|2+=$) znamená, že tomu nemusia dať všetko." # todo: CONCEPT CASE
  JOIN_WAR_REASON_Overlord: "Nadradený pán [TARGET_COUNTRY.GetAltAdjective('G')]"
  JOIN_WAR_REASON_DESC_Overlord: "[COUNTRY.GetName] je nadradený pán [TARGET_COUNTRY.GetAltAdjective('G')]."
  JOIN_WAR_REASON_SupportRevolt: "Podpora povstalcov"

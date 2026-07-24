@@ -66,11 +66,11 @@
  flavor_nov.13.entry: "$flavor_nov.13.title$" # todo: NEW TRANSLATION
  flavor_nov.13.desc: "[ShowReligionName('strigolniki')] sú nasledovníci kázne istého diakona [deacon_karp.GetName], ktorý po vyhostení z [ShowLocationName('pskov')] prišiel do [ShowLocationName('novgorod')], aby unikol prenasledovaniu. Jeho učenie odsudzuje cirkevnú hierarchiu a mníšstvo, pretože podľa neho sú všetci kňazi do určitej miery skorumpovaní, a požaduje právo na kázne a sviatosti vykonávané laikmi.\n\nTieto názory sa rozšírili medzi [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], nižšie postavenými členmi [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] a [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], a náboženské autority od nás teraz požadujú reakciu." # todo: NEW TRANSLATION
  flavor_nov.13.a: "Sú to heretici!" # todo: NEW TRANSLATION
- flavor_nov.13.a.tt: "Každá [ShowReligionName('orthodox')] krajina získa [ShowBiasValue('nov_opposes_strigolniki')|+=0] [opinion|E] voči [root_country.GetName]" # todo: NEW TRANSLATION
+ flavor_nov.13.a.tt: "Každá [ShowReligionName('orthodox')] krajina získa [ShowBiasValue('nov_opposes_strigolniki')|+=0] [Concept('opinion','názor')|E] voči [root_country.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  nov_opposes_strigolniki: "Proti Strigolnikom" # todo: NEW TRANSLATION
- lots_of_strigolniki: "Mnohí [pops|e] teraz nasledujú [ShowReligionName('strigolniki')]." # todo: NEW TRANSLATION
+ lots_of_strigolniki: "Mnohí [Concept('pops','populácie')|e] teraz nasledujú [ShowReligionName('strigolniki')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nov.13.b: "Buďme tolerantní k týmto kresťanským bratom." # todo: NEW TRANSLATION
- flavor_nov.13.b.tt: "Každá [ShowReligionName('orthodox')] krajina získa [ShowBiasValue('nov_tolerates_strigolniki')|+=0] [opinion|E] voči [root_country.GetName]" # todo: NEW TRANSLATION
+ flavor_nov.13.b.tt: "Každá [ShowReligionName('orthodox')] krajina získa [ShowBiasValue('nov_tolerates_strigolniki')|+=0] [Concept('opinion','názor')|E] voči [root_country.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  nov_tolerates_strigolniki: "Toleruje Strigolnikov" # todo: NEW TRANSLATION
  flavor_nov.14.title: "Kacířstvo judaizerov" # todo: NEW TRANSLATION
  flavor_nov.14.entry: "$flavor_nov.14.title$" # todo: NEW TRANSLATION
@@ -194,7 +194,7 @@
  flavor_nov.100.b: "Namiesto toho izolujme [ShowEstatePrivilegeNameWithNoTooltip('novgorod_ivans_hundred')]." # todo: NEW TRANSLATION
  empower_ivan_hundred_privilege: "The [ShowEstatePrivilegeName('novgorod_ivans_hundred')] získa nasledujúce na 25 rokov:\n#R -5.00%#! [ShowModifierTypeName('global_crown_estate_power')] a #G +20.00%#! [ShowModifierTypeName('global_merchant_capacity_modifier')]" # todo: NEW TRANSLATION
  ivan_hundred_strengthened: "Posilnenie Ivanovej stovky" # todo: NEW TRANSLATION
- ivan_hundred_strengthened_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.100.title$ [dynamic_historical_event|e]:" # todo: NEW TRANSLATION
+ ivan_hundred_strengthened_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.100.title$ [Concept('dynamic_historical_event','dynamickej historickej udalosti')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nov.101.title: "[ShowEstatePrivilegeNameWithNoTooltip('novgorod_ivans_hundred')] žiada monopol na [ShowGoodsNameWithNoTooltip('beeswax')]" # todo: NEW TRANSLATION
  flavor_nov.101.entry: "Ivanova stovka žiada monopol na včelí vosk" # todo: NEW TRANSLATION
  flavor_nov.101.desc: "Po dodatočnej podpore od Veche si [ShowEstatePrivilegeName('novgorod_ivans_hundred')] vybudovali vyšší status. V snahe získať ďalšiu podporu pre svoje aktivity združenie požiadalo o udelenie výhradného monopolu na výrobu [ShowGoodsName('beeswax')] v Novgorode. Hoci združenie vždy udržiavalo veľký vplyv v obchodovaní, monopol by pevne upevnil ich kontrolu nad týmto tovarom." # todo: NEW TRANSLATION
@@ -203,7 +203,7 @@
  variable_ivan_hundred_strengthened_tt: "Privilégium [ShowEstatePrivilegeName('novgorod_ivans_hundred')] bolo posilnené" # todo: NEW TRANSLATION
  ivan_hundred_beeswax: "Väčší vplyv na obchod s včelím voskom" # todo: NEW TRANSLATION
  ivan_hundred_beeswax_increase: "[ShowEstatePrivilegeName('novgorod_ivans_hundred')] získa nasledujúce na 25 rokov:\n#G +10.00%#! [ShowModifierTypeName('selling_efficiency')] a #G +25.00%#! [ShowModifierTypeName('global_beeswax_output_modifier')]" # todo: CHANGED
- ivan_hundred_beeswax_increase_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.101.title$ [dynamic_historical_event|e]:" # todo: NEW TRANSLATION
+ ivan_hundred_beeswax_increase_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.101.title$ [Concept('dynamic_historical_event','dynamickej historickej udalosti')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nov.102.title: "[hansa_country.GetAdjectiveWithNoTooltip] kontor v Peterhofe" # todo: NEW TRANSLATION
  flavor_nov.102.entry: "Hanseatický kontor v Peterhofe" # todo: NEW TRANSLATION
  flavor_nov.102.desc: "Hoci vzťahy medzi [hansa_country.GetName] a obchodníkmi z [ROOT.GetCountry.GetName] boli vždy napäté kvôli obchodu v Balickom regióne, [ROOT.GetCountry.GetGovernment.GetRulerTitle] a Veche doteraz umožňovali, aby [hansa_country.GetNameWithNoTooltip] udržiaval kontor v [ShowLocationName('neva')]. V poslednom čase sa však kontor stal predmetom sporov, keď rôzne obchodné združenia v [ROOT.GetCountry.GetNameWithNoTooltip] sťažujú, že [hansa_country.GetAdjectiveWithNoTooltip] obchodníci majú príliš veľký vplyv na obchod. Aby sme vyrovnali rastúci vplyv kontora, niektorí vo Veche navrhli, aby sme získali kontrolu nad peterhofským kontorom v [ShowLocationNameWithNoTooltip('neva')] na ochranu záujmov [ROOT.GetCountry.GetAdjectiveWithNoTooltip], hoci takýto krok bezpochyby rozzúri [hansa_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -219,7 +219,7 @@
  flavor_nov.104.desc: "Hoci Ushkuyniks už stáročia pôsobia v [ROOT.GetCountry.GetName], väčšinou zostávali lúpežníckou skupinou, ktorá získavala patronát rôznych rodín [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] na útoky na obchodných rivalov. V poslednom čase začali týchto pirátov financovať aj členovia [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]. S nástupom rôznych kniežatstiev mnohí naliehajú na Veche a [our_ruler.GetName], aby oficiálne povolili sankcionované používanie Ushkuynikov, aby každá obchodná hrozba pre [ROOT.GetCountry.GetNameWithNoTooltip] mohla čeliť ich pirátstvu." # todo: NEW TRANSLATION
  flavor_nov.104.a: "Súhlasiť s financovaním výprav Ushkuynikov z prostriedkov Veche." # todo: NEW TRANSLATION
  flavor_nov.104.b: "Nestojí za to rozzúriť ostatné kniežatstvá." # todo: NEW TRANSLATION
- enable_ushkuiniks_advance: "Umožňuje prístup k [ShowAdvanceName('ushkuiniks')] [advance|e]" # todo: NEW TRANSLATION
+ enable_ushkuiniks_advance: "Umožňuje prístup k [ShowAdvanceName('ushkuiniks')] [Concept('advance','pokroku')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nov.105.title: "Rastúce snahy o zrušenie Ushkuynikov" # todo: NEW TRANSLATION
  flavor_nov.105.entry: "$flavor_nov.105.title$" # todo: NEW TRANSLATION
  flavor_nov.105.desc: "Hoci Ushkuyniks slúžili rodinám [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] a cechom [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] počas storočí pomerne dobre, v posledných rokoch sa stali politickou prekážkou v celom regióne [ShowRegionName('russian_region')]. Opakované agresie Ushkuynikov sa stali problémom: mnohí piráti konajú ďaleko za hranicami svojich pôvodných cieľov a spôsobujú viac spustošenia než reálneho vplyvu. Keď sú Ushkuyniks vnímaní ako pariah organizácia, niektorí vo Veche požiadali [our_ruler.GetName], aby vydal dekrét o ich rozpustení, aby pomohol [ROOT.GetCountry.GetName] obnoviť svoju reputáciu." # todo: NEW TRANSLATION
@@ -258,8 +258,8 @@
  nov_tysiatskii_influence_weakened_benefits: "The [ShowEstatePrivilegeName('tysiatskii_privilege')] získa nasledujúce na 30 rokov:\n#R -25.00%#! [ShowModifierTypeName('global_nobles_estate_power')] a #G +0.10#! [ShowModifierTypeName('stability_investment')]" # todo: NEW TRANSLATION
  nov_tysiatskii_influence_event_happened: "Tysiatskii získal viac vplyvu!" # todo: NEW TRANSLATION
  nov_tysiatskii_influence_event_happened_possible_event: "Tysiatskii sa v budúcnosti môže pokúsiť presadiť svoju nadvládu nad [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]!" # todo: NEW TRANSLATION
- nov_influential_tysiatskii_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.109.title$ [dynamic_historical_event|e]:" # todo: NEW TRANSLATION
- nov_tysiatskii_influence_weakened_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.109.title$ [dynamic_historical_event|e]:" # todo: NEW TRANSLATION
+ nov_influential_tysiatskii_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.109.title$ [Concept('dynamic_historical_event','dynamickej historickej udalosti')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ nov_tysiatskii_influence_weakened_requirement: "Nasledujúci bonus je možné získať z $flavor_nov.109.title$ [Concept('dynamic_historical_event','dynamickej historickej udalosti')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nov.110.title: "Tysiatskii požaduje daň na [ShowEstatePrivilegeNameWithNoTooltip('novgorod_ivans_hundred')]" # todo: NEW TRANSLATION
  flavor_nov.110.entry: "Tysiatskii požaduje vyššie poplatky od Ivanovej stovky" # todo: NEW TRANSLATION
  flavor_nov.110.desc: "Považované prevažne za mocenský zápas medzi [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] a [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], súčasný Tysiatskii požiadal [our_ruler.GetName] s podporou Veche, aby uvalil prísnejšiu daň na [ShowEstatePrivilegeName('novgorod_ivans_hundred')]. Hoci sa očakáva, že členovia [ShowEstatePrivilegeNameWithNoTooltip('novgorod_ivans_hundred')] zaplatia značný vstupný poplatok za účasť v združení spolu s darmi pre držiteľa úradu Tysiatskii, súčasný Tysiatskii požiadal, aby časť týchto poplatkov smerovala do úradu. Niektorí v [ShowEstatePrivilegeNameWithNoTooltip('novgorod_ivans_hundred')] tento krok odsudzujú ako pokus Tysiatskiia rozšíriť svoj vplyv." # todo: NEW TRANSLATION

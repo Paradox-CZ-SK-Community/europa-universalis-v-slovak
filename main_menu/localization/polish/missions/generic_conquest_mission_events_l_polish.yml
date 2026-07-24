@@ -14,9 +14,9 @@
  conquest_mission_events.3.b: "Dobre, podpíšme pôžičku." # todo: NEW TRANSLATION
  conquest_mission_events.3.c: "Nemôžeme si to dovoliť." # todo: NEW TRANSLATION
  conquest_mission_events.3.a: "Vyjednajme lepšiu dohodu!" # todo: NEW TRANSLATION
- special_loan_with_lower_interest_tt: "Táto [loan|e] je ponúkaná za nižšiu [interest|e] sadzbu" # todo: NEW TRANSLATION
- turn_away_the_loan_tt: "#italic Odmietnuť ponuku našich [estates|e]#" # todo: NEW TRANSLATION
- extra_special_loan_with_lower_interest_tt: "Vďaka vyjednávacím schopnostiam [target_character.GetName] bude [loan|e] vo #G väčšej#! výške a s #G ešte nižšou#! [interest|e] sadzbou" # todo: NEW TRANSLATION
+ special_loan_with_lower_interest_tt: "Táto [Concept('loan','pôžička')|e] je ponúkaná za nižšiu [Concept('interest','úrok')|e] sadzbu" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ turn_away_the_loan_tt: "#italic Odmietnuť ponuku našich [Concept('estates','stavov')|e]#" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ extra_special_loan_with_lower_interest_tt: "Vďaka vyjednávacím schopnostiam [target_character.GetName] bude [Concept('loan','pôžička')|e] vo #G väčšej#! výške a s #G ešte nižšou#! [Concept('interest','úrokom')|e] sadzbou" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  conquest_mission_events.4.title: "Lúpeže v [target_loot_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  conquest_mission_events.4.desc: "Plamene vojny sa rozšírili nekontrolovateľne a zanechali za sebou skazu. Kedysi prosperujúca provincia [target_loot_province.GetName] pocítila najväčší úder konfliktu, keď rabujúci vojaci a zúfalí dezertéri drancujú osady, lúpežia farmy a zanechávajú vidiek v ruinách.\n\nHlásenia o horiacich dedinách, vyhladovaných roľníkoch a kolapse miestneho obchodu dosiahli [ROOT.GetCountry.GetGovernment.GetCourtTitle], vytvárajúc nepríjemný obraz ľudskej ceny vojny. Ak sa neprezdie jasné opatrenia, trvalé škody spôsobené lúpežami by mohli roky ochromiť prosperitu provincie." # todo: NEW TRANSLATION
  conquest_mission_events.4.a: "Vo vojne je všetko dovolené." # todo: NEW TRANSLATION
@@ -30,19 +30,19 @@
  conquest_mission_events.6.desc: "Ako vojna zužíva, nevyhnutnosť sa stáva matkou vynálezov. Predĺžený konflikt priviedol naše armády do kontaktu s cudzími nepriateľmi i spojencami, z ktorých každý disponuje unikátnymi technikami a technológiami. Od zajatých nepriateľských oblúkov až po vylepšené taktiky pozorované na bojisku, naši vojaci a inžinieri začali tieto inovácie osvojiť a zdokonaliť.\n\nTáto výmena poznatkov nielenže zlepšila naše vojenské schopnosti, ale tiež vyvolala vlnu technologického pokroku naprieč [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
  conquest_mission_events.6.a: "Budeme študovať vojnu." # todo: NEW TRANSLATION
  conquest_mission_events.6.b: "Zamerať sa na všeobecný pokrok." # todo: NEW TRANSLATION
- research_gained_scales_with_monthly_towards_innovative_tt: "Množstvo získaného [research_progress|e] závisí od našej hodnoty [ShowModifierTypeName('monthly_towards_innovative')]" # todo: NEW TRANSLATION
+ research_gained_scales_with_monthly_towards_innovative_tt: "Množstvo získaného [Concept('research_progress','pokroku výskumu')|e] závisí od našej hodnoty [ShowModifierTypeName('monthly_towards_innovative')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  conquest_mission_events.7.title: "Pokrok integrácie v [target_province.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  conquest_mission_events.7.desc: "Integrácia v [target_province.GetName] pokročila stabilne. V [target_location.GetName] sa miestne obyvateľstvo začína prispôsobovať našim zákonom a zvykom.\n\nTrhy sa znova otvárajú, náš jazyk je na uliciach častejšie počuť a odpor slabne do tichej akceptácie. Hoci niektoré tradície pretrvávajú, región sa pomaly zjednocuje s rytmom našej [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
  conquest_mission_events.7.a: "Zintenzívniť integračné snahy." # todo: NEW TRANSLATION
  conquest_mission_events.7.b: "Skúsme rešpektovať miestnych." # todo: NEW TRANSLATION
- locals_in_target_province_gain_mild_satisfaction_tt: "Naši [pops|e] v [target_province.GetName] získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
- locations_in_target_province_receive_very_weak_bonus_integration_tt: "[locations|e] v spomínanej [province|e], ktoré [integrujeme|e], získajú [ShowNamedValue('integration_progress_very_weak_bonus')|+=] [integration|e] progres" # todo: NEW TRANSLATION
+ locals_in_target_province_gain_mild_satisfaction_tt: "Naši [Concept('pops','populácie')|e] v [target_province.GetName] získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ locations_in_target_province_receive_very_weak_bonus_integration_tt: "[Concept('locations','Lokality')|e] v spomínanej [Concept('province','provincii')|e], ktoré [integrujeme|e], získajú [ShowNamedValue('integration_progress_very_weak_bonus')|+=] [Concept('integration','integrácia')|e] progres" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  conquest_mission_events.8.title: "Odpor proti integrácii v [target_province.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  conquest_mission_events.8.desc: "Odpor v [target_province.GetName] zostáva silný. V [target_location.GetName] úrady hlásia rastúcu vzdor voči našej vláde a politikám.\n\nMiestni vodcovia podrývajú naše reformy a naše zástavy sú považované za pohŕdané. Obyvateľstvo sa drží starých spôsobov a naše snahy o ich asimiláciu sú prijímané mlčaním alebo otvoreným opovrhnutím." # todo: NEW TRANSLATION
  conquest_mission_events.8.a: "Ich snahy sú márne!" # todo: NEW TRANSLATION
  conquest_mission_events.8.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" # todo: NEW TRANSLATION
  conquest_mission_events.8.c: "Nech spoznajú bič." # todo: NEW TRANSLATION
- locals_in_target_province_lose_mild_satisfaction_tt: "Naši [pops|e] v [target_province.GetName] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]" # todo: NEW TRANSLATION
+ locals_in_target_province_lose_mild_satisfaction_tt: "Naši [Concept('pops','populácie')|e] v [target_province.GetName] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  mission_ruler_or_regent_is_conqueror_tt: "Aj ten najmenší odpor v [target_province.GetName] nemá šancu proti [target_character.GetName]" # todo: NEW TRANSLATION
  conquest_mission_events.9.title: "Šírenie kultúry v [target_province.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  conquest_mission_events.9.desc: "V [target_province.GetName] sa začínajú uchytávať prvky našej kultúry [target_culture.GetName]. V [target_location.GetName] sa začínajú objavovať známky kultúrnej zmeny.\n\nDeti sa učia náš jazyk, oblečenie a zvyky z hlavného mesta sa rozširujú a predstava identifikovať sa s našou [ROOT.GetCountry.GetFlavorRank] už pre niektorých nie je cudzie. Zmena je jemná, ale skutočná." # todo: NEW TRANSLATION

@@ -5,7 +5,7 @@
  flavor_mlo.1.a: "Za svätého Ambróza!" # todo: NEW TRANSLATION
  flavor_mlo.1.b: "Nevrátime sa k republike." # todo: NEW TRANSLATION
  mlo_against_ambrosian: "Proti ambrosiánskej republike" # todo: NEW TRANSLATION
- establish_union_with_target_country_tt: "Táto možnosť ukončí [ShowDisasterName('ambrosian_republic_disaster')] [disaster|e] a vytvorí [union|e] medzi nami a [target_country.GetLongName]" # todo: NEW TRANSLATION
+ establish_union_with_target_country_tt: "Táto možnosť ukončí [ShowDisasterName('ambrosian_republic_disaster')] [Concept('disaster','katastrofa')|e] a vytvorí [Concept('union','únia')|e] medzi nami a [target_country.GetLongName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_mlo.2.title: "Spor guelfov a ghibellinov v Miláne" # todo: NEW TRANSLATION
  flavor_mlo.2.desc: "V Miláne pretrváva vnútorné nezhody. Občania sú vážne rozdelení medzi rôzne frakcie. Voľba guelfských aristokratov namiesto ghibellinov oslabuje republiku a znižuje jej demokratickosť. Napriek tomu je potrebná istá stabilita!" # todo: NEW TRANSLATION
  flavor_mlo.2.a: "Postaviť sa na stranu guelfov." # todo: CHANGED
@@ -262,10 +262,10 @@
  mlo_lodrisio_visconti_appeased_tt: "[target_character.GetName] bude upokojený na úkor iných členov nášho vládnuceho rodu" # todo: NEW TRANSLATION
  mlo_lodrisio_visconti_scorned_tt: "[target_character.GetName] utečie z nášho dvora" # todo: NEW TRANSLATION
  mlo_visconti_struggle: "Pokým zostávame rozdelení v dôsledku šľachtických privilégií Visconti mestských štátov, naša legitimita a kontrola nad územiami budú trpieť" # todo: NEW TRANSLATION
- mlo_waterways_estates_pay_tt: "Zástupcovia [GetCountry('MLO').GetGovernment.GetEstateName('burghers_estate')], [GetCountry('MLO').GetGovernment.GetEstateName('clergy_estate')] a [GetCountry('MLO').GetGovernment.GetEstateName('nobles_estate')] zaplatia za údržbu a pritom utrpia #R -20%#! [estate_satisfaction|e]" # todo: NEW TRANSLATION
- mlo_access_restore_kingdom_lombardy_cabinet_action_tt: "Získame prístup k jedinečnej [ShowCabinetActionName('mlo_restore_kingdom_lombardy')] [cabinet_action|e] na #Y 30#! rokov.\n\nTáto akcia dokáže integrovať územia v [ShowAreaName('lombardy_area')], [ShowAreaName('emilia_area')], [ShowAreaName('piemonte_area')], [ShowAreaName('liguria_area')], [ShowAreaName('veneto_area')], a [ShowAreaName('tuscany_area')] [areas|e] oveľa rýchlejšie." # todo: CHANGED
- mlo_every_location_italy_5_control_tt: "Naše lokality v talianskom [region|e] získajú [ShowNamedValue('control_weak_bonus')|+=2%] [control|e]" # todo: NEW TRANSLATION
- mlo_every_province_scope_province_tt: "Každé vlastnené [location|e] v dotknutej [province|e] utrpí nasledujúce:" # todo: NEW TRANSLATION
+ mlo_waterways_estates_pay_tt: "Zástupcovia [GetCountry('MLO').GetGovernment.GetEstateName('burghers_estate')], [GetCountry('MLO').GetGovernment.GetEstateName('clergy_estate')] a [GetCountry('MLO').GetGovernment.GetEstateName('nobles_estate')] zaplatia za údržbu a pritom utrpia #R -20%#! [Concept('estate_satisfaction','spokojnosť stavu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ mlo_access_restore_kingdom_lombardy_cabinet_action_tt: "Získame prístup k jedinečnej [ShowCabinetActionName('mlo_restore_kingdom_lombardy')] [Concept('cabinet_action','akcii kabinetu')|e] na #Y 30#! rokov.\n\nTáto akcia dokáže integrovať územia v [ShowAreaName('lombardy_area')], [ShowAreaName('emilia_area')], [ShowAreaName('piemonte_area')], [ShowAreaName('liguria_area')], [ShowAreaName('veneto_area')], a [ShowAreaName('tuscany_area')] [Concept('areas','oblastiach')|e] oveľa rýchlejšie." # todo: CHANGED # todo: CONCEPT CASE
+ mlo_every_location_italy_5_control_tt: "Naše lokality v talianskom [Concept('region','regióne')|e] získajú [ShowNamedValue('control_weak_bonus')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ mlo_every_province_scope_province_tt: "Každé vlastnené [Concept('location','lokalita')|e] v dotknutej [Concept('province','provincii')|e] utrpí nasledujúce:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  mlo_sforza_given_influence_tt: "[target_character.GetName] dostane kontrolu nad našimi ozbrojenými silami" # todo: NEW TRANSLATION
  mlo_sforza_joins_tt: "[target_character.GetName] sa pripojí k nášmu dvoru" # todo: NEW TRANSLATION
  produce_any_fine_cloth_or_silk_tt: "Produkujeme akékoľvek [ShowGoodsName('fine_cloth')] alebo [ShowGoodsName('silk')]" # todo: NEW TRANSLATION
@@ -275,7 +275,7 @@
  flavor_mlo.48.desc: "Arogantné ťahy dynastie [target_dynasty.GetName] na šachovnici [ShowRegionName('italy_region')] odcudzili všetkých ostatných hráčov, čo protivníkov podnietilo k intrikám. Ich nedávne kroky situáciu len zhoršili a viedli k vytvoreniu koalície proti nim, do ktorej sa zapojilo mnoho významných dynastií a štátov na severe regiónu. [ROOT.GetCountry.GetLongName] je len jedným zo štátov, ktoré sa snažia poraziť tohto rastúceho hegemóna. Spolu s niekoľkými ďalšími veľkými hráčmi sa snažíme obmedziť expanziu tejto dynastie, no zatiaľ s malým výsledkom. Hoci nepriateľstvá mohli dočasne ustúpiť, nesmieme prestať v boji pokračovať." # todo: NEW TRANSLATION
  flavor_mlo.48.historical_info: "Expanzia Della Scala na začiatku 14. storočia vyvolala vznik koalície proti nim. Konflikt proti tejto lige 'Anti-scaligeri' bol vyvolaný veronskými ťahmi proti Benátskej republike v roku 1336. Krátko po jej vzniku sa k nej pridalo mnoho ďalších mocných severotalianskych dynastií a po troch rokoch konfliktu boli domény rodu Della Scala obmedzené len na mestá Verona a Vicenza." # todo: NEW TRANSLATION
  flavor_mlo.48.a: "Skutočne, musíme ich zadržať." # todo: NEW TRANSLATION
- should_at_least_2_accept_we_will_declare_war_within_a_year_tt: "Ak aspoň #Y 2#! z nasledujúcich [countries|e] sú ochotné pripojiť sa do frontu proti [target_dynasty.GetName], vojna vypukne #R v priebehu roka#!" # todo: NEW TRANSLATION
+ should_at_least_2_accept_we_will_declare_war_within_a_year_tt: "Ak aspoň #Y 2#! z nasledujúcich [Concept('countries','krajinu')|e] sú ochotné pripojiť sa do frontu proti [target_dynasty.GetName], vojna vypukne #R v priebehu roka#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_mlo.49.title: "$flavor_mlo.48.title$" # todo: NEW TRANSLATION
  flavor_mlo.49.desc: "$flavor_mlo.48.desc$" # todo: NEW TRANSLATION
  flavor_mlo.49.a: "Zastavíme ich!" # todo: NEW TRANSLATION

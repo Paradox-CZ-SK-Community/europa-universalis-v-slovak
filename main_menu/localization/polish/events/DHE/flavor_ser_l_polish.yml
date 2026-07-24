@@ -8,7 +8,7 @@
  flavor_ser.10.d: "Nie sme zbabelci, pôjdeme do boja!" # todo: NEW TRANSLATION
  flavor_ser.10.e: "Dostanú sa na kolená." # todo: NEW TRANSLATION
  variable_had_serbian_disaster_variable_tt: "Srbsko utrpelo obdobie nepokojov" # todo: NEW TRANSLATION
- ser_every_conquered_location_gets_tt: "Každé [conquered|e] [location|e] utrpí nasledujúce:" # todo: NEW TRANSLATION
+ ser_every_conquered_location_gets_tt: "Každé [Concept('conquered','dobytá')|e] [Concept('location','lokality')|e] utrpí nasledujúce:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ser_abdicate_throne_tt: "[target_character.GetNameWithNoTooltip] abdikuje trón" # todo: NEW TRANSLATION
  flavor_ser.11.title: "Snaha o moc" # todo: NEW TRANSLATION
  flavor_ser.11.entry: "$flavor_ser.11.title$" # todo: NEW TRANSLATION
@@ -25,7 +25,7 @@
  flavor_ser.12.a: "Musíme momentálne prehĺtať ich požiadavky..." # todo: NEW TRANSLATION
  flavor_ser.12.b: "Dobre teda, zverme im kontrolu týchto domén..." # todo: NEW TRANSLATION
  flavor_ser.12.c: "Ak túžia po boji..." # todo: CHANGED
- ser_every_location_20_control_tt: "Každé vlastnené [location|e] stratí [ShowNamedValue('control_severe_penalty')|+=2%] [control|e]" # todo: NEW TRANSLATION
+ ser_every_location_20_control_tt: "Každé vlastnené [Concept('location','lokalita')|e] stratí [ShowNamedValue('control_severe_penalty')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  STATIC_MODIFIER_NAME_ser_noble_borderlands_modifier: "Šľachtické pohraničie" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_ser_clergy_borderlands_modifier: "Cirkevné pohraničie" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_ser_burgher_borderlands_modifier: "Meštianske pohraničie" # todo: NEW TRANSLATION
@@ -33,9 +33,9 @@
  flavor_ser.30.entry: "Sny Štefana $dusan$" # todo: CHANGED
  flavor_ser.30.desc: "Mnohí vodcovia si prisudzujú kontinuitu Ríma. Cisárske sny odeté do kráľovskej purpury a predstavy legendárnych dobytí priťahujú susedné [ShowReligionGroupAdjectiveWithNoTooltip('christian')] panstvá. Avšak, na rozdiel od iných falošných nárokovateľov, [GetCharacter('ser_stefan_dusan').GetName] má predpoklady stať sa legendárnou postavou. Pod pevnou rukou [GetCharacter('ser_stefan_dusan').GetHerHis] vyrazíme a vezmeme si, čo nám právom patrí!" # todo: NEW TRANSLATION
  flavor_ser.30.a: "K bránam [ShowLocationNameWithNoTooltip('constantinople')] — sláva Ríma nás čaká!" # todo: NEW TRANSLATION
- ser_conquest_into_empire: "Ak dobyjeme tieto [provinces|e] počas života [GetCharacter('ser_stefan_dusan').GetShortNameWithNoTooltip], staneme sa [ShowCountryRankName('rank_empire')] a získame možnosť vyhlásiť vlastného #italic Autokefálny#! [patriarch|e]" # todo: NEW TRANSLATION
- stefan_uros_conqueror_tt: "[target_character.GetName] získa prínos z [ShowModifier('insatiable_ambition')] [character|e] [modifier|e] počas trvania [target_character.GetHerHis] vlády" # todo: NEW TRANSLATION
- granted_claims_stefan_uros_tt: "Bude nám udelený [ShowCasusBelliName('cb_conquer_province')] [casus_belli|e] proti [ShowProvinceDefinitionName('upper_macedonia_province')], [ShowProvinceDefinitionName('lower_macedonia_province')], [ShowProvinceDefinitionName('chalkidiki_province')], [ShowProvinceDefinitionName('central_macedonia_province')] a [ShowProvinceDefinitionName('thessaly_province')]" # todo: CHANGED
+ ser_conquest_into_empire: "Ak dobyjeme tieto [Concept('provinces','provincie')|e] počas života [GetCharacter('ser_stefan_dusan').GetShortNameWithNoTooltip], staneme sa [ShowCountryRankName('rank_empire')] a získame možnosť vyhlásiť vlastného #italic Autokefálny#! [Concept('patriarch','patriarcha')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ stefan_uros_conqueror_tt: "[target_character.GetName] získa prínos z [ShowModifier('insatiable_ambition')] [Concept('character','postavy')|e] [Concept('modifier','modifikátora')|e] počas trvania [target_character.GetHerHis] vlády" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ granted_claims_stefan_uros_tt: "Bude nám udelený [ShowCasusBelliName('cb_conquer_province')] [Concept('casus_belli','casus Belli')|e] proti [ShowProvinceDefinitionName('upper_macedonia_province')], [ShowProvinceDefinitionName('lower_macedonia_province')], [ShowProvinceDefinitionName('chalkidiki_province')], [ShowProvinceDefinitionName('central_macedonia_province')] a [ShowProvinceDefinitionName('thessaly_province')]" # todo: CHANGED # todo: CONCEPT CASE
  flavor_ser.30.historical_info: "Stefan Uroš IV Dušan bol v roku 1346 vyhlásený za cisára, čo znamenalo vrchol stredovekej srbskej moci. Jeho vláda sa vyznačovala vojenskými dobytými a právnymi reformami, ktoré premenili Srbsko na dominantné balkánske impérium. Využívajúc oslabenie Byzantskej ríše, Dušan rozšíril svoju ríšu o veľké časti Macedónska, Thessálie a dokonca Epiru. Na veľkom cirkevnom zhromaždení v Skopje bol korunovaný za cisára Srbov a Grékov, čím si nárokoval politickú nadvládu a cirkevnú nezávislosť zvýšením Srbskej arcibiskupie na patriarchát. Toto cisárske vyhlásenie symbolizovalo ambíciu Srbska nahradiť Byzanciu ako vedúcu pravoslávnu moc v regióne." # todo: NEW TRANSLATION
  flavor_ser.31.title: "Úsvit nového impéria" # todo: NEW TRANSLATION
  flavor_ser.31.entry: "$flavor_ser.31.title$" # todo: NEW TRANSLATION
@@ -184,7 +184,7 @@
  flavor_ser.210.historical_info: "Banský kódex Novo Brdo, zriadený v roku 1412 Stefanom Lazarevićom, bol komplexným súborom predpisov upravujúcich banské operácie, práva pracovníkov a organizáciu baníckych miest v stredovekom Srbsku. Poskytoval podrobné usmernenia o vlastníckych právach, bezpečnostných opatreniach a ekonomických praktikách, čím významne ovplyvnil rozvoj a prosperitu baníckych spoločenstiev." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_ser_novo_brdo_code: "Kódex Novo Brdo" # todo: NEW TRANSLATION
  flavor_ser.210.tt: "Odomkne [ShowPolicyName('novo_brdo_mining_law')] banské právo." # todo: NEW TRANSLATION
- has_unlocked_novo_brdo_tt: "Odomkol zákon cez #Y Kódex [ShowLocationNameWithNoTooltip('novo_brdo')]#! [event|e]" # todo: NEW TRANSLATION
+ has_unlocked_novo_brdo_tt: "Odomkol zákon cez #Y Kódex [ShowLocationNameWithNoTooltip('novo_brdo')]#! [Concept('event','udalosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ser.220.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ser.220.entry: "Palman Bracht" # todo: NEW TRANSLATION
  flavor_ser.220.desc: "[target_character.GetName] a jeho elitný zbor germánskych bojovníkov, nazývaný Allemanic Guard, zohrávajú kľúčovú úlohu pri ochrane [ROOT.GetCountry.GetFlavorRank] a vynucovaní vôle [GetCharacter('ser_stefan_dusan').GetName]. Pod jeho velením sa Allemanic Guard preslávil disciplínou, statočnosťou a vernosťou a stáva sa symbolom sily a stability v búrlivých časoch." # todo: CHANGED
