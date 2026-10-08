@@ -53,8 +53,8 @@
  international_organization_parliament_type_not_equal: "Nemá [TARGET_PARLIAMENT_TYPE.GetName] [Concept('parliament_type','typ parlamentu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_international_organization_parliament_type_equal: "Nemá [TARGET_PARLIAMENT_TYPE.GetName] [Concept('parliament_type','typ parlamentu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_international_organization_parliament_type_not_equal: "Má [TARGET_PARLIAMENT_TYPE.GetName] [Concept('parliament_type','typ parlamentu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- spouse_equal: "Je [Concept('married','V sňatku')|e] s [TARGET_CHARACTER.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_spouse_equal: "Nie je [Concept('married','V sňatku')|e] s [TARGET_CHARACTER.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ spouse_equal: "Je [Concept('married','v sňatku')|e] s [TARGET_CHARACTER.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_spouse_equal: "Nie je [Concept('married','v sňatku')|e] s [TARGET_CHARACTER.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  father_equal: "[TARGET_CHARACTER.GetName] je otec" # todo: NEW TRANSLATION
  NOT_father_equal: "[TARGET_CHARACTER.GetName] nie je otec" # todo: NEW TRANSLATION
  mother_equal: "[TARGET_CHARACTER.GetName] je matka" # todo: NEW TRANSLATION
@@ -334,7 +334,7 @@
  boolean_bool_modifier_equal_no: "Nemá modifikátor $MODIFIER_NAME$" # todo: NEW TRANSLATION
  religion_bool_modifier_equal_yes: "[RELIGION.GetName] má $MODIFIER_NAME$" # todo: NEW TRANSLATION
  religion_bool_modifier_equal_no: "[RELIGION.GetName] nemá $MODIFIER_NAME$" # todo: NEW TRANSLATION
- top_overlord_or_this_equal: "[Concept('owner','Majiteľ')|e] alebo najvyšší [overlord|e] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ top_overlord_or_this_equal: "[Concept('owner','Majiteľ')|e] alebo najvyšší [Concept('overlord','suzerén')|e] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_location_equal: "Nie je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  location_root_equal: "Je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  NOT_location_root_equal: "Nie je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
@@ -395,8 +395,8 @@
  NOT_none_sub_continent_equal: "Nie je na [TARGET_SUB_CONTINENT.GetName] [Concept('sub_continent','subkontinent')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  overlord_equal: "[Concept('overlord','Suzerén')|e] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_overlord_equal: "[Concept('overlord','Suzerén')|e] nie je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- top_overlord_equal: "Najvyšší [overlord|e] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- NOT_top_overlord_equal: "Najvyšší [overlord|e] nie je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ top_overlord_equal: "Najvyšší [Concept('overlord','suzerén')|e] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_top_overlord_equal: "Najvyšší [Concept('overlord','suzerén')|e] nie je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  location_art_quality_greater_than: "[Concept('art_quality','Kvalita umenia')|e] je vyššie ako ($NUM$)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  holy_site_god_equal: "Je [Concept('holy_site','sväté miesto')|e] boha [TARGET_GOD.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_holy_site_god_equal: "Nie je [Concept('holy_site','sväté miesto')|e] boha [TARGET_GOD.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -717,10 +717,10 @@
  NOT_cardinal_owner_equal: "Nepôsobí v mene [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  estate_owner_equal: "Je súčasťou [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_estate_owner_equal: "Nie je súčasťou [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- top_owner_equal: "Najvyšší [overlord|e] z [LOCATION.GetName] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- NOT_top_owner_equal: "Najvyšší [overlord|e] z [LOCATION.GetName] NIE je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- location_top_owner_equal: "Najvyšší [overlord|e] z [LOCATION.GetName] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- NOT_location_top_owner_equal: "Najvyšší [overlord|e] z [LOCATION.GetName] NIE je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ top_owner_equal: "Najvyšší [Concept('overlord','suzerén')|e] z [LOCATION.GetName] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_top_owner_equal: "Najvyšší [Concept('overlord','suzerén')|e] z [LOCATION.GetName] NIE je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ location_top_owner_equal: "Najvyšší [Concept('overlord','suzerén')|e] z [LOCATION.GetName] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_location_top_owner_equal: "Najvyšší [Concept('overlord','suzerén')|e] z [LOCATION.GetName] NIE je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  any_child: "Akýkoľvek [Concept('child','dieťa')|e] postavy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_any_child: "Žiadny [Concept('child','dieťa')|e] postavy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  any_child_count: "$PARAMETERS$ [Concept('children','Deti')|e] postavy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -986,10 +986,10 @@
  NOT_any_present_overlord: "Žiadny prítomný [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  any_present_overlord_all: "Všetci prítomní [Concept('overlords','suzeréni')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_any_present_overlord_all: "Nie všetci prítomní [Concept('overlords','suzeréni')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- any_present_overlord_count: "$PARAMETERS$ prítomných [overlords|e]" # todo: NEW TRANSLATION
- NOT_any_present_overlord_count: "Nie $PARAMETERS$ prítomných [overlords|e]" # todo: NEW TRANSLATION
- any_present_overlord_percent: "$PARAMETERS$ prítomných [overlords|e]" # todo: NEW TRANSLATION
- NOT_any_present_overlord_percent: "Nie $PARAMETERS$ prítomných [overlords|e]" # todo: NEW TRANSLATION
+ any_present_overlord_count: "$PARAMETERS$ prítomných [Concept('overlords','suzerénov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_any_present_overlord_count: "Nie $PARAMETERS$ prítomných [Concept('overlords','suzerénov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ any_present_overlord_percent: "$PARAMETERS$ prítomných [Concept('overlords','suzerénov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_any_present_overlord_percent: "Nie $PARAMETERS$ prítomných [Concept('overlords','suzerénov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  any_country_with_capital_in_geography: "Akákoľvek [Concept('country','krajina')|e] v tejto geografii" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_any_country_with_capital_in_geography: "Žiadna [Concept('country','krajina')|e] v tejto geografii" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  any_country_with_capital_in_geography_all: "Všetky [Concept('countries','krajiny')|e] v tejto geografii" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1379,7 +1379,7 @@
  every_international_organizations_member_of: "Každá [Concept('international_organization','medzinárodná organizácia')|e], ktorej je krajina členom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_every_international_organizations_member_of: "Nie všetky [Concept('international_organizations','medzinárodné organizácie')|e], ktorých je krajina členom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  any_international_organization_member: "Akýkoľvek člen [Concept('international_organizations','medzinárodné organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- any_international_organization_member_count: "$PARAMETERS$ členov [international_organizations|e]" # todo: NEW TRANSLATION
+ any_international_organization_member_count: "$PARAMETERS$ členov [Concept('international_organizations','medzinárodných organizácií')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_any_international_organization_member: "Žiadny člen [Concept('international_organizations','medzinárodné organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  any_international_organization_member_all: "Všetci členovia [Concept('international_organizations','medzinárodné organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_any_international_organization_member_all: "Nie všetci členovia [Concept('international_organizations','medzinárodné organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1616,16 +1616,16 @@
  NOT_any_colonial_overlord_all: "Nie všetky [Concept('countries','krajiny')|e] sú [Concept('overlords','suzeréni')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  every_colonial_overlord: "Každý [Concept('country','krajina')|e], ktorý je [Concept('overlord','suzerén')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  random_colonial_overlord: "Náhodný [Concept('country','krajina')|e], ktorý je [Concept('overlord','suzerén')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- any_colonial_top_overlord: "Akákoľvek [Concept('country','krajina')|e], ktorá je najvyšším [overlord|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_any_colonial_top_overlord: "Žiadna [Concept('country','krajina')|e] nie je najvyšším [overlord|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- any_colonial_top_overlord_count: "$PARAMETERS$ [Concept('countries','Krajiny')|e] sú najvyššími [overlords|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_any_colonial_top_overlord_count: "Nie $PARAMETERS$ [Concept('countries','krajiny')|e] sú najvyššími [overlords|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- any_colonial_top_overlord_percent: "$PARAMETERS$ [Concept('countries','Krajiny')|e] sú najvyššími [overlords|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_any_colonial_top_overlord_percent: "Nie $PARAMETERS$ [Concept('countries','krajiny')|e] sú najvyššími [overlords|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- any_colonial_top_overlord_all: "Všetky [Concept('countries','krajiny')|e], ktoré sú najvyššími [overlords|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_any_colonial_top_overlord_all: "Nie všetky [Concept('countries','krajiny')|e] sú najvyššími [overlords|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- every_colonial_top_overlord: "Každý [Concept('country','krajina')|e], ktorý je najvyšším [overlord|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- random_colonial_top_overlord: "Náhodný [Concept('country','krajina')|e], ktorý je najvyšším [overlord|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ any_colonial_top_overlord: "Akákoľvek [Concept('country','krajina')|e], ktorá je najvyšším [Concept('overlord','suzerénom')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_any_colonial_top_overlord: "Žiadna [Concept('country','krajina')|e] nie je najvyšším [Concept('overlord','suzerénom')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ any_colonial_top_overlord_count: "$PARAMETERS$ [Concept('countries','Krajiny')|e] sú najvyššími [Concept('overlords','suzerénmi')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_any_colonial_top_overlord_count: "Nie $PARAMETERS$ [Concept('countries','krajiny')|e] sú najvyššími [Concept('overlords','suzerénmi')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ any_colonial_top_overlord_percent: "$PARAMETERS$ [Concept('countries','Krajiny')|e] sú najvyššími [Concept('overlords','suzerénmi')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_any_colonial_top_overlord_percent: "Nie $PARAMETERS$ [Concept('countries','krajiny')|e] sú najvyššími [Concept('overlords','suzerénmi')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ any_colonial_top_overlord_all: "Všetky [Concept('countries','krajiny')|e], ktoré sú najvyššími [Concept('overlords','suzerénmi')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_any_colonial_top_overlord_all: "Nie všetky [Concept('countries','krajiny')|e] sú najvyššími [Concept('overlords','suzerénmi')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ every_colonial_top_overlord: "Každý [Concept('country','krajina')|e], ktorý je najvyšším [Concept('overlord','suzerénom')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ random_colonial_top_overlord: "Náhodný [Concept('country','krajina')|e], ktorý je najvyšším [Concept('overlord','suzerénom')|e] koloniálneho [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AI_WILL_DO_TRIGGER: "Sklon vykonať $ACTION$ s $TARGET$ je $COMPARATOR$ $NUM" # todo: NEW TRANSLATION
  NOT_AI_WILL_DO_TRIGGER: "Sklon vykonať $ACTION$ s $TARGET$ NIE JE $COMPARATOR$ $NUM" # todo: NEW TRANSLATION
  THIRD_AI_WILL_DO_TRIGGER: "Sklon [COUNTRY.GetAdjective] vykonať $ACTION$ s $TARGET$ je $COMPARATOR$ $NUM" # todo: NEW TRANSLATION
@@ -2173,11 +2173,11 @@
  NOT_FIRST_CAPITAL_WEALTH_TRIGGER: "Nemáme $COMPARATOR$ $NUM|Y$ [Concept('wealth','bohatstvo')|e] v [Concept('province','provincii')|e] [Concept('capital','hlavnom meste')|e]" # todo: CONCEPT CASE
  THIRD_CAPITAL_WEALTH_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|Y$ [Concept('wealth','bohatstva')|e] v [Concept('province','provincii')|e] [Concept('capital','hlavnom meste')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_CAPITAL_WEALTH_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|Y$ [Concept('wealth','bohatstvo')|e] v [Concept('province','provincii')|e] [Concept('capital','hlavnom meste')|e]" # todo: CHANGED # todo: CONCEPT CASE
- MINTING_VALUE_TRIGGER: "Má $COMPARATOR$ $NUM|%Y$ [minting|e]" # todo: NEW TRANSLATION
+ MINTING_VALUE_TRIGGER: "Má $COMPARATOR$ $NUM|%Y$ [Concept('minting','ražby mincí')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_MINTING_VALUE_TRIGGER: "Nemá $COMPARATOR$ $NUM|%Y$ [Concept('minting','ražba mincí')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_MINTING_VALUE_TRIGGER: "Máme $COMPARATOR$ $NUM|%Y$ [minting|e]" # todo: NEW TRANSLATION
+ FIRST_MINTING_VALUE_TRIGGER: "Máme $COMPARATOR$ $NUM|%Y$ [Concept('minting','ražby mincí')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_FIRST_MINTING_VALUE_TRIGGER: "Nemáme $COMPARATOR$ $NUM|%Y$ [Concept('minting','ražba mincí')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_MINTING_VALUE_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|%Y$ [minting|e]" # todo: CHANGED
+ THIRD_MINTING_VALUE_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|%Y$ [Concept('minting','ražby mincí')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_MINTING_VALUE_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|%Y$ [Concept('minting','ražba mincí')|e]" # todo: CHANGED # todo: CONCEPT CASE
  MILITARY_STRENGTH_TRIGGER: "Má $COMPARATOR$ $NUM|Y$ [Concept('military_strength','vojenskej sily')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_MILITARY_STRENGTH_TRIGGER: "Nemá $COMPARATOR$ $NUM|Y$ [Concept('military_strength','vojenská sila')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2771,12 +2771,12 @@
  NOT_FIRST_IS_COLONIAL_OVERLORD_TRIGGER: "Nie sme [Concept('overlord','suzerén')|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_IS_COLONIAL_OVERLORD_TRIGGER: "[COUNTRY.GetName|U] je [Concept('overlord','suzerén')|e] koloniálnej [Concept('country','krajine')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_IS_COLONIAL_OVERLORD_TRIGGER: "[COUNTRY.GetName|U] NIE JE [Concept('overlord','suzerén')|e] koloniálnej [Concept('country','krajine')|e]" # todo: CHANGED # todo: CONCEPT CASE
- IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Je hlavným [overlord|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Nie je hlavným [overlord|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Sme hlavným [overlord|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_FIRST_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Nie sme hlavným [overlord|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "[COUNTRY.GetName|U] je vrchným [overlord|e] koloniálnej [Concept('country','krajine')|e]" # todo: CHANGED # todo: CONCEPT CASE
- NOT_THIRD_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "[COUNTRY.GetName|U] NIE JE vrchným [overlord|e] koloniálnej [Concept('country','krajine')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Je hlavným [Concept('overlord','suzerénom')|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Nie je hlavným [Concept('overlord','suzerénom')|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FIRST_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Sme hlavným [Concept('overlord','suzerénom')|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_FIRST_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "Nie sme hlavným [Concept('overlord','suzerénom')|e] koloniálneho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "[COUNTRY.GetName|U] je vrchným [Concept('overlord','suzerénom')|e] koloniálnej [Concept('country','krajine')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_IS_COLONIAL_TOP_OVERLORD_TRIGGER: "[COUNTRY.GetName|U] NIE JE vrchným [Concept('overlord','suzerénom')|e] koloniálnej [Concept('country','krajine')|e]" # todo: CHANGED # todo: CONCEPT CASE
  THIS_OPINION_OF_PREV_TRIGGER: "[Concept('opinion','Názor')|E] o [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_THIS_OPINION_OF_PREV_TRIGGER: "[Concept('opinion','Názor')|E] o [TARGET_COUNTRY.GetName] nie je $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FIRST_THIS_OPINION_OF_PREV_TRIGGER: "Náš [Concept('opinion','názor')|E] o [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V00$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2987,11 +2987,11 @@
  NOT_FIRST_HAS_AI_DISPOSITION_TOWARD_ACTOR_TRIGGER: "Nevnímame [actor.GetName] s $VALUE$ [Concept('country_disposition','postojom krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_HAS_AI_DISPOSITION_TOWARD_ACTOR_TRIGGER: "[COUNTRY.GetName|U] vníma [actor.GetName] s $VALUE$ [Concept('country_disposition','postojom krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_THIRD_HAS_AI_DISPOSITION_TOWARD_ACTOR_TRIGGER: "[COUNTRY.GetName|U] nevníma [actor.GetName] s $VALUE$ [Concept('country_disposition','postojom krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HAS_AVATAR_TRIGGER: "Má [TARGET_AVATAR.GetName] [avatar|e]" # todo: NEW TRANSLATION
+ HAS_AVATAR_TRIGGER: "Má [TARGET_AVATAR.GetName] [Concept('avatar','avatara')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_HAS_AVATAR_TRIGGER: "Nemá [TARGET_AVATAR.GetName] [Concept('avatar','avatár')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- WE_HAS_AVATAR_TRIGGER: "Máme [TARGET_AVATAR.GetName] [avatar|e]" # todo: NEW TRANSLATION
+ WE_HAS_AVATAR_TRIGGER: "Máme [TARGET_AVATAR.GetName] [Concept('avatar','avatara')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_WE_HAS_AVATAR_TRIGGER: "Nemáme [TARGET_AVATAR.GetName] [Concept('avatar','avatár')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_HAS_AVATAR_TRIGGER: "[COUNTRY.GetName|U] má [TARGET_AVATAR.GetName] [avatar|e]" # todo: CHANGED
+ THIRD_HAS_AVATAR_TRIGGER: "[COUNTRY.GetName|U] má [TARGET_AVATAR.GetName] [Concept('avatar','avatara')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_HAS_AVATAR_TRIGGER: "[COUNTRY.GetName|U] NEMÁ [TARGET_AVATAR.GetName] [Concept('avatar','avatár')|e]" # todo: CHANGED # todo: CONCEPT CASE
  HAS_RELIGIOUS_ASPECT_TRIGGER: "Má [TARGET_RELIGIOUS_ASPECT.GetName] [Concept('religious_aspect','náboženský aspekt')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_HAS_RELIGIOUS_ASPECT_TRIGGER: "Nemá [TARGET_RELIGIOUS_ASPECT.GetName] [Concept('religious_aspect','náboženský aspekt')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -3005,12 +3005,12 @@
  NOT_FIRST_IS_WAR_LEADER_OF_TRIGGER: "Nie sme [Concept('war_leader','vodca vojny')|e] [TARGET_WAR.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_IS_WAR_LEADER_OF_TRIGGER: "[COUNTRY.GetName|U] je [Concept('war_leader','vodca vojny')|e] [TARGET_WAR.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_IS_WAR_LEADER_OF_TRIGGER: "[COUNTRY.GetName|U] NIE JE [Concept('war_leader','vodca vojny')|e] [TARGET_WAR.GetName]" # todo: CHANGED # todo: CONCEPT CASE
- IN_CIVIL_WAR_TRIGGER: "Je v [civil_war|e]" # todo: NEW TRANSLATION
- FIRST_IN_CIVIL_WAR_TRIGGER: "Sme v [civil_war|e]" # todo: NEW TRANSLATION
- THIRD_IN_CIVIL_WAR_TRIGGER: "[COUNTRY.GetName|U] je v [civil_war|e]" # todo: CHANGED
- NOT_IN_CIVIL_WAR_TRIGGER: "Je v [civil_war|e]" # todo: NEW TRANSLATION
- NOT_FIRST_IN_CIVIL_WAR_TRIGGER: "Nie sme v [civil_war|e]" # todo: NEW TRANSLATION
- NOT_THIRD_IN_CIVIL_WAR_TRIGGER: "[COUNTRY.GetName|U] NIE JE v [civil_war|e]" # todo: CHANGED
+ IN_CIVIL_WAR_TRIGGER: "Je v [Concept('civil_war','občianskej vojne')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FIRST_IN_CIVIL_WAR_TRIGGER: "Sme v [Concept('civil_war','občianskej vojne')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_IN_CIVIL_WAR_TRIGGER: "[COUNTRY.GetName|U] je v [Concept('civil_war','občianskej vojne')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_IN_CIVIL_WAR_TRIGGER: "Nie je v [Concept('civil_war','občianskej vojne')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_FIRST_IN_CIVIL_WAR_TRIGGER: "Nie sme v [Concept('civil_war','občianskej vojne')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_IN_CIVIL_WAR_TRIGGER: "[COUNTRY.GetName|U] NIE JE v [Concept('civil_war','občianskej vojne')|e]" # todo: CHANGED # todo: CONCEPT CASE
  HAS_ADVANCE_FOR_SUCCESSION_LAW_TRIGGER: "Má potrebný pokrok na prijatie dedičského zákona [TARGET_HEIR_SELECTION.GetName]" # todo: NEW TRANSLATION
  NOT_HAS_ADVANCE_FOR_SUCCESSION_LAW_TRIGGER: "Nemá potrebný pokrok na prijatie dedičského zákona [TARGET_HEIR_SELECTION.GetName]" # todo: NEW TRANSLATION
  FIRST_HAS_ADVANCE_FOR_SUCCESSION_LAW_TRIGGER: "Máme potrebný pokrok na prijatie dedičského zákona [TARGET_HEIR_SELECTION.GetName]" # todo: NEW TRANSLATION
@@ -3035,12 +3035,12 @@
  NOT_AT_WAR_TRIGGER: "Je v mieri" # todo: NEW TRANSLATION
  NOT_FIRST_AT_WAR_TRIGGER: "Sme v mieri" # todo: NEW TRANSLATION
  NOT_THIRD_AT_WAR_TRIGGER: "[COUNTRY.GetName|U] je v mieri" # todo: CHANGED
- IN_WAR_OF_CASUS_BELLI_TRIGGER: "Je v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [casus_belli|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_IN_WAR_OF_CASUS_BELLI_TRIGGER: "Nie je v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [casus_belli|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_IN_WAR_OF_CASUS_BELLI_TRIGGER: "Sme v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [casus_belli|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_FIRST_IN_WAR_OF_CASUS_BELLI_TRIGGER: "Nie sme v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [casus_belli|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_IN_WAR_OF_CASUS_BELLI_TRIGGER: "[COUNTRY.GetName|U] je vo [Concept('war','vojne')|e] s [TARGET_CASUS_BELLI.GetName] [casus_belli|e]" # todo: CHANGED # todo: CONCEPT CASE
- NOT_THIRD_IN_WAR_OF_CASUS_BELLI_TRIGGER: "[COUNTRY.GetName|U] NIE JE vo [Concept('war','vojne')|e] s [TARGET_CASUS_BELLI.GetName] [casus_belli|e]" # todo: CHANGED # todo: CONCEPT CASE
+ IN_WAR_OF_CASUS_BELLI_TRIGGER: "Je v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_IN_WAR_OF_CASUS_BELLI_TRIGGER: "Nie je v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FIRST_IN_WAR_OF_CASUS_BELLI_TRIGGER: "Sme v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_FIRST_IN_WAR_OF_CASUS_BELLI_TRIGGER: "Nie sme v [Concept('war','vojne')|e] kvôli [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_IN_WAR_OF_CASUS_BELLI_TRIGGER: "[COUNTRY.GetName|U] je vo [Concept('war','vojne')|e] s [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_IN_WAR_OF_CASUS_BELLI_TRIGGER: "[COUNTRY.GetName|U] NIE JE vo [Concept('war','vojne')|e] s [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]" # todo: CHANGED # todo: CONCEPT CASE
  IS_SUBJECT_OF_TRIGGER: "Je [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_IS_SUBJECT_OF_TRIGGER: "Nie je [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FIRST_IS_SUBJECT_OF_TRIGGER: "Sme [Concept('subject','vazal')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -3197,7 +3197,7 @@
  NOT_FIRST_VOTE_PERCENTAGE_IMPACT_IN_RESOLUTION_TRIGGER: "Nemáme percentuálny hlasovací vplyv na $RESOLUTION$ v [TARGET_INTERNATIONAL_ORGANIZATION.GetName] vo výške $COMPARATOR$ $NUM|V02%$ $current_value_V0percent2$" # todo: NEW TRANSLATION
  THIRD_VOTE_PERCENTAGE_IMPACT_IN_RESOLUTION_TRIGGER: "[COUNTRY.GetName|U] má percentuálny vplyv hlasu na $RESOLUTION$ v [TARGET_INTERNATIONAL_ORGANIZATION.GetName] $COMPARATOR$ $NUM|V02%$ $current_value_V0percent2$" # todo: CHANGED
  NOT_THIRD_VOTE_PERCENTAGE_IMPACT_IN_RESOLUTION_TRIGGER: "[COUNTRY.GetName|U] NEMÁ percentuálny vplyv hlasu na $RESOLUTION$ v [TARGET_INTERNATIONAL_ORGANIZATION.GetName] $COMPARATOR$ $NUM|V02%$ $current_value_V0percent2$" # todo: CHANGED
- vote_percentage_impact_in_resolution_greater_than: "Percentuálny hlasovací vplyv v [international_organization|e] pre [Concept('resolution','rezolúciu')|e] je väčší než $NUM|V02%$ $current_value_V0percent2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ vote_percentage_impact_in_resolution_greater_than: "Percentuálny hlasovací vplyv v [Concept('international_organization','medzinárodnej organizácii')|e] pre [Concept('resolution','rezolúciu')|e] je väčší než $NUM|V02%$ $current_value_V0percent2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REGULAR_ARMY_SIZE_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ @army_strength! [Concept('regulars','stálych vojakov')|e] pri plnom doplnení" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_REGULAR_ARMY_SIZE_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ @army_strength! [Concept('regulars','stáli vojaci')|e] pri plnom doplnení" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FIRST_REGULAR_ARMY_SIZE_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ @army_strength! [Concept('regulars','stálych vojakov')|e] pri plnom doplnení" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -3494,17 +3494,17 @@
  NOT_FIRST_HAS_CASUS_BELLI_TRIGGER: "NEMÁME [Concept('casus_belli','casus Belli')|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_HAS_CASUS_BELLI_TRIGGER: "[COUNTRY.GetName|U] má [Concept('casus_belli','casus Belli')|E] na [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_HAS_CASUS_BELLI_TRIGGER: "[COUNTRY.GetName|U] NEMÁ [Concept('casus_belli','casus Belli')|E] na [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
- HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "Má [TARGET_CASUS_BELLI.GetName] [casus_belli|E] proti komukoľvek" # todo: NEW TRANSLATION
+ HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "Má [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|E] proti komukoľvek" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "Nemá [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus Belli')|E] proti nikomu" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "Máme [TARGET_CASUS_BELLI.GetName] [casus_belli|E] proti komukoľvek" # todo: NEW TRANSLATION
+ FIRST_HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "Máme [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|E] proti komukoľvek" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_FIRST_HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "Nemáme [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus Belli')|E] proti nikomu" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] má [TARGET_CASUS_BELLI.GetName] [casus_belli|E] proti niekomu" # todo: CHANGED
+ THIRD_HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] má [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|E] proti niekomu" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_HAS_ANY_CASUS_BELLI_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] NEMÁ [TARGET_CASUS_BELLI.GetName] [Concept('casus_belli','casus Belli')|E] proti nikomu" # todo: CHANGED # todo: CONCEPT CASE
- HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "Má $TYPE$ [casus_belli|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "Má $TYPE$ [Concept('casus_belli','casus belli')|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "NEMÁ $TYPE$ [Concept('casus_belli','casus Belli')|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "Máme $TYPE$ [casus_belli|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ FIRST_HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "Máme $TYPE$ [Concept('casus_belli','casus belli')|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_FIRST_HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "NEMÁME $TYPE$ [Concept('casus_belli','casus Belli')|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] má $TYPE$ [casus_belli|E] na [TARGET_COUNTRY.GetName]" # todo: CHANGED
+ THIRD_HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] má $TYPE$ [Concept('casus_belli','casus belli')|E] na [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_HAS_CASUS_BELLI_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $TYPE$ [Concept('casus_belli','casus Belli')|E] na [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  CAN_CREATE_CASUS_BELLI_OF_TYPE_TRIGGER: "Môže vytvoriť $TYPE$ [Concept('casus_belli','casus Belli')|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_CAN_CREATE_CASUS_BELLI_OF_TYPE_TRIGGER: "NEMÔŽE vytvoriť $TYPE$ [Concept('casus_belli','casus Belli')|E] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -3709,11 +3709,11 @@
  NOT_FIRST_CONQUER_DESIRE_TRIGGER: "Naša túžba dobyť [TARGET_COUNTRY.GetName] nie je $COMPARATOR$ $NUM|V2$" # todo: NEW TRANSLATION
  THIRD_CONQUER_DESIRE_TRIGGER: "[COUNTRY.GetAdjective] túžba dobyť [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|V2$" # todo: NEW TRANSLATION
  NOT_THIRD_CONQUER_DESIRE_TRIGGER: "[COUNTRY.GetAdjective] túžba dobyť [TARGET_COUNTRY.GetName] nie je $COMPARATOR$ $NUM|V2$" # todo: NEW TRANSLATION
- WAR_SCORE_VERSUS_TRIGGER: "Má $COMPARATOR$ $NUM|V0%$ [war_score|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ WAR_SCORE_VERSUS_TRIGGER: "Má $COMPARATOR$ $NUM|V0%$ [Concept('war_score','vojnového skóre')|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_WAR_SCORE_VERSUS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0%$ [Concept('war_score','vojnové skóre')|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_WAR_SCORE_VERSUS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0%$ [war_score|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ FIRST_WAR_SCORE_VERSUS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0%$ [Concept('war_score','vojnového skóre')|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_FIRST_WAR_SCORE_VERSUS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0%$ [Concept('war_score','vojnové skóre')|e] voči [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_WAR_SCORE_VERSUS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0%$ [war_score|e] proti [TARGET_COUNTRY.GetName]" # todo: CHANGED
+ THIRD_WAR_SCORE_VERSUS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0%$ [Concept('war_score','vojnového skóre')|e] proti [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_WAR_SCORE_VERSUS_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0%$ [Concept('war_score','vojnové skóre')|e] proti [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  UNION_LENGTH_DAYS_TRIGGER: "Strávil $COMPARATOR$ $HOW_LONG$ v [Concept('union','únii')|e] s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_UNION_LENGTH_DAYS_TRIGGER: "Nestrávil $COMPARATOR$ $HOW_LONG$ v [Concept('union','únii')|e] s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -4024,10 +4024,10 @@
  NOT_THIRD_HAS_TRUCE_WITH_TRIGGER: "[COUNTRY.GetName|U] NEMÁ [Concept('truce','prímerie')|E] s [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  IS_BEING_ANNEXED_TRIGGER: "Je [Concept('annexed','anektované')|E] ich [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_IS_BEING_ANNEXED_TRIGGER: "Nie je [Concept('annexed','anektované')|E] ich [Concept('overlord','suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_IS_BEING_ANNEXED_TRIGGER: "Sme [Concept('annexed','anektované')|E] naším [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_FIRST_IS_BEING_ANNEXED_TRIGGER: "Nie sme [Concept('annexed','anektované')|E] naším [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_IS_BEING_ANNEXED_TRIGGER: "[COUNTRY.GetName|U] je anektovaná svojim [overlord|e]" # todo: CHANGED
- NOT_THIRD_IS_BEING_ANNEXED_TRIGGER: "[COUNTRY.GetName|U] NIE JE anektovaná svojim [overlord|e]" # todo: CHANGED
+ FIRST_IS_BEING_ANNEXED_TRIGGER: "Sme [Concept('annexed','anektované')|E] naším [Concept('overlord','suzerénom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_FIRST_IS_BEING_ANNEXED_TRIGGER: "Nie sme [Concept('annexed','anektované')|E] naším [Concept('overlord','suzerénom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_IS_BEING_ANNEXED_TRIGGER: "[COUNTRY.GetName|U] je anektovaná svojim [Concept('overlord','suzerénom')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_IS_BEING_ANNEXED_TRIGGER: "[COUNTRY.GetName|U] NIE JE anektovaná svojim [Concept('overlord','suzerénom')|e]" # todo: CHANGED # todo: CONCEPT CASE
  IS_ANNEXING_TRIGGER: "Je [Concept('annexing','anektovanie')|E] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_IS_ANNEXING_TRIGGER: "Nie je [Concept('annexing','anektovanie')|E] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FIRST_IS_ANNEXING_TRIGGER: "Sme [Concept('annexing','anektovanie')|E] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -4319,35 +4319,35 @@
  NOT_FIRST_NUM_OPEN_REFORM_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ voľné miesto pre [Concept('government_reforms','vládne reformy')|e] $current_value_V0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_NUM_OPEN_REFORM_SLOTS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ voľné sloty pre [Concept('government_reforms','vládne reformy')|e] $current_value_V0$" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_NUM_OPEN_REFORM_SLOTS_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ voľné sloty pre [Concept('government_reforms','vládne reformy')|e] $current_value_V0$" # todo: CHANGED # todo: CONCEPT CASE
- NUM_BUREAUCRACIES_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ NUM_BUREAUCRACIES_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [Concept('bureaucracies','bureaukracií')|e]" # todo: CONCEPT CASE
  NOT_NUM_BUREAUCRACIES_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [Concept('bureaucracies','bureaukracie')|e]" # todo: CONCEPT CASE
- FIRST_NUM_BUREAUCRACIES_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [bureaucracies|e]"
+ FIRST_NUM_BUREAUCRACIES_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [Concept('bureaucracies','bureaukracií')|e]" # todo: CONCEPT CASE
  NOT_FIRST_NUM_BUREAUCRACIES_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [Concept('bureaucracies','bureaukracie')|e]" # todo: CONCEPT CASE
- THIRD_NUM_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ [bureaucracies|e]" # todo: CHANGED
+ THIRD_NUM_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ [Concept('bureaucracies','bureaukracií')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_NUM_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ [Concept('bureaucracies','bureaukracie')|e]" # todo: CHANGED # todo: CONCEPT CASE
- NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
- NOT_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
- FIRST_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
- NOT_FIRST_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ voľných [bureaucracy|e] slotov"
- THIRD_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ otvorených [bureaucracy|e] slotov" # todo: CHANGED
- NOT_THIRD_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ otvorených [bureaucracy|e] slotov" # todo: CHANGED
- MAX_BUREAUCRACY_SLOTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
- NOT_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
- FIRST_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
- NOT_FIRST_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov"
- THIRD_MAX_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov" # todo: CHANGED
- NOT_THIRD_MAX_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ maximálnych [bureaucracy|e] slotov" # todo: CHANGED
- ALLOW_BUREAUCRACIES_TRIGGER: "Má povolené [bureaucracies|e]"
+ NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ voľných [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ NOT_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ voľných [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ FIRST_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ voľných [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ NOT_FIRST_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ voľných [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ THIRD_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ otvorených [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_NUM_OPEN_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ otvorených [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CHANGED # todo: CONCEPT CASE
+ MAX_BUREAUCRACY_SLOTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ maximálnych [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ NOT_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ maximálnych [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ FIRST_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ maximálnych [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ NOT_FIRST_MAX_BUREAUCRACY_SLOTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ maximálnych [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CONCEPT CASE
+ THIRD_MAX_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ maximálnych [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_MAX_BUREAUCRACY_SLOTS_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ maximálnych [Concept('bureaucracy','bureaukratických')|e] slotov" # todo: CHANGED # todo: CONCEPT CASE
+ ALLOW_BUREAUCRACIES_TRIGGER: "Má povolené [Concept('bureaucracies','bureaukracie')|e]" # todo: CONCEPT CASE
  NOT_ALLOW_BUREAUCRACIES_TRIGGER: "Nemá povolené [Concept('bureaucracies','bureaukracie')|e]" # todo: CONCEPT CASE
- FIRST_ALLOW_BUREAUCRACIES_TRIGGER: "Máme povolené [bureaucracies|e]"
+ FIRST_ALLOW_BUREAUCRACIES_TRIGGER: "Máme povolené [Concept('bureaucracies','bureaukracie')|e]" # todo: CONCEPT CASE
  NOT_FIRST_ALLOW_BUREAUCRACIES_TRIGGER: "Nemáme povolené [Concept('bureaucracies','bureaukracie')|e]" # todo: CONCEPT CASE
- THIRD_ALLOW_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName|U] má povolené [bureaucracies|e]" # todo: CHANGED
+ THIRD_ALLOW_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName|U] má povolené [Concept('bureaucracies','bureaukracie')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_ALLOW_BUREAUCRACIES_TRIGGER: "[COUNTRY.GetName|U] NEMÁ povolené [Concept('bureaucracies','bureaukracie')|e]" # todo: CHANGED # todo: CONCEPT CASE
- NUM_AVATARS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [avatars|e]" # todo: NEW TRANSLATION
+ NUM_AVATARS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [Concept('avatars','avatarov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_NUM_AVATARS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [Concept('avatars','avatáry')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_NUM_AVATARS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [avatars|e]" # todo: NEW TRANSLATION
+ FIRST_NUM_AVATARS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [Concept('avatars','avatarov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_FIRST_NUM_AVATARS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [Concept('avatars','avatáry')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_NUM_AVATARS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ [avatars|e]" # todo: CHANGED
+ THIRD_NUM_AVATARS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ [Concept('avatars','avatarov')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_NUM_AVATARS_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ [Concept('avatars','avatáry')|e]" # todo: CHANGED # todo: CONCEPT CASE
  IS_NEIGHBOR_OF_TRIGGER: "Je susedom [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_IS_NEIGHBOR_OF_TRIGGER: "Nie je susedom [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -4375,9 +4375,9 @@
  NOT_INTERNATIONAL_ORGANIZATION_LEADER_REIGN_IN_DAYS_TRIGGER: "Súčasná administrácia nevládne $COMPARATOR$ $NUM|Y0$ dní $current_value_0Y$" # todo: NEW TRANSLATION
  THIRD_INTERNATIONAL_ORGANIZATION_LEADER_REIGN_IN_DAYS_TRIGGER: "Súčasná administrácia vládne nad [INTERNATIONAL_ORGANIZATION.GetName] $COMPARATOR$ $NUM|Y0$ dní $current_value_0Y$" # todo: NEW TRANSLATION
  NOT_THIRD_INTERNATIONAL_ORGANIZATION_LEADER_REIGN_IN_DAYS_TRIGGER: "Súčasná administrácia nevládne nad [INTERNATIONAL_ORGANIZATION.GetName] $COMPARATOR$ $NUM|Y0$ dní $current_value_0Y$" # todo: NEW TRANSLATION
- NUM_OF_ELECTORS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [electors|e] $current_value_V0$" # todo: NEW TRANSLATION
+ NUM_OF_ELECTORS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [Concept('electors','kurfirstov')|e] $current_value_V0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_NUM_OF_ELECTORS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [Concept('electors','kurfirstí')|e] $current_value_V0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_NUM_OF_ELECTORS_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má $COMPARATOR$ $NUM|V0$ [electors|e] $current_value_V0$" # todo: NEW TRANSLATION
+ THIRD_NUM_OF_ELECTORS_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má $COMPARATOR$ $NUM|V0$ [Concept('electors','kurfirstov')|e] $current_value_V0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_THIRD_NUM_OF_ELECTORS_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] nemá $COMPARATOR$ $NUM|V0$ [Concept('electors','kurfirstí')|e] $current_value_V0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTERNATIONAL_ORGANIZATION_LIFETIME_TRIGGER: "Existuje $COMPARATOR$ $NUM|Y$ rokov $current_value_Y$" # todo: NEW TRANSLATION
  NOT_INTERNATIONAL_ORGANIZATION_LIFETIME_TRIGGER: "Neexistuje $COMPARATOR$ $NUM|Y$ rokov $current_value_Y$" # todo: NEW TRANSLATION
@@ -5659,14 +5659,14 @@
  NOT_CHARACTER_ALIVE_TRIGGER: "Je mŕtvy" # todo: NEW TRANSLATION
  THIRD_CHARACTER_ALIVE_TRIGGER: "[CHARACTER.GetName] žije" # todo: NEW TRANSLATION
  NOT_THIRD_CHARACTER_ALIVE_TRIGGER: "[CHARACTER.GetName] je mŕtvy" # todo: NEW TRANSLATION
- IS_IN_CHIVALRIC_ORDER_TRIGGER: "Je členom [chivalric_order|e]" # todo: NEW TRANSLATION
- NOT_IS_IN_CHIVALRIC_ORDER_TRIGGER: "Nie je členom žiadneho [chivalric_order|e]" # todo: NEW TRANSLATION
- THIRD_IS_IN_CHIVALRIC_ORDER_TRIGGER: "[CHARACTER.GetName] je členom [chivalric_order|e]" # todo: NEW TRANSLATION
- NOT_THIRD_IS_IN_CHIVALRIC_ORDER_TRIGGER: "[CHARACTER.GetName] nie je členom žiadneho [chivalric_order|e]" # todo: NEW TRANSLATION
- CHARACTER_IS_IN_ORDER_TRIGGER: "Je v [TARGET_CHIVALRIC_ORDER.GetName] [chivalric_order|e]" # todo: NEW TRANSLATION
- NOT_CHARACTER_IS_IN_ORDER_TRIGGER: "Nie je v [TARGET_CHIVALRIC_ORDER.GetName] [chivalric_order|e]" # todo: NEW TRANSLATION
- THIRD_CHARACTER_IS_IN_ORDER_TRIGGER: "[CHARACTER.GetName] je v [TARGET_CHIVALRIC_ORDER.GetName] [chivalric_order|e]" # todo: NEW TRANSLATION
- NOT_THIRD_CHARACTER_IS_IN_ORDER_TRIGGER: "[CHARACTER.GetName] nie je v [TARGET_CHIVALRIC_ORDER.GetName] [chivalric_order|e]" # todo: NEW TRANSLATION
+ IS_IN_CHIVALRIC_ORDER_TRIGGER: "Je členom [Concept('chivalric_order','rytierenského rádu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_IS_IN_CHIVALRIC_ORDER_TRIGGER: "Nie je členom žiadneho [Concept('chivalric_order','rytierenského rádu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_IS_IN_CHIVALRIC_ORDER_TRIGGER: "[CHARACTER.GetName] je členom [Concept('chivalric_order','rytierenského rádu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_IS_IN_CHIVALRIC_ORDER_TRIGGER: "[CHARACTER.GetName] nie je členom žiadneho [Concept('chivalric_order','rytierenského rádu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CHARACTER_IS_IN_ORDER_TRIGGER: "Je v [TARGET_CHIVALRIC_ORDER.GetName] [Concept('chivalric_order','rytierenskom ráde')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_CHARACTER_IS_IN_ORDER_TRIGGER: "Nie je v [TARGET_CHIVALRIC_ORDER.GetName] [Concept('chivalric_order','rytierenskom ráde')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_CHARACTER_IS_IN_ORDER_TRIGGER: "[CHARACTER.GetName] je v [TARGET_CHIVALRIC_ORDER.GetName] [Concept('chivalric_order','rytierenskom ráde')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_CHARACTER_IS_IN_ORDER_TRIGGER: "[CHARACTER.GetName] nie je v [TARGET_CHIVALRIC_ORDER.GetName] [Concept('chivalric_order','rytierenskom ráde')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HAS_CABINET_ACTION_TRIGGER: "Vykonáva [Concept('cabinet_action','akcia kabinetu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_HAS_CABINET_ACTION_TRIGGER: "Nevykonáva [Concept('cabinet_action','akcia kabinetu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_HAS_CABINET_ACTION_TRIGGER: "$NAME$ vykonáva [Concept('cabinet_action','akcia kabinetu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -6213,24 +6213,24 @@
  NOT_POSSIBLE_INSTITUTION_SPAWN_TRIGGER: "Nemôže podporiť objavenie sa [Concept('institution','inštitúciu')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_POSSIBLE_INSTITUTION_SPAWN_TRIGGER: "[PROVINCE.GetName] môže podporiť objavenie sa [Concept('institution','inštitúciu')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_THIRD_POSSIBLE_INSTITUTION_SPAWN_TRIGGER: "[PROVINCE.GetName] nemôže podporiť objavenie sa [Concept('institution','inštitúciu')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Je v rovnakom [international_organization|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- NOT_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie je v rovnakom [international_organization|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- FIRST_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Sme v rovnakom [international_organization|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- NOT_FIRST_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Sme nie v rovnakom [international_organization|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- THIRD_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] je v niektorej rovnakej [international_organization|e] ako [TARGET_COUNTRY.GetName]" # todo: CHANGED
- NOT_THIRD_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] NIE JE v žiadnej rovnakej [international_organization|e] ako [TARGET_COUNTRY.GetName]" # todo: CHANGED
+ IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Je v rovnakej [Concept('international_organization','medzinárodnej organizácii')|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie je v rovnakej [Concept('international_organization','medzinárodnej organizácii')|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FIRST_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Sme v rovnakej [Concept('international_organization','medzinárodnej organizácii')|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_FIRST_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie sme v rovnakej [Concept('international_organization','medzinárodnej organizácii')|e] ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] je v niektorej rovnakej [Concept('international_organization','medzinárodnej organizácii')|e] ako [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_IS_IN_ANY_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] NIE JE v žiadnej rovnakej [Concept('international_organization','medzinárodnej organizácii')|e] ako [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  IS_IN_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Je v $ORGANIZATION$ ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_IS_IN_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie je v $ORGANIZATION$ ako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  FIRST_IS_IN_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Sme v $ORGANIZATION$ spolu s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_FIRST_IS_IN_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie sme v $ORGANIZATION$ spolu s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  THIRD_IS_IN_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] je v $ORGANIZATION$ ako [TARGET_COUNTRY.GetName]" # todo: CHANGED
  NOT_THIRD_IS_IN_SAME_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] NIE JE v $ORGANIZATION$ ako [TARGET_COUNTRY.GetName]" # todo: CHANGED
- CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Môže vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [casus_belli|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Nemôže vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [casus_belli|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Môžeme vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [casus_belli|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_FIRST_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Nemôžeme vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [casus_belli|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "[COUNTRY.GetName|U] môže vyhlásiť [Concept('war','vojna')|e] bez [casus_belli|e] proti [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
- NOT_THIRD_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "[COUNTRY.GetName|U] NEMÔŽE vyhlásiť [Concept('war','vojna')|e] bez [casus_belli|e] proti [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
+ CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Môže vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [Concept('casus_belli','casus belli')|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Nemôže vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [Concept('casus_belli','casus belli')|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FIRST_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Môžeme vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [Concept('casus_belli','casus belli')|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_FIRST_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "Nemôžeme vyhlásiť [Concept('war','vojna')|e] bez akéhokoľvek [Concept('casus_belli','casus belli')|e] proti [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "[COUNTRY.GetName|U] môže vyhlásiť [Concept('war','vojna')|e] bez [Concept('casus_belli','casus belli')|e] proti [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_CAN_DECLARE_NO_CB_WAR_ON_TRIGGER: "[COUNTRY.GetName|U] NEMÔŽE vyhlásiť [Concept('war','vojna')|e] bez [Concept('casus_belli','casus belli')|e] proti [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NONE_HAS_PASSABLE_LAND_TRIGGER: "[Concept('province','Provincia')|e] má priechodný terén" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_NONE_HAS_PASSABLE_LAND_TRIGGER: "[Concept('province','Provincia')|e] nemá priechodný terén" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HAS_PASSABLE_LAND_TRIGGER: "Má priechodný terén" # todo: NEW TRANSLATION
@@ -6622,14 +6622,14 @@
  NOT_THIRD_WAR_STALLING_LENGTH_IN_YEARS_TRIGGER: "[WAR.GetName] nie je v stagnácii $COMPARATOR$ $NUM|Y$ rokov $current_value_Y$" # todo: NEW TRANSLATION
  WAR_SCORE_OF_COUNTRY_TRIGGER: "[TARGET_COUNTRY.GetName|U] má [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED # todo: CONCEPT CASE
  NOT_WAR_SCORE_OF_COUNTRY_TRIGGER: "[TARGET_COUNTRY.GetName|U] NEMÁ [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED # todo: CONCEPT CASE
- THIRD_WAR_SCORE_OF_COUNTRY_TRIGGER: "[TARGET_COUNTRY.GetName|U] v [WAR.GetName] má [war_score|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED
- NOT_THIRD_WAR_SCORE_OF_COUNTRY_TRIGGER: "[TARGET_COUNTRY.GetName|U] v [WAR.GetName] NEMÁ [war_score|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED
+ THIRD_WAR_SCORE_OF_COUNTRY_TRIGGER: "[TARGET_COUNTRY.GetName|U] v [WAR.GetName] má [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_WAR_SCORE_OF_COUNTRY_TRIGGER: "[TARGET_COUNTRY.GetName|U] v [WAR.GetName] NEMÁ [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED # todo: CONCEPT CASE
  WAR_SCORE_IN_WAR_TRIGGER: "Má [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ v [TARGET_WAR.GetName] [Concept('war','vojne')|e] $current_value_Vpercent0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_WAR_SCORE_IN_WAR_TRIGGER: "Nemá [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ v [TARGET_WAR.GetName] [Concept('war','vojne')|e] $current_value_Vpercent0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FIRST_WAR_SCORE_IN_WAR_TRIGGER: "Máme [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ v [TARGET_WAR.GetName] [Concept('war','vojne')|e] $current_value_Vpercent0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_FIRST_WAR_SCORE_IN_WAR_TRIGGER: "Nemáme [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ v [TARGET_WAR.GetName] [Concept('war','vojne')|e] $current_value_Vpercent0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_WAR_SCORE_IN_WAR_TRIGGER: "[COUNTRY.GetName|U] má v [TARGET_WAR.GetName] [war_score|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED
- NOT_THIRD_WAR_SCORE_IN_WAR_TRIGGER: "[COUNTRY.GetName|U] NEMÁ v [TARGET_WAR.GetName] [war_score|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED
+ THIRD_WAR_SCORE_IN_WAR_TRIGGER: "[COUNTRY.GetName|U] má v [TARGET_WAR.GetName] [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_WAR_SCORE_IN_WAR_TRIGGER: "[COUNTRY.GetName|U] NEMÁ v [TARGET_WAR.GetName] [Concept('war_score','vojnové skóre')|e] $COMPARATOR$ $NUM|V0%$ $current_value_Vpercent0$" # todo: CHANGED # todo: CONCEPT CASE
  IS_ON_OPPOSITE_SIDES_TRIGGER: "Je na opačných stranách s [TARGET_COUNTRY.GetName] v $WAR$" # todo: NEW TRANSLATION
  NOT_IS_ON_OPPOSITE_SIDES_TRIGGER: "Nie je na opačných stranách s [TARGET_COUNTRY.GetName] v $WAR$" # todo: NEW TRANSLATION
  FIRST_IS_ON_OPPOSITE_SIDES_TRIGGER: "Sme na opačných stranách s [TARGET_COUNTRY.GetName] v $WAR$" # todo: NEW TRANSLATION
@@ -6704,12 +6704,12 @@
  NOT_THIRD_HAS_EXTENDED_WINTER_TRIGGER: "[AREA.GetName] nemá predĺžené [Concept('winters','zimy')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_TARGET_COST: "s $TARGET$ ako hlavným cieľom"
  PEACE_TREATY_NO_TARGET_COST: ""
- PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] má cenu [war_score|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
- NOT_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] NEMA cenu [war_score|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
- FIRST_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] má cenu [war_score|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre nás $TARGET$" # todo: CONCEPT CASE
- NOT_FIRST_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] NEMA cenu [war_score|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre nás $TARGET$" # todo: CONCEPT CASE
- THIRD_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] má cenu [war_score|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre [COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
- NOT_THIRD_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] NEMA cenu [war_score|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre [COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
+ PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] má cenu [Concept('war_score','vojnového skóre')|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
+ NOT_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] NEMA cenu [Concept('war_score','vojnového skóre')|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
+ FIRST_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] má cenu [Concept('war_score','vojnového skóre')|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre nás $TARGET$" # todo: CONCEPT CASE
+ NOT_FIRST_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] NEMA cenu [Concept('war_score','vojnového skóre')|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre nás $TARGET$" # todo: CONCEPT CASE
+ THIRD_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] má cenu [Concept('war_score','vojnového skóre')|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre [COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
+ NOT_THIRD_PEACE_TREATY_WAR_SCORE_COST_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] NEMA cenu [Concept('war_score','vojnového skóre')|e] $COMPARATOR$ $NUM|2Y$ proti [TARGET_COUNTRY.GetName] pre [COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
  PEACE_TREATY_ANTAGONISM_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] by spôsobil $COMPARATOR$ $NUM|2Y$ [Concept('antagonism','antagonizmus')|e] proti [TARGET_COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
  NOT_PEACE_TREATY_ANTAGONISM_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] by NEspôsobil $COMPARATOR$ $NUM|2Y$ [Concept('antagonism','antagonizmus')|e] proti [TARGET_COUNTRY.GetName] $TARGET$" # todo: CONCEPT CASE
  FIRST_PEACE_TREATY_ANTAGONISM_TRIGGER: "$PEACE_TREATY$ [Concept('peace_treaty','Mierová dohoda')|e] by spôsobil $COMPARATOR$ $NUM|2Y$ [Concept('antagonism','antagonizmus')|e] proti [TARGET_COUNTRY.GetName] pre nás $TARGET$" # todo: CONCEPT CASE
@@ -6728,11 +6728,11 @@
  NOT_BUREAUCRACY_ENTRENCHMENT_TRIGGER: "Aktuálne [Concept('entrenchment','zakorenenie')|e] NIE JE $COMPARATOR$ $NUM|0Y$" # todo: CONCEPT CASE
  THIRD_BUREAUCRACY_ENTRENCHMENT_TRIGGER: "[BUREAUCRACY.GetName] má aktuálne [Concept('entrenchment','zakorenenie')|e] $COMPARATOR$ $NUM|0Y$" # todo: CONCEPT CASE
  NOT_THIRD_BUREAUCRACY_ENTRENCHMENT_TRIGGER: "[BUREAUCRACY.GetName] nemá aktuálne [Concept('entrenchment','zakorenenie')|e] $COMPARATOR$ $NUM|0Y$" # todo: CONCEPT CASE
- HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Má [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Má [BUREAUCRACY_TYPE.GetName] [Concept('bureaucracy','bureaukraciu')|e]" # todo: CONCEPT CASE
  NOT_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Nemá [BUREAUCRACY_TYPE.GetName] [Concept('bureaucracy','bureaukracia')|e]" # todo: CONCEPT CASE
- FIRST_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Máme [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]"
+ FIRST_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Máme [BUREAUCRACY_TYPE.GetName] [Concept('bureaucracy','bureaukraciu')|e]" # todo: CONCEPT CASE
  NOT_FIRST_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "Nemáme [BUREAUCRACY_TYPE.GetName] [Concept('bureaucracy','bureaukracia')|e]" # todo: CONCEPT CASE
- THIRD_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] má [BUREAUCRACY_TYPE.GetName] [bureaucracy|e]" # todo: CHANGED
+ THIRD_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] má [BUREAUCRACY_TYPE.GetName] [Concept('bureaucracy','bureaukraciu')|e]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_HAS_BUREAUCRACY_OF_TYPE_TRIGGER: "[COUNTRY.GetName|U] NEMÁ [BUREAUCRACY_TYPE.GetName] [Concept('bureaucracy','bureaukracia')|e]" # todo: CHANGED # todo: CONCEPT CASE
  BUREAUCRACY_LIKED_BY_ESTATE_TYPE_TRIGGER: "Je obľúbená u [TARGET_ESTATE_TYPE.GetName] [Concept('estate','stavu')|e]" # todo: CONCEPT CASE
  NOT_BUREAUCRACY_LIKED_BY_ESTATE_TYPE_TRIGGER: "Nie je obľúbená u [TARGET_ESTATE_TYPE.GetName] [Concept('estate','stavu')|e]" # todo: CONCEPT CASE
@@ -6809,44 +6809,44 @@
  NOT_INTERNATIONAL_ORGANIZATION_HAS_ELECTIONS_TRIGGER: "Nemá voľby" # todo: NEW TRANSLATION
  THIRD_INTERNATIONAL_ORGANIZATION_HAS_ELECTIONS_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] má voľby" # todo: NEW TRANSLATION
  NOT_THIRD_INTERNATIONAL_ORGANIZATION_HAS_ELECTIONS_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] nemá voľby" # todo: NEW TRANSLATION
- LOCATION_CAN_BE_ADDED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] môže byť pridané do [international_organization|e]" # todo: NEW TRANSLATION
- NOT_LOCATION_CAN_BE_ADDED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] nemôže byť pridané do [international_organization|e]" # todo: NEW TRANSLATION
+ LOCATION_CAN_BE_ADDED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] môže byť pridané do [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_LOCATION_CAN_BE_ADDED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] nemôže byť pridané do [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_LOCATION_CAN_BE_ADDED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] môže byť pridané do [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_LOCATION_CAN_BE_ADDED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] nemôže byť pridané do [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- LOCATION_CAN_BE_REMOVED_FROM_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] môže byť odstránené z [international_organization|e]" # todo: NEW TRANSLATION
- NOT_LOCATION_CAN_BE_REMOVED_FROM_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] nemôže byť odstránené z [international_organization|e]" # todo: NEW TRANSLATION
+ LOCATION_CAN_BE_REMOVED_FROM_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] môže byť odstránené z [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_LOCATION_CAN_BE_REMOVED_FROM_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] nemôže byť odstránené z [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_LOCATION_CAN_BE_REMOVED_FROM_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] môže byť odstránené z [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_LOCATION_CAN_BE_REMOVED_FROM_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LOCATION.GetName] nemôže byť odstránené z [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- CAN_INITIATE_POLICY_VOTES_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] môže začať [Concept('policy','politika')|e] hlasovanie v [international_organization|e]" # todo: CHANGED # todo: CONCEPT CASE
- NOT_CAN_INITIATE_POLICY_VOTES_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] NEMÔŽE začať [Concept('policy','politika')|e] hlasovanie v [international_organization|e]" # todo: CHANGED # todo: CONCEPT CASE
+ CAN_INITIATE_POLICY_VOTES_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] môže začať [Concept('policy','politika')|e] hlasovanie v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_CAN_INITIATE_POLICY_VOTES_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] NEMÔŽE začať [Concept('policy','politika')|e] hlasovanie v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: CHANGED # todo: CONCEPT CASE
  THIRD_CAN_INITIATE_POLICY_VOTES_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] môže začať [Concept('policy','politika')|e] hlasovanie v [INTERNATIONAL_ORGANIZATION.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_CAN_INITIATE_POLICY_VOTES_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] NEMÔŽE začať [Concept('policy','politika')|e] hlasovanie v [INTERNATIONAL_ORGANIZATION.GetName]" # todo: CHANGED # todo: CONCEPT CASE
- CAN_ANNEX_MEMBERS_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] môže [Concept('annex','anektovať')|e] členov v [international_organization|e]" # todo: CHANGED # todo: CONCEPT CASE
- NOT_CAN_ANNEX_MEMBERS_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] NEMÔŽE [Concept('annex','anektovať')|e] členov v [international_organization|e]" # todo: CHANGED # todo: CONCEPT CASE
+ CAN_ANNEX_MEMBERS_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] môže [Concept('annex','anektovať')|e] členov v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_CAN_ANNEX_MEMBERS_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] NEMÔŽE [Concept('annex','anektovať')|e] členov v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: CHANGED # todo: CONCEPT CASE
  THIRD_CAN_ANNEX_MEMBERS_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] môže [Concept('annex','anektovať')|e] členov v [INTERNATIONAL_ORGANIZATION.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_CAN_ANNEX_MEMBERS_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_COUNTRY.GetName|U] NEMÔŽE [Concept('annex','anektovať')|e] členov v [INTERNATIONAL_ORGANIZATION.GetName]" # todo: CHANGED # todo: CONCEPT CASE
- LAW_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] je dostupný pre [international_organization|e]" # todo: NEW TRANSLATION
- NOT_LAW_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] nie je dostupný pre [international_organization|e]" # todo: NEW TRANSLATION
+ LAW_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] je dostupný pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_LAW_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] nie je dostupný pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_LAW_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] je dostupný pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_LAW_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] nie je dostupný pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- LAW_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] je možné vybrať pre [international_organization|e]" # todo: NEW TRANSLATION
- NOT_LAW_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] nie je možné vybrať pre [international_organization|e]" # todo: NEW TRANSLATION
+ LAW_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] je možné vybrať pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_LAW_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] nie je možné vybrať pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_LAW_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] je možné vybrať pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_LAW_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_LAW.GetName] nie je možné vybrať pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  LAW_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] sa nedá zmeniť" # todo: NEW TRANSLATION
  NOT_LAW_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] sa dá zmeniť" # todo: NEW TRANSLATION
  THIRD_LAW_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] sa nedá zmeniť v [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_LAW_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] sa dá zmeniť v [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Vyžaduje hlasovanie na schválenie v [international_organization|e]" # todo: NEW TRANSLATION
- NOT_LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nevyžaduje hlasovanie na schválenie v [international_organization|e]" # todo: NEW TRANSLATION
- THIRD_LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] vyžaduje hlasovanie na schválenie v [international_organization|e]" # todo: NEW TRANSLATION
- NOT_THIRD_LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] nevyžaduje hlasovanie na schválenie v [international_organization|e]" # todo: NEW TRANSLATION
- POLICY_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] je dostupná pre [international_organization|e]" # todo: NEW TRANSLATION
- NOT_POLICY_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] nie je dostupná pre [international_organization|e]" # todo: NEW TRANSLATION
+ LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Vyžaduje hlasovanie na schválenie v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nevyžaduje hlasovanie na schválenie v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] vyžaduje hlasovanie na schválenie v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_LAW_REQUIRES_VOTE_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LAW.GetName] nevyžaduje hlasovanie na schválenie v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ POLICY_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] je dostupná pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_POLICY_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] nie je dostupná pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_POLICY_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] je dostupná pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_POLICY_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] nie je dostupná pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- POLICY_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] je možné vybrať pre [international_organization|e]" # todo: NEW TRANSLATION
- NOT_POLICY_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] nie je možné vybrať pre [international_organization|e]" # todo: NEW TRANSLATION
+ POLICY_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] je možné vybrať pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_POLICY_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] nie je možné vybrať pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_POLICY_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] je možné vybrať pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_POLICY_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] nie je možné vybrať pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  CAN_JOIN_INTERNATIONAL_ORGANIZATION_TRIGGER: "Môže vstúpiť do [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
@@ -6857,20 +6857,20 @@
  NOT_CAN_LEAVE_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nemôže opustiť [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  THIRD_CAN_LEAVE_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] sa môže odísť z [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" # todo: CHANGED
  NOT_THIRD_CAN_LEAVE_INTERNATIONAL_ORGANIZATION_TRIGGER: "[COUNTRY.GetName|U] sa NEMÔŽE odísť z [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" # todo: CHANGED
- POLICY_IS_LOCKED_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] sa nedá odstrániť z [international_organization|e]" # todo: NEW TRANSLATION
- NOT_POLICY_IS_LOCKED_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] môže byť odstránená z [international_organization|e]" # todo: NEW TRANSLATION
+ POLICY_IS_LOCKED_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] sa nedá odstrániť z [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_POLICY_IS_LOCKED_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] môže byť odstránená z [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_POLICY_IS_LOCKED_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] sa nedá odstrániť z [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_POLICY_IS_LOCKED_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_POLICY.GetName] môže byť odstránená z [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- PARLIAMENT_TYPE_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] je dostupný pre [international_organization|e]" # todo: NEW TRANSLATION
- NOT_PARLIAMENT_TYPE_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] nie je dostupný pre [international_organization|e]" # todo: NEW TRANSLATION
+ PARLIAMENT_TYPE_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] je dostupný pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_PARLIAMENT_TYPE_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] nie je dostupný pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_PARLIAMENT_TYPE_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] je dostupný pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_PARLIAMENT_TYPE_VISIBLE_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] nie je dostupný pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- PARLIAMENT_TYPE_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] je možné vybrať pre [international_organization|e]" # todo: NEW TRANSLATION
- NOT_PARLIAMENT_TYPE_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] nie je možné vybrať pre [international_organization|e]" # todo: NEW TRANSLATION
+ PARLIAMENT_TYPE_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] je možné vybrať pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_PARLIAMENT_TYPE_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] nie je možné vybrať pre [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_PARLIAMENT_TYPE_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] je možné vybrať pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_PARLIAMENT_TYPE_ENABLED_TO_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] nie je možné vybrať pre [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- PARLIAMENT_TYPE_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] sa nedá odstrániť z [international_organization|e]" # todo: NEW TRANSLATION
- NOT_PARLIAMENT_TYPE_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] môže byť odstránený z [international_organization|e]" # todo: NEW TRANSLATION
+ PARLIAMENT_TYPE_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] sa nedá odstrániť z [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_PARLIAMENT_TYPE_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] môže byť odstránený z [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_PARLIAMENT_TYPE_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] sa nedá odstrániť z [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_PARLIAMENT_TYPE_IS_LOCKED_IN_INTERNATIONAL_ORGANIZATION_TRIGGER: "[TARGET_PARLIAMENT_TYPE.GetName] môže byť odstránený z [INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  TOTAL_LOCATIONS_OWNED_TRIGGER: "Má celkovo $COMPARATOR$ $NUM|V0$ [Concept('locations','lokality')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -6925,10 +6925,10 @@
  NOT_IS_OWNED_BY_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie je vlastnené [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  THIRD_IS_OWNED_BY_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LOCATION.GetName] je vlastnené [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
  NOT_THIRD_IS_OWNED_BY_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LOCATION.GetName] nie je vlastnené [TARGET_INTERNATIONAL_ORGANIZATION.GetName]" # todo: NEW TRANSLATION
- IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "Je vlastnené akýmkoľvek [international_organization|e]" # todo: NEW TRANSLATION
- NOT_IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie je vlastnené žiadnym [international_organization|e]" # todo: NEW TRANSLATION
- THIRD_IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LOCATION.GetName] je vlastnené akýmkoľvek [international_organization|e]" # todo: NEW TRANSLATION
- NOT_THIRD_IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LOCATION.GetName] nie je vlastnené žiadnym [international_organization|e]" # todo: NEW TRANSLATION
+ IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "Je vlastnené akoukoľvek [Concept('international_organization','medzinárodnou organizáciou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "Nie je vlastnené žiadnou [Concept('international_organization','medzinárodnou organizáciou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LOCATION.GetName] je vlastnené akoukoľvek [Concept('international_organization','medzinárodnou organizáciou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_IS_OWNED_BY_ANY_INTERNATIONAL_ORGANIZATION_TRIGGER: "[LOCATION.GetName] nie je vlastnené žiadnou [Concept('international_organization','medzinárodnou organizáciou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTERNATIONAL_ORGANIZATION_TYPE_TRIGGER: "Je $IO_TYPE|Y$" # todo: NEW TRANSLATION
  NOT_INTERNATIONAL_ORGANIZATION_TYPE_TRIGGER: "Nie je $IO_TYPE|Y$" # todo: NEW TRANSLATION
  THIRD_INTERNATIONAL_ORGANIZATION_TYPE_TRIGGER: "[INTERNATIONAL_ORGANIZATION.GetName] je $IO_TYPE|Y$" # todo: NEW TRANSLATION
@@ -7163,12 +7163,12 @@
  THIRD_GREAT_POWER_SCORE_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ $great_power_score$" # todo: CHANGED
  NOT_THIRD_GREAT_POWER_SCORE_TRIGGER: "[COUNTRY.GetName|U] NEMÁ $COMPARATOR$ $NUM|V0$ $great_power_score$" # todo: CHANGED
  great_power_ranking_TRIGGER: "Je $COMPARATOR$ $NUM|V0O$ v zozname veľmocí" # todo: NEW TRANSLATION
- GREAT_POWER_POINTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [great_power_points|e]" # todo: NEW TRANSLATION
- NOT_GREAT_POWER_POINTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','body veľmoci $game_concept_great_power_points_short$')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FIRST_GREAT_POWER_POINTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [great_power_points|e]" # todo: NEW TRANSLATION
- NOT_FIRST_GREAT_POWER_POINTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','body veľmoci $game_concept_great_power_points_short$')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_GREAT_POWER_POINTS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ [great_power_points|e]" # todo: NEW TRANSLATION
- NOT_THIRD_GREAT_POWER_POINTS_TRIGGER: "[COUNTRY.GetName|U] nemá $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','body veľmoci $game_concept_great_power_points_short$')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GREAT_POWER_POINTS_TRIGGER: "Má $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','bodov veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_GREAT_POWER_POINTS_TRIGGER: "Nemá $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','body veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FIRST_GREAT_POWER_POINTS_TRIGGER: "Máme $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','bodov veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_FIRST_GREAT_POWER_POINTS_TRIGGER: "Nemáme $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','body veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_GREAT_POWER_POINTS_TRIGGER: "[COUNTRY.GetName|U] má $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','bodov veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_GREAT_POWER_POINTS_TRIGGER: "[COUNTRY.GetName|U] nemá $COMPARATOR$ $NUM|V0$ [Concept('great_power_points','body veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  IS_REGIONAL_POWER_TRIGGER: "Je [Concept('regional_power','regionálna mocnosť')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_IS_REGIONAL_POWER_TRIGGER: "Nie je [Concept('regional_power','regionálna mocnosť')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  IS_REGIONAL_POWER_TRIGGER_GLOBAL: "Je [Concept('regional_power','regionálna mocnosť')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -7242,19 +7242,19 @@
  NOT_FIRST_WANTS_MILITARY_ACCESS_IN_TRIGGER: "Nechceme [Concept('military_access','vojenský prístup')|e] v [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_WANTS_MILITARY_ACCESS_IN_TRIGGER: "[COUNTRY.GetName|U] chce [Concept('military_access','vojenský prístup')|e] v [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
  NOT_THIRD_WANTS_MILITARY_ACCESS_IN_TRIGGER: "[COUNTRY.GetName|U] nechce [Concept('military_access','vojenský prístup')|e] v [TARGET_COUNTRY.GetName]" # todo: CHANGED # todo: CONCEPT CASE
- NONE_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] povoľuje používanie iba [Concept('court_language','jazyk dvora')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_NONE_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] nepovoľuje výlučne používanie [Concept('court_language','jazyk dvora')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "Povoľuje len používanie [Concept('court_language','jazyk dvora')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "Nepovoľuje výlučne používanie [Concept('court_language','jazyk dvora')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[SUBJECT_TYPE.GetName] povoľuje používanie iba [Concept('court_language','jazyk dvora')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_THIRD_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[SUBJECT_TYPE.GetName] nepovoľuje výlučne používanie [Concept('court_language','jazyk dvora')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NONE_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] povoľuje používanie iba [Concept('primary_culture','hlavná kultúra')|e] panovníka [overlord|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_NONE_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] nepovoľuje výlučne používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [overlord|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "Povoľuje len používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [overlord|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "Nepovoľuje výlučne používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [overlord|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[SUBJECT_TYPE.GetName] povoľuje používanie iba [Concept('primary_culture','hlavná kultúra')|e] panovníka [overlord|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NOT_THIRD_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[SUBJECT_TYPE.GetName] nepovoľuje výlučne používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [overlord|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NONE_ONLY_ALLOWED_OVERLORD_PRIMARY_OR_KINDRED_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] povoľuje používanie len [Concept('primary_culture','hlavná kultúra')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NONE_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] povoľuje používanie iba [Concept('court_language','jazyk dvora')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_NONE_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] nepovoľuje výlučne používanie [Concept('court_language','jazyk dvora')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "Povoľuje len používanie [Concept('court_language','jazyk dvora')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "Nepovoľuje výlučne používanie [Concept('court_language','jazyk dvora')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[SUBJECT_TYPE.GetName] povoľuje používanie iba [Concept('court_language','jazyk dvora')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_ONLY_ALLOWED_OVERLORDS_COURT_LANGUAGE_TRIGGER: "[SUBJECT_TYPE.GetName] nepovoľuje výlučne používanie [Concept('court_language','jazyk dvora')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NONE_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] povoľuje používanie iba [Concept('primary_culture','hlavná kultúra')|e] panovníka [Concept('overlord','suzeréna')|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_NONE_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] nepovoľuje výlučne používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [Concept('overlord','suzeréna')|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "Povoľuje len používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [Concept('overlord','suzeréna')|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "Nepovoľuje výlučne používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [Concept('overlord','suzeréna')|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[SUBJECT_TYPE.GetName] povoľuje používanie iba [Concept('primary_culture','hlavná kultúra')|e] panovníka [Concept('overlord','suzeréna')|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_THIRD_ONLY_ALLOWED_OVERLORD_PRIMARY_CULTURE_TRIGGER: "[SUBJECT_TYPE.GetName] nepovoľuje výlučne používanie [Concept('primary_culture','hlavná kultúra')|e] panovníka [Concept('overlord','suzeréna')|e] alebo kultúry #Y Kindred#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NONE_ONLY_ALLOWED_OVERLORD_PRIMARY_OR_KINDRED_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] povoľuje používanie len [Concept('primary_culture','hlavná kultúra')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_NONE_ONLY_ALLOWED_OVERLORD_PRIMARY_OR_KINDRED_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] iba NEPOVOLÍ použitie [Concept('overlord','suzerén')|e]'s [Concept('primary_culture','hlavnou kultúrou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ONLY_ALLOWED_OVERLORD_PRIMARY_OR_KINDRED_CULTURE_TRIGGER: "Povoľuje výhradne použitie [Concept('overlord','suzerén')|e]'s [Concept('primary_culture','hlavnou kultúrou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_ONLY_ALLOWED_OVERLORD_PRIMARY_OR_KINDRED_CULTURE_TRIGGER: "[Concept('subject_type','Druh vazala')|e] iba NEPOVOLÍ použitie [Concept('overlord','suzerén')|e]'s [Concept('primary_culture','hlavnou kultúrou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -7318,8 +7318,8 @@
  NOT_CAN_BUILD_UNITS_OF_CATEGORY_TRIGGER: "Nemôže stavať jednotky [TARGET_SUBUNITCATEGORY.GetName] [Concept('unit_category','kategória jednotky')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FIRST_CAN_BUILD_UNITS_OF_CATEGORY_TRIGGER: "Môžeme stavať jednotky [TARGET_SUBUNITCATEGORY.GetName] [Concept('unit_category','kategória jednotky')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_FIRST_CAN_BUILD_UNITS_OF_CATEGORY_TRIGGER: "Nemôžeme stavať jednotky [TARGET_SUBUNITCATEGORY.GetName] [Concept('unit_category','kategória jednotky')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THIRD_CAN_BUILD_UNITS_OF_CATEGORY_TRIGGER: "[COUNTRY.GetName|U] môže stavať jednotky kategórie [TARGET_SUBUNITCATEGORY.GetName] [unit_category|e]" # todo: CHANGED
- NOT_THIRD_CAN_BUILD_UNITS_OF_CATEGORY_TRIGGER: "[COUNTRY.GetName|U] nemôže stavať jednotky kategórie [TARGET_SUBUNITCATEGORY.GetName] [unit_category|e]" # todo: CHANGED
+ THIRD_CAN_BUILD_UNITS_OF_CATEGORY_TRIGGER: "[COUNTRY.GetName|U] môže stavať jednotky kategórie [TARGET_SUBUNITCATEGORY.GetName] [Concept('unit_category','kategórie jednotky')|e]" # todo: CHANGED # todo: CONCEPT CASE
+ NOT_THIRD_CAN_BUILD_UNITS_OF_CATEGORY_TRIGGER: "[COUNTRY.GetName|U] nemôže stavať jednotky kategórie [TARGET_SUBUNITCATEGORY.GetName] [Concept('unit_category','kategórie jednotky')|e]" # todo: CHANGED # todo: CONCEPT CASE
  OPINION_DIFFERENCE_BETWEEN_TRIGGER: "Rozdiel v [Concept('opinion','názore')|e] medzi $FIRST$ a $SECOND$ je $COMPARATOR$ $NUM|Y0$ $current_value_Y0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_OPINION_DIFFERENCE_BETWEEN_TRIGGER: "Rozdiel v [Concept('opinion','názore')|e] medzi $FIRST$ a $SECOND$ NIE JE $COMPARATOR$ $NUM|Y0$ $current_value_Y0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FIRST_OPINION_DIFFERENCE_BETWEEN_TRIGGER: "Náš rozdiel v [Concept('opinion','názore')|e] medzi $FIRST$ a $SECOND$ je $COMPARATOR$ $NUM|Y0$ $current_value_Y0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -8010,7 +8010,7 @@
  NOT_mercenary_equal: "[Concept('mercenary','Žoldnier')|e] nie je [TARGET_MERCENARY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  international_organization_target_equal: "Cieľ [INTERNATIONAL_ORGANIZATION.GetName] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  NOT_international_organization_target_equal: "Cieľ [INTERNATIONAL_ORGANIZATION.GetName] nie je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- NOT_top_overlord_or_this_equal: "[Concept('owner','Majiteľ')|e] alebo najvyšší [overlord|e] nie je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_top_overlord_or_this_equal: "[Concept('owner','Majiteľ')|e] alebo najvyšší [Concept('overlord','suzerén')|e] nie je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  dominant_country_equal: "Dominantná [Concept('country','krajina')|e] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_dominant_country_equal: "Dominantná [Concept('country','krajina')|e] nie je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  war_with_country_equal: "Aktívna vojna proti cieľovej krajine je [TARGET_WAR.GetName]" # todo: NEW TRANSLATION
@@ -8117,8 +8117,8 @@
  NOT_sea_zone_equal: "Pripojená [Concept('seazone','morská zóna')|e] nie je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  mercenary_home_equal: "Sídlo [Concept('mercenary','žoldniera')|e] je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_mercenary_home_equal: "Sídlo [Concept('mercenary','žoldniera')|e] nie je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- subunit_home_equal: "Sídlo [sub_unit|e] je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
- NOT_subunit_home_equal: "Sídlo [sub_unit|e] nie je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
+ subunit_home_equal: "Sídlo [Concept('sub_unit','podjednotky')|e] je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_subunit_home_equal: "Sídlo [Concept('sub_unit','podjednotky')|e] nie je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  birth_location_equal: "Narodil sa v [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  NOT_birth_location_equal: "Neprišiel na svet v [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION
  low_control_best_tax_base_equal: "Najlepšia daňová základňa pri nízkej kontrole [Concept('location','lokalite')|e] je [TARGET_LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE

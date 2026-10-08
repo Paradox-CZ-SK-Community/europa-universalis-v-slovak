@@ -51,15 +51,15 @@
  IO_COSTS_DIPLOMATIC_SLOT: "Byť členom spotrebuje [Concept('diplomatic_capacity','diplomatickej kapacity')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HEGEMONY_GAIN: "[COUNTRY.GetName] potrebuje nasledovné, aby sa stal [HEGEMONY.GetNameWithNoTooltip]:" # todo: CHANGED
  HEGEMONY_LOSE: "[COUNTRY.GetName] drží [HEGEMONY.GetNameWithNoTooltip] od $DATE$ a stratí ho automaticky, ak sa stane nasledujúce:" # todo: CHANGED
- HEGEMONY_LOSE_CONTESTING: "O [Concept('hegemony','hegemóniu')|e] sa súťaží a môže sa zmeniť dňa $DATE$ v prospech krajiny s vyšším [great_power_score|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEGEMONY_LOSE_CONTESTING: "O [Concept('hegemony','hegemóniu')|e] sa súťaží a môže sa zmeniť dňa $DATE$ v prospech krajiny s vyšším [Concept('great_power_score','skóre veľmoci')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREATPOWER_TITLE_HEADER: "Veľmoc [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  REGIONALPOWER_TITLE_HEADER: "Regionálna veľmoc [Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  NORMALPOWER_TITLE_HEADER: "[Country.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
- POWER_TEXT: "[Country.GetName] je #V ##[Country.GetGreatPowerRank]#! veľmocou sveta s [Country.GetGreatPowerScore|V] [great_power_points|e]." # todo: CHANGED
+ POWER_TEXT: "[Country.GetName] je #V ##[Country.GetGreatPowerRank]#! veľmocou sveta s [Country.GetGreatPowerScore|V] [Concept('great_power_points','bodmi veľmoci')|e]." # todo: CHANGED # todo: CONCEPT CASE
  GREATPOWER_BENEFITS: "Byť ##[Country.GetGreatPowerRank] veľmocou prináša nasledovné výhody:" # todo: NEW TRANSLATION
  REGIONALPOWER_BENEFITS: "Byť [Concept('regional_power','regionálna mocnosť')|e] prináša nasledujúce výhody:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO: "[COUNTRY.GetName] je #V ##[Country.GetGreatPowerRank]#! s $VAL|0V$ [Concept('great_power_score','skóre veľmoci $game_concept_great_power_score_short$')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO_AND_THRESHOLD: "[COUNTRY.GetName] je #V ##[COUNTRY.GetGreatPowerRank]#! s $HIGHEST_POWER|0V$ [great_power_score|e].\n\nPotrebuje $THRESHOLD|0V$ viac [Concept('great_power_score','skóre veľmoci $game_concept_great_power_score_short$')|e], aby dosiahla status [Concept('great_power','veľmoc')|e].\n$BULLET$ Potrebuje $GP|$ na to, aby bola [Concept('great_power','veľmoc')|e].\n$BULLET$ Potrebuje $RP|$ na to, aby bola [Concept('regional_power','regionálna mocnosť')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO: "[COUNTRY.GetName] je #V ##[Country.GetGreatPowerRank]#! s $VAL|0V$ [Concept('great_power_score','skóre veľmoci')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GREAT_POWER_HIGHEST_RANK_COUNTRY_INFO_AND_THRESHOLD: "[COUNTRY.GetName] je #V ##[COUNTRY.GetGreatPowerRank]#! s $HIGHEST_POWER|0V$ [Concept('great_power_score','skóre veľmoci')|e].\n\nPotrebuje $THRESHOLD|0V$ viac [Concept('great_power_score','skóre veľmoci')|e], aby dosiahla status [Concept('great_power','veľmoc')|e].\n$BULLET$ Potrebuje $GP|$ na to, aby bola [Concept('great_power','veľmoc')|e].\n$BULLET$ Potrebuje $RP|$ na to, aby bola [Concept('regional_power','regionálna mocnosť')|e]." # todo: CHANGED # todo: CONCEPT CASE
  CURENT_HEGEMENT: "Momentálne [ActiveHegemonItem.GetHegemon.GetCurrent.GetLongName]" # todo: NEW TRANSLATION
  PROCLAIM_HEGEMONY_TT: "Stať sa [HEGEMONY.GetName]" # todo: NEW TRANSLATION
  HEGEMONY_INFO_BASE: "Efekt" # todo: NEW TRANSLATION
@@ -67,13 +67,13 @@
  GREAT_POWER_SCORE_SUBJECT_HEADER: "Z [Concept('subjects','vazalov')|e]: #TOOLTIP:$BREAKDOWN_TAG$ #L $VAL|+=0$#! #!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_SCORE_SUBJECT_BREAKDOWN_FORMAT: "#T Skóre veľmoci zo subjektov#!\n$BREAKDOWN$" # todo: NEW TRANSLATION
  GREAT_POWER_SCORE_SUBJECT: "$SUBJECT$: $VAL|+=0$" # todo: NEW TRANSLATION
- GREAT_POWER_SCORE_HEADER: "[Concept('great_power_score','Skóre veľmoci $game_concept_great_power_score_short$')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GREAT_POWER_SCORE_HEADER: "[Concept('great_power_score','Skóre veľmoci')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_SCORE_INFO: "$WHY$" # todo: NEW TRANSLATION
- GREAT_POWER_SCORE_POINTS: "[Concept('great_power_points','Body veľmoci $game_concept_great_power_points_short$')|e]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GREAT_POWER_SCORE_POINTS: "[Concept('great_power_points','Body veľmoci')|e]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_AREA_BREAKDOWN_HEADER: "Prítomnosť v oblastiach:" # todo: NEW TRANSLATION
  GREAT_POWER_AREA_DOMINATED: "@trigger_yes![AREA.GetName] $COUNT$ z $THRESHOLD$ potrebných: #TOOLTIP:$BREAKDOWN_TAG$ $PTS|+=$#!" # todo: NEW TRANSLATION
  GREAT_POWER_AREA_PARTIAL: "@trigger_no![AREA.GetName] $COUNT$ z $THRESHOLD$ potrebných: #TOOLTIP:$BREAKDOWN_TAG$ $PTS|R$#!" # todo: NEW TRANSLATION
- GREAT_POWER_AREA_SCORE_BREAKDOWN: "#T [Concept('great_power_points','Body veľmoci $game_concept_great_power_points_short$')|E] from [AREA.GetNameWithNoTooltip]#!\nCelková daňová základňa oblasti: $AREA_TAX_BASE|2V$\nGlobálny medián oblastí [tax_base]: $POINT_UNIT|2V$\n#italic Celkom / Medián: ($RAW_POINTS|2V$)#!\nHodnota $RAW_POINTS|2V$ obmedzená na 1-10: $PTS|V0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GREAT_POWER_AREA_SCORE_BREAKDOWN: "#T [Concept('great_power_points','Body veľmoci')|E] from [AREA.GetNameWithNoTooltip]#!\nCelková daňová základňa oblasti: $AREA_TAX_BASE|2V$\nGlobálny medián oblastí [tax_base]: $POINT_UNIT|2V$\n#italic Celkom / Medián: ($RAW_POINTS|2V$)#!\nHodnota $RAW_POINTS|2V$ obmedzená na 1-10: $PTS|V0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REGIONAL_POWER_NOT_ADJACENT_REGION: "@trigger_no! Ako [Concept('regional_power','regionálna mocnosť')|e] môžeme použiť túto akciu iba proti [Concept('countries','krajine')|e] v našom vlastnom alebo susednom [Concept('regions','regióne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_SCORE_OVERLORD: "[SUBJECT_TYPE.GetName] odovzdáva $PERCENT|+=0%$ [Concept('overlord','suzerén')|e] $OVERLORD$: $VAL|+=0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_SCORE_EXEMPT_FROM_FORFEIT: "Oslobodené od odovzdania:" # todo: NEW TRANSLATION
@@ -264,7 +264,7 @@
  ENFORCEABLE_DEMAND: "#T Vynútiteľná požiadavka#!\nNepriateľ je nútený prijať túto ponuku." # todo: NEW TRANSLATION
  NOT_ENFORCEABLE_DEMAND: "#T Vynútiteľná požiadavka#!\nNepriateľ nie je nútený prijať túto ponuku." # todo: NEW TRANSLATION
  NOT_ENFORCEABLE_DEMAND_WARGOAL: "#T Vynútiteľná požiadavka#!\nMusí byť vybrané iba [Concept('war_goal','vojnový cieľ')|e] [STATE.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NO_CURRENT_RELATIONS: "@trigger_yes! Nepoužili sme žiadne $game_concept_diplomatic_capacity$." # todo: NEW TRANSLATION
+ NO_CURRENT_RELATIONS: "@trigger_yes! Nepoužili sme žiadne [Concept('diplomatic_capacity','diplomatickú kapacitu')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRUCE_WITH_COUNTRY_TITLE: "Prímerie s [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  SUBJECT_OF_COUNTRY_TITLE: "Subjekt [Country.GetDiplomacy.GetOverlord.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  TRUCE_WITH_COUNTRY_UNTIL: "[Country.GetName] má prímerie s [GetPlayer.GetName] do [Country.GetDiplomacy.GetRelation(GetPlayer.Self).GetTruceExpirationDate|V]." # todo: NEW TRANSLATION
@@ -294,10 +294,10 @@
  SUBLOY_NOT_A_SUBJECT: "#T Vernosť#!\n$NAME$ nie je subjekt." # todo: NEW TRANSLATION
  SUB_LOYAL_HEADER: "Vernosť [Country.GetNameWithNoTooltip] voči [Country.GetDiplomacy.GetOverlord.GetNameWithNoTooltip] je [Country.GetDiplomacy.GetSubjectLoyalty|2%/]" # todo: NEW TRANSLATION
  SUBJECT_LIBERTY_DESIRE: "Túžba po slobode z udalostí: $VAL|+=2$ ($CHANGE|-=2$ mesačne)" # todo: NEW TRANSLATION
- SUBJECT_OPINION_OF_OVERLORD: "Názor subjektu na [overlord|e]: $VAL|+=2$" # todo: NEW TRANSLATION
+ SUBJECT_OPINION_OF_OVERLORD: "Názor subjektu na [Concept('overlord','suzeréna')|e]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_TRUST_OF_OVERLORD: "Dôvera [Concept('overlord','suzerén')|e] voči podriadenému: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBJECTS_STR_VS_OVERLORD: "[Concept('country_strength','Sila krajiny')|e] všetkých [SUBJECT_TYPE.GetName] [Concept('countries','krajinu')|e] proti [overlord|e]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- LOYALTY_FROM_INDEPENDENCE_MOVEMENT: "Sila hnutia za nezávislosť proti [overlord|e]: $VAL|+=2$" # todo: NEW TRANSLATION
+ SUBJECTS_STR_VS_OVERLORD: "[Concept('country_strength','Sila krajiny')|e] všetkých [SUBJECT_TYPE.GetName] [Concept('countries','krajinu')|e] proti [Concept('overlord','suzerénovi')|e]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ LOYALTY_FROM_INDEPENDENCE_MOVEMENT: "Sila hnutia za nezávislosť proti [Concept('overlord','suzerénovi')|e]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOYALTY_DUE_TO_OVERLORD: "Vernosť subjektu z aktuálnych faktorov v $NAME$:\n" # todo: NEW TRANSLATION
  IS_CURRENTLY_DISLOYAL: "@warning_icon! Pod $VAL|0$ vernosti, čím sa stáva [Concept('disloyal_subject','nelojálny vazal')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  IS_CURRENTLY_LOYAL: "@trigger_yes! Vernosť aspoň $VAL|0$, čo z neho robí [Concept('loyal_subject','lojálny vazal')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -356,9 +356,9 @@
  DIPMAPMODE_TT_COLSS_TRIBUTE: "$OWNER|U$ vyberajú tribut od $WHO$" # todo: NEW TRANSLATION
  DIPMAPMODE_TT_ALLIANCE: "$OWNER|U$ sú v [Concept('alliance','aliancii')|e] s $WHO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPMAPMODE_TT_UNION: "$OWNER|U$ sú v [Concept('union','únii')|e] s $WHO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DIPMAPMODE_TT_ROYAL_MARRIAGE: "$OWNER|U$ sú v [royal_marriage|e] s $WHO$" # todo: NEW TRANSLATION
+ DIPMAPMODE_TT_ROYAL_MARRIAGE: "$OWNER|U$ sú v [Concept('royal_marriage','kráľovskom sňatku')|e] s $WHO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPMAPMODE_TT_WAR: "$OWNER|U$ sú v [Concept('war','vojne')|e] s $WHO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DIPMAPMODE_TT_CIVILWAR: "$OWNER|U$ sú v [civil_war|e] s $WHO$" # todo: NEW TRANSLATION
+ DIPMAPMODE_TT_CIVILWAR: "$OWNER|U$ sú v [Concept('civil_war','občianskej vojne')|e] s $WHO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPMAPMODE_TT_IO: "$OWNER|U$ sú v [INTERNATIONAL_ORGANIZATION.GetName] s $WHO$" # todo: NEW TRANSLATION
  DIPMAPMODE_TT_GUARANTIN: "$OWNER|U$ [Concept('guaranteeing','Garantovanie')|e] nezávislosť $WHO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPMAPMODE_TT_GUARANTEED: "$OWNER|U$ sú [Concept('guaranteed','garantované')|e] $WHO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -405,14 +405,14 @@
  TRANFER_OCC_PROVINCE_TITLE_ACTION: "Preniesť okupáciu provincie" # todo: NEW TRANSLATION
  TOTAL_PEACE_COST_TT: "Celkové náklady mieru / vojenské skóre" # todo: NEW TRANSLATION
  TOTAL_PEACE_COST_HUMAN_TT: "Celkové náklady na mier" # todo: NEW TRANSLATION
- TOTAL_COST_OF_PEACEOFFER: "Celkové $game_concept_peace_cost$" # todo: NEW TRANSLATION
+ TOTAL_COST_OF_PEACEOFFER: "Celková [Concept('peace_cost','hodnota mierovej ponuky')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TOTAL_COST_OF_PEACEOFFER_TT_TEXT: "Toto sú celkové [Concept('peace_cost','hodnota mierovej ponuky')|e] tejto zmluvy:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TOTAL_COST_OF_PEACE_T: "#T Celkové [peace_cost]#!" # todo: CHANGED
- TOTAL_COST_OF_PEACE_TEXT: "Súčasná [Concept('peace_offer','ponuka mieru')|e] má celkovú hodnotu [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0] [peace_cost_icon].\n\nAk je príliš vysoká v porovnaní s [war_score_with_icon|e], druhá krajina ju nemusí prijať. Nikdy nemôže byť vyššia ako #W 100#!." # todo: CHANGED # todo: CONCEPT CASE
- TOTAL_COST_OF_PEACE_HUMAN_TEXT: "Súčasná [Concept('peace_offer','ponuka mieru')|e] má celkový $game_concept_peace_cost$ vo výške [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0] [peace_cost_icon].\n\nAk je príliš vysoká v porovnaní s [war_score_with_icon|e], druhá krajina, ktorú ovláda iný hráč, ju nemusí prijať. Nikdy nemôže byť vyššia ako #W 100#!." # todo: CHANGED # todo: CONCEPT CASE
+ TOTAL_COST_OF_PEACE_TEXT: "Súčasná [Concept('peace_offer','ponuka mieru')|e] má celkovú hodnotu [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0] [peace_cost_icon].\n\nAk je príliš vysoká v porovnaní s [Concept('war_score_with_icon','vojnovým skóre')|e], druhá krajina ju nemusí prijať. Nikdy nemôže byť vyššia ako #W 100#!." # todo: CHANGED # todo: CONCEPT CASE
+ TOTAL_COST_OF_PEACE_HUMAN_TEXT: "Súčasná [Concept('peace_offer','ponuka mieru')|e] má celkovú [Concept('peace_cost','hodnotu mierovej ponuky')] vo výške [PeaceOfferLateralView.GetTotalPeaceOfferCost|V0] [peace_cost_icon].\n\nAk je príliš vysoká v porovnaní s [Concept('war_score_with_icon','vojnovým skóre')|e], druhá krajina, ktorú ovláda iný hráč, ju nemusí prijať. Nikdy nemôže byť vyššia ako #W 100#!." # todo: CHANGED # todo: CONCEPT CASE
  TOTAL_COST_OF_PEACE_REQUIREMENTS_T: "Pre prijatie je potrebné mať aspoň o #Y 1#! viac #G pozitívnych#! dôvodov než #R negatívnych#!." # todo: CHANGED
  TOTAL_COST_OF_PEACE_REQUIREMENTS: "Sú [PeaceOfferLateralView.GetPeaceOfferPositiveReasons|+0] pozitívne a [PeaceOfferLateralView.GetPeaceOfferNegativeReasons|+0] negatívne, spolu [PeaceOfferLateralView.GetTotalPeaceOfferReasons|+0] kvôli:" # todo: NEW TRANSLATION
- TOTAL_COST_OF_PEACE: "#T Celkové [peace_cost]#!\nToto je, koľko stojí súčasná [Concept('peace_offer','ponuka mieru')|e]. Ak je príliš vysoká v porovnaní s [war_score_with_icon|e], druhá krajina ju nemusí prijať. Nikdy nemôže byť vyššia ako #W 100#!.\nAktuálne celkové náklady: $VAL|Y0$\n\n" # todo: CHANGED # todo: CONCEPT CASE
+ TOTAL_COST_OF_PEACE: "#T Celkové [peace_cost]#!\nToto je, koľko stojí súčasná [Concept('peace_offer','ponuka mieru')|e]. Ak je príliš vysoká v porovnaní s [Concept('war_score_with_icon','vojnovým skóre')|e], druhá krajina ju nemusí prijať. Nikdy nemôže byť vyššia ako #W 100#!.\nAktuálne celkové náklady: $VAL|Y0$\n\n" # todo: CHANGED # todo: CONCEPT CASE
  PEACE_TREATY_INHERIT_WARS_TT: "Táto [Concept('peace_treaty','mierová dohoda')|e] spôsobí, že zdedíme [Concept('wars','vojny')|e] od nášho nového subjektu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_OFFER_INHERIT_WARS_TT: "Táto mierová ponuka spôsobí, že zdedíme [Concept('wars','vojny')|e] od našich nových subjektov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ENEMY_ALLIES: "Spojenci nepriateľa" # todo: NEW TRANSLATION
@@ -460,7 +460,7 @@
  REVOKEMILACC_FLAVOR: "Zrušenie ich prístupu znamená, že táto krajina už nebude môcť presúvať vojská cez ani stacionovať [Concept('ships','lode')|e] na našom území. To tiež poškodí naše vzťahy." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INSULT_TOOLTIP_HEADER: "Uraziť [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  INSULT_TOOLTIP_HEADER_NO_TARGET: "Uraziť [Concept('country','krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INSULT_FLAVOR: "Urážka inej krajiny zámerne zníži jej názor na nás, znižujúc pravdepodobnosť prijatia iných diplomatických krokov, a poskytne jej [casus_belli|e] na vyhlásenie [Concept('war','vojna')|e] proti nám." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INSULT_FLAVOR: "Urážka inej krajiny zámerne zníži jej názor na nás, znižujúc pravdepodobnosť prijatia iných diplomatických krokov, a poskytne jej [Concept('casus_belli','casus belli')|e] na vyhlásenie [Concept('war','vojna')|e] proti nám." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CALL_TOOLTIP_HEADER: "Zavolať [TARGET_COUNTRY.GetName] do našej [Concept('war','vojny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CALL_TOOLTIP_HEADER_NO_TARGET: "Zavolať [Concept('country','krajina')|e] do našej [Concept('war','vojny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CALL_FLAVOR: "Zavolanie spojeného štátu do zbraní ich požiada, aby sa pridali k našej [Concept('war','vojne')|e]; ak požiadavku odmietnu, aliancia sa zruší." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -508,7 +508,7 @@
  CANT_ANNEX_DIFF_TYPE: "@trigger_no! Je možné [Concept('annex','anektovať')|e] len krajinu rovnakého typu; [TARGET_COUNTRY.GetLongName] je [TARGET_COUNTRY.GetCountryTypeName], zatiaľ čo my sme [COUNTRY.GetCountryTypeName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ORG_CANT_ANNEX_MIN_YEARS: "@trigger_no! [TARGET_COUNTRY.GetName] musí byť súčasťou [INTERNATIONAL_ORGANIZATION.GetName] aspoň $YEARS$ rokov. Avšak je v organizácii len $CURRENT_YEARS$ rokov." # todo: NEW TRANSLATION
  ORG_CANT_ANNEX: "@trigger_no! [TARGET_COUNTRY.GetName] nemôže byť anektovaná v [INTERNATIONAL_ORGANIZATION.GetName] z nasledujúcich dôvodov:\n$CONDITIONS$" # todo: NEW TRANSLATION
- CANT_ANNEX_NO_SUITABLE_RELATION: "@trigger_no! [TARGET_COUNTRY.GetName] nie je v [international_organization|e] ani v [Concept('relation_type','type vzťahu')|e] s [COUNTRY.GetName], ktorá by umožňovala anexiu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CANT_ANNEX_NO_SUITABLE_RELATION: "@trigger_no! [TARGET_COUNTRY.GetName] nie je v [Concept('international_organization','medzinárodnej organizácii')|e] ani v [Concept('relation_type','type vzťahu')|e] s [COUNTRY.GetName], ktorá by umožňovala anexiu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELATION_STARTS: "Získame nový $RELATION$ s [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
  RELATION_ENDS: "$RELATION$ s [TARGET_COUNTRY.GetName] končí." # todo: NEW TRANSLATION
  CURRENT_SIZE_COMPARED_TO_TARGET: "Relatívna veľkosť" # todo: NEW TRANSLATION
@@ -546,7 +546,7 @@
  INVITE_COALITIONDESC: "Chceme pozvať [COUNTRY.GetName] do $IO_NAME$?" # todo: NEW TRANSLATION
  INVITE_EXISTING_IODESC: "Chceme pozvať [COUNTRY.GetName] do [INTERNATIONAL_ORGANIZATION.GetName]?" # todo: NEW TRANSLATION
  INVITE_IO_ALREADY: "Táto [INTERNATIONAL_ORGANIZATION_TYPE.GetName] má nasledujúcich členov:\n$LIST$" # todo: NEW TRANSLATION
- INVITE_IOREQTITLE: "Pripojiť sa k [international_organization|e]" # todo: NEW TRANSLATION
+ INVITE_IOREQTITLE: "Pripojiť sa k [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INVITE_IOREQDESC: "[COUNTRY.GetName] nás pozýva do $IO_NAME$. $OTHER$" # todo: CHANGED
  INVITE_COALITION_ALREADY: "Táto [INTERNATIONAL_ORGANIZATION_TYPE.GetName] má nasledujúcich členov:\n$LIST$" # todo: NEW TRANSLATION
  INVITE_COALITIONREQDESC: "[COUNTRY.GetName] nás pozýva do $IO_NAME$. $OTHER$" # todo: CHANGED
@@ -562,7 +562,7 @@
  INVITE_COALITION_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  INVITE_COALITION_NO_POSSIBLE_INVITEES: "@trigger_no! Neexistujú žiadne [Concept('countries','krajiny')|e], ktoré spĺňajú kritériá" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ASKJOIN_IODESC: "Chceme požiadať [COUNTRY.GetName], aby sa pripojil k ich [INTERNATIONAL_ORGANIZATION.GetName]?" # todo: NEW TRANSLATION
- ASKJOIN_IOREQTITLE: "Žiadosť o vstup do [international_organization|e]" # todo: NEW TRANSLATION
+ ASKJOIN_IOREQTITLE: "Žiadosť o vstup do [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ASKJOIN_IOREQDESC: "[COUNTRY.GetName] žiada o povolenie pripojiť sa k našej [INTERNATIONAL_ORGANIZATION.GetName]." # todo: NEW TRANSLATION
  ASKJOIN_IOTITLE: "Pripojiť sa k [INTERNATIONAL_ORGANIZATION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ASKJOIN_IO_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
@@ -898,13 +898,13 @@
  CANCEL_CREATE_CASUS_BELLI_CATEGORY: "CATEGORY_COVERT_ACTIONS" # todo: NEW TRANSLATION
  CANCEL_CREATE_CASUS_BELLIDESC: "Chceme zrušiť naše pokusy vytvoriť [Concept('casus_belli','casus Belli')|E] na $COUNTRY$?" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CANCEL_CREATE_CASUS_BELLITITLE: "Zrušiť vytváranie [Concept('casus_belli','casus Belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CANCEL_CREATE_CASUS_BELLI_DESC: "Tým zrušíme náš aktuálny pokus vytvoriť na nich [casus_belli|E]." # todo: NEW TRANSLATION
+ CANCEL_CREATE_CASUS_BELLI_DESC: "Tým zrušíme náš aktuálny pokus vytvoriť na nich [Concept('casus_belli','casus belli')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CANCEL_CREATE_CASUS_BELLI_NOT_YET: "@trigger_no! Nepokúšame sa vytvoriť [Concept('casus_belli','casus Belli')|E] na [COUNTRY.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CREATE_CASUS_BELLI_NOT_AVAILABLE_ALREADY: "@trigger_no! Neexistujú žiadne iné [Concept('casus_belli','casus Belli')|E], ktoré môžeme vytvoriť na túto krajinu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CREATE_CASUS_BELLI_NOT_AVAILABLE: "@trigger_no! Neexistujú žiadne [Concept('casus_belli','casus Belli')|E], ktoré môžeme vytvoriť na túto krajinu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CASUS_BELLI_NOT_BECAUSE: "Nie je možné vytvoriť [CASUS_BELLI.GetName] [Concept('casus_belli','casus Belli')|E] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CASUS_BELLI_NO_VALID_PROVINCES_FOUND: "@trigger_no! V [COUNTRY.GetName] sa nenašli žiadne platné [Concept('provinces','provincie')|e] pre [CASUS_BELLI.GetName] [casus_belli|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CASUS_BELLI_ALREADY_THIS: "@trigger_no! Už máme [CASUS_BELLI.GetName] [casus_belli|E] na [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ CASUS_BELLI_NO_VALID_PROVINCES_FOUND: "@trigger_no! V [COUNTRY.GetName] sa nenašli žiadne platné [Concept('provinces','provincie')|e] pre [CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CASUS_BELLI_ALREADY_THIS: "@trigger_no! Už máme [CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|E] na [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  IMPROVE_RELATIONTITLE: "Zlepšiť názor" # todo: NEW TRANSLATION
  IMPROVE_RELATION_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: NEW TRANSLATION
  IMPROVE_RELATION_ALREADY: "@trigger_no! Už sa snažíme zlepšiť ich názor na nás." # todo: NEW TRANSLATION
@@ -993,10 +993,10 @@
  ENFORCE_PEACE_NOT_POWERFUL_ENOUGH: "@trigger_no! Nie sme dostatočne mocní na vynútenie mieru medzi ostatnými!" # todo: NEW TRANSLATION
  ENFORCE_PEACE_NOT_AT_WAR: "@trigger_no!$WHO$ nie je v [Concept('war','vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ENFORCE_PEACE_NOT_SUBJECT: "@trigger_no!$WHO$ je vazalom." # todo: NEW TRANSLATION
- OFFER_PEACE_NOT_SUBJECT: "@trigger_no! [Concept('subject','Vazal')|e] nemôže ponúknuť [Concept('peace','mier')|e], keď jeho [overlord|e] je stále v [Concept('war','vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OFFER_PEACE_NOT_SUBJECT: "@trigger_no! [Concept('subject','Vazal')|e] nemôže ponúknuť [Concept('peace','mier')|e], keď jeho [Concept('overlord','suzerén')|e] je stále v [Concept('war','vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ENFORCE_PEACE_WAR_DESC: "Uplatniť mier na nich s hrozbou, že sa pridáme k ich nepriateľom. Zasahovanie do záležitostí iných krajín zníži našu [Concept('diplomatic_reputation','diplomatickú reputáciu')|e] o [ShowNamedValue('diplomatic_reputation_mild_penalty')|+] a ak odmietnu, stratíme [ShowNamedValue('prestige_mild_penalty')|+] [Concept('prestige','prestíž')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ENFORCE_PEACE_NOT_WARLEADER: "@trigger_no!$WHO$ nie je vodcom útočníkov v [Concept('war','vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ENFORCE_PEACE_NOT_CIVIL_WAR: "@trigger_no! $WHO$ je v [civil_war|e]." # todo: CHANGED
+ ENFORCE_PEACE_NOT_CIVIL_WAR: "@trigger_no! $WHO$ je v [Concept('civil_war','občianskej vojne')|e]." # todo: CHANGED # todo: CONCEPT CASE
  ENFORCE_PEACE_AGAINST_NOT_WARLEADER: "@trigger_no!$WHO$ nie je vodcom útočníkov v [Concept('war','vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ENFORCEPEACE_INFORMTITLE: "Mierové ultimátum" # todo: NEW TRANSLATION
  ENFORCEPEACE_INFORM: "Posol z $COUNTRY$ predniesol ultimátum! Mali by sme prijať [Concept('white_peace','status quo ante bellum')|e] v $WAR$, inak sa pridajú k našim nepriateľom!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1025,7 +1025,7 @@
  WARDESC: "Vyberte cieľ, za ktorý sa budeme biť!" # todo: NEW TRANSLATION
  NO_WAR_ON_GUARANTEE: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] na niekoho, koho sme [Concept('guaranteed','garantované')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_WAR_ON_SUBJECT: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] na vlastných vazalov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NO_WAR_ON_REVOLTER: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] na vzbúrenca v [civil_war|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_WAR_ON_REVOLTER: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] na vzbúrenca v [Concept('civil_war','občianskej vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_WAR_INTERNATIONAL_ORGANIZATION: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] proti [TARGET_COUNTRY.GetName], pretože [INTERNATIONAL_ORGANIZATION.GetName] blokuje toto vyhlásenie z dôvodu #TOOLTIP:$WHY_TAG$ #L jednej alebo viacerých podmienok#!#!" # todo: CHANGED # todo: CONCEPT CASE
  NO_WAR_INTERNATIONAL_ORGANIZATION_ALLIED_MEMBER: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] proti [TARGET_COUNTRY.GetName], pretože sme spojení s [COUNTRY.GetName], členom [INTERNATIONAL_ORGANIZATION.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_WAR_INTERNATIONAL_ORGANIZATION_SHARED_MEMBERSHIP: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] proti [TARGET_COUNTRY.GetName], pretože obidve krajiny sú členmi [INTERNATIONAL_ORGANIZATION.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1043,11 +1043,11 @@
  NO_WAR_CHAOS: "@trigger_no! Momentálne nemôžeme vyhlásiť [Concept('war','vojna')|e], lebo naša krajina je príliš dezorganizovaná. Najprv získajte viac ako $VAL|Y$ [Concept('stability','stabilita')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_WAR_BLOCKED: "@trigger_no! Naša [Concept('country','krajina')|e] má zablokované vyhlásenie vojny: $REASON$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_WAR_ON_OTHERS_AS_VASSAL: "@trigger_no! Sme [Concept('subject','vazal')|e], ktorý nesmie začínať vlastné [Concept('wars','vojny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NO_UNJUSTIFIED_WAR: "@trigger_no! Nemôžeme vyhlásiť [Concept('wars','vojny')|e] bez vhodného [casus_belli|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_UNJUSTIFIED_WAR: "@trigger_no! Nemôžeme vyhlásiť [Concept('wars','vojny')|e] bez vhodného [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_UNJUSTIFIED_WAR_DUE_TO_RELIGIOUS_HEAD: "@trigger_no! [TARGET_COUNTRY.GetName] je hlavou [RELIGION.GetName] a nemožno ho napadnúť bez riadneho odôvodnenia." # todo: NEW TRANSLATION
- NO_UNJUSTIFIED_WAR_DUE_TO_IO: "@trigger_no! [INTERNATIONAL_ORGANIZATION.GetName] zabraňuje [Concept('wars','vojny')|e] bez akéhokoľvek [casus_belli|e] medzi členmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NO_UNJUSTIFIED_WAR_OVERLORD: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] proti nášmu vrchnému pánovi bez riadneho [casus_belli|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NO_UNJUSTIFIED_WAR_LIMITED_SUBJECT: "@trigger_no! Ako $SUBJECT_TYPE$ nemôžeme vyhlásiť [Concept('war','vojna')|e] bez riadneho [casus_belli|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_UNJUSTIFIED_WAR_DUE_TO_IO: "@trigger_no! [INTERNATIONAL_ORGANIZATION.GetName] zabraňuje [Concept('wars','vojny')|e] bez akéhokoľvek [Concept('casus_belli','casus belli')|e] medzi členmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_UNJUSTIFIED_WAR_OVERLORD: "@trigger_no! Nemôžeme vyhlásiť [Concept('war','vojna')|e] proti nášmu vrchnému pánovi bez riadneho [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_UNJUSTIFIED_WAR_LIMITED_SUBJECT: "@trigger_no! Ako $SUBJECT_TYPE$ nemôžeme vyhlásiť [Concept('war','vojna')|e] bez riadneho [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  declaring_war: "Vyhlásenie vojny" # todo: NEW TRANSLATION
  honoring_alliance_call: "Prijatie výzvy aliancie" # todo: NEW TRANSLATION
  WAR_DEC_PRICE_TARGET: "Vzhľadom na to, že [COUNTRY.GetName] je [Concept('enemy','vojnový nepriateľ')|e]" # todo: CHANGED # todo: CONCEPT CASE
@@ -1056,10 +1056,10 @@
  war_great_relations: "Vyhlásenie [Concept('war','vojna')|e] s vynikajúcimi vzťahmi" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  war_good_relations: "Vyhlásenie [Concept('war','vojna')|e] s dobrými vzťahmi" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  war_when_military_acces: "Vyhlásenie [Concept('war','vojna')|e] pri vojenskom prístupe" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- war_no_cb: "Vyhlásenie [Concept('war','vojna')|e] bez [casus_belli|e] proti krajine s odlišným náboženstvom" # todo: CHANGED # todo: CONCEPT CASE
+ war_no_cb: "Vyhlásenie [Concept('war','vojna')|e] bez [Concept('casus_belli','casus belli')|e] proti krajine s odlišným náboženstvom" # todo: CHANGED # todo: CONCEPT CASE
  war_on_subject: "Vyhlásenie [Concept('war','vojna')|e] na vlastného vazala!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  war_on_same_religion_cb: "Vyhlásenie [Concept('war','vojna')|e] na krajinu s rovnakým náboženstvom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- war_on_same_religion_no_cb: "Vyhlásenie [Concept('war','vojna')|e] bez [casus_belli|e] proti krajine s rovnakým náboženstvom" # todo: CHANGED # todo: CONCEPT CASE
+ war_on_same_religion_no_cb: "Vyhlásenie [Concept('war','vojna')|e] bez [Concept('casus_belli','casus belli')|e] proti krajine s rovnakým náboženstvom" # todo: CHANGED # todo: CONCEPT CASE
  war_on_different_religion: "Vyhlásenie [Concept('war','vojna')|e] na krajinu s iným náboženstvom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  STABHIT_FROM_TRUCE: "Porušenie prímeria s $TRUCE_COUNTRY$" # todo: NEW TRANSLATION
  STABHIT_FROM_TRUCE_GUARANTEE: "Porušenie prímeria s $TRUCE_COUNTRY$ (Garancuje $TARGET_COUNTRY$)" # todo: NEW TRANSLATION
@@ -1071,7 +1071,7 @@
  DECWARINFORMTITLE: "VOJNA!" # todo: NEW TRANSLATION
  DECWARINFORM: "$MONARCHTITLE$!, Posol z $COUNTRY$ predniesol vyhlásenie [Concept('war','vojna')|e]. Hovorí, že naše hlavné mesto bude do týždňa v plameňoch!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_OVERLORD: "@trigger_no! Nie sme vrchným pánom [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- NOT_IN_ANY_SAME_ORGANIZATION_WITH_ANNEXATION_RULE: "@trigger_no! Nie sme v žiadnej spoločnej [international_organization|e] s [TARGET_COUNTRY.GetName], ktorá povoľuje [Concept('annexation','anexia')|e] členov" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NOT_IN_ANY_SAME_ORGANIZATION_WITH_ANNEXATION_RULE: "@trigger_no! Nie sme v žiadnej spoločnej [Concept('international_organization','medzinárodnej organizácii')|e] s [TARGET_COUNTRY.GetName], ktorá povoľuje [Concept('annexation','anexia')|e] členov" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CANNOT_ANNEX_SUBJECT_TYPE: "@trigger_no! Nemôžeme anektovať [SUBJECT_TYPE.GetName]" # todo: NEW TRANSLATION
  NOT_ALREADY_ANNEXING: "@trigger_no! Neanektujeme tohto [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ALREADY_ANNEXING: "@trigger_no! Už anektujeme [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -1087,7 +1087,7 @@
  DONT_CONTROL_LOCATION: "@trigger_no! Nevlastníme ani nekontrolujeme [LOCATION.GetName]" # todo: NEW TRANSLATION
  LOCATION_UNDER_SIEGE: "@trigger_no![LOCATION.GetName] je obliehané" # todo: NEW TRANSLATION
  NOT_LEADING_WARS_AGAINST_EACH_OTHER: "@trigger_no![COUNTRY.GetName] a [TARGET_COUNTRY.GetName] nevedú vojny proti sebe navzájom" # todo: NEW TRANSLATION
- CANT_INTERVENE_CIVIL_WAR: "@trigger_no!Nemôžeme zasahovať do [civil_war|e]" # todo: NEW TRANSLATION
+ CANT_INTERVENE_CIVIL_WAR: "@trigger_no!Nemôžeme zasahovať do [Concept('civil_war','občianskej vojny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CANNOT_JOIN_ANY_OF_THEIR_WARS: "@trigger_no![TARGET_COUNTRY.GetName] nevedú žiadne vojny, do ktorých by ste sa mohli pridať" # todo: NEW TRANSLATION
  SUBJECT_TYPE_DOESNT_JOIN_OVERLORD_WAR: "@trigger_no! [SUBJECT_TYPE.GetName] subjekty sa nezapájajú do vojen svojho vrchného pána" # todo: NEW TRANSLATION
  MODIFIER_REASON: "@trigger_no!$MODIFIER_TYPE$" # todo: NEW TRANSLATION
@@ -1145,14 +1145,14 @@
  PO_THEYNOTLEAD: "" # todo: NEW TRANSLATION
  PEACEBETTER: "\n(Tento obchod je lepší, než čo môžeme očakávať)" # todo: NEW TRANSLATION
  NO_SEPARATE_PEACE: "@trigger_no! Nemôžeme vyjednávať samostatný mier medzi dvoma junior partnermi v [Concept('war','vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NO_SEPARATE_PEACE_COALITION: "@trigger_no! Nemôžeme vyjednávať samostatný mier v [Concept('war','vojne')|e] s [CASUS_BELLI.GetName] [casus_belli|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_SEPARATE_PEACE_COALITION: "@trigger_no! Nemôžeme vyjednávať samostatný mier v [Concept('war','vojne')|e] s [CASUS_BELLI.GetName] [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TOO_BIG: "@trigger_no! Ponuka mieru nemôže mať kombinovanú hodnotu vyššiu ako #Y 100#!." # todo: NEW TRANSLATION
- PEACE_TOO_SMALL_WARSCORE: "@trigger_no! Aby sme mohli v miere niečo požadovať, potrebujeme aspoň $NEED|Y$ v [war_score|e]. Momentálne máme iba $CURR|Y$ proti $NAME$." # todo: NEW TRANSLATION
+ PEACE_TOO_SMALL_WARSCORE: "@trigger_no! Aby sme mohli v miere niečo požadovať, potrebujeme aspoň $NEED|Y$ v [Concept('war_score','vojnovom skóre')|e]. Momentálne máme iba $CURR|Y$ proti $NAME$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_SEPARATE_PEACE_EARLY: "@trigger_no! Nemôžeme opustiť našich spojenencov, kým neuplynie $NUM|Y$ mesiacov. V tejto [Concept('war','vojne')|e] by to bolo $WHEN|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_SEPARATE_PEACE_EARLY_THEM: "@trigger_no! Nemôžeme donútiť spojenca, aby niekoho opustil v [Concept('war','vojne')|e], kým neuplynie $NUM|Y$ mesiacov. V tejto [Concept('war','vojne')|e] by to bolo $WHEN|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_SEPARATE_PEACE_SUBJECT_REVOLT: "@trigger_no! Nemôžeme vyjednávať samostatný mier ako vrchný pán v vojne proti vzburám podriadených." # todo: NEW TRANSLATION
  NO_SEPARATE_PEACE_OVERLORD_REVOLT: "@trigger_no! Nemôžeme vyjednávať o samostatnom mieri s vrchnosťou počas povstania subjektu." # todo: CHANGED
- NO_SEPARATE_PEACE_LOYAL_SUBJECT: "@trigger_no! $WHO$ je lojálny [Concept('subject','vazal')|e] a nemôže nezávisle vyjednávať o oddelenom [Concept('peace','mier')|e] od svojho [overlord|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_SEPARATE_PEACE_LOYAL_SUBJECT: "@trigger_no! $WHO$ je lojálny [Concept('subject','vazal')|e] a nemôže nezávisle vyjednávať o oddelenom [Concept('peace','mier')|e] od svojho [Concept('overlord','suzeréna')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RANSOMOFFERDESCTITLE: "Ponuka výkupného" # todo: NEW TRANSLATION
  RANSOMOFFERDESC: "Dostali sme ponuku na vykúpenie našich vojakov od $COUNTRY$. Ponúkajú nám nasledovné podmienky:\n$SOLDIERS$\nvýmenou za $COST$.\nPrijímame?" # todo: NEW TRANSLATION
  RESET_BUTTON: "Obnoviť" # todo: NEW TRANSLATION
@@ -1222,7 +1222,7 @@
  PEACE_TREATY_GRANT_INDEPENDENCE_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] a ich [allies] získavajú nezávislosť" # todo: CHANGED
  PEACE_TREATY_GRANT_INDEPENDENCE_SEPARATE: "[COUNTRY.GetNameWithFlag] im bola udelená nezávislosť" # todo: NEW TRANSLATION
  PEACE_TREATY_GRANT_INDEPENDENCE_SEPARATE_short: "[COUNTRY.GetNameWithFlagWithNoTooltip] získali nezávislosť" # todo: NEW TRANSLATION
- PEACE_TREATY_BLOCKED_NO_UNION_CB: "@trigger_no! Nemôžeme vytvoriť osobnú úniu s nimi bez použitia [ShowCasusBelliName('cb_claim_throne')] [casus_belli|e]." # todo: NEW TRANSLATION
+ PEACE_TREATY_BLOCKED_NO_UNION_CB: "@trigger_no! Nemôžeme vytvoriť osobnú úniu s nimi bez použitia [ShowCasusBelliName('cb_claim_throne')] [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_BLOCKED_WAR_GOAL: "@trigger_no! [Concept('war_goal','Vojnový cieľ')|e] $NAME|Y$ blokuje túto zmluvu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_NO_RULER: "@trigger_no! Nárokovateľ na trón, [CHARACTER.GetName], je mŕtvy." # todo: CHANGED
  PEACE_TREATY_ALREADY_RULER: "@trigger_no! Nárokovník na trón, [CHARACTER.GetName], je už [Concept('ruler','panovník')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1231,7 +1231,7 @@
  PEACE_TREATY_BLOCKED_CANNOT_BE_SUBJUGATED: "@trigger_no! [COUNTRY.GetLongName] sa nedá podrobiť kvôli $NAME$ [Concept('modifier','modifikátoru')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_BLOCKED_NOT_CAPITAL: "@trigger_no! Keď je [Concept('war_score','vojnové skóre')|e] pod 100, [Concept('province_capital','hlavným mestom provincie')|e] $NAME|Y$ musí byť obsadený, aby mohol byť súčasťou [Concept('peace_treaty','mierovou dohodou')|e]." # todo: CHANGED # todo: CONCEPT CASE
  PEACE_TREATY_BLOCKED_NOT_CAPITAL_NO_WS: "@trigger_no! [Concept('province_capital','Hlavné mesto provincie')|e] $NAME|Y$ musí byť obsadená, aby mohla byť súčasťou [Concept('peace_treaty','mierovou dohodou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- PEACE_TREATY_BLOCKED_NOT_TRADE: "@trigger_no! Táto mierová zmluva nie je platná pri obchodom súvisiacom [casus_belli|e]." # todo: NEW TRANSLATION
+ PEACE_TREATY_BLOCKED_NOT_TRADE: "@trigger_no! Táto mierová zmluva nie je platná pri obchodom súvisiacom [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_BLOCKED_NOT_FORT: "@trigger_no! [Concept('fort','Pevnosť')|e] v $NAME|Y$ musí byť obsadený, aby mohol byť súčasťou [Concept('peace_treaty','mierovou dohodou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_BLOCKED_PROVINCE_NOT_EXPLORED: "@trigger_no! [PROVINCE.GetName] musí byť preskúmaná, aby mohla byť súčasťou [Concept('peace_treaty','mierovou dohodou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_BLOCKED_SUBJECT: "@trigger_no! Už je [Concept('subject','vazal')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1259,7 +1259,7 @@
  PEACE_TREATY_NO_TO_RIVAL: "@trigger_no! [TARGET_COUNTRY.GetLongName] je naším [Concept('rival','rivalom')|e]; nechceme sa sobášiť s ich [Concept('dynasty','dynastia')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_TREATY_NO_SLAVES_TO_LIBERATE: "@trigger_no! [TARGET_COUNTRY.GetLongName] nemá otrokov s [Concept('primary_or_accepted_culture','hlavnou alebo akceptovanou kultúrou')|e] [COUNTRY.GetLongName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BASE_REASON_WITH_BREAKDOWN: "Základ: #TOOLTIP:$BREAKDOWN_TAG$ $VALUE|-=2$#!\n" # todo: NEW TRANSLATION
- TOTAL_POPULATION: "Celkové [Concept('population','populácia')|e] v [international_organization|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TOTAL_POPULATION: "Celkové [Concept('population','populácia')|e] v [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELATIVE_POPULATION: "Relatívne [Concept('population','populácia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELATIVE_ECO_BASE: "Relatívna [Concept('economical_base','ekonomická základňa')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AUC_THREAT: "Sú pre nás [Concept('threat','hrozbu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1267,7 +1267,7 @@
  RELATIVE_INCOME: "Relatívny [Concept('income','príjem')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELATIVE_ARMY_SIZE: "Relatívna veľkosť [Concept('armies','armády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELATIVE_NAVY_SIZE: "Relatívna veľkosť [Concept('navies','námorné sily')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- RELATIVE_GREAT_POWER_SCORE: "Relatívne [Concept('great_power_score','skóre veľmoci $game_concept_great_power_score_short$')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ RELATIVE_GREAT_POWER_SCORE: "Relatívne [Concept('great_power_score','skóre veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  UPKEEP_SUBJECT_RANK: "[Concept('country_rank','Rang krajiny')|e] of [Concept('subject','vazal')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_TYPE_COST_FOR_UPKEEP: "[Concept('subject_type','Druh vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  UPKEEP_BASE_VALUE: "Základná hodnota" # todo: NEW TRANSLATION
@@ -1393,14 +1393,14 @@
  RANSOM_ASK_DESC: "Posol z $ACTOR$ žiada prepustenie nášho 'hosťa' $NAME$ za sumu $CASH$ [gold_i]" # todo: NEW TRANSLATION
  REQUEST_RANSOM_SUBUNIT_DESC: "Zaplaťte [Concept('gold','dukáty')|e], aby bol $UNIT$ prepustený z $COUNTRY$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT: "@trigger_no! Krajina-subjekt nemôže vstupovať do diplomatických dohôd ani spojenectiev." # todo: NEW TRANSLATION
- THEY_ALLY_OUR_CIVIL_WAR_RIVALS: "@trigger_no! Sú spojení s $WHO|Y$, s ktorým bojujeme v [civil_war|e]." # todo: NEW TRANSLATION
+ THEY_ALLY_OUR_CIVIL_WAR_RIVALS: "@trigger_no! Sú spojení s $WHO|Y$, s ktorým bojujeme v [Concept('civil_war','občianskej vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_BREAK_AT_WAR: "@trigger_no! Rozpúšťať aliancie len preto, že sme spolu vo [Concept('war','vojne')|e], sa nerobí." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANNEXDESC: "Očakávame, že anexácia potrvá do $WHEN|Y$.\nKliknite pre spustenie procesu anektovania nášho subjektu." # todo: NEW TRANSLATION
  ANNEXDESC_CANCEL: "Očakávame, že anexácia potrvá do $WHEN|Y$.\nKliknite pre zrušenie procesu anektovania nášho subjektu." # todo: NEW TRANSLATION
  ANNEXINVALID: "@trigger_no! Môžeme anektovať len národ, ktorý je naším subjektom aspoň $YEARS|YS$ rokov, a to nie je možné pred $DATE|Y$." # todo: NEW TRANSLATION
  ANNEX_WAR: "@trigger_no! Bojujeme v $WAR$ aby sme im pomohli získať slobodu, takže nemôžeme vtedy začať anexiu." # todo: NEW TRANSLATION
  ANNEX_TOO_LOW: "@trigger_no! Náš [Concept('subject','vazal')|e] musí mať aspoň $NEED|Y$ názor na nás, a momentálne má len $VAL|Y0$, aby sme mohli začať anexiu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ANNEX_CIVIL_WAR: "@trigger_no! Náš [Concept('subject','vazal')|e] je vo [civil_war|e], takže nemôžeme začať anektáciu." # todo: CHANGED # todo: CONCEPT CASE
+ ANNEX_CIVIL_WAR: "@trigger_no! Náš [Concept('subject','vazal')|e] je vo [Concept('civil_war','občianskej vojne')|e], takže nemôžeme začať anektáciu." # todo: CHANGED # todo: CONCEPT CASE
  ANNEX_NO_THEM_WAR: "@trigger_no! Náš [Concept('subject','vazal')|e] je vo [Concept('war','vojne')|e], takže nemôžeme začať anexiu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANNEX_NO_WE_WAR: "@trigger_no! Sme vo [Concept('war','vojne')|e], takže nemôžeme začať anexiu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANNEX_DISLOYAL: "@trigger_no! Náš [Concept('subject','vazal')|e] je [Concept('disloyal_subject','nelojálny vazal')|e], takže nie je možné začať anexiu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1417,12 +1417,12 @@
  THE_NEW_SUBJECT: "[Concept('subject','Vazal')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OVERLORD_NAME: "[Concept('overlord','Suzerén')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  S_CAPITAL_NAME: "[Concept('capital','Hlavné mesto')|e] subjektu [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- O_CAPITAL_NAME: "[Concept('capital','Hlavné mesto')|e] panovníka [overlord|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ O_CAPITAL_NAME: "[Concept('capital','Hlavné mesto')|e] panovníka [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_STATUS_TT: "Pravidlá" # todo: NEW TRANSLATION
  SUBJECT_ANNEXATION_TT: "Obmedzenia anexácie" # todo: NEW TRANSLATION
  SUBJECT_NOT_ANNEXATION_TT: "$BULLET$Tento [Concept('subject','vazal')|e] nemožno anektovať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_BUILDING_TT: "Pravidlá výstavby" # todo: NEW TRANSLATION
- SUBJECT_BENEFITS_FOR_OVERLORD_TT: "Výhody pre [overlord|e]" # todo: NEW TRANSLATION
+ SUBJECT_BENEFITS_FOR_OVERLORD_TT: "Výhody pre [Concept('overlord','suzeréna')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_BENEFITS_FOR_SUBJECT_TT: "Výhody pre [Concept('subject','vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_MONTHLY_TT: "Mesačné efekty" # todo: NEW TRANSLATION
  SUBJECT_DIPLOMATIC_TT: "Diplomatické pravidlá" # todo: NEW TRANSLATION
@@ -1468,7 +1468,7 @@
  NOT_A_SUBJECT_SPECIFIC: "[COUNTRY.GetName] NIE JE [SUBJECT_TYPE.GetName]." # todo: NEW TRANSLATION
  DIPLOMACY_SUBJECT_TYPE_NOT_VALID: "Nie je možné ponúknuť [COUNTRY.GetName] [SUBJECT_TYPE.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
  DIPLOMACY_SUBJECT_TYPE_REQUEST_NOT_VALID: "Nie je možné požiadať [COUNTRY.GetName], aby bola [SUBJECT_TYPE.GetName], z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
- DIPLOMACY_TARGET_OF_IO: "[COUNTRY.GetName] je cieľom [international_organization|e]" # todo: NEW TRANSLATION
+ DIPLOMACY_TARGET_OF_IO: "[COUNTRY.GetName] je cieľom [Concept('international_organization','medzinárodnej organizácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOMACY_TARGET_CANNOT_BE_SUBJUGATED: "[COUNTRY.GetName] sa nedá podrobiť kvôli $NAME$ [Concept('modifier','modifikátoru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOMACY_ACTOR_CANNOT_BE_SUBJUGATED: "Nemôžeme sa stať poddanými nikoho kvôli $NAME$ [Concept('modifier','modifikátoru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_vassal_TOOLTIP_HEADER: "Požiadať, aby sa [TARGET_COUNTRY.GetName] stal vazalom" # todo: CHANGED
@@ -1493,7 +1493,7 @@
  OFFER_vassal_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stal naším vazalom?" # todo: CHANGED
  REQUEST_vassal_NEWDESC: "Chceme ponúknuť stať sa vazalom [COUNTRY.GetName]?" # todo: CHANGED
  CANCEL_vassal_NEWDESC: "Chceme ukončiť stav vazala [COUNTRY.GetName]?" # todo: CHANGED
- BREAK_vassal_NEWDESC: "Chceme prestať byť vazalom [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_vassal_NEWDESC: "Chceme prestať byť vazalom [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_vassal_DESC: "Požiadať, aby sa stali naším vazalom, a my ich ochránime." # todo: CHANGED
  REQUEST_vassal_DESC: "Ponúknuť stať sa ich vazalom, a oni nás ochránia." # todo: CHANGED
  CANCEL_vassal_DESC: "Ukončiť stav vazala s @[COUNTRY.GetFlag]! [COUNTRY.GetName]." # todo: CHANGED
@@ -1506,7 +1506,7 @@
  CANCEL_vassal_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
  BREAK_vassal_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
  OFFER_vassal_TOO_LOW: "@trigger_no! Aby sa [COUNTRY.GetLongName] stal vazalom, ich názor na nás musí byť aspoň $NEED|Y$, momentálne je len $VAL|Y0$." # todo: NEW TRANSLATION
- REQUEST_vassal_TOO_LOW: "@trigger_no! Aby sa [COUNTRY.GetLongName] stal naším [overlord|e], náš názor na nich musí byť aspoň $NEED|Y$, momentálne je len $VAL|Y0$." # todo: NEW TRANSLATION
+ REQUEST_vassal_TOO_LOW: "@trigger_no! Aby sa [COUNTRY.GetLongName] stal naším [Concept('overlord','suzerénom')|e], náš názor na nich musí byť aspoň $NEED|Y$, momentálne je len $VAL|Y0$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CANCEL_vassal_NOT_IN_TRUCE: "$not_possible_to_break_subject_in_truce$" # todo: NEW TRANSLATION
  BREAK_vassal_NOT_IN_TRUCE: "$not_possible_to_break_subject_in_truce$" # todo: NEW TRANSLATION
  OFFER_vassal_ALREADY_SUBJECT: "$country_already_a_subject$" # todo: NEW TRANSLATION
@@ -1537,7 +1537,7 @@
  OFFER_march_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stalo našou Markou?" # todo: CHANGED
  REQUEST_march_NEWDESC: "Chceme ponúknuť stať sa Markou [COUNTRY.GetName]?" # todo: CHANGED
  CANCEL_march_NEWDESC: "Chceme ukončiť status marky [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_march_NEWDESC: "Chceme prestať byť markou [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_march_NEWDESC: "Chceme prestať byť markou [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_march_DESC: "Požiadať, aby sa stali našou Markou, a my ich ochránime." # todo: CHANGED
  REQUEST_march_DESC: "Ponúknuť stať sa ich Markou, a oni nás ochránia." # todo: CHANGED
  CANCEL_march_DESC: "Ukončiť status Marky." # todo: CHANGED
@@ -1595,7 +1595,7 @@
  OFFER_dominion_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stal naším Dominionom?" # todo: CHANGED
  REQUEST_dominion_NEWDESC: "Chceme ponúknuť stať sa Dominionom [COUNTRY.GetName]?" # todo: CHANGED
  CANCEL_dominion_NEWDESC: "Chceme ukončiť status dominia [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_dominion_NEWDESC: "Chceme prestať byť Dominionom [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_dominion_NEWDESC: "Chceme prestať byť Dominionom [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_dominion_DESC: "Požiadať, aby sa stali naším Dominionom, a my ich ochránime." # todo: CHANGED
  REQUEST_dominion_DESC: "Ponúknuť stať sa ich Dominionom, a oni nás ochránia." # todo: CHANGED
  CANCEL_dominion_DESC: "Ukončiť status Dominionu." # todo: CHANGED
@@ -1638,7 +1638,7 @@
  OFFER_fiefdom_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stal naším Fiefdomom?" # todo: CHANGED
  REQUEST_fiefdom_NEWDESC: "Chceme ponúknuť stať sa Fiefdomom [COUNTRY.GetName]?" # todo: CHANGED
  CANCEL_fiefdom_NEWDESC: "Chceme ukončiť status fiefdomu [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_fiefdom_NEWDESC: "Chceme prestať byť fiefdomom [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_fiefdom_NEWDESC: "Chceme prestať byť fiefdomom [COUNTRY.GetName]?\nToto zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_fiefdom_DESC: "Požiadať, aby sa stali naším Fiefdomom, a my ich ochránime." # todo: CHANGED
  REQUEST_fiefdom_DESC: "Ponúknuť stať sa ich Fiefdomom, a oni nás ochránia." # todo: CHANGED
  CANCEL_fiefdom_DESC: "Ukončiť status Fiefdomu." # todo: CHANGED
@@ -1714,7 +1714,7 @@
  OFFER_tributary_NEWDESC: "Chceme požadovať, aby sa [COUNTRY.GetName] stal naším $tributary$?" # todo: NEW TRANSLATION
  REQUEST_tributary_NEWDESC: "Chceme ponúknuť stať sa $tributary$ [COUNTRY.GetName]?" # todo: CHANGED
  CANCEL_tributary_NEWDESC: "Chceme ukončiť status $tributary$ [COUNTRY.GetName]?" # todo: CHANGED
- BREAK_tributary_NEWDESC: "Chceme prestať byť $tributary$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_tributary_NEWDESC: "Chceme prestať byť $tributary$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_tributary_DESC: "Požiadať, aby sa stali naším $tributary$, a my ich ochránime." # todo: CHANGED
  REQUEST_tributary_DESC: "Ponúknuť stať sa ich $tributary$, a oni nás ochránia." # todo: CHANGED
  CANCEL_tributary_DESC: "Ukončiť status $tributary$." # todo: CHANGED
@@ -1754,7 +1754,7 @@
  OFFER_tusi_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stal naším $tusi$?" # todo: CHANGED
  REQUEST_tusi_NEWDESC: "Chceme ponúknuť stať sa $tusi$ [COUNTRY.GetName]?" # todo: CHANGED
  CANCEL_tusi_NEWDESC: "Chceme ukončiť $tusi$ status [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_tusi_NEWDESC: "Chceme prestať byť $tusi$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_tusi_NEWDESC: "Chceme prestať byť $tusi$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_tusi_DESC: "Požiadať, aby sa stali naším $tusi$, a my ich ochránime." # todo: CHANGED
  REQUEST_tusi_DESC: "Ponúknuť stať sa ich $tusi$, a oni nás ochránia." # todo: CHANGED
  CANCEL_tusi_DESC: "Ukončiť status $tusi$." # todo: CHANGED
@@ -1794,7 +1794,7 @@
  OFFER_appanage_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stalo našou apanážou? Toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  REQUEST_appanage_NEWDESC: "Chceme ponúknuť stať sa apanážou [COUNTRY.GetName]? Toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_appanage_NEWDESC: "Chceme ukončiť apanáž [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_appanage_NEWDESC: "Chceme prestať byť apanážou [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_appanage_NEWDESC: "Chceme prestať byť apanážou [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_appanage_REQTITLE: "Žiadosť, aby sme sa stali apanážou" # todo: NEW TRANSLATION
  REQUEST_appanage_REQTITLE: "Ponuka stať sa našou apanážou" # todo: NEW TRANSLATION
  OFFER_appanage_REQDESC: "[COUNTRY.GetName] žiada, aby sme sa stali ich [SUBJECT_TYPE.GetName]" # todo: CHANGED
@@ -1836,7 +1836,7 @@
  OFFER_samanta_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stalo naším $samanta$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  REQUEST_samanta_NEWDESC: "Chceme ponúknuť stať sa $samanta$ [COUNTRY.GetName]?" # todo: NEW TRANSLATION
  CANCEL_samanta_NEWDESC: "Chceme ukončiť $samanta$ status [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_samanta_NEWDESC: "Chceme prestať byť $samanta$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_samanta_NEWDESC: "Chceme prestať byť $samanta$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_samanta_REQDESC: "[COUNTRY.GetName] žiada, aby sme sa stali ich $samanta$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  REQUEST_samanta_REQDESC: "[COUNTRY.GetName] ponúka stať sa naším [SUBJECT_TYPE.GetName]" # todo: NEW TRANSLATION
  CANCEL_samanta_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
@@ -1869,7 +1869,7 @@
  BREAK_maha_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  OFFER_maha_samanta_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stalo naším $maha_samanta$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_maha_samanta_NEWDESC: "Chceme ukončiť $maha_samanta$ status [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_maha_samanta_NEWDESC: "Chceme prestať byť $maha_samanta$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_maha_samanta_NEWDESC: "Chceme prestať byť $maha_samanta$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_maha_samanta_REQDESC: "[COUNTRY.GetName] žiada, aby sme sa stali ich $maha_samanta$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_maha_samanta_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
  BREAK_maha_samanta_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
@@ -1903,7 +1903,7 @@
  BREAK_pradhana_maha_samanta_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  OFFER_pradhana_maha_samanta_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stalo naším $pradhana_maha_samanta$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_pradhana_maha_samanta_NEWDESC: "Chceme ukončiť status $pradhana_maha_samanta$ [COUNTRY.GetName]?" # todo: CHANGED
- BREAK_pradhana_maha_samanta_NEWDESC: "Chceme prestať byť $pradhana_maha_samanta$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_pradhana_maha_samanta_NEWDESC: "Chceme prestať byť $pradhana_maha_samanta$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_pradhana_maha_samanta_REQDESC: "[COUNTRY.GetName] žiada, aby sme sa stali ich $pradhana_maha_samanta$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_pradhana_maha_samanta_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
  BREAK_pradhana_maha_samanta_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
@@ -1937,7 +1937,7 @@
  BREAK_imperial_free_city_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  OFFER_imperial_free_city_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stalo $imperial_free_city$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_imperial_free_city_NEWDESC: "Chceme zrušiť $imperial_free_city$ status [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_imperial_free_city_NEWDESC: "Chceme prestať byť $imperial_free_city$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_imperial_free_city_NEWDESC: "Chceme prestať byť $imperial_free_city$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_imperial_free_city_REQDESC: "[COUNTRY.GetName] ponúka stať sa $imperial_free_city$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_imperial_free_city_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
  BREAK_imperial_free_city_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
@@ -1968,7 +1968,7 @@
  BREAK_direct_imperial_free_city_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  OFFER_direct_imperial_free_city_NEWDESC: "Chceme požiadať, aby sa [COUNTRY.GetName] stalo $direct_imperial_free_city$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_direct_imperial_free_city_NEWDESC: "Chceme zrušiť $direct_imperial_free_city$ status [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_direct_imperial_free_city_NEWDESC: "Chceme prestať byť $direct_imperial_free_city$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_direct_imperial_free_city_NEWDESC: "Chceme prestať byť $direct_imperial_free_city$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_direct_imperial_free_city_REQDESC: "[COUNTRY.GetName] žiada, aby sme sa stali $direct_imperial_free_city$, a toto bude mať nasledujúci efekt:\n$INFO$" # todo: CHANGED
  CANCEL_direct_imperial_free_city_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
  BREAK_direct_imperial_free_city_REQDESC: "$MONARCHTITLE$" # todo: NEW TRANSLATION
@@ -2098,14 +2098,14 @@
  ABANDONTITLE: "Opustiť občiansku vojnu" # todo: NEW TRANSLATION
  ABANDON_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  ABANDONCIVILWARDESC: "My a naši [Concept('subjects','vazalov')|e] opustíme [WAR.GetName]. To rozhnevá $LEADER|Y$, ale niekedy je to potrebné!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ABANDONCIVILWAR_NOT_HELPING: "@trigger_no! Nepomáhame [COUNTRY.GetName] v [civil_war|e]." # todo: NEW TRANSLATION
+ ABANDONCIVILWAR_NOT_HELPING: "@trigger_no! Nepomáhame [COUNTRY.GetName] v [Concept('civil_war','občianskej vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ABANDONCIVILWAR_NOT_LEADER: "@trigger_no! Ak sa chceme z $WAR$ stiahnuť, budeme sa musieť dohodnúť s $LEADER|Y$." # todo: NEW TRANSLATION
  ABANDONCIVILWAR_NOT_SUBJECT: "@trigger_no! Subjekty nemôžu opustiť [Concept('civil_war','občianska vojna')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ABANDONCIVILWAR_NO_WAR: "@trigger_no! Neexistuje žiadna [Concept('civil_war','občianska vojna')|e], v ktorej spoločne bojujeme a ktorú by sme mohli opustiť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ABANDON_CONFIRM: "My a naši [Concept('subjects','vazalov')|e] opustíme [WAR.GetName], čo okamžite ovplyvní názor $WHO$ na nás o $VAL|+=." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INSULTTITLE: "Poslať urážku" # todo: NEW TRANSLATION
  INSULT_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
- INSULTDESC: "Toto výrazne naruší názory našich [Concept('countries','krajiny')|e] a poskytne im [casus_belli|e] proti nám na 5 rokov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INSULTDESC: "Toto výrazne naruší názory našich [Concept('countries','krajiny')|e] a poskytne im [Concept('casus_belli','casus belli')|e] proti nám na 5 rokov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INSULTNEWDESC: "Tým ich hlboko urazíme, čo im poskytne [Concept('casus_belli','casus Belli')|el] proti nám na 5 rokov, a okamžite to ovplyvní ich [Concept('opinion','názor')|el] na nás o $VAL|+=$, ako aj náš názor na nich." # todo: CONCEPT CASE
  INSULT_SELECT: "Vyberte urážku, ktorú pošlete:" # todo: NEW TRANSLATION
  INSULT_ALREADY: "@trigger_no! Už sme urazili [TARGET_COUNTRY.GetName], alebo oni urazili nás!" # todo: NEW TRANSLATION
@@ -2170,7 +2170,7 @@
  generic_war_goal_enforce_military_access: "$generic_war_goal_superiority$" # todo: CHANGED
  generic_war_goal_enforce_military_access_desc: "$generic_war_goal_superiority_desc$" # todo: CHANGED
  generic_war_goal_independence: "Oslobodiť [PROVINCE.GetCountry.GetNameWithNoTooltip]" # todo: CHANGED
- generic_war_goal_independence_desc: "[Concept('war_goal','Vojnový cieľ')|e] je ovládnuť celú [Concept('country','krajinu')|e] [PROVINCE.GetCountry.GetName].\nNezávislostníci získajú priebežný [war_score_with_icon|e], ak zabránia svojmu bývalému [overlord|e] v obsadení ich územia.\n\nBývalý [Concept('subject','vazal')|e] musí vynútiť svoju nezávislosť prostredníctvom [Concept('peace_treaty','mierovej dohody')|e]. [white_peace_with_icon|e] obnoví status quo pred [Concept('war','vojnou')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ generic_war_goal_independence_desc: "[Concept('war_goal','Vojnový cieľ')|e] je ovládnuť celú [Concept('country','krajinu')|e] [PROVINCE.GetCountry.GetName].\nNezávislostníci získajú priebežný [Concept('war_score_with_icon','vojnové skóre')|e], ak zabránia svojmu bývalému [Concept('overlord','suzeréna')|e] v obsadení ich územia.\n\nBývalý [Concept('subject','vazal')|e] musí vynútiť svoju nezávislosť prostredníctvom [Concept('peace_treaty','mierovej dohody')|e]. [Concept('white_peace_with_icon','Status quo ante bellum')|e] obnoví status quo pred [Concept('war','vojnou')|e]." # todo: CHANGED # todo: CONCEPT CASE
  generic_war_goal_destroy_army: "Zničiť armádu" # todo: NEW TRANSLATION
  generic_war_goal_destroy_army_desc: "[Concept('war_goal','Vojnový cieľ')|e] je zničiť nepriateľské [Concept('armies','armády')|e]. Ak jedna strana má [Concept('army','armáda')|e] a druhá nie, dostane priebežný [Concept('war_score','vojnové skóre')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TAKE_PROVINCE: "Dobyť provinciu" # todo: NEW TRANSLATION
@@ -2321,11 +2321,11 @@
  war_goal_high_kingship_reclamation_wargoal: "Obnovenie Najvyššieho kráľovstva" # todo: NEW TRANSLATION
  war_goal_high_kingship_reclamation_wargoal_desc: "$generic_war_goal_take_province$" # todo: CHANGED
  war_goal_secure_italy_wargoal: "Zabezpečiť [ShowRegionName('italy_region')]" # todo: NEW TRANSLATION
- war_goal_secure_italy_wargoal_desc: "[Concept('war_goal','Vojnový cieľ')|e] je dobyť taliansku provinciu. Získajte bonus k [war_score|e] z obsadenia cieľovej [Concept('province','provincii')|e]. Budeme dostávať priebežný [Concept('war_score','vojnové skóre')|e] za obsadenie a držanie každej [Concept('location','lokalite')|e] v provincii.\n\n#Y Dobyvanie je obmedzené na [ShowRegionName('italy_region')]#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ war_goal_secure_italy_wargoal_desc: "[Concept('war_goal','Vojnový cieľ')|e] je dobyť taliansku provinciu. Získajte bonus k [Concept('war_score','vojnovému skóre')|e] z obsadenia cieľovej [Concept('province','provincii')|e]. Budeme dostávať priebežný [Concept('war_score','vojnové skóre')|e] za obsadenie a držanie každej [Concept('location','lokalite')|e] v provincii.\n\n#Y Dobyvanie je obmedzené na [ShowRegionName('italy_region')]#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  war_goal_high_kingship_superiority_wargoal: "Nadradenosť vysokého kráľovstva" # todo: NEW TRANSLATION
  war_goal_high_kingship_superiority_wargoal_desc: "$generic_war_goal_superiority_desc$" # todo: NEW TRANSLATION
  war_goal_superiority_restore_roman_borders: "Obnoviť hranice $ROM_ADJ$" # todo: NEW TRANSLATION
- war_goal_superiority_restore_roman_borders_desc: "Sláva $ROM$ čaká! Koniec obdobia úpadku oznamuje slávny a zlatý návrat najvznešilejšieho impéria. Teraz znovu získajme naše [ShowScriptedGeographyName('roman_borders_geography')]!\n\nZískajte bonus [Concept('war_score','vojnové skóre')|e] z vyhraných obliehaní a [Concept('occupying','okupovania')|e] nepriateľského územia v rámci [ShowScriptedGeographyName('roman_borders_geography')]. Nepriateľ získava postupné [war_score|e] za každú svoju [Concept('locations','lokality')|e] v týchto regiónoch, ktorú sme ne[Concept('occupied','okupované')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ war_goal_superiority_restore_roman_borders_desc: "Sláva $ROM$ čaká! Koniec obdobia úpadku oznamuje slávny a zlatý návrat najvznešilejšieho impéria. Teraz znovu získajme naše [ShowScriptedGeographyName('roman_borders_geography')]!\n\nZískajte bonus [Concept('war_score','vojnové skóre')|e] z vyhraných obliehaní a [Concept('occupying','okupovania')|e] nepriateľského územia v rámci [ShowScriptedGeographyName('roman_borders_geography')]. Nepriateľ získava postupné [Concept('war_score','vojnové skóre')|e] za každú svoju [Concept('locations','lokality')|e] v týchto regiónoch, ktorú sme ne[Concept('occupied','okupované')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WARGOAL_VS_PROV: "[Concept('province','Provincia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WARGOAL_VS_COUNTRY: "[Concept('country','Krajina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WG_ATT_CONQUER_COST_FACTOR: "[Concept('conquer','Dobyť')|e] náklady pre útočníka: $VAL|-=%V$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2374,8 +2374,8 @@
  WAR_GOAL_CONTROLLER_ATTACKER_DEFEND: "[Concept('war_goal','Vojnový cieľ')|e] Útočník dokázal vyhrať dostatok bitiek" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_GOAL_CONTROLLER_DEFENDER_DEFEND: "[Concept('war_goal','Vojnový cieľ')|e] Obranca dokázal vyhrať dostatok bitiek" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_GOAL_CONTROLLER_NOONE_DEFEND: "[Concept('war_goal','Vojnový cieľ')|e] Nedostatok rozhodujúcich bitiek pre bonus [Concept('war_score','vojnové skóre')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- WAR_GOAL_CONTROLLER_ATTACKER_SUP: "[Concept('war_goal','Vojnový cieľ')|e] Útočník vyhral dostatok bitiek ($WARSCORE$ [war_score|e] z bitiek)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- WAR_GOAL_CONTROLLER_DEFENDER_SUP: "[Concept('war_goal','Vojnový cieľ')|e] Obranca vyhral dostatok bitiek ($WARSCORE$ [war_score|e] z bitiek)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_GOAL_CONTROLLER_ATTACKER_SUP: "[Concept('war_goal','Vojnový cieľ')|e] Útočník vyhral dostatok bitiek ($WARSCORE$ [Concept('war_score','vojnového skóre')|e] z bitiek)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_GOAL_CONTROLLER_DEFENDER_SUP: "[Concept('war_goal','Vojnový cieľ')|e] Obranca vyhral dostatok bitiek ($WARSCORE$ [Concept('war_score','vojnového skóre')|e] z bitiek)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_GOAL_CONTROLLER_NOONE_SUP: "[Concept('war_goal','Vojnový cieľ')|e] Nikto nevyhral dostatok bitiek (potrebné viac než $WARSCORE|+=$ [Concept('war_score','vojnové skóre')|e] z bitiek)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_GOAL_BLOCKADE: "Útočník blokuje $A_BLOCK|0Y$ prístavov. Obranca blokuje $D_BLOCK|0Y$ prístavov. To dáva $WHO$ $SCORE|+$ [Concept('war_score','vojnové skóre')|e] každý mesiac. Aktuálne [Concept('war_score','vojnové skóre')|e] z [Concept('war_goal','vojnového cieľa')|e] je" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ECONOMIC_SUPPORT_CATEGORY: "CATEGORY_ECONOMY_ACTIONS" # todo: NEW TRANSLATION
@@ -2430,7 +2430,7 @@
  ROYAL_MARRIAGE_OFFER: "$ACTOR$ ponúka kráľovský sobáš medzi [CHARACTER.GetName] a [TARGET_CHARACTER.GetName]. Toto nám prinesie #TOOLTIP:$US_BREAKDOWN_TAG$ $US|+=2$#! [prestige_i], zatiaľ čo oni získajú #TOOLTIP:$THEM_BREAKDOWN_TAG$ $THEM|+=2$#! [prestige_i]." # todo: NEW TRANSLATION
  ROYAL_MARRIAGE_NO_FROM_ACTOR: "@trigger_fail! Nemáme žiadne [Concept('adult','dospelý')|e] slobodné osoby dostatočne blízko príbuzné nášmu vládcovi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ROYAL_MARRIAGE_NO_FROM_RECIP: "@trigger_no! Nemajú žiadne [Concept('adult','dospelý')|e] slobodné osoby dostatočne blízko príbuzné ich vládcovi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ROYAL_MARRIAGE_CLOSELY_RELATED: "@trigger_no![CHARACTER.GetName] a [TARGET_CHARACTER.GetName] sú príliš blízko príbuzní na to, aby sa mohli [Concept('married','V sňatku')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ROYAL_MARRIAGE_CLOSELY_RELATED: "@trigger_no![CHARACTER.GetName] a [TARGET_CHARACTER.GetName] sú príliš blízko príbuzní na to, aby sa mohli [Concept('married','zosobášiť')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ROYAL_MARRIAGE_ALL_CLOSELY_RELATED: "@trigger_no! Hoci sú vhodní [Concept('adult','dospelí')|e] kandidáti na sobáš, výsledné páry by boli príliš blízko príbuzné." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ROYAL_MARRIAGE_NO_FEMALES: "@trigger_no! Zatiaľ čo my máme [Concept('adult','dospelý')|e] slobodných mužov, ktorí sú vhodní, $NAME$ nemá žiadne vhodné ženy." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ROYAL_MARRIAGE_NO_MALES: "@trigger_no! Zatiaľ čo my máme [Concept('adult','dospelý')|e] slobodné ženy, ktorí sú vhodné, $NAME$ nemá žiadnych vhodných mužov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2499,7 +2499,7 @@
  INDEPENDENCE_AI_STATUS_HAS_WAR: "@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.GetName] už vedie [Concept('war','vojna')|e] s vrchnosťou — nová vojna za nezávislosť [Concept('war','vojna')|e] nemôže byť vyhlásená, kým prebieha existujúca." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INDEPENDENCE_AI_STATUS_AT_OTHER_WAR: "@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.GetName] je momentálne v [Concept('war','vojne')|e] s inou krajinou — AI nevyhlási nezávislosť, kým je už zapojená v aktívnom konflikte." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INDEPENDENCE_AI_STATUS_HAS_TRUCE: "@trigger_no! S vrchnosťou je momentálne aktívny [Concept('truce','prímerie')|e] — AI nemôže vyhlásiť vojnu za nezávislosť [Concept('war','vojna')|e], kým nevyprší." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INDEPENDENCE_AI_STATUS_FIGHTING_TOGETHER: "@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.GetName] sa momentálne zúčastňuje [Concept('war','vojna')|e] po boku [overlord|e] — AI nevyhlási nezávislosť, kým bojuje po boku spojenca." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INDEPENDENCE_AI_STATUS_FIGHTING_TOGETHER: "@trigger_no! [InternationalOrganizationsView.GetInternationalOrganization.GetLeaderCountry.GetName] sa momentálne zúčastňuje [Concept('war','vojna')|e] po boku [Concept('overlord','suzeréna')|e] — AI nevyhlási nezávislosť, kým bojuje po boku spojenca." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INDEPENDENCE_AI_STATUS_SHORTTERM_WEAK: "@warning_icon! Dlhodobé vyhliadky favorizujú nezávislosť, ale súčasná sila vojsk je nedostatočná, aby AI riskovala vyhlásenie [Concept('war','vojna')|e] teraz. Zmobilizujte viac armád, aby sa deklarácia spustila." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INDEPENDENCE_AI_STATUS_WAITING_FOR_CB: "@warning_icon! Šanca na víťazstvo je nad prahom, ale nezávislostný [Concept('casus_belli','casus Belli')|e] ešte nebol aktivovaný. AI ho získa pred vyhlásením [Concept('war','vojnou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INDEPENDENCE_AI_COND_WIN_CHANCE_MET: "@trigger_yes! Šanca na víťazstvo je nad prahom AI a súčasná sila vojsk je dostatočná" # todo: NEW TRANSLATION
@@ -2511,7 +2511,7 @@
  INDEPENDENCE_AI_COND_NO_WAR_OR_TRUCE: "@trigger_yes! Žiadna aktívna [Concept('war','vojna')|e] ani [Concept('truce','prímerie')|e] s vrchnosťou" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INDEPENDENCE_AI_COND_HAS_CB: "@trigger_yes! Nezávislostný [Concept('casus_belli','casus Belli')|e] je aktívny" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INDEPENDENCE_AI_COND_NO_CB: "@trigger_no! Nezávislostný [Concept('casus_belli','casus Belli')|e] ešte nebol aktivovaný — AI na jeho získaní pracuje" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INDEPENDENCE_AI_COND_FIGHTING_TOGETHER: "@trigger_no! Momentálne bojuje v [Concept('war','vojne')|e] po boku [overlord|e] — AI nemôže vyhlásiť nezávislosť počas prebiehajúcej spojeneckej [Concept('war','vojny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INDEPENDENCE_AI_COND_FIGHTING_TOGETHER: "@trigger_no! Momentálne bojuje v [Concept('war','vojne')|e] po boku [Concept('overlord','suzeréna')|e] — AI nemôže vyhlásiť nezávislosť počas prebiehajúcej spojeneckej [Concept('war','vojny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CASUS_BELLI_AND_WARGOAL: "[Concept('casus_belli','Casus Belli')|e] and [Concept('war_goal','vojnový cieľ')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ATTACKER_WARGOAL: "Útočník [Concept('war_goal','vojnový cieľ')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DEFENDER_WARGOAL: "Obranca [Concept('war_goal','vojnový cieľ')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2652,7 +2652,7 @@
  SELECT_DIPLO_ACTIONS_BUTTON_TT: "Vykonať" # todo: NEW TRANSLATION
  ORGANIZATIONS_GREAT_POWERS_POS: "Sme číslo [DiplomacyLateralView.GetGreatPowerPos] v zozname [Concept('great_power','veľmoci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ORGANIZATIONS_MEMBERS: "$NUM$" # todo: NEW TRANSLATION
- ORGANIZATIONS_LEFT_CLICK: "Zobraziť túto [international_organization|e]" # todo: NEW TRANSLATION
+ ORGANIZATIONS_LEFT_CLICK: "Zobraziť túto [Concept('international_organization','medzinárodnú organizáciu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HRE_LEFT_CLICK: "Otvoriť panel Svätej rímskej ríše" # todo: NEW TRANSLATION
  OPEN_IO: "Otvoriť panel [InternationalOrganization.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  OPEN_HRE: "Otvoriť Svätú rímsku ríšu" # todo: NEW TRANSLATION
@@ -2737,7 +2737,7 @@
  DIPLOREASON_HERETICAL_SPOUSE: "Heretický [Concept('spouse','manžel/ka')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_HEATHEN_SPOUSE: "Pohanský [Concept('spouse','manžel/ka')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_PROMISED_LAND: "Prisľúbené územie" # todo: NEW TRANSLATION
- DIPLOREASON_BELONGS_TO_INTERNATIONAL_ORGANIZATION: "Patrí do [international_organization|e]" # todo: NEW TRANSLATION
+ DIPLOREASON_BELONGS_TO_INTERNATIONAL_ORGANIZATION: "Patrí do [Concept('international_organization','medzinárodnej organizácii')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_BELONGS_TO_HIGH_KINGSHIP: "Patrí do [GetInternationalOrganizationType('high_kingship').GetName]" # todo: NEW TRANSLATION
  DIPLOREASON_SAME_RELIGION_GROUP: "Rovnaká [Concept('religion_group','náboženská skupina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_DIFFERENT_RELIGION_GROUP: "Rôzna [Concept('religion_group','náboženská skupina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2834,7 +2834,7 @@
  ANTAGONISM_MODIFIER_WITH_BREAKDOWN: "$NAME$: #TOOLTIP:$BREAKDOWN_TAG$ $MODIFIER|%-=$#!" # todo: NEW TRANSLATION
  ANTAGONISM_ADDITIVE: "$NAME$: $VALUE|-=$" # todo: NEW TRANSLATION
  ANTAGONISM_PENALTY_DOING_IT_TO_US: "Sme tu obeťou" # todo: NEW TRANSLATION
- ANTAGONISM_PENALTY_SAME_OVERLORD_AS_TARGET: "Obeť [Concept('country','krajina')|e] má rovnakého [overlord|e] ako my" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ANTAGONISM_PENALTY_SAME_OVERLORD_AS_TARGET: "Obeť [Concept('country','krajina')|e] má rovnakého [Concept('overlord','suzeréna')|e] ako my" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANTAGONISM_PENALTY_NON_COBELLIGERENT: "Obeť [Concept('country','krajina')|e] nebola pôvodným cieľom [Concept('war','vojnou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANTAGONISM_PENALTY_OVERLORD_OF_AGGRESSOR_AND_TARGET: "Sme [Concept('overlord','suzerén')|e] agresora aj obete [Concept('country','krajinu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_ANTAGONISM_REDUCTION: "Agresor je [Concept('subject','vazal')|e] a nekontroluje svoje vlastné činy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2856,8 +2856,8 @@
  ANTAGONISM_BASE_MODIFIER_DISTANCE: "Vzdialenosť cieľa [Concept('location','lokality')|e] od našich hraníc" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANTAGONISM_SPY_NETWORK: "[Concept('spy_network','Špionážna sieť')|e] agresora v [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANTAGONISM_ALREADY_CORE: "Cieľové [Concept('location','lokalita')|e] je [Concept('core','jadro')|e] agresora" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ANTAGONISM_PENALTY_GPS: "[Concept('great_power_score','Skóre veľmoci $game_concept_great_power_score_short$')|e] [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ANTAGONISM_PENALTY_GPS_DIFFERENCE: "Rozdiel v [great_power_score|e] medzi agresorom a nami" # todo: NEW TRANSLATION
+ ANTAGONISM_PENALTY_GPS: "[Concept('great_power_score','Skóre veľmoci')|e] [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ANTAGONISM_PENALTY_GPS_DIFFERENCE: "Rozdiel v [Concept('great_power_score','skóre veľmoci')|e] medzi agresorom a nami" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANTAGONISM_PENALTY_ANTAGONISEE_IS_SUBJECT_OF_ANTAGONISER: "[Concept('subject','Vazal')|e] agresora" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANTAGONISM_PENALTY_PRE_EXISTING_ANTAGONISM_MODIFIER: "Aktuálna úroveň [Concept('antagonism','antagonizmus')|e], ktorú cítime voči [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ANTAGONISM_PENALTY_POWER_PROJECTION: "Rozdiel v [Concept('power_projection','projekcii sily')|e] s [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -2897,7 +2897,7 @@
  OFFER_uc_bey_NEWDESC: "Chceme požadovať, aby sa [COUNTRY.GetName] stal naším $uc_bey$? Toto bude mať nasledujúci efekt:\n$INFO$" # todo: NEW TRANSLATION
  REQUEST_uc_bey_NEWDESC: "Chceme požiadať, aby sme sa stali $uc_bey$ [COUNTRY.GetName]? Toto bude mať nasledujúci efekt:\n$INFO$" # todo: NEW TRANSLATION
  CANCEL_uc_bey_NEWDESC: "Chceme ukončiť $uc_bey$ status [COUNTRY.GetName]?" # todo: NEW TRANSLATION
- BREAK_uc_bey_NEWDESC: "Chceme prestať byť $uc_bey$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a oni získajú proti nám [casus_belli|e]!" # todo: NEW TRANSLATION
+ BREAK_uc_bey_NEWDESC: "Chceme prestať byť $uc_bey$ [COUNTRY.GetName]?\nTo zhorší naše vzťahy a oni získajú proti nám [Concept('casus_belli','casus belli')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OFFER_uc_bey_DESC: "Navrhnite, aby sa stali naším $uc_bey$, a my ich ochránime." # todo: NEW TRANSLATION
  REQUEST_uc_bey_DESC: "Navrhnite, aby sme sa stali ich $uc_bey$, a oni nás ochránia." # todo: NEW TRANSLATION
  CANCEL_uc_bey_DESC: "Ukončiť $uc_bey$ status." # todo: NEW TRANSLATION

@@ -7,7 +7,7 @@
  rite_power: "Moc ritu" # todo: NEW TRANSLATION
  GODS_OF_THE_COUNTRY: "Bohovia [Player.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  CORE_TENETS_OF: "Základné zásady $NAME$" # todo: NEW TRANSLATION
- RELIGIOUS_UNITY_EFFECT: "Priemerné $game_concept_religious_unity$ v [COUNTRY.GetName] je $VAL|%2Y$, čo má nasledujúci efekt:\n\n$EFFECT$" # todo: NEW TRANSLATION
+ RELIGIOUS_UNITY_EFFECT: "Priemerná [Concept('religious_unity','náboženská jednota')] v [COUNTRY.GetName] je $VAL|%2Y$, čo má nasledujúci efekt:\n\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PROPOSE: "Navrhnúť" # todo: NEW TRANSLATION
  RELIGIONS_CARDINAL: "Súčasní kardináli" # todo: NEW TRANSLATION
  CARDINAL_NAME: "[CARDINAL.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -29,7 +29,7 @@
  HANDLE_SCHOLARS: "Interagovať" # todo: NEW TRANSLATION
  RELIGIOUS_ACTIONS: "Náboženské akcie" # todo: NEW TRANSLATION
  RELIGION_MODIFIERS: "Náboženské modifikátory" # todo: NEW TRANSLATION
- INVITE_SCHOLAR_TITLE: "Pozvať $game_concept_religious_figure$" # todo: NEW TRANSLATION
+ INVITE_SCHOLAR_TITLE: "Pozvať [Concept('religious_figure','náboženského predstaviteľa')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INVITE_SCHOLAR_DESC: "Pozvať $NAME$, aby vyučoval v našej krajine." # todo: NEW TRANSLATION
  INVITED_SCHOLAR_DESC: "$NAME$ učí v našej krajine." # todo: NEW TRANSLATION
  INVITED_SCHOLAR_EFFECTS: "$MODIFIERS$" # todo: NEW TRANSLATION
@@ -46,7 +46,7 @@
  change_liturgical_language_desc: "Zmeniť [Concept('liturgical_language','liturgický jazyk')|e] nášho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  change_liturgical_language_select_dailect: "Vyberte nový [Concept('dialect','dialekt')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  change_court_language: "Zmeniť jazyk dvora" # todo: NEW TRANSLATION
- change_court_language_desc: "Zmeňte [Concept('court_language','jazyk dvora')|e] nášho [Concept('country','krajiny')|e]\n\nMôžeme zmeniť náš jazyk dvora na:\n$BULLET$[common_language],\n$BULLET$[liturgical_language],\n$BULLET$[Concept('dominant_dialect','Dominantný dialekt')|e],\n$BULLET$Jazyk [Concept('market_language','jazyk trhu')|e] nášho [capital],\n$BULLET$Jazyk [Concept('accepted_culture','akceptovaná kultúra')|e],\n$BULLET$Jazyk nášho panovníka,\n$BULLET$Jazyk hlavy našej dynastie,\n$BULLET$Jazyk [court_language] lídra [Concept('international_organization_leader','lídra medzinárodnú organizácie')|e],\n$BULLET$Jazyk [court_language] nášho [overlord|e]." # todo: CHANGED # todo: CONCEPT CASE
+ change_court_language_desc: "Zmeňte [Concept('court_language','jazyk dvora')|e] nášho [Concept('country','krajiny')|e]\n\nMôžeme zmeniť náš jazyk dvora na:\n$BULLET$[common_language],\n$BULLET$[liturgical_language],\n$BULLET$[Concept('dominant_dialect','Dominantný dialekt')|e],\n$BULLET$Jazyk [Concept('market_language','jazyk trhu')|e] nášho [capital],\n$BULLET$Jazyk [Concept('accepted_culture','akceptovaná kultúra')|e],\n$BULLET$Jazyk nášho panovníka,\n$BULLET$Jazyk hlavy našej dynastie,\n$BULLET$Jazyk [court_language] lídra [Concept('international_organization_leader','lídra medzinárodnú organizácie')|e],\n$BULLET$Jazyk [court_language] nášho [Concept('overlord','suzeréna')|e]." # todo: CHANGED # todo: CONCEPT CASE
  orthodox_synod: "Pravoslávny synod" # todo: NEW TRANSLATION
  orthodox_synod_desc: "Zvolať Svätý synod. Toto je najvyššia autorita v Cirkvi a formuluje pravidlá a predpisy týkajúce sa organizácie Cirkvi, viery a poriadku bohoslužieb." # todo: NEW TRANSLATION
  periphora: "Periphora" # todo: NEW TRANSLATION
@@ -80,10 +80,10 @@
  HOLY_SITE_TT_RELIGION_INFO: "Sväté miesto pre: #subtle_name [RELIGION.GetNameNoUnderline]#![RELIGION.GetIcon]" # todo: NEW TRANSLATION
  HOLY_SITE_TT_GOD_INFO: "Súvisí s [Concept('god','bohom')|e]: [GOD.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOD_POSSIBLE_EFFECTS_HEADER: "#weak Možné účinky:#!" # todo: NEW TRANSLATION
- HOLY_SITE_TT_AVATAR_INFO: "Súvisí s [avatar|e]: [AVATAR.GetName]." # todo: NEW TRANSLATION
- HOLY_SITE_TT_RELIGION: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ všetky $RELIGIONS$ [Concept('countries','krajiny')|e] získajú:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HOLY_SITE_TT_COUNTRY: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ [COUNTRY.GetNameWithFlag] získa:\n$INFO$" # todo: NEW TRANSLATION
- HOLY_SITE_TT_LOCATION: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ [LOCATION.GetName] [Concept('location','lokalita')|e] získava:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_AVATAR_INFO: "Súvisí s [Concept('avatar','avatarom')|e]: [AVATAR.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_RELIGION: "Vďaka úrovni [Concept('holy_site_importance','dôležitosti svätého miesta')|e] $LEVEL$ všetky $RELIGIONS$ [Concept('countries','krajiny')|e] získajú:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_COUNTRY: "Vďaka úrovni [Concept('holy_site_importance','dôležitosti svätého miesta')|e] $LEVEL$ [COUNTRY.GetNameWithFlag] získa:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_LOCATION: "Vďaka úrovni [Concept('holy_site_importance','dôležitosti svätého miesta')|e] $LEVEL$ [LOCATION.GetName] [Concept('location','lokalita')|e] získava:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SAINTS_SORT_BY_NAME: "Kliknite pre zoradenie podľa mena [Concept('saint','svätý')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SAINTS_SORT_BY_COUNTRY: "Zoradiť podľa názvu krajiny [Concept('saint','svätého')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HOLY_SITES_SORT_BY_NAME: "Zoradiť podľa názvu [Concept('holy_site','svätého miesta')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -923,15 +923,15 @@
  MUSLIM_GOD: "Alláh" # todo: NEW TRANSLATION
  god_desc: "Boh je hlavné božstvo v konkrétnom náboženstve. Zatiaľ čo niektoré náboženstvá môžu obsahovať mnoho bohov a uctievať ich viac-menej rovnako, iné môžu sústrediť svoju vieru do jedného špecifického božstva, a ďalšie môžu popierať existenciu iných bohov okrem svojho vlastného." # todo: NEW TRANSLATION
  god_monarch_power_desc_none: "Tento [GOD.GetGodOrGoddessWithNoTooltip] nie je spojený s žiadnou [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- god_monarch_power_desc_adm: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [adm_short_with_icon|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- god_monarch_power_desc_dip: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [dip_short_with_icon|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- god_monarch_power_desc_mil: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [mil_short_with_icon|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_MODIFIER_RULER_adm: "[RULER.GetShortName] – [adm_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_MODIFIER_RULER_dip: "[RULER.GetShortName] – [dip_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_MODIFIER_RULER_mil: "[RULER.GetShortName] – [mil_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "$RULER_NAME$ – [adm_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "$RULER_NAME$ – [dip_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "$RULER_NAME$ – [mil_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ god_monarch_power_desc_adm: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [Concept('adm_short_with_icon','administratívnym')|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ god_monarch_power_desc_dip: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [Concept('dip_short_with_icon','diplomatickým')|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ god_monarch_power_desc_mil: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [Concept('mil_short_with_icon','vojenským')|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_MODIFIER_RULER_adm: "[RULER.GetShortName] – [Concept('adm_short_with_icon','administratívny')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_MODIFIER_RULER_dip: "[RULER.GetShortName] – [Concept('dip_short_with_icon','diplomatický')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_MODIFIER_RULER_mil: "[RULER.GetShortName] – [Concept('mil_short_with_icon','vojenský')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "$RULER_NAME$ – [Concept('adm_short_with_icon','administratívny')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "$RULER_NAME$ – [Concept('dip_short_with_icon','diplomatický')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "$RULER_NAME$ – [Concept('mil_short_with_icon','vojenský')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_POWER_PILL_TT_adm: "[Concept('omens','Omeny')|e] pre [Concept('adm_short','administratívneho')|e] [Concept('gods','bohov')|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [Concept('ruler','panovníkovi')|e]'s #W $SKILL$#! [Concept('adm','administratívnou schopnosťou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_POWER_PILL_TT_dip: "[Concept('omens','Omeny')|e] pre [Concept('dip_short','diplomatického')|e] [Concept('gods','bohov')|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [Concept('ruler','panovníkovi')|e]'s #W $SKILL$#! [Concept('dip','diplomatickou schopnosťou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_POWER_PILL_TT_mil: "[Concept('omens','Omeny')|e] pre [Concept('mil_short','vojenského')|e] [Concept('gods','bohov')|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [Concept('ruler','panovníkovi')|e]'s #W $SKILL$#! [Concept('mil','vojenskou schopnosťou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -947,9 +947,9 @@
  OMEN_RELATED_GOD: "Tento [Concept('omen','omen')|e] môže byť udelený [GOD.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_TIME_LEFT: "Vyprší o $TIME$" # todo: NEW TRANSLATION
  omen_monarch_power_scale_desc_none: "Účinok tohto [Concept('omen','omen')|e] nie je upravovaný žiadnou [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- omen_monarch_power_scale_desc_adm: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [adm_short_with_icon|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- omen_monarch_power_scale_desc_dip: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [dip_short_with_icon|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- omen_monarch_power_scale_desc_mil: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [mil_short_with_icon|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ omen_monarch_power_scale_desc_adm: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [Concept('adm_short_with_icon','administratívny')|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ omen_monarch_power_scale_desc_dip: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [Concept('dip_short_with_icon','diplomatický')|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ omen_monarch_power_scale_desc_mil: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [Concept('mil_short_with_icon','vojenský')|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MONARCH_POWER_PERCENTAGE_IN_COUNTRY_SCALE_SCRIPT_DESC: "$POWER_NAME$ (škálovanie omenov)" # todo: NEW TRANSLATION
  god_omens_desc: "Tento boh môže udeliť nasledujúce [Concept('omens','omeny')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  inti: "Inti" # todo: NEW TRANSLATION
@@ -1048,7 +1048,7 @@
  shakti_god: "Śakti" # todo: NEW TRANSLATION
  shakti_god_desc: "$shakti_god$ je významná [Concept('goddess','bohyňa')|e] v [ShowReligionName('hindu')], uctievaná ako základná kozmická energia. Je uctievaná ako najvyššia [goddess] alebo Devī v [ShowPolicyName('shaktism')], a mnohé ďalšie [goddesses] sú uctievané ako rôzne aspekty $shakti_god$. Niektoré z nich môžu dokonca nadobúdať mnoho ďalších podôb." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  vishnu_god: "Viṣṇu" # todo: NEW TRANSLATION
- vishnu_god_desc: "$vishnu_god$ je jedným z hlavných [Concept('gods','bohov')|e] [ShowReligionName('hindu')], a hlavným v [ShowPolicyName('vaishnavism')]. Je považovaný za najvyššiu bytosť, ktorá sa zjavuje na zemi v podobe svojich desiatich [avatars|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ vishnu_god_desc: "$vishnu_god$ je jedným z hlavných [Concept('gods','bohov')|e] [ShowReligionName('hindu')], a hlavným v [ShowPolicyName('vaishnavism')]. Je považovaný za najvyššiu bytosť, ktorá sa zjavuje na zemi v podobe svojich desiatich [Concept('avatars','avatarov')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  surya_god: "Sūrya" # todo: NEW TRANSLATION
  surya_god_desc: "$surya_god$ je božstvo Slnka v [ShowReligionName('hindu')], a jedno z hlavných božstiev [ShowPolicyName('smartism')]." # todo: NEW TRANSLATION
  samkhya_school: "Sāṃkhya" # todo: NEW TRANSLATION
@@ -1107,7 +1107,7 @@
  hindu_branch_spec: "Tradícia" # todo: NEW TRANSLATION
  hindu_branch_spec_desc: "Konkrétne tradície a presvedčenia nasledované týmto [Concept('hindu_branch','hinduistickej odnoži')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  vaishnavism: "Vaishnavism" # todo: NEW TRANSLATION
- vaishnavism_desc: "$vaishnavism$ je [Concept('hindu_branch','hinduistická odnož')|e] sústredená okolo uctievania [ShowGodName('vishnu_god')] a jeho desiatich [avatars|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ vaishnavism_desc: "$vaishnavism$ je [Concept('hindu_branch','hinduistická odnož')|e] sústredená okolo uctievania [ShowGodName('vishnu_god')] a jeho desiatich [Concept('avatars','avatarov')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  shaivism: "Shaivism" # todo: NEW TRANSLATION
  shaivism_desc: "$shaivism$ je [Concept('hindu_branch','hinduistická odnož')|e] uctievajúca [ShowGodName('shiva_god')] ako najvyššie [Concept('god','boh')|e]. Je to [hindu_branch], ktorá je viac zameraná na askézu a jogu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  shaktism: "Shaktism" # todo: NEW TRANSLATION
