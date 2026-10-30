@@ -12,7 +12,7 @@
  catholic_flavor.3.a: "Darujeme im nejaké peniaze." # todo: NEW TRANSLATION
  catholic_flavor.3.b: "To nie je náš problém." # todo: NEW TRANSLATION
  catholic_flavor.4.title: "Simónia?" # todo: NEW TRANSLATION
- catholic_flavor.4.desc: "Máme voľné miesto na vysokej pozícii v cirkevnej správe [ROOT.GetCountry.GetName]. Istý cirkevný hodnostár z bohatej rodiny menom [target_character.GetName] predložil lákavú ponuku: ak schválime a podporíme [target_character.GetHerHis] zvolenie na túto pozíciu, získame veľký príspevok do našej pokladnice. Niektorí zbožní tvrdia, že ide o hriech nazývaný simónia, ale čo oni vedia?" # todo: NEW TRANSLATION
+ catholic_flavor.4.desc: "Máme voľné miesto na vysokej pozícii v cirkevnej správe [ROOT.GetCountry.GetAltAdjective('D')]. Istý cirkevný hodnostár z bohatej rodiny menom [target_character.GetName] predložil lákavú ponuku: ak schválime a podporíme [target_character.GetHerHis] zvolenie na túto pozíciu, získame veľký príspevok do našej pokladnice. Niektorí zbožní tvrdia, že ide o hriech nazývaný simónia, ale čo oni vedia?" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  catholic_flavor.4.a: "Potrebujeme peniaze!" # todo: NEW TRANSLATION
  catholic_flavor.4.b: "Simónia je hriech!" # todo: NEW TRANSLATION
  catholic_flavor.5.title: "Predaj odpustkov" # todo: NEW TRANSLATION
@@ -89,14 +89,23 @@
  catholic_flavor.103.title: "Odmietnutý kardinál-synovec" # todo: NEW TRANSLATION
  catholic_flavor.103.desc: "[cardinal_nephew_country.GetName] odmietol vymenovať synovca [ROOT.GetCountry.GetGovernment.GetRulerTitle] na kardinála v [cardinal_nephew_province.GetName]." # todo: NEW TRANSLATION
  catholic_flavor.103.a: "[ROOT.GetCountry.Custom('common_string_disappointing')]" # todo: NEW TRANSLATION
- catholic_flavor.1000.title: " [ShowBuildingTypeNameWithNoTooltip('seat_of_cardinal')] pre [SCOPE.sCountry('actor').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- catholic_flavor.1000.desc: "Požiadal nás [SCOPE.sCountry('actor').GetName] o udelenie nového [ShowBuildingTypeName('seat_of_cardinal')]. Ak žiadosť schválime, kardinál by sídlil v [target_location.GetName]." # todo: NEW TRANSLATION
+ catholic_flavor.1000.title: " [ShowBuildingTypeNameWithNoTooltip('seat_of_cardinal')] pre [SCOPE.sCountry('actor').GetAltAdjectiveWithNoTooltip('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ catholic_flavor.1000.desc: "Požiadal nás [SCOPE.sCountry('actor').GetAltAdjective('A')] o udelenie nového [ShowBuildingTypeName('seat_of_cardinal')]. Ak žiadosť schválime, kardinál by sídlil v [target_location.GetName]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  catholic_flavor.1000.a: "Schváliť ich žiadosť." # todo: NEW TRANSLATION
  catholic_flavor.1000.b: "Musíme ich odmietnuť." # todo: NEW TRANSLATION
  catholic_flavor.1001.desc: "[GetInternationalOrganization('catholic_church').GetLeaderTitle] nám milostivo schválil žiadosť o príchod nového kardinála do [target_location.GetName]. Stavba vhodného ubytovania pre takú pozíciu už začala." # todo: NEW TRANSLATION
  catholic_flavor.1001.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  catholic_flavor.1002.desc: "[GetInternationalOrganization('catholic_church').GetLeaderTitle] bohužiaľ odmietol našu žiadosť o udelenie [ShowBuildingTypeName('seat_of_cardinal')]. Nemôžeme nič iné robiť, len dúfať, že budú v budúcnosti zhovievavejší." # todo: NEW TRANSLATION
  catholic_flavor.1002.a: "[ROOT.GetCountry.Custom('common_string_disappointing')]" # todo: NEW TRANSLATION
+ catholic_flavor.1003.title: "Kandidát na svätorečenie" # todo: NEW TRANSLATION
+ catholic_flavor.1003.desc: "[canonization_proposer.GetName] nás žiada o svätorečenie [canonization_candidate.GetName] a vyzdvihuje [canonization_candidate.GetHerHis] zbožnosť a oddanosť viere." # todo: NEW TRANSLATION
+ catholic_flavor.1003.a: "Vyhlásme ho za svätého." # todo: NEW TRANSLATION
+ catholic_flavor.1003.b: "Jeho zbožnosť si takú poctu nezaslúži." # todo: NEW TRANSLATION
+ opinion_venerated_folk_saint_in_defiance: "Uctievali ľudového svätca napriek zákazu" # todo: NEW TRANSLATION
+ catholic_flavor.1004.title: "Zamietnutá žiadosť" # todo: NEW TRANSLATION
+ catholic_flavor.1004.desc: "[GetInternationalOrganization('catholic_church').GetLeaderTitle] odmietol svätorečiť [canonization_candidate.GetName]. Naše [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú sklamané, hoci niektorí ľudia šepkajú, že rozhodnutie bolo nesprávne." # todo: NEW TRANSLATION
+ catholic_flavor.1004.a: "Podriaďme sa pápežovmu rozhodnutiu." # todo: NEW TRANSLATION
+ catholic_flavor.1004.b: "Uctievajme ho aj tak ako ľudového svätca." # todo: NEW TRANSLATION
  catholic_flavor.9000.title: "Reforma [ShowGovernmentReformNameWithNoTooltip('papacy_reform')]" # todo: NEW TRANSLATION
  catholic_flavor.9000.desc: "Z dôvodov mimo našej kontroly sme stratili [ShowGovernmentReformName('papacy_reform')]. Táto situácia je neprijateľná a musíme okamžite znovu ustanoviť [GetInternationalOrganization('catholic_church').GetLeaderTitle] ako nášho vládcu." # todo: NEW TRANSLATION
- catholic_flavor.9000.a: "[ROOT.GetCountry.Custom('common_string_positive')]"" # todo: NEW TRANSLATION
+ catholic_flavor.9000.a: "[ROOT.GetCountry.Custom('common_string_positive')]„" # todo: NEW TRANSLATION

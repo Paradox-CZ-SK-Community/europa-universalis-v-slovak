@@ -5,7 +5,7 @@
  flavor_mfa.1.a: "[target_character2.GetNameWithNoTooltip] sa múdro prispôsobil." # todo: NEW TRANSLATION
  flavor_mfa.1.a.entry: "Náš vládca sa múdro prispôsobil." # todo: NEW TRANSLATION
  flavor_mfa.1.b: "Neopustíme naše korene!" # todo: NEW TRANSLATION
- mfa_extra_information_about_reform: "[Concept('modifiers','Modifikátory')|e] [target_government_reform.GetName] sa menia od negatívnych po pozitívne na základe percenta [ShowCultureName('greek_culture')] [Concept('culture','kultúry')|e] a percenta [ShowReligionAdjective('orthodox')] [Concept('religion','náboženstva')|e]. Ako sa [ROOT.GetCountry.GetName] konvertuje, tresty sa postupne zmenia na pozitíva. Modifikátory sa pohybujú od #N -1#! do #G +1#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ mfa_extra_information_about_reform: "[Concept('modifiers','Modifikátory')|e] [target_government_reform.GetName] sa menia od negatívnych po pozitívne na základe percenta [ShowCultureName('greek_culture')] [Concept('culture','kultúry')|e] a percenta [ShowReligionAdjective('orthodox')] [Concept('religion','náboženstva')|e]. Ako sa [ROOT.GetCountry.GetAltAdjective('A')] konvertuje, tresty sa postupne zmenia na pozitíva. Modifikátory sa pohybujú od #N -1#! do #G +1#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  mfa_opportunity_for_thessaloniki: "Ak bude [target_government_reform.GetName] prijatá a dosiahneme #W 75.0%#! podiel [ShowCultureName('greek_culture')] [Concept('culture','kultúra')|e] a [ShowReligionAdjective('orthodox')] [Concept('religion','náboženstvo')|e], budeme môcť požiadať [target_country.GetName] o léno v [ShowLocationName('thessaloniki')] a jeho okolí" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_mfa.2.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_mfa.2.entry: "Facino Cane" # todo: NEW TRANSLATION
@@ -51,7 +51,7 @@
  flavor_mfa.1000.a: "Zorganizujme kampaň." # todo: NEW TRANSLATION
  flavor_mfa.1000.b: "Boli by sme blázni viesť vojnu na základe takýchto frivolných nárokov." # todo: NEW TRANSLATION
  recipient_agrees_to_join_war: "[recipient.GetName] sľúbi, že sa do niekoľkých rokov pridá k [actor.GetName] vo vojne proti [GetCountry('BYZ').GetLongName]" # todo: NEW TRANSLATION
- MFA_gather_allies: "[ROOT.GetCountry.GetName] sa pokúsi získať spojencov použitím [ShowCountryInteractionName('mfa_join_against_byz')] [Concept('country_interaction','interakciou s krajinou')|e]\nZa #W 3 roky#! sa spustí [Concept('event','udalosť')|e], ktorý vyhlási [Concept('war','vojna')|e] s pomocou získaných podporovateľov" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MFA_gather_allies: "[ROOT.GetCountry.GetName] sa pokúsi získať spojencov použitím [ShowCountryInteractionName('mfa_join_against_byz')] [Concept('country_interaction','interakciou s krajinou')|e]\n[ShowDecisionName('mfa_start_war_against_byz_decision')] [Concept('decision','Rozhodnutie')|e] bude k dispozícii na začatie [Concept('war','vojna')|e]" # todo: CHANGED (predtym: [ROOT.GetCountry.GetName] sa pokúsi získať spojencov použitím [ShowCountryInteractionName('mfa_join_against_byz')] [Conc) # todo: CONCEPT CASE
  flavor_mfa.1001.title: "Uspokojenie [from_country.GetAdjectiveWithNoTooltip] pretendentov" # todo: NEW TRANSLATION
  flavor_mfa.1001.desc: "Zbabelí [from_country.GetAdjective] [target_character.GetDynasty.GetName] využívajú svoj pôvod z rodu [target_character3.GetDynasty.GetName], aby si nárokovali [ShowScriptedGeographyName('claims_of_thessalonica_geography')]. Naši špióni hlásia, že sa snažia zostaviť [ShowCultureGroupName('italian_group')] ligu, aby sa pokúsili vyrvať tieto územia počas nášho momentu slabosti v [ShowDisasterName('byzantine_succession_crisis')]." # todo: NEW TRANSLATION
  flavor_mfa.1001.a: "Neodovzdáme tým zradcom ani kúsok územia!" # todo: NEW TRANSLATION
@@ -59,11 +59,12 @@
  flavor_mfa.1001.c: "Môžu mať všetko, nám je to jedno!" # todo: NEW TRANSLATION
  mfa_offer_few_provinces: "Ponúkneme [from_country.GetName] [Concept('provinces','provincie')|e] [ShowProvinceDefinitionName('chalkidiki_province')], [ShowProvinceDefinitionName('lower_macedonia_province')], a [ShowProvinceDefinitionName('central_macedonia_province')] aby sme ich uspokojili" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  mfa_offer_entire_geography: "Ponúkneme [from_country.GetName] všetky naše územia v rámci [ShowScriptedGeographyName('claims_of_thessalonica_geography')]" # todo: NEW TRANSLATION
+ mfa_start_war_against_byz_decision.title: "$flavor_mfa.1002.title$" # todo: NEW TRANSLATION
+ mfa_start_war_against_byz_decision.desc.entry: "Nastal čas povolať našich spojencov a konečne sa postaviť našim príbuzným v [ShowScriptedGeographyName('greece_geography')]." # todo: NEW TRANSLATION
+ mfa_start_war_against_byz_decision.desc: "$flavor_mfa.1002.desc$" # todo: NEW TRANSLATION
  flavor_mfa.1002.title: "Príhodný okamih" # todo: NEW TRANSLATION
  flavor_mfa.1002.desc: "Prešlo veľa času, odkedy sme začali zhromažďovať spojencov pre našu kampaň proti [target_country.GetLongName]. Naši nepriatelia, značne oslabení svojimi vnútornými rozbrojmi, zostávajú ideálnym cieľom pre vojnu dobyvateľskú. Keď mnohí spojenci prisľúbili svoju podporu našej veci, možno je čas dokázať, ktorý rod [target_dynasty.GetName] je nadradený." # todo: NEW TRANSLATION
  flavor_mfa.1002.a: "Rozpútajme vojnu!" # todo: NEW TRANSLATION
- flavor_mfa.1002.b: "Teraz nie je ten správny čas." # todo: NEW TRANSLATION
- flavor_mfa.1002.c: "Radšej by sme mali tento plán opustiť." # todo: NEW TRANSLATION
  flavor_mfa.1003.title: "Dodržať našu dohodu" # todo: NEW TRANSLATION
  flavor_mfa.1003.desc: "Vojna s [target_country.GetLongName] konečne vypukla a sme vyzvaní splniť náš sľub [from_country.GetName]. Pomôžeme tejto občianskej vojne rodu [target_character.GetDynasty.GetName], alebo necháme [from_country.GetLongNameWithNoTooltip] samých, nech si poradia v [target_war.GetName]?" # todo: NEW TRANSLATION
  flavor_mfa.1003.a: "Neopustíme našich spojencov." # todo: NEW TRANSLATION

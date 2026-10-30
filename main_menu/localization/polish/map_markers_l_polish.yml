@@ -8,10 +8,10 @@
  PORT_NO_VISIBILITY: "Nevieme, či sú v tomto [Concept('port','prístave')|e] umiestnené lode." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ARMY_STACK_MORE: ".. a $MEN|V$ [manpower_i] z $VAL$ ďalších [Concept('armies','armád')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NAVY_STACK_MORE: ".. a $SHIP|V$ @navy_generic! z $VAL$ ďalších [Concept('navies','námorných síl')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ARMY_TOOLTIP_IN_PROVINCE_HEADER: "#T [UNIT.GetName]#!\n[UNIT.GetVisualStrength] [manpower_i] z [UNIT.GetCountry.GetName]" # todo: NEW TRANSLATION
- ARMY_TOOLTIP_IN_PROVINCE: "$BULLET_WITH_TAB$[UNIT.GetName] s [UNIT.GetVisualStrength] [manpower_i] z [UNIT.GetCountry.GetName] v [UNIT.GetLocation.GetName]" # todo: NEW TRANSLATION
- NAVY_TOOLTIP_IN_PROVINCE_HEADER: "#T [UNIT.GetName]#!\n[UNIT.GetVisualStrength] @navy_generic! z [UNIT.GetCountry.GetName]" # todo: NEW TRANSLATION
- NAVY_TOOLTIP_IN_PROVINCE: "$BULLET_WITH_TAB$[UNIT.GetName] s [UNIT.GetVisualStrength] @navy_generic! z [UNIT.GetCountry.GetName] v [UNIT.GetLocation.GetName]" # todo: NEW TRANSLATION
+ ARMY_TOOLTIP_IN_PROVINCE_HEADER: "#T [UNIT.GetName]#!\n[UNIT.GetVisualStrength] [manpower_i] z [UNIT.GetCountry.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ ARMY_TOOLTIP_IN_PROVINCE: "$BULLET_WITH_TAB$[UNIT.GetName] s [UNIT.GetVisualStrength] [manpower_i] z [UNIT.GetCountry.GetAltAdjective('G')] v [UNIT.GetLocation.GetName]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ NAVY_TOOLTIP_IN_PROVINCE_HEADER: "#T [UNIT.GetName]#!\n[UNIT.GetVisualStrength] @navy_generic! z [UNIT.GetCountry.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ NAVY_TOOLTIP_IN_PROVINCE: "$BULLET_WITH_TAB$[UNIT.GetName] s [UNIT.GetVisualStrength] @navy_generic! z [UNIT.GetCountry.GetAltAdjective('G')] v [UNIT.GetLocation.GetName]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  NO_LEADER_TT: "#T Žiadny veliteľ#!\nTáto jednotka nemá veliteľa\n\n$CLICK_TO_SELECT$" # todo: NEW TRANSLATION
  GENERAL_TT: "[UnitMarkerItem.GetUnit.GetCommander.GetName] s [UnitMarkerItem.GetUnit.GetCommander.GetTotalAbility|Y]" # todo: NEW TRANSLATION
  GENERAL_COMBAT_MARKER_TT: "[CombatSide.GetCommander.GetName] s [CombatSide.GetCommander.GetTotalAbility|Y]" # todo: NEW TRANSLATION
@@ -48,6 +48,7 @@
  OCCUPATION_X_DAYS_LEFT: "$VAL|Y$ deň(ov) zostáva" # todo: NEW TRANSLATION
  OCCUPATION_X_DAYS_LEFT_SHORT: "$VAL|Y$d" # todo: NEW TRANSLATION
  OCCUPATION_FINISHED_IN_X_DAYS: "Obsadenie bude dokončené za $VAL|Y$ deň(ov).\nDĺžka tohto obsadenia je spôsobená:\n$WHY$" # todo: NEW TRANSLATION
+ OCCUPATION_FINISHED_IN_X_DAYS_NO_GARRISON: "Pre nedostatok [Concept('garrison','posádka')|e] v tejto pevnosti sa obsadenie skončí za $VAL|Y$ deň/dní.\nTrvanie tohto obsadenia je spôsobené:\n$WHY$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SIEGE_IS_OVER: "Obliehanie skončilo" # todo: NEW TRANSLATION
  MAPICON_CREATE_MARKET_TT: "$NAME|Y$ bude dokončené $WHEN|Y$." # todo: NEW TRANSLATION
  MAPICON_BUILD_CAPITAL_TT: "$NAME|Y$ bude dokončené $WHEN|Y$." # todo: NEW TRANSLATION
@@ -56,10 +57,11 @@
  MAPICON_SHIP_ENTRY_TT: "$NAME$ v $WHEN$" # todo: NEW TRANSLATION
  MAPICON_BUILD_RECRUIT_TT: "Nábor $NAME|Y$, ktorý bude dokončený $WHEN|Y$." # todo: NEW TRANSLATION
  CITY_MARKER_TOOLTIP: "[LOCATION.GetRank.GetName] v [LOCATION.GetName]" # todo: NEW TRANSLATION
- CITY_MARKER_TOOLTIP_CAPITAL: "[Concept('capital','Hlavné mesto')|e] krajiny [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CITY_MARKER_TOOLTIP_CAPITAL: "[Concept('capital','Hlavné mesto')|e] krajiny [COUNTRY.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  BLOCKED_VISION_TOOLTIP: "Nepriateľské [Concept('units','jednotky')|e] môžu byť v [LOCATION.GetName] [Concept('hidden','skrytý')|e] kvôli nasledujúcim vlastnostiam:\n$WHY$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BLOCKED_VISION_TOOLTIP_TEXT: "Obmedzené videnie" # todo: NEW TRANSLATION
  WINTER_BLOCKED_TOOLTIP: "[LOCATION.GetName] je momentálne zablokované [Concept('winter','zima')|e]. Vojská nemôžu vstúpiť ani prechádzať cez túto lokalitu, kým zima neskončí." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WINTER_BLOCKED_TOOLTIP_TEXT: "Blokované zimou" # todo: NEW TRANSLATION
  DESERT_CONNECTOR_TOOLTIP: "Púštne spojenie" # todo: NEW TRANSLATION
  DESERT_CONNECTOR_TOOLTIP_TEXT: "[LOCATION.GetName] spája nasledujúce [Concept('locations','lokality')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CANAL_CONNECTOR_TOOLTIP_TEXT: "$CANAL_LOCATION_DESC$\nTento kanál spája nasledujúce [Concept('locations','lokality')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE

@@ -9,7 +9,7 @@
  landgraviate_desc: "A [ShowGovernmentReformName('landgraviate')], pomenovaný po #italic landgróf#!, funguje ako priamá jurisdikcia [GetInternationalOrganization('hre').GetName] v inak rozdrobených oblastiach grófstiev. Landgróf je priamym zástupcom práv [GetInternationalOrganization('hre').GetLeaderTitle] v zemiach [ShowGovernmentReformNameWithNoTooltip('landgraviate')] a je porovnateľný s titulom vojvodu z hľadiska právomocí a povinností." # todo: NEW TRANSLATION
  french_feudal_nobility: "Francúzska feudálna šľachta" # todo: NEW TRANSLATION
  french_feudal_nobility_desc: "Feudalizmus pevne ovláda záležitosti francúzskeho dvora. Mocní šľachtici a autonómni, decentralizovaní poddaní majú bezprecedentnú mieru slobody a slova pri našej vnútornnej správe." # todo: NEW TRANSLATION
- fra_removed_when_no_appanages_tt: "Táto [Concept('government_reform','reforma vlády')|e] môže byť odstránená len prostredníctvom $flavor_fra.1103.title$ [Concept('dynamic_historical_event','dynamickej historickej udalosti')|e], ktorá môže nastať, keď už nezostanú žiadni [ShowSubjectTypeName('appanage')] [Concept('subjects','vazali')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ fra_removed_when_no_appanages_tt: "Táto [Concept('government_reform','reforma vlády')|e] môže byť odstránená len prostredníctvom $fra_centralize_monarchy_decision.title$ [Concept('decision','rozhodnutia')|e], ktoré možno prijať, keď už nezostanú žiadni [ShowSubjectTypeName('appanage')] [Concept('subjects','vazali')|e]." # todo: CHANGED (predtym: Táto [Concept('government_reform','reforma vlády')|e] môže byť odstránená len prostredníctvom $flavor_fra.1103.title$ [C)
  french_appanage_reform: "Francúzske apanáže" # todo: NEW TRANSLATION
  french_appanage_reform_desc: "Ako princovia krvi majú držitelia apanáží vyššie postavenie medzi poddanými [GetCountry('FRA').GetName] a väčšie privilégiá. Navyše sa od [GetCountry('FRA').GetAdjective] monarchy očakáva, že im vďaka ich pomoci v diplomatických záležitostiach prejaví primeraný rešpekt." # todo: CHANGED
  french_ducal_vassal_reform: "Francúzsky vévodský vazal" # todo: NEW TRANSLATION
@@ -204,6 +204,8 @@
  every_coastal_location_gains_tt: "Každé vlastnené [Concept('coastal','pobrežný')|e] [Concept('location','lokality')|e] získa:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  plutocratic_monarchy: "Plutokratická monarchia" # todo: NEW TRANSLATION
  plutocratic_monarchy_desc: "Monarchia, ktorá spravuje svoje financie spoliehaním sa na obchodnícku triedu a zabezpečením toku obchodu." # todo: NEW TRANSLATION
+ promotion_of_manufactures: "Podpora manufaktúr" # todo: NEW TRANSLATION
+ promotion_of_manufactures_desc: "Štát, ktorý myslí na svoj kapitál, aktívne podporuje svoje manufaktúry a umožňuje nám presadiť ďalšie odvetvie v celej ríši." # todo: NEW TRANSLATION
  agrarian_community: "Agrárna komunita" # todo: NEW TRANSLATION
  agrarian_community_desc: "Naše územia obdŕbajú ľudia rôzneho vyznania a pôvodu. Pestovanie pocitu komunity a sústreďovanie ich spoločnej identity ako našich poddaných zníži trenie a sústredí všetkých na naše spoločné ciele." # todo: NEW TRANSLATION
  agrarian_community_town_right_unlock_tt: "Udeľuje prístup k [ShowTownRightsName('agrarian_community_town_right')]" # todo: NEW TRANSLATION
@@ -218,10 +220,14 @@
  enlightened_leadership_reform_town_right_unlock_tt: "Udeľuje prístup k [ShowTownRightsName('enlightened_leadership_reform_town_right')]" # todo: NEW TRANSLATION
  hermit_country_reform: "Krajina pustovníkov" # todo: NEW TRANSLATION
  hermit_country_reform_desc: "Náš štát musí zostať odolný proti zahraničným hrozbám, ešte skôr než rivali odhalia svoje úmysly. Starostlivým plánovaním diplomatických spojení s cudzími krajinami môžeme znížiť riziko, že si vymyslia zámienky na vojnu proti nám." # todo: NEW TRANSLATION
+ tle_support_of_banu_al_wad: "Investitúra $banu_al_wad$" # todo: NEW TRANSLATION
+ tle_support_of_banu_al_wad_desc: "Naša schopnosť vládnuť tomuto štátu do veľkej miery závisí od podpory [ShowCultureName('zenati')] $banu_al_wad$ v okolí [ShowLocationName('oran')]. Ak naša podpora medzi [ShowEstateTypeName('tribes_estate')] ochabne, oslabí sa aj naša legitimita a schopnosť účinne vládnuť." # todo: NEW TRANSLATION
+ scales_with_tribes_estate_satisfaction: "[ShowModifierTypeName('tribes_estate_levy_size')] sa môže zvýšiť až na #G +100.0%#! a [ShowModifierTypeName('monthly_legitimacy')] až na #G +0.20#! v závislosti od [Concept('estate_satisfaction','spokojnosti stavu')|e] [ShowEstateTypeName('tribes_estate')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ monthly_control_with_tribes_satisfaction: "[ShowModifierTypeName('global_monthly_control')] sa môže meniť od #R -0.5%#! do #G +0.5%#! v závislosti od [Concept('estate_satisfaction','spokojnosti stavu')|e] [ShowEstateTypeName('tribes_estate')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  hermit_country_reform_scripted_relation_unlock_tt: "Udeľuje prístup k [ShowCountryInteractionName('annul_casus_belli')] tajnej akcii" # todo: NEW TRANSLATION
  shield_of_the_faith_reform: "Štít viery" # todo: NEW TRANSLATION
  shield_of_the_faith_reform_desc: "Sme obrancami spravodlivých a ochránime našich bratov vo viere pred každým, kto by si trúfol na nich siahnuť. Ľudia jednej pravej viery nájdu útočisko v našich mocných opevneniach, kde im žiadny pohan nemôže ublížiť." # todo: NEW TRANSLATION
- shield_of_the_faith_reform_building_unlock_tt: "Udeľuje prístup k budove [ShowBuildingTypeName('fortress_church')]" # todo: NEW TRANSLATION
+ shield_of_the_faith_reform_building_unlock_tt: "Udeľuje prístup k výskumu [ShowAdvanceName('fortress_church_advance')] [Concept('advance','pokroku')|e]" # todo: CHANGED (predtym: Udeľuje prístup k budove [ShowBuildingTypeName('fortress_church')])
  enlightened_council_reform: "Osvietená rada" # todo: NEW TRANSLATION
  enlightened_council_reform_desc: "Náš štát musí byť vedený zásadami osvietených učencov. Radcovia, ktorí usmerňujú nášho vládcu, ho musia udržiavať dobre informovaného a sústredeného na jedinú úlohu – zabezpečiť blaho všetkých našich poddaných." # todo: NEW TRANSLATION
  enlightened_council_reform_request_unlock_tt: "Udeľuje prístup k Parlamentnej žiadosti $declare_holidays_request$" # todo: NEW TRANSLATION
@@ -302,6 +308,8 @@
  oprichnina_desc: "Dedičná šľachta je najväčšou hrozbou pre našu kontrolu štátu. Musíme zlomiť ich moc zmenšením veľkosti ich panstiev a rozdeliť túto pôdu najprv ľuďom, ktorí sú nám verní." # todo: NEW TRANSLATION
  east_india_trading_company: "Východoindická spoločnosť" # todo: NEW TRANSLATION
  east_india_trading_company_desc: "Bola to anglická obchodná spoločnosť založená v roku 1600 a rozpustená v roku 1874. Jej pôvodným cieľom bol obchod v oblasti Indického oceánu a neskôr sa rozšírila do Východnej Ázie. Na vrchole svojej moci bola najväčšou spoločnosťou na svete, ovládajúc a spravujúc veľké časti Indického subkontinentu, kolonizujúc časti juhovýchodnej Ázie a Hongkong." # todo: NEW TRANSLATION
+ company_of_scotland: "Škótska spoločnosť" # todo: NEW TRANSLATION
+ company_of_scotland_desc: "Tejto spoločnosti sme udelili monopol na zámorský obchod, čím sme zjednodušili správu našej obchodnej siete a výmenou získali vyššie výnosy z našich štátnych dlhopisov a lepšiu kontrolu nad dotáciami." # todo: NEW TRANSLATION
  ven_monte_nuovo: "Monte Nuovo" # todo: NEW TRANSLATION
  ven_monte_nuovo_desc: "Pôvodný systém požičiavania v Taliansku bol spoločný akciový fond, kde každý občan musel požičať určitú sumu peňazí výmenou za úrok, nazývaný Monte Vecchio. V polovici 15. storočia benátski bankári zaviedli garantovanú minimálnu výplatu úrokov veriteľom, čo zvýšilo sumu peňazí, ktorú boli ľudia ochotní požičať. Toto 'Monte Nuovo' bolo mimoriadne úspešné a financovalo mnohé benátske vojny." # todo: NEW TRANSLATION
  hun_power_to_magnates: "Mocní magnáti" # todo: NEW TRANSLATION
@@ -310,6 +318,9 @@
  casa_de_contratacion_desc: "Casa de Contratación je kráľovská agentúra, ktorá dohliada na španielske koloniálne snahy. Cesty za objavmi a obchodom museli byť jej schválené a všetky koloniálne dane boli ňou vyberané. Casa bola tiež poverená chrániť tajné informácie o nových obchodných cestách a objavoch." # todo: NEW TRANSLATION
  intendancy_system: "$intendancy_system$ je nový systém správy, zameraný na centralizáciu právomoci koruny nad byrokratmi, aby dohliadal na výber daní a zavádzal protikorupčné opatrenia." # todo: NEW TRANSLATION
  intendancy_system_desc: "$intendancy_system$ je nový systém správy zameraný na centralizáciu právomocí Koruny nad byrokratmi s cieľom dohliadať na výber daní a zavádzať protikorupčné opatrenia." # todo: NEW TRANSLATION
+ mll_pearl_of_the_mediterranean: "Perla Stredomoria" # todo: NEW TRANSLATION
+ mll_pearl_of_the_mediterranean_desc: "Vďaka obratným ťahom minulých vládcov sa [ShowAreaName('balearics_area')] stali jednou z najdôležitejších obchodných oblastí v celom [ShowScriptedGeographyName('mediterranean_sea_geography')], pričom si mnohí obchodníci zvolili tieto ostrovy za dôležitú zastávku." # todo: NEW TRANSLATION
+ capital_is_in_mallorca_proper: "Ak sa naše [Concept('capital','hlavné mesto')|e] nachádza v [ShowAreaName('balearics_area')]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  royal_factories_reform: "Kráľovské továrne" # todo: NEW TRANSLATION
  royal_factories_reform_desc: "Kráľovské továrne sú štátom financované manufaktúry priamo dohliadané korunou, ktoré vyrábajú strategické a luxusné tovary na podporu merkantilistických a centralizovaných ekonomických politík." # todo: NEW TRANSLATION
  royal_council_of_castile: "Kráľovská rada Kastílie" # todo: NEW TRANSLATION
@@ -382,7 +393,7 @@
  dutch_republic_reform_desc: "Toto je typ republiky, kde vodca, nazývaný #italic Stadtholder#!, vládne doživotne. Tradične sa frakcie podporujúce túto vládu sporia o to, aká by mala byť štruktúra moci Stadtholdera. Tí, ktorí sa nazývajú Statists, chcú spraviť zo Stadtholdera skôr #italic Primus inter Pares#!, zatiaľ čo Orangists chcú s voleným vodcom zaobchádzať ako s akýmsi kráľom." # todo: CHANGED
  ancient_french_taxation: "Staré francúzske zdaňovanie" # todo: NEW TRANSLATION
  ancient_french_taxation_desc: "Historicky boli dane uvalené a vyberané len v čase potreby, nie prostredníctvom pravidelného systému." # todo: NEW TRANSLATION
- fra_ancient_french_taxation_removal_conditions: "Môže byť manuálne odstránené dosiahnutím #G +50.00#! [ShowSocietyDirectionName('centralization')|l] alebo prostredníctvom $flavor_fra.1.title$ [Concept('dynamic_historical_event','dynamickej historickej udalosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ fra_ancient_french_taxation_removal_conditions: "Môže byť manuálne odstránené dosiahnutím #G +50.00#! [ShowSocietyDirectionName('centralization')|l] alebo prostredníctvom $fra_taille_tax_decision.title$ [Concept('decision','rozhodnutia')|e]." # todo: CHANGED (predtym: Môže byť manuálne odstránené dosiahnutím G +50.00 ! [ShowSocietyDirectionName('centralization')|l] alebo prostredníctvom)
  basic_timariot_system: "Timar systém" # todo: NEW TRANSLATION
  basic_timariot_system_desc: "Systém feudálnych pozemkových držieb zameraný na vybudovanie impozantnej jazdeckej sily. Naši Sipâhi budú pridelení pozemkové granty a očakáva sa, že nám dodajú určitý počet jazdectva na základe veľkosti grantu." # todo: NEW TRANSLATION
  expanded_timariot_system: "Rozšírený Timar systém" # todo: NEW TRANSLATION
@@ -470,7 +481,7 @@
  three_departments_system: "Tri departmány" # todo: NEW TRANSLATION
  three_departments_system_desc: "$three_departments_system$ a systém Šiestich ministerstiev pochádzajú zo starovekých čínskych ríš a sú hlavnými administratívnymi štruktúrami nášho štátu. Každé oddelenie je zodpovedné za niekoľko aspektov návrhu, prijímania a prehodnocovania štátnych politík. The [ShowBureaucracyTypeName('six_boards_bureaucracy')] sú šesť hlavných výkonných orgánov štátu, rozdelené podľa príslušných oblastí štátnej agendy: zamestnanosť, zdaňovanie, obrady, vojenské záležitosti, presadzovanie práva a verejné práce." # todo: CHANGED
  improves_six_boards_bureaucracy_tt: "Zlepšuje pozitívny efekt [ShowBureaucracyTypeName('six_boards_bureaucracy')] [Concept('bureaucracy','bureaukracia')|e] o #G 50%#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- unlocked_mandarin_language_reforms_tt: "Odomkol to prostredníctvom [Concept('event','udalosti')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ locked_mandarin_language_reforms_tt: "Neuzamkol ju prostredníctvom [Concept('decision','rozhodnutia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  empower_the_eunuchs: "Posilniť eunuchov" # todo: NEW TRANSLATION
  empower_the_eunuchs_desc: "Užitočnosť eunuchov nemožno podceňovať. Sú všeobecne považovaní za najcennejších služobníkov, pretože im možno dôverovať, že sa nebudú zapájať do dynastickej politiky. Dáme im lepšie vzdelanie, aby mohli zastávať dôležité štátne úradné posty." # todo: NEW TRANSLATION
  single_whip_law: "Zákon Jedného biča" # todo: NEW TRANSLATION
@@ -535,6 +546,7 @@
  nayankara_system_desc: "Aby sme lepšie kontrolovali krajinu a podporili naše vojenské ambície, rozdelili sme mnohé naše državy medzi Nayakov. Nayaci sa očakáva, že sa o ne postarajú, vrátane miest, chrámov či iných osád, a zároveň vyprodukujú armády potrebné na obranu a rozšírenie kráľovstva." # todo: NEW TRANSLATION
  mug_mughal_diwan: "Mughal Diwan" # todo: NEW TRANSLATION
  mug_mughal_diwan_desc: "Ak je niečo, čo sa naša dynastia za stáročia naučila, je to, že sa musíme vedieť prispôsobiť miestnemu obyvateľstvu v regiónoch, do ktorých expandujeme. Zabezpečme, aby sme sa učili od tých, ktorých dobyvame, aby naša ríša mohla ďalej rásť." # todo: NEW TRANSLATION
+ diwan_al_insha_oversight_tt: "Zlepšuje kladný účinok [bureaucracy|e] [ShowBureaucracyTypeName('diwan_al_insha_bureaucracy')] o #G 20%#!" # todo: NEW TRANSLATION
  taluqdar_nobility: "Taluqdarovská šľachta" # todo: NEW TRANSLATION
  taluqdar_nobility_desc: "Taluqdari, aristokrati v rôznych indických dynastiách, vlastnia rozsiahle pozemky, vyberajú dane a zohrávajú významné úlohy v našej architektúre a ekonomike. Ako vlastníci pôdy s veľkou mocou a vplyvom na dvore sú Taluqdari indickým ekvivalentom vysokej šľachty iných regiónov." # todo: NEW TRANSLATION
  mhr_ashta_pradhan: "Ashta Pradhan" # todo: NEW TRANSLATION
@@ -612,6 +624,25 @@
  constitutional_state_desc: "$constitutional_state$ sa zameriava na citlivú rovnováhu medzi právomocami centrálnej autority a reprezentatívnych inštitúcií. Hoci hlavou štátu je stále vládca, zákony a politické rozhodnutia sú formované legislatívnym orgánom v odvážnom pokuse obmedziť absolutistické tendencie." # todo: NEW TRANSLATION
  malian_tribute_system: "Malijský tributný systém" # todo: NEW TRANSLATION
  malian_tribute_system_desc: "Ako primárny zdroj zlata je $malian_tribute_system$ systém, ktorý vyžaduje, aby všetko zlato bolo zdanené a prinesené vládcovi." # todo: NEW TRANSLATION
+ maghrebi_administration: "Maghrebijská správa" # todo: NEW TRANSLATION
+ maghrebi_administration_desc: "Maghrebský #italic makhzan#! — správa kráľovského dvora Hafsidov, Zajánov, Marinidov a ich nástupcov — presadzuje ústrednú moc prostredníctvom waliov na úrovni oblastí a ká'idov na úrovni miest. Všetci sa zodpovedajú sultánovmu dvoru. Títo menovaní úradníci vyberajú dane, vynášajú rozsudky a velia odvodom pod dohľadom dīwānu, pričom všade, kde to štátne kapacity umožňujú, nahrádzajú staršie kmeňové hierarchie. Táto byrokratická infraštruktúra dáva maghrebským monarchiám úroveň ústredného riadenia, akú čisto kmeňové konfederácie inde v našom regióne nikdy nedosiahli." # todo: NEW TRANSLATION
+ shurfa_status: "Šurfá' status" # todo: NEW TRANSLATION
+ shurfa_status_desc: "Naši sultáni si nárokujú pôvod od proroka Muhammada prostredníctvom Idrísovcov z ôsmeho storočia a dynastie Saadovcov a Alawitov túto líniu ustanovili za ústredný zdroj legitimity marockého trónu. #italic šurafā'#! — uznaní potomkovia proroka — majú postavenie nad všetkými ostatnými spoločenskými vrstvami a vlastné sobášne registre, daňové výnimky i súdne postavenie, na ktoré dohliada kráľovský naqīb. Toto posvätenie dynastie dáva marockému sultánovi náboženskú autoritu, na ktorú si nemôže nárokovať nijaký iný maghrebský vládca a ktorú nemôže dôveryhodne spochybniť nijaký vzbúrenec." # todo: NEW TRANSLATION
+ amir_al_muslimin: "Amīr al-Muslimīn" # todo: NEW TRANSLATION
+ amir_al_muslimin_desc: "Titul #italic Amīr al-Muslimīn#! — veliteľ moslimov — nosili almorávidskí sultáni, ktorí prekročili Saharu, aby ochránili al-'Andalus pred kresťanským prenikaním, aj naši marinidskí predkovia, ktorí sa za tým istým cieľom opakovane vracali cez prieliv. Keď sme získali prieliv od flotíl Kastílie a Aragónska, zaradili sme sa do tejto tradície: sme ochrancami poslednej západnej hranice islamu a v khuṭbe každej mešity od Fezu po Guadalquivir nás uznávajú za takých. Tento titul pripútava andalúzske obce k nášmu trónu, plní naše zástavy ochotnými bojovníkmi viery a šíri naše meno na každý moslimský dvor, ktorý pozorne sleduje Pyrenejský polostrov." # todo: NEW TRANSLATION
+ catalan_merchant_privileges: "Výsady [ShowCultureNameWithNoTooltip('catalan')] obchodníkov" # todo: NEW TRANSLATION
+ catalan_merchant_privileges_desc: "[ShowCultureName('catalan')] obchodníci z [ShowCountryNameIfActive('ARA')] pôsobia v prístavoch tejto krajiny a získali rozsiahle výsady. Časť ciel vybraných pri obchodovaní s nimi putuje do materskej krajiny a tento štát výmenou získava výhodu v podobe zahraničných žoldnierov [ShowReligionGroupAdjective('christian')]." # todo: NEW TRANSLATION
+ allows_farfanes_unit: "Umožňuje [Concept('unit_type','typ jednotky')|e] [ShowUnitDefinitionName('a_farfanes')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ gives_crown_power_through_farfanes_tt: "Veľký počet jednotiek [ShowUnitDefinitionName('a_farfanes')] v pomere k celkovému počtu našich\n[Concept('unit','Jednotka')|e] zvýši [ShowModifierTypeName('global_crown_estate_power')] až o #G +30.0%#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ gives_centralization_through_farfanes_tt: "Veľký počet jednotiek [ShowUnitDefinitionName('a_farfanes')] v pomere k našej celkovej\n[Concept('military_strength','Vojenská sila')|e] zvýši [ShowModifierTypeName('monthly_towards_centralization')] až o #Y +0.25#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ has_unlocked_centralization_buff: "Odomkol si [ShowModifierTypeName('monthly_towards_centralization')] vďaka [Concept('event','udalosti')|e] #Y $flavor_tun.10.entry$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tun_strong_familial_governors: "Hafsidovskí rodinní miestodržitelia" # todo: NEW TRANSLATION
+ tun_strong_familial_governors_desc: "[ShowScriptedGeographyName('ifriqiya_geography')] zachvátil chaos. O moc sa uchádza niekoľko členov [ShowDynastyName('hafsid_dynasty')], ktorí sa snažia ovládnuť [ShowLocationName('tunis')] a stať sa jediným emirom, ktorý ich všetkých zjednotí. Kým sa tak nestane, tento región bude rozorvaný konfliktmi a nelojálnosťou." # todo: NEW TRANSLATION
+ enables_familial_governors_subject_type_tt: "Umožňuje [Concept('subject_type','druh vazala')|e] [ShowSubjectTypeName('familial_governor')], ktorý možno vytvoriť prostredníctvom [Concept('action','akcie')|e] [ShowCharacterInteractionName('assign_familial_governor')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ guardians_of_ifriqiya: "Strážcovia Ifrīqya" # todo: NEW TRANSLATION
+ guardians_of_ifriqiya_desc: "$TUN$ v sebe nesie dynastickú pamäť kartáginskej púnskej nadvlády, aghlabovského emirátu v $kairouan$ a hafsidovského nároku na titul #italic Khalīfa#! — kalifa západného islamského sveta po páde Bagdadu. Naši sultáni sa korunujú v mešite Zajtúna v odznakoch moci, ktoré spájajú ich trón s tisícročnou kontinuitou ifrīqijskej zvrchovanosti, odlišnou od každej berberskej dynastie na západe či mamlúckej moci na východe. Toto zložené cisárske dedičstvo dáva $TUN$ legitimitu, ktorej sa okolité maghrebské štáty nemôžu vyrovnať ani starobylosťou, ani doktrinálnou váhou." # todo: NEW TRANSLATION
+ maghreb_ibadi_majlis_ammi_said: "Centralizovaný Madžlis 'Ammi Sa'īd" # todo: NEW TRANSLATION
+ maghreb_ibadi_majlis_ammi_said_desc: "Rada Madžlis 'Ammi Sa'īd vznikla po páde [ShowReligionAdjectiveWithNoTooltip('ibadi')] Rustamidov a slúžila ako decentralizovaná forma federálnej správy pre zvyškové štáty v údolí Mzab. S nástupom nového [ShowReligionAdjectiveWithNoTooltip('ibadi')] štátu v [ShowRegionName('maghreb_region')] sa však kedysi decentralizovaná rada pretvorila na kľúčovú súčasť byrokracie." # todo: NEW TRANSLATION
  eth_wandering_court: "Putovný dvor" # todo: NEW TRANSLATION
  eth_wandering_court_desc: "Namiesto stacionárneho dvora je lepšie mať možnosť premiestniť ho podľa potreby na iné miesta v krajine. Vďaka našej politike [ShowPolicyName('itinerant_court_policy')] môžeme ľahšie prispôsobiť miesto, odkiaľ vládnuci vládnu, a riešiť problémy miestneho obyvateľstva." # todo: NEW TRANSLATION
  bng_industralized_provinces: "Rýchla industrializácia" # todo: NEW TRANSLATION
@@ -650,7 +681,7 @@
  iro_council_of_the_fifty: "Veľká rada" # todo: NEW TRANSLATION
  iro_council_of_the_fifty_desc: "Tvoria ju päťdesiat náčelníkov z piatich národov; Veľká rada [ShowCultureGroupName('haudenosaunee_group')] vykonáva princípy Veľkého zákona pokoja. Správa rady vyžaduje, aby všetkých päťdesiatich náčelníkov dosiahlo jednotný konsenzus, skôr než môžu pokračovať ďalšie záležitosti." # todo: NEW TRANSLATION
  guru_granth_sahib_reform: "$guru_granth_sahib$" # todo: NEW TRANSLATION
- guru_granth_sahib_reform_desc: "$guru_granth_sahib_desc$"" # todo: NEW TRANSLATION
+ guru_granth_sahib_reform_desc: "$guru_granth_sahib_desc$„" # todo: NEW TRANSLATION
  shahbandariyya_reform: "Shāhbandariyya" # todo: NEW TRANSLATION
  shahbandariyya_reform_desc: "$shahbandar_desc$" # todo: NEW TRANSLATION
  partitio_reform: "Partitio Terrarum Imperii Romaniae" # todo: NEW TRANSLATION
@@ -662,6 +693,8 @@
  ath_catalan_company_expelled_or_stability: "Môže byť manuálne odstránené, ak je [Concept('stability','stabilita')|e] nad #G +60.00#!, alebo priamo cez určité [GetCountry('ATH').GetAdjectiveWithNoTooltip] [Concept('dynamic_historical_events','dynamické historické udalosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  lat_papal_restoration_claimant: "[GetCountry('PAP').GetAdjectiveWithNoTooltip] podpora na znovuzískanie [ShowLocationNameWithNoTooltip('constantinople')]" # todo: NEW TRANSLATION
  lat_papal_restoration_claimant_desc: "Hoci [GetCountry('LAT').GetLongName] odvtedy zaniklo v dôsledku [GetCountry('BYZ').GetLongName], nedávne kampane križiackych štátov v [ShowScriptedGeographyName('greece_geography')] povzbudili [GetCountry('PAP').GetAdjectiveWithNoTooltip] sponzorstvo na obnovu cisárstva." # todo: NEW TRANSLATION
+ lat_gained_papal_support: "Získal podporu pápeža prostredníctvom [Concept('decisions','rozhodnutí')|e] [ShowDecisionName('ach_pope_proposes_latin_restoration')] alebo [ShowDecisionName('lat_frankokratia_pope_proposes_latin_restoration')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ lat_papal_restoration_removal_conditions: "Táto [Concept('government_reform','reforma vlády')|e] bude odstránená po získaní viac než 70 [Concept('locations','lokality')|e] alebo po obnovení štátu [ShowFormableCountryName('LAT_f')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  lat_restored_rule_of_the_latins: "Obnovené panovanie Latínov" # todo: NEW TRANSLATION
  lat_restored_rule_of_the_latins_desc: "Kedysi považované za navždy stratené pred znovuzrodeným [GetCountry('BYZ').GetName], [GetCountry('LAT').GetLongNameWithNoTooltip] bolo napokon obnovené v [ShowLocationName('constantinople')] a opäť slúži ako bašta [ShowReligionAdjective('catholic')] vlády v rámci [ShowScriptedGeographyName('greece_geography')]." # todo: NEW TRANSLATION
  mass_levy_system: "Systém masového odvodu" # todo: NEW TRANSLATION
@@ -676,3 +709,39 @@
  righteous_government_desc: "Naše vládnutie je definované predkovskými tradíciami $china$, a cnosti ako dobrotivosť, spravodlivosť, úcta, múdrosť, úprimnosť a vernosť medzi mnohými ďalšími sú smerodajným kompasom našej správy. Takáto vláda nemôže byť nič iné než požehnaná samotným Nebom." # todo: NEW TRANSLATION
  national_traditions: "Národné tradície" # todo: NEW TRANSLATION
  national_traditions_desc: "Ani kultúrna moc $china$ nie je schopná ovplyvniť naše tradície. Sme hrdí na našu kultúru a dedičstvo a nedovolíme žiadnemu zahraničnému vplyvu diktovať podmienky a fungovanie nášho vládnutia." # todo: NEW TRANSLATION
+ bureaucratized_administration: "Byrokratizovaná správa" # todo: NEW TRANSLATION
+ bureaucratized_administration_desc: "Tradícia usporiadanej správy $ROM_ADJ$ tvorí podstatu nášho štátu. Kodifikovaním úradov, výcvikom pisárov a zaviazaním každého sudcu k rovnakým postupom zabezpečíme, aby sa vôľa centra dostala do každého kúta našej ríše a aby výnosy z každého kúta putovali do pokladnice." # todo: NEW TRANSLATION
+ citizenship_through_service: "Občianstvo za službu" # todo: NEW TRANSLATION
+ citizenship_through_service_desc: "Staré légie sa zakladali na jednoduchom sľube: slúž štátu a štát ťa prijme za svojho. Ak občianstvo a jeho výsady rozšírime na tých, ktorí za nás bojujú, aj na ich synov, otvoríme svoje rady každému schopnému mužovi v našich hraniciach." # todo: NEW TRANSLATION
+ urban_guilds: "Mestské cechy" # todo: NEW TRANSLATION
+ urban_guilds_desc: "Naše mestá sú uzlami obchodu a remesiel a tamojšie cechy rozumejú svojej práci lepšie než ktorýkoľvek minister. Keď mešťanom umožníme organizovať sa, určovať si vlastné normy kvality a investovať do vidieka, ktorý ich živí, súkromné ambície poslúžia verejnému blahu." # todo: NEW TRANSLATION
+ arsenal_of_the_realm: "Arzenál ríše" # todo: NEW TRANSLATION
+ arsenal_of_the_realm_desc: "Podľa vzoru veľkých $VEN_ADJ$ lodeníc sústredíme stavbu, opravy a zásobovanie našej flotily do jediného arzenálu pod priamym dohľadom štátu. Lode spustené na vodu ráno môžu byť koncom sezóny na mori a naši kapitáni budú vedieť, že za každou doskou stojí naše námornícke umenie." # todo: NEW TRANSLATION
+ latin_tutors: "Učitelia jazyka $latin_language$" # todo: NEW TRANSLATION
+ latin_tutors_desc: "Obnova [ShowLanguageName('latin_language')] literatúry roznecovala oheň v našich školách aj na dvoroch. Keď našim deťom i deťom tých, ktorí budú vládnuť po nás, zabezpečíme učiteľov starého jazyka, umožníme novej generácii čítať starovekých autorov, spisovať naše listiny a rokovať ako rovný s rovným so vzdelanými dvormi [ShowContinentName('europe')]." # todo: NEW TRANSLATION
+ elite_condottieri: "Elitní kondotiéri" # todo: NEW TRANSLATION
+ elite_condottieri_desc: "Prečo nechať krvácať vlastných poddaných, keď za peniaze budú bojovať skúsené vojenské družiny? Ak uzavrieme dlhodobé zmluvy s najdisciplinovanejšími kondotiérmi, udržíme ich meče po svojom boku a mimo mešcov našich rivalov a roľníkov za pluhom, kam patria." # todo: NEW TRANSLATION
+ symphonia_doctrine: "Doktrína symfónie" # todo: NEW TRANSLATION
+ symphonia_doctrine_desc: "Ríša a cirkev kráčajú bok po boku: basileus chráni vieru a patriarchovia žehnajú trónu. Keď ich hlasy znejú v súlade, štát aj duše nášho ľudu sú pod dobrou správou a súdy [ShowEstateTypeName('clergy_estate')] môžu zasadnúť vedľa našich a posudzovať konanie každého cirkevného zboru." # todo: NEW TRANSLATION
+ logothesion_of_the_drome: "Logothésion Dromu" # todo: NEW TRANSLATION
+ logothesion_of_the_drome_desc: "Logothet z jedinej kancelárie v paláci dohliada na poslov, vyslancov i rozsiahlu sieť poštových ciest, ktoré spájajú ríšu. Nijaká správa necestuje rýchlejšie, nijaké veľvyslanectvo nie je lepšie pripravené a nijakú cestu nevybudujeme bez toho, aby jeho pisári zaznamenali každý míľnik." # todo: NEW TRANSLATION
+ revival_urbanization_movement: "Hnutie za obnovu miest" # todo: NEW TRANSLATION
+ revival_urbanization_movement_desc: "Celé provincie sú posiate pozostatkami miest, ktoré už dávno pohltili polia. Keď udeľujeme listiny tým, ktorí chcú priviesť osadníkov späť na tieto miesta, a kamene z cisárskych lomov tým, ktorí ich chcú obnoviť, začíname pomalú prácu na obnove mestského lesku ríše." # todo: NEW TRANSLATION
+ revised_geoponika_hippiatrika: "Revidované Geoponiká a Hippiatriká" # todo: NEW TRANSLATION
+ revised_geoponika_hippiatrika_desc: "Staré diela #italic Geoponika#! a #italic Hippiatrika#! zhromažďujú poľnohospodárske poznatky staroveku v dvoch veľkých zväzkoch — jeden sa venuje poliam a sadom, druhý starostlivosti o kone a zvieratá. Revidované vydanie, ktoré dostane do rúk každý miestodržiteľ provincie, zvýši výnosy každého statku i silu každej stajne v ríši." # todo: NEW TRANSLATION
+ new_farmers_directive: "Nové nariadenie pre roľníkov" # todo: NEW TRANSLATION
+ new_farmers_directive_desc: "Ríša odjakživa spočíva na pleciach drobných roľníkov a úctyhodný Roľnícky zákon ich už dlho chráni. Obnovíme jeho ustanovenia pre súčasnú dobu, ochránime roľnícke pozemky, zmiernime jeho dávky a dáme mu slovo vo vlastnej obci. Tak sa vidiek zo zdroja nespokojnosti opäť stane prameňom sily." # todo: NEW TRANSLATION
+ pax_hellenica: "Panhellénismos" # todo: NEW TRANSLATION
+ pax_hellenica_desc: "Od [ShowLocationName('constantinople')] až po najvzdialenejšie themy spájajú rozsiahlu mozaiku národov [ShowLanguageName('greek_language')] jazyk a zvyky. Trpezlivou kultiváciou namiesto meča, prostredníctvom literatúry, liturgie a postupnej výmeny generácií, zjednotíme ríšu do jedného kultúrneho celku a spory, ktoré kedysi rozdeľovali celé provincie, vystrieda spoločné chápanie toho, čo znamená byť $ROM_ADJ$." # todo: NEW TRANSLATION
+ jewish_nagid_reform: "Nagíd" # todo: NEW TRANSLATION
+ jewish_nagid_reform_desc: "Úrad #italic Nāgīd#! — kniežaťa obce — ustanovuje uznávanú hlavu židovského národa, poverenú svetskou autoritou aj duchovným vedením. Nāgīd čerpá z dlhoročnej tradície samosprávy obcí pod cudzími panovníkmi a premieňa odolnosť nášho ľudu na diplomatický vplyv a duchovnú obnovu." # todo: NEW TRANSLATION
+ jewish_exilarchate_reform: "Exilarchát" # todo: NEW TRANSLATION
+ jewish_exilarchate_reform_desc: "Exilarcha alebo #italic Rosh Galuta#! je dedičným kniežaťom všetkých Židov v exile a nárokuje si neprerušený pôvod z Dávidovho rodu. Tento úrad požíva medzi naším ľudom neporovnateľnú úctu a prepožičiava štátu posvätnú legitimitu nepretržitej kráľovskej línie siahajúcej až ku kráľom Izraela." # todo: NEW TRANSLATION
+ jewish_sanhedrin_republic_reform: "Republika Sanhedrinu" # todo: NEW TRANSLATION
+ jewish_sanhedrin_republic_reform_desc: "V duchu starovekej rady sedemdesiatich jedného mudrca sa #italic Sanhedrin#! obnovuje ako najvyšší poradný orgán židovského štátu. Jeho vzdelaní učenci a právnici vládnu prostredníctvom diskusie, precedensov a dôkladného štúdia zákonov — je to republika múdrosti, nie mečov." # todo: NEW TRANSLATION
+ jewish_kehilla_federation_reform: "Federácia kehil" # todo: NEW TRANSLATION
+ jewish_kehilla_federation_reform_desc: "#italic Kehilla#! — samosprávna židovská obec — sa stáva organizačným princípom štátu. Rada každého mesta spravuje vlastné záležitosti a spája obchodnícke znalosti i obecné siete do decentralizovanej federácie, ktorú držia pokope spoločné zákony, jazyk a obchod." # todo: NEW TRANSLATION
+ jewish_messianic_monarchy_reform: "Mesiášska monarchia" # todo: NEW TRANSLATION
+ jewish_messianic_monarchy_reform_desc: "Toto nie je obyčajné kráľovstvo: vládcu vyhlasujeme za Božieho pomazaného, dlho očakávaného #italic Mašíaḥa#!, ktorého vláda ohlasuje vykúpenie Izraela a návrat všetkých vyhnancov. Takýto nárok si od nášho ľudu vyžaduje bezhraničnú oddanosť, no nemožno očakávať, že ho uzná cudzia mocnosť, a svet ho sleduje s podozrením a obavami." # todo: NEW TRANSLATION
+ manila_galleon_reform: "Manilská galeóna" # todo: NEW TRANSLATION
+ manila_galleon_reform_desc: "Ak tento obchod vyhradíme výlučne pre obchodníkov menovaných korunou, zabezpečíme, aby bohatstvo plynúce naprieč Tichým oceánom posilňovalo kráľovské financie, a nie obohacovalo súkromné záujmy." # todo: NEW TRANSLATION

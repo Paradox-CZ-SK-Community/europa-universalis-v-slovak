@@ -6,7 +6,7 @@
  ai_cautious: "Opatrný" # todo: NEW TRANSLATION
  ai_opportunistic: "Opportunistický" # todo: NEW TRANSLATION
  ai_isolationist: "Izolacionistický" # todo: NEW TRANSLATION
- ai_friendly: "Priateľský" # todo: NEW TRANSLATION
+ ai_friendly: "Zmierlivý" # todo: CHANGED (predtym: Priateľský)
  ai_balanced_desc: "Táto krajina nemá výrazné predpoklady. Jej činy sú formované predovšetkým temperovaním jej vládcov, hodnotami spoločnosti a okolnosťami, v ktorých sa nachádza." # todo: NEW TRANSLATION
  ai_aggressive_desc: "Tento štát usiluje o moc silou. Rýchlo vyvoláva vojny, požaduje tvrdé mierové podmienky a považuje susedné veľmoci za prekážky, ktoré treba zdolať, skôr než za partnerov, s ktorými je potrebné nadväzovať vzťahy." # todo: NEW TRANSLATION
  ai_expansionist_desc: "Tento štát sa snaží rozširovať svoje hranice a vplyv. Uprednostňuje teritoriálny rast, aktívne uplatňuje nároky a pri príležitosti skôr inklinuje k podrobeniu než priamej anektácii." # todo: NEW TRANSLATION
@@ -22,7 +22,7 @@
  AI_DISPOSITION_PLANNING_WAR: "Plánuje vojnu" # todo: NEW TRANSLATION
  AI_DISPOSITION_COVETS: "Túži po území" # todo: CHANGED
  AI_DISPOSITION_DOMINEERING: "Panovačný" # todo: NEW TRANSLATION
- AI_DISPOSITION_RIVALS: "Rivali" # todo: NEW TRANSLATION
+ AI_DISPOSITION_RIVALS: "Antagonistický" # todo: CHANGED (predtym: Rivali)
  AI_DISPOSITION_INDIFFERENT: "Lhostejný" # todo: NEW TRANSLATION
  AI_DISPOSITION_FRIENDLY: "Priateľský" # todo: NEW TRANSLATION
  AI_DISPOSITION_SELF: "Vaša krajina" # todo: NEW TRANSLATION
@@ -31,7 +31,7 @@
  AI_DISPOSITION_PLANNING_WAR_DESC: "Tento [Concept('country_disposition','postoj krajiny')|e] znamená, že majú aktívny nárok alebo sťažnosť a pripravujú sa ho uplatniť silou." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AI_DISPOSITION_COVETS_DESC: "Tento [Concept('country_disposition','postoj krajiny')|e] znamená, že vaše územia považujú za atraktívny cieľ a môžu sa pokúsiť vás dobyť alebo podrobiť, keď sa naskytne príležitosť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AI_DISPOSITION_DOMINEERING_DESC: "Tento [Concept('country_disposition','postoj krajiny')|e] znamená, že vás svojou mocou prevyšujú a usilujú sa vás podriadiť prostredníctvom podrobenia alebo vazalizácie, hoci nepotrebujú žiadnu konkrétnu vašu provinciu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- AI_DISPOSITION_RIVALS_DESC: "Tento [Concept('country_disposition','postoj krajiny')|e] znamená, že vás vnímajú ako rivala a budú sa proti vám postaviť všade, kde môžu, vrátane podpory vašich nepriateľov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ AI_DISPOSITION_RIVALS_DESC: "Tento [Concept('country_disposition','postoj krajiny')|e] znamená, že voči vám otvorene prejavujú [Concept('antagonism','antagonizmus')|e] a budú sa proti vám postaviť všade, kde môžu, vrátane podpory vašich nepriateľov." # todo: CHANGED (predtym: Tento [Concept('country_disposition','postoj krajiny')|e] znamená, že vás vnímajú ako rivala a budú sa proti vám postavi) # todo: CONCEPT CASE
  AI_DISPOSITION_INDIFFERENT_DESC: "Tento [Concept('country_disposition','postoj krajiny')|e] naznačuje, že k vám momentálne nemajú silné city." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AI_DISPOSITION_FRIENDLY_DESC: "Tento [Concept('country_disposition','postoj krajiny')|e] znamená, že vás považujú za priateľa, či už vzhľadom na trvalú obrannú alianciu, alebo jednoducho priaznivé vzťahy, a majú sklon s vami spolupracovať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AI_ATTITUDE_TOOLTIP_TITLE: "Nálada a postoj" # todo: NEW TRANSLATION
@@ -49,7 +49,7 @@
  planning_war: "Plánuje vojnu" # todo: NEW TRANSLATION
  covets: "Dychtí" # todo: NEW TRANSLATION
  domineering: "Panovačný" # todo: NEW TRANSLATION
- rivals: "Rivali" # todo: NEW TRANSLATION
+ rivals: "Antagonistický" # todo: CHANGED (predtym: Rivali)
  indifferent: "Lhostejný" # todo: NEW TRANSLATION
  friendly: "Priateľský" # todo: NEW TRANSLATION
  AI_PERSONALITY_MAPMODE_TITLE: "[COUNTRY.GetLongNameWithNoTooltip] je $PERSONALITY$" # todo: NEW TRANSLATION
@@ -60,9 +60,10 @@
  AI_DISPOSITION_PLANNING_WAR_MAPMODE_TITLE: "[COUNTRY.GetName] plánuje vojnu" # todo: NEW TRANSLATION
  AI_DISPOSITION_COVETS_MAPMODE_TITLE: "[COUNTRY.GetName] dychtí po vašom území" # todo: NEW TRANSLATION
  AI_DISPOSITION_DOMINEERING_MAPMODE_TITLE: "[COUNTRY.GetName] sa snaží vás ovládnuť" # todo: NEW TRANSLATION
- AI_DISPOSITION_RIVALS_MAPMODE_TITLE: "[COUNTRY.GetName] vás vníma ako rivala" # todo: NEW TRANSLATION
+ AI_DISPOSITION_RIVALS_MAPMODE_TITLE: "[COUNTRY.GetName] je voči vám antagonistická" # todo: CHANGED (predtym: [COUNTRY.GetName] vás vníma ako rivala)
  AI_DISPOSITION_INDIFFERENT_MAPMODE_TITLE: "[COUNTRY.GetName] je lhostejný" # todo: NEW TRANSLATION
  AI_DISPOSITION_FRIENDLY_MAPMODE_TITLE: "[COUNTRY.GetName] je k vám priateľský" # todo: NEW TRANSLATION
+ AI_DISPOSITION_NO_PLAYER_COUNTRY: "Krajiny k vám nemajú žiadny postoj, pretože nehráte za žiadnu krajinu." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_ECO: "Vaša ekonomika ich výrazne prevyšuje." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_MILITARY: "Vaša vojenská sila ich výrazne prevyšuje." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_COVETS_COUNT: "Požadujú $COUNT|Y$ vašich území." # todo: NEW TRANSLATION
@@ -73,25 +74,25 @@
  AI_DISPOSITION_REASON_RIVALS_ANTAGONISM: "Medzi vašimi národmi panuje silná nepriateľnosť." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_ALLIED: "Stojíte spolu v obrannej aliancii." # todo: NEW TRANSLATION
  AI_DISPOSITION_REASON_FAVORABLE: "Majú o vás priaznivý názor." # todo: NEW TRANSLATION
- AI_DISPOSITION_REASON_MILITARY_THIRD_PARTY: "Vojenská sila [TARGET_COUNTRY.GetName] výrazne prevyšuje silu [COUNTRY.GetName]." # todo: NEW TRANSLATION
- AI_DISPOSITION_REASON_ECO_THIRD_PARTY: "Ekonomika [TARGET_COUNTRY.GetName] výrazne prevyšuje ekonomiku [COUNTRY.GetName]." # todo: NEW TRANSLATION
- AI_DISPOSITION_REASON_COVETS_COUNT_THIRD_PARTY: "[COUNTRY.GetName] túži po $COUNT|Y$ územiach [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_MILITARY_THIRD_PARTY: "Vojenská sila [TARGET_COUNTRY.GetName] výrazne prevyšuje silu [COUNTRY.GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ AI_DISPOSITION_REASON_ECO_THIRD_PARTY: "Ekonomika [TARGET_COUNTRY.GetName] výrazne prevyšuje ekonomiku [COUNTRY.GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ AI_DISPOSITION_REASON_COVETS_COUNT_THIRD_PARTY: "[COUNTRY.GetName] túži po $COUNT|Y$ územiach [TARGET_COUNTRY.GetAltAdjective('L')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  AI_DISPOSITION_REASON_DOMINEERING_THIRD_PARTY: "Ríša [TARGET_COUNTRY.GetName] je oveľa slabšia než ríša [COUNTRY.GetName], čo pozýva k podrobeniu." # todo: NEW TRANSLATION
- AI_DISPOSITION_REASON_SUBJUGATION_THIRD_PARTY: "[COUNTRY.GetName] má v pláne urobiť z [TARGET_COUNTRY.GetName] svojho vazala." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_SUBJUGATION_THIRD_PARTY: "[COUNTRY.GetName] má v pláne urobiť z [TARGET_COUNTRY.GetAltAdjective('G')] svojho vazala." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  AI_DISPOSITION_REASON_RIVALS_FORMAL_THIRD_PARTY: "[COUNTRY.GetName] a [TARGET_COUNTRY.GetName] sú formálnymi rivalmi." # todo: NEW TRANSLATION
- AI_DISPOSITION_REASON_RIVALS_CB_THIRD_PARTY: "[COUNTRY.GetName] má casus belli proti [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
- AI_DISPOSITION_REASON_RIVALS_ANTAGONISM_THIRD_PARTY: "Medzi [COUNTRY.GetName] a [TARGET_COUNTRY.GetName] panuje silná antagonizácia." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_RIVALS_CB_THIRD_PARTY: "[COUNTRY.GetName] má casus belli proti [TARGET_COUNTRY.GetAltAdjective('D')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ AI_DISPOSITION_REASON_RIVALS_ANTAGONISM_THIRD_PARTY: "Medzi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetName] panuje silná antagonizácia." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  AI_DISPOSITION_REASON_ALLIED_THIRD_PARTY: "[COUNTRY.GetName] a [TARGET_COUNTRY.GetName] stoja spolu v obrannej aliancii." # todo: NEW TRANSLATION
- AI_DISPOSITION_REASON_FAVORABLE_THIRD_PARTY: "[COUNTRY.GetName] má k [TARGET_COUNTRY.GetName] priaznivý postoj." # todo: NEW TRANSLATION
+ AI_DISPOSITION_REASON_FAVORABLE_THIRD_PARTY: "[COUNTRY.GetName] má k [TARGET_COUNTRY.GetAltAdjective('D')] priaznivý postoj." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  AI_DISPOSITION_WHY_HEADER: "Prečo to tak cítia" # todo: NEW TRANSLATION
  AI_DISPOSITION_FACTOR_COVETED_LOCATION: "[LOCATION.GetName]: $SCORE|2Y$" # todo: NEW TRANSLATION
  AI_DISPOSITION_FACTOR_COVETED_MORE: "a ďalších $COUNT|Y$ vašich území" # todo: NEW TRANSLATION
  AI_DISPOSITION_FACTOR_ACTIVE_CB: "Majú proti vám casus belli." # todo: NEW TRANSLATION
  AI_DISPOSITION_FACTOR_ECO_DISPARITY: "Vaša ekonomika zaostáva za ich o $VAL|%$" # todo: NEW TRANSLATION
  AI_DISPOSITION_FACTOR_SUBJUGATION_OBJECTIVE: "Aktívne sa snažia spraviť z vás svojho vazala." # todo: NEW TRANSLATION
- AI_DISPOSITION_FACTOR_ACTIVE_CB_THIRD_PARTY: "[COUNTRY.GetName] má casus belli proti [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION
- AI_DISPOSITION_FACTOR_ECO_DISPARITY_THIRD_PARTY: "Ekonomika [TARGET_COUNTRY.GetName] je oproti [COUNTRY.GetName] o $VAL|%$ slabšia." # todo: NEW TRANSLATION
- AI_DISPOSITION_FACTOR_SUBJUGATION_OBJECTIVE_THIRD_PARTY: "[COUNTRY.GetName] sa aktívne snaží spraviť z [TARGET_COUNTRY.GetName] svojho vazala." # todo: NEW TRANSLATION
+ AI_DISPOSITION_FACTOR_ACTIVE_CB_THIRD_PARTY: "[COUNTRY.GetName] má casus belli proti [TARGET_COUNTRY.GetAltAdjective('D')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ AI_DISPOSITION_FACTOR_ECO_DISPARITY_THIRD_PARTY: "Ekonomika [TARGET_COUNTRY.GetName] je oproti [COUNTRY.GetAltAdjective('D')] o $VAL|%$ slabšia." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ AI_DISPOSITION_FACTOR_SUBJUGATION_OBJECTIVE_THIRD_PARTY: "[COUNTRY.GetName] sa aktívne snaží spraviť z [TARGET_COUNTRY.GetAltAdjective('G')] svojho vazala." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  AI_DISPOSITION_FACTOR_ALLIANCE: "Ste viazaní obrannou alianciou." # todo: NEW TRANSLATION
  AI_DISPOSITION_FACTOR_ALLIANCE_THIRD_PARTY: "[COUNTRY.GetName] a [TARGET_COUNTRY.GetName] sú viazaní obrannou alianciou." # todo: NEW TRANSLATION
  AI_DISPOSITION_FACTOR_OPINION: "Ich [Concept('opinion','názor')|e] o vás je $VAL|0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -106,14 +107,14 @@
  AI_DISPOSITION_DIGEST_ALARMED: "$ACTORS$ sú teraz znepokojení našou mocou." # todo: NEW TRANSLATION
  AI_DISPOSITION_DIGEST_PLANNING_WAR: "$ACTORS$ sa teraz pripravujú na [Concept('war','vojnu')|e] proti nám." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AI_DISPOSITION_DIGEST_COVETS: "$ACTORS$ teraz dychtia po našom území a môžu uplatniť [Concept('casus_belli','casus Belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- AI_DISPOSITION_DIGEST_DOMINEERING: "$ACTORS$ sa teraz usilujú spraviť z nás [Concept('subject','vazala')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- AI_DISPOSITION_DIGEST_RIVALS: "$ACTORS$ nás teraz považujú za [Concept('rival','rivala')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ AI_DISPOSITION_DIGEST_DOMINEERING: "$ACTORS$ sa teraz usilujú dostať nás pod svoju nadvládu." # todo: CHANGED (predtym: $ACTORS$ sa teraz usilujú spraviť z nás [Concept('subject','vazala')|e].)
+ AI_DISPOSITION_DIGEST_RIVALS: "$ACTORS$ nám teraz otvorene prejavujú [Concept('antagonism','antagonizmus')|e]." # todo: CHANGED (predtym: $ACTORS$ nás teraz považujú za [Concept('rival','rivala')|e].) # todo: CONCEPT CASE
  AI_DISPOSITION_DIGEST_INDIFFERENT: "$ACTORS$ sú k nám teraz ľahostajní." # todo: NEW TRANSLATION
  AI_DISPOSITION_DIGEST_WARY: "$ACTORS$ sú k nám teraz opatrní." # todo: NEW TRANSLATION
  AI_DISPOSITION_DIGEST_FRIENDLY: "$ACTORS$ nás teraz vnímajú priateľsky." # todo: NEW TRANSLATION
  AI_DISPOSITION_MAP_STALENESS_NOTE: "#italic Postoje vzdialených mocností môžu byť niekoľko mesiacov staré.#!" # todo: NEW TRANSLATION
  AI_NOTABLE_DISPOSITIONS_HEADER: "#T Pozoruhodné postoje#!" # todo: NEW TRANSLATION
- AI_NOTABLE_DISPOSITION_LINE: "$BULLET$$DISPOSITION$ voči [COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ AI_NOTABLE_DISPOSITION_LINE: "$BULLET$$DISPOSITION$ voči [COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  AI_NOTABLE_DISPOSITION_LINE_YOU: "$BULLET$$DISPOSITION$ voči #R vám#!" # todo: NEW TRANSLATION
  NOTABLE_STANCES_HEADER_TOOLTIP: "#T Pozoruhodné postoje#!\nToto sú najvýznamnejšie postoje [Country.GetNameWithFlagWithNoTooltip] voči ostatným krajinám." # todo: NEW TRANSLATION
  AI_DISPOSITION_PAIR_TITLE: "$DISPOSITION$ voči [TARGET_COUNTRY.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -121,6 +122,7 @@
  AI_CONQUER_DESIRE_LOCATION_OWNED: "[COUNTRY.GetLongName] už vlastní túto lokalitu." # todo: NEW TRANSLATION
  AI_CONQUER_DESIRE_LOCATION_NONE: "[COUNTRY.GetLongName] nemá záujem o dobytie tejto lokality." # todo: NEW TRANSLATION
  AI_CONQUER_DESIRE_LOCATION_SCORE: "[COUNTRY.GetLongName] po tomto mieste túži na $SCORE|2/%G$!" # todo: CHANGED
+ AI_CONQUER_DESIRE_LOCATION_PLAYER: "[COUNTRY.GetLongName] je ovládaná hráčom a nemá žiadnu túžbu po dobývaní." # todo: NEW TRANSLATION
  AI_CONQUER_DESIRE_BREAKDOWN_RANK_HEADER: "Skóre založené na tom, že ste [COUNTRY.GetRank.GetName]" # todo: NEW TRANSLATION
  AI_CONQUER_DESIRE_BREAKDOWN_SAME_CULTURE: "[Concept('dominant_culture','Dominantná kultúra')|e] je našou [Concept('primary_culture','hlavnou kultúrou')|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AI_CONQUER_DESIRE_BREAKDOWN_ACCEPTED_CULTURE: "[Concept('dominant_culture','Dominantná kultúra')|e] je našou [Concept('accepted_culture','akceptovanou kultúrou')|e]: $VAL|2+=/%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE

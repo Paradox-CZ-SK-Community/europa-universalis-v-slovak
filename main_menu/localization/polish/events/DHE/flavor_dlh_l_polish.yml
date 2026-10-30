@@ -1,7 +1,7 @@
 ﻿l_polish:
  play_as_revolter: "Môj čas je teraz!" # todo: NEW TRANSLATION
  flavor_dlh.1.title: "Tí [ShowCultureNameWithNoTooltip('marathi_culture')]" # todo: NEW TRANSLATION
- flavor_dlh.1.entry: "Maráthska kultúra" # todo: NEW TRANSLATION
+ flavor_dlh.1.entry: "$flavor_dlh.1.title$" # todo: CHANGED (predtym: Maráthska kultúra)
  flavor_dlh.1.desc: "Dlhé roky slúžiac rôznym pánom v [ShowRegionName('deccan_region')] si [ShowCultureName('marathi_culture')] dokonale osvojili guerillové vojnovanie tejto plošiny. Narastajúci vplyv kapitánov [ShowCultureNameWithNoTooltip('marathi_culture')] v našich radoch, ako aj vznik [ShowCultureNameWithNoTooltip('marathi_culture')] literárneho jazyka, inšpirovali v ich radoch narastajúci pocit separizmu. Mnohým sa zdá, že ich čas je nastávajúci." # todo: NEW TRANSLATION
  flavor_dlh.1.a: "Nie v našej krajine!" # todo: NEW TRANSLATION
  flavor_dlh.1.a.tt: "Každý [ShowCultureNameWithNoTooltip('marathi_culture')] [Concept('pop','populácia')|e] stratí [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -14,7 +14,7 @@
  flavor_dlh.2.c: "$play_as_revolter$" # todo: NEW TRANSLATION
  flavor_dlh.3.title: "Snahy o nezávislosť [target_malwa_revolter_scope.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.3.entry: "Pokus Malwy o nezávislosť" # todo: NEW TRANSLATION
- flavor_dlh.3.desc: "V zúfalom pokuse získať kontrolu nad situáciou naši poradcovia uznali za vhodné zveriť starostlivosť o naše územia okolo [target_location.GetName] mužovi menom [target_character.GetName]. Avšak jeho túžba po moci spolu s bezpečnou vzdialenosťou od našich jadrových území v [ROOT.GetCountry.GetCapital.GetName] dala priestor hlasom nesúhlasu a separatizmu. Situáciu nezlepšujú ani miestne obyvateľstvá, ktoré vyhlásili ozbrojenú podporu v prospech boja [target_character.GetShortNameWithNoTooltip] proti autorite [target_character2.GetShortName]..." # todo: CHANGED
+ flavor_dlh.3.desc: "V zúfalom pokuse získať kontrolu nad situáciou naši poradcovia uznali za vhodné zveriť starostlivosť o naše územia okolo [target_location.GetName] mužovi menom [target_character.GetName]. Avšak jeho túžba po moci spolu s bezpečnou vzdialenosťou od našich jadrových území v [ROOT.GetCountry.GetCapital.GetName] dala priestor hlasom nesúhlasu a separatizmu. Situáciu nezlepšujú ani miestne obyvateľstvá, ktoré vyhlásili ozbrojenú podporu v prospech boja [target_character.GetShortNameWithNoTooltip] proti autorite [target_character2.GetShortName]..." # todo: CHANGED # todo: COUNTRY CASE
  flavor_dlh.3.a: "Zradcovia, všetci!" # todo: NEW TRANSLATION
  flavor_dlh.3.b: "Nemôžeme si dovoliť ich konfrontovať." # todo: NEW TRANSLATION
  flavor_dlh.3.c: "$play_as_revolter$" # todo: NEW TRANSLATION
@@ -65,7 +65,6 @@
  flavor_dlh.10.a.entry: "Vpred na miesto!" # todo: NEW TRANSLATION
  flavor_dlh.10.b: "Tento plán je šialený!" # todo: NEW TRANSLATION
  flavor_dlh.11.title: "Šialená kampaň [target_country2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_dlh.11.entry: "Dillího šialená kampaň proti nám" # todo: NEW TRANSLATION
  flavor_dlh.11.desc: "Diplomati nás informovali o konaní [target_country2.GetName]. Ich vodca, [target_character2.GetName], chce napadnúť [GetInternationalOrganization('middle_kingdom').GetName], obsadiť [target_location.GetName] a ukončiť našu nadvládu nad $china$." # todo: NEW TRANSLATION
  flavor_dlh.11.a: "Sú šialení?" # todo: NEW TRANSLATION
  flavor_dlh.12.title: "Kmeň [GetDynasty('lodi_dynasty').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -77,20 +76,18 @@
  dlh_all_afghani_pops_in_province_lose_30_satisfaction: "Všetky [ShowCultureName('afghan_culture')] [Concept('pops','populácie')|e] v [target_province.GetName] [Concept('province','provincii')|e] stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.13.title: "Rozšírenie držieb rodu [GetDynasty('lodi_dynasty').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.13.entry: "Rozšírenie držieb dynastie Lodi" # todo: NEW TRANSLATION
- flavor_dlh.13.desc: "S narastajúcim vplyvom dynastie [GetDynasty('lodi_dynasty').GetName] získavali čoraz viac podpory vo svojom panstve a rozširovali svoju moc nad celým [target_area.GetName]. Môžeme ustúpiť ich požiadavkám, ale tento malý [ShowCultureName('afghan_culture')] kmeň sa pomaly mení na vyzývateľa trónu [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ flavor_dlh.13.desc: "S narastajúcim vplyvom dynastie [GetDynasty('lodi_dynasty').GetName] získavali čoraz viac podpory vo svojom panstve a rozširovali svoju moc nad celým [target_area.GetName]. Môžeme ustúpiť ich požiadavkám, ale tento malý [ShowCultureName('afghan_culture')] kmeň sa pomaly mení na vyzývateľa trónu [ROOT.GetCountry.GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.13.a: "Čo je zlé na väčšom počte lojálnych vazalov?" # todo: NEW TRANSLATION
  flavor_dlh.13.b: "Už majú príliš veľa." # todo: NEW TRANSLATION
  dlh_give_entire_area_to_lodi_tt: "Udelíme celú [target_area.GetName] [Concept('area','oblasť')|e] [target_country.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.14.title: "Pád dynastie [GetDynasty('lodi_dynasty').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_dlh.14.entry: "Pád dynastie Lodi" # todo: NEW TRANSLATION
- flavor_dlh.14.desc: "Po potlačení rodiny [GetDynasty('lodi_dynasty').GetName] a obsadení ich území sa nám podarilo obnoviť dôveru v [target_character.GetName]. Už sa [target_character.GetSheHe] nemusí vnímať ako spoluvládca s inými vplyvnými dynastiami, ale ako pravý vládca celého [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ flavor_dlh.14.desc: "Po potlačení rodiny [GetDynasty('lodi_dynasty').GetName] a obsadení ich území sa nám podarilo obnoviť dôveru v [target_character.GetName]. Už sa [target_character.GetSheHe] nemusí vnímať ako spoluvládca s inými vplyvnými dynastiami, ale ako pravý vládca celého [ROOT.GetCountry.GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.14.a: "Nech [target_character.GetNameWithNoTooltip] získa všetku slávu." # todo: NEW TRANSLATION
- flavor_dlh.14.a.entry: "Nech si pripíše všetku slávu." # todo: NEW TRANSLATION
  flavor_dlh.14.b: "Využime túto príležitosť na centralizáciu." # todo: NEW TRANSLATION
  dlh_all_afghan_locations_gain_prosperity_tt: "Každé [Concept('location','lokalita')|e], ktoré má [ShowCultureName('afghan_culture')] [Concept('pops','populácií')|e], získa [ShowNamedValue('prosperity_mild_bonus')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.15.title: "Správa dynastie [GetDynasty('lodi_dynasty').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.15.entry: "Správa dynastie Lodi" # todo: NEW TRANSLATION
- flavor_dlh.15.desc: "Správne skúsenosti dynastie [GetDynasty('lodi_dynasty').GetName] môžu byť efektívne, no sú široko nepopulárne v [ROOT.GetCountry.GetName]. [target_character.GetName] je vnímaný nie ako právoplatný vládca, ale ako uzurpátor, ktorý sleduje len vlastné záujmy, hoci všetko toto sú len reči opozície." # todo: NEW TRANSLATION
+ flavor_dlh.15.desc: "Správne skúsenosti dynastie [GetDynasty('lodi_dynasty').GetName] môžu byť efektívne, no sú široko nepopulárne v [ROOT.GetCountry.GetAltAdjective('L')]. [target_character.GetName] je vnímaný nie ako právoplatný vládca, ale ako uzurpátor, ktorý sleduje len vlastné záujmy, hoci všetko toto sú len reči opozície." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.15.a: "Nech im zostane pochybnosť." # todo: NEW TRANSLATION
  flavor_dlh.15.b: "Zlato je dobrý spôsob, ako umlčať opozíciu." # todo: NEW TRANSLATION
  flavor_dlh.15.c: "[target_character.GetNameWithNoTooltip] je najprávoplatnejší vládca [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -102,19 +99,16 @@
  flavor_dlh.16.b: "Najprv chráňme ekonomiku a stabilitu." # todo: NEW TRANSLATION
  dlh_all_pops_lose_10_satisfaction_tt: "Všetky [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.17.title: "Hrob pre [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_dlh.17.desc: "S odchodom [target_character.GetName] žiali celé [ROOT.GetCountry.GetName]. Po odovzdaní moci [target_character2.GetName] má v úmysle postaviť veľký hrob pre [target_character.GetHerHim], inšpirovaný Skalným dóme v [ShowLocationName('jerusalem')]." # todo: NEW TRANSLATION
+ flavor_dlh.17.desc: "S odchodom [target_character.GetName] žiali celé [ROOT.GetCountry.GetAltAdjective('A')]. Po odovzdaní moci [target_character2.GetName] má v úmysle postaviť veľký hrob pre [target_character.GetHerHim], inšpirovaný Skalným dóme v [ShowLocationName('jerusalem')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.17.a: "Veľká hrobka pre [target_character.GetNameWithNoTooltip]." # todo: CHANGED
- flavor_dlh.17.a.entry: "Veľká hrobka pre neho." # todo: NEW TRANSLATION
  flavor_dlh.17.b: "Na to naše zdroje nebudú míňať." # todo: NEW TRANSLATION
  flavor_dlh.18.title: "Smrť [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.18.desc: "Náš predchádzajúci vládca, [target_character.GetName], bohužiaľ zomrel. [target_character.GetHerHis|U] posedlosť technologickým štúdiom však nevyjde nazmar. [target_character2.GetName] plánuje vytvoriť hrob pre [target_character.GetHerHim], naplnený bohatou knižnicou, ktorú môže ktokoľvek navštíviť." # todo: NEW TRANSLATION
  flavor_dlh.18.a: "Nech tento hrob slúži ako pomník pre každého učenca." # todo: NEW TRANSLATION
  flavor_dlh.18.b: "Netreba viac takýchto hrobiek." # todo: NEW TRANSLATION
  flavor_dlh.19.title: "Hrob [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_dlh.19.entry: "Lodiho hrobka" # todo: NEW TRANSLATION
  flavor_dlh.19.desc: "[target_character.GetName], člen dynastie [GetDynasty('lodi_dynasty').GetName] a obľúbený medzi [ShowCultureName('afghan_culture')] ľuďmi, teraz zomrel. Po predaní trónu [target_character2.GetName] ľudia z [target_location.GetName] žiadajú postaviť hrob na počesť [target_character.GetHerHim]." # todo: NEW TRANSLATION
  flavor_dlh.19.a: "[target_character.GetSheHe|U] bude zapamätaný." # todo: NEW TRANSLATION
- flavor_dlh.19.a.entry: "Bude zapamätaný." # todo: NEW TRANSLATION
  flavor_dlh.19.b: "Ignorujeme ich požiadavky." # todo: NEW TRANSLATION
  flavor_dlh.20.title: "$hisar_e_firoza$" # todo: NEW TRANSLATION
  flavor_dlh.20.entry: "$flavor_dlh.20.title$" # todo: NEW TRANSLATION
@@ -160,7 +154,7 @@
  flavor_dlh.25.b.entry: "Lokalita zostane centrom ríše." # todo: NEW TRANSLATION
  flavor_dlh.26.title: "$lodi_gardens$" # todo: NEW TRANSLATION
  flavor_dlh.26.entry: "$flavor_dlh.26.title$" # todo: NEW TRANSLATION
- flavor_dlh.26.desc: "Za vrcholu vlády dynastie [GetDynasty('lodi_dynasty').GetName] v [ROOT.GetCountry.GetName] plánuje [target_character2.GetName] rozsiahlú záhradu v centre [target_location.GetName]. Najal [target_character.GetName] ako hlavného architekta a nemieni šetriť na tomto projekte." # todo: NEW TRANSLATION
+ flavor_dlh.26.desc: "Za vrcholu vlády dynastie [GetDynasty('lodi_dynasty').GetName] v [ROOT.GetCountry.GetAltAdjective('L')] plánuje [target_character2.GetName] rozsiahlú záhradu v centre [target_location.GetName]. Najal [target_character.GetName] ako hlavného architekta a nemieni šetriť na tomto projekte." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.26.historical_info: "Postavené za vrcholu vlády Lodijev v Dillí, tieto záhrady sú jedným z mála pozostatkov lodiovskej architektúry. Obsahujú Bara Gumbad, mešitu s tromi kupolami, a Shish Gumbad, hrobku, kde boli pochovaní mnohí členovia dynastie." # todo: NEW TRANSLATION
  flavor_dlh.26.a: "Budú to najnádhernejšie záhrady." # todo: NEW TRANSLATION
  flavor_dlh.26.b: "Na tento projekt nebudú vynaložené žiadne prostriedky." # todo: CHANGED
@@ -171,36 +165,32 @@
  flavor_dlh.27.historical_info: "$mad_sultan_historical_info$" # todo: NEW TRANSLATION
  flavor_dlh.27.a: "Pre [ROOT.GetCountry.GetReligion.GetGodName], toto musí prestať." # todo: NEW TRANSLATION
  flavor_dlh.27.a.entry: "Pre nášho boha, toto sa musí zastaviť." # todo: NEW TRANSLATION
- dlh_unique_mad_sultan_events_tt: "Pokým je [target_character.GetName] [Concept('ruler','panovník')|e] [ROOT.GetCountry.GetName], [Concept('events','udalosti')|e] týkajúce sa [target_character.GetHerHim] budú spúšťané" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ dlh_unique_mad_sultan_events_tt: "Pokým je [target_character.GetName] [Concept('ruler','panovník')|e] [ROOT.GetCountry.GetAltAdjective('G')], [Concept('events','udalosti')|e] týkajúce sa [target_character.GetHerHim] budú spúšťané" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  flavor_dlh.28.title: "Vylúpenie [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.28.desc: "Sily [ROOT.GetCountry.GetName] vtrhli do ulíc [target_location.GetName] a [target_character2.GetName] nariadil vyrabovanie [target_location.GetRank.GetName], dúfajúc, že tak doplní prázdne pokladnice posledných rokov." # todo: NEW TRANSLATION
  flavor_dlh.28.historical_info: "$mad_sultan_historical_info$" # todo: NEW TRANSLATION
  flavor_dlh.28.a: "Toto nie je dobré pre prosperitu [target_location.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
- flavor_dlh.28.a.entry: "To nie je dobré pre prosperitu tejto lokality." # todo: NEW TRANSLATION
  flavor_dlh.29.title: "Zvýšené dane v [target_area.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.29.desc: "[target_character.GetName] rozhodol, že guvernér [target_area.GetName] neplatil svoj spravodlivý diel daní a tvrdí, že tam panuje korupcia, preto je potrebná priama intervencia [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
  flavor_dlh.29.a: "Dane sa zvýšia." # todo: NEW TRANSLATION
  flavor_dlh.29.b: "Obmedzme šialenstvo [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
- flavor_dlh.29.b.entry: "Obmedzte jeho šialenstvo." # todo: NEW TRANSLATION
  flavor_dlh.29.historical_info: "$mad_sultan_historical_info$" # todo: NEW TRANSLATION
  dlh_every_location_in_area_gets_following_tt: "Každé [Concept('location','lokalita')|e] v [target_area.GetName] získa [ShowModifier('dlh_increased_taxes')] [Concept('modifier','modifikátor')|e] a zároveň stratí [ShowNamedValue('control_mild_penalty')|+=2%] [Concept('control','kontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.30.title: "Pobožnosť [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.30.desc: "[target_character.GetName] považuje [target_character.GetHerselfHimself] za verného služobníka [ROOT.GetCountry.GetReligion.GetGodName] a je ochotný dôjsť do veľkých obetí, aby prejavil túto oddanosť. Túži si chvíľu oddýchnuť a venovať sa štúdiu svätých spisov, pričom zostane idolom [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
  flavor_dlh.30.a: "Nech [target_character.GetHerHim] robí, čo [target_character.GetSheHe] chce." # todo: NEW TRANSLATION
- flavor_dlh.30.a.entry: "Nech robí, čo chce." # todo: NEW TRANSLATION
  flavor_dlh.30.historical_info: "$mad_sultan_historical_info$" # todo: NEW TRANSLATION
  flavor_dlh.31.title: "[target_area.GetNameWithNoTooltip] odmieta platiť dane" # todo: NEW TRANSLATION
- flavor_dlh.31.entry: "Provincia odmieta platiť dane" # todo: NEW TRANSLATION
  flavor_dlh.31.desc: "Hoci [target_area.GetName] dodržiavalo zákony [ROOT.GetCountry.GetName], [target_character.GetName] sa rozhodol tam zvýšiť dane v nádeji, že tak doplní stratené príjmy. Aj keby sme to mohli zastaviť, ľudia tam už tento návrh odmietli a snažia sa získať väčšiu autonómiu od našej vlády." # todo: NEW TRANSLATION
  flavor_dlh.31.a: "To nie je dobré." # todo: NEW TRANSLATION
  flavor_dlh.31.historical_info: "$mad_sultan_historical_info$" # todo: NEW TRANSLATION
  dlh_every_location_in_area_loses_control_tt: "Každá [Concept('location','lokalita')|e] v [target_area.GetName] stratí [ShowNamedValue('control_extreme_penalty')|+=2%] [Concept('control','kontrole')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.32.title: "Potláčanie [ShowReligionAdjectiveWithNoTooltip('shia')] obyvateľstva" # todo: NEW TRANSLATION
  flavor_dlh.32.entry: "Obmedzovanie šíitského obyvateľstva" # todo: NEW TRANSLATION
- flavor_dlh.32.desc: "Hoci sa [ROOT.GetCountry.GetName] snaží byť čo najviac tolerantné, [ShowReligionAdjective('shia')] obyvateľstvo v [ROOT.GetCountry.GetFlavorRank] vyvoláva nepokoje. Neznášaní obyvateľstvom, nedodržiavajú väčšinu zákonov. Mali by sme s tým niečo urobiť." # todo: NEW TRANSLATION
+ flavor_dlh.32.desc: "Hoci sa [ROOT.GetCountry.GetAltAdjective('A')] snaží byť čo najviac tolerantné, [ShowReligionAdjective('shia')] obyvateľstvo v [ROOT.GetCountry.GetFlavorRank] vyvoláva nepokoje. Neznášaní obyvateľstvom, nedodržiavajú väčšinu zákonov. Mali by sme s tým niečo urobiť." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.32.a: "Požadujme konverziu." # todo: NEW TRANSLATION
  flavor_dlh.32.b: "Netreba spôsobovať ďalšie vnútorné konflikty." # todo: NEW TRANSLATION
- dlh_15_percent_of_shia_pops_convert_to_root_religion_tt: "#Y 15%#! našich [ShowReligionName('shia')] [Concept('pops','populácií')|e] sa konvertuje na [ROOT.GetCountry.GetReligion.GetName], ale stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ dlh_15_percent_of_shia_pops_convert_to_root_religion_tt: "#Y 15%#! našich [ShowReligionName('shia')] [Concept('pops','populácií')|e] sa konvertuje na [ROOT.GetCountry.GetReligion.GetName], ale stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  flavor_dlh.33.title: "Pravá ruka [target_character2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.33.entry: "Malik Maqbul, veľký vezír" # todo: NEW TRANSLATION
  flavor_dlh.33.desc: "Predchádzajúce politiky zanechali [ROOT.GetCountry.GetName] v neistej situácii. Mnohé povstania, ekonomické problémy, náboženské konflikty, ako aj vonkajšie hrozby nemôže zvládnuť jeden muž. Našťastie [target_character.GetName], vynikajúci generál [target_character2.GetName], ponúkol svoju podporu pri riešení všetkých týchto problémov." # todo: CHANGED
@@ -213,9 +203,9 @@
  flavor_dlh.34.a: "Investujme do týchto miest." # todo: NEW TRANSLATION
  flavor_dlh.34.b: "Nepotrebujeme plytvať naším zlatom." # todo: NEW TRANSLATION
  variable_dlh_grand_vizier_tt: "Veľký vezír slúži dvoru" # todo: NEW TRANSLATION
- flavor_dlh.35.title: "Boj proti hladu v [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_dlh.35.title: "Boj proti hladu v [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('L')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.35.entry: "$flavor_dlh.35.title$" # todo: NEW TRANSLATION
- flavor_dlh.35.desc: "V dôsledku niekoľkých neúspešných úrod v niektorých provinciách [ROOT.GetCountry.GetName] majú teraz málo až žiadne potraviny. [target_character.GetName] navrhol [ROOT.GetCountry.GetGovernment.GetCourtTitle], aby sme s tým niečo urobili a poslali pomoc miestam, ktoré ju najviac potrebujú." # todo: NEW TRANSLATION
+ flavor_dlh.35.desc: "V dôsledku niekoľkých neúspešných úrod v niektorých provinciách [ROOT.GetCountry.GetAltAdjective('L')] majú teraz málo až žiadne potraviny. [target_character.GetName] navrhol [ROOT.GetCountry.GetGovernment.GetCourtTitle], aby sme s tým niečo urobili a poslali pomoc miestam, ktoré ju najviac potrebujú." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.35.a: "[target_character.GetSheHe|U] môže mať na starosti túto politiku." # todo: NEW TRANSLATION
  flavor_dlh.35.a.entry: "Môže viesť túto politiku." # todo: NEW TRANSLATION
  flavor_dlh.35.b: "Myslí si [target_character.GetSheHe], že je [ROOT.GetCountry.GetGovernment.GetRulerTitle]?" # todo: NEW TRANSLATION
@@ -223,17 +213,17 @@
  dlh_whilst_grand_vizier_is_in_council_or_ruler_allow_combat_famine_parliament_debate_tt: "Pokiaľ bude [target_character.GetName] v [Concept('cabinet','kabinete')|e] alebo bude [Concept('ruler','panovník')|e] [ROOT.GetCountry.GetName], budeme môcť použiť [ShowParliamentIssueType('dlh_famine_reductions')] [Concept('parliament_issue','parlamentná záležitosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.36.title: "Zákaz mučenia" # todo: NEW TRANSLATION
  flavor_dlh.36.entry: "$flavor_dlh.36.title$" # todo: NEW TRANSLATION
- flavor_dlh.36.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] vždy používali mučenie proti nižším ľuďom [ROOT.GetCountry.GetName], aby presadili svoju vôľu a nastavili príklady. [target_character.GetName] uvažuje o zákaze tejto praxe, aby potlačil výstrelky nečestných vykonávateľov a obnovil poriadok v justícii." # todo: NEW TRANSLATION
+ flavor_dlh.36.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] vždy používali mučenie proti nižším ľuďom [ROOT.GetCountry.GetAltAdjective('D')], aby presadili svoju vôľu a nastavili príklady. [target_character.GetName] uvažuje o zákaze tejto praxe, aby potlačil výstrelky nečestných vykonávateľov a obnovil poriadok v justícii." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.36.a: "Mučenie bude zakázané." # todo: NEW TRANSLATION
  flavor_dlh.36.b: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] nebudú poslúchať obyčajného vezíra!" # todo: NEW TRANSLATION
  flavor_dlh.36.b.entry: "$nobles_estate$ nebudú počúvať obyčajného vezíra!" # todo: NEW TRANSLATION
  flavor_dlh.36.historical_info: "Počas vlády Fīrūz Šāh Tughlaq v Delí on a jeho veľký vezír Malik Maqbul viedli niekoľko reforiem. Jednou z nich bolo zrušenie mučenia. Mnohé zo zakázaných metód sú zaznamenané v jeho pamätiach, ktoré zahŕňajú metódy ako amputácie a upaľovanie ľudí." # todo: NEW TRANSLATION
  flavor_dlh.37.title: "Nútené zdaňovanie [ShowReligionAdjectiveWithNoTooltip('hindu')] občanov" # todo: NEW TRANSLATION
  flavor_dlh.37.entry: "Nátlakové zdanenie hinduistických obyvateľov" # todo: NEW TRANSLATION
- flavor_dlh.37.desc: "Keďže väčšina našej populácie nasleduje vieru [ShowReligionAdjective('hindu')], [target_character.GetName] navrhol uložiť im vysokú daň. To by nielen zvýšilo naše príjmy, ale tiež časť z nich konvertovalo na [ROOT.GetCountry.GetReligion.GetName]." # todo: NEW TRANSLATION
+ flavor_dlh.37.desc: "Keďže väčšina našej populácie nasleduje vieru [ShowReligionAdjective('hindu')], [target_character.GetName] navrhol uložiť im vysokú daň. To by nielen zvýšilo naše príjmy, ale tiež časť z nich konvertovalo na [ROOT.GetCountry.GetReligion.GetName]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.37.a: "Uložme túto novú daň." # todo: NEW TRANSLATION
  flavor_dlh.37.b: "Nenechajme ich pobúriť." # todo: NEW TRANSLATION
- dlh_5_percent_of_pops_convert_to_our_religion_tt: "#Y 5%#! z [ShowReligionAdjective('hindu')] [Concept('pops','populácií')|e] sa konvertuje na [ROOT.GetCountry.GetReligion.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ dlh_5_percent_of_pops_convert_to_our_religion_tt: "#Y 5%#! z [ShowReligionAdjective('hindu')] [Concept('pops','populácií')|e] sa konvertuje na [ROOT.GetCountry.GetReligion.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  flavor_dlh.37.historical_info: "Napriek prosperite, ktorú priniesla Delí počas vlády Fīrūz Šāh Tughlaq, jedny z najradikálnejších reforiem boli tie, ktoré nielenže uplatnili $sharia$ právo na hinduistických občanov, ale tiež viedli k kampani násilných konverzií na subkontinente. Každého, kto sa mu postavil, poslal jeho armády povraždiť tisíce hinduistov a znesvätiť tamojšie chrámy." # todo: NEW TRANSLATION
  flavor_dlh.38.title: "Prevrat [target_character2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.38.entry: "Prevrat Malika Maqbula" # todo: NEW TRANSLATION
@@ -241,25 +231,22 @@
  flavor_dlh.38.a: "Vláda [target_character2.GetNameWithNoTooltip] nám prinesie prosperitu!" # todo: NEW TRANSLATION
  flavor_dlh.38.a.entry: "Jeho vláda nám prinesie prosperitu!" # todo: NEW TRANSLATION
  flavor_dlh.39.title: "Pád dynastie [GetDynasty('tughlaq_dynasty').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_dlh.39.entry: "Pád dynastie $tughlaq_dynasty$" # todo: NEW TRANSLATION
- flavor_dlh.39.desc: "Dynastia [GetDynasty('tughlaq_dynasty').GetName] bola zbavená moci v [ROOT.GetCountry.GetName]. To umožnilo väčšiu sociálnu mobilitu a prepustenie mnohých otrokov v [ROOT.GetCountry.GetFlavorRank]. [target_character.GetName] [target_character.GetHerselfHimself] to presadzuje, napriek možným negatívnym reakciám." # todo: NEW TRANSLATION
+ flavor_dlh.39.desc: "Dynastia [GetDynasty('tughlaq_dynasty').GetName] bola zbavená moci v [ROOT.GetCountry.GetAltAdjective('L')]. To umožnilo väčšiu sociálnu mobilitu a prepustenie mnohých otrokov v [ROOT.GetCountry.GetFlavorRank]. [target_character.GetName] [target_character.GetHerselfHimself] to presadzuje, napriek možným negatívnym reakciám." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.39.a: "Zbavme sa minulých vplyvov." # todo: NEW TRANSLATION
  dlh_20_percent_of_slaves_become_peasants_tt: "#Y 20%#! našich [ShowPopTypeName('slaves')] bude povýšených na [ShowPopTypeName('peasants')]" # todo: NEW TRANSLATION
  flavor_dlh.40.title: "Zriadenie Ghulāmān-i-Fīrūz-Šāhī" # todo: NEW TRANSLATION
  flavor_dlh.40.entry: "$flavor_dlh.40.title$" # todo: NEW TRANSLATION
- flavor_dlh.40.desc: "Vzhľadom na hojnosť otrokov v [ROOT.GetCountry.GetName] a dynastiu [GetDynasty('tughlaq_dynasty').GetName] na tróne, [target_character.GetName] plánuje vytvoriť stály vojenský zbor. Malá jednotka elitných otrokov nazvaná Ghulāmān-i-Fīrūz-Šāhī má chrániť [ROOT.GetCountry.GetGovernment.GetRulerTitle] pred akýmkoľvek nebezpečenstvom." # todo: NEW TRANSLATION
+ flavor_dlh.40.desc: "Vzhľadom na hojnosť otrokov v [ROOT.GetCountry.GetAltAdjective('L')] a dynastiu [GetDynasty('tughlaq_dynasty').GetName] na tróne, [target_character.GetName] plánuje vytvoriť stály vojenský zbor. Malá jednotka elitných otrokov nazvaná Ghulāmān-i-Fīrūz-Šāhī má chrániť [ROOT.GetCountry.GetGovernment.GetRulerTitle] pred akýmkoľvek nebezpečenstvom." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.40.a: "Založme túto jednotku." # todo: NEW TRANSLATION
  flavor_dlh.40.b: "[ROOT.GetCountry.GetGovernment.GetAdjective|U] stráže nie sú práve známe tým, že by chránili svojich vládcov..." # todo: NEW TRANSLATION
  flavor_dlh.40.b.entry: "Kráľovská garda nie je známa tým, že by chránila svojich vládcov..." # todo: NEW TRANSLATION
  flavor_dlh.41.title: "Korupcia v otrockých gardách" # todo: NEW TRANSLATION
- flavor_dlh.41.entry: "$flavor_dlh.41.title$" # todo: NEW TRANSLATION
  flavor_dlh.41.desc: "V dôsledku neschopnosti [target_character.GetNameWithNoTooltip] kolujú reči, že Ghulāmān-i-Fīrūz-Šāhī plánujú prevrat proti [ROOT.GetCountry.GetGovernment.GetRulerTitle] a nahradiť [target_character.GetHerHim] príjemnejším kandidátom, ktorého by mohli ovládať." # todo: NEW TRANSLATION
  flavor_dlh.41.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
- flavor_dlh.41.a.entry: "$common_string_curses$" # todo: NEW TRANSLATION
  flavor_dlh.41.b: "Trocha zlata im pripomenie ich úlohu." # todo: NEW TRANSLATION
  flavor_dlh.42.title: "Architektúra [GetDynasty('tughlaq_dynasty').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.42.entry: "Architektúra dynastie Tughlaq" # todo: NEW TRANSLATION
- flavor_dlh.42.desc: "[target_character.GetName] prináša kultúrnu prosperitu do [ROOT.GetCountry.GetName]. Sponzorovaním mnohých architektov si [target_character.GetSheHe] zaslúži pochvalu za renováciu [target_location.GetRank.GetName] v [target_location.GetName]." # todo: NEW TRANSLATION
+ flavor_dlh.42.desc: "[target_character.GetName] prináša kultúrnu prosperitu do [ROOT.GetCountry.GetAltAdjective('G')]. Sponzorovaním mnohých architektov si [target_character.GetSheHe] zaslúži pochvalu za renováciu [target_location.GetRank.GetName] v [target_location.GetName]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.42.a: "Sponzorujme to ešte viac." # todo: NEW TRANSLATION
  flavor_dlh.42.b: "Tu nepotrebujeme viac architektov." # todo: NEW TRANSLATION
  flavor_dlh.43.title: "Zemetrasenie v $qutb_minar$" # todo: NEW TRANSLATION
@@ -268,67 +255,57 @@
  flavor_dlh.43.a: "Nechajme ho padnúť." # todo: NEW TRANSLATION
  flavor_dlh.43.b: "Opravme ho." # todo: NEW TRANSLATION
  flavor_dlh.44.title: "Oprava $qutb_minar$" # todo: NEW TRANSLATION
- flavor_dlh.44.entry: "$flavor_dlh.44.title$" # todo: NEW TRANSLATION
  flavor_dlh.44.desc: "Po nedávnom zemetrasení v [target_location.GetName] [ROOT.GetCountry.GetGovernment.GetCourtTitle] plánuje nové renovácie $qutb_minar$. Pod vedením [target_character.GetName] [target_character.GetSheHe] chce pridať piate poschodie k veži." # todo: NEW TRANSLATION
  flavor_dlh.44.a: "Nech [target_character.GetHerHim] to urobí." # todo: NEW TRANSLATION
- flavor_dlh.44.a.entry: "Nech to urobí." # todo: NEW TRANSLATION
  flavor_dlh.44.b: "Nedovolíme [target_character.GetHerHim] to." # todo: NEW TRANSLATION
- flavor_dlh.44.b.entry: "Nedovolíme mu to." # todo: NEW TRANSLATION
  flavor_dlh.45.title: "Zrušenie mincových reforiem [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.45.entry: "Zrušenie menových reforiem Tughluqa" # todo: NEW TRANSLATION
- flavor_dlh.45.desc: "Mince ražené počas vlády [target_character.GetName] boli, mierne povedané, katastrofou. Spôsobili nekontrolovateľnú infláciu v [ROOT.GetCountry.GetName], čo viedlo k výraznému úpadku ekonomiky. [target_character.GetNameWithNoTooltip] chce tieto reformy zvrátiť, ale vyžadovalo by to množstvo zlata a postavilo by sa to proti [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]." # todo: NEW TRANSLATION
+ flavor_dlh.45.desc: "Mince ražené počas vlády [target_character.GetName] boli, mierne povedané, katastrofou. Spôsobili nekontrolovateľnú infláciu v [ROOT.GetCountry.GetAltAdjective('L')], čo viedlo k výraznému úpadku ekonomiky. [target_character.GetNameWithNoTooltip] chce tieto reformy zvrátiť, ale vyžadovalo by to množstvo zlata a postavilo by sa to proti [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.45.a: "Zrušme túto katastrofálnu reformu." # todo: NEW TRANSLATION
  flavor_dlh.45.b: "Nebudeme s tým bojovať." # todo: NEW TRANSLATION
  flavor_dlh.46.title: "Renesancia poézie a hudby" # todo: NEW TRANSLATION
  flavor_dlh.46.entry: "$flavor_dlh.46.title$" # todo: NEW TRANSLATION
- flavor_dlh.46.desc: "Vďaka sponzorovaniu mnohých umelcov [target_character.GetName] nastalo nové obdobie pre [ROOT.GetCountry.GetName] a kultúru [ROOT.GetCountry.GetCulture.GetName] ako celok. To nám dáva dôvod investovať viac prostriedkov do tejto renesancie." # todo: NEW TRANSLATION
+ flavor_dlh.46.desc: "Vďaka sponzorovaniu mnohých umelcov [target_character.GetName] nastalo nové obdobie pre [ROOT.GetCountry.GetAltAdjective('A')] a kultúru [ROOT.GetCountry.GetCulture.GetName] ako celok. To nám dáva dôvod investovať viac prostriedkov do tejto renesancie." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.46.a: "Za [ROOT.GetCountry.GetReligion.GetGodName], investujeme." # todo: NEW TRANSLATION
  flavor_dlh.46.a.entry: "Pre nášho boha, budeme investovať." # todo: NEW TRANSLATION
  flavor_dlh.46.b: "Nie je treba investovať viac." # todo: NEW TRANSLATION
  flavor_dlh.47.title: "Nepokoje medzi paštúnskou šľachtou" # todo: NEW TRANSLATION
  flavor_dlh.47.entry: "$flavor_dlh.47.title$" # todo: NEW TRANSLATION
- flavor_dlh.47.desc: "Paštúnska šľachta, veľmi vplyvné [ShowCultureName('afghan_culture')] rodiny v [ROOT.GetCountry.GetName], sa stávajú čoraz vzdornejšími. Keď vidia, že spoločnosť ich začína uprednostňovať menej, zvolávajú ľudí v [target_area.GetName], konkrétne v [target_location.GetName], aby získali väčšiu autonómiu." # todo: NEW TRANSLATION
+ flavor_dlh.47.desc: "Paštúnska šľachta, veľmi vplyvné [ShowCultureName('afghan_culture')] rodiny v [ROOT.GetCountry.GetAltAdjective('L')], sa stávajú čoraz vzdornejšími. Keď vidia, že spoločnosť ich začína uprednostňovať menej, zvolávajú ľudí v [target_area.GetName], konkrétne v [target_location.GetName], aby získali väčšiu autonómiu." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.47.a: "Nech prídu." # todo: NEW TRANSLATION
  flavor_dlh.47.b: "Môžu mať viac privilégií než ostatná šľachta." # todo: NEW TRANSLATION
  dlh_afghan_unrest_tt: "Všetky [ShowCultureName('afghan_culture')] [Concept('pops','populácie')|e] v [target_area.GetName] stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  dlh_afghan_control_tt: "Všetky vlastnené [Concept('locations','lokality')|e] v [target_area.GetName] stratia [ShowNamedValue('control_extreme_penalty')|+=2%] [Concept('control','kontrola')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.48.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.48.entry: "Khizr Khan, sayyidský guvernér" # todo: NEW TRANSLATION
- flavor_dlh.48.desc: "S vplyvom, ktorý má [target_country.GetName] nad [ROOT.GetCountry.GetName], guvernéri prichádzajú a odchádzajú z [ROOT.GetCountry.GetCapital.GetName]. Najnovším je [target_character.GetName], člen dynastie [GetDynasty('sayyid_dynasty').GetName], ktorá tvrdí, že je potomkom Muḥammada, veľkého proroka [ShowReligionGroupName('muslim')]." # todo: CHANGED
+ flavor_dlh.48.desc: "S vplyvom, ktorý má [target_country.GetName] nad [ROOT.GetCountry.GetAltAdjective('I')], guvernéri prichádzajú a odchádzajú z [ROOT.GetCountry.GetCapital.GetName]. Najnovším je [target_character.GetName], člen dynastie [GetDynasty('sayyid_dynasty').GetName], ktorá tvrdí, že je potomkom Muḥammada, veľkého proroka [ShowReligionGroupName('muslim')]." # todo: CHANGED # todo: COUNTRY CASE
  flavor_dlh.48.a: "Znie ako obyčajný pretendent." # todo: CHANGED
  flavor_dlh.48.a.entry: "Postava bude novým guvernérom." # todo: NEW TRANSLATION
  flavor_dlh.48.b: "On znie ako obyčajný pretendent." # todo: CHANGED
  flavor_dlh.50.title: "Obnovenie Sahana-i-Mandi" # todo: NEW TRANSLATION
  flavor_dlh.50.entry: "$flavor_dlh.50.title$" # todo: NEW TRANSLATION
- flavor_dlh.50.desc: "Naši predchádzajúci vládcovia sa snažili zaviesť cenové kontroly na trhoch [ROOT.GetCountry.GetName], ktoré sa však zvyčajne po ich smrti rýchlo zrušili. Tieto reformy mali podriadiť [ShowReligionAdjective('hindu')] obyvateľstvo a zároveň umožniť naverbovanie väčšej armády. Teraz, keď je pri moci [target_character.GetName], môže existovať nádej na obnovenie týchto nariadení." # todo: NEW TRANSLATION
+ flavor_dlh.50.desc: "Naši predchádzajúci vládcovia sa snažili zaviesť cenové kontroly na trhoch [ROOT.GetCountry.GetAltAdjective('L')], ktoré sa však zvyčajne po ich smrti rýchlo zrušili. Tieto reformy mali podriadiť [ShowReligionAdjective('hindu')] obyvateľstvo a zároveň umožniť naverbovanie väčšej armády. Teraz, keď je pri moci [target_character.GetName], môže existovať nádej na obnovenie týchto nariadení." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.50.a: "Je čas ich zaviesť." # todo: NEW TRANSLATION
  flavor_dlh.50.b: "Neutláčajme naše menšiny." # todo: NEW TRANSLATION
  flavor_dlh.51.title: "[target_character.GetNameWithNoTooltip] zavraždený!" # todo: NEW TRANSLATION
- flavor_dlh.51.desc: "Ghulāmān-i-Fīrūz-Šāhī z [ROOT.GetCountry.GetName] ukázali svoju pravú tvár zvyšku [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Túžiac zbaviť sa [target_character.GetName], úspešne zavraždili [target_character.GetHerHim], čo umožnilo [target_character.GetHerHis] nástupcovi riadne vládnuť [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
+ flavor_dlh.51.desc: "Ghulāmān-i-Fīrūz-Šāhī z [ROOT.GetCountry.GetAltAdjective('G')] ukázali svoju pravú tvár zvyšku [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Túžiac zbaviť sa [target_character.GetName], úspešne zavraždili [target_character.GetHerHim], čo umožnilo [target_character.GetHerHis] nástupcovi riadne vládnuť [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.51.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
- flavor_dlh.51.a.entry: "$common_string_curses$" # todo: NEW TRANSLATION
  flavor_dlh.52.title: "Vymenovanie cestovateľa" # todo: NEW TRANSLATION
- flavor_dlh.52.desc: "Situácia [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetRulerTitle] je v najlepšom prípade neistá. [ROOT.GetCountry.GetFlavorRank] sužuje mnoho vnútorných problémov, z ktorých mnohé sú spôsobené vládou mocných členov [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. S tak silnými správcami a ich hlbokými väzbami by bolo možno vhodnejšie priviesť nové sily ako [target_character.GetName], skutočne významnú osobnosť, ktorá práve cestuje cez [ROOT.GetCountry.GetNameWithNoTooltip]. Pomoc [target_character.GetShortNameWithNoTooltip] by pomohla znížiť moc súčasnej [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]." # todo: NEW TRANSLATION
+ flavor_dlh.52.desc: "Situácia [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetRulerTitle] je v najlepšom prípade neistá. [ROOT.GetCountry.GetFlavorRank] sužuje mnoho vnútorných problémov, z ktorých mnohé sú spôsobené vládou mocných členov [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. S tak silnými správcami a ich hlbokými väzbami by bolo možno vhodnejšie priviesť nové sily ako [target_character.GetName], skutočne významnú osobnosť, ktorá práve cestuje cez [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('A')]. Pomoc [target_character.GetShortNameWithNoTooltip] by pomohla znížiť moc súčasnej [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.52.a: "Dobre, vymenujte [target_character.GetHerHim]." # todo: NEW TRANSLATION
- flavor_dlh.52.a.entry: "Dobre, nech ho vymenujú." # todo: NEW TRANSLATION
  flavor_dlh.52.b: "Nepotrebujeme [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
- flavor_dlh.52.b.entry: "Nepotrebujeme ho." # todo: NEW TRANSLATION
  flavor_dlh.53.title: "Odvolanie z úradu" # todo: NEW TRANSLATION
  flavor_dlh.53.desc: "Vzťahy medzi [target_character2.GetName] a [target_character.GetName] boli až donedávna priateľské. Avšak [ROOT.GetCountry.GetGovernment.GetRulerTitle] je obávaný pre [target_character2.GetHisHer] sklon podozrievať z rebélie aj tých najvernejších členov kabinetu. [target_character.GetShortNameWithNoTooltip] nie je výnimkou; po niekoľkých nenápadných poznámkach nesúhlasných s [target_character2.GetShortNameWithNoTooltip] je teraz podozrivý z vlastizrady a môže byť odvolaný z funkcie, alebo dokonca odsúdený na smrť." # todo: NEW TRANSLATION
  flavor_dlh.53.a: "Dobre, nech ide preč." # todo: NEW TRANSLATION
  flavor_dlh.53.b: "[target_character.GetNameWithNoTooltip] neurobil nič zlé!" # todo: NEW TRANSLATION
- flavor_dlh.53.b.entry: "Neurobil nič zlé!" # todo: NEW TRANSLATION
  flavor_dlh.54.title: "Správa od otroka" # todo: NEW TRANSLATION
  flavor_dlh.54.desc: "Účinné špionážne a spravodajské siete sú kľúčové pre udržanie autority [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Rôzni mamluci slúžia našim ministrom a daňovým inkasom podľa [ShowLawName('iqta_law')], od ktorých sa očakáva, že budú hlásiť akúkoľvek neveru a vlastizradu vláde. Systém funguje, ako má: jeden z otrokov slúžiacich [target_character.GetName] odhalil [target_character.GetHerHim] ako zradcu, ktorý sa chystá vzbúriť v [target_province.GetName], pokiaľ sa rýchlo niečo neurobí." # todo: NEW TRANSLATION
  flavor_dlh.54.a: "Urýchlene uväznite [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
- flavor_dlh.54.a.entry: "Rýchlo ho uväznite." # todo: NEW TRANSLATION
  flavor_dlh.54.b: "Bez konkrétnejších dôkazov by väznenie mohlo byť tyranským činom." # todo: NEW TRANSLATION
  flavor_dlh.55.title: "Nositeľ [ShowLawNameWithNoTooltip('iqta_law')] nedokáže splniť kvótu" # todo: NEW TRANSLATION
  flavor_dlh.55.desc: "Jeden z našich daňových inkas, [target_character.GetName], má hlásené nedodržanie daňových kvót. Keďže nedokáže získať dosť zlata na splnenie štátnych požiadaviek, [target_character.GetShortNameWithNoTooltip] sa obáva o svoj život kvôli povestiam, že [ShowModifier('dlh_the_mad_sultan')] takéto neefektívnosti rieši brutálne. V takej zúfalej situácii sa [target_character.GetShortNameWithNoTooltip] rozhodol vziať zbrane vo svojej provincii [target_province.GetName] proti [target_character2.GetName]." # todo: NEW TRANSLATION
  flavor_dlh.55.a: "Vymažeme [target_character.GetHerHim] z povrchu zemského!" # todo: NEW TRANSLATION
- flavor_dlh.55.a.entry: "Vymažeme ho z tváre zeme!" # todo: NEW TRANSLATION
  flavor_dlh.55.b: "Skúste vyjednávať s [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
- flavor_dlh.55.b.entry: "Skúste s ním vyjednávať." # todo: NEW TRANSLATION
  flavor_dlh.56.title: "Vrtošivá vernosť [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]" # todo: NEW TRANSLATION
  flavor_dlh.56.entry: "$flavor_dlh.56.title$" # todo: NEW TRANSLATION
  flavor_dlh.56.desc: "Časy sú pre [ROOT.GetCountry.GetLongName] ťažšie. [ShowSituationName('fall_of_delhi')] je v plnom prúde a povstania nás číhajú na každom kroku. V provinciách prevláda lúpežná činnosť, daňové príjmy klesajú a [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] nás zradia pri prvej príležitosti. Aby sme oddialili [ShowDisasterName('dissolution_of_delhi')], udeľovali sme pozície v [ShowLawName('iqta_law')] dedičným spôsobom, čo sa pre [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] stalo skôr normou než výnimkou." # todo: NEW TRANSLATION
@@ -364,11 +341,8 @@
  flavor_dlh.62.title: "Zaujímavá príležitosť" # todo: NEW TRANSLATION
  flavor_dlh.62.desc: "Pred nedávnom sme zvažovali možnosť expanzie do [ShowAreaName('eastern_khorasan_area')] a iných krajín za Indom. Hoci sme myšlienku čiastočne opustili, stále presadzujeme politiku pozývania rôznych zahraničných talentov a udeľovania veľkých pôdnych grantov. Možno by sme mali pozvať aj [target_character.GetName], ktorý by mohol byť kľúčový, ak by sme sa niekedy chceli s [target_country.GetName] vyjednávať alebo na ňu vpadnúť." # todo: NEW TRANSLATION
  flavor_dlh.62.a: "Pozvite [target_character.GetShortNameWithNoTooltip]." # todo: NEW TRANSLATION
- flavor_dlh.62.a.entry: "Pozvite ho." # todo: NEW TRANSLATION
  flavor_dlh.62.b: "Nepotrebujeme [target_character.GetHerHim]." # todo: NEW TRANSLATION
- flavor_dlh.62.b.entry: "Nepotrebujeme ho." # todo: NEW TRANSLATION
  flavor_dlh.63.title: "[target_character.GetNameWithNoTooltip] sa presťahuje do [from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_dlh.63.entry: "Člen dynastie podplatený, aby prebehol." # todo: NEW TRANSLATION
  flavor_dlh.63.desc: "Jeden z členov vládnucej dynastie, [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName], bol podplatený, aby opustil našu krajinu! Nevieme prečo, ale určite to nie je dobré znamenie. Dúfame, že pôdny grant, ktorý [target_character.GetName] prijal, stál za zradu [target_character.GetHerHis] príbuzných." # todo: NEW TRANSLATION
  flavor_dlh.63.a: "Čo to môže znamenať?" # todo: NEW TRANSLATION
  flavor_dlh.64.title: "[target_work_of_art.GetNameWithNoTooltip] zasiahnuté bleskom" # todo: NEW TRANSLATION
@@ -394,19 +368,16 @@
  flavor_dlh.1000.b: "Nie sme rebeli, len správcovia." # todo: NEW TRANSLATION
  flavor_dlh.1000.historical_info: "Bahlūl Khān Lōdī, vtedajší guvernér Sirhindu, bol prvým panovníkom Lōdī v Dillí. Využívajúc svoje predchádzajúce úspechy ako generál za Muḥammad Šāha IV., mu bola zverená správa veľkej časti Pandžábu. Po smrti jeho pána a abdikácii 'Alā' al-Dīn 'Ālam Šāha bol pozvaný šľachtou v hlavnom meste, kde bol vyhlásený za sultána." # todo: NEW TRANSLATION
  flavor_dlh.1001.title: "$flavor_dlh_1000_title_shared$" # todo: NEW TRANSLATION
- flavor_dlh.1001.entry: "$flavor_dlh.1001.title$" # todo: NEW TRANSLATION
  flavor_dlh.1001.desc: "Dynastia [target_dynasty.GetName] konečne ukázala svoje pravé farby. Po rokoch získavania podpory teraz plánujú zosadiť [target_character.GetName] a nahradiť ho [target_character2.GetName]. Nebudeme pri tom bezmocne stáť." # todo: NEW TRANSLATION
  flavor_dlh.1001.a: "Na zbrane!" # todo: NEW TRANSLATION
  flavor_dlh.1001.b: "Možno [ROOT.GetCountry.GetGovernment.GetCourtTitle] uprednostňuje [target_character2.GetNameWithNoTooltip]..." # todo: NEW TRANSLATION
- flavor_dlh.1001.b.entry: "Možno ho dvor uprednostňuje..." # todo: NEW TRANSLATION
  flavor_dlh.1002.title: "Víťazstvo dynastie [target_dynasty.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_dlh.1002.entry: "Víťazstvo dynastie Lodi" # todo: NEW TRANSLATION
  flavor_dlh.1002.desc: "S pádom $DLH$ môžeme konečne uchopiť moc v $india$. Dynastia [target_dynasty.GetName] teraz stojí nad ostatnými pretendentmi." # todo: NEW TRANSLATION
  flavor_dlh.1002.a: "Teraz je čas na mier." # todo: NEW TRANSLATION
  flavor_dlh_1100_title: "Guvernorát [ShowRegionNameWithNoTooltip('bengal_region')]" # todo: NEW TRANSLATION
  flavor_dlh.1100.title: "$flavor_dlh_1100_title$" # todo: NEW TRANSLATION
  flavor_dlh.1100.entry: "$flavor_dlh.1100.title$" # todo: NEW TRANSLATION
- flavor_dlh.1100.desc: "Územia [ShowRegionName('bengal_region')] sú spravované viacerými guvernérmi, všetci s rôznou vernosťou voči [ROOT.GetCountry.GetName]. Namiesto riešenia tohto chaosu by sme mohli ponúknuť celý región [target_character.GetName] z [target_country.GetName]." # todo: NEW TRANSLATION
+ flavor_dlh.1100.desc: "Územia [ShowRegionName('bengal_region')] sú spravované viacerými guvernérmi, všetci s rôznou vernosťou voči [ROOT.GetCountry.GetAltAdjective('D')]. Namiesto riešenia tohto chaosu by sme mohli ponúknuť celý región [target_character.GetName] z [target_country.GetName]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.1100.a: "[target_country.GetNameWithNoTooltip] budú výbornými guvernérmi." # todo: NEW TRANSLATION
  flavor_dlh.1100.a.entry: "Budú z nich dobrí guvernéri." # todo: NEW TRANSLATION
  flavor_dlh.1100.b: "Nepokazme tamojšiu geopolitickú situáciu." # todo: NEW TRANSLATION
@@ -416,19 +387,18 @@
  flavor_dlh.1101.b: "Len zámienka na vzburu." # todo: NEW TRANSLATION
  dlh_demand_annexation_of_other_bengali_subjects_tt: "Ostatní [target_country2.GetName] [Concept('subjects','vazali')|e] v [ShowRegionName('bengal_region')] budú požiadaní, aby boli anektovaní nami" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_dlh.1102.title: "$flavor_dlh_1100_title$" # todo: NEW TRANSLATION
- flavor_dlh.1102.entry: "$flavor_dlh.1102.title$" # todo: NEW TRANSLATION
  flavor_dlh.1102.desc: "[target_country.GetName] bol vyhlásený za guvernéra [ShowRegionName('bengal_region')]. Teraz požadujú, aby sme im odovzdali naše územia" # todo: NEW TRANSLATION
  flavor_dlh.1102.a: "Nebudeme vzdorovať nášmu suverénovi." # todo: NEW TRANSLATION
  flavor_dlh.1102.b: "Vzdať sa našich území? Nikdy!" # todo: NEW TRANSLATION
  flavor_dlh_1200_title_shared: "Podkopávanie vlády [target_country.GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_dlh.1200.title: "$flavor_dlh_1200_title_shared$" # todo: NEW TRANSLATION
- flavor_dlh.1200.entry: "$flavor_dlh.1200.title$" # todo: NEW TRANSLATION
- flavor_dlh.1200.desc: "Ako len obyčajní guvernéri pre [target_country.GetName] sa čoraz viac ozýva túžba obnoviť suverenitu [ROOT.GetCountry.GetName]. [target_character.GetName] už pokúša získať stúpencov pre tento cieľ, ale stojí to za to riskovať hnev [target_character2.GetName]?" # todo: NEW TRANSLATION
+ flavor_dlh.1200.entry: "Podkopávanie vlády $TIM_ADJ$" # todo: CHANGED (predtym: $flavor_dlh.1200.title$)
+ flavor_dlh.1200.desc: "Ako len obyčajní guvernéri pre [target_country.GetName] sa čoraz viac ozýva túžba obnoviť suverenitu [ROOT.GetCountry.GetAltAdjective('A')]. [target_character.GetName] už pokúša získať stúpencov pre tento cieľ, ale stojí to za to riskovať hnev [target_character2.GetName]?" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.1200.a: "Sme viac než len obyčajní guvernéri!" # todo: NEW TRANSLATION
  flavor_dlh.1200.b: "Na teraz je pokorenie sa jedinou možnosťou." # todo: NEW TRANSLATION
  dlh_start_undermining_timurid_rule_tt: "Budeme pokračovať v podkopávaní [target_country.GetName], ale existuje šanca, že náš návrh odmietnu, čo môže viesť k tomu, že na nás #Y Declaring War#!" # todo: NEW TRANSLATION
  flavor_dlh.1201.title: "$flavor_dlh_1200_title_shared$" # todo: NEW TRANSLATION
- flavor_dlh.1201.desc: "Keď naše snahy podkopať [target_country.GetName] naberajú silu medzi bežnými ľuďmi v [ROOT.GetCountry.GetName], menšie [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sa ozývajú, aby nám pomohli udrieť v správny čas. Dvaja z nich, [target_supporter.GetName] a [target_supporter2.GetName], už zložili vernosť [target_character.GetName] a želajú si byť zamestnaní v [ROOT.GetCountry.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION
+ flavor_dlh.1201.desc: "Keď naše snahy podkopať [target_country.GetName] naberajú silu medzi bežnými ľuďmi v [ROOT.GetCountry.GetAltAdjective('L')], menšie [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sa ozývajú, aby nám pomohli udrieť v správny čas. Dvaja z nich, [target_supporter.GetName] a [target_supporter2.GetName], už zložili vernosť [target_character.GetName] a želajú si byť zamestnaní v [ROOT.GetCountry.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_dlh.1201.a: "Nech nám slúžia." # todo: NEW TRANSLATION
  flavor_dlh.1201.b: "Viac nie je vždy lepšie." # todo: NEW TRANSLATION
  flavor_dlh.1202.title: "$flavor_dlh_1200_title_shared$" # todo: NEW TRANSLATION
@@ -442,6 +412,6 @@
  flavor_dlh.1203.b: "Svoju slobodu získajú len krvou!" # todo: NEW TRANSLATION
  flavor_dlh.1204.title: "$flavor_dlh_1200_title_shared$" # todo: NEW TRANSLATION
  flavor_dlh.1204.desc: "[target_country.GetName] urobili svoju voľbu. Nedovolia nám vládnuť si bez toho, aby sme sa s nimi nestretli na bojisku. To, čo teraz zostáva, je pripraviť pluky na ochranu [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
- flavor_dlh.1204.a: "Na zbrane!"" # todo: NEW TRANSLATION
+ flavor_dlh.1204.a: "Na zbrane!„" # todo: NEW TRANSLATION
  variable_tt_dlh_qarachil_expedition_second: "Druhá výprava Qarachil prebieha" # todo: NEW TRANSLATION
  variable_tt_dlh_qarachil_expedition_second_timer: "Časovač druhej výpravy Qarachil" # todo: NEW TRANSLATION

@@ -17,6 +17,8 @@
  CULTURE_TT_COUNTRY_MODIFIER: "Keď je [Concept('primary_culture','hlavná kultúra')|e] v [Concept('country','krajine')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_TT_CHARACTER_MODIFIER: "Keď je [Concept('culture','kultúra')|e] u [Concept('character','postavy')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_TT_LOCATION_MODIFIER: "Keď je [Concept('dominant_culture','dominantná kultúra')|e] v [Concept('location','lokalite')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_TT_BONUS_ADVANCES: "Keď [Concept('primary_culture','hlavná kultúra')|e] alebo [Concept('accepted_culture','akceptovaná kultúra')|e] [Concept('country','krajiny')|e] získava nasledujúce [Concept('advances','pokroky')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_TT_BONUS_ADVANCE: "[ADVANCE_DEFINITION.GetName]" # todo: NEW TRANSLATION
  CULTURE_MODIFIER_COUNTRY: "$CULTURE$ [Concept('primary_culture','Hlavná kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_MODIFIER_LOCATION: "$CULTURE$ [Concept('dominant_culture','Dominantná kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_MODIFIER_CHARACTER: "$CULTURE$ [Concept('character','Postava')|e] [Concept('culture','Kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -45,12 +47,14 @@
  LOCATION_RANK_CAPITAL_MODIFIER: "[Concept('capital','Hlavné mesto')|e] má $LOCATION_RANK$ [Concept('location_rank','rangu lokality')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_TYPE_OVERLORD_MODIFIER_LOC: "$SUBJECT_TYPE$ [Concept('subjects','Vazali')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBJECT_TYPE_IS_SUBJECT_MODIFIER_LOC: "Je $SUBJECT_TYPE$ [Concept('subject_type','druh vazala')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SUBJECT_OF_BIAS: "[SUBJECT_TYPE.GetName] krajiny [TARGET_COUNTRY.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  RELIGIONGROUP_MODIFIER: "$NAME$ [Concept('religion_group','Náboženská skupina')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_TOTAL_WORSHIPPERS: "Na svete je momentálne [Culture.GetTotalPopulation|G] [Culture.GetNameWithNoTooltip] [Concept('pops','populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- COUNTRY_TOOLTIP_CULTURE_PRIMARY: "[CULTURE.GetNameWithNoTooltip] je [Concept('primary_culture','hlavná kultúra')|e] v [COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- COUNTRY_TOOLTIP_CULTURE_ACCEPTED: "[CULTURE.GetNameWithNoTooltip] je [Concept('accepted_culture','akceptovaná kultúra')|e] v [COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- COUNTRY_TOOLTIP_CULTURE_TOLERATED: "[CULTURE.GetNameWithNoTooltip] je [Concept('tolerated_culture','tolerovaná kultúra')|e] v [COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- COUNTRY_TOOLTIP_CULTURE_NON_ACCEPTED: "[CULTURE.GetNameWithNoTooltip] je [Concept('non_accepted_culture','diskriminovaná kultúra')|e] v [COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COUNTRY_TOOLTIP_CULTURE_PRIMARY: "[CULTURE.GetNameWithNoTooltip] je [Concept('primary_culture_with_icon','hlavná kultúra')|e] v [COUNTRY.GetAltAdjectiveWithFlag('L')]" # todo: CHANGED (predtym: [CULTURE.GetNameWithNoTooltip] je [Concept('primary_culture','hlavná kultúra')|e] v [COUNTRY.GetNameWithFlag]) # todo: COUNTRY CASE
+ COUNTRY_TOOLTIP_CULTURE_ACCEPTED: "[CULTURE.GetNameWithNoTooltip] je [Concept('accepted_culture_with_icon','akceptovaná kultúra')|e] v [COUNTRY.GetAltAdjectiveWithFlag('L')]" # todo: CHANGED (predtym: [CULTURE.GetNameWithNoTooltip] je [Concept('accepted_culture','akceptovaná kultúra')|e] v [COUNTRY.GetNameWithFlag]) # todo: COUNTRY CASE
+ COUNTRY_TOOLTIP_CULTURE_TOLERATED: "[CULTURE.GetNameWithNoTooltip] je [Concept('tolerated_culture_with_icon','tolerovaná kultúra')|e] v [COUNTRY.GetAltAdjectiveWithFlag('L')]" # todo: CHANGED (predtym: [CULTURE.GetNameWithNoTooltip] je [Concept('tolerated_culture','tolerovaná kultúra')|e] v [COUNTRY.GetNameWithFlag]) # todo: COUNTRY CASE
+ COUNTRY_TOOLTIP_CULTURE_DISCRIMINATED: "[CULTURE.GetNameWithNoTooltip] je [discriminated_culture_with_icon|e] v krajine [COUNTRY.GetAltAdjectiveWithFlag('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ COUNTRY_TOOLTIP_CULTURE_NON_ACCEPTED: "[CULTURE.GetNameWithNoTooltip] je [Concept('non_accepted_culture_with_icon','diskriminovaná kultúra')|e] v [COUNTRY.GetAltAdjectiveWithFlag('L')]" # todo: CHANGED (predtym: [CULTURE.GetNameWithNoTooltip] je [Concept('non_accepted_culture','diskriminovaná kultúra')|e] v [COUNTRY.GetNameWithFla) # todo: COUNTRY CASE
  COUNTRIES_WITH_CULTURE: "Je [Concept('primary_culture','hlavná kultúra')|e] v nasledujúcich [Concept('countries','krajinu')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_COUNTRIES_WITH_CULTURE: "Žiadne [Concept('countries','krajiny')|e] momentálne nemajú toto ako svoj [Concept('primary_culture','hlavnú kultúru')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNTRY_WITH_DOMINANT: "[Country.GetLongNameWithFlag] ([Concept('dominant_country_dominant','dominantná')|e])" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -132,11 +136,13 @@
  LANGUAGE_AND_DIALECT: "$LANGUAGE$ ($DIALECT$ [Concept('dialect','dialekt')|e])" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIALECT_TT_LANGUAGE: "[Concept('dialect','Dialekt')|e] jazyka [Dialect.GetLanguage.GetName] [Concept('language','jazyka')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LANGUAGE_POWER_TT: "[Concept('language_power','Sila jazyka')|E]: $VAL$" # todo: CHANGED # todo: CONCEPT CASE
- THE_CULTURE_OVERVIEW_TITLE: "[Concept('culture','Kultúra')|e] v [CountryCultureLateralView.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THE_CULTURE_OVERVIEW_TITLE: "[Concept('culture','Kultúra')|e] v [CountryCultureLateralView.GetCountry.GetAltAdjectiveWithNoTooltip('L')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  COUNTRIES_WITH_CULTURE_LABEL: "Krajiny s [CountryCultureLateralView.GetCulture.GetNameWithNoTooltip] [Concept('culture','kultúrou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SELECTED_CULTURE_OUR_OPINION: "Názory [CountryCultureLateralView.GetCulture.GetNameWithNoTooltip] na ostatné [Concept('cultures','kultúry')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OTHER_ON_SELECTED_CULTURE_OPINION: "Názory ostatných [Concept('cultures','kultúry')|e] na [CountryCultureLateralView.GetCulture.GetNameWithNoTooltip] [Concept('culture','kultúru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_OPINION_TOOLTIP: "#T Kultúrny názor#!\nNázor jednej [Concept('culture','kultúre')|e] na inú ovplyvňuje správanie [Concept('countries','krajiny')|e] medzi sebou a ako ľudia určitej kultúry akceptujú vládu inej [Concept('culture','kultúry')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_OPINIONS_LIST_TITLE: "Názory na ostatné [Concept('cultures','kultúry')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_OPINION_LIST_ENTRY: "$NAME$: $OPINION$" # todo: NEW TRANSLATION
  culture_opinion_enemy: "#R Nepriateľ#!" # todo: NEW TRANSLATION
  culture_opinion_negative: "#R Negatívny#!" # todo: NEW TRANSLATION
  culture_opinion_neutral: "#Y Neutrálny#!" # todo: NEW TRANSLATION
@@ -161,15 +167,15 @@
  LANGUAGE_POWER_BREAKDOWN: "[LANGUAGE.GetNameWithNoTooltip] má silu $VAL|2G$, zatiaľ čo [TARGET_LANGUAGE.GetName] má $TARGET_VAL|Y2$." # todo: CHANGED
  LANGUAGE_POWER_BREAKDOWN_SECOND: "$PERC|V%2$ sily z toho dôvodu, že [LANGUAGE.GetNameWithNoTooltip] má silu $VAL|2G$, zatiaľ čo [TARGET_LANGUAGE.GetName] má $TARGET_VAL|Y2$." # todo: NEW TRANSLATION
  LANGUAGE_POWER_CLERGY_HEAD: "#T Za každých #V 1 000#! [ShowPopTypeName('clergy')] [Concept('pops','populácie')|e] [Concept('primary_religion','hlavné náboženstvo')|e], kde je to [Concept('liturgical_language','liturgický jazyk')|e], poskytuje $VAL|2Y$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- LANGUAGE_POWER_CLERGY_ENTRY: "$BULLET_WITH_TAB$$CLERGY|Y$ v [COUNTRY.GetName]: $VAL|2+=$" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_CLERGY_ENTRY: "$BULLET_WITH_TAB$$CLERGY|Y$ v [COUNTRY.GetAltAdjective('L')]: $VAL|2+=$" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  LANGUAGE_POWER_CLERGY_OTHER: "$BULLET_WITH_TAB$$CLERGY|Y$ v $NUM$ ďalších [Concept('countries','krajín')|e]: $VAL|2+=$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LANGUAGE_POWER_NO_CLERGY: "$BULLET_WITH_TAB$Neexistujú žiadne [Concept('countries','krajiny')|e], ktoré by ho mali ako [Concept('liturgical_language','liturgický jazyk')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LANGUAGE_POWER_COURT_HEAD: "#T [Concept('political_power','Politická moc')|e] [Concept('pops','Populácie')|e] [Concept('primary_culture','Hlavná kultúra')|e], upravené podľa [Concept('country_rank','rangu krajiny')|e], kde je to [Concept('court_language','jazyk dvora')|e], poskytujú $VAL|2Y$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- LANGUAGE_POWER_COURT_ENTRY: "$BULLET_WITH_TAB$$COURT|Y$ v [COUNTRY.GetName]: $VAL|2+=$" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_COURT_ENTRY: "$BULLET_WITH_TAB$$COURT|Y$ v [COUNTRY.GetAltAdjective('L')]: $VAL|2+=$" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  LANGUAGE_POWER_COURT_OTHER: "$BULLET_WITH_TAB$$COURT|Y$ v $NUM$ ďalších [Concept('countries','krajín')|e]: $VAL|2+=$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LANGUAGE_POWER_NO_COURT: "$BULLET_WITH_TAB$Neexistujú žiadne [Concept('countries','krajiny')|e], ktoré by ho mali ako [Concept('court_language','jazyk dvora')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LANGUAGE_POWER_COMMON_HEAD: "#T Každé [Concept('merchant_capacity','obchodná kapacita')|e] z [Concept('countries','krajiny')|e], kde je to [Concept('common_language','bežný jazyk')|e], poskytuje $VAL|2Y$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- LANGUAGE_POWER_COMMON_ENTRY: "$BULLET_WITH_TAB$$COMMON|Y$ v [COUNTRY.GetName]: $VAL|2+=$" # todo: NEW TRANSLATION
+ LANGUAGE_POWER_COMMON_ENTRY: "$BULLET_WITH_TAB$$COMMON|Y$ v [COUNTRY.GetAltAdjective('L')]: $VAL|2+=$" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  LANGUAGE_POWER_COMMON_OTHER: "$BULLET_WITH_TAB$$COMMON|Y$ v $NUM$ ďalších [Concept('countries','krajín')|e]: $VAL|2+=$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LANGUAGE_POWER_NO_COMMON: "$BULLET_WITH_TAB$Neexistujú žiadni [Concept('merchants','obchodníci')|e] z [Concept('countries','krajiny')|e], ktorí by ho mali ako [Concept('common_language','bežný jazyk')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LANGUAGE_POWER_CULTURE_HEAD: "#T Každý [Concept('cultural_influence','kultúrny vplyv')|e] z [Concept('cultures','kultúry')|e], ktoré používajú tento jazyk, poskytuje $VAL|2Y$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -195,7 +201,7 @@
  RELIGION_HAS_LANGUAGE: "Jediným platným [Concept('liturgical_language','liturgickým jazykom')|e] pre [Player.GetReligion.GetNameWithNoTooltip] je [Player.GetReligion.GetLanguage.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LITURGICAL_HAS_LANGUAGE: "[Concept('liturgical_language','Liturgický jazyk')|e] v [Player.GetName] je [Player.GetLiturgicalLanguage.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNTRIES_WITH_RELIGION_LABEL: "Krajiny s náboženstvom [Player.GetReligion.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- RELIGION_TT_INFO: "[RELIGION.GetAdjectiveWithNoTooltip] [Concept('religion','Náboženstvo')|e] patrí do [RELIGION.GetGroup.GetName] [Concept('religion_group','náboženskej skupiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ RELIGION_TT_INFO: "[SKReligionAdj(RELIGION, 'ee')|U] [Concept('religion','náboženstvo')|e] patrí do [Concept('religion_group','náboženskej skupiny')|e] [RELIGION.GetGroup.GetName]"
  RELIGION_GROUP_HAS_RELIGIONS: "[RELIGION_GROUP.GetAdjectiveWithNoTooltip] [Concept('religion_group','Náboženská skupina')|e] zahŕňa nasledujúce [Concept('religions','náboženstvá')|e]: $LIST$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELIGION_GROUP_ACTIVE_REL_HEADER: "[RELIGION_GROUP.GetAdjectiveWithNoTooltip] [Concept('religion_group','Náboženská skupina')|e] zahŕňa nasledujúce aktívne [Concept('religions','náboženstvá')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELIGION_GROUP_ACTIVE_REL_HEADER_DETAIL: "[RELIGION.GetIcon] [RELIGION.GetName]" # todo: NEW TRANSLATION
@@ -348,8 +354,8 @@
  integration_none_info: "Žiadne" # todo: NEW TRANSLATION
  integration_conquered_info: "#T Dobytý [LOCATION_RANK.GetNameWithNoTooltip]#!\n[LOCATION.GetName] sa považuje za nedávno dobytú, čo vyžaduje [Concept('integration','integrácia')|e] aby sa stala integrovanou. Tento stav má nasledujúce účinky:\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  integration_colonized_info: "#T Kolónia#!\n[LOCATION.GetName] je kolónia.\nTento stav má nasledujúce účinky:\n$EFFECT$" # todo: NEW TRANSLATION
- integration_integrated_info: "#T Integrovaný [LOCATION_RANK.GetNameWithNoTooltip]#!\n[LOCATION.GetName] je úplne integrované, a keď bude úplne asimilované do [CULTURE.GetName] [Concept('culture','kultúry')|e], stane sa jadrom [COUNTRY.GetName]. Tento stav má nasledujúce účinky:\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- integration_core_info: "#T Jadro [COUNTRY.GetName]#!\n[LOCATION.GetName] je plným [Concept('core','jadrom')|e] [COUNTRY.GetName]. Tento stav má nasledujúce účinky:\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ integration_integrated_info: "#T Integrovaný [LOCATION_RANK.GetNameWithNoTooltip]#!\n[LOCATION.GetName] je úplne integrované, a keď bude úplne asimilované do [CULTURE.GetName] [Concept('culture','kultúry')|e], stane sa jadrom [COUNTRY.GetAltAdjective('I')]. Tento stav má nasledujúce účinky:\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ integration_core_info: "#T Jadro [COUNTRY.GetName]#!\n[LOCATION.GetName] je plným [Concept('core','jadrom')|e] [COUNTRY.GetAltAdjective('G')]. Tento stav má nasledujúce účinky:\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  integration_none_header: "Žiadne" # todo: NEW TRANSLATION
  integration_others_info: "Iné národy majú prebiehajúcu integráciu [LOCATION.GetName] a tá sa zmení o $MONTH_DEC|R$ za každý mesiac, kým danú lokalitu neudržiavajú. Ak sa im ju podarí obsadiť, ich integrácia sa namiesto toho zmení o $OCCUPY_MONTH_DEC|R$.\nPokrok integrácie iných národov:" # todo: NEW TRANSLATION
  integration_others_item_info: "[COUNTRY.GetName]: $CURR|/%2Y$" # todo: NEW TRANSLATION
@@ -362,6 +368,10 @@
  integration_colonized: "Kolónia" # todo: NEW TRANSLATION
  integration_integrated: "[Concept('integrated','Integrované')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  integration_core: "[Concept('core','Jadro')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ integration_level_icon_conquered: "@integration_conquered!" # todo: NEW TRANSLATION
+ integration_level_icon_colonized: "@integration_colonized!" # todo: NEW TRANSLATION
+ integration_level_icon_integrated: "@integration_integrated!" # todo: NEW TRANSLATION
+ integration_level_icon_core: "@integration_core!" # todo: NEW TRANSLATION
  none: "Žiadne" # todo: NEW TRANSLATION
  mild: "Mierny" # todo: NEW TRANSLATION
  normal: "Normálny" # todo: NEW TRANSLATION
@@ -385,8 +395,10 @@
  LOCATION_MOVEMENTS_INFO_HEADER: "#col_t Lokalita#! #col_t Hnutie#! #col_t Stúpenci#!" # todo: NEW TRANSLATION
  LOCATION_NO_MOVEMENTS_INFO: "[LOCATION.GetNameWithNoTooltip] momentálne nemá žiadne hnutia." # todo: NEW TRANSLATION
  WINTER_BLOCKS_MOVEMENT: "@trigger_no! Je nemožné presunúť akúkoľvek armádu do [TOPOGRAPHY.GetName] počas $STATIC_MODIFIER_NAME_winter_normal$ alebo $STATIC_MODIFIER_NAME_winter_severe$." # todo: NEW TRANSLATION
+ MOVEMENT_BLOCKED_MODIFIER: "@trigger_no! Presun akejkoľvek armády na toto miesto je nemožný kvôli [ShowModifierTypeName('movement_blocked')]." # todo: NEW TRANSLATION
  ZOC_BLOCKS_MOVEMENT: "@trigger_no! Armáda je zablokovaná a nemôže prejsť cez [Concept('zone_of_control','zónu kontroly')|e] blízkeho [Concept('fort','pevnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_PATH_AVAILABLE: "@trigger_no! Neexistuje žiadna platná cesta k cieľovému miestu." # todo: NEW TRANSLATION
+ NO_TRANSPORT_SHIPS_AVAILABLE: "@trigger_no! Ani my, ani naši spojenci nemáme k dispozícii žiadne lode na prepravu našich vojsk." # todo: NEW TRANSLATION
  DISEASE_PRESENCE_LOCATION_TOOLTIP: "#T [DISEASE.GetNameWithNoTooltip]#!\nPrítomnosť: $PRESENCE|2R%2$\nOdolnosť: $RESISTANCE|%2$" # todo: NEW TRANSLATION
  DISEASE_ENDEMIC_LOCATION_TOOLTIP: "#T [DISEASE.GetNameWithNoTooltip]#!\nEndemická oblasť\nZákladná miera nákazy za interval: $RATE|2R%2$\nTáto lokalita je svojou geografiou prirodzene náchylná k tejto chorobe." # todo: NEW TRANSLATION
  DISEASE_PRESENCE_LOCATION_TOOLTIP_SOME_POPS: "[Concept('pops','Populácie')|e] z migrácie na rôznych úrovniach: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -415,7 +427,7 @@
  PROVINCE_CAPITAL_TOOLTIP: "[province_capital_icon]" # todo: NEW TRANSLATION
  AREA_TOOLTIP: "[Concept('region','Región')|e]: [AREA.GetRegion.GetName]\nPočet [Concept('locations','lokality')|e]: [AREA.GetNumLocations]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  AREA_POPULATION_INFO: "[Concept('population','Populácia')|e]: [AREA.GetTotalPopulation]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- AREA_GREAT_POWER_INFO_DOMINATED: "[Concept('great_power_points','Body veľmoci')|e]: $VAL$ · Dominované krajinou [COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ AREA_GREAT_POWER_INFO_DOMINATED: "[Concept('great_power_points','Body veľmoci')|e]: $VAL$ · Dominované krajinou [COUNTRY.GetAltAdjectiveWithFlag('I')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  AREA_GREAT_POWER_INFO_CONTESTED: "[Concept('great_power_points','Body veľmoci')|e]: $VAL$ · Sporné" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SEA_AREA_TOOLTIP: "[AREA.GetNameWithNoTooltip]: Pobrežná oblasť [Concept('seazones','morské zóny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OPEN_SEA_AREA_TOOLTIP: "[AREA.GetNameWithNoTooltip]: Otvorená oblasť [Concept('seazones','morské zóny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -471,18 +483,17 @@
  LOCATION_CLICK_DEGRADE_RGO_LATERALVIEW: "Pravým kliknutím znížite [Concept('rgo','R.G.O.')|e] v tejto [Concept('location','lokalite')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_CLICK_NO_GOOD_SELECTED_LATERALVIEW: "[LOCATION.GetName] nemá [GOODS.GetName]." # todo: NEW TRANSLATION
  LOCATION_CLICK_GOOD_FILTERED_LATERALVIEW: "[LOCATION.GetName] nemá žiadne [Concept('goods','tovary')|e] z aktuálneho zoznamu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- LOCATION_CLICK_FOREIGN_LOCATION_LATERALVIEW: "[LOCATION.GetName] nie je súčasťou [COUNTRY.GetName]." # todo: NEW TRANSLATION
+ LOCATION_CLICK_FOREIGN_LOCATION_LATERALVIEW: "[LOCATION.GetName] nie je súčasťou [COUNTRY.GetAltAdjective('I')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  OPEN_WORKS_OF_ART_TAB: "Zobraziť umelecké diela" # todo: NEW TRANSLATION
  OPEN_ADVANCES_AGES_TAB: "Zobraziť éry" # todo: NEW TRANSLATION
  OPEN_KNOWN_COUNTRIES_TAB: "Otvoriť záložku známych krajín" # todo: NEW TRANSLATION
- LOCATION_CLICK_IMPORT_EXPORT_LATERALVIEW: "Ľavým kliknutím vyberte tento [Concept('market','trh')|e] na spustenie $IMPORT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_CLICK_RECRUIT_LATERALVIEW: "Ľavým kliknutím vyberte túto [Concept('location','lokalitu')|e] na začatie náboru\nPravým kliknutím vyberte túto [Concept('location','lokalitu')|e] na zrušenie prebiehajúceho náboru" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_CLICK_RECRUIT_TEMPLATE_LATERALVIEW: "Kliknutím ľavým tlačidlom vyberte túto [Concept('location','lokalitu')|e] a začnite nábor [Concept('unit_template','šablóna jednotky')|e]\nKliknutím pravým tlačidlom vyberte túto [Concept('location','lokalitu')|e] a zrušte prebiehajúci nábor" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_CLICK_RISE_LATERALVIEW: "Ľavým kliknutím vyberte túto [Concept('location','lokalitu')|e] na zvolanie [Concept('levies','branci')|e] tu\nPravým kliknutím vyberte túto [Concept('location','lokalitu')|e] na zrušenie prebiehajúceho zvolávania" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_CLICK_HIRE_LATERALVIEW: "Ľavým kliknutím vyberte túto [Concept('location','lokalitu')|e] na začatie najímania [Concept('mercenaries','žoldnierov')|e] tu\nPravým kliknutím vyberte túto [Concept('location','lokalitu')|e] na zrušenie prebiehajúceho najímania" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_CLICK_INSTRUCTION_LOBBY: "Ľavým kliknutím vyberte hranie za [COUNTRY.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  LOCATION_TOOLTIP_MARITIME_NONE: "[COUNTRY.GetName] nemá žiadnu [Concept('maritime_presence','námornú prítomnosť')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- LOCATION_TOOLTIP_MARITIME: "[Concept('maritime_presence','Námorná prítomnosť')|E] [COUNTRY.GetName]: $VAL|Y/%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ LOCATION_TOOLTIP_MARITIME: "[Concept('maritime_presence','Námorná prítomnosť')|E] [COUNTRY.GetAltAdjective('G')]: $VAL|Y/%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  LOCATION_COLONIAL_CHARTER: "[Concept('colonial_charter','Koloniálna listina')|e]: [COLONIAL_CHARTER.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_COLONIAL_OWNED: "Domovina [COUNTRY.GetName]" # todo: NEW TRANSLATION
  LOCATION_COLONIAL_BUILDINS: "[Concept('buildings','Budovy')|e]: $INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -534,14 +545,15 @@
  UNIT_HIDDEN_TT_FROM_LAND: "[Concept('hidden','Skrytý')|e] pred susednými pozemnými [Concept('locations','lokalitami')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  UNIT_HIDDEN_TT_FROM_LAND_AND_SEA: "[Concept('hidden','Skrytý')|e] pred susednými pozemnými [Concept('locations','lokalitami')|e] a [Concept('seazones','morskými zónami')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  UNIT_HIDDEN_TT_FROM_SEA: "[Concept('hidden','Skrytý')|e] pred susednými [Concept('seazones','morskými zónami')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SIMPLE_PROVINCE_ICON_STATE_CAPITAL_TOOLTIP: "[SimpleProvinceIcon.GetLocation.GetName|Y] je hlavné mesto [SimpleProvinceIcon.GetLocation.GetOwner.GetAdjective] [SimpleProvinceIcon.GetLocation.GetProvince.GetName|Y]." # todo: NEW TRANSLATION
- SIMPLE_PROVINCE_ICON_COUNTRY_CAPITAL_TOOLTIP: "[SimpleProvinceIcon.GetLocation.GetName|Y] je hlavné mesto @[SimpleProvinceIcon.GetLocation.GetOwner.GetFlag]! [SimpleProvinceIcon.GetLocation.GetOwner.GetName]." # todo: NEW TRANSLATION
+ SIMPLE_PROVINCE_ICON_STATE_CAPITAL_TOOLTIP: "[Location.GetName] je [Concept('province_capital_with_icon','hlavným mestom provincie')|e] @province! [Location.GetProvince.GetName]." # todo: NEW TRANSLATION
+ SIMPLE_PROVINCE_ICON_COUNTRY_CAPITAL_TOOLTIP: "[Location.GetName] je [capital_with_icon|e] [Location.GetOwner.GetFlagIconWithNoTooltip] [Location.GetOwner.GetName]." # todo: CHANGED (predtym: [SimpleProvinceIcon.GetLocation.GetName|Y] je hlavné mesto @[SimpleProvinceIcon.GetLocation.GetOwner.GetFlag]! [SimplePr)
  CHAR_INTERACTION_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ pre [CHARACTER_INTERACTION.GetName]" # todo: NEW TRANSLATION
  UNIT_ABILITY_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ pre [UNIT_ABILITY.GetName]" # todo: NEW TRANSLATION
  CABINET_ACTION_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ pre [CABINET_ACTION.GetName]" # todo: NEW TRANSLATION
  BUILDING_TYPE_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli postaviť [BUILDING_TYPE.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TOWN_RIGHTS_TYPE_NOT_ADVANCE: "@trigger_no! Musíme mať preskúmané $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli postaviť [TOWN_RIGHTS_TYPE.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ROAD_TYPE_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli postaviť [ROAD_TYPE.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ANY_ROAD_TYPE_NOT_ADVANCE: "@trigger_no! Musíme mať preskúmaný [Concept('advance','pokrok')|e], ktorý odomyká [Concept('roads','cesty')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EMPLOYMENT_SYSTEM_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli používať [EMPLOYMENT_SYSTEM.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LAW_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli kodifikovať [LAW.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  POLICY_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli zvoliť [POLICY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -558,6 +570,7 @@
  PRODUCTION_METHOD_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli používať [PRODUCTION_METHOD.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BUILD_UNIT_NOT_ADVANCE: "@trigger_no! Musíme preskúmať $ADVANCE_LIST$ [Concept('advance','pokrok')|e], aby sme mohli postaviť [SUBUNITDEFINITION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MARKET_ADJACENT_NAME: "Prístup na trh medzi lokalitami" # todo: NEW TRANSLATION
+ MARKET_ADJACENT_LINE: "Prístup na trh z $FROM$ do $TO$" # todo: NEW TRANSLATION
  MARKET_ADJACENT_DISTANCE: "Prístup na trh stratený prepravou cez tento úsek je $DISTANCE|-2%$ kvôli" # todo: NEW TRANSLATION
  HOLY_SITE_TT_INFO: "[Concept('holy_site_type_short','Typ')|e]: [HOLY_SITE.GetType.GetName]\n[Concept('location','Lokalita')|e]: [LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_AVAILABLE_TARGETS_WITH_REASON: "@trigger_no! $REASON$" # todo: NEW TRANSLATION
@@ -566,11 +579,15 @@
  PROXIMITY_ADJACENT_DISTANCE_NUM: "Náklady na proximitu tohto úseku:: $DISTANCE$" # todo: NEW TRANSLATION
  PROXIMITY_ADJACENT_DISTANCE_TEXT: "Stavba [Concept('roads','cesty')|e] alebo zvýšenie [Concept('maritime_presence','námorná prítomnosť')|e] zníži náklady na proximitu medzi [Concept('locations','lokalitami')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PROXIMITY_ADJACENT_NAME: "Náklady na proximitu medzi lokalitami" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PROXIMITY_ADJACENT_LINE: "Náklady na blízkosť z $FROM$ do $TO$" # todo: NEW TRANSLATION
  RIVER_DIRECTION: "[LOCATION.GetName] to [TARGET_LOCATION.GetName]: $DIRECTION|Y$" # todo: NEW TRANSLATION
+ RIVER_DIRECTION_LINE: "$FROM$ do $TO$: $DIRECTION|Y$" # todo: NEW TRANSLATION
  RIVER_DIRECTION_NAME: "Smer rieky" # todo: NEW TRANSLATION
+ MAP_ARROWS: "Šípky na mape" # todo: NEW TRANSLATION
  UPSTREAM: "Proti prúdu" # todo: NEW TRANSLATION
  DOWNSTREAM: "Po prúde" # todo: NEW TRANSLATION
  BOTH_DIRECTIONS: "Obe smery" # todo: NEW TRANSLATION
  ALONGSIDE: "Pozdĺž" # todo: NEW TRANSLATION
  ACTIVE_EMPLOYMENT_SYSTEM: "Momentálne máme aktívny [EMPLOYMENT_SYSTEM.GetName]." # todo: NEW TRANSLATION
  NO_ACTIVE_EMPLOYMENT_SYSTEM: "Momentálne nemáme žiadny aktívny [Concept('employment_system','systém zamestnávania')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ EVENT_HISTORICAL_INFO_TITLE: "Historický kontext" # todo: NEW TRANSLATION

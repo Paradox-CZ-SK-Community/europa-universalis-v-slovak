@@ -1,4 +1,6 @@
 ﻿l_polish:
+ oligarchic_capture_disaster_actions_price: "Akcie oligarchického ovládnutia" # todo: NEW TRANSLATION
+ crisis_of_faith_disaster_actions_price: "Akcie krízy viery" # todo: NEW TRANSLATION
  megalopolis: "Megalopolis" # todo: NEW TRANSLATION
  city: "Metropola"
  town: "Mesto"
@@ -16,7 +18,7 @@
  war_exhaustion: "Vyčerpanie vojnou"
  karma: "Karma"
  yanantin: "Yanantin"
- complacency: "Pocit uspokojenia" # todo: NEW TRANSLATION
+ political_influence: "Politický vplyv" # todo: NEW TRANSLATION
  righteousness: "Pravovernosť" # todo: NEW TRANSLATION netuším čo je toto za mechaniku
  harmony: "Harmónia"
  self_control: "Sebakontrola" # todo: NEW TRANSLATION
@@ -30,6 +32,7 @@
  build_paved_road: "Postaviť $paved_road$" # todo: NEW TRANSLATION
  build_modern_road: "Postaviť $modern_road$" # todo: NEW TRANSLATION
  build_railroad: "Postaviť $railroad$" # todo: NEW TRANSLATION
+ grant_industry_promotion: "Podporiť priemysel" # todo: NEW TRANSLATION
  SCALING_WITH_OUR: "\nŠkálovanie s našimi " # todo: NEW TRANSLATION
  NEWLINE_BREAK: "\n"
  DOOM_TT_TEXT: "Máme [CountryReligionLateralView.GetCountry.GetFixedPointCurrencyValue('doom')|W] [doom|V] a každý mesiac sa mení o [CountryReligionLateralView.GetCountry.GetModifierValue('monthly_doom')]." # todo: NEW TRANSLATION
@@ -71,8 +74,15 @@
  FOREIGN_BUILDING_ENTRY: "[BUILDING.GetName] v [BUILDING.GetLocation.GetNameWithNoTooltip]: $VAL|2+=$@gold!" # todo: NEW TRANSLATION
  FOREIGN_BUILDING_ENTRY_EXTRA: "A $VAL|0$ ďalších budov." # todo: NEW TRANSLATION
  FOREIGN_GOLD_BUILDINGS_T: "Z budov v zahraničí" # todo: NEW TRANSLATION
- FOREIGN_GOLD_BUILDINGS: "[Concept('buildings','Budovy')|e] v zahraničí" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FOREIGN_GOLD_BUILDINGS: "Budovy v zahraničí" # todo: CHANGED (predtym: [Concept('buildings','Budovy')|e] v zahraničí) # todo: CONCEPT CASE
  HISTORICAL_MAX_BALANCE: "#T Najvyšší zostatok #! Najvyšší zostatok za posledných $AMOUNT$ mesiacov." # todo: NEW TRANSLATION
+ HISTORICAL_MAX_AMOUNT: "#T Maximálny príjem alebo výdavok #! Maximálny príjem alebo výdavok za posledných $AMOUNT$ mesiacov." # todo: NEW TRANSLATION
+ ECO_GRAPH_HIGHEST_INCOME: "Najvyšší príjem ($DATE$): #G $VAL|0$@gold!#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ECO_GRAPH_HIGHEST_EXPENSE: "Najvyššie $game_concept_expense$ ($DATE$): #R $VAL|0$@gold!#!" # todo: NEW TRANSLATION
+ ECO_GRAPH_LOWEST_INCOME: "Najnižší $game_concept_income$ ($DATE$): #G $VAL|0$@gold!#!" # todo: NEW TRANSLATION
+ ECO_GRAPH_LOWEST_EXPENSE: "Najnižšie $game_concept_expense$ ($DATE$): #R $VAL|0$@gold!#!" # todo: NEW TRANSLATION
+ HIDE_ECONOMY_CHART: "Skryť graf ekonomiky" # todo: NEW TRANSLATION
+ SHOW_ECONOMY_CHART: "Zobraziť graf ekonomiky" # todo: NEW TRANSLATION
  HISTORICAL_MIN_BALANCE: "#T Najnižší zostatok #! Najnižší zostatok za posledných $AMOUNT$ mesiacov." # todo: NEW TRANSLATION
  GET_LOAN: "#color_very_light_blue Pôžička#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GET_LOAN_SIDEMENU: "Získať pôžičku" # todo: NEW TRANSLATION
@@ -83,9 +93,33 @@
  DEBT_TOOLTIP_T: "Dlh of [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DEBT_TT_TEXT: "Počet aktuálnych [Concept('loans','pôžičiek')|e] je [Player.GetEconomy.GetNumberOfLoans|V], s celkovou sumou [EconomyView.GetTotalLoanDebt|2V]@gold! vrátane [Concept('interest','úrok')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INFLATION_TOOLTIP_T: "Inflácia v [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INFLATION_TT_TEXT: "Súčasná hodnota [Concept('inflation','inflácie')] je [Country.GetCurrencyValue('inflation')|W] a každý mesiac sa mení o [EconomyView.GetInflationChange|2-=%].\n\nInflácia zvyšuje všetky [Concept('prices','ceny')|e] platené v [Concept('gold','dukátoch')|e] naším [Concept('country','krajine')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INFLATION_TT_TEXT: "Súčasná hodnota $game_concept_inflation$ je [Country.GetCurrencyValue('inflation')|W] a minulý mesiac sa zmenila o [EconomyView.GetInflationChange|2-=%].\n\nInflácia zvyšuje všetky [Concept('prices','ceny')|e] platené v [Concept('gold','dukátoch')|e] naším [Concept('country','krajine')|e]." # todo: CHANGED (predtym: Súčasná hodnota [Concept('inflation','inflácie')] je [Country.GetCurrencyValue('inflation')|W] a každý mesiac sa mení o ) # todo: CONCEPT CASE
  INCOME_FROM_DIPLOMACY: "[Concept('diplomatic_income','Diplomatický príjem')|e]: $VAL|<+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INCOME_FROM_TRADE: "[Concept('trade_income','Príjem z obchodu')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INCOME_FROM_TARIFF: "[Concept('tariffs','Clá')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TARIFF_INCOME_TO_ESTATES: "Podiel [Concept('estates','stavy')|e] na [Concept('tariffs','clá')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TARIFF_INCOME_GOODS_ENTRY: "$AMOUNT|2Y$ [GOODS.GetIcon] [GOODS.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=L$[gold_i]#!" # todo: NEW TRANSLATION
+ TARIFF_INCOME_GOODS_OVERFLOW: "A $VAL|2+=L$[gold_i] z ďalších $NUM$ druhov tovaru." # todo: NEW TRANSLATION
+ TARIFF_INCOME_TRADE_IMPORT_ENTRY: "$AMOUNT|2Y$ [TRADE.GetGoods.GetIcon] [TRADE.GetToMarket.GetShortNameWithNoTooltip]@trade_capacity! @blue_left! [TRADE.GetFromMarket.GetShortNameWithNoTooltip]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=L$[gold_i]#!" # todo: NEW TRANSLATION
+ TARIFF_INCOME_TRADE_EXPORT_ENTRY: "$AMOUNT|2Y$ [TRADE.GetGoods.GetIcon] [TRADE.GetFromMarket.GetShortNameWithNoTooltip]@trade_capacity! @orange_right! [TRADE.GetToMarket.GetShortNameWithNoTooltip]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=L$[gold_i]#!" # todo: NEW TRANSLATION
+ TARIFF_INCOME_TRADE_OVERFLOW: "A $VAL|2+=L$[gold_i] z ďalších $NUM$ obchodov." # todo: NEW TRANSLATION
+ TARIFF_INCOME_TRADE_BREAKDOWN: "#T Príjem koruny #!\n[TRADE.GetName]\n[Concept('tariffs','Clá')|E] z tohto [Concept('trade','obchodu')|e]: $GROSS|2+=L$[gold_i]\n[TRADE.GetTariffInfo]\nPodiel krajiny vo výške $LOYAL|2L%$ vyplýva z:\n$BREAKDOWN$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TARIFF_INCOME_BURGHER_ENTRY: "[Concept('tariffs','Clá')|e] z obchodu mešťanov: $VAL|2+=L$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SUBVENTION_GOODS_ENTRY: "$AMOUNT|2Y$ [GOODS.GetIcon] [GOODS.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2-=L$[gold_i]#!" # todo: NEW TRANSLATION
+ SUBVENTION_GOODS_OVERFLOW: "A $VAL|2-=L$[gold_i] z ďalších $NUM$ druhov tovaru." # todo: NEW TRANSLATION
+ SUBVENTION_TRADE_IMPORT_ENTRY: "$AMOUNT|2Y$ [TRADE.GetGoods.GetIcon] [TRADE.GetToMarket.GetShortNameWithNoTooltip]@trade_capacity! @blue_left! [TRADE.GetFromMarket.GetShortNameWithNoTooltip]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2-=L$[gold_i]#!" # todo: NEW TRANSLATION
+ SUBVENTION_TRADE_EXPORT_ENTRY: "$AMOUNT|2Y$ [TRADE.GetGoods.GetIcon] [TRADE.GetFromMarket.GetShortNameWithNoTooltip]@trade_capacity! @orange_right! [TRADE.GetToMarket.GetShortNameWithNoTooltip]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2-=L$[gold_i]#!" # todo: NEW TRANSLATION
+ SUBVENTION_TRADE_OVERFLOW: "A $VAL|2-=L$[gold_i] z ďalších $NUM$ obchodov." # todo: NEW TRANSLATION
+ SUBVENTION_TRADE_BREAKDOWN: "#T Náklady na dotácie #!\n[TRADE.GetName]\nNáklady na [Concept('subvention','subvenciu')|E] z tohto [Concept('trade','obchodu')|e]: $VAL|2-=L$[gold_i]\n[TRADE.GetTariffInfo]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SUBVENTION_BURGHER_ENTRY: "[Concept('subvention','Subvencia')|e] na obchod mešťanov: $VAL|2-=L$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TARIFF_EXPENSE_GOODS_ENTRY: "[GOODS.GetName]: $VAL|<-=2$[gold_i]" # todo: NEW TRANSLATION
+ INCOME_FROM_EXPORT_TARIFF: "[Concept('export_tariff','Vývozné clo')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ EXPORT_TARIFF_INCOME_GOODS_ENTRY: "[GOODS.GetName]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
+ EXPORT_SUBSIDY_EXPENSE_GOODS_ENTRY: "[GOODS.GetName]: $VAL|<-=2$[gold_i]" # todo: NEW TRANSLATION
+ TARIFF_INCOME_IMPORTS_ENTRY: "[Concept('import_tariff','Dovozné clo')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TARIFF_INCOME_EXPORTS_ENTRY: "[Concept('export_tariff','Vývozné clo')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SUBSIDY_EXPENSE_IMPORTS_ENTRY: "[Concept('import_subvention','Dovozná subvencia')|e]: $VAL|<-=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SUBSIDY_EXPENSE_EXPORTS_ENTRY: "[Concept('export_subvention','Vývozná subvencia')|e]: $VAL|<-=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INCOME_FROM_FOOD: "[Concept('food','Potraviny')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TAX_FROM_ESTATE: "[Concept('tax','Daň')|e] vo výške $RATE|%2V$ od [ESTATE.GetName]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INCOME_FROM_FOREIGN_BUILDINGS: "[Concept('buildings','Budovy')|e] v zahraničí: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -95,6 +129,8 @@
  EXPENSE_FROM_IOS: "[Concept('international_organizations','Medzinárodné organizácie')|e]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPENSE_FROM_LOANS: "[Concept('interest','Úrok')|E]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPENSE_FROM_TRADE: "[Concept('trade_expense','Náklady na obchod')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ EXPENSE_FROM_TARIFF: "[Concept('subvention','Subvencia')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ EXPENSE_FROM_EXPORT_SUBSIDY: "[Concept('export_subvention','Vývozná subvencia')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPENSE_FROM_FOOD: "[Concept('food','Potraviny')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPENSE_FROM_CULTURE: "[Concept('cultural_maintenance','Investovanie do kultúry')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPENSE_FROM_COLONIAL: "[Concept('colonial_maintenance','Náklady na kolónie')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -118,12 +154,15 @@
  INCOME_FROM_INFLATION: "[Concept('minting','Ražba mincí')|e]: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPENSE_FROM_EXPLORATION: "Prieskumné misie: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
  EXPENSE_FROM_SUBSIDIES: "Dotované budovy: $VAL|<+=2$[gold_i]" # todo: NEW TRANSLATION
- TRADE_OVERVIEW_NON_ZERO_MERCHANTS: "Trhy s [Player.GetAdjective] [merchant_capacity|]:" # todo: CHANGED
+ TRADE_OVERVIEW_NON_ZERO_MERCHANTS: "Trhy s [Player.GetAdjective] [Concept('merchant_capacity','neobchodnou kapacitou')|e]:" # todo: CHANGED (predtym: Trhy s [Player.GetAdjective] [merchant_capacity|]:) # todo: CONCEPT CASE
  MARKET_WITH_TOTAL_MERCHANT_CAPACITY: "[MARKET.GetShortName]: [MARKET.GetMerchantTotalCapacity(Player.Self)|2+]" # todo: NEW TRANSLATION
  RESOURCES_FROM_LOCATIONS: "Z [Concept('locations','lokalít')|e]: $VAL|<+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RESOURCES_FROM_BUILDINGS: "Z [Concept('buildings','budov')|e]: $VAL|<+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADDITIONAL_MODIFIER_ENTRENCHMENT: "[Concept('entrenchment','Zakorenenie')|e]: $VAL|-=%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADDITIONAL_MODIFIER_MAINTENANCE_PRICE: "[Concept('economical_base','Ekonomická základňa')|e] ([Player.GetEconomicalBaseWithLabel|2]): $VAL|-=%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ADDITIONAL_MODIFIER_BUREAUCRACY_MAINTENANCE_EFFICIENCY: "#TOOLTIP:$BREAKDOWN_TAG$ $MODIFIER_TYPE_NAME_global_bureaucracy_maintenance_efficiency$ ($EFFICIENCY|+%$)#!: $VAL|-=%$" # todo: NEW TRANSLATION
+ ADDITIONAL_MODIFIER_BUREAUCRACY_REMOVAL_EFFICIENCY: "#TOOLTIP:$BREAKDOWN_TAG$ $MODIFIER_TYPE_NAME_global_bureaucracy_removal_efficiency$ ($EFFICIENCY|+%$)#!: $VAL|-=%$" # todo: NEW TRANSLATION
+ ADDITIONAL_MODIFIER_BUREAUCRACY_IMPLEMENTATION_EFFICIENCY: "#TOOLTIP:$BREAKDOWN_TAG$ $MODIFIER_TYPE_NAME_global_bureaucracy_implementation_efficiency$ ($EFFICIENCY|+%$)#!: $VAL|-=%$" # todo: NEW TRANSLATION
  MINTING_FULL_EFFICIENCY_INCOME: "Pri zvolenom nastavení [Concept('minting','ražby mincí')|e] by príjem pri plnej efektivite bol $VAL|2+=$@income!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  army_tradition: "Vojenská tradícia" # todo: NEW TRANSLATION
  navy_tradition: "Námorná tradícia" # todo: NEW TRANSLATION
@@ -145,7 +184,7 @@
  FORMAT_CURRENCY_karma: "$VAL|2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_purity: "$VAL|2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_yanantin: "$VAL|2$" # todo: NEW TRANSLATION
- FORMAT_CURRENCY_complacency: "$VAL|2$" # todo: NEW TRANSLATION
+ FORMAT_CURRENCY_political_influence: "$VAL|0$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_righteousness: "$VAL|2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_harmony: "$VAL|2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_self_control: "$VAL|2$" # todo: NEW TRANSLATION
@@ -182,7 +221,7 @@
  FORMAT_CURRENCY_SHORT_karma: "$VAL|0$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_SHORT_purity: "$VAL|0$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_SHORT_yanantin: "$VAL|0$" # todo: NEW TRANSLATION
- FORMAT_CURRENCY_SHORT_complacency: "$VAL|0$" # todo: NEW TRANSLATION
+ FORMAT_CURRENCY_SHORT_political_influence: "$VAL|0$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_SHORT_righteousness: "$VAL|0$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_SHORT_harmony: "$VAL|0$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_SHORT_self_control: "$VAL|0$" # todo: NEW TRANSLATION
@@ -218,7 +257,7 @@
  FORMAT_CURRENCY_karma_change: "$VAL|+=2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_purity_change: "$VAL|+=2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_yanantin_change: "$VAL|+=2$" # todo: NEW TRANSLATION
- FORMAT_CURRENCY_complacency_change: "$VAL|-=2$" # todo: NEW TRANSLATION
+ FORMAT_CURRENCY_political_influence_change: "$VAL|+=2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_righteousness_change: "$VAL|+=2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_harmony_change: "$VAL|+=2$" # todo: NEW TRANSLATION
  FORMAT_CURRENCY_self_control_change: "$VAL|+=2$" # todo: NEW TRANSLATION
@@ -249,7 +288,7 @@
  FORMAT_CURRENCY_EFFECT_karma: "$VAL|+=2$ [Concept('karma','Karma')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_purity: "$VAL|+=2$ [Concept('purity','Čistota')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_yanantin: "$VAL|+=2$ [Concept('yanantin','Yanantin')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FORMAT_CURRENCY_EFFECT_complacency: "$VAL|-=2$ [Concept('complacency','Bezstarostnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FORMAT_CURRENCY_EFFECT_political_influence: "$VAL|+=2$ [Concept('political_influence','Politický vplyv')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_righteousness: "$VAL|+=2$ [Concept('righteousness','Spravodlivosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_harmony: "$VAL|+=2$ [Concept('harmony','Harmónia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_self_control: "$VAL|+=2$ [Concept('self_control','Sebakontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -277,7 +316,7 @@
  FORMAT_CURRENCY_EFFECT_karma_INV: "$VAL|-=2$ [Concept('karma','Karma')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_purity_INV: "$VAL|-=2$ [Concept('purity','Čistota')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_yanantin_INV: "$VAL|-=2$ [Concept('yanantin','Yanantin')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FORMAT_CURRENCY_EFFECT_complacency_INV: "$VAL|+=2$ [Concept('complacency','Bezstarostnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FORMAT_CURRENCY_EFFECT_political_influence_INV: "$VAL|-=2$ [Concept('political_influence','Politický vplyv')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_righteousness_INV: "$VAL|-=2$ [Concept('righteousness','Spravodlivosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_harmony_INV: "$VAL|-=2$ [Concept('harmony','Harmónia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_EFFECT_honor_INV: "$VAL|-=2$ [Concept('honor','Česť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -304,7 +343,7 @@
  FORMAT_CURRENCY_TRIGGER_karma: "$VAL|2Y$ [Concept('karma','Karma')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_purity: "$VAL|2Y$ [Concept('purity','Čistota')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_yanantin: "$VAL|2Y$ [Concept('yanantin','Yanantin')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FORMAT_CURRENCY_TRIGGER_complacency: "$VAL|2Y$ [Concept('complacency','Bezstarostnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FORMAT_CURRENCY_TRIGGER_political_influence: "$VAL|2Y$ [Concept('political_influence','Politický vplyv')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_righteousness: "$VAL|2Y$ [Concept('righteousness','Spravodlivosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_harmony: "$VAL|2Y$ [Concept('harmony','Harmónia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_self_control: "$VAL|2Y$ [Concept('self_control','Sebakontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -330,7 +369,7 @@
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_karma: "$VAL|Y%2$ [Concept('karma','Karma')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_purity: "$VAL|Y%2$ [Concept('purity','Čistota')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_yanantin: "$VAL|Y%2$ [Concept('yanantin','Yanantin')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FORMAT_CURRENCY_TRIGGER_PERCENTAGE_complacency: "$VAL|Y%2$ [Concept('complacency','Bezstarostnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FORMAT_CURRENCY_TRIGGER_PERCENTAGE_political_influence: "$VAL|Y%2$ [Concept('political_influence','Politický vplyv')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_righteousness: "$VAL|Y%2$ [Concept('righteousness','Spravodlivosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_harmony: "$VAL|Y%2$ [Concept('harmony','Harmónia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_self_control: "$VAL|Y%2$ [Concept('self_control','Sebakontrola')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -343,6 +382,7 @@
  FORMAT_CURRENCY_TRIGGER_PERCENTAGE_trust: "$VAL|Y%2$ [Concept('trust','Dôvera')|e] with [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CURRENCY_ENTRY_manpower: "$STR$ [$ICON$_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_sailors: "$STR$ [$ICON$_i]" # todo: NEW TRANSLATION
+ CURRENCY_ENTRY_sailors_upkeep: "$VAL|+=1$ [sailors_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_gold: "$VAL|+=2$[$ICON$_i]" # todo: CHANGED
  CURRENCY_ENTRY_inflation: "$VAL|+=2$ [$ICON$_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_prestige: "$VAL|+=2$ [$ICON$_i]" # todo: NEW TRANSLATION
@@ -358,7 +398,7 @@
  CURRENCY_ENTRY_karma: "$VAL|+=2$ [$ICON$_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_purity: "$VAL|Y2$ [$ICON$_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_yanantin: "$VAL|Y2$ [$ICON$_i]" # todo: NEW TRANSLATION
- CURRENCY_ENTRY_complacency: "$VAL|Y2$ [$ICON$_i]" # todo: NEW TRANSLATION
+ CURRENCY_ENTRY_political_influence: "$VAL|Y2$ [$ICON$_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_righteousness: "$VAL|Y2$ [$ICON$_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_harmony: "$VAL|Y2$ [$ICON$_i]" # todo: NEW TRANSLATION
  CURRENCY_ENTRY_self_control: "$VAL|Y2$ [$ICON$_i]" # todo: NEW TRANSLATION
@@ -391,8 +431,47 @@
  PRICE_NOT_ENOUGH_VALUE_BAD_OTHER: "@trigger_no! $PROVIDER$ majú príliš veľa [$KEY$_i], aby mohli pridať $NEED|Y$\n" # todo: NEW TRANSLATION
  CAN_NOT_AFFORD_THE_PRICE_OF: "@trigger_no! Nemôžeme si dovoliť cenu $PRICE$" # todo: NEW TRANSLATION
  MAX_MANPOWER_TT: "Môžeme uskladniť až $YEARS|Y$ rokov [Concept('manpower','živej sily')|E] z našej mesačnej produkcie, až do maxima $VAL|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_MAX_MANPOWER_TT: "[COUNTRY.GetName] môže uchovávať [Concept('manpower','živá sila')|E] v objeme až $YEARS|Y$ rokov svojej mesačnej produkcie, maximálne však $VAL|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MAX_SAILORS_TT: "Môžeme uskladniť až $YEARS|Y$ rokov [Concept('sailors','námorníkov')|E] z našej mesačnej produkcie, až do maxima $VAL|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THIRD_MAX_SAILORS_TT: "[COUNTRY.GetName] môže uchovávať [Concept('sailors','námorníci')|E] v objeme až $YEARS|Y$ rokov svojej mesačnej produkcie, maximálne však $VAL|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOODS_DEMAND_IMPACT_ON_PRICE: "[GOODS.GetIcon] [GOODS.GetName]: $VAL|-=2%$ ($PRICE|2V$)" # todo: NEW TRANSLATION
+ CONSTRUCTION_GOODS_PRICE_IMPACT_HEADER: "#col_m #italic Tovar#!#! #col_m #italic Cena#!#! #col_m #italic 6 mesiacov po 1. úrovni#!#! #col_m #italic 18 mesiacov pri prebiehajúcej výstavbe#!#!" # todo: NEW TRANSLATION
+ CONSTRUCTION_GOODS_PRICE_IMPACT_OUTPUT: "#col $GOODS_MARKET_ENTRY_LABEL$#! #col $MARKET_PRICE$#! #col $TARGET_PRICE|2V$$TARGET_PRICE_ICON$ ($TARGET_PRICE_DEVIATION|+=2%$)#! #col $CONSTRUCTION_TARGET_PRICE|2V$$CONSTRUCTION_TARGET_PRICE_ICON$ ($VAL|+=2%$)#!" # todo: NEW TRANSLATION
+ CONSTRUCTION_GOODS_PRICE_IMPACT_INPUT: "#col $GOODS_MARKET_ENTRY_LABEL$#! #col $MARKET_PRICE$#! #col $TARGET_PRICE|2V$$TARGET_PRICE_ICON$ ($TARGET_PRICE_DEVIATION|-=2%$)#! #col $CONSTRUCTION_TARGET_PRICE|2V$$CONSTRUCTION_TARGET_PRICE_ICON$ ($VAL|-=2%$)#!" # todo: NEW TRANSLATION
+ CONSTRUCTION_GOODS_PRICE_IMPACT_OUTPUT_NO_CONSTRUCTION: "#col $GOODS_MARKET_ENTRY_LABEL$#! #col $MARKET_PRICE$#! #col $TARGET_PRICE|2V$$TARGET_PRICE_ICON$ ($TARGET_PRICE_DEVIATION|+=2%$)#! #col -#!" # todo: NEW TRANSLATION
+ CONSTRUCTION_GOODS_PRICE_IMPACT_INPUT_NO_CONSTRUCTION: "#col $GOODS_MARKET_ENTRY_LABEL$#! #col $MARKET_PRICE$#! #col $TARGET_PRICE|2V$$TARGET_PRICE_ICON$ ($TARGET_PRICE_DEVIATION|-=2%$)#! #col -#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_PROFITABILITY_ESTIMATE_TITLE: "Odhadovaná ziskovosť na základe cieľových cien príslušných vstupných a výstupných tovarov" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_PRICE_IMPACT_TITLE: "Predpokladané ceny o 6 mesiacov po výstavbe jednej úrovne a o 18 mesiacov pri prebiehajúcej výstavbe (zohľadňuje sa plná zamestnanosť)" # todo: NEW TRANSLATION
+ BUILDING_ESTIMATED_PROFITABILITY_CHANGE: "#italic Aktuálne#! cieľové ceny: $CURRENT_PROFIT|+2V$@gold! -> $NEW_PROFIT|+2V$@gold! ($CHANGE|+=2%$)" # todo: NEW TRANSLATION
+ CONSTRUCTION_EXPECTED_PROFITABILITY: "Cieľové ceny po dokončení výstavby: $CURRENT_PROFIT|+2V$@gold! -> $NEW_PROFIT|+2V$@gold! ($CHANGE|+=2%$)" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_TITLE_NONE: "Žiadne riziko" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_TITLE_GREEN: "Nízke riziko" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_TITLE_YELLOW: "Stredné riziko" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_TITLE_RED: "Vysoké riziko" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_NONE: "#G #italic Žiadne riziko[SelectLocalization(LocationToBuildItem.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_GREEN: "#J #italic Nízke riziko[SelectLocalization(LocationToBuildItem.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_YELLOW: "#M #italic Stredné riziko[SelectLocalization(LocationToBuildItem.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_RED: "#R #italic Vysoké riziko[SelectLocalization(LocationToBuildItem.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_NONE_BUILDING_CANDIDATE: "#G #italic Žiadne riziko[SelectLocalization(BuildingCandidate.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_GREEN_BUILDING_CANDIDATE: "#J #italic Nízke riziko[SelectLocalization(BuildingCandidate.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_YELLOW_BUILDING_CANDIDATE: "#M #italic Stredné riziko[SelectLocalization(BuildingCandidate.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_LABEL_RED_BUILDING_CANDIDATE: "#R #italic Vysoké riziko[SelectLocalization(BuildingCandidate.HasGoodsImpactedByConstruction, 'BUILDING_CONSTRUCTION_IMPACT_MARKER', '')]#!#!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_IMPACT_MARKER: "*" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_IMPACT_WARNING: "Na tomto [Concept('market','trhu')|e] prebieha výstavba, ktorá môže zmeniť [Concept('prices','ceny')|e] a neskôr ovplyvniť [Concept('profit','zisk')|e] z tohto rozšírenia" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BUILDING_CONSTRUCTION_IMPACT_MARKER_EXPLANATION: "Hviezdička (*) vedľa označenia znamená, že na tomto [Concept('market','trhu')|e] prebieha výstavba, ktorá zmení [Concept('prices','ceny')|e] vstupných alebo výstupných tovarov tejto budovy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BUILDING_CONSTRUCTION_PROFITABILITY_ESTIMATE_TEXT_TITLE: "Rozšírenie [BuildingType.GetName] o jednu úroveň pomocou [GetBuildingExpansionProductionMethodsLabel(BuildingType.Self, Location.Self)] môže podľa odhadu zmeniť jej ziskovosť počas nasledujúcich 6 mesiacov o [GetBuildingExpansionProfitabilityDrop(BuildingType.Self, Location.Self)|V2=+%]" # todo: NEW TRANSLATION
+ CURRENT_PROFIT_BUILDING: "Aktuálny zisk: $VAL|V=2+$@gold!" # todo: NEW TRANSLATION
+ ESTIMATED_PROFIT_TARGET_PRICES_BUILDING_LABEL: "Odhad o 18 mesiacov pri prebiehajúcej výstavbe" # todo: NEW TRANSLATION
+ ESTIMATED_PROFIT_TARGET_PRICES_BUILDING_BREAKDOWN: "Predpokladaný [Concept('profit','zisk')|e] o 18 mesiacov za predpokladu, že sa do 1 roka dokončí všetka prebiehajúca výstavba na tomto [Concept('market','trhu')|e], ktorá ovplyvňuje vstupné alebo výstupné tovary tejto budovy.\n\nZohľadňuje výstavbu [Concept('building','budovu')|e] a RGO dokončenú do 1 roka a následne odhaduje [Concept('prices','ceny')|e] o ďalších 6 mesiacov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ESTIMATED_PROFIT_TARGET_PRICES_BUILDING: "#L $TAG_TOOLTIP$#!: ($PRC|+=V2%$) $VAL|V=2+$@gold!" # todo: NEW TRANSLATION
+ ESTIMATED_PROFIT_TARGET_PRICES_BUILDING_NO_PRC: "#L $TAG_TOOLTIP$#!: $VAL|V=2+$@gold!" # todo: NEW TRANSLATION
+ CONSTRUCTION_PRICE_IMPACT_TOOLTIP_TITLE: "Výstavba ovplyvňujúca ceny na trhu [MARKET.GetName]" # todo: NEW TRANSLATION
+ CONSTRUCTION_PRICE_IMPACT_TOOLTIP_HEADER: "#col_m #italic Názov#!#! #col #italic Ovplyvnený tovar#!#! #col #italic Čas dokončenia#!#!" # todo: NEW TRANSLATION
+ CONSTRUCTION_PRICE_IMPACT_TOOLTIP_ENTRY: "#col_m [CONSTRUCTION.GetName]#! #col [GOODS.GetIcon]#! #col o $DAYS|0V$ dní#!" # todo: NEW TRANSLATION
+ ONE_EXTRA_LEVEL_PROFIT_BUILDING_BREAKDOWN: "Ide o predpokladanú ziskovosť vyplývajúcu zo zmien cien vstupných a výstupných tovarov po rozšírení o jednu úroveň.\nVyjadruje kolísanie, ku ktorému dôjde na [Concept('market','trh')|e] v dôsledku rozšírenia [BUILDING_TYPE.GetName] v [LOCATION.GetName] o jednu úroveň, a nezohľadňuje prebiehajúcu výstavbu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ONE_EXTRA_LEVEL_PROFIT_BUILDING: "Predpokladaný zisk 6 mesiacov po rozšírení o 1 úroveň: ($PRC|+=V2%$) $VAL|V=2+$@gold!" # todo: NEW TRANSLATION
+ ONE_EXTRA_LEVEL_PROFIT_BUILDING_NO_PRC: "Predpokladaný zisk 6 mesiacov po rozšírení o 1 úroveň: $VAL|V=2+$@gold!" # todo: NEW TRANSLATION
+ BUILDING_CONSTRUCTION_RISK_TITLE: "[SelectLocalization(IsExpansionRiskNoRisk(BuildingType.Self, Location.Self), 'BUILDING_CONSTRUCTION_RISK_TITLE_NONE', '')][SelectLocalization(IsExpansionRiskGreen(BuildingType.Self, Location.Self), 'BUILDING_CONSTRUCTION_RISK_TITLE_GREEN', '')][SelectLocalization(IsExpansionRiskYellow(BuildingType.Self, Location.Self), 'BUILDING_CONSTRUCTION_RISK_TITLE_YELLOW', '')][SelectLocalization(IsExpansionRiskRed(BuildingType.Self, Location.Self), 'BUILDING_CONSTRUCTION_RISK_TITLE_RED', '')]" # todo: NEW TRANSLATION
  MARKET_PRICE_IMPACT_HEADER: "Vplyv [Concept('market_price','trhovú cenu')|e] na [Concept('gold','dukáty')|e] z [MARKET.GetName] je $VAL|-=2%$:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INFLATION_PRICE_IMPACT: " a [Concept('inflation','inflácia')|E] vo výške $VAL|Y%2$ zvyšuje všetky naše ceny o $VAL|-=2%$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OUR_CURRENCY_MODIFIER_IMPACT: "$EFFECT$" # todo: NEW TRANSLATION
@@ -403,6 +482,7 @@
  empty_unit_maintenance: "Údržba jednotiek" # todo: NEW TRANSLATION
  set_cabine_action: "Priradiť člena kabinetu" # todo: NEW TRANSLATION
  replace_cabinet_member: "Nahradiť člena kabinetu" # todo: NEW TRANSLATION
+ vacate_cabinet_for_command: "Uvoľniť miesto v kabinete" # todo: NEW TRANSLATION
  set_policy: "Nastaviť politiku" # todo: NEW TRANSLATION
  change_existing_policy: "Zmeniť [Concept('policy','politika')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  choose_new_policy: "Prijať [Concept('policy','politika')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -416,13 +496,27 @@
  ransom_units: "Vykúpiť jednotky" # todo: NEW TRANSLATION
  create_colonial_charter: "Vytvoriť koloniálnu chartu" # todo: NEW TRANSLATION
  abandon_colonial_charter: "Zrušiť koloniálnu chartu" # todo: NEW TRANSLATION
+ set_colonial_charter_goal: "Nastaviť cieľ koloniálnej listiny" # todo: NEW TRANSLATION
+ colonial_charter_goal_lock_tt_title: "Cieľ koloniálnej listiny" # todo: NEW TRANSLATION
+ colonial_charter_goal_lock_tt_toggle: "Prepnúť automatické určovanie cieľa" # todo: NEW TRANSLATION
+ colonial_charter_goal_locked: "Cieľ tejto listiny bol nastavený ručne a nebude sa meniť automaticky." # todo: NEW TRANSLATION
+ colonial_charter_goal_unlocked: "Cieľ tejto listiny sa určuje automaticky a môže sa každý mesiac meniť podľa aktuálnej situácie." # todo: NEW TRANSLATION
+ form_colonial_nation: "Vytvoriť koloniálny národ" # todo: NEW TRANSLATION
+ form_colonial_nation_desc: "Po úplnom osídlení provincie tam vznikne nový [ShowSubjectTypeName('colonial_nation')], ktorý bude naším [Concept('subject','vazalom')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ form_colonial_nation_OUTCOME: "V [LOCATION.GetName] vznikol nový koloniálny národ [COUNTRY.GetName]." # todo: NEW TRANSLATION
+ expand_subject: "Rozšíriť koloniálny subjekt" # todo: NEW TRANSLATION
+ expand_subject_desc: "Po úplnom osídlení provincie sa jej vlastníctvo prevedie na vybraný subjekt [ShowSubjectTypeName('colonial_nation')], čím sa rozšíri jeho územie." # todo: NEW TRANSLATION
+ expand_subject_OUTCOME: "[LOCATION.GetName] bolo prevedené na [COUNTRY.GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ keep_as_territory: "Ponechať ako územie" # todo: NEW TRANSLATION
+ keep_as_territory_desc: "Keď bude provincia úplne osídlená, priamo ju začleníme ako vlastné územie." # todo: NEW TRANSLATION
+ keep_as_territory_OUTCOME: "[LOCATION.GetName] bolo začlenené ako územie krajiny [COUNTRY.GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  province_definition_population: "Populácia provincie" # todo: NEW TRANSLATION
  area_population: "Populácia oblasti" # todo: NEW TRANSLATION
  region_population: "Populácia regiónu" # todo: NEW TRANSLATION
  sub_continent_population: "Populácia subkontinentu" # todo: NEW TRANSLATION
  continent_population: "Populácia kontinentu" # todo: NEW TRANSLATION
  capital_movement: "Presunúť hlavné mesto" # todo: NEW TRANSLATION
- create_market: "Vytvoriť trh" # todo: NEW TRANSLATION
+ create_market: "Vytvoriť nový trh" # todo: CHANGED (predtym: Vytvoriť trh)
  merchants: "Obchodníci" # todo: NEW TRANSLATION
  invite_religious_figure_same_school: "Pozvať náboženskú osobnosť z tej istej školy" # todo: NEW TRANSLATION
  invite_religious_figure_different_school: "Pozvať náboženskú osobnosť z novej školy" # todo: NEW TRANSLATION
@@ -509,6 +603,8 @@
  army_auxiliary_build: "Náklady na výstavbu pomocných jednotiek" # todo: NEW TRANSLATION
  army_auxiliary_reinforce: "Náklady na posily pomocných jednotiek" # todo: NEW TRANSLATION
  army_auxiliary_maintenance: "Náklady na údržbu pomocných jednotiek" # todo: NEW TRANSLATION
+ camel_auxiliary_construction: "Nábor ťavých pomocných jednotiek" # todo: NEW TRANSLATION
+ camel_auxiliary_maintenance: "Údržba ťavých pomocných jednotiek" # todo: NEW TRANSLATION
  navy_heavy_ship_build: "Náklady na stavbu ťažkej lode" # todo: NEW TRANSLATION
  navy_heavy_ship_reinforce: "Náklady na posily ťažkých lodí" # todo: NEW TRANSLATION
  navy_heavy_ship_maintenance: "Náklady na údržbu ťažkých lodí" # todo: NEW TRANSLATION
@@ -528,6 +624,7 @@
  subject_pays_pradhana_maha_samanta: "$pradhana_maha_samanta$ platí zvrchovanému" # todo: NEW TRANSLATION
  subject_pays_colonial: "Koloniálna mocnosť platí zvrchovanému" # todo: NEW TRANSLATION
  subject_pays_tributary: "$tributary$ platí zvrchovanému" # todo: NEW TRANSLATION
+ subject_pays_familial_governor: "$familial_governor$ platí vrchnosti" # todo: NEW TRANSLATION
  negotiate_rebels_buy_off_price: "Odkúpiť rebelov" # todo: NEW TRANSLATION
  subject_pays_march: "March platí zvrchovanému" # todo: NEW TRANSLATION
  hanseatic_member_cost: "Člen Hanzovej ligy platí zvrchovanému" # todo: NEW TRANSLATION
@@ -571,6 +668,8 @@
  change_employment_system_price: "$change_employment_system$ Náklady" # todo: NEW TRANSLATION
  restrict_peranakan_trading_rights_price: "$restrict_peranakan_trading_rights$ Náklady" # todo: NEW TRANSLATION
  ban_conversion_of_adipatis_price: "$ban_conversion_of_adipatis$ Náklady" # todo: NEW TRANSLATION
+ mobilize_the_shurat_price: "Cena: $mobilize_the_shurat$" # todo: NEW TRANSLATION
+ elect_imam_price: "'Náklady na zvolenie imáma" # todo: NEW TRANSLATION
  control_the_bhres_price: "$control_the_bhres$ Náklady" # todo: NEW TRANSLATION
  rot_select_core_region_price: "$rot_select_core_region$ Náklady" # todo: NEW TRANSLATION
  rot_reform_into_monarchy_price: "$rot_reform_into_monarchy$ Náklady" # todo: NEW TRANSLATION
@@ -599,6 +698,8 @@
  NAME_SORT: "Zdroj" # todo: NEW TRANSLATION
  VOLUME_SORT: "Objem" # todo: NEW TRANSLATION
  IMPACT_SORT: "Dopad" # todo: NEW TRANSLATION
+ GOODS_DEMAND_ENTRY_DEMAND_LABEL: "Dopyt" # todo: NEW TRANSLATION
+ GOODS_DEMAND_ENTRY_SUPPLY_LABEL: "Ponuka" # todo: NEW TRANSLATION
  TAX_EFFICIENCY: "Daňová efektívnosť" # todo: NEW TRANSLATION
  AUTOMATE_TEXT: "Automatizovať" # todo: NEW TRANSLATION
  FINANCES_TEXT: "Financie" # todo: NEW TRANSLATION
@@ -713,6 +814,7 @@
  CREDITWORTHINESS_TARGET_HOVER_TITLE: "Rovnovážny cieľ" # todo: NEW TRANSLATION
  CREDITWORTHINESS_TARGET_HOVER_DESC: "Hodnota, ku ktorej sa Základné hodnotenie každý mesiac približuje. Je ukotvená na 50 a potom posunutá modifikátorom Bonus k úverovej spoľahlivosti udeleným zákonmi, pokrokmi, [Concept('societal_values','sociálnymi hodnotami')|e] a aktívnymi modifikátormi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CREDITWORTHINESS_TARGET_BREAKDOWN: "Zdroje" # todo: NEW TRANSLATION
+ CREDITWORTHINESS_TARGET_BASE: "Základ: $VAL|Y$" # todo: NEW TRANSLATION
  CREDITWORTHINESS_PULL_HOVER_TITLE: "Mesačný posun" # todo: NEW TRANSLATION
  CREDITWORTHINESS_PULL_HOVER_DESC: "O koľko sa Základné hodnotenie tento mesiac posunie smerom k Rovnovážnemu cieľu. Rovná sa (Cieľ minus Základ) vynásobené pevnou mierou, plus všetko udelené modifikátorom Mesačná úverová spoľahlivosť." # todo: NEW TRANSLATION
  CREDITWORTHINESS_PULL_BREAKDOWN: "Zdroje" # todo: NEW TRANSLATION
