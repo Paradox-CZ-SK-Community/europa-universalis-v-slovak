@@ -60,7 +60,7 @@
  flavor_nap.200.desc: "Náš [ROOT.GetCountry.GetGovernment.GetRulerTitle] starne a, bohužiaľ, všetci jeho mužskí potomkovia zahynuli.\n\nTradícia káže, že strana rodiny [ROOT.GetCountry.GetGovernment.GetHeir.GetName] by mala byť naším ďalším [ROOT.GetCountry.GetGovernment.GetRulerTitle], ale odovzdanie krajiny cudzincovi rozhorčí miestnu šľachtu a môže ukončiť stabilitu, ktorú [target_character.GetShortName] strávil celý život budovaním. Ako alternatíva by sa mohol zvážiť aj [alternative_heir.GetName]..." # todo: CHANGED
  flavor_nap.200.a: "Nedáme preč [ROOT.GetCountry.GetNameWithNoTooltip], [alternative_heir.GetShortNameWithNoTooltip] bude vládnuť." # todo: NEW TRANSLATION
  flavor_nap.200.a.entry: "Neodovzdáme našu krajinu, on bude vládnuť." # todo: NEW TRANSLATION
- flavor_nap.200.b: "Budeme rešpektovať tradíciu, [ROOT.GetCountry.GetGovernment.GetHeir.GetAltAdjectiveWithNoTooltip('A')] zdedí trón." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_nap.200.b: "Budeme rešpektovať tradíciu, [ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip] zdedí trón." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_nap.200.b.entry: "Budeme rešpektovať tradíciu, on zdedí trón." # todo: NEW TRANSLATION
  flavor_nap.201.title: "[GetCountry('NAP').GetAdjectiveWithNoTooltip] zákony" # todo: NEW TRANSLATION
  flavor_nap.201.entry: "Neapolské zákony" # todo: NEW TRANSLATION
@@ -75,7 +75,7 @@
  flavor_nap.210.b: "Nebudeme nasledovať kroky Starého kráľa, vyhoďte ho!" # todo: NEW TRANSLATION
  flavor_nap.220.title: "Manželova koruna" # todo: NEW TRANSLATION
  flavor_nap.220.entry: "$flavor_nap.220.title$" # todo: NEW TRANSLATION
- flavor_nap.220.desc: "[target_character.GetName] nie je spokojný so svojím postavením na [ROOT.GetCountry.GetAdjective] dvore, je [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetConsortTitle], ale závet starého [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetAltAdjective('A')] dáva plné právomoci [ROOT.GetCountry.GetGovernment.GetRulerTitle], čím ho zanecháva len ako figurku.\n\n[target_character.GetShortName] chce požiadať [GetCountry('PAP').GetGovernment.GetRuler.GetName] o pápežské povolenie, aby napravilo túto vážnu chybu a urobilo jeho titul rovnocenným s titulom [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]." # todo: CHANGED # todo: COUNTRY CASE
+ flavor_nap.220.desc: "[target_character.GetName] nie je spokojný so svojím postavením na [ROOT.GetCountry.GetAdjective] dvore, je [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetConsortTitle], ale závet starého [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] dáva plné právomoci [ROOT.GetCountry.GetGovernment.GetRulerTitle], čím ho zanecháva len ako figurku.\n\n[target_character.GetShortName] chce požiadať [GetCountry('PAP').GetGovernment.GetRuler.GetName] o pápežské povolenie, aby napravilo túto vážnu chybu a urobilo jeho titul rovnocenným s titulom [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]." # todo: CHANGED # todo: COUNTRY CASE
  flavor_nap.220.a: "Má právo si sťažovať, on a [ROOT.GetCountry.GetGovernment.GetRulerTitle] sú si rovní." # todo: CHANGED
  flavor_nap.220.a.entry: "Má právo si sťažovať, on a vládca sú si rovní." # todo: NEW TRANSLATION
  flavor_nap.220.a.tt: "Ak to schváli [GetCountry('PAP').GetGovernment.GetRuler.GetName], [target_character.GetShortName] sa stane naším vládcom" # todo: NEW TRANSLATION
@@ -325,11 +325,11 @@
  STATIC_MODIFIER_NAME_nap_heavy_taxation: "Ťažké zdanenie sedliakov" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_nap_insufficient_funds: "Nedostatočné prostriedky" # todo: NEW TRANSLATION
  nap_every_peasant_pop_loses_5_satisfaction: "Každý [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [Concept('pop','populácia')|e] stratí [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- flavor_nap.401.title: "Ľudové povstanie v [ROOT.GetCountry.GetCapital.GetAltAdjectiveWithNoTooltip('L')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_nap.401.title: "Ľudové povstanie v [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_nap_masaniello: "Masaniellovo povstanie" # todo: NEW TRANSLATION
  flavor_nap.401.desc: "Unavené prísnymi daňovými politikami [ROOT.GetCountry.GetFlavorRank] a jeho tyranskou vládou, obyvateľstvo [ROOT.GetCountry.GetName] povstalo v hojnom počte pod vedením mimoriadne charizmatického, no negramotného rybára menom [masaniello_scope.GetName], ktorý bol predtým známy len svojimi kampaňami proti výbercom daní. Taká je nepopularita [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetCourtTitle], že povstanie sa rozšírilo do veľkej časti vidieka a hrozí, že naše armády preťaží ich početnosť." # todo: NEW TRANSLATION
  flavor_nap.401.a: "Potlačiť sedliakov silou!" # todo: NEW TRANSLATION
- flavor_nap.401.a.tt1: "Každý [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [Concept('pop','populácia')|e], ktorý nie je kultúry [ROOT.GetCountry.GetCulture.GetAltAdjective('G')] v [ShowRegionName('italy_region')], stratí [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e] a pripojí sa k [rebel_target.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ flavor_nap.401.a.tt1: "Každý [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [Concept('pop','populácia')|e], ktorý nie je kultúry [ROOT.GetCountry.GetCulture.GetName] v [ShowRegionName('italy_region')], stratí [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e] a pripojí sa k [rebel_target.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  flavor_nap.401.a.tt2: "5 [Concept('locations','lokality')|e] s najnižšou mierou [Concept('control','kontrolou')|e] budú mať svoje [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e] a pripoja sa k [rebel_target.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nap.401.b: "Dohodneme sa." # todo: NEW TRANSLATION
  flavor_nap.401.historical_info: "Povstanie Tommasa Aniella z roku 1647 bolo krátkodobým, hoci úspešným povstaním prostého ľudu proti vláde nenávideného vojvodu z Arcosu. Povstanie viedlo k založeniu krátkodobej Neapolskej republiky." # todo: CHANGED (predtym: $flavor_nap.400.historical_info$)
@@ -337,7 +337,7 @@
  flavor_nap.402.desc: "Násilné potlačenie sedliackeho povstania [GetCharacter('nap_masaniello').GetName] zo strany [root_naples.GetAdjective] viedlo len k ďalším nespokojnostiam. Občania [republic_of_naples_capital.GetName] vzišli do ulíc, vyhnali našu posádku a vyhlásili vznik nového štátu. Čas ukáže, či toto povstanie prinesie niečo podstatné." # todo: NEW TRANSLATION
  flavor_nap.402.historical_info: "Serénna republika Neapol bola krátkodobý štát, ktorý existoval niekoľko mesiacov medzi rokmi 1647 a 1648. Bola štýlizovaná podľa benátskej vlády, prevzala jej prezývku a titul vládcu, pričom mala aj monarkistický aspekt." # todo: NEW TRANSLATION
  flavor_nap.402.a: "Zničíme ich ako vyvrheľov, ktorými sú." # todo: NEW TRANSLATION
- flavor_nap.402.b: "Preč s [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetAltAdjectiveWithNoTooltip('I')]!" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_nap.402.b: "Preč s [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_nap.402.b.entry: "Preč s našou vládou!" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_nap_struggle_for_independence: "Boj za nezávislosť" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_nap_favor_monarchy: "V prospech monarchistov" # todo: NEW TRANSLATION
