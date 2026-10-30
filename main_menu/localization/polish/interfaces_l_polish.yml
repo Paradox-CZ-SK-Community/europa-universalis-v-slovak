@@ -298,7 +298,7 @@
  GOODS_ON_MARKET_NAME_ICON: "[GOODS.GetIconNoKey]" # todo: NEW TRANSLATION
  GOODS_PRODUCED_INFLATION: "$SIZE|2$[GOODS.GetIcon][GOODS.GetName] vyprodukované: $VAL|-=%2$" # todo: NEW TRANSLATION
  GOODS_PRODUCED_INFLATION_P: "$SIZE|2$[GOODS.GetIcon][GOODS.GetName] vyprodukované: $VAL|+=%2$" # todo: NEW TRANSLATION
- RELIGION_COUNTRY_LIST_DET: "Zaznamenali sme $NUM|V$ [countries], ktoré vyznávajú vieru [RELIGION.GetAdjectiveWithNoTooltip]." # todo: NEW TRANSLATION
+ RELIGION_COUNTRY_LIST_DET: "Zaznamenali sme $NUM|V$ [Concept('country', Select_CString(EqualTo_int32(RELIGION.GetNumCountries, '(int32)1'), 'krajinu', Select_CString(And(GreaterThanOrEqualTo_int32(RELIGION.GetNumCountries, '(int32)2'), LessThanOrEqualTo_int32(RELIGION.GetNumCountries, '(int32)4')), 'krajiny', 'krajín')))|e], [Select_CString(EqualTo_int32(RELIGION.GetNumCountries, '(int32)1'), 'ktorá vyznáva', 'ktoré vyznávajú')] [SKReligionAdjNoTooltip(RELIGION,'uu')] vieru."
  RELIGION_COUNTRY_ENTRY: "[COUNTRY.GetLongNameWithFlag]: $VAL|2$@population!" # todo: NEW TRANSLATION
  BREAKDOWN_REASONS_DEATH_TITLE: "Príčina úmrtia" # todo: NEW TRANSLATION
  SUBJECT_OPINION_MODIFIERS_TITLE: "Modifikátory názoru subjektu" # todo: NEW TRANSLATION
@@ -1677,7 +1677,7 @@
  LOCATION_DEMOGRAPHICS_TAB_TT_FLAVOR_TEXT: "'Kráľovstvo je viac než pôda; sú to duše, ktoré ju obrábajú, obchodujú, uctievajú a snívajú v nej. Pestujte ich väzby a presvedčenia, lebo sú živou krvou vášho odkazu.'" # todo: NEW TRANSLATION
  PROMOTION_TT_LIST_TITLE: "Základné mesačné [promotion] v [Location.GetName] je [Location.GetPromote] kvôli:" # todo: CHANGED
  FOREIGN_DIPLOMACY_SUBTAB_TT_TEXT: "Na tejto karte môžete vidieť aktuálne [Concept('treaties','dohody')|e] [Concept('country','krajín')|e] a viesť voči nim [Concept('diplomatic_actions','diplomatickým akciám')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FOREIGN_COUNTRY_SUBTAB_TT_TEXT: "Táto karta obsahuje informácie o zahraničnej [Concept('country','krajinu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FOREIGN_COUNTRY_SUBTAB_TT_TEXT: "Táto karta obsahuje informácie o zahraničnej [Concept('country','krajine')|e]."
  FOREIGN_COUNTRY_SUBTAB_TT_FLAVOR: "'Ak nepoznáš nepriateľa ani seba, podľahneš v každej bitke.'" # todo: NEW TRANSLATION
  FOREIGN_CHARACTERS_SUBTAB_TT_TEXT: "Na tejto karte môžete interagovať s [Concept('characters','postavami')|e] zahraničnej [Concept('country','krajinou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FOREIGN_CHARACTERS_SUBTAB_TT_FLAVOR: "'Celý svet je javisko a všetci muži i ženy sú len herci.'" # todo: NEW TRANSLATION
@@ -3167,7 +3167,7 @@
  RESEARCH_QUEUE: "Fronta výskumu" # todo: NEW TRANSLATION
  AGE_ADVANCES: "$OWNED$/$TOTAL$ pokrokov" # todo: NEW TRANSLATION
  AGE_ENDED: "Skončilo $DATE$" # todo: NEW TRANSLATION
- AGE_ENDING: "Končí na #W $DATE$#!" # todo: CHANGED
+ AGE_ENDING: "Končí v #W $DATE$#!" # todo: CHANGED
  LAST_AGE_ENDING: "Končí v decembri 1836" # todo: NEW TRANSLATION
  AGE_ENDING_TT: "Vek [Age.GetNameWithNoTooltip] [GetAgeEndingDate(Age.Self)]." # todo: NEW TRANSLATION
  ADVANCES_SCROLL_LIST_EMPTY: "Žiadne pokroky dostupné pre tieto kritériá vyhľadávania" # todo: NEW TRANSLATION
@@ -3742,7 +3742,7 @@
  ESTATE_ECO_INFO_tax: "Zaplatné dane: $VAL|+=2$@gold!" # todo: NEW TRANSLATION
  ESTATE_ECO_INFO_pop: "Výdaje na obyvateľstvo: $VAL|+=2$@gold!" # todo: NEW TRANSLATION
  ESTATE_ECO_INFO_building: "[Concept('estate_buildings','Budovy štátnych vrstiev')|e] údržba: $VAL|+=2$@gold!" # todo: CHANGED # todo: CONCEPT CASE
- ESTATE_ECO_INFO_control: "Príjem z nedostatku [Concept('control','kontrole')|e]: $VAL|+=2$@gold!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ESTATE_ECO_INFO_control: "Príjem z nedostatku [Concept('control','kontroly')|e]: $VAL|+=2$@gold!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_ECO_INFO_trade: "[Concept('trade','Obchod')|e]: $VAL|+=2$@gold!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_ECO_INFO_food: "[Concept('food','Potraviny')|e]: $VAL|+=2$@gold!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_ECO_INFO_interest: "[Concept('interest','Úrok')|e]: $VAL|+=2$@gold!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -5264,7 +5264,7 @@
  AGE_INST_ENTRY: "$TAB$$TAB$[Institution.GetIcon] [INSTITUTION.GetName]" # todo: CHANGED
  AGE_UNLOCKS_THESE_REFORMS: "Tento [age] poskytuje prístup k týmto [Concept('government_reforms','vládnym reformám')|e]: $NAME$" # todo: CHANGED # todo: CONCEPT CASE
  age_reforms_count_entry: "[government_reform_icon] Odomknuté [Concept('government_reforms','vládne reformy')|e]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- PRICE_RANGE_IN_AGE: "V tomto [age] sa [Concept('market_prices','trhové ceny')|e] môžu pohybovať od $MIN|Y0%$ do $MAX|Y0%$ základnej ceny." # todo: CHANGED # todo: CONCEPT CASE
+ PRICE_RANGE_IN_AGE: "V tomto [Concept('age','veku')] sa [Concept('market_prices','trhové ceny')|e] môžu pohybovať od $MIN|Y0%$ do $MAX|Y0%$ základnej ceny." # todo: CHANGED # todo: CONCEPT CASE
  DEMAND_CATEGORY_FOR: "$DEMAND$ pre [GOODS.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  SORT_BY_NAME_GOODS_MARKET_TT: "Zoradiť podľa názvu [Concept('markets','trhov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SORT_BY_NAME: "Názov" # todo: NEW TRANSLATION
@@ -5703,7 +5703,7 @@
  CHAR_AGE_LABEL: "[Concept('age','Vek')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CHAR_SPOUSE_COV: "[Concept('spouses','Manželia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RULER_ACTIVE_TITLES_HEADER: "Zoznam titulov" # todo: NEW TRANSLATION
- RULER_TITLE_HISTORY_HEADER: "História titulov [Character.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ RULER_TITLE_HISTORY_HEADER: "História titulov [SKCharFirstNameNoTooltip(Character,'G')]" # todo: NEW TRANSLATION
  CHILDREN_LIST_HEADER: "Deti [Character.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SPOUSES_LIST_HEADER: "Manželia [Character.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CURRENT_REGENCY: "Momentálne sme v regencii" # todo: NEW TRANSLATION
@@ -5728,7 +5728,7 @@
  REGENCY_RULER_TITLE_NO_DATE_ENTRY_WITH_FLAG: "$FLAG$ $REGENCY_RULER_TITLE_NO_DATE_ENTRY$" # todo: NEW TRANSLATION
  CURRENT_RULER_TITLE_ENTRY: "$TITLE$ z $WHO$ od $FROM$" # todo: NEW TRANSLATION
  PREVIOUS_RULER_TITLE_ENTRY: "$TITLE$ z $WHO$ od $FROM$ do $TO$." # todo: NEW TRANSLATION
- CURRENT_RULER_TITLE_NO_DATE_ENTRY: "$TITLE$ z $WHO$." # todo: NEW TRANSLATION
+ CURRENT_RULER_TITLE_NO_DATE_ENTRY: "$TITLE$: $WHO$"
  CURRENT_RULER_TITLE_NO_DATE_ENTRY_WITH_FLAG: "$FLAG$ $CURRENT_RULER_TITLE_NO_DATE_ENTRY$" # todo: NEW TRANSLATION
  CURRENT_RULER_TITLE_REGENT_ENTRY: "Regent $WHO$." # todo: NEW TRANSLATION
  PREVIOUS_RULER_TITLE_NO_DATE_ENTRY: "$CURRENT_RULER_TITLE_NO_DATE_ENTRY$" # todo: NEW TRANSLATION

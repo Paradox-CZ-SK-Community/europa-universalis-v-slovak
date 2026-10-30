@@ -1,0 +1,202 @@
+﻿##################################################
+# SLOVENSKÁ GRAMATIKA - MAKRÁ
+##################################################
+#
+# Krátke zápisy skloňovaných tvarov. Religion nemá v EU5 Alt* ani Custom()
+# a GetKey vracia databázové ID (orthodox = 18), nie kľúč. Tvary sú
+# lokalizačné kľúče SKREL_<id>_<pád> a SKREL_<id>_ADJ_<tvar> zo súboru
+# main_menu/localization/polish/sk_custom/sk_religions_l_polish.yml
+# (generátor „Náboženstvá: pády a prídavné mená“ v paradox-preklad).
+#
+# KRAJINY: tvary z sk_custom/sk_country_names_l_polish.yml (<TAG>_ADJ_<tvar>),
+# kľúč sa skladá z tagu. GetAltName/GetAltAdjective nepoužívať: nájdu
+# <kľúč>_<arg>, ale vypíšu ho zlepený s predvoleným tvarom („Osmanov Osmani“,
+# „AragónAragónsky“). Dynamické názvy (ENG_latin…) sa neberú do úvahy.
+#
+#   [SKCountry(COUNTRY,'G')]                 pád názvu s tooltipom (Anglicka)
+#   [SKCountryNoTooltip(COUNTRY,'G')]        pád názvu, čistý text
+#       pády: 'G' 'D' 'A' 'L' 'I' (1. pád je GetName)
+#   [SKCountryAdj(COUNTRY,'eeho')]           tvar prídavného mena (anglického)
+#   [SKCountryAdjNoTooltip(COUNTRY,'eeho')]  tvar prídavného mena, čistý text
+#       tvary ako pri náboženstvách nižšie (bez 'ej' a 'uu')
+#   [SKCountryRod(COUNTRY,'stal','stala','stalo','stali')]
+#       zhoda s rodom krajiny (<TAG>_ADJ_rod: m, f, n, p = množné číslo):
+#       Neapol sa stal, Kastília sa stala, Anglicko sa stalo, Benátky sa stali
+#
+# NÁBOŽENSTVÁ:
+#   [SKReligion(RELIGION,'G')]               pád názvu s tooltipom
+#   [SKReligionNoTooltip(RELIGION,'G')]      pád názvu, čistý text
+#       pády: 'N' 'G' 'D' 'A' 'L' 'I'   Katolicizmus, Katolicizmu, … Katolicizmom
+#   [SKReligionAdj(RELIGION,'uu')]           tvar prídavného mena s tooltipom
+#   [SKReligionAdjNoTooltip(RELIGION,'uu')]  tvar prídavného mena, čistý text
+#     'yy'   katolícky    N sg. muž.
+#     'eeho' katolíckeho  G/A sg. muž./stred.
+#     'eemu' katolíckemu  D sg. muž./stred.
+#     'om'   katolíckom   L sg. muž./stred.
+#     'yym'  katolíckym   I sg. muž./stred., D pl.
+#     'aa'   katolícka    N sg. žen.
+#     'ej'   katolíckej   G/D/L sg. žen.
+#     'uu'   katolícku    A sg. žen.
+#     'ou'   katolíckou   I sg. žen.
+#     'ee'   katolícke    N sg. stred., N/A pl.
+#     'ii'   katolícki    N pl. muž. živ.
+#     'yych' katolíckych  G/L pl.
+#     'yymi' katolíckymi  I pl.
+#     'o'    katolícko    príslovka
+#
+# Tooltip je natívny, ako GetName (tooltip_structs: game_religion_struct,
+# game_country_struct): #TOOLTIP:<TYP>,<id> #L text#!#! ; GetKey vracia ID.
+# SKTooltip (textový tooltip cez GetRawTextTooltipTag) zostáva pre objekty bez ID.
+# Formátovanie je v kľúčoch SKFMT_* (sk_custom/sk_macros_l_polish.yml).
+##################################################
+
+##################################################
+# VŠEOBECNÉ
+##################################################
+
+macro = {
+	description = "Text with a raw-text tooltip, formatted like a game link"
+	definition = "SKTooltip(TEXT,TT)"
+	replace_with = "Concatenate(Concatenate(Localize('SKFMT_TT_OPEN'),GetRawTextTooltipTag(TT)),Concatenate(Concatenate(' ',TEXT),Localize('SKFMT_TT_CLOSE')))"
+}
+
+macro = {
+	description = "Text with the native tooltip and link format of an object, OPEN = loc key with '#TOOLTIP:<TYPE>,', ID = object id"
+	definition = "SKObjectTooltip(TEXT,OPEN,ID)"
+	replace_with = "Concatenate(Concatenate(Concatenate(Localize(OPEN),ID),Concatenate(' ',Localize('SKFMT_OBJ_TT_LINK'))),Concatenate(Concatenate(' ',TEXT),Localize('SKFMT_OBJ_TT_CLOSE')))"
+}
+
+##################################################
+# KRAJINY
+##################################################
+
+macro = {
+	description = "Declined country name with tooltip, cases G D A L I"
+	definition = "SKCountry(XCOUNTRY,XCASE)"
+	replace_with = "SKObjectTooltip(SKCountryNoTooltip(XCOUNTRY,XCASE),'SKFMT_COUNTRY_TT_OPEN',XCOUNTRY.GetKey)"
+}
+
+macro = {
+	description = "Declined country name without tooltip, cases G D A L I"
+	definition = "SKCountryNoTooltip(XCOUNTRY,XCASE)"
+	replace_with = "Localize(Concatenate(XCOUNTRY.GetTag,Concatenate('_ADJ_',XCASE)))"
+}
+
+macro = {
+	description = "Country adjective form with tooltip, e.g. 'eeho' = anglického"
+	definition = "SKCountryAdj(XCOUNTRY,XFORM)"
+	replace_with = "SKObjectTooltip(SKCountryAdjNoTooltip(XCOUNTRY,XFORM),'SKFMT_COUNTRY_TT_OPEN',XCOUNTRY.GetKey)"
+}
+
+macro = {
+	description = "Country adjective form without tooltip, e.g. 'eeho' = anglického"
+	definition = "SKCountryAdjNoTooltip(XCOUNTRY,XFORM)"
+	replace_with = "Localize(Concatenate(XCOUNTRY.GetTag,Concatenate('_ADJ_',XFORM)))"
+}
+
+macro = {
+	description = "Word agreeing with the country's gender (masculine, feminine, neuter, plural)"
+	definition = "SKCountryRod(XCOUNTRY,XMASC,XFEM,XNEUT,XPLUR)"
+	replace_with = "Select_CString(EqualTo_string(Localize(Concatenate(XCOUNTRY.GetTag,'_ADJ_rod')),'f'),XFEM,Select_CString(EqualTo_string(Localize(Concatenate(XCOUNTRY.GetTag,'_ADJ_rod')),'n'),XNEUT,Select_CString(EqualTo_string(Localize(Concatenate(XCOUNTRY.GetTag,'_ADJ_rod')),'p'),XPLUR,XMASC)))"
+}
+
+##################################################
+# NÁBOŽENSTVÁ
+##################################################
+
+macro = {
+	description = "Declined religion name without tooltip, cases N G D A L I"
+	definition = "SKReligionNoTooltip(XRELIGION,XCASE)"
+	replace_with = "Localize(Concatenate('SKREL_',Concatenate(XRELIGION.GetKey,Concatenate('_',XCASE))))"
+}
+
+macro = {
+	description = "Declined religion name with tooltip, cases N G D A L I"
+	definition = "SKReligion(XRELIGION,XCASE)"
+	replace_with = "SKObjectTooltip(SKReligionNoTooltip(XRELIGION,XCASE),'SKFMT_REL_TT_OPEN',XRELIGION.GetKey)"
+}
+
+macro = {
+	description = "Religion adjective form without tooltip, e.g. 'ej' = katolíckej"
+	definition = "SKReligionAdjNoTooltip(XRELIGION,XFORM)"
+	replace_with = "Localize(Concatenate('SKREL_',Concatenate(XRELIGION.GetKey,Concatenate('_ADJ_',XFORM))))"
+}
+
+macro = {
+	description = "Religion adjective form with tooltip, e.g. 'ej' = katolíckej"
+	definition = "SKReligionAdj(XRELIGION,XFORM)"
+	replace_with = "SKObjectTooltip(SKReligionAdjNoTooltip(XRELIGION,XFORM),'SKFMT_REL_TT_OPEN',XRELIGION.GetKey)"
+}
+
+##################################################
+# POSTAVY
+##################################################
+#
+#   [SKCharFirstNameNoTooltip(CHARACTER,'G')]  pád krstného mena, čistý text (Jána)
+#       pády: 'G' 'D' 'A' 'L' 'I'
+#
+# GetFirstNameKey sa nehodí (name_john je Ján aj Ivan podľa kultúry), skloňuje sa
+# zobrazené meno. Koncovku v EU5 odstrihnúť nejde, len pridať, preto:
+#   muž. na spoluhlásku   Ivan + SKMENA_PRIP_S_<pád>   Ivana, Ivanovi, Ivanom
+#   muž. na -i/-y         Henri + SKMENA_PRIP_I_<pád>  Henriho, Henrimu, Henrim
+#   muž. na -a/-o/-us, pohyblivé -e- (Peter) a žen. na -a: tabuľka
+#       SKMENA_<m|f>_<meno>_<pád> (muž. A = G, L = D; žen. L = D);
+#       ak tvar chýba, Localize vráti kľúč a použije sa 1. pád
+#   ostatné (na -e, -u, žen. na spoluhlásku, …) zostávajú v 1. páde
+# Tabuľku a prípony generuje „Krstné mená postáv: pády“ v paradox-preklad
+# (sk_custom/sk_character_names_l_polish.yml); koncovky a zoznam mien
+# s pohyblivou samohláskou musia sedieť s generátorom.
+
+macro = {
+	description = "Male first names with a mobile vowel, declined from the table (Peter → Petra)"
+	definition = "SKCharMaleStemException(XNAME)"
+	replace_with = "Or(EqualTo_string(XNAME,'Peter'),Or(EqualTo_string(XNAME,'Pavol'),Or(EqualTo_string(XNAME,'Alexander'),Or(EqualTo_string(XNAME,'Marek'),Or(EqualTo_string(XNAME,'Zdenek'),Or(EqualTo_string(XNAME,'Zdeněk'),Or(EqualTo_string(XNAME,'Přemek'),Or(EqualTo_string(XNAME,'Jurek'),EqualTo_string(XNAME,'Janek')))))))))"
+}
+
+macro = {
+	description = "Male first name declined from the table: ends in -a, -o, -us or has a mobile vowel"
+	definition = "SKCharMaleUsesTable(XNAME)"
+	replace_with = "Or(EndsWith(XNAME,'a'),Or(EndsWith(XNAME,'o'),Or(EndsWith(XNAME,'us'),SKCharMaleStemException(XNAME))))"
+}
+
+macro = {
+	description = "Male first name ending in -i/-y, declined by appending -ho, -mu, -m"
+	definition = "SKCharEndsI(XNAME)"
+	replace_with = "Or(EndsWith(XNAME,'i'),Or(EndsWith(XNAME,'y'),Or(EndsWith(XNAME,'í'),EndsWith(XNAME,'ý'))))"
+}
+
+macro = {
+	description = "First name ending in a vowel or apostrophe, left in the nominative"
+	definition = "SKCharNoAppend(XNAME)"
+	replace_with = "Or(Or(Or(Or(Or(EndsWith(XNAME,'e'),EndsWith(XNAME,'é')),Or(EndsWith(XNAME,'ě'),EndsWith(XNAME,'u'))),Or(Or(EndsWith(XNAME,'ú'),EndsWith(XNAME,'ů')),Or(EndsWith(XNAME,'ü'),Or(EndsWith(XNAME,'ű'),EndsWith(XNAME,'ö'))))),Or(Or(Or(EndsWith(XNAME,'ő'),EndsWith(XNAME,'ó')),Or(EndsWith(XNAME,'ô'),Or(EndsWith(XNAME,'ä'),EndsWith(XNAME,'á')))),Or(Or(EndsWith(XNAME,'à'),EndsWith(XNAME,'â')),Or(EndsWith(XNAME,'ã'),Or(EndsWith(XNAME,'è'),EndsWith(XNAME,'ê')))))),Or(Or(Or(Or(EndsWith(XNAME,'ì'),EndsWith(XNAME,'î')),Or(EndsWith(XNAME,'ò'),EndsWith(XNAME,'õ'))),Or(Or(EndsWith(XNAME,'ù'),EndsWith(XNAME,'û')),Or(EndsWith(XNAME,'ā'),Or(EndsWith(XNAME,'ē'),EndsWith(XNAME,'ī'))))),Or(Or(Or(EndsWith(XNAME,'ō'),EndsWith(XNAME,'ū')),Or(EndsWith(XNAME,'ə'),Or(EndsWith(XNAME,'å'),EndsWith(XNAME,'æ')))),Or(Or(EndsWith(XNAME,'ø'),EndsWith(XNAME,'œ')),Or(EndsWith(XNAME,'’'),Or(EndsWith(XNAME,'ʿ'),EndsWith(XNAME,'ʾ')))))))"
+}
+
+macro = {
+	description = "Case of the table key: L is D, male A is G"
+	definition = "SKCharTableCase(XCHAR,XCASE)"
+	replace_with = "Select_CString(EqualTo_string(XCASE,'L'),'D',Select_CString(And(Not(XCHAR.IsFemale),EqualTo_string(XCASE,'A')),'G',XCASE))"
+}
+
+macro = {
+	description = "Localization key of a declined first name in the table"
+	definition = "SKCharFirstNameKey(XCHAR,XCASE)"
+	replace_with = "Concatenate('SKMENA_',Concatenate(Select_CString(XCHAR.IsFemale,'f_','m_'),Concatenate(XCHAR.GetFirstNameWithNoTooltip,Concatenate('_',SKCharTableCase(XCHAR,XCASE)))))"
+}
+
+macro = {
+	description = "Declined first name from the table, nominative if missing"
+	definition = "SKCharFirstNameTable(XCHAR,XCASE)"
+	replace_with = "Select_CString(EqualTo_string(Localize(SKCharFirstNameKey(XCHAR,XCASE)),SKCharFirstNameKey(XCHAR,XCASE)),XCHAR.GetFirstNameWithNoTooltip,Localize(SKCharFirstNameKey(XCHAR,XCASE)))"
+}
+
+macro = {
+	description = "Declined male first name"
+	definition = "SKCharMaleFirstName(XCHAR,XCASE)"
+	replace_with = "Select_CString(SKCharMaleUsesTable(XCHAR.GetFirstNameWithNoTooltip),SKCharFirstNameTable(XCHAR,XCASE),Select_CString(SKCharEndsI(XCHAR.GetFirstNameWithNoTooltip),Concatenate(XCHAR.GetFirstNameWithNoTooltip,Localize(Concatenate('SKMENA_PRIP_I_',XCASE))),Select_CString(SKCharNoAppend(XCHAR.GetFirstNameWithNoTooltip),XCHAR.GetFirstNameWithNoTooltip,Concatenate(XCHAR.GetFirstNameWithNoTooltip,Localize(Concatenate('SKMENA_PRIP_S_',XCASE))))))"
+}
+
+macro = {
+	description = "Declined character first name without tooltip, cases G D A L I"
+	definition = "SKCharFirstNameNoTooltip(XCHAR,XCASE)"
+	replace_with = "Select_CString(XCHAR.IsFemale,Select_CString(EndsWith(XCHAR.GetFirstNameWithNoTooltip,'a'),SKCharFirstNameTable(XCHAR,XCASE),XCHAR.GetFirstNameWithNoTooltip),SKCharMaleFirstName(XCHAR,XCASE))"
+}
