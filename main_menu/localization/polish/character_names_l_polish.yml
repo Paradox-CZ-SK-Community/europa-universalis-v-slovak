@@ -5,16 +5,22 @@
  CHARACTER_NAME_ORDER_DEFAULT: "$PREFIX$ $NAME$ $NUMBER$ $NICKNAME$ $LASTNAME$ $SUFFIX$" # todo: CHANGED
  CHARACTER_NAME_ORDER_SORT_BY: "$NAME$ $LASTNAME$" # todo: CHANGED
  CHARACTER_NAME_ORDER_PREFIX_LASTNAME_NAME_SUFFIX_NICKNAME_NUMBER: "$PREFIX$ $LASTNAME$ $NAME$ $SUFFIX$ $NICKNAME$ $NUMBER$" # todo: CHANGED
- CHARACTER_NAME_ORDER_PREFIX_NUMBER_NICKNAME_LASTNAME_NAME_SUFFIX: "$PREFIX$ $NUMBER$ $NICKNAME$ $LASTNAME$ $NAME$ $SUFFIX$" # todo: CHANGED
+ CHARACTER_NAME_ORDER_PREFIX_NUMBER_LASTNAME_NAME_NICKNAME_SUFFIX: "$PREFIX$ $NUMBER$ $LASTNAME$ $NAME$ $NICKNAME$ $SUFFIX$" # todo: NEW TRANSLATION
  CHARACTER_NAME_ORDER_TURKISH: "$PREFIX$ $LASTNAME$ $NICKNAME$ $NUMBER$ $NAME$ $SUFFIX$" # todo: CHANGED
+ CHARACTER_NAME_ORDER_CATALAN: "$PREFIX$ $NAME$ $NUMBER$ $NICKNAME$ $LASTNAME$ $SUFFIX$" # todo: NEW TRANSLATION
+ CHARACTER_NAME_ORDER_CATALAN_ELIDED: "$PREFIX$$NAME$ $NUMBER$ $NICKNAME$ $LASTNAME$ $SUFFIX$" # todo: NEW TRANSLATION
  CHARACTER_NAME_DEFAULT_CONJOINER: " " # todo: NEW TRANSLATION
  CHARACTER_NAME_FORMAT_FIRST_NAME: "#character_name $NAME$#!" # todo: NEW TRANSLATION
  CHARACTER_NAME_FORMAT_LAST_NAME: "#lastname $NAME$#!" # todo: NEW TRANSLATION
  CHARACTER_NAME_FORMAT_FLUFF: "#nickname $NAME$#!" # todo: NEW TRANSLATION
  patronym_prefix_arabic_son: "bin " # todo: NEW TRANSLATION
  patronym_prefix_arabic_daughter: "bint " # todo: NEW TRANSLATION
+ patronym_prefix_maghrebi_son: "ben " # todo: NEW TRANSLATION
+ patronym_prefix_maghrebi_daughter: "bent " # todo: NEW TRANSLATION
  patronym_prefix_hebrew_son: "ben-" # todo: NEW TRANSLATION
  patronym_prefix_hebrew_daughter: "bat-" # todo: NEW TRANSLATION
+ patronym_prefix_ladino_son: "ben " # todo: NEW TRANSLATION
+ patronym_prefix_ladino_daughter: "bat " # todo: NEW TRANSLATION
  patronym_prefix_amazigh_son: "aït-" # todo: NEW TRANSLATION
  patronym_prefix_amazigh_daughter: "$patronym_prefix_amazigh_son$" # todo: NEW TRANSLATION
  patronym_prefix_welsh_son: "ap " # todo: NEW TRANSLATION
@@ -120,26 +126,704 @@
  location_prefix_west_slavic: "z " # todo: NEW TRANSLATION
  character_title_guru: "$guru$" # todo: NEW TRANSLATION
  character_title_guru_female: "Gurvī" # todo: NEW TRANSLATION
+ character_title_cardinal: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_cardinal')]" # todo: NEW TRANSLATION
+ character_title_cardinal_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_cardinal_female')]" # todo: NEW TRANSLATION
+ character_title_cardinal_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_cardinal_short')]" # todo: NEW TRANSLATION
+ character_title_cardinal_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_cardinal_short_female')]" # todo: NEW TRANSLATION
  character_title_saint: "Svätý" # todo: NEW TRANSLATION
  character_title_saint_female: "Svätá" # todo: NEW TRANSLATION
  character_title_patriarch: "Patriarcha" # todo: NEW TRANSLATION
  character_title_patriarch_female: "$character_title_patriarch$" # todo: NEW TRANSLATION
+ character_title_grand_master: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_grand_master')]" # todo: NEW TRANSLATION
+ character_title_grand_master_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_grand_master_female')]" # todo: NEW TRANSLATION
+ character_title_grand_master_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_grand_master_short')]" # todo: NEW TRANSLATION
+ character_title_grand_master_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_grand_master_short_female')]" # todo: NEW TRANSLATION
+ character_title_magister: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_magister')]" # todo: NEW TRANSLATION
+ character_title_magister_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_magister_female')]" # todo: NEW TRANSLATION
+ character_title_magister_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_magister_short')]" # todo: NEW TRANSLATION
+ character_title_magister_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_magister_short_female')]" # todo: NEW TRANSLATION
+ character_title_minister: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_minister')]" # todo: NEW TRANSLATION
+ character_title_minister_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_minister_female')]" # todo: NEW TRANSLATION
+ character_title_minister_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_minister_short')]" # todo: NEW TRANSLATION
+ character_title_minister_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_minister_short_female')]" # todo: NEW TRANSLATION
+ character_title_prior: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_prior')]" # todo: NEW TRANSLATION
+ character_title_prior_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_prior_female')]" # todo: NEW TRANSLATION
+ character_title_prior_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_prior_short')]" # todo: NEW TRANSLATION
+ character_title_prior_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_prior_short_female')]" # todo: NEW TRANSLATION
+ character_title_order_member: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother')]" # todo: NEW TRANSLATION
+ character_title_order_member_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother_female')]" # todo: NEW TRANSLATION
+ character_title_order_member_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother_short')]" # todo: NEW TRANSLATION
+ character_title_order_member_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother_short_female')]" # todo: NEW TRANSLATION
+ character_title_order_member_military: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother_knight')]" # todo: NEW TRANSLATION
+ character_title_order_member_military_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother_female')]" # todo: NEW TRANSLATION
+ character_title_order_member_military_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother_knight_short')]" # todo: NEW TRANSLATION
+ character_title_order_member_military_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_brother_short_female')]" # todo: NEW TRANSLATION
+ brother_default: "Frater" # todo: NEW TRANSLATION
+ brother_default_female: "Soror" # todo: NEW TRANSLATION
+ brother_default_short: "Fr." # todo: NEW TRANSLATION
+ brother_default_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_english: "Brat" # todo: NEW TRANSLATION
+ brother_english_female: "Sestra" # todo: NEW TRANSLATION
+ brother_english_short: "Br." # todo: NEW TRANSLATION
+ brother_english_short_female: "Ses." # todo: NEW TRANSLATION
+ brother_spanish: "Fray" # todo: NEW TRANSLATION
+ brother_spanish_female: "Sor" # todo: NEW TRANSLATION
+ brother_spanish_short: "Fr." # todo: NEW TRANSLATION
+ brother_spanish_short_female: "S." # todo: NEW TRANSLATION
+ brother_catalan: "Fra" # todo: NEW TRANSLATION
+ brother_catalan_female: "Sor" # todo: NEW TRANSLATION
+ brother_catalan_short: "$brother_catalan$" # todo: NEW TRANSLATION
+ brother_catalan_short_female: "S." # todo: NEW TRANSLATION
+ brother_galician: "Frei" # todo: NEW TRANSLATION
+ brother_galician_female: "Sor" # todo: NEW TRANSLATION
+ brother_galician_short: "Fr." # todo: NEW TRANSLATION
+ brother_galician_short_female: "S." # todo: NEW TRANSLATION
+ brother_aragonese: "Fray" # todo: NEW TRANSLATION
+ brother_aragonese_female: "Sor" # todo: NEW TRANSLATION
+ brother_aragonese_short: "Fr." # todo: NEW TRANSLATION
+ brother_aragonese_short_female: "S." # todo: NEW TRANSLATION
+ brother_leonese: "Flaire" # todo: NEW TRANSLATION
+ brother_leonese_female: "Sor" # todo: NEW TRANSLATION
+ brother_leonese_short: "Fl." # todo: NEW TRANSLATION
+ brother_leonese_short_female: "S." # todo: NEW TRANSLATION
+ brother_portuguese: "Frei" # todo: NEW TRANSLATION
+ brother_portuguese_female: "Sóror" # todo: NEW TRANSLATION
+ brother_portuguese_short: "Fr." # todo: NEW TRANSLATION
+ brother_portuguese_short_female: "Sor." # todo: NEW TRANSLATION
+ brother_occitan: "Fraire" # todo: NEW TRANSLATION
+ brother_occitan_female: "Sòrre" # todo: NEW TRANSLATION
+ brother_occitan_short: "Fr." # todo: NEW TRANSLATION
+ brother_occitan_short_female: "S." # todo: NEW TRANSLATION
+ brother_basque: "Anaia" # todo: NEW TRANSLATION
+ brother_basque_female: "Serora" # todo: NEW TRANSLATION
+ brother_basque_short: "An." # todo: NEW TRANSLATION
+ brother_basque_short_female: "Se." # todo: NEW TRANSLATION
+ brother_french: "Frère" # todo: NEW TRANSLATION
+ brother_french_female: "Sœur" # todo: NEW TRANSLATION
+ brother_french_short: "Fr." # todo: NEW TRANSLATION
+ brother_french_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_norman: "Frère" # todo: NEW TRANSLATION
+ brother_norman_female: "Sœur" # todo: NEW TRANSLATION
+ brother_norman_short: "Fr." # todo: NEW TRANSLATION
+ brother_norman_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_breton: "Breur" # todo: NEW TRANSLATION
+ brother_breton_female: "C'hoar" # todo: NEW TRANSLATION
+ brother_breton_short: "Br." # todo: NEW TRANSLATION
+ brother_breton_short_female: "C'h." # todo: NEW TRANSLATION
+ brother_north_italian: "Fra" # todo: NEW TRANSLATION
+ brother_north_italian_female: "Suor" # todo: NEW TRANSLATION
+ brother_north_italian_short: "$brother_north_italian$" # todo: NEW TRANSLATION
+ brother_north_italian_short_female: "S." # todo: NEW TRANSLATION
+ brother_italian: "Fra" # todo: NEW TRANSLATION
+ brother_italian_female: "Suor" # todo: NEW TRANSLATION
+ brother_italian_short: "$brother_italian$" # todo: NEW TRANSLATION
+ brother_italian_short_female: "S." # todo: NEW TRANSLATION
+ brother_german: "Bruder" # todo: NEW TRANSLATION
+ brother_german_female: "Schwester" # todo: NEW TRANSLATION
+ brother_german_short: "Br." # todo: NEW TRANSLATION
+ brother_german_short_female: "Schw." # todo: NEW TRANSLATION
+ brother_low_german: "Broder" # todo: NEW TRANSLATION
+ brother_low_german_female: "Süster" # todo: NEW TRANSLATION
+ brother_low_german_short: "Br." # todo: NEW TRANSLATION
+ brother_low_german_short_female: "S." # todo: NEW TRANSLATION
+ brother_dutch: "Broeder" # todo: NEW TRANSLATION
+ brother_dutch_female: "Zuster" # todo: NEW TRANSLATION
+ brother_dutch_short: "Br." # todo: NEW TRANSLATION
+ brother_dutch_short_female: "Zr." # todo: NEW TRANSLATION
+ brother_frisian: "Broer" # todo: NEW TRANSLATION
+ brother_frisian_female: "Suster" # todo: NEW TRANSLATION
+ brother_frisian_short: "Br." # todo: NEW TRANSLATION
+ brother_frisian_short_female: "S." # todo: NEW TRANSLATION
+ brother_swedish: "Broder" # todo: NEW TRANSLATION
+ brother_swedish_female: "Syster" # todo: NEW TRANSLATION
+ brother_swedish_short: "Br." # todo: NEW TRANSLATION
+ brother_swedish_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_danish: "Broder" # todo: NEW TRANSLATION
+ brother_danish_female: "Søster" # todo: NEW TRANSLATION
+ brother_danish_short: "Br." # todo: NEW TRANSLATION
+ brother_danish_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_norwegian: "Broder" # todo: NEW TRANSLATION
+ brother_norwegian_female: "Søster" # todo: NEW TRANSLATION
+ brother_norwegian_short: "Br." # todo: NEW TRANSLATION
+ brother_norwegian_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_icelandic: "Bróðir" # todo: NEW TRANSLATION
+ brother_icelandic_female: "Systir" # todo: NEW TRANSLATION
+ brother_icelandic_short: "Br." # todo: NEW TRANSLATION
+ brother_icelandic_short_female: "S." # todo: NEW TRANSLATION
+ brother_scots: "Brither" # todo: NEW TRANSLATION
+ brother_scots_female: "Sister" # todo: NEW TRANSLATION
+ brother_scots_short: "Br." # todo: NEW TRANSLATION
+ brother_scots_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_scottish_gaelic: "Bràthair" # todo: NEW TRANSLATION
+ brother_scottish_gaelic_female: "Piuthar" # todo: NEW TRANSLATION
+ brother_scottish_gaelic_short: "Br." # todo: NEW TRANSLATION
+ brother_scottish_gaelic_short_female: "Pi." # todo: NEW TRANSLATION
+ brother_irish: "Bráthair" # todo: NEW TRANSLATION
+ brother_irish_female: "Siúr" # todo: NEW TRANSLATION
+ brother_irish_short: "Br." # todo: NEW TRANSLATION
+ brother_irish_short_female: "Sr." # todo: NEW TRANSLATION
+ brother_welsh: "Brawd" # todo: NEW TRANSLATION
+ brother_welsh_female: "Chwaer" # todo: NEW TRANSLATION
+ brother_welsh_short: "Br." # todo: NEW TRANSLATION
+ brother_welsh_short_female: "Ch." # todo: NEW TRANSLATION
+ brother_polish: "Brat" # todo: NEW TRANSLATION
+ brother_polish_female: "Siostra" # todo: NEW TRANSLATION
+ brother_polish_short: "Br." # todo: NEW TRANSLATION
+ brother_polish_short_female: "S." # todo: NEW TRANSLATION
+ brother_czech: "Bratr" # todo: NEW TRANSLATION
+ brother_czech_female: "Sestra" # todo: NEW TRANSLATION
+ brother_czech_short: "Br." # todo: NEW TRANSLATION
+ brother_czech_short_female: "S." # todo: NEW TRANSLATION
+ brother_slovak: "Brat" # todo: NEW TRANSLATION
+ brother_slovak_female: "Sestra" # todo: NEW TRANSLATION
+ brother_slovak_short: "Br." # todo: NEW TRANSLATION
+ brother_slovak_short_female: "S." # todo: NEW TRANSLATION
+ brother_hungarian: "Fráter" # todo: NEW TRANSLATION
+ brother_hungarian_female: "Nővér" # todo: NEW TRANSLATION
+ brother_hungarian_short: "Fr." # todo: NEW TRANSLATION
+ brother_hungarian_short_female: "N." # todo: NEW TRANSLATION
+ brother_lithuanian: "Brolis" # todo: NEW TRANSLATION
+ brother_lithuanian_female: "Sesuo" # todo: NEW TRANSLATION
+ brother_lithuanian_short: "Br." # todo: NEW TRANSLATION
+ brother_lithuanian_short_female: "S." # todo: NEW TRANSLATION
+ brother_latvian: "Brālis" # todo: NEW TRANSLATION
+ brother_latvian_female: "Māsa" # todo: NEW TRANSLATION
+ brother_latvian_short: "Br." # todo: NEW TRANSLATION
+ brother_latvian_short_female: "M." # todo: NEW TRANSLATION
+ brother_estonian: "Vend" # todo: NEW TRANSLATION
+ brother_estonian_female: "Õde" # todo: NEW TRANSLATION
+ brother_estonian_short: "V." # todo: NEW TRANSLATION
+ brother_estonian_short_female: "Õ." # todo: NEW TRANSLATION
+ brother_finnish: "Veli" # todo: NEW TRANSLATION
+ brother_finnish_female: "Sisar" # todo: NEW TRANSLATION
+ brother_finnish_short: "V." # todo: NEW TRANSLATION
+ brother_finnish_short_female: "S." # todo: NEW TRANSLATION
+ brother_south_slavic: "Fra" # todo: NEW TRANSLATION
+ brother_south_slavic_female: "Sestra" # todo: NEW TRANSLATION
+ brother_south_slavic_short: "$brother_south_slavic$" # todo: NEW TRANSLATION
+ brother_south_slavic_short_female: "S." # todo: NEW TRANSLATION
+ brother_bulgarian: "Brat" # todo: NEW TRANSLATION
+ brother_bulgarian_female: "Sestra" # todo: NEW TRANSLATION
+ brother_bulgarian_short: "Br." # todo: NEW TRANSLATION
+ brother_bulgarian_short_female: "S." # todo: NEW TRANSLATION
+ brother_romanian: "Frate" # todo: NEW TRANSLATION
+ brother_romanian_female: "Soră" # todo: NEW TRANSLATION
+ brother_romanian_short: "Fr." # todo: NEW TRANSLATION
+ brother_romanian_short_female: "S." # todo: NEW TRANSLATION
+ brother_greek: "Adelfós" # todo: NEW TRANSLATION
+ brother_greek_female: "Adelfí" # todo: NEW TRANSLATION
+ brother_greek_short: "Ad." # todo: NEW TRANSLATION
+ brother_greek_short_female: "Ad." # todo: NEW TRANSLATION
+ brother_russian: "Brat" # todo: NEW TRANSLATION
+ brother_russian_female: "Sestra" # todo: NEW TRANSLATION
+ brother_russian_short: "Br." # todo: NEW TRANSLATION
+ brother_russian_short_female: "S." # todo: NEW TRANSLATION
+ brother_ruthenian: "Brat" # todo: NEW TRANSLATION
+ brother_ruthenian_female: "Sestra" # todo: NEW TRANSLATION
+ brother_ruthenian_short: "Br." # todo: NEW TRANSLATION
+ brother_ruthenian_short_female: "S." # todo: NEW TRANSLATION
+ brother_arabic: "Akh" # todo: NEW TRANSLATION
+ brother_arabic_female: "Ukht" # todo: NEW TRANSLATION
+ brother_arabic_short: "A." # todo: NEW TRANSLATION
+ brother_arabic_short_female: "U." # todo: NEW TRANSLATION
+ knight_default: "Miles" # todo: NEW TRANSLATION
+ brother_default_knight: "$brother_default$ $knight_default$" # todo: NEW TRANSLATION
+ brother_default_knight_short: "Fr. Mil." # todo: NEW TRANSLATION
+ knight_english: "Rytier" # todo: NEW TRANSLATION
+ brother_english_knight: "$brother_english$-$knight_english$" # todo: NEW TRANSLATION
+ brother_english_knight_short: "Br.-Ryt." # todo: NEW TRANSLATION
+ knight_spanish: "Caballero" # todo: NEW TRANSLATION
+ brother_spanish_knight: "Frey" # todo: NEW TRANSLATION
+ brother_spanish_knight_short: "Fr." # todo: NEW TRANSLATION
+ knight_catalan: "Cavaller" # todo: NEW TRANSLATION
+ brother_catalan_knight: "$brother_catalan$ $knight_catalan$" # todo: NEW TRANSLATION
+ brother_catalan_knight_short: "Fra Cav." # todo: NEW TRANSLATION
+ knight_galician: "Cabaleiro" # todo: NEW TRANSLATION
+ brother_galician_knight: "$brother_galician$ $knight_galician$" # todo: NEW TRANSLATION
+ brother_galician_knight_short: "Fr. Cab." # todo: NEW TRANSLATION
+ knight_aragonese: "Cavallero" # todo: NEW TRANSLATION
+ brother_aragonese_knight: "Frey" # todo: NEW TRANSLATION
+ brother_aragonese_knight_short: "Fr." # todo: NEW TRANSLATION
+ knight_leonese: "Caballeru" # todo: NEW TRANSLATION
+ brother_leonese_knight: "Freile" # todo: NEW TRANSLATION
+ brother_leonese_knight_short: "Fr." # todo: NEW TRANSLATION
+ knight_portuguese: "Cavaleiro" # todo: NEW TRANSLATION
+ brother_portuguese_knight: "$brother_portuguese$ $knight_portuguese$" # todo: NEW TRANSLATION
+ brother_portuguese_knight_short: "Fr. Cav." # todo: NEW TRANSLATION
+ knight_occitan: "Cavalièr" # todo: NEW TRANSLATION
+ brother_occitan_knight: "$brother_occitan$ $knight_occitan$" # todo: NEW TRANSLATION
+ brother_occitan_knight_short: "Fr. Cav." # todo: NEW TRANSLATION
+ knight_basque: "Zaldun" # todo: NEW TRANSLATION
+ brother_basque_knight: "$knight_basque$ $brother_basque$" # todo: NEW TRANSLATION
+ brother_basque_knight_short: "Z. An." # todo: NEW TRANSLATION
+ knight_french: "Chevalier" # todo: NEW TRANSLATION
+ brother_french_knight: "$brother_french$ $knight_french$" # todo: NEW TRANSLATION
+ brother_french_knight_short: "Fr. Chev." # todo: NEW TRANSLATION
+ knight_norman: "Chevaler" # todo: NEW TRANSLATION
+ brother_norman_knight: "$brother_norman$ $knight_norman$" # todo: NEW TRANSLATION
+ brother_norman_knight_short: "Fr. Chev." # todo: NEW TRANSLATION
+ knight_breton: "Marc'heg" # todo: NEW TRANSLATION
+ brother_breton_knight: "$brother_breton$ $knight_breton$" # todo: NEW TRANSLATION
+ brother_breton_knight_short: "Br. M." # todo: NEW TRANSLATION
+ knight_north_italian: "Cavaliere" # todo: NEW TRANSLATION
+ brother_north_italian_knight: "$brother_north_italian$ $knight_north_italian$" # todo: NEW TRANSLATION
+ brother_north_italian_knight_short: "Fra Cav." # todo: NEW TRANSLATION
+ knight_italian: "Cavaliere" # todo: NEW TRANSLATION
+ brother_italian_knight: "$brother_italian$ $knight_italian$" # todo: NEW TRANSLATION
+ brother_italian_knight_short: "Fra Cav." # todo: NEW TRANSLATION
+ knight_german: "Ritter" # todo: NEW TRANSLATION
+ brother_german_knight: "Ritterbruder" # todo: NEW TRANSLATION
+ brother_german_knight_short: "Ritterbr." # todo: NEW TRANSLATION
+ knight_low_german: "Ridder" # todo: NEW TRANSLATION
+ brother_low_german_knight: "Ridderbroder" # todo: NEW TRANSLATION
+ brother_low_german_knight_short: "Ridderbr." # todo: NEW TRANSLATION
+ knight_dutch: "Ridder" # todo: NEW TRANSLATION
+ brother_dutch_knight: "Ridderbroeder" # todo: NEW TRANSLATION
+ brother_dutch_knight_short: "Ridderbr." # todo: NEW TRANSLATION
+ knight_frisian: "Ridder" # todo: NEW TRANSLATION
+ brother_frisian_knight: "Ridderbroer" # todo: NEW TRANSLATION
+ brother_frisian_knight_short: "Ridderbr." # todo: NEW TRANSLATION
+ knight_swedish: "Riddare" # todo: NEW TRANSLATION
+ brother_swedish_knight: "Riddarbroder" # todo: NEW TRANSLATION
+ brother_swedish_knight_short: "Riddarbr." # todo: NEW TRANSLATION
+ knight_danish: "Ridder" # todo: NEW TRANSLATION
+ brother_danish_knight: "Ridderbroder" # todo: NEW TRANSLATION
+ brother_danish_knight_short: "Ridderbr." # todo: NEW TRANSLATION
+ knight_norwegian: "Ridder" # todo: NEW TRANSLATION
+ brother_norwegian_knight: "Ridderbroder" # todo: NEW TRANSLATION
+ brother_norwegian_knight_short: "Ridderbr." # todo: NEW TRANSLATION
+ knight_icelandic: "Riddari" # todo: NEW TRANSLATION
+ brother_icelandic_knight: "Riddarabróðir" # todo: NEW TRANSLATION
+ brother_icelandic_knight_short: "Riddarabr." # todo: NEW TRANSLATION
+ knight_scots: "Knicht" # todo: NEW TRANSLATION
+ brother_scots_knight: "$brother_scots$-$knight_scots$" # todo: NEW TRANSLATION
+ brother_scots_knight_short: "Br.-Kn." # todo: NEW TRANSLATION
+ knight_scottish_gaelic: "Ridire" # todo: NEW TRANSLATION
+ brother_scottish_gaelic_knight: "$brother_scottish_gaelic$-$knight_scottish_gaelic$" # todo: NEW TRANSLATION
+ brother_scottish_gaelic_knight_short: "Br.-R." # todo: NEW TRANSLATION
+ knight_irish: "Ridire" # todo: NEW TRANSLATION
+ brother_irish_knight: "$brother_irish$ $knight_irish$" # todo: NEW TRANSLATION
+ brother_irish_knight_short: "Br. R." # todo: NEW TRANSLATION
+ knight_welsh: "Marchog" # todo: NEW TRANSLATION
+ brother_welsh_knight: "$brother_welsh$ $knight_welsh$" # todo: NEW TRANSLATION
+ brother_welsh_knight_short: "Br. M." # todo: NEW TRANSLATION
+ knight_polish: "Rycerz" # todo: NEW TRANSLATION
+ brother_polish_knight: "$brother_polish$ $knight_polish$" # todo: NEW TRANSLATION
+ brother_polish_knight_short: "Br. Ryc." # todo: NEW TRANSLATION
+ knight_czech: "Rytíř" # todo: NEW TRANSLATION
+ brother_czech_knight: "$brother_czech$ $knight_czech$" # todo: NEW TRANSLATION
+ brother_czech_knight_short: "Br. Ryt." # todo: NEW TRANSLATION
+ knight_slovak: "Rytier" # todo: NEW TRANSLATION
+ brother_slovak_knight: "$brother_slovak$ $knight_slovak$" # todo: NEW TRANSLATION
+ brother_slovak_knight_short: "Br. Ryt." # todo: NEW TRANSLATION
+ knight_hungarian: "Lovag" # todo: NEW TRANSLATION
+ brother_hungarian_knight: "Lovagtestvér" # todo: NEW TRANSLATION
+ brother_hungarian_knight_short: "Lovagtv." # todo: NEW TRANSLATION
+ knight_lithuanian: "Riteris" # todo: NEW TRANSLATION
+ brother_lithuanian_knight: "$brother_lithuanian$ $knight_lithuanian$" # todo: NEW TRANSLATION
+ brother_lithuanian_knight_short: "Br. Rit." # todo: NEW TRANSLATION
+ knight_latvian: "Bruņinieks" # todo: NEW TRANSLATION
+ brother_latvian_knight: "$brother_latvian$-$knight_latvian$" # todo: NEW TRANSLATION
+ brother_latvian_knight_short: "Br.-Bruņ." # todo: NEW TRANSLATION
+ knight_estonian: "Rüütel" # todo: NEW TRANSLATION
+ brother_estonian_knight: "Rüütelvend" # todo: NEW TRANSLATION
+ brother_estonian_knight_short: "Rüütelv." # todo: NEW TRANSLATION
+ knight_finnish: "Ritari" # todo: NEW TRANSLATION
+ brother_finnish_knight: "Ritariveli" # todo: NEW TRANSLATION
+ brother_finnish_knight_short: "Ritariv." # todo: NEW TRANSLATION
+ knight_south_slavic: "Vitez" # todo: NEW TRANSLATION
+ brother_south_slavic_knight: "$brother_south_slavic$ $knight_south_slavic$" # todo: NEW TRANSLATION
+ brother_south_slavic_knight_short: "Fra V." # todo: NEW TRANSLATION
+ knight_bulgarian: "Ritsar" # todo: NEW TRANSLATION
+ brother_bulgarian_knight: "$brother_bulgarian$ $knight_bulgarian$" # todo: NEW TRANSLATION
+ brother_bulgarian_knight_short: "Br. R." # todo: NEW TRANSLATION
+ knight_romanian: "Cavaler" # todo: NEW TRANSLATION
+ brother_romanian_knight: "$brother_romanian$ $knight_romanian$" # todo: NEW TRANSLATION
+ brother_romanian_knight_short: "Fr. Cav." # todo: NEW TRANSLATION
+ knight_greek: "Ippótis" # todo: NEW TRANSLATION
+ brother_greek_knight: "$brother_greek$ $knight_greek$" # todo: NEW TRANSLATION
+ brother_greek_knight_short: "Ad. Ip." # todo: NEW TRANSLATION
+ knight_russian: "Rytsar" # todo: NEW TRANSLATION
+ brother_russian_knight: "$brother_russian$-$knight_russian$" # todo: NEW TRANSLATION
+ brother_russian_knight_short: "Br.-R." # todo: NEW TRANSLATION
+ knight_ruthenian: "Lytsar" # todo: NEW TRANSLATION
+ brother_ruthenian_knight: "$brother_ruthenian$-$knight_ruthenian$" # todo: NEW TRANSLATION
+ brother_ruthenian_knight_short: "Br.-L." # todo: NEW TRANSLATION
+ knight_arabic: "Faris" # todo: NEW TRANSLATION
+ brother_arabic_knight: "$brother_arabic$ $knight_arabic$" # todo: NEW TRANSLATION
+ brother_arabic_knight_short: "A. F." # todo: NEW TRANSLATION
+ father_default: "Pater" # todo: NEW TRANSLATION
+ father_default_female: "Mater" # todo: NEW TRANSLATION
+ father_default_short: "P." # todo: NEW TRANSLATION
+ father_default_short_female: "M." # todo: NEW TRANSLATION
+ father_english: "Otec" # todo: NEW TRANSLATION
+ father_english_female: "Matka" # todo: NEW TRANSLATION
+ father_english_short: "O." # todo: NEW TRANSLATION
+ father_english_short_female: "M." # todo: NEW TRANSLATION
+ father_spanish: "Padre" # todo: NEW TRANSLATION
+ father_spanish_female: "Madre" # todo: NEW TRANSLATION
+ father_spanish_short: "P." # todo: NEW TRANSLATION
+ father_spanish_short_female: "M." # todo: NEW TRANSLATION
+ father_catalan: "Pare" # todo: NEW TRANSLATION
+ father_catalan_female: "Mare" # todo: NEW TRANSLATION
+ father_catalan_short: "P." # todo: NEW TRANSLATION
+ father_catalan_short_female: "M." # todo: NEW TRANSLATION
+ father_galician: "Padre" # todo: NEW TRANSLATION
+ father_galician_female: "Madre" # todo: NEW TRANSLATION
+ father_galician_short: "P." # todo: NEW TRANSLATION
+ father_galician_short_female: "M." # todo: NEW TRANSLATION
+ father_aragonese: "Padre" # todo: NEW TRANSLATION
+ father_aragonese_female: "Madre" # todo: NEW TRANSLATION
+ father_aragonese_short: "P." # todo: NEW TRANSLATION
+ father_aragonese_short_female: "M." # todo: NEW TRANSLATION
+ father_leonese: "Padre" # todo: NEW TRANSLATION
+ father_leonese_female: "Madre" # todo: NEW TRANSLATION
+ father_leonese_short: "P." # todo: NEW TRANSLATION
+ father_leonese_short_female: "M." # todo: NEW TRANSLATION
+ father_portuguese: "Padre" # todo: NEW TRANSLATION
+ father_portuguese_female: "Madre" # todo: NEW TRANSLATION
+ father_portuguese_short: "P." # todo: NEW TRANSLATION
+ father_portuguese_short_female: "M." # todo: NEW TRANSLATION
+ father_occitan: "Paire" # todo: NEW TRANSLATION
+ father_occitan_female: "Maire" # todo: NEW TRANSLATION
+ father_occitan_short: "P." # todo: NEW TRANSLATION
+ father_occitan_short_female: "M." # todo: NEW TRANSLATION
+ father_basque: "Aita" # todo: NEW TRANSLATION
+ father_basque_female: "Ama" # todo: NEW TRANSLATION
+ father_basque_short: "Ai." # todo: NEW TRANSLATION
+ father_basque_short_female: "A." # todo: NEW TRANSLATION
+ father_french: "Père" # todo: NEW TRANSLATION
+ father_french_female: "Mère" # todo: NEW TRANSLATION
+ father_french_short: "P." # todo: NEW TRANSLATION
+ father_french_short_female: "M." # todo: NEW TRANSLATION
+ father_norman: "Père" # todo: NEW TRANSLATION
+ father_norman_female: "Mère" # todo: NEW TRANSLATION
+ father_norman_short: "P." # todo: NEW TRANSLATION
+ father_norman_short_female: "M." # todo: NEW TRANSLATION
+ father_breton: "Tad" # todo: NEW TRANSLATION
+ father_breton_female: "Mamm" # todo: NEW TRANSLATION
+ father_breton_short: "T." # todo: NEW TRANSLATION
+ father_breton_short_female: "M." # todo: NEW TRANSLATION
+ father_north_italian: "Padre" # todo: NEW TRANSLATION
+ father_north_italian_female: "Madre" # todo: NEW TRANSLATION
+ father_north_italian_short: "P." # todo: NEW TRANSLATION
+ father_north_italian_short_female: "M." # todo: NEW TRANSLATION
+ father_italian: "Padre" # todo: NEW TRANSLATION
+ father_italian_female: "Madre" # todo: NEW TRANSLATION
+ father_italian_short: "P." # todo: NEW TRANSLATION
+ father_italian_short_female: "M." # todo: NEW TRANSLATION
+ father_german: "Pater" # todo: NEW TRANSLATION
+ father_german_female: "Mutter" # todo: NEW TRANSLATION
+ father_german_short: "P." # todo: NEW TRANSLATION
+ father_german_short_female: "M." # todo: NEW TRANSLATION
+ father_low_german: "Pater" # todo: NEW TRANSLATION
+ father_low_german_female: "Moder" # todo: NEW TRANSLATION
+ father_low_german_short: "P." # todo: NEW TRANSLATION
+ father_low_german_short_female: "M." # todo: NEW TRANSLATION
+ father_dutch: "Pater" # todo: NEW TRANSLATION
+ father_dutch_female: "Moeder" # todo: NEW TRANSLATION
+ father_dutch_short: "P." # todo: NEW TRANSLATION
+ father_dutch_short_female: "M." # todo: NEW TRANSLATION
+ father_frisian: "Pater" # todo: NEW TRANSLATION
+ father_frisian_female: "Mem" # todo: NEW TRANSLATION
+ father_frisian_short: "P." # todo: NEW TRANSLATION
+ father_frisian_short_female: "M." # todo: NEW TRANSLATION
+ father_swedish: "Fader" # todo: NEW TRANSLATION
+ father_swedish_female: "Moder" # todo: NEW TRANSLATION
+ father_swedish_short: "F." # todo: NEW TRANSLATION
+ father_swedish_short_female: "M." # todo: NEW TRANSLATION
+ father_danish: "Fader" # todo: NEW TRANSLATION
+ father_danish_female: "Moder" # todo: NEW TRANSLATION
+ father_danish_short: "F." # todo: NEW TRANSLATION
+ father_danish_short_female: "M." # todo: NEW TRANSLATION
+ father_norwegian: "Fader" # todo: NEW TRANSLATION
+ father_norwegian_female: "Moder" # todo: NEW TRANSLATION
+ father_norwegian_short: "F." # todo: NEW TRANSLATION
+ father_norwegian_short_female: "M." # todo: NEW TRANSLATION
+ father_icelandic: "Faðir" # todo: NEW TRANSLATION
+ father_icelandic_female: "Móðir" # todo: NEW TRANSLATION
+ father_icelandic_short: "F." # todo: NEW TRANSLATION
+ father_icelandic_short_female: "M." # todo: NEW TRANSLATION
+ father_scots: "Faither" # todo: NEW TRANSLATION
+ father_scots_female: "Mither" # todo: NEW TRANSLATION
+ father_scots_short: "Fr." # todo: NEW TRANSLATION
+ father_scots_short_female: "M." # todo: NEW TRANSLATION
+ father_scottish_gaelic: "Athair" # todo: NEW TRANSLATION
+ father_scottish_gaelic_female: "Màthair" # todo: NEW TRANSLATION
+ father_scottish_gaelic_short: "Ath." # todo: NEW TRANSLATION
+ father_scottish_gaelic_short_female: "M." # todo: NEW TRANSLATION
+ father_irish: "Athair" # todo: NEW TRANSLATION
+ father_irish_female: "Máthair" # todo: NEW TRANSLATION
+ father_irish_short: "Ath." # todo: NEW TRANSLATION
+ father_irish_short_female: "M." # todo: NEW TRANSLATION
+ father_welsh: "Tad" # todo: NEW TRANSLATION
+ father_welsh_female: "Mam" # todo: NEW TRANSLATION
+ father_welsh_short: "T." # todo: NEW TRANSLATION
+ father_welsh_short_female: "M." # todo: NEW TRANSLATION
+ father_polish: "Ojciec" # todo: NEW TRANSLATION
+ father_polish_female: "Matka" # todo: NEW TRANSLATION
+ father_polish_short: "O." # todo: NEW TRANSLATION
+ father_polish_short_female: "M." # todo: NEW TRANSLATION
+ father_czech: "Otec" # todo: NEW TRANSLATION
+ father_czech_female: "Matka" # todo: NEW TRANSLATION
+ father_czech_short: "O." # todo: NEW TRANSLATION
+ father_czech_short_female: "M." # todo: NEW TRANSLATION
+ father_slovak: "Otec" # todo: NEW TRANSLATION
+ father_slovak_female: "Matka" # todo: NEW TRANSLATION
+ father_slovak_short: "O." # todo: NEW TRANSLATION
+ father_slovak_short_female: "M." # todo: NEW TRANSLATION
+ father_hungarian: "Atya" # todo: NEW TRANSLATION
+ father_hungarian_female: "Anya" # todo: NEW TRANSLATION
+ father_hungarian_short: "A." # todo: NEW TRANSLATION
+ father_hungarian_short_female: "A." # todo: NEW TRANSLATION
+ father_lithuanian: "Tėvas" # todo: NEW TRANSLATION
+ father_lithuanian_female: "Motina" # todo: NEW TRANSLATION
+ father_lithuanian_short: "T." # todo: NEW TRANSLATION
+ father_lithuanian_short_female: "M." # todo: NEW TRANSLATION
+ father_latvian: "Tēvs" # todo: NEW TRANSLATION
+ father_latvian_female: "Māte" # todo: NEW TRANSLATION
+ father_latvian_short: "T." # todo: NEW TRANSLATION
+ father_latvian_short_female: "M." # todo: NEW TRANSLATION
+ father_estonian: "Isa" # todo: NEW TRANSLATION
+ father_estonian_female: "Ema" # todo: NEW TRANSLATION
+ father_estonian_short: "I." # todo: NEW TRANSLATION
+ father_estonian_short_female: "E." # todo: NEW TRANSLATION
+ father_finnish: "Isä" # todo: NEW TRANSLATION
+ father_finnish_female: "Äiti" # todo: NEW TRANSLATION
+ father_finnish_short: "I." # todo: NEW TRANSLATION
+ father_finnish_short_female: "Ä." # todo: NEW TRANSLATION
+ father_south_slavic: "Otac" # todo: NEW TRANSLATION
+ father_south_slavic_female: "Majka" # todo: NEW TRANSLATION
+ father_south_slavic_short: "O." # todo: NEW TRANSLATION
+ father_south_slavic_short_female: "M." # todo: NEW TRANSLATION
+ father_bulgarian: "Otets" # todo: NEW TRANSLATION
+ father_bulgarian_female: "Mayka" # todo: NEW TRANSLATION
+ father_bulgarian_short: "O." # todo: NEW TRANSLATION
+ father_bulgarian_short_female: "M." # todo: NEW TRANSLATION
+ father_romanian: "Părinte" # todo: NEW TRANSLATION
+ father_romanian_female: "Maica" # todo: NEW TRANSLATION
+ father_romanian_short: "Pr." # todo: NEW TRANSLATION
+ father_romanian_short_female: "M." # todo: NEW TRANSLATION
+ father_greek: "Patír" # todo: NEW TRANSLATION
+ father_greek_female: "Mitéra" # todo: NEW TRANSLATION
+ father_greek_short: "P." # todo: NEW TRANSLATION
+ father_greek_short_female: "M." # todo: NEW TRANSLATION
+ father_russian: "Otets" # todo: NEW TRANSLATION
+ father_russian_female: "Matushka" # todo: NEW TRANSLATION
+ father_russian_short: "O." # todo: NEW TRANSLATION
+ father_russian_short_female: "M." # todo: NEW TRANSLATION
+ father_ruthenian: "Otets" # todo: NEW TRANSLATION
+ father_ruthenian_female: "Matushka" # todo: NEW TRANSLATION
+ father_ruthenian_short: "O." # todo: NEW TRANSLATION
+ father_ruthenian_short_female: "M." # todo: NEW TRANSLATION
+ father_arabic: "Abuna" # todo: NEW TRANSLATION
+ father_arabic_female: "Umm" # todo: NEW TRANSLATION
+ father_arabic_short: "Ab." # todo: NEW TRANSLATION
+ father_arabic_short_female: "U." # todo: NEW TRANSLATION
+ character_title_father: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_father')]" # todo: NEW TRANSLATION
+ character_title_father_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_father_female')]" # todo: NEW TRANSLATION
+ character_title_father_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_father_short')]" # todo: NEW TRANSLATION
+ character_title_father_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_father_short_female')]" # todo: NEW TRANSLATION
+ grandmaster_default: "$rank_duchy_order_ruler_male$" # todo: NEW TRANSLATION
+ grandmaster_default_female: "$rank_duchy_order_ruler_female$" # todo: NEW TRANSLATION
+ grandmaster_spanish: "Gran Maestre" # todo: NEW TRANSLATION
+ grandmaster_portuguese: "Grão-Mestre" # todo: NEW TRANSLATION
+ grandmaster_catalan: "Gran Mestre" # todo: NEW TRANSLATION
+ grandmaster_galician: "Gran Mestre" # todo: NEW TRANSLATION
+ grandmaster_aragonese: "Gran Mestre" # todo: NEW TRANSLATION
+ grandmaster_occitan: "Grand Mèstre" # todo: NEW TRANSLATION
+ grandmaster_basque: "Maisu Nagusia" # todo: NEW TRANSLATION
+ grandmaster_spanish_female: "Gran Maestre" # todo: NEW TRANSLATION
+ grandmaster_portuguese_female: "Grão-Mestre" # todo: NEW TRANSLATION
+ grandmaster_catalan_female: "Gran Mestre" # todo: NEW TRANSLATION
+ grandmaster_galician_female: "Gran Mestre" # todo: NEW TRANSLATION
+ grandmaster_aragonese_female: "Gran Mestre" # todo: NEW TRANSLATION
+ grandmaster_occitan_female: "Grand Mèstre" # todo: NEW TRANSLATION
+ grandmaster_basque_female: "Maisu Nagusia" # todo: NEW TRANSLATION
+ grandmaster_default_short: "G.M." # todo: NEW TRANSLATION
+ grandmaster_default_short_female: "G.M." # todo: NEW TRANSLATION
+ grandmaster_spanish_short: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_spanish_short_female: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_portuguese_short: "G.-M." # todo: NEW TRANSLATION
+ grandmaster_portuguese_short_female: "G.-M." # todo: NEW TRANSLATION
+ grandmaster_catalan_short: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_catalan_short_female: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_galician_short: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_galician_short_female: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_aragonese_short: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_aragonese_short_female: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_occitan_short: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_occitan_short_female: "G. Mre." # todo: NEW TRANSLATION
+ grandmaster_basque_short: "M.N." # todo: NEW TRANSLATION
+ grandmaster_basque_short_female: "M.N." # todo: NEW TRANSLATION
+ magister_default: "Magister" # todo: NEW TRANSLATION
+ magister_default_female: "Magistra" # todo: NEW TRANSLATION
+ magister_default_short: "Mag." # todo: NEW TRANSLATION
+ magister_default_short_female: "Mag." # todo: NEW TRANSLATION
+ magister_english: "Majster" # todo: NEW TRANSLATION
+ magister_english_female: "Majsterka" # todo: NEW TRANSLATION
+ magister_english_short: "Maj." # todo: NEW TRANSLATION
+ magister_english_short_female: "Maj." # todo: NEW TRANSLATION
+ magister_spanish: "Maestre" # todo: NEW TRANSLATION
+ magister_spanish_female: "Maestra" # todo: NEW TRANSLATION
+ magister_spanish_short: "Mre." # todo: NEW TRANSLATION
+ magister_spanish_short_female: "Mra." # todo: NEW TRANSLATION
+ magister_portuguese: "Mestre" # todo: NEW TRANSLATION
+ magister_portuguese_female: "Mestra" # todo: NEW TRANSLATION
+ magister_portuguese_short: "Mre." # todo: NEW TRANSLATION
+ magister_portuguese_short_female: "Mra." # todo: NEW TRANSLATION
+ magister_catalan: "Mestre" # todo: NEW TRANSLATION
+ magister_catalan_female: "Mestra" # todo: NEW TRANSLATION
+ magister_catalan_short: "Mre." # todo: NEW TRANSLATION
+ magister_catalan_short_female: "Mra." # todo: NEW TRANSLATION
+ magister_occitan: "Mèstre" # todo: NEW TRANSLATION
+ magister_occitan_female: "Mèstra" # todo: NEW TRANSLATION
+ magister_occitan_short: "Mre." # todo: NEW TRANSLATION
+ magister_occitan_short_female: "Mra." # todo: NEW TRANSLATION
+ magister_french: "Maître" # todo: NEW TRANSLATION
+ magister_french_female: "Maîtresse" # todo: NEW TRANSLATION
+ magister_french_short: "Mre." # todo: NEW TRANSLATION
+ magister_french_short_female: "Mse." # todo: NEW TRANSLATION
+ magister_north_italian: "Maestro" # todo: NEW TRANSLATION
+ magister_north_italian_female: "Maestra" # todo: NEW TRANSLATION
+ magister_north_italian_short: "Mro." # todo: NEW TRANSLATION
+ magister_north_italian_short_female: "Mra." # todo: NEW TRANSLATION
+ magister_italian: "Maestro" # todo: NEW TRANSLATION
+ magister_italian_female: "Maestra" # todo: NEW TRANSLATION
+ magister_italian_short: "Mro." # todo: NEW TRANSLATION
+ magister_italian_short_female: "Mra." # todo: NEW TRANSLATION
+ magister_german: "Meister" # todo: NEW TRANSLATION
+ magister_german_female: "Meisterin" # todo: NEW TRANSLATION
+ magister_german_short: "Mstr." # todo: NEW TRANSLATION
+ magister_german_short_female: "Mstrn." # todo: NEW TRANSLATION
+ magister_czech: "Mistr" # todo: NEW TRANSLATION
+ magister_czech_female: "Mistryně" # todo: NEW TRANSLATION
+ magister_czech_short: "M." # todo: NEW TRANSLATION
+ magister_czech_short_female: "M." # todo: NEW TRANSLATION
+ magister_polish: "Mistrz" # todo: NEW TRANSLATION
+ magister_polish_female: "Mistrzyni" # todo: NEW TRANSLATION
+ magister_polish_short: "M." # todo: NEW TRANSLATION
+ magister_polish_short_female: "M." # todo: NEW TRANSLATION
+ magister_hungarian: "Mester" # todo: NEW TRANSLATION
+ magister_hungarian_female: "Mesternő" # todo: NEW TRANSLATION
+ magister_hungarian_short: "M." # todo: NEW TRANSLATION
+ magister_hungarian_short_female: "M." # todo: NEW TRANSLATION
+ minister_default: "Minister" # todo: NEW TRANSLATION
+ minister_default_female: "Ministerka" # todo: NEW TRANSLATION
+ minister_default_short: "Min." # todo: NEW TRANSLATION
+ minister_default_short_female: "Min." # todo: NEW TRANSLATION
+ minister_spanish: "Ministro" # todo: NEW TRANSLATION
+ minister_spanish_female: "Ministra" # todo: NEW TRANSLATION
+ minister_spanish_short: "Min." # todo: NEW TRANSLATION
+ minister_spanish_short_female: "Min." # todo: NEW TRANSLATION
+ minister_portuguese: "Ministro" # todo: NEW TRANSLATION
+ minister_portuguese_female: "Ministra" # todo: NEW TRANSLATION
+ minister_portuguese_short: "Min." # todo: NEW TRANSLATION
+ minister_portuguese_short_female: "Min." # todo: NEW TRANSLATION
+ minister_catalan: "Ministre" # todo: NEW TRANSLATION
+ minister_catalan_female: "Ministra" # todo: NEW TRANSLATION
+ minister_catalan_short: "Min." # todo: NEW TRANSLATION
+ minister_catalan_short_female: "Min." # todo: NEW TRANSLATION
+ minister_occitan: "Ministre" # todo: NEW TRANSLATION
+ minister_occitan_female: "Ministra" # todo: NEW TRANSLATION
+ minister_occitan_short: "Min." # todo: NEW TRANSLATION
+ minister_occitan_short_female: "Min." # todo: NEW TRANSLATION
+ minister_french: "Ministre" # todo: NEW TRANSLATION
+ minister_french_female: "Ministre" # todo: NEW TRANSLATION
+ minister_french_short: "Min." # todo: NEW TRANSLATION
+ minister_french_short_female: "Min." # todo: NEW TRANSLATION
+ minister_north_italian: "Ministro" # todo: NEW TRANSLATION
+ minister_north_italian_female: "Ministra" # todo: NEW TRANSLATION
+ minister_north_italian_short: "Min." # todo: NEW TRANSLATION
+ minister_north_italian_short_female: "Min." # todo: NEW TRANSLATION
+ minister_italian: "Ministro" # todo: NEW TRANSLATION
+ minister_italian_female: "Ministra" # todo: NEW TRANSLATION
+ minister_italian_short: "Min." # todo: NEW TRANSLATION
+ minister_italian_short_female: "Min." # todo: NEW TRANSLATION
+ prior_default: "Prior" # todo: NEW TRANSLATION
+ prior_default_female: "Priorisa" # todo: NEW TRANSLATION
+ prior_default_short: "Pr." # todo: NEW TRANSLATION
+ prior_default_short_female: "Pr." # todo: NEW TRANSLATION
+ prior_english: "Prior" # todo: NEW TRANSLATION
+ prior_english_female: "Priorisa" # todo: NEW TRANSLATION
+ prior_english_short: "Pr." # todo: NEW TRANSLATION
+ prior_english_short_female: "Pr." # todo: NEW TRANSLATION
+ prior_spanish: "Prior" # todo: NEW TRANSLATION
+ prior_spanish_female: "Priora" # todo: NEW TRANSLATION
+ prior_spanish_short: "Pr." # todo: NEW TRANSLATION
+ prior_spanish_short_female: "Pra." # todo: NEW TRANSLATION
+ prior_portuguese: "Prior" # todo: NEW TRANSLATION
+ prior_portuguese_female: "Priora" # todo: NEW TRANSLATION
+ prior_portuguese_short: "Pr." # todo: NEW TRANSLATION
+ prior_portuguese_short_female: "Pra." # todo: NEW TRANSLATION
+ prior_catalan: "Prior" # todo: NEW TRANSLATION
+ prior_catalan_female: "Priora" # todo: NEW TRANSLATION
+ prior_catalan_short: "Pr." # todo: NEW TRANSLATION
+ prior_catalan_short_female: "Pra." # todo: NEW TRANSLATION
+ prior_occitan: "Prior" # todo: NEW TRANSLATION
+ prior_occitan_female: "Priora" # todo: NEW TRANSLATION
+ prior_occitan_short: "Pr." # todo: NEW TRANSLATION
+ prior_occitan_short_female: "Pra." # todo: NEW TRANSLATION
+ prior_french: "Prieur" # todo: NEW TRANSLATION
+ prior_french_female: "Prieure" # todo: NEW TRANSLATION
+ prior_french_short: "Pr." # todo: NEW TRANSLATION
+ prior_french_short_female: "Pre." # todo: NEW TRANSLATION
+ prior_north_italian: "Priore" # todo: NEW TRANSLATION
+ prior_north_italian_female: "Priora" # todo: NEW TRANSLATION
+ prior_north_italian_short: "Pr." # todo: NEW TRANSLATION
+ prior_north_italian_short_female: "Pra." # todo: NEW TRANSLATION
+ prior_italian: "Priore" # todo: NEW TRANSLATION
+ prior_italian_female: "Priora" # todo: NEW TRANSLATION
+ prior_italian_short: "Pr." # todo: NEW TRANSLATION
+ prior_italian_short_female: "Pra." # todo: NEW TRANSLATION
+ prior_german: "Prior" # todo: NEW TRANSLATION
+ prior_german_female: "Priorin" # todo: NEW TRANSLATION
+ prior_german_short: "Pr." # todo: NEW TRANSLATION
+ prior_german_short_female: "Prn." # todo: NEW TRANSLATION
+ prior_czech: "Převor" # todo: NEW TRANSLATION
+ prior_czech_female: "Převorka" # todo: NEW TRANSLATION
+ prior_czech_short: "Př." # todo: NEW TRANSLATION
+ prior_czech_short_female: "Př." # todo: NEW TRANSLATION
+ prior_polish: "Przeor" # todo: NEW TRANSLATION
+ prior_polish_female: "Przeorysza" # todo: NEW TRANSLATION
+ prior_polish_short: "Prz." # todo: NEW TRANSLATION
+ prior_polish_short_female: "Prz." # todo: NEW TRANSLATION
+ prior_hungarian: "Perjel" # todo: NEW TRANSLATION
+ prior_hungarian_female: "Perjelnő" # todo: NEW TRANSLATION
+ prior_hungarian_short: "P." # todo: NEW TRANSLATION
+ prior_hungarian_short_female: "P." # todo: NEW TRANSLATION
  character_title_colonel: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel')]" # todo: NEW TRANSLATION
  character_title_colonel_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel_female')]" # todo: NEW TRANSLATION
+ character_title_colonel_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel_short')]" # todo: NEW TRANSLATION
+ character_title_colonel_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel_short_female')]" # todo: NEW TRANSLATION
  character_title_nobility_pirate: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_captain')]" # todo: NEW TRANSLATION
  character_title_nobility_pirate_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_captain_female')]" # todo: NEW TRANSLATION
+ character_title_nobility_pirate_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_captain_short')]" # todo: NEW TRANSLATION
+ character_title_nobility_pirate_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_captain_short_female')]" # todo: NEW TRANSLATION
  character_title_nobility_french: "Sire" # todo: NEW TRANSLATION
  character_title_nobility_french_female: "Dame" # todo: NEW TRANSLATION
  character_title_nobility_welsh: "Syr" # todo: NEW TRANSLATION
  character_title_nobility_welsh_female: "Ledi" # todo: NEW TRANSLATION
  character_title_nobility_english: "Sir" # todo: NEW TRANSLATION
  character_title_nobility_english_female: "Lady" # todo: NEW TRANSLATION
+ character_title_nobility_catalan: "En" # todo: NEW TRANSLATION
+ character_title_nobility_catalan_female: "Na" # todo: NEW TRANSLATION
+ character_title_nobility_catalan_vowel: "N'" # todo: NEW TRANSLATION
+ character_title_nobility_catalan_vowel_female: "N'" # todo: NEW TRANSLATION
+ character_title_nobility_spanish: "Don" # todo: NEW TRANSLATION
+ character_title_nobility_spanish_female: "Doña" # todo: NEW TRANSLATION
+ character_title_nobility_aragonese: "Don" # todo: NEW TRANSLATION
+ character_title_nobility_aragonese_female: "Dona" # todo: NEW TRANSLATION
+ character_title_nobility_portuguese: "Dom" # todo: NEW TRANSLATION
+ character_title_nobility_portuguese_female: "Dona" # todo: NEW TRANSLATION
  character_title_minister_of_parliament: "MP" # todo: NEW TRANSLATION
  character_title_minister_of_parliament_female: "MP" # todo: NEW TRANSLATION
  character_title_burgher_esquire: "Esq." # todo: NEW TRANSLATION
  character_title_burgher_esquire_female: "Esq." # todo: NEW TRANSLATION
- character_title_doctor: "Dr" # todo: NEW TRANSLATION
- character_title_doctor_female: "Dr" # todo: NEW TRANSLATION
+ character_title_doctor: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_doctor')]" # todo: CHANGED (predtym: Dr)
+ character_title_doctor_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_doctor_female')]" # todo: CHANGED (predtym: Dr)
+ character_title_doctor_short: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_doctor_short')]" # todo: NEW TRANSLATION
+ character_title_doctor_short_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_doctor_short_female')]" # todo: NEW TRANSLATION
  character_title_shinno: "Shinnō" # todo: NEW TRANSLATION
  character_title_shinno_female: "Naishinnō" # todo: NEW TRANSLATION
  character_title_nobility_malay: "Awang" # todo: NEW TRANSLATION
@@ -284,6 +968,76 @@
  colonel_norman: "Colonel" # todo: NEW TRANSLATION
  colonel_norman_female: "Colonelle" # todo: NEW TRANSLATION
  colonel_norman_plural: "Colonels" # todo: NEW TRANSLATION
+ colonel_short_default: "Plk." # todo: NEW TRANSLATION
+ colonel_short_default_female: "Plk." # todo: NEW TRANSLATION
+ colonel_short_english: "Plk." # todo: NEW TRANSLATION
+ colonel_short_english_female: "Plk." # todo: NEW TRANSLATION
+ colonel_short_scots: "Cor." # todo: NEW TRANSLATION
+ colonel_short_scots_female: "Cor." # todo: NEW TRANSLATION
+ colonel_short_french: "Col" # todo: NEW TRANSLATION
+ colonel_short_french_female: "Col" # todo: NEW TRANSLATION
+ colonel_short_spanish: "Cnel." # todo: NEW TRANSLATION
+ colonel_short_spanish_female: "Cnel." # todo: NEW TRANSLATION
+ colonel_short_occitan: "Cnel." # todo: NEW TRANSLATION
+ colonel_short_occitan_female: "Cnel." # todo: NEW TRANSLATION
+ colonel_short_portuguese: "Cel." # todo: NEW TRANSLATION
+ colonel_short_portuguese_female: "Cel." # todo: NEW TRANSLATION
+ colonel_short_north_italian: "Col." # todo: NEW TRANSLATION
+ colonel_short_north_italian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_italian: "plk." # todo: NEW TRANSLATION
+ colonel_short_italian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_german: "plk." # todo: NEW TRANSLATION
+ colonel_short_german_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_frisian: "plk." # todo: NEW TRANSLATION
+ colonel_short_frisian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_dutch: "plk." # todo: NEW TRANSLATION
+ colonel_short_dutch_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_danish: "plk." # todo: NEW TRANSLATION
+ colonel_short_danish_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_norwegian: "plk." # todo: NEW TRANSLATION
+ colonel_short_norwegian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_swedish: "plk." # todo: NEW TRANSLATION
+ colonel_short_swedish_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_icelandic: "plk." # todo: NEW TRANSLATION
+ colonel_short_icelandic_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_finnish: "plk." # todo: NEW TRANSLATION
+ colonel_short_finnish_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_estonian: "plk." # todo: NEW TRANSLATION
+ colonel_short_estonian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_lithuanian: "plk." # todo: NEW TRANSLATION
+ colonel_short_lithuanian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_latvian: "plk." # todo: NEW TRANSLATION
+ colonel_short_latvian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_polish: "plk." # todo: NEW TRANSLATION
+ colonel_short_polish_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_czech: "plk." # todo: NEW TRANSLATION
+ colonel_short_czech_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_hungarian: "plk." # todo: NEW TRANSLATION
+ colonel_short_hungarian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_south_slavic: "plk." # todo: NEW TRANSLATION
+ colonel_short_south_slavic_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_bulgarian: "plk." # todo: NEW TRANSLATION
+ colonel_short_bulgarian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_romanian: "plk." # todo: NEW TRANSLATION
+ colonel_short_romanian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_greek: "plk." # todo: NEW TRANSLATION
+ colonel_short_greek_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_russian: "plk." # todo: NEW TRANSLATION
+ colonel_short_russian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_ruthenian: "plk." # todo: NEW TRANSLATION
+ colonel_short_ruthenian_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_basque: "plk." # todo: NEW TRANSLATION
+ colonel_short_basque_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_welsh: "plk." # todo: NEW TRANSLATION
+ colonel_short_welsh_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_irish: "plk." # todo: NEW TRANSLATION
+ colonel_short_irish_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_scottish_gaelic: "plk." # todo: NEW TRANSLATION
+ colonel_short_scottish_gaelic_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_arabic: "plk." # todo: NEW TRANSLATION
+ colonel_short_arabic_female: "plk." # todo: NEW TRANSLATION
+ colonel_short_breton: "plk." # todo: NEW TRANSLATION
+ colonel_short_breton_female: "plk." # todo: NEW TRANSLATION
  captain_default: "Kapitán" # todo: NEW TRANSLATION
  captain_default_female: "Kapitánka" # todo: NEW TRANSLATION
  captain_default_plural: "Kapitáni" # todo: NEW TRANSLATION
@@ -428,6 +1182,270 @@
  captain_roman: "Capitaneus" # todo: NEW TRANSLATION
  captain_roman_female: "Capitanea" # todo: NEW TRANSLATION
  captain_roman_plural: "Capitanei" # todo: NEW TRANSLATION
+ captain_short_default: "kpt." # todo: NEW TRANSLATION
+ captain_short_default_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_english: "kpt." # todo: NEW TRANSLATION
+ captain_short_english_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_french: "kpt." # todo: NEW TRANSLATION
+ captain_short_french_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_spanish: "kpt." # todo: NEW TRANSLATION
+ captain_short_spanish_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_occitan: "kpt." # todo: NEW TRANSLATION
+ captain_short_occitan_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_portuguese: "kpt." # todo: NEW TRANSLATION
+ captain_short_portuguese_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_north_italian: "kpt." # todo: NEW TRANSLATION
+ captain_short_north_italian_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_italian: "kpt." # todo: NEW TRANSLATION
+ captain_short_italian_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_german: "kpt." # todo: NEW TRANSLATION
+ captain_short_german_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_frisian: "kpt." # todo: NEW TRANSLATION
+ captain_short_frisian_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_dutch: "kpt." # todo: NEW TRANSLATION
+ captain_short_dutch_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_swedish: "kpt." # todo: NEW TRANSLATION
+ captain_short_swedish_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_icelandic: "kpt." # todo: NEW TRANSLATION
+ captain_short_icelandic_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_finnish: "kpt." # todo: NEW TRANSLATION
+ captain_short_finnish_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_lithuanian: "kpt." # todo: NEW TRANSLATION
+ captain_short_lithuanian_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_polish: "kpt." # todo: NEW TRANSLATION
+ captain_short_polish_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_czech: "kpt." # todo: NEW TRANSLATION
+ captain_short_czech_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_hungarian: "kpt." # todo: NEW TRANSLATION
+ captain_short_hungarian_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_south_slavic: "kpt." # todo: NEW TRANSLATION
+ captain_short_south_slavic_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_bulgarian: "kpt." # todo: NEW TRANSLATION
+ captain_short_bulgarian_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_romanian: "kpt." # todo: NEW TRANSLATION
+ captain_short_romanian_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_greek: "kpt." # todo: NEW TRANSLATION
+ captain_short_greek_female: "kpt." # todo: NEW TRANSLATION
+ captain_short_russian: "kpt." # todo: NEW TRANSLATION
+ captain_short_russian_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_ruthenian: "Kpt." # todo: NEW TRANSLATION
+ captain_short_ruthenian_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_basque: "Kpt." # todo: NEW TRANSLATION
+ captain_short_basque_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_welsh: "Kpt." # todo: NEW TRANSLATION
+ captain_short_welsh_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_irish: "Kpt." # todo: NEW TRANSLATION
+ captain_short_irish_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_arabic: "Qaid" # todo: NEW TRANSLATION
+ captain_short_arabic_female: "Qaid" # todo: NEW TRANSLATION
+ captain_short_breton: "Kpt." # todo: NEW TRANSLATION
+ captain_short_breton_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_low_german: "Kpt." # todo: NEW TRANSLATION
+ captain_short_low_german_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_norman: "Kpt." # todo: NEW TRANSLATION
+ captain_short_norman_female: "Kpt." # todo: NEW TRANSLATION
+ captain_short_roman: "Kpt." # todo: NEW TRANSLATION
+ captain_short_roman_female: "Kpt." # todo: NEW TRANSLATION
+ doctor_default: "Doktor" # todo: NEW TRANSLATION
+ doctor_default_female: "Doktorka" # todo: NEW TRANSLATION
+ doctor_short_default: "Dr." # todo: NEW TRANSLATION
+ doctor_short_default_female: "Dr." # todo: NEW TRANSLATION
+ doctor_english: "Doktor" # todo: NEW TRANSLATION
+ doctor_english_female: "Doktorka" # todo: NEW TRANSLATION
+ doctor_short_english: "Dr." # todo: NEW TRANSLATION
+ doctor_short_english_female: "Dr." # todo: NEW TRANSLATION
+ doctor_french: "Docteur" # todo: NEW TRANSLATION
+ doctor_french_female: "Docteure" # todo: NEW TRANSLATION
+ doctor_short_french: "Dr" # todo: NEW TRANSLATION
+ doctor_short_french_female: "Dre" # todo: NEW TRANSLATION
+ doctor_spanish: "Doctor" # todo: NEW TRANSLATION
+ doctor_spanish_female: "Doctora" # todo: NEW TRANSLATION
+ doctor_short_spanish: "Dr" # todo: NEW TRANSLATION
+ doctor_short_spanish_female: "Dra" # todo: NEW TRANSLATION
+ doctor_occitan: "Doctor" # todo: NEW TRANSLATION
+ doctor_occitan_female: "Doctora" # todo: NEW TRANSLATION
+ doctor_short_occitan: "Dr" # todo: NEW TRANSLATION
+ doctor_short_occitan_female: "Dra" # todo: NEW TRANSLATION
+ doctor_portuguese: "Doutor" # todo: NEW TRANSLATION
+ doctor_portuguese_female: "Doutora" # todo: NEW TRANSLATION
+ doctor_short_portuguese: "Dr" # todo: NEW TRANSLATION
+ doctor_short_portuguese_female: "Dra" # todo: NEW TRANSLATION
+ doctor_north_italian: "Dotor" # todo: NEW TRANSLATION
+ doctor_north_italian_female: "Dotora" # todo: NEW TRANSLATION
+ doctor_short_north_italian: "Dott." # todo: NEW TRANSLATION
+ doctor_short_north_italian_female: "Dott.ssa" # todo: NEW TRANSLATION
+ doctor_italian: "Dottore" # todo: NEW TRANSLATION
+ doctor_italian_female: "Dottoressa" # todo: NEW TRANSLATION
+ doctor_short_italian: "Dott." # todo: NEW TRANSLATION
+ doctor_short_italian_female: "Dott.ssa" # todo: NEW TRANSLATION
+ doctor_romanian: "Doctor" # todo: NEW TRANSLATION
+ doctor_romanian_female: "Doctoriță" # todo: NEW TRANSLATION
+ doctor_short_romanian: "Dr" # todo: NEW TRANSLATION
+ doctor_short_romanian_female: "Dr" # todo: NEW TRANSLATION
+ doctor_roman: "Doctor" # todo: NEW TRANSLATION
+ doctor_roman_female: "Doctrix" # todo: NEW TRANSLATION
+ doctor_short_roman: "Doct." # todo: NEW TRANSLATION
+ doctor_short_roman_female: "Doct." # todo: NEW TRANSLATION
+ cardinal_default: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_default_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_default: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_default_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_english: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_english_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_english: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_english_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_scots: "Cardinal" # todo: NEW TRANSLATION
+ cardinal_scots_female: "Cardinal" # todo: NEW TRANSLATION
+ cardinal_short_scots: "Card." # todo: NEW TRANSLATION
+ cardinal_short_scots_female: "Card." # todo: NEW TRANSLATION
+ cardinal_welsh: "Cardinal" # todo: NEW TRANSLATION
+ cardinal_welsh_female: "Cardinal" # todo: NEW TRANSLATION
+ cardinal_short_welsh: "Card." # todo: NEW TRANSLATION
+ cardinal_short_welsh_female: "Card." # todo: NEW TRANSLATION
+ cardinal_irish: "Cairdineal" # todo: NEW TRANSLATION
+ cardinal_irish_female: "Cairdineal" # todo: NEW TRANSLATION
+ cardinal_short_irish: "Card." # todo: NEW TRANSLATION
+ cardinal_short_irish_female: "Card." # todo: NEW TRANSLATION
+ cardinal_scottish_gaelic: "Cairdineal" # todo: NEW TRANSLATION
+ cardinal_scottish_gaelic_female: "Cairdineal" # todo: NEW TRANSLATION
+ cardinal_short_scottish_gaelic: "Card." # todo: NEW TRANSLATION
+ cardinal_short_scottish_gaelic_female: "Card." # todo: NEW TRANSLATION
+ cardinal_latin: "Cardinalis" # todo: NEW TRANSLATION
+ cardinal_latin_female: "Cardinalis" # todo: NEW TRANSLATION
+ cardinal_short_latin: "Card." # todo: NEW TRANSLATION
+ cardinal_short_latin_female: "Card." # todo: NEW TRANSLATION
+ cardinal_french: "Cardinal" # todo: NEW TRANSLATION
+ cardinal_french_female: "Cardinale" # todo: NEW TRANSLATION
+ cardinal_short_french: "Card." # todo: NEW TRANSLATION
+ cardinal_short_french_female: "Card." # todo: NEW TRANSLATION
+ cardinal_norman: "Cardinal" # todo: NEW TRANSLATION
+ cardinal_norman_female: "Cardinal" # todo: NEW TRANSLATION
+ cardinal_short_norman: "Card." # todo: NEW TRANSLATION
+ cardinal_short_norman_female: "Card." # todo: NEW TRANSLATION
+ cardinal_italian: "Cardinale" # todo: NEW TRANSLATION
+ cardinal_italian_female: "Cardinale" # todo: NEW TRANSLATION
+ cardinal_short_italian: "Card." # todo: NEW TRANSLATION
+ cardinal_short_italian_female: "Card." # todo: NEW TRANSLATION
+ cardinal_north_italian: "Cardenâl" # todo: NEW TRANSLATION
+ cardinal_north_italian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_north_italian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_north_italian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_spanish: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_spanish_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_spanish: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_spanish_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_catalan: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_catalan_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_catalan: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_catalan_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_portuguese: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_portuguese_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_portuguese: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_portuguese_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_galician: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_galician_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_galician: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_galician_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_occitan: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_occitan_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_occitan: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_occitan_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_german: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_german_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_german: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_german_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_low_german: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_low_german_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_low_german: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_low_german_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_dutch: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_dutch_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_dutch: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_dutch_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_frisian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_frisian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_frisian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_frisian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_swedish: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_swedish_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_swedish: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_swedish_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_danish: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_danish_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_danish: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_danish_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_norwegian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_norwegian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_norwegian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_norwegian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_icelandic: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_icelandic_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_icelandic: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_icelandic_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_polish: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_polish_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_polish: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_polish_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_czech: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_czech_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_czech: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_czech_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_slovak: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_slovak_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_slovak: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_slovak_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_south_slavic: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_south_slavic_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_south_slavic: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_south_slavic_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_bulgarian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_bulgarian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_bulgarian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_bulgarian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_hungarian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_hungarian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_hungarian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_hungarian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_romanian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_romanian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_romanian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_romanian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_greek: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_greek_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_greek: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_greek_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_russian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_russian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_russian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_russian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_ruthenian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_ruthenian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_ruthenian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_ruthenian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_lithuanian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_lithuanian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_lithuanian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_lithuanian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_latvian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_latvian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_latvian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_latvian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_estonian: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_estonian_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_estonian: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_estonian_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_finnish: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_finnish_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_finnish: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_finnish_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_basque: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_basque_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_basque: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_basque_female: "Kard." # todo: NEW TRANSLATION
+ cardinal_breton: "Kardinál" # todo: NEW TRANSLATION
+ cardinal_breton_female: "Kardinálka" # todo: NEW TRANSLATION
+ cardinal_short_breton: "Kard." # todo: NEW TRANSLATION
+ cardinal_short_breton_female: "Kard." # todo: NEW TRANSLATION
  character_address_male: "Jeho $ADDRESS$" # todo: NEW TRANSLATION
  character_address_female: "Jej $ADDRESS$" # todo: NEW TRANSLATION
  character_address_male_possessive: "Jeho $ADDRESS$" # todo: NEW TRANSLATION
@@ -447,6 +1465,8 @@
  character_address_second_person_fallback_male: "Môj Pane" # todo: NEW TRANSLATION
  character_address_second_person_fallback_female: "Môj Pani" # todo: NEW TRANSLATION
  character_address_holiness: "Svätosť" # todo: NEW TRANSLATION
+ character_address_all_holiness: "Všesvätosť" # todo: NEW TRANSLATION
+ character_address_beatitude: "Blaženosť" # todo: NEW TRANSLATION
  character_address_imperial_majesty: "Cisárske veličenstvo" # todo: NEW TRANSLATION
  character_address_catholic_majesty: "Katolícke veličenstvo" # todo: NEW TRANSLATION
  character_address_apostolic_majesty: "Apoštolské veličenstvo" # todo: NEW TRANSLATION
@@ -459,6 +1479,7 @@
  character_address_royal_highness: "Kráľovská výsosť" # todo: NEW TRANSLATION
  character_address_lordship: "Pánstvo" # todo: NEW TRANSLATION
  character_address_highness: "Výsosť" # todo: NEW TRANSLATION
+ character_address_eminence: "Eminencia" # todo: NEW TRANSLATION
  character_address_excellency: "Excelencia" # todo: NEW TRANSLATION
  character_address_lordship_low_noble: "Pánstvo" # todo: NEW TRANSLATION
  Platypus: "Ptakopysk" # todo: NEW TRANSLATION
@@ -553,6 +1574,7 @@
  nick_the_champenois: "Šampanský" # todo: NEW TRANSLATION
  nick_curtmantle: "Curtmantle" # todo: NEW TRANSLATION
  nick_the_hairy: "Chlpatý" # todo: NEW TRANSLATION
+ nick_ha_levi: "ha-Levi" # todo: NEW TRANSLATION
  nick_harefoot: "Zajačonožec" # todo: NEW TRANSLATION
  nick_of_greece: "z Grécka" # todo: NEW TRANSLATION
  nick_the_giant: "Obor" # todo: NEW TRANSLATION
@@ -589,8 +1611,8 @@
  nick_the_count: "Gróf" # todo: NEW TRANSLATION
  nick_the_courageous: "Odvážny" # todo: NEW TRANSLATION
  nick_the_deacon: "Diakón" # todo: NEW TRANSLATION
- nick_elbow_high: "\"Elbow-High\"" # todo: NEW TRANSLATION
- nick_elbow_high.west_slavic_language: "\"Łokietek\"" # todo: NEW TRANSLATION
+ nick_elbow_high: "„Elbow-High“" # todo: NEW TRANSLATION
+ nick_elbow_high.west_slavic_language: "„Łokietek“" # todo: NEW TRANSLATION
  nick_koca: "Koca" # todo: NEW TRANSLATION
  the_mild: "Mierny" # todo: NEW TRANSLATION
  the_admirable: "Obdivuhodný" # todo: NEW TRANSLATION
@@ -628,6 +1650,8 @@
  Palomilla: "la Palomilla" # todo: NEW TRANSLATION
  the_populator: "Osídľovateľ" # todo: NEW TRANSLATION
  the_red_one: "Ten červený" # todo: NEW TRANSLATION
+ ibn_al_khatib: "Ibn al-Khatib" # todo: NEW TRANSLATION
+ ibn_al_hakim_al_rundi: "Ibn al-Hakim al-Rundi" # todo: NEW TRANSLATION
  the_senator: "Senátor" # todo: NEW TRANSLATION
  the_short: "Krátky" # todo: NEW TRANSLATION
  of_Tarifa: "of Tarifa" # todo: NEW TRANSLATION
@@ -656,6 +1680,7 @@
  nick_bluetooth: "Bluetooth" # todo: NEW TRANSLATION
  nick_christoffersen: "Christoffersen" # todo: NEW TRANSLATION
  nick_ad_din: "ad-Dīn" # todo: NEW TRANSLATION
+ nick_hayreddin: "$name_khayr.name_al_din.turkish_language$" # todo: NEW TRANSLATION
  nick_abu_bakr_khalil: "Abū Bakr Khalīl" # todo: NEW TRANSLATION
  nick_altunbas: "Altunbaş" # todo: NEW TRANSLATION
  nick_hizir: "Hızır" # todo: NEW TRANSLATION
@@ -911,6 +1936,7 @@
  Christopher_diminutive: "Chris" # todo: NEW TRANSLATION
  Jonathan: "Jonathan" # todo: NEW TRANSLATION
  Ralph: "Ralph" # todo: NEW TRANSLATION
+ Raleigh: "Raleigh" # todo: NEW TRANSLATION
  Nathaniel: "Nathaniel" # todo: NEW TRANSLATION
  Nathan: "Nathan" # todo: NEW TRANSLATION
  Josiah: "Josiah" # todo: NEW TRANSLATION
@@ -1441,6 +2467,7 @@
  Ladahachandra: "Ladahachandra" # todo: NEW TRANSLATION
  Lahbung: "Lahbung" # todo: NEW TRANSLATION
  Lahoron: "Lahoron" # todo: NEW TRANSLATION
+ Lahori: "Lahori" # todo: NEW TRANSLATION
  Lakhanapala: "Lakhanapala" # todo: NEW TRANSLATION
  Lakhshaman-Singh: "Lakhshaman-Singh" # todo: NEW TRANSLATION
  Laksam: "Laksam" # todo: NEW TRANSLATION
@@ -1563,6 +2590,7 @@
  Mapejong: "Mapejong" # todo: NEW TRANSLATION
  Mardin: "Mardin" # todo: NEW TRANSLATION
  Margdeva: "Margdeva" # todo: NEW TRANSLATION
+ Marignolli: "Marignolli" # todo: NEW TRANSLATION
  Marinda: "Marinda" # todo: NEW TRANSLATION
  Maringdom: "Maringdom" # todo: NEW TRANSLATION
  Maruti: "Maruti" # todo: NEW TRANSLATION
@@ -1817,6 +2845,7 @@
  Ranjur: "Ranjur" # todo: NEW TRANSLATION
  Rasaladevi: "Rasaladevi" # todo: NEW TRANSLATION
  Rastraudha: "Rastraudha" # todo: NEW TRANSLATION
+ Rastrelli: "Rastrelli" # todo: NEW TRANSLATION
  Ratmamalla: "Ratmamalla" # todo: NEW TRANSLATION
  Ratna: "Ratna" # todo: NEW TRANSLATION
  Ratnakara: "Ratnakara" # todo: NEW TRANSLATION
@@ -1872,6 +2901,7 @@
  Sanjung: "Sanjung" # todo: NEW TRANSLATION
  Sankaravarman: "Sankaravarman" # todo: NEW TRANSLATION
  Sansoyang: "Sansoyang" # todo: NEW TRANSLATION
+ Sansovino: "Sansovino" # todo: NEW TRANSLATION
  Sanyak: "Sanyak" # todo: NEW TRANSLATION
  Sanyokp: "Sanyokp" # todo: NEW TRANSLATION
  Sanyukta: "Sanyukta" # todo: NEW TRANSLATION
@@ -1881,6 +2911,7 @@
  Saraswati: "Saraswati" # todo: NEW TRANSLATION
  Sardaphe: "Sardaphe" # todo: NEW TRANSLATION
  Saring: "Saring" # todo: NEW TRANSLATION
+ Sarwar: "Sarwar" # todo: NEW TRANSLATION
  Satish: "Satish" # todo: NEW TRANSLATION
  Satnami: "Satnami" # todo: NEW TRANSLATION
  Satyen: "Satyen" # todo: NEW TRANSLATION
@@ -2221,6 +3252,7 @@
  Yungsahang: "Yungsahang" # todo: NEW TRANSLATION
  Zain_Ul_Abidin: "Zain-ul-Abidin" # todo: NEW TRANSLATION
  Zayn: "Zayn" # todo: NEW TRANSLATION
+ Zevi: "Zevi" # todo: NEW TRANSLATION
  Zoon: "Zoon" # todo: NEW TRANSLATION
  Zoongash: "Zoongash" # todo: NEW TRANSLATION
  Zorawar: "Zorawar" # todo: NEW TRANSLATION
@@ -2727,6 +3759,7 @@
  Mesopotamites: "Mesopotamites" # todo: NEW TRANSLATION
  Metaxas: "Metaxas" # todo: NEW TRANSLATION
  Metropoulos: "Metropoulos" # todo: NEW TRANSLATION
+ Metropolitan: "Metropolita" # todo: NEW TRANSLATION
  Michalopoulos: "Michalopoulos" # todo: NEW TRANSLATION
  Mitropoulos: "Mitropoulos" # todo: NEW TRANSLATION
  Mitylenaios: "Mitylenaios" # todo: NEW TRANSLATION
@@ -2918,6 +3951,7 @@
  Strabomytes: "Strabomytes" # todo: NEW TRANSLATION
  Stratiotikos: "Stratiotikos" # todo: NEW TRANSLATION
  Strephnes: "Strephnes" # todo: NEW TRANSLATION
+ Streshnev: "Streshnev" # todo: NEW TRANSLATION
  Stryphnos: "Stryphnos" # todo: NEW TRANSLATION
  Studites: "Studites" # todo: NEW TRANSLATION
  Stylaios: "Stylaios" # todo: NEW TRANSLATION
@@ -3061,6 +4095,7 @@
  Basso: "Basso" # todo: NEW TRANSLATION
  Batinic: "Batinić" # todo: NEW TRANSLATION
  Bebek: "Bebek" # todo: NEW TRANSLATION
+ Beccadelli: "Beccadelli" # todo: NEW TRANSLATION
  Beccaria: "Beccaria" # todo: NEW TRANSLATION
  Beci: "Beci" # todo: NEW TRANSLATION
  Bedenk: "Bedenk" # todo: NEW TRANSLATION
@@ -3135,7 +4170,9 @@
  Cop: "Čop" # todo: NEW TRANSLATION
  Coric: "Čorić" # todo: NEW TRANSLATION
  di_Cortenuova: "di Cortenuova" # todo: NEW TRANSLATION
+ Crescas: "Crescas" # todo: NEW TRANSLATION
  Crescenzi: "Crescenzi" # todo: NEW TRANSLATION
+ Cresques: "Cresques" # todo: NEW TRANSLATION
  Crispo: "Crispo" # todo: NEW TRANSLATION
  Crnkovic: "Crnkovič" # todo: CHANGED
  di_Cunio: "di Cunio" # todo: NEW TRANSLATION
@@ -3161,6 +4198,7 @@
  Dimitar: "Dimitar" # todo: NEW TRANSLATION
  Dimitrijevic: "Dimitrijević" # todo: NEW TRANSLATION
  Dimitrov: "Dimitrov" # todo: NEW TRANSLATION
+ Khitrovo: "Khitrovo" # todo: NEW TRANSLATION
  Dinic: "Dinić" # todo: NEW TRANSLATION
  Djokic: "Đokić" # todo: NEW TRANSLATION
  Djokovic: "Đoković" # todo: NEW TRANSLATION
@@ -3236,6 +4274,7 @@
  Gozzadini: "Gozzadini" # todo: NEW TRANSLATION
  Gradenigo: "Gradenigo" # todo: NEW TRANSLATION
  Gregoric: "Gregorič" # todo: NEW TRANSLATION
+ Gresham: "Gresham" # todo: NEW TRANSLATION
  Grgic: "Grgić" # todo: NEW TRANSLATION
  Gruba: "Gruba" # todo: NEW TRANSLATION
  Grubana: "Grubana" # todo: NEW TRANSLATION
@@ -3529,6 +4568,7 @@
  Petek: "Petek" # todo: NEW TRANSLATION
  Petrov: "Petrov" # todo: NEW TRANSLATION
  Petrovic: "Petrovič" # todo: CHANGED
+ Petrovich: "Petrovich" # todo: NEW TRANSLATION
  Petrovicic: "Petrovičić" # todo: NEW TRANSLATION
  Piazza: "Piazza" # todo: NEW TRANSLATION
  Pietromarchi: "Pietromarchi" # todo: NEW TRANSLATION
@@ -3659,6 +4699,7 @@
  Svetoslavic: "Svetoslavic" # todo: NEW TRANSLATION
  sydanmaa: "Sydänmaa" # todo: NEW TRANSLATION
  Tadic: "Tadić" # todo: NEW TRANSLATION
+ Tadino: "Tadino" # todo: NEW TRANSLATION
  Tahir: "Tahir" # todo: NEW TRANSLATION
  Taimi: "Taimi" # todo: NEW TRANSLATION
  Taisto: "Taisto" # todo: NEW TRANSLATION
@@ -3713,6 +4754,7 @@
  Valbona: "Valbona" # todo: NEW TRANSLATION
  Valente: "da Valente" # todo: NEW TRANSLATION
  Valerija: "Valerija" # todo: NEW TRANSLATION
+ Valerio: "Valerio" # todo: NEW TRANSLATION
  Valjavec: "Valjavec" # todo: NEW TRANSLATION
  Valta: "Valta" # todo: NEW TRANSLATION
  Valteri: "Valtteri" # todo: NEW TRANSLATION
@@ -4451,6 +5493,7 @@
  Thaodoros: "Thāodoros" # todo: NEW TRANSLATION
  Touma: "Touma" # todo: NEW TRANSLATION
  Yakobas: "Yakobas" # todo: NEW TRANSLATION
+ Yakovlev: "Yakovlev" # todo: NEW TRANSLATION
  Yared: "Yared" # todo: NEW TRANSLATION
  Yeshak: "Yeshak" # todo: NEW TRANSLATION
  Youssef: "Youssef" # todo: NEW TRANSLATION
@@ -4614,6 +5657,7 @@
  Askarov: "Askarov" # todo: NEW TRANSLATION
  Aydarov: "Aydarov" # todo: NEW TRANSLATION
  Azimov: "Azimov" # todo: NEW TRANSLATION
+ Gerasimov: "Gerasimov" # todo: NEW TRANSLATION
  Bakirov: "Bakirov" # todo: NEW TRANSLATION
  Baltabaev: "Baltabaev" # todo: NEW TRANSLATION
  Bazarbaev: "Bazarbaev" # todo: NEW TRANSLATION
@@ -5439,6 +6483,11 @@
  Herodoto: "Heródoto" # todo: NEW TRANSLATION
  Higinio: "Higinio" # todo: NEW TRANSLATION
  Hilario: "Hilario" # todo: NEW TRANSLATION
+ Orzocco: "Orzocco" # todo: NEW TRANSLATION
+ Torchitorio: "Torchitorio" # todo: NEW TRANSLATION
+ Saltaro: "Saltaro" # todo: NEW TRANSLATION
+ Tancredi: "Tancredi" # todo: NEW TRANSLATION
+ Gonario: "Gonario" # todo: NEW TRANSLATION
  Hipolito: "Hipolito" # todo: NEW TRANSLATION
  Homero: "Homero" # todo: NEW TRANSLATION
  Homobono: "Homobono" # todo: NEW TRANSLATION
@@ -5750,6 +6799,7 @@
  Rosales: "Rosales" # todo: NEW TRANSLATION
  Rosas: "Rosas" # todo: NEW TRANSLATION
  Ruiz: "Ruiz" # todo: NEW TRANSLATION
+ Ruud: "Ruud" # todo: NEW TRANSLATION
  Saenz: "Saenz" # todo: NEW TRANSLATION
  Salazar: "Salazar" # todo: NEW TRANSLATION
  Salgado: "Salgado" # todo: NEW TRANSLATION
@@ -5813,6 +6863,7 @@
  Calpurnius: "Calpurnius" # todo: NEW TRANSLATION
  Camillus: "Camillus" # todo: NEW TRANSLATION
  Cantius: "Cantius" # todo: NEW TRANSLATION
+ Carvajal: "Carvajal" # todo: NEW TRANSLATION
  Carvilius: "Carvilius" # todo: NEW TRANSLATION
  Catius: "Catius" # todo: NEW TRANSLATION
  Centenius: "Centenius" # todo: NEW TRANSLATION
@@ -6633,6 +7684,7 @@
  Gangavar: "Gangavar" # todo: NEW TRANSLATION
  Ganguly: "Ganguly" # todo: NEW TRANSLATION
  Gannaiah: "Gannaiah" # todo: NEW TRANSLATION
+ Gannibal: "Gannibal" # todo: NEW TRANSLATION
  Gapinath: "Gapinath" # todo: NEW TRANSLATION
  Garo: "Garo" # todo: NEW TRANSLATION
  Gauri: "Gauri" # todo: NEW TRANSLATION
@@ -7349,6 +8401,7 @@
  Mir_Qasim_Ali: "Mir Qasim 'Alī" # todo: NEW TRANSLATION
  Mirak: "Mirak" # todo: NEW TRANSLATION
  Mirrani: "Mirrani" # todo: NEW TRANSLATION
+ Mir: "Mir" # todo: NEW TRANSLATION
  Misam: "Misam" # todo: NEW TRANSLATION
  Misek: "Misek" # todo: NEW TRANSLATION
  Miseksammang: "Miseksammang" # todo: NEW TRANSLATION
@@ -7502,6 +8555,7 @@
  NaruBegada: "Naru Begada" # todo: NEW TRANSLATION
  Nasan: "Nasan" # todo: NEW TRANSLATION
  Naseeruddin: "Naseeruddin" # todo: NEW TRANSLATION
+ Nasi: "Nasi" # todo: NEW TRANSLATION
  Nasir: "Nasir" # todo: NEW TRANSLATION
  Nasir-ud-Din_Mahmud: "Nasir-ud-Din Mahmud" # todo: NEW TRANSLATION
  Nasir_ad-Din_Nasrat: "Nasir ad-Din Nasrat" # todo: NEW TRANSLATION
@@ -7581,6 +8635,7 @@
  Pakkandi: "Pakkandi" # todo: NEW TRANSLATION
  Palikada: "Palikada" # todo: NEW TRANSLATION
  Palkar: "Palkar" # todo: NEW TRANSLATION
+ Pallache: "Pallache" # todo: NEW TRANSLATION
  Pallava: "Pallava" # todo: NEW TRANSLATION
  Pallavi: "Pallavi" # todo: NEW TRANSLATION
  Pamatissa: "Pamatissa" # todo: NEW TRANSLATION
@@ -8309,6 +9364,7 @@
  Vannekapu: "Vannekapu" # todo: NEW TRANSLATION
  Vanniyar: "Vanniyar" # todo: NEW TRANSLATION
  Vansa: "Vansa" # todo: NEW TRANSLATION
+ Vanvitelli: "Vanvitelli" # todo: NEW TRANSLATION
  Vanyakulakshtriya: "Vanyakulakshtriya" # todo: NEW TRANSLATION
  VarO_taya: "Varôtaya" # todo: NEW TRANSLATION
  Varakunan: "Varakunan" # todo: NEW TRANSLATION
@@ -8557,6 +9613,7 @@
  Belosselsky: "Belosselsky" # todo: NEW TRANSLATION
  Bretislaus: "Bretislaus" # todo: NEW TRANSLATION
  Briachislav: "Briachislav" # todo: NEW TRANSLATION
+ Briati: "Briati" # todo: NEW TRANSLATION
  Buzhansky: "Buzhansky" # todo: NEW TRANSLATION
  Chelyadnin: "Chelyadnin" # todo: NEW TRANSLATION
  Daniil: "Daniil" # todo: NEW TRANSLATION
@@ -8578,6 +9635,7 @@
  Feodosiy: "Feodosiy" # todo: NEW TRANSLATION
  Feofilakt: "Feofilakt" # todo: NEW TRANSLATION
  Fyodorovich: "Fyodorovich" # todo: NEW TRANSLATION
+ Fyodorov: "Fyodorov" # todo: NEW TRANSLATION
  Gagarin: "Gagarin" # todo: NEW TRANSLATION
  Galitzine: "Galitzine" # todo: NEW TRANSLATION
  Gantimurov: "Gantimurov" # todo: NEW TRANSLATION
@@ -8683,9 +9741,11 @@
  Yemelyan: "Yemelyan" # todo: NEW TRANSLATION
  Yeremey: "Yeremey" # todo: NEW TRANSLATION
  Yevdijuya: "Yevdijuya" # todo: NEW TRANSLATION
+ Yevele: "Yevele" # todo: NEW TRANSLATION
  Yevgeniy: "Yevgeniy" # todo: NEW TRANSLATION
  Yevstafiy: "Yevstafiy" # todo: NEW TRANSLATION
  Yuriy: "Yuriy" # todo: NEW TRANSLATION
+ Yuryevich: "Yuryevich" # todo: NEW TRANSLATION
  Zabava: "Zabava" # todo: NEW TRANSLATION
  Zhytomyrsky: "Zhytomyrsky" # todo: NEW TRANSLATION
  Zvenislava: "Zvenislava" # todo: NEW TRANSLATION
@@ -8773,6 +9833,7 @@
  Amie: "Amie" # todo: NEW TRANSLATION
  Amina: "Amina" # todo: NEW TRANSLATION
  Appiah: "Appiah" # todo: NEW TRANSLATION
+ Apraksin: "Apraksin" # todo: NEW TRANSLATION
  Assan: "Assan" # todo: NEW TRANSLATION
  Atoapem: "Atoapem" # todo: NEW TRANSLATION
  Atuma: "Atuma" # todo: NEW TRANSLATION
@@ -8921,6 +9982,7 @@
  Maadi: "Maadi" # todo: NEW TRANSLATION
  Maanu: "Maanu" # todo: NEW TRANSLATION
  Madaki: "Madaki" # todo: NEW TRANSLATION
+ Maimaran: "Maimaran" # todo: NEW TRANSLATION
  Maimuna: "Maimuna" # todo: NEW TRANSLATION
  Majan: "Majan" # todo: NEW TRANSLATION
  Makuto: "Makuto" # todo: NEW TRANSLATION
@@ -9029,6 +10091,7 @@
  Yero: "Yero" # todo: NEW TRANSLATION
  Zango: "Zango" # todo: NEW TRANSLATION
  Zaria: "Zaria" # todo: NEW TRANSLATION
+ Zarlino: "Zarlino" # todo: NEW TRANSLATION
  Zougrana: "Zougrana" # todo: NEW TRANSLATION
  anane: "Anane" # todo: NEW TRANSLATION
  Abiatar: "Abiatar" # todo: NEW TRANSLATION
@@ -9052,6 +10115,7 @@
  Aretas: "Aretas" # todo: NEW TRANSLATION
  Arieh: "Arieh" # todo: NEW TRANSLATION
  Aristobulus: "Aristobulus" # todo: NEW TRANSLATION
+ Aristotele: "Aristotele" # todo: NEW TRANSLATION
  Asher: "Asher" # todo: NEW TRANSLATION
  Azrikam: "Azrikam" # todo: NEW TRANSLATION
  Barak: "Barak" # todo: NEW TRANSLATION
@@ -9175,6 +10239,7 @@
  Shemaiah: "Shemaiah" # todo: NEW TRANSLATION
  Shemida: "Shemida" # todo: NEW TRANSLATION
  Shemidid: "Shemidid" # todo: NEW TRANSLATION
+ Shemyaka: "Shemyaka" # todo: NEW TRANSLATION
  Silas: "Silas" # todo: NEW TRANSLATION
  Sosa: "Sosa" # todo: NEW TRANSLATION
  Stafford: "Stafford" # todo: NEW TRANSLATION
@@ -10649,6 +11714,7 @@
  Neves: "Neves" # todo: NEW TRANSLATION
  Veronica_por: "Verônica" # todo: NEW TRANSLATION
  Correia: "Correia" # todo: NEW TRANSLATION
+ Corradini: "Corradini" # todo: NEW TRANSLATION
  Costa: "Costa" # todo: NEW TRANSLATION
  Da_gama: "Da Gama" # todo: NEW TRANSLATION
  De_avintes: "De Avintes" # todo: NEW TRANSLATION
@@ -12483,6 +13549,7 @@
  Karatay: "Karatay" # todo: NEW TRANSLATION
  Kaytun: "Kaytun" # todo: NEW TRANSLATION
  Kemal: "Kemal" # todo: NEW TRANSLATION
+ Kemaleddin: "Kemaleddin" # todo: NEW TRANSLATION
  Kilic: "Kiliç" # todo: NEW TRANSLATION
  Korkut: "Korkut" # todo: NEW TRANSLATION
  Kurboga: "Kurboga" # todo: NEW TRANSLATION
@@ -13881,6 +14948,7 @@
  Ilhuicoatl: "Ilhuicóatl" # todo: NEW TRANSLATION
  Tepeyolotl: "Tepeyolotl" # todo: NEW TRANSLATION
  Tlexochitl: "Tlexochitl" # todo: NEW TRANSLATION
+ Tlacaelel: "Tlacaelel" # todo: NEW TRANSLATION
  Tlacotl: "Tlacotl" # todo: NEW TRANSLATION
  Necahual: "Necahual" # todo: NEW TRANSLATION
  Cuicatl: "Cuicatl" # todo: NEW TRANSLATION
@@ -14602,6 +15670,7 @@
  Itthikon: "Itthikon" # todo: NEW TRANSLATION
  Itthiphon: "Itthiphon" # todo: NEW TRANSLATION
  Akhom: "Akhom" # todo: NEW TRANSLATION
+ Alam: "Alam" # todo: NEW TRANSLATION
  Alongkon: "Alongkon" # todo: NEW TRANSLATION
  Amarin: "Amarin" # todo: NEW TRANSLATION
  Amnat: "Amnat" # todo: NEW TRANSLATION
@@ -14806,6 +15875,7 @@
  Phondet: "Phondet" # todo: NEW TRANSLATION
  Phuri: "Phuri" # todo: NEW TRANSLATION
  Piti: "Piti" # todo: NEW TRANSLATION
+ Pitt: "Pitt" # todo: NEW TRANSLATION
  Piya: "Piya" # todo: NEW TRANSLATION
  Plaek: "Plaek" # todo: NEW TRANSLATION
  Pongphon: "Pongphon" # todo: NEW TRANSLATION
@@ -14856,6 +15926,7 @@
  Suchai: "Suchai" # todo: NEW TRANSLATION
  Suchitra: "Suchitra" # todo: NEW TRANSLATION
  Sud: "Sud" # todo: NEW TRANSLATION
+ Sudbury: "Sudbury" # todo: NEW TRANSLATION
  Sudarat: "Sudarat" # todo: NEW TRANSLATION
  Sukanda: "Sukanda" # todo: NEW TRANSLATION
  Sunthari: "Sunthari" # todo: NEW TRANSLATION
@@ -15115,6 +16186,7 @@
  Alchidai: "Alchidai" # todo: NEW TRANSLATION
  Ambaghai: "Ambaghai" # todo: NEW TRANSLATION
  Arkhai: "Arkhai" # todo: NEW TRANSLATION
+ Arkwright: "Arkwright" # todo: NEW TRANSLATION
  Arasen: "Arasen" # todo: NEW TRANSLATION
  Babur: "Babur" # todo: NEW TRANSLATION
  Badai: "Badai" # todo: NEW TRANSLATION
@@ -16035,6 +17107,7 @@
  Nantai: "Nantai" # todo: NEW TRANSLATION
  Napi: "Napi" # todo: NEW TRANSLATION
  Nashoba: "Nashoba" # todo: NEW TRANSLATION
+ Nashchokin: "Nashchokin" # todo: NEW TRANSLATION
  Nibaw: "Nibaw" # todo: NEW TRANSLATION
  Nigan: "Nigan" # todo: NEW TRANSLATION
  Nikiti: "Nikiti" # todo: NEW TRANSLATION
@@ -16064,6 +17137,7 @@
  Taklishim: "Taklishim" # todo: NEW TRANSLATION
  Takoda: "Takoda" # todo: NEW TRANSLATION
  Talli: "Talli" # todo: NEW TRANSLATION
+ Tallis: "Tallis" # todo: NEW TRANSLATION
  Tisnolthtos: "Tisnolthtos" # todo: NEW TRANSLATION
  Toclanny: "Toclanny" # todo: NEW TRANSLATION
  Tooantuh: "Tooantuh" # todo: NEW TRANSLATION
@@ -16198,6 +17272,7 @@
  Kustuk: "Kustuk" # todo: NEW TRANSLATION
  Kustuktaana: "Kustuktaana" # todo: NEW TRANSLATION
  Kydaana: "Kydaana" # todo: NEW TRANSLATION
+ Kydones: "Kydones" # todo: NEW TRANSLATION
  Kytaanakh: "Kytaanakh" # todo: NEW TRANSLATION
  Kyunnyay: "Kyunnyay" # todo: NEW TRANSLATION
  Modun: "Modun" # todo: NEW TRANSLATION
@@ -20451,6 +21526,7 @@
  Flatt: "Flatt" # todo: NEW TRANSLATION
  Fleetwood: "Fleetwood" # todo: NEW TRANSLATION
  Fleming: "Fleming" # todo: NEW TRANSLATION
+ Fleury: "Fleury" # todo: NEW TRANSLATION
  Flinders: "Flinders" # todo: NEW TRANSLATION
  Flinn: "Flinn" # todo: NEW TRANSLATION
  Flint: "Flint" # todo: NEW TRANSLATION
@@ -20524,6 +21600,7 @@
  Giffard: "Giffard" # todo: NEW TRANSLATION
  Gifford: "Gifford" # todo: NEW TRANSLATION
  Gigman: "Gigman" # todo: NEW TRANSLATION
+ Gilbert: "Gilbert" # todo: NEW TRANSLATION
  Gilchrist: "Gilchrist" # todo: NEW TRANSLATION
  Gill: "Gill" # todo: NEW TRANSLATION
  Gillette: "Gillette" # todo: NEW TRANSLATION
@@ -20612,6 +21689,7 @@
  Hamline: "Hamline" # todo: NEW TRANSLATION
  Hammond: "Hammond" # todo: NEW TRANSLATION
  Hamond: "Hamond" # todo: NEW TRANSLATION
+ Hamon: "Hamon" # todo: NEW TRANSLATION
  Hampton: "Hampton" # todo: NEW TRANSLATION
  Hance: "Hance" # todo: NEW TRANSLATION
  Hancock: "Hancock" # todo: NEW TRANSLATION
@@ -20708,6 +21786,7 @@
  Hoar: "Hoar" # todo: NEW TRANSLATION
  Hoare: "Hoare" # todo: NEW TRANSLATION
  Hobbs: "Hobbs" # todo: NEW TRANSLATION
+ Hobbes: "Hobbes" # todo: NEW TRANSLATION
  Hockings: "Hockings" # todo: NEW TRANSLATION
  Hodder: "Hodder" # todo: NEW TRANSLATION
  Hodge: "Hodge" # todo: NEW TRANSLATION
@@ -20850,6 +21929,7 @@
  Kirtley: "Kirtley" # todo: NEW TRANSLATION
  Kittoe: "Kittoe" # todo: NEW TRANSLATION
  Kneeshaw: "Kneeshaw" # todo: NEW TRANSLATION
+ Kneller: "Kneller" # todo: NEW TRANSLATION
  Knight: "Knight" # todo: NEW TRANSLATION
  Knighton: "Knighton" # todo: NEW TRANSLATION
  Knipe: "Knipe" # todo: NEW TRANSLATION
@@ -20927,6 +22007,7 @@
  Loane: "Loane" # todo: NEW TRANSLATION
  Lobb: "Lobb" # todo: NEW TRANSLATION
  Lock: "Lock" # todo: NEW TRANSLATION
+ Locke: "Locke" # todo: NEW TRANSLATION
  Lockhart: "Lockhart" # todo: NEW TRANSLATION
  Lockwood: "Lockwood" # todo: NEW TRANSLATION
  Lockyer: "Lockyer" # todo: NEW TRANSLATION
@@ -20946,6 +22027,7 @@
  Luck: "Luck" # todo: NEW TRANSLATION
  Luckraft: "Luckraft" # todo: NEW TRANSLATION
  Lukin: "Lukin" # todo: NEW TRANSLATION
+ Lukinich: "Lukinich" # todo: NEW TRANSLATION
  Lumley: "Lumley" # todo: NEW TRANSLATION
  Lumsdaine: "Lumsdaine" # todo: NEW TRANSLATION
  Lundin: "Lundin" # todo: NEW TRANSLATION
@@ -21129,6 +22211,7 @@
  Northey: "Northey" # todo: NEW TRANSLATION
  Norton: "Norton" # todo: NEW TRANSLATION
  Norway: "Norway" # todo: NEW TRANSLATION
+ Norwich: "Norwich" # todo: NEW TRANSLATION
  Norwood: "Norwood" # todo: NEW TRANSLATION
  Nott: "Nott" # todo: NEW TRANSLATION
  Notter: "Notter" # todo: NEW TRANSLATION
@@ -21143,6 +22226,7 @@
  Ogle: "Ogle" # todo: NEW TRANSLATION
  Oke: "Oke" # todo: NEW TRANSLATION
  Okes: "Okes" # todo: NEW TRANSLATION
+ Oldcastle: "Oldcastle" # todo: NEW TRANSLATION
  Oldfield: "Oldfield" # todo: NEW TRANSLATION
  Oldroyd: "Oldroyd" # todo: NEW TRANSLATION
  Oliphant: "Oliphant" # todo: NEW TRANSLATION
@@ -21373,6 +22457,7 @@
  Robilliard: "Robilliard" # todo: NEW TRANSLATION
  Robins: "Robins" # todo: NEW TRANSLATION
  Robinson: "Robinson" # todo: NEW TRANSLATION
+ Robusti: "Robusti" # todo: NEW TRANSLATION
  Roby: "Roby" # todo: NEW TRANSLATION
  Rochfort: "Rochfort" # todo: NEW TRANSLATION
  Rodd: "Rodd" # todo: NEW TRANSLATION
@@ -21625,6 +22710,7 @@
  Thomson: "Thomson" # todo: NEW TRANSLATION
  Thornberry: "Thornberry" # todo: NEW TRANSLATION
  Thornborough: "Thornborough" # todo: NEW TRANSLATION
+ Thorvaldsen: "Thorvaldsen" # todo: NEW TRANSLATION
  Thrackston: "Thrackston" # todo: NEW TRANSLATION
  Thrackstone: "Thrackstone" # todo: NEW TRANSLATION
  Threepwood: "Threepwood" # todo: NEW TRANSLATION
@@ -22156,6 +23242,7 @@
  perugino: "Perugino" # todo: NEW TRANSLATION
  vannucci: "Vannucci" # todo: NEW TRANSLATION
  Orsello: "Orsello" # todo: NEW TRANSLATION
+ Orsenigo: "Orsenigo" # todo: NEW TRANSLATION
  Orsina: "Orsina" # todo: NEW TRANSLATION
  Orso: "Orso" # todo: NEW TRANSLATION
  Ottaviano: "Ottaviano" # todo: NEW TRANSLATION
@@ -22695,6 +23782,7 @@
  Martinez_Recalde: "Martínez de Recalde" # todo: NEW TRANSLATION
  Martinez_Rekalde: "Martinez de Rekalde" # todo: NEW TRANSLATION
  Martinez_Villela: "Martínez de Villela" # todo: NEW TRANSLATION
+ Martinez_Oviedo: "Martínez de Oviedo" # todo: NEW TRANSLATION
  de_Mascarenhas: "de Mascarenhas" # todo: NEW TRANSLATION
  Martorell: "Martorell" # todo: NEW TRANSLATION
  Matamoros: "Matamoros" # todo: NEW TRANSLATION
@@ -22943,6 +24031,7 @@
  de_Teive: "de Teive" # todo: NEW TRANSLATION
  Teixeira: "Teixeira" # todo: NEW TRANSLATION
  Teles_Meneses: "Teles de Meneses" # todo: NEW TRANSLATION
+ de_Thous: "de Thous" # todo: NEW TRANSLATION
  Tineo: "de Tineo" # todo: NEW TRANSLATION
  de_Toledo: "de Toledo" # todo: NEW TRANSLATION
  Tormaleo: "Tormaleo" # todo: NEW TRANSLATION
@@ -23152,6 +24241,7 @@
  Chahetonga: "Chahetonga" # todo: NEW TRANSLATION
  Chahowhropwa: "Chahowhropwa" # todo: NEW TRANSLATION
  Chalitahuma: "Chalitahuma" # todo: NEW TRANSLATION
+ Chancellor: "Kancelár" # todo: NEW TRANSLATION
  Channahon: "Channahon" # todo: NEW TRANSLATION
  Chanohato: "Chanohato" # todo: NEW TRANSLATION
  Chanshushka: "Chanshushka" # todo: NEW TRANSLATION
@@ -23162,6 +24252,7 @@
  Chasmuna: "Chasmuna" # todo: NEW TRANSLATION
  Chattakuteehee: "Chattakuteehee" # todo: NEW TRANSLATION
  Chauco: "Chauco" # todo: NEW TRANSLATION
+ Chaucer: "Chaucer" # todo: NEW TRANSLATION
  Chawooklymico: "Chawooklymico" # todo: NEW TRANSLATION
  Chaytapahha: "Chaytapahha" # todo: NEW TRANSLATION
  Cheanoka: "Cheanoka" # todo: NEW TRANSLATION
@@ -23535,6 +24626,7 @@
  Mingopooscoos: "Mingopooscoos" # todo: NEW TRANSLATION
  Mingotabasa: "Mingotabasa" # todo: NEW TRANSLATION
  Mingotalaya: "Mingotalaya" # todo: NEW TRANSLATION
+ Minin: "Minin" # todo: NEW TRANSLATION
  Mintahoye: "Mintahoye" # todo: NEW TRANSLATION
  Mintahoyo: "Mintahoyo" # todo: NEW TRANSLATION
  Mishikinakwa: "Mishikinakwa" # todo: NEW TRANSLATION
@@ -23629,6 +24721,7 @@
  Nicanauthe: "Nicanauthe" # todo: NEW TRANSLATION
  Nikiata: "Nikiata" # todo: NEW TRANSLATION
  Nikonha: "Nikonha" # todo: NEW TRANSLATION
+ Nikon: "Nikon" # todo: NEW TRANSLATION
  Nimeeth: "Nimeeth" # todo: NEW TRANSLATION
  Ninchagari: "Ninchagari" # todo: NEW TRANSLATION
  Ninigrett: "Ninigrett" # todo: NEW TRANSLATION
@@ -25083,6 +26176,7 @@
  Asadullah: "Asadullah" # todo: NEW TRANSLATION
  Atal: "Atal" # todo: NEW TRANSLATION
  Azizullah: "Azizullah" # todo: NEW TRANSLATION
+ Azikpazade: "Azikpazade" # todo: NEW TRANSLATION
  Badam: "Badam" # todo: NEW TRANSLATION
  Bahramand: "Bahramand" # todo: NEW TRANSLATION
  Balbala: "Balbala" # todo: NEW TRANSLATION
@@ -26614,7 +27708,9 @@
  aubert: "Aubert" # todo: NEW TRANSLATION
  de_Bommiers: "de Bommiers" # todo: NEW TRANSLATION
  de_Bourdeaux: "de Bourdeaux" # todo: NEW TRANSLATION
+ de_Chaudenay: "de Chaudenay" # todo: NEW TRANSLATION
  d_Essonne: "d'Essonne" # todo: NEW TRANSLATION
+ de_Gramat: "de Gramat" # todo: NEW TRANSLATION
  de_la_Louptiere: "de la Louptière" # todo: NEW TRANSLATION
  de_Meslin: "de Meslin" # todo: NEW TRANSLATION
  de_Pesmes: "de Pesmes" # todo: NEW TRANSLATION
@@ -26624,6 +27720,7 @@
  de_Saint_Verain: "de Saint-Vérain" # todo: NEW TRANSLATION
  de_Saqueville: "de Saqueville" # todo: NEW TRANSLATION
  de_la_Vie: "de la Vie" # todo: NEW TRANSLATION
+ de_Vaucemain: "de Vaucemain" # todo: NEW TRANSLATION
  de_Vienne: "de Vienne" # todo: NEW TRANSLATION
  de_Vieuxpont: "de Vieuxpont" # todo: NEW TRANSLATION
  d_Yvois: "d'Yvois" # todo: NEW TRANSLATION
@@ -27465,6 +28562,7 @@
  Malek: "Malek" # todo: NEW TRANSLATION
  Malith: "Malith" # todo: NEW TRANSLATION
  Manute: "Manute" # todo: NEW TRANSLATION
+ Manutius: "Manutius" # todo: NEW TRANSLATION
  Marial: "Marial" # todo: NEW TRANSLATION
  Mayen: "Mayen" # todo: NEW TRANSLATION
  Mayom: "Mayom" # todo: NEW TRANSLATION
@@ -29180,6 +30278,7 @@
  Agostina: "Agostina" # todo: NEW TRANSLATION
  Paleologi: "Paleologi" # todo: NEW TRANSLATION
  Frangipani: "Frangipani" # todo: NEW TRANSLATION
+ Odonis: "Odonis" # todo: NEW TRANSLATION
  Samaritani: "Samaritani" # todo: NEW TRANSLATION
  Azzoguidi: "Azzoguidi" # todo: NEW TRANSLATION
  Bernadino: "Bernadino" # todo: NEW TRANSLATION
@@ -29317,10 +30416,11 @@
  Offesson: "Offesson" # todo: NEW TRANSLATION
  ulfeldt: "Ulfeldt" # todo: NEW TRANSLATION
  grammaticus: "Grammaticus" # todo: NEW TRANSLATION
+ Gramotin: "Gramotin" # todo: NEW TRANSLATION
  jansen_wessel: "Jansen Wessel" # todo: NEW TRANSLATION
  nick_tordenskjold: "Tordenskjold" # todo: NEW TRANSLATION
  andersen: "Andersen" # todo: NEW TRANSLATION
- holberg: "Holberg" # todo: NEW TRANSLATION
+ Holberg: "Holberg" # todo: NEW TRANSLATION
  Arminius: "Arminius" # todo: NEW TRANSLATION
  Gomarus: "Gomarus" # todo: NEW TRANSLATION
  Stevin: "Stevin" # todo: NEW TRANSLATION
@@ -29346,7 +30446,7 @@
  Le_Fort: "Le Fort" # todo: NEW TRANSLATION
  Le_Blond: "Le Blond" # todo: NEW TRANSLATION
  Trezzini: "Trezzini" # todo: NEW TRANSLATION
- trivulzio: "Trivulzio" # todo: NEW TRANSLATION
+ Trivulzio: "Trivulzio" # todo: NEW TRANSLATION
  Columbus: "Columbus" # todo: NEW TRANSLATION
  de_sepulveda: "de Sepúlveda" # todo: NEW TRANSLATION
  de_Nebrija: "de Nebrija" # todo: NEW TRANSLATION
@@ -29388,7 +30488,7 @@
  Mentese: "Mentese" # todo: NEW TRANSLATION
  Kaluyan: "Kālūyān" # todo: NEW TRANSLATION
  of_seminara: "of Seminara" # todo: NEW TRANSLATION
- ritzos: "Ritzos" # todo: NEW TRANSLATION
+ Ritzos: "Ritzos" # todo: NEW TRANSLATION
  turing: "Türing" # todo: NEW TRANSLATION
  celtes: "Celtes" # todo: NEW TRANSLATION
  cuspinian: "Cuspinian" # todo: NEW TRANSLATION
@@ -30795,6 +31895,7 @@
  Botticelli: "Botticelli" # todo: NEW TRANSLATION
  Braccioloni: "Braccioloni" # todo: NEW TRANSLATION
  da_Camposampiero: "da Camposampiero" # todo: NEW TRANSLATION
+ da_Cremona: "da Cremona" # todo: NEW TRANSLATION
  Niccoli: "Niccoli" # todo: NEW TRANSLATION
  di_Niccolo_di_Betto_Bardi: "di Niccolò di Betto Bardi" # todo: NEW TRANSLATION
  Bruni: "Bruni" # todo: NEW TRANSLATION
@@ -30874,6 +31975,7 @@
  Raczynski: "Raczyński" # todo: NEW TRANSLATION
  Pulaski: "Pułaski" # todo: NEW TRANSLATION
  Brzeczyszykiewicz: "Brzęczyszczykiewicz" # todo: NEW TRANSLATION
+ Sitnianowicz: "Sitnianowicz" # todo: NEW TRANSLATION
  Dolas: "Dolas" # todo: NEW TRANSLATION
  Kintu: "Kintu" # todo: NEW TRANSLATION
  Nantuttululu: "Nantuttululu" # todo: NEW TRANSLATION
@@ -31107,3 +32209,4 @@
  de_Lemos: "de Lemos" # todo: NEW TRANSLATION
  di_jacopo: "di Jacopo" # todo: NEW TRANSLATION
  di_giorgio_martini: "di Giorgio Martini" # todo: NEW TRANSLATION
+ Tavares: "Tavares" # todo: NEW TRANSLATION

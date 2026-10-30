@@ -52,8 +52,8 @@
  CORES_CATEGORY: "Zmluvy o nárokoch" # todo: NEW TRANSLATION
  MISC_CATEGORY: "Ostatné zmluvy" # todo: NEW TRANSLATION
  BECOME_SUBJECT: "Stať sa vazalom" # todo: NEW TRANSLATION
- PEACE_OFFER_DESC: "Pošlite mierovú ponuku krajine [TARGET_COUNTRY.GetName]. [Concept('truce','Prímerie')|e] bude v platnosti do $DATE|Y$." # todo: CHANGED # todo: CONCEPT CASE
- PEACE_OFFER_WITH_DATE_DESC: "Pošlite mierovú ponuku [TARGET_COUNTRY.GetName]. [Concept('truce','Prímerie')|e] bude v platnosti do $DATE|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PEACE_OFFER_DESC: "Pošlite mierovú ponuku krajine [TARGET_COUNTRY.GetAltAdjective('D')]. [Concept('truce','Prímerie')|e] bude v platnosti do $DATE|Y$." # todo: CHANGED # todo: CONCEPT CASE # todo: COUNTRY CASE
+ PEACE_OFFER_WITH_DATE_DESC: "Pošlite mierovú ponuku [TARGET_COUNTRY.GetAltAdjective('A')]. [Concept('truce','Prímerie')|e] bude v platnosti do $DATE|Y$." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  PEACE_OFFER_DANGER_WARNINGS: "#R Táto mierová ponuka má nebezpečné účinky:#!" # todo: NEW TRANSLATION
  PEACE_OFFER_GAME_OVER_TITLE: "Koniec hry" # todo: NEW TRANSLATION
  PEACE_OFFER_GAME_OVER_INFO: "Táto mierová ponuka spôsobí koniec hry." # todo: NEW TRANSLATION
@@ -86,10 +86,10 @@
  peace_destroy_autocephalous_patriarchate: "Zničiť [target_ap.GetName]" # todo: NEW TRANSLATION
  peace_destroy_autocephalous_patriarchate_entry: "Zničiť ich $autocephalous_patriarchate$" # todo: NEW TRANSLATION
  peace_destroy_autocephalous_patriarchate_entry_short: "Zničiť ich $autocephalous_patriarchate$" # todo: NEW TRANSLATION
- peace_destroy_autocephalous_patriarchate_members_tt: "Každý člen [target_ap.GetName] stratí [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|+=0] [Concept('opinion','názor')|e] voči nám a získa [ShowBiasValue('antagonism_destroyed_autocephalous_patriarchate')|+=0] [Concept('antagonism','antagonizmus')|e] voči nám" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ peace_destroy_autocephalous_patriarchate_members_tt: "Každý člen [target_ap.GetName] stratí [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|+=0] [Concept('opinion','názor')|e] voči nám a získa [ShowBiasValue('antagonism_destroyed_autocephalous_patriarchate')|+=0] [Concept('antagonism','antagonizmus')|e] voči nám. Jeho vodca bude nútený pridať sa k inému $autocephalous_patriarchate$ v diplomatickom dosahu a nové založí iba vtedy, ak sa nijaké nepodarí nájsť" # todo: CHANGED (predtym: Každý člen [target_ap.GetName] stratí [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|+=0] [Concept('opinion',)
  dismantle_fortifications: "Rozobrať opevnenia" # todo: NEW TRANSLATION
  dismantle_fortifications_entry: "[target.GetOwner.GetFlagIcon] Rozobrať opevnenia v [target.GetName]" # todo: NEW TRANSLATION
- dismantle_fortifications_entry_short: "@[target.GetOwner.GetFlag]! Rozobrať opevnenia v [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ dismantle_fortifications_entry_short: "[target.GetOwner.GetFlagIconWithNoTooltip] Rozobrať opevnenia v [target.GetNameWithNoTooltip]" # todo: CHANGED (predtym: @[target.GetOwner.GetFlag]! Rozobrať opevnenia v [target.GetNameWithNoTooltip])
  block_foreign_building_treaty: "Zakázať cudzie výstavby" # todo: NEW TRANSLATION
  block_foreign_building_treaty_entry: "Zakázať [TARGET_COUNTRY.GetNameWithFlag] stavať na našom území" # todo: NEW TRANSLATION
  block_foreign_building_treaty_entry_short: "Zakázať [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] stavať" # todo: NEW TRANSLATION
@@ -106,9 +106,6 @@
  subjugate_natives: "Podmaniť domorodcov" # todo: NEW TRANSLATION
  subjugate_natives_entry: "Podmaniť domorodcov v [target.GetName]" # todo: NEW TRANSLATION
  subjugate_natives_entry_short: "Podmaniť domorodcov v [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- stop_pirating_me: "Podmaniť domorodcov" # todo: NEW TRANSLATION
- stop_pirating_me_entry: "Podmaniť domorodcov v [target.GetName]" # todo: NEW TRANSLATION
- stop_pirating_me_entry_short: "Podmaniť domorodcov v [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  steal_maps_treaty: "Získať mapy" # todo: NEW TRANSLATION
  steal_maps_treaty_entry: "Získať mapy od [target.GetName]" # todo: NEW TRANSLATION
  steal_maps_treaty_entry_short: "Získať mapy od [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -117,16 +114,16 @@
  steal_pops_entry: "Odobrať obyvateľov z [target.GetName]" # todo: NEW TRANSLATION
  steal_pops_entry_short: "Odobrať obyvateľov z [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  sound_toll_exemption: "Požiadať oslobodenie od Sound Toll" # todo: NEW TRANSLATION
- sound_toll_exemption_entry: "Oslobodenie od [Concept('sound_tolls','prieplavných mýt')|e] v [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- sound_toll_exemption_entry_short: "Oslobodenie od [Concept('sound_tolls','prieplavných mýt')|e] v [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ sound_toll_exemption_entry: "Oslobodenie od [Concept('sound_tolls','prieplavných mýt')|e] v [TARGET_COUNTRY.GetAltAdjectiveWithFlag('L')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ sound_toll_exemption_entry_short: "Oslobodenie od [Concept('sound_tolls','prieplavných mýt')|e] v [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('L')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  SOUND_TOLL_EXEMPTION_NO_MERCHANTS: "Žiadny príslušný poplatok za úžinu" # todo: NEW TRANSLATION
- SOUND_TOLL_EXEMPTION_COALITION: "Koaličná vojna" # todo: NEW TRANSLATION
+ SOUND_TOLL_EXEMPTION_COALITION: "Chceme ich skrotiť" # todo: CHANGED (predtym: Koaličná vojna)
  cancel_debt: "Zrušiť dlh" # todo: NEW TRANSLATION
  cancel_debt_entry: "[TARGET_COUNTRY.GetNameWithFlag] zruší náš [Concept('debt','dlh')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  cancel_debt_entry_short: "[TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] zruší náš dlh" # todo: NEW TRANSLATION
  peace_take_shogunate: "Získať šógunát" # todo: NEW TRANSLATION
- peace_take_shogunate_entry: "Zobrať šógunát od [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- peace_take_shogunate_entry_short: "Zobrať šógunát od [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ peace_take_shogunate_entry: "Zobrať šógunát od [TARGET_COUNTRY.GetAltAdjectiveWithFlag('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ peace_take_shogunate_entry_short: "Zobrať šógunát od [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  peace_gain_clan_autonomy: "Získať klanovú autonómiu" # todo: CHANGED
  peace_gain_clan_autonomy_entry: "$peace_gain_clan_autonomy$" # todo: NEW TRANSLATION
  peace_gain_clan_autonomy_entry_short: "$peace_gain_clan_autonomy$" # todo: NEW TRANSLATION
@@ -136,8 +133,8 @@
  expand_clan_influence_other.tt: "Získame vlastníctvo územia [loser.GetName] v [target.GetName]" # todo: NEW TRANSLATION
  expand_clan_influence_no_target_tt: "Získame vlastníctvo ich územia v cieľovej [Concept('location','lokalite')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  peace_revoke_clan_autonomy: "Zrušiť autonómiu klanu" # todo: NEW TRANSLATION
- peace_revoke_clan_autonomy_entry: "Znížiť autonómiu [TARGET_COUNTRY.GetNameWithFlag] a premeniť ich naspäť na [Concept('extraterritorial_country','extrateritoriálnu krajinu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- peace_revoke_clan_autonomy_entry_short: "Znížiť autonómiu [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ peace_revoke_clan_autonomy_entry: "Znížiť autonómiu [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')] a premeniť ich naspäť na [Concept('extraterritorial_country','extrateritoriálnu krajinu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ peace_revoke_clan_autonomy_entry_short: "Znížiť autonómiu [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  turn_japanese_clan_into_building_based.tt: "[loser.GetName] odovzdá všetko svoje územie [winner.GetName] a vráti sa k stavu [Concept('extraterritorial_country','extrateritoriálnej krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  peace_nanbokuchou_force_imperial_abdication: "Vynútiť cisársku abdikáciu" # todo: NEW TRANSLATION
  peace_nanbokuchou_force_imperial_abdication_entry: "Vynútiť abdikáciu cisárskej línie" # todo: NEW TRANSLATION
@@ -149,20 +146,20 @@
  high_kingship_overthrow_entry: "$high_kingship_overthrow$" # todo: NEW TRANSLATION
  high_kingship_overthrow_entry_short: "$high_kingship_overthrow$" # todo: NEW TRANSLATION
  hegemon_demand_force_embargo: "$force_embargo$" # todo: NEW TRANSLATION
- hegemon_demand_force_embargo_entry: "$force_embargo$ pre [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- hegemon_demand_force_embargo_entry_short: "$force_embargo$ pre [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ hegemon_demand_force_embargo_entry: "$force_embargo$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ hegemon_demand_force_embargo_entry_short: "$force_embargo$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  hegemon_demand_force_embargo_desc: "Ako Hegemón vynútíme naše požiadavky vojenskými prostriedkami." # todo: NEW TRANSLATION
  hegemon_demand_violate_sovereignty: "$violate_sovereignty$" # todo: NEW TRANSLATION
- hegemon_demand_violate_sovereignty_entry: "$violate_sovereignty$ pre [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- hegemon_demand_violate_sovereignty_entry_short: "$violate_sovereignty$ pre [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ hegemon_demand_violate_sovereignty_entry: "$violate_sovereignty$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ hegemon_demand_violate_sovereignty_entry_short: "$violate_sovereignty$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  hegemon_demand_violate_sovereignty_desc: "Ako Hegemón vynútíme naše požiadavky vojenskými prostriedkami." # todo: NEW TRANSLATION
  hegemon_demand_force_change_court_language: "$force_change_court_language$" # todo: NEW TRANSLATION
- hegemon_demand_force_change_court_language_entry: "$force_change_court_language$ pre [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- hegemon_demand_force_change_court_language_entry_short: "$force_change_court_language$ pre [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ hegemon_demand_force_change_court_language_entry: "$force_change_court_language$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ hegemon_demand_force_change_court_language_entry_short: "$force_change_court_language$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  hegemon_demand_force_change_court_language_desc: "Ako Hegemón vynútíme naše požiadavky vojenskými prostriedkami." # todo: NEW TRANSLATION
  hegemon_demand_force_divert_trade: "$force_divert_trade$" # todo: NEW TRANSLATION
- hegemon_demand_force_divert_trade_entry: "$force_divert_trade$ pre [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- hegemon_demand_force_divert_trade_entry_short: "$force_divert_trade$ pre [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
+ hegemon_demand_force_divert_trade_entry: "$force_divert_trade$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ hegemon_demand_force_divert_trade_entry_short: "$force_divert_trade$ pre [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  hegemon_demand_force_divert_trade_desc: "Ako Hegemón vynútíme naše požiadavky vojenskými prostriedkami." # todo: NEW TRANSLATION
  peace_claim_confederation_leadership: "Požadovať vedúce postavenie v konfederácii" # todo: NEW TRANSLATION
  peace_claim_confederation_leadership_entry: "$peace_claim_confederation_leadership$" # todo: NEW TRANSLATION
@@ -172,9 +169,17 @@
  peace_force_into_jurchen_confederation_entry: "$peace_force_into_jurchen_confederation$" # todo: NEW TRANSLATION
  peace_force_into_jurchen_confederation_entry_short: "$peace_force_into_jurchen_confederation$" # todo: NEW TRANSLATION
  peace_force_into_jurchen_confederation_desc: "Pod naším vedením sa im bude dariť lepšie!" # todo: NEW TRANSLATION
+ peace_force_jurchen_unification: "Prinútiť k podrobeniu" # todo: NEW TRANSLATION
+ peace_force_jurchen_unification_entry: "$peace_force_jurchen_unification$" # todo: NEW TRANSLATION
+ peace_force_jurchen_unification_entry_short: "$peace_force_jurchen_unification$" # todo: NEW TRANSLATION
+ peace_force_jurchen_unification_desc: "Vzopreli sa nášmu úsiliu o zjednotenie. Teraz pokľaknú a pridajú sa k nám ako vazali." # todo: NEW TRANSLATION
  peace_take_over_market_center: "Prevziať [target_market.GetName]" # todo: CHANGED
- peace_take_over_market_center_entry: "Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetNameWithFlag]" # todo: CHANGED
- peace_take_over_market_center_entry_short: "Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: CHANGED
+ peace_take_over_market_center_group: "Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetAltAdjectiveWithFlag('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ peace_take_over_market_center_group_short: "Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetAltAdjectiveWithFlagWithNoTooltip('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ peace_take_over_market_center_entry: "Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetAltAdjectiveWithFlag('G')] a presunúť ho do [target_location.GetName]" # todo: CHANGED (predtym: Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetNameWithFlag]) # todo: COUNTRY CASE
+ peace_take_over_market_center_entry_short: "Presunúť [target_market.GetName] do [target_location.GetNameWithNoTooltip]" # todo: CHANGED (predtym: Prevziať [target_market.GetName] od [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip])
+ peace_take_over_market_center_select_location: "Vyberte [Concept('location','lokalita')|e], kam presunúť [Concept('market','trh')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ peace_take_over_market_center_no_locations: "$no_valid_locations$" # todo: NEW TRANSLATION
  execute_ruler: "Popraviť vládcu" # todo: NEW TRANSLATION
  execute_ruler_entry: "$execute_ruler$" # todo: NEW TRANSLATION
  execute_ruler_entry_short: "$execute_ruler$" # todo: NEW TRANSLATION
@@ -194,14 +199,19 @@
  peace_force_renounce_ilkhan_claim: "Vynútiť vzdanie sa nároku na [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION
  peace_force_renounce_ilkhan_claim_entry: "Vynútiť [Concept('country','krajina')|e], aby sa vzdala nároku na vedenie [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  peace_force_renounce_ilkhan_claim_entry_short: "Vynútiť [Concept('country','krajina')|e], aby sa vzdala nároku na vedenie [GetUniqueInternationalOrganization('ilkhanate').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tun_take_over_throne: "Uzurpovať trón krajiny [TARGET_COUNTRY.GetAltAdjectiveWithFlag('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ tun_take_over_throne_entry: "Uzurpovať trón krajiny [TARGET_COUNTRY.GetAltAdjectiveWithFlag('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ tun_take_over_throne_entry_short: "$tun_take_over_throne_entry$" # todo: NEW TRANSLATION
+ tun_take_over_throne_desc: "Obe ríše sa zjednotia pod vládou jediného panovníka a štáty [ShowDynastyName('hafsid_dynasty')] už nebudú rozdelené." # todo: NEW TRANSLATION
+ annex_target_tun: "Cieľová [Concept('country','krajina')|e] bude [Concept('annexed','anektované')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  force_convert: "Nútene konvertovať [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] to [COUNTRY.GetReligion.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  force_convert_entry: "Nútene konvertovať [TARGET_COUNTRY.GetNameWithFlag] na [COUNTRY.GetReligion.GetName]" # todo: NEW TRANSLATION
  force_convert_entry_short: "Nútene konvertovať [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip] na [COUNTRY.GetReligion.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  force_convert_desc: "Sláva nášho náboženstva sa musí šíriť - aj keby to malo byť mečom!" # todo: NEW TRANSLATION
- claim_timurid_empire: "Požadovať ríšu [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- claim_timurid_empire_entry: "Požadovať ríšu [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- claim_timurid_empire_entry_short: "Požadovať ríšu [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
- claim_timurid_empire_tooltip: "Anexujeme a staneme sa [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
+ claim_timurid_empire: "Požadovať ríšu [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ claim_timurid_empire_entry: "Požadovať ríšu [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ claim_timurid_empire_entry_short: "Požadovať ríšu [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ claim_timurid_empire_tooltip: "Anexujeme a staneme sa [TARGET_COUNTRY.GetAltAdjectiveWithFlag('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  scaligeri_victory: "Presadiť požiadavky Scaligerov" # todo: NEW TRANSLATION
  scaligeri_victory_entry: "Presadiť požiadavky Scaligerov" # todo: NEW TRANSLATION
  scaligeri_victory_entry_short: "$scaligeri_victory_entry$" # todo: NEW TRANSLATION
@@ -234,8 +244,13 @@
  PEACE_OFFER_CLEAR_DEMAND_DESC: "Vymazať mierovú požiadavku pre [PeaceOfferLateralView.GetSelectedParticipant.GetName]." # todo: NEW TRANSLATION
  PEACE_OFFER_SEND_OFFER_BALANCE: "@trigger_no!Nemôžeme odoslať ponuku so záporným zostatkom, naši nepriatelia ju neprijmú!" # todo: NEW TRANSLATION
  PEACE_OFFER_SEND_MAX_WAR_SCORE: "@trigger_no! Nemôžeme poslať [Concept('peace_offer','ponuka mieru')|e] na viac ako #W 100#! [Concept('peace_cost_with_icon','hodnota mierovej ponuky')|e]!" # todo: CHANGED # todo: CONCEPT CASE
- PEACE_OFFER_LIMITED_DIPLOMACY: "@trigger_no! Ako lojálny [Concept('subject','vazal')|e] s obmedzenou [Concept('diplomacy','diplomaciou')|e], [COUNTRY.GetName] nemôže rokovať za seba, rokovať s ich [Concept('overlord','suzerén')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ PEACE_OFFER_LIMITED_DIPLOMACY: "@trigger_no! Ako lojálny [Concept('subject','vazal')|e] s obmedzenou [Concept('diplomacy','diplomaciou')|e], [COUNTRY.GetAltAdjective('I')] nemôže rokovať za seba, rokovať s ich [Concept('overlord','suzerén')|e]." # todo: CHANGED # todo: CONCEPT CASE # todo: COUNTRY CASE
  PEACE_OFFER_WAR_SCORE_COST: "#T $NAME$#!\nNáklady [Concept('peace_cost','hodnota mierovej ponuky')|e] $VAL|V2$ sú spôsobené:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PEACE_OFFER_TREATY_INFO_TITLE: "#T $NAME$#!" # todo: NEW TRANSLATION
+ PEACE_OFFER_PROVINCE_LOCATION_WAR_SCORE_COST: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName]: $VAL|V2$" # todo: NEW TRANSLATION
+ PEACE_OFFER_BALANCE_TOTAL: "#T $NAME$#!\nPredpokladaná zmena [Concept('balance','bilancia')|e] o $VAL|+=2$@gold_balance! je spôsobená:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PEACE_OFFER_BALANCE_LOCATION_TOTAL: "#T $NAME$#!\nPredpokladaná zmena [Concept('balance','bilancia')|e] pri [Concept('control','kontrole')|e] na úrovni $CONTROL|0%$ vo výške $VAL|+=2$@gold_balance! je spôsobená:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PEACE_OFFER_BALANCE_LOCATION: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!@gold_balance!" # todo: NEW TRANSLATION
  PEACE_OFFER_ANTAGONISM_TAKER: "#T $NAME$#!\nTáto [Concept('peace_treaty','mierová dohoda')|e] poskytuje [COUNTRY.GetNameWithFlag] základ $VAL|-=2$[antagonism_i] voči iným krajinám z dôvodu:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PEACE_OFFER_INCDECWARSCORETOOLTIP: "[PeaceOfferWarScoreTreatyGlue.GetIncWarScoreTooltip]\n\n[PeaceOfferWarScoreTreatyGlue.GetDecWarScoreTooltip]" # todo: NEW TRANSLATION
  PEACE_OFFER_INCWARSCORETOOLTIP: "[PeaceOfferWarScoreTreatyGlue.GetIncWarScoreTooltip]" # todo: NEW TRANSLATION
@@ -279,8 +294,8 @@
  rtr_demand_all_chinese_territories: "Požadovať všetky čínske územia" # todo: NEW TRANSLATION
  rtr_demand_all_chinese_territories_entry: "$rtr_demand_all_chinese_territories$" # todo: NEW TRANSLATION
  rtr_demand_all_chinese_territories_entry_short: "$rtr_demand_all_chinese_territories$" # todo: NEW TRANSLATION
- rtr_demand_all_chinese_territories_desc: "Požadovať každú [Concept('location','lokalitu')|e], ktorú vlastní cieľová [Concept('country','krajina')|e] a ich [Concept('subjects','vazali')|e], vrátane neobsadených území." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- rtr_demand_all_chinese_territories_tt: "Každá [loser.GetAdjective] [Concept('location','lokalita')|e] a každá [Concept('location','lokalita')|e], ktorú vlastnia [loser.GetName]'s [Concept('subjects','vazalmi')|e], bude zabavená [winner.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ rtr_demand_all_chinese_territories_desc: "Požadovať každú [Concept('location','lokalitu')|e], ktorá je súčasťou [GetInternationalOrganizationType('middle_kingdom').GetName], či už ju vlastní cieľová [Concept('country','krajina')|e], jej [Concept('subjects','vazali')|e] alebo bojujúce štáty, ktoré sú jej lojálne." # todo: CHANGED (predtym: Požadovať každú [Concept('location','lokalitu')|e], ktorú vlastní cieľová [Concept('country','krajina')|e] a ich [Concep)
+ rtr_demand_all_chinese_territories_tt: "Každá [Concept('location','lokalita')|e], ktorá je súčasťou [GetInternationalOrganizationType('middle_kingdom').GetName], či už ju vlastní [loser.GetName], jeho [Concept('subjects','vazali')|e] alebo bojujúce štáty lojálne [loser.GetName], bude zabavená [winner.GetNameWithNoTooltip]" # todo: CHANGED (predtym: Každá [loser.GetAdjective] [Concept('location','lokalita')|e] a každá [Concept('location','lokalita')|e], ktorú vlastnia)
  rtr_demand_complete_annexation: "Žiadať úplnú anexiu" # todo: NEW TRANSLATION
  rtr_demand_complete_annexation_entry: "$rtr_demand_complete_annexation$" # todo: NEW TRANSLATION
  rtr_demand_complete_annexation_entry_short: "$rtr_demand_complete_annexation$" # todo: NEW TRANSLATION
@@ -317,10 +332,10 @@
  assume_union_senority_entry_short: "$assume_union_senority$" # todo: NEW TRANSLATION
  assume_union_senority_desc: "[TARGET_COUNTRY.GetName] nie je spôsobilý vládnuť nad [TARGET_COUNTRY.GetDiplomacy.GetUnion.GetName]! Preberieme bremeno vedenia a prevezmeme senioritu nad [GetInternationalOrganizationType('union').GetName]." # todo: NEW TRANSLATION
  reinstate_the_monarchy: "Obnoviť monarchiu" # todo: NEW TRANSLATION
- reinstate_the_monarchy_entry: "Obnoviť monarchiu v [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
+ reinstate_the_monarchy_entry: "Obnoviť monarchiu v [TARGET_COUNTRY.GetAltAdjectiveWithFlag('L')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  reinstate_the_monarchy_entry_short: "$reinstate_the_monarchy_entry$" # todo: NEW TRANSLATION
  force_revolution: "Vynútiť revolúciu" # todo: NEW TRANSLATION
- force_revolution_entry: "Dať moc ľudu v [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
+ force_revolution_entry: "Dať moc ľudu v [TARGET_COUNTRY.GetAltAdjectiveWithFlag('L')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  force_revolution_entry_short: "$force_revolution_entry$" # todo: CHANGED
  relative_mil_strength_tt: "[Concept('military_strength','Vojenská sila')|e] [loser.GetName] v porovnaní s nami" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  crush_the_revolution_cb: "Potlačiť revolúciu" # todo: NEW TRANSLATION
@@ -416,3 +431,5 @@
  subjugate_natives_desc: "Domorodci pokľaknú a prijmú našu nadvládu, a ich územia sa stanú právoplatne našimi." # todo: NEW TRANSLATION
  peace_take_over_market_center_desc: "Bijúce srdce ich ekonomiky bude naše, získané pre slávu a zisk našej krajiny." # todo: CHANGED
  peace_take_shogunate_desc: "Vedenie v rámci [GetUniqueInternationalOrganization('japanese_shogunate').GetName] prejde do našich rúk. To oznámi novú éru; osud [ShowRegionName('japan_region')] bude odteraz formovaný našou správou." # todo: NEW TRANSLATION
+ return_cores_to_country_entry: "Vrátiť [SCOPE.sLocation('target').GetName] jeho právoplatnému vlastníkovi" # todo: NEW TRANSLATION
+ return_cores_to_country_entry_short: "[target.GetOwner.GetFlagIconWithNoTooltip] [SCOPE.sLocation('target').GetName] bude vrátený krajine [SCOPE.sLocation('target').GetController.GetName]" # todo: NEW TRANSLATION

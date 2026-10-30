@@ -55,13 +55,19 @@
  ask_for_law_changes_desc: "Požiadať [Concept('estates','stavy')|e], aby schválili zmenu určitej [Concept('policy','politike')|e] v našich [Concept('laws','zákonov')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ask_for_law_changes_select_law_title: "Vyberte [Concept('law','zákon')|e], ktorú náš [Player.GetGovernment.GetParliament.GetName] schváli zmeniť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ask_for_law_changes_select_policies_title: "Vyberte [Concept('policy','politika')|e], ktorú náš [Player.GetGovernment.GetParliament.GetName] schváli zmeniť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ask_for_law_changes_price_reason: "Rozprava v parlamente" # todo: NEW TRANSLATION
  declare_holidays_request: "Vyhlásiť sviatky" # todo: NEW TRANSLATION
  declare_holidays_request_desc: "Vyhlásenie najbližšieho dňa za sviatok pre všetkých našich ľudí nám získa podporu obyvateľstva a tiež pomôže stabilizovať naše záležitosti." # todo: NEW TRANSLATION
+ seat_the_itinerant_court: "Usadiť putovný dvor" # todo: NEW TRANSLATION
+ seat_the_itinerant_court_desc: "Presunutím putovného dvora premiestnime [ShowBuildingTypeName('itinerant_court_seat')] do nami zvolenej [Concept('location','lokalite')|e]. Tam bude vyžarovať [Concept('proximity','blízkosť')|e] s dočasne zvýšeným dosahom, kým sa dvor usadí." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ seat_the_itinerant_court_select_title: "Vyberte [Concept('location','lokalita')|e], v ktorej bude sídliť kráľovský dvor" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ seat_the_itinerant_court_passed_tt: "[ShowBuildingTypeName('itinerant_court_seat')] sa presunie do vybranej [Concept('location','lokality')|e], ktorá sa stane zdrojom blízkosti putovného dvora v ríši." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ seat_the_itinerant_court_in_session_tt: "Vybraná [Concept('location','lokalita')|e] získa na 1 rok modifikátor [Player.GetStaticModifier('itinerant_court_in_session').GetNameWithTooltip]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  prepare_for_war_select_title: "Vyberte [Concept('country','krajina')|e], proti ktorému získať [Concept('casus_belli','casus Belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  prepare_for_war_select_province_title: "Vyberte [Concept('province','provincia')|e], ktorý bude stanovený ako [Concept('war_goal','vojnový cieľ')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  select_a_country_to_get_casus_belli_on: "Vyberte [Concept('country','krajina')|e], na ktorý nám náš [Player.GetGovernment.GetParliament.GetName] udelí [Concept('casus_belli','casus Belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  prepare_for_war: "Vytvoriť casus belli" # todo: NEW TRANSLATION
- prepare_for_war_desc: "Žiadame [Player.GetGovernment.GetParliament.GetName], aby schválil [Concept('war','vojna')|e] tým, že nám poskytne legitímny [Concept('casus_belli','casus Belli')|e].\n• Zvolíme krajinu, ktorá nie je [Concept('rebel','povstalec')|e] národom ani naším [Concept('subject','vazalom')|e], ktorá leží v rámci nášho [Concept('diplomatic_range','diplomatického dosahu')|e], a s ktorou momentálne nemáme [Concept('truce','prímeria')|e], aby sme získali:\n[ShowCasusBelliName('cb_parliament_conquer_province')] [Concept('casus_belli','Casus Belli')|e].\n• Toto [Concept('casus_belli','casus belli')|e] potrvá [GetDefine('NDiplomacy','CASUS_BELLI_MONTHS')] mesiacov ([Divide_int32(GetDefine('NDiplomacy','CASUS_BELLI_MONTHS'), '(int32)12')] rokov)." # todo: CHANGED # todo: CONCEPT CASE
+ prepare_for_war_desc: "Žiadame [Player.GetGovernment.GetParliament.GetName], aby schválil [Concept('war','vojna')|e] tým, že nám poskytne legitímny [Concept('casus_belli','casus Belli')|e].\n• Zvolíme krajinu, ktorá nie je [Concept('rebel','povstalec')|e] národom ani naším [Concept('subject','vazalom')|e], ktorá leží v rámci nášho [Concept('diplomatic_range','diplomatického dosahu')|e],\n a s ktorou momentálne nemáme [Concept('truce','prímeria')|e], aby sme získali:\n[ShowCasusBelliName('cb_parliament_conquer_province')] [Concept('casus_belli','Casus Belli')|e].\n• Toto [Concept('casus_belli','casus belli')|e] potrvá [GetDefine('NDiplomacy','CASUS_BELLI_MONTHS')] mesiacov ([Divide_int32(GetDefine('NDiplomacy','CASUS_BELLI_MONTHS'), '(int32)12')] rokov)." # todo: CHANGED (predtym: Žiadame [Player.GetGovernment.GetParliament.GetName], aby schválil [Concept('war','vojna')|e] tým, že nám poskytne legit)
  PARLIAMENT_IN_SESSION: "[Player.GetGovernment.GetParliament.GetName] v zasadnutí" # todo: NEW TRANSLATION
  promote_castle_building: "Podporiť stavbu $castle$" # todo: NEW TRANSLATION
  promote_castle_building_desc: "V celej krajine sú vynikajúce miesta pre možné opevnenia, pripravené zastaviť postup našich nepriateľov." # todo: NEW TRANSLATION
@@ -253,7 +259,7 @@
  hussite_army_reform_desc: "Náš národ prešiel údoliami dejín napriek všetkým prekážkam. Prežil vojny, križiacke výpravy a prenasledovanie. Naše armády si zaslúžia používať tie najlepšie taktiky a prejsť do útoku proti všetkým, ktorí usilujú o náš zánik!" # todo: NEW TRANSLATION
  lit_measures_against_romuva: "Opatrenia proti $romuva_ADJ$ oživeniu" # todo: NEW TRANSLATION
  lit_measures_against_romuva_desc: "S oživením viery [ShowReligionAdjective('romuva')] sa mnohí obávajú, že by mohli vyvolať nepokoje. Musíme zvolať stavy, aby túto záležitosť vyriešili." # todo: NEW TRANSLATION
- lit_5_percent_of_pops_convert_to_our_religion_tt: "#Y 5%#! z [ShowReligionAdjective('romuva')] [Concept('pops','populácií')|e] prejde na [ROOT.GetCountry.GetReligion.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ lit_5_percent_of_pops_convert_to_our_religion_tt: "#Y 5%#! z [ShowReligionAdjective('romuva')] [Concept('pops','populácií')|e] prejde na [ROOT.GetCountry.GetReligion.GetAltAdjective('A')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  hre_law_debate: "Diskusia o cisárskom práve" # todo: NEW TRANSLATION
  hre_law_debate_desc: "[ShowSpecialStatusName('emperor')] [GetUniqueInternationalOrganization('hre').GetName] plánuje zaviesť nový zákon. Teraz je príležitosť pre cisárske stavy vyjednávať za alebo proti návrhu." # todo: NEW TRANSLATION
  hre_request_additional_military_support: "Cisárska vojenská podpora" # todo: NEW TRANSLATION
@@ -272,6 +278,7 @@
  union_enforce_law_implementation: "Vynútiť vykonávanie zákonov" # todo: NEW TRANSLATION
  union_enforce_law_implementation_desc: "Niektorí členovia [GetInternationalOrganizationType('union').GetName] sú buď nováčikovia, alebo sa im podarilo odraziť akýkoľvek pokus o centralizáciu $union$. Je potrebné vynútiť tieto zákony u každého člena, ak chceme bezproblémovú anexiu ostatných členov." # todo: NEW TRANSLATION
  union_enforce_law_implementation_at: "Každý [Concept('member','člen')|e] nastaví svoju [Concept('union_integration_level_member','úroveň integrácie člena')|e] v [THIS.GetInternationalOrganization.GetName] na [THIS.GetInternationalOrganization.GetModifierValueString('union_integration_level')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ union_enforcement_parliament_failed_cd: "Presadzovanie vykonania zákona" # todo: NEW TRANSLATION
  pa_add_privilege: "Udeľovanie privilégií" # todo: NEW TRANSLATION
  pa_add_privilege_simple: "Podplatiť stav" # todo: NEW TRANSLATION
  pa_add_privilege_desc: "Niekedy musíte poskytnúť trvalé výsady [Concept('estate','stav')|e], aby ste získali ich podporu v krátkodobom horizonte." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -863,14 +870,75 @@
  promote_industrial_workshops_desc: "Remeselnícke bratstvá, ktoré kedysi udržiavali naše mestá, už nedokážu dosiahnuť produkciu, akú si vyžaduje náš vek. Mali by sme investovať do nových manufaktúr a mechanizovaných dielní, ktoré vyrábajú oveľa viac a oveľa rýchlejšie, aby naše remeslá držali krok s dobou." # todo: NEW TRANSLATION
  wartime_officer_corps: "Posilniť dôstojnícky zbor" # todo: NEW TRANSLATION
  wartime_officer_corps_desc: "Nápor jazdy už nerozhoduje deň. To, čo dnes rozhoduje bitku, je zručnosť tých, ktorí velia, a parlament by mal armáde umožniť vybrať si našich najlepších dôstojníkov, vycvičených a nasadených pred začiatkom kampane." # todo: NEW TRANSLATION
- pa_accept_estate_culture: "Prijať kultúru stavu" # todo: NEW TRANSLATION
+ pa_accept_estate_culture: "Prijať našu kultúru" # todo: CHANGED (predtym: Prijať kultúru stavu)
  pa_accept_estate_culture_simple: "Podplatiť stav" # todo: NEW TRANSLATION
  pa_accept_estate_culture_desc: "Stav požaduje, aby dominantná [Concept('culture','kultúra')|e] jeho ľudu získala oficiálne uznanie." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- pa_convert_to_estate_religion: "Prejsť na náboženstvo stavu" # todo: NEW TRANSLATION
+ pa_add_discriminated_culture: "Diskriminovať negatívne vnímanú kultúru" # todo: NEW TRANSLATION
+ pa_add_discriminated_culture_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_add_discriminated_culture_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] nemá rada inú [Concept('culture','kultúru')|e] a žiada, aby sme voči nej uplatňovali diskrimináciu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_add_discriminated_culture_enemy: "Diskriminovať nepriateľskú kultúru" # todo: NEW TRANSLATION
+ pa_add_discriminated_culture_enemy_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_add_discriminated_culture_enemy_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] nenávidí inú [Concept('culture','kultúru')|e] a žiada, aby sme voči nej uplatňovali diskrimináciu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_remove_tolerated_culture_negative: "Prestať tolerovať negatívne vnímanú kultúru" # todo: NEW TRANSLATION
+ pa_remove_tolerated_culture_negative_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_remove_tolerated_culture_negative_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] nemá rada inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prestali tolerovať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_remove_tolerated_culture_enemy: "Prestať tolerovať nepriateľskú kultúru" # todo: NEW TRANSLATION
+ pa_remove_tolerated_culture_enemy_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_remove_tolerated_culture_enemy_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] nenávidí inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prestali tolerovať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_remove_accepted_culture_negative: "Prestať prijímať negatívne vnímanú kultúru" # todo: NEW TRANSLATION
+ pa_remove_accepted_culture_negative_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_remove_accepted_culture_negative_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] nemá rada inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prestali prijímať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_remove_accepted_culture_enemy: "Prestať prijímať nepriateľskú kultúru" # todo: NEW TRANSLATION
+ pa_remove_accepted_culture_enemy_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_remove_accepted_culture_enemy_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] nenávidí inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prestali prijímať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_remove_discriminated_culture_positive: "Prestať diskriminovať pozitívne vnímanú kultúru" # todo: NEW TRANSLATION
+ pa_remove_discriminated_culture_positive_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_remove_discriminated_culture_positive_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] má rada inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prestali diskriminovať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_remove_discriminated_culture_kindred: "Prestať diskriminovať príbuznú kultúru" # todo: NEW TRANSLATION
+ pa_remove_discriminated_culture_kindred_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_remove_discriminated_culture_kindred_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] miluje inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prestali diskriminovať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_add_tolerated_culture_positive: "Tolerovať pozitívne vnímanú kultúru" # todo: NEW TRANSLATION
+ pa_add_tolerated_culture_positive_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_add_tolerated_culture_positive_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] má rada inú [Concept('culture','kultúru')|e] a žiada, aby sme ju tolerovali." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_add_tolerated_culture_kindred: "Tolerovať príbuznú kultúru" # todo: NEW TRANSLATION
+ pa_add_tolerated_culture_kindred_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_add_tolerated_culture_kindred_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] miluje inú [Concept('culture','kultúru')|e] a žiada, aby sme ju tolerovali." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_add_accepted_culture_positive: "Prijať pozitívne vnímanú kultúru" # todo: NEW TRANSLATION
+ pa_add_accepted_culture_positive_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_add_accepted_culture_positive_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] má rada inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prijali za svoju." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_add_accepted_culture_kindred: "Prijať príbuznú kultúru" # todo: NEW TRANSLATION
+ pa_add_accepted_culture_kindred_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_add_accepted_culture_kindred_desc: "Prevažujúca skupina v našom [Concept('estate','stave')|e] miluje inú [Concept('culture','kultúru')|e] a žiada, aby sme ju prijali za svoju." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_convert_to_estate_religion: "Prejsť na naše náboženstvo" # todo: CHANGED (predtym: Prejsť na náboženstvo stavu)
  pa_convert_to_estate_religion_simple: "Podplatiť stav" # todo: NEW TRANSLATION
  pa_convert_to_estate_religion_desc: "Stav požaduje, aby krajina prešla na [Concept('religion','náboženstvo')|e] svojich ľudí." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pa_change_court_language_to_estate_language: "Zmeniť dvorný jazyk" # todo: NEW TRANSLATION
  pa_change_court_language_to_estate_language_simple: "Podplatiť stav" # todo: NEW TRANSLATION
  pa_change_court_language_to_estate_language_desc: "Stav požaduje, aby sa [Concept('court_language','jazyk dvora')|e] zmenil na taký, ktorý lepšie odráža jeho identitu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_change_liturgical_language_to_estate_language: "Zmeniť liturgický jazyk" # todo: NEW TRANSLATION
+ pa_change_liturgical_language_to_estate_language_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_change_liturgical_language_to_estate_language_desc: "[Concept('estate','Stav')|e] žiada, aby sa [Concept('liturgical_language','liturgický jazyk')|e] zmenil na jazyk, ktorý lepšie vystihuje jeho identitu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ force_parliament_support: "Vyvinúť politický nátlak" # todo: NEW TRANSLATION
+ force_parliament_support_desc: "Použite [Concept('political_influence','politický vplyv')|e] na to, aby ste prinútili [Concept('estates','stavy')|e] zasadajúce v [Concept('parliament','parlamente')|e] podporiť aktuálnu [Concept('parliament_issue','parlamentnú záležitosť')|e]. Každý [Concept('estate','stav')|e] so zastúpením v [Concept('parliament','parlamente')|e] bude na toto donucovanie zanevrieť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_join_crusade_nobles: "Pozdvihnúť kríž" # todo: NEW TRANSLATION
+ pa_join_crusade_nobles_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_join_crusade_nobles_desc: "Naši šľachtici, povzbudení príbehmi o križiackej výprave, žiadajú, aby sme sa pridali k svätej vojne a získali česť po boku veriacich." # todo: NEW TRANSLATION
+ pa_join_crusade_clergy: "Vyslyšať sväté volanie" # todo: NEW TRANSLATION
+ pa_join_crusade_clergy_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_join_crusade_clergy_desc: "Naši duchovní trvajú na tom, že pridať sa ku križiackej výprave je našou svätou povinnosťou, a nepoľavia, kým sa ríša nezapojí do svätej vojny." # todo: NEW TRANSLATION
+ pa_tribes_pasture_rights: "Zaručiť právo na pastviny" # todo: NEW TRANSLATION
+ pa_tribes_pasture_rights_simple: "Udeliť právo na pastviny" # todo: NEW TRANSLATION
+ pa_tribes_pasture_rights_desc: "Kmene nášho [Concept('estate','stavu')|e] požadujú zaručený prístup k pasienkom a pastvinám pre svoje stáda." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_tribes_subsidies: "Dotovať kmene" # todo: NEW TRANSLATION
+ pa_tribes_subsidies_simple: "Poskytnúť dotácie" # todo: NEW TRANSLATION
+ pa_tribes_subsidies_desc: "Náčelníci nášho [Concept('estate','stavu')|e] požadujú pravidelnú dotáciu z pokladnice, ktorá zabezpečí ich trvalú vernosť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_tribes_punish_rival: "Potrestať znepriatelený kmeň" # todo: NEW TRANSLATION
+ pa_tribes_punish_rival_simple: "Schváliť nájazd" # todo: NEW TRANSLATION
+ pa_tribes_punish_rival_desc: "Náš [Concept('estate','stav')|e] na nás nalieha, aby sme zaútočili na znepriatelený kmeň a silou ukončili starý spor." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  iw_militarize_country: "Militarizovať krajinu" # todo: NEW TRANSLATION
  iw_militarize_country_desc: "Požiadať [Concept('parliament','parlament')|e] o podporu mimoriadnej vojenskej mobilizácie, ktorá poskytne [Concept('army_tradition','armádna tradícia')|e] a posilní naše najskúsenejšie [Concept('army','armáda')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_endow_order_holding: "Založiť nové majetkové sídlo rádu" # todo: NEW TRANSLATION
+ pa_endow_order_holding_simple: "Podplatiť stav" # todo: NEW TRANSLATION
+ pa_endow_order_holding_desc: "[Concept('estate','Stav')|e] požaduje, aby ríša zriadila nové [Concept('holding','držba')|E] pre jeden z jeho rehoľných rádov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ crown_expel_order_holding: "Vyhostiť rehoľný rád" # todo: NEW TRANSLATION
+ crown_expel_order_holding_desc: "Koruna podniká kroky na vyhostenie rehoľného rádu z jedného z našich [Concept('holdings','držieb')|E], čím obmedzí jeho vplyv v ríši." # todo: NEW TRANSLATION # todo: CONCEPT CASE

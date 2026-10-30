@@ -2,4 +2,109 @@
  flavor_tun.1.desc: "$ibn_khaldun_patronage$" # todo: NEW TRANSLATION
  flavor_tun.1.entry: "$flavor_gra.5.title$" # todo: NEW TRANSLATION
  flavor_tun.1.a: "Dobre." # todo: NEW TRANSLATION
- flavor_tun.1.b: "Nezaujímajú nás takéto frivolné výdavky!"" # todo: NEW TRANSLATION
+ flavor_tun.1.b: "Nezaujímajú nás takéto frivolné výdavky!„" # todo: NEW TRANSLATION
+ tun_have_more_gp_score_than_us: "Žiadna [ShowReligionAdjective('sunni')] [Concept('country','krajina')|e] nemá vyššie [Concept('great_power_score','$game_concept_great_power_score_short$ veľmoci')|e] než [THIS.GetCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_tun.2.caliphal_backstory: "Náš štát vznikol počas rozpadu [GetCountry('ALM').GetAdjective] kalifátu. V tom čase zakladateľ [ShowDynastyName('hafsid_dynasty')] dynastie, ctihodný Abū Zakariyyā, vyhlásil nárok na titul #italic 'Amīr al-Mu'minīn#!, ujal sa úlohy $rank_empire_muslim_ruler_male$ a #italic de facto#! vyhlásil nezávislosť. Tento nárok okamžite uznali [ShowDynastyName('nasrid_dynasty')] z [ShowCountryNameIfActive('GRA')], ako aj vodcovia ďalších [ShowCultureName('andalusi')] miest. Keď vznikli štáty [ShowCountryNameIfActive('TLE')] a [ShowCountryNameIfActive('MOR')], aj tie náš nárok rýchlo uznali. Naša autorita je uznávaná až vo Svätom meste [ShowLocationName('mecca')], kde šaríf uznal náš nárok na kalifát v roku 1259 po nedávnom páde Abbásovcov pod náporom Mongolov." # todo: NEW TRANSLATION
+ flavor_tun.2.title: "Úpadok kalifátu" # todo: NEW TRANSLATION
+ flavor_tun.2.entry: "$flavor_tun.2.title$" # todo: NEW TRANSLATION
+ flavor_tun.2.desc: "$flavor_tun.2.caliphal_backstory$\n\nDnes z niekdajšej slávy zostalo len málo. Naše vnútorné problémy značne oslabili autoritu nášho [ROOT.GetCountry.GetGovernment.GetRulerTitle], ktorý je $rank_empire_muslim_ruler_male$ iba podľa mena. Musíme vrátiť kalifskú autoritu [ROOT.GetCountry.GetLongName]!" # todo: NEW TRANSLATION
+ flavor_tun.2.a: "Prinútime ich, aby nás rešpektovali!" # todo: NEW TRANSLATION
+ flavor_tun.2.b: "Vzdať sa titulu." # todo: NEW TRANSLATION
+ tun_caliphate_decision_enabled: "Umožní [Concept('decision','rozhodnutie')|e] [ShowDecisionName('hafsid_caliphate_decision')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_tun.3.title: "Obnovenie kalifskej autority" # todo: NEW TRANSLATION
+ flavor_tun.3.desc: "$flavor_tun.2.caliphal_backstory$\n\nHoci táto autorita v nasledujúcom storočí upadla, podarilo sa nám [ROOT.GetCountry.GetLongName] odvrátiť od bezvýznamnosti. [ROOT.GetCountry.GetFlavorRank] je teraz opäť jedným z hlavných štátov [ROOT.GetCountry.GetReligion.GetGroup.GetAdjective] sveta." # todo: NEW TRANSLATION
+ flavor_tun.3.a: "O #italic ummu#! sa dobre postaráme!" # todo: NEW TRANSLATION
+ hafsid_caliphate_name_tt: "Náš názov bude obsahovať titul #Y Kalifát#!" # todo: NEW TRANSLATION
+ hafsid_caliphate_decision.title: "$flavor_tun.3.title$" # todo: NEW TRANSLATION
+ hafsid_caliphate_decision.entry: "$flavor_tun.3.title$" # todo: NEW TRANSLATION
+ hafsid_caliphate_decision.desc: "$flavor_tun.3.desc$" # todo: NEW TRANSLATION
+ hafsid_caliphate_decision.desc.entry: "Nepodarilo sa nám zabezpečiť si postavenie nástupcov [GetCountry('ALM').GetAdjective] kalifátu. To nemôžeme dopustiť! Musíme si znovu vydobyť miesto na čele [ShowReligionAdjective('sunni')] komunity!" # todo: NEW TRANSLATION
+ hafsid_caliphate_decision.a: "$flavor_tun.3.a$" # todo: NEW TRANSLATION
+ flavor_tun.4.title: "Nástupníctvo po [aging_monarch.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tun.4.entry: "Nástupníctvo po [GetCharacter('tun_abu_yahya_abu_bakr_ii').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tun.4.desc: "[aging_monarch.GetName] čoraz viac trápi najpochmúrnejšie, no zároveň najdôležitejšie rozhodnutie, pred ktorým stojí každý starnúci panovník: vymenovanie [aging_monarch.GetHerHis] nástupcu. Takéto vymenovanie by malo byť celkom jasné, pretože [preferred_heir.GetName] bol vždy obľúbencom nášho drahého [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Problémom sú [aging_monarch.GetHerHis] ďalšie deti: [future_usurper.GetName], ktoré pomáha vláde v [ROOT.GetCountry.GetCapital.GetAltAdjective('L')], a [third_way.GetName] z [target_country2.GetName], ktorý by si mohol nárokovať trón.\n\nTáto voľba bude mať zásadný vplyv na stabilitu [ROOT.GetCountry.GetLongName] ešte dlho po smrti [aging_monarch.GetShortNameWithNoTooltip]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tun.4.a: "Nech sa vlády ujme [preferred_heir.GetNameWithNoTooltip] z [target_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_tun.4.a.entry: "Nech sa vlády ujme [GetCharacter('tun_abu_l_abbas_ahmad').GetNameWithNoTooltip] z $GFS$." # todo: NEW TRANSLATION
+ flavor_tun.4.b: "[future_usurper.GetNameWithNoTooltip] je bezpečná voľba." # todo: NEW TRANSLATION
+ flavor_tun.4.b.entry: "[GetCharacter('tun_abu_hafs_umar').GetNameWithNoTooltip] je bezpečná voľba." # todo: NEW TRANSLATION
+ flavor_tun.4.c: "[third_way.GetNameWithNoTooltip] by pomohol zjednotiť naše krajiny." # todo: NEW TRANSLATION
+ flavor_tun.4.c.entry: "[GetCharacter('tun_abu_zakariya_yahya').GetNameWithNoTooltip] by pomohol zjednotiť naše krajiny." # todo: NEW TRANSLATION
+ TUN_THIS_will_be_appointed_heir_tt: "[THIS.GetCharacter.GetName] bude vymenovaný za [Concept('heir','dediča')|e] krajiny [ROOT.GetCountry.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE # todo: CONCEPT CASE
+ TUN_unite_two_realms_tt: "Keďže [THIS.GetCharacter.GetName] je [Concept('ruler','panovník')|e] [ShowSubjectTypeName('familial_governor')] v krajine [THIS.GetCharacter.GetCourtCountry.GetName], po nástupe [THIS.GetCharacter.GetSheHe] na trón sa oba štáty zjednotia" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TUN_civil_war_from_preferred_heir_tt: "Keďže [preferred_heir.GetName] je uprednostňovaným nástupcom, [preferred_heir.GetSheHe] čoskoro rozpúta [Concept('war','vojna')|e] s podporou [ShowEstateTypeName('tribes_estate')], čo spôsobí odtrhnutie našich [Concept('locations','lokalít')|e] v oblasti [ShowScriptedGeographyName('gafsa_sphere_of_influence_geography')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TUN_abu_hafs_will_try_to_start_a_civil_war_tt: "[future_usurper.GetName] sa môže pokúsiť uzurpovať trón [THIS.GetCharacter.GetName]" # todo: NEW TRANSLATION
+ TUN_we_will_succeed_when_target_ruler_dies_tt: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] nastúpi na trón krajiny [from_country.GetName] a zjednotí obe krajiny pod [from_country.GetAdjectiveWithNoTooltip] zástavou, ak nedôjde k uzurpácii" # todo: NEW TRANSLATION
+ flavor_tun.5.title: "Vymenovanie v krajine [from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tun.5.desc_positive: "Skvelé správy! [aging_monarch.GetName] z krajiny [from_country.GetLongName] práve vymenoval [preferred_heir.GetName] za nástupcu svojho [aging_monarch.GetHerHis] [from_country.GetFlavorRank]. Nie je to prekvapením, pretože [preferred_heir.GetShortNameWithNoTooltip] je už dlho považovaný za očakávaného nástupcu. S takýmto vodcom na čele vyzerá budúcnosť [ShowScriptedGeographyName('ifriqiya_geography')] nádejne." # todo: NEW TRANSLATION
+ flavor_tun.5.desc_negative: "Zatratenie! V bezprecedentnom kroku [aging_monarch.GetName] z krajiny [from_country.GetName] práve vymenoval [appointed_heir.GetName] za svojho nástupcu [aging_monarch.GetHerHim]. V [ShowScriptedGeographyName('ifriqiya_geography')] je známe, že [preferred_heir.GetName] je najobľúbenejším kandidátom a prirodzeným nástupcom, takže pri vymenovaní [appointed_heir.GetNameWithNoTooltip] za dediča muselo dôjsť k nekalostiam." # todo: NEW TRANSLATION
+ flavor_tun.5.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
+ flavor_tun.5.b: "[preferred_heir.GetNameWithNoTooltip] si to nenechá!" # todo: NEW TRANSLATION
+ flavor_tun.5.c: "Budeme sa s tým musieť zmieriť." # todo: NEW TRANSLATION
+ flavor_tun.6.title: "Očakávaná reakcia" # todo: NEW TRANSLATION
+ flavor_tun.6.desc: "Ako sa dalo čakať, [preferred_heir.GetName] neprijal vymenovanie [appointed_heir.GetName] dobre a rýchlo začal proti nemu protestovať. S podporou [ShowEstateTypeName('tribes_estate')] vyhlásila krajina [target_country.GetName] vojnu o trón krajiny [ROOT.GetCountry.GetAltAdjective('G')] a vojská [preferred_heir.GetShortNameWithNoTooltip] sú na ceste do [ROOT.GetCountry.GetCapital.GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tun.6.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
+ GFS_will_receive_following: "Ak sa krajina [target_country.GetName] rozhodne pre tento spor viesť [Concept('war','vojna')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_tun.7.title: "Uzurpácia nástupníctva!" # todo: NEW TRANSLATION
+ flavor_tun.7.desc: "Hoci bol [target_character2.GetName] vymenovaný za nástupcu [from_country.GetLongName], jeho vzdorovitý súrodenec [target_character.GetName] sa rozhodol využiť [target_character.GetHerHis] súčasné postavenie v hlavnom meste a pokúsiť sa zmocniť [from_country.GetFlavorRank]. To nepochybne rozhnevá [target_character2.GetShortNameWithNoTooltip] z krajiny [target_country.GetName], ktorý sa určite chopí zbraní proti [target_character.GetHerHis] [target_character2.GetSisterBrother]." # todo: NEW TRANSLATION
+ flavor_tun.7.a: "Kto prv príde, ten prv melie." # todo: NEW TRANSLATION
+ flavor_tun.7.b: "To je poburujúce! To je nespravodlivé!" # todo: NEW TRANSLATION
+ flavor_tun.8.title: "$flavor_tun.7.title$" # todo: NEW TRANSLATION
+ flavor_tun.8.desc: "Nástupníctvo [target_character2.GetName] v krajine [from_country.GetLongName] uzurpoval [target_character2.GetHerHis] [target_character.GetSisterBrother], [target_character.GetName], ktorý sa rýchlo zmocnil [from_country.GetFlavorRank] a podmanil si jeho [from_country.GetGovernment.GetCourtTitle].\n\nJe ponižujúce, že [target_character2.GetShortNameWithNoTooltip] takto poškvrnil [target_character2.GetHerHis] meno! Musíme [target_character.GetShortNameWithNoTooltip] potrestať." # todo: NEW TRANSLATION
+ flavor_tun.8.a: "Do vojny!" # todo: NEW TRANSLATION
+ flavor_tun.8.b: "Nemôžeme si dovoliť bojovať." # todo: NEW TRANSLATION
+ flavor_tun.10.title: "Emirizmus" # todo: NEW TRANSLATION
+ flavor_tun.10.entry: "$flavor_tun.10.title$" # todo: NEW TRANSLATION
+ flavor_tun.10.desc: "[ShowScriptedGeographyName('ifriqiya_geography')] je hniezdom bezprávia a skazenosti. Už takmer celé storočie nedokážu [ROOT.GetCountry.GetLongName] a jeho [ShowDynastyName('hafsid_dynasty')] odnože uplatňovať svoju moc mimo miest, čo vo vidieckych provinciách vedie k rozsiahlym nepokojom a zločinnosti. Medzi [ShowCultureName('andalusi')] hodnostármi a poprednými šejkmi [ShowEstateTypeName('nobles_estate')] sa však šíri lúč nádeje — ideológia emirizmu, ktorá hlása budúcnosť, v ktorej bude nad celou oblasťou [ShowAreaName('tunis_area')] vládnuť jeden regionálny emír a opäť ju privedie k rozkvetu." # todo: NEW TRANSLATION
+ flavor_tun.10.a: "Nech nám [ROOT.GetCountry.GetReligion.GetGodName] ukáže svetlo." # todo: NEW TRANSLATION
+ flavor_tun.10.a.entry: "Nech nám $muslim_god_name$ ukáže svetlo." # todo: NEW TRANSLATION
+ tun_info_about_tunis_decentralization: "Mali by sme sa čo najskôr pokúsiť zrušiť [Concept('government_reform','reforma vlády')|e] [ShowGovernmentReformName('tun_strong_familial_governors')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tun_additional_benefits_for_farfanes_tt: "[ShowGovernmentReformName('catalan_merchant_privileges')] poskytuje výhody pre náš [ShowModifierTypeName] v závislosti od počtu jednotiek [ShowUnitDefinitionName('a_farfanes')]" # todo: NEW TRANSLATION
+ flavor_tun.11.title: "[ShowScriptedGeographyNameWithNoTooltip('ifriqiya_geography')], znovuzjednotená" # todo: NEW TRANSLATION
+ flavor_tun.11.desc: "Decentralizáciu [ROOT.GetCountry.GetLongName] sa podarilo vyriešiť od základov. Éra [ShowGovernmentReformName('tun_strong_familial_governors')] sa skončila a celá oblasť [ShowScriptedGeographyName('ifriqiya_geography')] opäť stojí zjednotená pod zástavami dynastie [ROOT.GetCountry.GetGovernment.GetRulerOrHeirIfRegent.GetDynasty.GetName]. Vidiek [ROOT.GetCountry.GetAdjectiveWithNoTooltip] už nebude sužovať bujnejúca zločinnosť; emírov [ROOT.GetCountry.GetAdjectiveWithNoTooltip] už nebudú vydierať [ShowEstateTypeName('nobles_estate')]; štát [ROOT.GetCountry.GetAdjectiveWithNoTooltip] už nebude závislý od podpory cudzích mocností.\n\nNastal čas zúčtovať so starým poriadkom a využiť skvelú príležitosť začať novú éru." # todo: NEW TRANSLATION
+ flavor_tun.11.a: "Toto je úsvit novej éry." # todo: NEW TRANSLATION
+ flavor_tun.11.b: "Zrod novej identity." # todo: NEW TRANSLATION
+ IFRIQIYA_NAME: "'Ifrīqiya" # todo: NEW TRANSLATION
+ IFRIQIYA_NAME_ADJ: "$IFRIQIYA_NAME$" # todo: NEW TRANSLATION
+ ifriqiya_reunited_decision.title: "$flavor_tun.11.title$" # todo: NEW TRANSLATION
+ ifriqiya_reunited_decision.entry: "$flavor_tun.11.title$" # todo: NEW TRANSLATION
+ ifriqiya_reunited_decision.desc: "$flavor_tun.11.desc$" # todo: NEW TRANSLATION
+ ifriqiya_reunited_decision.desc.entry: "[ShowScriptedGeographyName('ifriqiya_geography')] je už pridlho rozdelená medzi mnohé štáty, z ktorých mnohým vládnu vetvy rodiny [ShowDynastyName('hafsid_dynasty')]. Nemôžeme dovoliť, aby táto decentralizácia trvala čo i len o chvíľu dlhšie." # todo: NEW TRANSLATION
+ ifriqiya_reunited_decision.a: "$flavor_tun.11.a$" # todo: NEW TRANSLATION
+ flavor_tun.12.title: "Rozmach pirátstva v [ShowLocationNameWithNoTooltip('bejaia')]" # todo: NEW TRANSLATION
+ flavor_tun.12.entry: "$flavor_tun.12.title$" # todo: NEW TRANSLATION
+ flavor_tun.12.desc: "V posledných rokoch sa v [target_location.GetName] rozvíja jej najnezvyčajnejšie, no zároveň veľmi výnosné odvetvie — pirátstvo v oblasti [ShowScriptedGeographyName('mediterranean_sea_geography')]. Už celé desaťročia miestni šejkovia vo veľkej miere podporujú [ShowBuildingTypeName('pirate_haven')] a jeho nie práve tajné nájazdy na [ShowReligionGroupAdjective('christian')] dediny, a to aj napriek existujúcim obchodným vzťahom. Takéto nájazdy aktívne poškodzujú naše vzťahy s potenciálnymi obchodnými partnermi, no zisky, ktoré nám prináša [ShowPolicyName('state_piracy_policy')], nemožno podceniť." # todo: NEW TRANSLATION
+ flavor_tun.12.a: "Sú nepriateľmi [ROOT.GetCountry.GetReligion.GetGodName]!" # todo: NEW TRANSLATION
+ flavor_tun.12.a.entry: "Sú nepriateľmi $muslim_god_name$!" # todo: NEW TRANSLATION
+ flavor_tun.12.b: "To je jedno." # todo: NEW TRANSLATION
+ flavor_tun.12.c: "Pirátstvo nám neprinesie nič dobré." # todo: NEW TRANSLATION
+ flavor_tun.13.title: "Ekonomické zovretie" # todo: NEW TRANSLATION
+ flavor_tun.13.entry: "$flavor_tun.13.title$" # todo: NEW TRANSLATION
+ flavor_tun.13.desc: "[ShowReligionGroupAdjective('christian')] obchodníci v krajine [ROOT.GetCountry.GetAltAdjective('D')] už získali rozsiahle [ShowGovernmentReformName('catalan_merchant_privileges')]. Napriek nim, napriek štvrtiam, ktoré im tak štedro poskytujeme, možnosti riadiť sa vlastnými pravidlami a náboženskej slobode, ktorú sme im udelili, [target_country.GetAdjective] [target_country.GetGovernment.GetEstateName('burghers_estate')] stále žiadajú viac — inak s nami ich domovská krajina možno úplne preruší obchodné styky." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tun.13.a: "Žoldnieri sú príliš dôležití." # todo: NEW TRANSLATION
+ flavor_tun.13.b: "Pche! Ich služby nepotrebujeme." # todo: NEW TRANSLATION
+ tun_economic_stranglehold_tt: "[ShowModifierTypeName('global_merchant_power')] z [ShowGovernmentReformName('catalan_merchant_privileges')] sa zníži o #R -10.0%#!" # todo: NEW TRANSLATION
+ flavor_tun.14.title: "Požiadavka príbuzného" # todo: NEW TRANSLATION
+ flavor_tun.14.desc: "Jeden z princov rodiny [ShowDynastyName('hafsid_dynasty')], [target_character.GetName], sa stal natoľko vplyvným, že žiada o post [ShowSubjectTypeName('familial_governor')]. Ak nevyhovieme a neudelíme [target_location.GetName] [target_character.GetNameWithNoTooltip], určite tým vyvoláme nepokoje v krajine [ROOT.GetCountry.GetLongName]." # todo: NEW TRANSLATION
+ flavor_tun.14.a: "Nech si to [target_character.GetHerHim] vezme!" # todo: NEW TRANSLATION
+ flavor_tun.14.b: "Teraz na to nie je vhodný čas." # todo: NEW TRANSLATION
+ tun_target_character_expects_a_governorship_tt: "[target_character.GetName] očakáva, že sa stane [ShowSubjectTypeName('familial_governor')], a kým [target_character.GetSheHe] nezíska túto pozíciu prostredníctvom [ShowCharacterInteractionName('assign_familial_governor')], môže [target_character.GetSheHe] túto [Concept('event','udalosť')|e] spúšťať opakovane" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_tun.15.title: "Spor o nástupníctvo" # todo: NEW TRANSLATION
+ flavor_tun.15.desc: "Smrť starého [old_ruler.GetName] zanechala v [ROOT.GetCountry.GetCapital.GetAltAdjective('L')] mocenské vákuum. Nominálne má v krajine [ROOT.GetCountry.GetAltAdjective('D')] prevziať úlohu správcu [new_ruler.GetName], no nástupníctvo ani zďaleka nie je isté. Ulicami hlavného mesta práve pochoduje ľudová vzbura podporovaná neznámou mocnosťou, ktorá sa snaží zaistiť nástupníctvo [target_character2.GetName]. Podporíme právoplatného dediča, alebo necháme [ShowEstateTypeName('burghers_estate')] presadiť svoju vôľu?" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tun.15.a: "[new_ruler.GetNameWithNoTooltip] je právoplatným dedičom!" # todo: NEW TRANSLATION
+ flavor_tun.15.b: "Musíme vypočuť vzbúrencov." # todo: NEW TRANSLATION
+ flavor_tun.16.title: "Nástupníctvo [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tun.16.desc: "Nástupom [new_ruler.GetName] na trón sa štáty [target.GetLongName] a [ROOT.GetCountry.GetName] opäť zjednotili pod vládou jediného ústredného panovníka z dynastie [ShowDynastyName('hafsid_dynasty')]. Dúfajme, že [ShowScriptedGeographyName('ifriqiya_geography')] bude čoskoro znovu zjednotená a už ju nebude sužovať vážna [ShowSocietyDirectionName('decentralization')]." # todo: NEW TRANSLATION
+ flavor_tun.16.a: "Ďalší krok k jednote." # todo: NEW TRANSLATION
+ flavor_tun.16.b: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
+ tun_target_was_annexed_tt: "[target.GetName] bol [Concept('annexed','anektované')|e] ku krajine [ROOT.GetCountry.GetAltAdjective('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE # todo: CONCEPT CASE
+ flavor_tun.17.title: "Spor o nástupníctvo v krajine [from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tun.17.desc: "Vďaka dostatočnej podpore obyvateľov a [from_country.GetGovernment.GetEstateName('burghers_estate')] v [from_country.GetCapital.GetName] sa [target_character2.GetShortNameWithNoTooltip] stal nominálnym vládcom štátu, čím v podstate pripravil [new_ruler.GetNameWithNoTooltip] o právoplatné dedičstvo a nás o jeho vedenie." # todo: NEW TRANSLATION
+ flavor_tun.17.a: "Toto si nenecháme!" # todo: NEW TRANSLATION
+ flavor_tun.17.b: "Máme dôležitejšie starosti." # todo: NEW TRANSLATION
+ flavor_tun.18.title: "Významná osobnosť [ShowCultureNameWithNoTooltip('andalusi')]" # todo: NEW TRANSLATION
+ flavor_tun.18.desc: "Miestny človek z [ShowCultureName('andalusi')] kultúry, [target_character.GetWomanMan], narodený a vychovaný v [target_character.GetBirthLocation.GetArea.GetName], nedávno postúpil v hodnostiach a vstúpil na dvor [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] v [ROOT.GetCountry.GetCapital.GetAltAdjective('L')]. Zdá sa, že [target_character.GetName] sa čoskoro stane jedným z členov [ShowEstatePrivilegeName('andalusi_elite')] v rámci nášho [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tun.18.a: "Výborne!" # todo: NEW TRANSLATION
+ flavor_tun.19.title: "Nový nástupca?" # todo: NEW TRANSLATION
+ flavor_tun.19.desc: "Ulicami [ROOT.GetCountry.GetCapital.GetAltAdjective('I')] sa v poslednom čase šíria šepoty a klebety. [ROOT.GetCountry.GetCapital.GetRank.GetName] zvažuje vládu [target_character2.GetName] a hľadá ideálneho kandidáta, ktorý by nastúpil na [target_character2.GetHerHim] miesto. [ShowEstateTypeName('burghers_estate')] si vybrali významnú osobnosť, [target_character.GetName], o ktorej sa domnievajú, že by bola vhodným nástupcom na trón krajiny [ROOT.GetCountry.GetAltAdjective('G')]. Povráva sa, že [ShowEstateTypeNameWithNoTooltip('burghers_estate')] sa nechali zlákať [target_character.GetHerHis] štedrými prísľubmi privilégií a ďalších práv." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tun.19.a: "Len do toho, vymenujte [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_tun.19.b: "Hlupáci, ak tomu veria." # todo: NEW TRANSLATION

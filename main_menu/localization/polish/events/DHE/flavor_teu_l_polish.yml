@@ -36,7 +36,7 @@
  flavor_teu.6.a: "Postavte [ShowBuildingTypeNameWithNoTooltip('castle')] na dohľad nad [target_location.GetProvince.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_teu.6.a.entry: "Postavte [ShowBuildingTypeNameWithNoTooltip('castle')], aby ste dohliadali nad provinciou." # todo: NEW TRANSLATION
  flavor_teu.6.b: "Prinúťte miestneho #italic Komtur#!, aby sa tým zaoberal." # todo: NEW TRANSLATION
- teuton_6_event_trigger_information: "Tento [Concept('event','udalosť')|e] sa môže spustiť z nasledujúcich podmienok:\n[ShowTriggerConditionsForScope('teu_event_6_trigger', SCOPE.sLocation('target_location').GetLocation.MakeScope.Self))]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ teuton_6_event_trigger_information: "Tento [Concept('event','udalosť')|e] sa môže spustiť z nasledujúcich podmienok:\n[ShowTriggerConditionsForScope('teu_event_6_trigger', SCOPE.sLocation('target_location').GetLocation.MakeScope.Self))]" # todo: CHANGED MINOR
  flavor_teu.7.title: "Mestské zákony [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_teu.7.entry: "Mestské zákony Gdaňska" # todo: NEW TRANSLATION
  flavor_teu.7.desc: "Rang [target_location.GetRank.GetName] [target_location.GetName] je ekonomickým pilierom a hlavným obchodným prístavom [ROOT.GetCountry.GetLongName]. On, podobne ako niekoľko ďalších, naďalej využíva $lubeck$ City Law kvôli hlbokým väzbám s [target_country.GetLongName], čo je tiež bod napätia medzi nimi a ich [ROOT.GetCountry.GetGovernment.GetAdjective] pánmi. Aby sme ukončili konflikt, [ROOT.GetCountry.GetNameWithNoTooltip] je ochotné nechať [target_location.GetNameWithNoTooltip] prijať [ShowEstatePrivilegeName('kulm_law')] pri zachovaní niektorých privilégií súčasného poriadku, posilnení miestnej rady a udelení väčšej autonómie. Takéto riešenie umožní [target_location.GetRank.GetNameWithNoTooltip] prosperovať ako obchodné centrum v [target_location.GetMarket.GetName]." # todo: NEW TRANSLATION
@@ -48,11 +48,6 @@
  flavor_teu.8.a: "Uvaliť vysokú daň." # todo: NEW TRANSLATION
  flavor_teu.8.b: "Uložiť im miernu daň." # todo: NEW TRANSLATION
  flavor_teu.8.c: "Nájdeme iný zdroj príjmov." # todo: NEW TRANSLATION
- flavor_teu.11.title: "Revízia [ShowEstatePrivilegeNameWithNoTooltip('kulm_law')]" # todo: NEW TRANSLATION
- flavor_teu.11.entry: "Revízia Kulmského práva" # todo: NEW TRANSLATION
- flavor_teu.11.desc: "[ShowSituationName('black_death')] zdecimovala celý kontinent [ShowContinentName('europe')], vyhubila množstvo miest a ponorila osady do ruín. Hoci ekonomický dopad na [ROOT.GetCountry.GetLongName] bol hrozný, horšie je, že nižší počet obyvateľov v Nemecku znížil migračný tlak a zmenšil rast populácie v [ShowAreaName('prussia_area')]. Pokiaľ neposkytneme viac stimulov pre prisťahovalcov do [ROOT.GetCountry.GetAdjectiveWithNoTooltip] krajín, čoskoro zostaneme bez migrantov, ktorí tvoria podstatnú súčasť našej misie pokresťančovania." # todo: NEW TRANSLATION
- flavor_teu.11.a: "Poskytnúť migrantom viac výhod." # todo: NEW TRANSLATION
- flavor_teu.11.b: "Budeme sa s tým musieť vysporiadať." # todo: NEW TRANSLATION
  flavor_teu.12.title: "Monopol na [ShowGoodsNameWithNoTooltip('amber')]" # todo: NEW TRANSLATION
  flavor_teu.12.entry: "Monopol na jantár" # todo: NEW TRANSLATION
  flavor_teu.12.desc: "[ROOT.GetCountry.GetLongName] vlastní množstvo zdrojov a prírodných bohatstiev, no málo z nich je také významné a žiadané ako [target_goods.GetName]. Práve preto ho [ROOT.GetCountry.GetFlavorRank] postavil pod [ROOT.GetCountry.GetGovernment.GetAdjective] jurisdikciu a bude ho naďalej považovať za cenný monopol. Takýto protekcionizmus však riskuje rozhorčenie [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], ktorí chcú byť zahrnutí do tohto obchodu a mohli by z neho veľa profitovať." # todo: NEW TRANSLATION
@@ -89,10 +84,6 @@
  flavor_teu.17.a: "Stať sa patrónom [target_character.GetArtistType.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_teu.17.a.entry: "Staňte sa patrónom umelca." # todo: NEW TRANSLATION
  flavor_teu.17.b: "Nemôžeme si dovoliť takéto prostriedky." # todo: NEW TRANSLATION
- teu_impact_on_kulm_law: "[ShowEstatePrivilegeName('kulm_law')] bude upravený o:\n#g +10.0%#! [ShowModifierTypeName('rural_migration_attraction')]\n#r -10.0%#! [ShowModifierTypeName('burghers_estate_max_tax')]" # todo: NEW TRANSLATION
- teu_impact_on_kulm_law_not_revised: "[ShowEstatePrivilegeName('kulm_law')] bude upravený o:\n#r -50.0%#! [ShowModifierTypeName('german_migration_attraction_modifier')]" # todo: NEW TRANSLATION
- kulm_law_revised_tooltip: "Revidoval [ShowEstatePrivilegeName('kulm_law')] prostredníctvom $flavor_teu.11.title$ [Concept('event','udalosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- kulm_law_not_revised_tooltip: "Rozhodol sa nerevidovať [ShowEstatePrivilegeName('kulm_law')] prostredníctvom $flavor_teu.11.title$ [Concept('event','udalosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_teu.100.title: "Pruská križiacka výprava" # todo: NEW TRANSLATION
  flavor_teu.100.desc: "Pred mnohými rokmi slávni križiaci Baltu vyhlásili svoju Pruskú križiacku výpravu na slávu Krista. Mnohí muži nasledovali jej volanie, jedným z nich bol pýcha [ROOT.GetCountry.GetAdjective] koruny: [target.GetName]." # todo: NEW TRANSLATION
  flavor_teu.100.desc.crusader_returns: "$flavor_teu.100.desc$\n\nPrelial sa krv, získala sa prestíž a česť bola obhájená, zatiaľ čo neveriaci a zlí pohania sa pred jeho svätým hnevom chveli strachom. Teraz sa vrátil do náručia svojho veľkolepého [ROOT.GetCountry.GetFlavorRank]!" # todo: CHANGED
@@ -263,4 +254,4 @@
  flavor_dan_teu.9.desc_failure: "$flavor_dan_teu.9.desc_common$ Bohužiaľ, [the_deciding_nation.GetName] návrh odmietli, nútiac nás nielen potlačiť toto povstanie, ale aj znášať následky a ďalšiu nespokojnosť na desaťročia. No, možno sa to pri dostatočnom úsilí jedného dňa integruje." # todo: NEW TRANSLATION
  flavor_dan_teu.9.a: "To nám vyhovuje!" # todo: NEW TRANSLATION
  flavor_dan_teu.9.b: "Sakra." # todo: NEW TRANSLATION
- teu_successful_dealings: "Úspešné rokovania"" # todo: NEW TRANSLATION
+ teu_successful_dealings: "Úspešné rokovania„" # todo: NEW TRANSLATION

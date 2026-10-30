@@ -3,6 +3,9 @@
  revoke_town_rights_desc: "" # todo: NEW TRANSLATION
  REVOKE_TOWN_RIGHTS_FROM: "Odobrať [Concept('town_rights','mestské práva')|E] od [TownRightsItem.GetFirstLocationName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REVOKE_LOCATION_TOWN_RIGHT: "Odobrať [Concept('town_rights','mestské práva')|E] z [Location.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ upgrade_town_rights: "Rozšíriť mestské práva" # todo: NEW TRANSLATION
+ UPGRADE_TOWN_RIGHTS_TO: "Rozšíriť na [TownRightsItem.GetType.GetUpgradesTo.GetName] v lokalite [TownRightsItem.GetFirstLocationName]" # todo: NEW TRANSLATION
+ UPGRADE_LOCATION_TOWN_RIGHT: "Rozšíriť na [TownRights.GetType.GetUpgradesTo.GetName] v lokalite [TownRights.GetLocation.GetName]" # todo: NEW TRANSLATION
  staple_port: "Staplový prístav" # todo: NEW TRANSLATION
  staple_port_desc: "Tomuto [Concept('location','lokalite')|e] boli udelené právne privilégiá, ktoré dávajú [ShowEstateTypeName('burghers_estate')] väčšie práva nad miestnym [Concept('trade','obchodom')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  granary_town: "Mesto so sýpkou" # todo: NEW TRANSLATION
@@ -16,6 +19,11 @@
  mining_charter: "Ťažobné privilégium" # todo: NEW TRANSLATION
  mining_charter_desc: "Táto [Concept('location','lokalita')|e] získala formálne práva na prevádzkovanie a rozširovanie ťažobných operácií, čím sa zvyšuje rozsah ťažby. [ShowEstateTypeName('peasants_estate')] sú v dôsledku toho podrobení prísnejším povinnostiam." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  mining_charter_rgo_tt: "Má ťažobnú surovinu [Concept('raw_material','surovinu')|e] alebo produkuje [ShowGoodsName('salt')] vo vnútrozemí" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ plantation_charter: "Plantážna charta" # todo: NEW TRANSLATION
+ plantation_charter_desc: "Tejto [Concept('location','lokalite')|e] boli udelené formálne práva na rozširovanie plantáží, čím sa zvýši rozsah výroby. [ShowEstateTypeName('peasants_estate')] v dôsledku toho podliehajú prísnejším povinnostiam." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ plantation_charter_rgo_tt: "Má plantážnu alebo koreninovú [Concept('raw_material','surovinu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ novo_brdo_charter: "Banské práva v Novo Brde" # todo: NEW TRANSLATION
+ novo_brdo_charter_desc: "Táto [Concept('location','lokalita')|e] sa riadi zákonníkom Novo Brda, súborom právnych predpisov upravujúcich bezpečnosť v baniach, majetkové práva a prácu, ktorý ako prví spísali saskí baníci (Sasi), ktorí sa usadili v týchto kopcoch. Dobre spravované bane neustále prosperujú, no [ShowEstateTypeName('peasants_estate')] podliehajú prísnejšiemu dohľadu podľa zákonníka a jeho presadzovanie v celej ríši zaťažuje zákonodarcov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  studium_privileges: "Študijné privilégiá" # todo: NEW TRANSLATION
  studium_privileges_desc: "Táto [Concept('location','lokalita')|e] bola uznaná za centrum vzdelania, čo jej udeľuje právo udržiavať školy a pritiahnuť učencov. Takéto aktivity napomáhajú rozvoju [Concept('literacy','gramotnosti')|e] a šíreniu [Concept('institution','inštitúcii')|e], hoci zriedka priamo obohacujú štátnu pokladnicu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  studium_privileges_rank_tt: "Lokalita je [ShowLocationRankName('city')] alebo [ShowLocationRankName('megalopolis')]" # todo: NEW TRANSLATION
@@ -38,6 +46,28 @@
  not_forcefully_revoked_last_10_years_tt: "Mestské práva neboli v posledných 10 rokoch násilne odobrané." # todo: NEW TRANSLATION
  royal_masonry_rights: "Práva na stavebné materiály" # todo: NEW TRANSLATION
  royal_masonry_rights_desc: "Tomuto [Concept('location','lokalite')|e] boli udelené právne privilégiá týkajúce sa výroby a distribúcie [ShowGoodsName('masonry')] a [ShowGoodsName('glass')], čo mu poskytuje výraznú konkurenčnú výhodu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ royal_market_rights: "Práva veľkého trhu" # todo: NEW TRANSLATION
+ royal_market_rights_desc: "Tejto [Concept('location','lokalite')|e] bolo udelené právo usporadúvať veľké regulované trhy, ktoré priťahujú obchodníkov z celej ríše a rozširujú kapacitu jej budov [Concept('trade','obchodu')|e] v každej fáze ich rozvoja." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ royal_staple_rights: "Veľký skladový prístav" # todo: NEW TRANSLATION
+ royal_staple_rights_desc: "Tejto [Concept('location','lokalite')|e] boli udelené rozsiahle zákonné výsady skladového prístavu, ktoré dávajú [ShowEstateTypeName('burghers_estate')] oveľa väčšie práva na miestny [Concept('trade','obchod')|e] a rozširujú kapacitu jej budov [Concept('trade','obchodu')|e] v každej fáze ich rozvoja." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tooling_charter: "Charta nástrojárstva" # todo: NEW TRANSLATION
+ tooling_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('tools')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ jewelry_charter: "Charta zlatníctva" # todo: NEW TRANSLATION
+ jewelry_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('jewelry')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ naval_charter: "Charta námorných zásob" # todo: NEW TRANSLATION
+ naval_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('naval_supplies')] a [ShowGoodsName('tar')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ textile_charter: "Textilná charta" # todo: NEW TRANSLATION
+ textile_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('cloth')] a [ShowGoodsName('fine_cloth')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ weaponry_charter: "Charta zbrojárstva" # todo: NEW TRANSLATION
+ weaponry_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('weaponry')], [ShowGoodsName('firearms')] a [ShowGoodsName('cannons')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ book_charter: "Tlačiarenská charta" # todo: NEW TRANSLATION
+ book_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('paper')], [ShowGoodsName('books')] a [ShowGoodsName('dyes')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ artisan_charter: "Remeselnícka charta" # todo: NEW TRANSLATION
+ artisan_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('leather')], [ShowGoodsName('pottery')] a [ShowGoodsName('furniture')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ brewing_charter: "Charta výroby liehovín" # todo: NEW TRANSLATION
+ brewing_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('liquor')], [ShowGoodsName('beer')] a [ShowGoodsName('wine')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ masonry_charter: "Kamenárska charta" # todo: NEW TRANSLATION
+ masonry_charter_desc: "Tejto [Concept('location','lokalite')|e] bola udelená charta na výrobu a distribúciu [ShowGoodsName('masonry')] a [ShowGoodsName('glass')]. Po tom, čo koruna formálne potvrdí širšie výsady, môžu nasledovať úplné a rozsiahle mestské práva." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  magdeburg_rights_town_rights: "$magdeburg_rights$" # todo: NEW TRANSLATION
  magdeburg_rights_town_rights_desc: "$magdeburg_rights_desc$" # todo: NEW TRANSLATION
  unlock_mageburg_town_rights_tt: "Odomkne [ShowTownRightsName('magdeburg_rights_town_rights')] a [ShowTownRightsName('nuremberg_rights_town_rights')] [town_rights]" # todo: NEW TRANSLATION
@@ -65,7 +95,7 @@
  royal_free_cities_town_rights_desc: "Vyhlásením našich mestských centier za kráľovské a slobodné mestá môžeme zabrániť tomu, aby sa naše [ShowEstateTypeName('nobles_estate')] v nich koncentrovali mocou." # todo: NEW TRANSLATION
  bohemian_royal_cities_town_rights: "Kráľovské mestské práva" # todo: NEW TRANSLATION
  bohemian_royal_cities_town_rights_desc: "Udelenie mestám privilégií byť priamym vlastníctvom nášho vládcu oslabí [ShowEstateTypeName('nobles_estate')] a môže pomôcť nášmu štátu priamo získať z nich viac hodnoty." # todo: NEW TRANSLATION
- swedish_city_rights: "Práva Stadsrättigheter" # todo: NEW TRANSLATION
+ swedish_city_rights: "Stadsrättigheter" # todo: CHANGED (predtym: Práva Stadsrättigheter)
  swedish_city_rights_desc: "Obchodníci tohto [Concept('location','lokality')|e] získajú rozšírené privilégiá na výkon obchodu bez zahraničnej konkurencie." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  norwegian_city_rights: "Práva Kjøpstad" # todo: NEW TRANSLATION
  norwegian_city_rights_desc: "Udelenie privilégií obchodníkom tohto [Concept('location','lokality')|e] a poskytnutie preferenčného zaobchádzania posilní naše obchodné trasy a poškodí zahraničných obchodníkov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -94,6 +124,9 @@
  unlock_ville_franche_town_rights_tt: "Odomkne [ShowTownRightsName('ville_franche_town_rights')] [town_rights]" # todo: NEW TRANSLATION
  borgo_franco_town_rights: "Práva Borgo Franco" # todo: NEW TRANSLATION
  borgo_franco_town_rights_desc: "Šírenie komun v rámci $italy_region$ je realitou, tvoriac chrbticu regiónu. Často sú považované za #italic Borgo Franco#! (slobodné mestá) a tešia sa mnohým špeciálnym privilégiám v porovnaní s vidiekom." # todo: NEW TRANSLATION
+ ara_consulate_sea_town_rights: "Konzulát mora" # todo: NEW TRANSLATION
+ ara_consulate_sea_town_rights_desc: "Aby štát zaručil obchodníkom spravodlivý a nestranný systém, udelil tejto lokalite samosprávnu právomoc prijímať v týchto záležitostiach vlastné zákony, namiesto toho, aby sa pri ich riešení spoliehala na korunu." # todo: NEW TRANSLATION
+ consulate_sea_no_province_has_the_town_right: "Žiadna [Concept('location','lokalita')|e] v [Concept('region','regióne')|e] nemá [Concept('town_rights','mestských právach')|e] [ShowTownRightsName('ara_consulate_sea_town_rights')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  scandinavian_fishing_privileges: "Fiskeriprivilegier" # todo: NEW TRANSLATION
  scandinavian_fishing_privileges_desc: "Tomuto [Concept('location','lokalite')|e] boli udelené výhradné práva na blízke rybolovné oblasti a obchod so sušenými a solenými rybami. Nórske pobrežné mestá organizované okolo týchto privilégií zásobovali [ShowGoodsName('fish')] po celom severnom $europe$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  scandinavian_bergslag_privileges: "Bergslagsprivilegier" # todo: NEW TRANSLATION

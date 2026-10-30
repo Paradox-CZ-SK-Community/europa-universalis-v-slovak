@@ -8,12 +8,12 @@
  wokou_events.2.title: "Náš nájazd na [target_province.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  wokou_events.2.desc: "Naša nenápadná invázia do [target_province.GetName] bola veľkým úspechom! Počas niekoľkých dní sa nám podarilo zajať značné bohatstvo z pobrežných osád a pritom sme chytili aj mnoho otrokov. Okrem toho sme získali obrovské množstvá tovaru, predovšetkým [ShowGoodsName('silk')], ktoré určite dobre speňažíme." # todo: NEW TRANSLATION
  wokou_events.2.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
- wokou_amount_of_slaves_gained: "Spolu bolo v [ROOT.GetCountry.GetCapital.GetName] získaných [SCOPE.GetLocalVariable('slaves_amount').GetValue|0] [ShowPopTypeName('slaves')] ." # todo: NEW TRANSLATION
+ wokou_amount_of_slaves_gained: "Spolu bolo v [ROOT.GetCountry.GetCapital.GetAltAdjective('L')] získaných [SCOPE.GetLocalVariable('slaves_amount').GetValue|0] [ShowPopTypeName('slaves')] ." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  wokou_events.3.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] utekajú do [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  wokou_events.3.desc: "Nie všetci [ROOT.GetCountry.GetAdjective] občania sú takí šťastní ako naši dvorania alebo [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], ktorí žijú veľmi napĺňajúcimi životmi. Mnohí, najmä [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] z [target_location.GetName], žijú v hrozných alebo priam ubohých podmienkach. Niet divu, že mnohí z nich siahajú po zločine, aby utiekli pred chudobou. Mnoho [target_pop.GetName], napríklad, zjavne ušlo zo svojich domovov, aby sa pridali k [target_country.GetLongName]." # todo: NEW TRANSLATION
  wokou_events.3.a: "Ich životy sú dosť dobré! Ich útek je pravá zbabelosť." # todo: NEW TRANSLATION
  wokou_events.4.title: "Núdza v [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- wokou_events.4.desc: "Posledné mesiace do [ROOT.GetCountry.GetCapital.GetName] prichádza veľký počet [target_pop.GetName]. Utekajú z [target_location.GetName], kde čelili úplnej chudobe a utrpeniu. Preto sa rozhodli zanechať svoje minulé životy a vziať svoje rodiny do [ROOT.GetCountry.GetName], kde začnú nový život zločincov, ale spravodlivých zločincov." # todo: NEW TRANSLATION
+ wokou_events.4.desc: "Posledné mesiace do [ROOT.GetCountry.GetCapital.GetAltAdjective('G')] prichádza veľký počet [target_pop.GetName]. Utekajú z [target_location.GetName], kde čelili úplnej chudobe a utrpeniu. Preto sa rozhodli zanechať svoje minulé životy a vziať svoje rodiny do [ROOT.GetCountry.GetAltAdjective('G')], kde začnú nový život zločincov, ale spravodlivých zločincov." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  wokou_events.4.a: "Urobili správne rozhodnutie." # todo: NEW TRANSLATION
  wokou_events.5.title: "Nájazd na [target_country.GetAdjectiveWithNoTooltip] flotilu" # todo: NEW TRANSLATION
  wokou_events.5.desc: "Momentálne sa flotila [target_country.GetAdjective] lodí vracia domov z nadmorskej misie nesúc množstvo tovaru a bohatstva, ktoré by sme určite vedeli využiť lepšie. Na rozdiel od mnohých obchodných lodí nie sú presne len ľahko strážené a utrpíme pri tom určité straty. Potenciálny zisk však za tie riziká stojí." # todo: NEW TRANSLATION
@@ -37,7 +37,7 @@
  wokou_events.102.a: "Budeme ich prísne trestať." # todo: NEW TRANSLATION
  wokou_events.102.b: "$wokou_events.100.b$" # todo: NEW TRANSLATION
  wokou_events.200.title: "Neúprosné nájazdy [ROOT.GetCountry.Custom('GetWokouName')|U]" # todo: NEW TRANSLATION
- wokou_events.200.desc: "Ohavní piráti z [pirate_country.GetName] naše pobrežia neprestajne prepadávajú už niekoľko rokov. Hoci aktivita [ROOT.GetCountry.Custom('GetWokouName')|l] nám nie je cudzia, tentoraz je to iné — tí hajzli si zabezpečili podporu patrónu, [target_country.GetName]. Musíme zasiahnuť a vyvinúť tlak na [target_country.GetAdjectiveWithNoTooltip]ho [target_country.GetGovernment.GetRulerTitle], aby pirátstvo už nikdy neohrozovalo vody [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ wokou_events.200.desc: "Ohavní piráti z [pirate_country.GetName] naše pobrežia neprestajne prepadávajú už niekoľko rokov. Hoci aktivita [ROOT.GetCountry.Custom('GetWokouName')|l] nám nie je cudzia, tentoraz je to iné — tí hajzli si zabezpečili podporu patrónu, [target_country.GetName]. Musíme zasiahnuť a vyvinúť tlak na [target_country.GetAdjectiveWithNoTooltip]ho [target_country.GetGovernment.GetRulerTitle], aby pirátstvo už nikdy neohrozovalo vody [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  wokou_events.200.a: "Vyhrešíme [target_country.GetLongNameWithNoTooltip] s hrozbou odplaty." # todo: NEW TRANSLATION
  wokou_events.200.b: "Nie sme v pozícii požadovať také veci." # todo: NEW TRANSLATION
  wokou_events.201.title: "Požiadavky od [prev_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -45,8 +45,8 @@
  wokou_events.201.a: "Podriaďme sa, aspoň zatiaľ." # todo: NEW TRANSLATION
  wokou_events.201.b: "[ROOT.GetCountry.Custom('GetWokouName')|l] nie sú náš problém." # todo: NEW TRANSLATION
  wokou_events.202.title: "Potrestaní piráti" # todo: NEW TRANSLATION
- wokou_events.202.desc: "[target_country.GetName] reagoval na naše požiadavky kladne — nielenže zastavili svoju podporu pre [pirate_country.GetName], ale poslali nám jedného z pirátskych vodcov, aby bol súdený v [ROOT.GetCountry.GetName]. Ako to vyzerá, ohavného piráta [target_character.GetName] už čaká trest smrti a bol uvarený zaživa v [target_location.GetName], ako si zaslúžil." # todo: NEW TRANSLATION
+ wokou_events.202.desc: "[target_country.GetName] reagoval na naše požiadavky kladne — nielenže zastavili svoju podporu pre [pirate_country.GetName], ale poslali nám jedného z pirátskych vodcov, aby bol súdený v [ROOT.GetCountry.GetAltAdjective('L')]. Ako to vyzerá, ohavného piráta [target_character.GetName] už čaká trest smrti a bol uvarený zaživa v [target_location.GetName], ako si zaslúžil." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  wokou_events.202.a: "Dúfajme, že to ostatných odradí." # todo: NEW TRANSLATION
  wokou_events.203.title: "[target_country.GetNameWithNoTooltip] vzdoruje" # todo: NEW TRANSLATION
  wokou_events.203.desc: "[target_country.GetName] odmietol splniť naše požiadavky na vydanie vodcov [ROOT.GetCountry.Custom('GetWokouName')|l]. Neuvedomujú si, že to znamená vojnu s [pirate_country.GetName] a možno aj ohrozenie ich [target_country.GetFlavorRank]?" # todo: NEW TRANSLATION
- wokou_events.203.a: "Budeme musieť očistiť more sami."" # todo: NEW TRANSLATION
+ wokou_events.203.a: "Budeme musieť očistiť more sami.„" # todo: NEW TRANSLATION

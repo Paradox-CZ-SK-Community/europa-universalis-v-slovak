@@ -19,13 +19,15 @@
  COLONIAL_CHARTER_CURRENT_WITH_CABINET: "V dôsledku akcie nášho [Concept('cabinet','kabinetu')|e] sa môžu presunúť ďalší [Concept('pops','populácie')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_CHARTER_CURRENT_WITH_CABINET_ENTRY: "$BULLET_WITH_TAB$$VAL|Y$ [Concept('pops','Populácie')|e] sa presunú z [LOCATION.GetName] na kolonizovanie [TARGET_LOCATION.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_CHARTER_CTA: "Ľavým kliknutím presuňte kameru" # todo: NEW TRANSLATION
- COLONIAL_CHARTER_COUNT: "Momentálne je $OWN|Y$ [Concept('locations','lokality')|E] kolonizovaných [COUNTRY.GetName], pričom ďalších $POSSIBLE|Y$ je stále možné." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- COLONIAL_MARITIME_IN: "[Concept('maritime_presence','Námorná prítomnosť')|E] v [REGION.GetName]: x$VAL|Y2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COLONIAL_CHARTER_COUNT: "Momentálne je $OWN|Y$ [Concept('locations','lokality')|E] kolonizovaných [COUNTRY.GetAltAdjective('G')], pričom ďalších $POSSIBLE|Y$ je stále možné." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ COLONIAL_MARITIME_IN_SEAZONE: "[Concept('maritime_presence','Námorná prítomnosť')|E] v oblasti [LOCATION.GetName]: x$VAL|Y2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COLONIAL_MARITIME_IN_SEAZONES: "[Concept('maritime_presence','Námorná prítomnosť')|E] v $COUNT|Y$ morských oblastiach: #TOOLTIP:$BREAKDOWN_TAG$ x$VAL|L2$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COLONIAL_MARITIME_SEAZONE_ENTRY: "[LOCATION.GetName]: x$VAL|Y2$" # todo: NEW TRANSLATION
  COLONIAL_MARITIME_NOT_IN: "[REGION.GetName] nie je [Concept('coastal','pobrežný')|e]: x$VAL|Y2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- COLONIAL_DISTANCE: "Vzdialenosť od [COUNTRY.GetCapital.GetName]: x$VAL|Y2$"" # todo: NEW TRANSLATION
+ COLONIAL_DISTANCE: "Vzdialenosť od [COUNTRY.GetCapital.GetName]: x$VAL|Y2$„" # todo: NEW TRANSLATION
  COLONIZE_DESC: "Pokúsime sa [Concept('colonize','kolonizovať')|e] [PROVINCE_DEFINITION.GetName] udelením [Concept('colonial_charter','koloniálnou listinou')|e] v ňom" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_TARGET_IS_ABOUT_TO_BE_OURS: "[LOCATION.GetName] bude čoskoro náš!" # todo: NEW TRANSLATION
- COLONIAL_TARGET_IS_ABOUT_TO_BE_OTHERS: "[LOCATION.GetName] čoskoro bude vo vlastníctve [TARGET_COUNTRY.GetName]!" # todo: NEW TRANSLATION
+ COLONIAL_TARGET_IS_ABOUT_TO_BE_OTHERS: "[LOCATION.GetName] čoskoro bude vo vlastníctve [TARGET_COUNTRY.GetAltAdjective('L')]!" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  COLONIAL_TARGET_NO_COLONIAL_BUILDINGS_KNOWN: "Nie sú známe žiadne [Concept('buildings','budovy')|e] vhodné na kolonizáciu!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_TARGET_NO_POSSIBLE_BUILDINGS: "@trigger_no! Neexistujú žiadne možné [Concept('explored','preskúmané')|e] [Concept('locations','lokalít')|e], ktoré by sme mohli [Concept('colonize','kolonizovať')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_TARGET_NO_KNOWN_LOCATIONS: "Nevie o žiadnych [Concept('locations','lokality')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -35,15 +37,15 @@
  ABANDON_COLONY_BUTTON: "Opustiť" # todo: NEW TRANSLATION
  ABANDON_ACTION: "Opustiť túto [Concept('colonial_charter','koloniálnu listinu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_FLIP_HEADER: "Kolonizačný pokrok pre [LOCATION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- COLONIAL_TARGET_LOCATION_ALREADY_OWNED: "Táto [Concept('location','lokalita')|e] je už vo vlastníctve [COUNTRY.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- COLONIAL_TARGET_LOCATION_TRUCE_WITH_OWNER: "$BULLET_WITH_TAB$[COUNTRY.GetName] má [Concept('truce','prímerie')|e] s [TARGET_COUNTRY.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COLONIAL_TARGET_LOCATION_ALREADY_OWNED: "Táto [Concept('location','lokalita')|e] je už vo vlastníctve [COUNTRY.GetAltAdjective('L')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ COLONIAL_TARGET_LOCATION_TRUCE_WITH_OWNER: "$BULLET_WITH_TAB$[COUNTRY.GetName] má [Concept('truce','prímerie')|e] s [TARGET_COUNTRY.GetAltAdjective('I')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  COLONIAL_TARGET_LOCATION_NOT_ENOUGH_POWER_PROJECTION: "$BULLET_WITH_TAB$[TARGET_COUNTRY.GetName] potrebuje mať o $VAL|0Y$ viac [Concept('power_projection','projekcia sily')|e] než súčasný vlastník ([COUNTRY.GetName]: [COUNTRY.GetPowerProjection|0]), aby mala šancu zmeniť vlastníctvo tohto [Concept('location','lokality')|e] na svoju [Concept('country','krajinu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_TARGET_LOCATION_NOT_ENOUGH_MIGRANTS: "$BULLET_WITH_TAB$Iba $MOVED|V$ z našich [Concept('pops','populácií')|e] sa presťahovalo do [LOCATION.GetName]; keď ich bude aspoň #TOOLTIP:$BREAKDOWN_TAG$ $NEED|%L2$#!, lokalita bude naša." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONIAL_TARGET_LOCATION_NOBODY_LIVES_THERE: "$BULLET_WITH_TAB$V [LOCATION.GetName] nežije dosť ľudí.\nAktuálne: [LOCATION.GetTotalPopulation]\nMinimálny potrebný počet obyvateľov: #TOOLTIP:$BREAKDOWN_TAG$ $NEED|V$#!" # todo: NEW TRANSLATION
- COLONIAL_TARGET_LOCATION_CAN_FLIP: "[LOCATION.GetName] môže prejsť do vlastníctva [COUNTRY.GetName]." # todo: NEW TRANSLATION
- COLONIAL_TARGET_LOCATION_CANNOT_FLIP: "[LOCATION.GetName] ešte nemôže prejsť do vlastníctva [COUNTRY.GetName]:\n$REASONS$" # todo: NEW TRANSLATION
+ COLONIAL_TARGET_LOCATION_CAN_FLIP: "[LOCATION.GetName] môže prejsť do vlastníctva [COUNTRY.GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ COLONIAL_TARGET_LOCATION_CANNOT_FLIP: "[LOCATION.GetName] ešte nemôže prejsť do vlastníctva [COUNTRY.GetAltAdjective('G')]:\n$REASONS$" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  COLONIAL_TARGET_ENTRY: "$BULLET_WITH_TAB$[LOCATION.GetName]: Presťahovalo sa - $MOVED|V$; Potrebné - #TOOLTIP:$BREAKDOWN_TAG$ $NEED|%L2$#!" # todo: NEW TRANSLATION
- COLONY_POP_TARGET_PP_COUNTRY: "[Concept('power_projection','Projekcia sily')|e] krajiny [COUNTRY.GetName]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ COLONY_POP_TARGET_PP_COUNTRY: "[Concept('power_projection','Projekcia sily')|e] krajiny [COUNTRY.GetAltAdjective('G')]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  COLONY_POP_TARGET_PP_EXISTS: "[Concept('power_projection','Projekcia sily')|e] v [LOCATION.GetName]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONY_POP_TARGET_MIN_POPS: "Minimálny počet [Concept('pops','populácie')|e] potrebných v [LOCATION.GetName] bez ohľadu na [Concept('population','populáciu')|e]: $VAL$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COLONY_POP_TARGET_MAX_POPS: "Maximálny počet [Concept('pops','populácie')|e] potrebných v [LOCATION.GetName] bez zohľadnenia [Concept('population','populácia')|e]: $VAL$" # todo: CHANGED # todo: CONCEPT CASE

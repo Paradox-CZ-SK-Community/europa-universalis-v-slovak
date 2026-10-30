@@ -10,7 +10,7 @@
  WAR_LATERALVIEW_GRANT_INDEPENDENCE: "Udeliť nezávislosť"
  WAR_LATERALVIEW_REIN_IN_SUBJECT: "Udržať podriadeného" # todo: NEW TRANSLATION
  WAR_LATERALVIEW_REIN_IN_SUBJECT_TOOLTIP: "Otvorte mierové rokovania, aby ste ukončili túto vojnu o nezávislosť a zároveň si ponechali [COUNTRY.GetName] ako svojho vazala.\n\nAk uzavriete mier bez udelenia nezávislosti, [COUNTRY.GetName] sa vráti do svojho stavu [Concept('subject','vazala')|e]. Môžete tiež jednoducho dohodnúť [Concept('white_peace','status quo ante bellum')|e], aby sa vojna skončila bez územných zmien.\n\n#S Máte dostatočné [Concept('war_score','vojnové skóre')|e], aby ste prinútili [COUNTRY.GetName] prijať mier.#!" # todo: CHANGED # todo: CONCEPT CASE
- WAR_LATERALVIEW_GRANT_INDEPENDENCE_THIRD_OUTCOME_HINT: "#S Tip: Toto nie je vaša jediná možnosť. Ak vyjednáte mier bez udelenia nezávislosti — alebo jednoducho vyhráte túto vojnu — [COUNTRY.GetName] sa opäť stane vaším [Concept('subject','vazalom')|e].#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WAR_LATERALVIEW_GRANT_INDEPENDENCE_THIRD_OUTCOME_HINT: "#S Tip: Toto nie je vaša jediná možnosť. Ak vyjednáte mier bez udelenia nezávislosti — alebo jednoducho vyhráte túto vojnu — [COUNTRY.GetAltAdjective('A')] sa opäť stane vaším [Concept('subject','vazalom')|e].#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  WARGOAL_IS_CONTESTED: "@trigger_no!Cieľ vojny je stále sporný."
  WARGOAL_NOT_MAX_TICKED_ENOUGH_DAYS_PEACE: "Keď uplynie $NEED|Y$ dní bez sporu o cieľ vojny, môže byť podpísané status quo ante bellum a $WHO|Y$ si ponechá $NAME|Y$!\nAktuálne uplynulo $DAYS|G$ dní."
  WARGOAL_TICKED_ENOUGH_DAYS_PEACE: "Ubehlo viac než $NEED|Y$ dní, počas ktorých bol $NAME|Y$ plne obránený, $WHO|Y$ teraz môže vynútiť status quo ante bellum!"
@@ -28,10 +28,10 @@
  WAR_REQUIRES_DEFENDER_PEACE_TREATIES_TOOLTIP: "Nasledujúce [Concept('peace_treaties','mierové dohody')|e] musia byť vynútené obrancom, aby sa táto vojna skončila: $PEACE_TREATIES$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WAR_LATERALVIEW_DATE_TOOLTIP: "Vojna začala [WarLateralView.GetWar.GetStartDate]"
  WAR_LATERALVIEW_WAR_GOAL_TOOLTIP: "Túto vojnu začal [WarLateralView.GetWar.GetOriginalAttacker.GetName] proti [WarLateralView.GetWar.GetOriginalDefendersList].\n[WarLateralView.GetWar.GetWarGoal.GetDescription]"
- WAR_OVERVIEW_WINLOSE_VS: "@[COUNTRY.GetFlag]! $NUM$ proti @[TARGET_COUNTRY.GetFlag]! $TARGET_NUM$"
+ WAR_OVERVIEW_WINLOSE_VS: "[COUNTRY.GetFlagIconWithNoTooltip] $NUM$ proti [TARGET_COUNTRY.GetFlagIconWithNoTooltip] $TARGET_NUM$" # todo: CHANGED (predtym: @[COUNTRY.GetFlag]! $NUM$ proti @[TARGET_COUNTRY.GetFlag]! $TARGET_NUM$)
  WAR_OVERVIEW_RESULT_WIN: "#G Výhra#!"
  WAR_OVERVIEW_RESULT_LOSS: "#R Prehra#!"
- WAR_OVERVIEW_BLOCKADED_PERCENT_TOOLTIP: "$NUM$ z $MAX$ prístavov sú [Concept('blockaded','zablokované')|e] v @[COUNTRY.GetFlag]! [SKCountry(COUNTRY,'L')]" # todo: CHANGED
+ WAR_OVERVIEW_BLOCKADED_PERCENT_TOOLTIP: "$NUM$ z $MAX$ prístavov sú [Concept('blockaded','zablokované')|e] v [COUNTRY.GetFlagIconWithNoTooltip] [COUNTRY.GetAltAdjective('L')]" # todo: CHANGED (predtym: $NUM$ z $MAX$ prístavov sú [Concept('blockaded','zablokované')|e] v @[COUNTRY.GetFlag]! [SKCountry(COUNTRY,'L')]) # todo: COUNTRY CASE # todo: CONCEPT CASE
  WAR_OVERVIEW_BATTLES_WON: "Vyhrané bitky"
  WAR_OVERVIEW_LAND_BATTLES_WON: "Vyhrané pozemné bitky"
  WAR_OVERVIEW_NAVAL_BATTLES_WON: "Vyhrané námorné bitky"
@@ -82,7 +82,7 @@
  WAR_SORT_EXHAUSTION_TT: "Zoradiť podľa [Concept('war_exhaustion','vojnovej vyčerpanosti')|e]"
  WAR_SORT_BLOCKADE_TT: "Zoradiť podľa [Concept('blockaded','zablokovaných')|e] [Concept('ports','prístavov')|e]"
  WAR_SCROLL_LIST_EMPTY: "Žiadne krajiny nespĺňajú tieto kritériá vyhľadávania"
- WAR_PLAYER_WARSCORE_TT: "[Player.GetName] [Concept('war_score','Vojnové skóre')|el] proti [WarLateralViewParticipant.GetCountry.GetName]: [WarLateralViewParticipant.GetPlayerWarScore|+=2%/]" # todo: CONCEPT CASE
+ WAR_PLAYER_WARSCORE_TT: "[Player.GetName] [Concept('war_score','Vojnové skóre')|el] proti [WarLateralViewParticipant.GetCountry.GetAltAdjective('D')]: [WarLateralViewParticipant.GetPlayerWarScore|+=2%/]" # todo: CONCEPT CASE # todo: COUNTRY CASE
  WAR_EXHAUSTION_TT: "[WarLateralViewParticipant.GetCountry.GetName] [Concept('war_exhaustion','Vojnová vyčerpanosť')|el]: [WarLateralViewParticipant.GetCountry.GetFixedPointCurrencyValue('war_exhaustion')|+]\nMaximálne: [WarLateralViewParticipant.GetCountry.GetModifierValue('max_war_exhaustion')]" # todo: CONCEPT CASE
  WAR_BLOCKADE_TT: "[WarLateralViewParticipant.GetCountry.GetBlockadedPercent|2%] z prístavov [WarLateralViewParticipant.GetCountry.GetAdjectiveWithNoTooltip] sú zablokované"
  WAR_PARTICIPATION_TT: "[WarLateralViewParticipant.GetCountry.GetName] [Concept('war_participation','Účasť vo vojne')|el]: [WarLateralViewParticipant.GetWarParticipation|0%]" # todo: CONCEPT CASE
@@ -97,6 +97,7 @@
  BLOCKADED_LOC_TT_ENTRY: "[LOCATION.GetRank.GetIcon][LOCATION.GetName]: [LOCATION.GetTotalPopulationWithBreakDown]"
  WAR_BATTLE_TOOLTIP_H: "$NAME$, $DATE$"
  WAR_BATTLE_TOOLTIP_SIZE: "$WIN$@army_strength! proti $LOSS$@army_strength!"
+ WAR_BATTLE_TOOLTIP_SIZE_NAVAL: "$WIN$@navy_strength! proti $LOSS$@navy_strength!" # todo: NEW TRANSLATION
  WAR_BATTLE_TOOLTIP_SC: "Skóre bitky: $SCORE|+=2$"
  WAR_BATTLE_TOOLTIP_W: "Víťazi: $WIN$\nStraty: $WINUNITS$"
  WAR_BATTLE_TOOLTIP_L: "Porazení: $LOSS$\nStraty: $LOSSUNITS$"
@@ -124,7 +125,7 @@
  JOIN_WAR_REASON_SupportRevolt: "Podpora povstalcov"
  JOIN_WAR_REASON_DESC_SupportRevolt: "[COUNTRY.GetName] podporuje povstanie [SKCountry(TARGET_COUNTRY,'G')]." # todo: CHANGED
  JOIN_WAR_REASON_SupportRevoltToReunite: "Podpora našich secesionistických povstalcov" # todo: NEW TRANSLATION
- JOIN_WAR_REASON_DESC_SupportRevoltToReunite: "[COUNTRY.GetName] chce, aby sa [TARGET_COUNTRY.GetName] odtrhla a pripojila k nim." # todo: NEW TRANSLATION
+ JOIN_WAR_REASON_DESC_SupportRevoltToReunite: "[COUNTRY.GetName] chce, aby sa [TARGET_COUNTRY.GetAltAdjective('A')] odtrhla a pripojila k nim." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  JOIN_WAR_REASON_Intervene: "Zastiahnuť"
  JOIN_WAR_REASON_DESC_Intervene: "[COUNTRY.GetName] zasahuje v prospech [SKCountry(TARGET_COUNTRY,'L')]." # todo: CHANGED
  JOIN_WAR_REASON_InternationalOrganization: "[INTERNATIONAL_ORGANIZATION.GetType.GetName] s [SKCountry(TARGET_COUNTRY,'I')]" # todo: CHANGED
@@ -142,10 +143,23 @@
  LEAVE_WAR_REASON_CivilWar: "Vypukla občianska vojna"
  LEAVE_WAR_REASON_Union: "Vytvorili [Concept('union','úniu')|e] s [SKCountry(TARGET_COUNTRY,'I')]" # todo: CHANGED
  LEAVE_WAR_REASON_Forced: "Donútený opustiť vojnu [SKCountry(TARGET_COUNTRY,'G')]" # todo: CHANGED
- LEAVE_WAR_REASON_Abandoned: "Opustili svojich priateľov [TARGET_COUNTRY.GetName] v ich hodine potreby"
- LEAVE_WAR_REASON_ForcedAbandoned: "Donútení svojím suzerénom opustiť svojich priateľov [TARGET_COUNTRY.GetName] v ich hodine potreby"
- LEAVE_WAR_REASON_BrokeFreeOfOverlord: "Oslobodili sa spod nadvlády svojho [Concept('overlord','suzeréna')|e] [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ LEAVE_WAR_REASON_Abandoned: "Opustili svojich priateľov [TARGET_COUNTRY.GetAltAdjective('A')] v ich hodine potreby" # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_ForcedAbandoned: "Donútení svojím suzerénom opustiť svojich priateľov [TARGET_COUNTRY.GetAltAdjective('A')] v ich hodine potreby" # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_BrokeFreeOfOverlord: "Oslobodili sa spod nadvlády svojho [Concept('overlord','suzeréna')|e] [TARGET_COUNTRY.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  LEAVE_WAR_REASON_Scripted: "Udalosti ich donútili odísť" # todo: NEW TRANSLATION
+ LEAVE_WAR_REASON_SENTENCE_WarEnded: "Vojna sa skončila." # todo: NEW TRANSLATION
+ LEAVE_WAR_REASON_SENTENCE_Annexed: "Bola anektovaná krajinou [TARGET_COUNTRY.GetAltAdjective('I')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_SENTENCE_CountryDoesNotExist: "Krajina už neexistuje." # todo: NEW TRANSLATION
+ LEAVE_WAR_REASON_SENTENCE_PeacedOut: "Uzavreli mier s krajinou [TARGET_COUNTRY.GetAltAdjective('I')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_SENTENCE_WasPeacedOut: "Krajina [TARGET_COUNTRY.GetName] v ich mene uzavrela mierovú dohodu." # todo: NEW TRANSLATION
+ LEAVE_WAR_REASON_SENTENCE_BecameSubject: "Stali sa podriadeným štátom krajiny [TARGET_COUNTRY.GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_SENTENCE_CivilWar: "Upadli do občianskej vojny." # todo: NEW TRANSLATION
+ LEAVE_WAR_REASON_SENTENCE_Union: "Vytvorili [Concept('union','únia')|e] s krajinou [TARGET_COUNTRY.GetAltAdjective('I')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE # todo: CONCEPT CASE
+ LEAVE_WAR_REASON_SENTENCE_Forced: "Krajina [TARGET_COUNTRY.GetName] ich prinútila opustiť vojnu." # todo: NEW TRANSLATION
+ LEAVE_WAR_REASON_SENTENCE_Abandoned: "Opustili svojich spojencov z krajiny [TARGET_COUNTRY.GetAltAdjective('G')] v núdzi." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_SENTENCE_ForcedAbandoned: "Ich vládca ich prinútil opustiť svojich spojencov z krajiny [TARGET_COUNTRY.GetAltAdjective('G')] v núdzi." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_SENTENCE_BrokeFreeOfOverlord: "Vymanili sa spod nadvlády svojho [overlord|e], krajiny [TARGET_COUNTRY.GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ LEAVE_WAR_REASON_SENTENCE_Scripted: "Udalosti ich prinútili odísť." # todo: NEW TRANSLATION
  REFUSE_TO_JOIN_WAR_REASON_HumanDeclined: "Hráč odmietol pripojiť sa."
  REFUSE_TO_JOIN_WAR_REASON_NotEnoughReasons: "Nemajú dosť dôvodov na pripojenie sa."
  REFUSE_TO_JOIN_WAR_REASON_ConflictOfInterests: "Podporili by obe krajiny, keby mohli, ale nemôžu, takže zostali neutrálni."

@@ -1,7 +1,7 @@
 ﻿l_polish:
  flavor_kni.3.title: "Veľká karaka z [ShowLocationNameWithNoTooltip('alexandria')]" # todo: NEW TRANSLATION
  flavor_kni.3.entry: "Veľká karaka z Alexandrie" # todo: NEW TRANSLATION
- flavor_kni.3.desc: "Malá, no zdatná flotila [ROOT.GetCountry.GetName] bola storočia postrachom rôznych [ShowReligionAdjective('muslim')] nepriateľov. Udržiavanie vôd čistých od nepriateľských korzárov, ako aj zajímanie [ShowReligionAdjective('muslim')] obchodných lodí udržiavalo kasy na [ROOT.GetCountry.GetCapital.GetName] plné a [ShowReligionAdjective('muslim')] námorníkov v hrôze. Jednou z najslávnejších udalostí bolo zajatie Veľkej karaky z [ShowLocationName('alexandria')] v [GetCurrentYear], ktorá bola naplnená obrovským bohatstvom." # todo: NEW TRANSLATION
+ flavor_kni.3.desc: "Malá, no zdatná flotila [ROOT.GetCountry.GetName] bola storočia postrachom rôznych [ShowReligionAdjective('muslim')] nepriateľov. Udržiavanie vôd čistých od nepriateľských korzárov, ako aj zajímanie [ShowReligionAdjective('muslim')] obchodných lodí udržiavalo kasy na [ROOT.GetCountry.GetCapital.GetAltAdjective('A')] plné a [ShowReligionAdjective('muslim')] námorníkov v hrôze. Jednou z najslávnejších udalostí bolo zajatie Veľkej karaky z [ShowLocationName('alexandria')] v [GetCurrentYear], ktorá bola naplnená obrovským bohatstvom." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_kni.3.a: "Božstvo nám naklonené!" # todo: NEW TRANSLATION
  opinion_captured_alexandria_great_carrack: "Zajali Veľkú karaku z Alexandrie" # todo: NEW TRANSLATION
  flavor_kni.4.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -27,7 +27,7 @@
  flavor_kni.7.b: "Nestraťme čas s tým." # todo: NEW TRANSLATION
  flavor_kni.8.title: "Chrám Najsvätejšej Trojice" # todo: NEW TRANSLATION
  flavor_kni.8.entry: "$flavor_kni.8.title$" # todo: NEW TRANSLATION
- flavor_kni.8.desc: "Keď sa [ROOT.GetCountry.GetName] stáva cieľom všetkých križiakov ochotných bojovať za [target_religion.GetAdjective] vieru, náš domovský ostrov [target_location.GetName] sa musí prispôsobiť, aby zvládal prichádzajúcich veriacich. Na splnenie tohto cieľa je [ROOT.GetCountry.GetFlavorRank] ochotný vynaložiť časť nashromáždeného bohatstva na stavbu nového kostola." # todo: NEW TRANSLATION
+ flavor_kni.8.desc: "Keď sa [ROOT.GetCountry.GetAltAdjective('A')] stáva cieľom všetkých križiakov ochotných bojovať za [target_religion.GetAdjective] vieru, náš domovský ostrov [target_location.GetName] sa musí prispôsobiť, aby zvládal prichádzajúcich veriacich. Na splnenie tohto cieľa je [ROOT.GetCountry.GetFlavorRank] ochotný vynaložiť časť nashromáždeného bohatstva na stavbu nového kostola." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_kni.8.a: "Posväťme kostol Svätej Trojici." # todo: NEW TRANSLATION
  flavor_kni.8.b: "Zverme ho pod patronát archanjela Michala." # todo: NEW TRANSLATION
  flavor_kni.8.c: "Pána chválime rôznymi spôsobmi." # todo: NEW TRANSLATION
@@ -142,7 +142,7 @@
  flavor_kni.151.desc: "Tí potvorní [kni_from.GetAdjective] bratia sa vylodili na brehu [target_location.GetName] a začali stavať hrad. Hoci je [target_location.GetRank.GetName] formálne náš, naši najbližší kasteláni sú míle ďaleko a nemohli reagovať v rozumnom čase. Veríme, že jediný spôsob, ako [kni_from.GetNameWithNoTooltip] naučiť lekciu, je vojenská kampaň." # todo: NEW TRANSLATION
  flavor_kni.151.a: "Dáme im lekciu." # todo: NEW TRANSLATION
  flavor_kni.1000.title: "Rozšírenie držieb v [ShowRegionNameWithNoTooltip('caribbean_region')]" # todo: NEW TRANSLATION
- flavor_kni.1000.entry: "Rozširovanie majetkov v karibskom regióne" # todo: NEW TRANSLATION
+ flavor_kni.1000.entry: "$flavor_kni.1000.title$" # todo: CHANGED (predtym: Rozširovanie majetkov v karibskom regióne)
  flavor_kni.1000.desc: "Náš [ROOT.GetCountry.GetFlavorRank] už dlhé roky stojí ako bašta proti pohanským hrozbám v Stredozemí, no naše ambície nemusia byť obmedzené len na tieto brehy. Keď sme si už založili prítomnosť v [ShowRegionName('caribbean_region')], vieme, že ostrovy sú bohaté na zdroje a strategicky umiestnené pozdĺž kľúčových obchodných trás. Niektorí členovia [ROOT.GetCountry.GetFlavorRank] navrhujú rozšíriť náš dosah kúpu ostrova od [target_country.GetLongName]. Významní členovia [ROOT.GetCountry.GetGovernment.GetCabinetTitle] prejavili najväčší záujem o nákup [target_location.GetName]." # todo: NEW TRANSLATION
  flavor_kni.1000.a: "Pošlite ponuku na kúpu ostrova." # todo: NEW TRANSLATION
  kni_if_target_agrees: "Ak [target_country.GetName] súhlasí:" # todo: NEW TRANSLATION
@@ -182,4 +182,4 @@
  flavor_kni.2003.title: "[target_country.GetNameWithNoTooltip] odmietol ponuku" # todo: NEW TRANSLATION
  flavor_kni.2003.desc: "Napriek našej ponuke [target_country.GetName] odmietol kúpiť naše ostrovy v [ShowRegionName('caribbean_region')]. Zdá sa, že nevidia dostatočnú hodnotu v nadobudnutí týchto vzdialených držáv alebo nie sú ochotní investovať potrebné prostriedky. Zatiaľ zostávame vládcami týchto ostrovov, hoci finančné bremeno ich údržby zostáva naliehavým problémom." # todo: NEW TRANSLATION
  flavor_kni.2003.a: "Riešime to iným spôsobom." # todo: NEW TRANSLATION
- flavor_kni.2003.a.t: "[target_country.GetName] odmietol kúpiť naše koloniálne majetky"" # todo: NEW TRANSLATION
+ flavor_kni.2003.a.t: "[target_country.GetName] odmietol kúpiť naše koloniálne majetky„" # todo: NEW TRANSLATION
