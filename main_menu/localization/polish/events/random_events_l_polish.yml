@@ -127,7 +127,7 @@
  random_event.31.a: "Zamestnať [italian.GetHerHim]." # todo: NEW TRANSLATION
  random_event.31.b: "Odmietnuť ponuku." # todo: NEW TRANSLATION
  random_event.32.title: "Taliansky inžinier k dispozícii" # todo: NEW TRANSLATION
- random_event.32.desc: "Obliehací inžinier zo severného [ShowRegionName('italy_region')] prišiel na náš [ROOT.GetCountry.GetGovernment.GetCourtTitle] a ponúka [italian.GetHerHis] služby [target_ruler.GetName]. [italian.GetSheHe|U] tvrdí, že ovláda umenie stavby mohutného bastiónového fortu skupiny [ShowCultureGroupName('italian_group')], nazývaného #italic trace italienne#!, ktorý si naši vojenskí teoretici túžobne priali napodobniť. Jeho služby však nebudú lacné." # todo: NEW TRANSLATION
+ random_event.32.desc: "Obliehací inžinier zo severného [ShowRegionName('italy_region')] prišiel na náš [ROOT.GetCountry.GetGovernment.GetCourtTitle] a ponúka [italian.GetHerHis] služby [target_ruler.GetName]. [italian.GetSheHe|U] tvrdí, že ovláda umenie stavby mohutného bastiónového fortu skupiny [ShowCultureGroupName('italian_group')], nazývaného #italic trace italienne#!, ktorý si naši vojenskí teoretici túžobne priali napodobniť. [italian.GetHerHis] služby však nebudú lacné." # todo: CHANGED (predtym: Obliehací inžinier zo severného [ShowRegionName('italy_region')] prišiel na náš [ROOT.GetCountry.GetGovernment.GetCourtT)
  random_event.32.a: "Zamestnať [italian.GetHerHim] na zlepšenie našich opevnení." # todo: NEW TRANSLATION
  random_event.32.b: "[italian.GetHerHis|U] by mal priamo slúžiť nášmu [ROOT.GetCountry.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION
  random_event.32.c: "Ako sa vôbec vyslovuje '#italic tracé à l'italienne#!'?" # todo: NEW TRANSLATION
@@ -156,7 +156,7 @@
  random_event.37.b: "Zamietnuť petíciu." # todo: NEW TRANSLATION
  random_event.37.b.tt: "Toto spôsobí, že naši [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] v [uppity_peasants.GetName] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  random_event.38.title: "Prestížna rodina žiada pomoc" # todo: NEW TRANSLATION
- random_event.38.desc: "Jedna z najsilnejších rodín [ROOT.GetCountry.GetName] z [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] napriek obrovskému majetku dokázala nahromadiť značné dlhy, ktoré má problém splatiť. Obrátili sa na [target_ruler.GetName] s prosbou o pomoc, dúfajúc, že ich dlhá história vernosti rodine [target_ruler.GetDynasty.GetName] a sľuby večnej podpory presvedčia [target_ruler.GetHerHim], aby im pomohol." # todo: NEW TRANSLATION
+ random_event.38.desc: "Jedna z najsilnejších rodín [ROOT.GetCountry.GetAltAdjective('G')] z [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] napriek obrovskému majetku dokázala nahromadiť značné dlhy, ktoré má problém splatiť. Obrátili sa na [target_ruler.GetName] s prosbou o pomoc, dúfajúc, že ich dlhá história vernosti rodine [target_ruler.GetDynasty.GetName] a sľuby večnej podpory presvedčia [target_ruler.GetHerHim], aby im pomohol." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  random_event.38.a: "Poskytnúť im pomoc." # todo: NEW TRANSLATION
  random_event.38.b: "Odmietnuť im pomoc." # todo: NEW TRANSLATION
  opinion_supports_dissidents: "Podporuje disidentov" # todo: NEW TRANSLATION
@@ -166,8 +166,8 @@
  random_event.39.b: "Aká strata peňazí!" # todo: NEW TRANSLATION
  random_event.40.title: "Vzrastá konkurencia zahraničného obchodu" # todo: NEW TRANSLATION
  random_event.40.desc: "Zahraniční obchodníci stále viac predbiehajú našich v prístavoch [ROOT.GetCountry.GetFlavorRank], zaplavujúc naše trhy lacným tovarom vyrobeným inde. To sťažuje život našim obchodníkom. Prišli pred [target_ruler.GetName] s návrhom nového cla na zahraničný tovar, ktoré by im pomohlo ochrániť sa pred konkurenciou zo zahraničia." # todo: NEW TRANSLATION
- random_event.40.a: "Uvaliť nové clo." # todo: NEW TRANSLATION
- random_event.40.b: "Nebudú zavádzané žiadne nové clá." # todo: NEW TRANSLATION
+ random_event.40.a: "Naši obchodníci sú na prvom mieste." # todo: CHANGED (predtym: Uvaliť nové clo.)
+ random_event.40.b: "Konkurencia plodí silnejších obchodníkov." # todo: CHANGED (predtym: Nebudú zavádzané žiadne nové clá.)
  random_event.41.title: "Kacírski poradca" # todo: NEW TRANSLATION
  random_event.41.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] sú pobúrení, že kacírom, [minister.GetName], je zamestnaný ako poradca [target_ruler.GetName]. Žiadajú okamžité odstránenie [minister.GetHerHis]!" # todo: NEW TRANSLATION
  random_event.41.a: "Prepustiť [minister.GetHerHim]!" # todo: NEW TRANSLATION
@@ -185,7 +185,7 @@
  random_event.44.a: "Očistiť chrám." # todo: NEW TRANSLATION
  random_event.44.b: "Ignorovať to za podiel na ziskoch." # todo: NEW TRANSLATION
  random_event.45.title: "Rozkol medzi obchodníkmi" # todo: NEW TRANSLATION
- random_event.45.desc: "Medzi niekoľkými mimoriadne bohatými - a tým pádom vplyvnými - obchodníkmi prepukol spor o [ROOT.GetCountry.GetAdjective] obchodnú politiku. Jedna skupina podporuje merkantilistický prístup, žiadajúc, aby [ROOT.GetCountry.GetFlavorRank] zabezpečila, že bohatstvo generované obchodom v [ROOT.GetCountry.GetNameWithNoTooltip] pôjde hlavne [ROOT.GetCountry.GetAdjectiveWithNoTooltip] obchodníkom a producentom. Druhá frakcia označuje tento protekcionizmus za zastaralý a presadzuje slobodný obchod, ktorý by ich podľa nich oslobodil hľadať zisk po celom svete. Samozrejme, obe strany považujú tú druhú za minimálne nerozumnú a v najhoršom prípade za nebezpečnú v ich mylných predstavách." # todo: NEW TRANSLATION
+ random_event.45.desc: "Medzi niekoľkými mimoriadne bohatými - a tým pádom vplyvnými - obchodníkmi prepukol spor o [ROOT.GetCountry.GetAdjective] obchodnú politiku. Jedna skupina podporuje merkantilistický prístup, žiadajúc, aby [ROOT.GetCountry.GetFlavorRank] zabezpečila, že bohatstvo generované obchodom v [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('L')] pôjde hlavne [ROOT.GetCountry.GetAdjectiveWithNoTooltip] obchodníkom a producentom. Druhá frakcia označuje tento protekcionizmus za zastaralý a presadzuje slobodný obchod, ktorý by ich podľa nich oslobodil hľadať zisk po celom svete. Samozrejme, obe strany považujú tú druhú za minimálne nerozumnú a v najhoršom prípade za nebezpečnú v ich mylných predstavách." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  random_event.45.a: "Podporiť merkantilistickú frakciu." # todo: NEW TRANSLATION
  random_event.45.b: "Slobodný obchod je budúcnosť." # todo: NEW TRANSLATION
  random_event.45.c: "Toto nie je na nás rozhodovať." # todo: NEW TRANSLATION
@@ -206,7 +206,7 @@
  random_event.49.desc: "V poslednom čase hľadáme maliarov alebo umelcov, ktorí by vhodne zachytili slávu zakladateľov nášho [ROOT.GetCountry.GetFlavorRank]. Práve dnes ráno nám maliar [the_artist.GetName] ponúkol svoje služby." # todo: NEW TRANSLATION
  random_event.49.a: "Zamestnať [the_artist.GetHerHim]." # todo: NEW TRANSLATION
  random_event.49.b: "Odmietnuť služby [the_artist.GetHerHis]." # todo: NEW TRANSLATION
- random_event.50.title: "Veľký bál v [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ random_event.50.title: "Veľký bál v [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  random_event.50.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] si vytvorili chuť na pompézne bály, štátne večere a iné extravagancie na pobavenie. Hoci sú pomerne drahé, tieto udalosti sú vynikajúcou príležitosťou ukázať veľkoleposť [ROOT.GetCountry.GetName] a veľkorysosť [target_ruler.GetName]." # todo: NEW TRANSLATION
  random_event.50.a: "Zorganizovať bál." # todo: NEW TRANSLATION
  random_event.50.b: "Neorganizovať bál." # todo: NEW TRANSLATION
@@ -305,7 +305,7 @@
  random_event.73.desc: "Jedna z najväčších a najbohatších obchodníckych rodín v [ROOT.GetCountry.GetLongName] sa rozhodla odmeniť nás za našu spravodlivú vládu značnou darmi. Ako vážení obchodníci, ktorí si svoje bohatstvo vybudovali obchodom, si rodina vybudovala povest ako štedrí patrónovia náboženstva a umenia. Teraz, s týmto novonadobudnutým bohatstvom, môžeme posilniť naše truhlice alebo poskytnúť patronát novým talentom. Jeden umelec, [the_artist.GetName], si získava miestnu známosť a využitie [the_artist.GetHerHis] služieb by mohlo byť prínosom pre náš [ROOT.GetCountry.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION
  random_event.73.a: "Náš [ROOT.GetCountry.GetFlavorRank] potrebuje peniaze." # todo: NEW TRANSLATION
  random_event.73.b: "Usporiadať sponzorstvo [the_artist.GetNameWithNoTooltip] na počesť rodiny." # todo: NEW TRANSLATION
- random_event.73.c: "[the_artist.GetNameWithNoTooltip] by rád pracoval pre [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION
+ random_event.73.c: "[the_artist.GetNameWithNoTooltip] by rád pracoval pre [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  random_event.74.title: "Objavený miestny odborník na opevnenia" # todo: NEW TRANSLATION
  random_event.74.desc: "Naši miestni správcovia v [fortification.GetName] nahlásili, že miestni majú niektoré zaujímavé nápady, ako vytvoriť lepšie opevnenia. Avšak nechcú opustiť svoje rodné mesto." # todo: NEW TRANSLATION
  random_event.74.a: "Celý [ROOT.GetCountry.GetFlavorRank] potrebuje ich nápady." # todo: NEW TRANSLATION
@@ -329,7 +329,7 @@
  random_event.79.desc: "Vďaka skvelému administratívnemu vedeniu [target_ruler.GetName] sa nám podarilo v tomto roku výrazne zredukovať nahromadenú infláciu v našej krajine." # todo: NEW TRANSLATION
  random_event.79.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  random_event.80.title: "Zlatá éra kultúry!" # todo: NEW TRANSLATION
- random_event.80.desc: "S mierom v krajine sa veľkí hudobníci, umelci a básnici tešia z nových príležitostí zabávať svojich patrónov. Táto éra kultúrneho osvietenia rozhodne zlepšuje náladu v [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ random_event.80.desc: "S mierom v krajine sa veľkí hudobníci, umelci a básnici tešia z nových príležitostí zabávať svojich patrónov. Táto éra kultúrneho osvietenia rozhodne zlepšuje náladu v [ROOT.GetCountry.GetAltAdjective('L')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  random_event.80.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  random_event.81.title: "Bojovníci nečítajú knihy" # todo: NEW TRANSLATION
  random_event.81.desc: "Svojou pozornosťou sú všetci schopní a produktívni ľudia odlákaní vojnou, takže na bezvýznamné aktivity hudobníkov a básnikov zostáva oveľa menej času. A ani najlepší básnik nie je lepší vojak ako bežný roľník." # todo: NEW TRANSLATION
@@ -454,4 +454,4 @@
  random_event.112.desc: "Skupina nespokojných [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] podala formálnu sťažnosť proti našim [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], ktorí sú známi obchodovaním v [target_location.GetName]. Podľa [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] bol [ShowGoodsName('copper')], ktorý kúpili, takej biednej kvality, že bol sotva použiteľný.\n\nNa druhej strane [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] trvajú na tom, že kov bol presne taký, ako bolo sľúbené. Keďže vášne pribúdajú a spor sa šíri po trhu, iní začínajú spochybňovať, či obchod v [target_location.GetNameWithNoTooltip] je taký férový, ako sa zdá." # todo: NEW TRANSLATION
  random_event.112.a: "Nech [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] to buď vezmú, alebo nechajú!" # todo: NEW TRANSLATION
  random_event.112.b: "Na vine sú [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]." # todo: NEW TRANSLATION
- random_event.112.c: "Drobné hádky..."" # todo: NEW TRANSLATION
+ random_event.112.c: "Drobné hádky...„" # todo: NEW TRANSLATION

@@ -16,17 +16,17 @@
  resign_as_grand_master: "Rezignovať ako veľmajster" # todo: NEW TRANSLATION
  resign_as_grand_master_concept: "[Concept('ruler','Panovník')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  resign_as_grand_master_act: "$resign_as_grand_master$" # todo: NEW TRANSLATION
- resign_as_grand_master_desc_specific: "[SCOPE.sCharacter('recipient').GetName] rezignuje ako [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ resign_as_grand_master_desc_specific: "[SCOPE.sCharacter('recipient').GetName] rezignuje ako [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  resign_as_grand_master_desc: "Postava [Concept('character','postava')|e] rezignuje ako [Concept('ruler','panovník')|e] [Concept('country','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  resign_as_grand_master_past: "[SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] rezignuje!" # todo: NEW TRANSLATION
- resign_as_grand_master_act_past: "[SCOPE.sCharacter('recipient').GetName] rezignoval ako [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ resign_as_grand_master_act_past: "[SCOPE.sCharacter('recipient').GetName] rezignoval ako [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  dismiss_prince: "Odvolať princa" # todo: NEW TRANSLATION
  dismiss_prince_concept: "[Concept('ruler','Panovník')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  dismiss_prince_act: "$dismiss_prince$" # todo: NEW TRANSLATION
- dismiss_prince_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude odvolaný z funkcie [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetName].\n#italic Táto akcia nestojí žiadnu [Concept('republican_tradition','republikánsku tradíciu')|e], ak máme menej než 0 [Concept('stability','stabilita')|e]#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ dismiss_prince_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude odvolaný z funkcie [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetAltAdjective('G')].\n#italic Táto akcia nestojí žiadnu [Concept('republican_tradition','republikánsku tradíciu')|e], ak máme menej než 0 [Concept('stability','stabilita')|e]#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  dismiss_prince_desc: "Postava [Concept('character','postava')|e] bude odvolaná z funkcie [Concept('ruler','panovník')|e] [Concept('country','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  dismiss_prince_past: "[SCOPE.sCountry('actor').GetGovernment.GetRulerTitle] odvolaný!" # todo: NEW TRANSLATION
- dismiss_prince_act_past: "[SCOPE.sCharacter('recipient').GetName] bol odvolaný z funkcie [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ dismiss_prince_act_past: "[SCOPE.sCharacter('recipient').GetName] bol odvolaný z funkcie [Concept('ruler','panovník')|e] [SCOPE.sCountry('actor').GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  seppuku: "Spáchať seppuku" # todo: NEW TRANSLATION
  seppuku_concept: "[Concept('character','Postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  seppuku_act: "Spáchať seppuku - náš [Concept('ruler','panovník')|e] spácha samovraždu veľmi pomalým a bolestivým spôsobom." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -36,12 +36,14 @@
  seppuku_act_past: "[SCOPE.sCharacter('recipient').GetName] spáchal seppuku." # todo: NEW TRANSLATION
  marry_noble: "Vzatie si šľachtica" # todo: NEW TRANSLATION
  marry_noble_concept: "[Concept('marriage','Manželstvo')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- marry_noble_act: "$marry_noble$" # todo: NEW TRANSLATION
  marry_noble_select_title: "Vyberte šľachtica na sobáš" # todo: NEW TRANSLATION
- marry_noble_desc_specific: "[SCOPE.sCharacter('recipient').GetName] si vezme miestneho šľachtica." # todo: NEW TRANSLATION
- marry_noble_desc: "Postava [Concept('character','postava')|e] si vezme miestneho šľachtica." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- marry_noble_past: "[SCOPE.sCharacter('recipient').GetName] sa oženil!" # todo: NEW TRANSLATION
- marry_noble_act_past: "Sobáš s miestnym šľachticom pre [SCOPE.sCharacter('recipient').GetName] je prospešný spôsob, ako zabezpečiť našej [Concept('country','krajiny')|e] sukcesiu bez zahraničného vplyvu!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ marry_noble_desc: "Vydáme [CHARACTER.GetName] za šľachtica z nášho dvora." # todo: CHANGED (predtym: Postava [Concept('character','postava')|e] si vezme miestneho šľachtica.)
+ marry_noble_recipient_effect: "[CHARACTER.GetName] bude [Concept('married','V sňatku')|e] zosobášený so šľachticom, ktorého si vyberieme." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ marry_noble_desc_specific: "[CHARACTER.GetName] sa zosobáši s [TARGET_CHARACTER.GetName]." # todo: CHANGED (predtym: [SCOPE.sCharacter('recipient').GetName] si vezme miestneho šľachtica.)
+ marry_noble_effect: "[CHARACTER.GetName] je zosobášený s [TARGET_CHARACTER.GetName]." # todo: NEW TRANSLATION
+ marry_noble_past: "[CHARACTER.GetName] sa oženil!" # todo: CHANGED (predtym: [SCOPE.sCharacter('recipient').GetName] sa oženil!)
+ marry_noble_act_past: "Sobáš s miestnym šľachticom pre [CHARACTER.GetName] je prospešný spôsob, ako zabezpečiť našej [Concept('country','krajiny')|e] sukcesiu bez zahraničného vplyvu!" # todo: CHANGED (predtym: Sobáš s miestnym šľachticom pre [SCOPE.sCharacter('recipient').GetName] je prospešný spôsob, ako zabezpečiť našej [Conce)
+ MARRY_NOBLE_SELECT_CHARACTER: "Zosobášiť $CHARACTER$" # todo: NEW TRANSLATION
  marry_lowborn: "Vzatie si nízkorodeného" # todo: NEW TRANSLATION
  marry_lowborn_concept: "[Concept('marriage','Manželstvo')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  marry_lowborn_act: "$marry_lowborn$" # todo: NEW TRANSLATION
@@ -49,14 +51,8 @@
  marry_lowborn_desc: "Postava [Concept('character','postava')|e] si vezme [Concept('lowborn','neurodzený')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  marry_lowborn_past: "[SCOPE.sCharacter('recipient').GetName] si urobil hanbu!" # todo: NEW TRANSLATION
  marry_lowborn_act_past: "[SCOPE.sCharacter('recipient').GetName] si vzal [Concept('lowborn','neurodzený')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- tribal_arrange_marriage: "Zariadiť sobáš" # todo: NEW TRANSLATION
- tribal_arrange_marriage_concept: "[Concept('marriage','Manželstvo')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- tribal_arrange_marriage_act: "$tribal_arrange_marriage$" # todo: NEW TRANSLATION
- tribal_arrange_marriage_select_title: "Vyberte partnera na sobáš" # todo: NEW TRANSLATION
- tribal_arrange_marriage_desc_specific: "[SCOPE.sCharacter('recipient').GetName] si vezme niekoho významného z nášho kmeňa." # todo: NEW TRANSLATION
- tribal_arrange_marriage_desc: "Postava [Concept('character','postava')|e] si vezme niekoho významného z nášho kmeňa." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- tribal_arrange_marriage_past: "[SCOPE.sCharacter('recipient').GetName] sa oženil!" # todo: NEW TRANSLATION
- tribal_arrange_marriage_act_past: "Oslavy pokračovali do noci, keď sobáš dvoch členov našich kmeňov uchvátil verejnú predstavivosť." # todo: NEW TRANSLATION
+ marry_lowborn_choose_estate: "Do ktorého [Concept('estate','stavu')|e] sa má zosobášiť?" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ marry_lowborn_close_relative_tt: "Je blízkym príbuzným [Concept('ruler','panovníkmi')|e] alebo [Concept('heir','dedič')|e], ak je vládca [Concept('regent','regent')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  move_child_to_court: "Presunúť dieťa na náš dvor" # todo: NEW TRANSLATION
  move_child_to_court_concept: "[Concept('character','Postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  move_child_to_court_act: "$move_child_to_court$" # todo: NEW TRANSLATION
@@ -64,6 +60,15 @@
  move_child_to_court_desc: "Postava [Concept('character','postava')|e] sa presťahuje do nášho [Concept('country','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  move_child_to_court_past: "Dieťa sa pridalo k nášmu dvoru" # todo: NEW TRANSLATION
  move_child_to_court_act_past: "[SCOPE.sCharacter('recipient').GetName] sa presťahoval do nášho [Concept('country','krajiny')|e]. Týmto bude výchova [SCOPE.sCharacter('recipient').GetName] pevne pod našou kontrolou." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ assign_familial_governor: "Ustanoviť [ShowSubjectTypeNameWithNoTooltip('familial_governor')]" # todo: NEW TRANSLATION
+ assign_familial_governor_desc: "Od všetkých kniežat [ShowDynastyName('hafsid_dynasty')] sa očakáva, že dostanú správu nad jedným z miest v ríši. Takíto správcovia mávajú vysokú mieru autonómie, no napriek tomu pomáhajú udržať [ShowScriptedGeographyName('ifriqiya_geography')] v rukách rodiny." # todo: NEW TRANSLATION
+ assign_familial_governor_concept: "[Concept('subject','Vazal')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ select_a_location_to_make_capital: "Kliknutím vyberte mesto, ktoré sa stane [Concept('capital','hlavné mesto')|e] vlády" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ assign_familial_governor_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude v cieľovej [Concept('location','lokalite')|e] ustanovený za [ShowSubjectTypeName('familial_governor')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ assign_familial_governor_past: "[SCOPE.sCharacter('recipient').GetName] bol ustanovený do úradu [ShowSubjectTypeName('familial_governor')]" # todo: NEW TRANSLATION
+ assign_familial_governor_act: "$assign_familial_governor$" # todo: NEW TRANSLATION
+ assign_familial_governor_act_past: "$assign_familial_governor_past$" # todo: NEW TRANSLATION
+ create_familial_governor_effect_tt: "V cieľovej [Concept('location','lokalite')|e] bude vytvorený [ShowSubjectTypeName('familial_governor')], ktorému bude vládnuť [recipient.GetName], a všetky [Concept('locations','lokality')|e], ktoré sú bližšie k cieľovému [ShowLocationRankName('city')] než k inému, budú prevedené pod správu guvernéra" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ennoble: "Povýšiť do šľachty" # todo: NEW TRANSLATION
  ennoble_concept: "[Concept('character','Postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ennoble_act: "$ennoble$" # todo: NEW TRANSLATION
@@ -75,13 +80,13 @@
  enoble_founds_dynasty_no_location_tt: "Zakladá novú [Concept('dynasty','dynastiu')|e] v vybranej [Concept('location','lokalite')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ennoble_select_location_title: "Vyberte sídlo novej dynastie" # todo: NEW TRANSLATION
  ennoble_map_tt: "Súčasné [Concept('control','kontrola')|e] v [SCOPE.sLocation('target').GetName] je [SCOPE.sLocation('target').GetControl|0%]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- pardon: "Udelieť milosť" # todo: NEW TRANSLATION
+ pardon: "Udeliť milosť" # todo: NEW TRANSLATION
  pardon_concept: "[Concept('character','Postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pardon_act: "$pardon$" # todo: NEW TRANSLATION
- pardon_desc_specific: "[recipient.GetName] dostane milosť v [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ pardon_desc_specific: "[recipient.GetName] dostane milosť v [SCOPE.sCountry('actor').GetAltAdjective('L')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  pardon_desc: "Postava [Concept('character','postava')|e] dostane milosť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pardon_past: "[recipient.GetName] dostal milosť" # todo: NEW TRANSLATION
- pardon_act_past: "[recipient.GetName] dostal milosť v [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ pardon_act_past: "[recipient.GetName] dostal milosť v [SCOPE.sCountry('actor').GetAltAdjective('L')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  appoint_as_heir: "Vymenovať za dediča" # todo: NEW TRANSLATION
  appoint_as_heir_concept: "[Concept('heir','Dedič')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  appoint_as_heir_act: "$appoint_as_heir$" # todo: NEW TRANSLATION
@@ -159,24 +164,24 @@
  join_foreign_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] vstúpi do #Y Rádu šľachty#! cieľovej krajiny. Získané bonusy závisia od samotného rádu." # todo: NEW TRANSLATION
  join_foreign_order_of_chivalry_desc: "Postava [Concept('character','postava')|e] vstúpi do #Y Rádu šľachty#! cieľovej krajiny. Získané bonusy závisia od samotného rádu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  join_foreign_order_of_chivalry_past: "[SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]" # todo: CHANGED
- join_foreign_order_of_chivalry_act_past: "[SCOPE.sCharacter('recipient').GetName] sa pridal(a) k #Y [SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]#! [SCOPE.sCountry('target').GetName]! Nasledujúce efekty sa teraz vzťahujú na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('target').GetActiveChivalricOrder.GetCharacterModifierText]" # todo: CHANGED
+ join_foreign_order_of_chivalry_act_past: "[SCOPE.sCharacter('recipient').GetName] sa pridal(a) k #Y [SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNoTooltip]#! [SCOPE.sCountry('target').GetAltAdjective('D')]!" # todo: CHANGED (predtym: [SCOPE.sCharacter('recipient').GetName] sa pridal(a) k Y [SCOPE.sCountry('target').GetActiveChivalricOrder.GetNameWithNo) # todo: COUNTRY CASE
  character_can_join_order_of_chivalry_tt: "[SCOPE.sCharacter('recipient').GetName] sa môže pridať k dostupnému #Y Rádu šľachty#!" # todo: NEW TRANSLATION
  join_foreign_order_of_chivalry_no_countries: "@trigger_no! Žiadny platný #Y Rád šľachty#! nie je dostupný." # todo: NEW TRANSLATION
  order_of_chivalry_country_cooldown: "Žiadny iný [Concept('character','postava')|e] sa nepridal k #Y Rádu šľachty#! v posledných #Y 10 rokoch#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  invite_to_order_of_chivalry: "Pozvať do rádu šľachty" # todo: NEW TRANSLATION
  invite_to_order_of_chivalry_concept: "[Concept('character','Postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  invite_to_order_of_chivalry_act: "$invite_to_order_of_chivalry$" # todo: NEW TRANSLATION
- invite_to_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude pozvaný/á do nášho #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!. Ak pozvanie prijme, nasledujúce efekty sa uplatnia na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]" # todo: CHANGED
+ invite_to_order_of_chivalry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude pozvaný/á do nášho #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!. Ak pozvanie prijme, nasledujúce efekty sa uplatnia na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]" # todo: CHANGED # todo: COUNTRY CASE
  invite_to_order_of_chivalry_desc: "Postava [Concept('character','postava')|e] bude pozvaná do nášho #Y Rádu šľachty#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- invite_to_order_of_chivalry_past: "[SCOPE.sCharacter('recipient').GetName] sa pridal(a) do #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!!" # todo: CHANGED
+ invite_to_order_of_chivalry_past: "[SCOPE.sCharacter('recipient').GetName] sa pridal(a) do #Y [SCOPE.sCountry('actor').GetActiveChivalricOrder.GetNameWithNoTooltip]#!!" # todo: CHANGED # todo: COUNTRY CASE
  invite_to_order_of_chivalry_act_past: "Nasledujúce efekty sa teraz uplatňujú na [SCOPE.sCharacter('recipient').GetHimHer]:\n[SCOPE.sCountry('actor').GetActiveChivalricOrder.GetCharacterModifierText]" # todo: CHANGED
  banish_character: "Vyhostiť" # todo: NEW TRANSLATION
  banish_character_concept: "[Concept('character','Postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  banish_character_act: "$banish_character$" # todo: NEW TRANSLATION
- banish_character_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude vyhostený z [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ banish_character_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude vyhostený z [SCOPE.sCountry('actor').GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  banish_character_desc: "Postava [Concept('character','postava')|e] bude vyhostená z [Concept('country','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- banish_character_past: "[SCOPE.sCharacter('recipient').GetName] bol vyhostený z [SCOPE.sCountry('actor').GetName]!" # todo: NEW TRANSLATION
- banish_character_act_past: "Vyhostenie [SCOPE.sCharacter('recipient').GetName] posilní bezpečnosť [SCOPE.sCountry('actor').GetName] v dlhodobom meradle." # todo: NEW TRANSLATION
+ banish_character_past: "[SCOPE.sCharacter('recipient').GetName] bol vyhostený z [SCOPE.sCountry('actor').GetAltAdjective('G')]!" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ banish_character_act_past: "Vyhostenie [SCOPE.sCharacter('recipient').GetName] posilní bezpečnosť [SCOPE.sCountry('actor').GetAltAdjective('A')] v dlhodobom meradle." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  banish_execute_cost_increase_string_start: "Zvýšiť náklady [Concept('government_power','vládna moc')|e] na ďalšie použitie [ShowCharacterInteractionName('banish_character')] a [ShowCharacterInteractionName('execute_character')] o" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  banish_execute_cost_increase_string_end: "a obnoviť trvanie zvýšených nákladov na #Y 2 roky#!." # todo: NEW TRANSLATION
  execute_character: "Popraviť" # todo: NEW TRANSLATION
@@ -185,20 +190,9 @@
  execute_character_desc_specific: "[SCOPE.sCharacter('recipient').GetName] bude popravený." # todo: NEW TRANSLATION
  execute_character_desc: "Postava [Concept('character','postava')|e] bude popravená." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  execute_character_past: "[SCOPE.sCharacter('recipient').GetName] bol popravený!" # todo: NEW TRANSLATION
- execute_character_act_past: "[SCOPE.sCharacter('recipient').GetName] už nebude problémom pre [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ execute_character_act_past: "[SCOPE.sCharacter('recipient').GetName] už nebude problémom pre [SCOPE.sCountry('actor').GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  increase_gov_power_cost_banished_character_tt: "$banish_execute_cost_increase_string_start$ #R 2.50#! $banish_execute_cost_increase_string_end$" # todo: NEW TRANSLATION
  increase_gov_power_cost_executed_character_tt: "$banish_execute_cost_increase_string_start$ #R 5.00#! $banish_execute_cost_increase_string_end$" # todo: NEW TRANSLATION
- favor_heir: "Uprednostniť dediča" # todo: NEW TRANSLATION
- favor_heir_concept: "[Concept('heir','Dedič')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- favor_heir_act: "$favor_heir$" # todo: NEW TRANSLATION
- favor_heir_desc_specific: "Urobíme z [SCOPE.sCharacter('recipient').GetName] našu osobnú preferenciu pre nášho ďalšieho vládcu." # todo: CHANGED
- favor_heir_desc: "Postava [Concept('character','postava')|e] bude uprednostnená ako náš nový následník." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- favor_heir_past: "[SCOPE.sCharacter('recipient').GetName] bol uprednostnený!" # todo: NEW TRANSLATION
- favor_heir_act_past: "[SCOPE.sCharacter('recipient').GetName] bol uprednostnený ako náš nasledník, súťažiac s ostatnými kandidátmi o vládu nášho štátu." # todo: NEW TRANSLATION
- favor_heir_at: "[SCOPE.sCharacter('recipient').GetName] je už podporovaný kandidát a platný dedič na náš trón" # todo: NEW TRANSLATION
- favor_heir_ct: "Už uprednostňujeme [SCOPE.sCountry('actor').MakeScope.GetVariable('favored_heir').GetCharacter.GetName] ako nášho budúceho následníka" # todo: CHANGED
- favor_heir_tt: "[SCOPE.sCharacter('recipient').GetName] bude mať postavenie nášho [Concept('heir','dediča')|e], čo danú osobu oprávňuje stať sa jedným z našich dedičov" # todo: CHANGED # todo: CONCEPT CASE
- favor_heir_bt: "#Y Môžeme uprednostniť len jedného dediča#!" # todo: NEW TRANSLATION
  promote_to_head_of_cabinet: "Vymenovať za vedúceho kabinetu" # todo: NEW TRANSLATION
  promote_to_head_of_cabinet_concept: "[Concept('cabinet','Kabinet')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  promote_to_head_of_cabinet_act: "$promote_to_head_of_cabinet$" # todo: NEW TRANSLATION
@@ -209,7 +203,7 @@
  promote_to_head_of_cabinet_timer: "Slúžil v [Concept('cabinet','kabinete')|e] #Y 10 rokov#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  promote_to_head_of_cabinet_effect_tt: "[SCOPE.sCharacter('recipient').GetName] získa [ShowModifier('head_of_the_cabinet_modifier')] pokiaľ [SCOPE.sCharacter('recipient').GetHeShe] pracuje v [Concept('cabinet','kabinete')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  head_of_cabinet_influence_effect_tt: "Vzhľadom na to, že postava patrí do [ESTATE.GetName], uplatnia sa nasledujúce efekty:" # todo: NEW TRANSLATION
- head_of_cabinet_influence_desc: "opustia [Concept('cabinet','kabinet')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ head_of_cabinet_influence_desc: "pokiaľ je [Concept('character','postava')|e] v [Concept('cabinet','kabinete')|e]" # todo: CHANGED (predtym: opustia [Concept('cabinet','kabinet')|e])
  head_of_cabinet_promotion: "Povýšenie na vedúceho kabinetu" # todo: NEW TRANSLATION
  nobles_estate_head_of_cabinet_influence_effect_tt: "Vzhľadom na šľachtický stav [SCOPE.sCharacter('recipient').GetName], získavame nasledujúce efekty až do odchodu [SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')] z [Concept('cabinet','kabinetu')|e]:\n[ShowModifierEffect('nobles_estate_head_of_cabinet_influence')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  burghers_estate_head_of_cabinet_influence_effect_tt: "Vzhľadom na stav mešťanov [SCOPE.sCharacter('recipient').GetName], získavame nasledujúce efekty až do odchodu [SCOPE.sCountry('actor').Custom('GetHeadOfCabinetName')] z [Concept('cabinet','kabinetu')|e]:\n[ShowModifierEffect('burghers_estate_head_of_cabinet_influence')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -238,7 +232,7 @@
  tim_normal_governor_effects_tt: "Vymenovať [SCOPE.sCharacter('recipient').GetName] za [target_reform.GetName] v [Concept('area','oblasti')|e]. Zabezpečí to, že [SCOPE.sCharacter('recipient').GetSheHe] získa pozitívne [Concept('events','udalosti')|e], ktoré zvýšia [Concept('prosperity','prosperita')|e] a [Concept('development','rozvoj')|e] danej [Concept('area','oblasti')|e] v závislosti od [Concept('total_ability','celkovej schopnosti')|e] postavy.\n\n[Area|e] bude anektovaná nami po smrti [SCOPE.sCharacter('recipient').GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  tim_banished_governor_effects_tt: "Vymenovať [SCOPE.sCharacter('recipient').GetName] za [target_reform.GetName] v [Concept('area','oblasti')|e]. Zabezpečí to, že [SCOPE.sCharacter('recipient').GetSheHe] nebude môcť byť naším [Concept('heir','dedičom')|e], ale [SCOPE.sCharacter('recipient').GetSheHe] môže získať udalosti na získanie podpory proti nám.\n\n[Area|e] môže byť zdedená [Concept('heir','dedič')|e] [SCOPE.sCharacter('recipient').GetName] po [SCOPE.sCharacter('recipient').GetHisHer] smrti." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  tim_educational_governor_effects_tt: "Vymenovať [SCOPE.sCharacter('recipient').GetName] za [target_reform.GetName] v [Concept('area','oblasti')|e]. Zabezpečí to, že [SCOPE.sCharacter('recipient').GetSheHe] získa viac [Concept('total_ability','celková schopnosť')|e] z [Concept('events','udalostí')|e], ale [Concept('area','oblasť')|e] môže pri tom stratiť [Concept('development','rozvoj')|e] a [Concept('prosperity','prosperita')|e].\n\n[Area|e] môže byť zdedená po tom, čo [SCOPE.sCharacter('recipient').GetName] spravoval [Concept('area','oblasť')|e] #Y 10#! rokov, alebo sa [SCOPE.sCharacter('recipient').GetSheHe] môže stať [ShowGovernmentReformName('soyurghal_governor_effective_governor_reform')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- tim_is_related_to_ruler_tt: "Postava [Concept('character','postava')|e] je príbuzná s naším [Concept('ruler','panovníkom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tim_is_related_to_ruler_tt: "Postava [Concept('character','postava')|e] je predkom nášho [Concept('ruler','panovníkom')|e]" # todo: CHANGED (predtym: Postava [Concept('character','postava')|e] je príbuzná s naším [Concept('ruler','panovníkom')|e])
  tur_appoint_dragoman: "Vymenovať za dragomana" # todo: NEW TRANSLATION
  tur_appoint_dragoman_concept: "[Concept('character','Postava')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  tur_appoint_dragoman_act: "$tur_appoint_dragoman$" # todo: NEW TRANSLATION

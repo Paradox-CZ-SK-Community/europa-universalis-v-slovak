@@ -25,6 +25,8 @@
  diplomatic_status_marriage_union_tooltip: "#T Manželské únie#!\nTáto krajina vytvorila manželskú úniu s týmito [Concept('countries','krajinou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_royal_marriage_name: "Kráľovské manželstvo" # todo: NEW TRANSLATION
  diplomatic_status_royal_marriage_tooltip: "#T Kráľovské manželstvo#!\nTáto krajina má [Concept('royal_marriages','kráľovské sňatky')|e] s týmito [Concept('countries','krajinou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ diplomatic_status_betrothal_name: "Zasnúbenie" # todo: NEW TRANSLATION
+ diplomatic_status_betrothal_tooltip: "#T Zasnúbenie#!\nTáto krajina má [Concept('betrothals','zasnúbenia')|e] s týmito [Concept('countries','krajinou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_enemies_name: "Nepriatelia" # todo: NEW TRANSLATION
  diplomatic_status_enemies_tooltip: "#T Nepriatelia#!\nKrajina je týmito [Concept('countries','krajinou')|e] považovaná za [Concept('rival','rivala')|e]." # todo: CONCEPT CASE
  diplomatic_status_rivals_name: "Rivali"
@@ -38,9 +40,9 @@
  diplomatic_status_alliance_name: "Aliancia" # todo: NEW TRANSLATION
  diplomatic_status_alliance_tooltip: "#T Aliancia\n#!Krajiny v [Concept('alliance','aliancii')|e] si často v prípade útoku navzájom pomôžu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_vassalizing_name: "Poddaní" # todo: NEW TRANSLATION
- diplomatic_status_vassalizing_tooltip: "#T Poddaní#!\nTieto krajiny môžu prísť na pomoc svojmu [overlord|e], ak ich napadneme." # todo: NEW TRANSLATION
+ diplomatic_status_vassalizing_tooltip: "#T Poddaní#!\nTieto krajiny môžu prísť na pomoc svojmu [Concept('overlord','suzerénovi')|e], ak ich napadneme." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_vassalized_name: "Suzerén" # todo: NEW TRANSLATION
- diplomatic_status_vassalized_tooltip: "#T Suzerén#!\nTáto krajina môže byť ochránená svojím [overlord|e], ak ju napadneme." # todo: NEW TRANSLATION
+ diplomatic_status_vassalized_tooltip: "#T Suzerén#!\nTáto krajina môže byť ochránená svojím [Concept('overlord','suzerénom')|e], ak ju napadneme." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_casus_belli_name: "Casus Belli" # todo: NEW TRANSLATION
  diplomatic_status_casus_belli_tooltip: "#T Casus Belli#!\nTáto krajina má [Concept('casus_belli','casus Belli')|e] na tieto [Concept('countries','krajiny')|e]. Môže proti nim vyhlásiť [Concept('war','vojna')|e] bez postihu na [Concept('stability','stabilitu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_casus_belli_target_name: "Cieľ casus belli" # todo: NEW TRANSLATION
@@ -54,7 +56,7 @@
  diplomatic_status_annul_treaties_name: "Zrušiť zmluvy" # todo: NEW TRANSLATION
  diplomatic_status_annul_treaties_tooltip: "#T Zrušiť zmluvy#!\nTáto krajina bola donútená zrušiť všetky zmluvy s týmito [Concept('countries','krajinou')|e] a nemôže ich ani diplomaticky podriadiť, ani s nimi nadviazať žiadne vzťahy." # todo: CHANGED # todo: CONCEPT CASE
  diplomatic_status_warning_name: "Varovanie" # todo: NEW TRANSLATION
- diplomatic_status_warning_tooltip: "#T Varovanie#!\nAk krajina, ktorej bolo vyslovené varovanie, zaútočí na nejaký štát susediaci s ňou aj s vydavateľom varovania, krajina vydávajúca varovanie získa na ňu [casus_belli|e]." # todo: NEW TRANSLATION
+ diplomatic_status_warning_tooltip: "#T Varovanie#!\nAk krajina, ktorej bolo vyslovené varovanie, zaútočí na nejaký štát susediaci s ňou aj s vydavateľom varovania, krajina vydávajúca varovanie získa na ňu [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_warned_name: "Varovaná" # todo: NEW TRANSLATION
  diplomatic_status_warned_tooltip: "#T Varovaná#!\nKrajiny, ktorým bolo udelené varovanie, dajú krajine, ktorá varovanie vydala, [Concept('casus_belli','casus Belli')|e] proti nim, ak zaútočia na štát susediaci s oboma stranami." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_gives_military_access_name: "Udeľovanie vojenského prístupu" # todo: NEW TRANSLATION
@@ -66,7 +68,7 @@
  diplomatic_status_has_fleet_basing_rights_name: "Povolené práva kotvenia flotily" # todo: NEW TRANSLATION
  diplomatic_status_has_fleet_basing_rights_tooltip: "#T Povolené práva kotvenia flotily#!\nTáto krajina má povolené [Concept('fleet_basing_rights','práv kotvenia flotily')|E] od týchto [Concept('countries','krajín')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_civil_war_name: "Občianska vojna" # todo: NEW TRANSLATION
- diplomatic_status_civil_war_tooltip: "#T Občianska vojna#!\nTáto krajina je v stave [civil_war|e]!" # todo: NEW TRANSLATION
+ diplomatic_status_civil_war_tooltip: "#T Občianska vojna#!\nTáto krajina je v stave [Concept('civil_war','občianskej vojny')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_annex_name: "Anektovanie poddaných" # todo: NEW TRANSLATION
  diplomatic_status_annex_tooltip: "#T Anektovanie poddaných#!\nTáto krajina práve anexuje nasledujúcich [Concept('subjects','vazalov')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_annex_target_name: "Bude anektovaný" # todo: NEW TRANSLATION
@@ -87,7 +89,8 @@
  alliance_list_who_tt: "$WHO$ je v [Concept('alliance','aliancii')|e] s $LIST$. Budú si navzájom volaní do [Concept('wars','vojen')|e], aby spoločne bojovali proti nepriateľom." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  guaranteed_list_who_tt: "$WHO$ je [Concept('guaranteed','garantované')|e] zo strany $LIST$. To spôsobí, že $LIST$ sa pridá do akýchkoľvek obranných [Concept('wars','vojny')|e], do ktorých sa $WHO$ dostane." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  guaranteeing_list_who_tt: "$WHO$ [Concept('guaranteeing','Garantovanie')|e] $LIST$. To spôsobí, že $WHO$ sa pridá do každej [Concept('war','vojny')|e], kde bude $LIST$ napadnutý." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- royal_marriage_list_who_tt: "Dynastické väzby s $WHO$ vďaka [royal_marriage|e] medzi $FIRST$ a $SECOND$" # todo: NEW TRANSLATION
+ royal_marriage_list_who_tt: "Dynastické väzby s $WHO$ vďaka [Concept('royal_marriage','kráľovskému sňatku')|e] medzi $FIRST$ a $SECOND$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ betrothal_list_who_tt: "Dynastické väzby s $WHO$ vďaka [betrothal|e] medzi $FIRST$ a $SECOND$" # todo: NEW TRANSLATION
  union_list_who_tt: "Únia s $LIST$, pretože majú rovnakého [Concept('ruler','panovníka')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  marriage_union_list_who_tt: "Manželská únia s $LIST$, pretože panovníci medzi sebou majú [Concept('royal_marriage','kráľovský sňatok')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  getting_economic_support_list_who_tt: "$WHO$ prijíma [Concept('economic_support','ekonomická podpora')|e] od $LIST$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -104,7 +107,7 @@
  has_military_access_list_who_tt: "$WHO$ má [Concept('military_access','vojenský prístup')|E] cez $LIST$. To umožňuje [Concept('armies','armády')|e] $WHO$ pochodovať cez $LIST$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  gives_fleet_basing_rights_list_who_tt: "$WHO$ udeľuje $LIST$ [Concept('fleet_basing_rights','práva kotvenia flotily')|E]. To umožňuje flotilám $LIST$ mať základňu v $WHO$ a zároveň umožňuje ich obchodníkom pôsobiť z ich prístavov" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  has_fleet_basing_rights_list_who_tt: "$WHO$ má [Concept('fleet_basing_rights','práva kotvenia flotily')|E] v $LIST$. To umožňuje flotilám $WHO$ byť založenými v $LIST$ a tiež umožňuje ich obchodníkom pôsobiť z ich prístavov" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- civil_war_list_who_tt: "Je v [civil_war|e] proti $WHO$. Budú bojovať, kým jedna strana úplne neporazí druhú!" # todo: NEW TRANSLATION
+ civil_war_list_who_tt: "Je v [Concept('civil_war','občianskej vojne')|e] proti $WHO$. Budú bojovať, kým jedna strana úplne neporazí druhú!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  annex_list_who_tt: "$WHO$ anexuje $LIST$ do svojej krajiny. Keď bude toto dokončené, $LIST$ prestane existovať ako [Concept('country','krajina')|e] a stane sa plne anektovanou časťou $WHO$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  annex_target_list_who_tt: "$WHO$ anexuje $LIST$ do svojej krajiny. Keď bude toto dokončené, $LIST$ prestane existovať ako [Concept('country','krajina')|e] a stane sa plne anektovanou časťou $WHO$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BEING_ANNEXED_LOYAL: "\nKeďže $SUBJECT$ nie sú [Concept('disloyal_subject','nelojálny vazal')|e], budú postupovať každý mesiac." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -131,7 +134,7 @@
  lordship_of_ireland_list_who_tt: "$WHO$ je v [GetUniqueInternationalOrganization('lordship_of_ireland').GetName] s $LIST$." # todo: NEW TRANSLATION
  diplomatic_status_autocephalous_patriarchate_name: "Autocefalný patriarchát" # todo: NEW TRANSLATION
  diplomatic_status_autocephalous_patriarchate_tooltip: "#T Autocefalný patriarchát#!\nTáto krajina je členom autocefalného patriarchátu." # todo: NEW TRANSLATION
- autocephalous_patriarchate_list_who_tt: "$WHO$ je v [autocephalous_patriarchate|e] s $LIST$" # todo: NEW TRANSLATION
+ autocephalous_patriarchate_list_who_tt: "$WHO$ je v [Concept('autocephalous_patriarchate','autokefálnom patriarcháte')|e] s $LIST$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  diplomatic_status_sect_name: "Sekta" # todo: NEW TRANSLATION
  diplomatic_status_sect_tooltip: "#T Sekta#!\nTáto krajina je členom sekty." # todo: NEW TRANSLATION
  sect_list_who_tt: "$WHO$ je v [Concept('sect','sekte')|e] s $LIST$" # todo: NEW TRANSLATION # todo: CONCEPT CASE

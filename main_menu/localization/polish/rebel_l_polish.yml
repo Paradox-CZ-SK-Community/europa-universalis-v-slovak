@@ -8,10 +8,11 @@
  REBEL_COUNTRY_BACKING: "Má tiež podporu $NAMES$"
  REBEL_PROGRESS_SIZE: "Sila podpory: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2-=%L$#!"
  REBEL_PROGRESS_NATIONALISM: "Nacionalizmus: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|2-=%L$#!"
- REBEL_PROGRESS_FOREIGN: "Podpora od [COUNTRY.GetName]: $VAL|2-=%$"
+ REBEL_PROGRESS_FOREIGN: "Podpora od [COUNTRY.GetAltAdjective('G')]: $VAL|2-=%$" # todo: COUNTRY CASE
  REBEL_PROGRESS_ESTATE_INVEST: "Z $GOLD|2$@gold! v dôsledku investícií [ESTATE.GetName]: $VAL|2-=%$"
  REBEL_PROGRESS_LACK_OF_CONTROL: "Z $GOLD|2$@gold! kvôli nedostatku [Concept('control','kontrole')|e]: $VAL|2-=%$" # todo: CONCEPT CASE
  REBEL_PROGRESS_MODIFIER: "$REBEL$ Modifikátor postupu rebelov"
+ RELATIVE_REBEL_SIZE: "Veľkosť povstania vzhľadom na populáciu" # todo: NEW TRANSLATION
  REBEL_HOUSE_SUPPORT: "Podporované [DYNASTY.GetName]: $VAL|2-=%$"
  REBEL_POWER_OF_SUPPORT: "Moc rebelov [Concept('political_power','politickú moc')|e]: $VAL|V2$\n[political_power] Požadované: $REQUIRED_POWER|V2$\nNedostatok politickej moci: $SHORTFALL|V2$\nMesačný pokrok: $PROGRESS|+=2%$" # todo: CHANGED # todo: CONCEPT CASE
  REBEL_STALLED_CIVIL_WAR: "Zmrazené kvôli [Concept('civil_war','občianskej vojne')|e]."
@@ -31,6 +32,7 @@
  rsi_primary: "[Concept('primary_culture','Hlavná kultúra')|e]" # todo: CONCEPT CASE
  rsi_accepted: "[Concept('accepted_culture','Akceptovaná kultúra')|e]" # todo: CONCEPT CASE
  rsi_tolerated: "[Concept('tolerated_culture','Tolerovaná kultúra')|e]" # todo: CONCEPT CASE
+ rsi_discriminated: "[Concept('discriminated_culture','Diskriminovaná kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  rsi_estate: "[Concept('estate','Stav')|e]" # todo: CONCEPT CASE
  rsi_unrest: "Lokálne [Concept('unrest','nepokoje')|el]" # todo: CONCEPT CASE
  rsi_tolerance: "[Concept('tolerance','Tolerancia')|e]" # todo: CONCEPT CASE
@@ -50,11 +52,11 @@
  REBEL_COUNTRY_SUPPORT_ENTRY: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalTaxBase]"
  REBEL_SUPPORT_COUNTRY_TT: "#T Zahraničná podpora#!\nMajú podporu od nasledujúcich [Concept('countries','krajinu')|e]" # todo: CONCEPT CASE
  REBEL_COUNTRY_SUPPORT_NONE: "V súčasnosti žiadne krajiny."
- REBELS_CATEGORY_estate_DESC: "Títo povstalci pracujú na prosadení zanedbaných záujmov [ESTATE_TYPE.GetName], a keď budú pripravení, začnú [civil_war_with_icon|e]." # todo: CHANGED
- REBELS_CATEGORY_nationalist_DESC: "Títo povstalci pracujú na nezávislosti [CULTURE.GetName]. Keď budú pripravení, vyvolajú [revolt_with_icon|e]." # todo: CHANGED
- REBELS_CATEGORY_pretender_DESC: "Títo povstalci sa snažia nahradiť [Concept('ruler','panovník')|e] [REBEL.GetOwner.GetName], a keď budú pripravení, začnú [civil_war_with_icon|e]." # todo: CHANGED # todo: CONCEPT CASE
- REBELS_CATEGORY_religious_DESC: "Títo povstalci pracujú na nezávislosti [RELIGION.GetName]. Keď budú pripravení, vyvolajú [revolt_with_icon|e]." # todo: CHANGED
- REBELS_CATEGORY_religious_DESC_CONVERT: "Títo povstalci sa pokúsia začať [civil_war_with_icon|e], aby zmenili [Concept('primary_religion','hlavné náboženstvo')|e] [REBEL.GetOwner.GetName] na [RELIGION.GetName]." # todo: CHANGED # todo: CONCEPT CASE
+ REBELS_CATEGORY_estate_DESC: "Títo povstalci pracujú na prosadení zanedbaných záujmov [ESTATE_TYPE.GetName], a keď budú pripravení, začnú [Concept('civil_war_with_icon','občianska vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ REBELS_CATEGORY_nationalist_DESC: "Títo povstalci pracujú na nezávislosti [CULTURE.GetName]. Keď budú pripravení, vyvolajú [Concept('revolt_with_icon','povstanie')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ REBELS_CATEGORY_pretender_DESC: "Títo povstalci sa snažia nahradiť [Concept('ruler','panovník')|e] [REBEL.GetOwner.GetName], a keď budú pripravení, začnú [Concept('civil_war_with_icon','občianska vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ REBELS_CATEGORY_religious_DESC: "Títo povstalci pracujú na nezávislosti [RELIGION.GetName]. Keď budú pripravení, vyvolajú [Concept('revolt_with_icon','povstanie')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ REBELS_CATEGORY_religious_DESC_CONVERT: "Títo povstalci sa pokúsia začať [Concept('civil_war_with_icon','občianska vojna')|e], aby zmenili [Concept('primary_religion','hlavné náboženstvo')|e] [REBEL.GetOwner.GetName] na [RELIGION.GetName]." # todo: CHANGED # todo: CONCEPT CASE
  REBELS_CATEGORY_slave_DESC: "[ShowPopTypeName('slaves')] majú dosť a chcú byť slobodní, nech to stojí čokoľvek."
  REBEL_TT_TEXT_MINOR_REVOLT: "[minor_revolt_icon] Títo rebeli začnú [Concept('minor_revolt','menšie povstanie')|e], keď ich postup dosiahne #W 100%#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REBEL_TT_TEXT_REVOLT: "[civil_war_icon] Títo rebeli začnú [Concept('civil_war','občianska vojna')|e], keď ich postup dosiahne #W 100%#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -92,6 +94,10 @@
  jacquerie_revolt_country_adjective: "$jacquerie_revolt$"
  union_of_aragon_name_country: "$ADJ$ rebeli únie"
  union_of_aragon_name_country_adjective: "Rebelov Únie"
+ oligarchic_faction_name_country: "$ADJ$ oligarchická frakcia" # todo: NEW TRANSLATION
+ oligarchic_faction_name_country_adjective: "oligarchickej frakcie" # todo: NEW TRANSLATION
+ schismatic_clergy_name_country: "$ADJ$ schizmatici" # todo: NEW TRANSLATION
+ schismatic_clergy_name_country_adjective: "schizmatikov" # todo: NEW TRANSLATION
  rebellious_prince_name_country: "$rebellious_prince_name$"
  rebellious_prince_name_country_adjective: "$rebellious_prince_name$"
  cola_rebels_country: "$cola_rebels$"
@@ -361,6 +367,10 @@
  dobrujan_revolt_country_adjective: "$ADJ$ $dobrujan_revolt$" # todo: NEW TRANSLATION
  nikephoros_ii_orsini_revolt_country: "$nikephoros_ii_orsini_revolt$" # todo: CHANGED
  nikephoros_ii_orsini_revolt_country_adjective: "$ADJ$ $Orsini$" # todo: NEW TRANSLATION
+ catalan_rebels_country: "$catalan_rebels$" # todo: NEW TRANSLATION
+ catalan_rebels_country_adjective: "$catalan_rebels$" # todo: NEW TRANSLATION
+ braganca_rebels_country: "$braganca_rebels$" # todo: NEW TRANSLATION
+ braganca_rebels_country_adjective: "$braganca_rebels$" # todo: NEW TRANSLATION
  pretender_rebels: "[pretender_rebels_icon] Pretendent"
  slave_rebels: "Otroci"
  REVOLT_NAME_ENTRY: "$NAME$ revolta"
@@ -416,3 +426,13 @@
  REBEL_SUPPRESS_PRIORITY_UNMARK: "Odznačiť toto povstanie ako prioritné" # todo: NEW TRANSLATION
  REBEL_LEGEND_WILL_REVOLT: "Pridá sa k povstaniu" # todo: NEW TRANSLATION
  REBEL_LEGEND_HAS_SUPPORT: "Má určitú podporu povstalcov" # todo: NEW TRANSLATION
+ REBEL_LOCATION_FACTIONS_HEADER: "Povstalecké frakcie:" # todo: NEW TRANSLATION
+ REBEL_MAPMODE_COUNTRY_TITLE: "Povstalci v krajine [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ REBEL_FACTION_MAPMODE_ENTRY: "#T [REBEL.GetName] ($PROGRESS|%$)#!" # todo: NEW TRANSLATION
+ REBEL_FACTION_LOCATION_ENTRY: "[LOCATION.GetName]: $POP|Y$ [Concept('people','ľudia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ REBEL_LEGEND_SELECTED_COUNTRY: "Žiadni aktívni povstalci" # todo: NEW TRANSLATION
+ REBEL_LEGEND_IMMINENT_REVOLT: "Bezprostredné povstanie" # todo: NEW TRANSLATION
+ REBEL_LEGEND_READY_UPRISING: "Pripravení na povstanie" # todo: NEW TRANSLATION
+ REBEL_LEGEND_GROWING: "Rastúca hrozba" # todo: NEW TRANSLATION
+ REBEL_LEGEND_MINOR_SUPPORT: "Slabá podpora povstalcov" # todo: NEW TRANSLATION
+ REBEL_MAPMODE_NO_PRESENCE: "Na tomto území nie sú prítomní žiadni povstalci." # todo: NEW TRANSLATION

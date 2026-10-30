@@ -1,5 +1,5 @@
 ﻿l_polish:
- UNSTABLE_UNION_WARNING: "#Y Tento $game_concept_succession_law$ môže mať nežiadúce dôsledky pre ktorúkoľvek z našich súčasných alebo budúcich únií.#!" # todo: NEW TRANSLATION
+ UNSTABLE_UNION_WARNING: "#Y Tento [Concept('succession_law','nástupnícke právo')] môže mať nežiadúce dôsledky pre ktorúkoľvek z našich súčasných alebo budúcich únií.#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  cannot_be_transferred: "Nie je možné previesť" # todo: NEW TRANSLATION
  empty_heir_religion_law: "Nezávislé od [ShowLawName('heir_religion_law')]" # todo: NEW TRANSLATION
  FULL_RULER_NAME: "$TITLE$ $NAME$" # todo: NEW TRANSLATION
@@ -16,6 +16,18 @@
  LOCK_ONGOING_RELATION_DESC: "Zabrániť automatizácii v zmene tohto [diplomatic_action]." # todo: NEW TRANSLATION
  UNLOCK_ONGOING_RELATION_DESC: "Umožniť automatizácii zmeniť toto [diplomatic_action]." # todo: NEW TRANSLATION
  SELECT_THIS_CABINET: "Vybrať túto pozíciu v kabinete" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_ADM: "Administratívne" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_ADM_TITLE: "Filtrovať podľa administratívy" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_ADM_DESC: "Zobraziť iba administratívne akcie kabinetu." # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_DIP: "Diplomatické" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_DIP_TITLE: "Filtrovať podľa diplomacie" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_DIP_DESC: "Zobraziť iba diplomatické akcie kabinetu." # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_MIL: "Vojenské" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_MIL_TITLE: "Filtrovať podľa vojenstva" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_MIL_DESC: "Zobraziť iba vojenské akcie kabinetu." # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_RECOMMENDED: "Odporúčané" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_RECOMMENDED_TITLE: "Filtrovať podľa odporúčaných" # todo: NEW TRANSLATION
+ CABINET_ACTION_FILTER_RECOMMENDED_DESC: "Zobraziť iba akcie kabinetu odporúčané na vyriešenie problému, kvôli ktorému ste sem prišli." # todo: NEW TRANSLATION
  POLICY_IS_PART_OF_LAW: "Toto je [Concept('policy','politika')|e] zákona [LAW.GetName] [Concept('law','zákona')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPANDED_CABINET_VIEW: "Rozšírené zobrazenie kabinetu" # todo: NEW TRANSLATION
  COMPACT_CABINET_VIEW: "Kompaktné zobrazenie kabinetu" # todo: NEW TRANSLATION
@@ -137,6 +149,8 @@
  austrian_cognatic_primogeniture_desc: "$cognatic_primogeniture_desc$ Je dostupná po udelení [ShowGovernmentReformName('libertas_affectandi')]. Okrem pravidiel kognatickej primogenitúry má vládnuca dynastia preferenčné postavenie oproti priamej mužskej línii." # todo: NEW TRANSLATION
  matrilineal_salic_law: "Matrilineárne salické právo" # todo: NEW TRANSLATION
  matrilineal_salic_law_desc: "$semi_salic_law_desc$ Deti matiek vládnucej dynastie sú uprednostňované pred deťmi matiek z iných dynastií." # todo: NEW TRANSLATION
+ ibadi_zuhur_heir_selection: "Nástupníctvo [ShowReligionAdjectiveWithNoTooltip('ibadi')]" # todo: NEW TRANSLATION
+ ibadi_zuhur_heir_selection_desc: "Nástupcov imáma vyberajú podľa ich cností, ako ich posudzuje [ShowReligionAdjective('ibadi')] [ShowSocietyDirectionName('jurisprudence')]. Za uznávané cnosti sa považujú asketizmus (#italic zuhd#!), zbožnosť (#italic war'#!) a predovšetkým zmysel pre spravodlivosť (#italic 'adl#!). Posledný bod je natoľko dôležitý, že za imáma môže byť zvolený aj neibádí, ak má veľmi silný zmysel pre spravodlivosť." # todo: NEW TRANSLATION
  favorite_son_elective_succession: "Sukcesia obľúbeného syna" # todo: NEW TRANSLATION
  favorite_son_elective_succession_desc: "Je to typ [Concept('heir_selection','nástupnícke právo')|e], pri ktorom starý vládca uprednostní jedného zo svojich synov a vymenuje ho za dediča bez ohľadu na vek." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  guru_election: "$guru$ voľba" # todo: NEW TRANSLATION
@@ -147,13 +161,14 @@
  HEIR_SELECTION_UNTIL_DEATH: "• Vládne doživotne" # todo: NEW TRANSLATION
  HEIR_SELECTION_TERM: "• Vládne $MONTHS|Y$ mesiacov" # todo: NEW TRANSLATION
  HEIR_SELECTION_ALL_IN_COUNTRY: "• Zohľadnení všetci v [Concept('country','krajine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HEIR_SELECTION_ALL_IN_OVERLORD: "• Zohľadnení všetci v [overlord|e]" # todo: NEW TRANSLATION
+ HEIR_SELECTION_ALL_IN_OVERLORD: "• Zohľadnení všetci v [Concept('overlord','suzerénovi')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HEIR_SELECTION_ALL_IN_DYNASTY: "• Zohľadnení všetci v [Concept('ruler','panovníkovi')|e]'s [Concept('dynasty','dynastiou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HEIR_SELECTION_TRACE_SIBLINGS: "• Prostredníctvom súrodencov vládcu" # todo: NEW TRANSLATION
  HEIR_SELECTION_THROUGH_FEMALE: "• Prostredníctvom ženskej línie" # todo: NEW TRANSLATION
  HEIR_SELECTION_ALLOW_MALE: "• Povoľuje mužov" # todo: NEW TRANSLATION
  HEIR_SELECTION_ALLOW_FEMALE: "• Povoľuje ženy" # todo: NEW TRANSLATION
  HEIR_SELECTION_ALLOW_ARTISTS: "• Povoľuje umelcov" # todo: NEW TRANSLATION
+ HEIR_SELECTION_ALLOW_RELIGIOUS_FIGURE: "• Povoliť náboženské osobnosti" # todo: NEW TRANSLATION
  HEIR_SELECTION_ALLOW_CHILDREN: "• Povoľuje deti" # todo: NEW TRANSLATION
  HEIR_SELECTION_IGNORE_RULER: "• Súčasný vládca sa ignoruje" # todo: NEW TRANSLATION
  HEIR_SELECTION_IS_RULER: "• Je vládca" # todo: NEW TRANSLATION
@@ -169,8 +184,9 @@
  CURRENT_REGENCY_TOOLTIP_NAME: "$REGENCY$" # todo: NEW TRANSLATION
  CURRENT_REGENCY_TOOLTIP_DESC: "Momentálne nás v krajine vládne $REGENCY$ až do #V $DATE$#!, čo nám dáva nasledujúce efekty:\n\n$EFFECTS$" # todo: NEW TRANSLATION
  CURRENT_REGENCY_INDEFINITELY_TOOLTIP_DESC: "V krajine nás vládne $REGENCY$ #V na neurčito#!, čo nám dáva nasledujúce efekty:\n\n$EFFECTS$" # todo: NEW TRANSLATION
- supported_heirs_rule: "• Postavy musia byť podporené cudzou krajinou pomocou [ShowRelationTypeName('support_heir')] alebo obľúbené u nás prostredníctvom [ShowCharacterInteractionName('favor_heir')]" # todo: CHANGED
+ supported_heirs_rule: "• Postavy musia byť podporené cudzou krajinou pomocou [ShowRelationTypeName('support_heir')] alebo obľúbené u nás prostredníctvom [ShowGenericActionName('favor_heir')]" # todo: CHANGED (predtym: • Postavy musia byť podporené cudzou krajinou pomocou [ShowRelationTypeName('support_heir')] alebo obľúbené u nás prostr)
  no_female_heirs_for_poland: "• Dedič NESMIE byť žena pre [GetCountry('POL').GetName]" # todo: NEW TRANSLATION
+ own_characters_first_rule: "• Postavy z domovskej krajiny majú vyššiu prioritu" # todo: NEW TRANSLATION
  BANK_OLDER_HEIR_DESC: "• Skóre za každý rok veku" # todo: NEW TRANSLATION
  COGNATIC_PRIMOGENITURE_PARENT_IS_RULER_DESC: "• Skóre za to, že ktorýkoľvek rodič je vládca" # todo: NEW TRANSLATION
  COGNATIC_PRIMOGENITURE_GRANDPARENT_IS_RULER_DESC: "• Skóre za to, že ktorýkoľvek starý rodič je vládca" # todo: NEW TRANSLATION
@@ -222,6 +238,22 @@
  HEIR_SELECTION_ADMIRAL_TRAIT_DESC: "• Skóre za [Concept('admiral','admirála')|e] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HEIR_SELECTION_GENERAL_OR_ADMIRAL_TRAIT_DESC: "• Skóre za [Concept('general','generála')|e] alebo [Concept('admiral','admirál')|e] [Concept('traits','vlastností')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HEIR_SELECTION_MAMLUK_DESC: "• Skóre za $mamluk$ [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_FAMILY_DESC: "• Skóre za blízku príbuznosť" # todo: NEW TRANSLATION
+ HEIR_SELECTION_RELIGION_DESC: "• Skóre za príslušnosť k [ShowReligionAdjective('ibadi')] viere" # todo: NEW TRANSLATION
+ HEIR_SELECTION_TRAIT_DESC_just: "• Skóre za vlastnosť [ShowTraitName('just')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_cruel: "• Skóre za vlastnosť [ShowTraitName('cruel')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_kind_hearted: "• Skóre za vlastnosť [ShowTraitName('kind_hearted')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_calm: "• Skóre za vlastnosť [ShowTraitName('calm')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_benevolent: "• Skóre za vlastnosť [ShowTraitName('benevolent')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_zealot: "• Skóre za vlastnosť [ShowTraitName('zealot')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_pious: "• Skóre za vlastnosť [ShowTraitName('pious')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_incorruptible: "• Skóre za vlastnosť [ShowTraitName('incorruptible')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_scholar: "• Skóre za vlastnosť [ShowTraitName('scholar')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_embezzler: "• Skóre za vlastnosť [ShowTraitName('embezzler')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_drunkard: "• Skóre za vlastnosť [ShowTraitName('drunkard')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_sinner: "• Skóre za vlastnosť [ShowTraitName('sinner')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_greedy: "• Skóre za vlastnosť [ShowTraitName('greedy')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HEIR_SELECTION_TRAIT_DESC_malevolent: "• Skóre za vlastnosť [ShowTraitName('malevolent')] [Concept('trait','vlastnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HEIR_SELECTION_MEMBER_OF_SPINOLA_DYNASTY: "• Skóre za členstvo v dynastii [ShowDynastyName('spinola_dynasty')]" # todo: NEW TRANSLATION
  HEIR_SELECTION_MEMBER_OF_DORIA_DYNASTY: "• Skóre za členstvo v dynastii [ShowDynastyName('doria_dynasty')]" # todo: NEW TRANSLATION
  HEIR_SELECTION_SAME_DYNASTY_AS_CURRENT_RULER: "• Skóre za členstvo v dynastii súčasného vládcu" # todo: NEW TRANSLATION
@@ -239,20 +271,20 @@
  HEIR_SELECTION_PODESTA_NO_HEIR: "• Nový vládca je pozvaný, nie predvybraný" # todo: NEW TRANSLATION
  GOV_ALLOWS_HEIR_SELECTION: "To umožňuje nasledujúce [Concept('heir_selections','nástupnícke práva')|e]: $NAME$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RANK_HOW: "Aby sa stal [COUNTRY_RANK.GetNameWithNoTooltip], musí platiť:\n$HOW$" # todo: NEW TRANSLATION
- RANK_LEVEL_TITLE: "[COUNTRY_RANK.GetNameWithNoTooltip] je hodnosť $NUM|Y$ $game_concept_country_rank$." # todo: NEW TRANSLATION
+ RANK_LEVEL_TITLE: "[COUNTRY_RANK.GetNameWithNoTooltip] je hodnosť $NUM|Y$ [Concept('country_rank','rangu krajiny')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNTRY_RANK_NO: "Nie je možné stať sa [COUNTRY_RANK.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
  CHANGE_COUNTRY_RANK_COST: "Zmena nášho štátu na [COUNTRY_RANK.GetName] nás bude stáť $COST$" # todo: NEW TRANSLATION
  CHANGE_COUNTRY_RANK_ALREADY: "@trigger_no! Už sme [COUNTRY_RANK.GetName]" # todo: NEW TRANSLATION
  CHANGE_COUNTRY_RANK_NO_DOWNGRADE: "@trigger_no! Nemôžeme prejsť na nižšiu hodnosť. [COUNTRY_RANK.GetName] je vyššia hodnosť ako [COUNTRY.GetRank.GetName]" # todo: NEW TRANSLATION
  CHANGE_COUNTRY_RANK_SUBJECT_RESTRICTED: "@trigger_no! [SUBJECT_TYPE.GetName] nemôže meniť hodnosti." # todo: NEW TRANSLATION
  ESTATE_OPINION_ENTRY_FORMAT: "$KEY$: $VALUE|+=2$" # todo: NEW TRANSLATION
- ESTATE_OPINION_OF: "[ESTATE.GetNameWithNoTooltip] má $VAL$ názor na [TARGET_COUNTRY.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ ESTATE_OPINION_OF: "[ESTATE.GetNameWithNoTooltip] má $VAL$ názor na [TARGET_COUNTRY.GetAltAdjectiveWithNoTooltip('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  GRANT_PRIVILEDGE_ALREADY: "@trigger_no! Už udeľujeme [ESTATE_PRIVILEGE.GetName] [ESTATE.GetName]" # todo: NEW TRANSLATION
  GRANT_PRIVILEDGE_TT: "Udelenie [ESTATE.GetName] bude mať nasledujúci dopad na [Concept('estate_satisfaction','spokojnosť stavu')|e]\n[ESTATE.GetName]: $IMPACT$\n$OTHER$" # todo: CHANGED # todo: CONCEPT CASE
  ANNOY_OTHER_ESTATE: "[ESTATE.GetName]: $VAL|+=2%$ ([ESTATE.GetSatisfaction|%]@satisfaction!)" # todo: NEW TRANSLATION
- ESTATE_LOCATIONS_POWER_TITLE: "Sila lokalít [ESTATE.GetName] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ ESTATE_LOCATIONS_POWER_TITLE: "Sila lokalít [ESTATE.GetName] v [COUNTRY.GetAltAdjective('L')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  ESTATE_LOCATIONS_POWER_ENTRY: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L$#!" # todo: NEW TRANSLATION
- ESTATE_LOCATION_POWER_BREAKDOWN: "$VAL$ z dôvodu\nPočet [POP_TYPE.GetName] v [Location.GetName]: $SIZE$\nZáklad pre [ESTATE.GetName]: x$BASE$\n$MODIFIER$" # todo: NEW TRANSLATION
+ ESTATE_LOCATION_POWER_BREAKDOWN: "$VAL$ z dôvodu\nPočet [POP_TYPE.GetName] v [Location.GetName]: $SIZE$\nZáklad pre [POP_TYPE.GetName]: x$BASE$\n$MODIFIER$" # todo: CHANGED (predtym: $VAL$ z dôvodu\nPočet [POP_TYPE.GetName] v [Location.GetName]: $SIZE$\nZáklad pre [ESTATE.GetName]: x$BASE$\n$MODIFIER$)
  ESTATE_LOCATION_POWER_LOCAL_MODIFIER_HEADER: "$BULLET_WITH_TAB$ #T $MODIFIER$ z [LOCATION.GetName]#!\n" # todo: NEW TRANSLATION
  ESTATE_LOCATION_POWER_GLOBAL_MODIFIER_HEADER: "$BULLET_WITH_TAB$ #T Globálne modifikátory z [Country.GetName]#!\n" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_CHANGE: "$VAL|+=%$" # todo: NEW TRANSLATION
@@ -274,6 +306,7 @@
  REVOKE_PRIVILEGE_TRIGGER_NO: "Nie je možné odobrať [ESTATE_PRIVILEGE.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
  REVOKE_PRIVILEGE_CONDITIONS: "Podmienky odobratia" # todo: NEW TRANSLATION
  ESTATE_OPINION_BASE: "Názor krajiny" # todo: NEW TRANSLATION
+ ESTATE_OPINION_TARGET_DISCRIMINATES_OUR_CULTURE: "Diskriminujú [Concept('discriminate','diskriminovať')|e] našu [Concept('culture','kultúru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_OPINION_BOTH_MONARCHY: "Obe sú [ShowGovernmentTypeName('monarchy')]" # todo: NEW TRANSLATION
  ESTATE_OPINION_BOTH_REPUBLIC: "Obe sú [ShowGovernmentTypeName('republic')]" # todo: NEW TRANSLATION
  ESTATE_OPINION_TARGET_N_ESTATE_POWER: "[ShowEstateTypeName('nobles_estate')] [Concept('estate_power','Sila stavu')|e] v [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -325,21 +358,24 @@
  MAX_CONTROL_TT_TEXT: "Maximálna kontrola je spôsobená:" # todo: NEW TRANSLATION
  ABOVE_MAX_CONTROL: "Aktuálne klesá, pretože súčasný [Concept('control','kontrola')|e] je nad [Concept('max_control','maximálnou kontrolou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_HEADER: "[Concept('estate_satisfaction','Spokojnosť stavu')|e] [ESTATE.GetName] sa posúva smerom k $VALUE|2V%$ z dôvodu:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OPINION_ITEM_TOOLTIP: "[ESTATE.GetName] má $OPINION$ názor na [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ OPINION_ITEM_TOOLTIP: "[ESTATE.GetName] má $OPINION$ názor na [COUNTRY.GetAltAdjective('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  ESTATE_TYPE_POLITICAL_POWER: "$BULLET_WITH_TAB$Každých #G 1,000#! [Concept('pops','populácie')|e] dáva tomuto stavu $VAL|+=2$ [Concept('estate_power','sily stavu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_TYPE_TAX_SPLIT: "$BULLET_WITH_TAB$Každých #G 1,000#! [Concept('pops','populácie')|e] dáva tomuto stavu $VAL|+=2$ podielov z [Concept('tax_base','daňového základu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_TYPE_POPTYPE: "$BULLET_WITH_TAB$[POP_TYPE.GetName] [Concept('pops','Populácie')|e] môžu patriť tomuto [Concept('estate','stavu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ESTATE_TYPE_POPTYPE_WITH_POWER: "$BULLET_WITH_TAB$[Concept('pops','Populácie')|e] typu [POP_TYPE.GetName] môžu patriť k tomuto [Concept('estate','stavu')|e] (#G 1 000#! [Concept('pops','populáciám')|e] poskytuje $VAL|+=2$ [Concept('estate_power','silu stavu')|e])" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_BUREAUCRACY: "[bureaucracy_icon|e] $NAME$ [Concept('bureaucracy','Bureaukracia')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_CULTURE_MISMATCH_TOLERATED: "[CULTURE.GetName] je len [Concept('tolerated_culture_short','tolerovaná')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_CULTURE_MISMATCH_ACCEPTED: "[CULTURE.GetName] je len [Concept('accepted_culture_short','akceptovaná')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_CULTURE_MISMATCH_DISCRIMINATED: "[CULTURE.GetName] je [Concept('non_accepted_culture_short','diskriminovaná')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_RELIGION_SAME: "[RELIGION.GetName] je [Concept('state_religion','štátne náboženstvo')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TARGET_SATISFACTION_CULTURE_MISMATCH_ACTIVE_DISCRIMINATED: "[CULTURE.GetName] je [Concept('discriminated_culture_short','diskriminovaná')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_RELIGION_MISMATCH_HERETIC: "[RELIGION.GetName] je [Concept('heretic','kacír')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TARGET_SATISFACTION_RELIGION_MISMATCH_HEATHEN: "[RELIGION.GetName] je [Concept('heathen','neznaboh')|e]: $VAL|+2V%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_CULTURE_STATUS_PRIMARY: "[Concept('primary_culture_short','Hlavná')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_CULTURE_STATUS_ACCEPTED: "[Concept('accepted_culture_short','Akceptovaná')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_CULTURE_STATUS_TOLERATED: "[Concept('tolerated_culture_short','Tolerovaná')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ESTATE_CULTURE_STATUS_DISCRIMINATED: "[Concept('non_accepted_culture_short','Diskriminovaná')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ESTATE_CULTURE_STATUS_NEUTRAL: "[Concept('non_accepted_culture_short','Ignorovaná')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ESTATE_CULTURE_STATUS_DISCRIMINATED: "[Concept('discriminated_culture_short','Diskriminovaná')|e]" # todo: CHANGED (predtym: [Concept('non_accepted_culture_short','Diskriminovaná')|e])
  ESTATE_RELIGION_STATUS_PRIMARY: "[Concept('primary_religion_short','Hlavné')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_RELIGION_STATUS_HERETIC: "[Concept('heretic','Kacír')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_RELIGION_STATUS_HEATHEN: "[Concept('heathen','Neznaboh')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -349,6 +385,8 @@
  ADD_REFORM_TT: "Zaviesť [GOVERNMENT_REFORM.GetName] ako súčasť našej vlády" # todo: NEW TRANSLATION
  ADD_REFORM_TT_UNIQUE: "Unikátny [Concept('government_reform','reforma vlády')|e] pre [Player.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOVERNMENT_REFORM_EXCLUSIVE_FOR_COUNTRY: "Táto reforma je exkluzívna pre [Country.GetName]" # todo: NEW TRANSLATION
+ GOVERNMENT_REFORM_EXCLUSIVE_FOR_CULTURE: "Táto reforma je vyhradená pre [Concept('culture','kultúru')|e] krajiny [Country.GetCulture.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GOVERNMENT_REFORM_EXCLUSIVE_FOR_RELIGION: "Táto reforma je vyhradená pre [Concept('religion','náboženstvo')|e] krajiny [Country.GetReligion.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADD_REFORM_MAJOR: "@trigger_no! Už máme [Concept('major_reform','hlavná reforma')|e], [GOVERNMENT_REFORM.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADD_REFORM_ALREADY: "@trigger_no! Už máme [GOVERNMENT_REFORM.GetName]" # todo: NEW TRANSLATION
  ADD_REFORM_AGE_NOT_YET: "@trigger_no! [GOVERNMENT_REFORM.GetName] je pre túto dobu príliš zložitá, musíme byť v [AGE.GetName], kým ju možno pridať" # todo: NEW TRANSLATION
@@ -357,10 +395,10 @@
  ADD_REFORM_TRIGGER_NO: "Nie je možné pridať [GOVERNMENT_REFORM.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
  ADD_REFORM_NO_SLOTS: "@trigger_no! Aktuálne môžeme mať len $VAL$ vládnych reforiem." # todo: NEW TRANSLATION
  REMOVE_REFORM_TT: "Náklady na odstránenie: $COST$" # todo: NEW TRANSLATION
- REMOVE_REFORM_TITLE: "Odstrániť $game_concept_government_reform$" # todo: NEW TRANSLATION
+ REMOVE_REFORM_TITLE: "Odstrániť [Concept('government_reform','reformu vlády')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REMOVE_REFORM_NOT_CHANGE: "@trigger_no! Nemôžeme odstrániť [GOVERNMENT_REFORM.GetName] z dôvodu #TOOLTIP:$WHY_TAG$ #L jednej alebo viacerých prekážok#!#!" # todo: NEW TRANSLATION
- CHANGE_REFORM_TITLE: "Zmeniť $game_concept_government_reform$" # todo: NEW TRANSLATION
- CHANGE_REFORM_PER_AGE_TITLE: "Zmeniť $game_concept_government_reform$ z Prieskumníka reforiem" # todo: NEW TRANSLATION
+ CHANGE_REFORM_TITLE: "Zmeniť [Concept('government_reform','reformu vlády')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CHANGE_REFORM_PER_AGE_TITLE: "Zmeniť [Concept('government_reform','reformu vlády')] z Prieskumníka reforiem" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MAJOR_REFORM: "[Concept('major_reform','Hlavná reforma')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FULLY_IMPLEMENTED_TT: "$OBJECT$ implementované dňa #V $DATE$#!\nStav implementácie: 100%\n" # todo: NEW TRANSLATION
  NEWLY_IMPLEMENTED_TT: "$OBJECT$ implementované dňa #V $DATE$#!\nStav implementácie: #V $PERCENTAGE|2%$#!\nDokončené: #V $COMPLETED_DATE$#!\n" # todo: NEW TRANSLATION
@@ -368,16 +406,17 @@
  TIME_TO_IMPLEMENT: "@time! Implementácia trvá #W $DAYS$#! dní na plné dokončenie." # todo: CHANGED
  TIME_TO_REFORM_TITLE: "Čas na implementáciu [GovernmentReformItem.GetReform.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  TIME_TO_REFORM: "[GovernmentReformItem.GetTimeToImplementText]" # todo: CHANGED
- MAJOR_REFORM_content: "#G [major_reform]#!: Iba jedna $game_concept_major_reform$ naraz" # todo: CHANGED
+ MAJOR_REFORM_content: "[major_reform]: Iba jedna [Concept('major_reform','hlavná reforma')] naraz" # todo: CHANGED (predtym: G [major_reform] !: Iba jedna [Concept('major_reform','hlavná reforma')] naraz)
  ADD_BUREAUCRACY_NOT_ALLOWED: "@trigger_no! Nemáme povolené [Concept('bureaucracies','bureaukracie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ADD_BUREAUCRACY_ALREADY_HAVE: "@trigger_no! Už máme túto [bureaucracy|e]." # todo: NEW TRANSLATION
+ ADD_BUREAUCRACY_ALREADY_HAVE: "@trigger_no! Už máme túto [Concept('bureaucracy','bureaukraciu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADD_BUREAUCRACY_ALREADY_HAVE_ENOUGH: "@trigger_no! Už sme vyčerpali pridelený počet [Concept('bureaucracies','bureaukracie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- REMOVE_BUREAUCRACY_DONT_HAVE: "@trigger_no! Túto [bureaucracy|e] nemáme." # todo: NEW TRANSLATION
+ REMOVE_BUREAUCRACY_DONT_HAVE: "@trigger_no! Túto [Concept('bureaucracy','bureaukraciu')|e] nemáme." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_ALREADY_THIS: "@trigger_no![CHARACTER.GetName] je už zamestnaný v tejto [Concept('cabinet','kabinete')|e] pozícii." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_ALREADY: "@trigger_no![CHARACTER.GetName] je už zamestnaný v [Concept('cabinet','kabinete')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_REBEL: "@trigger_no![CHARACTER.GetName] je [Concept('rebel','povstalec')|e] a nemôže slúžiť v [Concept('cabinet','kabinete')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_CHILD: "@trigger_no![CHARACTER.GetName] nie je dosť starý na to, aby bol členom nášho [Concept('cabinet','kabinetu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_MERC: "@trigger_no![CHARACTER.GetName] je [Concept('mercenary','žoldnier')|e] a nemá záujem o pozície v [Concept('cabinet','kabinete')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SET_CABINET_DISCRIMINATED_CULTURE: "@trigger_no![CHARACTER.GetName] patrí k [Concept('discriminated_culture','diskriminovanej kultúre')|e] a nemôže pôsobiť v [Concept('cabinet','kabinete')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_MALE: "@trigger_no![CHARACTER.GetName] je muž a naša krajina ešte nedovoluje rodovú rovnosť." # todo: NEW TRANSLATION
  SET_CABINET_FEMALE: "@trigger_no![CHARACTER.GetName] je žena a naša krajina ešte nedovoluje rodovú rovnosť." # todo: NEW TRANSLATION
  SET_CABINET_RULER: "@trigger_no![CHARACTER.GetName] je náš [Concept('ruler','panovník')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -385,9 +424,11 @@
  SET_CABINET_REGENT: "@trigger_no![CHARACTER.GetName] je náš [Concept('regent','regent')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_ARTIST: "@trigger_no![CHARACTER.GetName] je príliš zaneprázdnený tvorbou umeleckých diel." # todo: NEW TRANSLATION
  SET_CABINET_RELIGIOUS_FIGURE: "@trigger_no![CHARACTER.GetName] je zaneprázdnený vyučovaním v [CHARACTER.GetHisHer] [Concept('religious_school','náboženskej škole')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ SET_CABINET_EXPEDITION_LEADER: "@trigger_no![CHARACTER.GetName] je príliš zaneprázdnený svojou [Concept('expedition','výpravou')|e] [EXPEDITION.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_EXPLORER: "@trigger_no![CHARACTER.GetName] je príliš zaneprázdnený skúmaním vzdialených miest." # todo: NEW TRANSLATION
  SET_CABINET_EXPLORER_CONSTRUCTION: "@trigger_no![CHARACTER.GetName] je príliš zaneprázdnený prípravami na prieskum vzdialených miest." # todo: NEW TRANSLATION
  SET_CABINET_COMMANDER: "@trigger_no![CHARACTER.GetName] je už zaneprázdnený velením [UNIT.GetName]." # todo: NEW TRANSLATION
+ SET_CABINET_COMMANDER_WARNING: "@warning_icon![CHARACTER.GetName] bude zbavený velenia nad jednotkou [UNIT.GetName], aby sa mohol pridať do [Concept('cabinet','kabinetu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_BLOCKED: "@trigger_no![CHARACTER.GetName] momentálne nemôže slúžiť z dôvodu $WHY$." # todo: NEW TRANSLATION
  SET_CABINET_BLOCKED_ESTATE: "@trigger_no![ESTATE_TYPE.GetName] majú zablokovaný prístup do [Concept('cabinet','kabinetu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_NOT_ALLOWED_ESTATE: "@trigger_no![ESTATE_TYPE.GetName] nie sú aktívne povolené v [Concept('cabinet','kabinete')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -396,9 +437,13 @@
  NO_POSSIBLE_CHARACTER_TO_CABINET: "@trigger_no! Neexistujú žiadne vhodné postavy pre túto pozíciu v kabinete" # todo: NEW TRANSLATION
  NO_POSSIBLE_PROVINCE_TO_CABINET: "@trigger_no! Neexistujú žiadne vhodné provincie pre túto akciu kabinetu" # todo: NEW TRANSLATION
  SET_CABINET_ACTION_ALREADY: "@trigger_no! Už vykonávame [CABINET_ACTION.GetName], a v tom istom čase to môže riešiť len jeden poradca." # todo: NEW TRANSLATION
+ SET_CABINET_ACTION_WRONG_RELIGION: "@trigger_no![CHARACTER.GetName] nevyznáva vieru [RELIGION.GetName] a nemôže ju podporovať." # todo: NEW TRANSLATION
  SET_CABINET_TRIGGER_NO: "Nie je možné vykonať [CABINET_ACTION.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
  SET_CABINET_TRIGGER_PROV_NO: "Nie je možné vykonať [CABINET_ACTION.GetName] v [PROVINCE.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
  SET_CABINET_TT: "Vymenovanie [CHARACTER.GetName] do pozície v kabinete bude stáť $COST$." # todo: NEW TRANSLATION
+ REMOVE_CABINET_HEAD_OF_CABINET: "@trigger_no![CHARACTER.GetName] je [Concept('head_of_the_cabinet','predseda kabinetu')|e] a nemožno ho odvolať." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ REMOVE_CABINET_TT: "Odvolanie [CHARACTER.GetName] z tejto pozície v kabinete [Concept('cabinet_seat','mieste v kabinete')|e] bude stáť $COST$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ REMOVE_CABINET_MEMBER: "Odvolať $game_concept_character$ z tejto pozície v kabinete mieste v kabinete" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_ACTION: "Priradiť [CABINET_ACTION.GetName] k [Concept('cabinet','kabinetu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_ACTION_COST: "Priradenie [CABINET_ACTION.GetName] k [Concept('cabinet','kabinetu')|e] bude stáť $COST$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SET_CABINET_ACTION_PROV: "Priradiť [CABINET_ACTION.GetName] v [PROVINCE.GetName] k [Concept('cabinet','kabinetu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -408,12 +453,12 @@
  EFFECTIVE_SKILL_GOV: "$VAL|0Y$$ICON$ od $NAME$: $IMPACT|+=2%$" # todo: NEW TRANSLATION
  EFFECTIVE_SKILL_CHAR: "$VAL|0Y$$ICON$ od [CHARACTER.GetName]: $IMPACT|+=2%$" # todo: NEW TRANSLATION
  EFFECTIVE_SKILL_EFFECT: "S celkovým nárastom $VAL|+2%$ získavame nasledujúce efekty:\n$EFFECT$" # todo: NEW TRANSLATION
- SELECT_CABINET_CHARACTER: "Vymenovať $game_concept_character$" # todo: NEW TRANSLATION
+ SELECT_CABINET_CHARACTER: "Vymenovať postavu" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  VIEW_CABINET: "Zobraziť informácie o postave" # todo: NEW TRANSLATION
- APPOINT_CABINET: "Vymenovať $game_concept_cabinet_member$" # todo: NEW TRANSLATION
- CHANGE_CABINET: "Zmeniť $game_concept_character$, ktorého priradenie k tomuto miestu v kabinete" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ APPOINT_CABINET: "Vymenovať člena kabinetu" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CHANGE_CABINET: "Zmeniť [Concept('character','postavu')], ktorého priradenie k tomuto miestu v kabinete" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SELECT_CABINET_PROVINCE: "Vyberte [Concept('province','provincia')|e] na priradenie k nášmu [Concept('cabinet','kabinetu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- NO_CURRENT_ADVISOR: "Pre túto [Concept('cabinet_seat','miesto v kabinete')|e] nebol vymenovaný žiadny $game_concept_cabinet_member$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ NO_CURRENT_ADVISOR: "Pre túto [Concept('cabinet_seat','miesto v kabinete')|e] nebol vymenovaný žiadny [Concept('cabinet_member','člen kabinetu')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CURRENT_ADVISOR: "[CHARACTER.GetName] je momentálne vymenovaný na túto [Concept('cabinet_seat','miesto v kabinete')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_AVAILABLE_CHARACTERS: "@trigger_no! Neexistujú žiadne spôsobilé [Concept('characters','postavy')|e], ktoré by mohli prevziať túto úlohu v našom [Concept('cabinet','kabinete')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  POSSIBLE_OPTIONS: "S nasledujúcimi možnosťami" # todo: NEW TRANSLATION
@@ -424,11 +469,12 @@
  MODIFIER_LOCATION_TITLE: "Na každom [Concept('location','lokalite')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MODIFIER_PROVINCE_TITLE: "V každej [Concept('province','provincii')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MODIFIER_COUNTRY_TITLE: "V každej [Concept('country','krajine')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- MODIFIER_INTERNATIONAL_ORGANIZATION_TITLE: "Na [international_organization|e]:" # todo: NEW TRANSLATION
+ MODIFIER_INTERNATIONAL_ORGANIZATION_TITLE: "Na [Concept('international_organization','medzinárodnú organizáciu')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MODIFIER_REBEL_TITLE: "Voči [Concept('rebels','povstalcom')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MODIFIER_WHILE_RESEARCHING: "Počas výskumu:" # todo: NEW TRANSLATION
  SET_LAW_ALREADY: "@trigger_no! Už sme kódifikovali [POLICY.GetName] pre [LAW.GetName]" # todo: NEW TRANSLATION
  LAW_CAN_NOT_CHANGE: "@trigger_no! Nemôžeme zmeniť [LAW.GetName] z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
+ LAW_IS_LOCKED: "@trigger_no! Zákon [LAW.GetName] je uzamknutý, kým platia tieto podmienky:\n$WHY$" # todo: NEW TRANSLATION
  LAW_CAN_NOT_CHANGE_NEVER: "@trigger_no! [LAW.GetName] sa nikdy nedá zmeniť!" # todo: NEW TRANSLATION
  NO_CODIFY_LAW_ENABLED: "@trigger_no! Musíme preskúmať [ADVANCE_DEFINITION.GetName] [Concept('advance','pokrok')|e], aby sme mohli kódifikovať zákony" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LAW_CAN_NOT_CHANGE_SUBJECT_TYPE: "@trigger_no! Ako [SUBJECT_TYPE.GetName] sme viazaní na [Concept('policy','politiku')|e], ktoré rozhodne náš [Concept('overlord','suzerén')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -436,7 +482,7 @@
  TIME_TO_LAW: "[Policy.GetImplementableTooltip]" # todo: NEW TRANSLATION
  CHANGE_POLICY_TOOLTIP: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|2+=$#!" # todo: NEW TRANSLATION
  UNIQUE_POLICY_TITLE: "Jedinečná politika" # todo: NEW TRANSLATION
- UNIQUE_POLICY_DESC: "Táto politika je jedinečná pre [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ UNIQUE_POLICY_DESC: "Táto politika je jedinečná pre [Policy.GetUniqueSubjectName]" # todo: CHANGED (predtym: Táto politika je jedinečná pre [Country.GetNameWithNoTooltip])
  NO_INTEGRATION_PROGRESS: "Momentálne neexistuje žiaden pokrok pri integrácii" # todo: NEW TRANSLATION
  INTEGRATION_STALLED_DUE_TO: "Integrácia uviazla z dôvodu:\n$WHY$" # todo: NEW TRANSLATION
  INTEGRATE_AMOUNT: "Existuje $VAL|V0$ [Concept('locations','lokality')|e], ktoré majú byť integrované v [PROVINCE.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -465,19 +511,20 @@
  INTEGRATE_BLOCKED_BY_OCCUPATION: "@trigger_no![LOCATION.GetName] je momentálne obsadené, takže integrácia bola zastavená." # todo: NEW TRANSLATION
  INTEGRATE_CLAMPED_NEGATIVE: "@trigger_no!Pokrok je zablokovaný, kým tieto modifikátory opäť nebudú kladné." # todo: NEW TRANSLATION
  ASSIMILATE_CULTURE_INDIVIDUAL: "[TARGET_CULTURE.GetName] [Concept('pops','Populácie')|e] sa asimilujú na [CULTURE.GetName]: $VAL|+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ASSIMILATE_CULTURE_NON_PRIMARY_HEADER: "Mesačná [assimilation_with_icon|e] do [CULTURE.GetName] je $VAL$ z dôvodu:" # todo: NEW TRANSLATION
+ ASSIMILATE_CULTURE_NON_PRIMARY_HEADER: "Mesačná [Concept('assimilation_with_icon','asimilácia')|e] do [CULTURE.GetName] je $VAL$ z dôvodu:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ASSIMILATE_CULTURE_DISCRIMINATED: "[TARGET_CULTURE.GetName] je [Concept('non_accepted_culture_short','diskriminovaná')|e]: $VAL|+=%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ASSIMILATE_DISCRIMINATED_CULTURE: "[TARGET_CULTURE.GetName] je [Concept('discriminated_culture','diskriminovaná kultúra')|e]: $VAL|+=%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ASSIMILATE_CULTURE_LOCKED_RELIGION: "@warning_icon! Niektoré [TARGET_CULTURE.GetName] [Concept('pops','populácie')|e] nasledujú [RELIGION.GetName] a nemôžu zmeniť [Concept('culture','kultúra')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ASSIMILATE_CULTURE_PRIMARY_DESCRIPTION: "Toto je [primary_culture_with_icon|e] v [COUNTRY.GetName]. [Concept('pops','Populácie')|e] iných [Concept('cultures','kultúrach')|e] v tomto [Concept('location','lokalite')|e] sa môžu každý mesiac [Concept('assimilate','asimilovať')|e] do [CULTURE.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ASSIMILATE_CULTURE_ASSIMILATING_DESCRIPTION: "[Concept('pops','Populácie')|e] z tohto [Concept('location','lokality')|e] môžu byť [assimilated_with_icon|e] do tejto [Concept('culture','kultúry')|e]. Asimilácia je zvyčajne obmedzená na [Concept('primary_culture','hlavnú kultúru')|e] vlastníka, hoci [Concept('cabinet_actions','akcie kabinetu')|e] a iné zdroje môžu povoliť [assimilation] do iných [cultures]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CONVERT_RELIGION_NON_PRIMARY_HEADER: "Mesačná [conversion_with_icon|e] na [RELIGION.GetName] je $VAL$ z dôvodu:" # todo: NEW TRANSLATION
- CONVERT_RELIGION_PRIMARY_DESCRIPTION: "Toto je [state_religion_with_icon|e] v [COUNTRY.GetName]. [Concept('pops','Populácie')|e] iných [Concept('religions','náboženstvách')|e] na tomto [Concept('location','lokalite')|e] sa môžu každý mesiac konvertovať na [RELIGION.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ASSIMILATE_CULTURE_PRIMARY_DESCRIPTION: "Toto je [Concept('primary_culture_with_icon','hlavná kultúra')|e] v [COUNTRY.GetAltAdjective('L')]. [Concept('pops','Populácie')|e] iných [Concept('cultures','kultúrach')|e] v tomto [Concept('location','lokalite')|e] sa môžu každý mesiac [Concept('assimilate','asimilovať')|e] do [CULTURE.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ ASSIMILATE_CULTURE_ASSIMILATING_DESCRIPTION: "[Concept('pops','Populácie')|e] z tohto [Concept('location','lokality')|e] môžu byť [Concept('assimilated_with_icon','asimilované')|e] do tejto [Concept('culture','kultúry')|e]. Asimilácia je zvyčajne obmedzená na [Concept('primary_culture','hlavnú kultúru')|e] vlastníka, hoci [Concept('cabinet_actions','akcie kabinetu')|e] a iné zdroje môžu povoliť [assimilation] do iných [cultures]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CONVERT_RELIGION_NON_PRIMARY_HEADER: "Mesačná [Concept('conversion_with_icon','konverzia')|e] na [RELIGION.GetName] je $VAL$ z dôvodu:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CONVERT_RELIGION_PRIMARY_DESCRIPTION: "Toto je [Concept('state_religion_with_icon','štátne náboženstvo')|e] v [COUNTRY.GetAltAdjective('L')]. [Concept('pops','Populácie')|e] iných [Concept('religions','náboženstvách')|e] na tomto [Concept('location','lokalite')|e] sa môžu každý mesiac konvertovať na [RELIGION.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  centralization_vs_decentralization: "Centralizácia vs Decentralizácia" # todo: NEW TRANSLATION
  centralization_vs_decentralization_desc: "Centralizovaná krajina môže byť efektívnejšia, zatiaľ čo decentralizovaná krajina je odolnejšia." # todo: NEW TRANSLATION
  centralization_focus: "Centralizácia" # todo: NEW TRANSLATION
  decentralization_focus: "Decentralizácia" # todo: NEW TRANSLATION
  traditionalist_vs_innovative: "Tradičný vs Inovatívny" # todo: NEW TRANSLATION
- traditionalist_vs_innovative_desc: "Tradičná krajina uprednostňuje stabilitu a tradíciu pred všetkým ostatným, zatiaľ čo inovatívna krajina chce vzdelanejšiu populáciu a rýchlejšie prijímanie nové [Concept('institution','inštitúcie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ traditionalist_vs_innovative_desc: "Tradičná krajina sa teší stabilnej a dobre spravovanej ríši a môže ľahšie meniť svoje politiky, zatiaľ čo inovatívna krajina chce vzdelanejšiu populáciu a rýchlejšie prijímanie nové [Concept('institution','inštitúcie')|e], za cenu pretrvávajúcich nepokojov." # todo: CHANGED (predtym: Tradičná krajina uprednostňuje stabilitu a tradíciu pred všetkým ostatným, zatiaľ čo inovatívna krajina chce vzdelanejši)
  traditionalist_focus: "Tradičný" # todo: NEW TRANSLATION
  innovative_focus: "Inovatívny" # todo: NEW TRANSLATION
  spiritualist_vs_humanist: "Spiritualistický vs Humanistický" # todo: NEW TRANSLATION
@@ -527,7 +574,7 @@
  absolutism_focus: "Absolutizmus" # todo: NEW TRANSLATION
  liberalism_focus: "Liberalizmus" # todo: NEW TRANSLATION
  absolutism_vs_liberalism: "Absolutizmus vs Liberalizmus" # todo: NEW TRANSLATION
- absolutism_vs_liberalism_desc: "Absolutistická krajina sa viac zameriava na centralizovanú autoritu svojho vládcu a potláča moc rôznych stavov, zatiaľ čo liberálna krajina zdôrazňuje význam občianskych slobôd a zákonodarných orgánov." # todo: NEW TRANSLATION
+ absolutism_vs_liberalism_desc: "Absolutistická krajina sa viac zameriava na centralizovanú autoritu svojho vládcu a potláča moc rôznych stavov, zatiaľ čo liberálna krajina zdôrazňuje význam občianskych slobôd a zákonodarných orgánov.\n\nOba ideály prinášajú rovnaký zisk [Concept('political_influence','politický vplyv')|e], keďže krajina oddaná ktorémukoľvek z extrémov vládne rozhodnejšie než tá, ktorá stojí medzi nimi." # todo: CHANGED (predtym: Absolutistická krajina sa viac zameriava na centralizovanú autoritu svojho vládcu a potláča moc rôznych stavov, zatiaľ č) # todo: CONCEPT CASE
  sinicized_focus: "Sinicizované" # todo: NEW TRANSLATION
  unsinicized_focus: "Nesinicizované" # todo: NEW TRANSLATION
  sinicized_vs_unsinicized: "Sinicizované vs Nesinicizované" # todo: NEW TRANSLATION
@@ -628,7 +675,8 @@
  form_new_culture_action_progress_tooltip: "Nová [Concept('culture','kultúra')|e] bude vytvorená za [cabinet.GetDaysUntilFullyImplemented]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  merge_culture_group: "Zjednotiť kultúrnu skupinu" # todo: NEW TRANSLATION
  merge_culture_group_active: "Zjednocovanie kultúrnej skupiny [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- merge_culture_group_desc: "[merged_culture_group_merge] jednu z [Concept('culture_groups','kultúrnych skupín')|e] našej [Concept('primary_culture','hlavnej kultúry')|e] do novej [Concept('culture','kultúry')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ merge_culture_group_desc: "[merged_culture_group_merge] jednu z [Concept('culture_groups','kultúrnych skupín')|e] našej [Concept('primary_culture','hlavnej kultúry')|e] do novej [Concept('culture','kultúry')|e]. Naše [Concept('pops','populácie')|e] sa okamžite asimilujú v závislosti od toho, do akej miery sú [Concept('accepted_culture_short','akceptovaná')|e], nakoľko blízky je ich [Concept('language','jazyk')|e], od ich [Concept('pop_satisfaction','spokojnosť populácie')|e] a našej [Concept('control','kontroly')|e] v ich [Concept('location','lokalita')|e]. Ostatné [Concept('countries','krajiny')|e] zo [Concept('culture_group','kultúrnej skupiny')|e] sú pozvané, aby sa pripojili k novej [Concept('culture','kultúre')|e]." # todo: CHANGED (predtym: [merged_culture_group_merge] jednu z [Concept('culture_groups','kultúrnych skupín')|e] našej [Concept('primary_culture',) # todo: CONCEPT CASE
+ merge_culture_group_assimilate_tt: "Časť [Concept('pops','populácií')|e] patriacich k [Concept('culture_group','kultúrnej skupine')|e] bude okamžite [Concept('assimilated','asimilované')|e] do novej [Concept('culture','kultúry')|e]. Podiel asimilovaných bude vyšší pri [Concept('accepted_culture','akceptovanej kultúre')|e] než pri iba [Concept('tolerated_culture_short','tolerovaná')|e] kultúre, vyšší, čím je jej [Concept('language','jazyka')|e] bližší novému jazyku, a vyšší tam, kde je vyššia [Concept('control','kontrola')|e] a [Concept('pop_satisfaction','spokojnosť populácie')|e]. [Concept('discriminated_cultures','Diskriminované kultúry')|e] sa neasimilujú." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  merge_culture_group_select_culture_group: "Vyberte [Concept('culture_group','kultúrna skupina')|e] na [merged_culture_group_merge]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  merge_culture_group_no_culture_group: "@trigger_no! Nie sú žiadne [Concept('culture_group','kultúrna skupina')|e] na [merged_culture_group_merge]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  merge_culture_group_action: "Zjednocovanie kultúrnej skupiny [target.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -682,7 +730,7 @@
  reduce_inflation_action_progress_long_wordier: "@inflation! [SCOPE.sCountry('actor').GetCurrencyValue('inflation')|2%]" # todo: NEW TRANSLATION
  reduce_inflation_action_progress_tooltip: "[SCOPE.sCountry('actor').GetCurrencyTooltipValueDescription('inflation')]" # todo: NEW TRANSLATION
  promote_religion: "Konvertovať provinciu" # todo: NEW TRANSLATION
- promote_religion_desc: "Toto zvýši počet [Concept('pops','populácie')|e], ktoré sa každý mesiac [Concept('convert','konvertovať')|e] na vybrané [Concept('religion','náboženstvo')|e].\n\nMôže byť zvolená iba hlavná [Concept('primary_religion','hlavné náboženstvo')|e] krajiny a náboženstvá v tom istom [Concept('religion_group','náboženskej skupine')|e], ktoré majú v krajine aspoň 1% zastúpenie." # todo: CHANGED # todo: CONCEPT CASE
+ promote_religion_desc: "Toto zvýši počet [Concept('pops','populácie')|e], ktoré sa každý mesiac [Concept('convert','konvertovať')|e] na vybrané [Concept('religion','náboženstvo')|e].\n\nMôže byť zvolená iba hlavná [Concept('primary_religion','hlavné náboženstvo')|e] krajiny a náboženstvá v tom istom [Concept('religion_group','náboženskej skupine')|e], ktoré majú v krajine aspoň 1% zastúpenie.\n\nČlen [Concept('cabinet','kabinet')|e], ktorý vykonáva túto akciu, musí nasledovať vybrané [Concept('religion','náboženstvo')|e]." # todo: CHANGED (predtym: Toto zvýši počet [Concept('pops','populácie')|e], ktoré sa každý mesiac [Concept('convert','konvertovať')|e] na vybrané ) # todo: CONCEPT CASE
  promote_religion_action: "Konvertovať [SCOPE.sProvince('target_province').GetNameWithNoTooltip] na [SCOPE.sReligion('target_religion').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  promote_religion_select_religion: "Vyberte [Concept('religion','náboženstvo')|e], na ktorú chcete [Concept('convert','konvertovať')|e] [Concept('pops','populácií')|e] v [Concept('province','provincii')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  promote_religion_select_province: "Vyberte [Concept('province','provincia')|e], v ktorej chcete [Concept('convert','konvertovať')|e] [Concept('pops','populácií')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -690,7 +738,15 @@
  promote_religion_action_progress: "[SCOPE.sProvince('target_province').GetReligionPercentage(SCOPE.sReligion('target_religion'))|V2%]" # todo: NEW TRANSLATION
  promote_religion_action_progress_wordier: "[Concept('religious_unity','Náboženská jednota')|e] v [SCOPE.sProvince('target_province').GetNameWithNoTooltip] je [SCOPE.sProvince('target_province').GetReligionPercentage(SCOPE.sReligion('target_religion'))|V2%]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  promote_religion_action_progress_long_wordier: "@religious_unity! [SCOPE.sProvince('target_province').GetReligionPercentage(SCOPE.sReligion('target_religion'))|V2%] \n\n@pop_assimilation_speed! [SCOPE.sProvince('target_province').GetProvinceLocationModifier('local_pop_conversion_speed')|+=2]" # todo: NEW TRANSLATION
- promote_religion_action_progress_tooltip: "Konverzia na [SCOPE.sReligion('target_religion').GetName] v @province! [SCOPE.sProvince('target_province').GetName]:\n[SCOPE.sProvince('target_province').GetReligionInfo]" # todo: CHANGED
+ promote_religion_action_progress_tooltip: "Konverzia na [SCOPE.sReligion('target_religion').GetName] v @province! [SCOPE.sProvince('target_province').GetName]:\n[SCOPE.sProvince('target_province').GetReligionInfo]\n\n#T Dokončené, keď#!\n[SCOPE.sCabinet('cabinet').GetActionEndConditions]" # todo: CHANGED (predtym: Konverzia na [SCOPE.sReligion('target_religion').GetName] v @province! [SCOPE.sProvince('target_province').GetName]:\n[S)
+ establish_religious_court: "Zriadiť náboženský súd" # todo: NEW TRANSLATION
+ establish_religious_court_desc: "Zvolajte vo vybranej [Concept('province','provincii')|e] formálny náboženský tribunál, aby ste [Concept('convert','konvertovať')|e] jej [Concept('pops','populácií')|e] na zvolenú [Concept('religion','náboženstvo')|e]. Keď štát začne prevádzkovať vlastné náboženské súdy, obyvateľstvo bude každý mesiac konvertovať výrazne rýchlejšie než pri bežnom kázaní a zároveň sa predíde narušeniu miestnej migrácie.\n\nVybrať možno iba [Concept('primary_religion','hlavné náboženstvo')|e] krajiny a náboženstvá z tej istej [Concept('religion_group','náboženskej skupiny')|e], ktoré sú v krajine zastúpené aspoň z 1 %.\n\nČlen [Concept('cabinet','kabinet')|e], ktorý túto akciu vykonáva, musí vyznávať zvolenú [Concept('religion','náboženstvo')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ establish_religious_court_action: "Zvolať náboženský súd v provincii [SCOPE.sProvince('target_province').GetNameWithNoTooltip] pre vieru [SCOPE.sReligion('target_religion').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ establish_religious_court_active: "Zasadá náboženský súd v provincii [SCOPE.sProvince('target_province').GetNameWithHighlightOnly]" # todo: NEW TRANSLATION
+ establish_religious_court_action_progress: "[SCOPE.sProvince('target_province').GetReligionPercentage(SCOPE.sReligion('target_religion'))|V2%]" # todo: NEW TRANSLATION
+ establish_religious_court_action_progress_wordier: "[Concept('religious_unity','Náboženská jednota')|e] v provincii [SCOPE.sProvince('target_province').GetNameWithNoTooltip] je [SCOPE.sProvince('target_province').GetReligionPercentage(SCOPE.sReligion('target_religion'))|V2%]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ establish_religious_court_action_progress_long_wordier: "@religious_unity! [SCOPE.sProvince('target_province').GetReligionPercentage(SCOPE.sReligion('target_religion'))|V2%] \n\n@pop_assimilation_speed! [SCOPE.sProvince('target_province').GetProvinceLocationModifier('local_pop_conversion_speed')|+=2]" # todo: NEW TRANSLATION
+ establish_religious_court_action_progress_tooltip: "Zasadá náboženský súd, ktorý obracia obyvateľstvo na vieru [SCOPE.sReligion('target_religion').GetName] v provincii @province! [SCOPE.sProvince('target_province').GetName]:\n[SCOPE.sProvince('target_province').GetReligionInfo]\n\n#T Dokončené, keď#!\n[SCOPE.sCabinet('cabinet').GetActionEndConditions]" # todo: NEW TRANSLATION
  lit_promote_catholicism: "Podporovať $catholic$" # todo: NEW TRANSLATION
  lit_promote_catholicism_desc: "Týmto zvýšime počet [Concept('pops','populácie')|e], ktoré sa budú každý mesiac [Concept('convert','konvertovať')|e] na $catholic$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  lit_promote_catholicism_action: "Konvertovať [SCOPE.sProvince('target_1').GetNameWithNoTooltip] na $catholic$" # todo: NEW TRANSLATION
@@ -699,10 +755,10 @@
  lit_promote_catholicism_action_progress: "[SCOPE.sProvince('target_1').GetReligionPercentage(SCOPE.sReligion('target'))|V2%]" # todo: NEW TRANSLATION
  lit_promote_catholicism_action_progress_wordier: "Prítomnosť $catholic$ v [SCOPE.sProvince('target_1').GetNameWithNoTooltip] je [SCOPE.sProvince('target_1').GetReligionPercentage(SCOPE.sReligion('target'))|V2%]" # todo: NEW TRANSLATION
  lit_promote_catholicism_action_progress_long_wordier: "@religious_influence_catholic! [SCOPE.sProvince('target_1').GetReligionPercentage(SCOPE.sReligion('target'))|V2%]" # todo: NEW TRANSLATION
- lit_promote_catholicism_action_progress_tooltip: "[SCOPE.sProvince('target_1').GetReligionInfo]" # todo: NEW TRANSLATION
+ lit_promote_catholicism_action_progress_tooltip: "[SCOPE.sProvince('target_1').GetReligionInfo]\n\n#T Dokončené, keď#!\n[SCOPE.sCabinet('cabinet').GetActionEndConditions]" # todo: CHANGED (predtym: [SCOPE.sProvince('target_1').GetReligionInfo])
  based_on_religious_unity_at_time_of_conversion_tt: "Na základe našej [Concept('religious_unity','náboženskej jednoty')|e] v čase prijatia $catholic$:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  frustrate_annexation: "Zdržať anektáciu" # todo: NEW TRANSLATION
- frustrate_annexation_desc: "Tým, že budeme ich delegátom stavať do cesty archaickú ústavnú legislatívu a prekážať im na každom kroku, môžeme predĺžiť čas, ktorý bude nášmu [overlord|e] trvať, kým nás [Concept('annex','anektovať')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ frustrate_annexation_desc: "Tým, že budeme ich delegátom stavať do cesty archaickú ústavnú legislatívu a prekážať im na každom kroku, môžeme predĺžiť čas, ktorý bude nášmu [Concept('overlord','suzerénovi')|e] trvať, kým nás [Concept('annex','anektovať')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  frustrate_annexation_action: "Zdržať anektáciu" # todo: NEW TRANSLATION
  frustrate_annexation_active: "Zdržiavanie anektácie" # todo: NEW TRANSLATION
  frustrate_annexation_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_efficiency')]" # todo: CHANGED
@@ -710,7 +766,7 @@
  frustrate_annexation_action_progress_long_wordier: "@annexation_cost! [SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_efficiency')]" # todo: CHANGED
  frustrate_annexation_action_progress_tooltip: "[SCOPE.sCountry('actor').GetModifierValue('hostile_diplomatic_annexation_efficiency')]" # todo: CHANGED
  sow_disloyalty: "Podnecovať nelojalitu" # todo: NEW TRANSLATION
- sow_disloyalty_desc: "Rozširovaním krutých klebiet o našom [overlord|e] a ospevovaním výhod samosprávy môžeme znížiť našu [Concept('subject_loyalty','vernosť vazala')|e], čo nás môže urobiť [Concept('disloyal_subject','nelojálny vazal')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ sow_disloyalty_desc: "Rozširovaním krutých klebiet o našom [Concept('overlord','suzerénovi')|e] a ospevovaním výhod samosprávy môžeme znížiť našu [Concept('subject_loyalty','vernosť vazala')|e], čo nás môže urobiť [Concept('disloyal_subject','nelojálny vazal')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  sow_disloyalty_action: "Podnecovať nelojalitu" # todo: NEW TRANSLATION
  sow_disloyalty_active: "Podnecovanie nelojality" # todo: NEW TRANSLATION
  sow_disloyalty_action_progress: "[SCOPE.sCountry('actor').GetModifierValue('loyalty_to_overlord')]" # todo: NEW TRANSLATION
@@ -829,7 +885,7 @@
  promote_culture_action_progress: "[SCOPE.sProvince('target_1').GetCulturePercentage(SCOPE.sCulture('target'))|V2%]" # todo: NEW TRANSLATION
  promote_culture_action_progress_wordier: "[Concept('cultural_unity','Kultúrna jednota')|e] v [SCOPE.sProvince('target_1').GetNameWithNoTooltip] je [SCOPE.sProvince('target_1').GetCulturePercentage(SCOPE.sCulture('target'))|V2%]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  promote_culture_action_progress_long_wordier: "@culture! [SCOPE.sProvince('target_1').GetCulturePercentage(SCOPE.sCulture('target'))|V2%] \n\n@pop_assimilation_speed! [SCOPE.sProvince('target_1').GetProvinceLocationModifier('local_pop_assimilation_speed')|+=2]" # todo: NEW TRANSLATION
- promote_culture_action_progress_tooltip: "Asimilovanie do [SCOPE.sCulture('target').GetName] v @province! [SCOPE.sProvince('target_1').GetName]:\n[SCOPE.sProvince('target_1').GetCulturalInfo]" # todo: CHANGED
+ promote_culture_action_progress_tooltip: "Asimilovanie do [SCOPE.sCulture('target').GetName] v @province! [SCOPE.sProvince('target_1').GetName]:\n[SCOPE.sProvince('target_1').GetCulturalInfo]\n\n#T Dokončené, keď#!\n[SCOPE.sCabinet('cabinet').GetActionEndConditions]" # todo: CHANGED (predtym: Asimilovanie do [SCOPE.sCulture('target').GetName] v @province! [SCOPE.sProvince('target_1').GetName]:\n[SCOPE.sProvince)
  pacify_population: "Upokojiť obyvateľstvo" # todo: NEW TRANSLATION
  pacify_population_desc: "Týmto znížime [Concept('unrest','nepokoje')|e] miestnej [Concept('population','populácii')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pacify_population_select_province: "Vyberte [Concept('province','provincia')|e], v ktorej chcete znížiť [Concept('unrest','nepokoje')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -922,6 +978,19 @@
  send_people_to_the_colonies_action_progress_wordier: "send_people_to_the_colonies_action" # todo: NEW TRANSLATION
  send_people_to_the_colonies_action_progress_tooltip: "[SCOPE.sProvince('target').GetTotalPopulationInfo]\n[SCOPE.sProvince('target_2').GetTotalPopulationInfo]" # todo: NEW TRANSLATION
  send_people_to_the_colonies_action_progress_long_wordier: "@population! [SCOPE.sProvince('target').GetTotalPopulation] @orange_right! [SCOPE.sProvince('target_2').GetTotalPopulation] ([SCOPE.sProvince('target_2').GetMigrationChange]@migration_speed!)" # todo: NEW TRANSLATION
+ direct_domestic_migration: "Riadiť vnútornú migráciu" # todo: NEW TRANSLATION
+ direct_domestic_migration_desc: "Usmerňujte stály prúd [Concept('pops','populácie')|e] z jednej z našich [Concept('provinces','provincií')|e] do druhej a osídľujte vlastné územie podľa svojich predstáv." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_action: "Presúvať [Concept('pops','populácie')|e] z provincie [SCOPE.sProvince('source').GetName] do provincie [SCOPE.sProvince('destination').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_select_source: "Vyberte [Concept('province','provincia')|e], z ktorej sa budú presúvať [Concept('pops','populácie')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_select_destination: "Vyberte [Concept('province','provincia')|e], do ktorej sa budú presúvať [Concept('pops','populácie')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_no_sources: "@trigger_no! Žiadna platná zdrojová [Concept('province','provincia')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_no_destinations: "@trigger_no! Žiadna platná cieľová [Concept('province','provincia')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_active: "Presúvajú sa [Concept('pops','populácie')|e] z provincie [SCOPE.sProvince('source').GetNameWithHighlightOnly] do provincie [SCOPE.sProvince('destination').GetNameWithHighlightOnly]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_action_progress: "[SCOPE.sProvince('destination').GetTotalPopulation] ([SCOPE.sProvince('destination').GetMigrationChange]@population!)" # todo: NEW TRANSLATION
+ direct_domestic_migration_action_progress_wordier: "Minulý mesiac sa prisťahovalo [SCOPE.sProvince('destination').GetMigrationChange] [Concept('pops','populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ direct_domestic_migration_action_progress_long_wordier: "@population! [SCOPE.sProvince('source').GetTotalPopulation] @orange_right! [SCOPE.sProvince('destination').GetTotalPopulation] ([SCOPE.sProvince('destination').GetMigrationChange]@migration_speed!)" # todo: NEW TRANSLATION
+ direct_domestic_migration_action_progress_tooltip: "[SCOPE.sProvince('source').GetTotalPopulationInfo]\n[SCOPE.sProvince('destination').GetTotalPopulationInfo]" # todo: NEW TRANSLATION
+ direct_domestic_migration_effect_tt: "Každý mesiac bude zo zdrojovej [Concept('province','provincii')|e] do cieľovej provincie prúdiť stály prísun [Concept('pops','populácie')|e], a to dovtedy, kým bude táto akcia kabinetu pridelená" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  expel_people: "Vypudiť obyvateľov" # todo: NEW TRANSLATION
  expel_people_desc: "Toto prinúti [Concept('pops','populácie')|e] [Concept('migrate','migrovať')|e] preč z tejto [Concept('province','provincie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  expel_people_action: "Vypudiť [Concept('pops','populácie')|e] z [SCOPE.sProvince('target').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -933,7 +1002,7 @@
  expel_people_action_progress_tooltip: "Rýchlosť migrácie obyvateľstva: [SCOPE.sProvince('target').GetProvinceLocationModifier('local_migration_speed')|+=2] \n @migration_speed! Globálna rýchlosť migrácie: [SCOPE.sProvince('target').GetProvinceLocationModifier('local_migration_speed_modifier')|+=2%] \n [SCOPE.sProvince('target').GetMigrationInfo]" # todo: NEW TRANSLATION
  NO_POPS_MIGRATED_LAST_MONTH: "Minulý mesiac sa žiadni [Concept('pops','populácie')|e] nemigrovali." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  gather_acllas: "Nábor Acll" # todo: NEW TRANSLATION
- gather_acllas_desc: "Náš kabinet sa zameria na zhromažďovanie najkrajších a najinteligentnejších dievčat v ríši, aby ich vycvičil na Aclly, čo im umožní slúžiť štátu pri [royal_marriage|E] a [ShowCharacterInteractionName('aclla_distribution')].\nPočet oprávnených [Concept('characters','postavy')|E], ktorých získame, sa pohybuje od #Y 2#! do #Y 7#! počas #Y 4 rokov#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ gather_acllas_desc: "Náš kabinet sa zameria na zhromažďovanie najkrajších a najinteligentnejších dievčat v ríši, aby ich vycvičil na Aclly, čo im umožní slúžiť štátu pri [Concept('royal_marriage','kráľovských sňatkoch')|E] a [ShowCharacterInteractionName('aclla_distribution')].\nPočet oprávnených [Concept('characters','postavy')|E], ktorých získame, sa pohybuje od #Y 2#! do #Y 7#! počas #Y 4 rokov#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  STATIC_MODIFIER_NAME_accumalating_acllas: "Zhromažďovanie Acll" # todo: NEW TRANSLATION
  gather_acllas_action: "Nábor Acll" # todo: NEW TRANSLATION
  gather_acllas_active: "Prebieha nábor Acll" # todo: NEW TRANSLATION
@@ -959,9 +1028,10 @@
  swe_slash_and_burn_new_farms_desc: "Podporujeme [ShowCultureName('finnish')] a [ShowCultureName('swedish')] osadníkov na severe pri kolonizácii a osídľovaní nových území." # todo: NEW TRANSLATION
  swe_slash_and_burn_new_farms_action: "Podpora nových fariem v [SCOPE.sProvince('target').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  swe_slash_and_burn_new_farms_active: "Podpora nových fariem v [SCOPE.sProvince('target').GetNameWithHighlightOnly]" # todo: NEW TRANSLATION
- swe_slash_and_burn_new_farms_action_progress: "[SCOPE.sProvince('target').GetTotalPopulation]@population!" # todo: NEW TRANSLATION
+ swe_slash_and_burn_new_farms_action_progress: "[SCOPE.sProvince('target').GetAveragePopulation]@population!" # todo: CHANGED (predtym: [SCOPE.sProvince('target').GetTotalPopulation]@population!)
  swe_slash_and_burn_new_farms_action_progress_wordier: "$swe_slash_and_burn_new_farms_action_progress$" # todo: NEW TRANSLATION
- swe_slash_and_burn_new_farms_action_progress_tooltip: "Celkový počet [Concept('population','populácia')|e] v [SCOPE.sProvince('target').GetName]\n[SCOPE.sProvince('target').GetTotalPopulation]@population!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ swe_slash_and_burn_new_farms_action_progress_tooltip: "#T Podporiť nové farmy#!\nPriemerná [Concept('population','populácia')|e] na [Concept('location','lokalitu')|e] v [SCOPE.sProvince('target').GetName]: [SCOPE.sProvince('target').GetAveragePopulationWithTooltip]\n\n#T Dokončené, keď#!\n[SCOPE.sCabinet('cabinet').GetActionEndConditions]" # todo: CHANGED (predtym: Celkový počet [Concept('population','populácia')|e] v [SCOPE.sProvince('target').GetName]\n[SCOPE.sProvince('target').Ge) # todo: CONCEPT CASE
+ swe_slash_and_burn_new_farms_action_progress_tooltip_1: "#T Tento mesiac#!\nZmena počtu obyvateľov: [SCOPE.sProvince('target').GetProvincePopulationChangeWithTooltip]\n[Concept('population_growth','Rast populácie')|e]: [SCOPE.sProvince('target').GetProvincePopGrowthWithTooltip]\n[Concept('migration_attraction','Migračná príťažlivosť')|e]: [SCOPE.sProvince('target').GetProvinceMigrationAttractionWithTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  swe_slash_and_burn_new_farms_select_province: "Vyberte provinciu na podporu" # todo: NEW TRANSLATION
  kbo_pop_promote_action: "Egalitárna integrácia" # todo: NEW TRANSLATION
  kbo_pop_promote_action_desc: "To spôsobí, že naša [Concept('population','populácia')|e] bude [Concept('promoted','povýšený')|e] a [Concept('assimilated','asimilované')|e] rýchlejšie, zároveň posilní naše armády." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1134,9 +1204,9 @@
  reform_taxation_system_desc: "Neschopní miestni guvernéri zodpovední za výber daní dávno stratili aj tú slabú schopnosť to robiť. Teraz je na našich najvyšších radách, aby to napravili a reformovali náš daňový systém. Je to vyčerpávajúci proces, ktorý môže trvať niekoľko rokov, ale je nevyhnutným krokom, ktorý nám pomôže prekonať súčasnú krízu." # todo: NEW TRANSLATION
  reform_taxation_system_active: "Reformovanie daňového systému" # todo: NEW TRANSLATION
  reform_taxation_system_action: "Reformovať daňový systém" # todo: NEW TRANSLATION
- reform_taxation_system_action_progress: "$reform_taxation_system$ active" # todo: NEW TRANSLATION
- reform_taxation_system_action_progress_wordier: "$reform_taxation_system_action_progress$" # todo: NEW TRANSLATION
- reform_taxation_system_action_progress_tooltip: "$reform_taxation_system_action_progress$" # todo: NEW TRANSLATION
+ reform_taxation_system_action_progress: "[cabinet.GetDaysUntilFullyImplemented]" # todo: CHANGED (predtym: $reform_taxation_system$ active)
+ reform_taxation_system_action_progress_wordier: "Daňový systém bude reformovaný za [cabinet.GetDaysUntilFullyImplemented]" # todo: CHANGED (predtym: $reform_taxation_system_action_progress$)
+ reform_taxation_system_action_progress_tooltip: "Daňový systém bude reformovaný za [cabinet.GetDaysUntilFullyImplemented]" # todo: CHANGED (predtym: $reform_taxation_system_action_progress$)
  reform_taxation_system_wordier: "$reform_taxation_system_action_progress$" # todo: NEW TRANSLATION
  reform_taxation_system_tooltip: "$reform_taxation_system_action_progress$" # todo: NEW TRANSLATION
  oma_bolster_omani_navy: "Posilniť námorníctvo" # todo: NEW TRANSLATION
@@ -1157,8 +1227,8 @@
  oma_zanzibar_integration_action_progress_tooltip: "[SCOPE.sProvince('target').FindFirstNonIntegrated.GetIntegrationInfo]" # todo: NEW TRANSLATION
  maintain_trunk_road_cabinet_action: "Udržiavať Grand Trunk Road" # todo: NEW TRANSLATION
  maintain_trunk_road_cabinet_action_desc: "Toto nastaví náš [Concept('cabinet','kabinet')|e] na udržiavanie Grand Trunk Road" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- maintain_trunk_road_cabinet_action_action: "Udržiavať Grand Trunk Road v [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
- maintain_trunk_road_cabinet_action_active: "Udržiavanie Grand Trunk Road v [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
+ maintain_trunk_road_cabinet_action_action: "Udržiavať Grand Trunk Road v [SCOPE.sCountry('actor').GetAltAdjective('L')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ maintain_trunk_road_cabinet_action_active: "Udržiavanie Grand Trunk Road v [SCOPE.sCountry('actor').GetAltAdjective('L')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  maintain_trunk_road_cabinet_action_action_progress: "Udržiavanie Grand Trunk Road" # todo: NEW TRANSLATION
  maintain_trunk_road_cabinet_action_action_progress_wordier: "Udržiavanie Grand Trunk Road" # todo: NEW TRANSLATION
  maintain_trunk_road_cabinet_action_action_progress_tooltip: "Udržiavanie Grand Trunk Road" # todo: NEW TRANSLATION
@@ -1166,7 +1236,7 @@
  settle_the_frontier_desc: "Kabinet sa bude snažiť osídliť nekolonizovanú [Concept('province','provinciu')|e] skupinou [Concept('pops','populáciami')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  settle_the_frontier_action: "Osídliť [SCOPE.sProvinceDefinition('target').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  settle_the_frontier_select_province_definition: "Vyberte [Concept('province','provincia')|e], ktoré chcete osídliť:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- settle_the_frontier_no_provinces: "@trigger_no! Nemôžeme nájsť žiadne vhodné miesto na obsadenie. Cieľ musí:\nNie byť už kolonizovaný nami alebo aspoň 3 inými krajinami;\nMať obývateľné lokality;\nByť objavený;\nByť susediaci s nami alebo jedným z našich subjektov, alebo byť v dosahu." # todo: CHANGED
+ settle_the_frontier_no_provinces: "@trigger_no! #indent_newline:0 #trigger_fail Nemôžeme nájsť žiadne vhodné miesto na obsadenie. Cieľ musí:#!#!\n#indent_newline:1 #trigger_undefined Nebyť už kolonizovaný nami alebo aspoň 3 inými krajinami;#!#!\n#indent_newline:1 #trigger_undefined Mať obývateľné lokality;#!#!\n#indent_newline:1 #trigger_undefined Byť objavený;#!#!\n#indent_newline:1 #trigger_undefined Susediť s nami alebo jedným z našich subjektov, prípadne byť v dosahu.#!#!" # todo: CHANGED (predtym: @trigger_no! Nemôžeme nájsť žiadne vhodné miesto na obsadenie. Cieľ musí:\nNie byť už kolonizovaný nami alebo aspoň 3 in)
  settle_the_frontier_select_character: "Vyberte [Concept('character','postava')|e], ktorého chcete poslať:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  settle_the_frontier_no_character: "$NO_POSSIBLE_CHARACTERS$" # todo: NEW TRANSLATION
  settle_the_frontier_active: "Osídľovanie [SCOPE.sProvinceDefinition('target').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -1198,23 +1268,27 @@
  dutch_parliament_desc: "Bohatí členovia parlamentu získavajú väčšie právomoci, zatiaľ čo duchovenstvo je odňaté z možnosti mať zástupcov." # todo: NEW TRANSLATION
  plc_parliament: "Poľsko-litovský parlament" # todo: NEW TRANSLATION
  plc_parliament_desc: "Parlament Poľsko-litovskej únie udeľuje väčšie právomoci šľachtickým zástupcom." # todo: NEW TRANSLATION
+ majlis_ammi_said_council: "Rada Majlis 'Ammi Sa'īd" # todo: NEW TRANSLATION
+ majlis_ammi_said_council_desc: "Tento parlament udeľuje obrovskú moc [ShowEstateTypeNameWithNoTooltip('clergy_estate')] [ShowReligionAdjectiveWithNoTooltip('ibadi')], ktorí majú značný vplyv na priebeh zasadnutí." # todo: NEW TRANSLATION
  SUBTAB_GOVERNMENT_ESTATES: "Stavy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBTAB_GOVERNMENT_ESTATES_TT_TITLE: "Stavy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBTAB_GOVERNMENT_ESTATES_TT_TEXT: "Toto okno vám umožňuje starať sa o [Concept('estates','stavy')|e] v našom [Concept('country','krajine')|e]. Tu môžete udeľovať alebo odoberať [Concept('privileges','privilégiá')|e], aby ste ovplyvnili ich [Concept('estate_satisfaction','spokojnosť stavu')|e] alebo využiť ich [Concept('estate_power','sila stavu')|e]. Môžete tiež zmeniť našu [Concept('government','vládu')|e] prijímaním [Concept('reforms','reformami')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBTAB_GOVERNMENT_ESTATES_TT_FLAVOR_TEXT: ""L'État, c'est moi!""" # todo: NEW TRANSLATION
+ SUBTAB_GOVERNMENT_ESTATES_TT_FLAVOR_TEXT: "„L'État, c'est moi!“„" # todo: NEW TRANSLATION
  SUBTAB_GOVERNMENT_PARLIAMENT: "Parlament" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBTAB_GOVERNMENT_PARLIAMENT_TT_TEXT: "Toto okno vám umožňuje zvolať naše [Concept('estates','stavy')|e] do [Concept('parliament','parlamentu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBTAB_GOVERNMENT_PARLIAMENT_TT_FLAVOR_TEXT: ""Čo je tretí stav? Všetko."" # todo: NEW TRANSLATION
+ SUBTAB_GOVERNMENT_PARLIAMENT_TT_FLAVOR_TEXT: "„Čo je tretí stav? Všetko.“" # todo: NEW TRANSLATION
  SUBTAB_GOVERNMENT_CABINET: "Kabinet" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBTAB_GOVERNMENT_CABINET_TT_TEXT: "Toto okno vám umožňuje spravovať náš [Concept('cabinet','kabinet')|e] menovaním [Concept('characters','postavami')|e] do [Concept('role','roly')|e] [Concept('cabinet_member','člena kabinetu')|e] a priraďovaním im [Concept('cabinet_actions','akciám kabinetu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBTAB_GOVERNMENT_CABINET_TT_FLAVOR_TEXT: ""Quis custodiet ipsos custodes?"" # todo: NEW TRANSLATION
+ SUBTAB_GOVERNMENT_CABINET_TT_FLAVOR_TEXT: "„Quis custodiet ipsos custodes?“" # todo: NEW TRANSLATION
  SUBTAB_GOVERNMENT_POLITICS: "Zákony" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBTAB_GOVERNMENT_POLITICS_TT_TEXT: "Toto okno vám umožňuje meniť [Concept('laws','zákony')|e] a [Concept('policies','politiky')|e] v našom [Concept('country','krajine')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBTAB_GOVERNMENT_POLITICS_TT_FLAVOR_TEXT: ""Dura lex, sed lex"" # todo: NEW TRANSLATION
- SUBTAB_GOVERNMENT_VALUES: "Hodnoty" # todo: NEW TRANSLATION
+ SUBTAB_GOVERNMENT_POLITICS_TT_FLAVOR_TEXT: "„Dura lex, sed lex“" # todo: NEW TRANSLATION
+ LAWS_VIEW_TOGGLE_TO_LIST: "Prepnúť na zoznam kategórií" # todo: NEW TRANSLATION
+ LAWS_VIEW_TOGGLE_TO_CARDS: "Prepnúť na zobrazenie kariet politík" # todo: NEW TRANSLATION
+ SUBTAB_GOVERNMENT_VALUES: "Spoločenské hodnoty" # todo: CHANGED (predtym: Hodnoty)
  SUBTAB_GOVERNMENT_VALUES_TT_TITLE: "Sociálne hodnoty" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUBTAB_GOVERNMENT_VALUES_TT_TEXT: "V tomto okne môžete vidieť [Concept('societal_values','sociálne hodnoty')|e], ktoré definujú náš [Concept('country','krajina')|e], a priradiť [Concept('cabinet_member','člen kabinetu')|e], aby sledoval konkrétny smer." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBTAB_GOVERNMENT_VALUES_TT_FLAVOR_TEXT: ""O tempora, o mores!"" # todo: NEW TRANSLATION
+ SUBTAB_GOVERNMENT_VALUES_TT_FLAVOR_TEXT: "„O tempora, o mores!“" # todo: NEW TRANSLATION
  SUBTAB_GOVERNMENT_SOCIETY: "Spoločnosť" # todo: NEW TRANSLATION
  GOVERNMENT_WINDOW_RULER_NAME: "[Player.GetGovernment.GetRuler.GetShortName]," # todo: NEW TRANSLATION
  GOVERNMENT_WINDOW_RULER_AGE: "[Player.GetGovernment.GetRuler.GetAge]" # todo: NEW TRANSLATION

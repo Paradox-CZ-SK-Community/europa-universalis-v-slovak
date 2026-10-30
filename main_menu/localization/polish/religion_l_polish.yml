@@ -7,11 +7,10 @@
  rite_power: "Moc ritu" # todo: NEW TRANSLATION
  GODS_OF_THE_COUNTRY: "Bohovia [Player.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  CORE_TENETS_OF: "Základné zásady $NAME$" # todo: NEW TRANSLATION
- RELIGIOUS_UNITY_EFFECT: "Priemerné $game_concept_religious_unity$ v [COUNTRY.GetName] je $VAL|%2Y$, čo má nasledujúci efekt:\n\n$EFFECT$" # todo: NEW TRANSLATION
+ RELIGIOUS_UNITY_EFFECT: "Priemerná [Concept('religious_unity','náboženská jednota')] v [COUNTRY.GetAltAdjective('L')] je $VAL|%2Y$, čo má nasledujúci efekt:\n\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  PROPOSE: "Navrhnúť" # todo: NEW TRANSLATION
  RELIGIONS_CARDINAL: "Súčasní kardináli" # todo: NEW TRANSLATION
- CARDINAL_NAME: "[CARDINAL.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- CARDINAL_DESC: "Sídlo: [CARDINAL.GetLocation.GetName]\nKrajina: [CARDINAL.GetOwner.GetLongNameWithFlag]\nViera: [CARDINAL.GetReligion.GetName]" # todo: NEW TRANSLATION
+ CARDINAL_DESC: "[Concept('character','Postava')|e]: [CHARACTER.GetNameToFit('(int32)30', '(bool)no')]\n[Concept('location','Lokalita')|e]: [CHARACTER.GetLocation.GetName]\n[Concept('country','Krajina')|e]: [CHARACTER.GetCourtCountry.GetLongNameWithFlag]\n[Concept('religion','Náboženstvo')|e]: [CHARACTER.GetReligion.GetName]" # todo: CHANGED (predtym: Sídlo: [CARDINAL.GetLocation.GetName]\nKrajina: [CARDINAL.GetOwner.GetLongNameWithFlag]\nViera: [CARDINAL.GetReligion.Ge) # todo: CONCEPT CASE
  RELIGIOUS_SCHOOL_OPINION: "Názor $OUR_NAME$ na $NAME$: $OPINION|Y$" # todo: NEW TRANSLATION
  RELIGIOUS_SCHOOL_OTHER_OPINION: "Názor $NAME$ na $OUR_NAME$: $OPINION|Y$" # todo: NEW TRANSLATION
  INVITED_RELIGIOUS_FIGURES: "[Concept('religious_figures','Náboženskí predstavitelia')|e] z iných škôl" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -29,7 +28,7 @@
  HANDLE_SCHOLARS: "Interagovať" # todo: NEW TRANSLATION
  RELIGIOUS_ACTIONS: "Náboženské akcie" # todo: NEW TRANSLATION
  RELIGION_MODIFIERS: "Náboženské modifikátory" # todo: NEW TRANSLATION
- INVITE_SCHOLAR_TITLE: "Pozvať $game_concept_religious_figure$" # todo: NEW TRANSLATION
+ INVITE_SCHOLAR_TITLE: "Pozvať [Concept('religious_figure','náboženského predstaviteľa')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INVITE_SCHOLAR_DESC: "Pozvať $NAME$, aby vyučoval v našej krajine." # todo: NEW TRANSLATION
  INVITED_SCHOLAR_DESC: "$NAME$ učí v našej krajine." # todo: NEW TRANSLATION
  INVITED_SCHOLAR_EFFECTS: "$MODIFIERS$" # todo: NEW TRANSLATION
@@ -39,14 +38,15 @@
  convert_religion: "Konvertovať náboženstvo" # todo: NEW TRANSLATION
  convert_religion_desc: "Zmeniť náboženstvo nášho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  convert_religion_select_religion: "Vyberte [Concept('religion','náboženstvo')|e], na ktoré sa chcete konvertovať" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- convert_religion_tt: "Cieľové [Concept('religion','náboženstvo')|e] je buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomné viac než #Y 40.0%#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- no_convert_religion_tt: "@trigger_fail!Žiadna dostupná [Concept('religion','náboženstvo')|e], ktorá by bola buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomná viac než #Y 40.0%#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ convert_religion_effect_tt: "Naša [Concept('country','krajina')|e] prijme vybrané [Concept('religion','náboženstvo')|e], rovnako aj náš [Concept('ruler','panovník')|e], [Concept('consort','konzort panovníka')|e], [Concept('heir','dedič')|e] a [Concept('children','deti')|e] nášho [ruler]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ convert_religion_tt: "Cieľové [Concept('religion','náboženstvo')|e] je buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomné viac než #Y 40.0%#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
+ no_convert_religion_tt: "@trigger_fail!Žiadna dostupná [Concept('religion','náboženstvo')|e], ktorá by bola buď súčasťou [SCOPE.sCountry('actor').GetReligion.GetGroup.GetName], alebo je v našej krajine prítomná viac než #Y 40.0%#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  theocracy_subject_cannot_convert_tt: "@trigger_fail!Sme teokratickým subjektom teokracie" # todo: NEW TRANSLATION
  change_liturgical_language: "Zmeniť liturgický jazyk" # todo: NEW TRANSLATION
  change_liturgical_language_desc: "Zmeniť [Concept('liturgical_language','liturgický jazyk')|e] nášho [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  change_liturgical_language_select_dailect: "Vyberte nový [Concept('dialect','dialekt')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  change_court_language: "Zmeniť jazyk dvora" # todo: NEW TRANSLATION
- change_court_language_desc: "Zmeňte [Concept('court_language','jazyk dvora')|e] nášho [Concept('country','krajiny')|e]\n\nMôžeme zmeniť náš jazyk dvora na:\n$BULLET$[common_language],\n$BULLET$[liturgical_language],\n$BULLET$[Concept('dominant_dialect','Dominantný dialekt')|e],\n$BULLET$Jazyk [Concept('market_language','jazyk trhu')|e] nášho [capital],\n$BULLET$Jazyk [Concept('accepted_culture','akceptovaná kultúra')|e],\n$BULLET$Jazyk nášho panovníka,\n$BULLET$Jazyk hlavy našej dynastie,\n$BULLET$Jazyk [court_language] lídra [Concept('international_organization_leader','lídra medzinárodnú organizácie')|e],\n$BULLET$Jazyk [court_language] nášho [overlord|e]." # todo: CHANGED # todo: CONCEPT CASE
+ change_court_language_desc: "Zmeňte [Concept('court_language','jazyk dvora')|e] nášho [Concept('country','krajiny')|e]\n\nMôžeme zmeniť náš jazyk dvora na:\n$BULLET$[common_language],\n$BULLET$[liturgical_language],\n$BULLET$[Concept('dominant_dialect','Dominantný dialekt')|e],\n$BULLET$Jazyk [Concept('market_language','jazyk trhu')|e] nášho [capital],\n$BULLET$Jazyk [Concept('accepted_culture','akceptovaná kultúra')|e],\n$BULLET$Jazyk nášho panovníka,\n$BULLET$Jazyk hlavy našej dynastie,\n$BULLET$Jazyk [court_language] lídra [Concept('international_organization_leader','lídra medzinárodnú organizácie')|e],\n$BULLET$Jazyk [court_language] nášho [Concept('overlord','suzeréna')|e]." # todo: CHANGED # todo: CONCEPT CASE
  orthodox_synod: "Pravoslávny synod" # todo: NEW TRANSLATION
  orthodox_synod_desc: "Zvolať Svätý synod. Toto je najvyššia autorita v Cirkvi a formuluje pravidlá a predpisy týkajúce sa organizácie Cirkvi, viery a poriadku bohoslužieb." # todo: NEW TRANSLATION
  periphora: "Periphora" # todo: NEW TRANSLATION
@@ -59,14 +59,17 @@
  canonize: "Kanonizovať" # todo: NEW TRANSLATION
  canonize_desc: "[Concept('canonize','Kanonizovať')|e] [Concept('character','Postava')|e], vyhlásiť ich za svätého a udeliť našej krajine dodatočné výhody podľa toho, akí schopní boli za života." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  canonize_select_character: "Vyberte [Concept('character','postava')|e], ktorého chcete [Concept('canonize','kanonizovať')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ propose_canonization: "Navrhnúť kanonizáciu" # todo: NEW TRANSLATION
+ propose_canonization_desc: "Môžeme predložiť [Concept('character','postava')|e] výnimočnej zbožnosti na posúdenie [GetCountry('PAP').GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CONVERT_RELIGION_NEVER_FROM_GROUP: "@trigger_no! [RELIGION.GetName] patrí do inej [Concept('religion_group','náboženskej skupiny')|e] a môžeme konvertovať len na náboženstvá z tej istej skupiny." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CONVERT_RELIGION_NEVER: "@trigger_no! [COUNTRY.GetName] nemôže nikdy zmeniť náboženstvo, pretože je dôležitou krajinou pre [COUNTRY.GetReligion.GetName]." # todo: NEW TRANSLATION
  CONVERT_RELIGION_TT: "Konverzia na [RELIGION.GetName] a stanovenie za oficiálne [Concept('religion','náboženstvo')|e] bude stáť $COST$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RESOLUTION_EFFECT_INFO: "Ak návrh prejde:\n$PASS$\n\nAk neprejde:\n$REJECT$\n\n" # todo: NEW TRANSLATION
  CURIA_EFFECT_INFO: "Ak návrh prejde Kuriou:\n$PASS$\n\nAk neprejde:\n$REJECT$\n\n" # todo: NEW TRANSLATION
  CARDINALS_OF_COUNTRY: "[cardinals] z [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- CARDINAL_ENTRY: "$EFFECT_LIST_BULLET$Kardinál z [LOCATION.GetName|Y] @[LOCATION.GetOwner.GetFlag]!" # todo: NEW TRANSLATION
+ CARDINAL_ENTRY: "$EFFECT_LIST_BULLET$Kardinál z [LOCATION.GetName|Y] [LOCATION.GetOwner.GetFlagIconWithNoTooltip]!" # todo: CHANGED (predtym: $EFFECT_LIST_BULLET$Kardinál z [LOCATION.GetName|Y] @[LOCATION.GetOwner.GetFlag]!)
  CARDINALS_BREAKDOWN_TOOLTIP: "#T [Localize('game_concept_cardinals')]#!\nMáme $NUMBER$ [Concept('cardinal','kardinál')|e] sídiel v:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CARDINALS_BREAKDOWN_TOOLTIP_GENERIC: "#T [Localize('game_concept_cardinals')]#!\nPočet miest pre [Concept('cardinal','kardinála')|e]: $NUMBER$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_CARDINALS: "Žiadni kardináli!" # todo: NEW TRANSLATION
  SUPPORTING_CARDINALS_TT: "#T Títo kardináli podporujú návrh#!" # todo: NEW TRANSLATION
  OPPOSE_CARDINALS_TT: "#T Títo kardináli sú proti návrhu#!" # todo: NEW TRANSLATION
@@ -80,10 +83,10 @@
  HOLY_SITE_TT_RELIGION_INFO: "Sväté miesto pre: #subtle_name [RELIGION.GetNameNoUnderline]#![RELIGION.GetIcon]" # todo: NEW TRANSLATION
  HOLY_SITE_TT_GOD_INFO: "Súvisí s [Concept('god','bohom')|e]: [GOD.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOD_POSSIBLE_EFFECTS_HEADER: "#weak Možné účinky:#!" # todo: NEW TRANSLATION
- HOLY_SITE_TT_AVATAR_INFO: "Súvisí s [avatar|e]: [AVATAR.GetName]." # todo: NEW TRANSLATION
- HOLY_SITE_TT_RELIGION: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ všetky $RELIGIONS$ [Concept('countries','krajiny')|e] získajú:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HOLY_SITE_TT_COUNTRY: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ [COUNTRY.GetNameWithFlag] získa:\n$INFO$" # todo: NEW TRANSLATION
- HOLY_SITE_TT_LOCATION: "Vďaka úrovni [holy_site_importance|e] $LEVEL$ [LOCATION.GetName] [Concept('location','lokalita')|e] získava:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_AVATAR_INFO: "Súvisí s [Concept('avatar','avatarom')|e]: [AVATAR.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_RELIGION: "Vďaka úrovni [Concept('holy_site_importance','dôležitosti svätého miesta')|e] $LEVEL$ všetky $RELIGIONS$ [Concept('countries','krajiny')|e] získajú:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_COUNTRY: "Vďaka úrovni [Concept('holy_site_importance','dôležitosti svätého miesta')|e] $LEVEL$ [COUNTRY.GetNameWithFlag] získa:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HOLY_SITE_TT_LOCATION: "Vďaka úrovni [Concept('holy_site_importance','dôležitosti svätého miesta')|e] $LEVEL$ [LOCATION.GetName] [Concept('location','lokalita')|e] získava:\n$INFO$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SAINTS_SORT_BY_NAME: "Kliknite pre zoradenie podľa mena [Concept('saint','svätý')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SAINTS_SORT_BY_COUNTRY: "Zoradiť podľa názvu krajiny [Concept('saint','svätého')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  HOLY_SITES_SORT_BY_NAME: "Zoradiť podľa názvu [Concept('holy_site','svätého miesta')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -100,10 +103,10 @@
  excommunicate_resolution: "Exkomunikácia" # todo: NEW TRANSLATION
  excommunicate_resolution_desc: "Každá [ShowReligionAdjective('catholic')|U] osoba, ktorá je exkomunikovaná [GetCountry('PAP').GetGovernment.GetRulerTitle], je vylúčená zo štruktúry Cirkvi a je jej odopreté prijímanie sviatostí.\n\nToto bude [Concept('excommunicate','exkomunikovať')|e] [Concept('ruler','panovníka')|e] cieľovej krajiny." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  excommunicate_resolution_specific: "Exkomunikovať [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
- excommunicate_resolution_specific_desc: "Každá [ShowReligionAdjective('catholic')|U] osoba, ktorá je exkomunikovaná [GetCountry('PAP').GetGovernment.GetRulerTitle], je vylúčená zo štruktúry Cirkvi a je jej odopreté prijímanie sviatostí.\n\nToto bude [Concept('excommunicate','exkomunikovať')|e] [Concept('ruler','panovníka')|e] [SCOPE.sCountry('target').GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ excommunicate_resolution_specific_desc: "Každá [ShowReligionAdjective('catholic')|U] osoba, ktorá je exkomunikovaná [GetCountry('PAP').GetGovernment.GetRulerTitle], je vylúčená zo štruktúry Cirkvi a je jej odopreté prijímanie sviatostí.\n\nToto bude [Concept('excommunicate','exkomunikovať')|e] [Concept('ruler','panovníka')|e] [SCOPE.sCountry('target').GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  excommunicate_resolution_no_pap_tt: "Nie je to [GetCountry('PAP').GetName] - namiesto toho použite [ShowCountryInteractionName('excommunicate')] [Concept('country_interaction','interakcia s krajinou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- vote_in_excommunicate_resolution: "Hlasovať o exkomunikácii [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
- vote_in_excommunicate_resolution_desc: "Rozhodnúť, či chceme podporiť exkomunikáciu [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
+ vote_in_excommunicate_resolution: "Hlasovať o exkomunikácii [SCOPE.sCountry('target').GetAltAdjective('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ vote_in_excommunicate_resolution_desc: "Rozhodnúť, či chceme podporiť exkomunikáciu [SCOPE.sCountry('target').GetAltAdjective('A')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  excommunicate_select_country: "Vyberte [Concept('country','krajina')|e], ktorú sa pokúsite [Concept('excommunicate','exkomunikovať')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  excommunicate_tt: "Cieľový vládca získa [ShowModifier('excommunicated')] a každá [ShowReligionAdjective('catholic')] krajina získa [THIS.GetCountry.GetBiasConfig('opinion_excommunicated').GetValue|+=0] názor na neho. Každá [ShowReligionAdjectiveWithNoTooltip('catholic')] krajina susediaca s cieľovou krajinou získa [ShowCasusBelliName('cb_excommunication')] [Concept('casus_belli','casus Belli')|e] proti nej." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  lift_excommunication_tt: "Cieľový vládca bude zbavený [Concept('excommunication','exkomunikácia')|e], čím sa odstráni [ShowModifier('excommunicated')] [Concept('modifier','modifikátor')|e] a zároveň trest na [Concept('opinion','názor')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -111,14 +114,22 @@
  excommunicate_active: "Exkomunikovať [SCOPE.sCountry('target').GetGovernment.GetRuler.GetName]" # todo: NEW TRANSLATION
  interdict_effect_tt: "[THIS.GetCountry.GetName] bude umiestnená pod [ShowModifier('interdict')] na #Y 15 rokov#! alebo kým nebude zrušený, čo dáva nasledujúce efekty:\n[ShowModifierEffect('interdict')]" # todo: NEW TRANSLATION
  lift_interdict_effect_tt: "Zrušiť [ShowModifier('interdict')], čím sa z krajiny odstránia nasledujúce efekty:\n[ShowModifierEffect('interdict')]" # todo: NEW TRANSLATION
- call_crusade_tt: "Bude vytvorená [Concept('crusade','križiacka výprava')|e] [Concept('international_organization','medzinárodná organizácia')|e] a každá [ShowReligionAdjective('catholic')] krajina, ktorá sa k nej pripojí, automaticky vyhlási vojnu cieľu [Concept('crusade','križiackej výprave')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ call_crusade_tt: "Bude vytvorená [Concept('crusade','križiacka výprava')|e] [Concept('international_organization','medzinárodná organizácia')|e] proti cieľu, ku ktorej sa pridajú najmocnejšie [ShowReligionAdjective('catholic')] krajiny, ktoré hlasovali za. Každý člen automaticky vyhlási vojnu cieľu." # todo: CHANGED (predtym: Bude vytvorená [Concept('crusade','križiacka výprava')|e] [Concept('international_organization','medzinárodná organizáci)
  call_crusade: "Vyhlásiť krížovú výpravu" # todo: NEW TRANSLATION
- call_crusade_active: "Krížová výprava proti [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
+ call_crusade_active: "Krížová výprava proti [SCOPE.sCountry('target').GetAltAdjective('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  call_crusade_desc: "Jeho Svätosť pápež opäť vyzval veriacich, aby sa vybrali proti nepriateľom Krista. Musíme sa opäť zjednotiť a preliť krv pre Cirkev a Svätú Stolicu v tejto novej výprave. Deus Vult!" # todo: NEW TRANSLATION
- call_crusade_specific: "Vyhlásiť krížovú výpravu proti [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
- call_crusade_specific_desc: "Začať debatu o vyhlásení krížovej výpravy proti [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
- vote_in_call_crusade: "Hlasovať o vyhlásení krížovej výpravy proti [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
- vote_in_call_crusade_desc: "Rozhodnúť, či chceme podporiť vyhlásenie krížovej výpravy proti [SCOPE.sCountry('target').GetName]" # todo: NEW TRANSLATION
+ call_crusade_specific: "Vyhlásiť krížovú výpravu proti [SCOPE.sCountry('target').GetAltAdjective('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ call_crusade_specific_desc: "Začať debatu o vyhlásení krížovej výpravy proti [SCOPE.sCountry('target').GetAltAdjective('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ vote_in_call_crusade: "Hlasovať o vyhlásení krížovej výpravy proti [SCOPE.sCountry('target').GetAltAdjective('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ vote_in_call_crusade_desc: "Rozhodnúť, či chceme podporiť vyhlásenie krížovej výpravy proti [SCOPE.sCountry('target').GetAltAdjective('D')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ crusade_privileges_bull: "Bula o križiackych výsadách" # todo: NEW TRANSLATION
+ crusade_privileges_bull_active: "Bula o križiackych výsadách" # todo: NEW TRANSLATION
+ crusade_privileges_bull_desc: "Pápež vyhlási bulu, ktorá udeľuje výsady križiackeho sľubu všetkým, ktorí sa zúčastnili na [Concept('crusade','križiacku výpravu')|e]. Kým je bula v platnosti, každý účastník križiackej výpravy získa slávu v celom kresťanskom svete a priazeň cirkvi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ crusade_privileges_bull_effect_tt: "Každý účastník [Concept('crusade','križiacka výprava')|e] získa na 5 rokov modifikátor [ROOT.GetStaticModifier('crusade_privileges').GetNameWithTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ crusade_privileges_bull_specific: "Vyhlásiť bulu o križiackych výsadách" # todo: NEW TRANSLATION
+ crusade_privileges_bull_specific_desc: "Začať debatu o udelení výsad pápežskej buly účastníkom [Concept('crusade','križiackej výprave')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ vote_in_crusade_privileges_bull: "Hlasovať o bule o križiackych výsadách" # todo: NEW TRANSLATION
+ vote_in_crusade_privileges_bull_desc: "Rozhodnúť, či účastníkom [Concept('crusade','križiackej výprave')|e] udeliť výsady pápežskej buly" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  crusade_select_country: "Vyberte krajinu, ktorá bude cieľom [Concept('crusade','križiackou výpravou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  select_vote: "Vyberte, ako hlasovať" # todo: NEW TRANSLATION
  illius_qui_se_pro_divini: "Illius Qui Se Pro Divini" # todo: NEW TRANSLATION
@@ -224,64 +235,64 @@
  folk_south_american_group: "Juhoamerické ľudové náboženstvá" # todo: NEW TRANSLATION
  folk_south_american_group_ADJ: "Juhoamerické ľudové náboženstvá" # todo: NEW TRANSLATION
  catholic: "Katolicizmus" # todo: NEW TRANSLATION
- catholic_ADJ: "katolícky" # todo: NEW TRANSLATION
+ catholic_ADJ: "Katolícke" # todo: NEW TRANSLATION
  lutheran: "Luteránstvo" # todo: NEW TRANSLATION
- lutheran_ADJ: "luteránsky" # todo: NEW TRANSLATION
+ lutheran_ADJ: "Luteránske" # todo: NEW TRANSLATION
  calvinist: "Kalvinizmus" # todo: NEW TRANSLATION
- calvinist_ADJ: "kalvinistický" # todo: NEW TRANSLATION
- orthodox: "Pravoslávie" # todo: NEW TRANSLATION
- orthodox_ADJ: "pravoslávny" # todo: NEW TRANSLATION
+ calvinist_ADJ: "Kalvinistické" # todo: CHANGED
+ orthodox: "Pravoslávie"
+ orthodox_ADJ: "Pravoslávne"
  hindu: "Hinduizmus" # todo: NEW TRANSLATION
- hindu_ADJ: "hindský" # todo: NEW TRANSLATION
+ hindu_ADJ: "Hindské" # todo: NEW TRANSLATION
  sapmi_shamanism: "Sámske šamanstvo" # todo: NEW TRANSLATION
- sapmi_shamanism_ADJ: "Sámske šamanstvo" # todo: NEW TRANSLATION
+ sapmi_shamanism_ADJ: "Sámske" # todo: NEW TRANSLATION
  muinaisusko: "Muinaisusko" # todo: NEW TRANSLATION
  muinaisusko_ADJ: "Muinaisusko" # todo: NEW TRANSLATION
  shia: "Šiizmus" # todo: NEW TRANSLATION
- shia_ADJ: "šiitský" # todo: NEW TRANSLATION
+ shia_ADJ: "Šiitské" # todo: NEW TRANSLATION
  ibadi: "Ibadizmus" # todo: NEW TRANSLATION
- ibadi_ADJ: "ibaditský" # todo: NEW TRANSLATION
+ ibadi_ADJ: "Ibaditské" # todo: NEW TRANSLATION
  sunni: "Sunnizmus" # todo: NEW TRANSLATION
- sunni_ADJ: "sunitský" # todo: NEW TRANSLATION
+ sunni_ADJ: "Sunitské" # todo: NEW TRANSLATION
  druzism: "Druzizmus" # todo: NEW TRANSLATION
- druzism_ADJ: "druzský" # todo: NEW TRANSLATION
+ druzism_ADJ: "Druzské" # todo: NEW TRANSLATION
  theravada: "Theraváda" # todo: NEW TRANSLATION
- theravada_ADJ: "Theravádsky" # todo: NEW TRANSLATION
+ theravada_ADJ: "Theravádske" # todo: NEW TRANSLATION
  romuva: "Romuva" # todo: NEW TRANSLATION
- romuva_ADJ: "romuvský" # todo: NEW TRANSLATION
+ romuva_ADJ: "Romuvské" # todo: NEW TRANSLATION
  mandeaism: "mandaizmus" # todo: CHANGED
- mandeaism_ADJ: "mandaénsky" # todo: CHANGED
+ mandeaism_ADJ: "Mandaénske" # todo: CHANGED
  yazidism: "Jazídizmus" # todo: NEW TRANSLATION
- yazidism_ADJ: "jazídsky" # todo: NEW TRANSLATION
- judaism: "Židovstvo" # todo: NEW TRANSLATION
- judaism_ADJ: "židovský" # todo: NEW TRANSLATION
+ yazidism_ADJ: "Jazídske" # todo: NEW TRANSLATION
+ judaism: "Judaizmus" # todo: NEW TRANSLATION
+ judaism_ADJ: "Židovské" # todo: NEW TRANSLATION
  samaritanism: "Samaritánstvo" # todo: NEW TRANSLATION
- samaritanism_ADJ: "samaritánsky" # todo: NEW TRANSLATION
+ samaritanism_ADJ: "Samaritánske" # todo: NEW TRANSLATION
  miaphysite: "Miaphysitizmus" # todo: NEW TRANSLATION
- miaphysite_ADJ: "miaphyzitský" # todo: NEW TRANSLATION
+ miaphysite_ADJ: "Miaphyzitské" # todo: NEW TRANSLATION
  nestorianism: "Nestoriánstvo" # todo: NEW TRANSLATION
- nestorianism_ADJ: "nestoriánsky" # todo: NEW TRANSLATION
+ nestorianism_ADJ: "Nestoriánske" # todo: NEW TRANSLATION
  bogomilism: "Bogomilstvo" # todo: NEW TRANSLATION
- bogomilism_ADJ: "bogomilský" # todo: NEW TRANSLATION
+ bogomilism_ADJ: "Bogomilské" # todo: NEW TRANSLATION
  bosnian_church: "Krstjani" # todo: NEW TRANSLATION
  bosnian_church_ADJ: "Krstjani" # todo: NEW TRANSLATION
  catharism: "Katarizmus" # todo: NEW TRANSLATION
- catharism_ADJ: "kataristický" # todo: NEW TRANSLATION
+ catharism_ADJ: "Kataristické" # todo: NEW TRANSLATION
  paulicianism: "Paulicianizmus" # todo: NEW TRANSLATION
- paulicianism_ADJ: "pauliánsky" # todo: NEW TRANSLATION
+ paulicianism_ADJ: "Pauliánske" # todo: NEW TRANSLATION
  waldensian: "Valdenské hnutie" # todo: NEW TRANSLATION
- waldensian_ADJ: "valdenský" # todo: NEW TRANSLATION
+ waldensian_ADJ: "Valdenské" # todo: NEW TRANSLATION
  christian: "Kresťanstvo" # todo: NEW TRANSLATION
- christian_ADJ: "kresťanský" # todo: NEW TRANSLATION
+ christian_ADJ: "Kresťanské" # todo: NEW TRANSLATION
  christian_desc: "Kresťanstvo, významné abrahámske náboženstvo, sa sústreďuje na život a učenie Ježiša Krista, zdôrazňujúc spásu prostredníctvom viery a dodržiavanie biblických princípov. Jeho rôzne vetvy, vrátane katolicizmu, protestantizmu a východného pravoslávia, majú významný vplyv po celom svete a formujú dejiny, politiku a kultúru." # todo: NEW TRANSLATION
  muslim: "Islam" # todo: NEW TRANSLATION
- muslim_ADJ: "muslimský" # todo: NEW TRANSLATION
+ muslim_ADJ: "Muslimské" # todo: NEW TRANSLATION
  muslim_desc: "Islam, monoteistické náboženstvo založené prorokom Muḥammadom v 7. storočí, hlása vieru v jediného Boha (Allāh) a nasleduje učenie $common_string_quran$. S rôznymi denomináciami ako Sunni a Shia mal Islam hlboký vplyv na spoločnosti, podporujúc kultúrny, vedecký a politický rozvoj naprieč kontinentmi." # todo: NEW TRANSLATION
  buddhist: "Buddhizmus" # todo: NEW TRANSLATION
- buddhist_ADJ: "buddhistický" # todo: NEW TRANSLATION
+ buddhist_ADJ: "Buddhistické" # todo: NEW TRANSLATION
  buddhist_desc: "Majúc pôvod v učení Buddhu, čo znamená 'Prebudený' a známeho aj jeho kniežacím menom Siddhārtha Gautama alebo titulom #italic Śākyamuni#!, $buddhist$ sa rozšíril ďaleko a široko zo svojho zdroja v $india$. Ovplyvňujúc a byť ovplyvnený mnohými krajinami, ľuďmi a vierami, z ktorých sa šíril, vzniklo vnútri mnoho rôznych $buddhist_ADJ$ škôl, s rozdielnymi prístupmi a interpretáciami na ceste k oslobodeniu zo Saṃsāry, cyklu smrti a znovuzrodenia." # todo: NEW TRANSLATION
  dharmic: "Dharma" # todo: NEW TRANSLATION
- dharmic_ADJ: "dharmický" # todo: NEW TRANSLATION
+ dharmic_ADJ: "Dharmické" # todo: NEW TRANSLATION
  dharmic_desc: "$dharmic_ADJ$ náboženstvá majú pôvod v $india$ a všetky majú spoločný koncept 'Dharma', čo znamená správne správanie a spôsob života podľa kozmických zákonov vesmíru." # todo: NEW TRANSLATION
  zoroastrian_group: "Zoroastrizmus" # todo: NEW TRANSLATION
  zoroastrian_group_ADJ: "zoroastriánsky" # todo: NEW TRANSLATION
@@ -296,31 +307,31 @@
  mandean_group: "mandaisti" # todo: CHANGED
  mandean_group_ADJ: "mandaénsky" # todo: CHANGED
  anglican: "Anglikánstvo" # todo: NEW TRANSLATION
- anglican_ADJ: "anglikánsky" # todo: NEW TRANSLATION
+ anglican_ADJ: "Anglikánske" # todo: NEW TRANSLATION
  lollardy: "Lollardstvo" # todo: NEW TRANSLATION
- lollardy_ADJ: "lollardský" # todo: NEW TRANSLATION
+ lollardy_ADJ: "Lollardské" # todo: NEW TRANSLATION
  strigolniki: "Strigolnichestvo" # todo: NEW TRANSLATION
  strigolniki_ADJ: "Strigolnichestvo" # todo: NEW TRANSLATION
  hussite: "Husitstvo" # todo: NEW TRANSLATION
- hussite_ADJ: "husitský" # todo: NEW TRANSLATION
+ hussite_ADJ: "Husitské" # todo: NEW TRANSLATION
  jain: "Džinizmus" # todo: NEW TRANSLATION
- jain_ADJ: "džinistický" # todo: NEW TRANSLATION
+ jain_ADJ: "Džinistické" # todo: NEW TRANSLATION
  mahayana: "Mahájána" # todo: NEW TRANSLATION
- mahayana_ADJ: "mahájánsky" # todo: NEW TRANSLATION
+ mahayana_ADJ: "Mahájánske" # todo: NEW TRANSLATION
  sammitiya: "Saṃmitīya" # todo: NEW TRANSLATION
  sammitiya_ADJ: "Saṃmitīya" # todo: NEW TRANSLATION
  tibetan_buddhism: "Tibetské buddhizmy" # todo: NEW TRANSLATION
- tibetan_buddhism_ADJ: "tibetský buddhistický" # todo: NEW TRANSLATION
+ tibetan_buddhism_ADJ: "Tibetské buddhistické" # todo: NEW TRANSLATION
  bon: "Bön" # todo: NEW TRANSLATION
  bon_ADJ: "Bön" # todo: NEW TRANSLATION
  sanjiao: "Sānjiào" # todo: NEW TRANSLATION
  sanjiao_ADJ: "Sānjiào" # todo: NEW TRANSLATION
  nahuatl: "Nahua" # todo: NEW TRANSLATION
- nahuatl_ADJ: "nahuanský" # todo: NEW TRANSLATION
+ nahuatl_ADJ: "Nahuanské" # todo: NEW TRANSLATION
  protestant: "Protestant" # todo: NEW TRANSLATION
  church_aspects: "môže mať cirkevné aspekty" # todo: NEW TRANSLATION
  mayan: "Maya" # todo: NEW TRANSLATION
- mayan_ADJ: "mayanský" # todo: NEW TRANSLATION
+ mayan_ADJ: "Mayanské" # todo: NEW TRANSLATION
  mayan_desc: "$mayan$ $common_folk_religion_desc$" # todo: NEW TRANSLATION
  tepeu_god: "Tepeu" # todo: NEW TRANSLATION
  tepeu_god_desc: "$tepeu_god$ je nadradený boh ľudí hovoriacich jazykom [ShowLanguageName('maya_language')]." # todo: NEW TRANSLATION
@@ -339,15 +350,15 @@
  worship_ixchel_god: "$worship_title1$ $ixchel_god$ $worship_title2$" # todo: NEW TRANSLATION
  worship_ixchel_god_desc: "$worship_desc1$ [ShowGodName('coatlicue_god')] $worship_desc2$" # todo: CHANGED
  norse: "Severské pohanstvo" # todo: NEW TRANSLATION
- norse_ADJ: "severský" # todo: NEW TRANSLATION
+ norse_ADJ: "Severské" # todo: NEW TRANSLATION
  shamanism: "Šamanizmus" # todo: NEW TRANSLATION
- shamanism_ADJ: "šamanistický" # todo: NEW TRANSLATION
+ shamanism_ADJ: "Šamanistické" # todo: NEW TRANSLATION
  shinto: "Šintó" # todo: NEW TRANSLATION
- shinto_ADJ: "šintó" # todo: NEW TRANSLATION
+ shinto_ADJ: "Šintoistické" # todo: NEW TRANSLATION
  sikhism: "Sikhizmus" # todo: NEW TRANSLATION
- sikhism_ADJ: "sikhský" # todo: NEW TRANSLATION
+ sikhism_ADJ: "Sikhské" # todo: NEW TRANSLATION
  tengri: "Tengrizmus" # todo: NEW TRANSLATION
- tengri_ADJ: "tengrský" # todo: NEW TRANSLATION
+ tengri_ADJ: "Tengrské" # todo: NEW TRANSLATION
  tengri_desc: "$tengri$ je typ $shamanism_ADJ$ vier $turkic_group$ a $mongolian_group$ ľudov, sústredený okolo neba boha $tengri_god_name$, ktorý je uctievaný ako personifikácia vesmíru. Zároveň však zahŕňa aj iné božstvá, uctieva prírodu a božstvá v nej, ako aj predkov." # todo: NEW TRANSLATION
  tengri_god: "Kök Teŋri" # todo: NEW TRANSLATION
  tengri_god_desc: "[ShowGodName('tengri_god')] je bohom nebies ľudu [ShowCultureGroupName('turkic_group')]." # todo: NEW TRANSLATION
@@ -382,69 +393,69 @@
  worship_mergen_god: "$worship_title1$ $mergen_god$ $worship_title2$" # todo: NEW TRANSLATION
  worship_mergen_god_desc: "$worship_desc1$ [ShowGodName('mergen_god')] $worship_desc2$" # todo: NEW TRANSLATION
  totemism: "Totemizmus" # todo: NEW TRANSLATION
- totemism_ADJ: "totemistický" # todo: NEW TRANSLATION
+ totemism_ADJ: "Totemistické" # todo: NEW TRANSLATION
  vajrayana: "Vajrajána" # todo: NEW TRANSLATION
- vajrayana_ADJ: "vajrajánsky" # todo: NEW TRANSLATION
+ vajrayana_ADJ: "Vajrajánske" # todo: NEW TRANSLATION
  zoroastrian: "Zoroastrizmus" # todo: NEW TRANSLATION
- zoroastrian_ADJ: "zoroastriánsky" # todo: NEW TRANSLATION
+ zoroastrian_ADJ: "Zoroastriánske" # todo: NEW TRANSLATION
  manichaeism: "Manicheizmus" # todo: NEW TRANSLATION
- manichaeism_ADJ: "manichejský" # todo: NEW TRANSLATION
+ manichaeism_ADJ: "Manichejské" # todo: NEW TRANSLATION
  iroquoian_totemism: "Orendism" # todo: NEW TRANSLATION
  iroquoian_totemism_ADJ: "Orendist" # todo: NEW TRANSLATION
  mississippian_ceremonial: "Ceremoniálny kult" # todo: NEW TRANSLATION
- mississippian_ceremonial_ADJ: "ceremoniálny" # todo: NEW TRANSLATION
+ mississippian_ceremonial_ADJ: "Ceremoniálne" # todo: NEW TRANSLATION
  paiute_shamanism: "Puhagimism" # todo: NEW TRANSLATION
  paiute_shamanism_ADJ: "Puhagimism" # todo: NEW TRANSLATION
  pomo_shamanism: "Kuksu šamanizmus" # todo: NEW TRANSLATION
- pomo_shamanism_ADJ: "kuksu šamanistický" # todo: NEW TRANSLATION
+ pomo_shamanism_ADJ: "Kuksu šamanistické" # todo: NEW TRANSLATION
  salishan_totemism: "Salishanský totemizmus" # todo: NEW TRANSLATION
- salishan_totemism_ADJ: "salishanský" # todo: NEW TRANSLATION
+ salishan_totemism_ADJ: "Salishanské" # todo: NEW TRANSLATION
  dene_totemism: "Dene totemizmus" # todo: NEW TRANSLATION
- dene_totemism_ADJ: "dene totemistický" # todo: NEW TRANSLATION
+ dene_totemism_ADJ: "Dene totemistické" # todo: NEW TRANSLATION
  dene_shamanism: "Athabaskanizmus" # todo: NEW TRANSLATION
- dene_shamanism_ADJ: "athabaskanský" # todo: NEW TRANSLATION
+ dene_shamanism_ADJ: "Athabaskanské" # todo: NEW TRANSLATION
  yupik_shamanism: "Jupikové šamanstvo" # todo: NEW TRANSLATION
- yupik_shamanism_ADJ: "jupikský" # todo: NEW TRANSLATION
+ yupik_shamanism_ADJ: "Jupikské" # todo: NEW TRANSLATION
  great_plains_shamanism: "Wakanizmus" # todo: NEW TRANSLATION
- great_plains_shamanism_ADJ: "wakanistický" # todo: NEW TRANSLATION
+ great_plains_shamanism_ADJ: "Wakanistické" # todo: NEW TRANSLATION
  chukchi_shamanism: "Čukčovské šamanstvo" # todo: NEW TRANSLATION
- chukchi_shamanism_ADJ: "čukčovský šamanistický" # todo: NEW TRANSLATION
+ chukchi_shamanism_ADJ: "Čukčovské šamanistické" # todo: NEW TRANSLATION
  yukaghir_shamanism: "Jukagirské šamanstvo" # todo: NEW TRANSLATION
- yukaghir_shamanism_ADJ: "jukagirský" # todo: NEW TRANSLATION
+ yukaghir_shamanism_ADJ: "Jukagirské" # todo: NEW TRANSLATION
  tungusic_shamanism: "Tungušské šamanstvo" # todo: NEW TRANSLATION
- tungusic_shamanism_ADJ: "tungušský šamanistický" # todo: NEW TRANSLATION
+ tungusic_shamanism_ADJ: "Tungušské šamanistické" # todo: NEW TRANSLATION
  bimoism: "Bimoizmus" # todo: NEW TRANSLATION
- bimoism_ADJ: "bimoistický" # todo: NEW TRANSLATION
+ bimoism_ADJ: "Bimoistické" # todo: NEW TRANSLATION
  hmongism: "Kev Dab Qhuas" # todo: NEW TRANSLATION
  hmongism_ADJ: "Kev Dab Qhuas" # todo: NEW TRANSLATION
  moism: "Moizmus" # todo: NEW TRANSLATION
- moism_ADJ: "moistický" # todo: NEW TRANSLATION
+ moism_ADJ: "Moistické" # todo: NEW TRANSLATION
  rmaism: "Rmaizmus" # todo: NEW TRANSLATION
- rmaism_ADJ: "rmaistický" # todo: NEW TRANSLATION
+ rmaism_ADJ: "Rmaistické" # todo: NEW TRANSLATION
  sanamahism: "Sanamahizmus" # todo: NEW TRANSLATION
- sanamahism_ADJ: "sanamahistický" # todo: NEW TRANSLATION
+ sanamahism_ADJ: "Sanamahistické" # todo: NEW TRANSLATION
  satsana_phi: "Satsana Phi" # todo: NEW TRANSLATION
  satsana_phi_ADJ: "Satsana Phi" # todo: NEW TRANSLATION
  khabzeism: "Khabzeizmus" # todo: NEW TRANSLATION
- khabzeism_ADJ: "khabzeistický" # todo: NEW TRANSLATION
+ khabzeism_ADJ: "Khabzeistické" # todo: NEW TRANSLATION
  vainakh_paganism: "Vainakhské pohanstvo" # todo: NEW TRANSLATION
- vainakh_paganism_ADJ: "vainakhský" # todo: NEW TRANSLATION
+ vainakh_paganism_ADJ: "Vainakhské" # todo: NEW TRANSLATION
  alan_paganism: "Alanské pohanstvo" # todo: NEW TRANSLATION
- alan_paganism_ADJ: "alanský" # todo: NEW TRANSLATION
+ alan_paganism_ADJ: "Alanské" # todo: NEW TRANSLATION
  lezgin_paganism: "Lezginské pohanstvo" # todo: NEW TRANSLATION
- lezgin_paganism_ADJ: "lezginský" # todo: NEW TRANSLATION
+ lezgin_paganism_ADJ: "Lezginské" # todo: NEW TRANSLATION
  karachay_balkar_paganism: "Karačaj-Balkarské pohanstvo" # todo: NEW TRANSLATION
- karachay_balkar_paganism_ADJ: "karačaj-balkarský" # todo: NEW TRANSLATION
+ karachay_balkar_paganism_ADJ: "Karačaj-balkarské" # todo: NEW TRANSLATION
  mari_paganism: "Čimarii Jüla" # todo: NEW TRANSLATION
  mari_paganism_ADJ: "Mari Pagan" # todo: NEW TRANSLATION
  udmurt_paganism: "Inmarism" # todo: NEW TRANSLATION
- udmurt_paganism_ADJ: "udmurtský" # todo: NEW TRANSLATION
+ udmurt_paganism_ADJ: "Udmurtské" # todo: NEW TRANSLATION
  komi_paganism: "Važesköm" # todo: NEW TRANSLATION
- komi_paganism_ADJ: "komský" # todo: NEW TRANSLATION
+ komi_paganism_ADJ: "Komské" # todo: NEW TRANSLATION
  samoyedic_paganism: "Samojedské šamanstvo" # todo: NEW TRANSLATION
- samoyedic_paganism_ADJ: "samojedský" # todo: NEW TRANSLATION
+ samoyedic_paganism_ADJ: "Samojedské" # todo: NEW TRANSLATION
  obian_paganism: "Obianské šamanstvo" # todo: NEW TRANSLATION
- obian_paganism_ADJ: "obianský" # todo: NEW TRANSLATION
+ obian_paganism_ADJ: "Obianské" # todo: NEW TRANSLATION
  catholic_head_view_button: "Katolícka cirkev" # todo: NEW TRANSLATION
  shinto_head_view_button: "Šintó" # todo: NEW TRANSLATION
  orthodox_head_view_button: "Patriarchát" # todo: NEW TRANSLATION
@@ -463,107 +474,107 @@
  default_sin_prefix_name: "a " # todo: NEW TRANSLATION
  muslim_sin_prefix_name: "" # todo: NEW TRANSLATION
  hanafi_school: "Ḥanafī" # todo: NEW TRANSLATION
- hanafi_school_desc: "The $hanafi_school$ Madhhab is named after Abū Ḥanīfa Al-Nuʿmān ibn Thābit. The school originated in Kufa and is prominent throughout the [ShowCultureName('farsi_culture')] and [ShowCultureGroupName('turkic_group')] world, including northern $india$. Though textual sources in the $common_string_quran$ and Ḥadīth are given preference, $hanafi_school$ followers have an inclusive view of sources and also employ analogy (Qiyās), juristic discretion (Istiḥsan), and local customs ('Urf) in their jurisprudence. Some view it as the most flexible of the schools." # todo: NEW TRANSLATION
+ hanafi_school_desc: "Madhhab $hanafi_school$ je pomenovaný po Abū Ḥanīfovi Al-Nuʿmānovi ibn Thābitovi. Škola vznikla v Kufe a je rozšírená v celom svete [ShowCultureName('farsi_culture')] a [ShowCultureGroupName('turkic_group')], vrátane severnej časti $india$. Hoci sa uprednostňujú textové zdroje v $common_string_quran$ a hadísoch, stúpenci $hanafi_school$ pristupujú k zdrojom inkluzívne a vo svojej právnej vede využívajú aj analógiu (Qiyās), právnickú úvahu (Istiḥsan) a miestne zvyky ('Urf). Niektorí ju považujú za najpružnejšiu zo škôl." # todo: RETRANSLATED ENGLISH
  hanbali_school: "Ḥanbalī" # todo: NEW TRANSLATION
- hanbali_school_desc: "The $hanbali_school$ Madhhab is named after Aḥmad ibn Ḥanbal, and champions withholding from any speculative theology, Kalām. $hanbali_school$ followers maintain that the $common_string_quran$ and Sunnah are the only proper sources of jurisprudence and that they should be interpreted in a literal and traditionalist sense. Though it is accepted as a valid Madhhab, very few states actively promote the $hanbali_school$ school, and it was banned by the Abbasid Caliphs." # todo: NEW TRANSLATION
+ hanbali_school_desc: "Madhhab $hanbali_school$ je pomenovaný po Aḥmadovi ibn Ḥanbalovi a odmieta akúkoľvek špekulatívnu teológiu, Kalām. Stúpenci $hanbali_school$ zastávajú názor, že $common_string_quran$ a sunna sú jedinými správnymi zdrojmi právnej vedy a mali by sa vykladať doslovne a tradicionalisticky. Hoci sa považuje za platný madhhab, len veľmi málo štátov aktívne podporuje školu $hanbali_school$ a abbásovskí kalifovia ju zakázali." # todo: RETRANSLATED ENGLISH
  maliki_school: "Mālikī" # todo: NEW TRANSLATION
- maliki_school_desc: "The $maliki_school$ Madhhab is named after Mālik ibn Anas and is prominent in particular throughout [ShowSubContinentName('north_africa')] and [ShowRegionName('iberia_region')]. Jurisprudence is primarily based on the work and interpretations of ibn Anas and his student Saḥnūn as described in the al-Muwaṭṭa' and the Mudawwanah. One of the foremost centers of learning within the $maliki_school$ School is the Great Mosque of Āl Qayrawān, near [ShowLocationName('tunis')]." # todo: NEW TRANSLATION
+ maliki_school_desc: "Madhhab $maliki_school$ je pomenovaný po Mālikovi ibn Anasovi a je rozšírený najmä v [ShowSubContinentName('north_africa')] a [ShowRegionName('iberia_region')]. Právna veda sa zakladá predovšetkým na diele a výkladoch ibn Anasa a jeho žiaka Saḥnūna, ktoré sú opísané v al-Muwaṭṭa' a Mudawwanah. Jedným z najvýznamnejších centier vzdelanosti školy $maliki_school$ je Veľká mešita v Āl Qayrawāne neďaleko [ShowLocationName('tunis')]." # todo: RETRANSLATED ENGLISH
  shafii_school: "Shāfi'ī" # todo: NEW TRANSLATION
- shafii_school_desc: "The $shafii_school$ Madhhab is named after Imām Al-Shāfi'ī, and it is prominent in particular among [ShowReligionGroupAdjective('muslim')] believers in [ShowRegionName('arabia_region')], [ShowSubContinentName('east_africa')], and East [ShowContinentName('asia')]. Unlike other Madhhab, the $shafii_school$ reject Istiḥsan and Istislah as sources of $sharia$, instead only relying on what is textually in the $common_string_quran$ or Ḥadīth." # todo: NEW TRANSLATION
+ shafii_school_desc: "Madhhab $shafii_school$ je pomenovaný po Imāmovi Al-Shāfi'ī a je rozšírený najmä medzi veriacimi [ShowReligionGroupAdjective('muslim')] v [ShowRegionName('arabia_region')], [ShowSubContinentName('east_africa')] a vo východnej časti [ShowContinentName('asia')]. Na rozdiel od ostatných madhhabov $shafii_school$ odmieta Istiḥsan a Istislah ako zdroje $sharia$ a spolieha sa výlučne na to, čo je zapísané v $common_string_quran$ alebo hadísoch." # todo: RETRANSLATED ENGLISH
  zahiri_school: "Ẓāhirī" # todo: NEW TRANSLATION
- zahiri_school_desc: "The $zahiri_school$ advocates for a strict adherence to the text of the $common_string_quran$, and focus on its external or apparent meaning. According to them, there can not be any conclusion drawn from reading the texts that is not in the texts themselves, otherwise $muslim_god_name$ would have explicitly expressed those already." # todo: NEW TRANSLATION
+ zahiri_school_desc: "Škola $zahiri_school$ presadzuje prísne dodržiavanie textu $common_string_quran$ a sústreďuje sa na jeho vonkajší či zjavný význam. Podľa jej stúpencov nemožno z textov vyvodzovať žiadne závery, ktoré v nich nie sú priamo obsiahnuté, inak by ich $muslim_god_name$ výslovne uviedol." # todo: RETRANSLATED ENGLISH
  ashari_school: "Ash'arī" # todo: NEW TRANSLATION
- ashari_school_desc: "The $ashari_school$ School of Theology is focused on the authority of the scriptures and rationalism, and was founded in the 9th century by Abū al-Ḥasan al-Ashʿarī. His teachings of all universe being composed of atoms became the basis of the $ashari_school$ School proposition that all matter and time has been created by $muslim_god_name$, believing at the same time in free will and predestination." # todo: NEW TRANSLATION
+ ashari_school_desc: "Teologická škola $ashari_school$ sa zameriava na autoritu písiem a racionalizmus. V 9. storočí ju založil Abū al-Ḥasan al-Ashʿarī. Jeho učenie, podľa ktorého sa celý vesmír skladá z atómov, sa stalo základom tvrdenia školy $ashari_school$, že všetku hmotu a čas stvoril $muslim_god_name$. Zároveň verí v slobodnú vôľu aj predurčenie." # todo: RETRANSLATED ENGLISH
  maturidi_school: "Māturīdī" # todo: NEW TRANSLATION
- maturidi_school_desc: "The $maturidi_school$ School of Theology, taking the name from 'Abū Manṣūr al-Māturīdī, is a [ShowReligionAdjective('sunni')] school of theology emerging from the theological beliefs of the $hanafi_school$ School of Jurisprudence. It promotes the rational interpretation of the scriptures, and the importance of faith over one person's deeds." # todo: NEW TRANSLATION
+ maturidi_school_desc: "Teologická škola $maturidi_school$, pomenovaná po Abū Manṣūrovi al-Māturīdīm, je [ShowReligionAdjective('sunni')] teologickou školou, ktorá vznikla z teologických názorov právnickej školy $hanafi_school$. Podporuje racionálny výklad písiem a zdôrazňuje dôležitosť viery pred skutkami jednotlivca." # todo: RETRANSLATED ENGLISH
  athari_school: "Aṯarī" # todo: NEW TRANSLATION
- athari_school_desc: "The $athari_school$ School of Theology rejects a rational interpretation of the scriptures in favor of a stricter reading of the texts of the $common_string_quran$ and Ḥadīth, considering them the sole authorities. Being against any form of religion innovation, refuses any kind of rationality that is not based upon the texts of the $common_string_quran$." # todo: NEW TRANSLATION
+ athari_school_desc: "Teologická škola $athari_school$ odmieta racionálny výklad písiem a uprednostňuje prísnejšie čítanie textov $common_string_quran$ a hadísov, ktoré považuje za jediné autority. Odmieta akékoľvek náboženské inovácie a zavrhuje každý druh racionalizmu, ktorý sa nezakladá na textoch $common_string_quran$." # todo: RETRANSLATED ENGLISH
  mutazili_school: "Mu'tazilī" # todo: NEW TRANSLATION
- mutazili_school_desc: "The $mutazili_school$ School of Theology developed influenced by Greek and Indian philosophy and rationalism. It rejects the notion that the $common_string_quran$ and $muslim_god_name$ are coexistent, expressing that the scripture must logically come after the originator. It defends reason as long as it serves people to understand religious matters, and it supports that evil originates from errors of humanity due to their free will." # todo: NEW TRANSLATION
+ mutazili_school_desc: "Teologická škola $mutazili_school$ vznikla pod vplyvom gréckej a indickej filozofie a racionalizmu. Odmieta predstavu, že $common_string_quran$ a $muslim_god_name$ existujú súčasne, a tvrdí, že písmo musí logicky nasledovať po svojom pôvodcovi. Obhajuje rozum, pokiaľ ľuďom pomáha porozumieť náboženským otázkam, a tvrdí, že zlo pramení z chýb ľudstva, ktoré sú dôsledkom slobodnej vôle." # todo: RETRANSLATED ENGLISH
  wahhabi_school: "Wahhābī" # todo: NEW TRANSLATION
- wahhabi_school_desc: "Emerging from the [ShowReligiousSchoolName('hanbali_school')] School as a revivalist movement, the $wahhabi_school$ School of Theology is against common Sufi practices like the veneration of holy people and pilgrimages to their shrines. It encourages a return to the original piety and practices of the first generations of [ShowReligionGroupName('muslim')]." # todo: NEW TRANSLATION
+ wahhabi_school_desc: "Teologická škola $wahhabi_school$ vznikla ako obrodné hnutie v rámci školy [ShowReligiousSchoolName('hanbali_school')] a odmieta bežné súfijské praktiky, ako je uctievanie svätých a púte k ich svätyniam. Podporuje návrat k pôvodnej zbožnosti a praktikám prvých generácií [ShowReligionGroupName('muslim')]." # todo: RETRANSLATED ENGLISH
  ismaili_school: "Ismā'īlī" # todo: NEW TRANSLATION
- ismaili_school_desc: "The $ismaili_school$ Madhhab is named after Ismā'īl ibn Ja'far, the successor of Ja'far al-Ṣādiq, and was the dominant school of faith in the Fatimid Caliphate but has lost much ground since its fall. The $ismaili_school$ school encompasses a number of increasingly divergent branches, and in many ways, they focus on the esoteric elements of [ShowReligionAdjective('shia')] faith more than the [ShowReligiousSchoolName('jafari_school')] or [ShowReligiousSchoolName('zaidi_school')]." # todo: NEW TRANSLATION
+ ismaili_school_desc: "Madhhab $ismaili_school$ je pomenovaný po Ismā'īlovi ibn Ja'farovi, nástupcovi Ja'fara al-Ṣādiqa. Bol dominantnou náboženskou školou vo fátimovskom kalifáte, no po jeho páde stratil veľkú časť svojho vplyvu. Škola $ismaili_school$ zahŕňa niekoľko čoraz odlišnejších vetiev a v mnohých ohľadoch sa viac zameriava na ezoterické prvky viery [ShowReligionAdjective('shia')] než [ShowReligiousSchoolName('jafari_school')] alebo [ShowReligiousSchoolName('zaidi_school')]." # todo: RETRANSLATED ENGLISH
  jafari_school: "Ja'farī" # todo: NEW TRANSLATION
- jafari_school_desc: "The $jafari_school$ Madhhab is named after Ja'far al-Ṣādiq, the sixth Imām, and it focuses on independent reasoning by experts of Islamic Law, prefering that over analogy when establishing the Law. It also allows for a temporary marriage lasting a predeterminate period of time." # todo: NEW TRANSLATION
+ jafari_school_desc: "Madhhab $jafari_school$ je pomenovaný po Ja'farovi al-Ṣādiqovi, šiestom Imāmovi. Pri ustanovovaní práva kladie dôraz na nezávislé uvažovanie znalcov islamského práva a uprednostňuje ho pred analógiou. Umožňuje tiež dočasné manželstvo na vopred určené obdobie." # todo: RETRANSLATED ENGLISH
  zaidi_school: "Zaydī" # todo: NEW TRANSLATION
- zaidi_school_desc: "Also called 'Fivers', the $zaidi_school$ current is named after Zayd ibn 'Alī, the grandson of Muḥammad's son 'Alī, and follows his teachings as described in the Majmu' al-Fiqh. $zaidi_school$ followers emphasize justice and human responsibility and descend from those who supported Zayd's original revolt against the Umayyad Caliph. $zaidi_school$ people entirely reject religious dissimulation as practiced by many [ShowReligionAdjective('shia')] followers, and it is the most similar to [ShowReligionName('sunni')]." # todo: NEW TRANSLATION
+ zaidi_school_desc: "Škola $zaidi_school$, nazývaná aj „päťverci“, je pomenovaná po Zaydovi ibn 'Alīm, vnukovi Muḥammadovho syna 'Alīho, a nasleduje jeho učenie opísané v Majmu' al-Fiqh. Stúpenci $zaidi_school$ zdôrazňujú spravodlivosť a ľudskú zodpovednosť a pochádzajú z radov tých, ktorí podporovali Zaydovo pôvodné povstanie proti umajjovskému kalifovi. Úplne odmietajú náboženské pretvarovanie, ktoré praktizujú mnohí stúpenci [ShowReligionAdjective('shia')], a ich viera sa najviac podobá [ShowReligionName('sunni')]." # todo: RETRANSLATED ENGLISH
  imamiya_school: "Imāmīya" # todo: NEW TRANSLATION
- imamiya_school_desc: "Also called 'Twelvers', $imamiya_school$ believes that 'Alī, the successor of Muḥammad, was followed by twelve infallible Imām chosen by divine decree. The last Imām, al-Mahdī, is expected to return as the savior of mankind, finally enforcing justice and peace in the world. They mainly follow [ShowReligiousSchoolName('jafari_school')] jurisprudence." # todo: NEW TRANSLATION
+ imamiya_school_desc: "Škola $imamiya_school$, nazývaná aj „dvanástnici“, verí, že po 'Alīm, nástupcovi Muḥammada, nasledovalo dvanásť neomylných Imāmov vyvolených božským rozhodnutím. Očakáva sa, že posledný Imām, al-Mahdī, sa vráti ako spasiteľ ľudstva a napokon nastolí vo svete spravodlivosť a mier. Riadi sa predovšetkým právnou vedou školy [ShowReligiousSchoolName('jafari_school')]." # todo: RETRANSLATED ENGLISH
  nizari_school: "Nizārī" # todo: NEW TRANSLATION
- nizari_school_desc: "The $nizari_school$ claim that Nizār ibn al-Mustanṣir was the true successor to the Fatimid Caliphate after his father death, and oppose al-Afḍal Shāhanshāh's coup to install Al-Musta'lī bi'llāh on the throne. Having originally split from the [ShowReligiousSchoolName('ismaili_school')], they have gained adherents from many other branches, and they follow [ShowReligiousSchoolName('jafari_school')] jurisprudence, focusing on pluralism and acceptance of differences." # todo: NEW TRANSLATION
+ nizari_school_desc: "Stúpenci $nizari_school$ tvrdia, že Nizār ibn al-Mustanṣir bol po smrti svojho otca právoplatným nástupcom fátimovského kalifátu, a odmietajú prevrat al-Afḍala Shāhanshāha, ktorý dosadil na trón Al-Musta'līho bi'llāha. Pôvodne sa odštiepili od školy [ShowReligiousSchoolName('ismaili_school')], no získali stúpencov z mnohých ďalších vetiev. Riadi sa právnou vedou školy [ShowReligiousSchoolName('jafari_school')] a kladú dôraz na pluralizmus a prijímanie odlišností." # todo: RETRANSLATED ENGLISH
  mustali_school: "Musta'lī" # todo: NEW TRANSLATION
- mustali_school_desc: "The $mustali_school$ stand in opposition to the [ShowReligiousSchoolName('nizari_school')] in that they accept the ascension of Al-Musta'lī bi'llāh to the throne of the Fatimid Caliphate. Although originating in [ShowRegionName('egypt_region')], they later spread to Western $india$ through missionary work." # todo: NEW TRANSLATION
+ mustali_school_desc: "Stúpenci $mustali_school$ sú v protiklade k [ShowReligiousSchoolName('nizari_school')], pretože uznávajú nástup Al-Musta'līho bi'llāha na trón fátimovského kalifátu. Hoci vznikli v [ShowRegionName('egypt_region')], neskôr sa vďaka misionárskej činnosti rozšírili do západnej časti $india$." # todo: RETRANSLATED ENGLISH
  alevism_school: "Alevism" # todo: NEW TRANSLATION
- alevism_school_desc: "Following the teachings of Ḥājī Baktāš Walī, $alevism_school$ is a syncretic mystical school, emerging from the [ShowReligiousSchoolName('imamiya_school')] school but incorporating traditions from [ShowReligionName('tengri')] and older [ShowCultureGroupName('turkic_group')] beliefs. It also takes some aspects of Sufism, like the presence of a spiritual leader and mysticism practices." # todo: NEW TRANSLATION
+ alevism_school_desc: "Škola $alevism_school$ nasleduje učenie Ḥājīho Baktāša Walīho a je synkretickou mystickou školou, ktorá vznikla zo školy [ShowReligiousSchoolName('imamiya_school')], no zahŕňa aj tradície [ShowReligionName('tengri')] a staršie [ShowCultureGroupName('turkic_group')] viery. Preberá tiež niektoré prvky súfizmu, napríklad duchovného vodcu a mystické praktiky." # todo: RETRANSLATED ENGLISH
  alawi_school: "'Alawī" # todo: NEW TRANSLATION
- alawi_school_desc: "The $alawi_school$, also called Nuṣairī, proclaim 'Alī ibn Abī Ṭālib, the first Imām according to [ShowReligionAdjective('shia')] beliefs, to be the manifestation of $muslim_god_name$ Himself. They differ substantially from the rest of the [ShowReligionAdjective('shia')] faith in both rituals and theology, believing in reincarnation and allowing the consumption of alcohol." # todo: NEW TRANSLATION
+ alawi_school_desc: "Stúpenci $alawi_school$, nazývaní aj Nuṣairī, vyhlasujú 'Alīho ibn Abī Ṭāliba, prvého Imāma podľa viery [ShowReligionAdjective('shia')], za samotné zjavenie $muslim_god_name$. Od ostatných vyznávačov viery [ShowReligionAdjective('shia')] sa výrazne líšia obradmi aj teológiou: veria v reinkarnáciu a povoľujú konzumáciu alkoholu." # todo: RETRANSLATED ENGLISH
  ibadi_school: "Ibāḍī" # todo: NEW TRANSLATION
- ibadi_school_desc: "Believed to be a descendant of the Al-Khawārij, who first were supporters of 'Alī ibn Abī Ṭālib but later rejected his arbitration. The $ibadi_school$ school distanced itself from the Al-Khawārij following 'Abd Allāh ibn Ibāḍ, taking a more moderate approach and a more positive view towards different $muslim_ADJ$ branches, having similarities with many of the other schools." # todo: NEW TRANSLATION
+ ibadi_school_desc: "Predpokladá sa, že škola $ibadi_school$ pochádza od Al-Khawārijov, ktorí spočiatku podporovali 'Alīho ibn Abī Ṭāliba, no neskôr odmietli jeho rozhodcovské konanie. Škola $ibadi_school$ sa od Al-Khawārijov dištancovala v čase 'Abda Allāha ibn Ibāḍa, prijala umiernenejší prístup a pozitívnejší postoj k rôznym vetvám $muslim_ADJ$. V mnohom sa podobá na ostatné školy." # todo: RETRANSLATED ENGLISH
  bektashi_school: "Bektashi" # todo: NEW TRANSLATION
- bektashi_school_desc: "Named after Ḥājī Baktāš Walī, believed to be descendant of 'Alī ibn Abī Ṭālib, the $bektashi_school$ of Sufism nonetheless respects all companions of Muḥammad. Although originating from the [ShowReligionAdjective('sunni')] faith, it contains many beliefs and practices present also in other traditions, giving it many similarity to them." # todo: NEW TRANSLATION
+ bektashi_school_desc: "Sufijská škola $bektashi_school$, pomenovaná po Ḥājīm Baktāšovi Walīm, ktorý bol podľa tradície potomkom 'Alīho ibn Abī Ṭāliba, si napriek tomu ctí všetkých Muḥammadových spoločníkov. Hoci vznikla z viery [ShowReligionAdjective('sunni')], zahŕňa mnohé názory a praktiky prítomné aj v iných tradíciách, vďaka čomu sa im v mnohom podobá." # todo: RETRANSLATED ENGLISH
  chishti_school: "Chishtī" # todo: NEW TRANSLATION
- chishti_school_desc: "Originating from [ShowLocationName('chishti_sarif')], the $chishti_school$ rejects wordly power and promotes tolerance and love. It also promotes music and poetry as a form to connect with the love of $muslim_god_name$." # todo: NEW TRANSLATION
+ chishti_school_desc: "Škola $chishti_school$, ktorá vznikla v [ShowLocationName('chishti_sarif')], odmieta svetskú moc a podporuje toleranciu a lásku. Podporuje aj hudbu a poéziu ako spôsob, ako sa spojiť s láskou k $muslim_god_name$." # todo: RETRANSLATED ENGLISH
  khalwati_school: "Ḵalwātī" # todo: NEW TRANSLATION
- khalwati_school_desc: "The $khalwati_school$ takes its name from the act of retreating oneself for spiritual exercises in solitary. Thus, it emphasizes the individual ritual and spiritual practices, as well as retreat and asceticism." # todo: NEW TRANSLATION
+ khalwati_school_desc: "Názov školy $khalwati_school$ pochádza z osamoteného ústrania na účely duchovných cvičení. Zdôrazňuje preto individuálne rituálne a duchovné praktiky, ako aj ústranie a asketizmus." # todo: RETRANSLATED ENGLISH
  mevlevi_school: "Mevlevi" # todo: NEW TRANSLATION
- mevlevi_school_desc: "Known for its whirling dervishes, the $mevlevi_school$ is formed upon the teachings of Jalāl al-Dīn Muḥammad Rūmī. It proclaims love as central to [ShowReligionGroupName('muslim')], and it also emphasizes Sema, the movement meditation ceremony performed by way of whirling." # todo: NEW TRANSLATION
+ mevlevi_school_desc: "Škola $mevlevi_school$, známa svojimi vírivými dervišmi, vychádza z učenia Jalāla al-Dīna Muḥammada Rūmīho. Vyhlasuje lásku za ústredný prvok [ShowReligionGroupName('muslim')] a zdôrazňuje aj semu, meditačný obrad vykonávaný vírivým tancom." # todo: RETRANSLATED ENGLISH
  naqshbandi_school: "Naqshbandī" # todo: NEW TRANSLATION
- naqshbandi_school_desc: "Tracing its origin to Ja'far ibn Muḥammad al-Ṣādiq, the $naqshbandi_school$ places more importance to the $sharia$ than other related schools. Its practices are organized around the silent invocation and conciousness." # todo: NEW TRANSLATION
+ naqshbandi_school_desc: "Škola $naqshbandi_school$, ktorej pôvod siaha k Ja'farovi ibn Muḥammadovi al-Ṣādiqovi, pripisuje $sharia$ väčšiu dôležitosť než ostatné príbuzné školy. Jej praktiky sa zakladajú na tichej invokácii a vedomom sústredení." # todo: RETRANSLATED ENGLISH
  qadiri_school: "Qādirī" # todo: NEW TRANSLATION
- qadiri_school_desc: "Founded by 'Abdulqādir Gīlānī, the $qadiri_school$ promote a strict following of [ShowReligionAdjective('sunni')] law. It also has decentralized leadership, allowing each of its centers freedom of interpretation and practice, which has caused it to differenciate in multiple branches." # todo: NEW TRANSLATION
+ qadiri_school_desc: "Školu $qadiri_school$ založil 'Abdulqādir Gīlānī a presadzuje prísne dodržiavanie práva [ShowReligionAdjective('sunni')]. Má tiež decentralizované vedenie, ktoré každému centru umožňuje slobodne vykladať a praktizovať vieru. To viedlo k jej rozdeleniu na viacero vetiev." # todo: RETRANSLATED ENGLISH
  safavid_school: "Ṣafavī" # todo: NEW TRANSLATION
- safavid_school_desc: "Founded by Ṣāfī ad-Dīn Isḥāq Ardabīlī upon the [ShowReligiousSchoolName('shafii_school')] teachings, the $safavid_school$ has later gotten close to the [ShowReligiousSchoolName('imamiya_school')] thought. Its zeal and strength of belief make its followers be certain of their place in the universe." # todo: NEW TRANSLATION
+ safavid_school_desc: "Školu $safavid_school$ založil Ṣāfī ad-Dīn Isḥāq Ardabīlī na základe učenia školy [ShowReligiousSchoolName('shafii_school')]. Neskôr sa priblížila k mysleniu školy [ShowReligiousSchoolName('imamiya_school')]. Jej horlivosť a silná viera dávajú stúpencom istotu o ich mieste vo vesmíre." # todo: RETRANSLATED ENGLISH
  shadhili_school: "Shāḏilī" # todo: NEW TRANSLATION
- shadhili_school_desc: "Following the teachings of Abū al-Ḥasan al-Shāḏilī, the $shadhili_school$ promotes a life of contemplation and to be constantly mindful of $muslim_god_name$, even during normal everyday activities. Applying the teachings of [ShowReligionGroupName('muslim')] to the follower's own lives is the key to transform their existance." # todo: NEW TRANSLATION
+ shadhili_school_desc: "Škola $shadhili_school$ nasleduje učenie Abū al-Ḥasana al-Shāḏilīho a podporuje život v rozjímaní a neustálom vedomí prítomnosti $muslim_god_name$, a to aj pri každodenných činnostiach. Kľúčom k premene vlastnej existencie je uplatňovať učenie [ShowReligionGroupName('muslim')] v živote každého stúpenca." # todo: RETRANSLATED ENGLISH
  suhrawardi_school: "Suhrawardī" # todo: NEW TRANSLATION
- suhrawardi_school_desc: "The $suhrawardi_school$ follows the teachings of Abū al-Najīb Abd al-Qādir Suhrawardī, but it is also influenced by the philosophy of Junayd of [ShowLocationName('baghdad')]. It states that people should devote themselves to true knownledge and being faithful to $muslim_god_name$, renouncing natural desires in favor of the spiritual needs." # todo: NEW TRANSLATION
+ suhrawardi_school_desc: "Škola $suhrawardi_school$ nasleduje učenie Abū al-Najība Abd al-Qādira Suhrawardīho, no ovplyvnila ju aj filozofia Junayda z [ShowLocationName('baghdad')]. Tvrdí, že ľudia by sa mali zasvätiť pravému poznaniu a vernosti $muslim_god_name$ a zriecť sa prirodzených túžob v prospech duchovných potrieb." # todo: RETRANSLATED ENGLISH
  din_i_ilahi_school: "Dīn-i Ilāhī" # todo: NEW TRANSLATION
- din_i_ilahi_school_desc: "Adopted from the Mongol code, $din_i_ilahi_school$ treats all religions as different sects, allowing the freedom of thought within the realm." # todo: NEW TRANSLATION
+ din_i_ilahi_school_desc: "Škola $din_i_ilahi_school$, prevzatá z mongolského kódexu, považuje všetky náboženstvá za rôzne sekty a umožňuje slobodu myslenia v rámci ríše." # todo: RETRANSLATED ENGLISH
  isawiyya_school: "'Īsāwī" # todo: NEW TRANSLATION
- isawiyya_school_desc: "Considered the most mystic of the religious schools, the $isawiyya_school$ has its roots from the lands of [ShowRegionName('maghreb_region')] whose heritage of psalms and prayers developed into rituals featuring dance and music." # todo: NEW TRANSLATION
+ isawiyya_school_desc: "Škola $isawiyya_school$, považovaná za najmystickejšiu z náboženských škôl, má korene v krajinách [ShowRegionName('maghreb_region')], kde sa tradícia žalmov a modlitieb vyvinula na obrady sprevádzané tancom a hudbou." # todo: RETRANSLATED ENGLISH
  imperial_court: "Cisársky dvor" # todo: NEW TRANSLATION
- imperial_court_desc: "The Imperial Court consists of the members of the Imperial Family and accompanying Kuge, or noble families. They preserve the inviolability of the Emperor and ensure the succession." # todo: NEW TRANSLATION
+ imperial_court_desc: "Cisársky dvor tvoria členovia cisárskej rodiny a sprievodní Kuge čiže šľachtické rody. Zachovávajú nedotknuteľnosť cisára a zabezpečujú nástupníctvo." # todo: RETRANSLATED ENGLISH
  shogunate_court: "Šógunský dvor" # todo: NEW TRANSLATION
- shogunate_court_desc: "The powerful samurai clan members surrounding the Shōgun will be advisors in all matters, but without ever completely abandoning their own interests." # todo: NEW TRANSLATION
+ shogunate_court_desc: "Mocní členovia samurajských klanov obklopujúci Šóguna budú jeho poradcami vo všetkých záležitostiach, no nikdy sa úplne nevzdajú vlastných záujmov." # todo: RETRANSLATED ENGLISH
  ikko_ikki: "Ikkō-ikki" # todo: NEW TRANSLATION
- ikko_ikki_desc: "The fanatic followers of $SECT_JOUDO_SHINSHUU$ from the $SECT_PURE_LAND_SCHOOL_NAME$ of $buddhist$ have organized themselves in different leagues called $ikko_ikki$ and, although mainly composed of peasants, their constant demands and uprisings are starting to be more than a nuisance." # todo: NEW TRANSLATION
+ ikko_ikki_desc: "Fanatickí stúpenci $SECT_JOUDO_SHINSHUU$ zo školy $SECT_PURE_LAND_SCHOOL_NAME$ v rámci $buddhist$ sa zorganizovali do rôznych spolkov nazývaných $ikko_ikki$. Hoci ich tvoria najmä roľníci, ich neustále požiadavky a povstania začínajú byť viac než len nepríjemnosťou." # todo: RETRANSLATED ENGLISH
  religious_sects: "Náboženské sekty" # todo: NEW TRANSLATION
- religious_sects_desc: "There have always been different paths to follow the Buddha, and even within the Kami there are variations in their stories. Each sect will always try to convince others to follow their way, but all of them may prove beneficial." # todo: NEW TRANSLATION
+ religious_sects_desc: "Vždy existovali rôzne cesty, ako nasledovať Buddhu, a aj medzi Kami sa ich príbehy líšia. Každá sekta sa vždy bude snažiť presvedčiť ostatných, aby nasledovali jej cestu, no všetky môžu byť prospešné." # todo: RETRANSLATED ENGLISH
  kirishitan_monks: "Kirishitan mnísi" # todo: NEW TRANSLATION
- kirishitan_monks_desc: "Ever since the westerners arrived to our shores, they have brought their foreign religion with them, with this new Buddha they call Jesus. As long as we want to interact with them, we must allow their beliefs, but that could also be in itself a benefit to us." # todo: NEW TRANSLATION
+ kirishitan_monks_desc: "Odkedy na naše pobrežie dorazili ľudia zo západu, priniesli so sebou aj svoje cudzie náboženstvo a tohto nového Buddhu, ktorého volajú Ježiš. Ak s nimi chceme udržiavať styky, musíme dovoliť, aby sa hlásili k svojej viere, no môže nám to priniesť aj úžitok." # todo: RETRANSLATED ENGLISH
  TRUE_FAITH_TOLERANCE: "Tolerancia pravej viery" # todo: NEW TRANSLATION
  HERETIC_TOLERANCE: "Tolerancia heretikov" # todo: NEW TRANSLATION
  HEATHENRY_TOLERANCE: "Tolerancia pohanstva" # todo: NEW TRANSLATION
  doom.1.title: "Skaza!" # todo: NEW TRANSLATION
- doom.1.desc: "Despite the efforts of our priests, [ROOT.GetCountry.GetReligion.GetGodName] do not seem pleased, and great catastrophes are coming to our realm. Should we want to survive the end of this cycle and move into a new more prosperous one, we must be willing to sacrifice whatever it takes. Gods are waiting for our blood offerings." # todo: NEW TRANSLATION
+ doom.1.desc: "Napriek úsiliu našich kňazov sa zdá, že [ROOT.GetCountry.GetReligion.GetGodName] nie sú spokojní a na našu ríšu sa blížia veľké pohromy. Ak chceme prežiť koniec tohto cyklu a vstúpiť do nového, blahobytnejšieho, musíme byť ochotní obetovať čokoľvek. Bohovia očakávajú krvavé obety." # todo: RETRANSLATED ENGLISH
  doom.1.a: "Obetujte vládnucu rodinu!" # todo: NEW TRANSLATION
  adopt_ometeotl: "Prijať Ōmeteōtl" # todo: NEW TRANSLATION
- adopt_ometeotl_desc: "Despite the polytheistic nature of our religion, among our highest classes the worship of a unique almighty God named #italic Ōmeteōtl#! is common. This God has the qualities of all Gods that are just the representation of these qualities. We will worship #italic Ōmeteōtl#! as the only God." # todo: NEW TRANSLATION
+ adopt_ometeotl_desc: "Hoci má naše náboženstvo mnohobožskú povahu, medzi najvyššími vrstvami je bežné uctievanie jediného všemocného Boha menom #italic Ōmeteōtl#!. Tento Boh má vlastnosti všetkých Bohov, ktorí sú iba stelesnením týchto vlastností. Budeme uctievať #italic Ōmeteōtla#! ako jediného Boha." # todo: RETRANSLATED ENGLISH
  elevate_patron_god: "Povýšiť nášho patrónneho boha" # todo: NEW TRANSLATION
- elevate_patron_god_desc: "Each [ShowCultureName('nahua_culture')] realm usually worships one God over the rest as their patron God. We will put our patron God not only at the top of our devotion, but as main God of our religion." # todo: NEW TRANSLATION
+ elevate_patron_god_desc: "Každá ríša [ShowCultureName('nahua_culture')] zvyčajne uctieva jedného Boha viac než ostatných a považuje ho za svojho patróna. Nášho patróna postavíme nielen na vrchol našej úcty, ale aj na čelo nášho náboženstva." # todo: RETRANSLATED ENGLISH
  ruler_or_regent_total_abilities: "[ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName] [Concept('total_ability','Celková schopnosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  establish_cihuacoatl: "Zriadiť funkciu Cihuacōātl" # todo: NEW TRANSLATION
- establish_cihuacoatl_desc: "We will establish the figure of the #italic Cihuacōātl#! (literally 'Serpent Woman'), similar to that of a vizier. This will help our rulers manage our realm, by making the #italic Cihuacōātl#! handle the city ruling so that the ruler can deal with more important issues." # todo: NEW TRANSLATION
+ establish_cihuacoatl_desc: "Ustanovíme úrad #italic Cihuacōātl#! (doslova „Hadia žena“), podobný úradu vezíra. Pomôže našim vládcom spravovať ríšu tým, že #italic Cihuacōātl#! prevezme riadenie mesta, aby sa vládca mohol venovať dôležitejším záležitostiam." # todo: RETRANSLATED ENGLISH
  expand_cuahpipiltin: "Rozšíriť Cuāhpipiltin" # todo: NEW TRANSLATION
- expand_cuahpipiltin_desc: "We will create a new caste in our society: the #italic Cuāhpipiltin#! will be the nobles by service, in opposition to the #italic Pīpiltin#!, the nobles by blood. They will be raised from military service, but also integrated from other tribes or vassals." # todo: NEW TRANSLATION
+ expand_cuahpipiltin_desc: "V našej spoločnosti vytvoríme novú kastu: #italic Cuāhpipiltin#! budú šľachticmi vďaka službe, na rozdiel od #italic Pīpiltin#!, šľachticov podľa pôvodu. Povýšime ich z radov vojenských služobníkov a prijmeme medzi nich aj ľudí z iných kmeňov či vazalov." # todo: RETRANSLATED ENGLISH
  increase_militarism: "Zvýšiť militarizmus" # todo: NEW TRANSLATION
- increase_militarism_desc: "Our warriors are the ones providing us with captives that can be used for the most important sacrifices to our gods. We should make our society more militaristic to strengthen this influx of captives." # todo: NEW TRANSLATION
+ increase_militarism_desc: "Naši bojovníci nám zabezpečujú zajatcov, ktorých možno použiť pri najdôležitejších obetách našim bohom. Mali by sme našu spoločnosť viac militarizovať, aby sme posilnili prísun zajatcov." # todo: RETRANSLATED ENGLISH
  percentage_of_soldiers_in_country: "Podiel [ShowPopTypeName('soldiers')] v našej [Concept('country','krajine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  institute_flower_wars: "Zaviesť Kvetinové vojny" # todo: NEW TRANSLATION
- institute_flower_wars_desc: "As our society depends on sacrifices, we need a way to get more of them. By instituting the 'Flower Wars' we can agree with our neighbors on fair combats and both sides can sacrifice captives to appease our Gods." # todo: NEW TRANSLATION
+ institute_flower_wars_desc: "Keďže naša spoločnosť závisí od obetí, potrebujeme spôsob, ako ich získať viac. Zavedením „Kvetinových vojen“ sa môžeme so susedmi dohodnúť na férových súbojoch a obe strany budú môcť obetovať zajatcov, aby uzmierili našich Bohov." # todo: RETRANSLATED ENGLISH
  legal_reforms: "Právne reformy" # todo: NEW TRANSLATION
- legal_reforms_desc: "While our city-states do have their coded rules, as [ShowCultureName('nahua_culture')] societies change, so should our legal codes. We will start a series of reforms in our legal codes that better adapt to our newer needs." # todo: NEW TRANSLATION
+ legal_reforms_desc: "Naše mestské štáty majú svoje kodifikované pravidlá, no keďže sa spoločnosti [ShowCultureName('nahua_culture')] menia, mali by sa meniť aj naše zákonníky. Začneme sériu právnych reforiem, ktoré naše zákony lepšie prispôsobia novým potrebám." # todo: RETRANSLATED ENGLISH
  raise_sacrifice_rate: "Zvýšiť mieru obetí" # todo: NEW TRANSLATION
- raise_sacrifice_rate_desc: "Our Gods sacrificed their blood for us humans, and we have a debt with them. But the amount of blood does not seem to be enough to satiate their thirst. We will increase the rate and prevalence of our sacrifices so that Our Gods' blood is replenished more quickly." # todo: NEW TRANSLATION
+ raise_sacrifice_rate_desc: "Naši Bohovia za nás ľudí obetovali svoju krv a my sme im zaviazaní. Zdá sa však, že krvi stále nie je dosť na uhasenie ich smädu. Zvýšime početnosť a rozšírenosť obetí, aby sa krv našich Bohov dopĺňala rýchlejšie." # todo: RETRANSLATED ENGLISH
  percentage_of_slaves_in_country: "Podiel [ShowPopTypeName('slaves')] v našej [Concept('country','krajine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELIGIOUS_FOCUS_NOT_IN_QUEUE: "Nie je v rade výskumu" # todo: NEW TRANSLATION
  NOT_RELIGIOUS_FOCUS_QUEUED: "Žiadne [Concept('religious_focuses','náboženské zamerania')|e] v rade" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HAS_NOT_RELIGIOUS_FOCUS_QUEUED: "@trigger_no!This [Concept('religious_focuses','náboženské zamerania')|e] is not already queued" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- RELIGIOUS_FOCUS_ALREADY_SET: "@trigger_no!This [Concept('religious_focuses','náboženské zamerania')|e] is queued" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- RELIGIOUS_FOCUS_RELIGION_HAS_NO_FOCUSES: "[RELIGION.GetName] does not have [Concept('religious_focuses','náboženské zamerania')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HAS_NOT_RELIGIOUS_FOCUS_QUEUED: "@trigger_no!Toto [Concept('religious_focuses','náboženské zamerania')|e] ešte nie je zaradené do frontu" # todo: RETRANSLATED ENGLISH
+ RELIGIOUS_FOCUS_ALREADY_SET: "@trigger_no!Toto [Concept('religious_focuses','náboženské zamerania')|e] je zaradené do frontu" # todo: RETRANSLATED ENGLISH
+ RELIGIOUS_FOCUS_RELIGION_HAS_NO_FOCUSES: "[RELIGION.GetName] nemá žiadne [Concept('religious_focuses','náboženské zamerania')|e]." # todo: RETRANSLATED ENGLISH
  RELIGIOUS_FOCUS_ALREADY_COMPLETED: "[RELIGIOUS_FOCUS.GetName] is already completed." # todo: NEW TRANSLATION
- RELIGIOUS_FOCUS_ALREADY_QUEUED: "[RELIGIOUS_FOCUS.GetName] is already in the queue." # todo: NEW TRANSLATION
+ RELIGIOUS_FOCUS_ALREADY_QUEUED: "[RELIGIOUS_FOCUS.GetName] už je vo fronte." # todo: RETRANSLATED ENGLISH
  RELIGIOUS_FOCUS_ETA_TT: "Expect to be finished researching [RELIGIOUS_FOCUS.GetName] around $DATE|Y$" # todo: NEW TRANSLATION
  RELIGIOUS_FOCUS_PROGRESS_TT: "Researching [RELIGIOUS_FOCUS.GetName] current progress is $CURRENT|%W$, and $VAL|+=%$ of progress is made each month due to:\n$WHY$" # todo: NEW TRANSLATION
  RELIGIOUS_FOCUS_NO_PROGRESS_TT: "Researching [RELIGIOUS_FOCUS.GetName] current progress is $CURRENT|W%$, and no progress is made each month due to:\n$WHY$" # todo: NEW TRANSLATION
@@ -584,17 +595,17 @@
  OPEN_IO_LEFT_CLICK: "Ľavým tlačidlom otvorte tento [Concept('international_organization','medzinárodná organizácia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  fundamental_law_tt: "Toto je základný zákon, ktorý definuje podstatu našej viery a nemožno ho meniť" # todo: NEW TRANSLATION
  nature_tenet: "Povaha" # todo: NEW TRANSLATION
- nature_tenet_desc: "Known also as physis (#italic φύσις#!), this tenet rests at the core of our beliefs. It stands for the undisputed fact that Jesus Christ is of a dual and harmonious nature. The coexistence of humanity and divinity is the basis of coexistence that we shall strive to live by." # todo: NEW TRANSLATION
+ nature_tenet_desc: "Táto zásada, známa aj ako physis (#italic φύσις#!), tvorí jadro našej viery. Vyjadruje nespochybniteľnú skutočnosť, že Ježiš Kristus má dvojakú a harmonickú prirodzenosť. Súžitie ľudskej a božskej prirodzenosti je základom spolužitia, o ktoré by sme sa mali usilovať." # todo: RETRANSLATED ENGLISH
  single_nature: "Jedna povaha" # todo: NEW TRANSLATION
  single_nature_desc: "There can only be one nature of Jesus." # todo: NEW TRANSLATION
  composite_nature: "Zložená povaha" # todo: NEW TRANSLATION
- composite_nature_desc: "The two natures of Jesus are combined into a single one (#italic μια φύσις#!)." # todo: NEW TRANSLATION
+ composite_nature_desc: "Dve prirodzenosti Ježiša sú spojené do jednej (#italic μια φύσις#!)." # todo: RETRANSLATED ENGLISH
  dual_nature: "Dvojitá povaha" # todo: NEW TRANSLATION
  dual_nature_desc: "The aspect of Jesus contains a dual nature, both human and divine (#italic Δυοφυσιτισμός#!)." # todo: NEW TRANSLATION
  separate_nature: "Oddelená povaha" # todo: NEW TRANSLATION
- separate_nature_desc: "While hosting two natures, divinity and humanity, these two aspects of Jesus are completely separate." # todo: NEW TRANSLATION
+ separate_nature_desc: "Hoci v sebe spája dve prirodzenosti, božskú a ľudskú, tieto dve stránky Ježiša sú úplne oddelené." # todo: RETRANSLATED ENGLISH
  christology: "Kristológia" # todo: NEW TRANSLATION
- christology_desc: "The thelogical study around the nature of Christ, His identity and the union of his various natures is a delicate art. Many scholars classify Christ as fully divine, thus they subscribe to $high_christology$, while other adhere to the disciplines of $low_christology$." # todo: NEW TRANSLATION
+ christology_desc: "Teologické skúmanie Kristovej prirodzenosti, jeho identity a spojenia jeho rôznych prirodzeností je zložitým umením. Mnohí učenci považujú Krista za plne božského, a preto sa hlásia k $high_christology$, zatiaľ čo iní sa riadia zásadami $low_christology$." # todo: RETRANSLATED ENGLISH
  high_christology: "Vysoká kristológia" # todo: NEW TRANSLATION
  high_christology_desc: "Christ is unequivocally divine." # todo: NEW TRANSLATION
  low_christology: "Nízka kristológia" # todo: NEW TRANSLATION
@@ -602,11 +613,11 @@
  liturgical_practices: "Liturgické praktiky" # todo: NEW TRANSLATION
  liturgical_practices_desc: "Various worship practices centered around hymns, readings and rites." # todo: NEW TRANSLATION
  byzantine_rites: "$BYZ_ADJ$ obredi" # todo: NEW TRANSLATION
- byzantine_rites_desc: "By adhering to practices popularized by $BYZ_ADJ$ priests, we can borrow some of the legitimacy of their faiths." # todo: NEW TRANSLATION
+ byzantine_rites_desc: "Dodržiavaním obradov, ktoré spopularizovali kňazi $BYZ_ADJ$, môžeme čerpať časť legitimity ich viery." # todo: RETRANSLATED ENGLISH
  local_traditions_and_rites: "Miestne obredoslovie" # todo: NEW TRANSLATION
  local_traditions_and_rites_desc: "Uprednostňovať naše vlastné miestne obrady pred inými." # todo: NEW TRANSLATION
  catholic_influenced_rites: "[ShowReligionAdjectiveWithNoTooltip('catholic')]-ovplyvnené obredi" # todo: NEW TRANSLATION
- catholic_influenced_rites_desc: "Introduce rites such as mass, sacraments and liturgy of the hours, in adjacency to the [ShowReligionAdjective('catholic')] practices." # todo: NEW TRANSLATION
+ catholic_influenced_rites_desc: "Zaveďte obrady ako omšu, sviatosti a liturgiu hodín, ktoré nadväzujú na praktiky [ShowReligionAdjective('catholic')]." # todo: RETRANSLATED ENGLISH
  essence_tenet: "Podstata" # todo: NEW TRANSLATION
  essence_tenet_desc: "Známe tiež ako ousia (#italic ουσία#!), toto učenie predstavuje výklad, podľa ktorého je božská podstata Boha totožná s božskou podstatou Krista." # todo: CHANGED
  accept_essence_tenet: "Prijať učenie o podstate" # todo: NEW TRANSLATION
@@ -626,17 +637,17 @@
  deny_prosopon_tenet: "Dyoprosopický koncept" # todo: CHANGED
  deny_prosopon_tenet_desc: "Kristus má dve osoby, božskú a ľudskú." # todo: CHANGED
  christological_debates_tenet: "Kristologické debaty" # todo: NEW TRANSLATION
- christological_debates_tenet_desc: "Debates on the aspect of Christ, our stance towards our brethren sects and our position on the nature of worship are the lifeblood of keeping our belief alive and vibrant!" # todo: NEW TRANSLATION
+ christological_debates_tenet_desc: "Diskusie o Kristovej podstate, našom postoji k sesterským sektám a našom názore na povahu bohoslužby sú životnou miazgou, ktorá udržiava našu vieru živou a životaschopnou!" # todo: RETRANSLATED ENGLISH
  allow_christological_debates_tenet: "Povoliť kristologické debaty" # todo: NEW TRANSLATION
  allow_christological_debates_tenet_desc: "$accept_aspect_key$" # todo: NEW TRANSLATION
  forbid_christological_debates_tenet: "Zakázať kristologické debaty" # todo: NEW TRANSLATION
  forbid_christological_debates_tenet_desc: "$reject_aspect_key$" # todo: NEW TRANSLATION
  double_sabbath_tenet: "Dvojitá sobota" # todo: NEW TRANSLATION
- double_sabbath_tenet_desc: "The Sabbath has been the holy day reserved to God since the times of Moses. It may still be preserved as a day of rest, or it could be considered to be superseded by the Lord's Day on Sunday." # todo: NEW TRANSLATION
+ double_sabbath_tenet_desc: "Sabat je od čias Mojžiša svätým dňom zasväteným Bohu. Môže sa naďalej zachovávať ako deň odpočinku, alebo ho možno považovať za nahradený Dňom Pána, ktorý pripadá na nedeľu." # todo: RETRANSLATED ENGLISH
  allow_double_sabbath_tenet: "Povoliť dvojitú sobotu" # todo: NEW TRANSLATION
  allow_double_sabbath_tenet_desc: "Both Sunday and Saturday are considered sacred." # todo: NEW TRANSLATION
  forbid_double_sabbath_tenet: "Zakázať dvojitú sobotu" # todo: NEW TRANSLATION
- forbid_double_sabbath_tenet_desc: "The observance of the Sabbath is no longer necessary when celebrating the Lord's Day on Sunday." # todo: NEW TRANSLATION
+ forbid_double_sabbath_tenet_desc: "Dodržiavanie sabatu už nie je potrebné, ak sa slávi Deň Pána v nedeľu." # todo: RETRANSLATED ENGLISH
  interpatriarchal_relations_tenet: "Medzipatriarchálne vzťahy" # todo: NEW TRANSLATION
  interpatriarchal_relations_tenet_desc: "Napriek tomu, že rôzni patriarchovia sú v rozhodovaní autonómni a nepodliehajú žiadnej vyššej autorite, sú stále súčasťou tej istej viery. Preto je nevyhnutné a dokonca potrebné mať určité vzájomné interakcie a spoločné diskusie." # todo: NEW TRANSLATION
  cooperation_between_patriarchs_tenet: "Spolupráca medzi patriarchami" # todo: NEW TRANSLATION
@@ -649,30 +660,30 @@
  caesaropapism_tenet_desc: "Svetskí vládcovia sú hlavní strážcovia a garanti Cirkvi, a ako takí ich rozhodnutia ovplyvňujú fungovanie patriarchu. Sú zástupcami Boha, aby vládli Jeho kráľovstvu tu na Zemi." # todo: NEW TRANSLATION
  independent_authorities_tenet: "Nezávislé autority" # todo: NEW TRANSLATION
  independent_authorities_tenet_desc: "Čo je cisárovo, dajte cisárovi; čo je božie, dajte Bohu." # todo: NEW TRANSLATION
- change_maintenance_tt: "This will impact the [Concept('maintenance','údržba')|e] of our monasteries" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- accept_aspect_key: "Our patriarchate will integrate this aspect into its core beliefs, embraced by all our members." # todo: NEW TRANSLATION
- reject_aspect_key: "Our patriarchate will reject this aspect into its core beliefs, embraced by all our members." # todo: NEW TRANSLATION
+ change_maintenance_tt: "Ovplyvní to [Concept('maintenance','údržbu')|e] našich kláštorov" # todo: RETRANSLATED ENGLISH
+ accept_aspect_key: "Náš patriarchát začlení tento aspekt do svojho základného učenia a prijmú ho všetci jeho členovia." # todo: RETRANSLATED ENGLISH
+ reject_aspect_key: "Náš patriarchát tento aspekt odmietne ako súčasť svojho základného učenia, ktoré prijímajú všetci jeho členovia." # todo: RETRANSLATED ENGLISH
  ADD_ASPECT: "Pridať náboženský aspekt" # todo: NEW TRANSLATION
  add_religious_aspect_select_which: "Vyberte, ktorý [Concept('religious_aspect','náboženský aspekt')|e] pridať" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  add_religious_aspect: "Pridať náboženský aspekt" # todo: NEW TRANSLATION
  add_religious_aspect_christian: "Pridať náboženský aspekt" # todo: NEW TRANSLATION
  add_religious_aspect_inti: "Uctiť Boha" # todo: NEW TRANSLATION
  add_religious_aspect_hellenism: "Pridať náboženský aspekt" # todo: NEW TRANSLATION
- add_religious_aspect_desc: "Adds a [Concept('religious_aspect','náboženský aspekt')|e] to our [country_s] version of the [Concept('religion','náboženstvo')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ add_religious_aspect_desc: "Pridá [Concept('religious_aspect','náboženský aspekt')|e] k našej verzii [Concept('religion','náboženstva')|e] v krajine [country_s]." # todo: RETRANSLATED ENGLISH
  remove_religious_aspect: "Odstrániť náboženský aspekt" # todo: NEW TRANSLATION
  remove_religious_aspect_christian: "Odstrániť náboženský aspekt" # todo: NEW TRANSLATION
  remove_religious_aspect_inti: "Prestať uctievať Boha" # todo: NEW TRANSLATION
  remove_religious_aspect_hellenism: "Odstrániť náboženský aspekt" # todo: NEW TRANSLATION
- remove_religious_aspect_desc: "Removes a [Concept('religious_aspect','náboženský aspekt')|e] to our [country_s] version of the [Concept('religion','náboženstvo')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ remove_religious_aspect_desc: "Odstráni [Concept('religious_aspect','náboženský aspekt')|e] z našej verzie [Concept('religion','náboženstva')|e] v krajine [country_s]." # todo: RETRANSLATED ENGLISH
  remove_religious_aspect_select_which: "Vyberte, ktorý [Concept('religious_aspect','náboženský aspekt')|e] odstrániť" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  change_religious_aspect: "Nahradiť náboženský aspekt" # todo: NEW TRANSLATION
  change_religious_aspect_christian: "Nahradiť náboženský aspekt" # todo: NEW TRANSLATION
  change_religious_aspect_inti: "Zmeniť uctievaného Boha" # todo: NEW TRANSLATION
  change_religious_aspect_hellenism: "Nahradiť náboženský aspekt" # todo: NEW TRANSLATION
- change_religious_aspect_desc: "Replaces a [Concept('religious_aspect','náboženský aspekt')|e] to our [country_s] version of the [Concept('religion','náboženstvo')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ change_religious_aspect_desc: "Nahradí [Concept('religious_aspect','náboženský aspekt')|e] v našej verzii [Concept('religion','náboženstva')|e] v krajine [country_s]." # todo: RETRANSLATED ENGLISH
  change_religious_aspect_select_which: "Vyberte, ktorý [Concept('religious_aspect','náboženský aspekt')|e] nahradiť" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  appease_the_gods: "Uspokojte bohov" # todo: NEW TRANSLATION
- appease_the_gods_desc: "Our Gods are angry and need to be satiated. In order to do so, sacrifices will be carried out." # todo: NEW TRANSLATION
+ appease_the_gods_desc: "Naši Bohovia sú nahnevaní a treba ich uzmieriť. Preto sa budú konať obety." # todo: RETRANSLATED ENGLISH
  ceremonial_festivals: "Usporiadať obrad" # todo: NEW TRANSLATION
  ceremonial_festivals_desc: "Ceremoniálny festival sa slávi mesačne, každý raz na počesť určitého božstva. Tentoraz urobíme niečo výnimočné." # todo: NEW TRANSLATION
  explanation_ceremony_tt: "Ľudia [ShowCultureName('nahua_culture')] oslavujú slávnosť venovanú konkrétnemu božstvu každý mesiac. Tieto mesiace trvajú 20 dní. V každom mesiaci sa oslavy líšia a získame v závislosti od toho rôzne efekty." # todo: NEW TRANSLATION
@@ -844,13 +855,17 @@
  request_cardinal_seat: "Požiadať o sídlo kardinála" # todo: NEW TRANSLATION
  request_cardinal_seat_desc: "Kolégium kardinálov jasne postráda zastúpenie nášho vplyvu. Mali by sme požiadať o nové [ShowBuildingTypeName('seat_of_cardinal')] pridelené [ShowBuildingTypeName('cathedral')] v našom území, aby sa náš vplyv nezmenšil." # todo: NEW TRANSLATION
  request_cardinal_tt: "Uvedené [Concept('location','lokalita')|e] získa [ShowBuildingTypeName('seat_of_cardinal')], ak to schváli [GetCountry('PAP').GetAdjective] autorita." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ request_cardinal_seat_opinion_tt: "[GetCountry('PAP').GetName] si nás neváži dostatočne" # todo: NEW TRANSLATION
  recently_requested_cardinal: "Krajina nedávno požiadala o kardinála" # todo: NEW TRANSLATION
+ appoint_dynasty_cardinal: "Vymenovať kardinála z dynastie" # todo: NEW TRANSLATION
+ appoint_dynasty_cardinal_desc: "Dosadzovanie príbuzných [actor.GetGovernment.GetRulerTitle] do kolégia kardinálov má dlhú tradíciu. Za cenu prestíže môžeme na jedno z našich kardinálskych miest dosadiť vhodného člena našej dynastie." # todo: NEW TRANSLATION
+ appoint_dynasty_cardinal_select_character: "Vybrať člena našej dynastie, ktorého vymenujeme za kardinála" # todo: NEW TRANSLATION
  remove_cardinal_seat: "Odobrať kardinálsku stolicu" # todo: NEW TRANSLATION
  remove_cardinal_seat_desc: "Účasť v Kolégiu kardinálov nám v týchto časoch očividne neprináša výhodu. Mali by sme stiahnuť [ShowBuildingTypeName('seat_of_cardinal')] z našich území, vzhľadom na ich znepokojujúci vplyv na naše záležitosti." # todo: NEW TRANSLATION
  remove_cardinal_tt: "Určené [Concept('location','lokalita')|e] príde o [ShowBuildingTypeName('seat_of_cardinal')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  invite_foreign_cleric: "Pozvať zahraničného kňaza" # todo: NEW TRANSLATION
  invite_foreign_cleric_desc: "Z inej krajiny nám pošlú skúseného duchovného. To nahnevá náš miestny [actor.GetGovernment.GetEstateName('clergy_estate')], ale odborné znalosti tohto zahraničného kňaza môžu byť neoceniteľné." # todo: NEW TRANSLATION
- invite_foreign_cleric_tt: "Zahraničný [actor.GetReligion.GetAdjective] [Concept('character','postava')|e] z [ShowEstateTypeName('clergy_estate')] s vysokým [Concept('adm','administratívnou schopnosťou')|e], stredným [Concept('dip','diplomatickou schopnosťou')|e] a nízkym [Concept('mil','vojenskou schopnosťou')|e] príde do našej [Concept('country','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ invite_foreign_cleric_tt: "[Concept('character','Postava')|e] z [ShowEstateTypeName('clergy_estate')] z vybranej [Concept('country','krajiny')|e] sa pridá k nášmu [Concept('court','dvoru')|e], čím sa zlepší [Concept('opinion','názor')|e] medzi nami" # todo: CHANGED (predtym: Zahraničný [actor.GetReligion.GetAdjective] [Concept('character','postava')|e] z [ShowEstateTypeName('clergy_estate')] s) # todo: CONCEPT CASE
  invite_foreign_cleric_no_countries_tt: "Ďalší [recipient.GetAdjective] [Concept('country','krajina')|e] v [Concept('diplomatic_range','diplomatickom dosahu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  anti_reformation: "Odmietanie reformácie" # todo: NEW TRANSLATION
  anti_reformation_severe: "V úplnom rozpore s reformáciou" # todo: NEW TRANSLATION
@@ -923,15 +938,15 @@
  MUSLIM_GOD: "Alláh" # todo: NEW TRANSLATION
  god_desc: "Boh je hlavné božstvo v konkrétnom náboženstve. Zatiaľ čo niektoré náboženstvá môžu obsahovať mnoho bohov a uctievať ich viac-menej rovnako, iné môžu sústrediť svoju vieru do jedného špecifického božstva, a ďalšie môžu popierať existenciu iných bohov okrem svojho vlastného." # todo: NEW TRANSLATION
  god_monarch_power_desc_none: "Tento [GOD.GetGodOrGoddessWithNoTooltip] nie je spojený s žiadnou [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- god_monarch_power_desc_adm: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [adm_short_with_icon|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- god_monarch_power_desc_dip: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [dip_short_with_icon|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- god_monarch_power_desc_mil: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [mil_short_with_icon|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_MODIFIER_RULER_adm: "[RULER.GetShortName] – [adm_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_MODIFIER_RULER_dip: "[RULER.GetShortName] – [dip_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_MODIFIER_RULER_mil: "[RULER.GetShortName] – [mil_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "$RULER_NAME$ – [adm_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "$RULER_NAME$ – [dip_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "$RULER_NAME$ – [mil_short_with_icon|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ god_monarch_power_desc_adm: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [Concept('adm_short_with_icon','administratívnym')|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ god_monarch_power_desc_dip: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [Concept('dip_short_with_icon','diplomatickým')|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ god_monarch_power_desc_mil: "Tento [GOD.GetGodOrGoddessWithNoTooltip] je spojený s [Concept('mil_short_with_icon','vojenským')|e] [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_MODIFIER_RULER_adm: "[RULER.GetShortName] – [Concept('adm_short_with_icon','administratívny')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_MODIFIER_RULER_dip: "[RULER.GetShortName] – [Concept('dip_short_with_icon','diplomatický')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_MODIFIER_RULER_mil: "[RULER.GetShortName] – [Concept('mil_short_with_icon','vojenský')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_adm: "$RULER_NAME$ – [Concept('adm_short_with_icon','administratívny')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_dip: "$RULER_NAME$ – [Concept('dip_short_with_icon','diplomatický')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ OMEN_POWER_SCALE_BREAKDOWN_RULER_mil: "$RULER_NAME$ – [Concept('mil_short_with_icon','vojenský')|e] [Concept('ability','schopnosti')|e]: $VAL|%+=2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_POWER_PILL_TT_adm: "[Concept('omens','Omeny')|e] pre [Concept('adm_short','administratívneho')|e] [Concept('gods','bohov')|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [Concept('ruler','panovníkovi')|e]'s #W $SKILL$#! [Concept('adm','administratívnou schopnosťou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_POWER_PILL_TT_dip: "[Concept('omens','Omeny')|e] pre [Concept('dip_short','diplomatického')|e] [Concept('gods','bohov')|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [Concept('ruler','panovníkovi')|e]'s #W $SKILL$#! [Concept('dip','diplomatickou schopnosťou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_POWER_PILL_TT_mil: "[Concept('omens','Omeny')|e] pre [Concept('mil_short','vojenského')|e] [Concept('gods','bohov')|e] sú v súčasnosti upravené o $VAL|%+=2$ v dôsledku [Concept('ruler','panovníkovi')|e]'s #W $SKILL$#! [Concept('mil','vojenskou schopnosťou')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -947,9 +962,9 @@
  OMEN_RELATED_GOD: "Tento [Concept('omen','omen')|e] môže byť udelený [GOD.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OMEN_TIME_LEFT: "Vyprší o $TIME$" # todo: NEW TRANSLATION
  omen_monarch_power_scale_desc_none: "Účinok tohto [Concept('omen','omen')|e] nie je upravovaný žiadnou [Concept('ability','schopnosťou')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- omen_monarch_power_scale_desc_adm: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [adm_short_with_icon|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- omen_monarch_power_scale_desc_dip: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [dip_short_with_icon|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- omen_monarch_power_scale_desc_mil: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [mil_short_with_icon|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ omen_monarch_power_scale_desc_adm: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [Concept('adm_short_with_icon','administratívny')|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ omen_monarch_power_scale_desc_dip: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [Concept('dip_short_with_icon','diplomatický')|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ omen_monarch_power_scale_desc_mil: "Účinok tohto [Concept('omen','omen')|e] je upravovaný [Concept('mil_short_with_icon','vojenský')|e] [Concept('ability','schopnosti')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MONARCH_POWER_PERCENTAGE_IN_COUNTRY_SCALE_SCRIPT_DESC: "$POWER_NAME$ (škálovanie omenov)" # todo: NEW TRANSLATION
  god_omens_desc: "Tento boh môže udeliť nasledujúce [Concept('omens','omeny')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  inti: "Inti" # todo: NEW TRANSLATION
@@ -1048,7 +1063,7 @@
  shakti_god: "Śakti" # todo: NEW TRANSLATION
  shakti_god_desc: "$shakti_god$ je významná [Concept('goddess','bohyňa')|e] v [ShowReligionName('hindu')], uctievaná ako základná kozmická energia. Je uctievaná ako najvyššia [goddess] alebo Devī v [ShowPolicyName('shaktism')], a mnohé ďalšie [goddesses] sú uctievané ako rôzne aspekty $shakti_god$. Niektoré z nich môžu dokonca nadobúdať mnoho ďalších podôb." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  vishnu_god: "Viṣṇu" # todo: NEW TRANSLATION
- vishnu_god_desc: "$vishnu_god$ je jedným z hlavných [Concept('gods','bohov')|e] [ShowReligionName('hindu')], a hlavným v [ShowPolicyName('vaishnavism')]. Je považovaný za najvyššiu bytosť, ktorá sa zjavuje na zemi v podobe svojich desiatich [avatars|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ vishnu_god_desc: "$vishnu_god$ je jedným z hlavných [Concept('gods','bohov')|e] [ShowReligionName('hindu')], a hlavným v [ShowPolicyName('vaishnavism')]. Je považovaný za najvyššiu bytosť, ktorá sa zjavuje na zemi v podobe svojich desiatich [Concept('avatars','avatarov')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  surya_god: "Sūrya" # todo: NEW TRANSLATION
  surya_god_desc: "$surya_god$ je božstvo Slnka v [ShowReligionName('hindu')], a jedno z hlavných božstiev [ShowPolicyName('smartism')]." # todo: NEW TRANSLATION
  samkhya_school: "Sāṃkhya" # todo: NEW TRANSLATION
@@ -1107,7 +1122,7 @@
  hindu_branch_spec: "Tradícia" # todo: NEW TRANSLATION
  hindu_branch_spec_desc: "Konkrétne tradície a presvedčenia nasledované týmto [Concept('hindu_branch','hinduistickej odnoži')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  vaishnavism: "Vaishnavism" # todo: NEW TRANSLATION
- vaishnavism_desc: "$vaishnavism$ je [Concept('hindu_branch','hinduistická odnož')|e] sústredená okolo uctievania [ShowGodName('vishnu_god')] a jeho desiatich [avatars|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ vaishnavism_desc: "$vaishnavism$ je [Concept('hindu_branch','hinduistická odnož')|e] sústredená okolo uctievania [ShowGodName('vishnu_god')] a jeho desiatich [Concept('avatars','avatarov')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  shaivism: "Shaivism" # todo: NEW TRANSLATION
  shaivism_desc: "$shaivism$ je [Concept('hindu_branch','hinduistická odnož')|e] uctievajúca [ShowGodName('shiva_god')] ako najvyššie [Concept('god','boh')|e]. Je to [hindu_branch], ktorá je viac zameraná na askézu a jogu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  shaktism: "Shaktism" # todo: NEW TRANSLATION
@@ -1326,6 +1341,8 @@
  muslim_scholar_desc: "Učený jedinec znalý [ShowReligionGroupAdjective('muslim')] práva; učenci diskutujú o princípoch jurisprudencie a teológie [ShowReligionGroupNameWithNoTooltip('muslim')]." # todo: NEW TRANSLATION
  guru: "Gurú" # todo: NEW TRANSLATION
  guru_desc: "Niekto ponorený do hlbokého duchovného života a hľadajúci cestu k osvieteniu, $guru$ je veľmi oddaná osoba, ktorá nielen vykonáva náboženské a duchovné praktiky, ale je tiež ochotná učiť a slúžiť ako duchovný sprievodca." # todo: NEW TRANSLATION
+ cardinal: "Kardinál" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ cardinal_desc: "$game_concept_cardinal_desc$" # todo: NEW TRANSLATION
  shinto_desc: "Rôznorodý súbor presvedčení a praktík sústreďujúcich sa na uctievanie kami, ktoré existovali v $japan_region$ pred príchodom $buddhist$, sa neoddeliteľne splynuli a prepojili s $buddhist_ADJ$ praktikami a koncepciami, keď sa $buddhist$ rozšíril po $japan_region$. Kami a $buddhist_ADJ$ božstvá boli navzájom identifikované, pričom obidva súbory presvedčení sa stali funkčne neoddeliteľnými. To viedlo k obzvlášť $japanese_group$ odtienku $buddhist$, premiešanému s $buddhist$-ovplyvneným uctievaním kami." # todo: NEW TRANSLATION
  bon_desc: "Vznikajúce z náboženských tradícií $tibet_region$ pred príchodom $buddhist$, bolo silne ovplyvnené $tibetan_buddhism$. Je obzvlášť blízke $SECT_NYIGMA_NAME$, no stále si zachováva mnohé pred-$buddhist$ prvky. Jeho učenia sa zameriavajú na karmu a znovuzrodenie a na spôsoby dosiahnutia osvietenia." # todo: NEW TRANSLATION
  mahayana_desc: "Nazývané „Veľké vozidlo“, mahájána je odvetvie $buddhist$, ktoré prijíma nielen skoré $buddhist_ADJ$ texty, ale aj tie známe ako mahájánové $sutra$. Kládze dôraz na postavu $bodhisattva$, chápanú ako cesta dostupná všetkým na dosiahnutie budhovstva. Hoci sa pôvodne rozvíjala v $india$, značnú expanziu zaznamenala v $china$ a pozdĺž Hodvábnej cesty, a $chinese_group$ kánon teraz tvorí základ všetkého $mahayana$." # todo: NEW TRANSLATION

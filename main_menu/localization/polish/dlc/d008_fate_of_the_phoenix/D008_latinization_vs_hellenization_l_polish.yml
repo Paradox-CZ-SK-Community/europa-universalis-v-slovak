@@ -5,7 +5,7 @@
  latinization_vs_hellenization.1.b: "Táto fascinácia starými zvitkami už dosť ďaleko zášla." # todo: NEW TRANSLATION
  target_character_disappears_tt: "[target_character.GetName] zmizne" # todo: NEW TRANSLATION
  latinization_vs_hellenization.2.title: "Rastúca priazeň k [ShowLanguageNameWithNoTooltip('latin_language')]" # todo: NEW TRANSLATION
- latinization_vs_hellenization.2.desc: "V salónoch a sídlach [ROOT.GetCountry.GetName] sa prebúdza nenápadný, no rastúci prúd priaznivcov zvyklostí, práva a ceremónií [ShowLanguageName('latin_language')]. Mladí šľachtici posýpajú svoju reč cudzími výrazmi, korešpondujú s [ShowLanguageNameWithNoTooltip('latin_language')] dvorcami a volajú po reformách, ktoré by naše [ROOT.GetCountry.GetFlavorRank] priblížili k módam Západu, zatiaľ čo iní sú znepokojení tým, ako rýchlo staré istoty miznú." # todo: NEW TRANSLATION
+ latinization_vs_hellenization.2.desc: "V salónoch a sídlach [ROOT.GetCountry.GetAltAdjective('L')] sa prebúdza nenápadný, no rastúci prúd priaznivcov zvyklostí, práva a ceremónií [ShowLanguageName('latin_language')]. Mladí šľachtici posýpajú svoju reč cudzími výrazmi, korešpondujú s [ShowLanguageNameWithNoTooltip('latin_language')] dvorcami a volajú po reformách, ktoré by naše [ROOT.GetCountry.GetFlavorRank] priblížili k módam Západu, zatiaľ čo iní sú znepokojení tým, ako rýchlo staré istoty miznú." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  latinization_vs_hellenization.2.a: "Z toho nemôže vzniknúť nič zlé." # todo: NEW TRANSLATION
  latinization_vs_hellenization.2.b: "Okamžite zmeňme kurz!" # todo: NEW TRANSLATION
  stability_scales_with_current_latinization_hellenization: "Zmena [Concept('stability','stabilita')|e] bude závisieť od našej aktuálnej hodnoty [ShowSocietyDirectionName('latinization')] alebo [ShowSocietyDirectionName('hellenization')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -36,12 +36,12 @@
  destabilize_our_realm: "Náš obranný postoj voči týmto trendom destabilizuje naše [ROOT.GetCountry.GetFlavorRank]" # todo: NEW TRANSLATION
  perceived_as_weakness: "Zakazovanie ochutnávky cudzích zvykov je vnímané ako slabosť" # todo: NEW TRANSLATION
  latinization_vs_hellenization.8.title: "Preusporiadanie provincií" # todo: NEW TRANSLATION
- latinization_vs_hellenization.8.desc: "Úradníci v [ROOT.GetCountry.GetCapital.GetName] predložili návrh komplexnej reorganizácie provincií ako [target_province.GetName], zosúlaďujúc jurisdikcie a administratívu bližšie s naším kultúrnym a politickým centrom. Plán sľubuje väčšiu kontrolu, ale riskuje rozrušenie dlho zavedených miestnych rovnováh." # todo: NEW TRANSLATION
+ latinization_vs_hellenization.8.desc: "Úradníci v [ROOT.GetCountry.GetCapital.GetName] predložili návrh komplexnej reorganizácie provincií ako [target_province.GetName], zosúlaďujúc jurisdikcie a administratívu bližšie s naším kultúrnym a politickým centrom. Plán sľubuje väčšiu kontrolu, ale riskuje rozrušenie dlho zavedených miestnych rovnováh." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  latinization_vs_hellenization.8.a: "Utvrdíme nový poriadok, nech to stojí čokoľvek." # todo: NEW TRANSLATION
  latinization_vs_hellenization.8.b: "Rešpektujme miestne dohody a zmierme ich obavy." # todo: NEW TRANSLATION
  pops_in_selected_provinces_will_gain_mild_bonus_satisfaction_tt: "Naši [Concept('pops','populácie')|e] v postihnutých [Concept('provinces','provinciách')|e] získajú [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: CHANGED # todo: CONCEPT CASE
  latinization_vs_hellenization.9.title: "Výchova [target_character.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
- latinization_vs_hellenization.9.desc: "Ako [target_character.GetName] dospieva, vychovávatelia a dvorania sa hádajú o správny priebeh [target_character.GetHerHis] štúdií. Každá voľba jazyka, textu a mentora hrozí stať sa zástupnou bitkou o budúcu dušu [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ latinization_vs_hellenization.9.desc: "Ako [target_character.GetName] dospieva, vychovávatelia a dvorania sa hádajú o správny priebeh [target_character.GetHerHis] štúdií. Každá voľba jazyka, textu a mentora hrozí stať sa zástupnou bitkou o budúcu dušu [ROOT.GetCountry.GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  latinization_vs_hellenization.9.a: "[target_character.GetHerHis|U] výchova musí nasledovať jasný, premyslený smer." # todo: NEW TRANSLATION
  latinization_vs_hellenization.9.b: "Nebudeme politizovať výchovu [target_character.GetShortNameWithNoTooltip]." # todo: NEW TRANSLATION
  refusal_to_politicize_tt: "Náš odmietavý postoj zasahovať otvorene do výchovy [target_character.GetName] môže byť niektorými na [ROOT.GetCountry.GetGovernment.GetCourtTitle] vnímané ako slabosť" # todo: NEW TRANSLATION
@@ -100,7 +100,7 @@
  target_character_spills_the_beans: "[target_character.GetShortName] prezrádza naše tajomstvá našim [Concept('rivals','rivalom')|e] a [Concept('rival_enemies','nepriatelia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  target_character_lips_shut: "[target_character.GetHerHis|U] pery zostávajú zatvorené" # todo: NEW TRANSLATION
  latinization_vs_hellenization.21.title: "Inflačné politiky" # todo: NEW TRANSLATION
- latinization_vs_hellenization.21.desc: "Prílev znehodnotených a falšovaných mincí začal skresľovať ceny po celom [ROOT.GetCountry.GetName]. Niektorí z našich poradcov na [ROOT.GetCountry.GetGovernment.GetCourtTitle] naliehajú na okamžitý zásah, zatiaľ čo iní tvrdia, že liek môže byť rovnako bolestivý ako choroba." # todo: NEW TRANSLATION
+ latinization_vs_hellenization.21.desc: "Prílev znehodnotených a falšovaných mincí začal skresľovať ceny po celom [ROOT.GetCountry.GetAltAdjective('L')]. Niektorí z našich poradcov na [ROOT.GetCountry.GetGovernment.GetCourtTitle] naliehajú na okamžitý zásah, zatiaľ čo iní tvrdia, že liek môže byť rovnako bolestivý ako choroba." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  latinization_vs_hellenization.21.a: "Zvýšme kontrolu nad menou." # todo: NEW TRANSLATION
  latinization_vs_hellenization.21.b: "Nechajme trh, aby si to vyriešil." # todo: NEW TRANSLATION
  inflation_creeping_in_tt: "Ak sa nebude kontrolovať, [Concept('inflation','inflácia')|e] môže v budúcnosti spôsobiť vážne problémy" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -143,6 +143,6 @@
  refusal_leads_instability: "Naše odmietnutie vyhovieť vedie k nestabilite" # todo: NEW TRANSLATION
  situation_dissipates: "Vypätá výmena sa neeskaluje" # todo: NEW TRANSLATION
  latinization_vs_hellenization.30.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] odoláva aktuálnym trendom" # todo: NEW TRANSLATION
- latinization_vs_hellenization.30.desc: "Medzi poliami a dedinami [ROOT.GetCountry.GetName] mnohí členovia nižšej triedy reptajú, že vzdialené debaty o prenasledovaní veľkoleposti a zvykoch im prinášajú len nové povinnosti a čudných úradníkov. Ich tichý odpor by sa mohol zosilniť, ak sa na to nebude reagovať." # todo: NEW TRANSLATION
+ latinization_vs_hellenization.30.desc: "Medzi poliami a dedinami [ROOT.GetCountry.GetAltAdjective('I')] mnohí členovia nižšej triedy reptajú, že vzdialené debaty o prenasledovaní veľkoleposti a zvykoch im prinášajú len nové povinnosti a čudných úradníkov. Ich tichý odpor by sa mohol zosilniť, ak sa na to nebude reagovať." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  latinization_vs_hellenization.30.a: "Uspokojme [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]." # todo: NEW TRANSLATION
  latinization_vs_hellenization.30.b: "Vynúťme súlad s aktuálnym trendom." # todo: NEW TRANSLATION

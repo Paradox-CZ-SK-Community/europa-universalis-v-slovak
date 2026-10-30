@@ -1,9 +1,9 @@
 ﻿l_polish:
- nobles_estate: "Šľachta" # todo: NEW TRANSLATION
+ nobles_estate: "Šľachta"
  nobles_estate_desc: "Tento stav zastupuje rodiny pozemkovej šľachty v našej krajine. Ich privilégiá sú zaručené starými tradíciami a väčšina z nich bola pôvodne získaná vykonaním veľkých služieb štátu. Ich tradičnou povinnosťou je bojovať a chrániť kráľovstvo pred vonkajšími hrozbami, ako aj pomáhať panovníkovi udržiavať poriadok.\n$estate_common_crown_ending$" # todo: NEW TRANSLATION
- clergy_estate: "Duchovenstvo" # todo: NEW TRANSLATION
+ clergy_estate: "Duchovenstvo"
  clergy_estate_desc: "Tento stav zastupuje vzdelaných kňazov našej štátnej viery. Majú dlhú tradíciu služby v správe krajiny a ich tradičnou povinnosťou je starať sa o duchovné blaho štátu a nášho ľudu. Po stáročia získavali pôdu a privilégiá od bývalých vládcov i pobožných jednotlivcov.\n$estate_common_crown_ending$" # todo: NEW TRANSLATION
- burghers_estate: "Mestské obyvateľstvo" # todo: NEW TRANSLATION
+ burghers_estate: "Mešťania"
  burghers_estate_desc: "Tento stav zastupuje mestské obyvateľstvo našej krajiny, ako sú remeselníci, obchodníci alebo iní obyvatelia žijúci v mestských hradbách. Ich tradičnou zodpovednosťou je udržiavať ekonomiku plynulú a v záujme efektivity očakávajú špeciálne práva a privilégiá pre seba a mestá, ktoré reprezentujú.\n$estate_common_crown_ending$" # todo: NEW TRANSLATION
  peasants_estate: "Ľud" # todo: NEW TRANSLATION
  peasants_estate_desc: "Toto je stav, ktorý predstavuje obyvateľstvo na najnižšom stupni spoločnosti. Často trieda s malým alebo žiadnym prestížom či mocou, bežní ľudia napriek tomu tvoria základ nášho štátu a pri zjednotení môžu byť prekvapivo mocní.\n$estate_common_crown_ending$" # todo: CHANGED
@@ -16,6 +16,7 @@
  cossacks_estate: "Kozaci" # todo: NEW TRANSLATION
  cossacks_estate_desc: "Tento stav zastupuje rôzne skupiny [ShowCultureName('cossack_culture')] obyvateľov v našej [Concept('country','krajine')|e]. Organizovaní do polonómadských a polooddelených vojenských skupín, žijú na okraji štátnej správy, no pri vhodných pobádkach môžu krajine verne a veľmi užitočne slúžiť.\n$estate_common_crown_ending$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  estate_common_crown_ending: "Vo všeobecnosti je lepšie, aby mal stav $crown_estate$ viac moci než ostatné stavy." # todo: CHANGED
+ ESTATE_PRIVILEGE_WHY: "#T Dostupnosť#!\nToto privilégium je dostupné vďaka:\n$WHY$" # todo: NEW TRANSLATION
  crown_estate_holy_order: "Kapitula" # todo: NEW TRANSLATION
  crown_estate_republic: "Republika" # todo: NEW TRANSLATION
  crown_estate_brethren: "Bratia" # todo: NEW TRANSLATION
@@ -72,6 +73,7 @@
  nobles_estate_znat: "Znat" # todo: NEW TRANSLATION
  nobles_estate_boyars: "Bojari" # todo: NEW TRANSLATION
  nobles_estate_szlachta: "Szlachta" # todo: NEW TRANSLATION
+ nobles_estate_almohads: "Almohádovci" # todo: NEW TRANSLATION
  nobles_estate_bajorai: "Bajorai" # todo: NEW TRANSLATION
  nobles_estate_makuannent: "Makuannent" # todo: NEW TRANSLATION
  nobles_estate_pipiltin: "Pīpiltin" # todo: NEW TRANSLATION
@@ -338,9 +340,12 @@
  dhimmi_pact_of_umar: "Pakt Umara" # todo: NEW TRANSLATION
  dhimmi_pact_of_umar_desc: "Zoznam práv a povinností určených pre pohanov v našich hraniciach. Táto zmluva jasne definuje povahu vzťahu 'chránených osôb', medzi ktoré patria kresťania, Židia, zoroastristi a mnohé ďalšie uznávané náboženstvá." # todo: NEW TRANSLATION
  dhimmi_mazalim_court: "Súdy Maẓālim" # todo: NEW TRANSLATION
- dhimmi_mazalim_court_desc: "Vedľa právomocí a existencie nábožensko-súdneho aparátu a šaría súdov Maẓālim fungujú svetsky pre záležitosti neveriacich. Ich pojednávania sa môžu konať v Paláci spravodlivosti (dār al-'adl) alebo v slávnostnej sieni v rámci hradieb citadely (īwan kabīr). Tieto audiencie sa nakoniec stali súčasťou formálnych úkonov spojených s kráľovskými povinnosťami." # todo: NEW TRANSLATION
+ dhimmi_mazalim_court_desc: "Vedľa právomocí a existencie nábožensko-súdneho aparátu a súdov $sharia$ fungujú Maẓālim svetsky v záležitostiach neveriacich. Vďaka tomu majú naši poddaní [ShowEstateTypeName('dhimmi_estate')] právo predstúpiť pred súd, kde sa môžu odvolať proti zneužívaniu právomocí úradníkmi a rozsudkom qāḍīho. Pojednávania sa môžu konať v Paláci spravodlivosti (#italic dār al-'adl#!) alebo v slávnostnej sieni v rámci hradieb citadely (#italic īwan kabīr#!)." # todo: CHANGED (predtym: Vedľa právomocí a existencie nábožensko-súdneho aparátu a šaría súdov Maẓālim fungujú svetsky pre záležitosti neveriacic)
+ reduces_mazalim_court_bureaucracy_negative_tt: "Znižuje negatívny účinok [bureaucracy|e] typu [ShowBureaucracyTypeName('mazalim_court_bureaucracy')] o #G 20 %#!" # todo: NEW TRANSLATION
  local_tribal_strongholds: "Kmeňové pevnosti" # todo: NEW TRANSLATION
  local_tribal_strongholds_desc: "Mnohé usadené kmene po celom Maghrebe nazbierali veľký vplyv nad miestnymi obyvateľmi. Uspokojiť ich a uznať ich autoritu nám len uľahčí uplatňovanie kontroly nad naším územím." # todo: NEW TRANSLATION
+ desert_power: "Sila púšte" # todo: NEW TRANSLATION
+ desert_power_desc: "Vidiek Maghrebu obývajú nespočetné kmeňové skupiny — arabskí #italic beduíni#! z Banū Hilāl, pastieri Zenata z náhorných plošín, Sanhaja zo západnej Sahary — ktorých lojalita rozhoduje o každom dynastickom nástupníctve už od jedenásteho storočia. Vládneme im nie priamou správou, ale patronátom, sobášnymi spojenectvami, zvykovým právom a občasnou trestnou výpravou, ktorá im pripomína ústrednú moc. Tento vzťah medzi patrónom a kmeňom umožňuje štátom Maghrebu uplatňovať svoju moc na rozľahlom a inak neovládateľnom území spôsobom, ktorému sa žiadna administratívna snaha v európskom štýle nevyrovná." # todo: NEW TRANSLATION
  jaysh_armies: "Jayshove armády" # todo: NEW TRANSLATION
  jaysh_armies_desc: "Organizovaní miestnou správou na výkon posádkových a pomocných úloh, títo muži boli najímaní na potláčanie miestnych povstaní a zabezpečenie neustáleho prísunu posíl do našej armády, pričom potláčali povstania vo svojich domovských oblastiach." # todo: NEW TRANSLATION
  tribes_in_administration: "Kmeňová rada" # todo: NEW TRANSLATION
@@ -623,9 +628,10 @@
  cas_fuero_viejo: "Fuero Viejo de Castilla" # todo: NEW TRANSLATION
  cas_fuero_viejo_desc: "Zhromaždili sme roztrúsené zákony a zvyky šľachty. Toto úsilie o kodifikáciu ich privilégií bude slúžiť ako základný kameň ich postavenia v ríši." # todo: NEW TRANSLATION
  cas_caballeros_villanos: "Caballeros Villanos" # todo: NEW TRANSLATION
- cas_caballeros_villanos_desc: "Pohraničné oblasti [ShowAreaName('castile_area')] a [ShowAreaName('leon_area')] v posledných storočiach vyprodukovali novú vrstvu rytierov-kovbojov. Sú zvyknutí tráviť zimy strážením svojich stád v hraničných pevnostiach a letá venovať nájazdom alebo vojnám proti svojim [ShowReligionGroupAdjective('muslim')] nepriateľom." # todo: NEW TRANSLATION
+ cas_caballeros_villanos_desc: "Mestá [ShowAreaName('castile_area')] a [ShowAreaName('leon_area')] podľa vlastných #italic fueros#! povolávajú vlastnú #italic hueste concejil#! vždy, keď mestská rada vyzve do zbrane, namiesto toho, aby sa podriadili korune alebo veľmožom." # todo: CHANGED (predtym: Pohraničné oblasti [ShowAreaName('castile_area')] a [ShowAreaName('leon_area')] v posledných storočiach vyprodukovali no)
  cas_regimiento: "Regimiento" # todo: NEW TRANSLATION
  cas_regimiento_desc: "Regimiento je systém zavedený na správu miest a obcí [GetCountry('CAS').GetName] prostredníctvom vymenovaných radných pochádzajúcich z radov najbohatších a najsilnejších rodín." # todo: NEW TRANSLATION
+ cas_regimiento_unlocks_cuantia_tt: "Umožňuje nám verbovať jednotku [ShowUnitDefinitionName('a_caballeria_de_cuantia')]" # todo: NEW TRANSLATION
  royal_factories_privilege: "Kráľovské továrne" # todo: NEW TRANSLATION
  royal_factories_privilege_desc: "Kráľovské továrne sú štátom podporované, ale súkromne vlastnené podniky, ktorým bolo udelené kráľovské privilégium a dohľad, fungujúce pod oficiálnou sankciou s cieľom posilniť domáci priemysel pri zachovaní obchodnej autonómie." # todo: NEW TRANSLATION
  austrian_monastery_reform_melk: "Kláštorná reforma v Melku" # todo: NEW TRANSLATION
@@ -650,6 +656,7 @@
  lat_protector_of_the_constantinople_patriarchate_desc: "Návrat križiakov do [ShowLocationName('constantinople')] opäť obnovil patriarchát. So silnejúcou [ShowReligionAdjective('catholic')] prítomnosťou v [ShowLocationNameWithNoTooltip('constantinople')], patriarchát sa opäť stane symbolom [ShowReligionAdjectiveWithNoTooltip('catholic')] vlády v [ShowScriptedGeographyName('greece_geography')] raz." # todo: NEW TRANSLATION
  mam_muhtasibs: "Inšpektori Muḥtasib" # todo: NEW TRANSLATION
  mam_muhtasibs_desc: "Muḥtasib dohliadajú na poctivosť na trhu kontrolou obchodníkov, verejným trestaním podvodníkov a využívaním manuálov o bežných trikoch na prevenciu podvodov." # todo: NEW TRANSLATION
+ reduces_hisba_bureaucracy_negative_tt: "Znižuje negatívny účinok [bureaucracy|e] typu [ShowBureaucracyTypeName('hisba_bureaucracy')] o #G 20 %#!" # todo: NEW TRANSLATION
  heritable_iqta: "Dedičné [ShowLawNameWithNoTooltip('iqta_law')]" # todo: NEW TRANSLATION
  heritable_iqta_desc: "Úrad držiteľa [ShowLawName('iqta_law')] zvyčajne nie je dedičný. Premena tohto úradu na dedičný by bola bezprecedentná a zvýšila by lojalitu [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION
  trunk_road_to_erzurum_privilege: "Hlavná cesta do $erzurum$" # todo: NEW TRANSLATION
@@ -666,5 +673,62 @@
  noble_patronage_of_the_arts_desc: "Niekoľko významných šľachtických rodín začalo sponzorovať básnikov, maliarov a učencov vo svojich dvoroch a vilách. Hoci niektorí to môžu považovať za márnivosť, takéto patrónstvo často rodí odvážne nové školy myslenia a vyjadrovania, všetko výmenou za väčší vplyv na dvore." # todo: NEW TRANSLATION
  guild_investments: "Investície cechov" # todo: NEW TRANSLATION
  guild_investments_desc: "Cechy súhlasili s presunutím časti svojich prostriedkov na zlepšenie výrobných procesov. Aj keď mnohé z týchto podnikaní zlyhajú, niekoľko môže priniesť prelomové objavy, ktoré preformujú našu kapitalistickú ekonomiku." # todo: NEW TRANSLATION
+ al_caid: "Al-Qā'id" # todo: NEW TRANSLATION
+ al_caid_desc: "Vymenovaním lojálneho #italic Qā'ida#!, ktorý bude v mene štátu dohliadať na provincie a regulovať obchod, posilníme mestských kupcov a zároveň zabezpečíme správu provincií. Naša ústredná pokladnica získava stabilné príjmy z ciel na trhoch pod dohľadom Qā'idov a daňové farmy sa stávajú predvídateľným pilierom štátnych financií namiesto nestabilnej spleti, ktorú nahradili. Táto inštitucionálna vrstva správy obchodu v provinciách prináša pokladniciam Maghrebu stabilné obchodné príjmy, ktoré okolité štáty nedokážu napodobniť." # todo: NEW TRANSLATION
+ tun_ungovernable_agriculturalists: "Neovládateľní roľníci" # todo: NEW TRANSLATION
+ tun_ungovernable_agriculturalists_desc: "[ShowSocietyDirectionName('decentralization')] nášho štátu znemožnila vládcom dynastie [ShowDynastyName('hafsid_dynasty')] vymáhať dane od [ShowEstateTypeName('peasants_estate')]. V takejto situácii nám neostáva nič iné, len podniknúť ozbrojené daňové nájazdy proti nelojálnym kmeňom." # todo: NEW TRANSLATION
+ enables_tax_raids_action: "Umožňuje [Concept('unit_ability','schopnosť jednotky')|e] [ShowUnitAbilityName('tun_tax_raid')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tun_arab_bedouins: "Privilegované arabské kmene" # todo: NEW TRANSLATION
+ tun_arab_bedouins_desc: "Oblasť [ShowRegionName('maghreb_region')] obýva množstvo kmeňov skupín [ShowCultureGroupName('arabic_group')] aj [ShowCultureGroupName('amazigh_group')]. [ShowScriptedGeographyName('ifriqiya_geography')] je však výnimkou, keďže jej obyvateľstvo tvoria prevažne ľudia skupiny [ShowCultureGroupNameWithNoTooltip('arabic_group')]. Tieto kmene získali značný vplyv, čím ešte viac posilnili [ShowSocietyDirectionName('decentralization')] štátov dynastie [ShowDynastyName('hafsid_dynasty')]." # todo: NEW TRANSLATION
+ disables_tribal_cabinet_action: "Znemožňuje [Concept('cabinet_action','akcia kabinetu')|e] [ShowCabinetActionName('settle_tribesmen')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ andalusi_elite: "Elity [ShowCultureNameWithNoTooltip('andalusi')]" # todo: NEW TRANSLATION
+ andalusi_elite_desc: "Postup [ShowReligionGroupAdjective('christian')] v [ShowFormableCountryName('ADU_f')] viedol k odlivu talentovaných osobností kultúry [ShowCultureName('andalusi')] z oblasti [ShowRegionName('iberia_region')]. Sme jedným zo štátov, ktoré sú ochotné privítať týchto utečencov s otvorenou náručou a ponúknuť im miesta vo vláde." # todo: NEW TRANSLATION
+ allows_recruitment_of_andalusis_tt: "Pravidelne sa spustí [Concept('event','udalosť')|e] #Y $flavor_tun.18.title$#!, ktorý vytvorí\npostavu [Concept('character','postavu')|e] z kultúry [ShowCultureName('andalusi')] pre kabinet" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  statutes_of_piotrkow: "Štatúty Piotrkówa" # todo: NEW TRANSLATION
  statutes_of_piotrkow_desc: "Tieto štatúty sú symbolom snáh šľachty konsolidovať svoje privilégiá a upevniť moc, ktorú držia nevoľníctvo a aristokracia. Oslabovaním nižších spoločenských vrstiev a miest sa šľachta snaží presadiť svoj vplyv." # todo: NEW TRANSLATION
+ noble_private_armies_privilege: "Súkromné armády šľachty" # todo: NEW TRANSLATION
+ noble_private_armies_privilege_desc: "Najmocnejšie šľachtické rody zbohatli natoľko, že si môžu vydržiavať vlastné družiny a súkromné pluky, financované z ich osobných prostriedkov a oddané obrane ríše. Ich nezávislosť z nich robí hrdých a ťažko ovládateľných bojovníkov, no ich prítomnosť na bojisku môže rozhodnúť o víťazstve." # todo: NEW TRANSLATION
+ cossack_private_armies_privilege: "Súkromné armády kozákov" # todo: NEW TRANSLATION
+ cossack_private_armies_privilege_desc: "[ShowEstateTypeName('cossacks_estate')] získavajú právo vydržiavať si vlastné jazdecké oddiely, financované z ich vlastných prostriedkov a oddané obrane ríše. Ich divoká nezávislosť a jazdecké schopnosti z nich robia obávanú nepravidelnú silu." # todo: NEW TRANSLATION
+ ara_catalan_lingua_franca: "Spoločný jazyk [ShowDialectNameWithNoTooltip('catalan_dialect')]" # todo: NEW TRANSLATION
+ ara_catalan_lingua_franca_desc: "Keďže väčšina našich kupcov hovorí [ShowDialectName('catalan_dialect')], udelili sme im právo rozšíriť tento jazyk po celej ríši." # todo: NEW TRANSLATION
+ ara_protection_from_common_language_influence: "Ochrana pred tradíciou [ShowDialectNameWithNoTooltip('catalan_dialect')]" # todo: NEW TRANSLATION
+ ara_protection_from_common_language_influence_desc: "Aby sme zabránili [ShowEstateTypeName('nobles_estate')] preberať tradície a zvyky [ShowEstateTypeName('burghers_estate')], udelili sme niekoľko privilégií na zachovanie ich osobitej identity." # todo: NEW TRANSLATION
+ ara_ius_maletractandi: "Ius Maletractandi" # todo: NEW TRANSLATION
+ ara_ius_maletractandi_desc: "Na zabezpečenie nadradenosti [ShowEstateTypeName('nobles_estate')] nad [ShowEstateTypeName('peasants_estate')] sme zaviedli súbor zvykov a privilégií, ktoré posilňujú prvý z týchto stavov." # todo: NEW TRANSLATION
+ jewish_letters_of_protection: "Listiny ochrany" # todo: NEW TRANSLATION
+ jewish_letters_of_protection_desc: "Koruna poskytuje židovským obciam formálne záruky bezpečnosti a právneho postavenia, za čo vyberá pravidelný príspevok. Toto usporiadanie prináša židovský obchod do kráľovskej pokladnice, no vyvoláva hnev cirkvi a nedôveru okolitých vládcov." # todo: NEW TRANSLATION
+ jewish_court_financier_charter: "Charta dvorných finančníkov" # todo: NEW TRANSLATION
+ jewish_court_financier_charter_desc: "Židovskí kupci a bankári sú vymenovaní za oficiálnych finančníkov kráľovského dvora a zabezpečujú výmenu mien, diaľkový úver a nákup luxusného tovaru. Ich medzinárodné siete rozširujú prítomnosť našich kupcov, no vytláčajú zavedené obchodné domy a znepokojujú duchovenstvo." # todo: NEW TRANSLATION
+ jewish_moneylending_toleration: "Tolerancia požičiavania peňazí" # todo: NEW TRANSLATION
+ jewish_moneylending_toleration_desc: "Napriek cirkevnému zákazu úžery koruna oficiálne povoľuje židovským peňažníkom pôsobiť v ríši. Dlžníci zo všetkých vrstiev tak získavajú prístup k lacnejším úverom — cirkev však túto prax ostro odsudzuje a šľachtici zadlžení židovským veriteľom z nej tiež nie sú nadšení." # todo: NEW TRANSLATION
+ jewish_tax_farming_grant: "Povolenie na výber daní" # todo: NEW TRANSLATION
+ jewish_tax_farming_grant_desc: "Židovskí finančníci dostávajú povolenie vyberať dane v mene koruny, odvádzať pevnú sumu a ponechať si prípadný prebytok. Príjmy sa stávajú predvídateľnejšími, no šľachta sa búri proti strate finančnej moci a ľud hlboko odmieta židovských vyberačov daní." # todo: NEW TRANSLATION
+ jewish_tax_farming_grant_scale_desc: "Percento obyvateľstva vyznávajúceho [ShowReligionName('judaism')] v našej [country]" # todo: NEW TRANSLATION
+ jewish_physician_exemption: "Výnimka pre lekárov" # todo: NEW TRANSLATION
+ jewish_physician_exemption_desc: "Židovskí lekári získavajú kráľovské povolenie liečiť na dvore aj v celej ríši, bez obmedzení cechov a cirkevných zákazov. Ich učenosť posúva medicínu vpred, no duchovenstvo namieta, že heretici liečia kresťanských pacientov." # todo: NEW TRANSLATION
+ jewish_ghetto_ordinance: "Nariadenie o getách" # todo: NEW TRANSLATION
+ jewish_ghetto_ordinance_desc: "Zákonom sa židovské obce zatvárajú do určených štvrtí a obmedzuje sa ich pohyb, odev i povolania. Cirkev tento krok víta ako obnovenie náležitého kresťanského poriadku, no bezprostredné následky nútenej segregácie ťažko doliehajú na židovské obce." # todo: NEW TRANSLATION
+ jewish_ghetto_ordinance_pop_satisfaction_tt: "Židovské obce v celej ríši sú zatvorené v getách, čo spôsobuje výrazný pokles spokojnosti" # todo: NEW TRANSLATION
+ jewish_torah_as_state_law: "Tóra ako štátny zákon" # todo: NEW TRANSLATION
+ jewish_torah_as_state_law_desc: "Koruna oficiálne povyšuje #italic halachu#! na najvyšší zákon ríše a podriaďuje rabínskemu výkladu svetské zvyky aj kráľovské nariadenia. Jasne sformulovaný zákon založený na božskej vôli znižuje administratívne náklady na nové politiky a upevňuje spoločenský poriadok, pričom duchovenstvo získava značnú moc ako jeho nevyhnutný vykladač. Šľachta sa ťažko zmieruje so stratou politického prvenstva a zahraniční vládcovia hľadia na štát podriadený cudziemu náboženskému právu s ešte väčšou obozretnosťou." # todo: NEW TRANSLATION
+ jewish_aliyah_principle: "Zásada alije" # todo: NEW TRANSLATION
+ jewish_aliyah_principle_desc: "Koruna oficiálne pozýva židovské obce z celého sveta, aby sa usadili v ríši, a výmenou za ich prácu a obchod im ponúka bezpečie a právnu ochranu. Povesť skutočnej židovskej vlasti láka vzdelaných a bohatých prisťahovalcov; šľachtici, ktorí túto politiku podporujú a spravujú, tak získavajú politický vplyv. Vládcovia, ktorých židovské obyvateľstvo odchádza k našim brehom, sa na našich diplomatov nepozerajú práve priaznivo." # todo: NEW TRANSLATION
+ jewish_diaspora_trade_network: "Obchodná sieť diaspóry" # todo: NEW TRANSLATION
+ jewish_diaspora_trade_network_desc: "Koruna právne uznáva a chráni nadregionálne obchodné siete židovských obcí a začleňuje ich kontakty, úverové nástroje a znalosť trhov do obchodnej infraštruktúry štátu. Židovskí kupci získavajú oficiálnu podporu ako nepostrádateľní sprostredkovatelia diaľkového obchodu a meštiansky stav posilňuje svoje inštitucionálne postavenie ako správca tejto obchodnej siete." # todo: NEW TRANSLATION
+ jewish_bet_din_commercial_courts: "Obchodné súdy Bet Din" # todo: NEW TRANSLATION
+ jewish_bet_din_commercial_courts_desc: "Rabínske súdy získavajú právomoc rozhodovať obchodné spory a poskytujú rýchlejšie a špecializovanejšie fórum pre obchodné súdne spory než kráľovské súdy. Efektívny systém zlepšuje schopnosť štátu vyberať príjmy a obchodnícka vrstva získava inštitucionálny vplyv vďaka znalosti obchodného práva. Šľachtici, zvyknutí rozhodovať o miestnej spravodlivosti, sa bránia oslabovaniu svojej súdnej moci." # todo: NEW TRANSLATION
+ jewish_kahal_self_governance: "Samospráva kahalu" # todo: NEW TRANSLATION
+ jewish_kahal_self_governance_desc: "Koruna udeľuje obecným radám — #italic kehillot#! — oficiálnu právomoc spravovať vnútorné záležitosti obcí, rozhodovať o menších sporoch a vyberať obecné príspevky. Toto usporiadanie rozkladá bremeno miestnej správy, znižuje náklady na udržiavanie občianskeho poriadku a posúva ríšu k decentralizovanejšiemu spoločenskému usporiadaniu. Šľachtickí miestodržitelia zisťujú, že ich moc čoraz viac spochybňujú rady, ktoré sa riadia rabínskou tradíciou namiesto feudálnej hierarchie." # todo: NEW TRANSLATION
+ jewish_yeshiva_network: "Sieť ješív" # todo: NEW TRANSLATION
+ jewish_yeshiva_network_desc: "Koruna podporuje sieť akadémií zasvätených štúdiu Tóry, Talmudu a rabínskej literatúry. Ješívy vychovávajú vzdelaných učencov, ktorých vedomosti siahajú až k právu, medicíne, filozofii a matematike, čím posúvajú hranice poznania v celej ríši. Duchovenstvo, obohatené o inštitucionálnu prestíž a kráľovskú podporu, si čoraz dôraznejšie nárokuje vplyv na verejný život." # todo: NEW TRANSLATION
+ jewish_sabbath_economy: "Šabatové hospodárstvo" # todo: NEW TRANSLATION
+ jewish_sabbath_economy_desc: "Koruna nariaďuje verejné dodržiavanie šabatu v celej ríši a zakazuje obchod, prácu i úradné záležitosti od západu slnka šiesteho dňa až do konca siedmeho dňa. Týždenný rytmus odpočinku a spoločných stretnutí posilňuje osobitosť židovskej kultúry a spomaľuje oslabovanie identity, ku ktorému by inak mohlo viesť stretávanie so širším svetom. Kupci a peňažníci, ktorí prichádzajú o značnú časť obchodného týždňa, z toho už takí nadšení nie sú." # todo: NEW TRANSLATION
+ jewish_kohen_restrictions: "Obmedzenia pre kohenov" # todo: NEW TRANSLATION
+ jewish_kohen_restrictions_desc: "Koruna oficiálne presadzuje zákony čistoty pre kňazských #italic kohenov#!, udeľuje im prednosť pri náboženských obradoch a obmedzuje ich sobáše na osoby s nespochybniteľným židovským pôvodom. Kňazská vrstva sa stáva živým nositeľom židovského kultúrneho vplyvu, čím posilňuje náboženskú autoritu ríše aj dosah jej kultúrnej identity. Obmedzenia sobášov a spojenectiev vyplývajúce z kohenského práva však komplikujú diplomatické rokovania so zahraničnými dvormi." # todo: NEW TRANSLATION
+ manila_galleon_privilege: "Manilská galeóna" # todo: NEW TRANSLATION
+ manila_galleon_privilege_desc: "Širší prístup k tejto výnosnej obchodnej trase podnieti kupcov a finančníkov investovať vlastné bohatstvo do rozvoja obchodu v Tichomorí." # todo: NEW TRANSLATION
+ cas_mercedes_enriquenas: "Mercedes Enriqueñas" # todo: NEW TRANSLATION
+ cas_mercedes_enriquenas_desc: "Trvalým potvrdením rozsiahlych pozemkových a titulárnych výsad si zabezpečíme lojalitu tých, ktorí nás dosadili na trón." # todo: NEW TRANSLATION
+ lon_principado_de_asturias: "Principado de Asturias" # todo: NEW TRANSLATION
+ lon_principado_de_asturias_desc: "Astúrske kniežatstvo je formálny titul udeľovaný dedičovi koruny. Zaväzuje šľachticov uznať oprávnené nástupníctvo a udeľuje dedičovi symbolickú moc najstaršieho kresťanského kráľovstva ríše." # todo: NEW TRANSLATION
