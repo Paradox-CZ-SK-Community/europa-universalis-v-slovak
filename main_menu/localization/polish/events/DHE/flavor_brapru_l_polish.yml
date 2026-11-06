@@ -77,7 +77,7 @@
  flavor_brapru.13.b: "Nemali by sme to riskovať." # todo: NEW TRANSLATION
  flavor_brapru.14.title: "[ShowPopTypeNameWithNoTooltip('burghers')] v [ShowLocationNameWithNoTooltip('konigsberg')]" # todo: NEW TRANSLATION
  flavor_brapru.14.entry: "Königsberskí mešťania sa vzbúria proti nám" # todo: NEW TRANSLATION
- flavor_brapru.14.desc: "Naše ambície vládnuť bez pomoci stavov neostali bez opozície. Získali sme rozhodujúci dôkaz, že [ShowPopTypeName('burghers')] spikýňajú proti nášmu štátu, keď korešpondujú s [some_neighbor_country.GetGovernment.GetRulerTitle] [some_neighbor_country.GetGovernment.GetRuler.GetName] z [some_neighbor_country.GetName], s cieľom zvrhnúť našu vládu v [ShowLocationName('konigsberg')]. Ak chceme upevniť našu kontrolu nad [ShowLocationNameWithNoTooltip('konigsberg')], musíme rýchlo zareagovať na túto výzvu našej autority a vyriešiť situáciu." # todo: NEW TRANSLATION
+ flavor_brapru.14.desc: "Naše ambície vládnuť bez pomoci stavov neostali bez opozície. Získali sme rozhodujúci dôkaz, že [ShowPopTypeName('burghers')] spikýňajú proti nášmu štátu, keď korešpondujú s [some_neighbor_country.GetGovernment.GetRulerTitle] [some_neighbor_country.GetGovernment.GetRuler.GetName] z [SKCountry(some_neighbor_country,'G')], s cieľom zvrhnúť našu vládu v [ShowLocationName('konigsberg')]. Ak chceme upevniť našu kontrolu nad [ShowLocationNameWithNoTooltip('konigsberg')], musíme rýchlo zareagovať na túto výzvu našej autority a vyriešiť situáciu." # todo: NEW TRANSLATION
  flavor_brapru.14.a: "Poslať armádu, aby sme potvrdili našu autoritu." # todo: NEW TRANSLATION
  flavor_brapru.14.b: "Dohodnúť kompromis s mestom." # todo: NEW TRANSLATION
  flavor_brapru.14.historical_info: "Hieronymus Roth, člen königsberskej mestskej rady a právnik, viedol organizovanú opozíciu proti #italic Veľkému kurfirstovi#! Friedrich Wilhelmovi von Hohenzollernovi. Potom, čo sa kurfirst a vojvodské Prusko v roku 1660 vyhlásili za úplne nezávislé od Poľského kráľovstva, Roth a jeho spojenci v rade Königsbergu adresovali žiadosť poľskému kráľovi Johnovi II. Casimirovi Vasa, aby opätovne prijal územia Východného Pruska pod svoju správu. Mlčanie poľského kráľa a vstup Friedricha Wilhelma do Königsbergu v októbri 1662 ukončili rozvíjajúcu sa vzburu, pričom Roth bol zatknutý a odsúdený na doživotné väzenie." # todo: NEW TRANSLATION
@@ -396,7 +396,7 @@
  flavor_brapru.1806.a: "Budú potrestaní za miešanie sa!" # todo: NEW TRANSLATION
  flavor_brapru.1807.title: "Zmluva z [wehlau_loc.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_brapru.1807.entry: "Zmluva z Wehlau" # todo: NEW TRANSLATION
- flavor_brapru.1807.desc: "Od našej sukcesie v [GetCountry('PRU').GetName] postupne rastie naša moc v porovnaní s naším čiastočným vrchným pánom v [GetCountry('PRU').GetDiplomacy.GetOverlord.GetName]. Dnes, keď je náš relatívny pomer síl k [GetCountry('PRU').GetDiplomacy.GetOverlord.GetLongNameWithNoTooltip] priaznivejší než kedykoľvek predtým, mali by sme navrhnúť zmluvu medzi dvoma národmi, ponúkajúc [GetCountry('PRU').GetDiplomacy.GetOverlord.GetAdjectiveWithNoTooltip] sľub pokoja výmenou za to, že vzdajú vrchnost nad [GetCountry('PRU').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_brapru.1807.desc: "Od našej sukcesie v [SKCountry(GetCountry('PRU'),'L')] postupne rastie naša moc v porovnaní s naším čiastočným vrchným pánom v [SKCountry(GetCountry('PRU').GetDiplomacy.GetOverlord,'L')]. Dnes, keď je náš relatívny pomer síl k [GetCountry('PRU').GetDiplomacy.GetOverlord.GetLongNameWithNoTooltip] priaznivejší než kedykoľvek predtým, mali by sme navrhnúť zmluvu medzi dvoma národmi, ponúkajúc [GetCountry('PRU').GetDiplomacy.GetOverlord.GetAdjectiveWithNoTooltip] sľub pokoja výmenou za to, že vzdajú vrchnost nad [SKCountryNoTooltip(GetCountry('PRU'),'I')]." # todo: NEW TRANSLATION
  flavor_brapru.1807.historical_info: "Zmluva z Wehlau bola ponižujúcim paktom medzi Poľským kráľovstvom a hohenzollernským kniežactvom Pruska, kde prvé zrušilo svoj štatút vrchnosti nad druhým výmenou za vojenskú podporu Hohenzollernov proti Švédom. Katalyzátorom tejto zmluvy bolo katastrofické vpád do Poľska, známe ako #italic Swedish Deluge#!." # todo: NEW TRANSLATION
  flavor_brapru.1807.a: "Navrhnime túto myšlienku." # todo: NEW TRANSLATION
  flavor_brapru.1807.b: "S toho suzeréna sa zbavíme inokedy." # todo: NEW TRANSLATION
@@ -404,7 +404,7 @@
  PRU_if_poland_accepts: "Ak [GetCountry('PRU').GetDiplomacy.GetOverlord.GetName] súhlasí:" # todo: NEW TRANSLATION
  PRU_if_poland_refuses: "Ak [GetCountry('PRU').GetDiplomacy.GetOverlord.GetName] odmietne:" # todo: NEW TRANSLATION
  flavor_brapru.1808.title: "$flavor_brapru.1807.title$" # todo: NEW TRANSLATION
- flavor_brapru.1808.desc: "Náš rastúci sused v [bra_from.GetName] nebezpečne zosilnel v porovnaní s nami a ich osobná únia v [GetCountry('PRU').GetName] z nich robí hrozbu pre náš štát na západnom krídle. V skutočnosti, ak by nás dnes napadli, odhadujeme, že porážka by bola istá. Aby sme zaistili mier medzi oboma štátmi, požadujú od nás, aby sme vzdali Dúkalé [GetCountry('PRU').GetNameWithNoTooltip] ako náš subjekt. Ak to neurobíme, ukážu nám silu svojich zbraní." # todo: NEW TRANSLATION
+ flavor_brapru.1808.desc: "Náš rastúci sused v [bra_from.GetName] nebezpečne zosilnel v porovnaní s nami a ich osobná únia v [SKCountry(GetCountry('PRU'),'L')] z nich robí hrozbu pre náš štát na západnom krídle. V skutočnosti, ak by nás dnes napadli, odhadujeme, že porážka by bola istá. Aby sme zaistili mier medzi oboma štátmi, požadujú od nás, aby sme vzdali Dúkalé [GetCountry('PRU').GetNameWithNoTooltip] ako náš subjekt. Ak to neurobíme, ukážu nám silu svojich zbraní." # todo: NEW TRANSLATION
  flavor_brapru.1808.historical_info: "$flavor_brapru.1807.historical_info$" # todo: NEW TRANSLATION
  flavor_brapru.1808.a: "Možno nebudeme mať na výber." # todo: NEW TRANSLATION
  flavor_brapru.1808.b: "Absurdný návrh! Nedovolíme poníženie." # todo: NEW TRANSLATION
@@ -414,11 +414,11 @@
  flavor_brapru.1809.historical_info: "$flavor_brapru.1807.historical_info$" # todo: NEW TRANSLATION
  flavor_brapru.1809.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  flavor_brapru.1809.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
- flavor_brapru.1809.b: "Celkom nešťastné pre [GetCountry('PRU').GetDiplomacy.GetOverlord.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_brapru.1809.b: "Celkom nešťastné pre [SKCountryNoTooltip(GetCountry('PRU').GetDiplomacy.GetOverlord,'A')]." # todo: NEW TRANSLATION
  flavor_brapru.1809.b.entry: "Celkom nešťastné pre ich suzeréna." # todo: NEW TRANSLATION
  flavor_brapru.1810.title: "Ponuka regentstva" # todo: NEW TRANSLATION
  flavor_brapru.1810.entry: "$flavor_brapru.1810.title$" # todo: NEW TRANSLATION
- flavor_brapru.1810.desc: "Duševný úpadok [pru_from.GetAdjective] [insane_individual.GetName] spôsobil, že [pru_from.GetAdjectiveWithNoTooltip] [pru_from.GetGovernment.GetCourtTitle] zápasí s nájdením regenta, ktorý by vládol štátu namiesto neho. Ak zlyhajú, hrozí im chaos a bezprávie. Preto vybrali jediného rozumného kandidáta na regentstvo, príbuzného [insane_individual.GetHerHis], [proposed_regent.GetName]. Nevidíme veľa dôvodov túto ponuku odmietnuť, hoci by nás to mohlo vystaviť riziku vojny s ich vrchnými pánmi v [pru_from.GetDiplomacy.GetOverlord.GetName]." # todo: NEW TRANSLATION
+ flavor_brapru.1810.desc: "Duševný úpadok [pru_from.GetAdjective] [insane_individual.GetName] spôsobil, že [pru_from.GetAdjectiveWithNoTooltip] [pru_from.GetGovernment.GetCourtTitle] zápasí s nájdením regenta, ktorý by vládol štátu namiesto neho. Ak zlyhajú, hrozí im chaos a bezprávie. Preto vybrali jediného rozumného kandidáta na regentstvo, príbuzného [insane_individual.GetHerHis], [proposed_regent.GetName]. Nevidíme veľa dôvodov túto ponuku odmietnuť, hoci by nás to mohlo vystaviť riziku vojny s ich vrchnými pánmi v [SKCountry(pru_from.GetDiplomacy.GetOverlord,'L')]." # todo: NEW TRANSLATION
  flavor_brapru.1810.a: "Skutočne, môžeme to urobiť." # todo: NEW TRANSLATION
  flavor_brapru.1810.b: "Toto by nás mohlo dostať do zbytočného konfliktu." # todo: NEW TRANSLATION
  PRU_our_chance_to_get_union: "Toto povedie k [Concept('union','únii')|e] medzi oboma národmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -441,11 +441,11 @@
  flavor_brapru.2001.title: "Zmena lojalít" # todo: NEW TRANSLATION
  flavor_brapru.2001.entry: "$flavor_brapru.2001.title$" # todo: NEW TRANSLATION
  flavor_brapru.2001.desc: "Keď sme si upevnili vládu nad [ROOT.GetCountry.GetAltAdjective('I')], náš diplomatický postoj bol spochybnený. Hoci sme sa doteraz spoliehali na starých spojencov, ako [target_country.GetName], mnohí sa domnievajú, že nedávne udalosti ich mohli urobiť opatrnými, a že naši starí nepriatelia sa môžu stať užitočnými partnermi." # todo: NEW TRANSLATION # todo: COUNTRY CASE
- flavor_brapru.2001.a: "Vyhľadajme spojenectvo s [emperor_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_brapru.2001.a: "Vyhľadajme spojenectvo s [SKCountryNoTooltip(emperor_country,'I')]." # todo: NEW TRANSLATION
  flavor_brapru.2001.a.entry: "Usilujme sa o spojenectvo s nimi." # todo: NEW TRANSLATION
  flavor_brapru.2001.b: "Nemôžeme otočiť chrbtom našim starým spojencom." # todo: NEW TRANSLATION
  flavor_brapru.2001.historical_info: "Po nástupe Hohenzollernov sa spojenectvá Brandenburska zmenili. Fridrich I. sa viac priblížil cisárovi Žigmundovi a ostatným cisárskym záujmom, na rozdiel od predchádzajúcich regionálnych spojenectiev." # todo: NEW TRANSLATION
  flavor_brapru.2002.title: "Ponuka spojenectva" # todo: NEW TRANSLATION
- flavor_brapru.2002.desc: "Posol prišiel z [root_country.GetName] na [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Dynastia [root_dynasty.GetName] chce upevniť svoju kontrolu nad [root_country.GetNameWithNoTooltip] a zabezpečiť svoju diplomatickú pozíciu opustením regionálnych spojenectiev v prospech tesného zladenia so záujmami [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ flavor_brapru.2002.desc: "Posol prišiel z [SKCountry(root_country,'G')] na [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Dynastia [root_dynasty.GetName] chce upevniť svoju kontrolu nad [SKCountryNoTooltip(root_country,'I')] a zabezpečiť svoju diplomatickú pozíciu opustením regionálnych spojenectiev v prospech tesného zladenia so záujmami [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  flavor_brapru.2002.a: "Budú cenným spojencom." # todo: NEW TRANSLATION
  flavor_brapru.2002.b: "Obrátia sa nakoniec aj oni chrbtom k nám?" # todo: NEW TRANSLATION

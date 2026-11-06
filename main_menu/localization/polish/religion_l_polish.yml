@@ -66,7 +66,7 @@
  CONVERT_RELIGION_TT: "Konverzia na [RELIGION.GetName] a stanovenie za oficiálne [Concept('religion','náboženstvo')|e] bude stáť $COST$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RESOLUTION_EFFECT_INFO: "Ak návrh prejde:\n$PASS$\n\nAk neprejde:\n$REJECT$\n\n" # todo: NEW TRANSLATION
  CURIA_EFFECT_INFO: "Ak návrh prejde Kuriou:\n$PASS$\n\nAk neprejde:\n$REJECT$\n\n" # todo: NEW TRANSLATION
- CARDINALS_OF_COUNTRY: "[cardinals] z [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ CARDINALS_OF_COUNTRY: "[cardinals] z [SKCountryNoTooltip(Country,'G')]" # todo: NEW TRANSLATION
  CARDINAL_ENTRY: "$EFFECT_LIST_BULLET$Kardinál z [LOCATION.GetName|Y] [LOCATION.GetOwner.GetFlagIconWithNoTooltip]!" # todo: CHANGED (predtym: $EFFECT_LIST_BULLET$Kardinál z [LOCATION.GetName|Y] @[LOCATION.GetOwner.GetFlag]!)
  CARDINALS_BREAKDOWN_TOOLTIP: "#T [Localize('game_concept_cardinals')]#!\nMáme $NUMBER$ [Concept('cardinal','kardinál')|e] sídiel v:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CARDINALS_BREAKDOWN_TOOLTIP_GENERIC: "#T [Localize('game_concept_cardinals')]#!\nPočet miest pre [Concept('cardinal','kardinála')|e]: $NUMBER$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -573,11 +573,11 @@
  HAS_NOT_RELIGIOUS_FOCUS_QUEUED: "@trigger_no!Toto [Concept('religious_focuses','náboženské zamerania')|e] ešte nie je zaradené do frontu" # todo: RETRANSLATED ENGLISH
  RELIGIOUS_FOCUS_ALREADY_SET: "@trigger_no!Toto [Concept('religious_focuses','náboženské zamerania')|e] je zaradené do frontu" # todo: RETRANSLATED ENGLISH
  RELIGIOUS_FOCUS_RELIGION_HAS_NO_FOCUSES: "[RELIGION.GetName] nemá žiadne [Concept('religious_focuses','náboženské zamerania')|e]." # todo: RETRANSLATED ENGLISH
- RELIGIOUS_FOCUS_ALREADY_COMPLETED: "[RELIGIOUS_FOCUS.GetName] is already completed." # todo: NEW TRANSLATION
+ RELIGIOUS_FOCUS_ALREADY_COMPLETED: "[RELIGIOUS_FOCUS.GetName] je už dokončené." # todo: CHANGED (predtym: [RELIGIOUS_FOCUS.GetName] is already completed.)
  RELIGIOUS_FOCUS_ALREADY_QUEUED: "[RELIGIOUS_FOCUS.GetName] už je vo fronte." # todo: RETRANSLATED ENGLISH
- RELIGIOUS_FOCUS_ETA_TT: "Expect to be finished researching [RELIGIOUS_FOCUS.GetName] around $DATE|Y$" # todo: NEW TRANSLATION
- RELIGIOUS_FOCUS_PROGRESS_TT: "Researching [RELIGIOUS_FOCUS.GetName] current progress is $CURRENT|%W$, and $VAL|+=%$ of progress is made each month due to:\n$WHY$" # todo: NEW TRANSLATION
- RELIGIOUS_FOCUS_NO_PROGRESS_TT: "Researching [RELIGIOUS_FOCUS.GetName] current progress is $CURRENT|W%$, and no progress is made each month due to:\n$WHY$" # todo: NEW TRANSLATION
+ RELIGIOUS_FOCUS_ETA_TT: "Skúmanie [RELIGIOUS_FOCUS.GetName] by malo byť dokončené okolo $DATE|Y$" # todo: CHANGED (predtym: Expect to be finished researching [RELIGIOUS_FOCUS.GetName] around $DATE|Y$)
+ RELIGIOUS_FOCUS_PROGRESS_TT: "Aktuálny postup skúmania [RELIGIOUS_FOCUS.GetName] je $CURRENT|%W$ a každý mesiac pribudne $VAL|+=%$ postupu z dôvodu:\n$WHY$" # todo: CHANGED (predtym: Researching [RELIGIOUS_FOCUS.GetName] current progress is $CURRENT|%W$, and $VAL|+=%$ of progress is made each month due)
+ RELIGIOUS_FOCUS_NO_PROGRESS_TT: "Aktuálny postup skúmania [RELIGIOUS_FOCUS.GetName] je $CURRENT|W%$ a každý mesiac nepribúda žiadny postup z dôvodu:\n$WHY$" # todo: CHANGED (predtym: Researching [RELIGIOUS_FOCUS.GetName] current progress is $CURRENT|W%$, and no progress is made each month due to:\n$WHY)
  RELIGIOUS_FOCUS_SET_FOCUS: "Nastaviť fokus" # todo: NEW TRANSLATION
  RELIGIOUS_FOCUS_ADD_TO_QUEUE: "Pridať do fronty" # todo: NEW TRANSLATION
  RELIGIOUS_FOCUS_REMOVE_FROM_QUEUE: "Odstrániť z fronty" # todo: NEW TRANSLATION
@@ -597,21 +597,21 @@
  nature_tenet: "Povaha" # todo: NEW TRANSLATION
  nature_tenet_desc: "Táto zásada, známa aj ako physis (#italic φύσις#!), tvorí jadro našej viery. Vyjadruje nespochybniteľnú skutočnosť, že Ježiš Kristus má dvojakú a harmonickú prirodzenosť. Súžitie ľudskej a božskej prirodzenosti je základom spolužitia, o ktoré by sme sa mali usilovať." # todo: RETRANSLATED ENGLISH
  single_nature: "Jedna povaha" # todo: NEW TRANSLATION
- single_nature_desc: "There can only be one nature of Jesus." # todo: NEW TRANSLATION
+ single_nature_desc: "Ježiš môže mať len jednu prirodzenosť." # todo: CHANGED (predtym: There can only be one nature of Jesus.)
  composite_nature: "Zložená povaha" # todo: NEW TRANSLATION
  composite_nature_desc: "Dve prirodzenosti Ježiša sú spojené do jednej (#italic μια φύσις#!)." # todo: RETRANSLATED ENGLISH
  dual_nature: "Dvojitá povaha" # todo: NEW TRANSLATION
- dual_nature_desc: "The aspect of Jesus contains a dual nature, both human and divine (#italic Δυοφυσιτισμός#!)." # todo: NEW TRANSLATION
+ dual_nature_desc: "Ježiš má dvojakú prirodzenosť, ľudskú aj božskú (#italic Δυοφυσιτισμός#!)." # todo: CHANGED (predtym: The aspect of Jesus contains a dual nature, both human and divine ( italic Δυοφυσιτισμός !).)
  separate_nature: "Oddelená povaha" # todo: NEW TRANSLATION
  separate_nature_desc: "Hoci v sebe spája dve prirodzenosti, božskú a ľudskú, tieto dve stránky Ježiša sú úplne oddelené." # todo: RETRANSLATED ENGLISH
  christology: "Kristológia" # todo: NEW TRANSLATION
  christology_desc: "Teologické skúmanie Kristovej prirodzenosti, jeho identity a spojenia jeho rôznych prirodzeností je zložitým umením. Mnohí učenci považujú Krista za plne božského, a preto sa hlásia k $high_christology$, zatiaľ čo iní sa riadia zásadami $low_christology$." # todo: RETRANSLATED ENGLISH
  high_christology: "Vysoká kristológia" # todo: NEW TRANSLATION
- high_christology_desc: "Christ is unequivocally divine." # todo: NEW TRANSLATION
+ high_christology_desc: "Kristus je jednoznačne božský." # todo: CHANGED (predtym: Christ is unequivocally divine.)
  low_christology: "Nízka kristológia" # todo: NEW TRANSLATION
- low_christology_desc: "Christ is a mere human." # todo: NEW TRANSLATION
+ low_christology_desc: "Kristus je obyčajný človek." # todo: CHANGED (predtym: Christ is a mere human.)
  liturgical_practices: "Liturgické praktiky" # todo: NEW TRANSLATION
- liturgical_practices_desc: "Various worship practices centered around hymns, readings and rites." # todo: NEW TRANSLATION
+ liturgical_practices_desc: "Rôzne bohoslužobné praktiky zamerané na hymny, čítania a obrady." # todo: CHANGED (predtym: Various worship practices centered around hymns, readings and rites.)
  byzantine_rites: "$BYZ_ADJ$ obredi" # todo: NEW TRANSLATION
  byzantine_rites_desc: "Dodržiavaním obradov, ktoré spopularizovali kňazi $BYZ_ADJ$, môžeme čerpať časť legitimity ich viery." # todo: RETRANSLATED ENGLISH
  local_traditions_and_rites: "Miestne obredoslovie" # todo: NEW TRANSLATION
@@ -645,7 +645,7 @@
  double_sabbath_tenet: "Dvojitá sobota" # todo: NEW TRANSLATION
  double_sabbath_tenet_desc: "Sabat je od čias Mojžiša svätým dňom zasväteným Bohu. Môže sa naďalej zachovávať ako deň odpočinku, alebo ho možno považovať za nahradený Dňom Pána, ktorý pripadá na nedeľu." # todo: RETRANSLATED ENGLISH
  allow_double_sabbath_tenet: "Povoliť dvojitú sobotu" # todo: NEW TRANSLATION
- allow_double_sabbath_tenet_desc: "Both Sunday and Saturday are considered sacred." # todo: NEW TRANSLATION
+ allow_double_sabbath_tenet_desc: "Za posvätnú sa považuje nedeľa aj sobota." # todo: CHANGED (predtym: Both Sunday and Saturday are considered sacred.)
  forbid_double_sabbath_tenet: "Zakázať dvojitú sobotu" # todo: NEW TRANSLATION
  forbid_double_sabbath_tenet_desc: "Dodržiavanie sabatu už nie je potrebné, ak sa slávi Deň Pána v nedeľu." # todo: RETRANSLATED ENGLISH
  interpatriarchal_relations_tenet: "Medzipatriarchálne vzťahy" # todo: NEW TRANSLATION
@@ -1661,13 +1661,13 @@
  nat_awual_god_desc: "$nat_awual_god$ je materská bohyňa dediny pre ľudí [ShowCultureName('gond')]." # todo: NEW TRANSLATION
  aki_pen_god: "Aki Pen" # todo: NEW TRANSLATION
  aki_pen_god_desc: "$aki_pen_god$ je strážcom dediny v panteóne [ShowReligionAdjective('koyapunem_religion')]." # todo: NEW TRANSLATION
- phi_heaven_god: "Phi of Heaven" # todo: NEW TRANSLATION
+ phi_heaven_god: "Phi neba" # todo: CHANGED (predtym: Phi of Heaven)
  phi_heaven_god_desc: "$phi_heaven_god$ je boh nebies v panteóne [ShowReligionAdjective('satsana_phi')]." # todo: NEW TRANSLATION
- phi_water_god: "Phi of Water" # todo: NEW TRANSLATION
+ phi_water_god: "Phi vody" # todo: CHANGED (predtym: Phi of Water)
  phi_water_god_desc: "$phi_water_god$ je boh vody v panteóne [ShowReligionAdjective('satsana_phi')]." # todo: NEW TRANSLATION
- phi_earth_god: "Phi of Earth" # todo: NEW TRANSLATION
+ phi_earth_god: "Phi zeme" # todo: CHANGED (predtym: Phi of Earth)
  phi_earth_god_desc: "$phi_earth_god$ je boh zeme v panteóne [ShowReligionAdjective('satsana_phi')]." # todo: NEW TRANSLATION
- phi_fire_god: "Phi of Fire" # todo: NEW TRANSLATION
+ phi_fire_god: "Phi ohňa" # todo: CHANGED (predtym: Phi of Fire)
  phi_fire_god_desc: "$phi_fire_god$ je boh všetkých prírodných síl v panteóne [ShowReligionAdjective('satsana_phi')]." # todo: NEW TRANSLATION
  bathou_religion: "Bathouism" # todo: NEW TRANSLATION
  bathou_religion_ADJ: "Bathouist" # todo: NEW TRANSLATION

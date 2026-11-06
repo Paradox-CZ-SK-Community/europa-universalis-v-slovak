@@ -29,7 +29,7 @@
  rus_claimed_land_antagonism: "Nárokovali naše územie" # todo: NEW TRANSLATION
  flavor_rus.4.b: "Vyvolalo by to napätie v diplomatických vzťahoch." # todo: NEW TRANSLATION
  flavor_rus.4.tt1: "Odpor voči expanzii frustruje [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]" # todo: NEW TRANSLATION
- flavor_rus.4.c: "Kedysi boli tieto země naše." # todo: NEW TRANSLATION
+ flavor_rus.4.c: "Kedysi boli tieto zeme naše." # todo: CHANGED (predtym: Kedysi boli tieto země naše.)
  flavor_rus.4.tt2: "Charizmatické písmo [target_root_country.GetGovernment.GetRuler.GetName] vyvoláva otázky o oprávnenom vlastníctve oblasti [ShowAreaName('white_ruthenia_area')]" # todo: NEW TRANSLATION
  flavor_rus.4.historical_info: "Ivan IV Ruský rozšíril hranice svojej vlasti ďaleko na juh a východ, ale na západe, najmä v Livónsku, narazil na silný odpor. Vojny s Poľsko-litovským spoločenstvom a Švédskom sa vlečú a priniesli početné porážky, čo donútilo Ivana podpísať mierovú zmluvu, v ktorej muselo Rusko vzdať sa všetkých západných územných ziskov. Nevraživosť medzi oboma krajinami zostala vysoká a vyvrcholila poľskou okupáciou Moskvy počas doby nepokojov." # todo: NEW TRANSLATION
  flavor_rus.5.title: "Podmanenie stepí" # todo: NEW TRANSLATION
@@ -126,7 +126,7 @@
  flavor_rus.18.entry: "$flavor_rus.18.title$" # todo: NEW TRANSLATION
  flavor_rus.18.desc: "Orientálny poslovník [fyodor_baikov.GetName] nedávno navštívil [GetCountry('CHI').GetName] s cieľom nadviazať diplomatické vzťahy a zabezpečiť zmluvu vzájomného rešpektu. Bohužiaľ, kvôli kultúrnym nedorozumeniam sa etiketa nedodržala, čo viedlo k nešťastnému omylu, že [ROOT.GetCountry.GetGovernment.GetRuler.GetName] podľahol nadradenosti [GetCountry('CHI').GetNameWithNoTooltip], pričom bola zaslaná požiadavka [ROOT.GetCountry.GetAdjective] dvoru okamžite začať platiť tribut. Túto diplomatickú chybu musíme napraviť, inak riskujeme podnietiť domáce rozhorčenie, pripomínajúce temné dni vlády [ShowCultureGroupName('tatar_group')]." # todo: NEW TRANSLATION
  flavor_rus.18.a: "Ignorovať požiadavky." # todo: NEW TRANSLATION
- flavor_rus.18.tt1: "Mrazivé vzťahy medzi [target_root_country.GetNameWithNoTooltip] a [GetCountry('CHI').GetNameWithNoTooltip] dočasne zmrazujú diplomatické styky a spoločné iniciatívy." # todo: NEW TRANSLATION
+ flavor_rus.18.tt1: "Mrazivé vzťahy medzi [SKCountryNoTooltip(target_root_country,'I')] a [GetCountry('CHI').GetNameWithNoTooltip] dočasne zmrazujú diplomatické styky a spoločné iniciatívy." # todo: NEW TRANSLATION
  rus_ignored_vassal_demands: "Ignorované požiadavky vassala" # todo: NEW TRANSLATION
  flavor_rus.18.b: "Priznať vazalstvo, ale odmietnuť platby." # todo: NEW TRANSLATION
  rus_paid_vassal_respect: "Uznané vazalstvo bez platenia" # todo: NEW TRANSLATION
@@ -162,7 +162,7 @@
  rus_political_aggressions: "Politické agresie" # todo: NEW TRANSLATION
  rus_enemy_of_sweden: "Nepriateľ Švédska" # todo: NEW TRANSLATION
  flavor_rus.21.b: "Nech sa ostatní postarajú sami." # todo: NEW TRANSLATION
- flavor_rus.21.historical_info: "Koncom 17. storočia vystúpilo Švédsko ako veľmoc po sérii konfliktov na Baltickom mori. V roku 1697 však nastúpil na trón 15-ročný Karel XII. Cítiac slabosť, ruský cár Peter I. uzavrel spojenectvo s Dánskom a Poľsko-Saskom. Napriek tomu, s britskou a holandskou námornou pomocou, Karel XII. vylodil na Zélande a rýchlo porazil Dánov, potom sa presunul do Estónska, kde jeho výrazne menšia armáda dosiahla rozhodujúce víťazstvo nad Rusmi. Karel sa nakoniec rozhodol postúpiť na Moskvu, ale tvrdá zima a ruské nájazdy jeho armádu zdecimovali a napokon bol porazený v bitke pri Poltave v roku 1709." # todo: NEW TRANSLATION
+ flavor_rus.21.historical_info: "Koncom 17. storočia vystúpilo Švédsko ako veľmoc po sérii konfliktov na Baltickom mori. V roku 1697 však nastúpil na trón 15-ročný Karol XII. Cítiac slabosť, ruský cár Peter I. uzavrel spojenectvo s Dánskom a Poľsko-Saskom. Napriek tomu, s britskou a holandskou námornou pomocou, Karol XII. vylodil na Zélande a rýchlo porazil Dánov, potom sa presunul do Estónska, kde jeho výrazne menšia armáda dosiahla rozhodujúce víťazstvo nad Rusmi. Karol sa nakoniec rozhodol postúpiť na Moskvu, ale tvrdá zima a ruské nájazdy jeho armádu zdecimovali a napokon bol porazený v bitke pri Poltave v roku 1709." # todo: CHANGED (predtym: Koncom 17. storočia vystúpilo Švédsko ako veľmoc po sérii konfliktov na Baltickom mori. V roku 1697 však nastúpil na tró)
  flavor_rus.25.title: "Ambiciózna komisia" # todo: NEW TRANSLATION
  flavor_rus.25.entry: "$flavor_rus.25.title$" # todo: NEW TRANSLATION
  flavor_rus.25.desc: "Vôľa ľudu je často odvedená bokom a absencia ústavy v našom právnom kódexe robí práva a privilégiá bežného človeka pominuteľným zárukou, ktorú by mohol nový edikt zmeniť. Zvolajme komisiu, ktorá sa týmto otázkam postaví. Komisia bude poverená dôležitou úlohou zostaviť ústavu, ktorá odráža rôznorodé perspektívy a túžby [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] a [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], podporujúc občiansku angažovanosť a zabezpečujúc demokratické základy našej spoločnosti." # todo: NEW TRANSLATION
@@ -377,7 +377,7 @@
  variable_shuvalov_the_teacher_tt: "Ivan Shuvalov podporuje vzdelanie" # todo: NEW TRANSLATION
  flavor_rus.54.title: "Intriány [ivan_betskoy.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_rus.54.entry: "Podnecovania Ivana Betského" # todo: NEW TRANSLATION
- flavor_rus.54.desc: "Nelegitímne dieťa šľachtického pôvodu sa podarilo vyrokovať svoje prepustenie z zajatia v [GetCountry('SWE').GetName] a vracia sa do [ROOT.GetCountry.GetAltAdjective('G')] v snahe získať post vo vláde. [ivan_betskoy.GetName] si už urobil meno v armáde, než utrpel pád, po ktorom odišiel zo služby a namiesto toho sa venoval kariére v diplomacii. Horí túžbou zaoberať sa otázkami vzdelávania a sociálnych záležitostí a dúfa, že urobí veľké kroky smerom k spravodlivejšej spoločnosti." # todo: CHANGED # todo: COUNTRY CASE
+ flavor_rus.54.desc: "Nelegitímne dieťa šľachtického pôvodu sa podarilo vyrokovať svoje prepustenie z zajatia v [SKCountry(GetCountry('SWE'),'L')] a vracia sa do [ROOT.GetCountry.GetAltAdjective('G')] v snahe získať post vo vláde. [ivan_betskoy.GetName] si už urobil meno v armáde, než utrpel pád, po ktorom odišiel zo služby a namiesto toho sa venoval kariére v diplomacii. Horí túžbou zaoberať sa otázkami vzdelávania a sociálnych záležitostí a dúfa, že urobí veľké kroky smerom k spravodlivejšej spoločnosti." # todo: CHANGED # todo: COUNTRY CASE
  flavor_rus.54.a: "Oddaná duša a vizionár." # todo: NEW TRANSLATION
  flavor_rus.54.tt2: "[ivan_betskoy.GetSheHe|U] môže iniciovať vzdelávacie a sociálne reformy, ak bude pridelený do [Concept('cabinet','kabinetu')|e]." # todo: CHANGED (predtym: Môže iniciovať vzdelávacie a sociálne reformy, ak bude pridelený do [Concept('cabinet','kabinetu')|e].)
  flavor_rus.54.b: "Obmedzte jeho činnosť." # todo: CHANGED

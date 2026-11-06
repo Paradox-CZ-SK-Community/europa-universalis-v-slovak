@@ -12,7 +12,7 @@
  hre.102.title: "Renovatio Imperii Romanorum" # todo: NEW TRANSLATION
  hre.102.desc: "$hre.privilege_revoked.intro_desc$ Cisársky snem schválil návrh zlúčiť rozdrobené štáty Ríše do národného štátu a znovu korunovať [GetUniqueInternationalOrganization('hre').GetLeaderTitle] za jej dedičného vládcu." # todo: NEW TRANSLATION
  hre.102.a: "Nárokovať korunu!" # todo: NEW TRANSLATION
- hre_unify_the_empire_tt: "Každý [Concept('member','člen')|e] [GetUniqueInternationalOrganization('hre').GetName] bude integrovaný do [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ hre_unify_the_empire_tt: "Každý [Concept('member','člen')|e] [GetUniqueInternationalOrganization('hre').GetName] bude integrovaný do [SKCountry(GetUniqueInternationalOrganization('hre').GetLeaderCountry,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  hre.103.title: "Renovatio Imperii Romanorum" # todo: NEW TRANSLATION
  hre.103.desc: "Cisársky snem schválil reformu a náš čas ako štátu je preč. Keď naše provincie prechádzajú do rúk [GetUniqueInternationalOrganization('hre').GetLeaderTitle], nachádzame útechu v tom, že sme súčasťou niečoho väčšieho." # todo: NEW TRANSLATION
  hre.103.a: "Ave Caesar!" # todo: NEW TRANSLATION
@@ -36,7 +36,7 @@
  hre.900.title.abdication: "[previous_emperor.GetNameWithNoTooltip] abdikoval..." # todo: NEW TRANSLATION
  hre.900.desc: "Nech žije [GetUniqueInternationalOrganization('hre').GetLeaderTitle]! $hre.900.desc.default$" # todo: CHANGED
  hre.900.desc.abdication: "[new_emperor.GetName] bude vládnuť cisárskym územiam! $hre.900.desc.default$" # todo: NEW TRANSLATION
- hre.900.desc.default: "Voľitelia sa rozhodli zachovať dôveru v nás a cisárska koruna zostáva v [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]. Keď naša krajina posilňuje svoj vplyv nad cisárskou korunou a kniežatá nás začínajú vnímať ako prirodzených držiteľov, naša autorita v rámci [GetUniqueInternationalOrganization('hre').GetName] rastie." # todo: NEW TRANSLATION
+ hre.900.desc.default: "Voľitelia sa rozhodli zachovať dôveru v nás a cisárska koruna zostáva v [SKCountry(GetUniqueInternationalOrganization('hre').GetLeaderCountry,'L')]. Keď naša krajina posilňuje svoj vplyv nad cisárskou korunou a kniežatá nás začínajú vnímať ako prirodzených držiteľov, naša autorita v rámci [GetUniqueInternationalOrganization('hre').GetName] rastie." # todo: NEW TRANSLATION
  hre.900.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  hre.imperial_authority_change.tt: "[GetUniqueInternationalOrganization('hre').GetName] získava [ROOT.GetVariable('imperial_authority_change').GetValue|+2] #Y $imperial_authority$#!" # todo: CHANGED
  hre.imperial_authority_change_action.tt: "[GetUniqueInternationalOrganization('hre').GetName] získava $VALUE|+2$ #Y $imperial_authority$#!" # todo: CHANGED
@@ -46,12 +46,12 @@
  hre.902.title_lutheran: "[heretic_country.GetNameWithNoTooltip] sa pridáva k protestantom" # todo: NEW TRANSLATION
  hre.902.title_calvinist: "[heretic_country.GetNameWithNoTooltip] odmieta našu vieru" # todo: NEW TRANSLATION
  hre.902.title_hussite: "[GetCharacter('boh_jan_hus').GetNameWithNoTooltip] zvádza [heretic_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- hre.902.title_catholic: "Papisti sa vracajú do [heretic_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ hre.902.title_catholic: "Papisti sa vracajú do [SKCountryNoTooltip(heretic_country,'G')]" # todo: NEW TRANSLATION
  hre.902.title_fallback: "Heretické knieža" # todo: NEW TRANSLATION
  hre.902.desc_lutheran: "Búrka rozpútaná prekliatym [GetCharacter('martin_luther').GetName] pohltila ďalšieho verného člena našej viery! Hoci [heretic_country.GetName] tvrdí právo #italic Cuius Regio, Eius Religio#!, je nám jasné, že to využili ako pohodlný kryt na zabavenie majetku verných cirkví a nakladanie s ním podľa vlastného uváženia. Iba čas ukáže, ako našim bratom a sestrám vo viere v týchto časoch pôjde." # todo: NEW TRANSLATION
  hre.902.desc_calvinist: "V dôsledku náboženských nepokojov našej doby sa [heretic_country.GetName] odvrátil od pravého učenia a oznámil, že ich cirkev teraz bude nasledovať učenie [GetCharacter('john_calvin').GetName]. Hoci vyhlasujú hmlisté slová o náboženskej tolerancii, osud nasledovníkov našej viery zostáva neistý, pokiaľ za nich nezasiahneme." # todo: NEW TRANSLATION
- hre.902.desc_hussite: "[heretic_country.GetName] padol za obeť učeniu [GetCharacter('boh_jan_hus').GetName]! Ich konverzia ohrozuje samotné základy nášho panovania v [GetUniqueInternationalOrganization('hre').GetName] a verní nasledovníci našej viery v [heretic_country.GetNameWithNoTooltip] sú teraz ohrození ich radikálnymi náboženskými názormi." # todo: NEW TRANSLATION
- hre.902.desc_catholic: "[heretic_country.GetName], ktorý bol doteraz verným obhajcom našej veci, podľahol tlaku [ShowLocationName('rome')]! Hoci [heretic_country.GetGovernment.GetCourtTitle] [heretic_country.GetNameWithNoTooltip] ospravedlňuje toto rozhodnutie právom #italic Cuius Regio, Eius Religio#!, len si môžeme predstaviť, aké dôsledky to bude mať pre pravoverných v [heretic_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ hre.902.desc_hussite: "[heretic_country.GetName] padol za obeť učeniu [GetCharacter('boh_jan_hus').GetName]! Ich konverzia ohrozuje samotné základy nášho panovania v [GetUniqueInternationalOrganization('hre').GetName] a verní nasledovníci našej viery v [SKCountryNoTooltip(heretic_country,'L')] sú teraz ohrození ich radikálnymi náboženskými názormi." # todo: NEW TRANSLATION
+ hre.902.desc_catholic: "[heretic_country.GetName], ktorý bol doteraz verným obhajcom našej veci, podľahol tlaku [ShowLocationName('rome')]! Hoci [heretic_country.GetGovernment.GetCourtTitle] [heretic_country.GetNameWithNoTooltip] ospravedlňuje toto rozhodnutie právom #italic Cuius Regio, Eius Religio#!, len si môžeme predstaviť, aké dôsledky to bude mať pre pravoverných v [SKCountryNoTooltip(heretic_country,'L')]." # todo: NEW TRANSLATION
  hre.902.desc_fallback: "[heretic_country.GetName], knieža [GetUniqueInternationalOrganization('hre').GetName], konvertovalo na heretickú vieru! [hre_ruler.GetName] nemôže túto hereziu tolerovať!" # todo: NEW TRANSLATION
  hre.902.a: "Nedopustiteľné!" # todo: NEW TRANSLATION
  hre.903.title: "Blúdivá ovca sa vracia" # todo: NEW TRANSLATION

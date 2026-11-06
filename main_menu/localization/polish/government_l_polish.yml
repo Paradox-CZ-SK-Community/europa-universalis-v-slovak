@@ -36,9 +36,9 @@
  PEASANT_ENFRANCHISMENT: "Minimálne $MIN|2%$ a maximálne $MAX|2%$" # todo: NEW TRANSLATION
  PEASANT_ENFRANCHISMENT_TITLE: "[Concept('peasant_enfranchisement','$MODIFIER_TYPE_NAME_global_peasant_enfranchisment$')|e] je [Location.GetPeasantEnfranchisment|2G%] z dôvodu:" # todo: CHANGED # todo: CONCEPT CASE
  LOCATION_PEASANT_ENFRANCHISMENT_TITLE: "[peasant_enfranchisement] v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- PEASANT_ENFRANCHISMENT_TT_TITLE: "Priemerné $game_concept_peasant_enfranchisement$ v [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ PEASANT_ENFRANCHISMENT_TT_TITLE: "Priemerné $game_concept_peasant_enfranchisement$ v [SKCountryNoTooltip(Country,'L')]" # todo: NEW TRANSLATION
  PEASANT_ENFRANCHISMENT_TT_TEXT: "[Concept('pops','Populácie')|e] tohto [Concept('estate','stavu')|e] majú priemerné volebné právo #W [Estate.GetAvgEnfranchisment|0%]#![peasant_enfranchisement_icon], takže dostávajú iba toto percento zo svojho [Concept('wealth_share','podielu na bohatstve')|e]. Zvyšok ich príjmov sa prevádza na [ShowEstateTypeName('nobles_estate')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- PEASANT_ENFRANCHISMENT_TT_TABLE: "Globálny modifikátor v [Country.GetNameWithNoTooltip] je [Country.GetModifierValueNoFormat('global_peasant_enfranchisment')] z dôvodu:" # todo: NEW TRANSLATION
+ PEASANT_ENFRANCHISMENT_TT_TABLE: "Globálny modifikátor v [SKCountryNoTooltip(Country,'L')] je [Country.GetModifierValueNoFormat('global_peasant_enfranchisment')] z dôvodu:" # todo: NEW TRANSLATION
  legitimacy: "Legitímnosť" # todo: NEW TRANSLATION
  republican_tradition: "Republikánska tradícia" # todo: NEW TRANSLATION
  devotion: "Oddanosť" # todo: NEW TRANSLATION
@@ -185,7 +185,7 @@
  CURRENT_REGENCY_TOOLTIP_DESC: "Momentálne nás v krajine vládne $REGENCY$ až do #V $DATE$#!, čo nám dáva nasledujúce efekty:\n\n$EFFECTS$" # todo: NEW TRANSLATION
  CURRENT_REGENCY_INDEFINITELY_TOOLTIP_DESC: "V krajine nás vládne $REGENCY$ #V na neurčito#!, čo nám dáva nasledujúce efekty:\n\n$EFFECTS$" # todo: NEW TRANSLATION
  supported_heirs_rule: "• Postavy musia byť podporené cudzou krajinou pomocou [ShowRelationTypeName('support_heir')] alebo obľúbené u nás prostredníctvom [ShowGenericActionName('favor_heir')]" # todo: CHANGED (predtym: • Postavy musia byť podporené cudzou krajinou pomocou [ShowRelationTypeName('support_heir')] alebo obľúbené u nás prostr)
- no_female_heirs_for_poland: "• Dedič NESMIE byť žena pre [GetCountry('POL').GetName]" # todo: NEW TRANSLATION
+ no_female_heirs_for_poland: "• Dedič NESMIE byť žena pre [SKCountry(GetCountry('POL'),'A')]" # todo: NEW TRANSLATION
  own_characters_first_rule: "• Postavy z domovskej krajiny majú vyššiu prioritu" # todo: NEW TRANSLATION
  BANK_OLDER_HEIR_DESC: "• Skóre za každý rok veku" # todo: NEW TRANSLATION
  COGNATIC_PRIMOGENITURE_PARENT_IS_RULER_DESC: "• Skóre za to, že ktorýkoľvek rodič je vládca" # todo: NEW TRANSLATION
@@ -286,7 +286,7 @@
  ESTATE_LOCATIONS_POWER_ENTRY: "[LOCATION.GetRank.GetIcon] [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L$#!" # todo: NEW TRANSLATION
  ESTATE_LOCATION_POWER_BREAKDOWN: "$VAL$ z dôvodu\nPočet [POP_TYPE.GetName] v [Location.GetName]: $SIZE$\nZáklad pre [POP_TYPE.GetName]: x$BASE$\n$MODIFIER$" # todo: CHANGED (predtym: $VAL$ z dôvodu\nPočet [POP_TYPE.GetName] v [Location.GetName]: $SIZE$\nZáklad pre [ESTATE.GetName]: x$BASE$\n$MODIFIER$)
  ESTATE_LOCATION_POWER_LOCAL_MODIFIER_HEADER: "$BULLET_WITH_TAB$ #T $MODIFIER$ z [LOCATION.GetName]#!\n" # todo: NEW TRANSLATION
- ESTATE_LOCATION_POWER_GLOBAL_MODIFIER_HEADER: "$BULLET_WITH_TAB$ #T Globálne modifikátory z [Country.GetName]#!\n" # todo: NEW TRANSLATION
+ ESTATE_LOCATION_POWER_GLOBAL_MODIFIER_HEADER: "$BULLET_WITH_TAB$ #T Globálne modifikátory z [SKCountry(Country,'G')]#!\n" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_CHANGE: "$VAL|+=%$" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_CHANGE_INITIAL: "[ESTATE.GetName]: $PRE_POST_HIT_TEXT$" # todo: NEW TRANSLATION
  ESTATE_SATISFACTION_PRE_HIT: "$VAL|%$@satisfaction_neutral!" # todo: NEW TRANSLATION
@@ -384,7 +384,7 @@
  REFORMS_SCROLL_LIST_EMPTY: "Žiadne reformy nevyhovujú tomuto vyhľadávaciemu kritériu" # todo: NEW TRANSLATION
  ADD_REFORM_TT: "Zaviesť [GOVERNMENT_REFORM.GetName] ako súčasť našej vlády" # todo: NEW TRANSLATION
  ADD_REFORM_TT_UNIQUE: "Unikátny [Concept('government_reform','reforma vlády')|e] pre [Player.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- GOVERNMENT_REFORM_EXCLUSIVE_FOR_COUNTRY: "Táto reforma je exkluzívna pre [Country.GetName]" # todo: NEW TRANSLATION
+ GOVERNMENT_REFORM_EXCLUSIVE_FOR_COUNTRY: "Táto reforma je exkluzívna pre [SKCountry(Country,'A')]" # todo: NEW TRANSLATION
  GOVERNMENT_REFORM_EXCLUSIVE_FOR_CULTURE: "Táto reforma je vyhradená pre [Concept('culture','kultúru')|e] krajiny [Country.GetCulture.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOVERNMENT_REFORM_EXCLUSIVE_FOR_RELIGION: "Táto reforma je vyhradená pre [Concept('religion','náboženstvo')|e] krajiny [Country.GetReligion.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADD_REFORM_MAJOR: "@trigger_no! Už máme [Concept('major_reform','hlavná reforma')|e], [GOVERNMENT_REFORM.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -492,7 +492,7 @@
  INTEGRATE_CULTURE_WAR: "[CULTURE.GetName] [Concept('cultural_influence','Kultúrny vplyv')|e] proti [TARGET_CULTURE.GetName] [Concept('cultural_tradition','kultúrnej tradícii')|e]: $VAL|+=%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTEGRATE_SAME_CULTURE: "[CULTURE.GetName] je [Concept('dominant_culture','dominantná kultúra')|e]: $VAL|+=2%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTEGRATE_DIFFERENT_CULTURE: "[TARGET_CULTURE.GetName] je [Concept('dominant_culture','dominantná kultúra')|e]: $VAL|+=2%$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ASSIMILATE_CULTURE_WAR: "[CULTURE.GetName] [Concept('cultural_influence','Kultúrny vplyv')|e] proti [TARGET_CULTURE.GetName] [Concept('cultural_tradition','kultúrnej tradícii')|e]: $VAL|+=2%" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ASSIMILATE_CULTURE_WAR: "[CULTURE.GetName] [Concept('cultural_influence','Kultúrny vplyv')|e] proti [TARGET_CULTURE.GetName] [Concept('cultural_tradition','kultúrnej tradícii')|e]: $VAL|+=2%$" # todo: CHANGED (predtym: [CULTURE.GetName] [Concept('cultural_influence','Kultúrny vplyv')|e] proti [TARGET_CULTURE.GetName] [Concept('cultural_t)
  ASSIMILATE_SAME_CULTURE: "[CULTURE.GetName] je [Concept('dominant_culture','dominantná kultúra')|e]: $VAL|+=%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ASSIMILATE_DIFFERENT_CULTURE: "[TARGET_CULTURE.GetName] je [Concept('dominant_culture','dominantná kultúra')|e]: $VAL|+=%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ASSIMILATE_MERGED_CULTURE_GROUP: "[CULTURE.GetName] je [Concept('merged_culture_group','zjednotená kultúrna skupina')|e] [TARGET_CULTURE.GetName]: $VAL|+=%2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1191,7 +1191,7 @@
  bolshogo_dvortsa_action_progress_long_wordier: "@religious_influence! [SCOPE.sCountry('actor').GetModifierValue('monthly_religious_influence')]\n    @court_spending! [SCOPE.sCountry('actor').GetCourtSpendingCost]" # todo: CHANGED
  bolshogo_dvortsa_action_progress_tooltip: "Zvyšuje $MODIFIER_TYPE_NAME_monthly_religious_influence$\n[SCOPE.sCountry('actor').GetDescriptionFor('monthly_religious_influence')]" # todo: CHANGED
  bolshogo_dvortsa_action_progress_tooltip_1: "Znižuje náklady na dvorské výdavky\n[SCOPE.sCountry('actor').GetCourtSpendingCostDetails]" # todo: CHANGED
- gaituguiliu_policy: "Gǎitǔguīliú Policy" # todo: NEW TRANSLATION
+ gaituguiliu_policy: "Politika gǎitǔguīliú" # todo: CHANGED (predtym: Gǎitǔguīliú Policy)
  gaituguiliu_policy_desc: "Toto zvýši asimiláciu akéhokoľvek cudzieho [Concept('culture','kultúry')|e] a náš zisk $celestial_authority$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  gaituguiliu_policy_action: "$gaituguiliu_policy$" # todo: NEW TRANSLATION
  gaituguiliu_policy_active: "Presadzovanie politiky Gǎitǔguīliú" # todo: NEW TRANSLATION

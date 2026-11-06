@@ -12,13 +12,13 @@
  flavor_bav.2.c: "Musíme rešpektovať tradíciu." # todo: NEW TRANSLATION
  flavor_bav.3.title: "[GetCountry('LBV').GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_bav.3.entry: "$LBV$ sa dostáva pod vládu Ludwiga" # todo: NEW TRANSLATION
- flavor_bav.3.desc: "Vojvoda Dolného Bavorska [target_cousin.GetName] zomrel! Keďže trpel leprou, jeho smrť nie je prekvapením, naša rodina je však stále v smútku a musí prerokovať, čo sa s [GetCountry('LBV').GetName] stane po jeho odchode.\n\n[target_ruler.GetName] bol požiadaný, aby vystupoval ako vedúca postava pre mladého dediča, a my by sme to mohli využiť pri snahe o zjednotenie Bavorska, dlhoročný cieľ pre [target_ruler.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_bav.3.desc: "Vojvoda Dolného Bavorska [target_cousin.GetName] zomrel! Keďže trpel leprou, jeho smrť nie je prekvapením, naša rodina je však stále v smútku a musí prerokovať, čo sa s [SKCountry(GetCountry('LBV'),'I')] stane po jeho odchode.\n\n[target_ruler.GetName] bol požiadaný, aby vystupoval ako vedúca postava pre mladého dediča, a my by sme to mohli využiť pri snahe o zjednotenie Bavorska, dlhoročný cieľ pre [target_ruler.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_bav.3.a: "Spojme ho s nami." # todo: NEW TRANSLATION
  flavor_bav.3.b: "Anexujme ho priamo!" # todo: NEW TRANSLATION
  flavor_bav.3.c: "Nemiešajme sa do ich záležitostí." # todo: NEW TRANSLATION
- flavor_bav.4.title: "Naši rivali v [GetCountry('BOH').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_bav.4.title: "Naši rivali v [SKCountryNoTooltip(GetCountry('BOH'),'L')]" # todo: NEW TRANSLATION
  flavor_bav.4.entry: "Vztahy Wittelsbachovcov a Luxemburkov" # todo: NEW TRANSLATION
- flavor_bav.4.desc: "Posledné desaťročia formoval konflikt medzi rodmi [target_ruler.GetName] a [target_rival.GetName], pričom rod [target_ruler.GetDynasty.GetName] obmedzoval vplyv [GetCountry('BOH').GetName] na severe [GetUniqueInternationalOrganization('hre').GetName] tým, že vymenoval členov svojej rodiny za [GetCountry('BRA').GetGovernment.GetRulerTitle] [GetCountry('BRA').GetName]. Naše novšie vzťahy boli pomerne stabilné, ale nový stret môže vypuknúť kedykoľvek. Možno je čas pochovať staré urážky a zmieriť sa s [GetCountry('BOH').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_bav.4.desc: "Posledné desaťročia formoval konflikt medzi rodmi [target_ruler.GetName] a [target_rival.GetName], pričom rod [target_ruler.GetDynasty.GetName] obmedzoval vplyv [GetCountry('BOH').GetName] na severe [GetUniqueInternationalOrganization('hre').GetName] tým, že vymenoval členov svojej rodiny za [GetCountry('BRA').GetGovernment.GetRulerTitle] [GetCountry('BRA').GetName]. Naše novšie vzťahy boli pomerne stabilné, ale nový stret môže vypuknúť kedykoľvek. Možno je čas pochovať staré urážky a zmieriť sa s [SKCountryNoTooltip(GetCountry('BOH'),'I')]." # todo: NEW TRANSLATION
  flavor_bav.4.a: "Skúsme zmieriť naše vzťahy." # todo: NEW TRANSLATION
  flavor_bav.4.b: "Sú našimi nepriateľmi z dobrého dôvodu!" # todo: NEW TRANSLATION
  flavor_bav.5.title: "Južná hrozba" # todo: NEW TRANSLATION
@@ -83,7 +83,7 @@
  flavor_bav.24.b: "Určite si sám zbohatne." # todo: CHANGED
  flavor_bav.25.title: "Reinheitsgebot z roku [GetCurrentYear]" # todo: NEW TRANSLATION
  flavor_bav.25.entry: "Reinheitsgebot tohto roku" # todo: NEW TRANSLATION
- flavor_bav.25.desc: "V roku [GetCurrentYear] [target_ruler.GetName] z [target_country.GetName] vydal Reinheitsgebot, nový zákon upravujúci varenie [ShowGoodsName('beer')] naprieč [target_country.GetFlavorRank]. Obmedzením prísad na jačmeň, chmeľ a vodu sa [target_country.GetGovernment.GetRulerTitle] snaží zabezpečiť kvalitu [target_country.GetAdjectiveWithNoTooltip] piva a chrániť svojich poddaných pred škodlivými prísadami. Tento zákon nielenže zaručuje lepšiu chuť [ShowGoodsNameWithNoTooltip('beer')], ale tiež stabilizuje ceny a posilňuje reputáciu [target_country.GetAdjectiveWithNoTooltip] pív v celom [GetInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ flavor_bav.25.desc: "V roku [GetCurrentYear] [target_ruler.GetName] z [SKCountry(target_country,'G')] vydal Reinheitsgebot, nový zákon upravujúci varenie [ShowGoodsName('beer')] naprieč [target_country.GetFlavorRank]. Obmedzením prísad na jačmeň, chmeľ a vodu sa [target_country.GetGovernment.GetRulerTitle] snaží zabezpečiť kvalitu [target_country.GetAdjectiveWithNoTooltip] piva a chrániť svojich poddaných pred škodlivými prísadami. Tento zákon nielenže zaručuje lepšiu chuť [ShowGoodsNameWithNoTooltip('beer')], ale tiež stabilizuje ceny a posilňuje reputáciu [target_country.GetAdjectiveWithNoTooltip] pív v celom [GetInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  flavor_bav.25.a: "[target_country.GetAdjectiveWithNoTooltip] [ShowGoodsNameWithNoTooltip('beer')] budú najlepšie!" # todo: NEW TRANSLATION
  flavor_bav.25.a.entry: "Ich [ShowGoodsNameWithNoTooltip('beer')] budú tie najlepšie!" # todo: NEW TRANSLATION
  flavor_bav.25.b: "Takéto obmedzenia môžu poškodiť kreativitu sládkov." # todo: NEW TRANSLATION
@@ -115,8 +115,8 @@
  flavor_bav.29.b: "Odmietnuť ich žiadosť a zachovať status quo." # todo: NEW TRANSLATION
  flavor_bav.29.historical_info: "Uprostred Tridsaťročnej vojny čelil cisár Ferdinand II. zložitej úlohe odmeňovania verných spojencov a zároveň udržiavania krehkého mocenského balansu v rámci Svätého rímskeho impéria. Vojvoda Maximilián I. z Bavorska bol rozhodujúci pri podpore katolíckej veci, najmä vedením Katolíckej ligy a vojenskými príspevkami, ako napríklad po víťazstve pri Bielej hore v roku 1620. Ako uznanie jeho vernosti a na posilnenie katolíckej pozície v ríši zvolal Ferdinand II. diétu v Regensburgu v roku 1623 a previedol elektorát od protestantského kurfirsta Falckého, Fridricha V., ktorý bol postavený mimo zákon, na Maximiliána I. Toto strategické rozhodnutie odmenilo verného spojenca a prekonfigurovalo volebnú krajinu v prospech katolíckej frakcie, čím posilnilo cisársku autoritu v búrlivom období." # todo: NEW TRANSLATION
  flavor_bav.30.title: "[bavaria_country.GetNameWithNoTooltip] povýšené na [ShowSpecialStatusNameWithNoTooltip('elector')]" # todo: NEW TRANSLATION
- flavor_bav.30.desc: "[emperor_ruler.GetName] sa rozhodol udeliť [home_ruler.GetName] a [bavaria_country.GetName] prestížny titul [ShowSpecialStatusName('elector')]. To predstavuje rozhodujúci moment pre [bavaria_country.GetNameWithNoTooltip], keď sa dostáva do pozície významného vplyvu v rámci [GetInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
- flavor_bav.30.a: "Pre [bavaria_country.GetNameWithNoTooltip] začína nová éra!" # todo: CHANGED
+ flavor_bav.30.desc: "[emperor_ruler.GetName] sa rozhodol udeliť [home_ruler.GetName] a [bavaria_country.GetName] prestížny titul [ShowSpecialStatusName('elector')]. To predstavuje rozhodujúci moment pre [SKCountryNoTooltip(bavaria_country,'A')], keď sa dostáva do pozície významného vplyvu v rámci [GetInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ flavor_bav.30.a: "Pre [SKCountryNoTooltip(bavaria_country,'A')] začína nová éra!" # todo: CHANGED
  flavor_bav.30.a.entry: "Pre nich začína nová éra!" # todo: NEW TRANSLATION
  flavor_bav.31.title: "[GetUniqueInternationalOrganization('hre').GetLeaderTitle] zamietol žiadosť" # todo: NEW TRANSLATION
  flavor_bav.31.entry: "Žiadosť zamietnutá $hre$" # todo: NEW TRANSLATION
@@ -138,9 +138,9 @@
  flavor_bav.1000.a: "Ukažme im našu nadradenosť." # todo: NEW TRANSLATION
  flavor_bav.1000.b: "Ukončime toto súperenie a ukážme im našu veľkosť." # todo: NEW TRANSLATION
  flavor_bav.1000.c: "Radšej nie." # todo: NEW TRANSLATION
- flavor_bav.1001.title: "Naši príbuzní z [GetCountry('BAV').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_bav.1001.title: "Naši príbuzní z [SKCountryNoTooltip(GetCountry('BAV'),'G')]" # todo: NEW TRANSLATION
  flavor_bav.1001.desc: "Vladár [GetCountry('BAV').GetName] [bav_ruler.GetName] nám poslal milý dar na oslavu vzostupu ich príbuzného, nášho drahého [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Je v našom najlepšom záujme pestovať srdečné vzťahy medzi našimi krajinami." # todo: NEW TRANSLATION # todo: COUNTRY CASE
- flavor_bav.1001.desc_rival: "Naši kedysi rivali z [GetCountry('BAV').GetName] poslali dar na oslavu vzostupu svojho príbuzného, nášho drahého [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Je v našom najlepšom záujme rýchlo ukončiť naše staré nepriateľstvo a začať budovať lepší vzťah." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_bav.1001.desc_rival: "Naši kedysi rivali z [SKCountry(GetCountry('BAV'),'G')] poslali dar na oslavu vzostupu svojho príbuzného, nášho drahého [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Je v našom najlepšom záujme rýchlo ukončiť naše staré nepriateľstvo a začať budovať lepší vzťah." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_bav.1001.desc_union: "[GetCountry('BAV').GetLongName] poslali dar na oslavu vzostupu nášho drahého [ROOT.GetCountry.GetGovernment.GetRuler.GetName] na ich trón. Je v našom najlepšom záujme pestovať srdečné vzťahy v našom novo vzniknutom zväze." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_bav.1001.a: "Prijať dar." # todo: NEW TRANSLATION
  flavor_bav.1001.b: "Ukončiť naše zbytočné súperenie." # todo: NEW TRANSLATION

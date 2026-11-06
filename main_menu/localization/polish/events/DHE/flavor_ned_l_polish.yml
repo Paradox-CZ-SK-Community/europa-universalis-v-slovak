@@ -17,7 +17,7 @@
  flavor_ned.2.d.entry: "[ShowLocationNameWithNoTooltip('sunda_kelapa')] MUSÍ byť postavené!" # todo: NEW TRANSLATION
  flavor_ned.3.title: "[target_character2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ned.3.entry: "Frederick Coyett, guvernér Formosy" # todo: NEW TRANSLATION
- flavor_ned.3.desc: "S vzostupom nášho obchodného impéria sa k nám pridávajú mnohé významné osobnosti, či už sú členmi [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] alebo [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. Jedným z nich je [target_character2.GetName], [ShowCultureName('swedish')] občan, ktorý si buduje meno v [target_country2.GetName] a túži sa raz stať guvernérom jednej z našich kolónií." # todo: NEW TRANSLATION
+ flavor_ned.3.desc: "S vzostupom nášho obchodného impéria sa k nám pridávajú mnohé významné osobnosti, či už sú členmi [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] alebo [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. Jedným z nich je [target_character2.GetName], [ShowCultureName('swedish')] občan, ktorý si buduje meno v [SKCountry(target_country2,'L')] a túži sa raz stať guvernérom jednej z našich kolónií." # todo: NEW TRANSLATION
  flavor_ned.3.historical_info: "Narodený v Štokholme, Frederick Coyett bol prvým Švédom, ktorý preskúmal Východnú Áziu; väčšinu času pôsobil ako diplomat VOC v Dejima, úspešne riešil #italic Nanbu Affair#!, čo viedlo k prepusteniu niekoľkých holandských väzňov zo šogunátu. Po mnohých úspešných rokovaniach bol vymenovaný za guvernéra Formosy. Avšak keď padla dynastia Míng, stratil guvernérstvo aj celý ostrov v prospech #italic Zhèng Chénggōng#!. Zvyšok svojich rokov prežil v Batavii, kde zbieral množstvo hinduistických sôch." # todo: NEW TRANSLATION
  flavor_ned.3.a: "Dovolíme mu, aby nám slúžil." # todo: NEW TRANSLATION
  flavor_ned.3.b: "Do tejto krajiny ho nepustíme." # todo: NEW TRANSLATION
@@ -74,7 +74,7 @@
  flavor_ned.13.desc: "Ako sa rozvíja veda, rozširuje sa aj naše poznanie okolia. Mnohí chcú toto poznanie ďalej rozvíjať a začali študovať na mnohých univerzitách. Jedným z nich je [target_artist.GetName], mikrobiológ z [ShowLocationName('the_hague')]. Aj keď jeho práca nie je uznávaná, môžeme sa mu pokúsiť pomôcť v tomto úsilí." # todo: NEW TRANSLATION
  flavor_ned_13.historical_info: "Antonie Philips van Leeuwenhoek je známy svojimi prielomami v oblasti mikrobiológie a mnohí historici a vedci ho označujú za Otca mikrobiológie. Ako samouk sa mu podarilo etablovať mikrobiológiu ako oficiálny vedecký odbor. Jeho experimenty na sebe mu umožnili preskúmať svoju krv, čo viedlo k objavu červených krviniek." # todo: NEW TRANSLATION
  flavor_ned.13.a: "Udelíme prostriedky na podporu mikrobiológie." # todo: NEW TRANSLATION
- flavor_ned.13.b: "Neprislúcha do [target_country2.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_ned.13.b: "Neprislúcha do [SKCountryNoTooltip(target_country2,'G')]." # todo: NEW TRANSLATION
  flavor_ned.13.b.entry: "Do nich nepatrí." # todo: NEW TRANSLATION
  flavor_ned.14.title: "Zjedenie [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ned.14.entry: "Zjedenie veľkého penzionára" # todo: RETRANSLATED ENGLISH
@@ -88,7 +88,7 @@
  flavor_ned.16.a.entry: "Ich kultúra bude známa v každom kúte." # todo: NEW TRANSLATION
  flavor_ned.17.title: "Textilný priemysel v [target_location.GetNameWithNoTooltip] a [target_location2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ned.17.entry: "Textilný priemysel Nízkych krajín" # todo: NEW TRANSLATION
- flavor_ned.17.desc: "Územia [target_country.GetName] sú bohaté na farbivá, čo nám umožňuje vyrábať všetky druhy tkanín. Dva z najznámejších cechov sú v [target_location.GetName] a [target_location2.GetName], oba veľmi cenné pre [target_country.GetNameWithNoTooltip]. [target_character.GetName] má plány pomôcť obom cechom, avšak uprednostnenie jedného pred druhým nám môže dovoliť ďalej špecializovať náš textilný priemysel." # todo: NEW TRANSLATION
+ flavor_ned.17.desc: "Územia [target_country.GetName] sú bohaté na farbivá, čo nám umožňuje vyrábať všetky druhy tkanín. Dva z najznámejších cechov sú v [target_location.GetName] a [target_location2.GetName], oba veľmi cenné pre [SKCountryNoTooltip(target_country,'A')]. [target_character.GetName] má plány pomôcť obom cechom, avšak uprednostnenie jedného pred druhým nám môže dovoliť ďalej špecializovať náš textilný priemysel." # todo: NEW TRANSLATION
  flavor_ned.17.a: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] v [target_location.GetNameWithNoTooltip] budú mať našu pomoc." # todo: NEW TRANSLATION
  flavor_ned.17.a.entry: "Stav $burghers_estate$ v danej lokalite dostane našu pomoc." # todo: NEW TRANSLATION
  flavor_ned.17.b: "Podpora [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] v [target_location2.GetNameWithNoTooltip] nám prinesie viac výhod." # todo: CHANGED
@@ -130,7 +130,7 @@
  flavor_ned.22.c.entry: "Namiesto aby sme ho žiadali, zamestnajme ho naplno." # todo: NEW TRANSLATION
  flavor_ned.23.title: "Sloboda morí" # todo: NEW TRANSLATION
  flavor_ned.23.entry: "$flavor_ned.23.title$" # todo: NEW TRANSLATION
- flavor_ned.23.desc: "Hoci myšlienka [ShowSocietyDirectionName('free_trade')] nie je v [ROOT.GetCountry.GetAltAdjective('L')] neznáma, debaty medzi protekcionizmom a [ShowSocietyDirectionNameWithNoTooltip('free_trade')] sú čoraz ostrejšie. Jedným z filozofov zúčastňujúcich sa týchto diskusií je [target_character2.GetName], ktorý slúžil ako zámořský obchodník pre [ROOT.GetCountry.GetFlavorRank]. Už začal písať svoju novú traktát, a mohol by tak presadiť váhy na stranu [ShowSocietyDirectionNameWithNoTooltip('free_trade')]." # todo: CHANGED (predtym: Hoci myšlienka [ShowSocietyDirectionName('free_trade')] nie je v [ROOT.GetCountry.GetName] neznáma, debaty medzi protekc) # todo: COUNTRY CASE
+ flavor_ned.23.desc: "Hoci myšlienka [ShowSocietyDirectionName('free_trade')] nie je v [ROOT.GetCountry.GetAltAdjective('L')] neznáma, debaty medzi protekcionizmom a [ShowSocietyDirectionNameWithNoTooltip('free_trade')] sú čoraz ostrejšie. Jedným z filozofov zúčastňujúcich sa týchto diskusií je [target_character2.GetName], ktorý slúžil ako zámorský obchodník pre [ROOT.GetCountry.GetFlavorRank]. Už začal písať svoju novú traktát, a mohol by tak presadiť váhy na stranu [ShowSocietyDirectionNameWithNoTooltip('free_trade')]." # todo: CHANGED (predtym: Hoci myšlienka [ShowSocietyDirectionName('free_trade')] nie je v [ROOT.GetCountry.GetAltAdjective('L')] neznáma, debaty )
  flavor_ned.23.a: "Nech to dokončí, sloboda obchodu je u nás vítaná." # todo: NEW TRANSLATION
  flavor_ned.23.b: "Nesmie byť v [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('L')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_ned.23.b.entry: "Nie je u nás dovolený." # todo: NEW TRANSLATION
@@ -201,13 +201,13 @@
  flavor_ned.1000.a.entry: "Sprisahanie proti nemu? Musíme ich zastaviť!" # todo: NEW TRANSLATION
  NED_UNLESS_IF_WE_SECURE_LEGITIMACY_ENGLISH_NOBLES_WILL_INVITE_DUTCH_RULER: "Pokiaľ bude naša [Concept('legitimacy','legitimita')|e] nižšia než #Y 80#!, existuje šanca, že [ROOT.GetCountry.GetCulture.GetName] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] pozvú [target_character2.GetName], aby nad nimi vládol." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ned.1001.title: "Nesmrtelných sedem" # todo: NEW TRANSLATION
- flavor_ned.1001.desc: "Keď sa situácia v [target_country.GetName] zhoršuje a [target_character2.GetName] je vnímaný ako falošný [target_country.GetGovernment.GetRulerTitle], časť ich [target_country.GetGovernment.GetEstateName('nobles_estate')] oslovila [target_character.GetName] a ponúkla [target_character.GetHerHim] [target_country.GetAdjectiveWithNoTooltip] korunu, ak [target_character.GetHeShe] prijme." # todo: NEW TRANSLATION
- flavor_ned.1001.a: "Vyplávme do [target_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_ned.1001.desc: "Keď sa situácia v [SKCountry(target_country,'L')] zhoršuje a [target_character2.GetName] je vnímaný ako falošný [target_country.GetGovernment.GetRulerTitle], časť ich [target_country.GetGovernment.GetEstateName('nobles_estate')] oslovila [target_character.GetName] a ponúkla [target_character.GetHerHim] [target_country.GetAdjectiveWithNoTooltip] korunu, ak [target_character.GetHeShe] prijme." # todo: NEW TRANSLATION
+ flavor_ned.1001.a: "Vyplávme do [SKCountryNoTooltip(target_country,'G')]." # todo: NEW TRANSLATION
  flavor_ned.1001.a.entry: "Vyplávajme k nim." # todo: NEW TRANSLATION
  flavor_ned.1001.b: "Počkaj, nikdy sme s týmto nesúhlasili!" # todo: NEW TRANSLATION
  flavor_ned.1002.title: "Slávna revolúcia" # todo: NEW TRANSLATION
  flavor_ned.1002.entry: "$flavor_ned.1002.title$" # todo: NEW TRANSLATION
- flavor_ned.1002.desc: "Po zvrhnutí starej vlády v [target_country.GetName] je [target_character.GetName] teraz právoplatným vládcom všetkých [target_country.GetAdjectiveWithNoTooltip] území. [target_character.GetHeShe|U] a [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sú teraz pripravení prerokovať záležitosť [target_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_ned.1002.desc: "Po zvrhnutí starej vlády v [SKCountry(target_country,'L')] je [target_character.GetName] teraz právoplatným vládcom všetkých [target_country.GetAdjectiveWithNoTooltip] území. [target_character.GetHeShe|U] a [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sú teraz pripravení prerokovať záležitosť [target_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_ned.1002.a: "Budú poddaní [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')]." # todo: NEW TRANSLATION
  flavor_ned.1002.a.entry: "Budú poddanými nášho $crown_estate$." # todo: NEW TRANSLATION
  variable_glorious_revolution_immortal_seven_flag_tt: "Nesmrtelní siedmi pozvali našu intervenciu" # todo: NEW TRANSLATION

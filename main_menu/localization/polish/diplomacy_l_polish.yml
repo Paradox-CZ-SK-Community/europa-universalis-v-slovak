@@ -74,7 +74,7 @@
  GREAT_POWER_AREA_BREAKDOWN_HEADER: "Prítomnosť v oblastiach:" # todo: NEW TRANSLATION
  GREAT_POWER_AREA_DOMINATED: "@trigger_yes![AREA.GetName] $COUNT$ z $THRESHOLD$ potrebných: #TOOLTIP:$BREAKDOWN_TAG$ $PTS|+=$#!" # todo: NEW TRANSLATION
  GREAT_POWER_AREA_PARTIAL: "@trigger_no![AREA.GetName] $COUNT$ z $THRESHOLD$ potrebných: #TOOLTIP:$BREAKDOWN_TAG$ $PTS|R$#!" # todo: NEW TRANSLATION
- GREAT_POWER_AREA_SCORE_BREAKDOWN: "#T [Concept('great_power_points','Body veľmoci')|E] from [AREA.GetNameWithNoTooltip]#!\nCelková daňová základňa oblasti: $AREA_TAX_BASE|2V$\nGlobálny medián oblastí [tax_base]: $POINT_UNIT|2V$\n#italic Celkom / Medián: ($RAW_POINTS|2V$)#!\nHodnota $RAW_POINTS|2V$ obmedzená na 1-10: $PTS|V0$" # todo: CHANGED NUMBER
+ GREAT_POWER_AREA_SCORE_BREAKDOWN: "#T [Concept('great_power_points','Body veľmoci')|E] z [AREA.GetNameWithNoTooltip]#!\nCelková daňová základňa oblasti: $AREA_TAX_BASE|2V$\nGlobálny medián oblastí [tax_base]: $POINT_UNIT|2V$\n#italic Celkom / Medián: ($RAW_POINTS|2V$)#!\nHodnota $RAW_POINTS|2V$ obmedzená na 1-20: $PTS|V0$" # todo: CHANGED (predtym: T [Concept('great_power_points','Body veľmoci')|E] from [AREA.GetNameWithNoTooltip] !\nCelková daňová základňa oblasti: )
  REGIONAL_POWER_NOT_ADJACENT_REGION: "@trigger_no! Ako [Concept('regional_power','regionálna mocnosť')|e] môžeme použiť túto akciu iba proti [Concept('countries','krajine')|e] v našom vlastnom alebo susednom [Concept('regions','regióne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_SCORE_OVERLORD: "[SUBJECT_TYPE.GetName] odovzdáva $PERCENT|+=0%$ [Concept('overlord','suzerén')|e] $OVERLORD$: $VAL|+=0$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_SCORE_EXEMPT_FROM_FORFEIT: "Oslobodené od odovzdania:" # todo: NEW TRANSLATION
@@ -258,7 +258,7 @@
  SHED_SHACKLES_OF_ILKHANATE_WAR_NAME: "$NUM$$ORDER$ vojna proti $SECONDNAME$ za $cb_shed_shackles_of_the_ilkahante$" # todo: CHANGED
  religious_superiority_WAR_NAME: "Vojna náboženstiev" # todo: NEW TRANSLATION
  LATIN_RECONQUEST_WAR_NAME: "The $NUM$$ORDER$ rekonkvista proti $SECONDNAME$" # todo: NEW TRANSLATION
- SECURE_ITALY_WAR_NAME: "The $NUM$$ORDER$ Italian War of $FIRSTNAME$ against $SECONDNAME$" # todo: NEW TRANSLATION
+ SECURE_ITALY_WAR_NAME: "$NUM$$ORDER$ talianska vojna $FIRSTNAME$ proti $SECONDNAME$" # todo: CHANGED (predtym: The $NUM$$ORDER$ Italian War of $FIRSTNAME$ against $SECONDNAME$)
  LIST_OF_DEMANDS: "Zoznam požiadaviek:\n" # todo: NEW TRANSLATION
  LIST_OF_OFFERS: "Zoznam ponúk:\n" # todo: NEW TRANSLATION
  STATUS_ANTAGONISM_ALERT_TT: "Stav" # todo: NEW TRANSLATION
@@ -335,7 +335,7 @@
  ACCEPTANCE_CHANCE_TOOLTIP_TITLE: "Šanca na prijatie" # todo: NEW TRANSLATION
  ACCEPTANCE_CHANCE_TOOLTIP_FOOTER: "Ide o pravdepodobnosť a nie je nikdy zaručená." # todo: NEW TRANSLATION
  AI_WILL_ATTACK_ENTRY_FORMAT: "$KEY$: $VALUE|-=2$" # todo: NEW TRANSLATION
- DP_MODIFIER_SCALE_FORMAT: "$KEY$: $VALUE+=„$" # todo: CHANGED MINOR
+ DP_MODIFIER_SCALE_FORMAT: "$KEY$: $VALUE|+=$" # todo: CHANGED (predtym: $KEY$: $VALUE+=„$)
  TWO_DP_NEG_ENTRY_FORMAT: "$KEY$: $VALUE|-=2$" # todo: NEW TRANSLATION
  TWO_DP_ENTRY_FORMAT: "Naše $KEY$: $VALUE|+=2$" # todo: NEW TRANSLATION
  TWO_DP_ENTRY_FORMAT_PERCENT: "$KEY|Y$: $VALUE|+2%$" # todo: NEW TRANSLATION
@@ -750,7 +750,7 @@
  DIPLOREASON_WAR_EXHAUSTION: "[Concept('war_exhaustion','Vojnová vyčerpanosť')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLOREASON_LOW_MANPOWER: "Nízka zásoba mužstva" # todo: NEW TRANSLATION
  DIPLOREASON_LEVY_AVAILABILITY: "Dostupnosť [Concept('levy','branec')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DIPLOREASON_DISLOYAL_SUBJECT: "Nevernosný subjekt" # todo: NEW TRANSLATION
+ DIPLOREASON_DISLOYAL_SUBJECT: "Nelojálny vazal" # todo: CHANGED (predtym: Nevernosný subjekt)
  DIPLOREASON_NO_ACTION: "Príliš ticho" # todo: NEW TRANSLATION
  DIPLOREASON_SEPARATE_PEACE: "Separátny mier" # todo: NEW TRANSLATION
  DIPLOREASON_NEEDS_HELP: "Potrebujú pomoc" # todo: NEW TRANSLATION
@@ -997,7 +997,7 @@
  BUILD_SPYNETWORK_NO_SPYNETWORK: "@trigger_no! Nevybudovávame [Concept('spy_network','špionážna sieť')|E] v [SKCountry(COUNTRY,'L')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNTER_SPYNETWORK_SUBJECT: "@trigger_no! [COUNTRY.GetName] [SKCountryRod(COUNTRY,'je','je','je','sú')] [Concept('subject','vazal')|e] $OVERLORD$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTERVENE_IN_WARTITLE: "Zasiahnuť do vojny" # todo: NEW TRANSLATION
- INTERVENE_IN_WAR_CATEGORY: "CATEGORY_FRIENDLY_ACTIONS" # todo: CHANGED
+ INTERVENE_IN_WAR_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: CHANGED (predtym: CATEGORY_FRIENDLY_ACTIONS)
  INTERVENE_IS_ALREADY_IN_WAR: "@trigger_no! Už sme v inej [Concept('war','vojne')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTERVENE_IN_WAR_NOT_AT_WAR: "@trigger_no!$WHO$ nie je vo [Concept('war','vojne')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTERVENE_IN_WAR_NOT_SUBJECT: "@trigger_no!$WHO$ je subjekt." # todo: NEW TRANSLATION
@@ -2179,7 +2179,7 @@
  ABANDONCIVILWAR_NOT_LEADER: "@trigger_no! Ak sa chceme z $WAR$ stiahnuť, budeme sa musieť dohodnúť s $LEADER|Y$." # todo: NEW TRANSLATION
  ABANDONCIVILWAR_NOT_SUBJECT: "@trigger_no! Subjekty nemôžu opustiť [Concept('civil_war','občianska vojna')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ABANDONCIVILWAR_NO_WAR: "@trigger_no! Neexistuje žiadna [Concept('civil_war','občianska vojna')|e], v ktorej spoločne bojujeme a ktorú by sme mohli opustiť." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ABANDON_CONFIRM: "My a naši [Concept('subjects','vazalov')|e] opustíme [WAR.GetName], čo okamžite ovplyvní názor $WHO$ na nás o $VAL|+=." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ABANDON_CONFIRM: "My a naši [Concept('subjects','vazalov')|e] opustíme [WAR.GetName], čo okamžite ovplyvní názor $WHO$ na nás o $VAL|+=$." # todo: CHANGED (predtym: My a naši [Concept('subjects','vazalov')|e] opustíme [WAR.GetName], čo okamžite ovplyvní názor $WHO$ na nás o $VAL|+=.)
  INSULTTITLE: "Poslať urážku" # todo: NEW TRANSLATION
  INSULT_CATEGORY: "CATEGORY_HOSTILE_ACTIONS" # todo: NEW TRANSLATION
  INSULTDESC: "Toto výrazne naruší názory našich [Concept('countries','krajiny')|e] a poskytne im [Concept('casus_belli','casus belli')|e] proti nám na 5 rokov." # todo: NEW TRANSLATION # todo: CONCEPT CASE

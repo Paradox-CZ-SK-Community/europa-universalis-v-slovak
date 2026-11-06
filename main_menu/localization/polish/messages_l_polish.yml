@@ -297,9 +297,9 @@
  OTHER_PERFORMS_gag_join_faction_ACTION_SETUP: "Keď iná krajina vstúpi do frakcie." # todo: NEW TRANSLATION
  OTHER_PERFORMS_gag_join_faction_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_gag_join_faction_ACTION_TITLE: "[SCOPE.sInternationalOrganization('target').GetNameWithNoTooltip] sa rozširuje!" # todo: NEW TRANSLATION
- OTHER_PERFORMS_gag_join_faction_ACTION_DESC: "The [SCOPE.sCountry('actor').GetLongName] have joined the [SCOPE.sInternationalOrganization('target').GetName]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_gag_join_faction_ACTION_DESC: "[SCOPE.sCountry('actor').GetLongName] sa pripojili k [SCOPE.sInternationalOrganization('target').GetName]." # todo: CHANGED (predtym: The [SCOPE.sCountry('actor').GetLongName] have joined the [SCOPE.sInternationalOrganization('target').GetName].)
  OTHER_PERFORMS_gag_join_faction_ACTION_FLAVOR: "[SCOPE.sInternationalOrganization('target').GetType.GetTooltip]" # todo: NEW TRANSLATION
- OTHER_PERFORMS_gag_join_faction_ACTION_LOG: "The [SCOPE.sCountry('actor').GetLongName] have joined the [SCOPE.sInternationalOrganization('target').GetName]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_gag_join_faction_ACTION_LOG: "[SCOPE.sCountry('actor').GetLongName] sa pripojili k [SCOPE.sInternationalOrganization('target').GetName]." # todo: CHANGED (predtym: The [SCOPE.sCountry('actor').GetLongName] have joined the [SCOPE.sInternationalOrganization('target').GetName].)
  OTHER_PERFORMS_gag_join_faction_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_gag_join_faction_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_gag_join_faction_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -1970,9 +1970,9 @@
  PERFORM_demand_autonomy_ACTION_MAP: "" # todo: NEW TRANSLATION
  PERFORM_request_papal_delegates_ACTION_SETUP: "Keď krajina požaduje pápežských delegátov počas Storočnej vojny." # todo: CHANGED
  PERFORM_request_papal_delegates_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- PERFORM_request_papal_delegates_ACTION_TITLE: "[GetCountry('PAP').GetLongName] vydal dekrét o ukončení vojny medzi [GetCountry('FRA').GetName] a [GetCountry('ENG').GetName]" # todo: NEW TRANSLATION
+ PERFORM_request_papal_delegates_ACTION_TITLE: "[GetCountry('PAP').GetLongName] vydal dekrét o ukončení vojny medzi [SKCountry(GetCountry('FRA'),'I')] a [GetCountry('ENG').GetName]" # todo: NEW TRANSLATION
  PERFORM_request_papal_delegates_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
- PERFORM_request_papal_delegates_ACTION_LOG: "Boli požiadaní mediátori z [GetCountry('PAP').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ PERFORM_request_papal_delegates_ACTION_LOG: "Boli požiadaní mediátori z [SKCountryNoTooltip(GetCountry('PAP'),'G')]" # todo: NEW TRANSLATION
  PERFORM_request_papal_delegates_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  PERFORM_request_papal_delegates_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_request_papal_delegates_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -2051,9 +2051,9 @@
  PERFORM_request_war_entry_ACTION_MAP: "" # todo: NEW TRANSLATION
  PERFORM_hyw_sign_truce_ACTION_SETUP: "Keď [Concept('country','krajina')|e] vykoná [ShowGenericActionName('hyw_sign_truce')] počas [ShowSituationName('hundred_years_war')] [Concept('situation','situácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PERFORM_hyw_sign_truce_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- PERFORM_hyw_sign_truce_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] podpísal [Concept('truce','prímerie')|e] s [target_country.GetName]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PERFORM_hyw_sign_truce_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] podpísal [Concept('truce','prímerie')|e] s [SKCountry(target_country,'I')]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PERFORM_hyw_sign_truce_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
- PERFORM_hyw_sign_truce_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] podpísali [Concept('truce','prímerie')|e] s [target_country.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PERFORM_hyw_sign_truce_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] podpísali [Concept('truce','prímerie')|e] s [SKCountry(target_country,'I')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PERFORM_hyw_sign_truce_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  PERFORM_hyw_sign_truce_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_hyw_sign_truce_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -3080,8 +3080,8 @@
  PERFORM_rtr_support_faction_ACTION_BTN2: "Ok" # todo: NEW TRANSLATION
  PERFORM_rtr_support_faction_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  PERFORM_rtr_support_faction_ACTION_MAP: "" # todo: NEW TRANSLATION
- PERFORM_rtr_declare_independence_ACTION: "Vyhlásili nezávislosť od [GetCountry('CHI').GetName]" # todo: NEW TRANSLATION
- PERFORM_rtr_declare_independence_ACTION_SETUP: "Keď vyhlásime svoju nezávislosť od [GetCountry('CHI').GetName]." # todo: NEW TRANSLATION
+ PERFORM_rtr_declare_independence_ACTION: "Vyhlásili nezávislosť od [SKCountry(GetCountry('CHI'),'G')]" # todo: NEW TRANSLATION
+ PERFORM_rtr_declare_independence_ACTION_SETUP: "Keď vyhlásime svoju nezávislosť od [SKCountry(GetCountry('CHI'),'G')]." # todo: NEW TRANSLATION
  PERFORM_rtr_declare_independence_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  PERFORM_rtr_declare_independence_ACTION_TITLE: "Vyhlásená nezávislosť!" # todo: NEW TRANSLATION
  PERFORM_rtr_declare_independence_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetName] vyhlásil svoju nezávislosť od [GetCountry('CHI').GetLongName]." # todo: NEW TRANSLATION
@@ -3538,7 +3538,7 @@
  PERFORM_ghibellines_petition_for_imperial_support_ACTION_SETUP: "Keď požiadame o cisársku podporu." # todo: NEW TRANSLATION
  PERFORM_ghibellines_petition_for_imperial_support_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  PERFORM_ghibellines_petition_for_imperial_support_ACTION_TITLE: "Požiadali o cisársku podporu!" # todo: NEW TRANSLATION
- PERFORM_ghibellines_petition_for_imperial_support_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetName] požiadal o cisársku podporu od [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]." # todo: NEW TRANSLATION
+ PERFORM_ghibellines_petition_for_imperial_support_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetName] požiadal o cisársku podporu od [SKCountry(GetUniqueInternationalOrganization('hre').GetLeaderCountry,'G')]." # todo: NEW TRANSLATION
  PERFORM_ghibellines_petition_for_imperial_support_ACTION_LOG: "Požiadali o cisársku podporu." # todo: NEW TRANSLATION
  PERFORM_ghibellines_petition_for_imperial_support_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  PERFORM_ghibellines_petition_for_imperial_support_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
@@ -3548,7 +3548,7 @@
  WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_TITLE: "Požiadaná cisárska podpora" # todo: NEW TRANSLATION
  WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
- WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_LOG: "Požiadali sme o cisársku podporu od [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]." # todo: NEW TRANSLATION
+ WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_LOG: "Požiadali sme o cisársku podporu od [SKCountry(GetUniqueInternationalOrganization('hre').GetLeaderCountry,'G')]." # todo: NEW TRANSLATION
  WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_ghibellines_petition_for_imperial_support_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -3593,7 +3593,7 @@
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_TITLE: "Požiadaná cisárska podpora" # todo: NEW TRANSLATION
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
- OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] požiadal o cisársku podporu od [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]." # todo: CHANGED (predtym: Iní požiadali o cisársku podporu od [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName].)
+ OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] požiadal o cisársku podporu od [SKCountry(GetUniqueInternationalOrganization('hre').GetLeaderCountry,'G')]." # todo: CHANGED (predtym: Iní požiadali o cisársku podporu od [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName].)
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_ghibellines_petition_for_imperial_support_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -3811,16 +3811,16 @@
  PERFORM_invade_neighbor_beylik_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_invade_neighbor_beylik_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  PERFORM_invade_neighbor_beylik_ACTION_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_invade_neighbor_beylik_ACTION_SETUP: "When we invade a neighboring Beylik." # todo: NEW TRANSLATION
+ WE_PERFORM_invade_neighbor_beylik_ACTION_SETUP: "Keď napadneme susedný bejlik." # todo: CHANGED (predtym: When we invade a neighboring Beylik.)
  WE_PERFORM_invade_neighbor_beylik_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- WE_PERFORM_invade_neighbor_beylik_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] have planned to invade a neighboring Beylik" # todo: NEW TRANSLATION
+ WE_PERFORM_invade_neighbor_beylik_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] plánujú napadnúť susedný bejlik" # todo: CHANGED (predtym: [SCOPE.sCountry('actor').GetName] have planned to invade a neighboring Beylik)
  WE_PERFORM_invade_neighbor_beylik_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
- WE_PERFORM_invade_neighbor_beylik_ACTION_LOG: "Commenced plans to invade [target.GetName]" # todo: NEW TRANSLATION
+ WE_PERFORM_invade_neighbor_beylik_ACTION_LOG: "Začali sme plánovať inváziu do [SKCountry(target,'G')]" # todo: CHANGED (predtym: Commenced plans to invade [target.GetName])
  WE_PERFORM_invade_neighbor_beylik_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_invade_neighbor_beylik_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_invade_neighbor_beylik_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  WE_PERFORM_invade_neighbor_beylik_ACTION_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_press_claims_ACTION_SETUP: "When we press claims." # todo: NEW TRANSLATION
+ WE_PERFORM_press_claims_ACTION_SETUP: "Keď uplatníme nároky." # todo: CHANGED (predtym: When we press claims.)
  WE_PERFORM_press_claims_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_press_claims_ACTION_TITLE: "Uplatňujú sa nároky" # todo: NEW TRANSLATION
  WE_PERFORM_press_claims_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
@@ -3829,7 +3829,7 @@
  WE_PERFORM_press_claims_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_press_claims_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  WE_PERFORM_press_claims_ACTION_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_raise_bey_fortress_ACTION_SETUP: "When we raise a Bey Fortress." # todo: NEW TRANSLATION
+ WE_PERFORM_raise_bey_fortress_ACTION_SETUP: "Keď postavíme bejskú pevnosť." # todo: CHANGED (predtym: When we raise a Bey Fortress.)
  WE_PERFORM_raise_bey_fortress_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_raise_bey_fortress_ACTION_TITLE: "V [target.GetName] bola vybudovaná Bey pevnosť [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
  WE_PERFORM_raise_bey_fortress_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
@@ -3838,7 +3838,7 @@
  WE_PERFORM_raise_bey_fortress_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_raise_bey_fortress_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  WE_PERFORM_raise_bey_fortress_ACTION_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_seek_relations_with_the_byzantines_ACTION_SETUP: "When we seek relations with $BYZ$." # todo: NEW TRANSLATION
+ WE_PERFORM_seek_relations_with_the_byzantines_ACTION_SETUP: "Keď budeme hľadať vzťahy s $BYZ$." # todo: CHANGED (predtym: When we seek relations with $BYZ$.)
  WE_PERFORM_seek_relations_with_the_byzantines_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_seek_relations_with_the_byzantines_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] nadviazali diplomatické vzťahy s $BYZ$" # todo: NEW TRANSLATION
  WE_PERFORM_seek_relations_with_the_byzantines_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
@@ -3847,7 +3847,7 @@
  WE_PERFORM_seek_relations_with_the_byzantines_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_seek_relations_with_the_byzantines_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  WE_PERFORM_seek_relations_with_the_byzantines_ACTION_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_examine_our_fortifications_ACTION_SETUP: "When we inspect our fortifications." # todo: NEW TRANSLATION
+ WE_PERFORM_examine_our_fortifications_ACTION_SETUP: "Keď skontrolujeme naše opevnenia." # todo: CHANGED (predtym: When we inspect our fortifications.)
  WE_PERFORM_examine_our_fortifications_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_examine_our_fortifications_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] kontrolujú svoje opevnenia" # todo: NEW TRANSLATION
  WE_PERFORM_examine_our_fortifications_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
@@ -3856,7 +3856,7 @@
  WE_PERFORM_examine_our_fortifications_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_examine_our_fortifications_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  WE_PERFORM_examine_our_fortifications_ACTION_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_offer_diplomatic_protection_ACTION_SETUP: "When we offer diplomatic protection to a country." # todo: NEW TRANSLATION
+ WE_PERFORM_offer_diplomatic_protection_ACTION_SETUP: "Keď ponúkneme krajine diplomatickú ochranu." # todo: CHANGED (predtym: When we offer diplomatic protection to a country.)
  WE_PERFORM_offer_diplomatic_protection_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_offer_diplomatic_protection_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] ponúkli diplomatickú ochranu [target.GetName]" # todo: NEW TRANSLATION
  WE_PERFORM_offer_diplomatic_protection_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
@@ -3867,9 +3867,9 @@
  WE_PERFORM_offer_diplomatic_protection_ACTION_MAP: "" # todo: NEW TRANSLATION
  OTHER_PERFORMS_invade_neighbor_beylik_ACTION_SETUP: "Keď [Concept('country','krajina')|e] môže napadnúť iný [Concept('country','krajina')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OTHER_PERFORMS_invade_neighbor_beylik_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- OTHER_PERFORMS_invade_neighbor_beylik_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] have planned to invade a neighboring Beylik" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_invade_neighbor_beylik_ACTION_TITLE: "[SCOPE.sCountry('actor').GetName] plánujú napadnúť susedný bejlik" # todo: CHANGED (predtym: [SCOPE.sCountry('actor').GetName] have planned to invade a neighboring Beylik)
  OTHER_PERFORMS_invade_neighbor_beylik_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
- OTHER_PERFORMS_invade_neighbor_beylik_ACTION_LOG: "Commenced plans to invade [target.GetName]" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_invade_neighbor_beylik_ACTION_LOG: "Začali plánovať inváziu do [SKCountry(target,'G')]" # todo: CHANGED (predtym: Commenced plans to invade [target.GetName])
  OTHER_PERFORMS_invade_neighbor_beylik_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_invade_neighbor_beylik_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_invade_neighbor_beylik_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -3976,7 +3976,7 @@
  PERFORM_start_a_treasure_voyage_ACTION_EFFECTS: "[actor.GetName] vyslal výpravu za pokladmi!" # todo: NEW TRANSLATION
  PERFORM_start_a_treasure_voyage_ACTION_LOG: "Výprava za pokladmi vyslaná [actor.GetName]" # todo: NEW TRANSLATION
  PERFORM_start_a_treasure_voyage_ACTION_MAP: "" # todo: NEW TRANSLATION
- PERFORM_start_a_treasure_voyage_ACTION_SETUP: "When a Treasure Voyage departs." # todo: NEW TRANSLATION
+ PERFORM_start_a_treasure_voyage_ACTION_SETUP: "Keď vypláva výprava za pokladmi." # todo: CHANGED (predtym: When a Treasure Voyage departs.)
  PERFORM_contribute_to_organization_treasury_ACTION_TITLE: "Prispieť do pokladnice organizácie" # todo: NEW TRANSLATION
  PERFORM_contribute_to_organization_treasury_ACTION_SETUP: "Keď sú vykonané príspevky do pokladnice organizácie." # todo: NEW TRANSLATION
  PERFORM_contribute_to_organization_treasury_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
@@ -4196,9 +4196,9 @@
  PERFORM_demote_local_aristocracy_ACTION_MAP: "" # todo: NEW TRANSLATION
  PERFORM_spread_revolutionary_sentiment_ACTION_SETUP: "Keď [Concept('country','krajina')|e] vykoná [ShowGenericActionName('spread_revolutionary_sentiment')] počas [ShowSituationName('the_revolution')] [Concept('situation','situácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PERFORM_spread_revolutionary_sentiment_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- PERFORM_spread_revolutionary_sentiment_ACTION_TITLE: "Revolučné nálady v [target_country.GetName]!" # todo: NEW TRANSLATION
+ PERFORM_spread_revolutionary_sentiment_ACTION_TITLE: "Revolučné nálady v [SKCountry(target_country,'L')]!" # todo: NEW TRANSLATION
  PERFORM_spread_revolutionary_sentiment_ACTION_EFFECTS: "$EFFECT$" # todo: NEW TRANSLATION
- PERFORM_spread_revolutionary_sentiment_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] rozšírili revolučné nálady v [target_country.GetName]." # todo: NEW TRANSLATION
+ PERFORM_spread_revolutionary_sentiment_ACTION_LOG: "[SCOPE.sCountry('actor').GetName] rozšírili revolučné nálady v [SKCountry(target_country,'L')]." # todo: NEW TRANSLATION
  PERFORM_spread_revolutionary_sentiment_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  PERFORM_spread_revolutionary_sentiment_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_spread_revolutionary_sentiment_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -5887,7 +5887,7 @@
  WE_PERFORM_mfa_join_against_byz_ACTION_SETUP: "Keď pozývame niekoho do kampane proti [GetCountry('BYZ').GetLongName]." # todo: NEW TRANSLATION
  WE_PERFORM_mfa_join_against_byz_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_mfa_join_against_byz_ACTION_TITLE: "Pozvaný do kampane proti [GetCountry('BYZ').GetLongName]" # todo: NEW TRANSLATION
- WE_PERFORM_mfa_join_against_byz_ACTION_EFFECTS: "[recipient.GetName] bude povolaný proti [GetCountry('BYZ').GetName] s [Concept('event','udalosťou')|e] keď začnú [Concept('war','vojna')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WE_PERFORM_mfa_join_against_byz_ACTION_EFFECTS: "[recipient.GetName] bude povolaný proti [SKCountry(GetCountry('BYZ'),'D')] s [Concept('event','udalosťou')|e] keď začnú [Concept('war','vojna')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WE_PERFORM_mfa_join_against_byz_ACTION_LOG: "[actor.GetName] urobil $ACTION$" # todo: NEW TRANSLATION
  WE_PERFORM_mfa_join_against_byz_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_mfa_join_against_byz_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
@@ -5895,17 +5895,17 @@
  WE_PERFORM_mfa_join_against_byz_ACTION_MAP: "" # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_SETUP: "Keď nás niekto pozve do kampane proti [GetCountry('BYZ').GetLongName]." # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- ACTION_mfa_join_against_byz_PERFORMED_ON_US_TITLE: "Pozvaný do kampane proti [GetCountry('BYZ').GetName]" # todo: NEW TRANSLATION
+ ACTION_mfa_join_against_byz_PERFORMED_ON_US_TITLE: "Pozvaný do kampane proti [SKCountry(GetCountry('BYZ'),'D')]" # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_EFFECTS: "$WE_PERFORM_mfa_join_against_byz_ACTION_EFFECTS$" # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_LOG: "[actor.GetName] urobil $ACTION$" # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_BTN1: "OK" # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_BTN2: "OK" # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  ACTION_mfa_join_against_byz_PERFORMED_ON_US_MAP: "" # todo: NEW TRANSLATION
- OTHER_PERFORMS_mfa_join_against_byz_ACTION_SETUP: "Keď krajina pozve inú krajinu do kampane proti [GetCountry('BYZ').GetName]" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_mfa_join_against_byz_ACTION_SETUP: "Keď krajina pozve inú krajinu do kampane proti [SKCountry(GetCountry('BYZ'),'D')]" # todo: NEW TRANSLATION
  OTHER_PERFORMS_mfa_join_against_byz_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
- OTHER_PERFORMS_mfa_join_against_byz_ACTION_TITLE: "[recipient.GetName] pozvaný do kampane proti [GetCountry('BYZ').GetName]" # todo: NEW TRANSLATION
- OTHER_PERFORMS_mfa_join_against_byz_ACTION_EFFECTS: "[recipient.GetName] bol pozvaný do kampane proti [GetCountry('BYZ').GetName]!" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_mfa_join_against_byz_ACTION_TITLE: "[recipient.GetName] pozvaný do kampane proti [SKCountry(GetCountry('BYZ'),'D')]" # todo: NEW TRANSLATION
+ OTHER_PERFORMS_mfa_join_against_byz_ACTION_EFFECTS: "[recipient.GetName] bol pozvaný do kampane proti [SKCountry(GetCountry('BYZ'),'D')]!" # todo: NEW TRANSLATION
  OTHER_PERFORMS_mfa_join_against_byz_ACTION_LOG: "[actor.GetName] urobil $ACTION$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_mfa_join_against_byz_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_mfa_join_against_byz_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
@@ -6915,9 +6915,9 @@
  PERFORM_fall_of_delhi_appoint_governors_ACTION: "[GetCountry('DLH').GetAdjective] guvernéri vymenovaní!" # todo: NEW TRANSLATION
  PERFORM_fall_of_delhi_reaffirm_vassal_relations_ACTION: "[GetCountry('DLH').GetName] znovu potvrdil vazalské vzťahy!" # todo: NEW TRANSLATION
  PERFORM_fall_of_delhi_appease_the_nobility_ACTION: "[GetCountry('DLH').GetAdjective] [ShowEstateTypeName('nobles_estate')] uspokojené!" # todo: NEW TRANSLATION
- PERFORM_fall_of_delhi_join_opposers_ACTION: "[SCOPE.sCountry('actor').GetName] sa postavil proti [GetCountry('DLH').GetName]!" # todo: NEW TRANSLATION
+ PERFORM_fall_of_delhi_join_opposers_ACTION: "[SCOPE.sCountry('actor').GetName] sa postavil proti [SKCountry(GetCountry('DLH'),'D')]!" # todo: NEW TRANSLATION
  PERFORM_fall_of_delhi_join_delhi_ACTION: "[SCOPE.sCountry('actor').GetName] podporuje [GetCountry('DLH').GetName]!" # todo: NEW TRANSLATION
- PERFORM_fall_of_delhi_join_opposers_ACTION_SETUP: "Keď sa pripojíme proti [GetCountry('DLH').GetName] počas [ShowSituationName('fall_of_delhi')] [Concept('situation','situácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ PERFORM_fall_of_delhi_join_opposers_ACTION_SETUP: "Keď sa pripojíme proti [SKCountry(GetCountry('DLH'),'D')] počas [ShowSituationName('fall_of_delhi')] [Concept('situation','situácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PERFORM_fall_of_delhi_join_delhi_ACTION_SETUP: "Keď podporíme [GetCountry('DLH').GetName] počas [ShowSituationName('fall_of_delhi')] [Concept('situation','situácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PERFORM_rtr_negotiate_with_rebels_ACTION: "Vyjednávali sme s [target.GetName]!" # todo: NEW TRANSLATION
  PERFORM_rtr_call_loyalists_to_arms_ACTION: "Povolali sme [target.GetName] do zbrane!" # todo: NEW TRANSLATION
@@ -7655,7 +7655,7 @@
  ACTION_enforce_religious_unity_PERFORMED_ON_US_BTN2: "OK" # todo: NEW TRANSLATION
  ACTION_enforce_religious_unity_PERFORMED_ON_US_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  ACTION_enforce_religious_unity_PERFORMED_ON_US_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_demand_unlawful_territory_ACTION_SETUP: "When we demand Unlawful Territory from a member." # todo: NEW TRANSLATION
+ WE_PERFORM_demand_unlawful_territory_ACTION_SETUP: "Keď od člena požadujeme nezákonne držané územie." # todo: CHANGED (predtym: When we demand Unlawful Territory from a member.)
  WE_PERFORM_demand_unlawful_territory_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_demand_unlawful_territory_ACTION_TITLE: "Požadované nezákonné územie!" # todo: NEW TRANSLATION
  WE_PERFORM_demand_unlawful_territory_ACTION_EFFECTS: "Požiadali sme o nezákonné územie [SCOPE.sProvince('target').GetName] od [SCOPE.sCountry('recipient').GetAltAdjective('G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
@@ -8747,7 +8747,7 @@
  OTHER_PERFORMS_stop_disfavoring_sect_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_stop_disfavoring_sect_ACTION_TITLE: "Prestali odmietať sektu!" # todo: NEW TRANSLATION
  OTHER_PERFORMS_stop_disfavoring_sect_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetName] sa rozhodol prestať neuprednostňovať [SCOPE.sInternationalOrganization('target').GetName]." # todo: NEW TRANSLATION
- OTHER_PERFORMS_stop_disfavoring_sect_ACTION_LOG: "The [SCOPE.sCountry('actor').GetLongName] stopped disfavoring [SCOPE.sInternationalOrganization('target').GetName]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_stop_disfavoring_sect_ACTION_LOG: "[SCOPE.sCountry('actor').GetLongName] prestali znevýhodňovať [SCOPE.sInternationalOrganization('target').GetName]." # todo: CHANGED (predtym: The [SCOPE.sCountry('actor').GetLongName] stopped disfavoring [SCOPE.sInternationalOrganization('target').GetName].)
  OTHER_PERFORMS_stop_disfavoring_sect_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_stop_disfavoring_sect_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_stop_disfavoring_sect_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -9444,7 +9444,7 @@
  OTHER_PERFORMS_give_colony_representation_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_representation_ACTION_TITLE: "Zastúpenie udelené!" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_representation_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli poskytnúť zastúpenie [target_country.GetName]." # todo: NEW TRANSLATION
- OTHER_PERFORMS_give_colony_representation_ACTION_LOG: "The [SCOPE.sCountry('actor').GetLongName] decided to give representation to [target_country.GetName]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_give_colony_representation_ACTION_LOG: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli udeliť zastúpenie [SKCountry(target_country,'D')]." # todo: CHANGED (predtym: The [SCOPE.sCountry('actor').GetLongName] decided to give representation to [target_country.GetName].)
  OTHER_PERFORMS_give_colony_representation_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_representation_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_representation_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -9452,9 +9452,9 @@
  WE_PERFORM_establish_goods_act_ACTION_SETUP: "Keď zavedieme nový zákon o tovaroch." # todo: NEW TRANSLATION
  WE_PERFORM_establish_goods_act_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_establish_goods_act_ACTION_TITLE: "Zdanenie tovarov!" # todo: NEW TRANSLATION
- WE_PERFORM_establish_goods_act_ACTION_EFFECTS: "Rozhodli sme sa zaviesť nový zákon o tovaroch pre [target_country.GetName]." # todo: NEW TRANSLATION
+ WE_PERFORM_establish_goods_act_ACTION_EFFECTS: "Rozhodli sme sa zaviesť nový zákon o tovaroch pre [SKCountry(target_country,'A')]." # todo: NEW TRANSLATION
  WE_PERFORM_establish_goods_act_ACTION_DESC: "Zaplatia!" # todo: NEW TRANSLATION
- WE_PERFORM_establish_goods_act_ACTION_LOG: "Rozhodli sme sa zaviesť nový zákon o tovaroch pre [target_country.GetName]." # todo: NEW TRANSLATION
+ WE_PERFORM_establish_goods_act_ACTION_LOG: "Rozhodli sme sa zaviesť nový zákon o tovaroch pre [SKCountry(target_country,'A')]." # todo: NEW TRANSLATION
  WE_PERFORM_establish_goods_act_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_establish_goods_act_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_establish_goods_act_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -9462,8 +9462,8 @@
  OTHER_PERFORMS_establish_goods_act_ACTION_SETUP: "Keď iný [Concept('country','krajina')|e] zavedie nový zákon o tovaroch." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OTHER_PERFORMS_establish_goods_act_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_establish_goods_act_ACTION_TITLE: "Zdanenie tovarov!" # todo: NEW TRANSLATION
- OTHER_PERFORMS_establish_goods_act_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli zaviesť nový zákon o tovaroch pre [target_country.GetName]." # todo: NEW TRANSLATION
- OTHER_PERFORMS_establish_goods_act_ACTION_LOG: "The [SCOPE.sCountry('actor').GetLongName] decided to establish a new Goods Act to [target_country.GetName]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_establish_goods_act_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli zaviesť nový zákon o tovaroch pre [SKCountry(target_country,'A')]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_establish_goods_act_ACTION_LOG: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli zaviesť nový tovarový zákon pre [SKCountry(target_country,'A')]." # todo: CHANGED (predtym: The [SCOPE.sCountry('actor').GetLongName] decided to establish a new Goods Act to [target_country.GetName].)
  OTHER_PERFORMS_establish_goods_act_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_establish_goods_act_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_establish_goods_act_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -9471,9 +9471,9 @@
  WE_PERFORM_aid_colonial_war_ACTION_SETUP: "Keď pomáhame našej kolónii rekrutmi." # todo: NEW TRANSLATION
  WE_PERFORM_aid_colonial_war_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_aid_colonial_war_ACTION_TITLE: "Rekrúti odoslaní!" # todo: NEW TRANSLATION
- WE_PERFORM_aid_colonial_war_ACTION_EFFECTS: "Rozhodli sme sa poslať časť našich rekrutov do [target_country.GetName]." # todo: NEW TRANSLATION
+ WE_PERFORM_aid_colonial_war_ACTION_EFFECTS: "Rozhodli sme sa poslať časť našich rekrutov do [SKCountry(target_country,'G')]." # todo: NEW TRANSLATION
  WE_PERFORM_aid_colonial_war_ACTION_DESC: "Budú podporení!" # todo: NEW TRANSLATION
- WE_PERFORM_aid_colonial_war_ACTION_LOG: "Rozhodli sme sa poslať časť našich rekrutov do [target_country.GetName]." # todo: NEW TRANSLATION
+ WE_PERFORM_aid_colonial_war_ACTION_LOG: "Rozhodli sme sa poslať časť našich rekrutov do [SKCountry(target_country,'G')]." # todo: NEW TRANSLATION
  WE_PERFORM_aid_colonial_war_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_aid_colonial_war_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  WE_PERFORM_aid_colonial_war_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -9481,8 +9481,8 @@
  OTHER_PERFORMS_aid_colonial_war_ACTION_SETUP: "Keď iný [Concept('country','krajina')|e] pomáha svojej kolónii rekrutmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  OTHER_PERFORMS_aid_colonial_war_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_aid_colonial_war_ACTION_TITLE: "Rekrúti odoslaní!" # todo: NEW TRANSLATION
- OTHER_PERFORMS_aid_colonial_war_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli poslať časť svojich rekrutov do [target_country.GetName]." # todo: NEW TRANSLATION
- OTHER_PERFORMS_aid_colonial_war_ACTION_LOG: "The [SCOPE.sCountry('actor').GetLongName] decided to send some of their recruits to [target_country.GetName]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_aid_colonial_war_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli poslať časť svojich rekrutov do [SKCountry(target_country,'G')]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_aid_colonial_war_ACTION_LOG: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli poslať časť svojich regrútov do [SKCountry(target_country,'G')]." # todo: CHANGED (predtym: The [SCOPE.sCountry('actor').GetLongName] decided to send some of their recruits to [target_country.GetName].)
  OTHER_PERFORMS_aid_colonial_war_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_aid_colonial_war_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_aid_colonial_war_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -9501,7 +9501,7 @@
  OTHER_PERFORMS_give_colony_rebellion_support_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_rebellion_support_ACTION_TITLE: "Podpora povstania!" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_rebellion_support_ACTION_EFFECTS: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli poskytnúť podporu povstaniu [target_country.GetName]." # todo: NEW TRANSLATION
- OTHER_PERFORMS_give_colony_rebellion_support_ACTION_LOG: "The [SCOPE.sCountry('actor').GetLongName] decided to give support for rebellion to [target_country.GetName]." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_give_colony_rebellion_support_ACTION_LOG: "[SCOPE.sCountry('actor').GetLongName] sa rozhodli podporiť povstanie v [SKCountry(target_country,'L')]." # todo: CHANGED (predtym: The [SCOPE.sCountry('actor').GetLongName] decided to give support for rebellion to [target_country.GetName].)
  OTHER_PERFORMS_give_colony_rebellion_support_ACTION_BTN1: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_rebellion_support_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  OTHER_PERFORMS_give_colony_rebellion_support_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
@@ -10222,7 +10222,7 @@
  PERFORM_request_cardinal_seat_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_request_cardinal_seat_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  PERFORM_request_cardinal_seat_ACTION_MAP: "" # todo: NEW TRANSLATION
- WE_PERFORM_request_cardinal_seat_ACTION_SETUP: "When we request a new cardinal." # todo: NEW TRANSLATION
+ WE_PERFORM_request_cardinal_seat_ACTION_SETUP: "Keď požiadame o nového kardinála." # todo: CHANGED (predtym: When we request a new cardinal.)
  WE_PERFORM_request_cardinal_seat_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  WE_PERFORM_request_cardinal_seat_ACTION_TITLE: "$request_cardinal_seat$!" # todo: NEW TRANSLATION
  WE_PERFORM_request_cardinal_seat_ACTION_DESC: "[SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] požiadal, aby bol v našom štáte usadený nový kardinál [GetCountry('PAP').GetAdjective] autoritou." # todo: NEW TRANSLATION
@@ -10242,7 +10242,7 @@
  PERFORM_appoint_dynasty_cardinal_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_appoint_dynasty_cardinal_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  PERFORM_appoint_dynasty_cardinal_ACTION_MAP: "" # todo: NEW TRANSLATION
- OTHER_PERFORMS_request_cardinal_seat_ACTION_SETUP: "When someone requests a new cardinal." # todo: NEW TRANSLATION
+ OTHER_PERFORMS_request_cardinal_seat_ACTION_SETUP: "Keď niekto požiada o nového kardinála." # todo: CHANGED (predtym: When someone requests a new cardinal.)
  OTHER_PERFORMS_request_cardinal_seat_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  OTHER_PERFORMS_request_cardinal_seat_ACTION_TITLE: "$request_cardinal_seat$!" # todo: NEW TRANSLATION
  OTHER_PERFORMS_request_cardinal_seat_ACTION_DESC: "[SCOPE.sCountry('actor').GetGovernment.GetRuler.GetName] požiadal, aby bol v [SCOPE.sCountry('actor').GetAltAdjective('L')] usadený nový kardinál [GetCountry('PAP').GetAdjective] autoritou." # todo: NEW TRANSLATION # todo: COUNTRY CASE
@@ -10377,7 +10377,7 @@
  PERFORM_open_war_ACTION_BTN2: "OK" # todo: NEW TRANSLATION
  PERFORM_open_war_ACTION_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION
  PERFORM_open_war_ACTION_MAP: "" # todo: NEW TRANSLATION
- PERFORM_pilgrimage_to_cholula_ACTION_SETUP: "When we call for a pilgrimage to [ShowLocationName('cholollan')]." # todo: NEW TRANSLATION
+ PERFORM_pilgrimage_to_cholula_ACTION_SETUP: "Keď vyhlásime púť do [ShowLocationName('cholollan')]." # todo: CHANGED (predtym: When we call for a pilgrimage to [ShowLocationName('cholollan')].)
  PERFORM_pilgrimage_to_cholula_ACTION_HEADER: "$MESSENGER$" # todo: NEW TRANSLATION
  PERFORM_pilgrimage_to_cholula_ACTION_TITLE: "Výzva na púť do [ShowLocationName('cholollan')]!" # todo: NEW TRANSLATION
  PERFORM_pilgrimage_to_cholula_ACTION_EFFECTS: "Hlava [SCOPE.sCountry('actor').GetName] sa vydá na púť do [ShowLocationName('cholollan')]." # todo: NEW TRANSLATION
@@ -11790,7 +11790,7 @@
  CANCEL_SPYNETWORK_MAP: "Špionážna sieť opustená!" # todo: NEW TRANSLATION
  GREAT_POWER_STATUS_GAINED_SETUP: "Keď získame status [Concept('great_power','veľmoc')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_STATUS_GAINED_HEADER: "Získali sme status [Concept('great_power','veľmoc')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- GREAT_POWER_STATUS_GAINED_TITLE: "Veľká mocnosť" # todo: NEW TRANSLATION
+ GREAT_POWER_STATUS_GAINED_TITLE: "Veľmoc" # todo: CHANGED (predtym: Veľká mocnosť)
  GREAT_POWER_STATUS_GAINED_EFFECTS: "Stali sme sa jednou z [Concept('great_powers','veľmocí')|E]. Zvyšok sveta sa bude triasť pred našou mocou a sláva $ACTOR$ sa rozšíri za obzory." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_STATUS_GAINED_LOG: "$ACTOR$ sú teraz [Concept('great_power','veľmoc')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_STATUS_GAINED_BTN1: "Pôsobivé" # todo: NEW TRANSLATION
@@ -11798,7 +11798,7 @@
  GREAT_POWER_STATUS_GAINED_MAP: "$ACTOR$ teraz Veľká mocnosť." # todo: NEW TRANSLATION
  GREAT_POWER_STATUS_GAINED_OTHER_SETUP: "Keď [Concept('country','krajina')|e] získa status [Concept('great_power','veľmoc')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_STATUS_GAINED_OTHER_HEADER: "$OTHER$ dosiahli status [Concept('great_power','veľmoc')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- GREAT_POWER_STATUS_GAINED_OTHER_TITLE: "Veľká mocnosť" # todo: NEW TRANSLATION
+ GREAT_POWER_STATUS_GAINED_OTHER_TITLE: "Veľmoc" # todo: CHANGED (predtym: Veľká mocnosť)
  GREAT_POWER_STATUS_GAINED_OTHER_EFFECTS: "$OTHER$ sú teraz považovaní za [Concept('great_power','veľmoc')|E]. Bolo by múdre byť opatrný voči tomuto novému členovi svetových veľmocí." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GREAT_POWER_STATUS_GAINED_OTHER_FLAVOR: "Musíme ich prekabátiť." # todo: NEW TRANSLATION
  GREAT_POWER_STATUS_GAINED_OTHER_LOG: "$OTHER$ sú teraz [Concept('great_power','veľmoc')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -11976,7 +11976,7 @@
  DEBT_TOOK_FROM_US_TITLE: "Dlh prebraný" # todo: NEW TRANSLATION
  DEBT_TOOK_FROM_US_EFFECTS: "$MONARCHTITLE$, veľvyslanec z $ACTOR$ nás práve informoval, že sa postarali o všetky naše [Concept('debt','dlh')|e]!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DEBT_TOOK_FROM_US_FLAVOR: "Ako keby nám spadol kameň zo srdca!" # todo: NEW TRANSLATION
- DEBT_TOOK_FROM_US_LOG: "$ACTOR$ sa postarali o [Concept('debt','dlh')|e] vo výške $AMOUNT, ktoré sme mali." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ DEBT_TOOK_FROM_US_LOG: "$ACTOR$ sa postarali o [Concept('debt','dlh')|e] vo výške $AMOUNT$, ktoré sme mali." # todo: CHANGED (predtym: $ACTOR$ sa postarali o [Concept('debt','dlh')|e] vo výške $AMOUNT, ktoré sme mali.)
  DEBT_TOOK_FROM_US_BTN1: "OK" # todo: NEW TRANSLATION
  DEBT_TOOK_FROM_US_BTN2: "OK" # todo: NEW TRANSLATION
  DEBT_TOOK_FROM_US_BTN3: "$common_string_go_to$" # todo: NEW TRANSLATION

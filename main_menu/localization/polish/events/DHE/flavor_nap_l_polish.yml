@@ -22,7 +22,7 @@
  flavor_nap.7.b: "Ak ho chcú predať, asi to nebude dobré." # todo: NEW TRANSLATION
  flavor_nap.8.title: "$flavor_nap.6.title$" # todo: NEW TRANSLATION
  flavor_nap.8.entry: "$flavor_nap.8.title$" # todo: NEW TRANSLATION
- flavor_nap.8.common_desc: "Konečne sme dostali odpoveď od [target_country.GetName]." # todo: NEW TRANSLATION
+ flavor_nap.8.common_desc: "Konečne sme dostali odpoveď od [SKCountry(target_country,'G')]." # todo: NEW TRANSLATION
  flavor_nap.8.desc_success: "$flavor_nap.8.common_desc$ Našu slávnostnú ponuku privítali s veľkou pompou a radosťou v [target_country.GetAdjectiveWithNoTooltip] [target_country.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION
  flavor_nap.8.desc_failure: "$flavor_nap.8.common_desc$ Bohužiaľ, odmietli náš čestný návrh. A čo horšie, naši vyslanci boli prijatí výbuchom smiechu." # todo: NEW TRANSLATION
  flavor_nap.8.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
@@ -64,7 +64,7 @@
  flavor_nap.200.b.entry: "Budeme rešpektovať tradíciu, on zdedí trón." # todo: NEW TRANSLATION
  flavor_nap.201.title: "[GetCountry('NAP').GetAdjectiveWithNoTooltip] zákony" # todo: NEW TRANSLATION
  flavor_nap.201.entry: "Neapolské zákony" # todo: NEW TRANSLATION
- flavor_nap.201.desc: "Závet [target_character.GetName] vyvolal veľké povstanie v [GetCountry('NAP').GetLongName] zmenou zákona o dedičstve. Ak chceme zachovať úniu s [GetCountry('NAP').GetNameWithNoTooltip], budeme nútení zosúladiť naše zákony s ich zákonmi, čo môže spôsobiť, že budeme vyzerať ako slabší partner v Únii." # todo: NEW TRANSLATION
+ flavor_nap.201.desc: "Závet [target_character.GetName] vyvolal veľké povstanie v [GetCountry('NAP').GetLongName] zmenou zákona o dedičstve. Ak chceme zachovať úniu s [SKCountryNoTooltip(GetCountry('NAP'),'I')], budeme nútení zosúladiť naše zákony s ich zákonmi, čo môže spôsobiť, že budeme vyzerať ako slabší partner v Únii." # todo: NEW TRANSLATION
  flavor_nap.201.a: "Zachováme úniu." # todo: NEW TRANSLATION
  flavor_nap.201.b: "[ROOT.GetCountry.GetNameWithNoTooltip] nie sú podriadení." # todo: CHANGED
  flavor_nap.201.b.entry: "Nie sme podriadení." # todo: NEW TRANSLATION
@@ -104,7 +104,7 @@
  flavor_nap.230.b: "Nebudeme sa miešať do záležitostí [GetCountry('NAP').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_nap.230.b.entry: "Nebudeme sa miešať do záležitostí $NAP$." # todo: NEW TRANSLATION
  flavor_nap.231.title: "Rodina bezmocného kráľa" # todo: NEW TRANSLATION
- flavor_nap.231.desc: "Situáciu [GetCountry('NAP').GetAdjective] princa-konzorta [prince_consort.GetName] nám oznámil jeho blízky príbuzný [GetCountry('HUN').GetGovernment.GetRuler.GetName] z [GetCountry('HUN').GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetHisHer|U] príbuzní naďalej trpia ponižovaním tým, že v [GetCountry('NAP').GetNameWithNoTooltip] nemajú žiadnu skutočnú moc, aj keď je oprávneným kráľom, pretože dvor a šľachta sú vedení výlučne [GetCountry('NAP').GetGovernment.GetRuler.GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetNameWithNoTooltip] nás žiada, aby sme tomuto nespravodlivému stavu učinili koniec a korunovali [prince_consort.GetNameWithNoTooltip]." # todo: CHANGED
+ flavor_nap.231.desc: "Situáciu [GetCountry('NAP').GetAdjective] princa-konzorta [prince_consort.GetName] nám oznámil jeho blízky príbuzný [GetCountry('HUN').GetGovernment.GetRuler.GetName] z [SKCountry(GetCountry('HUN'),'G')].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetHisHer|U] príbuzní naďalej trpia ponižovaním tým, že v [SKCountryNoTooltip(GetCountry('NAP'),'L')] nemajú žiadnu skutočnú moc, aj keď je oprávneným kráľom, pretože dvor a šľachta sú vedení výlučne [GetCountry('NAP').GetGovernment.GetRuler.GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetNameWithNoTooltip] nás žiada, aby sme tomuto nespravodlivému stavu učinili koniec a korunovali [prince_consort.GetNameWithNoTooltip]." # todo: CHANGED
  flavor_nap.231.a: "Takáto situácia nemôže pokračovať. [prince_consort.GetShortNameWithNoTooltip] bude kráľ." # todo: NEW TRANSLATION
  flavor_nap.231.a.entry: "Tento stav nemôže pokračovať. konzort bude kráľ." # todo: NEW TRANSLATION
  flavor_nap.231.b: "Neumožníme [GetCountry('HUN').GetGovernment.GetRuler.GetShortNameWithNoTooltip] miešať sa do záležitostí iných." # todo: NEW TRANSLATION
@@ -131,7 +131,7 @@
  flavor_nap.240.a.tt: "Ak to schváli [GetCountry('PAP').GetGovernment.GetRuler.GetName], [target_location.GetName] už nebude súčasťou našich [Concept('core','jadra')|e] území" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nap.240.b: "Nikdy sa nevzdáme našich práv!" # todo: NEW TRANSLATION
  flavor_nap.241.title: "Ponuka za [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_nap.241.desc: "Mesto [target_location.GetName] je sídlom [ROOT.GetCountry.GetLongName] od roku 1309, keď ho [old_pope_scope.GetName] vybral na náhradu [rome_location.GetName]. Je plne kontrolované [ROOT.GetCountry.GetLongNameWithNoTooltip], no [GetCountry('NAP').GetGovernment.GetRulerTitle] z [GetCountry('NAP').GetName] si nárokuje nominálne právo nad ním. Dnes prišiel posol z [GetCountry('NAP').GetNameWithNoTooltip] s ponukou kúpiť si toto právo za obyčajné zlato.\n\nMáme túto ponuku prijať?" # todo: NEW TRANSLATION
+ flavor_nap.241.desc: "Mesto [target_location.GetName] je sídlom [ROOT.GetCountry.GetLongName] od roku 1309, keď ho [old_pope_scope.GetName] vybral na náhradu [rome_location.GetName]. Je plne kontrolované [ROOT.GetCountry.GetLongNameWithNoTooltip], no [GetCountry('NAP').GetGovernment.GetRulerTitle] z [SKCountry(GetCountry('NAP'),'G')] si nárokuje nominálne právo nad ním. Dnes prišiel posol z [SKCountryNoTooltip(GetCountry('NAP'),'G')] s ponukou kúpiť si toto právo za obyčajné zlato.\n\nMáme túto ponuku prijať?" # todo: NEW TRANSLATION
  flavor_nap.241.a: "Áno, akceptujeme to." # todo: NEW TRANSLATION
  flavor_nap.241.b: "Nie, nebudeme platiť za niečo, čo už vlastníme." # todo: NEW TRANSLATION
  flavor_nap.242.title: "Mesto [GetCountry('PAP').GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
@@ -182,7 +182,7 @@
  flavor_nap.300.b.entry: "Konzort je najlepším možným nástupcom." # todo: NEW TRANSLATION
  flavor_nap.300.c: "Dve Sicílie budú zjednotené, [palermo_ruler.GetNameWithNoTooltip] nás uspešne nahradí." # todo: NEW TRANSLATION
  flavor_nap.300.c.entry: "Dve Sicílie budú zjednotené, on nás zdedí." # todo: NEW TRANSLATION
- flavor_nap.300.d: "[french_ruler.GetNameWithNoTooltip] z [GetCountry('FRA').GetNameWithNoTooltip] bude vládnuť [GetCountry('NAP').GetNameWithNoTooltip]." # todo: CHANGED
+ flavor_nap.300.d: "[french_ruler.GetNameWithNoTooltip] z [SKCountryNoTooltip(GetCountry('FRA'),'G')] bude vládnuť [GetCountry('NAP').GetNameWithNoTooltip]." # todo: CHANGED
  flavor_nap.300.d.entry: "Vládca $FRA$ bude vládnuť $NAP$." # todo: NEW TRANSLATION
  flavor_nap.301.title: "[GetCountry('NAP').GetAdjectiveWithNoTooltip] Rozhodnutie" # todo: NEW TRANSLATION
  flavor_nap.301.desc: " [GetCountry('NAP').GetLongName] má nového panovníka, a keďže sme bývali spojení osobnou úniou, ak ju chceme zachovať, budeme musieť pozvať [naples_ruler.GetName], aby tiež vládol [ROOT.GetCountry.GetName]. Týmto sa možno únia zabezpečí, no zároveň nás to môže postaviť do úlohy juniorného partnera." # todo: NEW TRANSLATION
@@ -201,11 +201,11 @@
  flavor_nap.101.b: "Pošlite okamžitú pomoc pre preživších!" # todo: NEW TRANSLATION
  flavor_nap.101.a.tt: "[target_location.GetName] a susedné pobrežné [Concept('locations','lokality')|E] stratia [Concept('prosperity','prosperita')|e], stratia [Concept('pops','populácie')|e] a niektoré [Concept('buildings','budovy')|e] budú zasiahnuté tsunami" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_nap.101.b.tt: "[target_location.GetName] a susedné pobrežné [Concept('locations','lokality')|E] stratia [Concept('prosperity','prosperita')|e], stratia [Concept('pops','populácie')|e] a niektoré [Concept('buildings','budovy')|e] budú zasiahnuté tsunami\nKeďže investujeme peniaze, zničenie bude menšie, ak začneme obnovu skôr" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- flavor_nap_treaty_villeneuve_common: "[GetCountry('PAP').GetGovernment.GetRulerTitle] sa snaží sprostredkovať dohodu, ktorá by zabezpečila mier a stabilitu v regióne.\n\nNavrhovaná zmluva by vyznačila územia, uznávajúc kontrolu [GetCountry('NAP').GetNameWithNoTooltip] nad pevninou a kontrolu [GetCountry('SIC').GetNameWithNoTooltip] nad ostrovom. Podmienky by zahŕňali ročné tributné platby od [GetCountry('SIC').GetNameWithNoTooltip], dodanie vojnových galér pre [GetCountry('NAP').GetNameWithNoTooltip] a vojenskú podporu od [GetCountry('SIC').GetNameWithNoTooltip] pre [target_ruler.GetNameWithNoTooltip]'s [ROOT.GetCountry.GetFlavorRank]. [GetCountry('PAP').GetGovernment.GetRulerTitle] sa usiluje vybudovať zjednotené Kráľovstvo Sicílie pod svrchovanosťou [GetCountry('NAP').GetNameWithNoTooltip] a [GetCountry('PAP').GetLongName], čím zabezpečí spoluprácu a zabráni ďalším konfliktom." # todo: NEW TRANSLATION
+ flavor_nap_treaty_villeneuve_common: "[GetCountry('PAP').GetGovernment.GetRulerTitle] sa snaží sprostredkovať dohodu, ktorá by zabezpečila mier a stabilitu v regióne.\n\nNavrhovaná zmluva by vyznačila územia, uznávajúc kontrolu [GetCountry('NAP').GetNameWithNoTooltip] nad pevninou a kontrolu [GetCountry('SIC').GetNameWithNoTooltip] nad ostrovom. Podmienky by zahŕňali ročné tributné platby od [SKCountryNoTooltip(GetCountry('SIC'),'G')], dodanie vojnových galér pre [SKCountryNoTooltip(GetCountry('NAP'),'A')] a vojenskú podporu od [SKCountryNoTooltip(GetCountry('SIC'),'G')] pre [target_ruler.GetNameWithNoTooltip]'s [ROOT.GetCountry.GetFlavorRank]. [GetCountry('PAP').GetGovernment.GetRulerTitle] sa usiluje vybudovať zjednotené Kráľovstvo Sicílie pod svrchovanosťou [GetCountry('NAP').GetNameWithNoTooltip] a [GetCountry('PAP').GetLongName], čím zabezpečí spoluprácu a zabráni ďalším konfliktom." # todo: NEW TRANSLATION
  flavor_nap.102.title: "Zmluva z Villeneuve" # todo: NEW TRANSLATION
  flavor_nap.102.entry: "$flavor_nap.102.title$" # todo: NEW TRANSLATION
  flavor_nap.102.desc: "Zástupca [target_pope.GetName] oslovuje [ROOT.GetCountry.GetGovernment.GetRulerTitle] z [ROOT.GetCountry.GetAltAdjective('G')], [target_ruler.GetName], a navrhuje zmluvu na vyriešenie pretrvávajúceho sporu s [GetCountry('SIC').GetLongName], ktorú vládne [target_sicily_ruler.GetName]. $flavor_nap_treaty_villeneuve_common$" # todo: NEW TRANSLATION # todo: COUNTRY CASE
- flavor_nap.102.a: "[target_sicily_ruler.GetNameWithNoTooltip] môže vládnuť nad [GetCountry('SIC').GetNameWithNoTooltip], ak [target_sicily_ruler.GetSheHe] zloží hold." # todo: NEW TRANSLATION
+ flavor_nap.102.a: "[target_sicily_ruler.GetNameWithNoTooltip] môže vládnuť nad [SKCountryNoTooltip(GetCountry('SIC'),'I')], ak [target_sicily_ruler.GetSheHe] zloží hold." # todo: NEW TRANSLATION
  flavor_nap.102.a.entry: "Vládca môže panovať nad $SIC$, ak vzdá hold." # todo: NEW TRANSLATION
  flavor_nap.102.a.tt1: "[GetCountry('SIC').GetName] dostane udalosť, ktorá mu umožní podvoliť sa nám. Rozhodne sa, či nám bude platiť ročný tribut, pokiaľ si navzájom nikdy nevyhlásime vojnu alebo sa nestane naším vazalom." # todo: CHANGED
  flavor_nap.102.a.tt2: "Stratíme všetky naše [Concept('cores','jadrá')|e] v [ShowAreaName('sicily_area')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -219,7 +219,7 @@
  flavor_nap.103.tt1: "[GetCountry('NAP').GetName] dostane našu odpoveď" # todo: CHANGED
  flavor_nap.103.tt2: "[GetCountry('ARA').GetName] dostane našu odpoveď a môže sa pokúsiť nás prinútiť do [Concept('union','únie')|E]." # todo: CHANGED # todo: CONCEPT CASE
  flavor_nap.104.title: "$flavor_nap.102.title$" # todo: NEW TRANSLATION
- flavor_nap.104.desc: "[GetCountry('SIC').GetGovernment.GetRuler.GetName] z [GetCountry('SIC').GetLongName] sa stal vazalom [GetCountry('NAP').GetLongName] vďaka sprostredkovaniu [GetCountry('PAP').GetGovernment.GetRuler.GetName]. Keďže [GetCountry('SIC').GetLongNameWithNoTooltip] patrilo našej rodine od dobývania ostrova [GetCharacter('ara_pere_iii_arago').GetName] z [GetCountry('ARA').GetName], musíme niečo podniknúť, inak sa opäť stane [GetCountry('NAP').GetCulture.GetName]." # todo: NEW TRANSLATION
+ flavor_nap.104.desc: "[GetCountry('SIC').GetGovernment.GetRuler.GetName] z [GetCountry('SIC').GetLongName] sa stal vazalom [GetCountry('NAP').GetLongName] vďaka sprostredkovaniu [GetCountry('PAP').GetGovernment.GetRuler.GetName]. Keďže [GetCountry('SIC').GetLongNameWithNoTooltip] patrilo našej rodine od dobývania ostrova [GetCharacter('ara_pere_iii_arago').GetName] z [SKCountry(GetCountry('ARA'),'G')], musíme niečo podniknúť, inak sa opäť stane [GetCountry('NAP').GetCulture.GetName]." # todo: NEW TRANSLATION
  flavor_nap.104.a: "[GetCountry('SIC').GetNameWithNoTooltip] bude opäť naše." # todo: NEW TRANSLATION
  flavor_nap.104.a.entry: "$SIC$ bude opäť naše." # todo: NEW TRANSLATION
  flavor_nap.104.b: "Je, ako to je." # todo: NEW TRANSLATION
@@ -311,7 +311,7 @@
  flavor_nap.1202.a: "Budeme smútiť bez neho." # todo: NEW TRANSLATION
  flavor_nap.121.title: "Dlhy rodiny [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_nap.121.entry: "Dlh rodiny Boccaccia" # todo: NEW TRANSLATION
- flavor_nap.121.desc: "S ťažkým srdcom a ťažkým duchom bol [target_character.GetName], veľmi talentovaný umelec na našom dvore, nútený náhle odísť a opustiť svoj milovaný [ROOT.GetCountry.GetName] a odísť do [GetCountry('FLO').GetName]. Dlhy jeho otca vrhali tieň finančných problémov, prinútili ho vzdať sa známeho domova a vydať sa na neistú cestu, pričom jeho pero bolo horko-sladkým spoločníkom." # todo: NEW TRANSLATION
+ flavor_nap.121.desc: "S ťažkým srdcom a ťažkým duchom bol [target_character.GetName], veľmi talentovaný umelec na našom dvore, nútený náhle odísť a opustiť svoj milovaný [ROOT.GetCountry.GetName] a odísť do [SKCountry(GetCountry('FLO'),'G')]. Dlhy jeho otca vrhali tieň finančných problémov, prinútili ho vzdať sa známeho domova a vydať sa na neistú cestu, pričom jeho pero bolo horko-sladkým spoločníkom." # todo: NEW TRANSLATION
  flavor_nap.121.a: "$common_string_what_can_we_do$" # todo: NEW TRANSLATION
  flavor_nap.121.b: "Zaplatíme dlh, aby zostal s nami." # todo: NEW TRANSLATION
  flavor_nap.400.title: "Ťažké zdanenie" # todo: NEW TRANSLATION

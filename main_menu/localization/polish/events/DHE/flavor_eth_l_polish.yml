@@ -3,18 +3,18 @@
  flavor_eth.10.entry: "Pêro da Covilhã" # todo: NEW TRANSLATION
  flavor_eth.10.desc: "Na naše brehy prišiel podivný muž, no nepriplavil sa po trase [ShowAreaName('red_sea_area')], ktorou k nám obyčajne cestujú cudzinci. Tvrdí, že je členom výpravy zo juhu, výpravy, ktorá sa, pokiaľ vieme, ešte nikdy nepokúsila uskutočniť. Prináša pozdravy od iných kresťanských panovníkov, hoci jeho modlitba sa líši od toho, čo sme dovtedy videli. Ako s týmto mužom máme naložiť?" # todo: NEW TRANSLATION
  flavor_eth.10.a: "Poctiť ho a zabrániť mu odísť!" # todo: NEW TRANSLATION
- flavor_eth.10.a.desc: "Ďalší návštevníci čoskoro prídu z [GetCountry('POR').GetName]." # todo: NEW TRANSLATION
+ flavor_eth.10.a.desc: "Ďalší návštevníci čoskoro prídu z [SKCountry(GetCountry('POR'),'G')]." # todo: NEW TRANSLATION
  flavor_eth.10.b: "Vyhostiť ho!" # todo: NEW TRANSLATION
  flavor_eth.20.title: "Vyslanectvo je tu!" # todo: NEW TRANSLATION
  flavor_eth.20.entry: "$flavor_eth.20.title$" # todo: NEW TRANSLATION
  flavor_eth.20.desc: "[francisco_alvares.GetName], zastupujúci tú istú krajinu, ktorá poslala predchádzajúceho emisára, chce prerokovať, čo môžu naše dva režimy spolu dosiahnuť. Povedal, že hľadal #italic Prester John#!, a zjavne sme krajinou, ktorú hľadá. Máme začať výmenu?" # todo: NEW TRANSLATION
- flavor_eth.20.a: "Požiadajte o pomoc proti [GetCountry('MAM').GetNameWithNoTooltip]!" # todo: CHANGED
+ flavor_eth.20.a: "Požiadajte o pomoc proti [SKCountryNoTooltip(GetCountry('MAM'),'D')]!" # todo: CHANGED
  flavor_eth.20.a.entry: "Požiadajte o pomoc proti $MAM$!" # todo: NEW TRANSLATION
  flavor_eth.20.tt: "[GetCountry('POR').GetName] bude požiadaná o vojenskú pomoc" # todo: NEW TRANSLATION
  flavor_eth.20.b: "Požiadať o kultúrnu výmenu?" # todo: NEW TRANSLATION
  flavor_eth.20.c: "Možno by sa hodila obchodná dohoda?" # todo: NEW TRANSLATION
  flavor_eth.21.title: "Prester John?" # todo: NEW TRANSLATION
- flavor_eth.21.desc: " [GetCountry('ETH').GetGovernment.GetRulerTitle] z [GetCountry('ETH').GetName], ktorý môže byť, ale nemusí byť legendárny Prester John, zjavne upadol do ťažkých časov a prosí nás, aby sme pomohli [GetCountry('ETH').GetGovernment.GetRuler.GetHerHim] obnoviť [GetCountry('ETH').GetGovernment.GetRuler.GetHerHis] územia. [GetCountry('ETH').GetGovernment.GetRuler.GetSheHe] poslal(a) veľvyslanca menom [scope_mattheus.GetName]. [scope_mattheus.GetNameWithNoTooltip] je kresťan, hoci takého druhu, akého sme doteraz nevideli, a žiada nás, aby sme obnovili pánove právoplatné domény, avšak [GetCountry('MAM').GetAdjective] moc je stále hrozbou a zdá sa, že ide o veľké riziko s pochybným prínosom. Máme pomôcť [scope_mattheus.GetNameWithNoTooltip]?" # todo: NEW TRANSLATION
+ flavor_eth.21.desc: " [GetCountry('ETH').GetGovernment.GetRulerTitle] z [SKCountry(GetCountry('ETH'),'G')], ktorý môže byť, ale nemusí byť legendárny Prester John, zjavne upadol do ťažkých časov a prosí nás, aby sme pomohli [GetCountry('ETH').GetGovernment.GetRuler.GetHerHim] obnoviť [GetCountry('ETH').GetGovernment.GetRuler.GetHerHis] územia. [GetCountry('ETH').GetGovernment.GetRuler.GetSheHe] poslal(a) veľvyslanca menom [scope_mattheus.GetName]. [scope_mattheus.GetNameWithNoTooltip] je kresťan, hoci takého druhu, akého sme doteraz nevideli, a žiada nás, aby sme obnovili pánove právoplatné domény, avšak [GetCountry('MAM').GetAdjective] moc je stále hrozbou a zdá sa, že ide o veľké riziko s pochybným prínosom. Máme pomôcť [scope_mattheus.GetNameWithNoTooltip]?" # todo: NEW TRANSLATION
  flavor_eth.21.a: "Deus Vult!" # todo: NEW TRANSLATION
  opinion_military_aid: "Vojenská pomoc" # todo: NEW TRANSLATION
  flavor_eth.21.b: "Myslel som, že Prester John má pomáhať nám, nie naopak?" # todo: NEW TRANSLATION
@@ -27,7 +27,7 @@
  STATIC_MODIFIER_DESC_eth_mil_aid_from_portugal: "Vojenská pomoc od našich bratov vo viere proti nevercom, ktorých považujeme za spoločných nepriateľov" # todo: NEW TRANSLATION
  flavor_eth.23.title: "Boli sme zanedbaní" # todo: NEW TRANSLATION
  flavor_eth.23.entry: "$flavor_eth.23.title$" # todo: NEW TRANSLATION
- flavor_eth.23.desc: "Už neprichádzajú žiadne vyslanectvá z [GetCountry('POR').GetName], žiadni obchodníci a na našu žiadosť o pomoc nedostávame žiadnu odpoveď." # todo: NEW TRANSLATION
+ flavor_eth.23.desc: "Už neprichádzajú žiadne vyslanectvá z [SKCountry(GetCountry('POR'),'G')], žiadni obchodníci a na našu žiadosť o pomoc nedostávame žiadnu odpoveď." # todo: NEW TRANSLATION
  flavor_eth.23.a: "Sme sami!" # todo: NEW TRANSLATION
  flavor_eth.30.title: "Centralizačné reformy [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eth.30.entry: "$flavor_eth.30.title$" # todo: NEW TRANSLATION
@@ -61,13 +61,13 @@
  flavor_eth.80.b: "Vyhnite sa riziku nahnevania [GetCountry('MAM').GetNameWithNoTooltip]." # todo: CHANGED
  flavor_eth.80.b.entry: "Vyhnite sa riziku nahnevania $MAM$." # todo: NEW TRANSLATION
  flavor_eth.80.c: "Toto je dôvod na vojnu!" # todo: NEW TRANSLATION
- flavor_eth.81.title: "Prichádza list od [target_from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_eth.81.title: "Prichádza list od [SKCountryNoTooltip(target_from_country,'G')]" # todo: NEW TRANSLATION
  flavor_eth.81.desc: "Dostali sme dnes list od [target_ruler.GetName] z [target_from_country.GetLongName]. Správa je podrobným opisom mnohých domnelých previnení nášho [ROOT.GetCountry.GetFlavorRank] voči [ShowReligionAdjective('miaphysite')] obyvateľom žijúcim v našich hraniciach.\n\nPravdepodobne však nie je veľký dôvod na obavy, keďže patriarcha oboch [ShowReligionAdjectiveWithNoTooltip('miaphysite')] ľudí v [ShowRegionName('egypt_region')] a [ShowRegionName('ethiopia_region')] je náš zajatec. Zdá sa veľmi nepravdepodobné, že by [target_ruler.GetNameWithNoTooltip] riskoval(a) bezpečnosť svojho patriarchu kvôli takejto záležitosti." # todo: NEW TRANSLATION
  flavor_eth.81.a: "Poslať sarkastickú odpoveď." # todo: NEW TRANSLATION
  flavor_eth.81.b: "Pokus o ospravedlnenie a zlepšenie vzťahov." # todo: NEW TRANSLATION
  opinion_improved_relations: "Zlepšené vzťahy" # todo: NEW TRANSLATION
- flavor_eth.82.title: "Prišiel list od [target_from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_eth.82.desc: "Dostali sme správu, že [target_ruler.GetName] z [target_from_country.GetName] má pocit, že zle zaobchádzame s [ShowReligionAdjective('miaphysite')] obyvateľmi v našich krajinách. [target_ruler.GetSheHe|U] to jasne vníma ako dôvod na vojnu a koluje mnoho špekulácií, že útok zo strany [target_from_country.GetNameWithNoTooltip] by mohol byť bezprostredný." # todo: NEW TRANSLATION
+ flavor_eth.82.title: "Prišiel list od [SKCountryNoTooltip(target_from_country,'G')]" # todo: NEW TRANSLATION
+ flavor_eth.82.desc: "Dostali sme správu, že [target_ruler.GetName] z [SKCountry(target_from_country,'G')] má pocit, že zle zaobchádzame s [ShowReligionAdjective('miaphysite')] obyvateľmi v našich krajinách. [target_ruler.GetSheHe|U] to jasne vníma ako dôvod na vojnu a koluje mnoho špekulácií, že útok zo strany [target_from_country.GetNameWithNoTooltip] by mohol byť bezprostredný." # todo: NEW TRANSLATION
  flavor_eth.82.a: "Neodvážili by sa." # todo: NEW TRANSLATION
  flavor_eth.83.title: "Posol z [target_mam.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_eth.83.desc: "Dnes prišiel posol z [target_mam.GetName] do nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] s odpoveďou [target_mam_ruler.GetName] na naše obavy týkajúce sa [ShowReligionAdjective('miaphysite')] ľudí v [target_mam_ruler.GetHerHis] krajinách.\n\nOdpoveď je však ďaleko od ospravedlnenia, ktoré sme očakávali. [target_mam.GetGovernment.GetRulerTitle] dal najavo [target_mam_ruler.GetHerHis] opovrhnutie voči [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] a [target_mam_ruler.GetSheHe] sa vysmieva akejkoľvek forme odplaty, ktorú by sme mohli podniknúť." # todo: NEW TRANSLATION
@@ -86,8 +86,8 @@
  flavor_eth.85.a.entry: "$common_string_alright$" # todo: NEW TRANSLATION
  flavor_eth.90.title: "Smrť biskupa" # todo: NEW TRANSLATION
  flavor_eth.90.entry: "$flavor_eth.90.title$" # todo: NEW TRANSLATION
- flavor_eth.90.desc.a: "Biskup z [target_country.GetName] zomrel a [target_country.GetAdjectiveWithNoTooltip] cirkev požiadala o nástupcu od [ShowReligionAdjective('miaphysite')] patriarchu z [ShowLocationName('alexandria')].\n\nHoci patriarcha už vybral nástupcu, bola by to dobrá príležitosť ukázať [target_country.GetAdjectiveWithNoTooltip] ľuďom, kto tu velí. [target_ruler.GetName] z [target_country.GetNameWithNoTooltip] aktívne presadzuje politiku konverzie proti svojim [ShowReligionName('sunni')] poddaným a stále zadržiava veľvyslanca, ktorého sme poslali, aby ho pokarhali naposledy." # todo: NEW TRANSLATION
- flavor_eth.90.desc.b: "Biskup z [target_country.GetName] zomrel a [target_country.GetAdjectiveWithNoTooltip] cirkev požiadala o nástupcu od [ShowReligionAdjective('miaphysite')] patriarchu z [ShowLocationName('alexandria')].\n\nAj keď patriarcha už vybral nástupcu, bola by to dobrá príležitosť poslať odkaz a jasne ukázať [target_country.GetAdjectiveWithNoTooltip] ľuďom, kto je naozaj pri moci." # todo: NEW TRANSLATION
+ flavor_eth.90.desc.a: "Biskup z [SKCountry(target_country,'G')] zomrel a [target_country.GetAdjectiveWithNoTooltip] cirkev požiadala o nástupcu od [ShowReligionAdjective('miaphysite')] patriarchu z [ShowLocationName('alexandria')].\n\nHoci patriarcha už vybral nástupcu, bola by to dobrá príležitosť ukázať [target_country.GetAdjectiveWithNoTooltip] ľuďom, kto tu velí. [target_ruler.GetName] z [SKCountryNoTooltip(target_country,'G')] aktívne presadzuje politiku konverzie proti svojim [ShowReligionName('sunni')] poddaným a stále zadržiava veľvyslanca, ktorého sme poslali, aby ho pokarhali naposledy." # todo: NEW TRANSLATION
+ flavor_eth.90.desc.b: "Biskup z [SKCountry(target_country,'G')] zomrel a [target_country.GetAdjectiveWithNoTooltip] cirkev požiadala o nástupcu od [ShowReligionAdjective('miaphysite')] patriarchu z [ShowLocationName('alexandria')].\n\nAj keď patriarcha už vybral nástupcu, bola by to dobrá príležitosť poslať odkaz a jasne ukázať [target_country.GetAdjectiveWithNoTooltip] ľuďom, kto je naozaj pri moci." # todo: NEW TRANSLATION
  flavor_eth.90.a: "Zabrániť vymenovaniu nového biskupa." # todo: NEW TRANSLATION
  flavor_eth.90.b: "Do týchto záležitostí nemáme zasahovať." # todo: NEW TRANSLATION
  flavor_eth.91.title: "Chýbajúci biskup" # todo: NEW TRANSLATION
@@ -194,7 +194,7 @@
  flavor_eth.165.a: "Všetko pre [ShowReligionNameWithNoTooltip('miaphysite')]." # todo: NEW TRANSLATION
  flavor_eth.165.b: "Doba náboženských sporov je za nami." # todo: NEW TRANSLATION
  flavor_eth.200.title: "[ewostatewos.GetNameWithNoTooltip] mních" # todo: NEW TRANSLATION
- flavor_eth.200.entry: "Ewostatewos the Monk" # todo: NEW TRANSLATION
+ flavor_eth.200.entry: "Mních Ewostatewos" # todo: CHANGED (predtym: Ewostatewos the Monk)
  flavor_eth.200.desc: "Počas našich ciest po krajine, aby sme navštívili našich náčelníkov, sme natrafili na múdreho muža, ktorý vyučoval obyčajných ľudí. [ewostatewos.GetName] je mních a náboženský vodca zo severu nášho [ROOT.GetCountry.GetFlavorRank], má kláštor a malú skupinu nasledovníkov, ale už po niekoľkých minútach počúvania jeho učenia sa náš biskup nad ním rýchlo rozčúlil.\n\n[ewostatewos.GetNameWithNoTooltip] hlása obranu starobylého zvyku [GetCountry('ETH').GetAdjective] [ShowReligionName('miaphysite')] ľudu, aby dodržiaval sobotu aj nedeľu ako sviatočné dni. Náš biskup namiesto toho tvrdí, že táto doktrína je v rozpore s príkazom nášho patriarchu v [ShowLocationName('alexandria')] a môže viesť k všetkým možným problémom. Podľa neho je jediným riešením potrestať [ewostatewos.GetNameWithNoTooltip] za to, že to učí, aby slúžil ako príklad a nikto nesledoval jeho mylný krok." # todo: CHANGED
  flavor_eth.200.a: "Postupujme podľa rady biskupa." # todo: NEW TRANSLATION
  flavor_eth.200.b: "Nie je potrebné ho trestať, môže odísť niekam inam." # todo: CHANGED
@@ -254,23 +254,23 @@
  flavor_eth_250_shared: "Žiadosť o remeselníkov" # todo: NEW TRANSLATION
  flavor_eth.250.title: "$flavor_eth_250_shared$" # todo: NEW TRANSLATION
  flavor_eth.250.entry: "$flavor_eth.250.title$" # todo: NEW TRANSLATION
- flavor_eth.250.desc: "Aj keď kultúra [ROOT.GetCountry.GetCulture.GetName] viedla k mnohým veľkým projektom v [ROOT.GetCountry.GetAltAdjective('L')], niekedy je potrebné požiadať o pomoc zvonku. [ROOT.GetCountry.GetGovernment.GetCourtTitle] navrhol, aby sme požiadali o remeselníkov z [target_country.GetName]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_eth.250.desc: "Aj keď kultúra [ROOT.GetCountry.GetCulture.GetName] viedla k mnohým veľkým projektom v [ROOT.GetCountry.GetAltAdjective('L')], niekedy je potrebné požiadať o pomoc zvonku. [ROOT.GetCountry.GetGovernment.GetCourtTitle] navrhol, aby sme požiadali o remeselníkov z [SKCountry(target_country,'G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_eth.250.a: "Aj keby to ublížilo kultúre [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip], pokrok je dôležitejší." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_eth.250.a.entry: "Aj keď to poškodí našu kultúru, pokrok je dôležitejší." # todo: NEW TRANSLATION
  flavor_eth.250.b: "Zaobídeme sa bez nich." # todo: NEW TRANSLATION
  eth_target_country_must_accept_tt: "[target_country.GetName] musí súhlasiť, aby sa efekty prejavili" # todo: NEW TRANSLATION
  flavor_eth.251.title: "$flavor_eth_250_shared$" # todo: NEW TRANSLATION
  flavor_eth.251.entry: "$flavor_eth.251.title$" # todo: NEW TRANSLATION
- flavor_eth.251.desc: "Poslovia z [target_country2.GetName] prišli do nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] a žiadajú niekoľkých remeselníkov, aby slúžili v ich [target_country2.GetFlavorRank]." # todo: NEW TRANSLATION
+ flavor_eth.251.desc: "Poslovia z [SKCountry(target_country2,'G')] prišli do nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] a žiadajú niekoľkých remeselníkov, aby slúžili v ich [target_country2.GetFlavorRank]." # todo: NEW TRANSLATION
  flavor_eth.251.a: "Pošlime im niekoľkých." # todo: NEW TRANSLATION
  flavor_eth.251.b: "Pošlite týchto žobrákov naspäť." # todo: NEW TRANSLATION
  flavor_eth_260_shared: "Tajomstvo nafty" # todo: NEW TRANSLATION
  flavor_eth.260.title: "$flavor_eth_260_shared$" # todo: NEW TRANSLATION
  flavor_eth.260.entry: "$flavor_eth.260.title$" # todo: NEW TRANSLATION
- flavor_eth.260.desc: "Aj keď sme sa s [ShowReligionGroupAdjective('muslim')] krajinami mnohokrát dostali do konfliktu, neznamená to, že sa od nich nemôžeme učiť. Jedno z ich zriedkavých vynálezov, naft, upútalo záujem nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Teraz chcú zamestnať poradcov z [target_country.GetName], ktorí nás naučia tajomstvo, umožňujúce jeho použitie v našej armáde." # todo: NEW TRANSLATION
+ flavor_eth.260.desc: "Aj keď sme sa s [ShowReligionGroupAdjective('muslim')] krajinami mnohokrát dostali do konfliktu, neznamená to, že sa od nich nemôžeme učiť. Jedno z ich zriedkavých vynálezov, naft, upútalo záujem nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Teraz chcú zamestnať poradcov z [SKCountry(target_country,'G')], ktorí nás naučia tajomstvo, umožňujúce jeho použitie v našej armáde." # todo: NEW TRANSLATION
  flavor_eth.260.a: "Požiadajme ich." # todo: NEW TRANSLATION
  flavor_eth.260.b: "Nepotrebujeme ich vynálezy." # todo: NEW TRANSLATION
- eth_no_offer_tt: "Žiadna ponuka nebude odoslaná do [target_country.GetName]" # todo: NEW TRANSLATION
+ eth_no_offer_tt: "Žiadna ponuka nebude odoslaná do [SKCountry(target_country,'G')]" # todo: NEW TRANSLATION
  flavor_eth.261.title: "$flavor_eth_260_shared$" # todo: NEW TRANSLATION
  flavor_eth.261.entry: "$flavor_eth.261.title$" # todo: NEW TRANSLATION
  flavor_eth.261.desc: "[target_country2.GetName] nám ponúkol sumu peňazí, ak im predáme časť nášho zbrojenia, konkrétne nafty. Môžeme prijať, ale to im umožní potenciálne ich využiť proti nám." # todo: NEW TRANSLATION
@@ -279,11 +279,11 @@
  flavor_eth_270_title_common: "[target_character2.GetNameWithNoTooltip] povstanie" # todo: NEW TRANSLATION
  flavor_eth.270.title: "$flavor_eth_270_title_common$" # todo: NEW TRANSLATION
  flavor_eth.270.entry: "Vládca povstaní $IFA$" # todo: CHANGED
- flavor_eth.270.desc: "V dôsledku rastúcej [ShowReligionGroupAdjective('muslim')] populácie v [ROOT.GetCountry.GetAltAdjective('L')] chce guvernér týchto území, [target_character2.GetName], ktorý nasleduje [ShowReligionGroupNameWithNoTooltip('muslim')], povstať proti [GetCountry('ETH').GetName]. [target_character2.GetSheHe|U] je pripravený/á uchopiť meč proti [target_character2.GetHerHis] nepriateľom." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_eth.270.desc: "V dôsledku rastúcej [ShowReligionGroupAdjective('muslim')] populácie v [ROOT.GetCountry.GetAltAdjective('L')] chce guvernér týchto území, [target_character2.GetName], ktorý nasleduje [ShowReligionGroupNameWithNoTooltip('muslim')], povstať proti [SKCountry(GetCountry('ETH'),'D')]. [target_character2.GetSheHe|U] je pripravený/á uchopiť meč proti [target_character2.GetHerHis] nepriateľom." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_eth.270.a: "Oslobodíme sa." # todo: NEW TRANSLATION
  flavor_eth.270.b: "Nestojí to za námahu." # todo: NEW TRANSLATION
  flavor_eth.271.title: "$flavor_eth_270_title_common$" # todo: NEW TRANSLATION
- flavor_eth.271.desc: "[target_character2.GetName] z [target_country.GetName] vyhlásil [target_character2.GetHerHis] územia za nezávislé od našich a vyhlásil [ShowReligionGroupName('muslim')] za oficiálne náboženstvo tohto územia." # todo: NEW TRANSLATION
+ flavor_eth.271.desc: "[target_character2.GetName] z [SKCountry(target_country,'G')] vyhlásil [target_character2.GetHerHis] územia za nezávislé od našich a vyhlásil [ShowReligionGroupName('muslim')] za oficiálne náboženstvo tohto územia." # todo: NEW TRANSLATION
  flavor_eth.271.a: "Nikdy im nedovolíme odtrhnúť sa!" # todo: NEW TRANSLATION
  flavor_eth.271.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]„" # todo: NEW TRANSLATION
  flavor_eth.271.b.entry: "$common_string_nothing_we_can_do_about_it$" # todo: NEW TRANSLATION

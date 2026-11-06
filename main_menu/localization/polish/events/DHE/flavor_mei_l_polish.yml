@@ -11,7 +11,7 @@
  flavor_mei.2.desc: "Talentovaný dramatik a básnik [target_character.GetName] sa rozhodol usadiť v našej krajine a pokračovať v tvorbe. Už je úspešným autorom, no neprejavuje známky, že by chcel prestať." # todo: CHANGED
  flavor_mei.2.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  flavor_mei.2.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
- flavor_mei.2.b: "Radšej by mal odísť do [target_banish_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mei.2.b: "Radšej by mal odísť do [SKCountryNoTooltip(target_banish_country,'G')]." # todo: NEW TRANSLATION
  flavor_mei.2.b.entry: "Radšej by mal odísť k nim." # todo: NEW TRANSLATION
  flavor_mei.10.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_mei.10.entry: "Johann Sebastian Bach" # todo: NEW TRANSLATION
@@ -20,7 +20,7 @@
  flavor_mei.10.b: "Nepotrebujeme ho." # todo: CHANGED
  flavor_mei.10.historical_info: "Johann Sebastian Bach bol skladateľ barokového obdobia a najvýznamnejší člen veľkej rodiny severonemeckých hudobníkov. Hoci ho jeho súčasníci obdivovali predovšetkým ako vynikajúceho cembalistu, organistu a odborníka na stavbu organov, dnes je Bach všeobecne považovaný za jedného z najväčších skladateľov všetkých čias." # todo: NEW TRANSLATION
  flavor_mei.20.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_mei.20.entry: "Lucas Cranach the Elder" # todo: NEW TRANSLATION
+ flavor_mei.20.entry: "Lucas Cranach starší" # todo: CHANGED (predtym: Lucas Cranach the Elder)
  flavor_mei.20.desc: "Ako blízky priateľ Luthera, [target_character.GetName] horlivo prijal [ShowReligionName('lutheran')] ale vždy bol otvorený pracovať s [ShowReligionName('catholic')] Maecenas.\n\nAko dvorový umelec sa pýtame, či tieto kontakty s oboma stranami nemôžu byť pre nás problémom. Po celom kontinente sa [ShowReligionNameWithNoTooltip('lutheran')] a [ShowReligionNameWithNoTooltip('catholic')] bijú v krvavom konflikte, ktorý by nás mohol ovplyvniť." # todo: NEW TRANSLATION
  flavor_mei.20.a: "Sme všetci bratia v Kristovi." # todo: NEW TRANSLATION
  flavor_mei.20.b: "Mal by sa sústrediť na jednu vieru." # todo: CHANGED
@@ -86,7 +86,7 @@
  flavor_mei.120.historical_info: "Pôvodne wettinské územie, markgrófstvo Landsberg bolo v roku 1291 predané rodu Askania. V roku 1347 vojvoda Magnus I. z Brunsviku-Lüneburgu predal markgrófstvo, ktoré zdedil po svojom manželstve so Sophiou z Brandenburchu-Stendalu, späť markgrófovi Frederickovi II. z Meissenu, čím opäť zjednotil wettinské panstvá." # todo: NEW TRANSLATION
  flavor_mei.121.desc: "[GetCountry('MEI').GetName] vstúpil do pokročilých rokovaní s [target_character.GetName] s cieľom odkúpiť [GetCountry('LDB').GetName]! Hoci ide o nebezpečnú hrozbu pre našu autonómiu, ešte nie je neskoro zabrániť tejto dohode a získať na svoju stranu [target_character.GetNameWithNoTooltip] za pomoci [target_spouse.GetName]." # todo: NEW TRANSLATION
  flavor_mei.121.a: "Predať toto územie je správne." # todo: NEW TRANSLATION
- flavor_mei.121.a.tt: "Budeme pokračovať v hre za [GetCountry('MEI').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mei.121.a.tt: "Budeme pokračovať v hre za [SKCountryNoTooltip(GetCountry('MEI'),'A')]" # todo: NEW TRANSLATION
  flavor_mei.121.b: "Nemôžeme sa vzdať tohto územia!" # todo: NEW TRANSLATION
  flavor_mei.122.desc: "[GetCountry('LDB').GetName] sa náhle stiahol z našich rokovaní o nadobudnutí ich území. Nezostáva nám nič iné, len získať ich územia pomocou vojny." # todo: NEW TRANSLATION
  flavor_mei.122.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: CHANGED
@@ -95,17 +95,17 @@
  flavor_mei.130.desc: "[GetCountry('SWB').GetName]'s [target_character.GetName] zomrel bez priameho dediča, ktorý by prevzal [target_character.GetHerHis] povinnosti, a [GetCountry('SWB').GetFlavorRank] zostal neobsadený.\n\nKeďže toto miesto nemôžeme nechať prázdne, potrebujeme nového nositeľa tejto dôstojnosti.\n\nMedzi viacerými kandidátmi naši poradcovia navrhli [GetCountry('MEI').GetGovernment.GetRulerTitle] [GetCountry('MEI').GetName] ako dobrú voľbu. Ak sa rozhodneme povýšiť [GetCountry('MEI').GetGovernment.GetRuler.GetHerHim] na [GetCountry('SWB').GetGovernment.GetRulerTitle], mohli by sme získať nového priateľa v regióne." # todo: CHANGED
  flavor_mei.130.a: "Dobrý nápad!" # todo: NEW TRANSLATION
  flavor_mei.130.b: "Nie sú hodní." # todo: NEW TRANSLATION
- flavor_mei.130.historical_info: "V roku 1423 Friedrich the Quarrelsome, markgróf z Meissenu, získal vojvodstvo Saxony-Wittenberg spolu s kurfiřtovskou dôstojnosťou, čo viedlo k zlúčeniu markgrófstva Meissen s kurfiřtstvom Sasko a stratilo svoj status ako nezávislé kniežatstvo." # todo: NEW TRANSLATION
+ flavor_mei.130.historical_info: "V roku 1423 Friedrich the Quarrelsome, markgróf z Meissenu, získal vojvodstvo Saxony-Wittenberg spolu s kurfirstskou dôstojnosťou, čo viedlo k zlúčeniu markgrófstva Meissen s kurfirstvom Sasko a stratilo svoj status ako nezávislé kniežatstvo." # todo: CHANGED (predtym: V roku 1423 Friedrich the Quarrelsome, markgróf z Meissenu, získal vojvodstvo Saxony-Wittenberg spolu s kurfiřtovskou dô)
  flavor_mei.131.title: "Cisárska ponuka" # todo: NEW TRANSLATION
  flavor_mei.131.desc: "Vladár [GetCountry('SWB').GetLongName] zomrel bez priameho dediča, čo zanechalo prázdne miesto [GetCountry('SWB').GetFlavorRank]. Cisár [target_emperor.GetName] nám ponúkol byť novým elektorom." # todo: CHANGED
  flavor_mei.131.a: "Prijímame to s poctou." # todo: NEW TRANSLATION
- flavor_mei.131.tt: "Staneme sa kurfiřtstvom Saska" # todo: NEW TRANSLATION
+ flavor_mei.131.tt: "Staneme sa kurfirstvom Saska" # todo: CHANGED (predtym: Staneme sa kurfiřtstvom Saska)
  flavor_mei.140.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_mei.140.entry: "Heinrich von Brühl" # todo: NEW TRANSLATION
  flavor_mei.140.desc: "[target_ruler.GetName] presadzuje zamestnanie [target_character.GetName], jedného z [target_ruler.GetHisHer] najbližších osobných poradcov, na [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Avšak mnohí na [ROOT.GetCountry.GetGovernment.GetCourtTitle] majú obavy, pretože sa hovorí, že [target_character.GetLastNameWithNoTooltip] má väčšiu moc než [target_ruler.GetNameWithNoTooltip] [target_ruler.GetHerselfHimself], čo by mohlo dať [target_character.GetLastNameWithNoTooltip] neporovnateľný diplomatický vplyv a viesť k zneužitiu moci na naplnenie jeho ambícií." # todo: CHANGED
  flavor_mei.140.a: "Povolajme ho, aby viedol naše záležitosti." # todo: CHANGED
  flavor_mei.140.b: "Nemôžeme mu dovoliť, aby sa stal mocou za trónom." # todo: CHANGED
- flavor_mei.140.historical_info: "Heinrich von Brühl bol vplyvným vrchným ministrom Saského kurfiřtstva a Poľska počas vlády Fredericka Augusta II., známeho aj ako Augustus III. Poľský. Ako diplomat a dvoran Brühl účinne ovládal saskú a poľskú politiku desaťročia, manažoval aliancie a štátne menovania. Podarilo sa mu centralizovať dvor pod svojou kontrolou tak, že k panovníkovi sa dalo dostať len cez neho." # todo: NEW TRANSLATION
+ flavor_mei.140.historical_info: "Heinrich von Brühl bol vplyvným vrchným ministrom Saského kurfirstva a Poľska počas vlády Fredericka Augusta II., známeho aj ako Augustus III. Poľský. Ako diplomat a dvoran Brühl účinne ovládal saskú a poľskú politiku desaťročia, manažoval aliancie a štátne menovania. Podarilo sa mu centralizovať dvor pod svojou kontrolou tak, že k panovníkovi sa dalo dostať len cez neho." # todo: CHANGED (predtym: Heinrich von Brühl bol vplyvným vrchným ministrom Saského kurfiřtstva a Poľska počas vlády Fredericka Augusta II., známe)
  flavor_mei.150.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_mei.150.entry: "Gottfried Silbermann" # todo: NEW TRANSLATION
  flavor_mei.150.desc: "[target_character.GetName] si získava povesť svojimi majstrovsky vyrobenými organmi, ktoré údajne majú bezkonkurenčnú čistotu a získavajú slávu po celej krajine. Mnohí členovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] by ho radi zamestnali, aby pozdvihol naše kostoly a oslávil našu vieru, ale chýbajú im prostriedky potrebné na jeho objednanie." # todo: CHANGED
@@ -117,7 +117,7 @@
  flavor_mei.160.desc: "Náš región už dlhodobo potrebuje veľkú inštitúciu vzdelávania. Niektorí zástupcovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] prišli s návrhom založiť [ShowBuildingTypeName('university')] v [target_location.GetName], ktorá by sa venovala právnikom, lekárom a duchovným. Sú ochotní ju financovať, ale sami si ju nemôžu dovoliť postaviť, preto by bola potrebná spolupráca s [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]." # todo: NEW TRANSLATION
  flavor_mei.160.a: "Nech zažiari poznaním!" # todo: NEW TRANSLATION
  flavor_mei.160.b: "Nemáme voľné prostriedky na jej podporu." # todo: NEW TRANSLATION
- flavor_mei.160.historical_info: "Univerzita vo Wittenbergu, známa aj ako Leucorea, bola založená v roku 1502 kurfirstom Frederickom Múdrym Saským, s kráľovským listom udeleným cisárom Maximiliánom I. Bola určená na prípravu administrátorov, teológov a právnikov pre Ernestínske kurfiřtstvo a čoskoro sa stala kolískou luteránskej reformácie, najmä po vymenovaní Martina Luthera za profesora v roku 1508, ktorému neskôr nasledoval Philipp Melanchthon." # todo: NEW TRANSLATION
+ flavor_mei.160.historical_info: "Univerzita vo Wittenbergu, známa aj ako Leucorea, bola založená v roku 1502 kurfirstom Frederickom Múdrym Saským, s kráľovským listom udeleným cisárom Maximiliánom I. Bola určená na prípravu administrátorov, teológov a právnikov pre Ernestínske kurfirstvo a čoskoro sa stala kolískou luteránskej reformácie, najmä po vymenovaní Martina Luthera za profesora v roku 1508, ktorému neskôr nasledoval Philipp Melanchthon." # todo: CHANGED (predtym: Univerzita vo Wittenbergu, známa aj ako Leucorea, bola založená v roku 1502 kurfirstom Frederickom Múdrym Saským, s kráľ)
  flavor_mei.170.title: "[ShowBuildingTypeNameWithNoTooltip('university')] v [ShowLocationNameWithNoTooltip('freiberg')]" # todo: NEW TRANSLATION
  flavor_mei.170.entry: "Univerzita vo Freibergu" # todo: NEW TRANSLATION
  flavor_mei.170.desc: "Bohatstvo našich hôr neleží len v rúde, ale aj v poznaní potrebnom na jeho ťažbu. Keď sa tradičné banícke techniky začínajú ukazovať ako nedostatočné pri výzvach hlbších šácht a komplikovanej geológie, [ROOT.GetCountry.GetGovernment.GetCourtTitle] navrhuje presmerovať [ShowModifier('freiberg_base')] a namiesto toho založiť [ShowBuildingTypeName('university')], ktorá by sa zamerala na moderné priemyselné metódy ťažby a vychovala ďalšiu generáciu inžinierov." # todo: NEW TRANSLATION
@@ -142,7 +142,7 @@
  flavor_mei.190.historical_info: "Lipská disputácia z roku 1519 bola akademická polemika na Univerzite v Lipsku medzi Johannom Eckom a Andreasom Karlstadtom. Disputa bola iniciovaná Eckovým negatívnym komentárom k Lutherovým 95 tézam a spočiatku sa sústredila na otázky slobodnej vôle a cirkevnej autority. Čoskoro sa rozšírila do širšej diskusie o legitimite Cirkvi, nadradenosti Písma nad tradíciou a povahe pápežskej moci. Hoci nebol dosiahnutý konsenzus, debata výrazne zvýšila viditeľnosť reformných myšlienok a urýchlila rastúce teologické a politické rozdelenie v rámci Svätorímskej ríše." # todo: NEW TRANSLATION
  flavor_mei.200.title: "Zaslúžená odmena" # todo: NEW TRANSLATION
  flavor_mei.200.entry: "$flavor_mei.200.title$" # todo: NEW TRANSLATION
- flavor_mei.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis|U] zať, [son_in_law.GetName], vládca [target_country.GetName], nám veľa pomohol v nedávnych ťažkostiach v [GetCountry('BRA').GetName]. Bolo by vhodné, aby cisár veľkoryso odmenil tých, ktorí dobre slúžia [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ flavor_mei.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis|U] zať, [son_in_law.GetName], vládca [target_country.GetName], nám veľa pomohol v nedávnych ťažkostiach v [SKCountry(GetCountry('BRA'),'L')]. Bolo by vhodné, aby cisár veľkoryso odmenil tých, ktorí dobre slúžia [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  flavor_mei.200.a: "Zasypať [son_in_law.GetHerHim] bohatstvami." # todo: NEW TRANSLATION
  flavor_mei.200.a.entry: "Zasypať ho bohatstvom." # todo: NEW TRANSLATION
  flavor_mei.200.b: "Služba cisárovi je odmenou sama o sebe." # todo: NEW TRANSLATION
@@ -189,15 +189,15 @@
  flavor_mei.1001.title: "Hrozba [ShowDynastyNameWithNoTooltip('wettin_dynasty')]" # todo: NEW TRANSLATION
  flavor_mei.1001.desc: "Odkedy dynastia [ShowDynastyName('wettin_dynasty')] obsadila [GetCountry('THU').GetName], medzi ňou a nižšími pánmi regiónu pretrvávajú napätia. [root_country.GetName] nedávno otvorene deklaroval ambíciu zjednotiť región pod svojou nadvládou a šíria sa chýry, že by sme mohli byť jedným z ich prvých cieľov. [ROOT.GetCountry.GetGovernment.GetCourtTitle] sa zišla a tlačí na [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], aby konala skôr, než bude neskoro. Navrhujú vyslať poslov do susedných krajín a ponúknuť im alianciu na odvrátenie hrozby, ktorú predstavuje [GetCountry('THU').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_mei.1001.a: "Musíme konať rýchlo." # todo: NEW TRANSLATION
- flavor_mei.1001.a.tt: "Naše snahy vytvoriť aliancie proti [root_country.GetName] môžu vyústiť v preventívnu vojnu." # todo: NEW TRANSLATION
+ flavor_mei.1001.a.tt: "Naše snahy vytvoriť aliancie proti [SKCountry(root_country,'D')] môžu vyústiť v preventívnu vojnu." # todo: NEW TRANSLATION
  flavor_mei.1001.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" # todo: CHANGED
  flavor_mei.1001.b.entry: "$common_string_nothing_we_can_do_about_it$" # todo: NEW TRANSLATION
  flavor_mei.1002.title: "Hrozba [ShowDynastyNameWithNoTooltip('wettin_dynasty')]" # todo: NEW TRANSLATION
- flavor_mei.1002.desc: "Posol z [target_country.GetName] prišiel na [ROOT.GetCountry.GetGovernment.GetCourtTitle] s varovaním pred obrovskou hrozbou, ktorú predstavujú ambície dynastie [ShowDynastyName('wettin_dynasty')], snažiacej sa zjednotiť celý región pod svojou nadvládou a ohrozujúcej nezávislosť [target_country.GetNameWithNoTooltip] i [ROOT.GetCountry.GetName]. Ponúkajú alianciu, ktorá by ich mala odradiť od útoku na ktoréhokoľvek z nás." # todo: NEW TRANSLATION
+ flavor_mei.1002.desc: "Posol z [SKCountry(target_country,'G')] prišiel na [ROOT.GetCountry.GetGovernment.GetCourtTitle] s varovaním pred obrovskou hrozbou, ktorú predstavujú ambície dynastie [ShowDynastyName('wettin_dynasty')], snažiacej sa zjednotiť celý región pod svojou nadvládou a ohrozujúcej nezávislosť [target_country.GetNameWithNoTooltip] i [ROOT.GetCountry.GetName]. Ponúkajú alianciu, ktorá by ich mala odradiť od útoku na ktoréhokoľvek z nás." # todo: NEW TRANSLATION
  flavor_mei.1002.a: "Rozumná ponuka." # todo: NEW TRANSLATION
  flavor_mei.1002.b: "Nemôžeme uzatvárať aliancie na základe klebiet." # todo: NEW TRANSLATION
  flavor_mei.1003.title: "Durínska vojna grófov" # todo: NEW TRANSLATION
- flavor_mei.1003.desc: "Zlá správa dorazila na [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Nižší páni regiónu sa zhromažďujú okolo [target_country.GetName], aby vytvorili koalíciu na zastavenie našich plánov regionálneho zjednotenia. Zatiaľ čo niektorí navrhujú, aby sme svoje plány opustili, iní tlačia [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], aby zasiahli skôr, než sa [target_country.GetNameWithNoTooltip] podarí zjednotiť všetkých pánov za svojou vecou." # todo: NEW TRANSLATION
+ flavor_mei.1003.desc: "Zlá správa dorazila na [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Nižší páni regiónu sa zhromažďujú okolo [SKCountry(target_country,'G')], aby vytvorili koalíciu na zastavenie našich plánov regionálneho zjednotenia. Zatiaľ čo niektorí navrhujú, aby sme svoje plány opustili, iní tlačia [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], aby zasiahli skôr, než sa [target_country.GetNameWithNoTooltip] podarí zjednotiť všetkých pánov za svojou vecou." # todo: NEW TRANSLATION
  flavor_mei.1003.a: "Musíme konať rýchlo." # todo: NEW TRANSLATION
  flavor_mei.1003.b: "Opozícia je príliš silná." # todo: NEW TRANSLATION
  flavor_mei.1003.historical_info: "Po podpise paktu v Arnstadte v roku 1342 sa nižší páni regiónu postavili do vojny proti Wettinovcom, snažiac sa spochybniť ich ambície regionálnej dominancie. Hoci spočiatku dosiahli úspech, Wettinovci použili stratégiu dohadovania samostatných mierových zmlúv a postupne odtiahli menších pánov z konfliktu. Nakoniec sa Wettinovcom podarilo premeniť ich územia na svoje feudálne državy, čím ich efektívne spravili vazalmi a dosiahli svoje ciele regionálneho zjednotenia pod dynastiou Wettinovcov." # todo: NEW TRANSLATION

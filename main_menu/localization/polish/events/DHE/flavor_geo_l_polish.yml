@@ -10,14 +10,14 @@
  flavor_geo.2.title: "Obchod so Západom" # todo: NEW TRANSLATION
  flavor_geo.2.entry: "$flavor_geo.2.title$" # todo: NEW TRANSLATION
  flavor_geo.2.desc: "Aby sme ochránili našu budúcnosť, bolo by rozumné zvážiť diplomatické a obchodné vzťahy s rôznymi bohatými západnými mocnosťami. Napriek tomu, že sme hlavou silného [ROOT.GetCountry.GetFlavorRank], sme obkolesení nepriateľskými pohanmi. Korespondencia so Západom by len posilnila naše spojenie s nimi a zabezpečila našu pozíciu v čase, keď sa aj raz mocný [GetUniqueInternationalOrganization('ilkhanate').GetName] rozpadá..." # todo: NEW TRANSLATION
- flavor_geo.2.a: "Budeme obchodovať s [target_country1.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_geo.2.a: "Budeme obchodovať s [SKCountryNoTooltip(target_country1,'I')]." # todo: NEW TRANSLATION
  flavor_geo.2.a.entry: "Budeme s nimi obchodovať." # todo: NEW TRANSLATION
- flavor_geo.2.b: "Obráťme sa na [target_country2.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_geo.2.b: "Obráťme sa na [SKCountryNoTooltip(target_country2,'A')]." # todo: NEW TRANSLATION
  flavor_geo.2.b.entry: "Obráťme sa na nich." # todo: NEW TRANSLATION
  flavor_geo.2.c: "[target_country3.GetNameWithNoTooltip] nás obohatí." # todo: NEW TRANSLATION
  flavor_geo.2.c.entry: "Urobia nás bohatými." # todo: NEW TRANSLATION
  flavor_geo.2.d: "Žiadneho z nich nepotrebujeme." # todo: NEW TRANSLATION
- flavor_geo.3.title: "Posol z [GetCountry('GEO').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_geo.3.title: "Posol z [SKCountryNoTooltip(GetCountry('GEO'),'G')]" # todo: NEW TRANSLATION
  flavor_geo.3.desc: "Skupina veľmi zvláštnych hostí prišla do nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle], oblečení v bielej a červenej. Zdá sa, že ide o diplomatické posolstvo v mene [target_character.GetName], ktoré chce vyjednať vstup našich [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] do [target_location.GetName] výmenou za srdečné vzťahy a aktívnu diplomaciu medzi oboma ríšami." # todo: NEW TRANSLATION
  flavor_geo.3.a: "Rozumný návrh." # todo: NEW TRANSLATION
  flavor_geo.3.b: "Nemáme o nich záujem." # todo: NEW TRANSLATION
@@ -33,8 +33,8 @@
  flavor_geo.5.a: "V slovách [target_character.GetShortNameWithNoTooltip] je rozumný zmysel." # todo: NEW TRANSLATION
  flavor_geo.5.a.entry: "V slovách vládcu je opodstatnenie." # todo: NEW TRANSLATION
  flavor_geo.5.b: "Nezaujímajú nás také hanebné záležitosti." # todo: NEW TRANSLATION
- every_christian_pop_gains_25_satisfaction_tt: "Každý [ShowReligionGroupAdjective('christian')] [Concept('pop','populácia')|e] v [GetCountry('MAM').GetName] získa [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- flavor_geo.5.historical_info: "Juraj V. z Gruzínska udržiaval aktívne vzťahy so Sultanátom mamlúkov prostredníctvom výmeny listov medzi ním a jeho bahri mamlúckym protějškom. Prostredníctvom tohto diplomatického úsilia boli niektoré gruzínske kláštory v Palestíne postavené pod vplyv gruzínskej ortodoxnej cirkvi. Ich korešpondencia tiež dosiahla povolenie voľného priechodu pre gruzínskych pútnikov do Svätej zeme." # todo: NEW TRANSLATION
+ every_christian_pop_gains_25_satisfaction_tt: "Každý [ShowReligionGroupAdjective('christian')] [Concept('pop','populácia')|e] v [SKCountry(GetCountry('MAM'),'L')] získa [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_geo.5.historical_info: "Juraj V. z Gruzínska udržiaval aktívne vzťahy so Sultanátom mamlúkov prostredníctvom výmeny listov medzi ním a jeho bahri mamlúckym náprotivkom. Prostredníctvom tohto diplomatického úsilia boli niektoré gruzínske kláštory v Palestíne postavené pod vplyv gruzínskej ortodoxnej cirkvi. Ich korešpondencia tiež dosiahla povolenie voľného priechodu pre gruzínskych pútnikov do Svätej zeme." # todo: CHANGED (predtym: Juraj V. z Gruzínska udržiaval aktívne vzťahy so Sultanátom mamlúkov prostredníctvom výmeny listov medzi ním a jeho bahr)
  flavor_geo.6.title: "Reakcia [target_country2.GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_geo.6.desc.a: "Radujeme sa pri čítaní pozitívnej odpovede od [target_country2.GetAdjective] [target_country2.GetGovernment.GetCourtTitle]. Zvýrazňujúc spoločné záujmy oboch našich národov, [target_character2.GetName] je ochotný uzavrieť spojenectvo s nami!" # todo: NEW TRANSLATION
  flavor_geo.6.desc.b: "Napriek našim najlepším a najláskavejším snahám o vytvorenie vzájomne výhodného spojenectva sa [target_country2.GetAdjective] [target_country2.GetGovernment.GetRulerTitle] rozhodol proti bližším vzťahom s naším ľudom..." # todo: NEW TRANSLATION
@@ -44,7 +44,7 @@
  flavor_geo.6.b.entry: "$common_string_this_is_disappointing$" # todo: NEW TRANSLATION
  flavor_geo.7.title: "Kampaň proti [target_country2.GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_geo.7.entry: "Kampaň proti Širvanu" # todo: NEW TRANSLATION
- flavor_geo.7.desc: "Naši východní susedia v [target_country2.GetName] boli dlhodobo tŕňom v našom boku. Bolo by múdre využiť zaslepenosť ich pohanských presvedčení a otvorenú nepriateľskosť a postaviť veľkú expedíciu, aby sme ich navždy vymazali z mapy. Armády stoja pripravené a naši poradcovia už kreslia bojové plány..." # todo: NEW TRANSLATION
+ flavor_geo.7.desc: "Naši východní susedia v [SKCountry(target_country2,'L')] boli dlhodobo tŕňom v našom boku. Bolo by múdre využiť zaslepenosť ich pohanských presvedčení a otvorenú nepriateľskosť a postaviť veľkú expedíciu, aby sme ich navždy vymazali z mapy. Armády stoja pripravené a naši poradcovia už kreslia bojové plány..." # todo: NEW TRANSLATION
  flavor_geo.7.a: "Nech je vojna." # todo: NEW TRANSLATION
  flavor_geo.7.b: "Nemôžeme riskovať otvorené nepriateľstvá." # todo: NEW TRANSLATION
  flavor_geo.8.title: "Listy pre [target_character2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -57,7 +57,7 @@
  flavor_geo.9.a: "Peniaze pre ich vec!" # todo: NEW TRANSLATION
  flavor_geo.9.b: "Naši rytieri im pomôžu!" # todo: NEW TRANSLATION
  flavor_geo.9.c: "Nemáme čas na prázdne sľuby..." # todo: NEW TRANSLATION
- up_to_x_commoners_will_migrate_tt: "Niektorí z našich [ShowPopTypeName('peasants')] v [Concept('capital','hlavnom meste')|e]'s [Concept('province_definition','definíciou provincie')|e] sa presťahujú do [target_country.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ up_to_x_commoners_will_migrate_tt: "Niektorí z našich [ShowPopTypeName('peasants')] v [Concept('capital','hlavnom meste')|e]'s [Concept('province_definition','definíciou provincie')|e] sa presťahujú do [SKCountry(target_country,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_geo.10.title: "Odpovedá [target_country2.GetAdjectiveWithNoTooltip] [target_country2.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  flavor_geo.10.desc: "Po dlhej a namáhavej ceste sa naši diplomati vrátili zo Západu s odpoveďou [target_country2.GetAdjective] [target_country2.GetGovernment.GetRulerTitle]. Ich pomoc by určite podporila naše vojenské úsilia v zahraničí.\n\nKeď sa pečať pretrhla a obsah listu bol odhalený, v izbe zavládlo ticho a strach..." # todo: NEW TRANSLATION
  flavor_geo.10.a: "Radujme sa! Súhlasili, že pomôžu!" # todo: NEW TRANSLATION

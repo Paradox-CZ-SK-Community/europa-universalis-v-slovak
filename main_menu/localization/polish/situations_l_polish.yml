@@ -309,7 +309,7 @@
  roto_press_claims_extra_explanation_tt: "Udeľuje nárok na [Concept('province','provinciu')|e] v [ShowRegionNameWithNoTooltip('anatolia_region')] alebo v [ShowRegionNameWithNoTooltip('balkan_region')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  raise_bey_fortress: "Postaviť beylikovú pevnosť" # todo: NEW TRANSLATION
  raise_bey_fortress_desc: "Naše pôsobenie presahuje hranice našej metropoly. Preto budeme potrebovať pevné opevnenia na obranu našich mocenských základní v cudzine, keď sa naše hranice rozširujú..." # todo: NEW TRANSLATION
- seek_relations_with_the_byzantines: "Nadviazať vzťahy s [GetCountry('BYZ').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ seek_relations_with_the_byzantines: "Nadviazať vzťahy s [SKCountryNoTooltip(GetCountry('BYZ'),'I')]" # todo: NEW TRANSLATION
  seek_relations_with_the_byzantines_desc: "[GetCountry('BYZ').GetAdjective] ľud sú pozostatky niekdajšieho mocného Ríma. Preto by bolo múdre pristúpiť k nim a získať si ich priazeň..." # todo: NEW TRANSLATION
  byz_not_considering_proposal_from_another_beylik: "[GetCountry('BYZ').GetName] momentálne nezvažuje návrh od iného beyliku" # todo: NEW TRANSLATION
  examine_our_fortifications: "Skontrolovať opevnenia" # todo: NEW TRANSLATION
@@ -353,8 +353,8 @@
  urban_manpower_location_tt: "Aspoň 1 [Concept('location','lokalita')|e] v zvolenom [Concept('province','provincii')|e] je [Concept('town_and_city','mestská lokalita')|e] a produkuje [Concept('manpower','živá sila')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  no_location_is_capital_tt: "@trigger_no! Žiadne [Concept('location','lokalita')|e] v zvolenom [Concept('province','provincii')|e] nie je naším [Concept('capital','hlavným mestom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  hundred_years_war: "Storočná vojna" # todo: NEW TRANSLATION
- hundred_years_war_info: "Toto je konflikt, ktorý vyvolá [Concept('wars','vojny')|e] medzi [GetCountry('ENG').GetName] a [GetCountry('FRA').GetName] až kým jedna strana nedosiahne svoje ciele." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- hundred_years_war_desc: "Smrť posledného priameho dediča [GetCountry('FRA').GetAdjective] trónu zanechala mocenské vákuum, ktoré vrhlo [ShowRegionName('france_region')] do chaosu. So súperiacimi nárokmi a dlhotrvajúcimi napätiami ohľadom území a feudálnych práv sa krehký mier medzi [GetCountry('FRA').GetNameWithNoTooltip] a [GetCountry('ENG').GetNameWithNoTooltip] rozpadol. Obe ríše vlastnia územia v [ShowRegionNameWithNoTooltip('france_region')], čo vytvára trenie ohrozujúce jednotu [ShowReligionGroupName('christian')]. To, čo začalo ako spor o následníctvo, sa rozšírilo do zdĺhavého boja o nadvládu—boja, ktorý teraz hrozí zanechať jazvy na kontinente na generácie." # todo: NEW TRANSLATION
+ hundred_years_war_info: "Toto je konflikt, ktorý vyvolá [Concept('wars','vojny')|e] medzi [SKCountry(GetCountry('ENG'),'I')] a [GetCountry('FRA').GetName] až kým jedna strana nedosiahne svoje ciele." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ hundred_years_war_desc: "Smrť posledného priameho dediča [GetCountry('FRA').GetAdjective] trónu zanechala mocenské vákuum, ktoré vrhlo [ShowRegionName('france_region')] do chaosu. So súperiacimi nárokmi a dlhotrvajúcimi napätiami ohľadom území a feudálnych práv sa krehký mier medzi [SKCountryNoTooltip(GetCountry('FRA'),'I')] a [GetCountry('ENG').GetNameWithNoTooltip] rozpadol. Obe ríše vlastnia územia v [ShowRegionNameWithNoTooltip('france_region')], čo vytvára trenie ohrozujúce jednotu [ShowReligionGroupName('christian')]. To, čo začalo ako spor o následníctvo, sa rozšírilo do zdĺhavého boja o nadvládu—boja, ktorý teraz hrozí zanechať jazvy na kontinente na generácie." # todo: NEW TRANSLATION
  ENGLISH_VICTORY: "[GetCountry('ENG').GetAdjectiveWithNoTooltip] Podmienky víťazstva" # todo: NEW TRANSLATION
  FRENCH_VICTORY: "[GetCountry('FRA').GetAdjectiveWithNoTooltip] Podmienky víťazstva" # todo: NEW TRANSLATION
  HYW_STALEMATE: "Patová situácia" # todo: NEW TRANSLATION
@@ -373,8 +373,8 @@
  hundred_years_war_monthly: "Ak je [Concept('peace','mier')|e], existuje šanca, že ktorákoľvek strana znovu rozpúta konflikt." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MILITARY_STRENGTH: "Vojenská sila" # todo: NEW TRANSLATION
  RELATIVE_MILITARY_STRENGTH: "Relatívna vojenská sila" # todo: NEW TRANSLATION
- ENG_DEFENDERS_TT: "Obranné [Concept('alliance','aliancia')|e] proti [GetCountry('FRA').GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- FRA_DEFENDERS_TT: "Obranné [Concept('alliance','aliancia')|e] proti [GetCountry('ENG').GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ENG_DEFENDERS_TT: "Obranné [Concept('alliance','aliancia')|e] proti [SKCountryNoTooltip(GetCountry('FRA'),'D')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ FRA_DEFENDERS_TT: "Obranné [Concept('alliance','aliancia')|e] proti [SKCountryNoTooltip(GetCountry('ENG'),'D')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  this_is_france_tt: "Toto je [GetCountry('FRA').GetLongName]" # todo: NEW TRANSLATION
  this_is_england_tt: "Toto je [GetCountry('ENG').GetLongName]" # todo: NEW TRANSLATION
  disloyal_member_of_the_french_side_tt: "Toto je [Concept('disloyal_subject','nelojálny vazal')|e] [GetCountry('FRA').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -391,11 +391,11 @@
  selected_country_will_be_asked_to_join_hyw_tt: "Vybraný [Concept('country','krajina')|e] bude požiadaný, aby sa postavil na našu stranu počas prebiehajúcej [ShowSituationName('hundred_years_war')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  owned_by_fra_tt: "[Concept('owner','Majiteľ')|e] je [GetCountry('FRA').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_ENG_TT_TITLE: "[GetCountry('ENG').GetAdjectiveWithNoTooltip] Vojenská sila" # todo: NEW TRANSLATION
- RELATIVE_MILITARY_STRENGTH_ENG_TT_TEXT: "Relatívna vojenská sila [GetCountry('ENG').GetAdjective] voči [GetCountry('FRA').GetName] je: [GetCountry('ENG').GetRelativeMilitaryStrength(GetCountry('FRA').Self)|V0%]" # todo: NEW TRANSLATION
+ RELATIVE_MILITARY_STRENGTH_ENG_TT_TEXT: "Relatívna vojenská sila [GetCountry('ENG').GetAdjective] voči [SKCountry(GetCountry('FRA'),'D')] je: [GetCountry('ENG').GetRelativeMilitaryStrength(GetCountry('FRA').Self)|V0%]" # todo: NEW TRANSLATION
  RELATIVE_MILITARY_STRENGTH_ENG_TT_ARMY_STRENGTH: "$RELATIVE_MILITARY_STRENGTH_ENG_TT_TEXT$\n[GetCountry('ENG').GetAdjectiveWithNoTooltip] [Concept('army','Armáda')|e] Veľkosť: [GetCountry('ENG').GetArmySize]\n[GetCountry('ENG').GetAdjectiveWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('ENG').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_ENG_TT_LEVY_STRENGTH: "[GetCountry('ENG').GetAdjectiveWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('ENG').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_FRA_TT_TITLE: "[GetCountry('FRA').GetAdjectiveWithNoTooltip] Vojenská sila" # todo: NEW TRANSLATION
- RELATIVE_MILITARY_STRENGTH_FRA_TT_TEXT: "Relatívna vojenská sila [GetCountry('FRA').GetAdjective] voči [GetCountry('ENG').GetName] je: [GetCountry('FRA').GetRelativeMilitaryStrength(GetCountry('ENG').Self)|V0%]" # todo: NEW TRANSLATION
+ RELATIVE_MILITARY_STRENGTH_FRA_TT_TEXT: "Relatívna vojenská sila [GetCountry('FRA').GetAdjective] voči [SKCountry(GetCountry('ENG'),'D')] je: [GetCountry('FRA').GetRelativeMilitaryStrength(GetCountry('ENG').Self)|V0%]" # todo: NEW TRANSLATION
  RELATIVE_MILITARY_STRENGTH_FRA_TT_ARMY_STRENGTH: "$RELATIVE_MILITARY_STRENGTH_FRA_TT_TEXT$\n[GetCountry('FRA').GetAdjectiveWithNoTooltip] [Concept('army','Armáda')|e] Veľkosť: [GetCountry('FRA').GetArmySize]\n[GetCountry('FRA').GetAdjectiveWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('FRA').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_FRA_TT_LEVY_STRENGTH: "[GetCountry('FRA').GetAdjectiveWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('FRA').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  ACTIONS: "Akcie" # todo: NEW TRANSLATION
@@ -405,7 +405,7 @@
  BOH_STR_TT: "Sila [GetSituationByKey('hussite_wars').MakeScope.GetVariable('hussite_wars_hussite_relative_strength_variable').GetValue|V2%]" # todo: CHANGED (predtym: Sila [GetCountry('BOH').GetRelativeMilitaryStrength(GetUniqueInternationalOrganization('hre').GetLeaderCountry.Self)|V2%)
  EMPEROR_STR_TT: "Sila [GetSituationByKey('hussite_wars').MakeScope.GetVariable('hussite_wars_catholic_relative_strength_variable').GetValue|V2%]" # todo: CHANGED (predtym: Sila [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetRelativeMilitaryStrength(GetCountry('BOH').Self)|V2%)
  RELATIVE_MILITARY_STRENGTH_PAP_TT_TITLE: "[GetCountry('PAP').GetAdjectiveWithNoTooltip] Vojenská sila" # todo: NEW TRANSLATION
- RELATIVE_MILITARY_STRENGTH_PAP_TT_TEXT: "Relatívna vojenská sila [GetCountry('PAP').GetAdjective] voči [GetCountry('BOH').GetName] je: [GetCountry('PAP').GetRelativeMilitaryStrength(GetCountry('BOH').Self)|V0%]" # todo: NEW TRANSLATION
+ RELATIVE_MILITARY_STRENGTH_PAP_TT_TEXT: "Relatívna vojenská sila [GetCountry('PAP').GetAdjective] voči [SKCountry(GetCountry('BOH'),'D')] je: [GetCountry('PAP').GetRelativeMilitaryStrength(GetCountry('BOH').Self)|V0%]" # todo: NEW TRANSLATION
  RELATIVE_MILITARY_STRENGTH_PAP_TT_ARMY_STRENGTH: "$RELATIVE_MILITARY_STRENGTH_PAP_TT_TEXT$ \n[GetCountry('PAP').GetAdjectiveWithNoTooltip] [Concept('army','Armáda')|e] Veľkosť: [GetCountry('PAP').GetArmySize]\n[GetCountry('PAP').GetAdjectiveWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('PAP').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_PAP_TT_LEVY_STRENGTH: "[GetCountry('PAP').GetAdjectiveWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('PAP').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_EMPEROR_TT_TITLE: "[ShowReligionAdjectiveWithNoTooltip('catholic')] vojenská sila koalície" # todo: CHANGED (predtym: [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetAdjectiveWithNoTooltip] vojenská sila)
@@ -421,7 +421,7 @@
  hyw_english_concession_tt: "[GetCountry('ENG').GetName] sa vzdala nárokov na trón krajiny [GetCountry('FRA').GetAdjective]" # todo: NEW TRANSLATION
  request_papal_delegates: "Požiadať o [GetCountry('PAP').GetAdjectiveWithNoTooltip] delegátov" # todo: NEW TRANSLATION
  request_papal_delegates_desc: "Tá nezmyselná vojna medzi nami a naším protivníkom trvá už príliš dlho; je čas požiadať o mediátora, aby presadil mier medzi oboma stranami." # todo: NEW TRANSLATION
- pap_will_be_asked_to_enforce_wp_tt: "[GetCountry('PAP').GetLongName] bude požiadaný, aby vynútil [Concept('white_peace','status quo ante bellum')|e] medzi [GetCountry('FRA').GetName] a [GetCountry('ENG').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pap_will_be_asked_to_enforce_wp_tt: "[GetCountry('PAP').GetLongName] bude požiadaný, aby vynútil [Concept('white_peace','status quo ante bellum')|e] medzi [SKCountry(GetCountry('FRA'),'I')] a [GetCountry('ENG').GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  fra_diplomacy_with_subjects: "Udeľovať tituly poddaným" # todo: NEW TRANSLATION
  fra_diplomacy_with_subjects_desc: "Udeľovaním titulov našim najsilnejším poddaným zvýšime šancu, že zostanú na našej strane a vyhnú sa vplyvu [GetCountry('ENG').GetAdjectiveWithNoTooltip], inak riskujeme, že proti nám vznesú meč!" # todo: NEW TRANSLATION
  demand_autonomy: "Požiadať o autonómiu od [GetCountry('FRA').GetLongNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -431,7 +431,7 @@
  influence_french_subject_tt: "Vybraný [GetCountry('FRA').GetAdjective] poddaný možno presvedčiť, aby sa v nasledujúcich #Y 5#! rokoch neúčastnil žiadnych obranných vojen výmenou za [Concept('gold','dukáty')|e] [gold_i]" # todo: CHANGED # todo: CONCEPT CASE
  demand_appanage_promotion: "Žiadať povýšenie na [ShowSubjectTypeNameWithNoTooltip('appanage')]" # todo: NEW TRANSLATION
  demand_appanage_promotion_desc: "Náš prestíž a lesk nemôžu byť obmedzené pod prostým titlom [ShowSubjectTypeName('vassal')]. Ako sa náš vplyv rozširuje, náš titul musí odrážať našu silu a dôležitosť pod [GetCountry('FRA').GetAdjective] zástavou." # todo: NEW TRANSLATION
- fra_has_eligible_child_tt: "[GetCountry('FRA').GetGovernment.GetRulerOrRegent.GetDynasty.GetName] z [GetCountry('FRA').GetName] má [Concept('character','postavy')|e], ktorý je oprávnený stať sa naším [Concept('heir','dedičom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ fra_has_eligible_child_tt: "[GetCountry('FRA').GetGovernment.GetRulerOrRegent.GetDynasty.GetName] z [SKCountry(GetCountry('FRA'),'G')] má [Concept('character','postavy')|e], ktorý je oprávnený stať sa naším [Concept('heir','dedičom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  has_not_been_exempted_tt: "Ešte mu nebola udelená dočasná výnimka z útočných vojen prostredníctvom [ShowSituationName('hundred_years_war')] [Concept('situation','situácie')|e] [Concept('action','akcie')|e] [ShowGenericActionName('demand_autonomy')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  french_subject_prevented_from_call_to_war_join_war_tt: "NEMA [ShowModifier('french_subject_prevented_from_call_to_war')] [Concept('modifier','modifikátor')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  wont_be_auto_defended_by_overlord_join_war_tt: "V súčasnosti NIE JE oslobodená od automatickej obrany vo vojne" # todo: NEW TRANSLATION
@@ -497,7 +497,7 @@
  nanbokuchou_resolution_specific_desc: "$nanbokuchou_resolution_desc$" # todo: NEW TRANSLATION
  vote_in_nanbokuchou_resolution: "Hlasovať o $nanbokuchou_resolution$" # todo: NEW TRANSLATION
  vote_in_nanbokuchou_resolution_desc: "Rozhodnite, na ktorú stranu sa pridáme v $nanbokuchou_resolution$." # todo: NEW TRANSLATION
- SITUATION_NANBOKUCHOU_PROGRESS: "#T Podpora pre [Country.GetNameWithNoTooltip] #!" # todo: NEW TRANSLATION
+ SITUATION_NANBOKUCHOU_PROGRESS: "#T Podpora pre [SKCountryNoTooltip(Country,'A')] #!" # todo: NEW TRANSLATION
  SITUATION_NANBOKUCHOU_PROGRESS_TEXT: "Celková [Concept('military_strength','vojenská sila')|e] klanov podporujúcich [Country.GetName] je [GetListLandCombatPowerTooltipUI(VoteTargetGlue.GetVoters, Country.Self, '(bool)yes')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SITUATION_NANBOKUCHOU_NEUTRAL_PROGRESS: "#T Abstencie #!" # todo: NEW TRANSLATION
  SITUATION_NANBOKUCHOU_NEUTRAL_PROGRESS_TEXT: "Celková [Concept('military_strength','vojenská sila')|e] klanov, ktoré nepodporujú žiadnu stranu, je [GetListOnlyLandCombatPowerTooltipUI(VoteTargetGlue.GetVoters, '(bool)yes')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -552,7 +552,7 @@
  COUNTRIES_AROUND_DELHI: "Uchádzač počas [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  COUNTRY_AFFECTED_BY_FALL_OF_DELHI: "Táto krajina je súčasťou [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip] [Concept('situation','situáciou')|e]. Môže sa rozhodnúť podporovať buď [GetCountry('DLH').GetName] alebo jeho pretendentov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  fall_of_delhi_delhi_progress: "#T [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]#!\nToto je [GetCountry('DLH').GetName] [Concept('share_of_power_gc','podiel moci')|e]. Budú víťazmi, ak dosiahne #Y 100%#! pred začiatkom [ShowDisasterName('dissolution_of_delhi')] [Concept('disaster','katastrofy')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- fall_of_delhi_opposers_progress: "#T [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]#!\nToto je [Concept('share_of_power_gc','podiel moci')|e] tých, ktorí sa stavajú proti [GetCountry('DLH').GetName]. Ak dosiahne #R 80%#!, môže sa pre [GetCountry('DLH').GetNameWithNoTooltip] stať [ShowDisasterName('dissolution_of_delhi')] [Concept('disaster','katastrofu')|e]." # todo: CHANGED NUMBER # todo: CONCEPT CASE
+ fall_of_delhi_opposers_progress: "#T [GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]#!\nToto je [Concept('share_of_power_gc','podiel moci')|e] tých, ktorí sa stavajú proti [SKCountry(GetCountry('DLH'),'D')]. Ak dosiahne #R 80%#!, môže sa pre [SKCountryNoTooltip(GetCountry('DLH'),'A')] stať [ShowDisasterName('dissolution_of_delhi')] [Concept('disaster','katastrofu')|e]." # todo: CHANGED NUMBER # todo: CONCEPT CASE
  SUPPORTERS_OF_COUNTRY: "Podpora od [Country.GetLongName]" # todo: NEW TRANSLATION
  has_never_had_situation_before_tt: "Túto [Concept('situation','situáciu')|e] ešte nikdy nemal" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  delhi_situation_info_tt: "The [ShowSituationName('fall_of_delhi')] [Concept('situation','situácia')|e] sa môže čoskoro začať. Počas toho turbulentného obdobia nás čakajú rozsiahle povstania po celom našom území. Naši susedia a poddaní môžu vziať meč proti nám, ak sa naša autorita nestihne včas obnoviť. Vnútri krajiny intrigujúci [ShowEstateTypeName('nobles_estate')] ohrozujú zvrhnutie našej nestabilnej vlády...\n" # todo: RETRANSLATED ENGLISH # todo: CONCEPT CASE
@@ -560,17 +560,17 @@
  gain_2_progress_for_delhi_tt: "Získame #G 2%#! [Concept('share_of_power_gc','podiel moci')|e] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  gain_5_progress_for_claimants_tt: "Naši nepriatelia získajú #R 5%#! [Concept('share_of_power_gc','podiel moci')|e] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  gain_3_progress_for_claimants_tt: "Naši nepriatelia získajú #R 3%#! [Concept('share_of_power_gc','podiel moci')|e] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- get_opinion_with_other_jackals_tt: "Vzťahy medzi nami a krajinami, ktoré sú proti [GetCountry('DLH').GetName], sa zvýšia o #G 20#!, a získame u nich #G 5#! [Concept('favors','láskavosti')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- delhi_claimant_country_tt: "Aktívne sa postavíme proti [GetCountry('DLH').GetName] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ get_opinion_with_other_jackals_tt: "Vzťahy medzi nami a krajinami, ktoré sú proti [SKCountry(GetCountry('DLH'),'D')], sa zvýšia o #G 20#!, a získame u nich #G 5#! [Concept('favors','láskavosti')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ delhi_claimant_country_tt: "Aktívne sa postavíme proti [SKCountry(GetCountry('DLH'),'D')] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  cd_3_years: "Túto interakciu sme nepoužili počas posledných #Y 3#! rokov" # todo: NEW TRANSLATION
  dlh_reduce_frequency_of_revolt_events_tt: "Frekvencia katastrofických udalostí počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e] bude mierne znížená, pokiaľ bude aktívny [ShowModifier('delhi_loyal_governors_modifier')] [Concept('modifier','modifikátor')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  appease_nobility_effect_tt: "Pokým bude aktívny [ShowModifier('delhi_appeased_the_nobles_modifier')] [Concept('modifier','modifikátor')|e], [SCOPE.sCountry('actor').GetGovernment.GetEstateName('nobles_estate')] nevstúpi proti našej autorite prostredníctvom špeciálnych [Concept('events','udalostí')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  delhi_win_lose_conditions_tt: "Ak by sa [Concept('share_of_power_gc','podiel moci')|e] našich nepriateľov zvýšila na viac než #R 50%#!, môžeme upadnúť do [ShowDisasterName('dissolution_of_delhi')] [Concept('disaster','katastrofy')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- has_not_sided_with_opposers_already_tt: "V aktívnej situácii sa ešte nestaváme proti [GetCountry('DLH').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ has_not_sided_with_opposers_already_tt: "V aktívnej situácii sa ešte nestaváme proti [SKCountryNoTooltip(GetCountry('DLH'),'D')]" # todo: NEW TRANSLATION
  will_oppose_delhi_tt: "Budeme sa #Y postaviť proti#! [GetCountry('DLH').GetName] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  has_not_sided_with_delhi_already_tt: "V aktívnej situácii ešte nepodporujeme [GetCountry('DLH').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  will_support_delhi_tt: "Budeme #Y podporovať#! [GetCountry('DLH').GetName] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- gain_leadership_during_situation_tt: "Získame vedenie #Y opozície#! proti [GetCountry('DLH').GetNameWithNoTooltip] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ gain_leadership_during_situation_tt: "Získame vedenie #Y opozície#! proti [SKCountryNoTooltip(GetCountry('DLH'),'D')] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  opposition_share_of_power_1_tt: "Oponenti [GetCountry('DLH').GetName] majú aspoň 100% [Concept('share_of_power_gc','podiel moci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  delhi_share_of_power_1_tt: "[GetCountry('DLH').GetName] má aspoň 100% [Concept('share_of_power_gc','podiel moci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  dissolution_of_delhi_started_tt: "[ShowDisasterName('dissolution_of_delhi')] [Concept('disaster','Katastrofa')|e] sa začalo" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -583,7 +583,7 @@
  fall_of_delhi_reaffirm_vassal_relations_desc: "Naša pozícia a bohatstvo môžu byť ohrozené, ale musíme pripomenúť tým, ktorí sa nám klaňajú, kto je ich pán. Požadovaním tributov a prijímaním delegácií ich vládcov posilníme a upevníme naše vzťahy s podriadenými vazalami." # todo: NEW TRANSLATION
  fall_of_delhi_appease_the_nobility: "Uspokojiť šľachtu" # todo: NEW TRANSLATION
  fall_of_delhi_appease_the_nobility_desc: "Funkciu [SCOPE.sCountry('actor').GetGovernment.GetEstateName('nobles_estate')] nemožno podceniť, pokiaľ ide o úspech a prosperitu nášho panstva. Ich úloha ako tvorcov kráľov a strážcov korunového práva prináša v našom [GetCountry('DLH').GetFlavorRank] veľkú moc. Preto musíme rýchlo zabezpečiť ich vernosť, inak by sme sa mohli stať obeťou ich túžby po moci..." # todo: NEW TRANSLATION
- fall_of_delhi_join_opposers: "Postaviť sa proti [GetCountry('DLH').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ fall_of_delhi_join_opposers: "Postaviť sa proti [SKCountryNoTooltip(GetCountry('DLH'),'D')]" # todo: NEW TRANSLATION
  fall_of_delhi_join_opposers_desc: "[GetCountry('DLH').GetName] čelí kolapsu pod tlakom všetkých podrobených ľudí, nespokojných s jeho vládou. Musíme využiť meniace sa vetry zmien a použiť tento dekadentný [GetCountry('DLH').GetFlavorRank] ako odrazový mostík pre založenie nášho vlastného, slávneho miesta v histórii..." # todo: NEW TRANSLATION
  fall_of_delhi_join_delhi: "Podporiť [GetCountry('DLH').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  fall_of_delhi_join_delhi_desc: "Naše záujmy spočívajú v podpore súčasného status quo. Napriek tomu, že ich situácia je do istej miery vážna, rozhodneme sa zachovať právny poriadok pod [GetCountry('DLH').GetAdjectiveWithNoTooltip] [GetCountry('DLH').GetFlavorRank], pokiaľ to bude vyhovovať našej agende." # todo: NEW TRANSLATION
@@ -614,7 +614,7 @@
  RTR_NEUTRAL: "Autonómny a neutrálny [THIS.GetLocation.GetOwner.GetName] ($rtr_yuan_allegiance$: #Y [THIS.GetLocation.GetOwner.MakeScope.GetVariable('rtr_yuan_allegiance').GetValue]#!)" # todo: CHANGED
  RTR_LOYALISTS_TITLE: "Lojalisti [GetCountry('CHI').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  RTR_NEUTRALS_TITLE: "Neutrálni" # todo: NEW TRANSLATION
- RTR_REBELS_TITLE: "Rebeli proti [GetCountry('CHI').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ RTR_REBELS_TITLE: "Rebeli proti [SKCountryNoTooltip(GetCountry('CHI'),'D')]" # todo: NEW TRANSLATION
  RTR_YUAN_VICTORY: "[GetCountry('CHI').GetAdjectiveWithNoTooltip] víťazstvo" # todo: NEW TRANSLATION
  RTR_REBELS_VICTORY: "[GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetAdjectiveWithNoTooltip] víťazstvo" # todo: NEW TRANSLATION
  RTR_REBELS_VICTORY_DEFAULT: "Víťazstvo povstania" # todo: NEW TRANSLATION
@@ -623,14 +623,14 @@
  REB_STR_TT: "Sila [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetRelativeMilitaryStrength(GetCountry('CHI').Self)|V2%]" # todo: NEW TRANSLATION
  YUA_STR_DESC: "[GetCountry('CHI').GetAdjectiveWithNoTooltip] [Concept('army','Armáda')|e] Veľkosť: [GetCountry('CHI').GetArmySize]\n[GetCountry('CHI').GetNameWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('CHI').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_YUA_TT_TITLE: "[GetCountry('CHI').GetAdjectiveWithNoTooltip] vojenská sila" # todo: NEW TRANSLATION
- RELATIVE_MILITARY_STRENGTH_YUA_TT_TEXT: "Relatívna vojenská sila [GetCountry('CHI').GetAdjective] voči [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetName] je: [GetCountry('CHI').GetRelativeMilitaryStrength(GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.Self)|V2%]" # todo: NEW TRANSLATION
+ RELATIVE_MILITARY_STRENGTH_YUA_TT_TEXT: "Relatívna vojenská sila [GetCountry('CHI').GetAdjective] voči [SKCountry(GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry,'D')] je: [GetCountry('CHI').GetRelativeMilitaryStrength(GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.Self)|V2%]" # todo: NEW TRANSLATION
  RELATIVE_MILITARY_STRENGTH_YUA_TT_TEXT_DEFAULT: "Relatívna vojenská sila [GetCountry('CHI').GetAdjective]" # todo: NEW TRANSLATION
  RELATIVE_MILITARY_STRENGTH_YUA_TT_ARMY_STRENGTH: "[GetCountry('CHI').GetAdjectiveWithNoTooltip] [Concept('army','Armáda')|e] Veľkosť: [GetCountry('CHI').GetArmySize]\n[GetCountry('CHI').GetNameWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetCountry('CHI').GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RELATIVE_MILITARY_STRENGTH_REB_TT_TITLE: "[GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetAdjective] vojenská sila" # todo: NEW TRANSLATION
- RELATIVE_MILITARY_STRENGTH_REB_TT_TEXT: "Relatívna vojenská sila [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetAdjective] voči [GetCountry('CHI').GetName] je: [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetRelativeMilitaryStrength(GetCountry('CHI').Self)|V2%]" # todo: NEW TRANSLATION
+ RELATIVE_MILITARY_STRENGTH_REB_TT_TEXT: "Relatívna vojenská sila [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetAdjective] voči [SKCountry(GetCountry('CHI'),'D')] je: [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetRelativeMilitaryStrength(GetCountry('CHI').Self)|V2%]" # todo: NEW TRANSLATION
  REB_STR_DESC: "[GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetAdjectiveWithNoTooltip] [Concept('army','Armáda')|e] Veľkosť: [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetArmySize]\n[GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetAdjectiveWithNoTooltip] Potenciálne [Concept('levy','branec')|e]: [GetUniqueInternationalOrganization('red_turban_rebels').GetLeaderCountry.GetArmyLevyPotentialStrength]" # todo: CHANGED # todo: CONCEPT CASE
  RTR_SITUATION_TITLE: "Vernosť [GetCountry('CHI').GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
- RTR_SITUATION_TOOLTIP: "Každá krajina, ktorá bola počas tejto situácie oslobodená, má prednastavenú hodnotu #Y $rtr_yuan_allegiance$#!, ktorá odráža jej vernosť voči [GetCountry('CHI').GetName]. Ak klesne pod #R 0.00%#!, tieto štáty sa pridajú k [GetInternationalOrganizationType('red_turban_rebels').GetName]. Bojujúce štáty s viac než #Y 0.00%#! $rtr_yuan_allegiance$ budú namiesto toho neutrálne, zatiaľ čo tie s viac než #G 50.00%#! sa považujú za lojálne." # todo: NEW TRANSLATION
+ RTR_SITUATION_TOOLTIP: "Každá krajina, ktorá bola počas tejto situácie oslobodená, má prednastavenú hodnotu #Y $rtr_yuan_allegiance$#!, ktorá odráža jej vernosť voči [SKCountry(GetCountry('CHI'),'D')]. Ak klesne pod #R 0.00%#!, tieto štáty sa pridajú k [GetInternationalOrganizationType('red_turban_rebels').GetName]. Bojujúce štáty s viac než #Y 0.00%#! $rtr_yuan_allegiance$ budú namiesto toho neutrálne, zatiaľ čo tie s viac než #G 50.00%#! sa považujú za lojálne." # todo: NEW TRANSLATION
  RTR_HOLDER_OF_THE_MIDDLE_KINGDOM: "Veľké Stredné kráľovstvo" # todo: NEW TRANSLATION
  RTR_STRONGEST_REBEL_TITLE: "Najväčšia hrozba Červených turbanov" # todo: NEW TRANSLATION
  RTR_GRAPH_TITLE_TT: "Sila krajiny" # todo: NEW TRANSLATION
@@ -909,7 +909,7 @@
  estate_satisfaction_gain_scales_with_estate_power_tt: "Nasledujúce sa mení v závislosti od [Concept('estate','stavu')|e] [Concept('estate_power','sily stavu')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  spread_revolutionary_sentiment: "Šíriť revolučné nálady" # todo: NEW TRANSLATION
  spread_revolutionary_sentiment_desc: "Boj obyčajných ľudí za zrušenie svojich reťazí je dlhý a náročný proces. Často musíme pôsobiť ako vonkajší činiteľ a jemne tlačiť cudzie národy, aby prijali naše ideály v službách vyššieho cieľa!" # todo: NEW TRANSLATION
- revolution_in_selected_country_tt: "V [target_country.GetName] bude vyvolaný revolučný [Concept('rebel_movement','povstalecké hnutie')|e]. Ak už však jeden existuje, namiesto toho posilníme postup a silu toho hnutia." # todo: CHANGED # todo: CONCEPT CASE
+ revolution_in_selected_country_tt: "V [SKCountry(target_country,'L')] bude vyvolaný revolučný [Concept('rebel_movement','povstalecké hnutie')|e]. Ak už však jeden existuje, namiesto toho posilníme postup a silu toho hnutia." # todo: CHANGED # todo: CONCEPT CASE
  revolution_in_country_tt: "V zvolenej [Concept('country','krajine')|e] bude vyvolaný revolučný [Concept('rebel_movement','povstalecké hnutie')|e]. Ak však už jeden existuje, namiesto toho posilníme postup a silu toho hnutia." # todo: CHANGED # todo: CONCEPT CASE
  LEADER_OF_THE_REVOLUTION_TOOLTIP: "Toto je [Concept('revolutionary_target','cieľ revolúcie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WRESTLING_WITH_THE_REVOLUTION_TOOLTIP: "Táto [Concept('country','krajina')|e] momentálne zažíva [ShowDisasterName('revolution_disaster')] [Concept('disaster','katastrofa')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -922,7 +922,7 @@
  choose_an_uncolonized_location: "Vyberte nekolonizované [Concept('location','lokalita')|e], kam presunúť naše sídlo." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  antipiracy_request_cooldown_tt: "Táto krajina NEODPOVEDALA na podobnú žiadosť v posledných 6 mesiacoch" # todo: NEW TRANSLATION
  create_allied_pirate_nation: "Vytvoriť podriadený pirátsky štát" # todo: NEW TRANSLATION
- create_allied_pirate_nation_desc: "Vydaním listu povolenia na korzárstvo, pridelením vhodného sídla pre veliteľstvo a ponúknutím zlata, aby sme prilákali prvých členov posádky, vytvoríme doupě pirátov a zbojníkov, ktorí nepriateľským lodiam výrazne sťažia život, zatiaľ čo naše lode budú môcť prejsť bezpečne." # todo: CHANGED
+ create_allied_pirate_nation_desc: "Vydaním listu povolenia na korzárstvo, pridelením vhodného sídla pre veliteľstvo a ponúknutím zlata, aby sme prilákali prvých členov posádky, vytvoríme brloh pirátov a zbojníkov, ktorí nepriateľským lodiam výrazne sťažia život, zatiaľ čo naše lode budú môcť prejsť bezpečne." # todo: CHANGED (predtym: Vydaním listu povolenia na korzárstvo, pridelením vhodného sídla pre veliteľstvo a ponúknutím zlata, aby sme prilákali p)
  create_allied_pirate_nation_tt: "V určenom [Concept('location','lokalite')|e] sa objaví [Concept('navy_based','krajina založená na námorníctve')|e] [Concept('subject','vazala')|e]. Budeme mať príležitosť hrať za nich." # todo: RETRANSLATED ENGLISH # todo: CONCEPT CASE
  request_antipiracy_policy: "Požiadať o politiku proti pirátstvu" # todo: NEW TRANSLATION
  request_antipiracy_policy_desc: "Pirátske morie na vysokých moriach je tak ťažké vymýtiť preto, že niektoré bezbožné národy majú tú drzosť otvorene podporovať a financovať lúpežníkov. Môžeme sa ich pokúsiť presvedčiť, aby napravili túto chybu silou našej diplomacie." # todo: NEW TRANSLATION

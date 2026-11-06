@@ -9,8 +9,8 @@
  preach_the_crusade_zeal_tt: "Zvýši náboženské nadšenie [Concept('crusade','križiacka výprava')|e] o #G 5#! (maximum 100)" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  preach_the_crusade_invite_tt: "Vybranej krajine bude zaslaná pozvánka na pripojenie" # todo: NEW TRANSLATION
  hasten_holy_war_preparations_tt: "Urýchli prípravy na svätú vojnu o #G 10#! a spotrebuje #R 5#! jej náboženského nadšenia" # todo: NEW TRANSLATION
- grant_indulgence: "Uděliť odpustky" # todo: NEW TRANSLATION
- grant_indulgence_desc: "Udeľte členovi [Concept('crusade','križiackej výprave')|e] pápežské odpustky a prisľúbte odpustenie hriechov všetkým, ktorí sa v jeho mene chopili kríža. Dobrovoľníci sa hrnú pod jeho zástavy a na istý čas urýchlia obnovu jeho [Concept('manpower','živej sily')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ grant_indulgence: "Udeliť odpustky" # todo: CHANGED (predtym: Uděliť odpustky)
+ grant_indulgence_desc: "Udeľte členovi [Concept('crusade','križiackej výpravy')|e] pápežské odpustky a prisľúbte odpustenie hriechov všetkým, ktorí sa v jeho mene chopili kríža. Dobrovoľníci sa hrnú pod jeho zástavy a na istý čas urýchlia obnovu jeho [Concept('manpower','živej sily')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  levy_the_saladin_tithe: "Vyrubiť Saladinovu daň" # todo: NEW TRANSLATION
  levy_the_saladin_tithe_desc: "Vyzvite všetky katolícke nečlenské ríše v diplomatickom dosahu, aby financovali križiacku výpravu. Každá môže zaplatiť, pripojiť sa ku križiackej výprave alebo odmietnuť a vzbudiť nevôľu veriacich." # todo: NEW TRANSLATION
  levy_the_saladin_tithe_tt: "Každá katolícka ríša v diplomatickom dosahu mimo [Concept('crusade','križiackej výpravy')|e] dostane udalosť s výzvou, aby prispela do vojenskej pokladnice, pripojila sa k [crusade] alebo odmietla" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1252,7 +1252,7 @@
  IRE_high_kingship_f_leader_tt: "Musíme byť [Concept('international_organization_leader_short','líder')|e] [GetInternationalOrganizationType('high_kingship').GetName] [ShowRegionName('ireland_region')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  IRE_lordship_of_ireland_f_leader_tt: "Musíme byť [ShowSpecialStatusName('lord_of_ireland')] [GetUniqueInternationalOrganization('lordship_of_ireland').GetName]" # todo: NEW TRANSLATION
  violate_treaty_of_tordesillas: "Porušiť $treaty_of_tordesillas$" # todo: NEW TRANSLATION
- violate_treaty_of_tordesillas_desc: "$treaty_of_tordesillas$ je len kúsok bezvýznamného papiera pre tých, ktorí riskujú svoje životy, aby si vykopali lepšiu budúcnosť v nevděčnej a nebezpečnej novej zemi.\n\nIgnorujeme tieto pravidlá a dovolíme nášmu ľudu vziať si to, čo majú právo vlastniť." # todo: NEW TRANSLATION
+ violate_treaty_of_tordesillas_desc: "$treaty_of_tordesillas$ je len kúsok bezvýznamného papiera pre tých, ktorí riskujú svoje životy, aby si vykopali lepšiu budúcnosť v nevďačnej a nebezpečnej novej zemi.\n\nIgnorujeme tieto pravidlá a dovolíme nášmu ľudu vziať si to, čo majú právo vlastniť." # todo: CHANGED (predtym: $treaty_of_tordesillas$ je len kúsok bezvýznamného papiera pre tých, ktorí riskujú svoje životy, aby si vykopali lepšiu )
  stop_violate_treaty_of_tordesillas: "Prestať porušovať zmluvu o [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('treaty_location').GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  stop_violate_treaty_of_tordesillas_desc: "V záujme diplomatických vzťahov našej krajiny sa opäť prispôsobíme pravidlám stanoveným $treaty_of_tordesillas$." # todo: NEW TRANSLATION
  tordesillas_claim_conflicting_area_price: "Nárokovať konfliktné územie" # todo: NEW TRANSLATION
@@ -1329,7 +1329,7 @@
  choose_the_tatar_country_no_countries: "Nie je k dispozícii žiadna krajina" # todo: NEW TRANSLATION
  break_the_yoke: "Osloboďte sa od [GetInternationalOrganization('tatar_yoke').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  break_the_yoke_desc: "Je načase, aby sa náš ľud vzoprel útlaku [ShowSpecialStatusName('tatar_overlord')] a zhodil okovy, ktoré boli uvalené na ľud [ShowCultureGroupName('russian_group')]." # todo: NEW TRANSLATION
- break_tatar_yoke_tt: "Vyhlásime jedinú [ShowCasusBelliName('cb_break_free_tatar_yoke')] [Concept('war','vojnu')|e] proti [GetInternationalOrganization('tatar_yoke').GetLeaderCountry.GetName]. Keď bude [ShowPeaceTreatyTypeName('break_from_tatar_yoke')] vynútená, opustíme [GetInternationalOrganization('tatar_yoke').GetName]." # todo: CHANGED # todo: CONCEPT CASE
+ break_tatar_yoke_tt: "Vyhlásime jedinú [ShowCasusBelliName('cb_break_free_tatar_yoke')] [Concept('war','vojnu')|e] proti [SKCountry(GetInternationalOrganization('tatar_yoke').GetLeaderCountry,'D')]. Keď bude [ShowPeaceTreatyTypeName('break_from_tatar_yoke')] vynútená, opustíme [GetInternationalOrganization('tatar_yoke').GetName]." # todo: CHANGED # todo: CONCEPT CASE
  ask_to_become_tax_collector: "Požiadať o povýšenie titulu" # todo: NEW TRANSLATION
  ask_to_become_tax_collector_desc: "Súčasný [ShowSpecialStatusName('tatar_tax_collector')] už nie je vhodný na vyberanie tribútu nášho ľudu. My by sme boli lepší na túto pozíciu a mohli by sme sa stať vodcom [ShowCultureGroupName('russian_group')] v tomto vzťahu." # todo: NEW TRANSLATION
  ask_to_become_tax_collector_tt: "Požiadať [GetCountry('GLH').GetName] o prevod [ShowSpecialStatusName('tatar_tax_collector')] na nás." # todo: NEW TRANSLATION

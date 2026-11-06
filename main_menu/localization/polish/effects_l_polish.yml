@@ -894,12 +894,12 @@
  PAST_COPY_COUNTRY_COLOR_EFFECT: "Skopíroval farbu na mape od [TARGET_COUNTRY.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  FIRST_PAST_COPY_COUNTRY_COLOR_EFFECT: "Skopírovali sme farbu na mape od [TARGET_COUNTRY.GetAltAdjective('G')]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  THIRD_PAST_COPY_COUNTRY_COLOR_EFFECT: "[COUNTRY.GetName|U] skopíroval mapovú farbu od [TARGET_COUNTRY.GetAltAdjective('G')]" # todo: CHANGED # todo: COUNTRY CASE
- TRANSFER_SUBJECT_EFFECT: "Získa [COUNTRY.GetName] za vazala od [COUNTRY.GetDiplomacy.GetOverlord.GetName]" # todo: NEW TRANSLATION
- FIRST_TRANSFER_SUBJECT_EFFECT: "Získame [COUNTRY.GetName] za vazala od [COUNTRY.GetDiplomacy.GetOverlord.GetName]" # todo: NEW TRANSLATION
- THIRD_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.GetName|U] získa [COUNTRY.GetName] ako subjekt od [COUNTRY.GetDiplomacy.GetOverlord.GetName]" # todo: CHANGED
- PAST_TRANSFER_SUBJECT_EFFECT: "Získalo [COUNTRY.GetName] za vazala od [COUNTRY.GetDiplomacy.GetOverlord.GetName]" # todo: NEW TRANSLATION
- FIRST_PAST_TRANSFER_SUBJECT_EFFECT: "Získali sme [COUNTRY.GetName] za vazala od [COUNTRY.GetDiplomacy.GetOverlord.GetName]" # todo: NEW TRANSLATION
- THIRD_PAST_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.GetName|U] získal [COUNTRY.GetName] ako subjekt od [COUNTRY.GetDiplomacy.GetOverlord.GetName]" # todo: CHANGED
+ TRANSFER_SUBJECT_EFFECT: "Získa [COUNTRY.GetName] za vazala od [SKCountry(COUNTRY.GetDiplomacy.GetOverlord,'G')]" # todo: NEW TRANSLATION
+ FIRST_TRANSFER_SUBJECT_EFFECT: "Získame [COUNTRY.GetName] za vazala od [SKCountry(COUNTRY.GetDiplomacy.GetOverlord,'G')]" # todo: NEW TRANSLATION
+ THIRD_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.GetName|U] získa [COUNTRY.GetName] ako subjekt od [SKCountry(COUNTRY.GetDiplomacy.GetOverlord,'G')]" # todo: CHANGED
+ PAST_TRANSFER_SUBJECT_EFFECT: "Získalo [COUNTRY.GetName] za vazala od [SKCountry(COUNTRY.GetDiplomacy.GetOverlord,'G')]" # todo: NEW TRANSLATION
+ FIRST_PAST_TRANSFER_SUBJECT_EFFECT: "Získali sme [COUNTRY.GetName] za vazala od [SKCountry(COUNTRY.GetDiplomacy.GetOverlord,'G')]" # todo: NEW TRANSLATION
+ THIRD_PAST_TRANSFER_SUBJECT_EFFECT: "[TARGET_COUNTRY.GetName|U] získal [COUNTRY.GetName] ako subjekt od [SKCountry(COUNTRY.GetDiplomacy.GetOverlord,'G')]" # todo: CHANGED
  REMOVE_REFORM_EFFECT: "Odstráni [TARGET_GOVERNMENT_REFORM.GetName] [Concept('government_reform','reforma vlády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WE_REMOVE_REFORM_EFFECT: "Odstránime [TARGET_GOVERNMENT_REFORM.GetName] [Concept('government_reform','reforma vlády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  THIRD_REMOVE_REFORM_EFFECT: "[COUNTRY.GetName|U] zruší [TARGET_GOVERNMENT_REFORM.GetName] [Concept('government_reform','reforma vlády')|e]" # todo: CHANGED # todo: CONCEPT CASE
@@ -2767,9 +2767,9 @@
  ESTATES_EFFECT: "" # todo: CHANGED (predtym: Efekty stavov:)
  ESTATES_EFFECT_HEADER: "Účinky stavov:" # todo: NEW TRANSLATION
  ADD_CIRCLE_SATISFACTION_EFFECT: "Získava $VALUE|+0$ spokojnosť v [IMPERIAL_CIRCLE.GetName]" # todo: NEW TRANSLATION
- REMOVE_CIRCLE_SATISFACTION_EFFECT: "Stráca $VALUE|+0$ spokojnosť v [IMPERIAL_CIRCLE.GetName]" # todo: CHANGED MINOR
+ REMOVE_CIRCLE_SATISFACTION_EFFECT: "Stráca $VALUE|-0$ spokojnosť v [IMPERIAL_CIRCLE.GetName]" # todo: CHANGED (predtym: Stráca $VALUE|+0$ spokojnosť v [IMPERIAL_CIRCLE.GetName])
  THIRD_ADD_CIRCLE_SATISFACTION_EFFECT: "[IMPERIAL_CIRCLE.GetName] získava $VALUE|+0$ spokojnosť" # todo: NEW TRANSLATION
- THIRD_REMOVE_CIRCLE_SATISFACTION_EFFECT: "[IMPERIAL_CIRCLE.GetName] stráca $VALUE|+0$ spokojnosť" # todo: CHANGED MINOR
+ THIRD_REMOVE_CIRCLE_SATISFACTION_EFFECT: "[IMPERIAL_CIRCLE.GetName] stráca $VALUE|-0$ spokojnosť" # todo: CHANGED (predtym: [IMPERIAL_CIRCLE.GetName] stráca $VALUE|+0$ spokojnosť)
  PAST_ADD_CIRCLE_SATISFACTION_EFFECT: "Získal $VALUE|+0$ spokojnosť v [IMPERIAL_CIRCLE.GetName]" # todo: NEW TRANSLATION
  PAST_REMOVE_CIRCLE_SATISFACTION_EFFECT: "Stratil $VALUE|+0$ spokojnosť v [IMPERIAL_CIRCLE.GetName]" # todo: NEW TRANSLATION
  PAST_THIRD_ADD_CIRCLE_SATISFACTION_EFFECT: "[IMPERIAL_CIRCLE.GetName] získal $VALUE|+0$ spokojnosť" # todo: NEW TRANSLATION

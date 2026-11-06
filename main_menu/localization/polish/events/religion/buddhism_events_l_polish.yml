@@ -42,7 +42,7 @@
  buddhism_events.9.b: "Rozhodnúť v prospech [ShowBuildingTypeNameWithNoTooltip('monastery')]." # todo: NEW TRANSLATION
  buddhism_events.9.c: "Podporiť laickú rodinu mnícha." # todo: NEW TRANSLATION
  buddhism_events.10.title: "Zahraničný emisár urazil [target_ruler.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- buddhism_events.10.desc: "Nedávna misia od [target_country.GetLongName] zle dopadla, keď emisár vážne urazil [ROOT.GetCountry.GetGovernment.GetRulerTitle] tým, že odmietol zúčastniť sa obradu, ktorý bol na túto príležitosť zorganizovaný. [target_ruler.GetName] je rozzuřený, a hoci je možné, že pohrdnutie bolo neúmyselné, verejnosť to jasne vníma ako úmyselné.\n\nAk verejne neodsúdime veľvyslanca, riskujeme stratu tváre, no mnohí z nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] však žiadajú opatrnosť." # todo: NEW TRANSLATION
+ buddhism_events.10.desc: "Nedávna misia od [target_country.GetLongName] zle dopadla, keď emisár vážne urazil [ROOT.GetCountry.GetGovernment.GetRulerTitle] tým, že odmietol zúčastniť sa obradu, ktorý bol na túto príležitosť zorganizovaný. [target_ruler.GetName] je rozzúrený, a hoci je možné, že pohrdnutie bolo neúmyselné, verejnosť to jasne vníma ako úmyselné.\n\nAk verejne neodsúdime veľvyslanca, riskujeme stratu tváre, no mnohí z nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] však žiadajú opatrnosť." # todo: CHANGED (predtym: Nedávna misia od [target_country.GetLongName] zle dopadla, keď emisár vážne urazil [ROOT.GetCountry.GetGovernment.GetRul)
  buddhism_events.10.a: "Verejne zosmiešniť veľvyslanca." # todo: NEW TRANSLATION
  buddhism_events.10.b: "Ako [ROOT.GetCountry.GetGovernment.GetRulerTitle], [target_ruler.GetHerHis] nesmie stratiť nervy." # todo: NEW TRANSLATION
  buddhism_events.11.title: "Zákony [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -166,14 +166,14 @@
  buddhism_events.1300.a: "Pošlime delegáciu." # todo: NEW TRANSLATION
  buddhism_events.1300.b: "Nie, musíme podporiť naše miestne náboženské smery!" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_supporting_local_monastic_traditions: "Podpora miestnej mníšskej tradície" # todo: NEW TRANSLATION
- buddhism_events.1301.title: "Posolstvo z [target_origin_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- buddhism_events.1301.desc: "Prosperujúce mníšske komunity, sväté relikvie i dlhá tradícia zvládania koexistencie mníšskej a kráľovskej moci nás robia predmetom obdivu mnohých vládcov [ShowReligionName('theravada')]. Niet teda divu, že [target_origin_country.GetGovernment.GetRulerTitle] z [target_origin_country.GetName] túži napodobniť naše veľkoleposti. [target_origin_country.GetAdjectiveWithNoTooltip] delegácia, ktorá dnes prišla, žiada, aby sme povolili niekoľkým ich mníchom pricestovať do našej krajiny a tu prijať ordináciu, aby mohli odovzdať naše tradície späť do [target_origin_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ buddhism_events.1301.title: "Posolstvo z [SKCountryNoTooltip(target_origin_country,'G')]" # todo: NEW TRANSLATION
+ buddhism_events.1301.desc: "Prosperujúce mníšske komunity, sväté relikvie i dlhá tradícia zvládania koexistencie mníšskej a kráľovskej moci nás robia predmetom obdivu mnohých vládcov [ShowReligionName('theravada')]. Niet teda divu, že [target_origin_country.GetGovernment.GetRulerTitle] z [SKCountry(target_origin_country,'G')] túži napodobniť naše veľkoleposti. [target_origin_country.GetAdjectiveWithNoTooltip] delegácia, ktorá dnes prišla, žiada, aby sme povolili niekoľkým ich mníchom pricestovať do našej krajiny a tu prijať ordináciu, aby mohli odovzdať naše tradície späť do [SKCountryNoTooltip(target_origin_country,'G')]." # todo: NEW TRANSLATION
  buddhism_events.1301.a: "Povoľme to." # todo: NEW TRANSLATION
  lankan_monks_sent: "[ShowReligionName('theravada')] výmena mníchov" # todo: NEW TRANSLATION
  buddhism_events.1301.b: "To nepripustíme!" # todo: NEW TRANSLATION
  no_lankan_monks_sent: "Odmietnuté mníšske vzdelávanie" # todo: NEW TRANSLATION
  buddhism_events.1302.title: "[target_country.GetAdjectiveWithNoTooltip] odpoveď" # todo: NEW TRANSLATION
- buddhism_events.1302.desc: "[target_country.GetGovernment.GetRulerTitle] z [target_country.GetName] dovolil 40 mníchom prijímať ordináciu v [target_ruler.GetHerHis] krajine. [target_ruler.GetSheHe|U] tiež poslal skupinu mníchov priamo z [target_ruler.GetHerHis] území k nám, aby zabezpečil, že [ShowReligionName('theravada')] tradície budú prenesené rozumne." # todo: NEW TRANSLATION
+ buddhism_events.1302.desc: "[target_country.GetGovernment.GetRulerTitle] z [SKCountry(target_country,'G')] dovolil 40 mníchom prijímať ordináciu v [target_ruler.GetHerHis] krajine. [target_ruler.GetSheHe|U] tiež poslal skupinu mníchov priamo z [target_ruler.GetHerHis] území k nám, aby zabezpečil, že [ShowReligionName('theravada')] tradície budú prenesené rozumne." # todo: NEW TRANSLATION
  buddhism_events.1302.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_monks_from_ceylon: "Vplyv z [ShowAreaName('sailan_area')]" # todo: NEW TRANSLATION
  STATIC_MODIFIER_DESC_monks_from_ceylon: "Prevzali sme veľký vplyv od štátov [ShowAreaName('sailan_area')] a ich mníšskych rádov. To nám umožnilo vytvoriť hlbšie väzby na prestížne [ShowReligionName('theravada')] tradície toho ostrova." # todo: NEW TRANSLATION
