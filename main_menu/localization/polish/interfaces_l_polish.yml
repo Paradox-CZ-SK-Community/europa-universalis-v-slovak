@@ -48,9 +48,9 @@
  TOWN_RIGHTS_CONFIRM_TITLE: "[TOWN_RIGHTS_TYPE.GetNameWithNoTooltip] pre [LOCATION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  TOWN_RIGHTS_DESC: "[TOWN_RIGHTS_TYPE.GetTooltip]" # todo: NEW TRANSLATION
  LOCATION_TOWN_RIGHTS_TT: "[LOCATION.GetNameWithNoTooltip] získa [Concept('town_rights','mestské práva')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- AVERAGE_CONTROL_TT_TITLE: "Priemerná kontrola [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ AVERAGE_CONTROL_TT_TITLE: "Priemerná kontrola [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
  AVERAGE_CONTROL_TT_TABLE: "Priemerná [Concept('control','kontrola')|e] [Player.GetAverageControl|W%2] má nasledujúci vplyv" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBJECT_UI_TITLE: "Subjekty [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ SUBJECT_UI_TITLE: "Subjekty [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
  SUBJECT_RELATIVE_POWER: "[Concept('subjects','Vazali')|e] majú relatívnu [Concept('economical_base','ekonomickú základňu')|e] [Player.GetDiplomacy.GetRelativeSubjectPower|2%R], čo má nasledujúci vplyv" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SUB_CONTINENT_ADJACENCIES: "Susedné subkontinenty" # todo: NEW TRANSLATION
  SUB_CONTINENT_ADJ: "[SUB_CONTINENT.GetName]" # todo: NEW TRANSLATION
@@ -63,7 +63,7 @@
  ECONOMICALBASE_TOOLTIP_TITLE: "[Country.GetNameWithNoTooltip] má [Country.GetEconomicalBase|2]@gold!" # todo: NEW TRANSLATION
  AVERAGE_ECONOMICAL_BASE: "Priemerný [Concept('economical_base','ekonomická základňa')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CS_COMBINED_ARMS_INFO: "#T Bonus kombinovaných síl#!\nBonus $VAL|+=2%$ je spôsobený\n$WHY$" # todo: NEW TRANSLATION
- NO_COMBINED_ARMS_BONUS: "Najväčšia [Concept('unit_category','kategória jednotky')|e] tvorí $VAL|2R%$ z [Concept('units','jednotiek')|e] a musí byť pod $PERC|2%G$, aby poskytla bonus.\nBonus: 0.00%" # todo: CHANGED # todo: CONCEPT CASE
+ NO_COMBINED_ARMS_BONUS: "Najväčšia [Concept('unit_category','kategória jednotky')|e] tvorí $VAL|2R%$ z [Concept('units','jednotiek')|e] a musí byť pod $PERC|2%G$, aby poskytla bonus." # todo: CHANGED (predtym: Najväčšia [Concept('unit_category','kategória jednotky')|e] tvorí $VAL|2R%$ z [Concept('units','jednotiek')|e] a musí by)
  COMBINED_ARMS_BONUS_ENTRY: "$BULLET$$PERC|2%$ [SUBUNITCATEGORY.GetName]: $VAL|+=2%$" # todo: NEW TRANSLATION
  COMBINED_ARMS_EXCLUDED_ENTRY: "$BULLET$[SUBUNITCATEGORY.GetNameWithNoTooltip]: neprispieva ku Kombinovaným zbraniam" # todo: NEW TRANSLATION
  UNIT_CATEGORY_NO_COMBINED_ARMS: "Neprispieva ku [Concept('combined_arms','kombinovaným zbraniam')|e]" # todo: CHANGED (predtym: Nepřispieva ku [Concept('combined_arms','kombinovaným zbraniam')|e])
@@ -305,7 +305,7 @@
  FOLLOWING_BUILDINGS_LACK_GOODS: "Budovy postrádajúce tovar" # todo: NEW TRANSLATION
  PROV_MARKET_SIEGE: "@warning_icon![LOCATION.GetName] je pod [Concept('siege','obliehaním')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PROV_MARKET_PATH_BLOCKED: "@warning_icon!Cesta z [LOCATION.GetName] do [MARKET.GetName] je zablokovaná." # todo: NEW TRANSLATION
- POSSIBLE_REFORMS: "Možné vládne reformy pre [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ POSSIBLE_REFORMS: "Možné vládne reformy pre [SKCountryNoTooltip(Player,'A')]" # todo: NEW TRANSLATION
  MAX_REFORM_SOURCES: "Môžeme mať [Player.GetModifierValueWithNoTooltipNoSign('government_reform_slots')|G] reforiem vďaka" # todo: NEW TRANSLATION
  LITERACY_LOC_TT_TITLE: "Priemerná gramotnosť je [Location.GetAverageLiteracy|2%/] v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  POP_LITERACY_ENTRY: "[POP.GetSize] [POP.GetType.GetIcon] [POP.GetName]: [POP.GetLiteracyLabel]" # todo: NEW TRANSLATION
@@ -497,23 +497,23 @@
  POP_LEVY_CALC_FINAL_CALCULATION_WITH_CONTROL_AND_RECOVERY: "Konečný výpočet #V $BASE$#! * #V $CONTROL_MULTIPLIER|2$#! * #V $LEVY_MULTIPLIER|2$#! * #V $RECOVERY_MULTIPLIER|2$#! = #V $VAL$#!" # todo: NEW TRANSLATION
  POP_LEVY_CALC_FINAL_CALCULATION_WITH_CULTURE_AND_CONTROL_AND_RECOVERY: "Konečný výpočet #V $BASE$#! * #V $CULTURE_MULTIPLIER|2$#! * #V $CONTROL_MULTIPLIER|2$#! * #V $LEVY_MULTIPLIER|2$#! * #V $RECOVERY_MULTIPLIER|2$#! = #V $VAL$#!" # todo: NEW TRANSLATION
  POP_LEVY_CALC_CONTROL: "[Concept('control','Kontrola')|e] na úrovni $CONTROL|%V2$: #V x$VAL|2$#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- MERCHANT_CAPACITY_MODIFIER_TT_HEADER: "Vplyv na neobchodnú kapacitu [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MERCHANT_CAPACITY_MODIFIER_TT_HEADER: "Vplyv na obchodnú kapacitu [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SELLING_EFFICIENCY_MODIFIER_TT_HEADER: "Vplyv na efektivitu predaja [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPORT_EFFICIENCY_MODIFIER_TT_HEADER: "Vplyv na efektivitu exportu [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  IMPORT_EFFICIENCY_MODIFIER_TT_HEADER: "Vplyv na efektivitu importu [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- MERCHANT_POWER_TT_HEADER: "Vplyv na neobchodnú výhodu [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- MERCHANT_MAINTENANCE_TT_HEADER: "Vplyv na údržbu neobchodnú trasy [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MERCHANT_POWER_TT_HEADER: "Vplyv na obchodnú výhodu [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MERCHANT_MAINTENANCE_TT_HEADER: "Vplyv na údržbu obchodných trás [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MERCHANT_MAINTENANCE_EFFICIENCY_CALCULATION: "100% − (100% ÷ $DIVISOR|+=2%$) = $EFFECTIVE_REDUCTION|+=2%$" # todo: NEW TRANSLATION
  MERCHANT_MAINTENANCE_NOMINAL_SOURCES: "Zdroje nominálnej efektivity" # todo: NEW TRANSLATION
- MARKET_ATTRACTION_TT_HEADER: "Vplyv na atraktivitu trhu [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- TRADE_PROTECTION_TT_HEADER: "Vplyv na ochranu obchodu [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ MARKET_ATTRACTION_TT_HEADER: "Vplyv na atraktivitu trhu [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
+ TRADE_PROTECTION_TT_HEADER: "Vplyv na ochranu obchodu [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
  MARKET_TOTAL_TRADED_LAST_MONTH: "[market_value] z [Market.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  MARKET_TOTAL_TRADED_LAST_MONTH_TT: "Minulý mesiac sa v tomto [Concept('market','trhu')|e] vymenilo [Concept('goods','tovary')|e] za celkovú hodnotu [Market.GetTotalValueTraded|W2][gold_i]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MARKET_PRODUCTION_VALUE_BY_COUNTRY: "Hodnota produkcie podľa krajiny" # todo: NEW TRANSLATION
  MARKET_PRODUCTION_VALUE_BY_COUNTRY_LABEL: "Produkcia" # todo: NEW TRANSLATION
  MARKET_PRODUCTION_VALUE_OTHER: "Ostatné" # todo: NEW TRANSLATION
  POPS_BY_COUNTRY_OTHER: "Ostatní" # todo: NEW TRANSLATION
- TRADE_RANGE_TT_HEADER: "[trade_range] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ TRADE_RANGE_TT_HEADER: "[trade_range] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
  TRADE_ADVANTAGE_POSITION: "[Market.GetMerchantRanking(Player.Self)|O]/[GetDataModelSize(Market.GetMerchants)]" # todo: NEW TRANSLATION
  NO_TRADE_ADVANTAGE_POSITION: "0/[GetDataModelSize(Market.GetMerchants)]" # todo: NEW TRANSLATION
  MARKET_POPS_WITH_GOOD_NEEDS: "Populácie postrádajú [GOODS.GetIcon] [GOODS.GetName] v [Market.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|L$" # todo: NEW TRANSLATION
@@ -647,7 +647,7 @@
  PROXIMITY_ICON_RIVER: "@river!" # todo: NEW TRANSLATION
  PROXIMITY_ICON_FROZEN: "@frozen!" # todo: NEW TRANSLATION
  PROXIMITY_ICON_LAKE: "@lake!" # todo: NEW TRANSLATION
- ACCEPTED_CULTURES_TITLE: "Akceptované kultúry v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ACCEPTED_CULTURES_TITLE: "Akceptované kultúry v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CUL_CAPACITY_USED_COU: "[Country.GetName] využíva [Country.GetTotalCultureCapacityUsed|2R]/[Country.GetCulturalCapacity|2G] [Concept('cultural_capacity','kultúrna kapacita')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CUL_CAPACITY_FOR_COU: "Maximálna [Concept('cultural_capacity','kultúrna kapacita')] [Country.GetDoubleModifierValueNoFormatNoSign('cultures_capacity','cultures_capacity_modifier')|G] je z dôvodu:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BASE_ACP_CUL: "Kultúrne náklady pre [CULTURE.GetNameWithNoTooltip]\nZákladné náklady [Concept('accepted_culture','akceptovaná kultúra')|e]: $VAL|-2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -1075,9 +1075,9 @@
  ITALIAN_LEAGUE_SPONSOR_MANPOWER_MULTIPLIER: "Násobiteľ ľudských zdrojov sponzora ligy" # todo: NEW TRANSLATION
  TITHE_PAYMENT_MULTIPLIER: "Celkový zdaniteľný príjem stavov" # todo: NEW TRANSLATION
  TITHE_RELIGION_MULTIPLIER: "[Concept('tithe','Desiatok')|E] Sadzba" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INCOME_TOOLTIP_T: "Príjem [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- EXPENSE_TOOLTIP_T: "Výdavky [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- BALANCE_TOOLTIP_T: "Bilancia [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ INCOME_TOOLTIP_T: "Príjem [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
+ EXPENSE_TOOLTIP_T: "Výdavky [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
+ BALANCE_TOOLTIP_T: "Bilancia [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION
  EXPENSE_MAINT_TOOLTIP_T: "[MaintenanceSetting.GetNameWithNoTooltip] [MaintenanceSetting.GetSettingOwner.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  EXPENSE_MAINT_TT_TEXT: "Pri investícii [MaintenanceSetting.GetSliderValue|2=%V] je [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.GetName] [MaintenanceSetting.GetExpenseWithCurrency]." # todo: CHANGED
  EXPENSE_MAINT_TT_TEXT_LONG: "Pri investícii [MaintenanceSetting.GetSliderValue|2=%V] je [MaintenanceSetting.GetNameWithNoTooltip|V] [MaintenanceSetting.GetSettingOwner.GetName] [MaintenanceSetting.GetExpenseWithCurrency] z [MaintenanceSetting.GetMaxExpenseWithCurrency], čo spôsobuje mesačnú zmenu [MaintenanceSetting.GetExpenseBenefit]." # todo: CHANGED
@@ -1623,7 +1623,7 @@
  OUTLINER_BTN: "Prehľad" # todo: NEW TRANSLATION
  ENCYC_BTN: "Europedia" # todo: NEW TRANSLATION
  MENU_BTN: "Menu" # todo: NEW TRANSLATION
- DIPLOMACY_OVERVIEW: "Diplomacia [Player.GetName]" # todo: NEW TRANSLATION
+ DIPLOMACY_OVERVIEW: "Diplomacia [SKCountry(Player,'G')]" # todo: NEW TRANSLATION
  PRODUCTION_TEXT: "Budovy" # todo: NEW TRANSLATION
  EXPAND_RAW_GOODS_TEXT: "Tovary" # todo: NEW TRANSLATION
  FOOD_PRODUCTION_TEXT: "Potraviny" # todo: NEW TRANSLATION
@@ -1692,8 +1692,8 @@
  CURRENT_ARMIES_TAB_TT_TEXT: "Táto karta poskytuje prehľad všetkých [Concept('armies','armády')|e] pod velením tohto [Concept('countries','krajinou')|e], ako aj prostriedky na [Concept('recruit','nábor')|e] nové armády." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CURRENT_NAVIES_TAB: "Flotily" # todo: NEW TRANSLATION
  CURRENT_NAVIES_TAB_TT_TEXT: "Táto karta poskytuje prehľad všetkých [Concept('navies','námorné sily')|e] pod velením tohto [Concept('countries','krajinou')|e], ako aj prostriedky na [Concept('recruit','nábor')|e] nové námorné sily." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- PROMOTION_TOOLTIP_T: "Rýchlosť povyšovania a znižovania populácie u [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- PROMOTION_TT_TEXT: "Rýchlosť povyšovania populácie v [Player.GetName] je [Player.GetModifierValueNoFormat('global_pop_promotion_speed_modifier')]" # todo: NEW TRANSLATION
+ PROMOTION_TOOLTIP_T: "Rýchlosť sociálneho vzostupu a poklesu obyvateľstva v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
+ PROMOTION_TT_TEXT: "Rýchlosť povyšovania populácie v [SKCountry(Player,'L')] je [Player.GetModifierValueNoFormat('global_pop_promotion_speed_modifier')]" # todo: NEW TRANSLATION
  LIST_TITLE_PROMOTION: "Rýchlosť povyšovania populácie [Player.GetModifierValueWithNoTooltipNoSign('global_pop_promotion_speed_modifier')|V] je spôsobená:" # todo: NEW TRANSLATION
  LIST_TITLE_DEMOTION: "Rýchlosť znižovania populácie [Player.GetModifierValueWithNoTooltipNoSign('global_pop_demotion_speed_modifier')|V] je spôsobená:" # todo: NEW TRANSLATION
  DIPLOMACY_RELATIONS_TAB: "Vzťahy" # todo: NEW TRANSLATION
@@ -2010,20 +2010,20 @@
  DISEASE_OUTBREAK_AFFECTED_COUNTRIES_TITLE: "Krajiny postihnuté [PossibleDisease.GetName]" # todo: NEW TRANSLATION
  DISEASE_OUTBREAK_AMOUNT_DEATH: "Celkový počet úmrtí obyvateľstva touto epidémiou" # todo: NEW TRANSLATION
  DISEASE_OUTBREAK_AMOUNT_DEATH_TITLE: "Úmrtia z [PossibleDisease.GetName]" # todo: NEW TRANSLATION
- OUTBREAK_AMOUNT_COUNTRY_POPULATION_DEATH: "Celkový počet úmrtí obyvateľstva v [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] touto epidémiou." # todo: NEW TRANSLATION
- OUTBREAK_AMOUNT_COUNTRY_POPULATION_DEATH_TITLE: "Úmrtia z [PossibleDisease.GetName] v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- DISEASE_OUTBREAK_COUNTRY_AMOUNT: "Celkový počet ohnísk tejto choroby ovplyvňujúcich [Player.GetFlagIcon] [Player.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
- DISEASE_OUTBREAK_COUNTRY_AMOUNT_TITLE: "Ohiská [PossibleDisease.GetName] v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- DISEASE_BANNER_TT_DESC: "Úmrtia obyvateľstva v [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] spôsobené chorobou [PossibleDisease.GetName]." # todo: NEW TRANSLATION
+ OUTBREAK_AMOUNT_COUNTRY_POPULATION_DEATH: "Celkový počet úmrtí obyvateľstva v [Player.GetFlagIcon] [SKCountryNoTooltip(Player,'L')] touto epidémiou." # todo: NEW TRANSLATION
+ OUTBREAK_AMOUNT_COUNTRY_POPULATION_DEATH_TITLE: "Úmrtia z [PossibleDisease.GetName] v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
+ DISEASE_OUTBREAK_COUNTRY_AMOUNT: "Celkový počet ohnísk tejto choroby ovplyvňujúcich [Player.GetFlagIcon] [SKCountryNoTooltip(Player,'A')]." # todo: NEW TRANSLATION
+ DISEASE_OUTBREAK_COUNTRY_AMOUNT_TITLE: "Ohiská [PossibleDisease.GetName] v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
+ DISEASE_BANNER_TT_DESC: "Úmrtia obyvateľstva v [Player.GetFlagIcon] [SKCountryNoTooltip(Player,'L')] spôsobené chorobou [PossibleDisease.GetName]." # todo: NEW TRANSLATION
  DISEASE_BANNER_TT_BODY: "Úmrtia: [PossibleDisease.GetPlayerDeathsInfo]\nAktívne ohniská: [PossibleDisease.GetCountryNumOutbreaks]" # todo: NEW TRANSLATION
- MOVEMENT_OUTBREAK_COUNTRY_AMOUNT_TITLE: "Výbuchy [PeopleMovementItem.GetMovement.GetName] v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ MOVEMENT_OUTBREAK_COUNTRY_AMOUNT_TITLE: "Výbuchy [PeopleMovementItem.GetMovement.GetName] v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
  OUTBREAK_AMOUNT_COUNTRY_UNITS_DEATH: "Celkový počet padlých jednotiek našej krajiny touto epidémiou" # todo: NEW TRANSLATION
  ENVIRONMENTAL_DISEASE: "Environmentálna [Concept('disease','choroba')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ENVIRONMENTAL_MOVEMENT: "Environmentálne [Concept('movement','hnutie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DISEASE_CHART_MIN: "Najnižší počet [Concept('population','populácie')], ktorý mal [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] počas celej histórie existencie [Concept('country','krajina')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DISEASE_CHART_MIN_TITLE: "Minimálna [Concept('population','populácia')] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DISEASE_CHART_MAX: "Najvyšší počet [Concept('population','populácie')], ktorý mal [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] počas celej histórie existencie [Concept('country','krajina')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DISEASE_CHART_MAX_TTILE: "Maximálna [Concept('population','populácia')] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ DISEASE_CHART_MIN: "Najnižší počet [Concept('population','populácie')], ktorý dosiahla [Concept('country','krajina')|E] [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] počas celej svojej existencie." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ DISEASE_CHART_MIN_TITLE: "Minimálna [Concept('population','populácia')] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ DISEASE_CHART_MAX: "Najvyšší počet [Concept('population','populácie')], ktorý dosiahla [Concept('country','krajina')|E] [Player.GetFlagIcon] [Player.GetNameWithNoTooltip] počas celej svojej existencie." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ DISEASE_CHART_MAX_TTILE: "Maximálna [Concept('population','populácia')] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_MOVEMENT_OUTBREAK_IN_COUNTRY: "Žiadna prítomnosť tohto [Concept('movement','hnutia')|e] v našej krajine" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SORT_EXPLORATION_NAME: "Oblasť" # todo: NEW TRANSLATION
  SORT_EXPLORATION_PROGRESS: "Mesačný pokrok" # todo: NEW TRANSLATION
@@ -2379,7 +2379,7 @@
  SORT_ART_DESTROYED: "Zničené" # todo: NEW TRANSLATION
  COLONY_MAINTENANCE: "Údržba kolónie" # todo: NEW TRANSLATION
  COLONY_MAINTENANCE_ENTRY_TITLE: "Rozpis nákladov pre [COLONIAL_CHARTER.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- COLONIAL_LATERALVIEW: "Koloniálne charty [Player.GetAdjective]" # todo: NEW TRANSLATION
+ COLONIAL_LATERALVIEW: "[SKCountryAdj(Player,'ee')] koloniálne charty" # todo: NEW TRANSLATION
  COLONIAL_MAINT_ENTRY: "Z [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $COST|Y2$#![gold_i]" # todo: NEW TRANSLATION
  COLONIAL_MAINT_FROM_GOODS_TITLE: "Základné náklady" # todo: NEW TRANSLATION
  COLONIAL_MAINT_TT: "Základ: #TOOLTIP:$BREAKDOWN_TAG$ $BASE|2-=$#![gold_i]\nPopulácia: $POPULATION|2-=$[gold_i]\nVzdialenosť: $DISTANCE|2-=$[gold_i]\n$MODIFIER$" # todo: NEW TRANSLATION
@@ -2964,10 +2964,10 @@
  CULTURE_IS_ACCEPTED: "[Concept('accepted_culture','Akceptovaná kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_IS_NON_ACCEPTED: "Nie je [Concept('accepted_culture','akceptovaná kultúra')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_IS_NON_ACCEPTED_TT: "Toto je [Concept('non_accepted_culture','diskriminovaná kultúra')|e] v našej [Concept('country','krajine')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CULTURE_IS_ACCEPTED_DESC: "Toto je an @accepted_culture! [Concept('accepted_culture','akceptovaná kultúra')|e] v [Player.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CULTURE_IS_TOLERATED_DESC: "Toto je [Concept('tolerated_culture','tolerovaná kultúra')|e] v [Player.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CULTURE_IS_NOT_ACCEPTED_DESC: "Toto je [Concept('non_accepted_culture','diskriminovaná kultúra')|e] v [Player.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CULTURE_IS_DISCRIMINATED_DESC: "V [Player.GetName] ide o [Concept('discriminated_culture','diskriminovanú kultúru')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_IS_ACCEPTED_DESC: "Toto je @accepted_culture! [Concept('accepted_culture','akceptovaná kultúra')|e] v [SKCountry(Player,'L')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_IS_TOLERATED_DESC: "Toto je [Concept('tolerated_culture','tolerovaná kultúra')|e] v [SKCountry(Player,'L')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_IS_NOT_ACCEPTED_DESC: "Toto je [Concept('non_accepted_culture','diskriminovaná kultúra')|e] v [SKCountry(Player,'L')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CULTURE_IS_DISCRIMINATED_DESC: "V [SKCountry(Player,'L')] ide o [Concept('discriminated_culture','diskriminovanú kultúru')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_DISCRIMINATED_PENALTY: "Postih [Concept('pop_satisfaction','spokojnosť populácie')|e]: $VAL|V2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CULTURE_STATUS_PRIMARY_IN_LOCATION: "Toto je [Concept('primary_culture_with_icon','hlavná kultúra')|e] krajiny [COUNTRY.GetAltAdjectiveWithNoTooltip('G')]. [Concept('pops_with_icon','Populácie')|e] tejto [Concept('culture','kultúre')|e] uvidia zvýšenie [Concept('pop_satisfaction_with_icon','spokojnosť populácie')|e] o [GetDefine('NPop','PRIMARY_CULTURE_SATISFACTION')|%G]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  CULTURE_STATUS_ACCEPTED_IN_LOCATION: "Toto je [Concept('accepted_culture_with_icon','akceptovaná kultúra')|e] v [COUNTRY.GetAltAdjectiveWithNoTooltip('L')]. [Concept('pops_with_icon','Populácie')|e] [Concept('accepted_culture','Akceptovaná kultúra')|e] uvidia zvýšenie [Concept('pop_satisfaction_with_icon','spokojnosť populácie')|e] o [GetDefine('NPop','ACCEPTED_CULTURE_SATISFACTION')|%G]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
@@ -3183,7 +3183,7 @@
  CANNOT_EXTEND_REGENCY: "Predĺžiť [Concept('regency','regentstvo')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SELECT_PROV_FOR_NEW_SUBJECT: "Vyberte provinciu, ktorá sa stane subjektom" # todo: NEW TRANSLATION
  SELECT_REGION_FOR_NEW_SUBJECT: "Vyberte región pre poskytovanie budov subjektu" # todo: NEW TRANSLATION
- OUR_SUBJECTS: "[Player.GetAdjective] subjekty" # todo: NEW TRANSLATION
+ OUR_SUBJECTS: "[SKCountryAdj(Player,'ii')] vazali" # todo: NEW TRANSLATION
  CURRENT_SUBJECT: "Súčasný subjekt" # todo: NEW TRANSLATION
  CREATE_NEW_SUBJECT: "Vytvoriť subjekt z provincie" # todo: NEW TRANSLATION
  CREATE_NEW_SUBJECT_TT_TEXT: "Vyberte jednu [Concept('province','provinciu')|e] z našej [Concept('country','krajiny')|e] a uvoľnite ju ako nový subjekt požadovaného typu.\nAby bola [Concept('province','provincia')|e] platná, nesmie byť [Concept('core','jadro')|e]." # todo: CHANGED (predtym: Vyberte jednu [Concept('province','provinciu')|e] z našej [Concept('country','krajiny')|e] a uvoľnite ju ako nový subjek) # todo: CONCEPT CASE
@@ -3238,7 +3238,7 @@
  NO_ACTIVE_RESEARCH: "Žiadny prebiehajúci výskum" # todo: NEW TRANSLATION
  NO_ACTIVE_RESEARCH_DESC: "Rad pokrokov je prázdny. Otvorte panel Pokrokov a vyberte ten, ktorý chcete začať skúmať.\n\nMomentálne máme $AMOUNT|2Y$ [Concept('stored_research','uloženého pokroku výskumu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ACTIVE_RESEARCH_PROGRESS: "Aktuálny pokrok výskumu je [Player.GetCurrentResearch.GetProgress|%2]." # todo: NEW TRANSLATION
- AVERAGE_LITERACY_TITLE: "Priemerná gramotnosť v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ AVERAGE_LITERACY_TITLE: "Priemerná gramotnosť v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
  AVERAGE_LITERACY_EFFECT: "Priemerná [Concept('literacy','gramotnosť')|e] $VAL|%2Y$ má nasledujúci efekt:\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADVANCE_DUE_TO_GOV: "[COUNTRY.GetName] je $NAME$" # todo: NEW TRANSLATION
  ADVANCE_DUE_TO_TYPE: "[COUNTRY.GetName] je $NAME$" # todo: NEW TRANSLATION
@@ -3308,7 +3308,7 @@
  HAS_NO_FOOD_GOODS: "#T Žiadny surový materiál na potraviny#! Toto [Concept('location','lokalitu')|e] nemá žiadne [Concept('food_raw_material','surová potravina')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SHOW_PROVINCE_FOOD: "Zobraziť výrobu [food] v tejto [province]" # todo: NEW TRANSLATION
  SHOW_PROVINCE_FOOD_DISABLED: "Táto [province] nám nepatrí" # todo: NEW TRANSLATION
- RAW_GOOD_BUILDER_TT: "Rozšíriť [Concept('rgo','R.G.O.')|e] v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ RAW_GOOD_BUILDER_TT: "Rozšíriť [Concept('rgo','R.G.O.')|e] v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ADVANCES_TITLE: "Pokroky" # todo: NEW TRANSLATION
  CURRENT_ADVANCE: "Aktuálny pokrok" # todo: NEW TRANSLATION
  RESEARCH_TEXT: "Výskum" # todo: NEW TRANSLATION
@@ -3330,7 +3330,7 @@
  COUNTRY_ADVANCE_RESEARCHED_BADGE: "Prebádané" # todo: NEW TRANSLATION
  AGES_SUBTAB_TT_FLAVOR_TEXT: "'Sic transit gloria mundi'." # todo: CHANGED
  RESEARCH_PROGRESS: "Mesačný pokrok výskumu" # todo: NEW TRANSLATION
- RESEARCH_PROGRESS_TT_HEADER: "Mesačný [Concept('research_progress','pokrok výskumu')] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ RESEARCH_PROGRESS_TT_HEADER: "Mesačný [Concept('research_progress','pokrok výskumu')] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RESEARCH_PROGRESS_TT_TEXT: "Mesačný [Concept('research_progress','pokrok výskumu')] [Player.GetDoubleModifierValueNoFormat('research_speed','research_speed_modifier')] je z dôvodu:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOVERNMENT_REFORMS: "Vládne reformy" # todo: NEW TRANSLATION
  TOGGLE_GOVERNMENT_REFORM_PER_AGE_DESCRIPTIONS_VISIBILITY: "Prepnúť viditeľnosť popisov" # todo: NEW TRANSLATION
@@ -3530,7 +3530,7 @@
  POP_SIZE_FOR_ESTATES_FOREIGN_BUILDINGS: "A $VAL|Y$ [Concept('pops','populácie')|e] v cudzích budovách" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_NUM_PRIVILEDGE_TT: "#T Udelené privilégiá#!\nMomentálne nemáme udelené žiadne [Concept('estate_privileges','privilégiá stavov')|e] našim [Concept('estates','stavom')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NUM_PRIVILEDGE_TT: "#T Udelené privilégiá#!\nS týmto množstvom [Concept('estate_privileges','privilégiami stavov')|e] udelených našim [Concept('estates','stavom')|e] získavame nasledovný efekt:\n$EFFECT$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THE_ESTATES_OVERVIEW_TITLE: "Stavy [Player.GetName]" # todo: NEW TRANSLATION
+ THE_ESTATES_OVERVIEW_TITLE: "Stavy [SKCountry(Player,'G')]" # todo: NEW TRANSLATION
  ESTATE_WEALTH: "Aktuálne bohatstvo: [ESTATE.GetGold|2][gold_i] ([ESTATE.GetLastMonthsIncomeAfterTax|+=2] [Concept('estate_tax_base','daňový základ stavu')|e])" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ESTATE_POWER_NEG_TOOLTIP_LOYAL: "Moc [ESTATE.GetNameWithNoTooltip] je nižšia ako $VAL|2R%$" # todo: NEW TRANSLATION
  ESTATE_POWER_TOOLTIP_LOYAL: "Moc [ESTATE.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -3610,7 +3610,7 @@
  TODAY: "Dnes" # todo: NEW TRANSLATION
  THE_ECONOMY_OVERVIEW_TITLE: "Ekonomika" # todo: NEW TRANSLATION
  THE_PRODUCTION_OVERVIEW_TITLE: "Produkcia" # todo: NEW TRANSLATION
- PRODUCTION_EFFICIENCY_TOOLTIP_T: "Modifikátor efektivity produkcie [Player.GetNameWithNoTooltip]" # todo: CHANGED (predtym: Efektivita produkcie [Player.GetNameWithNoTooltip])
+ PRODUCTION_EFFICIENCY_TOOLTIP_T: "Modifikátor efektivity produkcie [SKCountryNoTooltip(Player,'G')]" # todo: CHANGED (predtym: Efektivita produkcie [Player.GetNameWithNoTooltip])
  PRODUCTION_EFFICIENCY_TOOLTIP: "Efektivita produkcie [Player.GetModifierValueNoFormat('global_production_efficiency')] je spôsobená:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TAKE_LOAN_BUTTON: "Vziať [Concept('loan','pôžička')|e]\nStlač Ctrl: $VAL$ [Concept('loans','pôžičky')|e]\nStlač Shift: všetky [Concept('loans','pôžičky')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  VIEW_LOANS: "Zobraziť pôžičky" # todo: NEW TRANSLATION
@@ -4625,7 +4625,7 @@
  CCI_ALREADY: "@trigger_no! Už máme [Concept('colonial_charter','koloniálna listina')|e] v [PROVINCE_DEFINITION.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CCI_WASTELAND: "@trigger_no! [PROVINCE_DEFINITION.GetName] sa nedá kolonizovať, pretože je nepriechodný." # todo: NEW TRANSLATION
  CCI_OWNS: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože ho už vlastníme." # todo: NEW TRANSLATION
- CCI_BIG_POP: "@trigger_no!Nemôžeme kolonizovať [LOCATION.GetName] pretože populácia už presahuje $VAL$." # todo: CHANGED
+ CCI_BIG_POP: "@trigger_no!Nemôžeme kolonizovať [LOCATION.GetName], pretože jej populácia bez [ShowPopTypeName('tribesmen')] už presahuje $VAL$." # todo: CHANGED (predtym: @trigger_no!Nemôžeme kolonizovať [LOCATION.GetName] pretože populácia už presahuje $VAL$.)
  CCI_MIN_COUNTRY_POPULATION: "@trigger_no!Na podporu [Concept('colonial_charter','koloniálnu listinu')|e] potrebujeme [Concept('population','populácia')|e] aspoň $VAL$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CCI_TRUCE: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože máme [Concept('truce','prímerie')|e] s [COUNTRY.GetLongNameWithFlag]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CCI_HAS_OWNER: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože ho vlastní [COUNTRY.GetLongNameWithFlag]." # todo: NEW TRANSLATION
@@ -4634,7 +4634,7 @@
  CCI_INLAND_NOT_ADJACENT: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože nie je [Concept('coastal','pobrežný')|e] a nie je s nami susediace." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CCI_INLAND_OUT_OF_RANGE: "@trigger_no! Nemôžeme kolonizovať [LOCATION.GetName], pretože je mimo náš [Concept('colonial_range','koloniálny dosah')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SPREAD_OF_INS_IN_LOC: "[ActiveInstitution.GetInstitution.GetNameWithNoTooltip] sa rozšírila v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- DISEASE_RESISTANCE_TT_HEADER: "Odolnosť proti chorobám v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ DISEASE_RESISTANCE_TT_HEADER: "Odolnosť proti chorobám v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
  AMOUNT_OF_POPTYPEIN_PROV: "#T Počet [POP_TYPE.GetNameWithNoTooltip] v [PROVINCE.GetNameWithNoTooltip]#!" # todo: NEW TRANSLATION
  AMOUNT_OF_POPTYPEIN_LOC: "#T Počet [POP_TYPE.GetNameWithNoTooltip] v [LOCATION.GetNameWithNoTooltip]#!" # todo: NEW TRANSLATION
  DEV_CHANGE_DUE_TO: "Zmeny o [Location.GetMonthlyDevelopmentChange|+=4] každý mesiac kvôli:" # todo: CHANGED
@@ -5262,10 +5262,10 @@
  LEVIES_BUTTON: "Povolať [Concept('levies','brancov')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RECRUIT_BUTTON: "Naverbovať [Concept('regulars','stálych vojakov')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  RECRUIT_TT_TITLE: "[Player.GetLongNameWithNoTooltip] sa očakáva, že bude mať armádu o veľkosti [Player.GetDoubleModifierValueNoFormatNoSign('expected_army_size', 'expected_army_size_modifier')|G] [Concept('regulars','stáli vojaci')|e] kvôli" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HIRE_MERCENARY_TT_TEXT: "Celkom [UnitOverview.GetNumPotentialArmyMercenaries] [Concept('mercenaries','žoldnierov')] sú teraz pripravení a dostupní na najatie pre [Player.GetName]. Ďalšie [Concept('armies','armády')|e] je možné zhromaždiť najatím vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HIRE_MERCENARY_L_TT_TEXT: "Najať [Concept('mercenaries','žoldnierov')] pre [Player.GetName]. Buď najatím existujúcich, alebo zhromaždiť [Concept('armies','armády')|e] najatím žoldnierskeho vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HIRE_S_MERCENARY_TT_TEXT: "Spolu [UnitOverview.GetNumPotentialNavyMercenaries] [Concept('mercenaries','žoldnierov')] sú teraz pripravení a dostupní na najatie pre [Player.GetName]. Ďalšie [Concept('navies','námorné sily')|e] je možné zhromaždiť najatím vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- HIRE_S_MERCENARY_L_TT_TEXT: "Najať [Concept('mercenaries','žoldnierov')] pre [Player.GetName]. Buď najatím existujúcich, alebo zhromaždiť [Concept('navies','námorné sily')|e] najatím žoldnierskeho vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HIRE_MERCENARY_TT_TEXT: "Celkom [UnitOverview.GetNumPotentialArmyMercenaries] [Concept('mercenaries','žoldnierov')] sú teraz pripravení a dostupní na najatie pre [SKCountry(Player,'A')]. Ďalšie [Concept('armies','armády')|e] je možné zhromaždiť najatím vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HIRE_MERCENARY_L_TT_TEXT: "Najať [Concept('mercenaries','žoldnierov')] pre [SKCountry(Player,'A')]. Buď najatím existujúcich, alebo zhromaždiť [Concept('armies','armády')|e] najatím žoldnierskeho vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HIRE_S_MERCENARY_TT_TEXT: "Spolu [UnitOverview.GetNumPotentialNavyMercenaries] [Concept('mercenaries','žoldnierov')] sú teraz pripravení a dostupní na najatie pre [SKCountry(Player,'A')]. Ďalšie [Concept('navies','námorné sily')|e] je možné zhromaždiť najatím vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ HIRE_S_MERCENARY_L_TT_TEXT: "Najať [Concept('mercenaries','žoldnierov')] pre [SKCountry(Player,'A')]. Buď najatím existujúcich, alebo zhromaždiť [Concept('navies','námorné sily')|e] najatím žoldnierskeho vodcu." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_REGULARS_IN_PROGRESS: "@trigger_no!Nie sú v priebehu žiadne regulárne jednotky" # todo: NEW TRANSLATION
  NO_MERCENARIES_IN_PROGRESS: "@trigger_no!Nie sú v priebehu žiadni žoldnieri." # todo: NEW TRANSLATION
  NO_LEVIES_IN_PROGRESS: "@trigger_no!Neodvádzajú sa žiadny branci"
@@ -5356,7 +5356,7 @@
  POP_NEEDS: "Potreby [Concept('population','populácia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  POP_GOODS_NEEDS_DETAIL_ENTRY: "[POP.GetName]: $VAL|4<$" # todo: NEW TRANSLATION
  POPS_GOODS_NEED_DETAIL_EXTRA: "A ešte $VAL$ [Concept('pops','populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- POP_DEMANDS_FOR_GOODS: "[PopType.GetNameWithNoTooltip] dopyt po [Goods.GetNameWithNoTooltip] v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ POP_DEMANDS_FOR_GOODS: "[PopType.GetNameWithNoTooltip] dopyt po [Goods.GetNameWithNoTooltip] v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
  MORE_PAYERS: "...A ešte [PaymentWithContextWrap.GetMorePayers] ďalších" # todo: NEW TRANSLATION
  MORE_PAYEES: "...A ešte [PaymentWithContextWrap.GetMorePayees] ďalších" # todo: NEW TRANSLATION
  GOODS_EXPAND_RGO_TT_HEADER: "[GoodItem.GetGoods.GetNameWithNoTooltip] [rgo] v [GoodsProductionLateralView.GetSelectedMarket.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -5421,7 +5421,7 @@
  FOOD_STOCKPILE_TT_TOP_HEADER: "Top 5 producentov [Concept('food','potravín')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FOOD_STOCKPILE_TT_BOTTOM_HEADER: "Top 5 spotrebiteľov [Concept('food','potraviny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOODS_COMES_FROM: "Pochádza z" # todo: NEW TRANSLATION
- GOODS_OUR_NEEDS: "Nedostatky v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ GOODS_OUR_NEEDS: "Nedostatky v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
  GOODS_IMPORT_TARIFF: "[Concept('import_tariff','Dovozné clo')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOODS_EXPORT_TARIFF: "[Concept('export_tariff','Vývozné clo')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  POPS_NEEDS: "Potreby našej populácie" # todo: NEW TRANSLATION
@@ -5437,8 +5437,8 @@
  MARKET_AVAILABLE_MERCHANT_CAPACITY: "Množstvo dostupnej [Concept('merchant_capacity','neobchodnej kapacite')|e], ktorú máme v [Concept('market','trhu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MARKET_MERCHANT_POWER: "Množstvo [Concept('merchant_power','obchodná výhoda')|e], ktoré majú naši obchodníci v [Concept('market','trhu')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MARKET_FOOD_STOCKPILE: "#T Zásoby potravín#!\nToto je množstvo [Concept('food','potraviny')|e], ktoré sa momentálne nachádza v zásobníkoch v [Concept('market','trhu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRADE_CAPACITY_TOOLTIP_T: "[Player.GetAdjectiveWithNoTooltip] Obchodná kapacita v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRADE_ADVANTAGE_TOOLTIP_T: "[Player.GetAdjectiveWithNoTooltip] Obchodná výhoda v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRADE_CAPACITY_TOOLTIP_T: "[SKCountryAdjNoTooltip(Player,'aa')] obchodná kapacita v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRADE_ADVANTAGE_TOOLTIP_T: "[SKCountryAdjNoTooltip(Player,'aa')] obchodná výhoda v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADES_MARKET_ENTRY_SORT_BY_NAME: "Zoradiť podľa [Concept('trades','obchodov')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADES_MARKET_ENTRY_SORT_BY_EXPORT_IMPORT: "Zoradiť podľa [Concept('export','vývozu')|e] alebo [Concept('import','dovoz')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADES_MARKET_ENTRY_SORT_BY_COUNTRY_NAME: "Zoradiť podľa [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -5540,7 +5540,7 @@
  ST_PROFIT: "#T Celkový zisk#!: $VAL|+=2$" # todo: CHANGED
  ST_PROFIT_PER_TC: "#T Zisk na obchodnú kapacitu#!: $VAL|+=2$" # todo: NEW TRANSLATION
  THE_TRADE_OVERVIEW_TITLE: "Prehľad obchodu" # todo: NEW TRANSLATION
- OUR_TRADES: "[Player.GetAdjective] obchody" # todo: NEW TRANSLATION
+ OUR_TRADES: "[SKCountryAdj(Player,'ee')] obchody" # todo: NEW TRANSLATION
  EXPORTS_FROM_MARKET: "Vývoz z trhu" # todo: NEW TRANSLATION
  IMPORTS_FROM_MARKET: "Dovoz z trhu" # todo: NEW TRANSLATION
  MERCHANTS_IN_MARKET: "Najmocnejší obchodníci" # todo: NEW TRANSLATION
@@ -7645,7 +7645,7 @@
  TRADE_MERCHANT_SELLING_SUMMARY: "Predáme [Trade.GetQuantityOfGoodsActuallyMovedOrDesired|2W] [Trade.GetGoods.GetIcon] v @market! [Market.GetShortName] ([Market.GetPriceWithChange(GoodsMarketEntry.GetGoods)|2])" # todo: NEW TRANSLATION
  TRADE_TT_TOTAL_INCOME: "Celkový [Concept('trade_income','príjem z obchodu')|e] ([Trade.GetOwner.GetModifier('trade_income')|%0][trade_income_icon])" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MARKET_NAME_WITH_ICON: "@market! [Market.GetName]" # todo: NEW TRANSLATION
- MERCHANT_POWER_HUB_TT_TITLE: "[Player.GetAdjectiveWithNoTooltip] [merchant_power] v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
+ MERCHANT_POWER_HUB_TT_TITLE: "[SKCountryAdjNoTooltip(Player,'aa')] [merchant_power] v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
  MERCHANT_POWER_HUB_TT: "Naša [Concept('merchant_power','obchodná výhoda')|e] vo výške [Market.GetMerchantPowerWithLabel(Player.Self)|2L]@trade_advantage! nás robí [Market.GetMerchantRanking(Player.Self)|OW] z [GetDataModelSize(Market.GetMerchants)|W] [Concept('countries','krajiny')|e] obchodujúcich v @market! [Market.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NO_MERCHANT_POWER_HUB_TT: "Nemáme žiadne [Concept('merchant_capacity','obchodná kapacita')|e] v @market! [Market.GetName], takže nemôžeme vykonávať žiadny [Concept('trade','obchod')|e].\n\nV tomto [Concept('market','trhu')|e] uskutočňuje [trade] [GetDataModelSize(Market.GetMerchants)|W] ďalších [Concept('countries','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MERCHANT_POWER_HUB_LIST_TITLE: "[merchant_power] vo výške [Market.GetMerchantPower(Player.Self)|2W]@trade_advantage! je spôsobené:" # todo: NEW TRANSLATION
@@ -7980,8 +7980,8 @@
  EXPAND_RAW_GOODS_LATERAL_VIEW_PRODUCTION: "[Player.GetName] produkuje [RawGoodItem.GetTotalProduction|2] [RawGoodItem.GetGoods.GetName] každý mesiac." # todo: NEW TRANSLATION
  EXPAND_RAW_GOODS_LATERAL_VIEW_NUM_LOCATIONS: "Počet [Concept('locations','lokality')|e] s [RawGoodItem.GetGoods.GetName] ako surovinou." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPAND_RAW_GOODS_LATERAL_VIEW_NUM_WORKERS: "Počet [Concept('rgo_pops','robotníci alebo otroci')|e] pracujúcich v [RawGoodItem.GetGoods.GetRGOName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- EXPAND_RAW_GOODS_TOTAL_TAX_BASE: "[Player.GetLongName] majú celkovú [Concept('tax_base','daňový základ')|e] [RawGoodItem.GetTotalProfit|2]@gold! z [RawGoodItem.GetGoods.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- EXPAND_RAW_GOODS_LATERAL_VIEW_PRODUCTION_TAX: "[Player.GetName] produkuje [RawGoodItem.GetTotalProduction|2] [RawGoodItem.GetGoods.GetName] každý mesiac.\n[Player.GetLongName] majú celkovú [Concept('tax_base','daňový základ')|e] [RawGoodItem.GetTotalProfit|2]@gold! z [RawGoodItem.GetGoods.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ EXPAND_RAW_GOODS_TOTAL_TAX_BASE: "[Player.GetLongName] má celkový [Concept('tax_base','daňový základ')|e] [RawGoodItem.GetTotalProfit|2]@gold! z [RawGoodItem.GetGoods.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ EXPAND_RAW_GOODS_LATERAL_VIEW_PRODUCTION_TAX: "[Player.GetName] produkuje [RawGoodItem.GetTotalProduction|2] [RawGoodItem.GetGoods.GetName] každý mesiac.\n[Player.GetLongName] má celkový [Concept('tax_base','daňový základ')|e] [RawGoodItem.GetTotalProfit|2]@gold! z [RawGoodItem.GetGoods.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPAND_RAW_GOODS_LATERAL_VIEW_COUNTRY_PRODUCTION: "Produkcia krajiny" # todo: NEW TRANSLATION
  EXPAND_RAW_GOODS_LATERAL_VIEW_AVAILABLE_PEASANTS: "$VAL$ potenciálnych [Concept('rgo_pops','robotníkov alebo otroci')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPAND_RAW_GOODS_LATERAL_VIEW_PRODUCTION_OF: "Produkcia [RawGoodLocationItem.GetLocation.GetRawMaterial.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -8047,19 +8047,19 @@
  AI_SETTINGS_TOOLTIP: "Prepínať, či je nastavenie použité." # todo: NEW TRANSLATION
  BUILDING_BASED_COUNTRIES_TOOLTIP: "Krajiny v [LocationView.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  CULTURE_BASED_COUNTRIES_TOOLTIP: "Krajiny v [LocationView.GetLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- TT_ARMYMORALE_TITLE: "Morálka armády hráča [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_ARMYMORALE_TITLE: "Morálka armády [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_ARMYMORALE_TEXT: "Morálka armády [Player.GetLongName] je [Player.GetDefaultLandMorale|2+=]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_ARMYMORALE_TITLE_COUNTRY: "Morálka armády [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_ARMYMORALE_TEXT_COUNTRY: "Morálka armády [Country.GetLongName] je [Country.GetDefaultLandMorale|2+=]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TT_AVERAGE_ARMYMORALE_TITLE: "Priemerná [Concept('army_morale','morálka armády')] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_AVERAGE_ARMYMORALE_TITLE: "Priemerná [Concept('army_morale','morálka armády')] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_AVERAGE_ARMYMORALE_TEXT: "Priemerná [Concept('army_morale','morálka armády')] [Player.GetLongName] je [UnitOverview.GetAverageArmyMoralePercentage|/%0V]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TT_NAVYMORALE_TITLE: "Morálka námorníctva hráča [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_NAVYMORALE_TITLE: "Morálka námorníctva [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_NAVYMORALE_TEXT: "Morálka námorníctva [Player.GetLongName] je [Player.GetDefaultNavalMorale|2+=]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TT_AVERAGE_NAVYMORALE_TITLE: "Priemerná [Concept('navy_morale','morálka námorníctva')] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_AVERAGE_NAVYMORALE_TITLE: "Priemerná [Concept('navy_morale','morálka námorníctva')] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_AVERAGE_NAVYMORALE_TEXT: "Priemerná [Concept('navy_morale','morálka námorníctva')] [Player.GetLongName] je [UnitOverview.GetAverageNavyMoralePercentage|/%0V]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TT_AVERAGE_ARMYEXPERIENCE_TITLE: "Priemerné [Concept('army_experience','skúsenosti armády')] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_AVERAGE_ARMYEXPERIENCE_TITLE: "Priemerné [Concept('army_experience','skúsenosti armády')] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_AVERAGE_ARMYEXPERIENCE_TEXT: "Priemerné [Concept('army_experience','skúsenosti armády')] [Player.GetLongName] je [Player.GetAverageArmyExperience|%V]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TT_AVERAGE_NAVYEXPERIENCE_TITLE: "Priemerné [Concept('navy_experience','skúsenosti námorníctva')] [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_AVERAGE_NAVYEXPERIENCE_TITLE: "Priemerné [Concept('navy_experience','skúsenosti námorníctva')] [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_AVERAGE_NAVYEXPERIENCE_TEXT: "Priemerné [Concept('navy_experience','skúsenosti námorníctva')] [Player.GetLongName] je [Player.GetAverageNavyExperience|%V]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_ARMYTRADITION_TITLE: "Armádna tradícia [Country.GetNameWithNoTooltip]" # todo: CHANGED # todo: CONCEPT CASE
  TT_ARMYTRADITION_TEXT: "Armádna tradícia [Country.GetLongName] je [Country.GetCurrencyValue('army_tradition')|2V]%." # todo: CHANGED # todo: CONCEPT CASE
@@ -8073,8 +8073,8 @@
  TT_MILITARYTACTICS_COMBAT_TEXT: "Vojenské taktiky [CombatSide.GetCountry.GetName] v tomto [Concept('battle','bitke')|e] je [CombatSide.GetCommander.GetCombatModifierNoFormat(CombatSide.GetCountry, 'military_tactics', CombatSide.GetCombat.IsNavalCombat)|+=2]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_LEVY_COMBAT_EFFICIENCY_TITLE: "Efektivita boja brancov [Country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_LEVY_COMBAT_EFFICIENCY_TEXT: "Efektivita boja brancov [Country.GetNameWithNoTooltip] je [Country.GetModifierValue('levy_combat_efficiency_modifier')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TT_NAVALDAMAGE_TITLE: "Námorné poškodenie [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TT_NAVALDAMAGE_TEXT: " Námorné poškodenie [Player.GetLongName] sú nasledovné:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_NAVALDAMAGE_TITLE: "Námorné poškodenie [SKCountryNoTooltip(Player,'G')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TT_NAVALDAMAGE_TEXT: "Námorné poškodenie [Player.GetLongName] je nasledovné:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_NAVALDAMAGE_PAIRLIST: "\nNámorné poškodenie spôsobené: [Player.GetModifierValue('naval_damage_done')] @naval_damage_done!\nNámorné poškodenie utrpené: [Player.GetModifierValue('naval_damage_taken')] @naval_damage_taken!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_NAVALDAMAGETAKEN_PAIRLIST_TITLE: "Námorné poškodenie utrpené: [Player.GetModifierValue('naval_damage_taken')] @naval_damage_taken! zdroje:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TT_NAVALDAMAGEDONE_PAIRLIST_TITLE: "Námorné poškodenie spôsobené: [Player.GetModifierValue('naval_damage_done')] @naval_damage_done! zdroje:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -8375,3 +8375,6 @@
  order_of_the_golden_fleece_desc: "Rád zlatého rúna, založený Filipom Dobrým z Burgundska, patrí medzi najvýznamnejšie [Concept('chivalric_order','rytierske rády')|e] v kresťanstve. Členstvo zaväzuje jeho rytierov slávnostnou prísahou, že budú udržiavať slávu a česť svojho pána a spoločne čeliť všetkým hrozbám kresťanstva." # todo: RETRANSLATED ENGLISH
  OPEN_ONGOING_EXPEDITIONS: "Otvoriť prebiehajúce výpravy" # todo: NEW TRANSLATION
  OPEN_CONCLUDED_EXPEDITIONS: "Otvoriť ukončené výpravy" # todo: NEW TRANSLATION
+ COMBINED_ARMS_DOMINANT_ENTRY: "$BULLET$$PERC|2R%$ [SUBUNITCATEGORY.GetName]: príliš veľký podiel" # todo: NEW TRANSLATION
+ COMBINED_ARMS_BELOW_MIN_ENTRY: "$BULLET$$PERC|2%$ [SUBUNITCATEGORY.GetName]: musí byť aspoň $MIN|2%G$, aby sa započítala" # todo: NEW TRANSLATION
+ COMBINED_ARMS_NO_BONUS_ENTRY: "$BULLET$$PERC|2%$ [SUBUNITCATEGORY.GetName]: žiadny bonus" # todo: NEW TRANSLATION

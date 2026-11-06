@@ -197,9 +197,9 @@
  LITURGICAL_LANGUAGE_IS_FIXED: "@trigger_no! Náboženstvo [RELIGION.GetName] vyžaduje [RELIGION.GetLanguage.GetName] ako [Concept('liturgical_language','liturgický jazyk')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LITURGICAL_LANGUAGE_INFO: "Približne $VAL|%2$ našej populácie hovorí [LANGUAGE.GetName], čo má na krajinu nasledovný efekt:\n$EFFECT$" # todo: NEW TRANSLATION
  LITURGICAL_LANGUAGE_POWER: "Sila jazyka [LANGUAGE.GetName] je $POWER|2%Y$, čo nám dáva nasledujúce efekty:\n$POWER_EFFECT$" # todo: NEW TRANSLATION
- THE_RELIGION_OVERVIEW_TITLE: "Náboženstvo v [Player.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ THE_RELIGION_OVERVIEW_TITLE: "Náboženstvo v [SKCountryNoTooltip(Player,'L')]" # todo: NEW TRANSLATION
  RELIGION_HAS_LANGUAGE: "Jediným platným [Concept('liturgical_language','liturgickým jazykom')|e] pre [Player.GetReligion.GetNameWithNoTooltip] je [Player.GetReligion.GetLanguage.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- LITURGICAL_HAS_LANGUAGE: "[Concept('liturgical_language','Liturgický jazyk')|e] v [Player.GetName] je [Player.GetLiturgicalLanguage.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ LITURGICAL_HAS_LANGUAGE: "[Concept('liturgical_language','Liturgický jazyk')|e] v [SKCountry(Player,'L')] je [Player.GetLiturgicalLanguage.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNTRIES_WITH_RELIGION_LABEL: "Krajiny s náboženstvom [Player.GetReligion.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  RELIGION_TT_INFO: "[SKReligionAdj(RELIGION, 'ee')|U] [Concept('religion','náboženstvo')|e] patrí do [Concept('religion_group','náboženskej skupiny')|e] [RELIGION.GetGroup.GetName]"
  RELIGION_GROUP_HAS_RELIGIONS: "[RELIGION_GROUP.GetAdjectiveWithNoTooltip] [Concept('religion_group','Náboženská skupina')|e] zahŕňa nasledujúce [Concept('religions','náboženstvá')|e]: $LIST$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -506,7 +506,7 @@
  MAPMODE_MILITARY_ACCESS_LOCATION_TT: "$COUNTRY$ poskytuje [Concept('military_access','vojenský prístup')|e] pre $OTHER$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MAPMODE_TRUCE_LOCATION_TT: "$COUNTRY$ má prímerie s $OTHER$ do $DATE|V$." # todo: NEW TRANSLATION
  ADJACENT_TRADE_RANGE_TT: "[MARKET.GetName] je priľahlý k jednému z našich [Concept('markets','trhov')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INSIDE_TRADE_RANGE_TT: "Obchodná vzdialenosť $VALUE|2Y$ od [Market.GetName] je v rámci nášho [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|G] [Concept('trade_range','neobchodného dosahu')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INSIDE_TRADE_RANGE_TT: "Obchodná vzdialenosť $VALUE|2Y$ od [Market.GetName] je v rámci nášho [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|G] [Concept('trade_range','obchodného dosahu')|E]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NOT_INSIDE_TRADE_RANGE_TT: "Obchodná vzdialenosť $VALUE|2Y$ od [Market.GetName] presahuje náš [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')|Y] [Concept('trade_range','obchodný dosah')|E]. Prepravné náklady budú na tejto trase vyššie." # todo: CHANGED # todo: CONCEPT CASE
  TOP_N_LOCATIONS_HEADER: "#T Najlepších $NUM$ lokalít#!" # todo: NEW TRANSLATION
  BOTTOM_N_LOCATIONS_HEADER: "#T Najhorších $NUM$ lokalít#!" # todo: NEW TRANSLATION
