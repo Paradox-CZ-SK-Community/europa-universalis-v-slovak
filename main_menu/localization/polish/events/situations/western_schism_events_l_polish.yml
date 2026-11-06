@@ -36,7 +36,7 @@
  western_schism.10.desc: "$western_schism_8_10_common_string$ [target_schism_pope_cardinal.GetName] namiesto toho." # todo: NEW TRANSLATION
  western_schism.10.a: "Nech sa pokúsia." # todo: NEW TRANSLATION
  western_schism.10.b: "Majú silný argument." # todo: NEW TRANSLATION
- western_schism_11_12_common_string: "v prebiehajúcom boji o vedenie [GetInternationalOrganization('catholic_church').GetName], [target_country.GetName] vychválil náš ľud! Chvália odolnosť [ROOT.GetCountry.GetName] a silnú vieru, ktorú prejavujeme v tak nestabilných časoch.\n\nHoci ich lichotivé slová sú zjavnou lestou za účelom získať našu podporu, môže nám to stále priniesť osoh, nech už otvorene vyjadríme podporu pre" # todo: NEW TRANSLATION
+ western_schism_11_12_common_string: "v prebiehajúcom boji o vedenie [GetInternationalOrganization('catholic_church').GetName], [target_country.GetName] vychválil náš ľud! Chvália odolnosť [SKCountry(ROOT.GetCountry,'G')] a silnú vieru, ktorú prejavujeme v tak nestabilných časoch.\n\nHoci ich lichotivé slová sú zjavnou lestou za účelom získať našu podporu, môže nám to stále priniesť osoh, nech už otvorene vyjadríme podporu pre" # todo: NEW TRANSLATION
  western_schism_11_12_common_string_2: "alebo použiť túto pochvalu pre našu vlastnú agendu v rámci [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  western_schism.11.title: "[target_country.GetNameWithNoTooltip] chváli naše presvedčenie" # todo: NEW TRANSLATION
  western_schism.11.desc: "Silný stoupenec [target_schism_pope_cardinal.GetName], $western_schism_11_12_common_string$ [target_schism_pope_cardinal.GetNameWithNoTooltip], $western_schism_11_12_common_string_2$" # todo: NEW TRANSLATION
@@ -60,7 +60,7 @@
  western_schism.1001.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  western_schism.1002.desc: "[target.GetName] pohŕdal našou podporou a odmietol nás patrične rešpektovať. Túto hanebnú urážku nemožno nechať tak a mali by sme vážne prehodnotiť naše spojenectvá, pretože jasne nie sme oceňovaní." # todo: NEW TRANSLATION
  western_schism.1002.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
- western_schism.1100.title: "Falošná podpora [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ western_schism.1100.title: "Falošná podpora [SKCountryNoTooltip(target_country,'G')]" # todo: NEW TRANSLATION
  western_schism.1100.desc: "Naše vzťahy s [SKCountry(target_country,'I')] sú napäté a počas [ShowSituationName('western_schism')] sa to ešte zhoršilo. Hoci náš vplyv v rámci [GetInternationalOrganization('catholic_church').GetName] nie je nekonečný, môžeme ho využiť na to, aby sme naklonili váhy na našu stranu." # todo: NEW TRANSLATION
  western_schism.1100.a: "Získame vplyv, ktorý si zaslúžime!" # todo: NEW TRANSLATION
  western_schism.1100.b: "Mali by sme sa snažiť nezvyšovať nepriateľstvá." # todo: NEW TRANSLATION
@@ -80,12 +80,12 @@
  western_schism.1300.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  western_schism.1300.a.tt: "Každý člen viery [THIS.GetReligion.GetName] zmení svoj názor na [ROOT.GetCountry.GetAltAdjective('A')] o [ShowBiasValue('schism_called_council')|+=0]" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  western_schism.1301.title: "Koncil v [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- western_schism.1301.desc: "Diplomati [council_country.GetName] dorazili do nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] a zvolávajú zástupcov nášho [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] na koncil v [target_location.GetName]. Hoci legitimita koncilu je už spochybňovaná ich oponentmi, môže to byť dôležitý míľnik pri riešení [ShowSituationName('western_schism')]." # todo: NEW TRANSLATION
+ western_schism.1301.desc: "Diplomati [SKCountry(council_country,'G')] dorazili do nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] a zvolávajú zástupcov nášho [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] na koncil v [target_location.GetName]. Hoci legitimita koncilu je už spochybňovaná ich oponentmi, môže to byť dôležitý míľnik pri riešení [ShowSituationName('western_schism')]." # todo: NEW TRANSLATION
  western_schism.1301.a: "Zúčastnime sa koncilu na podporu." # todo: NEW TRANSLATION
  western_schism.1301.b: "Musíme uznať autoritu koncilu." # todo: NEW TRANSLATION
  western_schism.1301.c: "Odmietame drzosť týchto pretendentov." # todo: NEW TRANSLATION
  western_schism.2000.title: "Katolícka cirkev opäť zjednotená!" # todo: NEW TRANSLATION
- western_schism.2000.desc: "Po koncile sa Cirkev opäť zjednotila vďaka snahám [winner_country.GetName], pod novou autoritou. [GetInternationalOrganization('catholic_church').GetName] zostáva celá a neporušená, no autorita [GetInternationalOrganization('catholic_church').GetLeaderTitle] sa v tomto období podstatne oslabila. Dúfajme, že to našu vieru nepoškodilo navždy. Nech nový [GetInternationalOrganization('catholic_church').GetLeaderTitle] preukáže svoju spôsobilosť." # todo: CHANGED
+ western_schism.2000.desc: "Po koncile sa Cirkev opäť zjednotila vďaka snahám [SKCountry(winner_country,'G')], pod novou autoritou. [GetInternationalOrganization('catholic_church').GetName] zostáva celá a neporušená, no autorita [GetInternationalOrganization('catholic_church').GetLeaderTitle] sa v tomto období podstatne oslabila. Dúfajme, že to našu vieru nepoškodilo navždy. Nech nový [GetInternationalOrganization('catholic_church').GetLeaderTitle] preukáže svoju spôsobilosť." # todo: CHANGED
  western_schism.2000.title.unresolved: "Schizma pomaly vyhasína" # todo: NEW TRANSLATION
  western_schism.2000.desc.unresolved: "Nepodarilo sa zvolať koncil, ktorý by spor vyriešil, a súperiace nároky pre nedostatok podpory vyhasli. [ShowSituationName('western_schism')] sa končí bez toho, aby bol niektorý z kandidátov uznaný za legitímneho [GetInternationalOrganization('catholic_church').GetLeaderTitle], a autorita úradu [GetInternationalOrganization('catholic_church').GetName] je značne oslabená. Dúfajme, že naša viera tým neutrpela nenapraviteľnú škodu." # todo: NEW TRANSLATION
  western_schism.2000.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION

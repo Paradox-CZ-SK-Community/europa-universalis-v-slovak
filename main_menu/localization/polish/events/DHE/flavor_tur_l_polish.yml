@@ -52,7 +52,7 @@
  flavor_tur.7.b: "Nie, sme [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], a vždy nimi budeme." # todo: NEW TRANSLATION
  flavor_tur.7.b.entry: "Nie, my sme $nobles_estate$, a vždy aj budeme." # todo: NEW TRANSLATION
  flavor_tur.7.c: "Namiesto toho sa máme sústrediť na námorníctvo." # todo: NEW TRANSLATION
- flavor_tur.10.title: "Hnev [GetCountry('VEN').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tur.10.title: "Hnev [SKCountryNoTooltip(GetCountry('VEN'),'G')]" # todo: NEW TRANSLATION
  flavor_tur.10.entry: "Hnev $VEN$" # todo: NEW TRANSLATION
  flavor_tur.10.desc: "[GetCountry('VEN').GetLongName] už dlho chceli dominantné postavenie v obchode s korením, vďaka svojim majetkom v Egejskom mori a priaznivým väzbám v [ShowLocationName('alexandria')]. Ale s naším dobytím toho [target_location.GetRank.GetName] a našou rastúcou prítomnosťou v [ShowProvinceDefinitionNameWithNoTooltip('aegean_sea_province')], obchodníci z [SKCountryNoTooltip(GetCountry('VEN'),'G')] sa obávajú, že ich úplne odblokujeme z obchodu s korením. [GetCountry('VEN').GetGovernment.GetRulerTitle] teraz poslal veľmi ostro znejúcu požiadavku, aby sme zaplatili reparácie za stratené príjmy." # todo: NEW TRANSLATION
  flavor_tur.10.historical_info: "Hoci obom — Benátkam aj Osmanom — prospievali vzájomné obchodné vzťahy, územné spory v Egejskom mori a tlak na Benátky zo strany iných kresťanských národov ich nevyhnutne priviedli do ozbrojeného konfliktu. Druhá benátsko-osmanská vojna prepukla v roku 1499, s brilantným admirálem Kemal Reisom vedúcim Osmanov k niekoľkým víťazstvám. Benátky nakoniec požiadali o pomoc Uhorsko a Pápežské štáty, a bolo dohodnuté prímerie, na základe ktorého museli Benátky odovzdať dôležité grécke pevnosti Modon a Coron Turkám." # todo: NEW TRANSLATION
@@ -70,7 +70,7 @@
  flavor_tur.14.c.entry: "Uspokojme radšej $nobles_estate$." # todo: NEW TRANSLATION
  flavor_tur.15.title: "Cisársky arsenal" # todo: NEW TRANSLATION
  flavor_tur.15.entry: "$flavor_tur.15.title$" # todo: NEW TRANSLATION
- flavor_tur.15.desc: "Ak chceme naozaj ovládnuť východné Stredomorie, musíme ešte viac investovať do námornej sily. Starý prístav [GetCountry('GEN').GetName] v [ShowLocationName('constantinople')] by bol ideálnym miestom pre obrovskú lodárňu — ale takýto podnik samozrejme nebude lacný." # todo: NEW TRANSLATION
+ flavor_tur.15.desc: "Ak chceme naozaj ovládnuť východné Stredomorie, musíme ešte viac investovať do námornej sily. Starý prístav [SKCountry(GetCountry('GEN'),'G')] v [ShowLocationName('constantinople')] by bol ideálnym miestom pre obrovskú lodárňu — ale takýto podnik samozrejme nebude lacný." # todo: NEW TRANSLATION
  flavor_tur.15.historical_info: "Krátko po páde Konštantínopolu Mehmet II. zriadil cisársku lodárňu cez Zlatý roh, pravdepodobne na mieste starej janovskej lodárne Vetus Tersana. Lodárňa bola masívne rozšírená za panovania Selima I., asketického muža s bystrým umom. Do roku 1515, s viac ako 160 postavenými dokkami, prekonala starú osmanskú námornú základňu v Gallipoli." # todo: NEW TRANSLATION
  flavor_tur.15.a: "Nech je väčšia než arsenal v [ShowLocationNameWithNoTooltip('venice')]!" # todo: NEW TRANSLATION
  flavor_tur.15.b: "Postavme jednoducho viac lodí starým spôsobom." # todo: NEW TRANSLATION
@@ -126,14 +126,14 @@
  flavor_tur.22.historical_info: "V prvých dekádach 18. storočia boli bejovia a dejovia (vedúci janičiari) Severnej Afriky v povstaleckej nálade po mieri z Karlowitz medzi Osmanskou ríšou a Svätou ligou. V roku 1705 Hussein bin Ali Agha krétskeho pôvodu uskutočnil prevrat a založil Husseinovskú dynastiu, ktorá vládla Tunisku až do roku 1957. Tunisko sa nestalo hneď skutočne autonómnym, ale získalo veľkú mieru nezávislosti." # todo: NEW TRANSLATION
  flavor_tur.22.a: "Zdrťte zradcov!" # todo: NEW TRANSLATION
  flavor_tur.22.b: "Poslať prostriedky a sľuby." # todo: NEW TRANSLATION
- tunisian_uprising: "Všetci [ShowCultureName('tunisian')] [Concept('pops','populácie')|e] v [ShowAreaName('tunis_area')] budú mať veľmi nízke [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tunisian_uprising: "Všetci [ShowCultureName('tunisian')] [Concept('pops','populácie')|e] v [ShowAreaName('tunis_area')] budú mať veľmi nízku [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_tur.23.title: "Povstanie [ShowAreaNameWithNoTooltip('tripolitania_area')]" # todo: NEW TRANSLATION
  flavor_tur.23.entry: "Povstanie v oblasti Tripolitania" # todo: NEW TRANSLATION
  flavor_tur.23.desc: "V [ShowSubContinentName('north_africa')] sa zdá hroziť ďalší problém. Miestny jazdecký dôstojník, [karamanli.GetName], využil príležitosť a zavraždil guvernéra [ShowAreaName('tripolitania_area')], tvrdíúc, že bol skorumpovaný a stratil dôveru ľudu. [karamanli.GetNameWithNoTooltip] teraz požaduje, aby sme ho uznali za beja. Zdá sa, že má v úmysle financovať miestnu dynastiu a vykonávať značnú autonómnu moc, a ak by sme odmietli, našou jedinou možnosťou by bolo pripraviť sa na vojnu proti povstalcom pod jeho velením." # todo: CHANGED
  flavor_tur.23.historical_info: "V roku 1711 Ahmad Karamanli, turecký jazdecký dôstojník a janičiarsky dey, zabil osmanského guvernéra Tripolitanie a presadil, aby ho sultán menoval bejom. Post guvernéra zostal dedičný v rodine Karamanli až do roku 1835. Hoci sa Karamanli formálne zodpovedali Istanbulu, Tripolitania bola v podstate autonómnym štátom." # todo: NEW TRANSLATION
  flavor_tur.23.a: "Urobte ho bejom." # todo: CHANGED
  flavor_tur.23.b: "Ak chce vojnu, dodáme ju." # todo: CHANGED
- tripolitan_uprising: "Všetci [ShowCultureName('libyan_arabic_culture')] [Concept('pops','populácie')|e] v [ShowAreaName('tripolitania_area')] budú mať veľmi nízke [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ tripolitan_uprising: "Všetci [ShowCultureName('libyan_arabic_culture')] [Concept('pops','populácie')|e] v [ShowAreaName('tripolitania_area')] budú mať veľmi nízku [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ahmed_karamanli_becomes_bey.tt: "[karamanli.GetName] sa stáva guvernérom [ShowAreaNameWithNoTooltip('tripolitania_area')]" # todo: NEW TRANSLATION
  flavor_tur.24.title: "Chytač oblakov" # todo: NEW TRANSLATION
  flavor_tur.24.entry: "$flavor_tur.24.title$" # todo: NEW TRANSLATION
@@ -142,7 +142,7 @@
  flavor_tur.24.a: "Presvedčte veliteľa." # todo: NEW TRANSLATION
  flavor_tur.24.b: "Ignorujte problém." # todo: NEW TRANSLATION
  flavor_tur.24.c: "Zničte aj jeho reputáciu." # todo: CHANGED
- egyptian_uprising: "Všetky [ShowCultureName('lower_egyptian_culture')] [Concept('pops','populácie')|e] v [ShowRegionName('egypt_region')] budú mať veľmi nízke [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ egyptian_uprising: "Všetky [ShowCultureName('lower_egyptian_culture')] [Concept('pops','populácie')|e] v [ShowRegionName('egypt_region')] budú mať veľmi nízku [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  egyptian_discontent: "Všetky [ShowCultureName('lower_egyptian_culture')] [Concept('pops','populácie')|e] v [ShowRegionName('egypt_region')] stratia časť [Concept('pop_satisfaction','spokojnosti populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_tur.25.title: "Korzári z [ShowAreaNameWithNoTooltip('algiers_area')]" # todo: NEW TRANSLATION
  flavor_tur.25.entry: "Alžírski korzári v oblasti" # todo: NEW TRANSLATION
@@ -219,8 +219,8 @@
  flavor_tur.36.a: "Toto je naše najväčšie dobytie!" # todo: NEW TRANSLATION
  flavor_tur.36.b: "[ShowLocationNameWithNoTooltip('bursa')] postačuje." # todo: NEW TRANSLATION
  flavor_tur.36.historical_info: "Osmanské dobytie Adrianopolu od Východorímskej ríše v roku 1362. Presunutím hlavného mesta tam Murad I svetu naznačil, že sa chystá na ďalšie dobytia v Európe." # todo: NEW TRANSLATION
- all_pops_lose_10_satisfaction_tt: "Naše [Concept('pops','populácie')|e] v tomto [Concept('location','lokalite')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- core_and_prosperity_tt: "Každé [Concept('location','lokalita')|e] v tomto [Concept('province','provincii')|e] zmení svoju úroveň integrácie na [Concept('core','jadro')|e] a získa [ShowNamedValue('prosperity_weak_bonus')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ all_pops_lose_10_satisfaction_tt: "Naše [Concept('pops','populácie')|e] v tejto [Concept('location','lokalite')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ core_and_prosperity_tt: "Každé [Concept('location','lokalita')|e] v tejto [Concept('province','provincii')|e] zmení svoju úroveň integrácie na [Concept('core','jadro')|e] a získa [ShowNamedValue('prosperity_weak_bonus')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_tur.37.title: "Legenda o Oghuzovi $rank_empire_horde_ruler_suffix_male$" # todo: NEW TRANSLATION
  flavor_tur.37.entry: "$flavor_tur.37.title$" # todo: NEW TRANSLATION
  flavor_tur.37.desc: "[target_artist.GetName], člen skupiny ambicióznych učencov a spisovateľov, prišiel s návrhom, aby sme sponzorovali, aby [target_artist.GetHerHim] zostavil genealogiu našej dynastie — s niekoľkými skrášleniami, samozrejme. Najvýraznejšie by [target_artist.GetSheHe] chcel presadiť, že pochádzame z legendárneho Oghuza $rank_empire_horde_ruler_suffix_male$, veľkého hrdinu starého sveta, čo by nám dalo najlepší pôvod zo všetkých [ShowCultureName('turkish_culture')] dynastií." # todo: NEW TRANSLATION
@@ -246,9 +246,9 @@
  flavor_tur.40.a: "Je to príliš drahé — nech to chátra." # todo: NEW TRANSLATION
  flavor_tur.40.b: "Obnoví sa stará sláva!" # todo: NEW TRANSLATION
  flavor_tur.40.historical_info: "Keďže kedysi veľké mesto Nicea, İznik bol v osmanských časoch veľmi zanedbaný. Marocký cestovateľ Ibn Baṭṭūṭa, ktorý ho navštívil v roku 1331, tvrdí, že bol väčšinou ruínami, a anglický cestovateľ z 18. storočia ho opísal ako biednu dedinu s dlhými uličkami a hlinenými múrmi..." # todo: NEW TRANSLATION
- flavor_tur.43.title: "Pád [GetCountry('AHI').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tur.43.title: "Pád [SKCountryNoTooltip(GetCountry('AHI'),'G')]" # todo: NEW TRANSLATION
  flavor_tur.43.entry: "Pád Ahiov" # todo: CHANGED (predtym: Ospravedlnenie proti Ahi)
- flavor_tur.43.desc: "[GetCountry('AHI').GetName], štát vládnutý duchovným [GetCountry('AHI').GetAdjectiveWithNoTooltip] Bratstvom, mal dlhodobé väzby na dynastiu [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName]. Şeyh Edebali, svokor [GetCharacter('tur_osman').GetName], bol vodcom [GetCountry('AHI').GetNameWithNoTooltip]. Vplyvní členovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] v našom [ROOT.GetCountry.GetFlavorRank] stále považujú [GetCountry('AHI').GetAdjectiveWithNoTooltip] mystikov za cenných spojencov a trvajú na tom, že by mali zostať skôr spojencami než subjektmi. Iní však argumentujú, že je dávno načase začleniť bratstvo do našej domény - čo by mohli násilne odmietnuť..." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tur.43.desc: "[GetCountry('AHI').GetName], štát vládnutý duchovným [GetCountry('AHI').GetAdjectiveWithNoTooltip] Bratstvom, mal dlhodobé väzby na dynastiu [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName]. Şeyh Edebali, svokor [GetCharacter('tur_osman').GetName], bol vodcom [SKCountryNoTooltip(GetCountry('AHI'),'G')]. Vplyvní členovia [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] v našom [ROOT.GetCountry.GetFlavorRank] stále považujú [GetCountry('AHI').GetAdjectiveWithNoTooltip] mystikov za cenných spojencov a trvajú na tom, že by mali zostať skôr spojencami než subjektmi. Iní však argumentujú, že je dávno načase začleniť bratstvo do našej domény - čo by mohli násilne odmietnuť..." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_tur.43.a: "Musíme zaútočiť." # todo: NEW TRANSLATION
  flavor_tur.43.b: "Navrhnime úniu." # todo: NEW TRANSLATION
  flavor_tur.43.c: "Zatiaľ budeme koexistovať." # todo: NEW TRANSLATION
@@ -391,7 +391,7 @@
  flavor_tur.64.b: "Nemôžeme to urobiť..." # todo: NEW TRANSLATION
  flavor_tur.64.historical_info: "Ako mnohé moslimské dynastie pred nimi, aj Osmanovia zápasili s problémami nasledovníctva v dôsledku polygamie a nejasných dedičských práv, a občianske vojny medzi bratmi boli bežné. Hoci to bolo nakoniec vyriešené systémom #italic Kafes#!, núteným ústraním potenciálnych nástupcov sultána, v ranom období bola fratricída možnosťou, ktorú si radi zvolili, ako keď Mehmet III nechal zabiť svojich 19 bratov." # todo: NEW TRANSLATION
  flavor_tur.65.title: "Dynastia [nasrid_ruler.GetDynasty.GetNameWithNoTooltip] žiada o pomoc" # todo: NEW TRANSLATION
- flavor_tur.65.desc: "[nasrid_ruler.GetName] z [SKCountry(GetCountry('GRA'),'G')] je napádaný silou [GetCountry('CAS').GetName] a teraz nás žiada o pomoc. Rod [nasrid_ruler.GetDynasty.GetName] vládne posledným zvyškám slávnej [ShowReligionGroupAdjective('muslim')] civilizácie Al-'Andalus, kde kedysi vzkvétali veľkí myslitelia mnohých vierovyznaní. Pýtajú sa nás v liste, či to všetko bolo márne?" # todo: NEW TRANSLATION
+ flavor_tur.65.desc: "[nasrid_ruler.GetName] z [SKCountry(GetCountry('GRA'),'G')] je napádaný silou [SKCountry(GetCountry('CAS'),'G')] a teraz nás žiada o pomoc. Rod [nasrid_ruler.GetDynasty.GetName] vládne posledným zvyškám slávnej [ShowReligionGroupAdjective('muslim')] civilizácie Al-'Andalus, kde kedysi vzkvétali veľkí myslitelia mnohých vierovyznaní. Pýtajú sa nás v liste, či to všetko bolo márne?" # todo: NEW TRANSLATION
  flavor_tur.65.a: "Bohužiaľ, nemôžeme pomôcť." # todo: NEW TRANSLATION
  flavor_tur.65.tt: "Pošlite srdečné pozdravy [GetCountry('GRA').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_tur.65.b: "[GetCountry('CAS').GetNameWithNoTooltip] si to raz uvedomí!" # todo: NEW TRANSLATION
@@ -499,7 +499,7 @@
  flavor_tur.79.c: "Musíme na dvore prijať [ShowLanguageNameWithNoTooltip('arabic_language')]." # todo: NEW TRANSLATION
  flavor_tur.80.title: "Bod opory v [ShowRegionNameWithNoTooltip('italy_region')]" # todo: NEW TRANSLATION
  flavor_tur.80.entry: "Uchopenie v Taliansku" # todo: NEW TRANSLATION
- flavor_tur.80.desc: "[target_province.GetName] je strategická lokalita, ktorá by nám poskytla bod opory v [ShowRegionName('italy_region')] a spôsob, ako spochybniť [ShowLocationName('strait_otranto')]. Ak chceme niekedy dobyť [ShowLocationName('rome')] a získať späť plnú slávu starovekých cisárov, mali by sme začať tým, že vyrveme [target_province.GetNameWithNoTooltip] z nespravodlivých rúk [target_country.GetName].\n\nBolo by však rozumné zabezpečiť, že máme dosť lodí na takýto podnik..." # todo: NEW TRANSLATION
+ flavor_tur.80.desc: "[target_province.GetName] je strategická lokalita, ktorá by nám poskytla bod opory v [ShowRegionName('italy_region')] a spôsob, ako spochybniť [ShowLocationName('strait_otranto')]. Ak chceme niekedy dobyť [ShowLocationName('rome')] a získať späť plnú slávu starovekých cisárov, mali by sme začať tým, že vyrveme [target_province.GetNameWithNoTooltip] z nespravodlivých rúk [SKCountry(target_country,'G')].\n\nBolo by však rozumné zabezpečiť, že máme dosť lodí na takýto podnik..." # todo: NEW TRANSLATION
  flavor_tur.80.historical_info: "Skorí sultáni po dobytí Konštantínopolu neochvejne trvali na svojom nároku byť rímskymi cisármi a používali ho na ospravedlnenie dobyvačných výprav v západnej Európe. V roku 1479 sa vzťahy medzi Osmanskou ríšou a Benátkami zlepšili a Mehmed II hľadal ich podporu pre inváziu do Kráľovstva Neapol, ktorá by mu umožnila získať bod opory v južnom Taliansku." # todo: NEW TRANSLATION
  flavor_tur.80.a: "Navrhnite nesväté spojenectvo s [SKCountryNoTooltip(GetCountry('VEN'),'I')]." # todo: NEW TRANSLATION
  flavor_tur.80.a.entry: "Navrhnite ohavný spojenec s $VEN$." # todo: NEW TRANSLATION
@@ -558,15 +558,15 @@
  flavor_tur.89.historical_info: "V polovici 15. storočia bol Krym rozdelený medzi Janovčanov a Krymský chanát a na severe susedil s Poľským kráľovstvom. Keď janovské kolónie najali poľských žoldnierov v roku 1462, Mehmed II sa obával, že polostrov príde pod poľskú hegemóniu. Aby tomu zabránil, Osmanská ríša zaútočila v roku 1475 a následne vládla Krymu čiastočne priamo, čiastočne cez vazalov, po stáročia." # todo: NEW TRANSLATION
  flavor_tur.90.title: "Zabezpečenie stepí" # todo: NEW TRANSLATION
  flavor_tur.90.entry: "$flavor_tur.90.title$" # todo: NEW TRANSLATION
- flavor_tur.90.desc: "Nomádi z [SKCountry(crimean_country,'G')], susedia našich držieb v [ShowAreaName('crimea_area')], sú zruční jazdci a bojovníci a svojimi nájazdmi na svojich [ShowReligionGroupAdjective('christian')] susedov sú kľúčoví pre obchod s otrokmi, ktorý siaha až do [ShowLocationNameWithNoTooltip('bukhara')] v [ShowRegionName('khorasan_region')]. Naši vyslanci teraz hovoria, že celé [crimean_country.GetNameWithNoTooltip] by mohlo byť ochotné stať sa naším protektorátom — ak sme pripravení odoslať zásobu striebra a vojakov, aby im pomohli v miestnych vojnách." # todo: NEW TRANSLATION
+ flavor_tur.90.desc: "Nomádi z [SKCountry(crimean_country,'G')], susedia našich držieb v [ShowAreaName('crimea_area')], sú zruční jazdci a bojovníci a svojimi nájazdmi na svojich [ShowReligionGroupAdjective('christian')] susedov sú kľúčoví pre obchod s otrokmi, ktorý siaha až do [ShowLocationNameWithNoTooltip('bukhara')] v [ShowRegionName('khorasan_region')]. Naši vyslanci teraz hovoria, že celé [SKCountryNoTooltip(crimean_country,'G')] by mohlo byť ochotné stať sa naším protektorátom — ak sme pripravení odoslať zásobu striebra a vojakov, aby im pomohli v miestnych vojnách." # todo: NEW TRANSLATION
  flavor_tur.90.a: "Pošlime návrh." # todo: NEW TRANSLATION
  flavor_tur.90.b: "Pripravme sa ich priamo anektovať." # todo: NEW TRANSLATION
  flavor_tur.90.c: "Máme dosť starostí doma." # todo: NEW TRANSLATION
  flavor_tur.90.historical_info: "Krátko po osmanskom útoku na janovské mestá na Kryme sa Krymský chanát, oslabený následníckou krízou, vzdal. Krymskí Tatári potom dodávali Osmanom zručných jazdcov a, možno najdôležitejšie, otrokov chytených pri nájazdoch. Osmanovia im poskytli veľmi výhodné podmienky, uznávajúc ich ako dedičov $genghis_khan_name_no_tooltip$ a správali sa k nim skôr ako k spojencom než poddaným - hoci sa to časom zmenilo..." # todo: NEW TRANSLATION
  crimean_vassalage_guaranteed_chance_tooltip: "Vďaka našim dobrým vzťahom [crimean_country.GetNameWithNoTooltip] túto dohodu prijme." # todo: NEW TRANSLATION
- crimean_vassalage_decent_chance_tooltip: "Existuje dobrá šanca, že [crimean_country.GetNameWithNoTooltip] túto dohodu prijme." # todo: NEW TRANSLATION
- crimean_vassalage_low_chance_tooltip: "Vzhľadom na naše zlé vzťahy je vysoká pravdepodobnosť, že [crimean_country.GetNameWithNoTooltip] túto dohodu odmietne." # todo: NEW TRANSLATION
- crimean_vassalage_very_low_chance_tooltip: "Vzhľadom na naše zlé vzťahy je veľmi vysoká pravdepodobnosť, že [crimean_country.GetNameWithNoTooltip] túto dohodu odmietne." # todo: NEW TRANSLATION
+ crimean_vassalage_decent_chance_tooltip: "Existuje dobrá šanca, že [SKCountryNoTooltip(crimean_country,'G')] túto dohodu prijme." # todo: NEW TRANSLATION
+ crimean_vassalage_low_chance_tooltip: "Vzhľadom na naše zlé vzťahy je vysoká pravdepodobnosť, že [SKCountryNoTooltip(crimean_country,'G')] túto dohodu odmietne." # todo: NEW TRANSLATION
+ crimean_vassalage_very_low_chance_tooltip: "Vzhľadom na naše zlé vzťahy je veľmi vysoká pravdepodobnosť, že [SKCountryNoTooltip(crimean_country,'G')] túto dohodu odmietne." # todo: NEW TRANSLATION
  crimean_slave_trade_encouraged: "Podpora krymského obchodu s otrokmi" # todo: NEW TRANSLATION
  flavor_tur.91.title: "Hrozná nehoda" # todo: NEW TRANSLATION
  flavor_tur.91.entry: "$flavor_tur.91.title$" # todo: NEW TRANSLATION
@@ -1140,8 +1140,8 @@
  flavor_tur.168.a: "Naplánovať hroznú pomstu." # todo: NEW TRANSLATION
  flavor_tur.168.b: "Ukloniť ich reformami." # todo: NEW TRANSLATION
  flavor_tur.168.c: "Pozerať, ako horí [ShowLocationNameWithNoTooltip('rome')]." # todo: NEW TRANSLATION
- greek_uprising_aggravated: "Všetky [ShowCultureName('greek_culture')] [Concept('pops','populácie')|e] v [ShowRegionName('balkan_region')] budú mať veľmi nízke [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- greek_uprising_milder: "Všetky [ShowCultureName('greek_culture')] [Concept('pops','populácie')|e] v [ShowRegionName('balkan_region')] budú mať nízke [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ greek_uprising_aggravated: "Všetky [ShowCultureName('greek_culture')] [Concept('pops','populácie')|e] v [ShowRegionName('balkan_region')] budú mať veľmi nízku [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ greek_uprising_milder: "Všetky [ShowCultureName('greek_culture')] [Concept('pops','populácie')|e] v [ShowRegionName('balkan_region')] budú mať nízku [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  greeks_appeased: "[Concept('pop_satisfaction','Spokojnosť populácie')|e] [ShowCultureName('greek_culture')] [Concept('pops','Populácie')|e] v [ShowRegionName('balkan_region')] zaznamená len malý pokles." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_tur.169.title: "Masaker v [massacre_location.GetNameWithNoTooltip] roku [GetCurrentYear]" # todo: NEW TRANSLATION
  flavor_tur.169.desc: "Sľúbili sme pomstu voči gréckým povstalcom v [ShowRegionName('balkan_region')] a teraz prišiel čas. Keďže [ShowReligionAdjective('orthodox')] patriarchovi sa nepodarilo krízu zabrániť, musí byť ukážkovo potrestaný, rovnako ako veľký dragoman a všetci ostatní [ShowCultureNameWithNoTooltip('greek_culture')] komunitní vodcovia v [massacre_location.GetName], či už majú väzby na povstalcov alebo nie. Popravíme zradcov a ich sympatizantov, zabavíme ich majetok a zničíme ich bohoslužobné miesta, a spravíme zo sveta strach — inak budeme považovaní za slabochov, ktorí nedodržali svoje hrozby." # todo: NEW TRANSLATION
@@ -1354,7 +1354,7 @@
  klephts: "Klephtovia" # todo: NEW TRANSLATION
  flavor_tur.199.title: "Postavenie [ShowLocationNameWithNoTooltip('sredets')]" # todo: NEW TRANSLATION
  flavor_tur.199.entry: "Postavenie Sredets" # todo: NEW TRANSLATION
- flavor_tur.199.desc: "V okupovaných územiach v [ShowAreaName('bulgaria_area')] existuje množstvo zákonov, ktoré nie sú zladené s právom [ROOT.GetCountry.GetName]. To im často umožňovalo obchádzať veci ako dane a brannú povinnosť a dávalo im viac autonómie, než by mali. Preto [ROOT.GetCountry.GetGovernment.GetCabinetTitle] navrhuje riadne zriadiť administratívu v centre týchto krajín, konkrétne v [target_location.GetName]. Pod kontrolou [ROOT.GetCountry.GetAdjective] elít by priniesla očakávané výhody, ak do toho investujeme zlato." # todo: NEW TRANSLATION
+ flavor_tur.199.desc: "V okupovaných územiach v [ShowAreaName('bulgaria_area')] existuje množstvo zákonov, ktoré nie sú zladené s právom [SKCountry(ROOT.GetCountry,'G')]. To im často umožňovalo obchádzať veci ako dane a brannú povinnosť a dávalo im viac autonómie, než by mali. Preto [ROOT.GetCountry.GetGovernment.GetCabinetTitle] navrhuje riadne zriadiť administratívu v centre týchto krajín, konkrétne v [target_location.GetName]. Pod kontrolou [ROOT.GetCountry.GetAdjective] elít by priniesla očakávané výhody, ak do toho investujeme zlato." # todo: NEW TRANSLATION
  flavor_tur.199.a: "Urobme z [target_location.GetNameWithNoTooltip] centrum [ShowAreaNameWithNoTooltip('bulgaria_area')]." # todo: NEW TRANSLATION
  flavor_tur.199.a.entry: "Zriaďme [ShowLocationNameWithNoTooltip('sredets')] ako centrum [ShowAreaNameWithNoTooltip('bulgaria_area')]." # todo: NEW TRANSLATION
  flavor_tur.199.b: "Ich miestne zákony nám až tak neprekážajú." # todo: NEW TRANSLATION
@@ -1390,7 +1390,7 @@
  tur_all_muslim_pops_gain_satisfaction: "Všetky naše [ShowReligionGroupAdjective('muslim')] [Concept('pops','populácie')|e] získajú [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_tur.205.title: "[ShowAdvanceNameWithNoTooltip('ghazi')] [ROOT.GetCountry.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  flavor_tur.205.entry: "Ghazi panovník" # todo: NEW TRANSLATION
- flavor_tur.205.desc: "Vojenská sila [ROOT.GetCountry.GetName] sa rozšírila ďaleko, ale niektorí tvrdia, že naše dobytia sú vykonávané extrémnymi prostriedkami. [target_character.GetName] chce vytvoriť iný obraz [ROOT.GetCountry.GetAdjectiveWithNoTooltip] oddielov. Namiesto spoliehania sa na lúpeže a rabovanie chce [target_character.GetSheHe] predstaviť [target_character.GetHerselfHimself] ako [ShowAdvanceName('ghazi')] [ROOT.GetCountry.GetGovernment.GetRulerTitle], ktorý chráni práva neveriacich a neangažuje sa v politike, ale je len vojakom." # todo: NEW TRANSLATION
+ flavor_tur.205.desc: "Vojenská sila [SKCountry(ROOT.GetCountry,'G')] sa rozšírila ďaleko, ale niektorí tvrdia, že naše dobytia sú vykonávané extrémnymi prostriedkami. [target_character.GetName] chce vytvoriť iný obraz [ROOT.GetCountry.GetAdjectiveWithNoTooltip] oddielov. Namiesto spoliehania sa na lúpeže a rabovanie chce [target_character.GetSheHe] predstaviť [target_character.GetHerselfHimself] ako [ShowAdvanceName('ghazi')] [ROOT.GetCountry.GetGovernment.GetRulerTitle], ktorý chráni práva neveriacich a neangažuje sa v politike, ale je len vojakom." # todo: NEW TRANSLATION
  flavor_tur.205.a: "Nech si ľudia pamätajú [target_character.GetNameWithNoTooltip] ako pravého [ShowAdvanceNameWithNoTooltip('ghazi')]." # todo: NEW TRANSLATION
  flavor_tur.205.a.entry: "Nech si ho pamätajú ako pravého [ShowAdvanceNameWithNoTooltip('ghazi')]." # todo: NEW TRANSLATION
  flavor_tur.205.b: "Nie je potrebné takto vykresľovať [target_character.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
@@ -1429,7 +1429,7 @@
  flavor_tur.214.title: "Brány [ShowContinentNameWithNoTooltip('europe')]" # todo: NEW TRANSLATION
  flavor_tur.214.desc: "Pre mnohé národy v [ShowContinentName('europe')] bol [target_location.GetName] považovaný za pevnosť, ktorá nás ochráni pred zvyškom kontinentu. Napriek tomu [target_country.GetName] nedokázal zastaviť našu vojenskú kampaň, čo viedlo k pádu [target_location.GetRank.GetName]. Mnohí to považujú za neodvratné a možno čoskoro pokľaknú, zatiaľ čo iní zhromažďujú odpor. Čokoľvek to je, brány [ShowContinentNameWithNoTooltip('europe')] sú teraz široko otvorené." # todo: NEW TRANSLATION
  flavor_tur.214.a: "Prejdeme cez tieto brány." # todo: NEW TRANSLATION
- flavor_tur.215.title: "Pád [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_tur.215.title: "Pád [SKCountryNoTooltip(target_country,'G')]" # todo: NEW TRANSLATION
  flavor_tur.215.desc: "Ostrov [target_location.GetName] bol dlho trnom v našom boku. [target_country.GetName] ho využíval ako základňu pre nájazdy proti nám. Naša nedávna kampaň však uspela a ostrov aj celý [target_country.GetAdjectiveWithNoTooltip] odpor padli." # todo: NEW TRANSLATION
  flavor_tur.215.a: "Nech si pamätajú, čo sa stane, keď nám vzdorujú." # todo: NEW TRANSLATION
  flavor_tur.216.title: "Budúca základňa v [ShowAreaNameWithNoTooltip('western_mediterranean_sea_area')]" # todo: NEW TRANSLATION
@@ -1497,7 +1497,7 @@
  tur_skanderbeg_exists: "#Y $name_george$ $nick_skanderbeg$#! je na našom [ROOT.GetCountry.GetGovernment.GetCourtTitle]" # todo: NEW TRANSLATION
  flavor_tur.1004.title: "Vzostup [target_character2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_tur.1004.entry: "Vzostup Skanderbega" # todo: NEW TRANSLATION
- flavor_tur.1004.desc: "Po dlhom služobnom pomere [ROOT.GetCountry.GetAltAdjective('L')], a po udelení titulu [target_country.GetName], [target_character2.GetName] upadol v nemilosti [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] a namiesto toho túži vytvoriť nezávislý [ShowCultureName('albanian')] štát. Preto sa teraz postavil proti nám, v nádeji, že dosiahne svoje sny o suverenite." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_tur.1004.desc: "Po dlhom služobnom pomere [ROOT.GetCountry.GetAltAdjective('L')], a po udelení titulu [SKCountry(target_country,'G')], [target_character2.GetName] upadol v nemilosti [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] a namiesto toho túži vytvoriť nezávislý [ShowCultureName('albanian')] štát. Preto sa teraz postavil proti nám, v nádeji, že dosiahne svoje sny o suverenite." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_tur.1004.a: "Ten zradca!" # todo: NEW TRANSLATION
  flavor_tur.1004.b: "Nie sme v pozícii bojovať s nimi." # todo: NEW TRANSLATION
  flavor_tur.1004.c: "Červené a čierne nosím, orol na mojej hrudi..." # todo: NEW TRANSLATION
@@ -1529,7 +1529,7 @@
  flavor_tur.1102.a: "Budú ľutovať deň, keď nás tak urazili!" # todo: NEW TRANSLATION
  flavor_tur.1200.title: "Pakt [target_country.GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_tur.1200.entry: "Anglo-osmanský pakt" # todo: NEW TRANSLATION
- flavor_tur.1200.desc: "Hoci naša viera nie je v súlade s vierou [target_country.GetName], nachádzame sa v tej istej diplomatickej situácii. Obe krajiny chcú vidieť [target_rival.GetName] preč; príliš dlho s nami viedli konflikty a odolávali nášmu vplyvu. Preto [ROOT.GetCountry.GetGovernment.GetCourtTitle] želá, aby sme poslali vyslanectvo do [target_country.GetCapital.GetName]: nadviazať spojenectvo a poraziť nášho spoločného rivala." # todo: NEW TRANSLATION
+ flavor_tur.1200.desc: "Hoci naša viera nie je v súlade s vierou [SKCountry(target_country,'G')], nachádzame sa v tej istej diplomatickej situácii. Obe krajiny chcú vidieť [target_rival.GetName] preč; príliš dlho s nami viedli konflikty a odolávali nášmu vplyvu. Preto [ROOT.GetCountry.GetGovernment.GetCourtTitle] želá, aby sme poslali vyslanectvo do [target_country.GetCapital.GetName]: nadviazať spojenectvo a poraziť nášho spoločného rivala." # todo: NEW TRANSLATION
  flavor_tur.1200.a: "Pošlime im posolstvo." # todo: NEW TRANSLATION
  flavor_tur.1200.b: "Neuzavrieme spojenectvo s pohanmi." # todo: NEW TRANSLATION
  flavor_tur.1201.title: "$flavor_tur.1200.title$" # todo: NEW TRANSLATION

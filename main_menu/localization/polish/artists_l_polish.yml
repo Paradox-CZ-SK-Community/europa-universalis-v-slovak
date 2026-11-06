@@ -25,7 +25,7 @@
  ARTIST_TYPE_NAME_philosopher: "Filozof" # todo: NEW TRANSLATION
  ARTIST_TYPE_DESC_philosopher: "Tento typ umelca definuje realitu a pomáha nám formovať naše pochopenie existencie. Slávni filozofi tej doby zahŕňajú René Descartesa, Immanuela Kanta a Barucha Spinozu." # todo: NEW TRANSLATION
  ARTIST_TYPE_NAME_iconographer: "Ikonopisec" # todo: NEW TRANSLATION
- ARTIST_TYPE_DESC_iconographer: "Ikonopisci vytvárajú náboženské ikony pre pravoslávne a miaphyzitné cirkvi. Slávni ikonopisci tej doby zahŕňajú Eulalia, Georgiosa Kallergisa a Manuela Panselinosa." # todo: NEW TRANSLATION
+ ARTIST_TYPE_DESC_iconographer: "Ikonopisci vytvárajú náboženské ikony pre pravoslávne a miafyzitné cirkvi. Slávni ikonopisci tej doby zahŕňajú Eulalia, Georgiosa Kallergisa a Manuela Panselinosa." # todo: CHANGED (predtym: Ikonopisci vytvárajú náboženské ikony pre pravoslávne a miaphyzitné cirkvi. Slávni ikonopisci tej do)
  ARTIST_TYPE_NAME_metalsmith: "Kováč" # todo: NEW TRANSLATION
  ARTIST_TYPE_DESC_metalsmith: "Kováči sú zruční remeselníci schopní vytvoriť čokoľvek od ozdobných zbraní po kráľovské insignie. Slávni kováči tej doby zahŕňajú Johanna Josepha Würtha, Vidala Astoriho a Jehana Cambiera." # todo: NEW TRANSLATION
  ARTIST_TYPE_NAME_calligrapher: "Kaligraf" # todo: NEW TRANSLATION
@@ -146,7 +146,7 @@
  WORK_OF_ART_LOCATION: "[Concept('owner','Majiteľ')|e]: [WORK_OF_ART.GetLocation.GetOwner.GetName]\n[Concept('location','Lokalita')|e]: [WORK_OF_ART.GetLocation.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WORK_OF_ART_NAME: "[WORK_OF_ART.GetCreator.GetArtistType.GetBasicWorkName] " # todo: NEW TRANSLATION
  WORK_OF_ART_COUNTRY_MODS: "Modifikátory aplikované na krajinu za vlastníctvo umenia tohto typu:" # todo: NEW TRANSLATION
- WORK_OF_ART_LOCATION_MODS: "V každom [Concept('location','lokalite')|e], ak je toto najlepšie [Concept('work_of_art','umelecké dielo')|e] prítomné, nasleduje:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ WORK_OF_ART_LOCATION_MODS: "V každej [Concept('location','lokalite')|e], ak je toto najlepšie [Concept('work_of_art','umelecké dielo')|e] prítomné, nasleduje:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WORK_OF_ART_MODIFIER_SCALE: "Všetky modifikátory sú škálované o $VAL|%+=Y$:" # todo: NEW TRANSLATION
  WORK_OF_ART_MODIFIER_BASE: "$BULLET_WITH_TAB$Z [Concept('art_quality','kvality umenia')|e]: $VAL|%+=Y$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  WORK_OF_ART_MODIFIER_SCALE_DESC: "Prínosy, ktoré poskytuje [WORK_OF_ART_TYPE.GetName], sú ovplyvnené týmito modifikátormi:" # todo: NEW TRANSLATION
@@ -546,14 +546,14 @@
  porcelain_tower: "Porcelain Tower" # todo: NEW TRANSLATION
  porcelain_tower_desc: "The $porcelain_tower$ je vysoká pagoda z porcelánových tehál, ktorá patrí medzi najvyššie takéto stavby v svete [ShowCultureGroupName('chinese_group')]. Vďaka svojmu prepracovanému dizajnu ju mnohí považujú za národný zázrak a jeden z našich najprestížnejších monumentov." # todo: NEW TRANSLATION
  yuanshi: "History of Yuán" # todo: NEW TRANSLATION
- yuanshi_desc: "The $yuanshi$ je jedným z oficiálnych záznamov kroník dynastií [ShowCultureGroupName('chinese_group')]. Skladá sa zo 210 kapitol, ktoré obsahujú záznamy o dynastii [GetCountry('YUA').GetName] od vlády $genghis_khan_name$ až po ich pád." # todo: NEW TRANSLATION
+ yuanshi_desc: "The $yuanshi$ je jedným z oficiálnych záznamov kroník dynastií [ShowCultureGroupName('chinese_group')]. Skladá sa zo 210 kapitol, ktoré obsahujú záznamy o dynastii [SKCountry(GetCountry('YUA'),'G')] od vlády $genghis_khan_name$ až po ich pád." # todo: NEW TRANSLATION
  huolongjing: "Huǒlóngjīng" # todo: NEW TRANSLATION
  huolongjing_desc: "The $huolongjing$, alebo #italic Fire Dragon Manual#!, je vojenský [ShowWorkOfArtTypeName('treatise')] o používaní zbraní [ShowAdvanceName('gunpowder_advance')]. Príručka popisuje ich využitie počas [ShowSituationName('red_turban_rebellions')]. Predstavuje hlboké vojenské tradície dynastií [ShowCultureGroupName('chinese_group')]." # todo: NEW TRANSLATION
  yuanmingyuan: "Yuánmíngyuán" # todo: NEW TRANSLATION
  yuanmingyuan_desc: "The $yuanmingyuan$ je komplex moderných palácov a záhrad, ktorý majstrovsky reprezentuje nádheru [GetInternationalOrganizationType('middle_kingdom').GetName]." # todo: NEW TRANSLATION
  TEU_swords_of_grunwald: "Swords of Grunwald" # todo: NEW TRANSLATION
  chronica_provinz_lyfflandt: "Chronicle of Livonia" # todo: NEW TRANSLATION
- chronica_provinz_lyfflandt_desc: "The $chronica_provinz_lyfflandt$ popisuje históriu [ShowAreaName('baltic_area')] od polovice 12. storočia do polovice 16. storočia a výrazne sa sústreďuje na annály [GetCountry('LIV').GetName]." # todo: NEW TRANSLATION
+ chronica_provinz_lyfflandt_desc: "The $chronica_provinz_lyfflandt$ popisuje históriu [ShowAreaName('baltic_area')] od polovice 12. storočia do polovice 16. storočia a výrazne sa sústreďuje na annály [SKCountry(GetCountry('LIV'),'G')]." # todo: NEW TRANSLATION
  chronik_des_land_preussens: "Chronik des Landes Preussen" # todo: NEW TRANSLATION
  chronik_des_land_preussens_desc: "The $chronik_des_land_preussens$ podrobne zaznamenáva udalosti, ktoré sa odohrali v [SKCountry(GetCountry('TEU'),'L')] a v oblasti [ShowAreaName('prussia_area')] počas veľkej časti druhej polovice 14. storočia." # todo: NEW TRANSLATION
  roman_history: "Rímske dejiny" # todo: NEW TRANSLATION
@@ -575,7 +575,7 @@
  esmeraldo_do_situ_orbis: "Esmeraldo de Situ Orbis" # todo: NEW TRANSLATION
  esmeraldo_do_situ_orbis_desc: "#italic $esmeraldo_do_situ_orbis$#! je traktát o kozmografii a prieskume vykonávanom portugalskými moreplavcami. Jeho podrobné informácie o portugalských technikách a ziskovom obchode viedli k tomu, že bol desaťročia utajovaný ako štátny tajný materiál." # todo: NEW TRANSLATION
  por_geral_de_espanha: "Crónica Geral de Espanha" # todo: NEW TRANSLATION
- por_geral_de_espanha_desc: "The #italic $por_geral_de_espanha$#! je rozsiahla kronika, ktorá rozpráva o Reconquiste v [ShowRegionName('iberia_region')] a o úlohe [GetCountry('POR').GetName] pri tomto víťazstve." # todo: NEW TRANSLATION
+ por_geral_de_espanha_desc: "The #italic $por_geral_de_espanha$#! je rozsiahla kronika, ktorá rozpráva o Reconquiste v [ShowRegionName('iberia_region')] a o úlohe [SKCountry(GetCountry('POR'),'G')] pri tomto víťazstve." # todo: NEW TRANSLATION
  livro_das_cantigas: "Livro das Cantigas" # todo: NEW TRANSLATION
  livro_das_cantigas_desc: "#italic $livro_das_cantigas$#! je bohatá hudobná zbierka, ktorá obsahuje rôzne #italic cantigas#! zahŕňajúce mnohé piesne zložané na konci ich zlatého obdobia." # todo: NEW TRANSLATION
  gatchina_palace: "Gatchina Palace" # todo: NEW TRANSLATION

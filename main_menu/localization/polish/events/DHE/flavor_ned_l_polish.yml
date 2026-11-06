@@ -49,7 +49,7 @@
  flavor_ned.8.entry: "$flavor_ned.8.title$" # todo: NEW TRANSLATION
  flavor_ned.8.desc: "Ak chceme zabezpečiť našu nezávislosť, musíme ochrániť naše územia aj moria. Na to chce [target_character.GetName] udeľovať povolenia ku korzárčeniu každej ozbrojenej lodi, ktorá chce slúžiť [target_country.GetName]." # todo: NEW TRANSLATION
  flavor_ned.8.historical_info: "Počas 80-ročnej vojny Vilém Oranžský udeľoval akýmkoľvek ozbrojeným plavidlám listiny, čím získal osemnásť lodí pod holandskou vlajkou. Títo súkromníci postupne narastali a obťažovali španielske prístavy. Mnohí veľkí hrdinovia boli tiež súčasťou Morských žobrákov." # todo: NEW TRANSLATION
- flavor_ned.8.a: "Pre obranu [target_country.GetNameWithNoTooltip] je to potrebné." # todo: NEW TRANSLATION
+ flavor_ned.8.a: "Pre obranu [SKCountryNoTooltip(target_country,'G')] je to potrebné." # todo: NEW TRANSLATION
  flavor_ned.8.a.entry: "Pre ich obranu je toto potrebné." # todo: NEW TRANSLATION
  flavor_ned.8.b: "Podporovať pirátstvo? Čo sa stalo s ochranou našich vôd?" # todo: NEW TRANSLATION
  flavor_ned.9.title: "Záujmy v [ShowAreaNameWithNoTooltip('sailan_area')]" # todo: NEW TRANSLATION
@@ -78,7 +78,7 @@
  flavor_ned.13.b.entry: "Do nich nepatrí." # todo: NEW TRANSLATION
  flavor_ned.14.title: "Zjedenie [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ned.14.entry: "Zjedenie veľkého penzionára" # todo: RETRANSLATED ENGLISH
- flavor_ned.14.desc: "Vojna a nešťastie sužovali [ROOT.GetCountry.GetName]. Keď sily [target_country.GetName] obsadili [ROOT.GetCountry.GetCapital.GetName], veľká časť [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] vidí [target_character.GetName] a [target_character.GetHisHer] ambície ako jedinú príčinu toho všetkého. Rozzúrený dav sa teraz zhromaždil pred rezidenciou [target_character.GetNameWithNoTooltip], aby popravil [target_character.GetHimHer]. Napriek [target_character.GetHisHer] uchvacujúcemu prejavu dav nezastavil. Ako zvieratá zaútočili na [target_character.GetHimHer], čo viedlo k [target_character.GetHisHer] smrti. V následkoch chýbali časti tela, ktoré boli kanibalmi zožraté neúprosným davom, ktorý sa na [target_character.GetHimHer] pôvodne vrhol." # todo: NEW TRANSLATION
+ flavor_ned.14.desc: "Vojna a nešťastie sužovali [ROOT.GetCountry.GetName]. Keď sily [SKCountry(target_country,'G')] obsadili [ROOT.GetCountry.GetCapital.GetName], veľká časť [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] vidí [target_character.GetName] a [target_character.GetHisHer] ambície ako jedinú príčinu toho všetkého. Rozzúrený dav sa teraz zhromaždil pred rezidenciou [target_character.GetNameWithNoTooltip], aby popravil [target_character.GetHimHer]. Napriek [target_character.GetHisHer] uchvacujúcemu prejavu dav nezastavil. Ako zvieratá zaútočili na [target_character.GetHimHer], čo viedlo k [target_character.GetHisHer] smrti. V následkoch chýbali časti tela, ktoré boli kanibalmi zožraté neúprosným davom, ktorý sa na [target_character.GetHimHer] pôvodne vrhol." # todo: NEW TRANSLATION
  flavor_ned.14.a: "Aj teraz, [ROOT.GetCountry.GetNameWithNoTooltip] nie sú v bezpečí..." # todo: CHANGED
  flavor_ned.14.a.entry: "Aj teraz nie sme v bezpečí..." # todo: NEW TRANSLATION
  flavor_ned.16.title: "Zlatý vek kultúry [target_country.GetCulture.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -88,7 +88,7 @@
  flavor_ned.16.a.entry: "Ich kultúra bude známa v každom kúte." # todo: NEW TRANSLATION
  flavor_ned.17.title: "Textilný priemysel v [target_location.GetNameWithNoTooltip] a [target_location2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ned.17.entry: "Textilný priemysel Nízkych krajín" # todo: NEW TRANSLATION
- flavor_ned.17.desc: "Územia [target_country.GetName] sú bohaté na farbivá, čo nám umožňuje vyrábať všetky druhy tkanín. Dva z najznámejších cechov sú v [target_location.GetName] a [target_location2.GetName], oba veľmi cenné pre [SKCountryNoTooltip(target_country,'A')]. [target_character.GetName] má plány pomôcť obom cechom, avšak uprednostnenie jedného pred druhým nám môže dovoliť ďalej špecializovať náš textilný priemysel." # todo: NEW TRANSLATION
+ flavor_ned.17.desc: "Územia [SKCountry(target_country,'G')] sú bohaté na farbivá, čo nám umožňuje vyrábať všetky druhy tkanín. Dva z najznámejších cechov sú v [target_location.GetName] a [target_location2.GetName], oba veľmi cenné pre [SKCountryNoTooltip(target_country,'A')]. [target_character.GetName] má plány pomôcť obom cechom, avšak uprednostnenie jedného pred druhým nám môže dovoliť ďalej špecializovať náš textilný priemysel." # todo: NEW TRANSLATION
  flavor_ned.17.a: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] v [target_location.GetNameWithNoTooltip] budú mať našu pomoc." # todo: NEW TRANSLATION
  flavor_ned.17.a.entry: "Stav $burghers_estate$ v danej lokalite dostane našu pomoc." # todo: NEW TRANSLATION
  flavor_ned.17.b: "Podpora [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] v [target_location2.GetNameWithNoTooltip] nám prinesie viac výhod." # todo: CHANGED
@@ -207,7 +207,7 @@
  flavor_ned.1001.b: "Počkaj, nikdy sme s týmto nesúhlasili!" # todo: NEW TRANSLATION
  flavor_ned.1002.title: "Slávna revolúcia" # todo: NEW TRANSLATION
  flavor_ned.1002.entry: "$flavor_ned.1002.title$" # todo: NEW TRANSLATION
- flavor_ned.1002.desc: "Po zvrhnutí starej vlády v [SKCountry(target_country,'L')] je [target_character.GetName] teraz právoplatným vládcom všetkých [target_country.GetAdjectiveWithNoTooltip] území. [target_character.GetHeShe|U] a [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sú teraz pripravení prerokovať záležitosť [target_country.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_ned.1002.desc: "Po zvrhnutí starej vlády v [SKCountry(target_country,'L')] je [target_character.GetName] teraz právoplatným vládcom všetkých [target_country.GetAdjectiveWithNoTooltip] území. [target_character.GetHeShe|U] a [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] sú teraz pripravení prerokovať záležitosť [SKCountryNoTooltip(target_country,'G')]." # todo: NEW TRANSLATION
  flavor_ned.1002.a: "Budú poddaní [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')]." # todo: NEW TRANSLATION
  flavor_ned.1002.a.entry: "Budú poddanými nášho $crown_estate$." # todo: NEW TRANSLATION
  variable_glorious_revolution_immortal_seven_flag_tt: "Nesmrtelní siedmi pozvali našu intervenciu" # todo: NEW TRANSLATION

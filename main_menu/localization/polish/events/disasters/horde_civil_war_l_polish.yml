@@ -22,7 +22,7 @@
  horde_civil_war.5.title: "Porážka [target_country.GetGovernment.GetRulerTitle]!" # todo: NEW TRANSLATION
  horde_civil_war.5.desc: "Napriek najlepším snahám [target_ruler.GetName] boli neposední bojovníci [target_character.GetName] pre [target_ruler.GetHerHim] príliš veľa. Nakoniec kedysi veľké [target_country.GetLongName] padlo pod neúprosným útokom svojich pretendentov, čo ukončilo [target_country.GetAdjectiveWithNoTooltip] občiansku vojnu otrasnou porážkou pre [target_country.GetGovernment.GetRulerTitle]..." # todo: NEW TRANSLATION
  horde_civil_war.5.a: "Nech sa tento hanebný pretendent udusí svojou [target_character.GetHerHis] pýchou." # todo: NEW TRANSLATION
- horde_civil_war.5.b: "Toto je koniec [target_country.GetNameWithNoTooltip]..." # todo: NEW TRANSLATION
+ horde_civil_war.5.b: "Toto je koniec [SKCountryNoTooltip(target_country,'G')]..." # todo: NEW TRANSLATION
  horde_civil_war.6.title: "Vláda [target_character.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
  horde_civil_war.6.desc: "Starý poriadok [target_country.GetLongName] už neexistuje a [target_character.GetName] sa stal novým vládcov stepí. Avšak [target_character.GetHerHis] činy spôsobili veľa utrpenia a krvavých konfliktov, a ďalší vojvodovia sa môžu pokúsiť vykonať vlastné prevraty proti novému [target_country.GetGovernment.GetRulerTitle]..." # todo: CHANGED
  horde_civil_war.6.a: "Nech prídu!" # todo: NEW TRANSLATION
@@ -30,7 +30,7 @@
  horde_civil_war.7.title.generic: "Provincálne povstanie" # todo: NEW TRANSLATION
  horde_civil_war.7.desc: "Konflikt medzi [target_ruler.GetName] a pretendentom [target_character.GetName] narušil snahy o centralizáciu [target_country.GetName]. Bojovníci z [target_province.GetName] požadujú autonómiu nezávislú od [target_country.GetGovernment.GetRulerTitle] a hrozia povstaním, ak [target_ruler.GetShortNameWithNoTooltip] nevyhovie." # todo: NEW TRANSLATION
  horde_civil_war.7.a: "Pred nikým sa neklaníme!" # todo: NEW TRANSLATION
- horde_civil_war.7.a.tt: "Každý [Concept('pop','populácia')|e] v [target_province.GetName] sa pridáva k [target_rebel.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ horde_civil_war.7.a.tt: "Každá [Concept('pop','populácia')|e] v [target_province.GetName] sa pridáva k [target_rebel.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  horde_civil_war.7.b: "Nemáme inú možnosť..." # todo: NEW TRANSLATION
  horde_civil_war.8.title: "Vražda [target_ruler.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  horde_civil_war.8.title.generic: "Politická vražda" # todo: NEW TRANSLATION
@@ -49,16 +49,16 @@
  horde_civil_war.11.desc: "Absencia uznávaného vládcu v našej krajine viedla k väčším intrigám a povstaniam. Napriek najlepším snahám [target_ruler.GetName] stabilizovať situáciu sa [target_ruler.GetHerHis] nedostatok autority stal [target_ruler.GetHerHis] skazou, keď [target_character.GetName] a [target_character.GetHerHis] nasledovníci krátko zvrhli [target_ruler.GetShortNameWithNoTooltip] a prevzali vládu ako náš nový vládca." # todo: NEW TRANSLATION
  horde_civil_war.11.a: "Aspoň to nie je pretendent..." # todo: NEW TRANSLATION
  horde_civil_war.1000.title: "Nezaistené hranice" # todo: NEW TRANSLATION
- horde_civil_war.1000.desc: "Zvyčajne hranice [from_country.GetName] pravidelne strážia naši jazdci prieskumníci. Avšak chaos spôsobený ambíciou [target_character.GetName] podkopáva našu hranicnú bezpečnosť. Je len otázkou času, kedy akýkoľvek povstávajúci [ShowGovernmentTypeName('steppe_horde')] alebo iný štát bez varovania vpadne na naše územie..." # todo: NEW TRANSLATION
+ horde_civil_war.1000.desc: "Zvyčajne hranice [SKCountry(from_country,'G')] pravidelne strážia naši jazdci prieskumníci. Avšak chaos spôsobený ambíciou [target_character.GetName] podkopáva našu hranicnú bezpečnosť. Je len otázkou času, kedy akýkoľvek povstávajúci [ShowGovernmentTypeName('steppe_horde')] alebo iný štát bez varovania vpadne na naše územie..." # todo: NEW TRANSLATION
  horde_civil_war.1000.a: "Posilnite tieto hliadky!" # todo: NEW TRANSLATION
  horde_civil_war.1000.b: "Budeme sa musieť zaobísť bez nich..." # todo: NEW TRANSLATION
- horde_civil_war.1000.b.tt: "Každý susedný [Concept('country','krajina')|e] si všimne našu aktuálne slabú pozíciu..." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- horde_civil_war.1001.title: "Slabosť [from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ horde_civil_war.1000.b.tt: "Každý susedná [Concept('country','krajina')|e] si všimne našu aktuálne slabú pozíciu..." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ horde_civil_war.1001.title: "Slabosť [SKCountryNoTooltip(from_country,'G')]" # todo: NEW TRANSLATION
  horde_civil_war.1001.desc: "Náš sused, [from_country.GetLongName], zápasí so svojou [ShowDisasterName('horde_civil_war')]. Hoci je to tragické pre ich [from_country.GetGovernment.GetRulerTitle], pre nás je to vynikajúca príležitosť. Ich hranice postrádajú akúkoľvek obranu či prieskumné hliadky; ich územia sú zrelé na lúpežné výpravy... alebo možno na plnohodnotnú inváziu?" # todo: NEW TRANSLATION
  horde_civil_war.1001.a: "Zatiaľ sa držme bežných nájazdov." # todo: NEW TRANSLATION
- horde_civil_war.1001.a.tt: "[ShowScriptedEffectForScope('horde_raid_location',SCOPE.sLocation('target').GetLocation.MakeScope.Self)]\n#Y Tieto efekty sa vzťahujú aj na všetky ostatné susedné [Concept('locations','lokality')|e] [from_country.GetName]#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ horde_civil_war.1001.a.tt: "[ShowScriptedEffectForScope('horde_raid_location',SCOPE.sLocation('target').GetLocation.MakeScope.Self)]\n#Y Tieto efekty sa vzťahujú aj na všetky ostatné susedné [Concept('locations','lokality')|e] [SKCountry(from_country,'G')]#!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  horde_civil_war.1001.b: "Mali by sme zaútočiť, kým sú slabí!" # todo: NEW TRANSLATION
- horde_civil_war.1002.title: "Vnútorné boje [from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ horde_civil_war.1002.title: "Vnútorné boje [SKCountryNoTooltip(from_country,'G')]" # todo: NEW TRANSLATION
  horde_civil_war.1002.desc: "Barbari z [from_country.GetLongName] zápasia vo svojej [ShowDisasterName('horde_civil_war')]. Naše hranice, kedysi terorizované ich neustálymi nájazdmi, sa konečne môžu zotaviť. Niektorí z našich poradcov však chcú ísť ďalej: podľa nich je jediný spôsob udržania pokoja zničenie [from_country.GetLongNameWithNoTooltip] raz a navždy." # todo: NEW TRANSLATION
  horde_civil_war.1002.a: "Majú pravdu. Mali by sme sa pripraviť na vojnu!" # todo: NEW TRANSLATION
  horde_civil_war.1002.b: "V našej súčasnej situácii si to nemôžeme dovoliť." # todo: NEW TRANSLATION

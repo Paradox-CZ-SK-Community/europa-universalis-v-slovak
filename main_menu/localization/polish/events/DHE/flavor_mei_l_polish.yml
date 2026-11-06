@@ -4,7 +4,7 @@
  flavor_mei.1.desc: "Novozistené ložiská [ShowGoodsName('silver')] vyvolali doslova príval ľudí sťahujúcich sa do okolia [ShowLocationName('freiberg')], snažiacich sa profitovať z rozkvitajúceho baníckeho priemyslu v [ShowProvinceDefinitionName('erzgebirge_province')]. Zvýšený záujem o naše banícke mestá môže byť len v náš prospech." # todo: NEW TRANSLATION
  flavor_mei.1.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  flavor_mei.1.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
- flavor_mei.1.a.tt: "Každé [Concept('location','lokalita')|e] s baníckym [Concept('raw_material','surovinou')|e] získa [ShowModifier('freiberger_berggeschrey')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_mei.1.a.tt: "Každé [Concept('location','lokalita')|e] s baníckou [Concept('raw_material','surovinou')|e] získa [ShowModifier('freiberger_berggeschrey')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  STATIC_MODIFIER_NAME_freiberger_berggeschrey: "Freiberger Berggeschrey" # todo: NEW TRANSLATION
  flavor_mei.2.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_mei.2.entry: "Schiller" # todo: NEW TRANSLATION
@@ -78,9 +78,9 @@
  flavor_mei.110.a: "Pre slávu!" # todo: NEW TRANSLATION
  flavor_mei.110.b: "Ďalší palác?" # todo: NEW TRANSLATION
  flavor_mei.110.historical_info: "Zwinger, palácový komplex so záhradami v Dresden, Nemecko, predstavuje korunovačné dielo barokového obdobia. Navrhol ho architekt Matthäus Daniel Pöppelmann a je rovnako známy spolu s ikonickou Frauenkirche ako jedna z najslávnejších architektonických pamiatok Dresden. Pôvodne slúžil ako oranžéria, záhrada a priestor pre slávnostné stretnutia počas vlády Augusta Silného; jeho veľké pavilóny, galérie zdobené sochami a ozdobné vázy ukazujú pompéznosť tej doby.\n\nHoci bol pôvodne koncipovaný ako predhradie nového zámku, ktorý nikdy nebol dokončený, Zwinger sa postupom času vyvinul a nakoniec získal význam ako múzejné centrum v 19. storočí, obzvlášť s pridaním Semperovej galérie smerujúcej k rieke Labe.\n\nPo zničení počas bombardovania Dresden v roku 1945 prešiel Zwinger dôkladnou rekonštrukciou v nasledujúcich desaťročiach. Dnes v ňom sídli renomovaná Gemäldegalerie Alte Meister, Dresdenská zbierka porcelánu a Matematicko-fyzikálny salón, ktoré sú otvorené návštevníkom a ponúkajú nahliadnutie do slávy histórie a kultúry." # todo: NEW TRANSLATION
- flavor_mei.120.title: "Nadobudnutie [GetCountry('LDB').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mei.120.title: "Nadobudnutie [SKCountryNoTooltip(GetCountry('LDB'),'G')]" # todo: NEW TRANSLATION
  flavor_mei.120.entry: "Získanie Landsbergu" # todo: NEW TRANSLATION
- flavor_mei.120.desc: "[target_character.GetName] zdedil [GetCountry('LDB').GetLongName] po svojom sobáši s [target_spouse.GetName] a chce nám ho predať.\n\nZem [GetCountry('LDB').GetNameWithNoTooltip] nám pred nedávnom patrila a toto by mohla byť príležitosť, ako ich získať späť. Čo máme urobiť?" # todo: CHANGED
+ flavor_mei.120.desc: "[target_character.GetName] zdedil [GetCountry('LDB').GetLongName] po svojom sobáši s [target_spouse.GetName] a chce nám ho predať.\n\nZem [SKCountryNoTooltip(GetCountry('LDB'),'G')] nám pred nedávnom patrila a toto by mohla byť príležitosť, ako ich získať späť. Čo máme urobiť?" # todo: CHANGED
  flavor_mei.120.a: "Toto územie patrí nám." # todo: NEW TRANSLATION
  flavor_mei.120.b: "Bolo to predané z nejakého dôvodu." # todo: NEW TRANSLATION
  flavor_mei.120.historical_info: "Pôvodne wettinské územie, markgrófstvo Landsberg bolo v roku 1291 predané rodu Askania. V roku 1347 vojvoda Magnus I. z Brunsviku-Lüneburgu predal markgrófstvo, ktoré zdedil po svojom manželstve so Sophiou z Brandenburchu-Stendalu, späť markgrófovi Frederickovi II. z Meissenu, čím opäť zjednotil wettinské panstvá." # todo: NEW TRANSLATION
@@ -92,7 +92,7 @@
  flavor_mei.122.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: CHANGED
  flavor_mei.122.a.entry: "$common_string_curses$" # todo: NEW TRANSLATION
  flavor_mei.130.title: "Cisárska ponuka" # todo: NEW TRANSLATION
- flavor_mei.130.desc: "[GetCountry('SWB').GetName]'s [target_character.GetName] zomrel bez priameho dediča, ktorý by prevzal [target_character.GetHerHis] povinnosti, a [GetCountry('SWB').GetFlavorRank] zostal neobsadený.\n\nKeďže toto miesto nemôžeme nechať prázdne, potrebujeme nového nositeľa tejto dôstojnosti.\n\nMedzi viacerými kandidátmi naši poradcovia navrhli [GetCountry('MEI').GetGovernment.GetRulerTitle] [GetCountry('MEI').GetName] ako dobrú voľbu. Ak sa rozhodneme povýšiť [GetCountry('MEI').GetGovernment.GetRuler.GetHerHim] na [GetCountry('SWB').GetGovernment.GetRulerTitle], mohli by sme získať nového priateľa v regióne." # todo: CHANGED
+ flavor_mei.130.desc: "[GetCountry('SWB').GetName]'s [target_character.GetName] zomrel bez priameho dediča, ktorý by prevzal [target_character.GetHerHis] povinnosti, a [GetCountry('SWB').GetFlavorRank] zostal neobsadený.\n\nKeďže toto miesto nemôžeme nechať prázdne, potrebujeme nového nositeľa tejto dôstojnosti.\n\nMedzi viacerými kandidátmi naši poradcovia navrhli [GetCountry('MEI').GetGovernment.GetRulerTitle] [SKCountry(GetCountry('MEI'),'G')] ako dobrú voľbu. Ak sa rozhodneme povýšiť [GetCountry('MEI').GetGovernment.GetRuler.GetHerHim] na [GetCountry('SWB').GetGovernment.GetRulerTitle], mohli by sme získať nového priateľa v regióne." # todo: CHANGED
  flavor_mei.130.a: "Dobrý nápad!" # todo: NEW TRANSLATION
  flavor_mei.130.b: "Nie sú hodní." # todo: NEW TRANSLATION
  flavor_mei.130.historical_info: "V roku 1423 Friedrich the Quarrelsome, markgróf z Meissenu, získal vojvodstvo Saxony-Wittenberg spolu s kurfirstskou dôstojnosťou, čo viedlo k zlúčeniu markgrófstva Meissen s kurfirstvom Sasko a stratilo svoj status ako nezávislé kniežatstvo." # todo: CHANGED (predtym: V roku 1423 Friedrich the Quarrelsome, markgróf z Meissenu, získal vojvodstvo Saxony-Wittenberg spolu s kurfiřtovskou dô)
@@ -142,18 +142,18 @@
  flavor_mei.190.historical_info: "Lipská disputácia z roku 1519 bola akademická polemika na Univerzite v Lipsku medzi Johannom Eckom a Andreasom Karlstadtom. Disputa bola iniciovaná Eckovým negatívnym komentárom k Lutherovým 95 tézam a spočiatku sa sústredila na otázky slobodnej vôle a cirkevnej autority. Čoskoro sa rozšírila do širšej diskusie o legitimite Cirkvi, nadradenosti Písma nad tradíciou a povahe pápežskej moci. Hoci nebol dosiahnutý konsenzus, debata výrazne zvýšila viditeľnosť reformných myšlienok a urýchlila rastúce teologické a politické rozdelenie v rámci Svätorímskej ríše." # todo: NEW TRANSLATION
  flavor_mei.200.title: "Zaslúžená odmena" # todo: NEW TRANSLATION
  flavor_mei.200.entry: "$flavor_mei.200.title$" # todo: NEW TRANSLATION
- flavor_mei.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis|U] zať, [son_in_law.GetName], vládca [target_country.GetName], nám veľa pomohol v nedávnych ťažkostiach v [SKCountry(GetCountry('BRA'),'L')]. Bolo by vhodné, aby cisár veľkoryso odmenil tých, ktorí dobre slúžia [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
+ flavor_mei.200.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis|U] zať, [son_in_law.GetName], vládca [SKCountry(target_country,'G')], nám veľa pomohol v nedávnych ťažkostiach v [SKCountry(GetCountry('BRA'),'L')]. Bolo by vhodné, aby cisár veľkoryso odmenil tých, ktorí dobre slúžia [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  flavor_mei.200.a: "Zasypať [son_in_law.GetHerHim] bohatstvami." # todo: NEW TRANSLATION
  flavor_mei.200.a.entry: "Zasypať ho bohatstvom." # todo: NEW TRANSLATION
  flavor_mei.200.b: "Služba cisárovi je odmenou sama o sebe." # todo: NEW TRANSLATION
  flavor_mei.200.historical_info: "Friedrich II z dynastie Wettinovcov bol verným spojencom cisára Ľudovíta IV počas jeho vlády. Oženil sa s Ľudovítovou dcérou Mathildou a bol kľúčovým spojencem pri stabilizácii markgrófstva Braniborska po jeho nadobudnutí dynastiou Wittelsbachov. Za svoju činnosť a stálu podporu Wittelsbachovského cisárstva bol odmenený podporou vo svojich snahách v Durínsku aj Meißen." # todo: NEW TRANSLATION
  flavor_mei.201.title: "Dar od cisára" # todo: NEW TRANSLATION
  flavor_mei.201.entry: "$flavor_mei.201.title$" # todo: NEW TRANSLATION
- flavor_mei.201.desc: "[target_emperor.GetName], cisár [GetUniqueInternationalOrganization('hre').GetName] a svokor nášho panovníka [ROOT.GetCountry.GetGovernment.GetRuler.GetName], poslal za našu vernosť štedrú odmenu. [target_emperor.GetSheHe] nám osobitne ďakuje za naše úsilie pri stabilizácii [GetCountry('BRA').GetName] a za podporu pri [target_emperor.GetHerHis] panovaní." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_mei.201.desc: "[target_emperor.GetName], cisár [GetUniqueInternationalOrganization('hre').GetName] a svokor nášho panovníka [ROOT.GetCountry.GetGovernment.GetRuler.GetName], poslal za našu vernosť štedrú odmenu. [target_emperor.GetSheHe] nám osobitne ďakuje za naše úsilie pri stabilizácii [SKCountry(GetCountry('BRA'),'G')] a za podporu pri [target_emperor.GetHerHis] panovaní." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_mei.201.a: "Pridať to do našej pokladnice." # todo: NEW TRANSLATION
  flavor_mei.201.b: "Použime to na razbu novej mince, Meißner Groschen." # todo: NEW TRANSLATION
  STATIC_MODIFIER_NAME_meissen_groschen: "Meißner Groschen" # todo: NEW TRANSLATION
- STATIC_MODIFIER_DESC_meissen_groschen: "Nová minca zlepšuje ekonomiku [GetCountry('MEI').GetName], uľahčuje transakcie a zjednodušuje tok kapitálu." # todo: NEW TRANSLATION
+ STATIC_MODIFIER_DESC_meissen_groschen: "Nová minca zlepšuje ekonomiku [SKCountry(GetCountry('MEI'),'G')], uľahčuje transakcie a zjednodušuje tok kapitálu." # todo: NEW TRANSLATION
  flavor_mei.210.title: "Manufaktúra [ShowGoodsNameWithNoTooltip('porcelain')] v [ShowLocationNameWithNoTooltip('meissen')]" # todo: NEW TRANSLATION
  flavor_mei.210.entry: "Meissenská továreň na porcelán" # todo: NEW TRANSLATION
  flavor_mei.210.desc: "[ShowGoodsName('porcelain')] dlho vzbudzovalo veľký záujem, pričom bolo mnoho neúspešných pokusov znovu vytvoriť tajné umenie jeho pravého spracovania. Avšak vďaka mnohým experimentom našich najlepších vedcov a vynálezcov sa nám podarilo reprodukovať prvé [ShowGoodsNameWithNoTooltip('porcelain')] v [ShowContinentName('europe')]. Aby sme túto vzácnu inováciu ochránili a ekonomicky využili, mnohí navrhujú zriadiť štátom financovanú manufaktúru v [ShowLocationName('meissen')]." # todo: NEW TRANSLATION
@@ -181,7 +181,7 @@
  flavor_mei.240.historical_info: "Johann Adolph Hasse bol významný skladateľ nemeckého baroka. Jeho príchod do Drážďan znamenal zlatý vek hudby na saskom dvore, najmä pod patronátom elektrixy Márie Josefy a voliteľa Augusta III. Neskôr pôsobil ako kapelník a mal veľký podiel na tom, že sa Drážďany stali centrom talianskej opery v severnom Nemecku." # todo: NEW TRANSLATION
  flavor_mei.1000.title: "Búrka na obzore" # todo: NEW TRANSLATION
  flavor_mei.1000.entry: "$flavor_mei.1000.title$" # todo: NEW TRANSLATION
- flavor_mei.1000.desc: "Odkedy náš dom uchvátil trón [GetCountry('THU').GetName] od Ludovingovcov, medzi nami a nižšími pánmi regiónu pretrváva napätie. Dlhodobo sa snažíme podriadiť celé [GetCountry('THU').GetNameWithNoTooltip] pod svrchovanosť dynastie [ShowDynastyName('wettin_dynasty')], a miestni grófi nám v tomto cieli ostro odporujú. Možno prišiel čas konečne začať pracovať na dosiahnutí tohto cieľa a obsadenie [target_country.GetName] sa zdá byť ideálnym krokom." # todo: NEW TRANSLATION
+ flavor_mei.1000.desc: "Odkedy náš dom uchvátil trón [SKCountry(GetCountry('THU'),'G')] od Ludovingovcov, medzi nami a nižšími pánmi regiónu pretrváva napätie. Dlhodobo sa snažíme podriadiť celé [SKCountryNoTooltip(GetCountry('THU'),'G')] pod svrchovanosť dynastie [ShowDynastyName('wettin_dynasty')], a miestni grófi nám v tomto cieli ostro odporujú. Možno prišiel čas konečne začať pracovať na dosiahnutí tohto cieľa a obsadenie [target_country.GetName] sa zdá byť ideálnym krokom." # todo: NEW TRANSLATION
  flavor_mei.1000.a: "Musíme uplatniť naše nároky." # todo: NEW TRANSLATION
  flavor_mei.1000.a.tt: "Naša otvorená nepriateľnosť môže donútiť [target_country.GetName] hľadať zahraničnú podporu." # todo: NEW TRANSLATION
  flavor_mei.1000.b: "Nie je čas na vojnu." # todo: NEW TRANSLATION
@@ -193,7 +193,7 @@
  flavor_mei.1001.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" # todo: CHANGED
  flavor_mei.1001.b.entry: "$common_string_nothing_we_can_do_about_it$" # todo: NEW TRANSLATION
  flavor_mei.1002.title: "Hrozba [ShowDynastyNameWithNoTooltip('wettin_dynasty')]" # todo: NEW TRANSLATION
- flavor_mei.1002.desc: "Posol z [SKCountry(target_country,'G')] prišiel na [ROOT.GetCountry.GetGovernment.GetCourtTitle] s varovaním pred obrovskou hrozbou, ktorú predstavujú ambície dynastie [ShowDynastyName('wettin_dynasty')], snažiacej sa zjednotiť celý región pod svojou nadvládou a ohrozujúcej nezávislosť [target_country.GetNameWithNoTooltip] i [ROOT.GetCountry.GetName]. Ponúkajú alianciu, ktorá by ich mala odradiť od útoku na ktoréhokoľvek z nás." # todo: NEW TRANSLATION
+ flavor_mei.1002.desc: "Posol z [SKCountry(target_country,'G')] prišiel na [ROOT.GetCountry.GetGovernment.GetCourtTitle] s varovaním pred obrovskou hrozbou, ktorú predstavujú ambície dynastie [ShowDynastyName('wettin_dynasty')], snažiacej sa zjednotiť celý región pod svojou nadvládou a ohrozujúcej nezávislosť [SKCountryNoTooltip(target_country,'G')] i [ROOT.GetCountry.GetName]. Ponúkajú alianciu, ktorá by ich mala odradiť od útoku na ktoréhokoľvek z nás." # todo: NEW TRANSLATION
  flavor_mei.1002.a: "Rozumná ponuka." # todo: NEW TRANSLATION
  flavor_mei.1002.b: "Nemôžeme uzatvárať aliancie na základe klebiet." # todo: NEW TRANSLATION
  flavor_mei.1003.title: "Durínska vojna grófov" # todo: NEW TRANSLATION

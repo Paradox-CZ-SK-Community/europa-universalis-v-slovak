@@ -48,23 +48,23 @@
  REBEL_LOCATION_TITLE: "Rebeli v [Location.GetNameWithNoTooltip]"
  REBEL_LOCATION_WILL_REVOLT: "Táto [Concept('location','lokalita')|e] sa pridá k povstaniu, ak jedno vypukne!"
  REBEL_LOCATION_UNAFFECTED: "Táto [Concept('location','lokalita')|e] nepodporuje túto konkrétnu skupinu [Concept('rebels','rebelov')|e]."
- REBEL_LOCATION_UNAFFECTED2: "Táto [Concept('location','lokality')|e] nemá [Concept('pops','populácie')|e], ktoré sú [Concept('rebels','rebelské')|e]."
+ REBEL_LOCATION_UNAFFECTED2: "Táto [Concept('location','lokalita')|e] nemá [Concept('pops','populácie')|e], ktoré sú [Concept('rebels','rebelské')|e]." # todo: CHANGED (predtym: Táto [Concept('location','lokality')|e] nemá [Concept('pops','populácie')|e], ktoré sú [Concept('rebels','rebelské')|e].)
  REBEL_COUNTRY_SUPPORT_ENTRY: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalTaxBase]"
- REBEL_SUPPORT_COUNTRY_TT: "#T Zahraničná podpora#!\nMajú podporu od nasledujúcich [Concept('countries','krajinu')|e]" # todo: CONCEPT CASE
+ REBEL_SUPPORT_COUNTRY_TT: "#T Zahraničná podpora#!\nMajú podporu od nasledujúcich [Concept('countries','krajín')|e]" # todo: CONCEPT CASE
  REBEL_COUNTRY_SUPPORT_NONE: "V súčasnosti žiadne krajiny."
  REBELS_CATEGORY_estate_DESC: "Títo povstalci pracujú na prosadení zanedbaných záujmov [ESTATE_TYPE.GetName], a keď budú pripravení, začnú [Concept('civil_war_with_icon','občianska vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
  REBELS_CATEGORY_nationalist_DESC: "Títo povstalci pracujú na nezávislosti [CULTURE.GetName]. Keď budú pripravení, vyvolajú [Concept('revolt_with_icon','povstanie')|e]." # todo: CHANGED # todo: CONCEPT CASE
- REBELS_CATEGORY_pretender_DESC: "Títo povstalci sa snažia nahradiť [Concept('ruler','panovník')|e] [REBEL.GetOwner.GetName], a keď budú pripravení, začnú [Concept('civil_war_with_icon','občianska vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
+ REBELS_CATEGORY_pretender_DESC: "Títo povstalci sa snažia nahradiť [Concept('ruler','panovník')|e] [SKCountry(REBEL.GetOwner,'G')], a keď budú pripravení, začnú [Concept('civil_war_with_icon','občianska vojna')|e]." # todo: CHANGED # todo: CONCEPT CASE
  REBELS_CATEGORY_religious_DESC: "Títo povstalci pracujú na nezávislosti [RELIGION.GetName]. Keď budú pripravení, vyvolajú [Concept('revolt_with_icon','povstanie')|e]." # todo: CHANGED # todo: CONCEPT CASE
- REBELS_CATEGORY_religious_DESC_CONVERT: "Títo povstalci sa pokúsia začať [Concept('civil_war_with_icon','občianska vojna')|e], aby zmenili [Concept('primary_religion','hlavné náboženstvo')|e] [REBEL.GetOwner.GetName] na [RELIGION.GetName]." # todo: CHANGED # todo: CONCEPT CASE
+ REBELS_CATEGORY_religious_DESC_CONVERT: "Títo povstalci sa pokúsia začať [Concept('civil_war_with_icon','občianska vojna')|e], aby zmenili [Concept('primary_religion','hlavné náboženstvo')|e] [SKCountry(REBEL.GetOwner,'G')] na [RELIGION.GetName]." # todo: CHANGED # todo: CONCEPT CASE
  REBELS_CATEGORY_slave_DESC: "[ShowPopTypeName('slaves')] majú dosť a chcú byť slobodní, nech to stojí čokoľvek."
  REBEL_TT_TEXT_MINOR_REVOLT: "[minor_revolt_icon] Títo rebeli začnú [Concept('minor_revolt','menšie povstanie')|e], keď ich postup dosiahne #W 100%#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REBEL_TT_TEXT_REVOLT: "[civil_war_icon] Títo rebeli začnú [Concept('civil_war','občianska vojna')|e], keď ich postup dosiahne #W 100%#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  REBEL_TT_TEXT_CIVIL_WAR: "[revolt_icon] Títo rebeli začnú [Concept('revolt','povstanie')|e], keď ich postup dosiahne #W 100%#!." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- horde_civil_war_pretender: "Rivalizujúci vojvodca [COUNTRY.GetNameWithNoTooltip]"
+ horde_civil_war_pretender: "Rivalizujúci vojvodca [SKCountryNoTooltip(COUNTRY,'G')]" # todo: CHANGED (predtym: Rivalizujúci vojvodca [COUNTRY.GetNameWithNoTooltip])
  horde_civil_war_pretender_country: "$ADJ$ Rivalizujúci vojvodca"
  horde_civil_war_pretender_country_adjective: "$ADJ$ rivalizujúceho vojvodcu"
- rebellious_masses_name: "Vzbúrené masy [COUNTRY.GetNameWithNoTooltip]"
+ rebellious_masses_name: "Vzbúrené masy [SKCountryNoTooltip(COUNTRY,'G')]" # todo: CHANGED (predtym: Vzbúrené masy [COUNTRY.GetNameWithNoTooltip])
  rebellious_masses_name_country: "$ADJ$ vzbúrené masy"
  rebellious_masses_name_country_adjective: "$ADJ$ vzbúrené masy"
  revolutionary_rebel: "[COUNTRY.GetAdjectiveWithNoTooltip] revolucionári"

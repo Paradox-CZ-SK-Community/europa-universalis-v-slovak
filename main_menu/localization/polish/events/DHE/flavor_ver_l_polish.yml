@@ -1,6 +1,6 @@
 ﻿l_polish:
  VER_benefits_from_winning_the_war: "V [target_war.GetName] bude pre nás dostupná [ShowPeaceTreatyTypeName('scaligeri_victory')] [Concept('peace_offer','ponuka mieru')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- ver_remove_antagonism: "[THIS.GetCountry.GetName] bude mať svoj [Concept('antagonism','antagonizmus')|e] z požiadaviek [Concept('peace_treaty','mierovej dohody')|e] odstránený voči všetkým [Concept('countries','krajine')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ver_remove_antagonism: "[THIS.GetCountry.GetName] bude mať svoj [Concept('antagonism','antagonizmus')|e] z požiadaviek [Concept('peace_treaty','mierovej dohody')|e] odstránený voči všetkým [Concept('countries','krajinám')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ver_add_integration_in_every_location: "Každé [Concept('owned','vlastnené')|e] [Concept('location','lokality')|e] v [ShowScriptedGeographyName('scaligeri_conquests_geography')] získa #G +100.0%#! [Concept('integration','integrácia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCALIGER_WAR_NAME: "Scaligerova vojna" # todo: NEW TRANSLATION
  ver_demands_start: "Požadujeme" # todo: NEW TRANSLATION
@@ -43,7 +43,7 @@
  flavor_ver.5.a.entry: "Mestre bude naše!" # todo: NEW TRANSLATION
  flavor_ver.5.b: "[target_province.GetNameWithNoTooltip] bude základňou #italic Terraferma#!." # todo: NEW TRANSLATION
  flavor_ver.5.b.entry: "Veronské Veneto bude základňou #italic Terraferma#!." # todo: NEW TRANSLATION
- flavor_ver.6.title: "Nároky [from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_ver.6.title: "Nároky [SKCountryNoTooltip(from_country,'G')]" # todo: NEW TRANSLATION
  flavor_ver.6.desc: "Herold prišiel z [from_country.GetLongName] a informoval nás o ich požiadavkách voči [target_dynasty.GetName] z [war_enemy.GetName]. Radšej by sme mali zvážiť [target_peace_treaty.GetName] pri vyjednávaní mierových podmienok v [target_war.GetName], inak to [from_country.GetAdjectiveWithNoTooltip] poslovia budú považovať za porušený sľub." # todo: NEW TRANSLATION
  flavor_ver.6.a: "V pravý čas vyhovieme ich požiadavkám." # todo: NEW TRANSLATION
  ver_peace_treaty_has_become_available: "[target_peace_treaty.GetName] je k dispozícii v [target_war.GetName]" # todo: NEW TRANSLATION
@@ -54,7 +54,7 @@
  flavor_ver.8.desc: "Osud agresorov [target_dynasty.GetName] je konečne spečatený — Scaligerov diabol bol porazený a panstvá [target_character.GetName] sú teraz v troskách. Severné [ShowRegionName('italy_region')] už nebude ovládané jediným tyranom. Toto si určite zapamätáme ako jeden z rozhodujúcich momentov v histórii [ROOT.GetCountry.GetAltAdjective('D')]!" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_ver.8.a: "Konečne!" # todo: NEW TRANSLATION
  flavor_ver.1000.title: "Príbuzný [target_character2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_ver.1000.desc: "Zvrhnutý vládca [target_country.GetName] a príbuzný [target_character2.GetName], [target_character.GetName], zostáva v pozícii moci v [target_country.GetCapital.GetRankAndName] ako vikár. Hoci je nominálne verný [target_dynasty.GetName], [target_character.GetShortNameWithNoTooltip] zostáva populárny vo svojej bývalej doméne a určite je rozhorčený nad prehreškami Scaligerov voči [target_character.GetDynasty.GetName]. Taktiež vieme o [target_character.GetHerHis] slabosti pre nášho drahého [target_character2.GetShortNameWithNoTooltip], kondotiéra v našich službách. Ak by sme obliehali [target_character.GetHerHis] [target_country.GetCapital.GetRank.GetName], [target_character.GetSheHe] by určite defektoval." # todo: NEW TRANSLATION
+ flavor_ver.1000.desc: "Zvrhnutý vládca [SKCountry(target_country,'G')] a príbuzný [target_character2.GetName], [target_character.GetName], zostáva v pozícii moci v [target_country.GetCapital.GetRankAndName] ako vikár. Hoci je nominálne verný [target_dynasty.GetName], [target_character.GetShortNameWithNoTooltip] zostáva populárny vo svojej bývalej doméne a určite je rozhorčený nad prehreškami Scaligerov voči [target_character.GetDynasty.GetName]. Taktiež vieme o [target_character.GetHerHis] slabosti pre nášho drahého [target_character2.GetShortNameWithNoTooltip], kondotiéra v našich službách. Ak by sme obliehali [target_character.GetHerHis] [target_country.GetCapital.GetRank.GetName], [target_character.GetSheHe] by určite defektoval." # todo: NEW TRANSLATION
  flavor_ver.1000.a: "Rozkošne diabolské..." # todo: NEW TRANSLATION
  ver_padua_incident_rules: "Ak bude [ShowLocationName('padova')] obsadená pred #W 1339.1.1#!, [target_country.GetName] zmení stranu v [target_war.GetName] a získa nezávislosť" # todo: NEW TRANSLATION
  flavor_ver.1001.title: "Možná zrada?" # todo: NEW TRANSLATION
@@ -66,7 +66,7 @@
  flavor_ver.1002.desc: "[target_character.GetName] bol privlečený pred [target_character2.GetName] a obvinený zo sprisahania s nepriateľmi [target_dynasty.GetName]. Mesiace [target_character.GetShortNameWithNoTooltip] vymieňal listy s našimi nepriateľmi v [target_war.GetName]. Dôvodom všetkého je zášť vyplývajúca z [target_character.GetHerHis] zosadenia pred dekádou." # todo: NEW TRANSLATION
  flavor_ver.1002.a: "Smrť!" # todo: NEW TRANSLATION
  flavor_ver.1003.title: "Brány otvorené!" # todo: NEW TRANSLATION
- flavor_ver.1003.desc: "V posledných okamihoch obliehania [target_character.GetName], náš spojenec v [target_location.GetName], prikázal posádke odraziť rozptýlený útok pri jednej bráne, zatiaľ čo druhú bránu otvoril pre nás. Miesto bolo dobrané a [target_character.GetNameWithNoTooltip] bol vyhlásený za vládcu [target_country.GetName], ku veľkej sláve miestneho [target_estate.GetName]. Toto predstavuje významný obrat v [target_war.GetName], pretože [target_dynasty.GetName] práve stratil jednu zo svojich cenných domén." # todo: NEW TRANSLATION
+ flavor_ver.1003.desc: "V posledných okamihoch obliehania [target_character.GetName], náš spojenec v [target_location.GetName], prikázal posádke odraziť rozptýlený útok pri jednej bráne, zatiaľ čo druhú bránu otvoril pre nás. Miesto bolo dobrané a [target_character.GetNameWithNoTooltip] bol vyhlásený za vládcu [SKCountry(target_country,'G')], ku veľkej sláve miestneho [target_estate.GetName]. Toto predstavuje významný obrat v [target_war.GetName], pretože [target_dynasty.GetName] práve stratil jednu zo svojich cenných domén." # todo: NEW TRANSLATION
  flavor_ver.1003.a: "Takto ďalej k ďalším víťazstvám!" # todo: NEW TRANSLATION
  flavor_ver.1004.title: "Posledné záchvevy nášho spojenca" # todo: NEW TRANSLATION
  flavor_ver.1004.desc: "Dostali sme strašné správy! Náš spojenec [target_character.GetName] v [SKCountry(target_country,'L')], jeho bývalý vládca, bol [target_dynasty.GetName] odhalený ako tajne s nami kolaborujúci. [target_character.GetShortNameWithNoTooltip] bol násilne zajatý [target_country2.GetAdjective] vojakmi a predvedený pred [target_character2.GetName], kde mu bola patrične vynesená trest smrti." # todo: NEW TRANSLATION

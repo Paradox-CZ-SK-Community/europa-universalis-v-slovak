@@ -56,12 +56,12 @@
  flavor_byz.7.a: "Toto máte, schizmatici!" # todo: NEW TRANSLATION
  flavor_byz.8.title: "Turci vyhnaní z Anatólie!" # todo: NEW TRANSLATION
  flavor_byz.8.entry: "$flavor_byz.8.title$" # todo: NEW TRANSLATION
- flavor_byz.8.desc: "Sily [GetCountry('TUR').GetName] boli vyhnané z [ShowRegionName('anatolia_region')], ktoré bolo kedysi sídlom ich moci. S [ShowRegionNameWithNoTooltip('anatolia_region')] zabezpečenou je naše blaho zaistené!" # todo: NEW TRANSLATION
+ flavor_byz.8.desc: "Sily [SKCountry(GetCountry('TUR'),'G')] boli vyhnané z [ShowRegionName('anatolia_region')], ktoré bolo kedysi sídlom ich moci. S [ShowRegionNameWithNoTooltip('anatolia_region')] zabezpečenou je naše blaho zaistené!" # todo: NEW TRANSLATION
  flavor_byz.8.a: "Fénix vstáva!" # todo: NEW TRANSLATION
  towns_and_cities_anatolia_get_pop_growth_tt: "[Concept('towns_and_cities','Mestské lokality')|e], ktoré ovládame v [ShowRegionNameWithNoTooltip('anatolia_region')], budú profitovať z [ShowModifier('repopulation_of_anatolia_modifier')] [Concept('modifier','modifikátora')|e] po dobu #Y 10#! rokov" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_byz.9.title: "Západné turné [ROOT.GetCountry.GetGovernment.GetRulerTitle]" # todo: NEW TRANSLATION
  flavor_byz.9.entry: "$flavor_byz.9.title$" # todo: NEW TRANSLATION
- flavor_byz.9.desc: "Sily [GetCountry('TUR').GetName] už nejaký čas vnikajú do našich veľkých miest a priamo ohrozujú naše veľké mesto [target_province.GetName]. Napriek rozkolu medzi Východnou a Západnou cirkvou navrhuje [ROOT.GetCountry.GetGovernment.GetRuler.GetName] viesť diplomatickú misiu k našim bratrom [ShowReligionGroupAdjective('christian')] na Západe, aby získal dosť prostriedkov na odrazenie [GetCountry('TUR').GetAdjectiveWithNoTooltip].\n\nHoci je to pravdepodobne výnosné, poškvrní to našu povesť a bude nás to robiť slabými." # todo: NEW TRANSLATION
+ flavor_byz.9.desc: "Sily [SKCountry(GetCountry('TUR'),'G')] už nejaký čas vnikajú do našich veľkých miest a priamo ohrozujú naše veľké mesto [target_province.GetName]. Napriek rozkolu medzi Východnou a Západnou cirkvou navrhuje [ROOT.GetCountry.GetGovernment.GetRuler.GetName] viesť diplomatickú misiu k našim bratrom [ShowReligionGroupAdjective('christian')] na Západe, aby získal dosť prostriedkov na odrazenie [GetCountry('TUR').GetAdjectiveWithNoTooltip].\n\nHoci je to pravdepodobne výnosné, poškvrní to našu povesť a bude nás to robiť slabými." # todo: NEW TRANSLATION
  flavor_byz.9.a: "Urobte potrebné prípravy." # todo: NEW TRANSLATION
  flavor_byz.9.tt: " [ROOT.GetCountry.GetGovernment.GetRulerTitle] navštívi dvory západnej Európy v snahe získať prostriedky. Pravdepodobne to bude vnímané ako prejav slabosti a poškodí to naše medzinárodné postavenie" # todo: NEW TRANSLATION
  flavor_byz.9.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] musí zostať, aby zvolal naše sily." # todo: NEW TRANSLATION
@@ -115,9 +115,9 @@
  flavor_byz.17.desc: "Úmrtie veľkého [john_koukouzelis.GetName] zahalilo baziliky [ROOT.GetCountry.GetLongName] žalostným tieňom, mnohí oplakávajú stratu jeho hlasu a najučenší oplakávajú stratu jeho skladateľských rúk.\n\nAvšak svetlo nádeje svitá na našom dvore, keď sa príbehy o jeho zjavovaniach Matky Božej šíria z úst do úst. Pobožnosť jeho života a mnohé zázraky pripisované jemu tlačia miestné kléry, aby žiadali jeho kanonizáciu." # todo: NEW TRANSLATION
  flavor_byz.17.a: "Poďme hovoriť s patriarchom!" # todo: NEW TRANSLATION
  flavor_byz.17.b: "Tieto záležitosti nás nezaujímajú." # todo: NEW TRANSLATION
- flavor_byz.18.title: "Pád [GetCountry('BYZ').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_byz.18.title: "Pád [SKCountryNoTooltip(GetCountry('BYZ'),'G')]" # todo: NEW TRANSLATION
  flavor_byz.18.entry: "Fall of $BYZ$" # todo: NEW TRANSLATION
- flavor_byz.18.desc: "S pádom [GetCountry('BYZ').GetName] bol otrasen svet [ShowCultureName('greek_culture')]. Po mesiacoch a mesiacoch bytia v moci [target_country.GetName] padli múry [target_location.GetName]. [target_country.GetAdjectiveWithNoTooltip] sily vtrhli do mesta a vyrabovali ho, čo zasiahlo hlboko [ShowCultureNameWithNoTooltip('greek_culture')] populáciu po celom svete. Hoci fénix je teraz preč, veľká časť našej populácie bola touto správou zranená, predovšetkým komunity v [target_location2.GetName]." # todo: NEW TRANSLATION
+ flavor_byz.18.desc: "S pádom [SKCountry(GetCountry('BYZ'),'G')] bol otrasen svet [ShowCultureName('greek_culture')]. Po mesiacoch a mesiacoch bytia v moci [SKCountry(target_country,'G')] padli múry [target_location.GetName]. [target_country.GetAdjectiveWithNoTooltip] sily vtrhli do mesta a vyrabovali ho, čo zasiahlo hlboko [ShowCultureNameWithNoTooltip('greek_culture')] populáciu po celom svete. Hoci fénix je teraz preč, veľká časť našej populácie bola touto správou zranená, predovšetkým komunity v [target_location2.GetName]." # todo: NEW TRANSLATION
  flavor_byz.18.a: "Purpurový fénix už neexistuje." # todo: NEW TRANSLATION
  BYZ_FALL_OF_BYZANTIUM_CONVERSION: "Všetky naše [ShowCultureName('greek_culture')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_byz.19.title: "Ochrana [ShowAreaNameWithNoTooltip('morea_area')]" # todo: NEW TRANSLATION
@@ -130,7 +130,7 @@
  flavor_byz.20.historical_info: "Hoci bol vytvorený na konci 13. storočia Andronikosom II. Palaiologosom, Všeobecní sudcovia Rimanov obsahovali niekoľko skorumpovaných sudcov. Po vyšetrovaní Andronikom III. Palaiologosom v roku 1337 boli traja zo štyroch sudcov uznaní vinnými a orgán bol čiastočne reformovaný." # todo: NEW TRANSLATION
  flavor_byz.20.a: "Korupcia v tomto systéme musí byť odstránená." # todo: NEW TRANSLATION
  flavor_byz.20.b: "Súčasný systém je v poriadku." # todo: NEW TRANSLATION
- able_to_add_reform_later_tt: "Tento [Concept('government_reform','reforma vlády')|e] budeme môcť prijať neskôr" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ able_to_add_reform_later_tt: "Táto [Concept('government_reform','reforma vlády')|e] budeme môcť prijať neskôr" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_byz.21.title: "Akritické piesne" # todo: NEW TRANSLATION
  flavor_byz.21.entry: "$flavor_byz.21.title$" # todo: NEW TRANSLATION
  flavor_byz.21.desc: "V časoch skorého [GetCountry('BYZ').GetName] mnohí pohraniční bojovníci známi ako #italic Akritais#! bojovali na obranu [ShowRegionName('anatolia_region')] pred invázou [ShowCultureGroupName('arabian_group')]. To viedlo k zrodu mnohých veľkých básní a hrdinov v [ShowCultureName('greek_culture')] literatúre, ako napríklad #italic Digenes Akritas#!." # todo: CHANGED
@@ -212,7 +212,7 @@
  flavor_byz.33.desc: "Hoci sme sa vždy považovali za nástupcov [ShowLocationName('rome')], opakovane sme zápasili o udržanie tohto titulu. Možno je čas hľadať novú identitu, menej zameranú na starú slávu a viac vedúcu k budúcnosti." # todo: NEW TRANSLATION
  flavor_byz.33.a: "Už nie sme Rimania. Nech vládneme ako [ShowCultureNameWithNoTooltip('greek_culture')] národ." # todo: NEW TRANSLATION
  flavor_byz.33.b: "Nikdy sa nevzdáme nášho dedičstva." # todo: NEW TRANSLATION
- BYZ_ALL_PRIMARY_AND_ACCEPTED_POP_BECOME_HAPPIER: "Každý [Concept('pop','populácia')|e], ktorý je buď [Concept('primary_culture','hlavná kultúra')|e] alebo [Concept('accepted_culture','akceptovaná kultúra')|e], získa [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ BYZ_ALL_PRIMARY_AND_ACCEPTED_POP_BECOME_HAPPIER: "Každá [Concept('pop','populácia')|e], ktorý je buď [Concept('primary_culture','hlavná kultúra')|e] alebo [Concept('accepted_culture','akceptovaná kultúra')|e], získa [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_byz.34.title: "[target_location.GetNameWithNoTooltip] prerastá svoje hradby" # todo: NEW TRANSLATION
  flavor_byz.34.entry: "Konštantínopol, rozpadajúce sa mesto" # todo: NEW TRANSLATION
  flavor_byz.34.desc: "[target_location.GetName] zažil storočia úpadku kvôli množstvu konfliktov. Keď sme konečne obnovili [ROOT.GetCountry.GetAdjective] pokladnice, môžeme konečne začať obnovovať [target_location.GetRank.GetName] a priviesť ho do novej éry." # todo: NEW TRANSLATION
@@ -261,7 +261,7 @@
  flavor_byz.40.c: "Hoďte ho do ohňa, zničte ho!" # todo: NEW TRANSLATION
  flavor_byz.41.title: "[target_artist.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_byz.41.entry: "História rodu Palaiologov" # todo: NEW TRANSLATION
- flavor_byz.41.desc: "S rastúcim záujmom historikov o dejiny [target_country.GetName] niekoľko z nich uvažuje o napísaní kroniky o rodine [target_character.GetDynasty.GetName], ako napríklad [target_artist.GetName], aby budúce generácie poznali činy [target_character.GetName] a [target_character.GetHerHis] rodiny." # todo: NEW TRANSLATION
+ flavor_byz.41.desc: "S rastúcim záujmom historikov o dejiny [SKCountry(target_country,'G')] niekoľko z nich uvažuje o napísaní kroniky o rodine [target_character.GetDynasty.GetName], ako napríklad [target_artist.GetName], aby budúce generácie poznali činy [target_character.GetName] a [target_character.GetHerHis] rodiny." # todo: NEW TRANSLATION
  flavor_byz.41.a: "Nech má slobodu zaznamenávať históriu." # todo: NEW TRANSLATION
  flavor_byz.41.b: "Môžeme sponzorovať jeho diela." # todo: NEW TRANSLATION
  flavor_byz.42.title.a: "Vzostup rodu Mavrokordatos" # todo: NEW TRANSLATION
@@ -309,7 +309,7 @@
  flavor_byz.47.d: "Aby sme chránili [ROOT.GetCountry.GetNameWithNoTooltip], musíme chrániť aj jeho mora." # todo: NEW TRANSLATION
  byz_court_wants_to_force_societal_changes: "[ROOT.GetCountry.GetGovernment.GetCourtTitle] si želá, aby sme vynútili zmeny v našej spoločnosti" # todo: NEW TRANSLATION
  flavor_byz.48.title: "[ROOT.GetCountry.GetGovernment.GetCourtTitle] ponúka byrokratickú pomoc" # todo: NEW TRANSLATION
- flavor_byz.48.desc: "Keď naša administratíva v posledných rokoch zaostávala, náš [ROOT.GetCountry.GetGovernment.GetCourtTitle] prišiel s podporou pomôcť [target_character.GetName] vypracovať zákony na posilnenie tejto vetvy [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ flavor_byz.48.desc: "Keď naša administratíva v posledných rokoch zaostávala, náš [ROOT.GetCountry.GetGovernment.GetCourtTitle] prišiel s podporou pomôcť [target_character.GetName] vypracovať zákony na posilnenie tejto vetvy [SKCountry(ROOT.GetCountry,'G')]." # todo: NEW TRANSLATION
  flavor_byz.48.a: "[ROOT.GetCountry.GetGovernment.GetAdjective] byrokracia posilní samotný [ROOT.GetCountry.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION
  flavor_byz.48.b: "Naša spoločnosť bude riadená zlatom." # todo: NEW TRANSLATION
  flavor_byz.49.title: "[ROOT.GetCountry.GetGovernment.GetCourtTitle] spriada spiknutie proti [ROOT.GetCountry.GetGovernment.GetAdjective|U] byrokracii" # todo: NEW TRANSLATION
@@ -456,7 +456,7 @@
  worsen_relations_with_all_orthodox_tt: "Naše vzťahy so všetkými [ShowReligionAdjectiveWithNoTooltip('orthodox')] krajinami sa výrazne zhoršia" # todo: NEW TRANSLATION
  angry_barlaamite_clergy_tt: "V dôsledku ich podpory pre [target_character_1.GetName] približne [ROOT.GetVariable('num_barlaamite_pops_variable').GetValue|V0] [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] [Concept('pops','populácie')|e] v celom našom [ROOT.GetCountry.GetFlavorRank] utrpí [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  angry_palamite_clergy_tt: "V dôsledku ich podpory pre [target_character_2.GetName] približne [ROOT.GetVariable('num_clergy_palamite_pops_variable').GetValue|V0] [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] [Concept('pops','populácie')|e] v celom našom [ROOT.GetCountry.GetFlavorRank] utrpí [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- negatively_affect_succ_crisis_tt: "Naša nerozhodnosť v tejto záležitosti bude mať negatívne vedľajšie účinky počas úvodného [Concept('event','udalosti')|e] [ShowDisasterName('byzantine_succession_crisis')] [Concept('disaster','katastrofy')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ negatively_affect_succ_crisis_tt: "Naša nerozhodnosť v tejto záležitosti bude mať negatívne vedľajšie účinky počas úvodnej [Concept('event','udalosti')|e] [ShowDisasterName('byzantine_succession_crisis')] [Concept('disaster','katastrofy')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pay_for_your_indecisiveness_tt: "V dôsledku našej nerozhodnej a ľahostajnej pozície v $flavor_byz.1100.title$ [Concept('event','udalosti')|e] sa strata [Concept('stability','stabilita')|e] výrazne zosilní" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_byz.1101.title: "[target_character.GetNameWithNoTooltip] prichádza do [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_byz.1101.entry: "Na dvor prichádza barlaamitský učenec" # todo: NEW TRANSLATION
@@ -473,13 +473,13 @@
  flavor_byz_title_key: "Ruka mieru" # todo: NEW TRANSLATION
  flavor_byz.1200.title: "$flavor_byz_title_key$" # todo: NEW TRANSLATION
  flavor_byz.1200.entry: "$flavor_byz.1200.title$" # todo: NEW TRANSLATION
- flavor_byz.1200.desc: "Antagonistické sklony [GetCountry('TUR').GetName] sa ukázali byť ťažko zvládnuteľné a odvádzajú nás od našich skutočných cieľov stabilizovať náš [ROOT.GetCountry.GetFlavorRank]. Našťastie vládca nášho hlučného a hádavého suseda, [orhan_scope.GetName], prejavil záujem o milovanú dcéru nášho vládcu, milovanú [theodora_scope.GetName].\n\nMôžeme prisľúbiť ruku [theodora_scope.GetShortNameWithNoTooltip] [orhan_scope.GetShortNameWithNoTooltip] a zabezpečiť trvalú alianciu, ktorá ukončí ich agresie." # todo: NEW TRANSLATION
+ flavor_byz.1200.desc: "Antagonistické sklony [SKCountry(GetCountry('TUR'),'G')] sa ukázali byť ťažko zvládnuteľné a odvádzajú nás od našich skutočných cieľov stabilizovať náš [ROOT.GetCountry.GetFlavorRank]. Našťastie vládca nášho hlučného a hádavého suseda, [orhan_scope.GetName], prejavil záujem o milovanú dcéru nášho vládcu, milovanú [theodora_scope.GetName].\n\nMôžeme prisľúbiť ruku [theodora_scope.GetShortNameWithNoTooltip] [orhan_scope.GetShortNameWithNoTooltip] a zabezpečiť trvalú alianciu, ktorá ukončí ich agresie." # todo: NEW TRANSLATION
  flavor_byz.1200.historical_info: "Počas byzantskej občianskej vojny v rokoch 1341 - 1347 sa dcéra cisára Jána VI. Kantakouzenosa, Theodora Kantakouzenos, vydala za tureckého beja Orhana Gaziho, aby upevnila alianciu medzi oboma krajinami a zabezpečila, že Osmanovia nezmenia stranu a nezačnú podporovať Jánovho rivala, regentnú cisárovnú Annu zo Savoy." # todo: NEW TRANSLATION
  flavor_byz.1200.a: "Pošlime odkaz." # todo: NEW TRANSLATION
  flavor_byz.1200.b: "Nezameníme [theodora_scope.GetShortNameWithNoTooltip] za mier." # todo: NEW TRANSLATION
  flavor_byz.1200.b.entry: "Nebudeme ju vymeniť za mier." # todo: NEW TRANSLATION
  flavor_byz.1201.title: "$flavor_byz_title_key$" # todo: NEW TRANSLATION
- flavor_byz.1201.desc: "Slabý vládca [GetCountry('BYZ').GetName] je ochotný odovzdať svoju peknú dcéru [theodora_scope.GetName], aby obohatila haremu nášho statočného vládcu [orhan_scope.GetName] výmenou za politické spojenectvo.\n\nČo máme urobiť s týmto návrhom?" # todo: NEW TRANSLATION
+ flavor_byz.1201.desc: "Slabý vládca [SKCountry(GetCountry('BYZ'),'G')] je ochotný odovzdať svoju peknú dcéru [theodora_scope.GetName], aby obohatila haremu nášho statočného vládcu [orhan_scope.GetName] výmenou za politické spojenectvo.\n\nČo máme urobiť s týmto návrhom?" # todo: NEW TRANSLATION
  flavor_byz.1201.historical_info: "$flavor_byz.1200.historical_info$" # todo: NEW TRANSLATION
  flavor_byz.1201.a: "Prijať novú nevestu." # todo: NEW TRANSLATION
  flavor_byz.1201.b: "Odmietnuť." # todo: NEW TRANSLATION

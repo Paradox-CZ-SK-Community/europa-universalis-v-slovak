@@ -8,7 +8,7 @@
  TRADE_ORDER_CANCEL_TT: "Odstrániť tento obchodný príkaz" # todo: NEW TRANSLATION
  TRADE_ORDER_OPEN_TRADES_TAB_TITLE_IMPORT: "Zobraziť dovozy na tomto trhu" # todo: NEW TRANSLATION
  TRADE_ORDER_OPEN_TRADES_TAB_TITLE_EXPORT: "Zobraziť vývozy na tomto trhu" # todo: NEW TRANSLATION
- TRADE_ORDER_OPEN_TRADES_TAB_DESC: "Otvára záložku Obchodov pre tento trh so zobrazením len vašich [Concept('trade','obchodu')|e], obchodnou kapacitou z tohto trhu a filtrom dovozu alebo vývozu zodpovedajúcim tomuto [Concept('trade_order','neobchodnému príkazu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRADE_ORDER_OPEN_TRADES_TAB_DESC: "Otvára záložku Obchodov pre tento trh so zobrazením len vašich [Concept('trade','obchodov')|e], obchodnou kapacitou z tohto trhu a filtrom dovozu alebo vývozu zodpovedajúcim tomuto [Concept('trade_order','neobchodnému príkazu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_ORDER_CREATE_IMPORT: "Nastaviť [Concept('import','dovoz')|e] príkaz" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_ORDER_CREATE_EXPORT: "Nastaviť [Concept('export','vývoz')|e] príkaz" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_ORDER_CREATE_IE_TT_IMPORT: "Prideľte [Concept('merchant_capacity','obchodná kapacita')|e] na [Concept('import','dovoz')|e] tohto tovaru s najlepšou trasou." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -69,7 +69,7 @@
  TRADE_ORDER_MODE_FOOD_WITH_ICON: "@food! $TRADE_ORDER_MODE_FOOD$" # todo: NEW TRANSLATION
  TRADE_ORDER_MODE_NEEDS_WITH_ICON: "@shortage! $TRADE_ORDER_MODE_NEEDS$" # todo: NEW TRANSLATION
  TRADE_ORDER_MODE_PROFIT_TT: "Príkaz využije svoju [Concept('merchant_capacity','neobchodnú kapacitu')|e] na najziskovejšie [Concept('trades','obchody')|e], ktoré nájde medzi vybraným tovarom a trhmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRADE_ORDER_MODE_FOOD_TT: "Príkaz využije svoju [Concept('merchant_capacity','neobchodnú kapacitu')|e] na [Concept('trades','obchody')|e], ktoré prepravia najviac [Concept('food','potraviny')|e] na trhy, na ktorých ubúdajú potraviny a ktorých [Concept('food_stockpile','zásoby potravín')|e] je nižšia ako [GetDefine('NAI','TRADE_ORDER_FOOD_MAINTAIN_STOCKPILE_FRACTION')|V0%]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRADE_ORDER_MODE_FOOD_TT: "Príkaz využije svoju [Concept('merchant_capacity','neobchodnú kapacitu')|e] na [Concept('trades','obchody')|e], ktoré prepravia najviac [Concept('food','potraviny')|e] na trhy, na ktorých ubúdajú potraviny a ktorých [Concept('food_stockpile','zásoba potravín')|e] je nižšia ako [GetDefine('NAI','TRADE_ORDER_FOOD_MAINTAIN_STOCKPILE_FRACTION')|V0%]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_ORDER_MODE_NEEDS_TT: "Príkaz využije svoju [Concept('merchant_capacity','neobchodnú kapacitu')|e] na pokrytie nedostatku [Concept('goods','tovarom')|e] na cieľových trhoch, postupne podľa jednotlivých položiek. Dodáva sa iba tovar, ktorého [Concept('stockpile','zásob')|e] je nižšia ako [GetDefine('NAI','TRADE_ORDER_NEEDS_STOCKPILE_EXCLUSION_FRACTION')|V0%]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_ORDER_MODE_PROFIT_INFO: "Tento príkaz uprednostňuje #italic zisk#!: svoju [Concept('merchant_capacity','neobchodnú kapacitu')|e] využíva na najziskovejšie [Concept('trades','obchody')|e] medzi vybraným tovarom a trhmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_ORDER_MODE_FOOD_INFO: "Tento príkaz uprednostňuje #italic potraviny#!: svoju [Concept('merchant_capacity','neobchodnú kapacitu')|e] využíva na [Concept('trades','obchody')|e], ktoré prepravia najviac [Concept('food','potraviny')|e] na trhy, ktoré ich potrebujú.\n\nTrhu pomáha iba vtedy, ak by bez tohto príkazu prichádzal o potraviny a jeho [Concept('food_stockpile','zásob potravín')|e] je nižšia ako [GetDefine('NAI','TRADE_ORDER_FOOD_MAINTAIN_STOCKPILE_FRACTION')|V0%]. Ak je nižšia ako [GetDefine('NAI','TRADE_ORDER_FOOD_GROWTH_STOCKPILE_FRACTION')|V0%], príkaz navyše každý mesiac dopĺňa zásoby o [GetDefine('NAI','TRADE_ORDER_FOOD_MONTHLY_STOCKPILE_GAIN')|V0%] ich maximálneho množstva. Ak je vyššia ako [GetDefine('NAI','TRADE_ORDER_FOOD_MAINTAIN_STOCKPILE_FRACTION')|V0%], trh sa považuje za zásobený a nedostane nič.\n\nVývoz sa pozastaví, keď sú zásoby potravín na vlastnom trhu príkazu nižšie ako [GetDefine('NAI','TRADE_ORDER_FOOD_EXPORT_SELF_STOP_FRACTION')|V0%] [food_stockpile], a zruší sa, keď klesnú pod [GetDefine('NAI','TRADE_ORDER_FOOD_EXPORT_SELF_CANCEL_FRACTION')|V0%]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -210,7 +210,7 @@
  TRADE_ORDER_EMPTY_TT: "Tento [trade_order] nemá určené žiadne [goods]. Upravte ho a pridajte [goods]." # todo: NEW TRANSLATION
  TRADE_ORDER_TOTAL_PROFIT: "Celkový zisk zo všetkých [trades] v tomto [trade_order]" # todo: NEW TRANSLATION
  GOODS_TRADE_POLICY_DOMESTIC_NONE: "V našej [country] neprebieha domáca výroba." # todo: NEW TRANSLATION
- GOODS_TRADE_POLICY_VOLUME_NONE: "Momentálne neprebieha žiadny [Concept('imports','dovozy')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GOODS_TRADE_POLICY_VOLUME_NONE: "Momentálne neprebieha žiadny [Concept('imports','dovoz')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  GOODS_TRADE_POLICY_DOMESTIC: "#T Domáca výroba tovaru [GOODS.GetNameWithNoTooltip]#!" # todo: NEW TRANSLATION
  TRADE_POLICY_TARIFF_REVENUE_HEADER: "#T Príjmy z dovozného cla na tovar [GOODS.GetNameWithNoTooltip]#!" # todo: NEW TRANSLATION
  TRADE_POLICY_TARIFF_REVENUE_NONE: "$TRADE_POLICY_TARIFF_REVENUE_HEADER$\nZ [imports] tovaru [GOODS.GetName] neplynie žiadny príjem z [tariff_with_icon|e] [income] ani výdavok na [subvention_with_icon|e] [expense]." # todo: NEW TRANSLATION
@@ -371,7 +371,7 @@
  TRADE_POLICY_EXPORT_VOLUME_TEXT: "$EXP|2$@trade_capacity!" # todo: NEW TRANSLATION
  GOODS_TRADE_POLICY_EXPORT_VOLUME_HEADER: "[exports] zo všetkých vašich [markets]" # todo: NEW TRANSLATION
  GOODS_TRADE_POLICY_EXPORT_VOLUME_HEADER_MARKET: "[exports] z trhu [TradePoliciesLateralView.GetSelectedMarket.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- GOODS_TRADE_POLICY_EXPORT_VOLUME_NONE: "Momentálne neprebieha žiadny [Concept('exports','vývozy')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ GOODS_TRADE_POLICY_EXPORT_VOLUME_NONE: "Momentálne neprebieha žiadny [Concept('exports','vývoz')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_POLICY_SORT_BY_PRODUCTION: "Zoradiť podľa domácej produkcie" # todo: NEW TRANSLATION
  TRADE_POLICY_SORT_BY_GOLD: "Zoradiť podľa mesačného príjmu zlata" # todo: NEW TRANSLATION
  TRADE_POLICY_DOMESTIC_PRODUCTION: "$VAL|2$" # todo: NEW TRANSLATION

@@ -7,14 +7,14 @@
  flavor_mal.1_historical_info: "Ako najslávnejší panovník Mali, Mansa Mūsā je známy svojim obrovským bohatstvom a vplyvom. Počas jeho vlády sa Mali stalo centrom obchodu, kultúry a islamského učenia, pričom Timbuktu prosperovalo ako centrum vzdelanosti. Jeho legendárna púť do Mekky predviedla jeho obrovské bohatstvo, keď rozdával toľko zlata, že to ovplyvnilo regionálne ekonomiky. Mūsā rozšíril územie Mali a posilnil kontrolu nad dôležitými obchodnými cestami. Jeho mecenášstvo architektúry a vzdelania zanechalo trvalé dedičstvo, s mešitami a madrasami, ktoré formovali históriu Západnej Afriky. Jeho vláda symbolizuje vrchol moci a prosperity Mali." # todo: NEW TRANSLATION
  flavor_mal.2.title: "[mal_suleyman_ruler.GetNameWithNoTooltip], brat [mal_mansa_musa_ruler.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_mal.2.entry: "Suleyman, vládca, brat vládcu Mansa Musy" # todo: NEW TRANSLATION
- flavor_mal.2.desc: "Zatiaľ čo [mal_maghan_ruler.GetName] nepreukázal žiadne sľubné schopnosti vládnuť štátu, jeho strýko [mal_suleyman_ruler.GetName] preukázal svoje schopnosti počas veľkej Ḥajj [mal_mansa_musa_ruler.GetName] ako regent [ROOT.GetCountry.GetName]. Podpora [mal_suleyman_ruler.GetNameWithNoTooltip] ako nového [ROOT.GetCountry.GetGovernment.GetRulerTitle] je silná. Avšak [mal_maghan_ruler.GetNameWithNoTooltip] je súčasný vládca nášho štátu a je v rozpore s tradičnými zákonmi [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('I')] uzurpovať [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHim]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_mal.2.desc: "Zatiaľ čo [mal_maghan_ruler.GetName] nepreukázal žiadne sľubné schopnosti vládnuť štátu, jeho strýko [mal_suleyman_ruler.GetName] preukázal svoje schopnosti počas veľkej Ḥajj [mal_mansa_musa_ruler.GetName] ako regent [SKCountry(ROOT.GetCountry,'G')]. Podpora [mal_suleyman_ruler.GetNameWithNoTooltip] ako nového [ROOT.GetCountry.GetGovernment.GetRulerTitle] je silná. Avšak [mal_maghan_ruler.GetNameWithNoTooltip] je súčasný vládca nášho štátu a je v rozpore s tradičnými zákonmi [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('I')] uzurpovať [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHim]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_mal.2.a: "Nech [mal_suleyman_ruler.GetNameWithNoTooltip] vládne [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_mal.2.a.entry: "Nech nad nami vládne $name_salomon.mande_language$ Keita." # todo: NEW TRANSLATION
  flavor_mal.2.b: "[mal_maghan_ruler.GetNameWithNoTooltip] zdedil trón. Najprv sa musí preukázať [mal_maghan_ruler.GetHerselfHimself]." # todo: CHANGED
  flavor_mal.2.b.entry: "$name_maghan$ Keita zdedil trón. Najprv sa musí preukázať." # todo: NEW TRANSLATION
  flavor_mal.3.title: "Premena [ROOT.GetCountry.GetAdjectiveWithNoTooltip] armády" # todo: NEW TRANSLATION
  flavor_mal.3.entry: "$flavor_mal.3.title$" # todo: NEW TRANSLATION
- flavor_mal.3.desc: "Armády [ROOT.GetCountry.GetName] bývali zložené z #italic Horons#! - 'voľných mužov', ktorí si na boj prinášali vlastnú výzbroj a boli cvičení v umení vojny. So zvyšujúcim sa využívaním [ShowUnitDefinitionName('a_sofa_infantry')] sa charakter našej armády mení. Už štát nie je chránený našimi dobre vycvičenými príležitostnými vojakmi, ale armádou #italic Jonows#! — 'otrokov' — ktorí kedysi boli len nosičmi vojenského vybavenia.\n\nNázory sú rozdelené, či je takýto vývoj v náš prospech. Kým je kvalita našej armády menej istá, je nepopierateľné, že počet jednotiek Sofa je sila, s ktorou treba rátať." # todo: NEW TRANSLATION
+ flavor_mal.3.desc: "Armády [SKCountry(ROOT.GetCountry,'G')] bývali zložené z #italic Horons#! - 'voľných mužov', ktorí si na boj prinášali vlastnú výzbroj a boli cvičení v umení vojny. So zvyšujúcim sa využívaním [ShowUnitDefinitionName('a_sofa_infantry')] sa charakter našej armády mení. Už štát nie je chránený našimi dobre vycvičenými príležitostnými vojakmi, ale armádou #italic Jonows#! — 'otrokov' — ktorí kedysi boli len nosičmi vojenského vybavenia.\n\nNázory sú rozdelené, či je takýto vývoj v náš prospech. Kým je kvalita našej armády menej istá, je nepopierateľné, že počet jednotiek Sofa je sila, s ktorou treba rátať." # todo: NEW TRANSLATION
  flavor_mal.3.a: "Využime viac $a_sofa_infantry$." # todo: NEW TRANSLATION
  flavor_mal.3.b: "Nemali by sme nahradiť Horons týmito otrokmi." # todo: NEW TRANSLATION
  flavor_mal.4.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] a [GetCountry('POR').GetAdjectiveWithNoTooltip]" # todo: NEW TRANSLATION
@@ -49,7 +49,7 @@
  mal_rejected_us_access_to_firearms: "Odmietli nám prístup k $firearms$" # todo: NEW TRANSLATION
  flavor_mal.9.title: "[mal_arms_dealer.GetNameWithNoTooltip] predáva strelné zbrane!" # todo: NEW TRANSLATION
  flavor_mal.9.entry: "Obchodník so zbraňami predáva strelné zbrane!" # todo: NEW TRANSLATION
- flavor_mal.9.desc: "Skvelá správa dorazila na dvor: obchodníci z [mal_arms_dealer.GetName] súhlasili s predajom strelných zbraní, ako aj s dodaním potrebných zdrojov a znalostí, aby sme ich mohli vyrábať sami! Vojenské sily [ROOT.GetCountry.GetName] sa konečne môžu prispôsobiť meniacemu sa charakteru vojny!" # todo: NEW TRANSLATION
+ flavor_mal.9.desc: "Skvelá správa dorazila na dvor: obchodníci z [mal_arms_dealer.GetName] súhlasili s predajom strelných zbraní, ako aj s dodaním potrebných zdrojov a znalostí, aby sme ich mohli vyrábať sami! Vojenské sily [SKCountry(ROOT.GetCountry,'G')] sa konečne môžu prispôsobiť meniacemu sa charakteru vojny!" # todo: NEW TRANSLATION
  flavor_mal.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  flavor_mal.9.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
  flavor_mal.10.title: "[mal_arms_dealer.GetNameWithNoTooltip] odmieta prístup k strelným zbraniam!" # todo: NEW TRANSLATION
@@ -73,9 +73,9 @@
  flavor_mal.13.desc: "Máloktoré inštitúcie a centrá učenia sú také slávne a oslavované ako [ShowBuildingTypeName('madrasa')] v [target_location.GetName]. Pôvodne postavená na základoch Sankore [ShowBuildingTypeName('temple')], madrasa bola založená s finančnou podporou ženy [ShowCultureName('mandinka')].\n\nOdvtedy inštitúcia nielenže prosperovala pod vedením veľkých mužov, ako [GetCharacter('mal_musa_keita').GetName], ale naďalej prijíma mnohých študentov, ktorí prichádzajú do jej priestorov z každého kúta kontinentu, aby získali múdrosť v jej stenách." # todo: NEW TRANSLATION
  flavor_mal.13.a: "Toto je žiarivý príklad nášho inovatívneho myslenia!" # todo: NEW TRANSLATION
  flavor_mal.13.b: "Obdivujeme ju, ale nemôžeme ju ďalej financovať..." # todo: NEW TRANSLATION
- flavor_mal.14.title: "Snaha [target_subject_country.GetNameWithNoTooltip] o nezávislosť" # todo: NEW TRANSLATION
+ flavor_mal.14.title: "Snaha [SKCountryNoTooltip(target_subject_country,'G')] o nezávislosť" # todo: NEW TRANSLATION
  flavor_mal.14.entry: "Snahy Jolofu o nezávislosť" # todo: NEW TRANSLATION
- flavor_mal.14.desc: "Napriek našim snahám zlepšiť životy všetkých našich poddaných sú medzi nami takí, ktorí chcú vidieť náš pád, vyradiť naše dedičstvo. Spriadajú spiknutia v tieňoch, s dýkami v rukách, čakajú, kedy zaútočiť na naše slabé chvíle...\n\nHlas nezhody [target_subject_country.GetName] nie je nič iné než predstavenie rozmaznaného dieťaťa, ktoré vyrástlo príliš odvážne a dychtivé." # todo: NEW TRANSLATION
+ flavor_mal.14.desc: "Napriek našim snahám zlepšiť životy všetkých našich poddaných sú medzi nami takí, ktorí chcú vidieť náš pád, vyradiť naše dedičstvo. Spriadajú spiknutia v tieňoch, s dýkami v rukách, čakajú, kedy zaútočiť na naše slabé chvíle...\n\nHlas nezhody [SKCountry(target_subject_country,'G')] nie je nič iné než predstavenie rozmaznaného dieťaťa, ktoré vyrástlo príliš odvážne a dychtivé." # todo: NEW TRANSLATION
  flavor_mal.14.a: "Dobre, udeliť im nezávislosť." # todo: NEW TRANSLATION
  flavor_mal.14.b: "Ak chcú vojnu..." # todo: CHANGED
  flavor_mal.14.b.tt: "Pokúsime sa zkrotiť [GetCountry('JOL').GetName].\n#italic To môže vyústiť v #R vojnu#! medzi našimi štátmi!#!" # todo: NEW TRANSLATION
@@ -89,7 +89,7 @@
  flavor_mal.16.a: "Nech sa radujú, lebo dnes boli ušetrení..." # todo: NEW TRANSLATION
  flavor_mal.17.title: "[target_country.GetNameWithNoTooltip] sa chopil zbraní" # todo: NEW TRANSLATION
  flavor_mal.17.entry: "Jolof sa chopí zbraní" # todo: NEW TRANSLATION
- flavor_mal.17.desc: "V zúfalej snahe zachrániť svoje ubohé životy pred úplným vyhladením a podriadením sa sa zdá, že tí najbrutálnejší z dvora [target_country.GetName] sa rozhodli vtiahnuť svoj ľud do úplného zničenia a hrozia úplnou vojnou, ak odmietneme ich požiadavky..." # todo: NEW TRANSLATION
+ flavor_mal.17.desc: "V zúfalej snahe zachrániť svoje ubohé životy pred úplným vyhladením a podriadením sa sa zdá, že tí najbrutálnejší z dvora [SKCountry(target_country,'G')] sa rozhodli vtiahnuť svoj ľud do úplného zničenia a hrozia úplnou vojnou, ak odmietneme ich požiadavky..." # todo: NEW TRANSLATION
  flavor_mal.17.a: "Dobre teda, nech idú..." # todo: NEW TRANSLATION
  flavor_mal.17.b: "Zabijeme ich všetkých!" # todo: NEW TRANSLATION
  flavor_mal.18.title: "Rozdrobená ríša" # todo: NEW TRANSLATION
@@ -143,7 +143,7 @@
  flavor_mal.24.desc: "Kým [target_character.GetName] považoval expedíciu do [ShowRegionName('south_atlantic_region')] za márnu, [target_character2.GetName] si myslí inak. [target_character2.GetSheHe|U] verí, že na Západe musí byť niečo. Môžeme sa pokúsiť investovať do nových plavieb, všetko v mene ponorenia sa do neznáma." # todo: NEW TRANSLATION
  flavor_mal.24.historical_info: "Hoci je len mýtus, že Ko Mamadi mohol objaviť Ameriku svojimi plavbami, dá sa povedať, že jeho neúspech v návrate prispel k vzostupu Mansa Mūsā v Mali a k zameraniu sa na vnútornú stabilitu namiesto objavovania a inovácií." # todo: NEW TRANSLATION
  flavor_mal.24.a: "Máme dosť zlata, môžeme si dovoliť nové expedície." # todo: NEW TRANSLATION
- flavor_mal.24.b: "Dôležitejšia je stabilita [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_mal.24.b: "Dôležitejšia je stabilita [SKCountryNoTooltip(ROOT.GetCountry,'G')]." # todo: NEW TRANSLATION
  flavor_mal.24.b.entry: "Dôležitejšia je stabilita $MAL$." # todo: NEW TRANSLATION
  mal_finding_america_yields_rewards_tt: "Ak sa nám náhodou podarí objaviť nový [Concept('continent','kontinent')|e], dostaneme príležitosť posilniť naše #Y Outward#! hodnoty." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_mal.25.title: "Zem objavená!" # todo: NEW TRANSLATION
@@ -171,7 +171,7 @@
  flavor_mal.29.desc: "Obyvatelia rieky Niger priniesli [ROOT.GetCountry.GetName] veľa potravy vďaka svojim rybárskym tradíciám. Prezývaní Páni rieky, pomohli vytvoriť lokality ako [target_location.GetName] a stali sa neoddeliteľnou súčasťou [ROOT.GetCountry.GetFlavorRank]. Možno im môžeme ponúknuť viac pomoci." # todo: NEW TRANSLATION
  flavor_mal.29.a: "Môžu dostať nejaké zlato." # todo: NEW TRANSLATION
  flavor_mal.29.b: "Nedávajme im." # todo: NEW TRANSLATION
- mal_every_pop_gains_20_satisfaction_tt: "Každý [Concept('pop','populácia')|e] v [target_location.GetName] získa [ShowNamedValue('pop_satisfaction_severe_bonus')|+2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ mal_every_pop_gains_20_satisfaction_tt: "Každá [Concept('pop','populácia')|e] v [target_location.GetName] získa [ShowNamedValue('pop_satisfaction_severe_bonus')|+2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_mal.30.title: "Tyranský vládca" # todo: NEW TRANSLATION
  flavor_mal.30.entry: "$flavor_mal.30.title$" # todo: NEW TRANSLATION
  flavor_mal.30.desc: "[target_character.GetName] utláča svojich poddaných, zle s nimi nakladá a považuje ich za obyčajné figúrky. Hoci [target_character.GetSheHe] má moc to robiť, celé [ROOT.GetCountry.GetAltAdjective('A')] šepká o zvrhnutí [target_character.GetHerHim]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
@@ -188,7 +188,7 @@
  flavor_mal.31.c: "Pokladnica musí byť chránená." # todo: NEW TRANSLATION
  flavor_mal.32.title: "Pád [ShowLocationNameWithNoTooltip('timbuktu')]" # todo: NEW TRANSLATION
  flavor_mal.32.entry: "Pád Timbuktu" # todo: NEW TRANSLATION
- flavor_mal.32.desc: "[ShowLocationNameWithNoTooltip('timbuktu')], kedysi veľký klenot [ROOT.GetCountry.GetName], padol do rúk našich nepriateľov. Mnohí v [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('L')] to vnímajú ako znamenie, že možno sa [ROOT.GetCountry.GetRank.GetName] pomaly rozpadá." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_mal.32.desc: "[ShowLocationNameWithNoTooltip('timbuktu')], kedysi veľký klenot [SKCountry(ROOT.GetCountry,'G')], padol do rúk našich nepriateľov. Mnohí v [ROOT.GetCountry.GetAltAdjectiveWithNoTooltip('L')] to vnímajú ako znamenie, že možno sa [ROOT.GetCountry.GetRank.GetName] pomaly rozpadá." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_mal.32.a: "[ShowLocationNameWithNoTooltip('timbuktu')] bude znovu dobytý!" # todo: NEW TRANSLATION
  flavor_mal.32.b: "Nech o tom hovorí [target_character2.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_mal.32.b.entry: "Nech on o tejto záležitosti prehovorí." # todo: NEW TRANSLATION

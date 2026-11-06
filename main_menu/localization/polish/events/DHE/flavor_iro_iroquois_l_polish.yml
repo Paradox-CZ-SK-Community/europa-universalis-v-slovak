@@ -49,11 +49,11 @@
  variable_invited_moravian_missionaries_tt: "Moravskí misionári boli pozvaní" # todo: NEW TRANSLATION
  flavor_iro.40.title: "Silná medzkmeňová jednota" # todo: NEW TRANSLATION
  flavor_iro.40.entry: "$flavor_iro.40.title$" # todo: NEW TRANSLATION
- flavor_iro.40.desc: "Napriek počiatočnému odporu voči zjednoteniu za centrálnym vodcom zažili bojovníci [ROOT.GetCountry.GetName] obnovenie kmeňovej jednoty. Zatiaľ čo jednotlivé vojenské družiny sa spájali počas vojen za konfederáciu, konsolidácia družín v časoch pokoja vytvorila silnejšie putá." # todo: NEW TRANSLATION
+ flavor_iro.40.desc: "Napriek počiatočnému odporu voči zjednoteniu za centrálnym vodcom zažili bojovníci [SKCountry(ROOT.GetCountry,'G')] obnovenie kmeňovej jednoty. Zatiaľ čo jednotlivé vojenské družiny sa spájali počas vojen za konfederáciu, konsolidácia družín v časoch pokoja vytvorila silnejšie putá." # todo: NEW TRANSLATION
  flavor_iro.40.a: "Naši nepriatelia by sa mali mať na pozore pred našou nezlomnou jednotou." # todo: NEW TRANSLATION
  flavor_iro.41.title: "Obchodovanie s palnými zbraňami" # todo: NEW TRANSLATION
  flavor_iro.41.entry: "$flavor_iro.41.title$" # todo: NEW TRANSLATION
- flavor_iro.41.desc: "Hoci príchod [neighbor_country.GetName] spôsobil otras pre ľudí [ROOT.GetCountry.GetAdjective], vďaka mierovým snahám [our_ruler.GetName] sa [ROOT.GetCountry.GetLongNameWithNoTooltip] vyvinulo priateľské vzťahy s [SKCountryNoTooltip(neighbor_country,'I')]. V rámci nadviazaného obchodu títo cudzinci priniesli so sebou ničivú zbraň známu ako muškétová puška. Aj keď sme získali len obmedzené množstvo týchto zbraní, aby sa ich naučili používať bojovníci [ROOT.GetCountry.GetAdjectiveWithNoTooltip], obchodníci [neighbor_country.GetAdjectiveWithNoTooltip] sa zdajú byť ochotní v budúcnosti dodať viac [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_iro.41.desc: "Hoci príchod [SKCountry(neighbor_country,'G')] spôsobil otras pre ľudí [ROOT.GetCountry.GetAdjective], vďaka mierovým snahám [our_ruler.GetName] sa [ROOT.GetCountry.GetLongNameWithNoTooltip] vyvinulo priateľské vzťahy s [SKCountryNoTooltip(neighbor_country,'I')]. V rámci nadviazaného obchodu títo cudzinci priniesli so sebou ničivú zbraň známu ako muškétová puška. Aj keď sme získali len obmedzené množstvo týchto zbraní, aby sa ich naučili používať bojovníci [ROOT.GetCountry.GetAdjectiveWithNoTooltip], obchodníci [neighbor_country.GetAdjectiveWithNoTooltip] sa zdajú byť ochotní v budúcnosti dodať viac [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_iro.41.a: "Tieto vojnové zbrane musíme zvládnuť." # todo: NEW TRANSLATION
  flavor_iro.41.b: "Tieto zbrane nepotrebujeme na vyhranie konfliktov." # todo: NEW TRANSLATION
  flavor_iro.42.title: "[neighbor_country.GetNameWithNoTooltip] ohromený kmeňovou jednotou" # todo: NEW TRANSLATION
@@ -79,7 +79,7 @@
  flavor_iro.46.entry: "Prínosy Troch sestier" # todo: NEW TRANSLATION
  flavor_iro.46.desc: "Agrárna prax dlho využívaná kmeňmi [ShowCultureGroupName('haudenosaunee_group')], [ShowAdvanceName('three_sisters')] pozostáva z troch plodín: kukurice, fazule a tekvice. Použitím týchto troch plodín formou spoločne sadenia vytvárajú symbiotický vzťah, ktorý každému z nich prináša bohatú úrodu.\n\nTento rok však prax [ShowAdvanceNameWithNoTooltip('three_sisters')] priniesla väčší ako očakávaný výnos úrody a vnútorný kruh [our_ruler.GetName] váha, ako naložiť s prebytkom." # todo: NEW TRANSLATION
  flavor_iro.46.a: "Usporiadať veľký festival v [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] na oslavu úrody." # todo: NEW TRANSLATION # todo: COUNTRY CASE
- flavor_iro.46.b: "Rozdeliť ho medzi dediny [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_iro.46.b: "Rozdeliť ho medzi dediny [SKCountryNoTooltip(ROOT.GetCountry,'G')]" # todo: NEW TRANSLATION
  flavor_iro.47.title: "Matriarchálne poľnohospodárstvo" # todo: NEW TRANSLATION
  flavor_iro.47.entry: "$flavor_iro.47.title$" # todo: NEW TRANSLATION
  flavor_iro.47.desc: "Kým väčšina mužov v [ROOT.GetCountry.GetAltAdjective('L')] sa venuje vojenstvu, ženy [ROOT.GetCountry.GetAdjectiveWithNoTooltip] sa starajú o všetky aspekty farmárčenia a poľnohospodárstva. V mnohých ohľadoch sú rastliny tvoriace [ShowAdvanceName('three_sisters')]: kukurica, fazuľa a tekvica, synonymom úlohy, ktorú ženy [ROOT.GetCountry.GetAdjectiveWithNoTooltip] zastávajú, pričom každá 'sesternica' rastlina pomáha a podporuje rast tej druhej." # todo: NEW TRANSLATION # todo: COUNTRY CASE
@@ -104,7 +104,7 @@
  disables_beaver_wars_cb: "Stráca prístup k [ShowCasusBelliName('cb_beaver_wars')] [Concept('casus_belli','casus belli')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_iro.60.title: "Veľká rada" # todo: NEW TRANSLATION
  flavor_iro.60.entry: "$flavor_iro.60.title$" # todo: NEW TRANSLATION
- flavor_iro.60.desc: "Po svojom založení Veľkým zmierovateľom Deganawidom bola konfederácia [ShowCultureGroupName('haudenosaunee_group')] spravovaná [ShowGovernmentReformName('iro_council_of_the_fifty')], združením päťdesiatich náčelníkov. Hoci za posledné časy pod [our_ruler.GetName] jedna postava získala veľkú moc v konfederácii, [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')] si udržala značný vplyv na vládnutie [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ flavor_iro.60.desc: "Po svojom založení Veľkým zmierovateľom Deganawidom bola konfederácia [ShowCultureGroupName('haudenosaunee_group')] spravovaná [ShowGovernmentReformName('iro_council_of_the_fifty')], združením päťdesiatich náčelníkov. Hoci za posledné časy pod [our_ruler.GetName] jedna postava získala veľkú moc v konfederácii, [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')] si udržala značný vplyv na vládnutie [SKCountry(ROOT.GetCountry,'G')]." # todo: NEW TRANSLATION
  flavor_iro.60.a: "[our_ruler.GetShortNameWithNoTooltip] sa musí pridržiavať [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')]." # todo: NEW TRANSLATION
  flavor_iro.60.b: "Ignorovať pokyny rady." # todo: NEW TRANSLATION
  flavor_iro.61.title: "Veľká rada a [neighbor_country.GetAdjectiveWithNoTooltip] diplomacia" # todo: NEW TRANSLATION

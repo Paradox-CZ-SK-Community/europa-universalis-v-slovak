@@ -23,7 +23,7 @@
  flavor_ira.3.b: "Spoľahnite sa na domácich poradcov." # todo: CHANGED
  flavor_ira.4.title: "Politické nepokoje" # todo: NEW TRANSLATION
  flavor_ira.4.entry: "$flavor_ira.4.title$" # todo: NEW TRANSLATION
- flavor_ira.4.desc: "Po vláde [great_ruler.GetName] boli [target_country.Custom('GetQizilbashEstateName')] upokojení pod pozorným dohľadom [great_ruler.GetHerHis] a využívaní ako zbraň proti nepriateľom [target_country.GetName]. Avšak [target_character.GetName] je teraz pri moci v [target_country.GetAdjectiveWithNoTooltip] [target_country.GetGovernment.GetCourtTitle], čo opäť otvorilo dvere pre ďalšie konflikty medzi kmeňmi." # todo: NEW TRANSLATION
+ flavor_ira.4.desc: "Po vláde [great_ruler.GetName] boli [target_country.Custom('GetQizilbashEstateName')] upokojení pod pozorným dohľadom [great_ruler.GetHerHis] a využívaní ako zbraň proti nepriateľom [SKCountry(target_country,'G')]. Avšak [target_character.GetName] je teraz pri moci v [target_country.GetAdjectiveWithNoTooltip] [target_country.GetGovernment.GetCourtTitle], čo opäť otvorilo dvere pre ďalšie konflikty medzi kmeňmi." # todo: NEW TRANSLATION
  flavor_ira.4.historical_info: "Moc Safávidov bola založená na $qizilbash$ kmeňových mužoch z Malej Ázie, ktorí pôvodne porazili Aq Qoyunlu. Klany sa však navzájom pretekali o kontrolu nad $rank_kingdom_persian_ruler_male$. Pod $abbas_the_great$ boli držaní na krátkom vodítku, ale po jeho smrti Perziu opäť sužovali ich vnitroklanové spory. Nakoniec ich moc upadala, no v 18. storočí ich nahradili rebelskí vojvodcovia z Afganistanu a Balúčistanu." # todo: NEW TRANSLATION
  flavor_ira.4.a: "Nech klany bojujú." # todo: NEW TRANSLATION
  flavor_ira.4.b: "Mali by sme skrotiť klany skôr, než sa to vymkne." # todo: NEW TRANSLATION
@@ -51,8 +51,8 @@
  flavor_ira.8.b: "Ochraňme Najaf bez rozhadzovania." # todo: NEW TRANSLATION
  flavor_ira.9.title: "Vplyv [target_country.GetCulture.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_ira.9.entry: "Perzský kultúrny vplyv" # todo: NEW TRANSLATION
- flavor_ira.9.desc: "Od veľkých sultánov $ADU_f$ až po Nebeských cisárov [GetCountry('CHI').GetName] zanechala veľká kultúra [target_country.GetCulture.GetName] stopu v dejinách sveta, inšpirujúc mnohé rôzne jazyky a civilizácie. S vzostupom [target_country.GetLongName] prišiel čas opäť sa stať centrom umenia a kultúry. Muž zajtrajška bude hovoriť [target_country.GetCulture.GetLanguage.GetName]!" # todo: NEW TRANSLATION
- flavor_ira.9.a: "Sláva [target_country.GetNameWithNoTooltip] vždy spočívala v jej kultúre." # todo: NEW TRANSLATION
+ flavor_ira.9.desc: "Od veľkých sultánov $ADU_f$ až po Nebeských cisárov [SKCountry(GetCountry('CHI'),'G')] zanechala veľká kultúra [target_country.GetCulture.GetName] stopu v dejinách sveta, inšpirujúc mnohé rôzne jazyky a civilizácie. S vzostupom [target_country.GetLongName] prišiel čas opäť sa stať centrom umenia a kultúry. Muž zajtrajška bude hovoriť [target_country.GetCulture.GetLanguage.GetName]!" # todo: NEW TRANSLATION
+ flavor_ira.9.a: "Sláva [SKCountryNoTooltip(target_country,'G')] vždy spočívala v jej kultúre." # todo: NEW TRANSLATION
  flavor_ira.9.a.entry: "Ich sláva vždy spočívala v ich kultúre." # todo: NEW TRANSLATION
  flavor_ira.10.title: "Vzostup Musha'sha'iyyah" # todo: NEW TRANSLATION
  flavor_ira.10.entry: "$flavor_ira.10.title$" # todo: NEW TRANSLATION
@@ -106,7 +106,7 @@
  flavor_ira.17.desc: "Úspech prináša bohatstvo a bohatstvo často so sebou nesie prestíž, legitimitu a moc. Mnohí z našich odvážnych obchodníkov cestovali do legendárnych palácov [target_country.GetLongName] a späť, vracajúc sa na naše dvory a trhy s mnohými cudzími, zvláštnymi, no ohromne krásnymi textíliami a materiálmi. Medzi nimi bol modro‑biely [ShowGoodsName('porcelain')] vyhradený pre [root_character.GetName] ako osobný dar od [target_character.GetName]. Tento [ShowGoodsNameWithNoTooltip('porcelain')] určite ozdobí naše hroby a paláce a dodá nám nádych legitimity a novonadobudnutého postavenia!" # todo: NEW TRANSLATION
  flavor_ira.17.a: "Materiál hodný [root_country.GetGovernment.GetRulerTitle]." # todo: CHANGED
  flavor_ira.17.a.entry: "Materiál hodný vládcu." # todo: NEW TRANSLATION
- flavor_ira.18.title: "Koberce [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_ira.18.title: "Koberce [SKCountryNoTooltip(ROOT.GetCountry,'G')]" # todo: NEW TRANSLATION
  flavor_ira.18.entry: "$flavor_ira.18.title$" # todo: NEW TRANSLATION
  flavor_ira.18.desc: "So zvýšenou výrobou kobercov a monopolom na textil máme dopyt aj ponuku hodvábu, látok a farieb vo svojich rukách. Máme viacero spôsobov, ako z nášho ekonomického vplyvu značným spôsobom profitovať, tak to využime naplno." # todo: NEW TRANSLATION
  flavor_ira.18.a: "Zabezpečiť si monopol na ich výrobu." # todo: NEW TRANSLATION
@@ -118,7 +118,7 @@
  flavor_ira.19.a: "Naša zručnosť s arkebúzom je nedostižná!" # todo: NEW TRANSLATION
  flavor_ira.19.a.tt: "Každý [ShowUnitDefinitionName('a_tofangchi')] získa [ShowNamedValue('subunit_experience_severe_bonus')|+=2%] [Concept('experience','skúsenosti')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.19.b: "Nemôžeme sa vzdať našich tradícií!" # todo: NEW TRANSLATION
- flavor_ira.20.title: "Lev [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_ira.20.title: "Lev [SKCountryNoTooltip(ROOT.GetCountry,'G')]" # todo: NEW TRANSLATION
  flavor_ira.20.entry: "$flavor_ira.20.title$" # todo: NEW TRANSLATION
  flavor_ira.20.desc: "[ROOT.GetCountry.GetLongName]: impérium, ktoré siaha od krajín [ShowContinentName('europe')] až do srdca $india$. Mnohí nároční a mocní nepriatelia stáli v našej ceste, predsa však [ROOT.GetCountry.GetAdjectiveWithNoTooltip] odhodlanie pretrvalo. Naši vojaci držali líniu, zatiaľ čo naše kavalérie obchádzali a zdecimovali protivníkov. [ROOT.GetCountry.GetAdjectiveWithNoTooltip] úradníci integrovali obrovské územia, zatiaľ čo remeselníci a umelci [ROOT.GetCountry.GetCulture.GetName] upevňujú úspechy nášho národa.\n\nNaposledy, žiadne impérium pred nami ani po nás nezanechalo väčšiu stopu než [ROOT.GetCountry.GetLongNameWithNoTooltip], a žiadny vládca nie je taký veľký ako [target_ruler.GetName]." # todo: NEW TRANSLATION
  flavor_ira.20.a: "Sláva [ROOT.GetCountry.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION
@@ -217,7 +217,7 @@
  ira_all_armenian_pops_lose_satisfaction: "Všetky naše [ShowCultureName('armenian_culture')] [Concept('pops','populácie')|e] stratia [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.38.title: "$ali_qapu_palace$" # todo: NEW TRANSLATION
  flavor_ira.38.entry: "$flavor_ira.38.title$" # todo: NEW TRANSLATION
- flavor_ira.38.desc: "Absencia vhodného paláca pre rod [target_character.GetDynasty.GetName] uškodila našemu právu vládnuť nad [ROOT.GetCountry.GetAltAdjective('I')]. Keď nás [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] považujú za slabých, hrozí nám prevrat. Namiesto použitia armády na potlačenie nepokojov a vyvolávania bezvýznamných ústupkov [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], mali by sme ukázať naše bohatstvo postavením paláca. [target_character.GetName] už položil základy takéhoto monumentu v [target_location.GetName], s cieľom premeniť [target_location.GetRank.GetName] na skutočné hlavné mesto [ROOT.GetCountry.GetNameWithNoTooltip]. Plánovaný nazvať $ali_qapu_palace$, Veľká brána, jeho interiér bude obsahovať početné maľby, hudobnú sálu a ďalšie luxusy hodné [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_ira.38.desc: "Absencia vhodného paláca pre rod [target_character.GetDynasty.GetName] uškodila našemu právu vládnuť nad [ROOT.GetCountry.GetAltAdjective('I')]. Keď nás [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] považujú za slabých, hrozí nám prevrat. Namiesto použitia armády na potlačenie nepokojov a vyvolávania bezvýznamných ústupkov [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], mali by sme ukázať naše bohatstvo postavením paláca. [target_character.GetName] už položil základy takéhoto monumentu v [target_location.GetName], s cieľom premeniť [target_location.GetRank.GetName] na skutočné hlavné mesto [SKCountryNoTooltip(ROOT.GetCountry,'G')]. Plánovaný nazvať $ali_qapu_palace$, Veľká brána, jeho interiér bude obsahovať početné maľby, hudobnú sálu a ďalšie luxusy hodné [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_ira.38.a: "Postavme palác!" # todo: NEW TRANSLATION
  flavor_ira.38.b: "Možno by to bol príliš nákladný projekt." # todo: NEW TRANSLATION
  flavor_ira.39.title: "Zákaz alkoholu" # todo: NEW TRANSLATION
@@ -234,7 +234,7 @@
  ira_satisfaction_for_zoroastrians_tt: "Všetky naše [ShowReligionAdjective('zoroastrian')] [Concept('pops','populácie')|e] získajú [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_ira.41.title: "Farangī-Sāzī Art Style" # todo: NEW TRANSLATION
  flavor_ira.41.entry: "$flavor_ira.41.title$" # todo: NEW TRANSLATION
- flavor_ira.41.desc: "Aj keď [ROOT.GetCountry.GetName] a jeho umelci tvorili jedno majstrovské dielo za druhým, teraz dosiahli svoj zenit. Nechcúc zaostávať, [target_character2.GetName] plánuje kopírovať umelecký štýl [target_country.GetName]. Mnohí ich umelci, ako aj spôsoby kultúry [target_country.GetCulture.GetName], zaujali [ROOT.GetCountry.GetGovernment.GetCourtTitle] a už začali rozvíjať Farangī-Sāzī štýl. Hoci to môže poškodiť spôsoby [ROOT.GetCountry.GetCulture.GetName], môže stáť za to túto snahu sponzorovať." # todo: NEW TRANSLATION
+ flavor_ira.41.desc: "Aj keď [ROOT.GetCountry.GetName] a jeho umelci tvorili jedno majstrovské dielo za druhým, teraz dosiahli svoj zenit. Nechcúc zaostávať, [target_character2.GetName] plánuje kopírovať umelecký štýl [SKCountry(target_country,'G')]. Mnohí ich umelci, ako aj spôsoby kultúry [target_country.GetCulture.GetName], zaujali [ROOT.GetCountry.GetGovernment.GetCourtTitle] a už začali rozvíjať Farangī-Sāzī štýl. Hoci to môže poškodiť spôsoby [ROOT.GetCountry.GetCulture.GetName], môže stáť za to túto snahu sponzorovať." # todo: NEW TRANSLATION
  flavor_ira.41.a: "Povolíme jeho rozvoj." # todo: NEW TRANSLATION
  flavor_ira.41.b: "Niet dôvodu poškodzovať spôsoby [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_ira.41.b.entry: "Nie je dôvod ubližovať našim kultúrnym zvykom." # todo: NEW TRANSLATION
@@ -279,7 +279,7 @@
  flavor_ira.47.a.tt: "[GetCountry('ABL').GetLongName] bude zriadený ako náš [ShowSubjectTypeName('vassal')] v [target_area.GetName] s [target_character.GetName] ako vládcov. Prevedieme vlastníctvo oblasti a naše nároky tam na nich" # todo: NEW TRANSLATION
  flavor_ira.47.b: "Nezískajú naše územia." # todo: NEW TRANSLATION
  flavor_ira.47.c: "Ich spôsoby [ShowReligiousSchoolNameWithNoTooltip('safavid_school')] nás zaujímajú...." # todo: NEW TRANSLATION
- flavor_ira.48.title: "Militarizmus [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_ira.48.title: "Militarizmus [SKCountryNoTooltip(ROOT.GetCountry,'G')]" # todo: NEW TRANSLATION
  flavor_ira.48.entry: "$flavor_ira.48.title$" # todo: NEW TRANSLATION
  flavor_ira.48.desc: "Hoci naším hlavným cieľom je šíriť vieru [ROOT.GetCountry.GetReligion.GetAdjective], ťažko sa to v poslednom čase darí slovami samotnými. Z tohto dôvodu [target_character.GetName] plánuje formovať [ROOT.GetCountry.GetAdjective] spoločnosť tak, aby umožnila našej misii vyniknúť vojenskou silou. S použitím slov $common_string_quran$ ako ospravedlnenia dúfa, že to spojí ľud proti pohanom a nevercom, ktorí nám môžu stáť v ceste. Avšak takéto zmeny môžu uškodiť vnútornému rozvoju národa, čo by nemuselo byť pre [ROOT.GetCountry.GetFlavorRank] priaznivé." # todo: NEW TRANSLATION
  flavor_ira.48.a: "Podporíme militarizáciu našej spoločnosti." # todo: NEW TRANSLATION
@@ -299,7 +299,7 @@
  flavor_ira.50.b: "Lepšie by bolo sústrediť sa na vnútorné záležitosti." # todo: NEW TRANSLATION
  flavor_ira.51.title: "Umenie [ShowDynastyNameWithNoTooltip('qajar_dynasty')]" # todo: NEW TRANSLATION
  flavor_ira.51.entry: "Umenie dynastie Qajar" # todo: NEW TRANSLATION
- flavor_ira.51.desc: "Od chvíle, čo kmene [ShowDynastyName('qajar_dynasty')] získali trón [ROOT.GetCountry.GetName], zamerali sa na prinášanie novej vlny umenia v [ROOT.GetCountry.GetFlavorRank], vytláčajúc staré štýly. Propagovali idealistickejší umelecký štýl, ktorý zobrazuje [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] viac než obyčajných poddaných. Preto mnohí umelci maľovali [target_character.GetName] a celú dynastiu [ShowDynastyNameWithNoTooltip('qajar_dynasty')]. Možno by sme mali podporiť týchto umelcov, aby ešte viac upevnili tento nový štýl v [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
+ flavor_ira.51.desc: "Od chvíle, čo kmene [ShowDynastyName('qajar_dynasty')] získali trón [SKCountry(ROOT.GetCountry,'G')], zamerali sa na prinášanie novej vlny umenia v [ROOT.GetCountry.GetFlavorRank], vytláčajúc staré štýly. Propagovali idealistickejší umelecký štýl, ktorý zobrazuje [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] viac než obyčajných poddaných. Preto mnohí umelci maľovali [target_character.GetName] a celú dynastiu [ShowDynastyNameWithNoTooltip('qajar_dynasty')]. Možno by sme mali podporiť týchto umelcov, aby ešte viac upevnili tento nový štýl v [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
  flavor_ira.51.a: "Nech to ovplyvní našu kultúru samo od seba." # todo: NEW TRANSLATION
  flavor_ira.51.b: "Využime týchto umelcov na maľovanie pre celé [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
  flavor_ira.51.b.entry: "Použime týchto umelcov, aby maľovali pre celú ríšu." # todo: NEW TRANSLATION
@@ -347,7 +347,7 @@
  flavor_ira.1100.a.entry: "To zabezpečí stabilitu našej ríše." # todo: NEW TRANSLATION
  flavor_ira.1101.title: "Aristokratický rozkol" # todo: NEW TRANSLATION
  flavor_ira.1101.entry: "$flavor_ira.1101.title$" # todo: NEW TRANSLATION
- flavor_ira.1101.desc: "Aristokracia [target_country.GetName] je ako každá iná: zložená z členov spoločnosti, ktorí vlastnia pôdu a venujú sa vojenským veciam štátu. Rovnako ako všetky šľachtické rodiny v histórii, naša aristokracia sa snaží rozšíriť svoj vplyv na úkor vlády [target_country.GetGovernment.GetRulerTitle], čím podrýva autoritu [target_character.GetHerHis].\n\n[origin_character.GetName] mal múdrosť a predvídavosť predpovedať tento boj o moc, a tak založil [ShowUnitDefinitionNameWithNoTooltip('a_ghilman')]. Teraz pod schopnou vládou [target_character.GetName] bola politická moc všetkých frakcií odstránená. Ani [target_country.GetGovernment.GetEstateName('nobles_estate')] ani [target_country.Custom('GetQizilbashEstateName')] nemajú podporu ostatných vojenských veliteľov, aby vynútiteľne presadzovali svoju vôľu nad [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
+ flavor_ira.1101.desc: "Aristokracia [SKCountry(target_country,'G')] je ako každá iná: zložená z členov spoločnosti, ktorí vlastnia pôdu a venujú sa vojenským veciam štátu. Rovnako ako všetky šľachtické rodiny v histórii, naša aristokracia sa snaží rozšíriť svoj vplyv na úkor vlády [target_country.GetGovernment.GetRulerTitle], čím podrýva autoritu [target_character.GetHerHis].\n\n[origin_character.GetName] mal múdrosť a predvídavosť predpovedať tento boj o moc, a tak založil [ShowUnitDefinitionNameWithNoTooltip('a_ghilman')]. Teraz pod schopnou vládou [target_character.GetName] bola politická moc všetkých frakcií odstránená. Ani [target_country.GetGovernment.GetEstateName('nobles_estate')] ani [target_country.Custom('GetQizilbashEstateName')] nemajú podporu ostatných vojenských veliteľov, aby vynútiteľne presadzovali svoju vôľu nad [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
  flavor_ira.1101.a: "Rozdeľuj a panuj." # todo: NEW TRANSLATION
  flavor_ira.1101.b: "Zatiaľ však môžeme potrebovať časť ich vplyvu." # todo: NEW TRANSLATION
  variable_ira_ghilman_event_tt: "Ghilman, otrockí vojaci, získavajú vplyv" # todo: NEW TRANSLATION

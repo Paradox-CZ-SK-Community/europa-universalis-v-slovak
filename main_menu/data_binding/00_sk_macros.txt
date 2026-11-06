@@ -200,3 +200,24 @@ macro = {
 	definition = "SKCharFirstNameNoTooltip(XCHAR,XCASE)"
 	replace_with = "Select_CString(XCHAR.IsFemale,Select_CString(EndsWith(XCHAR.GetFirstNameWithNoTooltip,'a'),SKCharFirstNameTable(XCHAR,XCASE),XCHAR.GetFirstNameWithNoTooltip),SKCharMaleFirstName(XCHAR,XCASE))"
 }
+
+##################################################
+# TERÉN (TOPOGRAPHY)
+##################################################
+# Topography nemá Custom ani GetKey, tvary idú cez lokalitu:
+# in_game/common/customizable_localization/sk_topography.txt (SKTopoAdj_<tvar>)
+#   [SKTopoAdj(Location,'ej')]            rovinatej s tooltipom terénu
+#   [SKTopoAdjNoTooltip(Location,'ej')]   rovinatej, čistý text
+#       tvary: 'aa' rovinatá, 'ej' rovinatej, 'uu' rovinatú, 'ou' rovinatou
+
+macro = {
+	description = "Topography adjective of a location in the location's gender, without tooltip, forms aa ej uu ou"
+	definition = "SKTopoAdjNoTooltip(XLOCATION,XFORM)"
+	replace_with = "XLOCATION.Custom(Concatenate('SKTopoAdj_',XFORM))"
+}
+
+macro = {
+	description = "Topography adjective of a location with the topography tooltip, forms aa ej uu ou"
+	definition = "SKTopoAdj(XLOCATION,XFORM)"
+	replace_with = "SKTooltip(SKTopoAdjNoTooltip(XLOCATION,XFORM),XLOCATION.GetTopography.GetTooltip)"
+}

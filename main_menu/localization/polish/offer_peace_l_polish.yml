@@ -73,10 +73,10 @@
  peace_humiliate_entry: "Ponížiť [TARGET_COUNTRY.GetNameWithFlag]" # todo: NEW TRANSLATION
  peace_humiliate_entry_short: "Ponížiť [TARGET_COUNTRY.GetNameWithFlagWithNoTooltip]" # todo: NEW TRANSLATION
  claim_french_throne: "Unia s [SKCountryNoTooltip(GetCountry('FRA'),'I')]" # todo: NEW TRANSLATION
- claim_french_throne_entry: "Požadovať trón [GetCountry('FRA').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ claim_french_throne_entry: "Požadovať trón [SKCountryNoTooltip(GetCountry('FRA'),'G')]" # todo: NEW TRANSLATION
  claim_french_throne_entry_short: "$claim_french_throne_entry$" # todo: NEW TRANSLATION
  claim_french_throne_desc: "Na základe právoplatnej krvi a starodávnej tradície uplatníme nadvládu nad [GetCountry('FRA').GetLongName]. Táto zmluva otvorí cestu k novej budúcnosti pre celý región pod našou vládou." # todo: NEW TRANSLATION
- strength_of_england_versus_france: "[Concept('military_strength','Vojenská sila')|e] [GetCountry('FRA').GetName] v porovnaní s [SKCountry(GetCountry('ENG'),'I')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ strength_of_england_versus_france: "[Concept('military_strength','Vojenská sila')|e] [SKCountry(GetCountry('FRA'),'G')] v porovnaní s [SKCountry(GetCountry('ENG'),'I')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  peace_leave_the_hre: "Opustiť $hre$" # todo: NEW TRANSLATION
  peace_leave_the_hre_entry: "Opustiť [GetUniqueInternationalOrganization('hre').GetName]" # todo: NEW TRANSLATION
  peace_leave_the_hre_entry_short: "Opustiť [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -279,7 +279,7 @@
  peace_seize_opposition_leadership: "Získať vedenie opozície" # todo: NEW TRANSLATION
  peace_seize_opposition_leadership_entry: "$peace_seize_opposition_leadership$" # todo: NEW TRANSLATION
  peace_seize_opposition_leadership_entry_short: "$peace_seize_opposition_leadership$" # todo: NEW TRANSLATION
- peace_seize_opposition_leadership_desc: "[TARGET_COUNTRY.GetName] je príliš slabý, aby odolal vplyvu [GetCountry('DLH').GetNameWithNoTooltip] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]. Preto je na našich pleciach uchopiť príležitosť a zabezpečiť zánik ďalšieho potenciálneho dobyvateľa." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ peace_seize_opposition_leadership_desc: "[TARGET_COUNTRY.GetName] je príliš slabý, aby odolal vplyvu [SKCountryNoTooltip(GetCountry('DLH'),'G')] počas [GetSituationByKey('fall_of_delhi').GetName] [Concept('situation','situácie')|e]. Preto je na našich pleciach uchopiť príležitosť a zabezpečiť zánik ďalšieho potenciálneho dobyvateľa." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  rtr_rein_in_rebellion: "Potlačiť povstanie" # todo: NEW TRANSLATION
  rtr_rein_in_rebellion_entry: "$rtr_rein_in_rebellion$" # todo: NEW TRANSLATION
  rtr_rein_in_rebellion_entry_short: "$rtr_rein_in_rebellion$" # todo: NEW TRANSLATION
@@ -290,7 +290,7 @@
  rtr_demand_occupied_territories_entry_short: "$rtr_demand_occupied_territories$" # todo: NEW TRANSLATION
  rtr_demand_occupied_territories_desc: "Žiadať všetky [Concept('occupied','okupované')|e] lokality od cieľovej [Concept('country','krajiny')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  rtr_demand_occupied_territories_tt: "Každá [loser.GetAdjective] [Concept('location','lokalita')|e] obsadená [winner.GetName] bude zabraná [winner.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- rtr_demand_occupied_territories_no_winner_loser_tt: "Akékoľvek [Concept('location','lokalita')|e], ktoré víťaz obsadí od porazeného, sú zabavené." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ rtr_demand_occupied_territories_no_winner_loser_tt: "Akákoľvek [Concept('location','lokalita')|e], ktoré víťaz obsadí od porazeného, sú zabavené." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  rtr_demand_all_chinese_territories: "Požadovať všetky čínske územia" # todo: NEW TRANSLATION
  rtr_demand_all_chinese_territories_entry: "$rtr_demand_all_chinese_territories$" # todo: NEW TRANSLATION
  rtr_demand_all_chinese_territories_entry_short: "$rtr_demand_all_chinese_territories$" # todo: NEW TRANSLATION
@@ -349,7 +349,7 @@
  peace_claim_delhi: "Požadovať [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  peace_claim_delhi_entry: "$peace_claim_delhi$" # todo: NEW TRANSLATION
  peace_claim_delhi_entry_short: "$peace_claim_delhi$" # todo: NEW TRANSLATION
- peace_claim_delhi_desc: "Požadovať [TARGET_COUNTRY.GetFlavorRank] [TARGET_COUNTRY.GetName] pre dynastiu [COUNTRY.GetGovernment.GetRuler.GetDynasty]!" # todo: NEW TRANSLATION
+ peace_claim_delhi_desc: "Požadovať [TARGET_COUNTRY.GetFlavorRank] [SKCountry(TARGET_COUNTRY,'G')] pre dynastiu [COUNTRY.GetGovernment.GetRuler.GetDynasty]!" # todo: NEW TRANSLATION
  peace_reintegrate_revolter: "Potlačiť [TARGET_COUNTRY.GetAdjective] povstanie" # todo: NEW TRANSLATION
  peace_reintegrate_revolter_entry: "$peace_reintegrate_revolter$" # todo: NEW TRANSLATION
  peace_reintegrate_revolter_entry_short: "$peace_reintegrate_revolter$" # todo: NEW TRANSLATION
@@ -421,7 +421,7 @@
  league_of_public_weal_appanage_victory_desc: "Kniežatá dosiahnu svoje víťazstvo, prinútia korunu skloniť sa a vzdať sa moci." # todo: NEW TRANSLATION
  league_of_public_weal_royalist_victory_desc: "Kráľ zvíťazí, poníži kniežatá a obnoví kráľovskú moc nad kráľovstvom." # todo: NEW TRANSLATION
  peace_leave_the_hre_desc: "[GetUniqueInternationalOrganization('hre').GetName] nás už nebude považovať za svojich poddaných. Naše územia budú stáť mimo cisárskeho práva a ochrany." # todo: NEW TRANSLATION
- peace_nanbokuchou_force_imperial_abdication_desc: "Budú rozpustení. Ich ľudia budú nariadení, aby sa uchýlili na dvor [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderCountry.GetName]." # todo: CHANGED
+ peace_nanbokuchou_force_imperial_abdication_desc: "Budú rozpustení. Ich ľudia budú nariadení, aby sa uchýlili na dvor [SKCountry(GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderCountry,'G')]." # todo: CHANGED
  punish_chinese_expedition_foes_desc: "Potrestáme ich za zasahovanie do našej Plavby za pokladmi. Budú vystavení svetu ako príklad, čím posilníme našu prestíž, zatiaľ čo na ich mená zosypeme hanbu." # todo: CHANGED
  chi_recapture_emperor_desc: "Cisár bude oslobodený a vrátený na svoj trón, a tí, ktorí ho uväznili, zažijú horkú hanbu." # todo: NEW TRANSLATION
  reinstate_the_monarchy_desc: "Monarchia povstane znova, zvrhnúc revolucionárov, ktorí usilovali o koniec kráľovskej línie." # todo: NEW TRANSLATION
