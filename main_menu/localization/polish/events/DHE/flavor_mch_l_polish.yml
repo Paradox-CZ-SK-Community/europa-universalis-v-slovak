@@ -6,7 +6,7 @@
  flavor_mch.1.b: "Preferujeme konzervatívne reformy." # todo: NEW TRANSLATION
  flavor_mch.2.title: "Sedem krívd" # todo: NEW TRANSLATION
  flavor_mch.2.entry: "$flavor_mch.2.title$" # todo: NEW TRANSLATION
- flavor_mch.2.desc: "Po stáročia náš ľud žil pod topánkou dynastie, ktorá vládne [target_country.GetName]. Po stáročia sme boli podrobení ich moci a ponižovaní nariadeniami z odľahlých dvorov, ktoré sú v rozpore s tým, kým sme.\n\nNáš ľud je teraz zjednotený a sme pripravení obrátiť kormidlo. Manifest obsahujúci sedem krívd, ktorým náš ľud trpel, bol nahlas prečítaný naším [ROOT.GetCountry.GetGovernment.GetRulerTitle] pred naším [ROOT.GetCountry.GetGovernment.GetCourtTitle], vyhlasujúc, že sa čoskoro dostaneme do vojny s [target_country.GetNameWithNoTooltip].\n\nBuď my, alebo oni." # todo: NEW TRANSLATION
+ flavor_mch.2.desc: "Po stáročia náš ľud žil pod topánkou dynastie, ktorá vládne [target_country.GetName]. Po stáročia sme boli podrobení ich moci a ponižovaní nariadeniami z odľahlých dvorov, ktoré sú v rozpore s tým, kým sme.\n\nNáš ľud je teraz zjednotený a sme pripravení obrátiť kormidlo. Manifest obsahujúci sedem krívd, ktorým náš ľud trpel, bol nahlas prečítaný naším [ROOT.GetCountry.GetGovernment.GetRulerTitle] pred naším [ROOT.GetCountry.GetGovernment.GetCourtTitle], vyhlasujúc, že sa čoskoro dostaneme do vojny s [SKCountryNoTooltip(target_country,'I')].\n\nBuď my, alebo oni." # todo: NEW TRANSLATION
  flavor_mch.2.a: "Sme pripravení zaútočiť." # todo: NEW TRANSLATION
  flavor_mch.3.title: "Reformy [ROOT.GetCountry.GetAdjectiveWithNoTooltip] armády" # todo: NEW TRANSLATION
  flavor_mch.3.entry: "$flavor_mch.3.title$" # todo: NEW TRANSLATION
@@ -30,7 +30,7 @@
  map_QNG: "$QNG$ žltá" # todo: NEW TRANSLATION
  flavor_mch.6.title: "[ShowLawNameWithNoTooltip('mch_queue_hair')]" # todo: NEW TRANSLATION
  flavor_mch.6.entry: "$mch_queue_hair$" # todo: NEW TRANSLATION
- flavor_mch.6.desc: "So [ROOT.GetCountry.GetAdjective] elitou na čele [GetInternationalOrganization('middle_kingdom').GetName] teraz menšina [ShowCultureGroupName('jurchen_group')] vládne nad väčšinou [ShowCultureGroupName('chinese_group')]. Táto znepokojujúca situácia hlboko trápi [target_character.GetName], ktorý verí, že pád [GetCountry('YUA').GetName] a dynastií Jin bol spôsobený ich asimiláciou. Preto [target_character.GetSheHe] podporuje politiku [ShowPolicyName('enforce_queue_hair')], hoci veľká časť [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] radí [target_character.GetHerHim], aby sa držal predstavy [ShowPolicyName('queue_hair_status_quo')]." # todo: CHANGED
+ flavor_mch.6.desc: "So [ROOT.GetCountry.GetAdjective] elitou na čele [GetInternationalOrganization('middle_kingdom').GetName] teraz menšina [ShowCultureGroupName('jurchen_group')] vládne nad väčšinou [ShowCultureGroupName('chinese_group')]. Táto znepokojujúca situácia hlboko trápi [target_character.GetName], ktorý verí, že pád [SKCountry(GetCountry('YUA'),'G')] a dynastií Jin bol spôsobený ich asimiláciou. Preto [target_character.GetSheHe] podporuje politiku [ShowPolicyName('enforce_queue_hair')], hoci veľká časť [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] radí [target_character.GetHerHim], aby sa držal predstavy [ShowPolicyName('queue_hair_status_quo')]." # todo: CHANGED
  flavor_mch.6.a: "Uveďme do platnosti [ShowLawNameWithNoTooltip('mch_queue_hair')]." # todo: NEW TRANSLATION
  flavor_mch.6.b: "To neboli chyby, ale prispôsobenie sa okolnostiam!" # todo: NEW TRANSLATION
  flavor_mch.7.title: "[target_character.GetNameWithNoTooltip] Drak-Tiger" # todo: NEW TRANSLATION
@@ -55,10 +55,10 @@
  flavor_mch.10.a: "Vyžadujeme poklonu!" # todo: NEW TRANSLATION
  flavor_mch.10.b: "Budú skrotení v pravý čas." # todo: NEW TRANSLATION
  mch_benefits_of_subjugating_korea: "Máme 25 rokov na to, aby sme [target_country.GetName] urobili naším [Concept('subject','vazalom')|e]. Ak sa nám to podarí, [ShowGovernmentReformName('warring_state')] nám poskytne ďalšie výhody." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- flavor_mch.11.success_title: "Pád [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_mch.11.success_title: "Pád [SKCountryNoTooltip(target_country,'G')]" # todo: NEW TRANSLATION
  flavor_mch.11.failure_title: "[target_country.GetNameWithNoTooltip] odoláva" # todo: NEW TRANSLATION
  flavor_mch.11.success_desc: "Kampaň na podrobenie [target_country.GetName] bola ohromným úspechom. Ustanovili sme sa ako praví držitelia [GetInternationalOrganization('middle_kingdom').GetName], a pri takomto predvedení sily sa ďalší vzdorovití panovníci sklaniajú pred naším [ROOT.GetCountry.GetGovernment.GetRulerTitle]." # todo: NEW TRANSLATION
- flavor_mch.11.failure_desc: "Zlyhali sme v tom, aby sme [target_country.GetAdjective] dokázali, akí sme skutočne mocní. V očiach ľudu [ShowCultureGroupName('chinese_group')] sme len posmech a byrokrati [target_country.GetNameWithNoTooltip] stále pevne stoja v [target_country.GetCapital.GetName]." # todo: NEW TRANSLATION
+ flavor_mch.11.failure_desc: "Zlyhali sme v tom, aby sme [target_country.GetAdjective] dokázali, akí sme skutočne mocní. V očiach ľudu [ShowCultureGroupName('chinese_group')] sme len posmech a byrokrati [SKCountryNoTooltip(target_country,'G')] stále pevne stoja v [target_country.GetCapital.GetName]." # todo: NEW TRANSLATION
  flavor_mch.11.a: "To sa zapíše do dejín." # todo: NEW TRANSLATION
  mch_improve_warring_state_gov_reform: "[ShowGovernmentReformName('warring_state')] nám poskytne ďalšie výhody." # todo: NEW TRANSLATION
  flavor_mch.12.title: "[ShowGovernmentReformNameWithNoTooltip('lifan_yuan')]" # todo: NEW TRANSLATION

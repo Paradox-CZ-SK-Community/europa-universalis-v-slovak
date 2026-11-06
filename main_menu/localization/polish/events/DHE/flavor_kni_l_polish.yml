@@ -1,7 +1,7 @@
 ﻿l_polish:
  flavor_kni.3.title: "Veľká karaka z [ShowLocationNameWithNoTooltip('alexandria')]" # todo: NEW TRANSLATION
  flavor_kni.3.entry: "Veľká karaka z Alexandrie" # todo: NEW TRANSLATION
- flavor_kni.3.desc: "Malá, no zdatná flotila [ROOT.GetCountry.GetName] bola storočia postrachom rôznych [ShowReligionAdjective('muslim')] nepriateľov. Udržiavanie vôd čistých od nepriateľských korzárov, ako aj zajímanie [ShowReligionAdjective('muslim')] obchodných lodí udržiavalo kasy na [ROOT.GetCountry.GetCapital.GetName] plné a [ShowReligionAdjective('muslim')] námorníkov v hrôze. Jednou z najslávnejších udalostí bolo zajatie Veľkej karaky z [ShowLocationName('alexandria')] v [GetCurrentYear], ktorá bola naplnená obrovským bohatstvom." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_kni.3.desc: "Malá, no zdatná flotila [SKCountry(ROOT.GetCountry,'G')] bola storočia postrachom rôznych [ShowReligionAdjective('muslim')] nepriateľov. Udržiavanie vôd čistých od nepriateľských korzárov, ako aj zajímanie [ShowReligionAdjective('muslim')] obchodných lodí udržiavalo kasy na [ROOT.GetCountry.GetCapital.GetName] plné a [ShowReligionAdjective('muslim')] námorníkov v hrôze. Jednou z najslávnejších udalostí bolo zajatie Veľkej karaky z [ShowLocationName('alexandria')] v [GetCurrentYear], ktorá bola naplnená obrovským bohatstvom." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_kni.3.a: "Božstvo nám naklonené!" # todo: NEW TRANSLATION
  opinion_captured_alexandria_great_carrack: "Zajali Veľkú karaku z Alexandrie" # todo: NEW TRANSLATION
  flavor_kni.4.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -22,7 +22,7 @@
  spa_refused_ceding_malta: "Odmietli postúpiť Maltu Rytierom" # todo: NEW TRANSLATION
  flavor_kni.7.title: "Preklad Kroniky" # todo: NEW TRANSLATION
  flavor_kni.7.entry: "$flavor_kni.7.title$" # todo: NEW TRANSLATION
- flavor_kni.7.desc: "#italic Kronika Morey#! je kronika, ktorá podrobne opisuje vznik #italic Frankokratia#! v [ShowScriptedGeographyName('greece_geography')], pokrývajúca veľkú časť 13. storočia po štvrtej križiackej výprave. Hoci [GetCountry('LAT').GetLongName] možno padla do rúk [GetCountry('BYZ').GetLongName], iné štáty stále existujú, vrátane [ROOT.GetCountry.GetName]. Nechajme ju preložiť do nášho jazyka a súčasne rozšíriť dielo tak, aby zahŕňalo našu históriu." # todo: CHANGED
+ flavor_kni.7.desc: "#italic Kronika Morey#! je kronika, ktorá podrobne opisuje vznik #italic Frankokratia#! v [ShowScriptedGeographyName('greece_geography')], pokrývajúca veľkú časť 13. storočia po štvrtej križiackej výprave. Hoci [GetCountry('LAT').GetLongName] možno padla do rúk [GetCountry('BYZ').GetLongName], iné štáty stále existujú, vrátane [SKCountry(ROOT.GetCountry,'G')]. Nechajme ju preložiť do nášho jazyka a súčasne rozšíriť dielo tak, aby zahŕňalo našu históriu." # todo: CHANGED
  flavor_kni.7.a: "Nechajme to preložiť." # todo: NEW TRANSLATION
  flavor_kni.7.b: "Nestraťme čas s tým." # todo: NEW TRANSLATION
  flavor_kni.8.title: "Chrám Najsvätejšej Trojice" # todo: NEW TRANSLATION
@@ -38,7 +38,7 @@
  flavor_kni.9.b: "Nemusíme zostať len v obrane." # todo: NEW TRANSLATION
  flavor_kni.10.title: "Pirátstvo [target_country.GetCulture.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_kni.10.entry: "Turecké pirátstvo v Egejskom mori" # todo: NEW TRANSLATION
- flavor_kni.10.desc: "S vytvorením #italic Frankokratia#! v južnom [ShowRegionName('balkan_region')] a následným rozšírením obchodu Republik obchodníkov z [ShowRegionName('italy_region')], počet obchodných lodí prechádzajúcich [ShowProvinceDefinitionName('aegean_sea_province')] v posledných desaťročiach neustále rástol. Takéto bohatstvo však priťahuje našich nepriateľov, ktorí sa nás snažia škodiť všemožnými prostriedkami. Preto sa naši náboženskí nepriatelia v [target_country.GetName] rozhodli najať korzárov, ktorí teraz otvorene napádajú [ROOT.GetCountry.GetReligion.GetGroup.GetAdjective] lodnú dopravu." # todo: NEW TRANSLATION
+ flavor_kni.10.desc: "S vytvorením #italic Frankokratia#! v južnom [ShowRegionName('balkan_region')] a následným rozšírením obchodu Republik obchodníkov z [ShowRegionName('italy_region')], počet obchodných lodí prechádzajúcich [ShowProvinceDefinitionName('aegean_sea_province')] v posledných desaťročiach neustále rástol. Takéto bohatstvo však priťahuje našich nepriateľov, ktorí sa nás snažia škodiť všemožnými prostriedkami. Preto sa naši náboženskí nepriatelia v [SKCountry(target_country,'L')] rozhodli najať korzárov, ktorí teraz otvorene napádajú [ROOT.GetCountry.GetReligion.GetGroup.GetAdjective] lodnú dopravu." # todo: NEW TRANSLATION
  flavor_kni.10.a: "Potrestáme ich!" # todo: NEW TRANSLATION
  flavor_kni.11.title: "Fidei Defensor" # todo: NEW TRANSLATION
  flavor_kni.11.entry: "$flavor_kni.11.title$" # todo: NEW TRANSLATION
@@ -78,7 +78,7 @@
  flavor_kni.16.a: "Nemôžeme ich zastaviť." # todo: NEW TRANSLATION
  flavor_kni.16.b: "Potupme ich činy a obnovme disciplínu." # todo: NEW TRANSLATION
  flavor_kni.16.c: "Prehliadnime to, ak sa podelia o korisť." # todo: NEW TRANSLATION
- flavor_kni.16.historical_info: "Keď sa Rytieri hospitalieri usadili na Malte, čelili narastajúcim ekonomickým problémom. Ich tradičné zdroje príjmov sa zmenšili a finančné bremená udržiavania flotily na hliadkovanie Stredozemia sa zväčšovali. V reakcii na to mnohí prešli k korzárčeniu, plenili moslimské obchodné lode pod rúškom obrany kresťanstva. Postupom času niektorí rytieri prešli k pirátstvu ako životnému štýlu, žijúc v luxuse z ukořistenej korisťi, a dokonca sa pridávali k námorníctvam Francúzska a Španielska hľadajúc bohatstvo a dobrodružstvo." # todo: NEW TRANSLATION
+ flavor_kni.16.historical_info: "Keď sa Rytieri hospitalieri usadili na Malte, čelili narastajúcim ekonomickým problémom. Ich tradičné zdroje príjmov sa zmenšili a finančné bremená udržiavania flotily na hliadkovanie Stredozemia sa zväčšovali. V reakcii na to mnohí prešli k korzárčeniu, plenili moslimské obchodné lode pod rúškom obrany kresťanstva. Postupom času niektorí rytieri prešli k pirátstvu ako životnému štýlu, žijúc v luxuse z ukoristenej korisťi, a dokonca sa pridávali k námorníctvam Francúzska a Španielska hľadajúc bohatstvo a dobrodružstvo." # todo: CHANGED (predtym: Keď sa Rytieri hospitalieri usadili na Malte, čelili narastajúcim ekonomickým problémom. Ich tradičné zdroje príjmov sa )
  flavor_kni.17.title: "Dobytie [ShowLocationNameWithNoTooltip('tripoli')]" # todo: NEW TRANSLATION
  flavor_kni.17.entry: "Dobytie Tripolisu" # todo: NEW TRANSLATION
  flavor_kni.17.desc: "Zástavy [ROOT.GetCountry.GetFlavorRank] teraz vlajú nad [ShowLocationName('tripoli')], tvrdo získanou baštou kresťanstva na pobreží [ShowContinentName('africa')]. Hoci zabezpečenie [ShowLocationNameWithNoTooltip('tripoli')] bolo veľkým víťazstvom, vláda nad ním môže byť oveľa väčšou výzvou. [ShowLocationNameWithNoTooltip('tripoli')] je obkolesená nepriateľskými mocnosťami a jej obrany zostávajú slabé proti neustálemu nebezpečenstvu pirátov a korzárov. Guarnizón je na hrane a niektorí pochybujú, či naozaj dokážeme udržať tento vzdialený predmostok." # todo: NEW TRANSLATION
@@ -86,7 +86,7 @@
  flavor_kni.17.b: "Radšej vylepšime jej opevnenia." # todo: NEW TRANSLATION
  flavor_kni.17.c: "Investujme do infraštruktúry." # todo: NEW TRANSLATION
  flavor_kni.17.d: "Jeho prístav rozkvitne pod našou vládou!" # todo: NEW TRANSLATION
- flavor_kni.17.historical_info: "Rytieri získali kontrolu nad Tripolisom v roku 1530, keď cisár Karel V. im mesto spolu s Maltou a Gozom daroval. Ich vláda nad Tripolisom však bola plná ťažkostí. Mesto bolo izolované, slabo bránené a obklopené nepriateľskými silami. Rád mal problém udržať kontrolu, čelil častým nájazdom a povstaniam. V roku 1551 Osmanská ríša spustila veľký útok, prelomila guarnizón a prinútila Rytierov kapitulovať." # todo: NEW TRANSLATION
+ flavor_kni.17.historical_info: "Rytieri získali kontrolu nad Tripolisom v roku 1530, keď cisár Karol V. im mesto spolu s Maltou a Gozom daroval. Ich vláda nad Tripolisom však bola plná ťažkostí. Mesto bolo izolované, slabo bránené a obklopené nepriateľskými silami. Rád mal problém udržať kontrolu, čelil častým nájazdom a povstaniam. V roku 1551 Osmanská ríša spustila veľký útok, prelomila guarnizón a prinútila Rytierov kapitulovať." # todo: CHANGED (predtym: Rytieri získali kontrolu nad Tripolisom v roku 1530, keď cisár Karel V. im mesto spolu s Maltou a Gozom daroval. Ich vlá)
  flavor_kni.18.title: "História Hospitalierov" # todo: NEW TRANSLATION
  flavor_kni.18.entry: "$flavor_kni.18.title$" # todo: NEW TRANSLATION
  flavor_kni.18.desc: "[target_character.GetName], oddaný člen nášho [ROOT.GetCountry.GetFlavorRank], vyjadril záujem zachovať našu minulosť pre budúce generácie. Predstavuje si veľkolepú [ShowWorkOfArtTypeName('chronicle')], ktorá podrobne zachytí históriu [ROOT.GetCountry.GetFlavorRank], jej zápasy a víťazstvá. Takéto dielo však vyžaduje značné prostriedky na výskum, cesty a vydanie jeho práce." # todo: CHANGED
@@ -98,7 +98,7 @@
  flavor_kni.110.entry: "$flavor_kni.110.title$" # todo: NEW TRANSLATION
  flavor_kni.110.desc: "V roku 1291 padla [ShowLocationName('acre')] do rúk [GetCountry('MAM').GetLongName] a spolu s ňou aj naša posledná opora v územiach Svätého mesta. Naša nádej a viera boli vystavené skúške, keď nás pohania zatlačili späť; našim krvavým bojom zostali len hromady tiel a hanba.\n\nOdvtedy sme sa stiahli na [ShowProvinceDefinitionName('cyprus_province')] a neskôr na [ShowLocationName('rodos')] v snahe získať rovnováhu a napokon znovu dobyť územia, ktoré nám právom patria. Avšak s pribúdajúcim časom a odchodom starej gardy, ktorá sa zúčastnila obliehania [ShowLocationNameWithNoTooltip('acre')], mnohé hlasy na našom dvore začali spochybňovať povahu nášho Rádu..." # todo: NEW TRANSLATION
  flavor_kni.110.a: "Stále sme križiaci v srdci!" # todo: NEW TRANSLATION
- pap_gets_flavor_kni.111_tt: "Udalosť '#Y Obnovenie križiackych výprav Rytierov#!' sa stane pre [target_pope_country.GetName]" # todo: NEW TRANSLATION
+ pap_gets_flavor_kni.111_tt: "Udalosť '#Y Obnovenie križiackych výprav Rytierov#!' sa stane pre [SKCountry(target_pope_country,'A')]" # todo: NEW TRANSLATION
  flavor_kni.110.b: "Pozerajme sa dovnútra, musíme rozvíjať naše pevnosti." # todo: NEW TRANSLATION
  lose_100_opinion_with_pope_tt: "Vzťahy medzi nami a [target_pope_country.GetName] sa zhoršia o #R -100#!" # todo: NEW TRANSLATION
  kni_receive_stronger_events_about_building_capital_tt: " Potenciálne udalosti o rozvoji našej metropoly budú silnejšie" # todo: NEW TRANSLATION
@@ -107,7 +107,7 @@
  flavor_kni.111.desc: "Posledné storočia v [ShowAreaName('levant_area')] boli pokryté krvou, prachom a potom, keď sme sa snažili vytrhnúť kontrolu Svätého mesta z rúk našich [ShowReligionGroupAdjective('muslim')] nepriateľov. Napriek našim zlyhaniam boli naše činy zvečnené v histórii a slúžia ako inšpirácia mnohým budúcim rytierom a bojovníkom, ktorí chcú prijať túto vec. Preto sa na nás obrátili [GetCountry('KNI').GetName] s návrhom sponzorovať obnovenú križiacku výpravu, novú snahu získať späť, čo nám právom patrí." # todo: NEW TRANSLATION
  flavor_kni.111.a: "Prekvapenie, ale vítané." # todo: NEW TRANSLATION
  flavor_kni.111.b: "Na to si nemôžeme dovoliť prostriedky." # todo: NEW TRANSLATION
- opinion_deteriorates_and_gets_event_tt: "Udalosť '#italic A Denied Purpose#!' sa stane pre [GetCountry('KNI').GetNameWithNoTooltip] a ich názor na nás sa zhorší" # todo: NEW TRANSLATION
+ opinion_deteriorates_and_gets_event_tt: "Udalosť '#italic A Denied Purpose#!' sa stane pre [SKCountryNoTooltip(GetCountry('KNI'),'A')] a ich názor na nás sa zhorší" # todo: NEW TRANSLATION
  flavor_kni.112.title: "Odmietnutý cieľ" # todo: NEW TRANSLATION
  flavor_kni.112.entry: "$flavor_kni.112.title$" # todo: NEW TRANSLATION
  flavor_kni.112.desc: "Naša misia v Zemi svätej vždy spočívala v ochrane jej ľudí pred pohanmi a nepriateľmi. Avšak nedávne odmietnutie Svätého Otca podporiť našu výzvu na križiacku výpravu zanechalo horkú pachuť v našich ústach, smutné zrádectvo..." # todo: NEW TRANSLATION
@@ -148,8 +148,8 @@
  kni_if_target_agrees: "Ak [target_country.GetName] súhlasí:" # todo: NEW TRANSLATION
  flavor_kni.1000.b: "Nemáme o to záujem." # todo: NEW TRANSLATION
  flavor_kni.1000.historical_info: "V roku 1651, pod vedením veľmajstra Giovanni Paola Lascarisa, Rytieri hospitalieri rozšírili svoj vplyv mimo Stredozemia kúpou niekoľkých karibských ostrovov od francúzskej #italic Compagnie des Îles de l'Amérique#!. Patril sem Saint Christopher, Saint Martin, Saint Barthélemy a Saint Croix. Rád však zápasil s udržaním svojej pôsobnosti kvôli logistickým ťažkostiam, finančnému zaťaženiu a hrozbám zo strany konkurenčných európskych mocností. Napokon v roku 1665 Rytieri svoje karibské državy predali späť Francúzom." # todo: NEW TRANSLATION
- flavor_kni.1001.title: "Ponuka od [from_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_kni.1001.desc: "Neočakávaná žiadosť prišla od [from_country.GetName]. Hoci sú známi predovšetkým obranou Stredozemia, teraz sa snažia získať postavenie v Novom svete. Ich ponuka je jednoduchá: chcú kúpiť jedno z našich držieb v [ShowRegionName('caribbean_region')], konkrétne [target_location.GetName], aby rozšírili svoju misiu." # todo: NEW TRANSLATION
+ flavor_kni.1001.title: "Ponuka od [SKCountryNoTooltip(from_country,'G')]" # todo: NEW TRANSLATION
+ flavor_kni.1001.desc: "Neočakávaná žiadosť prišla od [SKCountry(from_country,'G')]. Hoci sú známi predovšetkým obranou Stredozemia, teraz sa snažia získať postavenie v Novom svete. Ich ponuka je jednoduchá: chcú kúpiť jedno z našich držieb v [ShowRegionName('caribbean_region')], konkrétne [target_location.GetName], aby rozšírili svoju misiu." # todo: NEW TRANSLATION
  flavor_kni.1001.a: "Pokračujme v predaji ostrovov." # todo: NEW TRANSLATION
  flavor_kni.1001.b: "S úplným výnimkami!" # todo: NEW TRANSLATION
  flavor_kni.1002.title: "Kúpa [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -157,7 +157,7 @@
  flavor_kni.1002.desc: "Naše rokovania priniesli ovocie - [target_location.GetName] je teraz pod našou kontrolou! Táto pevnosť v [ShowRegionName('caribbean_region')] bude slúžiť ako základ pre náš [ROOT.GetCountry.GetFlavorRank], čo nám umožní rozšíriť vplyv do Nového sveta." # todo: NEW TRANSLATION
  flavor_kni.1002.a: "[ROOT.GetCountry.Custom('common_string_positive')]" # todo: NEW TRANSLATION
  flavor_kni.1002.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
- flavor_kni.1002.a.t: "Získali sme kontrolu nad [target_location.GetName] od [target_country.GetName]" # todo: NEW TRANSLATION
+ flavor_kni.1002.a.t: "Získali sme kontrolu nad [target_location.GetName] od [SKCountry(target_country,'G')]" # todo: NEW TRANSLATION
  flavor_kni.1003.title: "Neúspešná transakcia" # todo: NEW TRANSLATION
  flavor_kni.1003.entry: "$flavor_kni.1003.title$" # todo: NEW TRANSLATION
  flavor_kni.1003.desc: "Naša ponuka bola odmietnutá. [target_country.GetName] uznal [target_location.GetName] za príliš cenný na to, aby sa s ním rozlúčili, čím naše plány na križiacku výpravu do Nového sveta zostali nenaplnené. Zatiaľ čo niektorí z nás tvrdia, že by sme mali naďalej hľadať ďalšiu príležitosť, iní to berú ako znamenie, že by sme sa mali sústrediť na Stredozemie." # todo: NEW TRANSLATION
@@ -172,7 +172,7 @@
  flavor_kni.2000.b: "Zachováme naše kolónie!" # todo: NEW TRANSLATION
  flavor_kni.2000.historical_info: "V roku 1665 Rád johanitov predal svoje karibské ostrovy Saint Christopher, Saint Martin, Saint Barthélemy a Saint Croix Francúzom kvôli obrovským problémom s udržiavaním svojej koloniálnej prítomnosti. Ostrovy sa ukázali byť ťažko brániteľné proti útokom domorodcov, Angličanov a Holanďanov, a Rád postrádal potrebné finančné a vojenské prostriedky na ich udržanie." # todo: NEW TRANSLATION
  flavor_kni.2001.title: "Predaj kolónií" # todo: NEW TRANSLATION
- flavor_kni.2001.desc: "Náš [ROOT.GetCountry.GetGovernment.GetCourtTitle] bol oslovený neočakávanou ponukou od [from_country.GetName]. Odvolávajúc sa na ekonomické obmedzenia a strategické obavy, chcú nám predať svoje državy v [ShowRegionName('caribbean_region')]. Tieto ostrovy, hoci malé, by mohli slúžiť ako cenné základne pre obchod, obranu a expanziu v Novom svete." # todo: NEW TRANSLATION
+ flavor_kni.2001.desc: "Náš [ROOT.GetCountry.GetGovernment.GetCourtTitle] bol oslovený neočakávanou ponukou od [SKCountry(from_country,'G')]. Odvolávajúc sa na ekonomické obmedzenia a strategické obavy, chcú nám predať svoje državy v [ShowRegionName('caribbean_region')]. Tieto ostrovy, hoci malé, by mohli slúžiť ako cenné základne pre obchod, obranu a expanziu v Novom svete." # todo: NEW TRANSLATION
  flavor_kni.2001.a: "Súhlasíme s kúpou ostrovov." # todo: NEW TRANSLATION
  flavor_kni.2001.b: "Odmietnuť ponuku." # todo: NEW TRANSLATION
  flavor_kni.2002.title: "[target_country.GetNameWithNoTooltip] kúpil naše kolónie" # todo: NEW TRANSLATION

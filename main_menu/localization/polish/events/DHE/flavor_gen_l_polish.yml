@@ -1,19 +1,19 @@
 ﻿l_polish:
  flavor_gen.1.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] obchodná republika" # todo: NEW TRANSLATION
  flavor_gen.1.entry: "$flavor_gen.1.title$" # todo: NEW TRANSLATION
- flavor_gen.1.desc: "Od Guglielma Boccanegraho prevratu v roku 1257 má štát [ROOT.GetCountry.GetName] za hlavu štátu #italic Capitano del popolo#!. Postupom času bola táto funkcia rozdelená do [ShowGovernmentReformName('diarchy_republic')], pričom rody [ShowDynastyName('spinola_dynasty')] a [ShowDynastyName('doria_dynasty')] vládnu krajine rovnako.\n\nAvšak #italic Capitano del popolo#! bol vždy kontroverzným postom, keď mnohí [ROOT.GetCountry.GetAdjectiveWithNoTooltip] považujú súčasnú vládu za autokraciu. Vďaka verejnému súhlasu v [GetCurrentYear] môže vláda Diarchie konečne nájsť svoj koniec." # todo: NEW TRANSLATION
+ flavor_gen.1.desc: "Od Guglielma Boccanegraho prevratu v roku 1257 má štát [SKCountry(ROOT.GetCountry,'G')] za hlavu štátu #italic Capitano del popolo#!. Postupom času bola táto funkcia rozdelená do [ShowGovernmentReformName('diarchy_republic')], pričom rody [ShowDynastyName('spinola_dynasty')] a [ShowDynastyName('doria_dynasty')] vládnu krajine rovnako.\n\nAvšak #italic Capitano del popolo#! bol vždy kontroverzným postom, keď mnohí [ROOT.GetCountry.GetAdjectiveWithNoTooltip] považujú súčasnú vládu za autokraciu. Vďaka verejnému súhlasu v [GetCurrentYear] môže vláda Diarchie konečne nájsť svoj koniec." # todo: NEW TRANSLATION
  flavor_gen.1.a: "Nech nás republika dovedie do novej zlatej éry!" # todo: NEW TRANSLATION
  flavor_gen.1.b: "Nemôžeme opustiť fungujúci systém." # todo: NEW TRANSLATION
  flavor_gen.2.title: "Liber Gazerie" # todo: NEW TRANSLATION
  flavor_gen.2.entry: "$flavor_gen.2.title$" # todo: NEW TRANSLATION
  flavor_gen.2.desc: "Gazaria je názov, ktorý [ROOT.GetCountry.GetName] dal svojim držbám na Kryme podľa ich hlavného mesta, [ShowLocationName('kaffa')]. Vzhľadom na veľkú vzdialenosť od pevniny a hranicu s Mongolmi a Tatarmi z pontských stepí je Gazaria vždy ohrozená ďalšou výpravou húfov.\n\nSpráva Gazarie bola organizovaná v roku 1313 po získaní od Mongolov. Tieto zmeny v administratíve však ešte neboli kodifikované a presadzované pomocou #italic Liber Gazerie#!." # todo: NEW TRANSLATION
  flavor_gen.2.a: "Kodifikujme #italic Liber Gazerie#!" # todo: NEW TRANSLATION
- flavor_gen.2.a.tt: "Každé [Concept('location','lokalita')|e] získa [ShowNamedValue('control_radical_bonus')|+=2%] [Concept('control','kontrola')|e] a [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_gen.2.a.tt: "Každá [Concept('location','lokalita')|e] získa [ShowNamedValue('control_radical_bonus')|+=2%] [Concept('control','kontrola')|e] a [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_gen.2.b: "Nemáme prostriedky na tieto zákony." # todo: NEW TRANSLATION
  flavor_gen.3.title: "Pád [ShowLocationNameWithNoTooltip('constantinople')]" # todo: NEW TRANSLATION
  flavor_gen.3.entry: "Pád Konštantínopola" # todo: NEW TRANSLATION
  flavor_gen.3.desc: "S pádom [ShowLocationName('constantinople')] do rúk [GetCountry('TUR').GetLongName] bol ohrozený obchod [ROOT.GetCountry.GetAdjective] z Čierneho mora. Ekonomický vplyv talianskych obchodníkov oslabil potom, čo [GetCountry('TUR').GetNameWithNoTooltip] získal kontrolu nad vtokom do mora, a posledné provincie boli stratené v roku 1455." # todo: NEW TRANSLATION
- flavor_gen.3.a: "Žiadajte voľný prístup od [GetCountry('TUR').GetNameWithNoTooltip]." # todo: CHANGED
+ flavor_gen.3.a: "Žiadajte voľný prístup od [SKCountryNoTooltip(GetCountry('TUR'),'G')]." # todo: CHANGED
  flavor_gen.3.a.entry: "Žiadajte voľný prístup od $TUR$." # todo: NEW TRANSLATION
  flavor_gen.3.a.tt: "Pošleme list žiadajúci oslobodenie od [Concept('sound_tolls','prieplavných mýt')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_gen.3.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]" # todo: NEW TRANSLATION
@@ -85,7 +85,7 @@
  variable_gen_had_fall_of_constantinople_tt: "[ShowLocationName('constantinople')] padol" # todo: NEW TRANSLATION
  flavor_gen.15.title: "Maona z Chiosu a Phocae" # todo: NEW TRANSLATION
  flavor_gen.15.entry: "$flavor_gen.15.title$" # todo: NEW TRANSLATION
- flavor_gen.15.desc: "[ShowLocationName('chios')] a [ShowLocationName('foca')] boli pod [ROOT.GetCountry.GetAdjective] suverenitou až do roku 1329, keď ich [GetCharacter('byz_andronikos_ii_palaiologos').GetName] znovu získal pre [GetCountry('BYZ').GetName]. Maona z Chiosu a Phocae, vytvorená skupinou investorov s vplyvom, má veľký záujem získať ostrov [ShowLocationNameWithNoTooltip('chios')], upevniť na ňom svoju prítomnosť a chrániť bohaté hlinité bane [ShowLocationNameWithNoTooltip('foca')]. Na takýto podnik však budú potrebovať dodatočnú finančnú podporu." # todo: NEW TRANSLATION
+ flavor_gen.15.desc: "[ShowLocationName('chios')] a [ShowLocationName('foca')] boli pod [ROOT.GetCountry.GetAdjective] suverenitou až do roku 1329, keď ich [GetCharacter('byz_andronikos_ii_palaiologos').GetName] znovu získal pre [SKCountry(GetCountry('BYZ'),'A')]. Maona z Chiosu a Phocae, vytvorená skupinou investorov s vplyvom, má veľký záujem získať ostrov [ShowLocationNameWithNoTooltip('chios')], upevniť na ňom svoju prítomnosť a chrániť bohaté hlinité bane [ShowLocationNameWithNoTooltip('foca')]. Na takýto podnik však budú potrebovať dodatočnú finančnú podporu." # todo: NEW TRANSLATION
  flavor_gen.15.a: "Udelme im prostriedky a práva." # todo: NEW TRANSLATION
  flavor_gen.15.b: "Nech si pomôžu sami." # todo: NEW TRANSLATION
  flavor_gen.16.title: "Znovudobytie východného Egejského mora" # todo: CHANGED
@@ -99,14 +99,14 @@
  gen_has_returned_chios_to_us: "Vrátili nám Chios." # todo: NEW TRANSLATION
  flavor_gen.17.title: "[arrigo_della_rocca.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_gen.17.entry: "Arrigo Della Rocca" # todo: NEW TRANSLATION
- flavor_gen.17.desc: "Hoci Korzika, zložená z provincií [ShowProvinceDefinitionName('cismonte_province')] a [ShowProvinceDefinitionName('pumonte_province')], je formálne pod suverenitou [ROOT.GetCountry.GetLongName], miestna politika ostrova tradične ovládajú päť šľachtických klanov. Jedným z nich je rod Banda dei Fuori, z ktorého vzišiel ambiciózny [arrigo_della_rocca.GetName]. Pôvodne držený ako rukojemník Janovčanmi po tom, čo bol jeho otec prinútený ho odovzdať, [arrigo_della_rocca.GetShortNameWithNoTooltip] sa pridal do armády [GetCountry('ARA').GetName] a živil sa ako žoldnier.\n\nNakoniec sa vrátil na ostrov a ostatné šľachtické klany ho zvolili za grófa Korziky s podporou [GetCountry('ARA').GetAdjectiveWithNoTooltip], čím ešte viac podrýval [ROOT.GetCountry.GetAdjectiveWithNoTooltip] autoritu nad ostrovom." # todo: NEW TRANSLATION
+ flavor_gen.17.desc: "Hoci Korzika, zložená z provincií [ShowProvinceDefinitionName('cismonte_province')] a [ShowProvinceDefinitionName('pumonte_province')], je formálne pod suverenitou [ROOT.GetCountry.GetLongName], miestna politika ostrova tradične ovládajú päť šľachtických klanov. Jedným z nich je rod Banda dei Fuori, z ktorého vzišiel ambiciózny [arrigo_della_rocca.GetName]. Pôvodne držený ako rukojemník Janovčanmi po tom, čo bol jeho otec prinútený ho odovzdať, [arrigo_della_rocca.GetShortNameWithNoTooltip] sa pridal do armády [SKCountry(GetCountry('ARA'),'G')] a živil sa ako žoldnier.\n\nNakoniec sa vrátil na ostrov a ostatné šľachtické klany ho zvolili za grófa Korziky s podporou [GetCountry('ARA').GetAdjectiveWithNoTooltip], čím ešte viac podrýval [ROOT.GetCountry.GetAdjectiveWithNoTooltip] autoritu nad ostrovom." # todo: NEW TRANSLATION
  corsican_independence_fighter: "Korzickí bojovníci za nezávislosť" # todo: NEW TRANSLATION
  arrigo_della_rocca_support_nobles_joining: "Všetci [ShowCultureName('corsican')] [ShowPopTypeName('nobles')] v [ShowProvinceDefinitionName('cismonte_province')] a [ShowProvinceDefinitionName('pumonte_province')] sa pridajú k [corsican_independence_fighter.GetName]" # todo: NEW TRANSLATION
  flavor_gen.17.a: "Udelíme mu Maona di Corsica." # todo: NEW TRANSLATION
  flavor_gen.17.b: "Potlačme ho!" # todo: NEW TRANSLATION
  flavor_gen.18.title: "[sambucuccio_dalando.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_gen.18.entry: "Sambucuccio Dalando" # todo: NEW TRANSLATION
- flavor_gen.18.desc: "Korzika vždy spôsobovala mnoho problémov [ROOT.GetCountry.GetLongName]. Jej ľud je tvrdohlavý a pri každej príležitosti túži po nezávislosti.\n\nNapriek tomu sa odmietajú pokojiť pred akýmkoľvek feudálnym pánom. Vodca jakobínskeho povstania, sedliackych vzbúr z [GetCountry('FRA').GetName] počas Storočnej vojny, [sambucuccio_dalando.GetName] a jeho spojenci začali povstanie proti [rebel_location.GetController.GetAdjective] v [rebel_location.GetName]." # todo: NEW TRANSLATION
+ flavor_gen.18.desc: "Korzika vždy spôsobovala mnoho problémov [ROOT.GetCountry.GetLongName]. Jej ľud je tvrdohlavý a pri každej príležitosti túži po nezávislosti.\n\nNapriek tomu sa odmietajú pokojiť pred akýmkoľvek feudálnym pánom. Vodca jakobínskeho povstania, sedliackych vzbúr z [SKCountry(GetCountry('FRA'),'G')] počas Storočnej vojny, [sambucuccio_dalando.GetName] a jeho spojenci začali povstanie proti [rebel_location.GetController.GetAdjective] v [rebel_location.GetName]." # todo: NEW TRANSLATION
  anti_feudal_revolters: "Protifeudálni vzbúrenci" # todo: NEW TRANSLATION
  flavor_gen.18.a: "Nech vzbúrenci odvrátia našich nepriateľov." # todo: NEW TRANSLATION
  flavor_gen.18.b: "Potrebujeme [sambucuccio_dalando.GetNameWithNoTooltip] ako nášho generála!" # todo: CHANGED (predtym: Potrebujeme Dalanda ako nášho generála!)
@@ -118,7 +118,7 @@
  flavor_gen.19.b: "Zámok sám o sebe stačí." # todo: NEW TRANSLATION
  flavor_gen.20.title: "Condottieri rodu Doria" # todo: NEW TRANSLATION
  flavor_gen.20.entry: "$flavor_gen.20.title$" # todo: NEW TRANSLATION
- flavor_gen.20.desc: "Rod [ShowDynastyName('doria_dynasty')] je starý a bohatý klan [ROOT.GetCountry.GetName]. Hoci sú väčšinou známi svojimi zásahmi do [ROOT.GetCountry.GetAdjectiveWithNoTooltip] politiky, Doria sú preslávení vedením [ShowUnitDefinitionName('a_genoese_crossbowmen')] v našich najmovaných žoldnierskych armádach.\n\nJedným z takých vojenských vodcov je [doria_commander.GetName], ktorý prejavil záujem viesť armádu [merc_army.GetName]." # todo: NEW TRANSLATION
+ flavor_gen.20.desc: "Rod [ShowDynastyName('doria_dynasty')] je starý a bohatý klan [SKCountry(ROOT.GetCountry,'G')]. Hoci sú väčšinou známi svojimi zásahmi do [ROOT.GetCountry.GetAdjectiveWithNoTooltip] politiky, Doria sú preslávení vedením [ShowUnitDefinitionName('a_genoese_crossbowmen')] v našich najmovaných žoldnierskych armádach.\n\nJedným z takých vojenských vodcov je [doria_commander.GetName], ktorý prejavil záujem viesť armádu [merc_army.GetName]." # todo: NEW TRANSLATION
  flavor_gen.20.a: "Nech velí našim vojskám." # todo: NEW TRANSLATION
  flavor_gen.20.b: "Potrebujeme jeho skúsenosti pre všetky naše armády." # todo: NEW TRANSLATION
  flavor_gen.21.title: "Janovskí kušnieri" # todo: NEW TRANSLATION
@@ -140,7 +140,7 @@
  gen_offered_opponent_crossbowmen: "Ponúkli naších nepriateľovi kušných" # todo: NEW TRANSLATION
  flavor_gen.22.c: "Nemali by sme si tieto mocnosti protivníkmi." # todo: NEW TRANSLATION
  flavor_gen.23.title: "Ponuka od [genoese_crossbowmen_seller.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_gen.23.desc: "Vojna s naším zarytým rivalom sa zdá byť dlhotrvajúcim a krvavým konfliktom o nadvládu medzi [GetCountry('FRA').GetName] a [GetCountry('ENG').GetName] – konfliktom, ktorý nesmieme prehrať!\n\nAby sme získali prevahu nad [the_enemy.GetAdjective], musíme byť otvorení vonkajším príležitostiam. Našťastie takáto príležitosť prichádza od pomerne neočakávaných [genoese_crossbowmen_seller.GetAdjective] a ich [ShowUnitDefinitionName('a_genoese_crossbowmen')], keď nám ponúkajú predať 2000 svojich najlepších mužov, aby bojovali proti [the_enemy.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ flavor_gen.23.desc: "Vojna s naším zarytým rivalom sa zdá byť dlhotrvajúcim a krvavým konfliktom o nadvládu medzi [SKCountry(GetCountry('FRA'),'I')] a [GetCountry('ENG').GetName] – konfliktom, ktorý nesmieme prehrať!\n\nAby sme získali prevahu nad [the_enemy.GetAdjective], musíme byť otvorení vonkajším príležitostiam. Našťastie takáto príležitosť prichádza od pomerne neočakávaných [genoese_crossbowmen_seller.GetAdjective] a ich [ShowUnitDefinitionName('a_genoese_crossbowmen')], keď nám ponúkajú predať 2000 svojich najlepších mužov, aby bojovali proti [the_enemy.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_gen.23.a: "Musíme túto ponuku prijať!" # todo: NEW TRANSLATION
  gain_10_a_genoese_crossbowmen: "Získajte 2000 [ShowUnitDefinitionName('a_genoese_crossbowmen')] v [genoese_crossbowmen_buyer.Capital.GetName]." # todo: NEW TRANSLATION
  flavor_gen.23.b: "Nemôžeme si to dovoliť." # todo: NEW TRANSLATION
@@ -270,7 +270,7 @@
  flavor_gen.46.b: "Poďme sa kúpať v peniazoch!" # todo: NEW TRANSLATION
  flavor_gen.46.historical_info: "Banka svätého Juraja, alebo #italic Casa delle compere e dei banchi di San Giorgio#!, bola založená v roku 1407 Janovskou republikou. Jej hlavným cieľom bolo zvládnuť rastúce výdavky a dlhy spôsobené ich vojnou proti Benátkam o hospodársku nadvládu v Stredozemí. So sídlom v #italic Palazzo San Giorgio#! slúžila ako hlavná finančná inštitúcia Janova, až do miery, že spravovala mnohé zámoorské územia krajiny, priamo alebo nepriamo. Až do jej zrušenia Napoleonom v roku 1805 banka slúžila mnohým vládcov a osobnostiam Európy, od Kryštofa Kolumba po cisára Karola V." # todo: NEW TRANSLATION
  flavor_gen.47.title: "$flavor_gen.46.title$" # todo: NEW TRANSLATION
- flavor_gen.47.desc: "Boli sme poverení, aby sme pomohli financiám [GetCountry('GEN').GetName] a určite z ich patronátu veľa získame. Sme však tiež voľní rozšíriť naše pobočky do iných krajín, a okolo je mnoho plných pokladníc, ktoré by mohli profitovať z našej správy... samozrejme za poplatok." # todo: NEW TRANSLATION
+ flavor_gen.47.desc: "Boli sme poverení, aby sme pomohli financiám [SKCountry(GetCountry('GEN'),'G')] a určite z ich patronátu veľa získame. Sme však tiež voľní rozšíriť naše pobočky do iných krajín, a okolo je mnoho plných pokladníc, ktoré by mohli profitovať z našej správy... samozrejme za poplatok." # todo: NEW TRANSLATION
  flavor_gen.47.a: "$flavor_gen.46.b$" # todo: NEW TRANSLATION
  flavor_gen.48.title: "Rozšírenie [target_art.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_gen.48.desc: "[target_art.GetName] je naším menom a sídlom. Ako také jeho pôsobivosť a veľkoleposť sa odráža na nás a na tom, ako nás vnímajú ľudia. Boli predložené plány na rozšírenie budovy, aby lepšie vyhovovala našim rastúcim aktivitám a zároveň zvýšila náš verejný obraz." # todo: NEW TRANSLATION
@@ -295,7 +295,7 @@
  flavor_gen.52.a: "Ich bohatstvo nás posilní." # todo: NEW TRANSLATION
  flavor_gen.52.b: "Uvidíme, čo prinesie osud!" # todo: NEW TRANSLATION
  flavor_gen.53.title: "$flavor_gen.52.title$" # todo: NEW TRANSLATION
- flavor_gen.53.desc: "Naša banka je teraz otvorená v srdci [GetCountry('GEN').GetName]. Poklady šľachty, obchodníkov a kniežat čakajú na naše vedenie a preukážeme, že sme hodní ich dôvery." # todo: NEW TRANSLATION
+ flavor_gen.53.desc: "Naša banka je teraz otvorená v srdci [SKCountry(GetCountry('GEN'),'G')]. Poklady šľachty, obchodníkov a kniežat čakajú na naše vedenie a preukážeme, že sme hodní ich dôvery." # todo: NEW TRANSLATION
  flavor_gen.53.a: "Účtovné knihy sú otvorené." # todo: NEW TRANSLATION
  flavor_gen.54.title: "Spinolova banka" # todo: NEW TRANSLATION
  flavor_gen.54.entry: "$flavor_gen.54.title$" # todo: NEW TRANSLATION
@@ -304,14 +304,14 @@
  flavor_gen.54.a: "Ich siete nás obohatia." # todo: NEW TRANSLATION
  flavor_gen.54.b: "Nech ich kasy rastú spolu s našimi!" # todo: NEW TRANSLATION
  flavor_gen.55.title: "$flavor_gen.54.title$" # todo: NEW TRANSLATION
- flavor_gen.55.desc: "Bankový dom [ROOT.GetCountry.GetName] je teraz založený v [GetCountry('GEN').GetName]. Vďaka našim rozsiahlym kontaktom s dvorcami Európy a veľkými stredomorskými obchodnými domami sme dobre postavení stať sa nevyhnutnými pre všetkých, ktorí hľadajú finančnú podporu." # todo: NEW TRANSLATION
+ flavor_gen.55.desc: "Bankový dom [ROOT.GetCountry.GetName] je teraz založený v [SKCountry(GetCountry('GEN'),'L')]. Vďaka našim rozsiahlym kontaktom s dvorcami Európy a veľkými stredomorskými obchodnými domami sme dobre postavení stať sa nevyhnutnými pre všetkých, ktorí hľadajú finančnú podporu." # todo: NEW TRANSLATION
  flavor_gen.55.a: "Bohatstvo prúdi k odvážnym." # todo: NEW TRANSLATION
  flavor_gen.56.title: "Pallaviciniho banka" # todo: NEW TRANSLATION
  flavor_gen.56.entry: "$flavor_gen.56.title$" # todo: NEW TRANSLATION
- flavor_gen.56.desc: "Rod [GetDynasty('pallavicini_dynasty').GetName], ďalší z veľkých šľachtických domov [ROOT.GetCountry.GetName], si vyrúbal majetok obchodom a diplomaciou. Teraz sa snažia formalizovať svoje finančné aktivity založením bankového domu v [pallavicino_bank_hq.GetName], ktorý dokáže nasmerovať ich zdroje a kontakty do ziskových podnikov pre nich i pre [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
+ flavor_gen.56.desc: "Rod [GetDynasty('pallavicini_dynasty').GetName], ďalší z veľkých šľachtických domov [SKCountry(ROOT.GetCountry,'G')], si vyrúbal majetok obchodom a diplomaciou. Teraz sa snažia formalizovať svoje finančné aktivity založením bankového domu v [pallavicino_bank_hq.GetName], ktorý dokáže nasmerovať ich zdroje a kontakty do ziskových podnikov pre nich i pre [ROOT.GetCountry.GetFlavorRank]." # todo: NEW TRANSLATION
  flavor_gen.56.historical_info: "Pallavicino boli prominentným genovským šľachtickým rodom a jedným z vplyvných #italic alberghi#! republiky. Pôsobili v bankovníctve a obchode po celom Stredomorí a severnej Európe, poskytujúc úvery španielskej korune a iným panovníkom. Ich bankové aktivity pomohli udržať tok kapitálu, ktorý urobil Janov jedným z finančných centier raného novoveku." # todo: NEW TRANSLATION
  flavor_gen.56.a: "Naše bohatstvo rastie s každou novou bankou." # todo: NEW TRANSLATION
  flavor_gen.56.b: "Šťastie praje odvážnym!" # todo: NEW TRANSLATION
  flavor_gen.57.title: "$flavor_gen.56.title$" # todo: NEW TRANSLATION
- flavor_gen.57.desc: "Náš bankový dom je teraz otvorený v [GetCountry('GEN').GetName]. Meno [GetDynasty('pallavicini_dynasty').GetName] vždy predstavovalo spoľahlivosť a dokonalosť, a my zabezpečíme, aby náš [ROOT.GetCountry.GetFlavorRank] zodpovedal tejto povesťi." # todo: NEW TRANSLATION
+ flavor_gen.57.desc: "Náš bankový dom je teraz otvorený v [SKCountry(GetCountry('GEN'),'L')]. Meno [GetDynasty('pallavicini_dynasty').GetName] vždy predstavovalo spoľahlivosť a dokonalosť, a my zabezpečíme, aby náš [ROOT.GetCountry.GetFlavorRank] zodpovedal tejto povesťi." # todo: NEW TRANSLATION
  flavor_gen.57.a: "Prosperita je naša." # todo: NEW TRANSLATION

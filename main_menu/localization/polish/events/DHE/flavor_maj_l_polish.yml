@@ -31,17 +31,17 @@
  press_for_subjugation_tt: "Ak prijmú, budeme trvať na ich podrobení." # todo: NEW TRANSLATION
  do_not_press_for_subjugation_tt: "Ak prijmú, #R nebudeme#! tlačiť na ich podrobenie." # todo: NEW TRANSLATION
  flavor_maj.6.title: "Mier uzavretý manželstvom?" # todo: NEW TRANSLATION
- flavor_maj.6.desc: "Už dlhší čas nám neuniká, že vládca [target_country.GetName] zosilnel, keď sa jeho vplyv rozšíril po [ShowRegionName('indonesia_region')]. V snahe zabezpečiť naše spoločné hranice, požiadali o ruku [target_character.GetName] pre [target_character3.GetName]. Je to klam, ktorý legitimizuje nárok na podrobenie, alebo úprimný znak mieru a pokoja do budúcnosti?" # todo: NEW TRANSLATION
+ flavor_maj.6.desc: "Už dlhší čas nám neuniká, že vládca [SKCountry(target_country,'G')] zosilnel, keď sa jeho vplyv rozšíril po [ShowRegionName('indonesia_region')]. V snahe zabezpečiť naše spoločné hranice, požiadali o ruku [target_character.GetName] pre [target_character3.GetName]. Je to klam, ktorý legitimizuje nárok na podrobenie, alebo úprimný znak mieru a pokoja do budúcnosti?" # todo: NEW TRANSLATION
  flavor_maj.6.a: "Dobre, dôverujeme im." # todo: NEW TRANSLATION
  flavor_maj.6.b: "Svedomie nám nedovolí toto dovoliť." # todo: NEW TRANSLATION
  they_may_demand_subjugation_tt: "#italic Môžu požadovať naše podrobenie#!" # todo: NEW TRANSLATION
- flavor_maj.7.title: "Odpoveď [target_country2.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_maj.7.title: "Odpoveď [SKCountryNoTooltip(target_country2,'G')]" # todo: NEW TRANSLATION
  flavor_maj.7.desc: "Po dlhom čakaní na príchod diplomatickej delegácie [target_country2.GetAdjective] konečne dorazili správy o ich rozhodnutí v súvislosti s návrhom manželstva medzi [target_character2.GetName] a [target_character3.GetName]. Zdá sa, že konečne zhromaždili odvahu odpovedať na náš nedávny podnet!" # todo: NEW TRANSLATION
  flavor_maj.7.a: "Kľaknú si!" # todo: NEW TRANSLATION
  flavor_maj.7.b: "Nech sa tento zväzok premení na priateľstvo medzi našimi ľuďmi." # todo: NEW TRANSLATION
  flavor_maj.7.c: "Odmietli? Očakávali sme viac..." # todo: NEW TRANSLATION
- explain_options_flavor_maj.8: "Ak prijmú, stanú sa naším priamym [Concept('subject','vazalmi')|e], ak však odmietnu, získame proti nim [Concept('casus_belli','casus belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- flavor_maj.8.title: "Požiadavky [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ explain_options_flavor_maj.8: "Ak prijmú, stanú sa naším priamymi [Concept('subject','vazalmi')|e], ak však odmietnu, získame proti nim [Concept('casus_belli','casus belli')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ flavor_maj.8.title: "Požiadavky [SKCountryNoTooltip(target_country,'G')]" # todo: NEW TRANSLATION
  flavor_maj.8.entry: "Požiadavky Majapahitu" # todo: NEW TRANSLATION
  flavor_maj.8.desc: "Krátko po tom, čo sa novo zosobášený pár [target_character.GetName] a [target_character3.GetName] spojil svoje osudy, [target_character.GetShortNameWithNoTooltip] vznesol hrubú požiadavku! Zdá sa, že manželstvo bolo zámienkou na požiadanie nášho podrobenia, opierajúc sa o ich rastúci vplyv a moc nad nami. Aký hrozný obrat udalostí!" # todo: NEW TRANSLATION
  flavor_maj.8.a: "Bohužiaľ, musíme sa podriadiť v záujme nášho ľudu." # todo: NEW TRANSLATION
@@ -61,7 +61,7 @@
  flavor_maj.10.historical_info: "Popularizácia dlhých naratívnych básní, písaných vo veršovanej forme s rytmami a metrami inšpirovanými sanskritskou literatúrou, zohrala zásadnú úlohu pri formovaní identity a kultúry majapahitskej spoločnosti." # todo: NEW TRANSLATION
  flavor_maj.11.title: "Sen o Nusantare" # todo: NEW TRANSLATION
  flavor_maj.11.entry: "$flavor_maj.11.title$" # todo: NEW TRANSLATION
- flavor_maj.11.desc: "Desiatky rokov dobyvačných ťažení a neprekonateľnej dominancie v našom regióne viedli mnohých našich poradcov k vyhláseniam o našom božskom práve na ďalšie krajiny za obzorom.\n\nSkutočne, nedávne úspechy možno pripísať len božskému príhovoru, a kto sme my, aby sme spochybňovali takú vôľu? Ľud [ROOT.GetCountry.GetName] je predurčený k veľkosti pod vedením [target_character.GetName]!" # todo: NEW TRANSLATION
+ flavor_maj.11.desc: "Desiatky rokov dobyvačných ťažení a neprekonateľnej dominancie v našom regióne viedli mnohých našich poradcov k vyhláseniam o našom božskom práve na ďalšie krajiny za obzorom.\n\nSkutočne, nedávne úspechy možno pripísať len božskému príhovoru, a kto sme my, aby sme spochybňovali takú vôľu? Ľud [SKCountry(ROOT.GetCountry,'G')] je predurčený k veľkosti pod vedením [target_character.GetName]!" # todo: NEW TRANSLATION
  flavor_maj.11.a: "Využijeme túto príležitosť." # todo: NEW TRANSLATION
  flavor_maj.11.b: "Najlepšie je nehnať sa." # todo: NEW TRANSLATION
  such_a_proclamation_will_incur_the_following_penalty_tt: "Takéto vojensky agresívne vyhlásenie spôsobí nasledujúci trest:" # todo: NEW TRANSLATION
@@ -70,7 +70,7 @@
  flavor_maj.12.desc: "Veľké bohatstvo, expanzia a vzostup našej sily nie sú ničím iným než odmenami za pobožnosť a pevné spoločenské väzby nášho ľudu. Spoločnosť zložená z majetných obchodníkov, ktorí darujú svoje peniaze, šľachticov, ktorí sa starajú o svoj ľud, a klerikov, ktorí dodržiavajú svoje praktiky, je určite predurčená k rozvoju.\n\nAby sme vyjadrili naše zanietenie a oslávili božskú povahu, ktorá nás spája, mnohí poradcovia navrhli, aby [target_character.GetName] osobne dohliadol na financovanie, rozšírenie a obnovu viacerých chrámov po celom [ROOT.GetCountry.GetLongName]." # todo: NEW TRANSLATION
  flavor_maj.12.a: "Pokračujte s financovaním." # todo: NEW TRANSLATION
  flavor_maj.12.b: "Nedovolíme cudzie duchovné vplyvy!" # todo: NEW TRANSLATION
- flavor_maj.12.historical_info: "Medzi 13. a 15. storočím zasiahla Majapahitské impérium éra výstavby. Chrámy zdobené komplikovanými oblúkmi, venovaniami a zlatými prvkami boli postavené venované hinduisticko-buddhistickým božstvám. Tieto architektonické zázraky boli z veľkej časti využívané na ceremoniálne alebo pamätné účely." # todo: NEW TRANSLATION
+ flavor_maj.12.historical_info: "Medzi 13. a 15. storočím zasiahla Majapahitské impérium éra výstavby. Chrámy zdobené komplikovanými oblúkmi, venovaniami a zlatými prvkami boli postavené venované hinduisticko-budhistickým božstvám. Tieto architektonické zázraky boli z veľkej časti využívané na ceremoniálne alebo pamätné účely." # todo: CHANGED (predtym: Medzi 13. a 15. storočím zasiahla Majapahitské impérium éra výstavby. Chrámy zdo)
  maj_receive_events_about_important_temples_tt: "#italic Môžeme dostať špeciálne udalosti spojené so stavbou rôznych dôležitých chrámov v našom jadrovom území#!" # todo: NEW TRANSLATION
  flavor_maj.13.title: "Candi Tikus" # todo: NEW TRANSLATION
  flavor_maj.13.entry: "$flavor_maj.13.title$" # todo: NEW TRANSLATION
@@ -78,7 +78,7 @@
  flavor_maj.13.a: "Nech je to miesto uctievania!" # todo: NEW TRANSLATION
  flavor_maj.13.b: "Voda pre ľud." # todo: NEW TRANSLATION
  flavor_maj.13.c: "To je len márnivý výdavok, nepotrebujeme to." # todo: NEW TRANSLATION
- flavor_maj.13.historical_info: "S vyhĺbeným bazénom s kaplnkami a vodnými kanálmi symbolizuje komplex horu Meru a kozmický oceán v hinduisticko-buddhistickej kozmológii. Používa sa na rituálne očistenie a odráža dôležitosť svätosti vody v Majapahitskom impériu." # todo: NEW TRANSLATION
+ flavor_maj.13.historical_info: "S vyhĺbeným bazénom s kaplnkami a vodnými kanálmi symbolizuje komplex horu Meru a kozmický oceán v hinduisticko-budhistickej kozmológii. Používa sa na rituálne očistenie a odráža dôležitosť svätosti vody v Majapahitskom impériu." # todo: CHANGED (predtym: S vyhĺbeným bazénom s kaplnkami a vodnými kanálmi symbolizuje komplex horu Meru )
  variable_maj_had_temples_event_variable_tt: "Naše chrámy boli obnovené" # todo: NEW TRANSLATION
  flavor_maj.14.title: "Candi Surawana" # todo: NEW TRANSLATION
  flavor_maj.14.entry: "$flavor_maj.14.title$" # todo: NEW TRANSLATION
@@ -123,7 +123,7 @@
  flavor_maj.21.a: "Skutočne slávny víťaz!" # todo: NEW TRANSLATION
  flavor_maj.22.title: "Zánik [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_maj.22.entry: "Pád Temaseku" # todo: NEW TRANSLATION
- flavor_maj.22.desc: "[target_character.GetName] upadol v nemilosti v [target_country.GetName]. Keď otvorene vystúpil proti politikám [ROOT.GetCountry.GetAltAdjective('D')], bol rýchlo napadnutý jednou z našich lojálnych jednotiek v oblasti a jeho hlavné mesto bolo obliehané. V takej zúfalej situácii sa [target_character.GetNameWithNoTooltip] rozhodol utiecť s niekoľkými členmi [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] z [target_location.GetName]. O [target_character.GetHerHis] budúcich plánoch nie je veľa známe, ale jedno je isté — čokoľvek bude [target_character.GetHerHis] ďalší krok, nebude to v náš prospech." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_maj.22.desc: "[target_character.GetName] upadol v nemilosti v [SKCountry(target_country,'L')]. Keď otvorene vystúpil proti politikám [ROOT.GetCountry.GetAltAdjective('D')], bol rýchlo napadnutý jednou z našich lojálnych jednotiek v oblasti a jeho hlavné mesto bolo obliehané. V takej zúfalej situácii sa [target_character.GetNameWithNoTooltip] rozhodol utiecť s niekoľkými členmi [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] z [target_location.GetName]. O [target_character.GetHerHis] budúcich plánoch nie je veľa známe, ale jedno je isté — čokoľvek bude [target_character.GetHerHis] ďalší krok, nebude to v náš prospech." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_maj.22.a: "Konečne preč!" # todo: NEW TRANSLATION
  flavor_maj.22.b: "Zaujíma nás, kam to [target_character.GetHerHim] dostane." # todo: NEW TRANSLATION
  flavor_maj.22.b.entry: "Zaujímalo by nás, kam ho to môže priviesť." # todo: NEW TRANSLATION
@@ -139,10 +139,10 @@
  flavor_maj.24.desc: "$flavor_maj.23_24.common_desc$\n\nNáš skromný [ROOT.GetCountry.GetGovernment.GetRulerTitle] sedel pod malackým stromom, keď [target_character.GetSheHe] zahliadol myšiu srnku, ktorá prekabátila poľovného psa. Práve to miesto bolo vybrané ako základný kameň [target_character.GetHerHis] nového panstva na západe." # todo: NEW TRANSLATION
  flavor_maj.24.a: "Prinesieme revolúciu do Nusantary." # todo: NEW TRANSLATION
  flavor_maj.25.title: "Napĺňanie sna" # todo: NEW TRANSLATION
- flavor_maj.25.desc: "[target_character.GetName] prisahal umiestniť celé [ShowRegionName('indonesia_region')] pod bdelú vládu [ROOT.GetCountry.GetLongName], inak už nikdy viac nepocíti žiadne korenie.\n\nAby sme priblížili naše slávne [ROOT.GetCountry.GetFlavorRank] k tomuto vznešenému cieľu, [target_character.GetShortNameWithNoTooltip] a ďalší ministri plánujú konflikt s [target_country.GetName], ktorého považujú za hlavnú obeť na podrobenie." # todo: NEW TRANSLATION
+ flavor_maj.25.desc: "[target_character.GetName] prisahal umiestniť celé [ShowRegionName('indonesia_region')] pod bdelú vládu [ROOT.GetCountry.GetLongName], inak už nikdy viac nepocíti žiadne korenie.\n\nAby sme priblížili naše slávne [ROOT.GetCountry.GetFlavorRank] k tomuto vznešenému cieľu, [target_character.GetShortNameWithNoTooltip] a ďalší ministri plánujú konflikt s [SKCountry(target_country,'I')], ktorého považujú za hlavnú obeť na podrobenie." # todo: NEW TRANSLATION
  flavor_maj.25.a: "Radšej nech sa nám podriaďujú skôr než neskôr." # todo: NEW TRANSLATION
  flavor_maj.25.b: "Nájdeme iný spôsob." # todo: NEW TRANSLATION
- flavor_maj.26.title: "Uparaja pre [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_maj.26.title: "Uparaja pre [SKCountryNoTooltip(target_country,'A')]" # todo: NEW TRANSLATION
  flavor_maj.26.entry: "Uparaja pre Sumatru" # todo: NEW TRANSLATION
  flavor_maj.26.desc: "Oslovil nás istý vysokopostavený minister, [target_character.GetName] z [target_country.GetLongName]. V minulosti nám slúžil a ponúkol sa, že povedie expedíciu do [ShowAreaName('south_sumatra_area')], aby posilnil našu kontrolu nad poddanými a zároveň podmanil [target_country2.GetName]." # todo: CHANGED
  flavor_maj.26.a: "[target_character.GetNameWithNoTooltip] by bol dobrým vodcom." # todo: NEW TRANSLATION

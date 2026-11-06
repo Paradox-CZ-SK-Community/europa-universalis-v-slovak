@@ -7,7 +7,7 @@
  PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Návrh bude schválený#!\n[Player.GetGovernment.GetParliament.GetName] schváli [Player.GetGovernment.GetParliament.GetCurrentDebateName]." # todo: CHANGED
  HOSTILE_PARLIAMENT_MARKER: "#T Nepriateľský [ParliamentMarker.GetCountry.GetGovernment.GetParliament.GetName] v zasadnutí#!\nDá sa prerušiť [Concept('occupying','okupovanie')|e] [Concept('location','lokality')|e]." # todo: CHANGED # todo: CONCEPT CASE
  PARLIAMENT_NEVER_CALLED: "The $NAME$ nebol zvolaný." # todo: RETRANSLATED ENGLISH
- PARLIAMENT_CALLED_DATE: "The $NAME$ was called $WHEN|Y$ ago " # todo: NEW TRANSLATION
+ PARLIAMENT_CALLED_DATE: "$NAME$ bol zvolaný pred $WHEN|Y$ " # todo: CHANGED (predtym: The $NAME$ was called $WHEN|Y$ ago)
  PARLIAMENT_MODIFIER_WHEN_DEBATED_TT: "Počas rokovania o návrhu" # todo: NEW TRANSLATION
  PARLIAMENT_MODIFIER_WHEN_DEBATED: "Počas rokovania o návrhu:" # todo: NEW TRANSLATION
  PARLIAMENT_ESTATE_EXTRA_POWER_WHEN_DEBATED: "Výber tohto návrhu pridá $VAL|2+=%$ k základnej podpore v parlamente" # todo: NEW TRANSLATION
@@ -272,7 +272,7 @@
  hre_demand_internal_peace_tt: "Každý [Concept('member','člen')|e] uzavrie [Concept('white_peace','status quo ante bellum')|e] v každej [Concept('war','vojne')|e], ktorá zahŕňa iného [member] z [THIS.GetInternationalOrganization.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  hre_establish_perpetual_diet: "Zriadiť stály snem" # todo: NEW TRANSLATION
  hre_establish_perpetual_diet_desc: "$perpetual_diet_law_desc$" # todo: NEW TRANSLATION
- hre_establish_perpetual_diet_tt: "[Concept('parliament_seat','Sídlo parlamentu')|e] [GetUniqueInternationalOrganization('hre').GetName] sa stáva jediným platným [Concept('location','lokalitou')|e], kde sa môže konať [Concept('parliament','parlament')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ hre_establish_perpetual_diet_tt: "[Concept('parliament_seat','Sídlo parlamentu')|e] [GetUniqueInternationalOrganization('hre').GetName] sa stáva jedinou platnou [Concept('location','lokalitou')|e], kde sa môže konať [Concept('parliament','parlament')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  hre_force_emperor_to_abdicate: "Prinútiť cisára abdikovať" # todo: NEW TRANSLATION
  hre_force_emperor_to_abdicate_desc: "Vládnutie [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetLongName] bolo [ShowSpecialStatusNamePlural('elector')] vyhodnotené ako nedostatočné. Cisársky snem bol zvolaný, aby prerokoval budúcnosť vedenia [GetUniqueInternationalOrganization('hre').GetName]." # todo: NEW TRANSLATION
  union_enforce_law_implementation: "Vynútiť vykonávanie zákonov" # todo: NEW TRANSLATION
@@ -670,7 +670,7 @@
  pa_hre_lessen_tax_burden_desc: "Sľubujeme znížiť povinnosť platenia [ShowPaymentName('imperial_contribution')], ktorá im vyplýva za ich podporu." # todo: NEW TRANSLATION
  pa_hre_elevate_prussia_to_kingdom: "Povýšiť [GetCountry('PRU').GetNameWithNoTooltip] na [ShowCountryRankNameWithNoTooltip('rank_kingdom')]" # todo: NEW TRANSLATION
  pa_hre_elevate_prussia_to_kingdom_simple: "Povýšiť [GetCountry('PRU').GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- pa_hre_elevate_prussia_to_kingdom_desc: "Monarchovia [GetCountry('PRU').GetName] boli vždy ambiciózni vo svojom ťažení za mocou a slávou. Formálne požiadali o titul kráľov, hoci napokon museli žiť ako 'králi v [GetCountry('PRU').GetNameWithNoTooltip]'. Povýšenie tejto krajiny na riadny [ShowCountryRankName('rank_kingdom')] nám však môže priniesť posledný kúsok priazne..." # todo: NEW TRANSLATION
+ pa_hre_elevate_prussia_to_kingdom_desc: "Monarchovia [SKCountry(GetCountry('PRU'),'G')] boli vždy ambiciózni vo svojom ťažení za mocou a slávou. Formálne požiadali o titul kráľov, hoci napokon museli žiť ako 'králi v [SKCountryNoTooltip(GetCountry('PRU'),'L')]'. Povýšenie tejto krajiny na riadny [ShowCountryRankName('rank_kingdom')] nám však môže priniesť posledný kúsok priazne..." # todo: NEW TRANSLATION
  pa_hre_elevate_prussia_to_kingdom_tt: "[GetCountry('PRU').GetName] obdrží [Concept('event','udalosť')|e] o našom rozhodnutí." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pa_hre_grant_imperial_titles: "Udeľovať cisárske tituly" # todo: NEW TRANSLATION
  pa_hre_grant_imperial_titles_simple: "$pa_hre_grant_imperial_titles$" # todo: NEW TRANSLATION
@@ -684,7 +684,7 @@
  charter_subject_governors: "Ustanoviť guvernérov pre podriadené územia" # todo: NEW TRANSLATION
  charter_subject_governors_desc: "Naši vzdialení poddaní požadujú pozornosť, ktorú koruna sotva môže poskytnúť. Ustanovením formálnych guvernérov s kráľovskou autoritou upevníme našu kontrolu nad týmito zemami a zaistíme, že ich výnosy prúdia správne do pokladnice." # todo: NEW TRANSLATION
  establish_colonial_administration: "Zriadiť koloniálnu správu" # todo: NEW TRANSLATION
- establish_colonial_administration_desc: "Kolónie, ktoré sme založili v zámoří, musia byť spravované ako riadne súčasti nášho kráľovstva, nie ponechané náhodným dobrodruhom. Musíme zriadiť primerané administratívne štruktúry." # todo: NEW TRANSLATION
+ establish_colonial_administration_desc: "Kolónie, ktoré sme založili v zámorí, musia byť spravované ako riadne súčasti nášho kráľovstva, nie ponechané náhodným dobrodruhom. Musíme zriadiť primerané administratívne štruktúry." # todo: CHANGED (predtym: Kolónie, ktoré sme založili v zámoří, musia byť spravované ako riadne súčasti nášho kráľovstva, nie ponechané náhodným d)
  reform_the_royal_treasury: "Reformovať kráľovskú pokladnicu" # todo: NEW TRANSLATION
  reform_the_royal_treasury_desc: "Nekontrolované rozširovanie razby mincí zvýšilo ceny a oslabilo hodnotu našej meny. Dôkladný audit kráľovských financií a reforma pokladničných praktík by obnovili stabilnú menu v ríši." # todo: NEW TRANSLATION
  issue_royal_censure: "Vydanie kráľovského pokarhania" # todo: NEW TRANSLATION
@@ -939,6 +939,6 @@
  iw_militarize_country_desc: "Požiadať [Concept('parliament','parlament')|e] o podporu mimoriadnej vojenskej mobilizácie, ktorá poskytne [Concept('army_tradition','armádna tradícia')|e] a posilní naše najskúsenejšie [Concept('army','armáda')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  pa_endow_order_holding: "Založiť nové majetkové sídlo rádu" # todo: NEW TRANSLATION
  pa_endow_order_holding_simple: "Podplatiť stav" # todo: NEW TRANSLATION
- pa_endow_order_holding_desc: "[Concept('estate','Stav')|e] požaduje, aby ríša zriadila nové [Concept('holding','držba')|E] pre jeden z jeho rehoľných rádov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ pa_endow_order_holding_desc: "[Concept('estate','Stav')|e] požaduje, aby ríša zriadila novú [Concept('holding','držbu')|E] pre jeden z jeho rehoľných rádov." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  crown_expel_order_holding: "Vyhostiť rehoľný rád" # todo: NEW TRANSLATION
  crown_expel_order_holding_desc: "Koruna podniká kroky na vyhostenie rehoľného rádu z jedného z našich [Concept('holdings','držieb')|E], čím obmedzí jeho vplyv v ríši." # todo: NEW TRANSLATION # todo: CONCEPT CASE

@@ -32,8 +32,8 @@
  bribe_imperial_circle: "Podplatiť cisársky kruh" # todo: NEW TRANSLATION
  bribe_imperial_circle_desc: "Zaplaťte vedúcemu cisárskeho kruhu a každému členovi jeho kruhu, aby hlasovali za náš návrh v Ríšskom sneme. Vedúci kruhu dostane plnú základnú sumu úplatku a každý ostatný člen 25 % z nej. Hlas každého člena bude zablokovaný podľa voľby cisára až do uzavretia rozhodnutia." # todo: NEW TRANSLATION
  bribe_imperial_circle_act: "Podplatiť [SCOPE.sCountry('target').GetName], aby podporil náš návrh v sneme." # todo: NEW TRANSLATION
- bribe_imperial_circle_effect_text: "[SCOPE.sCountry('actor').GetName] podplatí kruh [SCOPE.sCountry('target').GetName], aby podporil cisársky návrh." # todo: NEW TRANSLATION
- bribe_imperial_circle_effect_text_past: "[SCOPE.sCountry('actor').GetName] podplatil kruh [SCOPE.sCountry('target').GetName], aby podporil cisársky návrh." # todo: NEW TRANSLATION
+ bribe_imperial_circle_effect_text: "[SCOPE.sCountry('actor').GetName] podplatí kruh [SKCountry(SCOPE.sCountry('target'),'G')], aby podporil cisársky návrh." # todo: NEW TRANSLATION
+ bribe_imperial_circle_effect_text_past: "[SCOPE.sCountry('actor').GetName] podplatil kruh [SKCountry(SCOPE.sCountry('target'),'G')], aby podporil cisársky návrh." # todo: NEW TRANSLATION
  bribe_imperial_circle_members_tt: "Každý ďalší člen kruhu [SCOPE.sCountry('target').GetAltAdjective('G')] dostane [SCOPE.GetValue('bribe_member_share')|0V]@gold! a jeho [Concept('vote','hlasu')|e] v aktuálnom návrhu Ríšskeho snemu je zablokované podľa voľby cisára." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  BRIBE_IMPERIAL_CIRCLE_CTRL_HINT: "Podplatiť celý [Concept('imperial_circle','cisársky okruh')|E]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  approve_imperial_circle_proposal: "Schváliť návrh" # todo: NEW TRANSLATION
@@ -50,9 +50,9 @@
  oppose_imperial_circle_proposal_members_tt: "Každý člen [SCOPE.sImperialCircle('target').GetName] má svoj [Concept('vote','hlas')|e] v aktívnom návrhu Ríšskeho snemu zablokovaný na súčasnej politike, alebo na zdržaní sa hlasovania, ak nie je žiadna politika zaznamenaná." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  call_imperial_circle_to_war: "Privolať kruh do vojny" # todo: NEW TRANSLATION
  call_imperial_circle_to_war_desc: "Požiadajte vedúceho kruhu, aby poskytol vojenskú podporu svojho kruhu v našej aktuálnej vojne." # todo: NEW TRANSLATION
- call_imperial_circle_to_war_act: "Privolať kruh [SCOPE.sCountry('recipient').GetName], aby sa zapojil do vojny." # todo: NEW TRANSLATION
- call_imperial_circle_to_war_effect_text: "[SCOPE.sCountry('actor').GetName] privolá kruh [SCOPE.sCountry('recipient').GetName] do vojny." # todo: NEW TRANSLATION
- call_imperial_circle_to_war_effect_text_past: "[SCOPE.sCountry('actor').GetName] privolal kruh [SCOPE.sCountry('recipient').GetName] do vojny." # todo: NEW TRANSLATION
+ call_imperial_circle_to_war_act: "Privolať kruh [SKCountry(SCOPE.sCountry('recipient'),'G')], aby sa zapojil do vojny." # todo: NEW TRANSLATION
+ call_imperial_circle_to_war_effect_text: "[SCOPE.sCountry('actor').GetName] privolá kruh [SKCountry(SCOPE.sCountry('recipient'),'G')] do vojny." # todo: NEW TRANSLATION
+ call_imperial_circle_to_war_effect_text_past: "[SCOPE.sCountry('actor').GetName] privolal kruh [SKCountry(SCOPE.sCountry('recipient'),'G')] do vojny." # todo: NEW TRANSLATION
  INCOMING_OFFER_call_imperial_circle_to_war: "[SCOPE.sCountry('actor').GetName] nás žiada, aby sme poslali armády nášho kruhu do ich vojny.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_call_imperial_circle_to_war: "Výzva do vojny" # todo: NEW TRANSLATION
  call_imperial_circle_to_war_reject_effect_text: "[SCOPE.sCountry('actor').GetName] odmieta výzvu [SCOPE.sCountry('recipient').GetAltAdjective('A')] do vojny." # todo: NEW TRANSLATION # todo: COUNTRY CASE
@@ -86,7 +86,7 @@
  distribute_imperial_grant: "Rozdeliť cisársku dotáciu" # todo: NEW TRANSLATION
  distribute_imperial_grant_desc: "Rozdeľte zlato z pokladnice medzi členov kruhu, čím zlepšíte vzťahy a spokojnosť kruhu." # todo: NEW TRANSLATION
  distribute_imperial_grant_act: "Rozdeliť zlato členom kruhu." # todo: NEW TRANSLATION
- distribute_imperial_grant_tt: "Vydáme [SCOPE.GetValue('total_grant')|2V]@gold! (20 % nášho [Concept('economical_base','ekonomickej základne')|e]), rozdelené rovnako medzi členov nášho [Concept('imperial_circle','cisárskeho okruhu')|e] okrem vodcu. Každý príjemca získa [ShowModifier('received_imperial_circle_grant')] na 2 roky a [ShowBiasValue('opinion_received_imperial_grant')|+=2] [Concept('opinion','názor')|e] k nám." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ distribute_imperial_grant_tt: "Vydáme [SCOPE.GetValue('total_grant')|2V]@gold! (20 % našej [Concept('economical_base','ekonomickej základne')|e]), rozdelené rovnako medzi členov nášho [Concept('imperial_circle','cisárskeho okruhu')|e] okrem vodcu. Každý príjemca získa [ShowModifier('received_imperial_circle_grant')] na 2 roky a [ShowBiasValue('opinion_received_imperial_grant')|+=2] [Concept('opinion','názor')|e] k nám." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  distribute_imperial_grant_effect_text: "[SCOPE.sCountry('actor').GetName] rozdelí cisársku dotáciu svojmu kruhu." # todo: NEW TRANSLATION
  distribute_imperial_grant_effect_text_past: "[SCOPE.sCountry('actor').GetName] rozdelil cisársku dotáciu svojmu kruhu." # todo: NEW TRANSLATION
  demand_circle_loyalty: "Požadovať lojalitu kruhu" # todo: NEW TRANSLATION
@@ -118,8 +118,8 @@
  appeal_to_emperor_act: "Požiadať cisára, aby zasiahol do sporu o vedenie vášho kruhu." # todo: NEW TRANSLATION
  appeal_to_emperor_effect_text: "[SCOPE.sCountry('actor').GetName] osloví cisára." # todo: NEW TRANSLATION
  appeal_to_emperor_effect_text_past: "[SCOPE.sCountry('actor').GetName] oslovil cisára." # todo: NEW TRANSLATION
- appeal_to_emperor_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmietne odvolanie [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
- appeal_to_emperor_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol odvolanie [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ appeal_to_emperor_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmietne odvolanie [SKCountry(SCOPE.sCountry('actor'),'G')]." # todo: NEW TRANSLATION
+ appeal_to_emperor_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol odvolanie [SKCountry(SCOPE.sCountry('actor'),'G')]." # todo: NEW TRANSLATION
  INCOMING_OFFER_appeal_to_emperor: "[SCOPE.sCountry('actor').GetName] nás žiada, aby sme zasiahli do sporu o vedenie ich cisárskeho kruhu. Ak prijmeme, zníži to spokojnosť ich kruhu o 8, potrestá prestíž vodcu kruhu a prispeje nám prestíž a cisársku autoritu.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_appeal_to_emperor: "$appeal_to_emperor$" # todo: NEW TRANSLATION
  appeal_to_circle_diet: "Požiadať kruhový snem o finančnú dotáciu" # todo: NEW TRANSLATION
@@ -128,7 +128,7 @@
  appeal_to_circle_diet_effect_text: "[SCOPE.sCountry('actor').GetName] žiada kruhový snem." # todo: NEW TRANSLATION
  appeal_to_circle_diet_effect_text_past: "[SCOPE.sCountry('actor').GetName] požiadal kruhový snem." # todo: NEW TRANSLATION
  appeal_to_circle_diet_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmieta žiadosť [SCOPE.sCountry('actor').GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
- appeal_to_circle_diet_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol žiadosti [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ appeal_to_circle_diet_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol žiadosti [SKCountry(SCOPE.sCountry('actor'),'G')]." # todo: NEW TRANSLATION
  INCOMING_OFFER_appeal_to_circle_diet: "[SCOPE.sCountry('actor').GetName] žiada o poskytnutie finančnej pomoci. Ak prijmeme, dostanú pätinu našich ročných príjmov a ich legitímnosť sa zvýši. Odmietnutie tejto žiadosti zníži spokojnosť nášho kruhu.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_appeal_to_circle_diet: "$appeal_to_circle_diet$" # todo: NEW TRANSLATION
  appeal_to_circle_diet_timeout_tt: "Žiadna krajina za posledné 2 roky nepoužila  $appeal_to_circle_diet$ [Concept('diplomatic_action','diplomatickú akciu')|e]" # todo: RETRANSLATED ENGLISH
@@ -137,8 +137,8 @@
  request_circle_infrastructure_expansion_act: "$request_circle_infrastructure_expansion_desc$" # todo: NEW TRANSLATION
  request_circle_infrastructure_expansion_effect_text: "[SCOPE.sCountry('actor').GetName] žiada rozšírenie svojej vojenskej infraštruktúry." # todo: NEW TRANSLATION
  request_circle_infrastructure_expansion_effect_text_past: "[SCOPE.sCountry('actor').GetName] požiadal o rozšírenie svojej vojenskej infraštruktúry." # todo: NEW TRANSLATION
- request_circle_infrastructure_expansion_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmieta rozšírenie vojenskej infraštruktúry [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
- request_circle_infrastructure_expansion_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol rozšírenie vojenskej infraštruktúry [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ request_circle_infrastructure_expansion_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmieta rozšírenie vojenskej infraštruktúry [SKCountry(SCOPE.sCountry('actor'),'G')]." # todo: NEW TRANSLATION
+ request_circle_infrastructure_expansion_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol rozšírenie vojenskej infraštruktúry [SKCountry(SCOPE.sCountry('actor'),'G')]." # todo: NEW TRANSLATION
  INCOMING_OFFER_request_circle_infrastructure_expansion: "[SCOPE.sCountry('actor').GetName] žiada rozšírenie svojich ozbrojených síl. Ak prijmeme, umožní im to sústrediť sa na posilnenie ciest a stavebných prác, pričom ich vojenské schopnosti sa znížia na nasledujúcich 10 rokov.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_request_circle_infrastructure_expansion: "$request_circle_infrastructure_expansion$" # todo: NEW TRANSLATION
  request_circle_infrastructure_expansion_timeout_tt: "Žiadna krajina za posledné 2 roky nepoužila  $request_circle_infrastructure_expansion$ [Concept('diplomatic_action','diplomatickú akciu')|e]" # todo: RETRANSLATED ENGLISH
@@ -147,8 +147,8 @@
  request_new_circle_titles_act: "$request_new_circle_titles_desc$" # todo: NEW TRANSLATION
  request_new_circle_titles_effect_text: "[SCOPE.sCountry('actor').GetName] požaduje povýšenie svojej krajiny." # todo: NEW TRANSLATION
  request_new_circle_titles_effect_text_past: "[SCOPE.sCountry('actor').GetName] požadoval povýšenie svojej krajiny." # todo: NEW TRANSLATION
- request_new_circle_titles_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmieta povýšenie [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
- request_new_circle_titles_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol povýšenie [SCOPE.sCountry('actor').GetName]." # todo: NEW TRANSLATION
+ request_new_circle_titles_reject_effect_text: "[SCOPE.sCountry('recipient').GetName] odmieta povýšenie [SKCountry(SCOPE.sCountry('actor'),'G')]." # todo: NEW TRANSLATION
+ request_new_circle_titles_reject_effect_text_past: "[SCOPE.sCountry('recipient').GetName] odmietol povýšenie [SKCountry(SCOPE.sCountry('actor'),'G')]." # todo: NEW TRANSLATION
  INCOMING_OFFER_request_new_circle_titles: "[SCOPE.sCountry('actor').GetName] žiada povýšenie svojej krajiny v našom kruhu. Ak prijmeme, uspokojí to ich šľachtu a dá im prestížnejšie postavenie.\n\n$INFO$" # todo: NEW TRANSLATION
  INCOMING_OFFER_TITLE_request_new_circle_titles: "$request_new_circle_titles$" # todo: NEW TRANSLATION
  request_new_circle_titles_timeout_tt: "Žiadna krajina za posledné 2 roky nepoužila  $request_new_circle_titles$ [Concept('diplomatic_action','diplomatickú akciu')|e]" # todo: RETRANSLATED ENGLISH
@@ -165,7 +165,7 @@
  imperial_circles.2.desc: "Na nedávnom Ríšskom sneme náš kruh podporil navrhovanú reformu ríšskej ústavy. Táto podpora bola sprevádzaná vzájomným očakávaním medzi členmi nášho kruhu, že my ako vodca kruhu rozdelíme medzi nich prostriedky. Oprávnené alebo nie, naše neuskutočnenie týchto očakávaní viedlo k niekoľkým sťažnostiam na zneužívanie moci a zadržiavanie prostriedkov určených členom kruhu. Ak na tieto sťažnosti nezareagujeme, môže to vážne poškodiť naše vedenie v budúcnosti." # todo: NEW TRANSLATION
  imperial_circles.2.a: "Majú pravdu, mali by sme to teraz rozdeliť." # todo: NEW TRANSLATION
  imperial_circles.2.b: "Mýlia sa, žiadne takéto podplácanie neexistovalo." # todo: NEW TRANSLATION
- imperial_circles.2.c: "Osloviť našich priateľov v [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
+ imperial_circles.2.c: "Osloviť našich priateľov v [SKCountryNoTooltip(GetUniqueInternationalOrganization('hre').GetLeaderCountry,'L')]." # todo: NEW TRANSLATION
  imperial_circles.11.title: "Nespokojnosť v kruhu" # todo: NEW TRANSLATION
  imperial_circles.11.desc: "Členovia nášho kruhu sú čoraz nepokojnejší. Ak nezareagujeme čoskoro, naša autorita ako vodcu kruhu môže byť otvorene spochybnená." # todo: NEW TRANSLATION
  imperial_circles.11.a: "Rozdeliť núdzové prostriedky na zmiernenie napätia." # todo: NEW TRANSLATION

@@ -36,7 +36,7 @@
  flavor_chi.4.b: "Nie, také reformy sú príliš nákladné." # todo: NEW TRANSLATION
  flavor_chi.5.title: "Príchod jezuitov" # todo: NEW TRANSLATION
  flavor_chi.5.entry: "$flavor_chi.5.title$" # todo: NEW TRANSLATION
- flavor_chi.5.desc: "Cudzinci z [target_country.GetName] sú na našich územiach už nejaký čas. Hoci ich zvláštne vierovyznanie, ktoré nazývajú [target_country.GetReligion.GetName], by mohlo podvrátiť naše [ROOT.GetCountry.GetReligion.GetAdjective] učenia, ak by sa rozšírilo po našich krajinách, nemožno poprieť, že vedomosti, ktoré prinášajú, môžu byť pre nás veľmi prospešné.\n\nNiektorí v našom [ROOT.GetCountry.GetGovernment.GetCourtTitle] tvrdia, že by sme mali využiť akúkoľvek výhodu, ktorú od nich získame, aj za cenu, že niektorí ľudia budú oklamaní týmto cudzím náboženstvom. Iní sa však obávajú o integritu našich inštitúcií, ak dovolíme, aby také barbarské idey prenikli do našej spoločnosti." # todo: NEW TRANSLATION
+ flavor_chi.5.desc: "Cudzinci z [SKCountry(target_country,'G')] sú na našich územiach už nejaký čas. Hoci ich zvláštne vierovyznanie, ktoré nazývajú [target_country.GetReligion.GetName], by mohlo podvrátiť naše [ROOT.GetCountry.GetReligion.GetAdjective] učenia, ak by sa rozšírilo po našich krajinách, nemožno poprieť, že vedomosti, ktoré prinášajú, môžu byť pre nás veľmi prospešné.\n\nNiektorí v našom [ROOT.GetCountry.GetGovernment.GetCourtTitle] tvrdia, že by sme mali využiť akúkoľvek výhodu, ktorú od nich získame, aj za cenu, že niektorí ľudia budú oklamaní týmto cudzím náboženstvom. Iní sa však obávajú o integritu našich inštitúcií, ak dovolíme, aby také barbarské idey prenikli do našej spoločnosti." # todo: NEW TRANSLATION
  flavor_chi.5.historical_info: "V roku 1581 prišli do Číny prví jezuiti, priniesli cisárovi dary a predviedli rôzne mechanické vynálezy z Európy. Tiež prejavili veľké znalosti vytvorením obrovskej mapy sveta a navrhovaním rozumných nápadov na reformu kalendára. Priniesli však aj zvláštne náboženské a filozofické myšlienky, ktoré začali narúšať tradičný poriadok v Číne." # todo: NEW TRANSLATION
  flavor_chi.5.a: "Môžeme profitovať z ich poznatkov." # todo: NEW TRANSLATION
  flavor_chi.5.a.tt: "Mnoho našich [Concept('pops','populácií')|e] sa [Concept('convert','konvertovať')|e] na [ShowReligionName('catholic')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -54,13 +54,13 @@
  variable_mng_accepted_jesuits_tt: "Jezuiti boli prijatí na dvore" # todo: NEW TRANSLATION
  flavor_chi.8.title: "Misia [target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_chi.8.entry: "Britská diplomatická misia" # todo: NEW TRANSLATION
- flavor_chi.8.desc: "Dostali sme správy, že na naše pobrežie dorazila diplomatická misia z ďalekého západného barbarského štátu [target_country.GetName], vedená istým [target_character.GetName]. [target_character.GetSheHe|U] má so sebou priateľské pozdravy [target_character.GetHerHim] [target_country.GetGovernment.GetRulerTitle], návrhy na uľahčenie obchodu medzi našimi národmi a rôzne mechanické divy." # todo: NEW TRANSLATION
+ flavor_chi.8.desc: "Dostali sme správy, že na naše pobrežie dorazila diplomatická misia z ďalekého západného barbarského štátu [SKCountry(target_country,'G')], vedená istým [target_character.GetName]. [target_character.GetSheHe|U] má so sebou priateľské pozdravy [target_character.GetHerHim] [target_country.GetGovernment.GetRulerTitle], návrhy na uľahčenie obchodu medzi našimi národmi a rôzne mechanické divy." # todo: NEW TRANSLATION
  flavor_chi.8.a: "Odmietnime návrhy týchto drzých západných diablov!" # todo: NEW TRANSLATION
  flavor_chi.8.b: "Máme záujem vypočuť si ich nápady." # todo: NEW TRANSLATION
  opinion_ideas: "Zaujíma sa o naše myšlienky" # todo: NEW TRANSLATION
  flavor_chi.9.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_chi.9.entry: "Matteo Ricci, jezuitný učenec" # todo: NEW TRANSLATION
- flavor_chi.9.desc: "Neobyčajný jezuita pristúpil k [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetName] sa oblieka ako [ShowCultureGroupName('chinese_group')] človek, osvojil si mnohé zvyky [ShowCultureGroupNameWithNoTooltip('chinese_group')] a hovorí spôsobom podobným [ShowCultureGroupNameWithNoTooltip('chinese_group')]. Ako učenec aj misionár sa zdá, že [target_character.GetLastNameWithNoTooltip] má rovnaký záujem o zvyky, kartografiu a vedu [ShowCultureGroupNameWithNoTooltip('chinese_group')] sveta, ako aj o informovanie nás o svojom vlastnom svete. To znamená, že pri lákaní konvertitov mal omnoho viac úspechu než mnohí jeho bratři, no jeho schopnosti, najmä súvisiace s astronómiou a kartografiou, nám nepochybne môžu byť užitočné." # todo: CHANGED
+ flavor_chi.9.desc: "Neobyčajný jezuita pristúpil k [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetName] sa oblieka ako [ShowCultureGroupName('chinese_group')] človek, osvojil si mnohé zvyky [ShowCultureGroupNameWithNoTooltip('chinese_group')] a hovorí spôsobom podobným [ShowCultureGroupNameWithNoTooltip('chinese_group')]. Ako učenec aj misionár sa zdá, že [target_character.GetLastNameWithNoTooltip] má rovnaký záujem o zvyky, kartografiu a vedu [ShowCultureGroupNameWithNoTooltip('chinese_group')] sveta, ako aj o informovanie nás o svojom vlastnom svete. To znamená, že pri lákaní konvertitov mal omnoho viac úspechu než mnohí jeho bratia, no jeho schopnosti, najmä súvisiace s astronómiou a kartografiou, nám nepochybne môžu byť užitočné." # todo: CHANGED (predtym: Neobyčajný jezuita pristúpil k [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle)
  flavor_chi.9.a: "Privítajte [target_character.GetNameWithNoTooltip] v našom [ROOT.GetCountry.GetGovernment.GetCourtTitle]." # todo: NEW TRANSLATION
  flavor_chi.9.a.entry: "Privítajme ho na našom dvore." # todo: NEW TRANSLATION
  flavor_chi.9.b: "Choď späť do [ShowContinentNameWithNoTooltip('europe')]!" # todo: NEW TRANSLATION
@@ -120,7 +120,7 @@
  flavor_chi.19.desc: "Putá medzi priateľmi sú posvätné. Tak je to aj v prípade [target_character.GetName] a [target_character2.GetName]. Spoločne títo dvaja spriaznení jedinci napísali oslavný text o svojich spoločných záujmoch a čase v [ROOT.GetCountry.GetGovernment.GetCabinetTitle].\n\nPodľa ich písania je priateľstvo neoceniteľným darom, ktorý sa nedá kúpiť ani predať, a jeho hodnota je oveľa väčšia než hora zo zlata. Zlato je chladné a bez života. Nevidí ani nepočuje. V ťažkých časoch nemá moc utešiť. Nemá uši, aby počúvalo, ani srdce, aby pochopilo. Nemôže ti priniesť útechu ani podať pomocnú ruku. Tak keď prosíš nebo o dar, buď vďačný, ak ti pošlú nielen diamanty, perly či bohatstvo, ale lásku skutočných, pravých priateľov!" # todo: NEW TRANSLATION
  flavor_chi.19.a: "Nastavili príkladný štandard." # todo: NEW TRANSLATION
  flavor_chi.19.b: "Vždy sme mali dobrý cit pre skvelých ľudí." # todo: NEW TRANSLATION
- every_location_in_province_food_prosperity_satisfaction_tt: "[Concept('locations','Lokality')|e] v [target_province.GetName] získajú #G +[ROOT.GetVariable('target_province_control_prosperity_variable_display').GetValue]%#! [Concept('prosperity','prosperita')|e] a ich [Concept('pops','populácie')|e] získajú #G +[ROOT.GetVariable('target_province_control_pop_satisfaction_variable_display').GetValue]%#! [Concept('pop_satisfaction','spokojnosť populácie')|e] na základe nášho [Concept('control','kontroly')|e] tam" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ every_location_in_province_food_prosperity_satisfaction_tt: "[Concept('locations','Lokality')|e] v [target_province.GetName] získajú #G +[ROOT.GetVariable('target_province_control_prosperity_variable_display').GetValue]%#! [Concept('prosperity','prosperita')|e] a ich [Concept('pops','populácie')|e] získajú #G +[ROOT.GetVariable('target_province_control_pop_satisfaction_variable_display').GetValue]%#! [Concept('pop_satisfaction','spokojnosť populácie')|e] na základe našej [Concept('control','kontroly')|e] tam" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  target_province_loses_prosperity_and_pop_satisfaction_tt: "[Concept('locations','Lokality')|e] v [target_province.GetName] stratia [ShowNamedValue('prosperity_very_weak_penalty')|+=2%] [Concept('prosperity','prosperita')|e] a jej [Concept('pops','populácií')|e] stratia [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_chi.20.title: "Hladomor v [target_province.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_chi.20.desc: "Obyvatelia [target_province.GetName] prežili niekoľko období zlých úrod. V spojení s nešťastiami, zlými predpoveďami a všeobecným pocitom neistoty mnohí šepkajú o nedostatočnosti našej vlády. Posol prišiel do nášho [ROOT.GetCountry.GetGovernment.GetCourtTitle] a žiada prepravu cenného jedla. Avšak naši poradcovia nás upozornili, že náš zásah bude pravdepodobne závisieť od infraštruktúry provincie." # todo: NEW TRANSLATION
@@ -133,8 +133,8 @@
  flavor_chi.21.a.entry: "Nech komplex skrášľuje provinciu." # todo: NEW TRANSLATION
  flavor_chi.21.b: "Nemôžeme si to dovoliť." # todo: NEW TRANSLATION
  target_province_gets_20_prosperity: "Každé vlastnené [Concept('location','lokalita')|e] v [target_province.GetNameWithNoTooltip] [Concept('province','provincii')|e] získa [ShowNamedValue('prosperity_severe_bonus')|+=2%] [Concept('prosperity','prosperita')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- every_pop_target_province_loses_25_satisfaction_tt: "Každý sedliacky [Concept('pop','populácia')|e] v [target_province.GetNameWithNoTooltip] [Concept('province','provincii')|e] stratí [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- every_pop_25_satisfaction_gain_tt: "Každý sedliacky [Concept('pop','populácia')|e] v [target_province.GetNameWithNoTooltip] [Concept('province','provincii')|e] získa [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ every_pop_target_province_loses_25_satisfaction_tt: "Každý sedliacka [Concept('pop','populácia')|e] v [target_province.GetNameWithNoTooltip] [Concept('province','provincii')|e] stratí [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ every_pop_25_satisfaction_gain_tt: "Každý sedliacka [Concept('pop','populácia')|e] v [target_province.GetNameWithNoTooltip] [Concept('province','provincii')|e] získa [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_chi.22.title: "Skvelý admirál" # todo: NEW TRANSLATION
  flavor_chi.22.entry: "$flavor_chi.22.title$" # todo: NEW TRANSLATION
  flavor_chi.22.desc: "Väčšinou majú bežní ľudia a vojnoví zajatci problém prebojovať sa spoločenskými stupňami. Napriek tomu je obdivuhodné, keď takýto jedinec vznikne. Takýmto prípadom je eunuch menom [target_character.GetName]. Po zajatí a vykastrovaniu v mladom veku začal [target_character.GetNameWithNoTooltip] slúžiť v dome miestneho princa v [ShowAreaName('yunnan_area')]. Po získaní princovej dôvery bol poslaný do [ShowLocationName('dadu')], aby tam prehĺbil svoje vzdelanie, kde vynikal. Niet divu, že tento muž urobil veľký dojem na [target_character2.GetName]. Niet pochýb, že [target_character.GetNameWithNoTooltip] urobí výborného admirála a vodcu pre náš slávny ľud." # todo: CHANGED
@@ -172,7 +172,7 @@
  flavor_chi.27.desc: "$flavor_chi.26_27.common_desc$\n\nAko svoj ďalší cieľ chce zvrátiť politiku [ShowPolicyName('limit_the_han_powers')], ktorá odcudzila mnohých občanov [ShowCultureGroupName('chinese_group')] a viedla ich k rôznym povstaniam snažiacim sa zvrhnúť [ROOT.GetCountry.GetFlavorRank]. Už za života [dead_character.GetName] bola politika potajme kritizovaná ako príliš tvrdá, no nikto nemohol vzdorovať mocnému diktátorovi." # todo: CHANGED
  flavor_chi.27.a: "Zvrátiť ju!" # todo: NEW TRANSLATION
  flavor_chi.27.b: "Nám to však vyhovuje." # todo: NEW TRANSLATION
- yua_every_chinese_pop_will_get_20_satisfaction: "Každý [Concept('pop','populácia')|e] patriaci do [ShowCultureGroupName('chinese_group')] [Concept('culture_group','kultúrnej skupiny')|e] získa [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ yua_every_chinese_pop_will_get_20_satisfaction: "Každá [Concept('pop','populácia')|e] patriaci do [ShowCultureGroupName('chinese_group')] [Concept('culture_group','kultúrnej skupiny')|e] získa [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosti populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  flavor_chi.28.title: "$three_histories_china$" # todo: NEW TRANSLATION
  flavor_chi.28.entry: "$flavor_chi.28.title$" # todo: NEW TRANSLATION
  flavor_chi.28.desc: "S cieľom zanechať dedičstvo pre [target_character.GetHerselfHimself] sa [target_character.GetName] nedávno rozhodol zostaviť dejiny predchodcov [ROOT.GetCountry.GetLongName], dynastií Liáo, Sòng a Jīn, a zahrnúť ich do oficiálnej zbierky dejín.\n\nNapriek rôznym ťažkostiam sa [ROOT.GetCountry.GetGovernment.GetAdjective] tím vedený [target_character.GetNameWithNoTooltip]ovi podarilo dokončiť tri kroniky za iba niekoľko rokov. Táto impozantná rýchlosť však zároveň priniesla množstvo faktických chýb, ktoré poškodzujú povesť diela a vyžadujú ďalšie revízie." # todo: NEW TRANSLATION
@@ -206,7 +206,7 @@
  flavor_chi.34.b: "Toto povstanie nás volá." # todo: NEW TRANSLATION
  flavor_chi.36.title: "Útek do [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_chi.36.entry: "Útek do $shangdu$" # todo: NEW TRANSLATION
- flavor_chi.36.desc: "S pádom [lost_capital.GetName] bol štát [ROOT.GetCountry.GetName] skutočne ponížený. Sme nútení ustúpiť do [target_location.GetName], posledného zvyšku našej hrdosti, alebo sa skrývať v strachu v [current_capital.GetName]. Čokoľvek si zvolíme, musíme byť pripravení na nepriateľský nápor." # todo: NEW TRANSLATION
+ flavor_chi.36.desc: "S pádom [lost_capital.GetName] bol štát [SKCountry(ROOT.GetCountry,'G')] skutočne ponížený. Sme nútení ustúpiť do [target_location.GetName], posledného zvyšku našej hrdosti, alebo sa skrývať v strachu v [current_capital.GetName]. Čokoľvek si zvolíme, musíme byť pripravení na nepriateľský nápor." # todo: NEW TRANSLATION
  flavor_chi.36.a: "Otvorte brány do [target_location.GetNameWithNoTooltip]!" # todo: NEW TRANSLATION
  flavor_chi.36.a.entry: "Otvor brány pre [ShowLocationNameWithNoTooltip('shangdu')]!" # todo: NEW TRANSLATION
  flavor_chi.36.b: "Naozaj hrozný osud." # todo: NEW TRANSLATION
@@ -221,7 +221,7 @@
  flavor_chi.38.a: "Vrátime sa do [current_capital.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_chi.38.a.entry: "Vrátime sa do hlavného mesta." # todo: NEW TRANSLATION
  flavor_chi.38.b: "Nemôžeme opustiť našu pozíciu." # todo: NEW TRANSLATION
- flavor_chi.39.title: "Osud [subject_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_chi.39.title: "Osud [SKCountryNoTooltip(subject_country,'G')]" # todo: NEW TRANSLATION
  flavor_chi.39.entry: "Osud vazalskej krajiny" # todo: NEW TRANSLATION
  flavor_chi.39.desc: "Náš pád z milosti spôsobuje, že náš [chain_initiator.GetFlavorRank] prichádza o závislé územia zo všetkých strán. Jedno z nich sa môže čoskoro stať [subject_country.GetLongName] pod spoločnou správou [chain_initiator.GetName] a [target_country.GetName]. V dôsledku straty kľúčových prístavov a všeobecného chaosu v našom štáte nie sme schopní ostrov spravovať, nieto potláčať povstanie, ktoré sa tam práve varí. Možno bude najlepšie ho odovzdať [target_country.GetLongName], čím sa zároveň zlepšia vzťahy medzi oboma štátmi." # todo: NEW TRANSLATION
  flavor_chi.39.a: "Odovzdajte ju [target_country.GetLongNameWithNoTooltip]." # todo: CHANGED
@@ -229,7 +229,7 @@
  flavor_chi.39.b: "Ponecháme si to napriek problémom." # todo: NEW TRANSLATION
  flavor_chi.40.title: "[chain_initiator.GetNameWithNoTooltip] odovzdáva [subject_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_chi.40.entry: "$china$ vzdáva vazalnú krajinu" # todo: NEW TRANSLATION
- flavor_chi.40.desc: "[chain_initiator.GetLongName] je na ústupe, čo stavia do otázky našu spoločnú správu nad [subject_country.GetName].\n\nNedávne nepokoje na ostrove ich nakoniec presvedčili, aby škody uznali a previedli vlastníctvo ostrova na nás - právoplatných vlastníkov!" # todo: NEW TRANSLATION
+ flavor_chi.40.desc: "[chain_initiator.GetLongName] je na ústupe, čo stavia do otázky našu spoločnú správu nad [SKCountry(subject_country,'I')].\n\nNedávne nepokoje na ostrove ich nakoniec presvedčili, aby škody uznali a previedli vlastníctvo ostrova na nás - právoplatných vlastníkov!" # todo: NEW TRANSLATION
  flavor_chi.40.a: "Ako sa očakávalo." # todo: NEW TRANSLATION
  flavor_chi.40.b: "To však nezodpovedá našej agende." # todo: NEW TRANSLATION
  flavor_chi.41.title: "$peony_pavilion$" # todo: NEW TRANSLATION
@@ -275,7 +275,7 @@
  flavor_chi.48.desc: "V jednej z našich provinčných posád sa stal pravý zázrak! Tvárou v tvár hrozbe vzbury a rebelie sa [target_character.GetWomanMan] menom [target_character.GetName] chopil velenia a prevzal obranu miestnej posádky, úspešne odrazil zradcov a získal si [target_character.GetHerselfHimself] vojenskú slávu. Tento majstrovský prejav vojenskej zručnosti bude zapamätaný na desaťročia." # todo: NEW TRANSLATION
  flavor_chi.48.a: "[target_character.GetSheHe|U] si zaslúži povýšenie." # todo: NEW TRANSLATION
  flavor_chi.48.b: "Mnoho takýchto prípadov." # todo: NEW TRANSLATION
- flavor_chi.49.title: "Veľký dozorný úrad [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_chi.49.title: "Veľký dozorný úrad [SKCountryNoTooltip(ROOT.GetCountry,'G')]" # todo: NEW TRANSLATION
  flavor_chi.49.entry: "$flavor_chi.49.title$" # todo: NEW TRANSLATION
  flavor_chi.49.desc: "Cenzorát je vysoko efektívna a vplyvná súčasť našej vlády. Pod priamou autoritou [ROOT.GetCountry.GetGovernment.GetRulerTitle] je jeho primárnou úlohou rozšíriť právomoc a dohľad [ROOT.GetCountry.GetGovernment.GetRulerTitle] na všetky vetvy správy, poskytovať podrobné správy o dvornom správaní rôznych byrokratov, odhaľovať korupciu a slúžiť ako pevné morálne vodítko.\n\nNedávno nám zdokonalené administratívne schopnosti umožnili ešte viac rozšíriť vplyv jedného aspektu povinností Cenzorátu, čím sme ďalej zabezpečili stabilné správanie našich poddaných." # todo: NEW TRANSLATION
  flavor_chi.49.a: "[ShowModifierWithNoTooltip('chi_palace_branch')] na vymáhanie kódexu správania bude veľmi užitočná." # todo: NEW TRANSLATION
@@ -324,7 +324,7 @@
  flavor_chi.56.d: "Poskytnúť pomoc pri verejných stavbách." # todo: NEW TRANSLATION
  flavor_chi.56.e: "Učiť ich, ako písať legislatívu." # todo: NEW TRANSLATION
  flavor_chi.56.f: "To nepotrebujeme." # todo: NEW TRANSLATION
- chi_subsequent_rulers: "Nasledujúci vládcovia [ROOT.GetCountry.GetName] budú môcť za svojho života rozhodnúť, či sa budú týmito odporúčaniami riadiť. Vždy ich tiež môžu odmietnuť." # todo: NEW TRANSLATION
+ chi_subsequent_rulers: "Nasledujúci vládcovia [SKCountry(ROOT.GetCountry,'G')] budú môcť za svojho života rozhodnúť, či sa budú týmito odporúčaniami riadiť. Vždy ich tiež môžu odmietnuť." # todo: NEW TRANSLATION
  flavor_chi.57.title: "Úprava [ShowLawNameWithNoTooltip('keju_examination')]" # todo: NEW TRANSLATION
  flavor_chi.57.entry: "Ladenie $keju_examination$" # todo: NEW TRANSLATION
  flavor_chi.57.desc: "[target_character.GetName|U]ova vojenská ambícia nie je tajomstvom pre veľkú časť [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetSheHe|U] chce premeniť [ROOT.GetCountry.GetFlavorRank] na obrovskú vojenskú mocnosť, navždy ukončiť obavy z cudzej invázie do našich území a zároveň posilniť [target_character.GetHerHis] autoritu.\n\nPreto [ROOT.GetCountry.GetGovernment.GetRulerTitle] plánuje zaradiť do [ShowLawName('keju_examination')] mnoho vojenských predmetov v nádeji, že vychová novú generáciu byrokratov orientovaných viac na vojenské záležitosti. Medzi predmetmi sú lukostreľba, jazdectvo, ako aj známe predmety ako matematika, kaligrafia a právo." # todo: NEW TRANSLATION
@@ -336,7 +336,7 @@
  flavor_chi.58.a: "Napísať pochvalu." # todo: NEW TRANSLATION
  flavor_chi.58.b: "Prečo by sa to malo robiť?" # todo: NEW TRANSLATION
  flavor_chi.58.c: "Fascinujúce náboženstvo, naozaj!" # todo: NEW TRANSLATION
- chi_every_sunni_pop_gains_10_satisfaction: "Každý [Concept('pop','populácia')|e] [target_religion.GetAdjective] [Concept('religion','náboženstvo')|e] získa [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ chi_every_sunni_pop_gains_10_satisfaction: "Každá [Concept('pop','populácia')|e] [target_religion.GetAdjective] [Concept('religion','náboženstvo')|e] získa [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [Concept('pop_satisfaction','spokojnosť populácie')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  chi_every_sunni_country_gets_bias: "Každá [Concept('country','krajina')|e] [target_religion.GetAdjective] [Concept('religion','náboženstvo')|e] získa [ShowBiasValue('chi_praised_islam')] [Concept('opinion','názor')|e] voči [ROOT.GetCountry.GetAltAdjective('D')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  flavor_chi.59.title: "Osud [ShowLawNameWithNoTooltip('keju_examination')]" # todo: NEW TRANSLATION
  flavor_chi.59.entry: "Osud $keju_examination$" # todo: NEW TRANSLATION
@@ -352,7 +352,7 @@
  flavor_chi.61.desc: "Od posilnenia eunuchov získala táto mocná frakcia v rámci [ROOT.GetCountry.GetGovernment.GetCourtTitle] značný vplyv vo vláde. Keď je podaná žiadosť k [ROOT.GetCountry.GetGovernment.GetRulerTitle], musí prejsť cez eunuchov, ktorí zabraňujú komukoľvek, komu sú vzdialene nepriaznivo naklonení, dostať sa do rozhovoru s [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Pri tom všetkom Božský cisár zostáva v nevedomosti." # todo: NEW TRANSLATION
  flavor_chi.61.a: "Dúfajme, že to nevyústi do ďalších excesov." # todo: NEW TRANSLATION
  flavor_chi.62.title: "Vychovaný eunuchmi" # todo: NEW TRANSLATION
- flavor_chi.62.desc: "Mladý [ROOT.GetCountry.GetGovernment.GetRulerTitle], [target_character.GetName], mal to nešťastie nastúpiť na trón [ROOT.GetCountry.GetName] omnoho skôr, než bolo zamýšľané. Keď [target_regent.GetName] nedokázal zvládnuť moc palácnych eunuchov, [target_character.GetNameWithNoTooltip] upadol do ich sféry vplyvu a stal sa bábkou tejto mocnej frakcie." # todo: NEW TRANSLATION
+ flavor_chi.62.desc: "Mladý [ROOT.GetCountry.GetGovernment.GetRulerTitle], [target_character.GetName], mal to nešťastie nastúpiť na trón [SKCountry(ROOT.GetCountry,'G')] omnoho skôr, než bolo zamýšľané. Keď [target_regent.GetName] nedokázal zvládnuť moc palácnych eunuchov, [target_character.GetNameWithNoTooltip] upadol do ich sféry vplyvu a stal sa bábkou tejto mocnej frakcie." # todo: NEW TRANSLATION
  flavor_chi.62.a: "Takto impériá padajú." # todo: NEW TRANSLATION
  flavor_chi.63.title: "Nepriateľský minister" # todo: NEW TRANSLATION
  flavor_chi.63.desc: "Skupina palácnych eunuchov predložila návrh uviesť určitého ministra, [target_character.GetName], do väzenia pre zradu. To nie je žiadnym prekvapením, keďže v dňoch pred týmto udalosťou bol dotyčný minister otvorene proti najsilnejším eunuchom, čo jasne vyvolalo ich hnev. Avšak toto obvinenie môže mať základy v niečom viac než iba v pýche a malo by byť dôkladne preskúmané." # todo: NEW TRANSLATION
@@ -395,7 +395,7 @@
  flavor_chi.71.b: "Môže to mať katastrofálne následky." # todo: NEW TRANSLATION
  flavor_chi.72.title: "Reforma armády" # todo: NEW TRANSLATION
  flavor_chi.72.entry: "$flavor_chi.72.title$" # todo: NEW TRANSLATION
- flavor_chi.72.desc: "Naša armáda je totožná s tou, ktorú sme porazili toľkokrát v [ShowSituationName('red_turban_rebellions')]. Zdedené sú mnohé zbytočné inštitúcie odvodené od kočovných koreňov [GetCountry('YUA').GetName]. Preto by stálo za to reformovať armádu do systému lepšie zodpovedajúceho súčasným potrebám. Naše sily budú rozdelené na gardy a prápory, každý bude mať 5600 respektíve 1120 mužov. Naši vojaci budú tiež nútení spravovať vlastné farmy, aby sa znížila záťaž na logistiku počas mieru." # todo: NEW TRANSLATION
+ flavor_chi.72.desc: "Naša armáda je totožná s tou, ktorú sme porazili toľkokrát v [ShowSituationName('red_turban_rebellions')]. Zdedené sú mnohé zbytočné inštitúcie odvodené od kočovných koreňov [SKCountry(GetCountry('YUA'),'G')]. Preto by stálo za to reformovať armádu do systému lepšie zodpovedajúceho súčasným potrebám. Naše sily budú rozdelené na gardy a prápory, každý bude mať 5600 respektíve 1120 mužov. Naši vojaci budú tiež nútení spravovať vlastné farmy, aby sa znížila záťaž na logistiku počas mieru." # todo: NEW TRANSLATION
  flavor_chi.72.a: "Pokračovať v reformách." # todo: NEW TRANSLATION
  flavor_chi.72.b: "Teraz si nemôžeme dovoliť zmeny." # todo: NEW TRANSLATION
  flavor_chi.74.title: "Zostavenie nového právneho kódexu" # todo: NEW TRANSLATION
@@ -412,7 +412,7 @@
  flavor_chi.75.c: "Iba klebety." # todo: NEW TRANSLATION
  flavor_chi.76.title: "Veľké Leishū" # todo: NEW TRANSLATION
  flavor_chi.76.entry: "$flavor_chi.76.title$" # todo: NEW TRANSLATION
- flavor_chi.76.desc: "[target_character.GetName|U] je viac než schopný [ROOT.GetCountry.GetGovernment.GetRulerTitle] a [target_character.GetDaughterSon|U] Nebies; je tiež zanietený učenec. Vytvorenie veľkej #italic Leishū#! encyklopédie bolo vždy súčasťou [target_character.GetHerHis] veľkých ambícií. Teraz, keď má [target_character.GetShortNameWithNoTooltip] na starosti [ROOT.GetCountry.GetName], je možno čas to uskutočniť?" # todo: NEW TRANSLATION
+ flavor_chi.76.desc: "[target_character.GetName|U] je viac než schopný [ROOT.GetCountry.GetGovernment.GetRulerTitle] a [target_character.GetDaughterSon|U] Nebies; je tiež zanietený učenec. Vytvorenie veľkej #italic Leishū#! encyklopédie bolo vždy súčasťou [target_character.GetHerHis] veľkých ambícií. Teraz, keď má [target_character.GetShortNameWithNoTooltip] na starosti [SKCountry(ROOT.GetCountry,'G')], je možno čas to uskutočniť?" # todo: NEW TRANSLATION
  flavor_chi.76.a: "Objednať ju okamžite!" # todo: NEW TRANSLATION
  flavor_chi.76.b: "Nemôžeme si to dovoliť." # todo: NEW TRANSLATION
  flavor_chi.77.title: "Zostavenie dokončené" # todo: NEW TRANSLATION
@@ -559,7 +559,7 @@
  flavor_chi.100.b: "Nesmie byť v [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." # todo: CHANGED # todo: COUNTRY CASE
  flavor_chi.100.b.entry: "Nesmie byť v hlavnom meste." # todo: NEW TRANSLATION
  flavor_chi.100.historical_info: "$flavor_chi_masters_of_the_ming_historical_info$" # todo: NEW TRANSLATION
- flavor_chi_six_masters_of_the_qing: "Počas raného obdobia Qing sa skupina šiestich majstrov vypracovala medzi najlepších umelcov celej Číny: maliar kvetov Yun Shouping, jezuitský krajinár Wu Li a štyria Wangovia. V porovnaní s predchádzajúcimi protějškami boli pomerne konzervatívni a rozhodli sa nasledovať učenie Dong Qichanga." # todo: NEW TRANSLATION
+ flavor_chi_six_masters_of_the_qing: "Počas raného obdobia Qing sa skupina šiestich majstrov vypracovala medzi najlepších umelcov celej Číny: maliar kvetov Yun Shouping, jezuitský krajinár Wu Li a štyria Wangovia. V porovnaní s predchádzajúcimi náprotivkami boli pomerne konzervatívni a rozhodli sa nasledovať učenie Dong Qichanga." # todo: CHANGED (predtym: Počas raného obdobia Qing sa skupina šiestich majstrov vypracovala medzi najlepších umelcov celej Číny: maliar kvetov Yu)
  flavor_chi.101.title: "[target_character.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_chi.101.entry: "$name_yun4$ $name_shou.wu_language$ $name_ping.wu_language$, inovatívny maliar" # todo: NEW TRANSLATION
  flavor_chi.101.desc: "Hoci škola [ShowCultureName('wu_culture')] pokračuje v šírení, niektorí [ROOT.GetCountry.GetAdjective] úradníci sú znepokojení odvážnymi myšlienkami jej umelcov. Jednou z kontroverzných postáv je [target_character.GetName], ktorý verí, že maľba má vyjadrovať morálny charakter autora. Odradený mnohými ako radikál, získal obdiv mládeže. Pri správnej podpore by jeho hnutie mohlo rozkvitnúť, ale za akú cenu?" # todo: CHANGED
@@ -607,12 +607,12 @@
  flavor_chi.107.desc: "Každá dynastia vládnuca [GetInternationalOrganizationType('middle_kingdom').GetName] potrebuje svetu ukázať svoje pýchy. [ROOT.GetCountry.GetLongName] nie je v tomto ohľade iná. Z tohto dôvodu sa [target_character.GetName] rozhodol plánovať vytvorenie nového komplexu palácov, záhrad a pavilónov, všetko, aby upevnil legitimitu rodu [target_character.GetDynasty.GetName] a [target_character.GetHerHis] potomkov." # todo: NEW TRANSLATION
  flavor_chi.107.a: "Postavme ho!" # todo: NEW TRANSLATION
  flavor_chi.107.b: "Je to len márnivosť." # todo: NEW TRANSLATION
- flavor_chi.108.title: "Tributárne misie do [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_chi.108.desc: "Náš vzťah [ShowSubjectTypeName('tributary')] s [target_country.GetName] je dosť zložitý a zahŕňa množstvo rituálov a formalít. Jedna vec je však jasná: potešia nášho súsedného pána a poskytujú príležitosti našim vyslancom obchodovať s [target_country.GetAdjectiveWithNoTooltip] [target_country.GetGovernment.GetEstateName('burghers_estate')]. Posielanie čoraz väčších tributárnych výprav by nám mohlo umožniť z tejto relácie viac profitovať." # todo: NEW TRANSLATION
+ flavor_chi.108.title: "Tributárne misie do [SKCountryNoTooltip(target_country,'G')]" # todo: NEW TRANSLATION
+ flavor_chi.108.desc: "Náš vzťah [ShowSubjectTypeName('tributary')] s [SKCountry(target_country,'I')] je dosť zložitý a zahŕňa množstvo rituálov a formalít. Jedna vec je však jasná: potešia nášho súsedného pána a poskytujú príležitosti našim vyslancom obchodovať s [target_country.GetAdjectiveWithNoTooltip] [target_country.GetGovernment.GetEstateName('burghers_estate')]. Posielanie čoraz väčších tributárnych výprav by nám mohlo umožniť z tejto relácie viac profitovať." # todo: NEW TRANSLATION
  flavor_chi.108.a: "Zväčšime veľkosť delegácie." # todo: NEW TRANSLATION
  flavor_chi.108.b: "To by mohlo rozrušiť naše vzťahy!" # todo: NEW TRANSLATION
  flavor_chi.109.title: "Nevyhovujúca tributárna misia" # todo: NEW TRANSLATION
- flavor_chi.109.desc: "Naši ministri hlásia, že tributárne misie z [origin_country.GetName] rastú, čím sa zvyšujú naše náklady na ubytovanie a starostlivosť o týchto vyslancov. Hoci sa to spočiatku môže zdať neškodné alebo dokonca pozitívne, sme si príliš dobre vedomí ich skrytých motívov — zisku. Pokiaľ nenauložíme obmedzenia [origin_country.GetNameWithNoTooltip], vzniknú nám veľké výdavky, ktoré tento vzťah urobia príliš nákladným na udržanie." # todo: NEW TRANSLATION
+ flavor_chi.109.desc: "Naši ministri hlásia, že tributárne misie z [SKCountry(origin_country,'G')] rastú, čím sa zvyšujú naše náklady na ubytovanie a starostlivosť o týchto vyslancov. Hoci sa to spočiatku môže zdať neškodné alebo dokonca pozitívne, sme si príliš dobre vedomí ich skrytých motívov — zisku. Pokiaľ nenauložíme obmedzenia [origin_country.GetNameWithNoTooltip], vzniknú nám veľké výdavky, ktoré tento vzťah urobia príliš nákladným na udržanie." # todo: NEW TRANSLATION
  flavor_chi.109.a: "Uložme limit na vyslancov." # todo: NEW TRANSLATION
  flavor_chi.109.b: "Nájdi diplomatickejšie riešenie." # todo: NEW TRANSLATION
  flavor_chi.109.c: "Pretrhnime tributárny stav." # todo: NEW TRANSLATION
@@ -670,7 +670,7 @@
  variable_li_zicheng_rebellion_var_tt: "Vzbura Li Zichenga zúri" # todo: NEW TRANSLATION
  flavor_chi.120.title: "Dedičstvo roľníkov" # todo: NEW TRANSLATION
  flavor_chi.120.entry: "$flavor_chi.120.title$" # todo: NEW TRANSLATION
- flavor_chi.120.desc: "Základom [ROOT.GetCountry.GetLongName] je história boja [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] proti [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. Desaťročia sa obyčajní ľudia pretrápili pod zanedbaním predchádzajúcej dynastie, až kým tomu náš zakladateľ, [target_character.GetName], neudrel definitívne stopku. Práve [target_character.GetHerHim] zjednotil obyčajných ľudí proti tyranii, zvrhol starý poriadok a založil dynastiu [ROOT.GetCountry.GetAltAdjective('A')]. Jej vzostup však spochybnil naše zakladateľské hodnoty, ktoré sú v rozpore s efektívnymi byrokratickými štruktúrami predchádzajúcich držiteľov titulu [GetInternationalOrganizationType('middle_kingdom').GetName]. Prípadné prijatie jadrových hodnôt predchádzajúcich dynastií by mohlo podkopať princípy, na ktorých stojí celý štát [ROOT.GetCountry.GetNameWithNoTooltip]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
+ flavor_chi.120.desc: "Základom [ROOT.GetCountry.GetLongName] je história boja [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] proti [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. Desaťročia sa obyčajní ľudia pretrápili pod zanedbaním predchádzajúcej dynastie, až kým tomu náš zakladateľ, [target_character.GetName], neudrel definitívne stopku. Práve [target_character.GetHerHim] zjednotil obyčajných ľudí proti tyranii, zvrhol starý poriadok a založil dynastiu [ROOT.GetCountry.GetAltAdjective('A')]. Jej vzostup však spochybnil naše zakladateľské hodnoty, ktoré sú v rozpore s efektívnymi byrokratickými štruktúrami predchádzajúcich držiteľov titulu [GetInternationalOrganizationType('middle_kingdom').GetName]. Prípadné prijatie jadrových hodnôt predchádzajúcich dynastií by mohlo podkopať princípy, na ktorých stojí celý štát [SKCountryNoTooltip(ROOT.GetCountry,'G')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_chi.120.a: "Musíme zostať pri obyčajných ľuďoch." # todo: NEW TRANSLATION
  flavor_chi.120.b: "Ak sa neadaptujeme, nepochybne padneme." # todo: NEW TRANSLATION
  flavor_chi.121.title: "Dielo [target_work_of_art.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -683,7 +683,7 @@
  flavor_chi.122.b: "Takýto projekt je pre nás príliš nákladný." # todo: NEW TRANSLATION
  until_yellow_river_works_are_complete: "kým nebudú dokončené práce na Žltej rieke" # todo: NEW TRANSLATION
  flavor_chi.123.title: "Práce na Žltej rieke narušené" # todo: NEW TRANSLATION
- flavor_chi.123.desc: "Hnusný agitátor šíril zlovestnú propagandu medzi robotníkmi, ktorí preklápajú rieku Žltú. Podľa našich záznamov je touto postavou [target_character.GetName], fanatik sektu Bieleho lotosu, ktorý prorokuje blížiaci sa príchod Maitreju. Domnievame sa, že jeho prívrženci zakopali jednookú kamennú sochu na trase projektu, aby ju robotníci odkryli. Socha nesla nápis o konci dynastie [ROOT.GetCountry.GetName].\n\nNapriek snahám našich síl zabrániť tomuto pobúreníkovi v odlákaní robotníkov, mnohí z nich prešli na jeho stranu. Momentálne nevieme, kde sa vodca Bieleho lotosu nachádza." # todo: CHANGED
+ flavor_chi.123.desc: "Hnusný agitátor šíril zlovestnú propagandu medzi robotníkmi, ktorí preklápajú rieku Žltú. Podľa našich záznamov je touto postavou [target_character.GetName], fanatik sektu Bieleho lotosu, ktorý prorokuje blížiaci sa príchod Maitreju. Domnievame sa, že jeho prívrženci zakopali jednookú kamennú sochu na trase projektu, aby ju robotníci odkryli. Socha nesla nápis o konci dynastie [SKCountry(ROOT.GetCountry,'G')].\n\nNapriek snahám našich síl zabrániť tomuto pobúreníkovi v odlákaní robotníkov, mnohí z nich prešli na jeho stranu. Momentálne nevieme, kde sa vodca Bieleho lotosu nachádza." # todo: CHANGED
  flavor_chi.123.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
  flavor_chi.123.a.entry: "$common_string_curses$" # todo: NEW TRANSLATION
  flavor_chi.124.title: "Preusporiadanie Žltej rieky dokončené" # todo: NEW TRANSLATION
@@ -715,7 +715,7 @@
  flavor_chi.128.a: "Jeho úloha historického hlavného mesta musí byť uznaná." # todo: NEW TRANSLATION
  flavor_chi.128.b: "Bude slúžiť ako naše nové hlavné mesto." # todo: NEW TRANSLATION
  flavor_chi.128.c: "Už má svoju starodávnu slávu." # todo: NEW TRANSLATION
- flavor_chi.1000.title: "Uzavretie [ROOT.GetCountry.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_chi.1000.title: "Uzavretie [SKCountryNoTooltip(ROOT.GetCountry,'G')]" # todo: NEW TRANSLATION
  flavor_chi.1000.entry: "$flavor_chi.1000.title$" # todo: NEW TRANSLATION
  flavor_chi.1000.desc: "Zahraniční západní obchodníci z [ShowContinentName('europe')] sa zdajú byť všade v [ROOT.GetCountry.GetAltAdjective('L')]. Odsávajú zisky od našich obchodníkov a privádzajú ich k bankrotu, čo nám spôsobuje obrovské straty z daní a colných poplatkov. Možno by sme ich mali úplne zakázať alebo ich obmedziť na jedno miesto, kde by sa mohli usadiť, aby sme ich ľahšie kontrolovali a ukladali obchodné clá.\n\nNaši odborníci veria, že odovzdanie [target_location.GetName] [target_foreign_country.GetName] a povolenie obchodovať len tam by mohlo byť najlepším riešením. To by nám tiež prinieslo výhodu rozšírenia obchodu v našich južných regiónoch [ShowAreaName('guangdong_area')]. Na druhej strane sa môžeme rozhodnúť úplne zavrhnúť vonkajší obchod alebo otvoriť naše pobrežie voľnému a neobmedzenému obchodu pre všetkých." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_chi.1000.a: "Uzavriť [ROOT.GetCountry.GetNameWithNoTooltip] vonkajšiemu svetu." # todo: NEW TRANSLATION
@@ -723,7 +723,7 @@
  flavor_chi.1000.b: "Nechajte obchod otvorený pre všetkých." # todo: NEW TRANSLATION
  flavor_chi.1000.c: "Ponúknuť im [target_location.GetNameWithNoTooltip]." # todo: NEW TRANSLATION
  flavor_chi.1000.c.entry: "Ponúknite im miesto." # todo: NEW TRANSLATION
- flavor_chi.1000.c.tt: "Pošleme im ponuku na [target_foreign_country.GetName] pre [target_location.GetName]. Ak ju prijmú, stanú sa jej majiteľmi" # todo: NEW TRANSLATION
+ flavor_chi.1000.c.tt: "Pošleme im ponuku na [SKCountry(target_foreign_country,'A')] pre [target_location.GetName]. Ak ju prijmú, stanú sa jej majiteľmi" # todo: NEW TRANSLATION
  flavor_chi.1001.title: "Ponuka pre [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  flavor_chi.1001.desc: "Obrátili sa na nás vyslanci [target_origin_country.GetLongName], ktorí nám ponúkajú držbu [target_location.GetName]. To by nám poskytlo východiskový bod na prístup k ich trhom a väčšie obchodné možnosti, no určite od nás budú očakávať nejakú kompenzáciu a budú mať väčší vplyv na našich obchodníkov, ak budeme vstupovať ich podmienkami." # todo: NEW TRANSLATION
  flavor_chi.1001.a: "Prijať ich ponuku." # todo: NEW TRANSLATION
@@ -734,12 +734,12 @@
  flavor_chi.1002.a.entry: "$common_string_brilliant$" # todo: NEW TRANSLATION
  flavor_chi.1003.title: "$flavor_chi.1002.title$" # todo: NEW TRANSLATION
  flavor_chi.1003.entry: "$flavor_chi.1003.title$" # todo: NEW TRANSLATION
- flavor_chi.1003.desc: "Zatratení ľudia z [target_country.GetName] pohrdli našou veľkorysou ponukou usadiť sa v [target_location.GetName]. Stále sa tvária, že chcú pristupovať k našim trhom bez úmyslu prispôsobiť sa našim pravidlám. Takéto urážky nemožno dovoliť." # todo: NEW TRANSLATION
+ flavor_chi.1003.desc: "Zatratení ľudia z [SKCountry(target_country,'G')] pohrdli našou veľkorysou ponukou usadiť sa v [target_location.GetName]. Stále sa tvária, že chcú pristupovať k našim trhom bez úmyslu prispôsobiť sa našim pravidlám. Takéto urážky nemožno dovoliť." # todo: NEW TRANSLATION
  flavor_chi.1003.a: "[ROOT.GetCountry.Custom('common_string_negative')]" # todo: NEW TRANSLATION
  flavor_chi.1003.a.entry: "$common_string_curses$" # todo: NEW TRANSLATION
  flavor_chi.1100.title: "Kontroverzia okolo obradov [ShowCultureGroupNameWithNoTooltip('chinese_group')]" # todo: NEW TRANSLATION
  flavor_chi.1100.entry: "Kontroverzia okolo čínskych skupinových obradov" # todo: NEW TRANSLATION
- flavor_chi.1100.desc: "Doteraz boli styky medzi našou cirkvou a ľuďmi z [target_chinese_country.GetName] riešené výlučne jezuitmi. Aby sa priblížili k [ShowCultureGroupName('chinese_group')], rád sa naučil ich zvyky a jazyk a vo všeobecnosti sa snažil zapadnúť do [target_chinese_country.GetAdjectiveWithNoTooltip] spoločnosti.\n\nS príchodom dominikánov a františkánov do $china$ sa nám však začali dostávať znepokojujúce správy. Zdá sa, že jezuiti tolerujú veľmi vysokú mieru ne-[ROOT.GetReligion.GetAdjective] rítov medzi údajne obrátenými [target_chinese_country.GetAdjectiveWithNoTooltip] ľuďmi. Ostatné rády sú pobúrené jezuitovým konaním a údajnými [ROOT.GetReligion.GetAdjectiveWithNoTooltip] konvertitmi a naliehajú na nás, aby sme jasne vyhlásili, že že obradom predkov [target_chinese_country.GetAdjectiveWithNoTooltip] nie je miesto medzi veriacimi a že kto chce vstúpiť do našej cirkvi, musí sa týchto vecí vzdať." # todo: NEW TRANSLATION
+ flavor_chi.1100.desc: "Doteraz boli styky medzi našou cirkvou a ľuďmi z [SKCountry(target_chinese_country,'G')] riešené výlučne jezuitmi. Aby sa priblížili k [ShowCultureGroupName('chinese_group')], rád sa naučil ich zvyky a jazyk a vo všeobecnosti sa snažil zapadnúť do [target_chinese_country.GetAdjectiveWithNoTooltip] spoločnosti.\n\nS príchodom dominikánov a františkánov do $china$ sa nám však začali dostávať znepokojujúce správy. Zdá sa, že jezuiti tolerujú veľmi vysokú mieru ne-[ROOT.GetReligion.GetAdjective] rítov medzi údajne obrátenými [target_chinese_country.GetAdjectiveWithNoTooltip] ľuďmi. Ostatné rády sú pobúrené jezuitovým konaním a údajnými [ROOT.GetReligion.GetAdjectiveWithNoTooltip] konvertitmi a naliehajú na nás, aby sme jasne vyhlásili, že že obradom predkov [target_chinese_country.GetAdjectiveWithNoTooltip] nie je miesto medzi veriacimi a že kto chce vstúpiť do našej cirkvi, musí sa týchto vecí vzdať." # todo: NEW TRANSLATION
  flavor_chi.1100.a: "Rozhodnúť v prospech jezuitov." # todo: NEW TRANSLATION
  flavor_chi.1100.b: "Rozhodnúť v prospech dominikánov." # todo: NEW TRANSLATION
  mng_chinese_rites_denounced: "$flavor_chi.1100.title$" # todo: NEW TRANSLATION
@@ -753,7 +753,7 @@
  flavor_chi.1102.a: "$flavor_chi.1101.a$" # todo: NEW TRANSLATION
  flavor_chi.1102.a.tt: "Zastaví konverzie na kresťanstvo v Číne" # todo: NEW TRANSLATION
  flavor_chi.1102.b: "$flavor_chi.1101.b$" # todo: NEW TRANSLATION
- flavor_chi_pap.1.title: "Delegácia z [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ flavor_chi_pap.1.title: "Delegácia z [SKCountryNoTooltip(target_country,'G')]" # todo: NEW TRANSLATION
  flavor_chi_pap.1.entry: "Delegácia z Ríma" # todo: NEW TRANSLATION
  flavor_chi_pap.1.desc: "Posolstvo z ďalekej krajiny [target_country.GetName] práve dorazilo do [ROOT.GetCountry.GetCapital.GetName]. Informujú nás o osude [target_pop_cath.GetName], ktorým chýba duchovný vodca v ďalekom Cathayi. Preto nás prosia, aby sme poslali kňazov do [target_location.GetName] v ich mene.\n\nJe to presne to, čo [target_building.GetName] potrebuje." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  flavor_chi_pap.1.a: "Dobre, pošlite im kňazov!" # todo: NEW TRANSLATION
@@ -769,11 +769,11 @@
  flavor_chi_por.1.b: "Nepotrebujeme to." # todo: NEW TRANSLATION
  flavor_chi_por.1.requirement_tt: "[ShowFormableCountryName('CHI_f')] vlastní [ShowLocationName('xiangshan_xinhui')]" # todo: NEW TRANSLATION
  flavor_chi_por.2.title: "Prenájom v [target_location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_chi_por.2.desc: "Dostali sme posla z [offering_country.GetName] s návrhom prenájmu [target_location.GetName]. Podľa dohody by [offering_country.GetNameWithNoTooltip] získalo časť územia a mohlo by tam zriadiť [target_building_type.GetName] na vedenie obchodu s [target_country.GetName]. Taký obchod s ďalekým [ShowContinentName('europe')] by nás určite posunul viac smerom [ShowSocietyDirectionName('outward')] a umožnil by nám dovoz mnohých tovarov, ktoré sú v $china$ doteraz nevídané." # todo: NEW TRANSLATION
+ flavor_chi_por.2.desc: "Dostali sme posla z [SKCountry(offering_country,'G')] s návrhom prenájmu [target_location.GetName]. Podľa dohody by [offering_country.GetNameWithNoTooltip] získalo časť územia a mohlo by tam zriadiť [target_building_type.GetName] na vedenie obchodu s [SKCountry(target_country,'I')]. Taký obchod s ďalekým [ShowContinentName('europe')] by nás určite posunul viac smerom [ShowSocietyDirectionName('outward')] a umožnil by nám dovoz mnohých tovarov, ktoré sú v $china$ doteraz nevídané." # todo: NEW TRANSLATION
  flavor_chi_por.2.a: "Prijať ponuku." # todo: NEW TRANSLATION
  flavor_chi_por.2.b: "Odmietnuť návrh." # todo: NEW TRANSLATION
- flavor_chi_por.3.title: "Odpoveď od [target_country.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- flavor_chi_por.3.desc_common: "Náš posol vyslaný do [target_country.GetName] sa konečne vrátil!" # todo: NEW TRANSLATION
+ flavor_chi_por.3.title: "Odpoveď od [SKCountryNoTooltip(target_country,'G')]" # todo: NEW TRANSLATION
+ flavor_chi_por.3.desc_common: "Náš posol vyslaný do [SKCountry(target_country,'G')] sa konečne vrátil!" # todo: NEW TRANSLATION
  flavor_chi_por.3.desc_success: "$flavor_chi_por.3.desc_common$ Ako sa dalo očakávať, zástupcovia [target_country.GetAdjectiveWithNoTooltip] na našu ponuku reagovali pozitívne a naši ministri už pracujú na realizácii." # todo: NEW TRANSLATION
  flavor_chi_por.3.desc_failure: "$flavor_chi_por.3.desc_common$ Bohužiaľ, arogantní ministri [target_country.GetLongNameWithNoTooltip] našu ponuku odmietli. Bohatstvo $china$ nie je predsa až také dôležité!" # todo: NEW TRANSLATION
  flavor_chi_por.3.a: "[ROOT.GetCountry.Custom('common_string_ok')]" # todo: NEW TRANSLATION

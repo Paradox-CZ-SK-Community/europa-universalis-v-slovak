@@ -1,12 +1,12 @@
 ﻿l_polish:
  loan_icon: "Požičať ikonu" # todo: NEW TRANSLATION
- loan_icon_desc: "Požičajte jednu [ShowWorkOfArtTypeName('icon')] inému [Concept('country','krajine')|e] na obdobie #Y 10#! rokov, za poplatok závislý od ich [Concept('income','príjem')|e] a [Concept('art_quality','kvalita umenia')|e] [Concept('work_of_art','umeleckého diela')|e]. Tiež to zlepší [Concept('opinion','názor')|e] a [Concept('trust','dôvera')|e] medzi oboma štátmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- loan_icon_tt_no_target: "Pošleme ponuku na zapožičanie jednej z našich [Concept('works_of_art','umeleckých diel')|e] cieľovému [Concept('country','krajine')|e] výmenou za [Concept('gold','dukáty')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ loan_icon_desc: "Požičajte jednu [ShowWorkOfArtTypeName('icon')] inej [Concept('country','krajine')|e] na obdobie #Y 10#! rokov, za poplatok závislý od ich [Concept('income','príjem')|e] a [Concept('art_quality','kvalita umenia')|e] [Concept('work_of_art','umeleckého diela')|e]. Tiež to zlepší [Concept('opinion','názor')|e] a [Concept('trust','dôvera')|e] medzi oboma štátmi." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ loan_icon_tt_no_target: "Pošleme ponuku na zapožičanie jednej z našich [Concept('works_of_art','umeleckých diel')|e] cieľovej [Concept('country','krajine')|e] výmenou za [Concept('gold','dukáty')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  loan_icon_tt: "Dostanú našu ponuku na zapožičanie im [SCOPE.sWorkOfArt('target').GetName] výmenou za [SCOPE.GetValue('icon_price_value')|2][gold_i]" # todo: NEW TRANSLATION
- loan_icon_bad_economy_tt: "Zdá sa, že sú v zlej ekonomickej situácii, takže #R nemusia súhlasiť#! ak k nám nemajú dostatočne dobrú [Concept('opinion','názor')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ loan_icon_bad_economy_tt: "Zdá sa, že sú v zlej ekonomickej situácii, takže #R nemusia súhlasiť#! ak k nám nemajú dostatočne dobrý [Concept('opinion','názor')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  loan_icon_choose_icon: "Vyberte [ShowWorkOfArtTypeName('icon')] na zapožičanie" # todo: NEW TRANSLATION
  not_already_receiving_icon_tt: "Nesmú už mať zapožičanú [ShowWorkOfArtTypeName('icon')]" # todo: NEW TRANSLATION
- icon_not_already_loaned_tt: "V súčasnosti nesmieme požičiavať toto [ShowWorkOfArtTypeName('icon')] od iného [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ icon_not_already_loaned_tt: "V súčasnosti nesmieme požičiavať toto [ShowWorkOfArtTypeName('icon')] od inej [Concept('country','krajiny')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  mend_schism: "Zahojiť rozkol" # todo: NEW TRANSLATION
  mend_schism_desc: "Po stáročia bol [ShowReligionGroupName('christian')] rozdelený. Keď máme pod kontrolou všetky stolice Pentarchie, je čas uplatniť náš vplyv na zahojenie tej rany a zjednotenie Cirkví." # todo: NEW TRANSLATION
  restore_rome_primacy: "Obnoviť primát [ShowLocationNameWithNoTooltip('rome')]" # todo: NEW TRANSLATION
@@ -18,7 +18,7 @@
  add_omen_god: "Vyberte boha pre vedenie znamenia" # todo: NEW TRANSLATION
  select_omen: "Vyvolať znamenie" # todo: NEW TRANSLATION
  select_omen_desc: "Náš vládca vyvolá znamenie." # todo: NEW TRANSLATION
- select_omen_tt: "Získame dočasný bonus pre náš [Concept('country','krajina')|e]. Jeho sila závisí od príslušnej [Concept('ability','schopnosti')|e] nášho [Concept('ruler','panovníka')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ select_omen_tt: "Získame dočasný bonus pre našu [Concept('country','krajinu')|e]. Jeho sila závisí od príslušnej [Concept('ability','schopnosti')|e] nášho [Concept('ruler','panovníka')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  select_omen_god_is_active_tt: "[target.GetName] je už zaneprázdnený iným [Concept('omen','omen')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  select_omen_god: "Vyberte znamenie" # todo: NEW TRANSLATION
  select_omen_god_desc: "Náš vládca si vyberie boha, ktorý ho navedie pri výbere [Concept('omen','omen')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -70,7 +70,7 @@
  carneia_tt_mod: "Získame [ShowModifier('carneia_modifier')]." # todo: NEW TRANSLATION
  panionia_tt: "Festival Panionia sa slávi v [ShowProvinceDefinitionName('aydin_province')] na počesť boha [ShowGodName('poseidon_god')]." # todo: NEW TRANSLATION
  panionia_tt_mod: "Získame [ShowModifier('panionia_modifier')]." # todo: NEW TRANSLATION
- hire_advisor_eunuch_chance_tt: "10–100% šanca na najatie [ShowTraitName('eunuch')] [Concept('character','postava')|e] s vyšším priemerným [Concept('abilities','schopnosťami')|e], upravená podľa zakorenenia [ShowBureaucracyTypeName('court_eunuchs_bureaucracy')] a [ShowModifierTypeName('eunuch_power')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ hire_advisor_eunuch_chance_tt: "[actor.MakeScope.ScriptValue('hire_advisor_eunuch_chance')|V0]% šanca na najatie [ShowTraitName('eunuch')] [Concept('character','postavy')|e] s vyššími priemernými [Concept('abilities','schopnosťami')|e]. Šanca je 10 % plus 9 % za každých 10 bodov zakorenenia [ShowBureaucracyTypeName('court_eunuchs_bureaucracy')] a 10 % za každých 0.5 [ShowModifierTypeName('eunuch_power')], najviac 100 %." # todo: CHANGED (predtym: 10–100% šanca na najatie [ShowTraitName('eunuch')] [Concept('character','postava')|e] s vyšším priemerným [Concept('abil)
  grant_a_triumph: "Udeľte triumf" # todo: NEW TRANSLATION
  grant_a_triumph_desc: "Úspechy treba oslavovať. Schopný vojenský vodca by mal byť predstavený ľudu ako víťaz v spektakulárnej triumfálnej prehliadke." # todo: NEW TRANSLATION
  grant_a_triumph_tt: "Vyhrali sme vojnu v posledných 5 rokoch." # todo: NEW TRANSLATION
