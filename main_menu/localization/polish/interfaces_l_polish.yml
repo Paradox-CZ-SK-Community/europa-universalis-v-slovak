@@ -3619,7 +3619,7 @@
  TRADE_INCOME_ENTRY_OVERFLOW: "...a $VAL|+=2$@income! z $NUM|Y$ ďalších [Concept('trades','obchodov')|e]." # todo: CHANGED # todo: CONCEPT CASE
  FOOD_INCOME_BREAKDOWN: "Príjmy z potravín\nCena za [Concept('food','potraviny')|e] na [Concept('market','trh')|e]: $PRICE|2$@gold!\nPredané množstvo: $AMOUNT|2$\nVynásobené [Concept('control','kontrola')|e] oblasti [LOCATION.GetName]: [LOCATION.GetControl|Y2%]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FOOD_EXPENSE_BREAKDOWN: "Výdavky na potraviny\nPotraviny pre [PROVINCE.GetName]\nCena za [Concept('food','potraviny')|e] na [MARKET.GetName]: $PRICE|2$@gold!\nKúpené množstvo: $AMOUNT|2$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUBSIDIZE_EXPENSE_ENTRY: "[BUILDING.GetName] in [LOCATION.GetName]: $VAL|-=2$@expense!\n" # todo: CHANGED
+ SUBSIDIZE_EXPENSE_ENTRY: "[BUILDING.GetName] v [LOCATION.GetName]: $VAL|-=2$@expense!\n" # todo: CHANGED (predtym: [BUILDING.GetName] in [LOCATION.GetName]: $VAL|-=2$@expense!\n)
  SUBSIDIZE_EXPENSE_LARGE: "Zo $NUM$ ďalších dotovaných budov: $VAL|+=2$@expense!" # todo: CHANGED
  MERC_EXPENSE_ENTRY: "[MERCENARY.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|-=2L$@expense!#!\n" # todo: CHANGED
  MERC_EXPENSE_LARGE: "Zo $NUM$ ďalších žoldnierskych družín: $VAL|+=2$@expense!" # todo: CHANGED
@@ -3630,8 +3630,8 @@
  BUILDING_CATEGORY_BUILD_ENTRY: "$BULLET$[BUILDING_TYPE.GetName]" # todo: NEW TRANSLATION
  UNIT_MISSING_GOODS_HEADER: "Chýbajúce tovary" # todo: NEW TRANSLATION
  UNIT_MISSING_GOODS_ENTRY: "#subtle_name [GOODS.GetIcon][Goods.GetNameNoUnderline]#!: $VAL|2V$" # todo: NEW TRANSLATION
- BUILDING_EXPENSE_ENTRY: "[BUILDING.GetLevel|V0] [BUILDING.GetName] in [BUILDING.GetLocation.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@expense!#!" # todo: CHANGED
- BUILDING_IN_MARKET_EXPENSE_ENTRY: "$NUM$ [BUILDING_TYPE.GetName] in [MARKET.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $COST|-=2$@expense!#!" # todo: CHANGED
+ BUILDING_EXPENSE_ENTRY: "[BUILDING.GetLevel|V0] [BUILDING.GetName] v [BUILDING.GetLocation.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@expense!#!" # todo: CHANGED (predtym: [BUILDING.GetLevel|V0] [BUILDING.GetName] in [BUILDING.GetLocation.GetName]: TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@expense! )
+ BUILDING_IN_MARKET_EXPENSE_ENTRY: "$NUM$ [BUILDING_TYPE.GetName] v [MARKET.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $COST|-=2$@expense!#!" # todo: CHANGED (predtym: $NUM$ [BUILDING_TYPE.GetName] in [MARKET.GetName]: TOOLTIP:$BREAKDOWN_TAG$ $COST|-=2$@expense! !)
  FOOD_M_IMPACT: "[Concept('provinces','Provincie')|e] budú schopné kúpiť $VAL|2%V$ z [Concept('food','potravín')|e], ktoré potrebujú." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  UPKEEP_IMPACT: "Budovy budú fungovať pri efektivite $VAL|2%V$." # todo: NEW TRANSLATION
  BUILDING_EXPENSE_BREAKDOWN_TITLE: "#T Náklady na údržbu pre [BUILDING.GetName] vo výške $VAL|2R$@expense!#!" # todo: CHANGED (predtym: T Náklady na údržbu pre [BUILDING.GetName] !)
@@ -3699,7 +3699,7 @@
  SUBSIDIZE_EXPENSES_H: "Výdavky na dotácie" # todo: NEW TRANSLATION
  PRIVATEER_EXPENSE: "$game_concept_privateer_maintenance$" # todo: CHANGED (predtym: [privateer_maintenance])
  PRIVATEER_EXPENSES_H: "Výdavky na súkromných korzárov" # todo: NEW TRANSLATION
- PRIVATEER_COST: "[PRIVATEER.GetName] in [PRIVATEER.GetArea.GetName]: $PRICE$" # todo: CHANGED
+ PRIVATEER_COST: "[PRIVATEER.GetName] v [PRIVATEER.GetArea.GetName]: $PRICE$" # todo: CHANGED (predtym: [PRIVATEER.GetName] in [PRIVATEER.GetArea.GetName]: $PRICE$)
  OTHER_ECONOMY_ITEM_NAME: "Iné príjmy" # todo: NEW TRANSLATION
  CourtMaintenance_eco_view: "[Concept('court_maintenance','Náklady dvora')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ArmyMaintenance_eco_view: "[Concept('army_maintenance','Údržba armády')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -3770,7 +3770,7 @@
  LOAN_INCOME_ENTRY: "• [LOAN.GetNameAsLender]: [LOAN.GetMonthlyCost|+=2][gold_i]\n" # todo: NEW TRANSLATION
  LOAN_EXPENSE_ENTRY: "• [LOAN.GetNameAsBorrower]: #R -#![LOAN.GetMonthlyCost|-2][gold_i]\n" # todo: NEW TRANSLATION
  LOAN_EXPENSE_LARGE: "Z $NUM$ ďalších pôžičiek: $VAL|+=2$[gold_i]" # todo: NEW TRANSLATION
- TRADE_INCOME_SOUND_TOLLS: "[Concept('sound_tolls','Prieplavné mýta')|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=$@income!#!" # todo: CHANGED # todo: CONCEPT CASE
+ TRADE_INCOME_SOUND_TOLLS: "[Concept('sound_tolls','Prielivové mýta')|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=$@income!#!" # todo: CHANGED (predtym: [Concept('sound_tolls','Prieplavné mýta')|e]: TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=$@income! !)
  SOUND_TOLL_SOURCES: "Príjmy z mýta" # todo: NEW TRANSLATION
  NO_TOLL_INCOME: "Z tohto mýta nezískavame žiadny príjem" # todo: NEW TRANSLATION
  TOLL_OWNER: "Tento mýt prináša [Concept('trade_income','príjem z obchodu')|e] kontrolórovi lokality @location! [Location.GetSoundTollController.GetName]." # todo: CHANGED # todo: CONCEPT CASE
@@ -3808,7 +3808,7 @@
  ESTATE_INCOME_BREAKDOWN: "Zdroje príjmu z daní pre [Estate.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  TAXING_ESTATE_INCOME_BREAKDOWN: "Zdanené príjmy pre [Estate.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  ESTATE_TT_TITLE: "[Estate.GetCountry.GetAdjectiveWithNoTooltip] [Estate.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- ESTATE_EXPENSE_INFO_ENTRY: "$GOODS_MARKET_ENTRY_LABEL$ in [MARKET.GetCenterLocation.GetOwner.GetFlagIcon][MARKET.GetNameWithNoTooltip] ($PRICE$): $VAL|+=2$@gold!" # todo: CHANGED
+ ESTATE_EXPENSE_INFO_ENTRY: "$GOODS_MARKET_ENTRY_LABEL$ v [MARKET.GetCenterLocation.GetOwner.GetFlagIcon][MARKET.GetNameWithNoTooltip] ($PRICE$): $VAL|+=2$@gold!" # todo: CHANGED (predtym: $GOODS_MARKET_ENTRY_LABEL$ in [MARKET.GetCenterLocation.GetOwner.GetFlagIcon][MARKET.GetNameWithNoTooltip] ($PRICE$): $V)
  ESTATE_EXPENSES: "Výdavky od [Concept('pops','populácií')|e]" # todo: CHANGED # todo: CONCEPT CASE
  FOOD_PROFIT_ENTRY_WITH_BREAKDOWN: "@province! [PROVINCE.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@gold!#!" # todo: NEW TRANSLATION
  FOOD_EXPENSE_ENTRY_BREAKDOWN: "#T $VAL|V2$ výdavky na potraviny kvôli#!\nPotrebné potraviny: $AMOUNT$\nCena potravín v [Location.GetName]: x$PRICE|V4$\n[Concept('food','Potraviny')|e] investícia: x$SLIDER|V2$\nKorunná moc: x$CROWN_POWER|V2$\n$MODIFIER$\nPotravinová investícia určuje časť provinčných potravín, ktorá bude zakúpená na trhoch.\nNaše [Concept('estates','stavy')|e] platia tú časť účtu za potraviny, ktorú nepokrýva naša korunná moc." # todo: CHANGED (predtym: T $VAL|V2$ výdavky na potraviny kvôli !\nPotrebné potraviny: $AMOUNT$\nCena potravín v [Location.GetName]: x$PRICE|V4$\n) # todo: CONCEPT CASE
@@ -3856,7 +3856,7 @@
  AUTOMATION_MINTING_ZERO_ON_TT: "Zapnúť automatické razenie pri 0 mesačnej inflácii" # todo: NEW TRANSLATION
  AUTOMATION_MINTING_ZERO_OFF_TT: "Vypnúť automatické razenie pri 0 mesačnej inflácii" # todo: NEW TRANSLATION
  FORT_MAINTENANCE_BREAKDOWN_TITLE: "Rozpis pre [BUILDING.GetName] v [LOCATION.GetName]" # todo: NEW TRANSLATION
- FORT_MAINTENANCE_ENTRY: "[BUILDING.GetName] in [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@expense!#!" # todo: CHANGED
+ FORT_MAINTENANCE_ENTRY: "[BUILDING.GetName] v [LOCATION.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@expense!#!" # todo: CHANGED (predtym: [BUILDING.GetName] in [LOCATION.GetName]: TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@expense! !)
  FORT_COST_FORT_LIMIT: "Limit pevností pre [COUNTRY.GetAltAdjective('A')]: $LIMIT|Y$" # todo: NEW TRANSLATION # todo: COUNTRY CASE
  FORT_COST_CURRENT_NUM_FORTS: "Náklady na [Concept('forts','pevnosti')|e] so [Concept('zone_of_control','zónou kontroly')|e]: $NUM$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  FORT_COST_CURRENT_NUM_FORTS_WITHOUT_ZOC: "Náklady na [Concept('forts','pevnosti')|e] bez [Concept('zone_of_control','zóny kontroly')|e]: $NUM$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -3928,7 +3928,7 @@
  MODIFIERS_IMPACT_ON_PRICE: "Potom sa základné náklady násobia $VAL|-=2%$ kvôli [Concept('modifiers','modifikátorom')|e]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SCALE_IMPACT_ON_PRICE: "Potom sa základné náklady násobia $SCALE$ z nasledujúcich dôvodov škálovania:" # todo: CHANGED
  COMBAT_POWER_NUMBER_FORMAT: "$COMBAT_POWER|Y2$" # todo: NEW TRANSLATION
- PARLIAMENT_LOCATION_OUTLINER_TITLE: "[Parliament.GetName] in [Parliament.GetParliamentLocation.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ PARLIAMENT_LOCATION_OUTLINER_TITLE: "[Parliament.GetName] v [Parliament.GetParliamentLocation.GetNameWithNoTooltip]" # todo: CHANGED (predtym: [Parliament.GetName] in [Parliament.GetParliamentLocation.GetNameWithNoTooltip])
  ESTATE_ECO_INFO_income: "Zdaniteľný príjem: $VAL|+=2$@gold!" # todo: NEW TRANSLATION
  ESTATE_ECO_INFO_tax: "Zaplatné dane: $VAL|+=2$@gold!" # todo: NEW TRANSLATION
  ESTATE_ECO_INFO_pop: "Výdaje na obyvateľstvo: $VAL|+=2$@gold!" # todo: NEW TRANSLATION
@@ -4047,7 +4047,7 @@
  RAW_MATERIAL_LOCATION_TABLE_START_RIGHT_TT: "[Location.GetMaxRGOWorkers|0]/[Location.GetMaximumMaxRGOWorkersValueForUI|L0]" # todo: NEW TRANSLATION
  RAW_MATERIAL_LOCATION_TABLE_MAX_LEVEL_POP_DISPLAY: "Až [Location.GetMaximumMaxRGOWorkersUncapped] [Concept('pops','populácie')|e] tu môže pracovať.\nPočet je však vždy obmedzený na celé úrovne [Concept('rgo','R.G.O.')|e], pričom každá zamestnáva [GetDefine('NPop','DISPLAY_SIZE')|L0] [Concept('pops','populácie')|e]." # todo: CHANGED (predtym: [Concept('pop','Populácia')|e] deliací faktor: [GetDefine('NPop','DISPLAY_SIZE')|Y]) # todo: CONCEPT CASE
  RAW_MATERIAL_LOCATION_TABLE_PROFIT_PER_LEVEL: "[Concept('tax_base','Daňový základ')|e] za úroveň" # todo: CHANGED # todo: CONCEPT CASE
- RAW_MATERIAL_LOCATION_TABLE_PRICE: "[Concept('price','Cena')|e] of [Location.GetRawMaterial.GetName] in @market! [Location.GetMarket.GetShortName]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ RAW_MATERIAL_LOCATION_TABLE_PRICE: "[Concept('price','Cena')|e] [Location.GetRawMaterial.GetName] v @market! [Location.GetMarket.GetShortName]:" # todo: CHANGED (predtym: [Concept('price','Cena')|e] of [Location.GetRawMaterial.GetName] in @market! [Location.GetMarket.GetShortName]:)
  GOODS_DEMAND_INFO_ENTRY: "#subtle_name [GOODS.GetIcon][GOODS.GetNameNoUnderline]#!: $VAL|2V$" # todo: CHANGED NUMBER
  GOODS_LOC_OUTPUT_HEAD: "[Goods.GetNameWithNoTooltip] z [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  GOODS_LOC_DEMAND_HEAD: "Dopyt po [Goods.GetNameWithNoTooltip] v [Location.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -4577,7 +4577,7 @@
  POP_NAME_ENTRY_WITH_NO_LOCATION: "[POP.GetCulture.GetNameWithNoTooltip] [POP.GetType.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  POP_DEBUG_TEXT: "ID: $ID$\nCalcCharacterChance: [POP.CalcCharacterChance(POP.GetOwnerOrLocationOwner)|2]" # todo: CHANGED (predtym: CalcCharacterChance: [POP.CalcCharacterChance(POP.GetOwnerOrLocationOwner)|2])
  MAP_TT_OWNER_SUFFIX: "[AddTextIf(And(Location.HasOwner, PdxGuiWidget.NamePathContains('Map')), Location.GetOwner.GetFlagIcon)]" # todo: CHANGED
- BASE_TAX_FROM_LOC_TITLE: "[wealth] in [Location.GetNameWithNoTooltip] $MAP_TT_OWNER_SUFFIX$" # todo: CHANGED
+ BASE_TAX_FROM_LOC_TITLE: "[wealth] v [Location.GetNameWithNoTooltip] $MAP_TT_OWNER_SUFFIX$" # todo: CHANGED (predtym: [wealth] in [Location.GetNameWithNoTooltip] $MAP_TT_OWNER_SUFFIX$)
  BASE_TAX_EXPLAIN: "[Concept('tax','Daň')|e] príjem sa získa zdanením zisku z [Concept('buildings','budov')|e] a [Concept('resource_gathering_operations','prevádzok získavania zdrojov')|e]. Množstvo, ktoré môžeme zdanit, závisí od [Concept('control','kontroly')|e] [Concept('location','lokality')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  LOCATION_RANK_TITLE: "[LocationRank.GetNameWithNoTooltip|L] [Location.GetNameWithNoTooltip] $MAP_TT_OWNER_SUFFIX$" # todo: CHANGED
  LOCATION_RANK_TAG_TITLE: "[LocationRank.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
@@ -4750,8 +4750,8 @@
  BUILDTYPE_COST_IN_LOCATION: "Náklady na výstavbu v [BuildingItem.GetLocationFilter.GetName]: [BuildingItem.GetCost]" # todo: NEW TRANSLATION
  BUILDTYPE_RGO_TIME: "Predvolený čas stavby: $TIME|YL$#L  $DAYS_LONG_LOC$#!" # todo: CHANGED
  BUILDTYPE_RGO_COST: "Náklady na výstavbu: $COST$" # todo: NEW TRANSLATION
- PRODUCTION_METHOD_TOTAL_PROFIT_ENTRY_BRK_TT: "[BUILDING.GetNameWithNoTooltip] in [BUILDING.GetLocation.GetNameWithNoTooltip]\n" # todo: NEW TRANSLATION
- PRODUCTION_METHOD_TOTAL_PROFIT_ENTRY: "[BUILDING.GetName] in [BUILDING.GetLocation.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@gold!#!" # todo: NEW TRANSLATION
+ PRODUCTION_METHOD_TOTAL_PROFIT_ENTRY_BRK_TT: "[BUILDING.GetNameWithNoTooltip] v [BUILDING.GetLocation.GetNameWithNoTooltip]\n" # todo: CHANGED (predtym: [BUILDING.GetNameWithNoTooltip] in [BUILDING.GetLocation.GetNameWithNoTooltip]\n)
+ PRODUCTION_METHOD_TOTAL_PROFIT_ENTRY: "[BUILDING.GetName] v [BUILDING.GetLocation.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@gold!#!" # todo: CHANGED (predtym: [BUILDING.GetName] in [BUILDING.GetLocation.GetName]: TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$@gold! !)
  BUILD_COST_BREAKDOWN_ENTRY: "[MARKET.GetOwner.GetFlagIcon] [MARKET.GetName]: $VAL|L0$" # todo: NEW TRANSLATION
  BUILDING_PM_ENTRY: "[PRODUCTION_METHOD.GetName]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=2$#!@gold!" # todo: CHANGED (predtym: [PRODUCTION_METHOD.GetName]: $VAL|-=2$@gold!)
  DISPLAY_CARDS: "Zobraziť karty" # todo: NEW TRANSLATION
@@ -4789,7 +4789,7 @@
  BUILDING_POSSIBLE_SUBSIDIZE: "Ak by [BUILDING.GetNameWithNoTooltip] vykazovala stratu, [COUNTRY.GetAltAdjective('A')] ju bude dotovať." # todo: NEW TRANSLATION # todo: COUNTRY CASE
  BUILDING_IS_SUBSIDIZE: "[COUNTRY.GetName] dotuje náklady $LOSS|2Y$[gold_i]." # todo: NEW TRANSLATION
  BUILDING_UI_HOSTILE_LOCATION: "@trigger_no![BUILDING.GetLocation.GetName] je momentálne [Concept('hostile','nepriateľský')|e] voči [BUILDING.GetOwner.GetLongName], takže momentálne nie je funkčná." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BUILDING_FLAVOR_NAME: "[BUILDING.GetNameWithNoTooltip] in [LOCATION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ BUILDING_FLAVOR_NAME: "[BUILDING.GetNameWithNoTooltip] v [LOCATION.GetNameWithNoTooltip]" # todo: CHANGED (predtym: [BUILDING.GetNameWithNoTooltip] in [LOCATION.GetNameWithNoTooltip])
  BUILDING_FLAVOR_NAME_LEVEL: "Úroveň $NUM|0Y$ [BUILDING.GetNameWithNoTooltip] v [LOCATION.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
  BUILDING_LABEL_COST: "Vstupné náklady:" # todo: NEW TRANSLATION
  BUILDING_LABEL_INCOME: "Predané za:" # todo: NEW TRANSLATION
@@ -4802,16 +4802,16 @@
  BUILDINGS_MAXIMUM_PROFIT_POSSIBLE: "#T Maximálny zisk#!\nNajvyšší [Concept('profit','zisk')|e] na úroveň zo všetkých filtrovaných [BuildingType.GetName]:\n[BuildingItem.GetProfitBreakdownMaxPossible]" # todo: CHANGED # todo: CONCEPT CASE
  BUILDINGS_MINIMUM_INCOME: "#T Minimálny príjem#!\nNajnižší [Concept('income','príjem')|e] na úroveň zo všetkých filtrovaných [BuildingType.GetName]:\n[BuildingItem.GetIncomeBreakdownMin]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  BUILDINGS_MAXIMUM_INCOME_POSSIBLE: "#T Maximálny príjem#!\nNajvyšší [Concept('income','príjem')|e] na úroveň zo všetkých filtrovaných [BuildingType.GetName]:\n[BuildingItem.GetIncomeBreakdownMaxPossible]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- BUILDING_ITEM_PROFIT_ENTRY: "[BUILDING.GetName] in [BUILDING.GetLocation.GetName]: [BUILDING.GetTaxBaseValue|2+=]@gold!" # todo: CHANGED
- BUILDING_ITEM_PROFIT_POSSIBLE_ENTRY: "[BuildingType.GetName] in [LOCATION.GetName]: $PROFIT|2+=$@gold!" # todo: NEW TRANSLATION
- BUILDING_ITEM_INCOME_POSSIBLE_ENTRY: "[BuildingType.GetName] in [LOCATION.GetName]: $INCOME|2+=$@income!" # todo: NEW TRANSLATION
- BUILDING_ITEM_PROFIT_PER_LEVEL_ENTRY: "[BUILDING.GetName] in [BUILDING.GetLocation.GetName]: [BUILDING.GetTaxBaseValuePerLevel|2+=]@gold!" # todo: CHANGED
+ BUILDING_ITEM_PROFIT_ENTRY: "[BUILDING.GetName] v [BUILDING.GetLocation.GetName]: [BUILDING.GetTaxBaseValue|2+=]@gold!" # todo: CHANGED (predtym: [BUILDING.GetName] in [BUILDING.GetLocation.GetName]: [BUILDING.GetTaxBaseValue|2+=]@gold!)
+ BUILDING_ITEM_PROFIT_POSSIBLE_ENTRY: "[BuildingType.GetName] v [LOCATION.GetName]: $PROFIT|2+=$@gold!" # todo: CHANGED (predtym: [BuildingType.GetName] in [LOCATION.GetName]: $PROFIT|2+=$@gold!)
+ BUILDING_ITEM_INCOME_POSSIBLE_ENTRY: "[BuildingType.GetName] v [LOCATION.GetName]: $INCOME|2+=$@income!" # todo: CHANGED (predtym: [BuildingType.GetName] in [LOCATION.GetName]: $INCOME|2+=$@income!)
+ BUILDING_ITEM_PROFIT_PER_LEVEL_ENTRY: "[BUILDING.GetName] v [BUILDING.GetLocation.GetName]: [BUILDING.GetTaxBaseValuePerLevel|2+=]@gold!" # todo: CHANGED (predtym: [BUILDING.GetName] in [BUILDING.GetLocation.GetName]: [BUILDING.GetTaxBaseValuePerLevel|2+=]@gold!)
  BUILDINGS_TOTAL_POTENTIAL_PROFIT: "Celkový potenciálny zisk z [BuildingType.GetName] v [SKCountry(Country,'L')]" # todo: NEW TRANSLATION
  BUILDINGS_TOTAL_POTENTIAL_UPKEEP: "Celkové potenciálne prevádzkové náklady [BuildingType.GetName] v [SKCountry(Country,'L')]" # todo: NEW TRANSLATION
  BUILDING_EXPENSE_BREAKDOWN_VAL: "A [COUNTRY.GetModifierValue('building_upkeep_multiplier')] zo nákladov hradí [Concept('country','krajina')|e]" # todo: CHANGED # todo: CONCEPT CASE
  BUILDINGS_MULTIPLE_MARKETS: "Budovy na viacerých [Concept('markets','trhoch')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  NUMBER_BUILDING: "#T Počet [BuildingItem.GetBuildingType.GetNameWithNoTooltip]#!\n[BuildingItem.GetBuildingBreakdown]" # todo: NEW TRANSLATION
- BUILDING_ITEM_ENTRY: "[BUILDING.GetName] in [BUILDING.GetLocation.GetName]: [BUILDING.GetLevel|0V]" # todo: NEW TRANSLATION
+ BUILDING_ITEM_ENTRY: "[BUILDING.GetName] v [BUILDING.GetLocation.GetName]: [BUILDING.GetLevel|0V]" # todo: CHANGED (predtym: [BUILDING.GetName] in [BUILDING.GetLocation.GetName]: [BUILDING.GetLevel|0V])
  NUMBER_BUILDING_LOCATION: "Počet [Building.GetType.GetName] v [Building.GetLocation.GetName]" # todo: NEW TRANSLATION
  NUMBER_BUILDING_LOCATION_MULTISELECTION: "Počet vybraných [Building.GetType.GetName]" # todo: NEW TRANSLATION
  BUILD_BUILDING: "Postaviť [BuildingType.GetName] na novom mieste" # todo: NEW TRANSLATION
@@ -5338,8 +5338,8 @@
  PRODUCED_GOODS_ITEM_LABEL: "#T Celosvetová produkcia#!\n[Concept('markets','Trhy')|e] s najvyššou produkciou [GOODS.GetNameWithNoTooltip]" # todo: CONCEPT CASE
  SUPPLY_GOOODS_ITEM_LABEL: "#T Celosvetová ponuka#!\n[Concept('markets','Trhy')|e] s najvyššou ponukou [GOODS.GetNameWithNoTooltip]" # todo: CONCEPT CASE
  DEMAND_GOOODS_ITEM_LABEL: "#T Celosvetový dopyt#!\n[Concept('markets','Trhy')|e] s najvyšším dopytom [GOODS.GetNameWithNoTooltip]" # todo: CONCEPT CASE
- MARKET_SUPPLY_FOR_GOODS: "[GOODS.GetNameWithNoTooltip] in [MARKET.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
- MARKET_DEMAND_FOR_GOODS: "[GOODS.GetNameWithNoTooltip] in [MARKET.GetNameWithNoTooltip]" # todo: NEW TRANSLATION
+ MARKET_SUPPLY_FOR_GOODS: "[GOODS.GetNameWithNoTooltip] v [MARKET.GetNameWithNoTooltip]" # todo: CHANGED (predtym: [GOODS.GetNameWithNoTooltip] in [MARKET.GetNameWithNoTooltip])
+ MARKET_DEMAND_FOR_GOODS: "[GOODS.GetNameWithNoTooltip] v [MARKET.GetNameWithNoTooltip]" # todo: CHANGED (predtym: [GOODS.GetNameWithNoTooltip] in [MARKET.GetNameWithNoTooltip])
  PRODUCED_DEMAND_FOR_GOODS: "[Concept('supply','Ponuka')|e] pre [GOODS.GetNameWithNoTooltip] v [MARKET.GetNameWithNoTooltip]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  SORT_GOODS_NAME: "Tovar" # todo: NEW TRANSLATION
  SORT_GOODS_PRODUCED: "Naša produkcia" # todo: NEW TRANSLATION
@@ -5430,7 +5430,7 @@
  AMOUNT_OF_TRADES: "Počet aktuálnych obchodov" # todo: NEW TRANSLATION
  GOODS_HIGHEST_MARKET_PRICE: "Najvyššia trhová cena" # todo: NEW TRANSLATION
  GOODS_LOWEST_MARKET_PRICE: "Najnižšia trhová cena" # todo: NEW TRANSLATION
- GOODS_MARKET_PRICE_INFO: "$PRICE$[gold_i] in [MARKET.GetName]" # todo: NEW TRANSLATION
+ GOODS_MARKET_PRICE_INFO: "$PRICE$[gold_i] v [MARKET.GetName]" # todo: CHANGED (predtym: $PRICE$[gold_i] in [MARKET.GetName])
  NO_CURRENT_GOODS_MARKET_NEEDS: "Momentálne už nepotrebujeme žiadne ďalšie [GOODS.GetName]." # todo: NEW TRANSLATION
  MARKET_IN_RANGE: "[Concept('market','Trh')|e] je v rámci [Concept('trade_range','neobchodného dosahu')|e].\n[Player.GetTradeRangeTooltip(Market.GetCenterLocation)]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MARKET_NOT_IN_RANGE: "@trigger_no! [Concept('market','Trh')|e] NIE JE v rámci [Concept('trade_range','neobchodného dosahu')|e].\n[Player.GetTradeRangeTooltip(Market.GetCenterLocation)]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -5513,7 +5513,7 @@
  POSSIBLE_GOODS_MOVED_DECREASE: "Znížiť množstvo presúvaného [goods] o #R 1.00#!" # todo: NEW TRANSLATION
  POSSIBLE_GOODS_MOVED_DECREASE_SLOW: "Znížiť množstvo presúvaného [goods] o #R 0.10#!" # todo: NEW TRANSLATION
  POSSIBLE_GOODS_MOVED_DECREASE_MIN: "Znížiť množstvo presúvaného [goods] na 0" # todo: NEW TRANSLATION
- TRADE_SOUND_TOLL: "$EFFECT_LIST_BULLET$Platenie [Concept('sound_toll','prieplavné mýto')|e] $VAL|2%Y$ z [Concept('trade_profit','zisku z obchodu')|e] v [LOCATION.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRADE_SOUND_TOLL: "$EFFECT_LIST_BULLET$Platenie [Concept('sound_toll','prielivové mýto')|e] $VAL|2%Y$ z [Concept('trade_profit','zisku z obchodu')|e] v [LOCATION.GetName]" # todo: CHANGED (predtym: $EFFECT_LIST_BULLET$Platenie [Concept('sound_toll','prieplavné mýto')|e] $VAL|2%Y$ z [Concept('trade_profit','zisku z ob)
  TRADE_EXPORT_PORT: "$EFFECT_LIST_BULLET$Export cez [LOCATION.GetName], dáva mu [ShowModifier('location_exports')]" # todo: NEW TRANSLATION
  TRADE_IMPORT_PORT: "$EFFECT_LIST_BULLET$Import cez [LOCATION.GetName], dáva mu [ShowModifier('location_imports')]" # todo: NEW TRANSLATION
  POSSIBLE_TRADE_CAPACITY_TT_TITLE: "#T Kapacita obchodu#!" # todo: NEW TRANSLATION
@@ -5732,7 +5732,7 @@
  TRADE_TOOLTIP_WHAT: "#T [TRADE.GetGoods.GetNameWithNoTooltip] z [TRADE.GetFromMarket.GetNameWithNoTooltip] do [TRADE.GetToMarket.GetNameWithNoTooltip]#!\nObchodovanie [TRADE.GetQuantityOfGoodsActuallyMoved|2Y] [TRADE.GetGoods.GetName] z [TRADE.GetFromMarket.GetName] do [TRADE.GetToMarket.GetName]." # todo: NEW TRANSLATION
  TRADE_TOOLTIP_EFFICENCY: "[Concept('trade','Obchod')|e] je na [TRADE.GetEfficiency|2%Y] efektivite, pretože táto trasa vyžadovala [TRADE.GetAssignedMerchantCapacity|Y], a [TRADE.GetOwner.GetLongNameWithFlag] majú kapacitu [TRADE.GetCapacityMarket.GetMerchantTotalCapacity(TRADE.GetOwner)|Y] v [TRADE.GetCapacityMarket.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_TOOLTIP_PORTS: "[Concept('export','Vývoz')|e] je cez [TRADE.GetFromPort.GetName|Y] a [Concept('import','dovoz')|e] je cez [TRADE.GetToPort.GetName|Y]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRADE_TOOLTIP_TOLL: "Je nútený platiť [Concept('sound_tolls','prieplavné mýta')|e] v [TRADE.GetSoundToll.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRADE_TOOLTIP_TOLL: "Je nútený platiť [Concept('sound_tolls','prielivové mýta')|e] v [TRADE.GetSoundToll.GetName]." # todo: CHANGED (predtym: Je nútený platiť [Concept('sound_tolls','prieplavné mýta')|e] v [TRADE.GetSoundToll.GetName].)
  TRADE_TOOLTIP_PROFIT: "Nákup: [TRADE.GetBuy|-=2][gold_i]\nPredaj: [TRADE.GetSell|+=2][gold_i]\nÚdržba obchodnej trasy: [TRADE.GetMaintenance|-=2][gold_i]\nCla: [TRADE.GetSoundTollFee|-=2][gold_i]\n\nZisk: [TRADE.GetProfit|+2=][gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_TOOLTIP_REMOVED: "Toto je zvyšok od obchodnej trasy, ktorá už neexistuje." # todo: NEW TRANSLATION
  COLONIAL_TOOLTIP_REMOVED: "Toto je pozostatok koloniálnej listiny, ktorá už neexistuje." # todo: CHANGED
@@ -5763,7 +5763,7 @@
  PROFIT_TRADE_TT: "Zisk za [Concept('merchant_capacity','neobchodnú kapacitu')|e] [Trade.GetProfitPerMerchantCapacity|+=2]@gold!" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TOTAL_PROFIT: "Celkový zisk" # todo: NEW TRANSLATION
  TRADE_TOTAL_PROFIT_BREAKDOWN_TITLE: "Celkový zisk: [Trade.GetProfit|+=2]@gold!" # todo: NEW TRANSLATION
- TRADE_TOTAL_PROFIT_BREAKDOWN: "Nákup v [Trade.GetFromMarket.GetName]: [Trade.GetBuy|-=2][gold_i]\nPredaj v [Trade.GetToMarket.GetName]: [Trade.GetSell|+=2][gold_i]\n[Concept('merchant_maintenance','Údržba obchodnej trasy')|e]: [Trade.GetMaintenance|-=2][gold_i]\n[Concept('sound_tolls','Prieplavné mýta')|e]: #R -[Trade.GetSoundTollFee|2]#![gold_i]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRADE_TOTAL_PROFIT_BREAKDOWN: "Nákup v [Trade.GetFromMarket.GetName]: [Trade.GetBuy|-=2][gold_i]\nPredaj v [Trade.GetToMarket.GetName]: [Trade.GetSell|+=2][gold_i]\n[Concept('merchant_maintenance','Údržba obchodnej trasy')|e]: [Trade.GetMaintenance|-=2][gold_i]\n[Concept('sound_tolls','Prielivové mýta')|e]: #R -[Trade.GetSoundTollFee|2]#![gold_i]" # todo: CHANGED (predtym: Nákup v [Trade.GetFromMarket.GetName]: [Trade.GetBuy|-=2][gold_i]\nPredaj v [Trade.GetToMarket.GetName]: [Trade.GetSell|)
  EXPAND_TRADES_TOOLTIP: "Rozbaliť obchody" # todo: NEW TRANSLATION
  COLLAPSE_TRADES_TOOLTIP: "Zbaliť obchody" # todo: NEW TRANSLATION
  BASE_GOODS_PRICE: "[Concept('market_price','Trhová cena')|e] v @market! [MARKET.GetShortName]: $VAL$" # todo: CHANGED # todo: CONCEPT CASE
@@ -7575,7 +7575,7 @@
  TRADE_NOT_YET_ACTIVE: "@trigger_no! Obchod ešte nie je aktívny, aktivuje sa na konci mesiaca." # todo: NEW TRANSLATION
  EXPORTING_THROUGH: "  [exporting_with_icon] cez @location! [Location.GetName]" # todo: CHANGED
  MERCHANT_CAPACITY_USAGE: "[Concept('merchant_maintenance','Údržba obchodnej trasy')|e] (#TOOLTIP:$BREAKDOWN_TAG$ $VAL|2L$#! [merchant_capacity_icon])" # todo: CHANGED # todo: CONCEPT CASE
- TRADE_TT_SOUND_TOLL: "$BULLET_WITH_TAB$ [Concept('sound_toll','Prieplavné mýto')|e] ([Trade.GetSoundToll.GetName])" # todo: CHANGED (predtym: $BULLET_WITH_TAB$ [Concept('sound_toll','Prieplavné mýto')|e])
+ TRADE_TT_SOUND_TOLL: "$BULLET_WITH_TAB$ [Concept('sound_toll','Prielivové mýto')|e] ([Trade.GetSoundToll.GetName])" # todo: CHANGED (predtym: $BULLET_WITH_TAB$ [Concept('sound_toll','Prieplavné mýto')|e] ([Trade.GetSoundToll.GetName]))
  IMPORTING_THROUGH: "  [importing_with_icon] cez @location! [Location.GetName]" # todo: CHANGED
  TRADE_SUPPLY_IN_MARKET_TT: "$BULLET_WITH_TAB$[Concept('market_balance','Trhová bilancia')|e]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRADE_EFFICENCY_DETAILS: "Tento [Concept('trade','obchod')|e] má efektivitu [Trade.GetEfficiency|2%Y], pretože táto trasa vyžadovala [Trade.GetAssignedMerchantCapacity|Y], a [Trade.GetOwner.GetLongNameWithFlag] má kapacitu [Trade.GetCapacityMarket.GetMerchantTotalCapacity(Trade.GetOwner)|Y] v [Trade.GetCapacityMarket.GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
@@ -7623,7 +7623,7 @@
  MERCHANT_CAPACITY_TT_HEADER: "[Country.GetAdjectiveWithNoTooltip] [merchant_capacity] v [Market.GetShortNameWithNoTooltip]" # todo: NEW TRANSLATION
  MERCHANT_CAPACITY_TT_LIST_TITLE: "Celková [Concept('merchant_capacity','obchodná kapacita')|e] [SKCountry(Country,'G')] v @market![Market.GetShortName] je [Market.GetTotalMerchantCapacity(Player.Self)|2W]@trade_capacity! z dôvodu:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MERCHANT_CAPACITY_TT_ALERT_YELLOW: "Máme [Market.GetMerchantAvailableCapacity(Player.Self)|2R]@trade_capacity! nevyužitú [Concept('merchant_capacity','obchodná kapacita')|e] v tomto [Concept('market','trhu')|e]." # todo: CHANGED (predtym: Máme [Market.GetMerchantAvailableCapacity(Player.Self)|2G]@trade_capacity! nevyužitú [Concept('merchant_capacity','obcho)
- MERCHANT_CAPACITY_LIST_ENTRY: "[Concept('merchant_capacity','Obchodná kapacita')|e] of [SKCountry(Country,'G')] in @market![Market.GetShortName]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ MERCHANT_CAPACITY_LIST_ENTRY: "[Concept('merchant_capacity','Obchodná kapacita')|e] krajiny [Country.GetName] v @market![Market.GetShortName]:" # todo: CHANGED (predtym: [Concept('merchant_capacity','Obchodná kapacita')|e] of [SKCountry(Country,'G')] in @market![Market.GetShortName]:)
  MERCHANT_CAPACITY_TT_ALERT_GREEN: "Využívame všetky naše [Market.GetTotalMerchantCapacity(Player.Self)|2W] [Concept('merchant_capacity','obchodná kapacita')|e] v tomto [Concept('market','trhu')|e]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MERCHANT_CAPACITY_TT_OUT_OF_RANGE: "Tento [Concept('market','trh')|e] je mimo nášho [Concept('trade_range','neobchodného dosahu')|e] [Player.GetDoubleModifierValue('trade_range','trade_range_modifier')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EXPAND_MERCHANT_CAPACITY: "Postaviť [merchant_capacity]" # todo: NEW TRANSLATION
